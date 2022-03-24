@@ -1,3 +1,5 @@
+Music/CDAudio/*
+Backgrounds/*
 
 # Godot-specific ignores
 .import/

@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
+[ext_resource path="res://TitleScreen.gd" type="Script" id=2]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://MSelObj.tscn" type="PackedScene" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+margin_left = 1006.33
+margin_top = 75.5953
+margin_right = 1345.33
+margin_bottom = 548.595
+custom_fonts/font = ExtResource( 3 )
+text = "M
+a
+i
+n"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = 484.0
+mouse_filter = 1
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 420.0
+margin_bottom = 116.0
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
+margin_right = 420.0
+margin_bottom = 116.0
+mouse_filter = 0
+custom_fonts/font = ExtResource( 3 )
+text = "Chapter 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1355.0
+margin_top = 20.0
+margin_right = -254.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2"]
+margin_right = 1101.0
+margin_bottom = 1040.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+
+[node name="MSelObj" parent="ScrollContainer2/VBoxContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1101.0
+margin_bottom = 124.0
+
+[node name="MSelObj2" parent="ScrollContainer2/VBoxContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 134.0
+margin_right = 1101.0
+margin_bottom = 258.0
+
+[node name="FadeOut" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+input_pass_on_modal_close_click = false
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

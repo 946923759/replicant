@@ -1,0 +1,6 @@
+music	test
+msg	Hello world!
+stopmusic	5
+msg	Now I fade music...
+music	test2
+msg	this is new music!

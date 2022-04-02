@@ -1,0 +1,53 @@
+#LANGUAGES	key	en	ch	ja
+speaker	Seele
+bg	009/003_1280x720
+portrait	59
+msg	300085	As you may have noticed before entering the base, our base is built underneath this underground station. It's a safe haven for us to fight against the Honkai Beasts~.	刚才进入基地前你也发现了吧~我们的基地构筑在这座地下车站中，是作为对抗崩坏生物相对安全的据点。	さっき基地に入る前に気づいたと思うんだけど、私たちの基地はこの地下の駅の中にあるの。崩壊生物に対抗するための安全な拠点なんだ～。
+msg	300086	Most of the survivors in the Far East area live on this base. It's hard to find new survivors like you now.	极东地区的幸存者几乎都生活在这个基地中，现在像你这样新发现的幸存者已经很难得了呢~	極東地区の生存者は、ほとんどがこの基地の中で生活しているの。今はあなたのような新しい生存者を見つけるのが難しいんだよ。
+msg	300087	Everyone on the base has a role to play in fighting the Honkai. From today on, you too have your own responsibilities, because we need to work together to defeat the Honkai. (TN: Redo!)	为了和崩坏对抗，基地中的大家都有着自己的职责，从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	崩壊に対抗するために、基地の中のみんなにはそれぞれ役割があるの。今日からはあなたもその一員だから協力してね。
+msgboxTransition
+bg	009/002_1280x720
+msg	300088	This cabin is your room now. You're free to use the facilities and equipment. Think of it as your new home.	这节车厢今后就是你的房间啦，这里的设施你都可以自由使用，不用客气，就当是自己的家吧。	この車両があなたの部屋だよ。ここの設備は自由に使っていいからね。遠慮しないで自分の家だと思って。
+msg	300089	Here's a general overview of the base. Don't rush, just take your time getting used to it.	以上就是基地的概况啦，不用着急，慢慢熟悉就行了。	基地の概要は大体こんな感じだよ。急がないでゆっくり慣れればいいからね。
+msg	300090	Well, I'll leave you for today. Have a good rest. Good night.	那么我先失陪啦，你早点休息吧，晚安。	じゃあ、今日はこの辺で失礼するね。ゆっくり休んで。お休み～。
+portrait	
+speaker	 
+bg	007/006_1280x720
+msg	300091	...	……	……。
+msgboxTransition
+bg	009/011_1280x720
+music	Vague Hope Cold Rain No Vocals
+msg	300092	What is this place?	这里是……	ここは——
+msg	300093	The view looks familiar.	好熟悉的景色，	よく知っている景色、
+msg	300094	Under the gray sky and in this cold air, the earth is glistened by the distorted light.	灰色的天空与冰冷的空气，扭曲的光芒辐射着死去的大地。	灰色の空と冷たい空気、曲がった光が死の大地を照らす。
+msg	300095	Why and how did I get here?	我为什么会在这里，又是如何来到这里的……	私、どうしてここにいるの。どうやってここに来たの……。
+msg	300096	I can't remember.	已经记不起来了。	思い出せない。
+msg	300097	But there's a strange impulse inside me,	但是，总有一种奇妙的冲动在驱使着我。	でも、なんだか奇妙な衝動が私を駆り立てている。
+msg	300098	driving me in no particular direction.	向着不知道在何处的目标前行——	どこを目指しているのか分からない——
+msg	300099	I can't tell how long it's been, but the view in front of me is becoming clearer and clearer.	不知道过了多久，眼前的景色也越来越清晰。	どれだけ経ったのかも分からないけど、目の前の景色はますますはっきりしてきた。
+msg	300100	But I still couldn't remember their origin. It's at the tip of my tongue. That feeling made my heart throb.	然而始终无法想起它们的由来，呼之欲出的情感让我心跳加快。	しかし、最後までそれが何なのかは思い出せない。喉元まできている感覚がもどかしい。
+msg	300101	It feels like I'm trapped inside a whirlpool. The exit is right in front of me, but I can't touch it.	这种感觉仿佛进入了翻滚的螺旋之中，明明出口就在前方，但却无法触及。	渦巻の中に入ったかのような感覚。出口は前にあるのに、触れることができない。
+msg	300102	Everything seems so clear. Even though it looks like it's been weathered down from millennia, it's still clearly distinguishable.	一切都是那么真切，恍如隔世，却又依稀可辨。	全てがはっきりしている。時代を経ているようだけれど、はっきりと見分けられる。
+msg	300103	Then, I saw a beam of light. A sign. An end.	渐渐地，我看到了一束光，一个信标，一个终点。	だんだんと光が、ビーコンが、終点が見えてきた。
+msg	300104	And then, I saw her...	然后，我看到了她……	そして、彼女が見えた……。
+msgboxTransition
+bg	009/022_1280x720
+msg	300106	Who is she?	这个人是谁？	この人は誰？
+msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒来的梦。	まるで醒めることがない夢を見ているみたい。
+msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	彼女の悲しそうな表情。
+msg	300109	In this world of emptiness, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。
+msg	300110	A sense of nostalgia lingers in my heart.	有种令人怀念的感觉缠绕在胸口。	何だか懐かしいような感覚が胸を締め付ける。
+msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。
+choice	Wake her up.	Never mind.
+condjmp_c	c2dest	2
+label	c1dest
+msg	300114	It must be lonely when you're the only person here. I should wake her up.	一个人的话一定很孤独，还是试着叫醒她吧。	1人でいたらきっと孤独なはず。やっぱり起こしてみよう。
+msg	300115	Maybe she can tell me the reason why I exist and the meaning of this world.	说不定可以告诉我存在于此的理由，以及这个世界的意义，	もしかしたら私がここにいる理由や、この世界の意義を教えてくれるかもしれない。
+msg	300116	If I could live with her, I wouldn't have to struggle on my own.	如果可以一起生活的话，就不用一个人思考那么多麻烦的事情了。	一緒に暮らせるなら、自分だけであんな面倒なことを考えなくて済むし。
+jmp	endChoices
+label c2dest
+msg	300117	I need to solve my own problems before worrying about others.	与其担心别人不如先解决自己的问题吧。	他の人の心配より、自分の問題を解決しなきゃ。
+msg	300118	I can't do anything on my own. I just cause trouble for everyone else.	只靠我一个人的话什么也做不到，只会给别人添麻烦而已。	私一人じゃ何もできない。他の人に迷惑をかけるだけ。
+msg	300119	A flood of swirling emotions sprouts in my head. Perhaps it's out of fear, or maybe I'm just afraid of getting into trouble.	复杂的感情涌上心头，或许是出于恐惧，又或许只是单纯的怕麻烦。	複雑な感情が沸き起こってきた。もしかしたら恐怖のせいなのかも、或いは単純に面倒が嫌なだけかも。
+label	endChoices
+msg	300120	I take a few steps backwards... And I get ready to leave——	我迈出了脚步准备离开。	足を踏み出し……出て行く準備を——

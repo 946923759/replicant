@@ -107,7 +107,7 @@ func _ready():
 				
 	cutsceneData = load_cutscene_data(Globals.nextCutscene)
 	#if OS.is_debug_build():
-	#	cutsceneData = load_cutscene_data(\"kyusyo0-1-2.txt\")
+	#	cutsceneData = load_cutscene_data(\"music_test.txt\")
 		#cutsceneData = load_cutscene_data(\"test_Midnight112.txt\")
 	if cutsceneData.size()==0:
 		#var e = load(\"res://savedataError.tscn\").instance()

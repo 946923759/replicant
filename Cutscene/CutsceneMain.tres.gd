@@ -15,39 +15,12 @@ var parent_node
 
 #const nightShader = preload("res://ParticleEffects/NightShader.tres")
 var backgrounds:Control
-var backgrounds_to_load:Array
 var lastBackground:smSprite
 enum BG_TWEEN {
 	DEFAULT,
 	FADE,
 	IMMEDIATE,
 	NONE
-}
-
-enum OPCODES {
-	MSG, 
-	PORTRAITS, 
-	PRELOAD_PORTRAITS, 
-	SPEAKER, 
-	BG, 
-	MATCH_NAMES, 
-	MSGBOX_TRANSITION,
-	CHOICE,
-	#REWRITE_HISTORY #Edit the history! lol
-	CONDJMP_CHOICE, #Oh no
-	CONDJMP_NOT_EQUAL_LANG,
-	CONDJMP_EQUAL_LANG,
-	LABEL, #It's like JMP, but for people who don't like math /jk
-	JMPLABEL,
-	#JMP,
-	LONGJMP,
-	NOP, #It's needed so jumps are accurate
-	MUSIC,
-	STOPMUSIC,
-	SFX,
-	#It adds a button that you can hover over if you put it before a message.
-	#However, it will only appear if it's in the correct column.
-	TRANSLATION_NOTE 
 }
 
 var curPos: int = -1
@@ -64,8 +37,7 @@ var message: Array
 
 var portraits:Array=[]
 
-var musicToLoad:Array=[]
-var soundsToLoad:Array=[]
+
 var lastMusic:AudioStreamPlayer
 
 #Array of 2D arrays
@@ -79,110 +51,68 @@ onready var speakerActor = $CenterContainer/SpeakerActor
 
 var choiceResult:int=-1
 
-func push_back_from_idx_one(arr,arr2):
+func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there's no need to return them, but whatever
 	for i in range(1,arr2.size()):
 		arr.push_back(arr2[i])
 	return arr
 
-#What an abomination of a function
-func parse_string_array(arr,delimiter:String="|",msgColumn:int=1):
+#This function will load backgrounds and music in advance.
+#It will also split the delimiter in advance.
+func preparse_string_array(arr,delimiter:String="|",msgColumn:int=1)->bool:
+	var musicToLoad:Array=[]
+	var soundsToLoad:Array=[]
+	var backgrounds_to_load:Array=[]
 	message = []
+	#Should return false if delimiter is incorrect
 	for s in arr:
 		var splitString = s.split(delimiter) #,true,1
+		#This changes the command order, so it probably shouldn't be preprocessed right?
 		if splitString[0].begins_with('/'): #Chaosoup's idea, since typing two opcodes every time was getting obnoxious
-			message.push_back([OPCODES.SPEAKER,splitString[0].substr(1)])
-			if msgColumn > splitString.size()-1:
-				print("Hey moron, you're missing the translation for this line: "+String(splitString))
-				message.push_back([OPCODES.MSG,splitString[1]])
-			else:
-				message.push_back([OPCODES.MSG,splitString[msgColumn]])
+			message.push_back(['speaker',splitString[0].substr(1)])
+			message.push_back(push_back_from_idx_one(['msg'],splitString))
+			#var a = ['msg']
 			#message.push_back([OPCODES.MSG,splitString[1]])
 			continue
 		match splitString[0]:
-			'msg':
-				if msgColumn > splitString.size()-1:
-					print("Hey moron, you're missing the translation for this line: "+String(splitString))
-					message.push_back([OPCODES.MSG,splitString[1]])
-				else:
-					message.push_back([OPCODES.MSG,splitString[msgColumn]])
-			'speaker':
-				if splitString.size()==1:
-					message.push_back([OPCODES.SPEAKER,""])
-				else:
-					message.push_back(push_back_from_idx_one([OPCODES.SPEAKER],splitString))
-			"portrait":
-				var pOpcode = [OPCODES.PORTRAITS]
-				if splitString.size()>1:
-					#var params = splitString[1].split("|")
-					#"portraits|ump9,false,0|Nyto_7
-					for i in range(1,splitString.size()):
-						var p = splitString[i]
-						if ',' in p:
-							var pStructStr = p.split(',')
-							assert(pStructStr.size()<=3, "Malformed portrait command. Did you mix up commas and pipes? "+String(pStructStr))
-							pOpcode.push_back([pStructStr[0],pStructStr[1].to_lower()=="true",int(pStructStr[2])])
-						else:
-							pOpcode.push_back(p)
-				#print(pOpcode)
-				message.push_back(pOpcode)
-			"preload_portraits":
-				var newCmd=[OPCODES.PRELOAD_PORTRAITS]
-				message.push_back(push_back_from_idx_one(newCmd,splitString))
-				#var params = splitString[1].split("|")
-				#for i in range(1,splitString.size()):
-				#	newCmd.push_back(splitString[i])
-				#message.push_back(newCmd)
 			"bg":
-				var c = BG_TWEEN.DEFAULT
-				if len(splitString) > 2:
-					match splitString[2]:
-						"none":
-							c=BG_TWEEN.NONE
-						"immediate":
-							c=BG_TWEEN.IMMEDIATE
-						"fade":
-							c=BG_TWEEN.FADE
-				message.push_back([OPCODES.BG,splitString[1],c])
 				if splitString[1] != "black" and splitString[1] != "none" and !(splitString[1] in backgrounds_to_load):
 					backgrounds_to_load.append(splitString[1])
-			"matchnames":
-				var data = [] 
-				push_back_from_idx_one(data,splitString)
-				#var params = splitString[1].split("|")
-				for i in range(1,splitString.size()):
-					data.push_back(splitString[i])
-				message.push_back([OPCODES.MATCH_NAMES,data])
-			"msgboxTransition":
-				message.push_back([OPCODES.MSGBOX_TRANSITION])
-			"nop": # "no-operation"
-				message.push_back([OPCODES.NOP])
-			"label":
-				message.push_back([OPCODES.LABEL,splitString[1]])
-			"choice":
-				#var newCmd=[OPCODES.CHOICE]
-				#message.push_back(push_back_from_idx_one(newCmd,splitString))
-				
-				var newCmd=[]
-				push_back_from_idx_one(newCmd,splitString)
-				message.push_back([OPCODES.CHOICE,newCmd])
-			"jmp":
-				message.push_back([OPCODES.LONGJMP,splitString[1]])
-			"condjmp_c":
-				if len(splitString)<3:
-					printerr("condjmp_c invalid params!! "+String(splitString))
-				else:
-					message.push_back([OPCODES.CONDJMP_CHOICE,splitString[1],int(splitString[2])])
 			"music":
-				message.push_back([OPCODES.MUSIC,splitString[1]])
+				#message.push_back([OPCODES.MUSIC,splitString[1]])
 				if !(splitString[1] in musicToLoad):
 					musicToLoad.append(splitString[1])
-			"stopmusic":
-				message.push_back([OPCODES.STOPMUSIC,float(splitString[1]) if splitString[1] else 0.0])
-			#"tn":
-			#	if msgColumn < splitString.size()-1:
-			#		message.push_back([OPCODES.MSG,splitString[1]])]
-			_:
-				printerr("Unknown command:"+splitString[0])
+		message.push_back(splitString)
+					
+	for i in range(len(backgrounds_to_load)):
+		var bgToLoad = backgrounds_to_load[i]
+		
+		var nightFilter = false
+		if "," in bgToLoad:
+			#nightFilter = bgToLoad.split(",")[1].to_lower()=="true"
+			bgToLoad = bgToLoad.split(",")[0]
+		var c = Color(1,1,1,0)
+		var s = Def.Sprite({
+			modulate=c,
+			Texture=bgToLoad,
+			cover=true,
+			name=bgToLoad.replace("/","$"),
+			mouse_filter=2
+		})
+		#if nightFilter:
+		#	s.material=nightShader
+		backgrounds.add_child(s)
+		VisualServer.canvas_item_set_z_index(s.get_canvas_item(),-10)
+	backgrounds.connect("resized",self,"set_rect_size")
+	
+	
+	for m in musicToLoad:
+		#print("m "+m)
+		var s = Def.Sound({
+			File=m,
+			name=m.replace("/","$")
+		})
+		$Music.add_child(s)
+	return true
 
 func get_portrait_from_sprite(spr):
 	for p in portraits:
@@ -214,7 +144,7 @@ func advance_text()->bool:
 		var curMessage = message[curPos]
 		
 		match curMessage[0]:
-			OPCODES.MSG:
+			'msg':
 				var tmp_txt = curMessage[1]
 				while tmp_txt.begins_with("/"):
 					if tmp_txt.begins_with("/hl["):
@@ -261,17 +191,17 @@ func advance_text()->bool:
 				text.visible_characters=0
 				text.bbcode_text = tmp_txt
 				
-				if curPos < message.size()-1 and message[curPos+1][0]==OPCODES.CHOICE:
+				if curPos < message.size()-1 and message[curPos+1][0]=='choice':
 					ChoiceTable=message[curPos+1][1]
 				break #Stop processing opcodes and wait for user to click
 			#Compatibility opcode for Girls' Frontline
-			OPCODES.MSGBOX_TRANSITION:
+			'msgboxTransition':
 				closeTextbox(tw)
 				openTextbox(tw,.3)
 				waitForAnim+=.6
-			OPCODES.MATCH_NAMES:
+			'matchnames':
 				matchedNames=curMessage[1]
-			OPCODES.SPEAKER: 
+			'speaker': 
 				
 				# I really didn't think this one through when I made /close and /open
 				# a mini command instead of an opcode
@@ -297,14 +227,14 @@ func advance_text()->bool:
 						#print("|"+matchedNames[i]+"| != |"+curMessage[1]+"|")
 					#print("Couldn't match "+curMessage[1]+ " in "+String(matchedNames))
 				#print(speakerActor.text)
-			OPCODES.PRELOAD_PORTRAITS:
+			'preload_portraits':
 				#TODO: Change to a portrait pooling class
 				#TODO: Do not preload until no portraits are shown
 				for i in range(len(portraits)):
 					if i < curMessage.size()-1:
 						portraits[i].set_texture_wrapper(curMessage[i+1])
 						print("Preloaded "+curMessage[i+1])
-			OPCODES.BG:
+			'bg':
 				var actor = backgrounds.get_node(curMessage[1].replace("/","$"))
 				if !is_instance_valid(actor):
 					printerr(curMessage[1]+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
@@ -317,13 +247,13 @@ func advance_text()->bool:
 						if n!=lastBackground and n!=actor:
 							n.modulate.a=0
 					
-					if curMessage[2]==BG_TWEEN.FADE:
+					if curMessage[2]=='fade':
 						if is_instance_valid(lastBackground):
-							VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-1)
-						VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),0)
+							VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
+						VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
 						actor.modulate.a=0
 						actor.showActor(.5)
-					elif curMessage[2]==BG_TWEEN.IMMEDIATE:
+					elif curMessage[2]=='immediate':
 						actor.modulate.a=1
 						if is_instance_valid(lastBackground):
 							lastBackground.modulate.a=0
@@ -340,7 +270,7 @@ func advance_text()->bool:
 							actor.showActor(.5)
 						#print("unknown bg tween? "+String(curMessage[2]))
 					lastBackground=actor
-			OPCODES.PORTRAITS:
+			'portraits':
 				#Badly translated lua code
 				#Duplicate curMessage while skipping the 0th element
 				#because it is the opcode
@@ -353,25 +283,27 @@ func advance_text()->bool:
 				
 				var numPortraits = 0
 				for pos in range(new_table.size()):
-					var portrait = new_table[pos]
+					var portrait = new_table[pos].split(',',true)
+					var pp:Array=[portrait[0],false,0] #[name,isMasked,offset]
+					if portrait.size()>2:
+						pp[2]=int(portrait[2])
+					if portrait.size()>1:
+						pp[1]=(portrait[1].to_lower()=='true')
 					numPortraits+=1
-					if typeof(portrait)==TYPE_ARRAY: #[name,isMasked,offset]
-						"""
-						To use for next iteration, self.lastPortraitTable will get copied to relation. Anything that has a new position
-						will get the false value in relation overwritten. If any portrait that existed in lastPortraitTable doesn't exist
-						in this one, it will still have the value of false.
-						"""
-						lastPortraitTable[portrait[0]]=false
-						relation[portrait[0]]=[pos,portrait[1],portrait[2]]
-					else: #If they just specified a name
-						lastPortraitTable[portrait]=false
-						relation[portrait]=[pos,false,0] #pos,isMasked,offset
+					
+					"""
+					To use for next iteration, self.lastPortraitTable will get copied to relation. Anything that has a new position
+					will get the false value in relation overwritten. If any portrait that existed in lastPortraitTable doesn't exist
+					in this one, it will still have the value of false.
+					"""
+					lastPortraitTable[portrait[0]]=false
+					relation[portrait[0]]=[pos,pp[1],pp[2]] #[pos,isMasked,offset]
 					
 				#print(relation)
 				for name in relation:
 					var pStruct = relation[name]
 					#assert(self.portraits[name],"A portrait by the name of "..name.." does not exist, either you made a typo or you forgot to put it in LoadImages.");
-					if typeof(pStruct)==TYPE_ARRAY:
+					if typeof(pStruct)==TYPE_ARRAY: #if found portrait
 						#Pos,isMasked,offset
 						#This is basically just a really stupid way of pooling
 						#If the sprite is already loaded just reuse it, otherwise
@@ -388,52 +320,63 @@ func advance_text()->bool:
 						#print(pStruct)
 						lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
 						print("Set portrait "+name)
-					else:
+					else: #If null, portrait is not present anymore and should be hidden
 						#self.portraits[name].actor:playcommand("Stop")
 						var lastUsed = get_portrait_from_sprite(name)
 						if lastUsed != null:
 							print("Stopping sprite"+name)
 							get_portrait_from_sprite(name).stop()
+			'emote':
+				var lastUsed = get_portrait_from_sprite(curMessage[1])
+				if lastUsed != null:
+					lastUsed.cur_expression = int(curMessage[2])
+					lastUsed.update()
+					#print("Set new portrait sprite")
+				else:
+					print("There is no active portrait named "+curMessage[1])
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
-			OPCODES.CHOICE, OPCODES.NOP:
+			'choice', 'nop','label':
 				pass
 			#OPCODES.JMP:
 			#	curPos+=curMessage[1]
-			OPCODES.LONGJMP,OPCODES.CONDJMP_CHOICE:
+			'longjmp','condjmp_c':
 				#if curMessage[0] == OPCODES.CONDJMP_CHOICE:
 				#	print("Processing CONDJUMP... cRes is "+String(choiceResult)+", jump if "+String(curMessage[2]))
 				#else:
 				#	print("processing LONGJUMP")
-				if curMessage[0] == OPCODES.LONGJMP or curMessage[2]==choiceResult:
+				if curMessage[0] == 'longjmp' or curMessage[2]==choiceResult:
 					#print(curMessage)
 					var jumped:bool=false
 					for i in range(curPos,message.size()):
-						if message[i][0]==OPCODES.LABEL and curMessage[1]==message[i][1]:
+						if message[i][0]=='label' and curMessage[1]==message[i][1]:
 							curPos=i
 							jumped=true
 							break
 					if !jumped:
 						for i in range(0,curPos):
-							if message[i][0]==OPCODES.LABEL and curMessage[1]==message[i][1]:
+							if message[i][0]=='label' and curMessage[1]==message[i][1]:
 								curPos=i
 								jumped=true
 					if !jumped:
 						printerr("The label '"+curMessage[1]+"' was not found!")
 				#Reset here?
 				choiceResult=-1
-			OPCODES.MUSIC:
-				var m = $Music.get_node(curMessage[1].replace("/","$"))
+			'music':
+				var m = $Music.get_node_or_null(curMessage[1].replace("/","$"))
 				if is_instance_valid(lastMusic):
 					lastMusic.stop()
-				print("Playing "+m.name)
-				print(m.stream)
-				m.play()
-				lastMusic=m
-			OPCODES.STOPMUSIC:
+				if m!=null:
+					print("Playing "+m.name)
+					print(m.stream)
+					m.play()
+					lastMusic=m
+				else:
+					printerr("FIX YOUR MUSIC NAMES!! DON'T USE SPECIAL CHARACTERS! "+curMessage[1])
+			'stopmusic':
 				if is_instance_valid(lastMusic):
-					lastMusic.fade_music(curMessage[1])
+					lastMusic.fade_music(float(curMessage[1]))
 		curPos+=1
 	
 	#WHAT COULD POSSIBLY GO WRONG
@@ -553,36 +496,7 @@ func init_(message, parent, dim_background = true,_backgrounds=null,delim="|",ms
 # warning-ignore:return_value_discarded
 		t.parallel().append($dim,'color:a',.6,.5).from_current()
 	
-	parse_string_array(message,delim,msgColumn)
-	
-	for i in range(len(backgrounds_to_load)):
-		var bgToLoad = backgrounds_to_load[i]
-		
-		var nightFilter = false
-		if "," in bgToLoad:
-			#nightFilter = bgToLoad.split(",")[1].to_lower()=="true"
-			bgToLoad = bgToLoad.split(",")[0]
-		var c = Color(1,1,1,0)
-		var s = Def.Sprite({
-			modulate=c,
-			Texture=bgToLoad,
-			cover=true,
-			name=bgToLoad.replace("/","$"),
-			mouse_filter=2
-		})
-		#if nightFilter:
-		#	s.material=nightShader
-		backgrounds.add_child(s)
-	backgrounds.connect("resized",self,"set_rect_size")
-	
-	
-	for m in musicToLoad:
-		#print("m "+m)
-		var s = Def.Sound({
-			File=m,
-			name=m.replace("/","$")
-		})
-		$Music.add_child(s)
+	preparse_string_array(message,delim,msgColumn)
 	
 	advance_text()
 	set_process(true)

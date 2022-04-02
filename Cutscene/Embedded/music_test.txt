@@ -1,6 +1,10 @@
+preload_portraits	58
 music	test
-msg	Hello world!
+portraits	58
+msg	Hello world! I show portrait 58!
 stopmusic	5
 msg	Now I fade music...
 music	test2
 msg	this is new music!
+emote	58	3
+msg	Set emote 1 to portrait named 58!

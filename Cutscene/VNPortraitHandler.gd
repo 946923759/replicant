@@ -216,6 +216,9 @@ func overdrive_set_texture(toLoad:Array):
 	#imageTex.resize(toLoad.size())
 	for i in range(toLoad.size()):
 		var sprName = toLoad[i]
+		if sprName.ends_with(".png"):
+			print("Hey moron, don't put .png in the portrait names!")
+			sprName=sprName.rstrip(".png")
 		#set_texture(load("res://Cutscene/Portraits/"+sprName+".png"))
 		var f = File.new()
 		if f.file_exists("res://Portraits/"+sprName+".png.import"):

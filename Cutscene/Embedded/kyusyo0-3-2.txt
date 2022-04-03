@@ -1,0 +1,13 @@
+#LANGUAGES	key	en	ch	ja
+speaker	Emesa
+bg	009/004_1280x720
+portraits	55
+emote	55	4
+msg	300150	Damn it! I can't believe these things keep flooding in! Where the ☆☆ do they keep coming from?!	混蛋！居然已经渗透进来这么多了！这帮家伙难道都是从OO里钻出来的OO么！	このヤロー！こんなにたくさん入り込んでくるなんて！
+msg	300151	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
+portraits	55
+emote	55	4
+msg	300152	Man, this one picked a real crappy time to appear! Honestly, I'm totally ☆☆'d.	啧！居然在这种时候出现这种家伙！真OO的倒霉！	ゲッ！こんな時にコイツが現れるのか！本当、ツイてない！
+msg	300153	Get the injured and those mechas out of here! This place is not going to hold any longer.	喂！赶紧带着伤员和这些机器人离开！这里恐怕也坚持不了多久了！	ほら！急いでケガ人を連れて、このロボットとここを離れて！ここはもう持たない！
+choice	I'll get you covered. Go now.	I'll defeat it.
+msg	300156	Wait! It can't be killed! Come back!	喂！等下！你是杀不死它的！给我回来！	おい！あんたじゃ倒せっこない！戻れ！

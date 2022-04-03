@@ -1,0 +1,65 @@
+#LANGUAGES	key	en	ch	ja
+speaker	Emesa
+bg	009/004_1280x720
+portraits	55
+emote	55	2
+msg	300157	Wow, I can't believe you won... That's impressive, you've blown away my expectations!	居然赢了…不错啊~你这家伙还是挺厉害的嘛！	まさか勝つとは……すごいじゃん！あんたって案外やるんだな！
+msg	300158	It looks like almost all the Honkai beasts in this area have been killed. We've nearly reached the frontlines!	这片区域的崩坏生物已经消灭的差不多了，马上就能到达前线了！	このエリアの崩壊生物は大体消滅させたかな……すぐ前線に向かえる！
+msg	300159	Huff...	呼…呼…	ふぅ……ふぅ……。
+portraits	55
+emote	55	2
+msg	300160	What's wrong? Are you exhausted already? I might have overestimated you~ Then you can take a break here, the wounded in front are still waiting for me!	怎么了？这样就累趴了么？看来刚才还是高看你了~那你就在这里歇会吧，前面的伤员还在等着我呢！	どうした？こんなのでバテちゃったのか？どうやら買い被りだったかな。じゃあ、あんたはここで休んでて。先、行くよっ！負傷者は待ってくれないからね！
+msg	300161	Roar!	吼吼吼！	ゴゴゴォ～！
+msg	300162	!?	！？	！？
+msg	300163	Bam!	碰！！	パン！！
+msg	300164	Oh...	唔……	うっ……。
+portraits	55
+emote	55	4
+msg	300165	This...! Why is this thing here!?	这个是！？为什么这样的家伙会在这里！	これは！どうしてこんなヤツがここ！？
+msg	300166	Roar!	吼吼吼！	ゴゴゴォ～！
+portraits	55
+emote	55	4
+msg	300167	Hey, get up! These monsters aren't the small fry from before. Don't just ☆☆ing die here!	喂！快站起来！！这可不是之前那些废物一个等级的怪物！别OO就这样死掉啊！	おいおい！早く立って！！さっきまでの雑魚レベルの敵じゃない！こんなところで死ぬな！！
+msg	300168	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
+msg	300169	Bang!!!	砰！！！	バーン！！！
+bg	009/029_1280x720
+speaker	Bronya
+msg	300170	Are you alright? Didn't I tell you to wait for me at the base?	你没事吧。不是让你在基地等着么？	大丈夫ですか？ブローニャは基地で待っているよう言ったはずですが。
+msg	300171	Get her out of here as soon as possible. I can handle it.	快带她离开，这里交给我。	早く彼女を連れて離れてください。ここはブローニャに任せてください。
+speaker	Emesa
+msg	300172	Wait, but what about you!?	可是！布洛妮娅你怎么办！？	でも！ブローニャはどうするんだよ！？
+msg	300173	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
+msg	300174	Bang!	砰！砰！	バーン！バーン！
+speaker	Bronya
+msg	300175	Don't worry about me. Hurry! This is an order!	别担心，快走！这是命令！	心配しないでください。早く！これは命令です！ 
+speaker	Emesa
+msg	300176	Understood. Be careful!	好吧，你自己小心！	分かった。気をつけるんだぞ！
+msg	300177	Hang in there! I'm taking you back to the base.	喂！振作一点！我带你回基地！	しっかりしろ！！今、基地に連れて帰る！耐えろ！
+msg	300178	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
+msg	300179	Buzz...	嗡————	キーン——
+bg	009/004_1280x720
+portraits	55
+emote	55	1
+msg	300180	How do you feel now?	喂！你怎么样了……	おい！気をしっかり持て……！
+bg	007/006_1280x720
+msg	300181	Wake up. Hey...	喂…醒醒……	起きろ……。
+msg	300182	Hey...	喂……	目を覚ましてくれ……。
+bg	009/011_1280x720
+msg	300183	What is this place?	这里是……	ここは……。
+msg	300184	It seems like déjà vu .	又回到了熟悉的光景中。	また見慣れた光景に戻ってきた。
+msg	300185	Maybe I'm already used to this place... It feels tranquil.	看来似乎已经习惯了这种状态，内心已经感受不到任何一丝起伏。	この状態に慣れてしまったみたい。異様なのに内心では何の起伏も起こらない。
+msg	300186	I'm separated with my previous memories. From an unknown start, I'm moving forward to an inevitable end.	之前的记忆仿佛被一刀闸断，从未知的起点开始，朝向必然的终点。	以前の記憶は寸断されてしまったように感じる。未知なる出発点から始まり、必然の終点に向かう。
+msg	300187	I have experienced the same event over and over again, like a video on repeat. But from the beginning to the end, I can't intervene, only watch.	如同不断回放的录影带一般反复经历着同一段故事，但是却始终以旁观者的角度无法介入。	繰り返し流している映像のように、同じ出来事を何度も経験している。でも最初から最後まで傍観者の立場で、介入することはできない。
+msg	300188	I've been pondering why I exist in this world, but my mind is too clouded to understand. Right now I can only do the simple things...	试图思考着存在于此的理由，但是脑袋却像卡带了一般昏昏沉沉，只能做出最简单的行为——	ここに存在している理由を考えようとしても、頭が固まっちゃったみたいに朦朧として、簡単なことしかできなくなってしまう——
+msg	300189	I'll continue to walk ahead.	前进。	進もう。
+msg	300190	Because I believe she will there at the end of the road.	因为我知道，在路途的尽头，她总会出现在那里。	道の終点に、彼女がそこに現れるって分かっているから。
+bg	009/022_1280x720
+msg	300192	Always the same facial expression, always the same posture.  It's as if it's carved into this meaningless world.	总是同样的表情，总是同样的姿势，仿佛被镌刻在了这无意义的世界中。	いつも同じような表情、いつも同じような姿勢。まるでこの意味のない世界に刻まれているかのように。
+msg	300193	Is she wandering in a world she doesn't know like me? We're both searching for an exit, waiting for someone to come save us.	她是否也和我一样迷失在不知名的世界中呢？徘徊寻找着出口，等待着谁来救赎。	彼女は私と同じように知らない世界で彷徨っているのかな？出口を探して彷徨い、誰かが助けに来るのを待っている。
+msg	300194	Hey... Can you tell me your name?	呐…请告诉我你的名字吧？	ねぇ……名前を教えてくれない？
+msg	300195	If we belong to the same space and time, we should be able to feel each other's body's warmth...	如果是相处在同一时空中的我们，应该能够感受到彼此的体温…	同じ時空にいる私たちなら、お互いの体温を感じられるはず……。
+msg	300197	I'm here. But where are you now?	我在这里…而你在何方呢？	私はここにいる……あなたはどこにいるの？
+msg	300198	Please take me to where you are...	请把我带向你所在的地方吧……	私を、あなたのいる場所に連れて行って……。
+msg	300199	Wake up!	快醒过来！	早く起きて！
+msg	300200	What...	呃…	えっ……。
+msg	300201	This voice...	这个声音是…	この声は……。

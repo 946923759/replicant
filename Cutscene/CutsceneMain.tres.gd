@@ -35,7 +35,7 @@ export(bool) var automatically_advance_text = false
 export(bool) var dim_the_background_if_standalone = true
 var message: Array
 
-var portraits:Array=[]
+onready var PORTRAITMAN:Control = $Portraits
 
 
 var lastMusic:AudioStreamPlayer
@@ -58,14 +58,14 @@ func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there'
 
 #This function will load backgrounds and music in advance.
 #It will also split the delimiter in advance.
-func preparse_string_array(arr,delimiter:String="|",msgColumn:int=1)->bool:
+func preparse_string_array(arr,delimiter:String="|")->bool:
 	var musicToLoad:Array=[]
 	var soundsToLoad:Array=[]
 	var backgrounds_to_load:Array=[]
 	message = []
 	#Should return false if delimiter is incorrect
 	for s in arr:
-		var splitString = s.split(delimiter) #,true,1
+		var splitString = s.split(delimiter,true) #,true,1
 		#This changes the command order, so it probably shouldn't be preprocessed right?
 		if splitString[0].begins_with('/'): #Chaosoup's idea, since typing two opcodes every time was getting obnoxious
 			message.push_back(['speaker',splitString[0].substr(1)])
@@ -81,6 +81,10 @@ func preparse_string_array(arr,delimiter:String="|",msgColumn:int=1)->bool:
 				#message.push_back([OPCODES.MUSIC,splitString[1]])
 				if !(splitString[1] in musicToLoad):
 					musicToLoad.append(splitString[1])
+			"speaker":
+				if splitString.size() < 2:
+					splitString=['speaker','']
+				#print(splitString)
 		message.push_back(splitString)
 					
 	for i in range(len(backgrounds_to_load)):
@@ -98,6 +102,7 @@ func preparse_string_array(arr,delimiter:String="|",msgColumn:int=1)->bool:
 			name=bgToLoad.replace("/","$"),
 			mouse_filter=2
 		})
+		#s.set_rect_size()
 		#if nightFilter:
 		#	s.material=nightShader
 		backgrounds.add_child(s)
@@ -114,20 +119,8 @@ func preparse_string_array(arr,delimiter:String="|",msgColumn:int=1)->bool:
 		$Music.add_child(s)
 	return true
 
-func get_portrait_from_sprite(spr):
-	for p in portraits:
-		if p.lastLoaded==spr:
-			return p
-	#printerr("Tried getting a portrait "+spr+" that doesn't exist")
-	return null
-	
-func get_portrait_at_idx(idx):
-	for p in portraits:
-		if p.idx==idx:
-			return p
-	return null
 
-
+var msgColumn:int=1
 var lastPortraitTable = {}
 var ChoiceTable:PoolStringArray = []
 var matchedNames = []
@@ -135,6 +128,7 @@ onready var tw = $TextboxTween
 func advance_text()->bool:
 	curPos+=1
 	var tmp_speaker = "NoSpeaker!!"
+	var tmp_tn = ""
 	while true:
 		if curPos >= message.size():
 			print("Fix your code, idiot. You already hit the end.")
@@ -144,23 +138,24 @@ func advance_text()->bool:
 		var curMessage = message[curPos]
 		
 		match curMessage[0]:
+			'tn':
+				if msgColumn < curMessage.size():
+					tmp_tn=curMessage[msgColumn]
 			'msg':
-				var tmp_txt = curMessage[1]
+				#Do it up here since /setDispChr command might override it.
+				text.visible_characters=0
+				
+				var tmp_txt = curMessage[msgColumn]
 				while tmp_txt.begins_with("/"):
 					if tmp_txt.begins_with("/hl["):
 						var cmd_end = tmp_txt.find("]", 4);
 						#print("end bracket "+String(cmd_end))
 						if cmd_end==-1:
 							printerr("Bad hl command!")
+							break
 						else:
 							var val = int(tmp_txt.substr(4,cmd_end-4))
-							for p in portraits:
-								if p.idx==val:
-									p.undim()
-									p.z_index = 0
-								elif p.is_active:
-									p.dim()
-									p.z_index = -1
+							PORTRAITMAN.hl_idx(val)
 							#print("Highlighting at idx "+String(val))
 							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 							#print(tmp_txt)
@@ -168,12 +163,10 @@ func advance_text()->bool:
 						var cmd_end = tmp_txt.find("]", 5);
 						if cmd_end==-1:
 							printerr("Bad dim command!")
+							break
 						else:
 							var val = int(tmp_txt.substr(4,cmd_end-4))
-							for p in portraits:
-								if p.idx==val:
-									p.dim()
-									break
+							PORTRAITMAN.dim_idx(val)
 							#print("Highlighting at idx "+String(val))
 							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 					elif tmp_txt.begins_with("/close"):
@@ -184,23 +177,32 @@ func advance_text()->bool:
 						openTextbox(tw,waitForAnim)
 						waitForAnim+=.3
 						tmp_txt=tmp_txt.substr(5,len(tmp_txt))
+					elif tmp_txt.begins_with('/setDispChr['):
+						var cmd_end = tmp_txt.find("]", 5);
+						if cmd_end!=-1:
+							#We have to subtract setDispChr characters
+							text.visible_characters=int(tmp_txt.substr(4,cmd_end-4))
+							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
+							print(tmp_txt.substr(text.visible_characters,len(tmp_txt)))
+							#print(val)
+						else:
+							break
 					else:
 						printerr("Unknown command used, giving up: "+tmp_txt)
 						break
 					
-				text.visible_characters=0
 				text.bbcode_text = tmp_txt
 				
 				if curPos < message.size()-1 and message[curPos+1][0]=='choice':
-					ChoiceTable=message[curPos+1][1]
+					ChoiceTable=push_back_from_idx_one([],message[curPos+1])
 				break #Stop processing opcodes and wait for user to click
 			#Compatibility opcode for Girls' Frontline
-			'msgboxTransition':
+			'msgbox_transition':
 				closeTextbox(tw)
 				openTextbox(tw,.3)
 				waitForAnim+=.6
-			'matchnames':
-				matchedNames=curMessage[1]
+			'match_names':
+				matchedNames=push_back_from_idx_one([],curMessage)
 			'speaker': 
 				
 				# I really didn't think this one through when I made /close and /open
@@ -210,13 +212,13 @@ func advance_text()->bool:
 					#tw.interpolate_property($SpeakerActor,"text","null",tmp_speaker,0,Tween.TRANS_LINEAR,Tween.EASE_IN,.3)
 				else:
 					speakerActor.text=curMessage[1]
-				tmp_speaker=curMessage[1]
+				tmp_speaker=curMessage[1] #Store it for text history
 				if len(matchedNames) > 1:
 					#print(matchedNames)
 					for i in range(len(matchedNames)):
 						if matchedNames[i]==curMessage[1]:
 							print("Matched portrait "+curMessage[1]+" at idx "+String(i))
-							for p in portraits:
+							for p in PORTRAITMAN.get_children():
 								if p.idx==i:
 									p.undim()
 									p.z_index = 0
@@ -228,12 +230,7 @@ func advance_text()->bool:
 					#print("Couldn't match "+curMessage[1]+ " in "+String(matchedNames))
 				#print(speakerActor.text)
 			'preload_portraits':
-				#TODO: Change to a portrait pooling class
-				#TODO: Do not preload until no portraits are shown
-				for i in range(len(portraits)):
-					if i < curMessage.size()-1:
-						portraits[i].set_texture_wrapper(curMessage[i+1])
-						print("Preloaded "+curMessage[i+1])
+				PORTRAITMAN.preload_portraits(curMessage)
 			'bg':
 				var actor = backgrounds.get_node(curMessage[1].replace("/","$"))
 				if !is_instance_valid(actor):
@@ -247,13 +244,13 @@ func advance_text()->bool:
 						if n!=lastBackground and n!=actor:
 							n.modulate.a=0
 					
-					if curMessage[2]=='fade':
+					if curMessage.size() > 2 and curMessage[2]=='fade':
 						if is_instance_valid(lastBackground):
 							VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
 						VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
 						actor.modulate.a=0
 						actor.showActor(.5)
-					elif curMessage[2]=='immediate':
+					elif curMessage.size() > 2 and curMessage[2]=='immediate':
 						actor.modulate.a=1
 						if is_instance_valid(lastBackground):
 							lastBackground.modulate.a=0
@@ -299,35 +296,9 @@ func advance_text()->bool:
 					lastPortraitTable[portrait[0]]=false
 					relation[portrait[0]]=[pos,pp[1],pp[2]] #[pos,isMasked,offset]
 					
-				#print(relation)
-				for name in relation:
-					var pStruct = relation[name]
-					#assert(self.portraits[name],"A portrait by the name of "..name.." does not exist, either you made a typo or you forgot to put it in LoadImages.");
-					if typeof(pStruct)==TYPE_ARRAY: #if found portrait
-						#Pos,isMasked,offset
-						#This is basically just a really stupid way of pooling
-						#If the sprite is already loaded just reuse it, otherwise
-						#Find an unused one and use that one
-						var lastUsed = get_portrait_from_sprite(name)
-						if lastUsed == null:
-							for p in portraits:
-								if p.is_active==false:
-									lastUsed = p
-									print(name)
-									p.set_texture_wrapper(name)
-									break
-						#print(lastUsed.lastLoaded)
-						#print(pStruct)
-						lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
-						print("Set portrait "+name)
-					else: #If null, portrait is not present anymore and should be hidden
-						#self.portraits[name].actor:playcommand("Stop")
-						var lastUsed = get_portrait_from_sprite(name)
-						if lastUsed != null:
-							print("Stopping sprite"+name)
-							get_portrait_from_sprite(name).stop()
+				PORTRAITMAN.update_portrait_positions_wip(relation,numPortraits)
 			'emote':
-				var lastUsed = get_portrait_from_sprite(curMessage[1])
+				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
 				if lastUsed != null:
 					lastUsed.cur_expression = int(curMessage[2])
 					lastUsed.update()
@@ -341,12 +312,12 @@ func advance_text()->bool:
 				pass
 			#OPCODES.JMP:
 			#	curPos+=curMessage[1]
-			'longjmp','condjmp_c':
+			'jmp','condjmp_c':
 				#if curMessage[0] == OPCODES.CONDJMP_CHOICE:
 				#	print("Processing CONDJUMP... cRes is "+String(choiceResult)+", jump if "+String(curMessage[2]))
 				#else:
 				#	print("processing LONGJUMP")
-				if curMessage[0] == 'longjmp' or curMessage[2]==choiceResult:
+				if curMessage[0] == 'jmp' or int(curMessage[2])==choiceResult:
 					#print(curMessage)
 					var jumped:bool=false
 					for i in range(curPos,message.size()):
@@ -377,12 +348,18 @@ func advance_text()->bool:
 			'stopmusic':
 				if is_instance_valid(lastMusic):
 					lastMusic.fade_music(float(curMessage[1]))
+			_:
+				printerr("Unknown opcode encountered: "+curMessage[0]+". It will be ignored and skipped.")
 		curPos+=1
 	
 	#WHAT COULD POSSIBLY GO WRONG
 	textHistory.push_back([tmp_speaker,text.text])
-	tw.interpolate_property(text,"visible_characters",0,text.text.length(),
-		1/TEXT_SPEED*text.text.length(),
+	$TN_Actor.visible=(tmp_tn!="")
+	if tmp_tn!="":
+		$TN_Actor/TranslationNote.text=tmp_tn
+		#print($TN_Actor/TranslationNote.has_focus())
+	tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+		1/TEXT_SPEED*(text.text.length()-text.visible_characters),
 		Tween.TRANS_LINEAR,
 		Tween.EASE_IN,
 		waitForAnim
@@ -434,11 +411,6 @@ func tween_out_history():
 func shitty_interpolate_label(s:String):
 	#print("Now I set speaker to"+s+"!!")
 	speakerActor.text=s
-
-func update_portrait_positions():
-	var SCREEN_CENTER_X = get_viewport().get_visible_rect().size.x/2
-	for n in $Portraits.get_children():
-		n.update_portrait_positions(float(SCREEN_CENTER_X))
 		
 func set_rect_size():
 	for child in $Backgrounds.get_children():
@@ -450,15 +422,7 @@ func _ready():
 	#text = $textActor_better
 	#text.visible_characters=0
 	#portraits=[$Portrait1,$Portrait2,$Portrait3,$Portrait4,$Portrait5]
-	var vnPortraithandler = load("res://Cutscene/VNPortraitHandler.gd")
-	for _i in range(5):
-		var p = Node2D.new()
-		p.set_script(vnPortraithandler)
-		p.modulate.a=0.0
-		#p.scale=Vector2(.75,.75) #We do it here instead of the whole node because scaling the whole node breaks positioning.
-		portraits.append(p)
-		$Portraits.add_child(p)
-	$Portraits.connect("resized",self,"update_portrait_positions")
+
 	#for p in portraits:
 	#	p.modulate.a=0.0
 	
@@ -496,7 +460,8 @@ func init_(message, parent, dim_background = true,_backgrounds=null,delim="|",ms
 # warning-ignore:return_value_discarded
 		t.parallel().append($dim,'color:a',.6,.5).from_current()
 	
-	preparse_string_array(message,delim,msgColumn)
+	self.msgColumn=msgColumn
+	preparse_string_array(message,delim)
 	
 	advance_text()
 	set_process(true)
@@ -504,7 +469,7 @@ func init_(message, parent, dim_background = true,_backgrounds=null,delim="|",ms
 func end_cutscene():
 	print("Hit the end. Now I will kill myself!")
 	set_process(false)
-	for p in portraits:
+	for p in PORTRAITMAN.portraits:
 		if p.is_active:
 			p.stop()
 	#https://github.com/godot-extended-libraries/godot-next/pull/50

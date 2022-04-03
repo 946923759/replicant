@@ -1,13 +1,13 @@
 #LANGUAGES	key	en	ch	ja
 preload_portraits	59	60
-matchnames	Seele	Bronya
+match_names	Seele	Bronya
 speaker	Seele
 bg	009/003_1280x720
-portrait	59
+portraits	59
 emote	59	2
 msg	300049	Sis, I'm home! I've successfully completed the mission!	姐姐大人~我回来了哟！任务顺利完成！	お姉ちゃん～ただいま！無事、任務終了したよ！
 speaker	Bronya
-portrait	59	60
+portraits	59	60
 emote	60	2
 msg	300050	Welcome home. Are you injured?	欢迎回家，没有受伤吧？	お帰りなさい。ケガはしていませんか？
 speaker	Seele
@@ -33,7 +33,8 @@ emote	59	2
 msg	300059	Oh, I'll introduce you~ This is my favorite sister!  Bronya Zaichik, the leader of the Resistance!  Hehehe~.	我给你介绍一下~这位是我最喜欢的姐姐大人！反抗军的领袖——布洛妮娅·扎伊切克！巴拉巴拉~	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。
 speaker	Bronya
 emote	60	2
-msg	300060	Call me Bronya. I'm not a leader. I'm just trying to survive like everyone else. (TN: The official English translation changed the meaning of the last sentence, but it sounds better so I kept it.)	叫我布洛妮娅就行了，我不是领袖，我只是和大家一起活下去而已。	ブローニャと呼んでください。それにブローニャはリーダーじゃありません。ただ、みんなと一緒に暮らしているだけです。
+tn	XXX	The official English translation changed the meaning of the last sentence, but it sounds better so I kept it.
+msg	300060	Call me Bronya. I'm not a leader. I'm just trying to survive like everyone else.	叫我布洛妮娅就行了，我不是领袖，我只是和大家一起活下去而已。	ブローニャと呼んでください。それにブローニャはリーダーじゃありません。ただ、みんなと一緒に暮らしているだけです。
 speaker	Seele
 msg	300061	My sister is really humble, but I love her!	姐姐大人真是谦虚呢~但是这样的姐姐大人希儿也好喜欢！	お姉ちゃんは本当に謙虚なんだから～でもゼーレはそんなお姉ちゃんが大好き！ 
 speaker	Bronya
@@ -62,7 +63,7 @@ emote	60	2
 msg	300072	Let's leave it at that for today. Seele will show you around the base. You must be tired after everything that has happened, so please rest well.	那么今天就到这里吧，接下来希儿会为你介绍一下基地的情况，经历了一路的奔波你一定也累了，回去好好休息吧。	では、今日はこの辺にしておきましょう。あとはゼーレが基地の状況を紹介します。色々なことがあって疲れたでしょうから、ゆっくり休んでください。
 speaker	Seele
 msg	300073	Then leave the rest to me. Follow me!	那么下面就交给我吧，跟我来~	じゃあ、あとは私に任せてね。ついて来て！
-portrait	59
+portraits	59
 msg	300074	This is the Anti-Honkai resistance base. Welcome home.	这里是人类反抗军的基地，欢迎回家。	あらためて、対崩壊レジスタンスの基地へようこそ！
 msg	300075	My name is Seele Vollerei. You can call me Seele.	我的名字叫做希儿·芙乐艾，叫我希儿就可以了。	私の名前はゼーレ・フェレライ、ゼーレって呼んでね。
 msg	300076	Starting from today, you're a member of the resistance.  Remember, each of us must work together to fight back against the Honkai.	从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	今日からあなたも私たちレジスタンスの一員よ。崩壊に対抗するためには、私たち一人ひとり力を合わせなくちゃいけないから覚えといてね。

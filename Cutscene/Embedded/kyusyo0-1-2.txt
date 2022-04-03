@@ -14,7 +14,7 @@ speaker	Teammate
 msg	300046	Captain, all the Honkai Beasts on the train have been eliminated. We're approaching the station.	队长，列车上的崩坏生物已经消灭完毕，已向车站发出入站申请。	隊長、列車の崩壊生物は消滅完了しました。駅に進入申請をしています。
 speaker	Seele
 msg	300047	Fufu, you want to know who we are? If so, will you come with me? From today you're a part of our family too!	哼，你想知道我们的身份么？那就跟我一起来吧，从现在开始你就是我们的家人了~	ふふ、私たちが何者か知りたい？だったら一緒に来てくれるかな？今日からあなたも私たちの家族だよ！
-msgboxTransition
+msgbox_transition
 bg	009/014_1280x720
 msg	300048	Welcome home. We're the resistance, the humans fighting for survival against the Honkai.	欢迎回家，我们是人类对崩坏反抗军——	私たちは対崩壊レジスタンス。よろしくね。
 

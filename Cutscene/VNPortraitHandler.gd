@@ -20,6 +20,7 @@ var mask2 = preload("res://Cutscene/maskBox2.png")
 
 var numberTex = preload("res://groove gauge 1x10.png")
 
+#TODO: PortraitManager tween is all we really need, right?
 var tween:Tween
 var blendAdd:Light2D
 #onready var tween = Tween.new()
@@ -68,15 +69,18 @@ func update_portrait_positions(center:float):
 	#print(SCREEN_CENTER_X)
 	portraitPositions = [
 		[SCREEN_CENTER_X],
-		[SCREEN_CENTER_X-250,SCREEN_CENTER_X+250], #separation of 200px
-		[SCREEN_CENTER_X-400,SCREEN_CENTER_X,SCREEN_CENTER_X+400],
-		[SCREEN_CENTER_X-450,SCREEN_CENTER_X-150,SCREEN_CENTER_X+150,SCREEN_CENTER_X+450]
+		[SCREEN_CENTER_X-250,SCREEN_CENTER_X+250], #separation of 500px
+		[SCREEN_CENTER_X-400,SCREEN_CENTER_X,SCREEN_CENTER_X+400], #400px...
+		[SCREEN_CENTER_X-450,SCREEN_CENTER_X-150,SCREEN_CENTER_X+150,SCREEN_CENTER_X+450], #300px...
+		[SCREEN_CENTER_X-600,SCREEN_CENTER_X-300,SCREEN_CENTER_X,SCREEN_CENTER_X+300,SCREEN_CENTER_X+600] #300px
 	]
 	
 	if is_active:
 		position.x=portraitPositions[numPortraits-1][idx]
 
+#
 func position_portrait(idx:int,isMasked:bool,_offset:int,numPortraits:int):
+	#return false
 	print("curPortrait is "+lastLoaded)
 	if _offset==null:
 		_offset=0
@@ -204,12 +208,12 @@ func set_texture_wrapper(sprName):
 	if sprName in Globals.database:
 		var toLoad = Globals.database[sprName]
 		print("Got textures to load... "+String(toLoad))
-		overdrive_set_texture(toLoad)
+		replicant_set_texture(toLoad)
 	else:
 		print(sprName+" not in portrait database! Falling back...")
-		overdrive_set_texture([sprName])
+		replicant_set_texture([sprName])
 
-func overdrive_set_texture(toLoad:Array):
+func replicant_set_texture(toLoad:Array):
 	portrait_textures = Array()
 	portrait_textures.resize(toLoad.size())
 	#imageTex=Array()
@@ -217,7 +221,7 @@ func overdrive_set_texture(toLoad:Array):
 	for i in range(toLoad.size()):
 		var sprName = toLoad[i]
 		if sprName.ends_with(".png"):
-			print("Hey moron, don't put .png in the portrait names!")
+			#print("Hey moron, don't put .png in the portrait names!")
 			sprName=sprName.rstrip(".png")
 		#set_texture(load("res://Cutscene/Portraits/"+sprName+".png"))
 		var f = File.new()
@@ -242,11 +246,11 @@ func overdrive_set_texture(toLoad:Array):
 
 				portrait_textures[i]=ImageTexture.new()
 				portrait_textures[i].create_from_image(image);
-				print(portrait_textures[i])
+				#print(portrait_textures[i])
 			else:
 				printerr("Portrait "+sprName+"not embedded in pck and no external file!!")
 		else:
 			printerr("Portrait "+sprName+" not embedded in pck and no external file!!")
 			
-	print(portrait_textures)
+	#print(portrait_textures)
 	update()

@@ -1,6 +1,7 @@
 #LANGUAGES	key	en	ch	ja
 speaker	Seele
 bg	009/021_1280x720
+se	DLC_CH00_EV05_MonsterDie
 msg	300040	Sorry, sorry~ I'm a little late. Are you hurt anywhere?	抱歉抱歉~稍微来迟了一会，你没有受伤吧？	ごめん、ごめん～ちょっと遅れちゃった。ケガしてない？
 msg	300041	Wow, not bad~ You killed those zombies so easily. You're surely someone worth training. (TN: More colorful language here plz)	嚯…干的不错嘛，居然能打倒这么多死士~看来是个值得培养的家伙呢。	わぁ……よくやったね。ゾンビをこんなに倒すなんて～育成のしがいがある子みたい！
 choice	You must be...	Who are you?
@@ -8,7 +9,7 @@ condjmp_c	c2dest	2
 msg	300044	Hmm~? Seems like you already recognize us. In that case, I'll make this quick!	嚯~看来你知道我们呢，既然这样的话解释起来就方便许多了~	ん～？私たちのことを知っているんだね。そういうことなら話が早いな！
 jmp	endChoices
 label	c2dest
-msg	300045	No, it's not "you guys". From today onwards, you're a member of "us".	不不不~不是“你们”，现在你已经成为了“我们”的一员了哦。	ううん「あなたたち」じゃないよ。今日からは「私たち」の一員だよ。
+msg	300045	No, it's not "who are you", you should be asking "who are we"? From today onwards you're one of us too.	不不不~不是“你们”，现在你已经成为了“我们”的一员了哦。	ううん「あなたたち」じゃないよ。今日からは「私たち」の一員だよ。
 label	endChoices
 speaker	Teammate
 msg	300046	Captain, all the Honkai Beasts on the train have been eliminated. We're approaching the station.	队长，列车上的崩坏生物已经消灭完毕，已向车站发出入站申请。	隊長、列車の崩壊生物は消滅完了しました。駅に進入申請をしています。
@@ -16,5 +17,6 @@ speaker	Seele
 msg	300047	Fufu, you want to know who we are? If so, will you come with me? From today you're a part of our family too!	哼，你想知道我们的身份么？那就跟我一起来吧，从现在开始你就是我们的家人了~	ふふ、私たちが何者か知りたい？だったら一緒に来てくれるかな？今日からあなたも私たちの家族だよ！
 msgbox_transition
 bg	009/014_1280x720
+se	DLC_CH00_EV06_TrainStopAtBase
 msg	300048	Welcome home. We're the resistance, the humans fighting for survival against the Honkai.	欢迎回家，我们是人类对崩坏反抗军——	私たちは対崩壊レジスタンス。よろしくね。
 

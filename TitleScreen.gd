@@ -6,7 +6,7 @@ onready var mSelObjs = $ScrollContainer2/VBoxContainer
 var biggestMissionNum:int=0
 
 var font = preload("res://ChapterListingFont.tres")
-var mSelObj = load("res://MSelObj.tscn")
+var MSelObj = load("res://MSelObj.tscn")
 
 func _ready():
 	var c = $ScrollContainer/VBoxContainer
@@ -26,7 +26,7 @@ func _ready():
 		c.add_child(n)
 	print(biggestMissionNum)
 	for i in range(biggestMissionNum):
-		var m = mSelObj.instance()
+		var m = MSelObj.instance()
 		mSelObjs.add_child(m)
 	for m in mSelObjs.get_children():
 		m.connect("button_pressed",self,"handle_btn_press")

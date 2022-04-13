@@ -81,6 +81,9 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 				#message.push_back([OPCODES.MUSIC,splitString[1]])
 				if !(splitString[1] in musicToLoad):
 					musicToLoad.append(splitString[1])
+			"se":
+				if !(splitString[1] in soundsToLoad):
+					soundsToLoad.append(splitString[1])
 			"speaker":
 				if splitString.size() < 2:
 					splitString=['speaker','']
@@ -90,7 +93,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	for i in range(len(backgrounds_to_load)):
 		var bgToLoad = backgrounds_to_load[i]
 		
-		var nightFilter = false
+		#var nightFilter = false
 		if "," in bgToLoad:
 			#nightFilter = bgToLoad.split(",")[1].to_lower()=="true"
 			bgToLoad = bgToLoad.split(",")[0]
@@ -117,6 +120,14 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			name=m.replace("/","$")
 		})
 		$Music.add_child(s)
+	for m in soundsToLoad:
+		#It still returns an smSound... The name is not very good
+		#The only difference is that sound effects load from the Sounds folder and don't loop
+		var s = Def.SoundEffect({
+			File=m,
+			name=m.replace("/","$")
+		})
+		$SoundEffects.add_child(s)
 	return true
 
 
@@ -213,21 +224,28 @@ func advance_text()->bool:
 				else:
 					speakerActor.text=curMessage[1]
 				tmp_speaker=curMessage[1] #Store it for text history
-				if len(matchedNames) > 1:
-					#print(matchedNames)
-					for i in range(len(matchedNames)):
-						if matchedNames[i]==curMessage[1]:
-							print("Matched portrait "+curMessage[1]+" at idx "+String(i))
-							for p in PORTRAITMAN.get_children():
-								if p.idx==i:
-									p.undim()
-									p.z_index = 0
-								elif p.is_active:
-									p.dim()
-									p.z_index = -1
-							break
+				if len(matchedNames) > 0:
+					if curMessage[1].strip_edges()=="" and matchedNames[len(matchedNames)-1]=="_DIM_ALL_WHEN_EMPTY":
+						for p in PORTRAITMAN.portraits:
+							if p.is_active:
+								p.dim()
+								p.z_index = -1
+					else:
+						#print(matchedNames)
+						for i in range(len(matchedNames)):
+							if matchedNames[i]==curMessage[1]:
+								print("Matched portrait "+curMessage[1]+" at idx "+String(i))
+								for p in PORTRAITMAN.portraits:
+									if p.idx==i:
+										p.undim()
+										p.z_index = 0
+									elif p.is_active:
+										p.dim()
+										p.z_index = -1
+								break
 						#print("|"+matchedNames[i]+"| != |"+curMessage[1]+"|")
-					#print("Couldn't match "+curMessage[1]+ " in "+String(matchedNames))
+					#if curMessage[1].strip_edges()!="":
+					#	print("Couldn't match "+curMessage[1]+ " in "+String(matchedNames))
 				#print(speakerActor.text)
 			'preload_portraits':
 				PORTRAITMAN.preload_portraits(curMessage)
@@ -345,6 +363,10 @@ func advance_text()->bool:
 					lastMusic=m
 				else:
 					printerr("FIX YOUR MUSIC NAMES!! DON'T USE SPECIAL CHARACTERS! "+curMessage[1])
+			'se':
+				var se = $SoundEffects.get_node_or_null(curMessage[1].replace("/","$"))
+				if se!=null:
+					se.play()
 			'stopmusic':
 				if is_instance_valid(lastMusic):
 					lastMusic.fade_music(float(curMessage[1]))
@@ -568,6 +590,8 @@ func end_cutscene_2():
 	emit_signal("cutscene_finished")
 	queue_free()
 
+func _on_SkipButton_pressed():
+	end_cutscene()
 
 func _on_dim_gui_input(event):
 	if isWaitingForChoice:

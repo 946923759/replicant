@@ -9,5 +9,6 @@ portraits	55
 emote	55	4
 msg	300152	Man, this one picked a real crappy time to appear! Honestly, I'm totally ☆☆'d.	啧！居然在这种时候出现这种家伙！真OO的倒霉！	ゲッ！こんな時にコイツが現れるのか！本当、ツイてない！
 msg	300153	Get the injured and those mechas out of here! This place is not going to hold any longer.	喂！赶紧带着伤员和这些机器人离开！这里恐怕也坚持不了多久了！	ほら！急いでケガ人を連れて、このロボットとここを離れて！ここはもう持たない！
-choice	I'll get you covered. Go now.	I'll defeat it.
+nop	choice_meta	300154	300155
+choice	I've got you covered, you go first.	I'll defeat it.
 msg	300156	Wait! It can't be killed! Come back!	喂！等下！你是杀不死它的！给我回来！	おい！あんたじゃ倒せっこない！戻れ！

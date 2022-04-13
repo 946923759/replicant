@@ -55,10 +55,22 @@ func _ready():
 				else:
 					chapter.parts=[]
 				chapterDatabase[lastChapter].append(chapter)
-				
 
 
+var wasFullscreen:bool = false
 
+func _input(_event):
+	if Input.is_action_just_pressed("Fullscreen"):
+		wasFullscreen=!wasFullscreen
+		set_fullscreen(wasFullscreen)
+
+func set_fullscreen(b):
+	if b:
+		OS.set_window_fullscreen(true)
+	else:
+		OS.set_window_fullscreen(false)
+		OS.window_size = gameResolution
+		OS.center_window()
 		
 func get_matching_files(path,fname):
 	#var files = []
@@ -73,7 +85,7 @@ func get_matching_files(path,fname):
 
 	while true:
 		var file = dir.get_next()
-		print(file)
+		#print(file)
 		if file == "":
 			dir.list_dir_end()
 			return null

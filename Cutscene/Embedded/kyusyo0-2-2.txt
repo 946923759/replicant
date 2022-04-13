@@ -23,6 +23,7 @@ msg	300094	Under the gray sky and in this cold air, the earth is glistened by th
 msg	300095	Why and how did I get here?	我为什么会在这里，又是如何来到这里的……	私、どうしてここにいるの。どうやってここに来たの……。
 msg	300096	I can't remember.	已经记不起来了。	思い出せない。
 msg	XXX	But there's a strange impulse inside me,	但是，总有一种奇妙的冲动在驱使着我。	でも、なんだか奇妙な衝動が私を駆り立てている。
+se	DLC_CH00_EV07_FootStepAway
 tn	XXX	For the official English translation they opted to combine the two sentences, CN/JP are separated (no comma). I think the English way is better though.
 msg	XXX	/setDispChr[40]But there's a strange impulse inside me, driving me in no particular direction.	向着不知道在何处的目标前行——	どこを目指しているのか分からない——
 msg	300099	I can't tell how long it's been, but the view in front of me is becoming clearer and clearer.	不知道过了多久，眼前的景色也越来越清晰。	どれだけ経ったのかも分からないけど、目の前の景色はますますはっきりしてきた。

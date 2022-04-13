@@ -18,7 +18,7 @@ var cache: Array = []	# Holds dictionaries (see below for details)
 		}
 """
 
-#No need to run portraits, we can just store the pointers to the portrait nodes
+#No need to run get_children(), we can just store the pointers to the portrait nodes
 #here. And we don't want that one tween anyways.
 var portraits:Array
 
@@ -123,7 +123,7 @@ func update_positions():
 	#VNPortrait doesn't need to know the position but it needs to know its own idx
 	#And PORTRAITMAN also needs to know how many active portraits there are,
 	#VNPortrait shouldn't need to know
-	for p in get_child_count():
+	for p in portraits:
 		if p.is_active:
 			p.update_portrait_positions(get_viewport().get_visible_rect().size.x/2)
 		

@@ -12,7 +12,8 @@ func _ready():
 		buttons.get_child(i).connect("pressed",self,"buttonTrigger",[i])
 #	setNumParts2(["Test 1","Test 2","Test 3","test1.txt","test2.txt","test3.txt"])
 
-func setNumParts(partDestinations:Array):
+func setNumParts(partDestinations_:Array):
+	self.partDestinations=partDestinations_
 	var length = partDestinations.size()
 	for i in range(buttons.get_child_count()):
 		var button = buttons.get_child(i)
@@ -21,7 +22,6 @@ func setNumParts(partDestinations:Array):
 			button.get_child(0).text="Part "+String(i+1)
 		else:
 			button.visible=false
-	self.partDestinations=partDestinations
 
 #Not necessary right now
 func setNumParts2(partNamesAndDestinations:Array):

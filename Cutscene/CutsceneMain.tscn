@@ -235,5 +235,6 @@ __meta__ = {
 }
 
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
+[connection signal="pressed" from="SkipButton" to="." method="_on_SkipButton_pressed"]
 [connection signal="mouse_entered" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_entered"]
 [connection signal="mouse_exited" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_exited"]

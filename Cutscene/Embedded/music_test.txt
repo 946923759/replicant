@@ -13,4 +13,7 @@ msg	This sentence stops...
 msg	/setDispChr[22]This sentence stops... And resumes on the same textbox!
 portraits	58	59	60	61	67
 emote	58	1
-msg	Replicant supports up to 5 portraits at the same time.
+stopmusic	2
+/Kyushou	Replicant supports up to 5 portraits at the same time.
+se	DLC_CH00_EV01_TrainStop
+msg	Sound effect test.

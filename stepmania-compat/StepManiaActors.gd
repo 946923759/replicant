@@ -42,9 +42,20 @@ static func Sprite(d)->smSprite:
 
 static func Sound(d)->smSound:
 	var s = smSound.new()
+
 	for property in d:
 		if property=="File":
 			s.load_song(d[property],false)
+		else:
+			s.set(property,d[property])
+	return s
+
+static func SoundEffect(d)->smSound:
+	var s = smSound.new()
+
+	for property in d:
+		if property=="File":
+			s.load_sound(d[property])
 		else:
 			s.set(property,d[property])
 	return s

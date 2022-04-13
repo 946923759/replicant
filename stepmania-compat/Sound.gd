@@ -23,13 +23,24 @@ func load_song(custom_music_name:String,autoplay=true):
 			self.volume_db=0.0
 	else:
 		print("Warning: No music found for "+custom_music_name)
+
+func load_sound(custom_music_name:String):
+	var music = get_custom_sound(custom_music_name) if custom_music_name != "" else null
+	if music != null:
+		print("Attempting to load "+music)
+		if music.ends_with(".import"):
+			self.stream = load(music.replace('.import', ''))
+		else:
+			self.stream = ExternalAudio.loadfile(music,false)
+	else:
+		print("Warning: No sound effect found for "+custom_music_name)
 		
 
 func fade_music(time:float=3.0):
 	if time <=0:
 		stop_music()
 	else:
-		t.interpolate_property(self,"volume_db",null,-60,time)
+		t.interpolate_property(self,"volume_db",null,-35,time)
 		t.start()
 		
 func stop_music():
@@ -42,3 +53,8 @@ func get_custom_music(fname):
 	if !OS.has_feature("standalone") or OS.has_feature("console"):
 		return Globals.get_matching_files("res://Music/CDAudio/",fname)
 	return Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/CustomMusic/",fname)
+
+func get_custom_sound(fname):
+	if !OS.has_feature("standalone") or OS.has_feature("console"):
+		return Globals.get_matching_files("res://Sounds/",fname)
+	return Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/Sounds/",fname)

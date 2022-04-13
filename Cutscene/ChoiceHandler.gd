@@ -40,7 +40,7 @@ func _init():
 			rect_position=Vector2(-SCREEN_CENTER.x,-25*SCALE),
 			name="Font"
 		}))
-		t.rect_position=Vector2(SCREEN_CENTER.x,SCREEN_CENTER.y+i*spacing-(MAX_NUM_CHOICES-1)*spacing/2)
+		t.rect_position=Vector2(SCREEN_CENTER.x,SCREEN_CENTER.y+i*spacing-(MAX_NUM_CHOICES-1)*spacing/2.0)
 		add_child(t)
 	#self.visible=false
 func _ready():
@@ -64,7 +64,7 @@ func setChoices(choices:PoolStringArray,default_selection:int=0):
 			c.visible=true
 		else:
 			c.visible=false
-		c.rect_position=Vector2(SCREEN_CENTER.x,SCREEN_CENTER.y+i*spacing-(currentChoiceSize-1)*spacing/2)
+		c.rect_position=Vector2(SCREEN_CENTER.x,SCREEN_CENTER.y+i*spacing-(currentChoiceSize-1)*spacing/2.0)
 	#shaders, being.. well.. shaders, work based on the 'true' resolution of the game
 	#So if you have a 720p window and a 1080p game, they don't work
 	#What this means is that we have to recalculate everything... Because what the heck
@@ -89,10 +89,10 @@ func input_down():
 		selection+=1
 		update_selections()
 
-func input_cursor(pos:Vector2,clicked:bool=false)->bool:
+func input_cursor(pos:Vector2,_clicked:bool=false)->bool:
 	for i in range(currentChoiceSize):
 		var c = get_child(i)
-		if pos.y > c.rect_position.y-spacing/2 and pos.y < c.rect_position.y + spacing/2:
+		if pos.y > c.rect_position.y-spacing/2.0 and pos.y < c.rect_position.y + spacing/2.0:
 			selection=i
 			update_selections()
 			return true

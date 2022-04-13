@@ -1,0 +1,41 @@
+#LANGUAGES	KEY	EN	CH	JP
+speaker	
+bg	009/002_1280x720
+msg	300121	Boom!	轰！！	ゴォン！！
+se	DLC_CH00_EV09_WarningAlertWhileDream
+/Loudspeaker	300122	“Warning! The base is under attack. Engaging Red Alert!”	「警报！警报！基地遭到攻击，进入一级警备！进入一级警备！」	「警報！警報！基地が攻撃を受けました。1級警戒レベル！1級警戒レベル！」
+/ 	300123	What's happening?	呃！发生了什么事？	え！何が起きたの？
+msg	300124	Oh...	唔…	うぅ……。
+speaker	Bronya
+portraits	60
+emote	60	3
+msg	300125	Attention! All units must fight back and stop them from coming in!	各单位注意！立即进行反击！一定要阻止它们进入！	各ユニット注意！直ちに反撃！彼らの進入を必ず阻止してください！
+speaker	
+se	DLC_CH00_EV10_ExplosionWithCrowdScream
+msg	300126	Boom!	轰！！！	ゴォン！！！
+tn		I have no idea what this is saying, the English translation is saying something about a crowd? That doesn't seem correct?
+msg	300127	A powerful explosion from outside rocks the subway, accompanied by deafening screams.	从地面外传来强烈的爆炸，伴随着嘈杂激烈的呼喊声，震动着整个地下车站。	地面から強烈な爆発が伝わってくる。壮絶な叫び声が地下鉄全体を震わしている。
+speaker	Bronya
+bg	009/014_1280x720
+msg	300128	Seele, gather the first squad and come with me. The construction site at the entrance might have been breached. We have to prevent the Honkai beasts from causing any more damage at all costs.	希儿，带着第一小队的人和我来，入口的工事可能被冲突了，必须立即阻挡崩坏生物。	ゼーレ、第1小隊の人を連れて一緒に来てください。入口の工事場所が破られるかもしれません。何としても崩壊生物を防がなければ。
+speaker	Seele
+portraits	59	60
+emote	59	3
+msg	300129	Understood!	了解！	了解！
+choice	I'm coming with you! ## 我也一起去！ ## 私も一緒に行く！	Is there anything I can help? ## 我能帮上什么忙么？ ## 私にも何か手伝える？
+speaker	Bronya
+tn	literal is "(...) experience, you'd only lose your life"
+msg	300132	Stay here. Fighting Honkai beasts requires training. Entering the battlefield without any experience is practically suicide.	你留在这里。与崩坏生物战斗需要经过训练才行，让没有经验的人上战场只会送死。	あなたはここに残ってください。崩壊生物との戦闘には訓練が必要です。経験のない人が戦場に立っても死ぬだけです。
+speaker	Seele
+msg	300133	Don't worry about us, we've fought hundreds of battles! We can handle this situation in no time. Let's go, Bronya~!	安心啦~我们可是身经百战了！这样的情况是家常便饭啦~我们走吧！姐姐大人~	安心して～！私たちは百戦錬磨なんだから！こんな状況も朝飯前だよ！行こう、お姉ちゃん！
+speaker	Bronya
+emote	59	1
+msg	300134	Alright. Remember, never leave the base. I'll protect you.	嗯，记住，绝对不要离开基地。我会保护你的。	はい！いいですか、絶対に基地を離れてはいけません。私が守ります。
+speaker	
+portraits	
+msg	300135	...	……	……。
+se	DLC_CH00_EV10_ExplosionWithCrowdScream
+msg	300136	Boom!	轰！！！	ゴオン！！！
+msg	300137	“Report! The frontier is overwhelmed! All squads to the frontier now!”	「警报！警报！前沿防线遭到突破！各小队即刻前往支援！」	「警報！警報！前線防衛ラインが突破されました！各小隊は今すぐ支援に向かってください！」
+se	DLC_CH00_EV10_ExplosionWithCrowdScream
+msg	300138	Boom!	轰！！！	ゴオン！！！

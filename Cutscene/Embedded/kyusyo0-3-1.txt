@@ -14,5 +14,5 @@ msg	300145	The onslaught from the Honkai beasts is too intense! The road ahead i
 msg	300146	Which mechas? Of course the healing mecha of Homei! Don't just stand there, go and kill the enemies ahead!	你问什么机器人？废话！当然是吼美医疗机器人了！你是傻子么！快帮我一起把前面的敌人干掉！	何のロボットかって？何、言ってるんだ！ホミ医療ロボットに決まってるじゃん！バカ言ってないで早く前方の敵を倒すのを手伝って！
 msg	300147	God damn it! I won't let my family die here! I'm going to tear those Honkai bastards apart!	可恶！绝对不会再让家人死在这种地方！就让你们这些崩坏垃圾！都OO地给我变成OO吧！	チキショウ！家族をこんな場所で死なせてたまるもんか！崩壊のゴミどもめ！
 tn	300148	Chinese says "I'm going go beat you ☆☆ back into your mother's womb"
-msg	300148	Go to hell, you ☆☆!! I'm going to beat the ☆☆ out of you and make you wish you'd never been born! \n	去死吧OO！！看我把你的OO打回娘胎去！	死ね！！あの世に送り返してやる！
+msg	300148	Go to hell, you ☆☆!! I'm going to beat the ☆☆ out of you and make you wish you'd never been born!	去死吧OO！！看我把你的OO打回娘胎去！	死ね！！あの世に送り返してやる！
 msg	300149	Hey, c'mon! What are you doing just standing there? Start moving and protect the healing mechas!	喂！你还傻愣着干嘛呢！赶紧给我动起来啦！保护这些机器人进行医疗作业！快！	ちょっと！何、ボケッと突っ立ってんの！早く動け！このロボットたちの医療作業を守ってくれ！早く！

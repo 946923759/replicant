@@ -1,4 +1,6 @@
-#LANGUAGES	KEY	EN	CH	JP
+#LANGUAGES	key	en	ch	jp
+preload_portraits	59	60
+match_names	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	
 bg	009/002_1280x720
 msg	300121	Boom!	轰！！	ゴォン！！
@@ -13,11 +15,13 @@ msg	300125	Attention! All units must fight back and stop them from coming in!	�
 speaker	
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
 msg	300126	Boom!	轰！！！	ゴォン！！！
+shake_camera
 tn		I have no idea what this is saying, the English translation is saying something about a crowd? That doesn't seem correct?
 msg	300127	A powerful explosion from outside rocks the subway, accompanied by deafening screams.	从地面外传来强烈的爆炸，伴随着嘈杂激烈的呼喊声，震动着整个地下车站。	地面から強烈な爆発が伝わってくる。壮絶な叫び声が地下鉄全体を震わしている。
 speaker	Bronya
 bg	009/014_1280x720
 msg	300128	Seele, gather the first squad and come with me. The construction site at the entrance might have been breached. We have to prevent the Honkai beasts from causing any more damage at all costs.	希儿，带着第一小队的人和我来，入口的工事可能被冲突了，必须立即阻挡崩坏生物。	ゼーレ、第1小隊の人を連れて一緒に来てください。入口の工事場所が破られるかもしれません。何としても崩壊生物を防がなければ。
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
 portraits	59	60
 emote	59	3
@@ -35,7 +39,9 @@ speaker
 portraits	
 msg	300135	...	……	……。
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
+shake_camera
 msg	300136	Boom!	轰！！！	ゴオン！！！
 msg	300137	“Report! The frontier is overwhelmed! All squads to the frontier now!”	「警报！警报！前沿防线遭到突破！各小队即刻前往支援！」	「警報！警報！前線防衛ラインが突破されました！各小隊は今すぐ支援に向かってください！」
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
+shake_camera	1
 msg	300138	Boom!	轰！！！	ゴオン！！！

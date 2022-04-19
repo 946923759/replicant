@@ -17,3 +17,8 @@ stopmusic	2
 /Kyushou	Replicant supports up to 5 portraits at the same time.
 se	DLC_CH00_EV01_TrainStop
 msg	Sound effect test.
+bg	009/003_1280x720
+/CameraShake	Show bg!
+shake_camera
+msg	Shake camera!
+

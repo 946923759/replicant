@@ -14,7 +14,8 @@ onready var TEXT_SPEED: float = max(50,1)
 var parent_node
 
 #const nightShader = preload("res://ParticleEffects/NightShader.tres")
-var backgrounds:Control
+#We assign in _ready() in case something wants to supply its own backgrounds
+onready var backgrounds:Control = $Backgrounds
 var lastBackground:smSprite
 enum BG_TWEEN {
 	DEFAULT,
@@ -250,41 +251,8 @@ func advance_text()->bool:
 			'preload_portraits':
 				PORTRAITMAN.preload_portraits(curMessage)
 			'bg':
-				var actor = backgrounds.get_node(curMessage[1].replace("/","$"))
-				if !is_instance_valid(actor):
-					printerr(curMessage[1]+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
-				else:
-					print(actor)
-					
-					#Shitty way of handling transitions
-					#If it works don't fix it... or something
-					for n in backgrounds.get_children():
-						if n!=lastBackground and n!=actor:
-							n.modulate.a=0
-					
-					if curMessage.size() > 2 and curMessage[2]=='fade':
-						if is_instance_valid(lastBackground):
-							VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
-						VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
-						actor.modulate.a=0
-						actor.showActor(.5)
-					elif curMessage.size() > 2 and curMessage[2]=='immediate':
-						actor.modulate.a=1
-						if is_instance_valid(lastBackground):
-							lastBackground.modulate.a=0
-					else:
-						if is_instance_valid(lastBackground):
-							#bgFadeLayer
-							pass
-							lastBackground.hideActor(.5)
-							actor.showActor(.5,.5)
-							if waitForAnim<.3:
-								waitForAnim+=.5
-						else:
-							#print("ShowActor!")
-							actor.showActor(.5)
-						#print("unknown bg tween? "+String(curMessage[2]))
-					lastBackground=actor
+				var transition:String = curMessage[2].to_lower() if curMessage.size() > 2 else ""
+				backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
 			'portraits':
 				#Badly translated lua code
 				#Duplicate curMessage while skipping the 0th element
@@ -370,6 +338,9 @@ func advance_text()->bool:
 			'stopmusic':
 				if is_instance_valid(lastMusic):
 					lastMusic.fade_music(float(curMessage[1]))
+			"shake_camera":
+				var howMuch:float = float(curMessage[1]) if len(curMessage) > 1 else 3.0
+				backgrounds.shakeCamera(howMuch)
 			_:
 				printerr("Unknown opcode encountered: "+curMessage[0]+". It will be ignored and skipped.")
 		curPos+=1
@@ -465,14 +436,9 @@ func _ready():
 
 
 
-func init_(message, parent, dim_background = true,_backgrounds=null,delim="|",msgColumn:int=1):
+func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
 	if parent:
 		parent_node = parent
-		
-	if _backgrounds:
-		backgrounds=_backgrounds
-	else:
-		backgrounds = $Backgrounds
 	$dim.color.a=0
 	textboxSpr.rect_scale.y=0
 	var t := TweenSequence.new(get_tree())

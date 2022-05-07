@@ -1,5 +1,37 @@
 extends Node
 
+var OPTIONS = {
+	"AudioVolume":{
+		"type":"int",
+		"choices":[10,20,30,40,50,60,70,80,90,100], #this isn't used at all lol
+		"default":100
+	},
+	"SFXVolume":{
+		"type":"int",
+		"choices":[10,20,30,40,50,60,70,80,90,100],
+		"default":100
+	},
+	#"VoiceVolume":{
+	#	"type":"int",
+	#	"choices":[10,20,30,40,50,60,70,80,90,100],
+	#	"default":90
+	#},
+	"isFullscreen":{
+		"type":"bool",
+		"default":false
+	},
+	"language":{
+		"type":"list",
+		"choices":["en","es","kr","ja","zh"],
+		"default":"en"
+	},
+	"TextSpeed":{
+		"type":"int",
+		"choices":[10,20,30,40,50,60,70,80,90,100],
+		"default":80
+	},
+}
+
 # The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
 # if we're using the "cutscene from file" scene
 var nextCutscene:String="cutscene1Data.txt"
@@ -15,6 +47,59 @@ class Chapter:
 
 var chapterDatabase = {}
 var database = {}
+
+#SAVE DATA
+func get_save_directory(fName:String)->String:
+	match OS.get_name():
+		"Windows","X11","macOS":
+			if OS.has_feature("standalone"):
+				return OS.get_executable_path().get_base_dir()+"/"+fName+".json"
+	#If not compiled or if the platform doesn't allow writing to the game's current directory
+	return "user://"+fName+".json"
+
+var playerHadSystemData:bool=false
+var playerData={
+	"avatarsUnlocked":[0],
+	"CGunlock":[0],
+	"musicUnlock":["none"]
+}
+func load_system_data()->bool:
+	var save_game = File.new()
+	if not save_game.file_exists(get_save_directory('systemData')):
+		for option in OPTIONS:
+			OPTIONS[option]['value'] = OPTIONS[option]['default']
+		return false
+	else:
+		save_game.open(get_save_directory('systemData'), File.READ)
+		var dataToLoad=parse_json(save_game.get_as_text())
+		#TODO: what if an option gets removed?
+		for option in OPTIONS:
+			if option in dataToLoad['options']:
+				OPTIONS[option]['value'] = dataToLoad['options'][option]
+			else:
+				OPTIONS[option]['value'] = OPTIONS[option]['default']
+		playerData=dataToLoad['playerData']
+		save_game.close()
+		print("System save data loaded.")
+		return true
+		
+func save_system_data()->bool:
+	var save_game = File.new()
+	var ok = save_game.open(get_save_directory('systemData'),File.WRITE)
+	if ok != OK:
+		printerr("Warning: could not create file for writing! ERROR ", ok)
+		return false
+	var dataToSave = {
+		"options":{},
+		"playerdata":playerData
+	}
+	for option in OPTIONS:
+		dataToSave['options'][option]=OPTIONS[option]['value']
+	save_game.store_line(to_json(dataToSave))
+	save_game.close()
+	print("Saved to "+get_save_directory('systemData'))
+	return true
+
 func _ready():
 	gameResolution = get_viewport().get_visible_rect().size
 # warning-ignore:narrowing_conversion

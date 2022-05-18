@@ -10,6 +10,7 @@ var MSelObj = load("res://MSelObj.tscn")
 
 func _ready():
 	var c = $ScrollContainer/VBoxContainer
+	c.get_child(0).visible=false
 	for chapterName in database.keys():
 		biggestMissionNum=max(database[chapterName].size(),biggestMissionNum)
 		#var chapter:Globals.Chapter = database[chapterName]
@@ -32,6 +33,8 @@ func _ready():
 		m.connect("button_pressed",self,"handle_btn_press")
 		#m.connect("wtf",self,'test2')
 	biggestMissionNum=mSelObjs.get_child_count() #We're never adding any more so it's fine
+	
+	set_new_mission_listing(database.keys()[0])
 	#mSelObjs.queue_sort()
 
 func handle_chapter_click(event:InputEvent,internalName:String):
@@ -44,6 +47,7 @@ func set_new_mission_listing(chapterName:String):
 	var chLength = chapter.size()
 	#print(chapter)
 	var t:Tween = $Tween
+	t.stop_all()
 	for i in range(biggestMissionNum):
 		var mSelObj = mSelObjs.get_child(i)
 		if i < chLength:
@@ -52,8 +56,9 @@ func set_new_mission_listing(chapterName:String):
 			mSelObj.desc.text=chapter[i].desc
 			mSelObj.setNumParts(chapter[i].parts)
 			#mSelObj.rect_position.x = i*500
-			t.interpolate_property(mSelObj,"rect_position:x",i*500,0,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.1)
-			t.interpolate_property(mSelObj,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.1)
+			mSelObj.modulate.a=0.0
+			t.interpolate_property(mSelObj,"rect_position:x",500,0,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.2)
+			t.interpolate_property(mSelObj,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.2)
 		else:
 			mSelObj.visible=false
 	t.start()

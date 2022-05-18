@@ -15,10 +15,11 @@ const Def = preload("res://stepmania-compat/StepManiaActors.gd")
 #	return q
 
 func get_cutscene_path()->String:
-	match OS.get_name():
-		"Windows","X11","macOS":
-			if OS.has_feature("standalone"):
-				return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
+	if not OS.has_feature("console"):
+		match OS.get_name():
+			"Windows","X11","macOS":
+				if OS.has_feature("standalone"):
+					return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
 	#If not compiled or if the platform doesn't allow writing to the game's current directory
 	return "res://Cutscene/Embedded/"
 	
@@ -44,6 +45,8 @@ func load_cutscene_data(name:String)->Dictionary:
 		path=name
 	else:
 		path = get_cutscene_path()+name
+		if OS.is_debug_build():
+			print("Got path "+path)
 	var ok = f.open(path, File.READ)
 	if ok != OK:
 		printerr("Warning: could not open "+name+" for reading! ERROR ", ok)

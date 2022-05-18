@@ -1,0 +1,11 @@
+#LANGUAGES	en
+bg	009/002_1280x720
+msg	This is a choice test. Select a choice.
+choice	Choice 1	Choice 2
+condjmp_c	c2dest	2
+msg	You selected choice 1.
+jmp	end_choices
+label	c2dest
+msg	You selected choice 2.
+label	end_choices
+msg	End of choice branch.

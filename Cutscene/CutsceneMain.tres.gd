@@ -577,3 +577,11 @@ func _on_dim_gui_input(event):
 		event is InputEventScreenTouch and event.is_pressed()
 	):
 		manualTriggerForward=true
+
+
+#func _on_Choices_mouse_selected_choice(selection):
+#	choiceResult=selection
+#	$Choices.visible=false
+#	ChoiceTable=[]
+#	advance_text()
+#	isWaitingForChoice=false

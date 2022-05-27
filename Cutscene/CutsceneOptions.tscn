@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Cutscene/CutsceneOptions.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=2]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Ext/other_329.png" type="Texture" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -13,3 +17,172 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+volume_db = -2.0
+bus = "SFX"
+
+[node name="test_aaaaaa" type="GridContainer" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActorMultiVertex" type="Polygon2D" parent="test_aaaaaa"]
+color = Color( 0, 0, 0, 0.713726 )
+polygon = PoolVector2Array( 0, 0, 1500, 0, 1250, 125, 0, 125 )
+
+[node name="Label" type="Label" parent="test_aaaaaa"]
+margin_right = 800.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 800, 0 )
+mouse_filter = 0
+custom_fonts/font = ExtResource( 5 )
+text = "Test option"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesNo" type="Control" parent="test_aaaaaa"]
+margin_left = 804.0
+margin_right = 1254.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 450, 0 )
+
+[node name="Label2" type="Label" parent="test_aaaaaa/YesNo"]
+margin_right = 163.0
+margin_bottom = 116.0
+mouse_filter = 0
+custom_fonts/font = ExtResource( 3 )
+text = "YES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="test_aaaaaa/YesNo"]
+margin_left = 300.0
+margin_right = 434.0
+margin_bottom = 235.0
+mouse_filter = 0
+custom_fonts/font = ExtResource( 3 )
+text = "NO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="test_aaaaaa"]
+margin_top = 107.0
+margin_right = 800.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 800, 0 )
+mouse_filter = 0
+custom_fonts/font = ExtResource( 5 )
+text = "Test option"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesNo2" type="Control" parent="test_aaaaaa"]
+margin_left = 804.0
+margin_top = 107.0
+margin_right = 1254.0
+margin_bottom = 210.0
+
+[node name="100" type="Label" parent="test_aaaaaa/YesNo2"]
+anchor_bottom = 1.126
+margin_left = 50.0
+margin_right = 370.0
+margin_bottom = 0.0219955
+rect_min_size = Vector2( 450, 0 )
+mouse_filter = 0
+custom_fonts/font = ExtResource( 3 )
+text = "English"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="test_aaaaaa/YesNo2"]
+margin_left = -61.0902
+margin_right = 2.90986
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="test_aaaaaa/YesNo2"]
+margin_left = 479.09
+margin_right = 543.095
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DescrptionF" type="Control" parent="."]
+anchor_top = 0.907
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.439941
+margin_bottom = -52.0
+rect_min_size = Vector2( 0, 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="DescrptionF"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.784314 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="DescrptionF"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1920, 0 )
+custom_fonts/font = ExtResource( 4 )
+text = "Resume reading."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 40.0
+margin_right = 641.0
+margin_bottom = 116.0
+custom_fonts/font = ExtResource( 3 )
+text = "Options Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0, 0.27451, 1, 1 )
+offset = Vector2( 0, 120 )
+polygon = PoolVector2Array( 0, 0, 1800, 0, 1800, 5, 0, 5 )
+vertex_colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 0.324
+margin_left = 11.2246
+margin_top = 193.063
+margin_right = -1868.78
+margin_bottom = -116.857
+color = Color( 1, 0, 0, 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="TweenForArrows" type="Tween" parent="."]
+
+[connection signal="tween_completed" from="TweenForArrows" to="." method="_on_TweenForArrows_tween_completed"]

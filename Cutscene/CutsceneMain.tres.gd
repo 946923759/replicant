@@ -118,7 +118,8 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		#print("m "+m)
 		var s = Def.Sound({
 			File=m,
-			name=m.replace("/","$")
+			name=m.replace("/","$"),
+			bus="Music"
 		})
 		$Music.add_child(s)
 	for m in soundsToLoad:
@@ -126,7 +127,8 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		#The only difference is that sound effects load from the Sounds folder and don't loop
 		var s = Def.SoundEffect({
 			File=m,
-			name=m.replace("/","$")
+			name=m.replace("/","$"),
+			bus="SFX"
 		})
 		$SoundEffects.add_child(s)
 	return true

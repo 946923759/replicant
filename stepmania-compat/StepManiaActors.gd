@@ -52,7 +52,7 @@ static func Sound(d)->smSound:
 
 static func SoundEffect(d)->smSound:
 	var s = smSound.new()
-
+	#s.bus="SFX"
 	for property in d:
 		if property=="File":
 			s.load_sound(d[property])

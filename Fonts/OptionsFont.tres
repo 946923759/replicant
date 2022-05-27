@@ -1,0 +1,9 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=1]
+
+[resource]
+size = 75
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+font_data = ExtResource( 1 )

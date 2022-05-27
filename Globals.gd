@@ -3,33 +3,36 @@ extends Node
 var OPTIONS = {
 	"AudioVolume":{
 		"type":"int",
-		"choices":[10,20,30,40,50,60,70,80,90,100], #this isn't used at all lol
+		#"choices":[10,20,30,40,50,60,70,80,90,100], #this isn't used at all lol
 		"default":100
 	},
 	"SFXVolume":{
 		"type":"int",
-		"choices":[10,20,30,40,50,60,70,80,90,100],
+		#"choices":[10,20,30,40,50,60,70,80,90,100],
 		"default":100
 	},
-	#"VoiceVolume":{
-	#	"type":"int",
-	#	"choices":[10,20,30,40,50,60,70,80,90,100],
-	#	"default":90
-	#},
 	"isFullscreen":{
 		"type":"bool",
-		"default":false
+		"default":false,
+		pc_only=true
 	},
 	"language":{
 		"type":"list",
 		"choices":["en","es","kr","ja","zh"],
+		"localizeKey":"Language",
 		"default":"en"
 	},
-	"TextSpeed":{
-		"type":"int",
+	"textSpeed":{
+		"type":"list",
 		"choices":[10,20,30,40,50,60,70,80,90,100],
+		"localizeKey":"TextSpeed",
 		"default":80
 	},
+	#No need to save this
+	#"autoRead":{
+	#	"type":"bool",
+	#	"default":false
+	#}
 }
 
 # The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
@@ -140,6 +143,7 @@ func _ready():
 				else:
 					chapter.parts=[]
 				chapterDatabase[lastChapter].append(chapter)
+	load_system_data()
 
 
 var wasFullscreen:bool = false
@@ -156,7 +160,28 @@ func set_fullscreen(b):
 		OS.set_window_fullscreen(false)
 		OS.window_size = gameResolution
 		OS.center_window()
-		
+
+func set_audio_levels():
+	# Audio starts at -60db (silent) and ends at 0db (max).
+	# So the 0~100 volume is scaled to 0~80 then subtracted by 80 to
+	# determine what to put the volume level at.
+	
+	var audios = {
+		#The number corresponds to the position in default_bus_layout
+		2:Globals.OPTIONS['AudioVolume']['value'],
+		1:Globals.OPTIONS['SFXVolume']['value'],
+		#3:Globals.OPTIONS['VoiceVolume']['value']
+	}
+	for d in audios:
+		var realVolumeLevel = audios[d]*.3-30
+		#print(realVolumeLevel)
+		if realVolumeLevel == -30:
+			#instead of setting it to -80 just mute the bus to free up CPU
+			AudioServer.set_bus_mute(d,true);
+		else:
+			AudioServer.set_bus_volume_db(d,realVolumeLevel)
+			AudioServer.set_bus_mute(d,false)
+
 func get_matching_files(path,fname):
 	#var files = []
 	var dir = Directory.new()

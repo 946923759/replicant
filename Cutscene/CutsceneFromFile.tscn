@@ -4,18 +4,10 @@
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=2]
 [ext_resource path="res://Cutscene/CutsceneFromFile.tres.gd" type="Script" id=3]
 
-[node name="Node2D" type="Control"]
+[node name="CutsceneFromFile" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

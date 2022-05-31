@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Cutscene/CutsceneOptions.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=2]
@@ -6,8 +6,10 @@
 [ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Ext/other_329.png" type="Texture" id=6]
+[ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=7]
+[ext_resource path="res://Ext/cubeThing.png" type="Texture" id=8]
 
-[node name="Control" type="Control"]
+[node name="OptionsScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -15,9 +17,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TEST" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0, 0, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = -2.0
+volume_db = -3.0
 bus = "SFX"
 
 [node name="test_aaaaaa" type="GridContainer" parent="."]
@@ -46,9 +57,8 @@ __meta__ = {
 
 [node name="YesNo" type="Control" parent="test_aaaaaa"]
 margin_left = 804.0
-margin_right = 1254.0
+margin_right = 804.0
 margin_bottom = 103.0
-rect_min_size = Vector2( 450, 0 )
 
 [node name="Label2" type="Label" parent="test_aaaaaa/YesNo"]
 margin_right = 163.0
@@ -71,7 +81,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="test_aaaaaa"]
+[node name="test option" type="Label" parent="test_aaaaaa"]
 margin_top = 107.0
 margin_right = 800.0
 margin_bottom = 210.0
@@ -86,7 +96,7 @@ __meta__ = {
 [node name="YesNo2" type="Control" parent="test_aaaaaa"]
 margin_left = 804.0
 margin_top = 107.0
-margin_right = 1254.0
+margin_right = 804.0
 margin_bottom = 210.0
 
 [node name="100" type="Label" parent="test_aaaaaa/YesNo2"]
@@ -131,6 +141,7 @@ anchor_bottom = 1.0
 margin_top = 0.439941
 margin_bottom = -52.0
 rect_min_size = Vector2( 0, 48 )
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -138,6 +149,7 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="DescrptionF"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 color = Color( 0, 0, 0, 0.784314 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -146,11 +158,24 @@ __meta__ = {
 [node name="Description" type="Label" parent="DescrptionF"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_min_size = Vector2( 1920, 0 )
+margin_left = 25.0
+margin_right = -25.0
+margin_bottom = -6.10352e-05
+rect_min_size = Vector2( 1870, 0 )
 custom_fonts/font = ExtResource( 4 )
 text = "Resume reading."
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="smSprite" type="TextureRect" parent="DescrptionF"]
+margin_right = 120.0
+margin_bottom = 125.0
+rect_scale = Vector2( 1, 0.4 )
+texture = ExtResource( 8 )
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -171,18 +196,16 @@ offset = Vector2( 0, 120 )
 polygon = PoolVector2Array( 0, 0, 1800, 0, 1800, 5, 0, 5 )
 vertex_colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ScreenOut" type="ColorRect" parent="."]
 visible = false
 anchor_right = 1.0
-anchor_bottom = 0.324
-margin_left = 11.2246
-margin_top = 193.063
-margin_right = -1868.78
-margin_bottom = -116.857
-color = Color( 1, 0, 0, 1 )
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Tween" type="Tween" parent="."]
 
-[node name="TweenForArrows" type="Tween" parent="."]
-
-[connection signal="tween_completed" from="TweenForArrows" to="." method="_on_TweenForArrows_tween_completed"]
+[node name="ArrowTween" type="Tween" parent="."]

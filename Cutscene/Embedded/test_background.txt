@@ -1,0 +1,8 @@
+preload_portraits	58	
+music	Vague Hope Cold Rain No Vocals
+nop	portraits	58
+bg	009/022_1280x720	immediate
+tn	This is a translation note. You can see it by hovering your mouse over the TN button.
+/ 	This is a background.
+msg	/closeThere is no text background! Woah!
+msg	/openTest.

@@ -8,6 +8,9 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0):
 		printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
 	else:
 		print(actor)
+		#print(get_child_count())
+		#print(actor.rect_position)
+		#print(actor.rect_size)
 		
 		#Shitty way of handling transitions
 		#If it works don't fix it... or something

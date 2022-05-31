@@ -49,7 +49,7 @@ func _getDictionary(path:String)->Dictionary:
 func SetLanguage(lang:String)->bool:
 	translation=_getDictionary(GetLanguageDir()+"en.ini")
 	currentLanguage=lang
-	print("Loaded base translation. There are "+String(translation.size())+" categories.")
+	print("[TranslationMgr] Loaded base translation. There are "+String(translation.size())+" categories.")
 	#print(translation)
 	#print(GetString("TitleScreen","PLAY_INTRO"))
 	#English is the base language, other languages are
@@ -67,30 +67,30 @@ func SetLanguage(lang:String)->bool:
 			for k in newTranslation[category].keys():
 				translation[category][k]=newTranslation[category][k]
 				#translation[category][k]=config.get_value()
-	print("Loaded "+lang+" translation.")
-	print(GetString("TitleScreen","START_GAME"))
-	match lang:
-		"en":
-			font=load("res://MM2Font.tres")
-			currentLanguageType=LanguageType.ASCII
-		"es":
-			font=load("res://FallbackPixelFont.tres")
-			currentLanguageType=LanguageType.ACCENTED
-		_:
-			font=load("res://ubuntu-font-family/JP_KR_font.tres")
-			currentLanguageType=LanguageType.NON_LATIN
+	print("[TranslationMgr] Loaded "+lang+" translation.")
+	print("[TranslationMgr] "+GetString("Common","WindowTitle"))
+#	match lang:
+#		"en":
+#			font=load("res://MM2Font.tres")
+#			currentLanguageType=LanguageType.ASCII
+#		"es":
+#			font=load("res://FallbackPixelFont.tres")
+#			currentLanguageType=LanguageType.ACCENTED
+#		_:
+#			font=load("res://ubuntu-font-family/JP_KR_font.tres")
+#			currentLanguageType=LanguageType.NON_LATIN
 	
 	return true
 
 func GetString(category:String,key:String,warn:bool=true)->String:
-	return key #stub
+	#return key #stub
 	
 # warning-ignore:unreachable_code
 	if translation.size()==0:
-		push_error("There is no translation loaded...")
+		push_error("[TranslationMgr] There is no translation loaded...")
 		return key
 	elif translation.has(category) and translation[category].has(key):
 		return translation[category][key]
 	if warn:
-		push_warning("There is no translation for ["+category+"] "+key)
+		push_warning("[TranslationMgr] There is no translation for ["+category+"] "+key)
 	return key

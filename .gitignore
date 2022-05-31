@@ -2,6 +2,7 @@ Music/CDAudio/*
 Sounds/*
 Backgrounds/*
 Portraits/*
+Fonts/*
 
 # Godot-specific ignores
 .import/

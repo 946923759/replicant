@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Control
 
 """
 This one file is CC-BY-NC-SA 4.0 instead of GPLv3
@@ -103,6 +103,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			modulate=c,
 			Texture=bgToLoad,
 			cover=true,
+			#rect_size=Vector2(1920,1080),
 			name=bgToLoad.replace("/","$"),
 			mouse_filter=2
 		})
@@ -412,6 +413,10 @@ func set_rect_size():
 		child.set_rect_size()
 
 func _ready():
+	$OptionsScreen.visible=false
+	$Choices.visible=false
+	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
+	#$OptionsScreen.connect("options_closed",self,"_on_options_closed")
 	print("Text speed is "+String(TEXT_SPEED))
 	set_process(false)
 	#text = $textActor_better
@@ -485,14 +490,24 @@ func end_cutscene():
 var manualTriggerForward=false
 
 var isHistoryBeingShown=false
+var isOptionsScreenOpen=false
 var isWaitingForChoice=false
+
+
+#limit skip speed
+var frameLimiter:float=0.0
 
 func _process(delta):
 	
-	if isHistoryBeingShown:
+	if isHistoryBeingShown or isOptionsScreenOpen:
 		return
 	if Input.is_action_just_pressed("ui_pause"):
 		end_cutscene()
+	elif Input.is_action_just_pressed("ui_cancel"):
+		$OptionsScreen.visible=true
+		$OptionsScreen.OnCommand()
+		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
+		isOptionsScreenOpen=true
 	elif Input.is_action_just_pressed("DebugButton1"):
 		get_tree().reload_current_scene()
 	
@@ -505,10 +520,22 @@ func _process(delta):
 			choiceResult=$Choices.selection+1
 			$Choices.visible=false
 			ChoiceTable=[]
-			advance_text()
+			text.visible_characters=0
+			#advance_text()
 			isWaitingForChoice=false
 			#$Choices.input
 		return
+	
+	if Input.is_action_pressed("vn_skip") and isWaitingForChoice==false:
+		frameLimiter+=delta
+		if frameLimiter > .1 and curPos < message.size():
+			advance_text()
+			tw.stop_all()
+			textboxSpr.rect_scale.y=1
+			speakerActor.rect_scale.y=1
+			speakerActor.modulate.a=1
+			text.visible_characters = text.text.length()
+			frameLimiter=0
 	
 	var forward = Input.is_action_just_pressed("ui_select") or manualTriggerForward
 	if text.visible_characters >= text.text.length():
@@ -535,6 +562,8 @@ func _process(delta):
 	manualTriggerForward=false
 	
 #Fucking piece of shit game engine
+#Refer to https://docs.godotengine.org/en/stable/tutorials/scripting/overridable_functions.html?highlight=_unhandled_input#overridable-functions
+#or https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-unhandled-input
 func _unhandled_input(event):
 	if isWaitingForChoice:
 		return
@@ -548,6 +577,16 @@ func _unhandled_input(event):
 			tween_in_history()
 			historyActor.set_history(textHistory)
 		isHistoryBeingShown=!isHistoryBeingShown
+		
+func _input(event):
+	if isHistoryBeingShown or isOptionsScreenOpen:
+		return
+	elif event is InputEventMouseButton and event.button_index==2:
+		$OptionsScreen.visible=true
+		$OptionsScreen.OnCommand()
+		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
+		isOptionsScreenOpen=true
+		get_tree().set_input_as_handled()
 
 signal cutscene_finished()
 func end_cutscene_2():
@@ -587,3 +626,9 @@ func _on_dim_gui_input(event):
 #	ChoiceTable=[]
 #	advance_text()
 #	isWaitingForChoice=false
+
+
+func _on_OptionsScreen_options_closed():
+	#print("User closed options")
+	isOptionsScreenOpen=false
+	$OptionsScreen.visible=false

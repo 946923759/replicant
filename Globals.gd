@@ -28,6 +28,22 @@ var OPTIONS = {
 		"localizeKey":"TextSpeed",
 		"default":80
 	},
+	"textStyle":{
+		"type":"list",
+		"choices":["Serif","Sans Serif"],
+		"default":"Sans Serif"
+	},
+	"skipMode":{
+		"type":"list",
+		"choices":[false,true],
+		"localizeKey":"SkipModes",
+		"default":false
+	},
+	"testOption":{
+		"type":"list",
+		"choices":["LOOOOONG STRING","Short String","a","b"],
+		"default":"a"
+	}
 	#No need to save this
 	#"autoRead":{
 	#	"type":"bool",
@@ -143,7 +159,12 @@ func _ready():
 				else:
 					chapter.parts=[]
 				chapterDatabase[lastChapter].append(chapter)
-	load_system_data()
+	playerHadSystemData = load_system_data()
+	if playerHadSystemData:
+		set_audio_levels()
+		INITrans.SetLanguage(Globals.OPTIONS["language"]['value'])
+	else:
+		INITrans.SetLanguage(Globals.OPTIONS["language"]['default'])
 
 
 var wasFullscreen:bool = false

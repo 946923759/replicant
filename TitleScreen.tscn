@@ -5,7 +5,21 @@
 [ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://MSelObj.tscn" type="PackedScene" id=4]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="Animation" id=1]
+resource_name = "New Anim"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FadeOut:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -15,10 +29,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/New Anim" = SubResource( 1 )
+
 [node name="Tween" type="Tween" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-material = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
@@ -114,3 +130,5 @@ color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

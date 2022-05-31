@@ -44,12 +44,13 @@ func _init():
 			name="Quad"
 		}))
 		t.get_child(0).material=choiceShader
+		#print(SCREEN_RESOLUTION.x)
 		t.add_child(Def.LoadFont(font,{
 			mouse_filter=Control.MOUSE_FILTER_IGNORE,
 			text="Choice "+String(i+1),
 			align=1,
 			valign=1,
-			min_size=Vector2(0,50*SCALE),
+			min_size=Vector2(SCREEN_RESOLUTION.x,50*SCALE),
 			#rect_size=Vector2(0,50*SCALE), #WHY DOES IT WORK IF IT'S ZERO AAODIJOWJIROHR*#JIO3
 			#anchor_left=.5,
 			anchor_right=1.0,
@@ -79,11 +80,14 @@ func setChoices(choices:PoolStringArray,default_selection:int=0):
 		var c = get_child(i)
 		if i < currentChoiceSize:
 			c.get_child(1).text=choices[i]
+			#print(c.get_child(1).rect_size)
 			maxWidth = max(maxWidth,font.get_string_size(choices[i]).x)
 			c.visible=true
+			c.get_child(1).rect_size.x=SCREEN_RESOLUTION.x
 		else:
 			c.visible=false
 		c.rect_position=Vector2(0,SCREEN_CENTER.y+i*spacing-(currentChoiceSize-1)*spacing/2.0)
+		#print(c.rect_position)
 	update_shader(maxWidth)
 	selection=default_selection
 	update_selections()

@@ -64,12 +64,15 @@ func set_new_mission_listing(chapterName:String):
 	t.start()
 
 func handle_btn_press(vnPlayerDest:String):
-	#print("lol")
+	print("Handling destination...")
 	Globals.nextCutscene=vnPlayerDest+".txt"
 	$FadeOut.visible=true
-	$Tween.interpolate_property($FadeOut,"color:a",0,1,.5)
-	$Tween.start()
-	yield($Tween,"tween_all_completed")
-	get_tree().change_scene("res://Cutscene/CutsceneFromFile.tscn")
+	print("Tweening....")
+	$AnimationPlayer.play("New Anim")
 	#print("lol")
 	
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	print("Changing scene!")
+	get_tree().change_scene("res://Cutscene/CutsceneFromFile.tscn")

@@ -9,7 +9,7 @@ var OPTIONS = {
 	"SFXVolume":{
 		"type":"int",
 		#"choices":[10,20,30,40,50,60,70,80,90,100],
-		"default":100
+		"default":80
 	},
 	"isFullscreen":{
 		"type":"bool",
@@ -22,6 +22,9 @@ var OPTIONS = {
 		"localizeKey":"Language",
 		"default":"en"
 	},
+	#TODO: Making this a list was a very bad idea because
+	#the engine doesn't know if it's an int or a list, if
+	#we know it's an int we can at least force it
 	"textSpeed":{
 		"type":"list",
 		"choices":[10,20,30,40,50,60,70,80,90,100],
@@ -50,23 +53,87 @@ var OPTIONS = {
 	#	"default":false
 	#}
 }
-
-# The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
-# if we're using the "cutscene from file" scene
-var nextCutscene:String="cutscene1Data.txt"
 var gameResolution:Vector2
 var SCREEN_CENTER:Vector2
 var SCREEN_CENTER_X:int
 var SCREEN_CENTER_Y:int
 
-class Chapter:
+class Episode:
+	#There is no easy way to get the parent without iterating through the
+	#whole dict so put it here too
+	var parentChapter:String
 	var title:String
 	var desc:String
 	var parts:Array
 
+"""
+Typed dict support when?
+The structure of chapterDatabase is:
+	
+chapterDatabase = {
+	"Chapter0":[
+		Episode,
+		Episode,
+		Episode
+	],
+	"Chapter1":[
+		Episode,
+		...
+	]
+}
+"""
 var chapterDatabase = {}
 var database = {}
 
+# The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
+# if we're using the "cutscene from file" scene
+var nextCutscene:String="cutscene1Data.txt"
+#This is optional, but if it's present the options screen
+#will display the current chapter and description.
+var currentEpisodeData:Episode
+
+func get_next_cutscene(curEpisode:Episode,curPart:String):
+	if curEpisode==null:
+		print("No episode!! No next part to load...")
+		return ["",null]
+	
+	var nextEpisode:Episode
+	var nextPart:String=""
+	var parts = curEpisode.parts
+	for i in range(parts.size()):
+		if parts[i]+".txt"==curPart:
+			if i+1<parts.size():
+				nextPart=parts[i+1]
+				print("[Globals] Got new part in same episode: "+nextPart)
+			else:
+				print("Hit end of episode? "+String(i)+"/"+String(parts.size()))
+			break
+		else:
+			print(parts[i]+"!="+curPart)
+	if nextPart!="":
+		return [nextPart+".txt",curEpisode]
+	else:
+		var episodes = chapterDatabase[curEpisode.parentChapter]
+		for i in range(episodes.size()):
+			if episodes[i].title==curEpisode.title:
+				if i+1<episodes.size():
+					nextEpisode=episodes[i+1]
+					nextPart=nextEpisode.parts[0]
+					print("[Globals] Found next episode in chapter: "+nextEpisode.title)
+					return [nextPart+'.txt',nextEpisode]
+				break
+		
+		var k = chapterDatabase.keys()
+		for i in range(k.size()):
+			if k[i]==curEpisode.parentChapter:
+				if i+1<k.size():
+					var next:Episode = chapterDatabase[k[i+1]][0]
+					print("[Globals] Seem to hit the end of this chapter, returning next chapter "+next.parentChapter)
+					return [next.parts[0]+".txt",next]
+				else:
+					print("[Globals] Hit the end of all the episodes, returning to main menu.")
+					return ["",null]
+		
 #SAVE DATA
 func get_save_directory(fName:String)->String:
 	match OS.get_name():
@@ -94,10 +161,15 @@ func load_system_data()->bool:
 		#TODO: what if an option gets removed?
 		for option in OPTIONS:
 			if option in dataToLoad['options']:
-				OPTIONS[option]['value'] = dataToLoad['options'][option]
+				if OPTIONS[option]['type']=="int":
+					OPTIONS[option]['value'] = int(dataToLoad['options'][option])
+				else:
+					OPTIONS[option]['value'] = dataToLoad['options'][option]
 			else:
 				OPTIONS[option]['value'] = OPTIONS[option]['default']
-		playerData=dataToLoad['playerData']
+		#Hack because json forces float type
+		OPTIONS['textSpeed']['value']=int(OPTIONS['textSpeed']['value'])
+		#playerData=dataToLoad['playerData']
 		save_game.close()
 		print("System save data loaded.")
 		return true
@@ -141,6 +213,7 @@ func _ready():
 		printerr("failed to open chapter database! And now everything will break...")
 	else:
 		var lastChapter = "No Grouping!!"
+		var i = 0
 		while !f.eof_reached():
 			var line:String = f.get_line().strip_edges()
 			if line.begins_with("--"):
@@ -148,17 +221,18 @@ func _ready():
 				chapterDatabase[lastChapter]=[]
 			elif !line.empty():
 				var keys = line.split("\t",true)
-				var chapter = Chapter.new()
-				chapter.title=keys[0]
+				var episode = Episode.new()
+				episode.title=keys[0]
 				if keys.size() > 1:
-					chapter.desc=keys[1]
+					episode.desc=keys[1]
 				else:
-					chapter.desc=""
+					episode.desc=""
 				if keys.size() > 2:
-					chapter.parts=keys[2].split(",",true)
+					episode.parts=keys[2].split(",",true)
 				else:
-					chapter.parts=[]
-				chapterDatabase[lastChapter].append(chapter)
+					episode.parts=[]
+				episode.parentChapter=lastChapter
+				chapterDatabase[lastChapter].append(episode)
 	playerHadSystemData = load_system_data()
 	if playerHadSystemData:
 		set_audio_levels()

@@ -117,11 +117,14 @@ __meta__ = {
 }
 
 [node name="TextureButton" parent="HBoxContainer" instance=ExtResource( 7 )]
+hint_tooltip = ""
 
 [node name="TextureButton2" parent="HBoxContainer" instance=ExtResource( 7 )]
 margin_left = 545.0
 margin_right = 732.0
+hint_tooltip = ""
 
 [node name="TextureButton3" parent="HBoxContainer" instance=ExtResource( 7 )]
 margin_left = 736.0
 margin_right = 923.0
+hint_tooltip = ""

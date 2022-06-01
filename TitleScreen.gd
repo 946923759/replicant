@@ -52,9 +52,10 @@ func set_new_mission_listing(chapterName:String):
 		var mSelObj = mSelObjs.get_child(i)
 		if i < chLength:
 			mSelObj.visible=true
-			mSelObj.title.text=chapter[i].title
-			mSelObj.desc.text=chapter[i].desc
-			mSelObj.setNumParts(chapter[i].parts)
+			mSelObj.setEpisode(chapter[i])
+#			mSelObj.title.text=chapter[i].title
+#			mSelObj.desc.text=chapter[i].desc
+#			mSelObj.setNumParts(chapter[i].parts)
 			#mSelObj.rect_position.x = i*500
 			mSelObj.modulate.a=0.0
 			t.interpolate_property(mSelObj,"rect_position:x",500,0,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.2)
@@ -63,9 +64,10 @@ func set_new_mission_listing(chapterName:String):
 			mSelObj.visible=false
 	t.start()
 
-func handle_btn_press(vnPlayerDest:String):
+func handle_btn_press(vnPlayerDest:String,episodeDest:Globals.Episode):
 	print("Handling destination...")
 	Globals.nextCutscene=vnPlayerDest+".txt"
+	Globals.currentEpisodeData=episodeDest
 	$FadeOut.visible=true
 	print("Tweening....")
 	$AnimationPlayer.play("New Anim")

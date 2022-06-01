@@ -141,8 +141,15 @@ func _on_CutscenePlayer_cutscene_finished():
 	pass # Replace with function body.
 
 func end_cutscene_2():
-	if "next" in cutsceneData:
-		Globals.nextCutscene=cutsceneData['next']
+	var tmp = Globals.get_next_cutscene(Globals.currentEpisodeData,Globals.nextCutscene)
+	var nextPart = tmp[0]
+	var nextEpisode = tmp[1]
+	
+	if nextPart!="":
+		print("Got new part "+nextPart+", with episode "+nextEpisode.title)
+		Globals.nextCutscene=nextPart
+		Globals.currentEpisodeData=nextEpisode
 		get_tree().reload_current_scene()
 	else:
+		print("Didn't get a next part, returning to main menu.")
 		get_tree().change_scene("res://TitleScreen.tscn")

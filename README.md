@@ -7,6 +7,7 @@ A standalone VN engine written for Guns Girl Z and (soon) Girls' Frontline. Curr
 - Load database from GGZ or GFL
 - Load music internally or externally
 - Multilanguage messages
+- Supports mouse and touchscreen, keyboard is WIP but mostly works
 
 ## Project Structure
 Backgrounds: Dumped game backgrounds, matches game structure
@@ -16,6 +17,9 @@ Portraits: Dumped game portraits, matches game structure
 Ext: Dumped game files that are required
 
 stepmania-compat: Wrappers that make nodes slightly closer to how Actors work in StepMania
+
+## Syntax
+Unfortunately syntax is not standard yet.
 
 ## License
 

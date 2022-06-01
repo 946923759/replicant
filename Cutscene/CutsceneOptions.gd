@@ -33,18 +33,26 @@ func action_chapterSelect():
 	t.start()
 	#t.connect("tween_completed",self,"screenOut2")
 	yield(t,"tween_completed")
+	
+	if anyOptionWasChanged:
+		Globals.save_system_data()
+		anyOptionWasChanged=false
 	get_tree().change_scene("res://TitleScreen.tscn")
 #func screenOut2():
 #	get_tree().change_scene("res://TitleScreen.tscn")
 func action_continue():
 	OffCommand()
 func action_skip():
+	
+	if anyOptionWasChanged:
+		Globals.save_system_data()
+		anyOptionWasChanged=false
 	#Godot parent checking isn't really that good so just hard code it
 	var root = get_tree().get_root().has_node("CutsceneFromFile")
 	if root:
 		t.interpolate_property($ScreenOut,"color:a",null,1.0,.5)
 		t.start()
-		get_tree().get_root().get_node("CutsceneFromFile").end_cutscene()
+		get_tree().get_root().get_node("CutsceneFromFile")._on_CutscenePlayer_cutscene_finished()
 	else:
 		print("No cutscene player found... Assuming that this is debugging")
 	#get_parent().end_cutscene()
@@ -60,6 +68,8 @@ var subMenuSelection:int=0
 var isSubMenu:bool=false
 var optionsFrame:Control #created on _init()
 var systemOptionsSubmenu:Control
+
+var anyOptionWasChanged:bool=false
 
 
 onready var arrowTween = $ArrowTween
@@ -274,7 +284,7 @@ func generateMenu(optFrameActor:Control,optionsDict:Dictionary,arrowAnimation:An
 		
 		optFrameActor.add_child(optionItem)
 		#optionsList.append(option)
-	print("[OptionsScreen] Created new menu with "+String(i)+" options")
+	print("[OptionsMenu] Created new menu with "+String(i)+" options")
 	#return optFrameActor
 
 func _init():
@@ -338,6 +348,31 @@ func _init():
 	
 onready var t = $Tween
 func _ready():
+	if Globals.currentEpisodeData != null:
+		var e = Globals.currentEpisodeData
+		var heading:String = e.parentChapter
+		#var epNum:int = 99
+		#var partNum:int=99
+		
+		var episodes = Globals.chapterDatabase[e.parentChapter]
+		for i in range(episodes.size()):
+			if episodes[i].title==e.title:
+				heading+="-"+String(i+1)
+				if episodes[i].parts.size()>1:
+					for j in range(episodes[i].parts.size()):
+						if episodes[i].parts[j]==Globals.nextCutscene:
+							heading+="-"+String(j+1)
+							break
+				break
+		heading+=": "+e.title
+		$EpisodeDisplay/Header.text=heading
+		$EpisodeDisplay/Description.text=e.desc
+	elif OS.is_debug_build():
+		$EpisodeDisplay/Header.text="[DEBUG] No chapter set"
+		$EpisodeDisplay/Description.text=""
+	else:
+		$EpisodeDisplay.visible=false
+	
 	updateTranslation()
 	OnCommand()
 	self.connect("resized",self,"update_desc_size")
@@ -373,6 +408,9 @@ func OnCommand():
 	pass
 	#updateFocus()
 func OffCommand():
+	if anyOptionWasChanged:
+		Globals.save_system_data()
+		anyOptionWasChanged=false
 	#t.stop_all()
 	t.interpolate_property(self,"modulate:a",null,0.0,.5)
 	var n = optionsFrame.get_child_count()
@@ -402,6 +440,7 @@ func anim_option_value(optNode:Control,going_right:bool):
 	arrowTween.start()
 	
 func handle_option(optNode:Control,going_right:bool=true):
+	anyOptionWasChanged=true
 	var option:String=optNode.get_meta("opt_name")
 	match optNode.get_meta("opt_type"):
 		"bool":
@@ -412,7 +451,8 @@ func handle_option(optNode:Control,going_right:bool=true):
 				Globals.set_fullscreen(going_right)
 			print("[OptionsScreen] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
 		"int":
-			var val = Globals.OPTIONS[option]['value']
+			var val:int = int(Globals.OPTIONS[option]['value'])
+			print("got value "+String(val))
 			if going_right:
 				if val < 100:
 					val+=10
@@ -434,6 +474,11 @@ func handle_option(optNode:Control,going_right:bool=true):
 		"list":
 			var val = Globals.OPTIONS[option]['value']
 			var idx = Globals.OPTIONS[option]['choices'].find(val,0)
+			#print("[OptionsMenu] found value at idx "+String(idx))
+			if idx==-1:
+				print("[OptionsMenu] could not find value "+String(val)+" in list")
+				print(typeof(val))
+				print(Globals.OPTIONS[option]['choices'])
 			if going_right:
 				if idx < len(Globals.OPTIONS[option]['choices'])-1:
 					Globals.OPTIONS[option]['value']=Globals.OPTIONS[option]['choices'][idx+1]
@@ -442,7 +487,7 @@ func handle_option(optNode:Control,going_right:bool=true):
 						updateTranslation(true)
 						desc.text=INITrans.GetString("OptionDescriptions",option)
 						update_desc_size()
-					print("[OptionsScreen] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
+					print("[OptionsMenu] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
 					updateValue(option,optNode)
 					anim_option_value(optNode,going_right)
 			elif idx > 0:
@@ -452,7 +497,7 @@ func handle_option(optNode:Control,going_right:bool=true):
 					desc.text=INITrans.GetString("OptionDescriptions",option)
 					updateTranslation(true)
 					update_desc_size()
-				print("[OptionsScreen] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
+				print("[OptionsMenu] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
 				updateValue(option,optNode)
 				anim_option_value(optNode,going_right)
 

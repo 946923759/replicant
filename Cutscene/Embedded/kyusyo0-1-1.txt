@@ -1,5 +1,5 @@
-#LANGUAGES	key	en
-match_names	Homu robot
+#LANGUAGES	key	en	ch	jp
+match_names	Homu robot	_DIM_ALL_WHEN_EMPTY
 speaker	Homu robot
 se	DLC_CH00_EV01_TrainStop
 msg	300001	Miss, please wake up. We're about to arrive at the station.	这位客人，醒醒，马上要到站了。	お客さん、起きてください。もうすぐ駅ですよ。
@@ -17,7 +17,7 @@ msg	300006	/dim[0]My head hurts. It feels like I might have bumped into somethin
 speaker	Homu robot
 msg	300007	I understand. There is no external injury detected. Presumably you are suffering from a neurological disorder. Your symptoms will be recorded as a reference for follow-up observations.	明白了，身体检查无外部损伤，推测可能为神经创伤，本症状将作为后续观察参考的对象进行记录。	分かりました。体の検査では外傷はありません。おそらく神経に傷を負ったのでしょう。この症状は事後観察の参考対象として記録します。		
 speaker	 
-msg	300008	/dim[0]Who are you?	你是？	あなたは？		
+msg	300008	Who are you?	你是？	あなたは？		
 speaker	Homu robot
 msg	300009	I'm the “Guide”, serial number: HM160304012Ein. I'm the conductor of cart 6 of this train as well, responsible for escorting you home.	我是「引路人」，制造批号：HM160304012Ein，本列车6号车厢列车员，负责护送您回家。	私は「案内人」。製造番号：HM160304012Ein、本列車6号車の車掌です。あなたを家に送り届けるところです。		
 speaker	 
@@ -34,7 +34,7 @@ msg	300016	Understood.	了解。	かしこまりました。
 msgbox_transition
 bg	007/005_1280x720
 portraits	
-msg	300017	Today is April 18 2019. 5 years ago, during the third calamity, the world was destroyed in the havoc by the Herrschers. We're now standing on the ruins of Nagazora, the base of human rebels.	现在的时间为2019年4月18日，世界在5年前发生的第三次大崩坏中，因律者的破坏而毁灭。我们现在所处的位置为长空市废墟，目的地是人类反抗军基地。	現在の時間は2019年4月18日。世界は5年前、第3次崩壊の発生中に律者の破壊によって破滅しました。私たちのいる場所は長空市の廃墟で、目的地は人類のレジスタンス基地です。		
+msg	300017	Today is April 18, 2019. 5 years ago, during the third calamity, the world was destroyed in the havoc by the Herrschers. We're now standing on the ruins of Nagazora, the base of human rebels.	现在的时间为2019年4月18日，世界在5年前发生的第三次大崩坏中，因律者的破坏而毁灭。我们现在所处的位置为长空市废墟，目的地是人类反抗军基地。	現在の時間は2019年4月18日。世界は5年前、第3次崩壊の発生中に律者の破壊によって破滅しました。私たちのいる場所は長空市の廃墟で、目的地は人類のレジスタンス基地です。		
 speaker	 
 msg	300018	The world was... destroyed?	世界…毁灭了！？	世界が……破滅した！？		
 speaker	Homu robot
@@ -54,12 +54,12 @@ msg	300027	Is Houraiji Kyuushou your real name?	请问 蓬莱寺 九霄 是您�
 choice	Yes.	I can't remember...
 speaker	Homu robot
 msg	300030	I see. If you have any information that might help you recall your memories, please contact us and we will try our best to help.	明白了，如果您有其他能够回忆起来的信息可以告诉我，我们会尽力帮助找回您的记忆。	分かりました。他に思い出せる情報があれば教えてください。私があなたの記憶を取り戻すお手伝いをします。
-/ 	300031	/dim[0]My memories...	我的记忆……	私の記憶……。
+/ 	300031	My memories...	我的记忆……	私の記憶……。
 msg	300032	Ugh! My head hurts! I feel like I've forgotten something important...
 speaker	Homu robot
 msg	300033	We're almost there. Hold on a little longer.	马上就要到站了，请您再坚持一下。	もうすぐ駅ですから、もうしばらく辛抱してください。		
 se	DLC_CH00_EV02_Explosion
-/ 	300034	/dim[0]Boom!	轰！！！	ゴオン！！！		
+/ 	300034	Boom!	轰！！！	ゴオン！！！		
 speaker	 
 se	DLC_CH00_EV03_WarningAlert
 msg	300035	“Warning! This train is being attacked by Houkai creatures. Please remain calm and follow the crew's instruction to evacuate.”	「警报！本列车遭到崩坏生物袭击，请各位乘客保持冷静，遵循列车工作人员进行疏散」	「警報！本列車は崩壊生物の襲撃を受けました。乗客の皆さんは落ち着いて、係員の指示に従って避難してください」		

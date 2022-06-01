@@ -9,7 +9,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 var time: float = 0.0
 var waitForAnim: float = 0.0
-onready var TEXT_SPEED: float = max(50,1)
+#onready var TEXT_SPEED: float = max(50,1)
 
 var parent_node
 
@@ -349,17 +349,28 @@ func advance_text()->bool:
 		curPos+=1
 	
 	#WHAT COULD POSSIBLY GO WRONG
-	textHistory.push_back([tmp_speaker,text.text])
+	textHistory.push_back([speakerActor.text,text.text])
 	$TN_Actor.visible=(tmp_tn!="")
 	if tmp_tn!="":
 		$TN_Actor/TranslationNote.text=tmp_tn
 		#print($TN_Actor/TranslationNote.has_focus())
-	tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
-		1/TEXT_SPEED*(text.text.length()-text.visible_characters),
-		Tween.TRANS_LINEAR,
-		Tween.EASE_IN,
-		waitForAnim
-	)
+	var TEXT_SPEED=float(Globals['OPTIONS']['textSpeed']['value'])
+	#print(TEXT_SPEED)
+	if TEXT_SPEED<100:
+		#print(1/TEXT_SPEED*(text.text.length()-text.visible_characters))
+		tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+			1/TEXT_SPEED*(text.text.length()-text.visible_characters),
+			Tween.TRANS_LINEAR,
+			Tween.EASE_IN,
+			waitForAnim
+		)
+	else:
+		tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+			0,
+			Tween.TRANS_LINEAR,
+			Tween.EASE_IN,
+			waitForAnim
+		)
 	print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
 	waitForAnim=0
@@ -385,6 +396,9 @@ onready var historyTween = $HistoryTween
 #Updated every frame... Might be slow
 #onready var screenWidth=Globals.gameResolution.x
 func tween_in_history():
+	isHistoryBeingShown=true
+	historyActor.set_history(textHistory)
+	#historyActor.OnCommand()
 	#tw.stop_all()
 	tw.stop(text,"visible_characters")
 	closeTextbox(historyTween)
@@ -392,6 +406,10 @@ func tween_in_history():
 		get_viewport().get_visible_rect().size.x*-1,0,.3,
 		Tween.TRANS_QUAD,Tween.EASE_OUT,.2)
 	historyTween.interpolate_property(text,"modulate:a",null,0,.3)
+	historyTween.interpolate_property($historyQuad,"color:a",null,.8,.3)
+	#$historyQuad.color.a=1.0
+	#VisualServer.canvas_item_set_z_index($historyQuad.get_canvas_item(),100)
+	#print($dim.visible)
 	historyTween.start()
 	
 func tween_out_history():
@@ -402,6 +420,7 @@ func tween_out_history():
 		Tween.TRANS_QUAD,Tween.EASE_IN,0)
 	historyTween.interpolate_property(text,"modulate:a",null,1,.3,
 	Tween.TRANS_LINEAR,Tween.EASE_OUT,.2)
+	historyTween.interpolate_property($historyQuad,"color:a",null,0,.3)
 	historyTween.start()
 
 func shitty_interpolate_label(s:String):
@@ -417,7 +436,7 @@ func _ready():
 	$Choices.visible=false
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
 	#$OptionsScreen.connect("options_closed",self,"_on_options_closed")
-	print("Text speed is "+String(TEXT_SPEED))
+	#print("Text speed is "+String(TEXT_SPEED))
 	set_process(false)
 	#text = $textActor_better
 	#text.visible_characters=0
@@ -572,21 +591,35 @@ func _unhandled_input(event):
 		if isHistoryBeingShown:
 			print("Hiding history!")
 			tween_out_history()
+			isHistoryBeingShown=false
 		else:
 			print("Displaying history!!!")
 			tween_in_history()
-			historyActor.set_history(textHistory)
-		isHistoryBeingShown=!isHistoryBeingShown
+			#historyActor.set_history(textHistory)
+		#isHistoryBeingShown=!isHistoryBeingShown
 		
 func _input(event):
-	if isHistoryBeingShown or isOptionsScreenOpen:
+	if isOptionsScreenOpen:
 		return
-	elif event is InputEventMouseButton and event.button_index==2:
-		$OptionsScreen.visible=true
-		$OptionsScreen.OnCommand()
-		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
-		isOptionsScreenOpen=true
-		get_tree().set_input_as_handled()
+	elif event is InputEventMouseButton and event.is_pressed():
+		if event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
+				tween_in_history()
+				get_tree().set_input_as_handled()
+		#elif event.button_index==BUTTON_WHEEL_UP:
+		#		tween_out_history()
+		#		isHistoryBeingShown=false
+		elif isHistoryBeingShown and (event.button_index==2):
+			tween_out_history()
+			isHistoryBeingShown=false
+			get_tree().set_input_as_handled()
+		elif event.button_index==2:
+			$OptionsScreen.visible=true
+			$OptionsScreen.OnCommand()
+			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
+			isOptionsScreenOpen=true
+			get_tree().set_input_as_handled()
+		#else:
+		#	print("Unknown mouse button pressed or don't know how to handle")
 
 signal cutscene_finished()
 func end_cutscene_2():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Cutscene/CutsceneOptions.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=2]
@@ -8,6 +8,20 @@
 [ext_resource path="res://Ext/other_329.png" type="Texture" id=6]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=7]
 [ext_resource path="res://Ext/cubeThing.png" type="Texture" id=8]
+[ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+font_data = ExtResource( 10 )
 
 [node name="OptionsScreen" type="Control"]
 anchor_right = 1.0
@@ -209,3 +223,30 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="."]
 
 [node name="ArrowTween" type="Tween" parent="."]
+
+[node name="EpisodeDisplay" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1940.0
+margin_right = -20.0
+margin_bottom = 164.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Header" type="Label" parent="EpisodeDisplay"]
+margin_right = 1920.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 1920, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "Chapter 0-1-1: Settle Down"
+align = 2
+
+[node name="Description" type="Label" parent="EpisodeDisplay"]
+margin_top = 67.0
+margin_right = 1920.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 2 )
+text = "Check out the base."
+align = 2

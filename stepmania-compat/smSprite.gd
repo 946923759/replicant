@@ -46,7 +46,7 @@ func loadVNBG(sprName:String):
 		
 		#var found = false
 		for ext in [".png",".jpg"]:
-			var path = OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Backgrounds/"+sprName+ext
+			var path = OS.get_executable_path().get_base_dir()+"/GameData/Backgrounds/"+sprName+ext
 			#print("Checking path "+path)
 			if f.file_exists(path):
 				print("Found external image file at "+path)

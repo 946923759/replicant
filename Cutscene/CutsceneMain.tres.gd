@@ -159,8 +159,14 @@ func advance_text()->bool:
 			'msg':
 				#Do it up here since /setDispChr command might override it.
 				text.visible_characters=0
-				
-				var tmp_txt = curMessage[msgColumn]
+				var tmp_txt:String
+				if msgColumn < curMessage.size():
+					tmp_txt = curMessage[msgColumn]
+				elif curMessage.size() > 1:
+					#print("msg ")
+					tmp_txt= curMessage[1]
+				#else:
+					
 				while tmp_txt.begins_with("/"):
 					if tmp_txt.begins_with("/hl["):
 						var cmd_end = tmp_txt.find("]", 4);
@@ -209,13 +215,35 @@ func advance_text()->bool:
 				text.bbcode_text = tmp_txt
 				
 				if curPos < message.size()-1 and message[curPos+1][0]=='choice':
-					ChoiceTable=push_back_from_idx_one([],message[curPos+1])
+					#TODO: This is horrible
+					ChoiceTable = []
+					for i in range(1,message[curPos+1].size()):
+						var a = message[curPos+1][i].split("##",true)
+						var b = msgColumn-1
+						if b<a.size():
+							ChoiceTable.push_back(a[b])
+						else:
+							print("Current language is "+String(b)+", but this choice only had "+String(a.size())+" languages to choose from")
+							print(a)
+							ChoiceTable.push_back(a[0])
+					#ChoiceTable=push_back_from_idx_one([],message[curPos+1])
 				break #Stop processing opcodes and wait for user to click
 			#Compatibility opcode for Girls' Frontline
 			'msgbox_transition':
 				closeTextbox(tw)
 				openTextbox(tw,.3)
 				waitForAnim+=.6
+			'msgbox_close':
+				if curMessage.size() > 1 and curMessage[1]=="instant":
+					print("Removing tw")
+					#tw.remove(textboxSpr,"interpolate_property")
+					tw.remove_all()
+				else:
+					closeTextbox(tw)
+					waitForAnim+=.3
+			'msgbox_open':
+				openTextbox(tw)
+				waitForAnim+=.3
 			'match_names':
 				matchedNames=push_back_from_idx_one([],curMessage)
 			'speaker': 
@@ -467,12 +495,13 @@ func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
 		parent_node = parent
 	$dim.color.a=0
 	textboxSpr.rect_scale.y=0
-	var t := TweenSequence.new(get_tree())
-	t._tween.pause_mode = Node.PAUSE_MODE_PROCESS
-	t.append(textboxSpr,'rect_scale:y',1,.5).set_trans(Tween.TRANS_QUAD)
-	if dim_background:
-# warning-ignore:return_value_discarded
-		t.parallel().append($dim,'color:a',.6,.5).from_current()
+	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)
+#	var t := TweenSequence.new(get_tree())
+#	t._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+#	t.append(textboxSpr,'rect_scale:y',1,.5).set_trans(Tween.TRANS_QUAD)
+#	if dim_background:
+## warning-ignore:return_value_discarded
+#		t.parallel().append($dim,'color:a',.6,.5).from_current()
 	
 	self.msgColumn=msgColumn
 	preparse_string_array(message,delim)

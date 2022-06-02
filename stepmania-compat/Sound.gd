@@ -52,9 +52,10 @@ func pause_music():
 func get_custom_music(fname):
 	if !OS.has_feature("standalone") or OS.has_feature("console"):
 		return Globals.get_matching_files("res://Music/CDAudio/",fname)
-	return Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/CustomMusic/",fname)
+	return Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/Music/",fname)
 
+#TODO: Fix it
 func get_custom_sound(fname):
-	if !OS.has_feature("standalone") or OS.has_feature("console"):
+	if true: #!OS.has_feature("standalone") or OS.has_feature("console")
 		return Globals.get_matching_files("res://Sounds/",fname)
 	return Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/Sounds/",fname)

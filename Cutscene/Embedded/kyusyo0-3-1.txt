@@ -1,6 +1,7 @@
 #LANGUAGES	key	en	ch	ja
 bg	007/006_1280x720
 bg	009/004_1280x720
+speaker	 
 msg	300139	The defense line on the left is falling apart! Requesting immediate reinforcements!	左侧防线快支持不住了！请求增援！	左側の防衛ラインが持たない！増援を要請する！
 msg	300140	Someone's hurt here! Help!	来人！这里有人受伤了！	誰か来て！こっちにケガ人だ！
 msg	300141	They've broken through our defenses! Stop them!	防御工事被撞开了！快拦住它们！！！	防御工事が突き破られる！急いで食い止めるんだ！！！ 

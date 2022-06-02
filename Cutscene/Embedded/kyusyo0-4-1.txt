@@ -1,0 +1,61 @@
+#LANGUAGES	KEY	EN	CH	JP
+preload_portraits	59	60
+speaker	
+msgbox_close	instant
+bg	009/032_1280x720
+msg	 	 	 	
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
+msgbox_transition
+bg	009/002_1280x720
+nop	msg		/open
+msg	300202	Oh...	唔……	うっ……。
+speaker	Seele
+portraits	59
+emote	59	1
+msg	300203	You've finally regained consciousness~! You're a total daredevil!	看来终于恢复意识了呢~真是命大的家伙啊！	やっと意識を取り戻したんだね～！まったく命知らずなんだから！
+choice	300204 ## Am I still alive? ## 我还活着么… ## 私、生きているの……？	300205 ## The voice... ## 刚才的声音是… ## さっきの声は……？
+speaker	Bronya
+portraits	59	60
+emote	60	3
+msg	300206	Is that what you want to say to her?	这就是你想说的话么…	それが言いたかったことなのですか。
+speaker	Seele
+emote	59	5
+msg	300207	Oh no...	啊~糟了……	あ～しまった……。
+speaker	Bronya
+emote	60	3
+msg	300208	You. Did you forget that you were almost killed?	你难道不知道自己差点就丧命了么？	あと少しで命を落とすところでした。
+msg	300209	Didn't I tell you not to leave the base?	我不是和你说过不要离开基地么？	ブローニャは基地を離れないように言いましたよね？
+msg	300210	Do you even know how important your life is?	你知不知道自己的生命有多重要？	自分の命がどれだけ重要か分かっていますか？
+msg	300211	You don't understand your situation at all. Your life is no longer yours alone. Have you ever thought about how hard we worked to bring you here?	你完全没有理解自己的处境，你的生命已经不再是你一个人的东西了，你有想过我们通过了多大的努力才把你带到这里么？	あなたは自分の境遇を全く分かっていません。あなたの命は、もうあなただけのものではないんです。ゼーレたちがどれだけ頑張ってあなたをここに連れて来たのか、考えたことがありますか？
+emote	60	4
+msg	300212	Do you know that the Honkai is already...	你知道在崩坏中已经……	崩壊の中で既に……。
+speaker	Seele
+emote	59	1
+msg	300213	C'mon Bronya, the most important thing is that she's alive and well. Besides, I heard that one of our injured teammates was able to survive thanks to her!	好啦~好啦~姐姐大人，现在她不是好好的么~而且据说多亏了她的努力受伤的队员才得以生还呢~	ほら～ほら～お姉ちゃん、彼女も無事なんだから！それに彼女のおかげで負傷した隊員は生還できたらしいじゃない！
+speaker	Bronya
+msg	300214	...	……	……。
+msg	300215	How can you save others when you don't even know how to cherish your own life?	连自己的生命都不懂得珍惜的人，还怎么拯救别人……	自分の命の大切さすら分からない人がどうやって他人を救うのですか……。
+emote	59	1
+emote	60	3
+msg	300216	As a punishment for violating orders, you're confined to this room for the rest of the day. Reflect on what you've done.	作为违抗命令的惩罚，今天你都不能离开这个房间，好好反省吧。	命令違反の罰として、今日はこの部屋を離れてはいけません。よく反省してください。
+speaker	Seele
+emote	60	3
+tn	0	The literal translation is "Sister is really strict~",  JP seems to be saying "Oniichan is harsh, isn't she"
+msg	300217	My sister is really strict, isn't she?	姐姐大人真是严格呢~	お姉ちゃんって、本当に恐いよね。
+speaker	Bronya
+emote	60	1
+msg	300218	Seele, I'll leave the rest to you. Tell her how to survive in this world.	希儿，后面就交给你了。告诉她应该怎样在这个世界活下去。	ゼーレ、あとは任せます。彼女にこの世界で生き延びるすべを教えてあげてください。
+speaker	Seele
+msg	300219	Yes, yes~ I understand!  I'll definitely make her as strong as me.	是是~知道啦！我一定让她变得和希儿一样强壮~	はい、はい～分かったよ！必ずゼーレみたいに強くしてみせるからね。
+speaker	Bronya
+emote	59	1
+msg	300220	Great...	嗯……	はい、お願いします。
+se	DLC_CH01_EV01_BronyaWalkaway
+speaker	Seele
+portraits	59
+emote	59	2
+tn	0	lmao of course they used a blushing sprite
+msg	300221	/hl[0]Phew~ it's finally over! Hey, don't you think an angry sister is cool too?	呼~终于结束了~生气的姐姐大人也很帅气呢！	ふぅ～やっと終わった～！ねぇ、怒ったお姉ちゃんもカッコいいと思わない？
+emote	59	1
+msg	300222	Well, I've gotta get going. I've got a lot of things to do now that the battle is over.	那我也先走啦~战斗刚结束，还有很多事情要忙呢~	じゃあ、私も行くわね～。戦闘が終わったばかりで色々忙しいの。
+msg	300223	You should get some rest now. When your confinement is over, come find me at the command center.	你在这里好好休息吧~等“禁闭”时间结束了来指挥室找我吧~	九霄はここでゆっくり休んでね。罰が終わったら指令室まで来てくれるかな。

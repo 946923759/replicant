@@ -18,7 +18,7 @@ var OPTIONS = {
 	},
 	"language":{
 		"type":"list",
-		"choices":["en","es","kr","ja","zh"],
+		"choices":["en","ja","ch"],
 		"localizeKey":"Language",
 		"default":"en"
 	},

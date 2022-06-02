@@ -117,7 +117,7 @@ func _ready():
 	if "lang" in cutsceneData:
 		#print(cutsceneData['lang'])
 		for i in range(cutsceneData['lang'].size()):
-			if cutsceneData['lang'][i]==INITrans.currentLanguage:
+			if cutsceneData['lang'][i].to_lower()==INITrans.currentLanguage:
 				print("Loading from column "+String(i))
 				msgColumn=i
 				break

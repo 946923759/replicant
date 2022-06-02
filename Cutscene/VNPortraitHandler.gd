@@ -248,7 +248,7 @@ func replicant_set_texture(toLoad:Array):
 				portrait_textures[i].create_from_image(image);
 				#print(portrait_textures[i])
 			else:
-				printerr("Portrait "+sprName+"not embedded in pck and no external file!!")
+				printerr("Portrait "+sprName+" not embedded in pck and no external file!! Tried path "+path)
 		else:
 			printerr("Portrait "+sprName+" not embedded in pck and no external file!!")
 			

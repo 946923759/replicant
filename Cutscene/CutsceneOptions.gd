@@ -193,6 +193,7 @@ func updateTranslation(refresh:bool=false):
 	#update_desc_size()
 
 #Fuck your return oriented programming
+var arrowSprite = preload("res://Ext/other_329.png")
 func generateMenu(optFrameActor:Control,optionsDict:Dictionary,arrowAnimation:Animation):
 	var i = 0
 	for option in optionsDict:
@@ -231,7 +232,7 @@ func generateMenu(optFrameActor:Control,optionsDict:Dictionary,arrowAnimation:An
 				}))
 				optionItem.add_child(Def.Sprite({
 					name='leftArrow',
-					TextureFromDisk="res://Ext/other_329.png",
+					#TextureFromDisk="res://Ext/other_329.png",
 					rect_position=Vector2(800-64*2,116/2-64),
 					rect_scale=Vector2(2,2),
 					flip_h=true,
@@ -239,11 +240,13 @@ func generateMenu(optFrameActor:Control,optionsDict:Dictionary,arrowAnimation:An
 				}))
 				optionItem.add_child(Def.Sprite({
 					name='rightArrow',
-					TextureFromDisk="res://Ext/other_329.png",
+					#TextureFromDisk="res://Ext/other_329.png",
 					rect_position=Vector2(800+MAX_VALUE_WIDTH,116/2-64),
 					rect_scale=Vector2(2,2),
 					mouse_filter=MOUSE_FILTER_STOP
 				}))
+				optionItem.get_child(1).texture=arrowSprite
+				optionItem.get_child(2).texture=arrowSprite
 				var animationPlayer=AnimationPlayer.new()
 				animationPlayer.name="animPlayer"
 				animationPlayer.add_animation("arrow",arrowAnimation)

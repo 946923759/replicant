@@ -32,8 +32,10 @@ msg	300101	It feels like I'm trapped inside a whirlpool. The exit is right in fr
 msg	300102	Everything seems so clear. Even though it looks like it's been weathered down from millennia, it's still clearly distinguishable.	一切都是那么真切，恍如隔世，却又依稀可辨。	全てがはっきりしている。時代を経ているようだけれど、はっきりと見分けられる。
 msg	300103	Then, I saw a beam of light. A sign. An end.	渐渐地，我看到了一束光，一个信标，一个终点。	だんだんと光が、ビーコンが、終点が見えてきた。
 msg	300104	And then, I saw her...	然后，我看到了她……	そして、彼女が見えた……。
-msgbox_transition
+msgbox_close
 bg	009/022_1280x720
+msg	 	 	 	 
+msgbox_open
 msg	300106	Who is she?	这个人是谁？	この人は誰？
 msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒来的梦。	まるで醒めることがない夢を見ているみたい。
 msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	彼女の悲しそうな表情。

@@ -15,8 +15,13 @@ func _ready():
 
 func setEpisode(episode:Globals.Episode):
 	thisEpisode=episode
-	title.text=episode.title
-	desc.text=episode.desc
+	if INITrans.HasString("ChapterParts",episode.title):
+		var s = INITrans.GetString("ChapterParts",episode.title,false).split("\t",true,1)
+		title.text=s[0]
+		desc.text=s[1]
+	else:
+		title.text=episode.title
+		desc.text=episode.desc
 	setNumParts(episode.parts)
 
 func setNumParts(partDestinations_:Array):

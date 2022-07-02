@@ -1,70 +1,70 @@
-#LANGUAGES	key	en	ch	ja
+#LANGUAGES	KEY	EN	CH	JA	JP	PT
 preload_portraits	59	60
 match_names	Seele	Bronya
 speaker	Seele
 bg	009/003_1280x720
 portraits	59
 emote	59	2
-msg	300049	Sis, I'm home! I've successfully completed the mission!	姐姐大人~我回来了哟！任务顺利完成！	お姉ちゃん～ただいま！無事、任務終了したよ！
+msg	300049	Sis, I'm home! I've successfully completed the mission!	姐姐大人~我回来了哟！任务顺利完成！	お姉ちゃん～ただいま！無事、任務終了したよ！	お姉ちゃん～ただいま！無事、任務終了したよ！	Onee-chan Estou em casa! Você completou sua missão com sucesso!
 speaker	Bronya
 portraits	59	60
 emote	60	2
-msg	300050	Welcome home. Are you injured?	欢迎回家，没有受伤吧？	お帰りなさい。ケガはしていませんか？
+msg	300050	Welcome home. Are you injured?	欢迎回家，没有受伤吧？	お帰りなさい。ケガはしていませんか？	お帰りなさい。ケガはしていませんか？	bem vindo de volta. Você está ferida?
 speaker	Seele
-msg	300051	You're too worried. I wouldn't get hurt in a mission like this.	姐姐大人真是爱操心呢，这种小任务我怎么可能会受伤嘛~	ブローニャお姉ちゃんは心配しすぎだよ。こんな任務でケガなんかしないよ～。
+msg	300051	You're too worried. I wouldn't get hurt in a mission like this.	姐姐大人真是爱操心呢，这种小任务我怎么可能会受伤嘛~	ブローニャお姉ちゃんは心配しすぎだよ。こんな任務でケガなんかしないよ～。	ブローニャお姉ちゃんは心配しすぎだよ。こんな任務でケガなんかしないよ～。	Bronya está muito preocupada. Não vou me machucar nesta missão.
 speaker	Bronya
-msg	300052	I meant, was the escorted family member injured? (TN: What?)	不，我的意思是护送的家人有受伤么？	いえ、護送した家族にケガはありませんでしたか？
+msg	300052	I meant, is the new family member you escorted home injured?	不，我的意思是护送的家人有受伤么？	いえ、護送した家族にケガはありませんでしたか？	いえ、護送した家族にケガはありませんでしたか？	Não, a família escoltada foi ferida?
 speaker	Seele
 emote	59	4
-msg	300053	Hmm ... I'm not injured!  At all, my sister is always crazy!  You see, this is the survivor's material!	咕…没有受伤啦！真是的，姐姐大人总是欺负人！给，这是这次所有幸存者的资料~	ぐっ……ケガしてないよ！まったく、お姉ちゃんはいつもイジワルするんだから！ほら、これが今回の生存者の資料だよ～！
+msg	300053	Ggghh...... I'm not hurt! God, you always tease me, sis! Here, this is the survivor's file~!	咕…没有受伤啦！真是的，姐姐大人总是欺负人！给，这是这次所有幸存者的资料~	ぐっ……ケガしてないよ！まったく、お姉ちゃんはいつもイジワルするんだから！ほら、これが今回の生存者の資料だよ～！	ぐっ……ケガしてないよ！まったく、お姉ちゃんはいつもイジワルするんだから！ほら、これが今回の生存者の資料だよ～！	mm... não estou ferida! Em tudo, minha Onee-chan é sempre louca! Você vê, este é o material do sobrevivente!
 speaker	Bronya
-msg	300054	Thank you for the hard work, Seele.	好的，辛苦了希儿。	はい、お疲れ様。ゼーレ。
+msg	300054	Thank you for the hard work, Seele.	好的，辛苦了希儿。	はい、お疲れ様。ゼーレ。	はい、お疲れ様。ゼーレ。	Sim, obrigada. Seele.
 speaker	Seele
 emote	59	2
-msg	300055	Hehe!	嘿嘿~	エヘヘ～。
+msg	300055	Hehe!	嘿嘿~	エヘヘ～。	エヘヘ～。	ehehe
 speaker	Bronya
 emote	60	1
-msg	300056	...	……	……。
-msg	300057	This person... The information is almost empty.	这个人是…资料几乎是空白的。	この人は……資料がほとんど空白ですね。
+msg	300056	...	……	……。	……。	……
+msg	300057	This person... The information is almost empty.	这个人是…资料几乎是空白的。	この人は……資料がほとんど空白ですね。	この人は……資料がほとんど空白ですね。	......... Essa pessoa... O material está quase em branco.
 speaker	Seele
 emote	59	1
-msg	300058	That's right. The record indicates that she has been traumatized, so she can't remember anything.	这个啊，就是这位。资料上显示记忆受到了创伤，似乎是记不得自己的事情了呢。	それがそうなの。資料には、記憶にダメージを受けて自分のことを覚えていないようだって書いてあるし。
+msg	300058	That's right. The record indicates that she has been traumatized, so she can't remember anything.	这个啊，就是这位。资料上显示记忆受到了创伤，似乎是记不得自己的事情了呢。	それがそうなの。資料には、記憶にダメージを受けて自分のことを覚えていないようだって書いてあるし。	それがそうなの。資料には、記憶にダメージを受けて自分のことを覚えていないようだって書いてあるし。	Está certo. O material diz que minha memória foi danificada e eu não parecia me lembrar de mim mesma.
 emote	59	2
-msg	300059	Oh, I'll introduce you~ This is my favorite sister!  Bronya Zaichik, the leader of the Resistance!  Hehehe~.	我给你介绍一下~这位是我最喜欢的姐姐大人！反抗军的领袖——布洛妮娅·扎伊切克！巴拉巴拉~	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。
+msg	300059	Oh, I'll introduce you~ This is my favorite sister!  Bronya Zaichik, the leader of the Resistance!  Hehehe~.	我给你介绍一下~这位是我最喜欢的姐姐大人！反抗军的领袖——布洛妮娅·扎伊切克！巴拉巴拉~	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。	Ah, vou te apresentar ~ Essa é minha irmã favorita! Bronya Zaychik, a líder da Resistência! Crepitante ~.
 speaker	Bronya
 emote	60	2
 tn	XXX	The official English translation changed the meaning of the last sentence, but it sounds better so I kept it.
-msg	300060	Call me Bronya. I'm not a leader. I'm just trying to survive like everyone else.	叫我布洛妮娅就行了，我不是领袖，我只是和大家一起活下去而已。	ブローニャと呼んでください。それにブローニャはリーダーじゃありません。ただ、みんなと一緒に暮らしているだけです。
+msg	300060	Call me Bronya. I'm not a leader. I'm just trying to survive like everyone else.	叫我布洛妮娅就行了，我不是领袖，我只是和大家一起活下去而已。	ブローニャと呼んでください。それにブローニャはリーダーじゃありません。ただ、みんなと一緒に暮らしているだけです。	ブローニャと呼んでください。それにブローニャはリーダーじゃありません。ただ、みんなと一緒に暮らしているだけです。	Por favor, me chame de Bronya. E Bronya não é um líder. Eu só vivo com todo mundo.
 speaker	Seele
-msg	300061	My sister is really humble, but I love her!	姐姐大人真是谦虚呢~但是这样的姐姐大人希儿也好喜欢！	お姉ちゃんは本当に謙虚なんだから～でもゼーレはそんなお姉ちゃんが大好き！ 
+msg	300061	My sister is really humble, but I love her!	姐姐大人真是谦虚呢~但是这样的姐姐大人希儿也好喜欢！	お姉ちゃんは本当に謙虚なんだから～でもゼーレはそんなお姉ちゃんが大好き！ 	お姉ちゃんは本当に謙虚なんだから～でもゼーレはそんなお姉ちゃんが大好き！	Minha irmã é muito humilde, mas Seele a ama!
 speaker	Bronya
-msg	300062	Although Seele and I aren't related and she can be a bit annoying at times, I still treat her as if she was my sister.	希儿和我虽然没有血缘，但是我最重要的妹妹，虽然有时候会让人很困扰。	ゼーレとの血縁関係はありませんが大切な妹です。時々、とても困りますが。
+msg	300062	Although Seele and I aren't related and she can be a bit annoying at times, I still treat her as if she was my sister.	希儿和我虽然没有血缘，但是我最重要的妹妹，虽然有时候会让人很困扰。	ゼーレとの血縁関係はありませんが大切な妹です。時々、とても困りますが。	ゼーレとの血縁関係はありませんが大切な妹です。時々、とても困りますが。	Eu não tenho parentesco com Seele, mas é uma irmã importante. Às vezes estou em apuros.
 speaker	Seele
 emote	59	3
-msg	300063	Really? When?	诶！会么？什么时候！？	え！そうなの？いつ！？
+msg	300063	Annoying? When!?	诶！会么？什么时候！？	え！そうなの？いつ！？	え！そうなの？いつ！？	Huh! É assim mesmo? quando! ??
 speaker	Bronya
 emote	60	1
-msg	300064	Right now.	比如现在。	例えば今です。
+msg	300064	Right now.	比如现在。	例えば今です。	例えば今です。	Por exemplo agora.
 speaker	Seele
 emote	59	5
-msg	300065	Ah!	呃！	うっ！
+msg	300065	Ah!	呃！	うっ！	うっ！	Eca!
 choice	You two are adorable sisters.	You two are different in personalities.
 emote	60	2
 /Bronya	300068	Really? Perhaps you're right...	是么…或许如你所说……	そうですか……そうかもしれませんね……。
 emote	60	1
-msg	300069	Let's get back on topic. We were just talking about you. The documents do not seem to show any trauma. The memory may be due to psychological damage. But we can't rule out the effects of the Honkai, so we can't draw any conclusions yet.	言归正传，刚才谈到你的情况，从资料来看你身体没有明显的外伤，记忆的创伤很可能是因为精神上的刺激，但也不排除崩坏的影响，因此还不能完全下定论。	話を戻しましょう。ちょうどあなたのことを話していました。資料を見ると外傷はないようです。記憶は精神的なダメージによるものかもしれません。ですが、崩壊の影響も排除できませんので、まだ結論は出せません。
-msg	300070	But I think your symptoms are temporary. I'm sure you'll regain your memories, so don't worry about it. Just take it easy and you'll be fine. I'll do my best to help you.	不过我觉得这个症状只是暂时的，记忆一定会再次恢复的，所以你也不用着急，只要慢慢恢复就行了，我会尽自己最大的努力帮助你的。	ですが、この症状は一時的なものだと思います。記憶はきっと蘇るはずです。ですから、あわてないでください。ゆっくり回復すれば大丈夫です。最大限、努力してお手伝いします。
+msg	300069	Let's get back on topic. We were just talking about you. The documents do not seem to show any trauma. The memory may be due to psychological damage. But we can't rule out the effects of the Honkai, so we can't draw any conclusions yet.	言归正传，刚才谈到你的情况，从资料来看你身体没有明显的外伤，记忆的创伤很可能是因为精神上的刺激，但也不排除崩坏的影响，因此还不能完全下定论。	話を戻しましょう。ちょうどあなたのことを話していました。資料を見ると外傷はないようです。記憶は精神的なダメージによるものかもしれません。ですが、崩壊の影響も排除できませんので、まだ結論は出せません。	話を戻しましょう。ちょうどあなたのことを話していました。資料を見ると外傷はないようです。記憶は精神的なダメージによるものかもしれません。ですが、崩壊の影響も排除できませんので、まだ結論は出せません。
+msg	300070	But I think your symptoms are temporary. I'm sure you'll regain your memories, so don't worry about it. Just take it easy and you'll be fine. I'll do my best to help you.	不过我觉得这个症状只是暂时的，记忆一定会再次恢复的，所以你也不用着急，只要慢慢恢复就行了，我会尽自己最大的努力帮助你的。	ですが、この症状は一時的なものだと思います。記憶はきっと蘇るはずです。ですから、あわてないでください。ゆっくり回復すれば大丈夫です。最大限、努力してお手伝いします。	ですが、この症状は一時的なものだと思います。記憶はきっと蘇るはずです。ですから、あわてないでください。ゆっくり回復すれば大丈夫です。最大限、努力してお手伝いします。
 speaker	Seele
 emote	59	1
 emote	60	1
-msg	300071	Yeah, yeah~ I feel better as long as my older sister is here.	嗯嗯~只要有姐姐大人在你就安心吧~	うん、うん～お姉ちゃんがいれば安心だよ～。
+msg	300071	Yeah, yeah~ I feel better as long as my older sister is here.	嗯嗯~只要有姐姐大人在你就安心吧~	うん、うん～お姉ちゃんがいれば安心だよ～。	うん、うん～お姉ちゃんがいれば安心だよ～。
 speaker	Bronya
 emote	60	2
-msg	300072	Let's leave it at that for today. Seele will show you around the base. You must be tired after everything that has happened, so please rest well.	那么今天就到这里吧，接下来希儿会为你介绍一下基地的情况，经历了一路的奔波你一定也累了，回去好好休息吧。	では、今日はこの辺にしておきましょう。あとはゼーレが基地の状況を紹介します。色々なことがあって疲れたでしょうから、ゆっくり休んでください。
+msg	300072	Let's leave it at that for today. Seele will show you around the base. You must be tired after everything that has happened, so please rest well.	那么今天就到这里吧，接下来希儿会为你介绍一下基地的情况，经历了一路的奔波你一定也累了，回去好好休息吧。	では、今日はこの辺にしておきましょう。あとはゼーレが基地の状況を紹介します。色々なことがあって疲れたでしょうから、ゆっくり休んでください。	では、今日はこの辺にしておきましょう。あとはゼーレが基地の状況を紹介します。色々なことがあって疲れたでしょうから、ゆっくり休んでください。
 speaker	Seele
-msg	300073	Then leave the rest to me. Follow me!	那么下面就交给我吧，跟我来~	じゃあ、あとは私に任せてね。ついて来て！
+msg	300073	Then leave the rest to me. Follow me!	那么下面就交给我吧，跟我来~	じゃあ、あとは私に任せてね。ついて来て！	じゃあ、あとは私に任せてね。ついて来て！
 portraits	59
-msg	300074	This is the Anti-Honkai resistance base. Welcome home.	这里是人类反抗军的基地，欢迎回家。	あらためて、対崩壊レジスタンスの基地へようこそ！
-msg	300075	My name is Seele Vollerei. You can call me Seele.	我的名字叫做希儿·芙乐艾，叫我希儿就可以了。	私の名前はゼーレ・フェレライ、ゼーレって呼んでね。
-msg	300076	Starting from today, you're a member of the resistance.  Remember, each of us must work together to fight back against the Honkai.	从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	今日からあなたも私たちレジスタンスの一員よ。崩壊に対抗するためには、私たち一人ひとり力を合わせなくちゃいけないから覚えといてね。
-msg	300077	Allow me to explain the situation.	那么就让我简单为你介绍一下这里的情况吧。	じゃあ、簡単にここの状況を説明するよ！
+msg	300074	This is the Anti-Honkai resistance base. Welcome home.	这里是人类反抗军的基地，欢迎回家。	あらためて、対崩壊レジスタンスの基地へようこそ！	あらためて、対崩壊レジスタンスの基地へようこそ！
+msg	300075	My name is Seele Vollerei. You can call me Seele.	我的名字叫做希儿·芙乐艾，叫我希儿就可以了。	私の名前はゼーレ・フェレライ、ゼーレって呼んでね。	私の名前はゼーレ・フェレライ、ゼーレって呼んでね。
+msg	300076	Starting from today, you're a member of the resistance.  Remember, each of us must work together to fight back against the Honkai.	从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	今日からあなたも私たちレジスタンスの一員よ。崩壊に対抗するためには、私たち一人ひとり力を合わせなくちゃいけないから覚えといてね。	今日からあなたも私たちレジスタンスの一員よ。崩壊に対抗するためには、私たち一人ひとり力を合わせなくちゃいけないから覚えといてね。
+msg	300077	Allow me to explain the situation.	那么就让我简单为你介绍一下这里的情况吧。	じゃあ、簡単にここの状況を説明するよ！	じゃあ、簡単にここの状況を説明するよ！

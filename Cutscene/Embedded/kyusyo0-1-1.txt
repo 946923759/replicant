@@ -1,31 +1,33 @@
-#LANGUAGES	key	en	ch	jp
+#LANGUAGES	key	en	ch	jp	pt
 match_names	Homu robot	_DIM_ALL_WHEN_EMPTY
 speaker	Homu robot
 se	DLC_CH00_EV01_TrainStop
-msg	300001	Miss, please wake up. We're about to arrive at the station.	这位客人，醒醒，马上要到站了。	お客さん、起きてください。もうすぐ駅ですよ。
+msg	300001	Miss, please wake up. We're about to arrive at the station.	这位客人，醒醒，马上要到站了。	お客さん、起きてください。もうすぐ駅ですよ。	Clientes, por favor, levantem-se. É uma estação em breve.
 music	Significance
 bg	009/001_1280x720
-msg	300002	...	……	……。
+msg	300002	...	……	……。	…
 portraits	63
-msg	300003	There's no need to be afraid, you're safe now.	没关系，请不要害怕，您已经安全了。	大丈夫、怖がらないでください。もう安全ですよ。
+msg	300003	There's no need to be afraid, you're safe now.	没关系，请不要害怕，您已经安全了。	大丈夫、怖がらないでください。もう安全ですよ。	NONE
 speaker	 
-msg	300004	/dim[0]Ugh... what happened to me...	唔…我到底是怎么了……	うっ……私一体どうしちゃったの……。
+dim	0
+msg	300004	Ugh... what happened to me...	唔…我到底是怎么了……	うっ……私一体どうしちゃったの……。	Ah... o que aconteceu comigo...
 speaker	Homu robot
-msg	300005	It seems like you've lost your memory. Are you feeling alright?	看来记忆似乎遭到损伤，请问有什么不舒服的地方么？	記憶にダメージを受けているようですね。どこか気分が悪いですか？
+msg	300005	It seems like you've lost your memory. Are you feeling alright?	看来记忆似乎遭到损伤，请问有什么不舒服的地方么？	記憶にダメージを受けているようですね。どこか気分が悪いですか？	Parece que sua memória foi danificada. Você está se sentindo mal em algum lugar?
 speaker	 
-msg	300006	/dim[0]My head hurts. It feels like I might have bumped into something...	头好痛，感觉像是撞到了什么东西……	……頭が痛い。何かに強くぶつけたみたい。		
+dim	0
+msg	300006	My head hurts. It feels like I might have bumped into something...	头好痛，感觉像是撞到了什么东西……	……頭が痛い。何かに強くぶつけたみたい。	…… a cabeça dói. Parece que bati em algo duro.	
 speaker	Homu robot
-msg	300007	I understand. There is no external injury detected. Presumably you are suffering from a neurological disorder. Your symptoms will be recorded as a reference for follow-up observations.	明白了，身体检查无外部损伤，推测可能为神经创伤，本症状将作为后续观察参考的对象进行记录。	分かりました。体の検査では外傷はありません。おそらく神経に傷を負ったのでしょう。この症状は事後観察の参考対象として記録します。		
+msg	300007	I understand. There is no external injury detected. Presumably you are suffering from a neurological disorder. Your symptoms will be recorded as a reference for follow-up observations.	明白了，身体检查无外部损伤，推测可能为神经创伤，本症状将作为后续观察参考的对象进行记录。	分かりました。体の検査では外傷はありません。おそらく神経に傷を負ったのでしょう。この症状は事後観察の参考対象として記録します。	Compreendo. Não há trauma no exame do corpo. Talvez o nervo estivesse ferido. Registre esse sintoma como referência para observações de acompanhamento.	
 speaker	 
-msg	300008	Who are you?	你是？	あなたは？		
+msg	300008	Who are you?	你是？	あなたは？	Quem é voce?	
 speaker	Homu robot
-msg	300009	I'm the “Guide”, serial number: HM160304012Ein. I'm the conductor of cart 6 of this train as well, responsible for escorting you home.	我是「引路人」，制造批号：HM160304012Ein，本列车6号车厢列车员，负责护送您回家。	私は「案内人」。製造番号：HM160304012Ein、本列車6号車の車掌です。あなたを家に送り届けるところです。		
+msg	300009	I'm the “Guide”, serial number: HM160304012Ein. I'm the conductor of cart 6 of this train as well, responsible for escorting you home.	我是「引路人」，制造批号：HM160304012Ein，本列车6号车厢列车员，负责护送您回家。	私は「案内人」。製造番号：HM160304012Ein、本列車6号車の車掌です。あなたを家に送り届けるところです。	"Eu sou um ""guia"". Número de série: HM160304012Ein, o condutor do 6º vagão deste trem. Estou prestes a te mandar para casa."	
 speaker	 
-msg	300010	Home...	回家……	家に帰る……。		
-msg	300011	!	！	！		
-msg	300012	What happened?	这里是怎么回事？	これはどういうこと？		
+msg	300010	Home....	回家……	家に帰る……。	Volta pra casas.....…	
+msg	300011	!	！	！	!!	
+msg	300012	What happened?	这里是怎么回事？	これはどういうこと？	O que isto significa?	
 speaker	Homu robot
-msg	300013	Further explanation seems necessary. Please provide a word you like to search.	看来需要进行进一步的说明，请提供您需要检索的单词。	もう少し詳しい説明が必要のようですね。必要な検索ワードをおっしゃってください。		
+msg	300013	Further explanation seems necessary. Please provide a word you like to search.	看来需要进行进一步的说明，请提供您需要检索的单词。	もう少し詳しい説明が必要のようですね。必要な検索ワードをおっしゃってください。	Parece que uma explicação um pouco mais detalhada é necessária. Por favor, diga-nos a palavra de pesquisa que você precisa.	
 choice	I don't have any idea... Can you explain it briefly?	No need.
 condjmp_c	c2dest	2
 label	c1dest
@@ -34,41 +36,41 @@ msg	300016	Understood.	了解。	かしこまりました。
 msgbox_transition
 bg	007/005_1280x720
 portraits	
-msg	300017	Today is April 18, 2019. 5 years ago, during the third calamity, the world was destroyed in the havoc by the Herrschers. We're now standing on the ruins of Nagazora, the base of human rebels.	现在的时间为2019年4月18日，世界在5年前发生的第三次大崩坏中，因律者的破坏而毁灭。我们现在所处的位置为长空市废墟，目的地是人类反抗军基地。	現在の時間は2019年4月18日。世界は5年前、第3次崩壊の発生中に律者の破壊によって破滅しました。私たちのいる場所は長空市の廃墟で、目的地は人類のレジスタンス基地です。		
+msg	300017	Today is April 18, 2019. 5 years ago, during the third calamity, the world was destroyed in the havoc by the Herrschers. We're now standing on the ruins of Nagazora, the base of human rebels.	现在的时间为2019年4月18日，世界在5年前发生的第三次大崩坏中，因律者的破坏而毁灭。我们现在所处的位置为长空市废墟，目的地是人类反抗军基地。	現在の時間は2019年4月18日。世界は5年前、第3次崩壊の発生中に律者の破壊によって破滅しました。私たちのいる場所は長空市の廃墟で、目的地は人類のレジスタンス基地です。	A hora atual é 18 de abril de 2019. O mundo foi arruinado há cinco anos pela destruição do Ritsuryo durante a eclosão do Terceiro Colapso. O lugar em que estamos são as ruínas da cidade de Changku, e o destino é a base de resistência da humanidade.	
 speaker	 
-msg	300018	The world was... destroyed?	世界…毁灭了！？	世界が……破滅した！？		
+msg	300018	The world was... destroyed?	世界…毁灭了！？	世界が……破滅した！？	O mundo está... arruinado! ??	
 speaker	Homu robot
-msg	300019	Yes.	没错。	そうです。		
-msg	300020	The Herrschers initiated a global disaster to obliterate human civilization. At the same time, the explosion of Houkai Energy led to the mass extinction of many species in the world.	由律者为中心引发的全球性大崩坏摧毁了人类文明，与大崩坏同时发生的崩坏能爆炸导致了地表生物的大量灭绝。	律者を中心に世界規模の大崩壊が誘発され、人類文明は破壊されました。大崩壊と同時に発生した崩壊エネルギーの爆発によって、地表の生物はほぼ絶命しています。		
-msg	300021	Following the global climate abnormality and the influence under the post-explosion of Houkai energy, the Earth was not a place of any organism to live. After the 3-year post-apocalypse, the overall population on earth reduced to 0.00006%. And you are one of the rarest survivors.	在随后并发的全球气候异常及爆炸后残余的崩坏能死斑影响下，地球已经失去了生物存活的条件，在经历了3年的灾难期后，全球人口存活率约为0.00006%，而你就是其中贵重的生存者之一。	その後、発生した世界規模の異常気象と爆発、そして残された崩壊エネルギーの致死的な影響によって、地球は生物生存の条件を失いました。3年の災害期間を経て、地球の人口残存率は約0.00006%です。そして、あなたはその中の貴重な生存者の1人です。		
+msg	300019	Yes.	没错。	そうです。	está certo.	
+msg	300020	The Herrschers initiated a global disaster to obliterate human civilization. At the same time, the explosion of Houkai Energy led to the mass extinction of many species in the world.	由律者为中心引发的全球性大崩坏摧毁了人类文明，与大崩坏同时发生的崩坏能爆炸导致了地表生物的大量灭绝。	律者を中心に世界規模の大崩壊が誘発され、人類文明は破壊されました。大崩壊と同時に発生した崩壊エネルギーの爆発によって、地表の生物はほぼ絶命しています。	Uma catástrofe mundial foi desencadeada, centrada no Ritsusha, e a civilização humana foi destruída. Devido à explosão de energia de decadência que ocorreu ao mesmo tempo que o colapso catastrófico, as criaturas na superfície da terra estão quase mortas.	
+msg	300021	Following the global climate abnormality and the influence under the post-explosion of Houkai energy, the Earth was not a place of any organism to live. After the 3-year post-apocalypse, the overall population on earth reduced to 0.00006%. And you are one of the rarest survivors.	在随后并发的全球气候异常及爆炸后残余的崩坏能死斑影响下，地球已经失去了生物存活的条件，在经历了3年的灾难期后，全球人口存活率约为0.00006%，而你就是其中贵重的生存者之一。	その後、発生した世界規模の異常気象と爆発、そして残された崩壊エネルギーの致死的な影響によって、地球は生物生存の条件を失いました。3年の災害期間を経て、地球の人口残存率は約0.00006%です。そして、あなたはその中の貴重な生存者の1人です。	Mais tarde, devido aos eventos climáticos extremos globais e explosões que ocorreram, e os efeitos letais da energia de decaimento remanescente, a Terra perdeu as condições de sobrevivência biológica. Após um desastre de três anos, a taxa de sobrevivência da população da Terra é de cerca de 0,00006%. E você é um dos preciosos sobreviventes nele.	
 bg	009/001_1280x720
-msg	300022	That means... I'm a survivor?	我是…幸存者么……	私が……生存者……。		
+msg	300022	That means... I'm a survivor?	我是…幸存者么……	私が……生存者……。	Eu sou... um sobrevivente...	
 portraits	63
-msg	300023	Do you want to continue the search?	请问您还需要继续检索么？	まだ検索を続けますか？		
+msg	300023	Do you want to continue the search?	请问您还需要继续检索么？	まだ検索を続けますか？	Deseja continuar pesquisando?	
 speaker	 
-msg	300024	That's enough.	已经…足够了。	もう……十分。		
+msg	300024	That's enough.	已经…足够了。	もう……十分。	Já ... o suficiente.	
 speaker	Homu robot
 label	c2dest
-msg	300025	I understand. Please allow me to verify some information according to the remaining files.	明白了，那么请允许我根据残存的档案和您核对一些信息。	分かりました。では、私に残されているファイルに基づいて、あなたの情報を照合させてください。		
-msg	300027	Is Houraiji Kyuushou your real name?	请问 蓬莱寺 九霄 是您的名字么？	あなたの名前は蓬莱寺九霄ですか？	Is your name Houraiji Kyuushou?	
+msg	300025	I understand. Please allow me to verify some information according to the remaining files.	明白了，那么请允许我根据残存的档案和您核对一些信息。	分かりました。では、私に残されているファイルに基づいて、あなたの情報を照合させてください。	Compreendo. Agora deixe-me combinar suas informações com base nos arquivos deixados para mim.	
+msg	300027	Is your name Houraiji Kyuushou?	请问 蓬莱寺 九霄 是您的名字么？	あなたの名前は蓬莱寺九霄ですか？	É o seu nome Houraiji Kyuusyou?	
 choice	Yes.	I can't remember...
 speaker	Homu robot
-msg	300030	I see. If you have any information that might help you recall your memories, please contact us and we will try our best to help.	明白了，如果您有其他能够回忆起来的信息可以告诉我，我们会尽力帮助找回您的记忆。	分かりました。他に思い出せる情報があれば教えてください。私があなたの記憶を取り戻すお手伝いをします。
+msg	300030	I see. If you have any information that might help you recall your memories, please contact us and we will try our best to help.	明白了，如果您有其他能够回忆起来的信息可以告诉我，我们会尽力帮助找回您的记忆。	分かりました。他に思い出せる情報があれば教えてください。私があなたの記憶を取り戻すお手伝いをします。	Compreendo. Por favor, deixe-me saber se você tem alguma outra informação que você possa lembrar. Eu vou ajudá-lo a recuperar sua memória.
 / 	300031	My memories...	我的记忆……	私の記憶……。
-msg	300032	Ugh! My head hurts! I feel like I've forgotten something important...
+msg	300032	Ugh! My head hurts! I feel like I've forgotten something important...	呃！头好痛！总觉得忘记了什么重要的事情……	うぅ！頭が痛い！何か大事なことを忘れている気がする……。	Uh! cabeça dói! Parece que esqueci algo importante...
 speaker	Homu robot
-msg	300033	We're almost there. Hold on a little longer.	马上就要到站了，请您再坚持一下。	もうすぐ駅ですから、もうしばらく辛抱してください。		
+msg	300033	We're almost there. Hold on a little longer.	马上就要到站了，请您再坚持一下。	もうすぐ駅ですから、もうしばらく辛抱してください。	Está prestes a ser uma estação, então, por favor, seja paciente por um tempo.	
 se	DLC_CH00_EV02_Explosion
 / 	300034	Boom!	轰！！！	ゴオン！！！		
 speaker	 
 se	DLC_CH00_EV03_WarningAlert
-msg	300035	“Warning! This train is being attacked by Houkai creatures. Please remain calm and follow the crew's instruction to evacuate.”	「警报！本列车遭到崩坏生物袭击，请各位乘客保持冷静，遵循列车工作人员进行疏散」	「警報！本列車は崩壊生物の襲撃を受けました。乗客の皆さんは落ち着いて、係員の指示に従って避難してください」		
+msg	300035	“Warning! This train is being attacked by Houkai creatures. Please remain calm and follow the crew's instruction to evacuate.”	「警报！本列车遭到崩坏生物袭击，请各位乘客保持冷静，遵循列车工作人员进行疏散」	「警報！本列車は崩壊生物の襲撃を受けました。乗客の皆さんは落ち着いて、係員の指示に従って避難してください」	"Alerta! ""Aviso! Este trem foi atacado por uma criatura em colapso. Os passageiros devem se acalmar e evacuar de acordo com as instruções da equipe."" Alerta!!"	
 se	DLC_CH00_EV04_ExplosionClose
-msg	300036	Boom!	轰！！	ゴオン！！		
+msg	300036	Boom!	轰！！	ゴオン！！	NONE	
 speaker	
-msg	300037	What is it?	这到底是什么东西！？	これは、一体何なの！？		
+msg	300037	What is it?	这到底是什么东西！？	これは、一体何なの！？	O que diabos é isso! ??	
 speaker	Homu robot
-msg	300038	Please leave this way!	不好了！不好了！这位客人，请往这边撤离。	マズい！マズい！お客さん、こっち側へ避難してください。		
-msg	300039	Oh my god! Please send help now!	糟糕！糟糕！请求援助，请求援助~	やばい！やばい！救助要請、救助要請～。		
+msg	300038	Please leave this way!	不好了！不好了！这位客人，请往这边撤离。	マズい！マズい！お客さん、こっち側へ避難してください。	É mau! É mau! Clientes, por favor, evacuem para este lado. Terrível! Terrível!	
+msg	300039	Oh my god! Please send help now!	糟糕！糟糕！请求援助，请求援助~	やばい！やばい！救助要請、救助要請～。	Pedido de resgate, pedido de resgate ~.	
 
 

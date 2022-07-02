@@ -168,6 +168,46 @@ playback_process_mode = 0
 
 [node name="HistoryTween" type="Tween" parent="."]
 
+[node name="FSMode_ActorFrame" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="FSMode_ActorFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.392157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextActor" type="RichTextLabel" parent="FSMode_ActorFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 100.0
+margin_right = -100.0
+margin_bottom = -100.0
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_y = 4
+custom_constants/line_separation = 12
+custom_constants/shadow_as_outline = 0
+text = "This is a test.
+asdadsasdasd
+asdassda
+ads
+asdads"
+scroll_active = false
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Choices" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -253,9 +293,11 @@ __meta__ = {
 }
 
 [node name="OptionsScreen" parent="." instance=ExtResource( 12 )]
+visible = false
 rect_pivot_offset = Vector2( -1839.45, 653.5 )
 
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
+[connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]
 [connection signal="pressed" from="SkipButton" to="." method="_on_SkipButton_pressed"]
 [connection signal="mouse_entered" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_entered"]
 [connection signal="mouse_exited" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_exited"]

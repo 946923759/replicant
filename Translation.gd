@@ -94,3 +94,9 @@ func GetString(category:String,key:String,warn:bool=true)->String:
 	if warn:
 		push_warning("[TranslationMgr] There is no translation for ["+category+"] "+key)
 	return key
+
+func HasString(category:String,key:String)->bool:
+	if translation.size()==0:
+		return false
+	return translation.has(category) and translation[category].has(key)
+		

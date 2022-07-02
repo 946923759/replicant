@@ -3,7 +3,7 @@ preload_portraits	59	60
 speaker	
 msgbox_close	instant
 bg	009/032_1280x720
-msg	 	 	 	
+msg	-1	 	 	
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 msgbox_transition
 bg	009/002_1280x720

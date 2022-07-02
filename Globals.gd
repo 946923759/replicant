@@ -18,7 +18,7 @@ var OPTIONS = {
 	},
 	"language":{
 		"type":"list",
-		"choices":["en","ja","ch"],
+		"choices":["en","ja","ch","pt"],
 		"localizeKey":"Language",
 		"default":"en"
 	},
@@ -65,6 +65,7 @@ class Episode:
 	var title:String
 	var desc:String
 	var parts:Array
+	var isSub:bool=false
 
 """
 Typed dict support when?
@@ -219,6 +220,8 @@ func _ready():
 			if line.begins_with("--"):
 				lastChapter=line.substr(2,line.length())
 				chapterDatabase[lastChapter]=[]
+			elif line.begins_with("#"):
+				continue
 			elif !line.empty():
 				var keys = line.split("\t",true)
 				var episode = Episode.new()

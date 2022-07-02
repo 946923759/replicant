@@ -88,6 +88,7 @@ func load_cutscene_data(name:String)->Dictionary:
 		elif !line.empty():
 			#print(line)
 			d['msg'].push_back(line)
+	f.close()
 	return d
 	#return parse_json(f.get_as_text())
 

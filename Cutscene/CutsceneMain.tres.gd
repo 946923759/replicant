@@ -25,6 +25,8 @@ enum BG_TWEEN {
 }
 
 var curPos: int = -1
+var isFullscreenMessageBox:bool = false
+var shouldTextBoxBeVisible:bool=true
 
 """var message=[
 	[OPCODES.PORTRAITS,"Nyto_7","pic_UMP9"],
@@ -46,9 +48,13 @@ var textHistory:Array=[]
 onready var historyActor=$CutsceneHistory
 
 
-onready var text = $CenterContainer/textActor_better
+onready var text:RichTextLabel = $CenterContainer/textActor_better
 onready var textboxSpr = $CenterContainer/textBackground
 onready var speakerActor = $CenterContainer/SpeakerActor
+
+onready var fsContainer:Control = $FSMode_ActorFrame
+onready var fsText:RichTextLabel = $FSMode_ActorFrame/TextActor
+
 
 var choiceResult:int=-1
 
@@ -156,6 +162,8 @@ func advance_text()->bool:
 			'tn':
 				if msgColumn < curMessage.size():
 					tmp_tn=curMessage[msgColumn]
+			'dim':
+				PORTRAITMAN.dim_idx(int(curMessage[1]))
 			'msg':
 				#Do it up here since /setDispChr command might override it.
 				text.visible_characters=0
@@ -180,16 +188,16 @@ func advance_text()->bool:
 							#print("Highlighting at idx "+String(val))
 							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 							#print(tmp_txt)
-					elif tmp_txt.begins_with("/dim["):
-						var cmd_end = tmp_txt.find("]", 5);
-						if cmd_end==-1:
-							printerr("Bad dim command!")
-							break
-						else:
-							var val = int(tmp_txt.substr(4,cmd_end-4))
-							PORTRAITMAN.dim_idx(val)
-							#print("Highlighting at idx "+String(val))
-							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
+#					elif tmp_txt.begins_with("/dim["):
+#						var cmd_end = tmp_txt.find("]", 5);
+#						if cmd_end==-1:
+#							printerr("Bad dim command!")
+#							break
+#						else:
+#							var val = int(tmp_txt.substr(4,cmd_end-4))
+#							PORTRAITMAN.dim_idx(val)
+#							#print("Highlighting at idx "+String(val))
+#							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 					elif tmp_txt.begins_with("/close"):
 						closeTextbox(tw,waitForAnim)
 						waitForAnim+=.3
@@ -238,12 +246,26 @@ func advance_text()->bool:
 					print("Removing tw")
 					#tw.remove(textboxSpr,"interpolate_property")
 					tw.remove_all()
+					closeTextbox(tw,0,0)
 				else:
 					closeTextbox(tw)
 					waitForAnim+=.3
 			'msgbox_open':
 				openTextbox(tw)
 				waitForAnim+=.3
+			'set_fs': #Should this close the textbox too?
+				if curMessage[1].to_lower()=="true":
+					tw.interpolate_property(fsContainer,"modulate:a",null,1,.3,Tween.TRANS_QUAD,Tween.EASE_IN,waitForAnim)
+					isFullscreenMessageBox=true
+					fsText.text=""
+					fsContainer.visible=true
+					#shouldTextBoxBeVisible=false
+				else:
+					tw.interpolate_property(fsContainer,"modulate:a",null,1,.3,Tween.TRANS_QUAD,Tween.EASE_IN,waitForAnim)
+					isFullscreenMessageBox=false
+					fsContainer.visible=false
+					#shouldTextBoxBeVisible=true
+				
 			'match_names':
 				matchedNames=push_back_from_idx_one([],curMessage)
 			'speaker': 
@@ -392,13 +414,30 @@ func advance_text()->bool:
 			Tween.EASE_IN,
 			waitForAnim
 		)
-	else:
+	else: #Fake tween that just waits for waitForAnim
 		tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
 			0,
 			Tween.TRANS_LINEAR,
 			Tween.EASE_IN,
 			waitForAnim
 		)
+	#This is kind of a hack, the history depends on the text actor but FSbox just appends to the same node,
+	text.visible=not isFullscreenMessageBox
+	if isFullscreenMessageBox:
+		var newText = text.text
+		var numNewLines = fsText.text.count("\n")
+		var startingLength = fsText.text.length()-numNewLines #WHY????
+		var newFSText = fsText.text+"\n"+text.text
+		#fsText.text=newFSText
+		print("Size of old text was "+String(startingLength)+", tweening to "+String(newFSText.length())+", "+String(text.text.length()+1)+" "+text.text)
+		tw.interpolate_property(fsText,"visible_characters",startingLength,newFSText.length(),
+			1/TEXT_SPEED*(newFSText.length()-startingLength),
+			Tween.TRANS_LINEAR,
+			Tween.EASE_IN,
+			waitForAnim
+		)
+		fsText.visible_characters=startingLength
+		fsText.text=newFSText
 	print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
 	waitForAnim=0
@@ -406,18 +445,20 @@ func advance_text()->bool:
 	return true
 
 
-func closeTextbox(t:Tween,delay:float=0):
+func closeTextbox(t:Tween,delay:float=0,animTime:float=.3):
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
 	#print("Closing textbox with delay of "+String(delay))
-	t.interpolate_property(textboxSpr,"rect_scale:y",1,0,.3,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-	t.interpolate_property(speakerActor,"rect_scale:y",1,0,.3,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-	t.interpolate_property(speakerActor,"modulate:a",1,0,.3,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+	t.interpolate_property(textboxSpr,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+	t.interpolate_property(speakerActor,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+	t.interpolate_property(speakerActor,"modulate:a",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+	shouldTextBoxBeVisible=false
 
 func openTextbox(t:Tween,delay:float=0):
 	#print("Opening textbox with delay of "+String(delay))
 	t.interpolate_property(textboxSpr,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	t.interpolate_property(speakerActor,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	t.interpolate_property(speakerActor,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
+	shouldTextBoxBeVisible=true
 	
 
 onready var historyTween = $HistoryTween
@@ -462,6 +503,7 @@ func set_rect_size():
 func _ready():
 	$OptionsScreen.visible=false
 	$Choices.visible=false
+	$FSMode_ActorFrame.visible=false
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
 	#$OptionsScreen.connect("options_closed",self,"_on_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
@@ -579,9 +621,10 @@ func _process(delta):
 		if frameLimiter > .1 and curPos < message.size():
 			advance_text()
 			tw.stop_all()
-			textboxSpr.rect_scale.y=1
-			speakerActor.rect_scale.y=1
-			speakerActor.modulate.a=1
+			if shouldTextBoxBeVisible:
+				textboxSpr.rect_scale.y=1
+				speakerActor.rect_scale.y=1
+				speakerActor.modulate.a=1
 			text.visible_characters = text.text.length()
 			frameLimiter=0
 	
@@ -598,10 +641,14 @@ func _process(delta):
 	else:
 		if forward:
 			tw.stop_all()
-			textboxSpr.rect_scale.y=1
-			speakerActor.rect_scale.y=1
-			speakerActor.modulate.a=1
+			if shouldTextBoxBeVisible:
+				textboxSpr.rect_scale.y=1
+				speakerActor.rect_scale.y=1
+				speakerActor.modulate.a=1
 			text.visible_characters = text.text.length()
+
+			if isFullscreenMessageBox:
+				fsText.visible_characters=fsText.text.length()
 		else:
 			if Input.is_action_pressed("ui_cancel"):
 				tw.playback_speed=2.0
@@ -679,6 +726,7 @@ func _on_dim_gui_input(event):
 	if (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
 		event is InputEventScreenTouch and event.is_pressed()
 	):
+		print("clicked")
 		manualTriggerForward=true
 
 

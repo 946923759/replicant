@@ -234,6 +234,9 @@ func _ready():
 					episode.parts=keys[2].split(",",true)
 				else:
 					episode.parts=[]
+				
+				if keys.size() > 3:
+					episode.isSub=keys[3].to_lower()=='true'
 				episode.parentChapter=lastChapter
 				chapterDatabase[lastChapter].append(episode)
 	playerHadSystemData = load_system_data()

@@ -14,8 +14,8 @@ emote	60	3
 msg	300125	Attention! All units must fight back and stop them from coming in!	各单位注意！立即进行反击！一定要阻止它们进入！	各ユニット注意！直ちに反撃！彼らの進入を必ず阻止してください！
 speaker	
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
-msg	300126	Boom!	轰！！！	ゴォン！！！
 shake_camera
+msg	300126	Boom!	轰！！！	ゴォン！！！
 tn		I have no idea what this is saying, the English translation is saying something about a crowd? That doesn't seem correct?
 msg	300127	A powerful explosion from outside rocks the subway, accompanied by deafening screams.	从地面外传来强烈的爆炸，伴随着嘈杂激烈的呼喊声，震动着整个地下车站。	地面から強烈な爆発が伝わってくる。壮絶な叫び声が地下鉄全体を震わしている。
 speaker	Bronya

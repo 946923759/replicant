@@ -75,31 +75,38 @@ var anyOptionWasChanged:bool=false
 onready var arrowTween = $ArrowTween
 func highlightList(optFrame:Control,curSel:int):
 	arrowTween.stop_all()
-	for node in optFrame.get_children():
-		var isSelected=(node.name == "Item"+str(curSel))
-		if isSelected:
-			node.set("modulate", Color(1,1,1,1));
-		else:
-			node.set("modulate", Color(.5,.5,.5,1));
-			
-		if node.has_node("BoolOn"):
-			var opt = node.get_meta("opt_name")
-			#print(opt)
-			highlightBool(node,Globals.OPTIONS[opt]['value'])
-		elif node.has_node("Value"):
+	if not OS.has_feature("mobile"):
+		for node in optFrame.get_children():
+			var isSelected=(node.name == "Item"+str(curSel))
 			if isSelected:
-				#node.get_node("animPlayer").play("arrow")
-				pass
+				node.set("modulate", Color(1,1,1,1));
 			else:
-				#node.get_node("animPlayer").stop(true)
+				node.set("modulate", Color(.5,.5,.5,1));
 				
-				var lArrow = node.get_node("leftArrow")
-				var rArrow = node.get_node("rightArrow")
-				arrowTween.interpolate_property(lArrow,"rect_position:x",null,800-64*2,.1,Tween.TRANS_CUBIC,Tween.EASE_OUT)
-				arrowTween.interpolate_property(rArrow,"rect_position:x",null,800+MAX_VALUE_WIDTH,.1,Tween.TRANS_CUBIC,Tween.EASE_OUT)
-				#lArrow.rect_position.x=800-64*2
-				#rArrow.rect_position.x=800+MAX_VALUE_WIDTH
-	arrowTween.start()
+			if node.has_node("BoolOn"):
+				var opt = node.get_meta("opt_name")
+				#print(opt)
+				highlightBool(node,Globals.OPTIONS[opt]['value'])
+			elif node.has_node("Value"):
+				if isSelected:
+					#node.get_node("animPlayer").play("arrow")
+					pass
+				else:
+					#node.get_node("animPlayer").stop(true)
+					
+					var lArrow = node.get_node("leftArrow")
+					var rArrow = node.get_node("rightArrow")
+					arrowTween.interpolate_property(lArrow,"rect_position:x",null,800-64*2,.1,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+					arrowTween.interpolate_property(rArrow,"rect_position:x",null,800+MAX_VALUE_WIDTH,.1,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+					#lArrow.rect_position.x=800-64*2
+					#rArrow.rect_position.x=800+MAX_VALUE_WIDTH
+		arrowTween.start()
+	else:
+		for node in optFrame.get_children():
+			node.set("modulate", Color(1,1,1,1));
+			if node.has_node("BoolOn"):
+				var opt = node.get_meta("opt_name")
+				highlightBool(node,Globals.OPTIONS[opt]['value'])
 	if curSel!=-1:
 		desc.text=INITrans.GetString("OptionDescriptions",optFrame.get_child(curSel).get_meta("opt_name"))
 		update_desc_size()
@@ -341,9 +348,9 @@ func _init():
 	if OS.has_feature("pc"):
 		systemOptions['isFullscreen']=Globals.OPTIONS['isFullscreen']
 	else:
+		#Not in global options dict so can't use a func
 		systemOptions['goBack']={
-			type="return",
-			hasFunc=true
+			type="go_back"
 		}
 	generateMenu(systemOptionsSubmenu,systemOptions,animation)
 	add_child(systemOptionsSubmenu)
@@ -549,10 +556,12 @@ func _input(event):
 		var option = curMenu.get_child(curSel)
 		handle_option(option)
 		get_tree().set_input_as_handled()
-	elif Input.is_action_pressed("ui_select") or (event is InputEventMouseButton and event.button_index==1 and event.pressed):
+	elif Input.is_action_pressed("ui_select") or (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
 		
-		if event is InputEventMouseButton:
+		if event is InputEventMouseButton or event is InputEventScreenTouch:
 			curSel=get_selection_from_mouse_pos(curMenu,event)
+			#if event is InputEventScreenTouch and curSel != -1:
+			#	highlightList(curMenu,curSel)
 			#Do not handle input if the mouse is in the 'value' side
 			if event.position.x > curMenu.rect_global_position.x+MAX_OPTION_NAME_WIDTH:
 				#if curSel!=-1:
@@ -563,10 +572,12 @@ func _input(event):
 				#	get_tree().set_input_as_handled()
 				return
 			get_tree().set_input_as_handled()
+			print("Got selection "+String(curSel)+" from input at "+String(event.position))
 			
 		if curSel!=-1:
 			var curOpt = curMenu.get_child(curSel)
 			var optName = curOpt.get_meta("opt_name")
+			print("triggering "+optName)
 			match curOpt.get_meta("opt_type"):
 				"submenu":
 					highlightList(systemOptionsSubmenu,subMenuSelection)
@@ -576,6 +587,12 @@ func _input(event):
 				"none":
 					if optName in options and options[optName]['hasFunc']:
 						call("action_"+optName)
+				"go_back":
+					tweenMainMenuIn();
+					highlightList(optionsFrame,selection) #This just updates the description
+					isSubMenu=false
+				_:
+					print("Unhandled option!")
 	elif Input.is_action_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index==2 and event.pressed):
 		if t.is_active(): #Because right clicking opens the options menu and this doesn't take into account that it's been handled...
 			return

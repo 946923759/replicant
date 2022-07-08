@@ -2,45 +2,57 @@ extends Control
 
 var lastBackground
 
-func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0):
-	var actor = get_node(bgName)
-	if !is_instance_valid(actor):
-		printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
-	else:
-		print(actor)
-		#print(get_child_count())
-		#print(actor.rect_position)
-		#print(actor.rect_size)
-		
-		#Shitty way of handling transitions
-		#If it works don't fix it... or something
-		for n in get_children():
-			if n!=lastBackground and n!=actor:
-				n.modulate.a=0
-		
-		if transition=='fade':
-			if is_instance_valid(lastBackground):
-				VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
-			VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
-			actor.modulate.a=0
-			actor.showActor(.5)
-		elif transition=='immediate':
-			actor.modulate.a=1
-			if is_instance_valid(lastBackground):
+func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
+	if bgName=="black":
+		if is_instance_valid(lastBackground):
+			if transition=='immediate':
 				lastBackground.modulate.a=0
-		else:
-			if is_instance_valid(lastBackground):
-				#bgFadeLayer
-				pass
-				lastBackground.hideActor(.5)
-				actor.showActor(.5,.5)
-				if waitForAnim<.3: #This code is horrible
-					waitForAnim+=.5
 			else:
-				#print("ShowActor!")
+				lastBackground.hideActor(.5)
+				waitForAnim+=.5
+			lastBackground=null
+	else:
+		var actor = get_node(bgName)
+		if !is_instance_valid(actor):
+			printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
+		else:
+			print(actor)
+			#print(get_child_count())
+			#print(actor.rect_position)
+			#print(actor.rect_size)
+			
+			#Shitty way of handling transitions
+			#If it works don't fix it... or something
+			for n in get_children():
+				if n!=lastBackground and n!=actor:
+					n.modulate.a=0
+			
+			if transition=='fade':
+				if is_instance_valid(lastBackground):
+					VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
+				VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
+				actor.modulate.a=0
 				actor.showActor(.5)
-			#print("unknown bg tween? "+String(curMessage[2]))
-		lastBackground=actor
+			elif transition=='immediate':
+				actor.modulate.a=1
+				if is_instance_valid(lastBackground):
+					lastBackground.modulate.a=0
+			else: #Fade to black and fade in new background
+				if is_instance_valid(lastBackground):
+					#bgFadeLayer
+					pass
+					lastBackground.hideActor(.5)
+					actor.showActor(.5,.5) #time, delay
+					waitForAnim+=1
+					#if waitForAnim<.3: #This code is horrible
+					#	waitForAnim+=.5
+				else:
+					#print("ShowActor!")
+					actor.showActor(.5)
+					waitForAnim+=.5
+				#print("unknown bg tween? "+String(curMessage[2]))
+			lastBackground=actor
+	return waitForAnim
 
 func _ready():
 	set_process(true)

@@ -72,7 +72,9 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	message = []
 	#Should return false if delimiter is incorrect
 	for s in arr:
+		#print("'"+s+"'")
 		var splitString = s.split(delimiter,true) #,true,1
+		#print(splitString)
 		#This changes the command order, so it probably shouldn't be preprocessed right?
 		if splitString[0].begins_with('/'): #Chaosoup's idea, since typing two opcodes every time was getting obnoxious
 			message.push_back(['speaker',splitString[0].substr(1)])
@@ -168,6 +170,7 @@ func advance_text()->bool:
 				#Do it up here since /setDispChr command might override it.
 				text.visible_characters=0
 				var tmp_txt:String
+				print(curMessage)
 				if msgColumn < curMessage.size():
 					tmp_txt = curMessage[msgColumn]
 				elif curMessage.size() > 1:
@@ -251,8 +254,8 @@ func advance_text()->bool:
 					closeTextbox(tw)
 					waitForAnim+=.3
 			'msgbox_open':
-				openTextbox(tw)
-				waitForAnim+=.3
+				waitForAnim+=openTextbox(tw,waitForAnim)
+				#waitForAnim+=.3
 			'set_fs': #Should this close the textbox too?
 				if curMessage[1].to_lower()=="true":
 					tw.interpolate_property(fsContainer,"modulate:a",null,1,.3,Tween.TRANS_QUAD,Tween.EASE_IN,waitForAnim)
@@ -305,7 +308,19 @@ func advance_text()->bool:
 				PORTRAITMAN.preload_portraits(curMessage)
 			'bg':
 				var transition:String = curMessage[2].to_lower() if curMessage.size() > 2 else ""
-				backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
+				waitForAnim=backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
+			'bg_fade_out_in':
+				var lastBackground = backgrounds.lastBackground
+				if is_instance_valid(lastBackground):
+					var seq := TweenSequence.new(get_tree())
+					seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+					seq.append(lastBackground,'modulate:a',0,.5)
+					seq.append(lastBackground,'modulate:a',1,.5)
+					#lastBackground.hideActor(.5)
+					#lastBackground.showActor(.5,.5)
+					waitForAnim+=1
+				else:
+					print("lastBackground was null, can't fade a background when there isn't one!")
 			'portraits':
 				#Badly translated lua code
 				#Duplicate curMessage while skipping the 0th element
@@ -445,20 +460,22 @@ func advance_text()->bool:
 	return true
 
 
-func closeTextbox(t:Tween,delay:float=0,animTime:float=.3):
+func closeTextbox(t:Tween,delay:float=0,animTime:float=.3)->float:
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
 	#print("Closing textbox with delay of "+String(delay))
 	t.interpolate_property(textboxSpr,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
 	t.interpolate_property(speakerActor,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
 	t.interpolate_property(speakerActor,"modulate:a",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
 	shouldTextBoxBeVisible=false
+	return animTime
 
-func openTextbox(t:Tween,delay:float=0):
+func openTextbox(t:Tween,delay:float=0)->float:
 	#print("Opening textbox with delay of "+String(delay))
 	t.interpolate_property(textboxSpr,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	t.interpolate_property(speakerActor,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	t.interpolate_property(speakerActor,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	shouldTextBoxBeVisible=true
+	return .3
 	
 
 onready var historyTween = $HistoryTween
@@ -677,25 +694,35 @@ func _unhandled_input(event):
 func _input(event):
 	if isOptionsScreenOpen:
 		return
-	elif event is InputEventMouseButton and event.is_pressed():
-		if event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
+	if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
 				tween_in_history()
 				get_tree().set_input_as_handled()
 		#elif event.button_index==BUTTON_WHEEL_UP:
 		#		tween_out_history()
 		#		isHistoryBeingShown=false
-		elif isHistoryBeingShown and (event.button_index==2):
+	elif (event is InputEventMouseButton and event.is_pressed() and event.button_index==2) or (event is InputEventScreenTouch and event.index==1):
+		if isHistoryBeingShown:
 			tween_out_history()
 			isHistoryBeingShown=false
 			get_tree().set_input_as_handled()
-		elif event.button_index==2:
+		else:
 			$OptionsScreen.visible=true
 			$OptionsScreen.OnCommand()
 			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 			isOptionsScreenOpen=true
 			get_tree().set_input_as_handled()
+			
 		#else:
 		#	print("Unknown mouse button pressed or don't know how to handle")
+
+#If Android back button pressed
+#TODO: Ignore if cutscene playing
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOptionsScreenOpen==false:
+		$OptionsScreen.visible=true
+		$OptionsScreen.OnCommand()
+		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
+		isOptionsScreenOpen=true
 
 signal cutscene_finished()
 func end_cutscene_2():

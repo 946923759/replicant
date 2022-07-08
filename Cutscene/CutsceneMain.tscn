@@ -21,9 +21,6 @@ pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="dim" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -147,10 +144,10 @@ margin_top = -20.0
 margin_right = 746.0
 margin_bottom = 250.0
 mouse_filter = 2
-custom_fonts/normal_font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_y = 4
 custom_constants/shadow_as_outline = 0
+custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
 text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
@@ -192,11 +189,11 @@ margin_top = 100.0
 margin_right = -100.0
 margin_bottom = -100.0
 mouse_filter = 2
-custom_fonts/normal_font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_y = 4
 custom_constants/line_separation = 12
 custom_constants/shadow_as_outline = 0
+custom_fonts/normal_font = ExtResource( 2 )
 text = "This is a test.
 asdadsasdasd
 asdassda
@@ -265,11 +262,11 @@ margin_right = 636.0
 margin_bottom = 280.0
 size_flags_horizontal = 0
 size_flags_vertical = 10
-custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_y = 3
 custom_constants/shadow_as_outline = 0
+custom_fonts/font = ExtResource( 2 )
 text = "This is a translation note placeholder, you shouldn't be able to see this unless the cutscene failed to load.... Hello world! Lorem Ipsum whatever asoidjaosdijaodija oawoij aowjidoaijdao jdiaowij jaowij odjiowijd oaijwd"
 autowrap = true
 __meta__ = {
@@ -284,8 +281,8 @@ margin_bottom = 125.0
 focus_mode = 1
 mouse_default_cursor_shape = 2
 input_pass_on_modal_close_click = false
-custom_styles/normal = SubResource( 1 )
 custom_fonts/font = ExtResource( 3 )
+custom_styles/normal = SubResource( 1 )
 action_mode = 0
 text = "TN"
 __meta__ = {

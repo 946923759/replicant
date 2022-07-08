@@ -5,12 +5,15 @@
 Music Test		test_music
 Choice Test		test_choice
 Background Test		test_background
+Black background test		test_blackbg
 Ending Test (SPOILERS)		test_ending
 
 --Chapter 0
 Settle Down	Check out the base.	kyusyo0-1-1,kyusyo0-1-2
 Vague Hope	Seele will introduce you to the base.	kyusyo0-2-1,kyusyo0-2-2,kyusyo0-2-3
 Survive	Protect the #(Residence#) and #(Boundary#) bases.	kyusyo0-3-1,kyusyo0-3-2,kyusyo0-3-3
-Revive	Talk to Seele and Bronya	kyusyo0-4-1,kyusyo0-4-2
 
 --Chapter 1
+Revive	Talk to Seele and Bronya	kyusyo0-4-1,kyusyo0-4-2
+Loot	Go to the Ruins and Desert to collect components.	kyusyo1-1-1,kyusyo1-1-2,kyusyo1-1-3
+Patrol	Go to Discovery and eliminate the Honkai creatures.	kyusyo1-S1-1,kyusyo1-S1-2	true

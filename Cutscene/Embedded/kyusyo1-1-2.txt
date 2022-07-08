@@ -1,0 +1,32 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	5
+msg	300281	Man, Emiza really likes to work people to the bone. You have to be careful with her requests from now on and make sure she doesn't lead you by the nose.	真是的，埃米沙那个家伙太会使唤人了，以后她的委托你可得留心一些，不要被她牵着鼻子走。	まったく。エミザったら人使いが荒いんだから。これからは彼女の依頼には気をつけなきゃ。あごで使われないようにしないと。	Eita. Se Emesa é um ser humano, é difícil. De agora em diante, tenho que ter cuidado com o pedido dela. Eu tenho que evitar que ele seja usado no meu queixo.
+choice	300282 ## She's all good to me. ## 彼女はいい人だと思う。 ## NONE ## NONE	300283 ## Alright, I'll be more careful. ## たしかに、これからは気をつけよう。 ## NONE ## NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	300284	Yeah, she's definitely a good person if you can get past her temper. Don't worry, I was just joking! You don't have to take it seriously.	嗯，除了脾气差之外的确是个烂好人呢，好啦~我刚才是开玩笑的不用那么认真啦~	うん、気性が荒い以外は確かにいい人なのよ。気にしないで、さっきのは冗談だから真面目にとらないでね！	Sim, ele é definitivamente uma boa pessoa, exceto que ele tem um temperamento áspero. Não se preocupe, é uma piada, então não leve a sério!
+jmp	end_choices
+label	c2dest
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	300285	Hey, don't look so serious! I was just joking. She's short-tempered, but she's a good person.	呃！你也不用这么认真啦，我是开玩笑的~那家伙除了脾气差了点其实是个烂好人。	え！あなたもそんなに真面目なの。冗談だよ～！あの子は気性が荒い以外はいい人なんだよ。	Huh! Você é tão sério também. É uma piada! Aquele garoto é uma boa pessoa, exceto por seu temperamento duro.
+label	end_choices
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+tn	0	I have no idea what this sentence means, sorry. DeepL didn't understand the Chinese or Japanese and it seems like the official English translation isn't correct either. I'm assuming Seele means Emesa owes her a favor.
+msg	300286	Anyways, this mission ought to help me out! One day she might have to give me a piggyback ride home from the battlefield. 	总之这次的任务就当是为了自己吧，或许哪天我们也得靠她背回家呢~	とにかく今回の任務は自分のためだからね！いつの日か彼女に戦場からおんぶしてもらって帰ることになるかもしれないもの。	Enfim, esta missão é para mim! Algum dia ela pode pegar carona no campo de batalha e ir para casa.
+msg	300287	Alright, let me briefly explain the mission. You just need to collect the remains of the broken parts on the battlefield, then bring them back to Emesa.	那么我简单说明一下任务内容吧，寻找收集战场上的零件碎片，把它带回给埃米沙就行了。	じゃあ、簡単に任務の内容を説明するね。戦場にある部品の破片を集めて、それを持ち帰ってエミザに渡せばOKだよ。	Em seguida, explicarei brevemente o conteúdo da missão. Recolha os pedaços de peças no campo de batalha, leve-os para casa e entregue-os a Emiza.
+msg	300288	The battle might be over now, but there's still a lot of Honkai beasts wandering around the battlefield. Don't let your guard down just because you're collecting parts.	不过虽然战斗已经过去了，但是战场附近还是游荡着不少崩坏生物，不要为了收集零件而放松警惕。	この間の戦闘は終わったけど、戦場の付近には崩壊生物がたくさんうろついているから、部品集めだからって警戒を緩めたりしないようにね。	A batalha acabou durante este tempo, mas há muitas criaturas no colapso vagando pelo campo de batalha, então não relaxe sua vigilância só porque você está coletando peças.
+msg	300289	Now, let's start the mission!	那么，开始任务吧~	じゃあ、任務の開始～！	Então, a missão começa!

@@ -1,0 +1,24 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Seele	Emesa	_DIM_ALL_WHEN_EMPTY
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	300290	Hmmm, I was able to recover most of the parts in this area.  I have to go back soon.	呼~这一带的零件差不多都回收了，看来差不多该回去了。	ふぅ～この一帯の部品は大体回収できたね。そろそろ戻らなきゃ。	Hmmm, consegui recuperar a maioria das peças nesta área. Tenho que voltar em breve.
+speaker	Emesa
+msgbox_transition
+bg	009/003_1280x720
+portraits	59	55
+emote	55	2
+msg	300291	Welcome home. You sure got that done quick.	回来了么，还是挺快的嘛。	おかえり。結構早かったな。	Bem vindo de volta. Foi bem rápido.
+speaker	Seele
+emote	59	1
+emote	55	2
+msg	300292	I brought back the parts, but is this scrap metal really useful? It all looks like garbage to me.	零件是给你带回来了，但是这些破铜烂铁真的能派上用场么，至少我看来和垃圾没什么区别。	部品を持って帰って来たよ。でも、こんなくず鉄が役に立つのかな？少なくとも私にはゴミと区別がつかないんだけど。	Eu trouxe de volta as peças. Mas esse tipo de sucata é útil? Pelo menos eu não posso dizer isso do lixo.
+speaker	Emesa
+msg	300293	That's for the engineering team to decide. At least they can't keep giving excuses about the lack of parts to fix the mecha. If they can't fix it, I'll beat them to death!	有没有区别得工程班的人说的算，至少现在她们不会再有什么零件短缺的借口了，要是修不好我就打死她们！	そこはエンジニア班の人たち次第だな。少なくとも、彼女たちもこれで部品不足を言い訳にできないだろ。修理しなかったらぶん殴ってやる！	Depende das pessoas da equipe de engenheiros. Pelo menos, eles não podem justificar a falta de peças. Se eu não consertar, vou bater nele!
+msg	300294	Alright, I'm going to deliver these parts to the engineering team. Thanks for the hard work.	那我先把这些零件带给工程班的人，回头见。	じゃあ、この部品をエンジニア班に届けてくるよ。お疲れ様。	Então, vou entregar esta peça para a equipe de engenheiros. bom trabalho.
+speaker	Seele
+msg	300295	Alright, alright. Say hello to all the engineers for me.	哈哈…好吧，替我向工程班的人问好。	うん、分かったわ。エンジニア班のみんなによろしくね。	Sim eu entendo. Atenciosamente a todos da equipe de engenheiros.
+portraits	59
+msg	300296	Well, that's a relief. Let's get some rest, we've still got more tasks to do later. When you're ready to take on the next mission, please take a look at the assignment board.	呼~看来事情告一段落了，先休息一下吧。后面还有别的委托哦，如果要进行下一个任务的话就去任务板看看吧~	ふぅ～これでひと段落ね。少し休みましょう。まだ別の依頼もあるから。次の任務を受けるなら任務ボードを見てね。	Hmmm, isso é um parágrafo. Vamos descansar um pouco. Ainda tenho outro pedido. Olhe para o quadro de missão para sua próxima missão.

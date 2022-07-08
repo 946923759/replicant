@@ -38,7 +38,7 @@ func _ready():
 	#mSelObjs.queue_sort()
 
 func handle_chapter_click(event:InputEvent,internalName:String):
-	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
+	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		print("Clicked "+internalName)
 		set_new_mission_listing(internalName)
 
@@ -73,7 +73,10 @@ func handle_btn_press(vnPlayerDest:String,episodeDest:Globals.Episode):
 	$AnimationPlayer.play("New Anim")
 	#print("lol")
 	
-
+#If Android back button pressed
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
+		get_tree().quit();
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	print("Changing scene!")

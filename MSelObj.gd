@@ -4,6 +4,7 @@ signal button_pressed(destination,episode)
 onready var title = $Title
 onready var desc = $Description
 onready var buttons = $HBoxContainer
+onready var click = $AudioStreamPlayer
 
 var thisEpisode:Globals.Episode
 var partDestinations:Array
@@ -22,6 +23,14 @@ func setEpisode(episode:Globals.Episode):
 	else:
 		title.text=episode.title
 		desc.text=episode.desc
+		
+	if episode.isSub: #e98900
+		$LeftColoring.modulate=Color("#00abff")
+	else:
+		$LeftColoring.modulate=Color("#e98900")
+	$LabelMain.visible=episode.isSub==false
+	$LabelSub.visible=episode.isSub
+		
 	setNumParts(episode.parts)
 
 func setNumParts(partDestinations_:Array):
@@ -47,6 +56,7 @@ func setNumParts(partDestinations_:Array):
 #	#	partDestinations
 
 func buttonTrigger(b:int):
+	click.play()
 	if b > partDestinations.size()-1:
 		printerr("Pressed a button that shouldn't be pressable")
 		return

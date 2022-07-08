@@ -1,0 +1,87 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Seele	Emesa	_DIM_ALL_WHEN_EMPTY
+speaker	Seele
+bg	009/003_1280x720
+portraits	59
+emote	59	1
+msg	300247	hehe~ Looks like you're ready to go. I thought you'd chicken out, but it looks like you've got some courage!	嚯嚯~看来是准备好了呢，我还以为你会临阵脱逃，看来还是有点骨气的嘛~	うふふ～準備できたみたいね。土壇場になって逃げ出しちゃうかと思ったけど、結構骨があるのね！	Ufufu ~ Parece que você está pronto. Achei que ia fugir no último minuto, mas tenho muitos ossos!
+msg	300248	But be prepared for training!  I'm not as kind as my sister.  I won't stop even when you're crying or screaming.	不过既然接受了训练就要做好觉悟~我可不会像姐姐大人那样温柔，到时候哭着喊着我也不会停止的哦~	でも、訓練を受けるからには覚悟しておいてね！私はお姉ちゃんみたいに優しくないよ。泣いても喚いてもやめたりしないからね。	Mas esteja preparado para o treinamento! Não sou tão gentil quanto minha irmã. Não vou parar de chorar ou gritar.
+msg	300249	Ehehe ~ Don't be afraid!  It's all for your own good. You have to be strong against the Honkai, humans are weak and fragile.	嘿嘿~你也不用害怕啦，这一切可都是为了你好。想要在崩坏中生存下来没两下子可不行，人类可是十分脆弱的生物呢~	エヘヘ～怖がらないで！全部あなたのためだから。崩壊の中で生き残るには力がないとダメなんだよ。人間はとても弱い生き物だから。	Ehehe ~ Não tenha medo! É tudo para você. Você tem que ter o poder de sobreviver no colapso. Porque os humanos são criaturas muito fracas.
+msg	300250	But if you've managed to survive in this godforsaken world until now, you must have acquired plenty of survival skills along the way. There are fewer and fewer survivors like you being discovered every day.	不过你能够活到现在，一定也在这个混账世界中学到了不少生存技巧吧，像你这样被发现的生存者已经越来越少了呢。	でも、今まで生き残って来たんだからその辺は大丈夫だよね。この混沌とした世界で生存スキルを身に着けてきたんでしょ？あなたみたいに発見される生存者って、日を追うごとに少なくなってきているんだよ。	Mas eu sobrevivi até agora, então tudo bem. Você adquiriu habilidades de sobrevivência neste mundo caótico, não é? O número de sobreviventes encontrados como você está diminuindo dia a dia.
+emote	59	5
+msg	300251	Oops, I forgot you've lost your memories before arriving here. Sorry.	啊~差点忘了你不记得以前的事情了，抱歉抱歉~	あ～忘れてた。あなた以前のこと覚えていないんだったよね。ごめんなさい。	Ah, esqueci. Eu não me lembrava antes de você. desculpe.
+emote	59	1
+msg	300252	Based on the way you fought the other day, it seems like you've still got some survival instincts. It's just that your fighting style needs some improvement, so let me correct it for you~	不过从之前的战斗来看对于生存的本能还是好好保存着呢，只是战斗的方法有些问题，就让我来好好为你矫正一下吧~	でも、この間の戦いぶりからして生存本能はしっかり残っていると思うよ。ただ戦い方に問題があるから、私が少し修正してあげる。	Mesmo em japonês, acho que o instinto de sobrevivência ainda permanece firme na batalha durante esse período. No entanto, há um problema com a forma de lutar, então vou corrigi-lo um pouco.
+msg	300253	Let's go! There's plenty of assignments for you to take on.	那么走吧！基地中可是有很多任务可以来锻炼你哦~	じゃあ行きましょ！色々な任務を受けて鍛えてみよ～！	Vamos! Faça várias missões e treine!
+choice	300254 ## Didn't you say you were going to train me first? ## 訓練って言ってなかった？ ## Didn't you say you were going to train me first? ## NONE	300255 ## Are you sure I'm capable of that? ## 私の実力で本当にできるの？ ## Are you sure I'm capable of that? ## NONE
+condjmp_c	c2dest	2
+label	c1dest
+msg	300256	In this situation we don't have the luxury to spend time training you one-on-one. You'll be starting out training by completing some simple missions~	现在这个情况可没有这么奢侈的时间单独给你训练，想要锻炼的话只有从简单的任务开始~	今の状況だと、あなただけに訓練を施すなんて時間の余裕はないの。簡単な任務を積み重ねて鍛えるのが一番効率いいから我慢してね。	Na situação atual, não posso me dar ao luxo de treinar só para você. É mais eficiente empilhar e treinar missões simples, então seja paciente.
+label	c2dest
+msg	300258	Don't worry! Fighting is also part of the training. The battlefield is the best classroom, after all. Get your weapons and follow me.	不用担心啦~实战也是训练的一环，战场可是最好的课堂。准备好你的武器跟我来吧~	心配しなくて大丈夫だよ～！実践も訓練の一環だから。戦場は最高の教室だよ。武器を用意して私について来てね。	Não se preocupe! A prática também faz parte do treinamento. O campo de batalha é a melhor sala de aula. Peguem suas armas e me sigam.
+label	end_choices
+nop	bg	007/006_1280x720
+nop	bg	009/003_1280x720
+msgbox_close
+bg_fade_out_in
+se	DLC_CH01_EV04_PushDoorFast
+msgbox_open
+msg	300259	Heyooo~ Emesa! We're here to help!	哟~埃米沙！我来帮你了哦~	ヤッホ～エミザ！手伝いに来たよ～！	Yahoo ~ Emiza! Eu vim para ajudar!
+speaker	Emesa
+portraits	59	55
+emote	59	2
+emote	55	4
+msg	300260	Don't call me Emesa!	不要叫我埃米沙！	エミザって呼ぶな！	Não me chame de Emiza!
+emote	55	2
+msg	300261	Hm? The girl behind you is... Seems like she's recovered already. Wow, she's really tough.	嗯？你身后的家伙是…哼~看来已经康复了嘛，我就说这家伙命硬着呢。	ん？あんたの後ろにいる子……あー元気になったんだな。こいつはしぶといと思ってたんだよ。	sim? A criança atrás de você... Ah, estou bem. Achei que ele estava relutante.
+tn	0	She says something along the lines of "would have ended up seeing the gates to Heaven", but it sounds weird
+msg	300262	You were immensely helpful that day. Without you, everyone on the battlefield would have ended up in the afterlife. On behalf of them, thank you! 	之前的事情真是帮大忙了，没有你的话战场上的那些家伙或许已经在鬼门关搬砖了呢，我代替她们感谢你~	この前は本当に助かったよ。あんたがいなきゃ、戦場にいたやつらは全員お陀仏だったかもしれないからな。みんなに代わって礼を言うよ！	Foi muito útil no outro dia. Sem você, todos os caras no campo de batalha poderiam ter sido mortos. Obrigado em nome de todos!
+speaker	Seele
+emote	59	1
+msg	300263	Let me introduce you. This is our field medic, you've already met her in the last battle.	我来介绍一下，这位是基地内的医疗兵，之前在战场上你们已经见过面了吧~	紹介するわね。こちらは基地内の衛生兵、この前の戦いでもう会ってるよね。	Eu vou te apresentar. Este é o médico da base, que você já conheceu na última batalha.
+speaker	Emesa
+emote	59	1
+tn	0	I will refrain from putting "Got it memorized?" here and lose what little integrity I have. The literal translation is 'keep it remembered' or 'don't forget it!'
+msg	300264	I'm Ray. Emesa's my first name, but don't ever call me by that name. Got it?	我是雷伊，埃米沙是名字，但是千万不要用这个名字叫我，记住了么！	レイだ。エミザは名前なんだけど、この名前では絶対呼ぶなよ。いいな？	Raio. Emiza é um nome, mas não a chame por esse nome. Tudo bem?
+speaker	Seele
+tn	0	You know, Japanese honorific stuff... In English It would be like "miss Ray" I guess
+msg	300265	Even though the name Emesa is so cute! Why do I have to call you by your last name? Aren't we friends? 	埃米沙这名字多可爱~为什么要用姓氏来称呼啦，多见外！	エミザっていう名前かわいいのに～！どうして苗字で呼ばなきゃいけないの。よそよそしくない？	Mesmo que o nome Emiza seja fofo! Por que eu tenho que chamá-lo pelo sobrenome? Não é estranho?
+speaker	Emesa
+emote	55	4
+msg	300266	For the last time, I hate that name! Don't ☆☆ing make me say it again!	说过很多次了！我讨厌这个名字，不要让我OO的说第二遍！	何回も言っただろ。この名前が嫌いなんだ！何回も言わせるな！	Você disse isso muitas vezes. Eu odeio esse nome! Não me deixe dizer isso de novo e de novo!
+choice	300267 ## That anger... I remember now! ## この悪口知ってる……思い出した！ ## NONE ## NONE	300268 ## I think your name is cute too. ## かわいい名前だと思うな。 ## NONE ## NONE
+condjmp_c	c2dest	2
+label	c1dest
+emote	55	1
+msg	300269	Ha? You remembered? I heard you had amnesia, but it seems like it's pretty serious. How about I give you a refresher with my fists?	哈？你才想起来么，虽然听说你的记忆出现了问题，看来还是挺严重的，需要我用拳头帮你检查一下么。	はあ？やっと思い出したのか？あんた、記憶に問題があるって聞いていたけど、どうやら相当重いみたいだな。調べてやろっか、拳で。	Que? Você finalmente se lembrou? Ouvi dizer que você tem um problema de memória, mas parece que é bem pesado. Confira, com o punho.
+jmp	end_choices
+label	c2dest
+emote	55	1
+msg	300270	Oh? Sounds like you want to go back to the hospital bed... Would you like me to carry you?	嚯。我看你是还想回病床躺一会，需要我把你抬回去么？	何？あんた、まだベッドで寝ていたいみたいだね。私が元に戻してあげよっか？	que? Você ainda quer dormir na cama. Devo colocá-lo de volta?
+label	end_choices
+speaker	Seele
+emote	59	1
+msg	300271	Don't take it so seriously, we're just joking. Anyways, tell me about the commission. I'm pretty busy.	好啦~不要这么认真嘛，只是开玩笑而已啦。赶紧说说委托的内容吧，我可是很忙的哦~	ほら～そんなに真面目にとらないで。冗談でしょ。早く依頼の内容を教えてよ。こっちだって忙しいんだから。	Olha, não leve tão a sério. você está brincando. Por favor, diga-me o conteúdo do seu pedido o mais rápido possível. Estou muito ocupado aqui.
+speaker	Emesa
+msg	300272	You're the one who's... Well, I'll explain the request.	你这家伙…好吧，事情是这样的。	あんたってやつは……まぁいい、依頼内容を説明するよ。	Vocês são... bem, vou explicar o que vocês pediram.
+msg	300273	You know that battle we had the other day? The Homei mech was badly damaged during that battle. I asked the engineering team to repair it, but they said they didn't have enough parts and that they needed to wait for more parts to arrive.	之前的战斗中吼美机器人的损坏比较严重，但是工程班那边的家伙说由于缺少零件很多都无法修复，需要等待零件补充才行。	この前の戦いあっただろ？その時のホミロボットの損傷が激しくてね。エンジニア班に修理を頼んだんだけど、部品が足りないっていうんだよ。部品の補充をしないと無理だって。	Houve uma batalha da última vez? O dano ao robô Homu naquela época foi grave. Pedi à equipe de engenheiros para consertá-lo, mas eles disseram que estavam faltando peças. É impossível sem reposição de peças.
+speaker	Seele
+msg	300274	That's right... The lack of supplies is a pain in the neck for sure. Let's wait for the scouting team to return.	这样啊…现在物资短缺的确比较棘手，看来只能等待外部调查队回来了。	そうなんだ……今の物資不足は確かに頭が痛いよね。外部調査チームが帰ってくるのを待つしかないけど。	Isso mesmo... A atual escassez de suprimentos certamente dói na minha cabeça. Eu tenho que esperar a equipe de pesquisa externa voltar.
+speaker	Emesa
+msg	300275	To be frank, we don't have that kind of time.  If a battle of the same magnitude occurs before we can get the repairs done, there's no guarantee everyone will be able to survive.	没有这么多的时间，如果在补给到达之前再发生这样规模的战斗，我可没法保证所有上战场的人都能活着回来。	ハッキリ言って、そんな時間はない。修理前に同じ規模の戦いが起きたら、全員生きて帰れる保証はゼロだ。	Para ser claro, eu não tenho muito tempo. Se uma batalha da mesma magnitude ocorrer antes do reparo, não há garantia de que todos estarão vivos.
+speaker	Seele
+msg	300276	So, what's the plan?	所以，你的想法是？	それで、どうしてほしいの？	Então o que você quer que eu faça?
+speaker	Emesa
+msg	300277	Since the Homei mecha was damaged on the battlefield, we can scavenge the broken parts from the battlefield.	既然吼美机器人是在战场上损坏的，那从战场上把损坏的零件带回来不就行了。	つまり、ホミロボットが戦場で壊れたのなら、その戦場から壊れた部品を拾ってくればいいってことさ。	Em outras palavras, se o Homu Robo quebrar no campo de batalha, você só precisa pegar as partes quebradas desse campo de batalha.
+speaker	Seele
+emote	59	5
+emote	55	1
+msg	300278	What? Hold on! In other words, you want us to go to the battlefield and pick up some trash?	哈？等下！你的意思是让我们给你去战场上捡垃圾么？	え～？待って！つまり私たちに戦場に行ってゴミ拾いして来いってこと？	Em outras palavras, se o Homu Robo quebrar no campo de batalha, você só precisa pegar as partes quebradas desse campo de batalha.
+speaker	Emesa
+emote	59	5
+emote	55	2
+msg	300279	Don't think of it as trash. It's not trash, it's the key to maintaining medical care for the frontlines. If you don't want to go... I'll do it later myself...	不要说的那么难听啊，那可不是垃圾，而是维系整个战线医疗的关键，你要不想去也可以，回头我去找布…	言い方の問題だろ。ゴミじゃなくて、戦線医療そのものを維持するための鍵だ。行きたくないならいい……あとで自分で……。	NONE
+speaker	Seele
+emote	59	1
+emote	55	2
+msg	300280	Who said I wouldn't go! It's fine, all I have to do is collect the parts!	谁说不去的！我们走！不就是回收零件嘛！	誰が行かないって言ったのよ！行くよ！部品を回収してくればいいんでしょ！	Eu disse que ninguém iria! vai! Tudo o que você precisa fazer é coletar as peças!

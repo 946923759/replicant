@@ -1,0 +1,9 @@
+msg	This is a black background test. You can use 'black' as the filename for the bg command to make the current background transparent.
+bg	009/003_1280x720
+msg	Show background.
+bg	black
+msg	Fade background to black.
+bg	009/003_1280x720
+msg	Show again.
+bg_fade_out_in
+msg	bg, fade, bg test.

@@ -1,6 +1,7 @@
 #LANGUAGES	KEY	EN	CH	JP
+nop	Set speaker blank because msgbox is closed
+speaker	 
 msgbox_close	instant
-speaker	Kyuushou
 bg	007/006_1280x720
 se	DLC_CH01_EV15_WindWooshB
 msg	303148	……	……	……。

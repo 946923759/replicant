@@ -59,21 +59,22 @@ func load_cutscene_data(name:String)->Dictionary:
 		'msg':[]
 	}
 	while !f.eof_reached():
-		var line = f.get_line().strip_edges(false,true)
+		#DO NOT STRIP EDGES OR IT WILL BREAK EVERYTHING
+		var line = f.get_line() #.strip_edges(false,true)
 		#print(line)
 		if line.begins_with('#'):
 			var meta = line.split("\t",true)
 			match meta[0]:
-				#THERE HAS TO BE A BETTER WAY TO DO THIS
-				"#BG":
-					print(line)
-					d['bg']=strip_first(meta)
-				"#NSF_FILENAME":
-					d['nsf_fileName']=line.lstrip("#NSF_FILENAME\t")
-				"#NSF_TRACKNUM":
-					d['nsf_trackNum']=int(line.lstrip("#NSF_TRACKNUM\t"))
-				"#CDAUDIO":
-					d['CDAudio']=line.lstrip("#CDAUDIO\t")
+#				#THERE HAS TO BE A BETTER WAY TO DO THIS
+#				"#BG":
+#					print(line)
+#					d['bg']=strip_first(meta)
+#				"#NSF_FILENAME":
+#					d['nsf_fileName']=line.lstrip("#NSF_FILENAME\t")
+#				"#NSF_TRACKNUM":
+#					d['nsf_trackNum']=int(line.lstrip("#NSF_TRACKNUM\t"))
+#				"#CDAUDIO":
+#					d['CDAudio']=line.lstrip("#CDAUDIO\t")
 				"#NEXT":
 					d['next']=line.lstrip("#NEXT\t")
 				"#LANGUAGES":

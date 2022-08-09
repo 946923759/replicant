@@ -13,7 +13,8 @@ msg	300251	Oops, I forgot you've lost your memories before arriving here. Sorry.
 emote	59	1
 msg	300252	Based on the way you fought the other day, it seems like you've still got some survival instincts. It's just that your fighting style needs some improvement, so let me correct it for you~	不过从之前的战斗来看对于生存的本能还是好好保存着呢，只是战斗的方法有些问题，就让我来好好为你矫正一下吧~	でも、この間の戦いぶりからして生存本能はしっかり残っていると思うよ。ただ戦い方に問題があるから、私が少し修正してあげる。	Mesmo em japonês, acho que o instinto de sobrevivência ainda permanece firme na batalha durante esse período. No entanto, há um problema com a forma de lutar, então vou corrigi-lo um pouco.
 msg	300253	Let's go! There's plenty of assignments for you to take on.	那么走吧！基地中可是有很多任务可以来锻炼你哦~	じゃあ行きましょ！色々な任務を受けて鍛えてみよ～！	Vamos! Faça várias missões e treine!
-choice	300254 ## Didn't you say you were going to train me first? ## 訓練って言ってなかった？ ## Didn't you say you were going to train me first? ## NONE	300255 ## Are you sure I'm capable of that? ## 私の実力で本当にできるの？ ## Are you sure I'm capable of that? ## NONE
+choice	300254	Didn't you say you were going to train me first?	訓練って言ってなかった？	Didn't you say you were going to train me first?	NONE
+choice	300255	Are you sure I'm capable of that?	私の実力で本当にできるの？	Are you sure I'm capable of that?	NONE
 condjmp_c	c2dest	2
 label	c1dest
 msg	300256	In this situation we don't have the luxury to spend time training you one-on-one. You'll be starting out training by completing some simple missions~	现在这个情况可没有这么奢侈的时间单独给你训练，想要锻炼的话只有从简单的任务开始~	今の状況だと、あなただけに訓練を施すなんて時間の余裕はないの。簡単な任務を積み重ねて鍛えるのが一番効率いいから我慢してね。	Na situação atual, não posso me dar ao luxo de treinar só para você. É mais eficiente empilhar e treinar missões simples, então seja paciente.

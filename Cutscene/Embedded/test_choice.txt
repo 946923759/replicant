@@ -1,7 +1,9 @@
 #LANGUAGES	en
 bg	009/002_1280x720
 msg	This is a choice test. Select a choice.
-choice	Test Choice 1	Test Choice 2
+choice	Test Choice 1
+choice	Test Choice 2
+choice	Test Choice 3
 condjmp_c	c2dest	2
 msg	You selected choice 1.
 jmp	end_choices

@@ -226,18 +226,18 @@ func advance_text()->bool:
 				text.bbcode_text = tmp_txt
 				
 				if curPos < message.size()-1 and message[curPos+1][0]=='choice':
-					#TODO: This is horrible
 					ChoiceTable = []
-					for i in range(1,message[curPos+1].size()):
-						var a = message[curPos+1][i].split("##",true)
-						var b = msgColumn-1
-						if b<a.size():
-							ChoiceTable.push_back(a[b])
+					for i in range(curPos+1,curPos+5): #5 choice limit
+						var cMsg = message[i]
+						if cMsg[0]!='choice':
+							break
+						if msgColumn < cMsg.size():
+							ChoiceTable.push_back(cMsg[msgColumn])
 						else:
-							print("Current language is "+String(b)+", but this choice only had "+String(a.size())+" languages to choose from")
-							print(a)
-							ChoiceTable.push_back(a[0])
-					#ChoiceTable=push_back_from_idx_one([],message[curPos+1])
+							print("Current language is "+String(msgColumn)+", but this choice only had "+String(cMsg.size())+" languages to choose from")
+							print(cMsg)
+							ChoiceTable.push_back(cMsg[0])
+					
 				break #Stop processing opcodes and wait for user to click
 			#Compatibility opcode for Girls' Frontline
 			'msgbox_transition':
@@ -685,7 +685,7 @@ func _unhandled_input(event):
 			print("Hiding history!")
 			tween_out_history()
 			isHistoryBeingShown=false
-		else:
+		elif isFullscreenMessageBox==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
 			#historyActor.set_history(textHistory)
@@ -695,8 +695,9 @@ func _input(event):
 	if isOptionsScreenOpen:
 		return
 	if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
-				tween_in_history()
-				get_tree().set_input_as_handled()
+		if isFullscreenMessageBox==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+			tween_in_history()
+			get_tree().set_input_as_handled()
 		#elif event.button_index==BUTTON_WHEEL_UP:
 		#		tween_out_history()
 		#		isHistoryBeingShown=false

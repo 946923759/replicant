@@ -22,11 +22,19 @@ var options = {
 		type="submenu",
 		submenu="systemOptionsSubmenu"
 	},
+	"reload":{
+		type="none",
+		hasFunc=true
+	},
 	"chapterSelect":{
 		type="none",
 		hasFunc=true
 	}
 }
+
+func action_reload():
+	get_tree().change_scene("res://Cutscene/CutsceneFromFile.tscn")
+
 func action_chapterSelect():
 	t.stop_all()
 	t.interpolate_property($ScreenOut,"color:a",null,1.0,.5)

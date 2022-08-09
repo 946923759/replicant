@@ -4,7 +4,8 @@ bg	009/013_1280x720
 portraits	59
 emote	59	5
 msg	300281	Man, Emiza really likes to work people to the bone. You have to be careful with her requests from now on and make sure she doesn't lead you by the nose.	真是的，埃米沙那个家伙太会使唤人了，以后她的委托你可得留心一些，不要被她牵着鼻子走。	まったく。エミザったら人使いが荒いんだから。これからは彼女の依頼には気をつけなきゃ。あごで使われないようにしないと。	Eita. Se Emesa é um ser humano, é difícil. De agora em diante, tenho que ter cuidado com o pedido dela. Eu tenho que evitar que ele seja usado no meu queixo.
-choice	300282 ## She's all good to me. ## 彼女はいい人だと思う。 ## NONE ## NONE	300283 ## Alright, I'll be more careful. ## たしかに、これからは気をつけよう。 ## NONE ## NONE
+choice	300282	She's all good to me.	彼女はいい人だと思う。	NONE	NONE
+choice	300283	Alright, I'll be more careful.	たしかに、これからは気をつけよう。	NONE	NONE
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Seele

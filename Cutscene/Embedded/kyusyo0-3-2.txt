@@ -11,5 +11,6 @@ msg	300152	Man, this one picked a real crappy time to appear! Just my ☆☆ing 
 tn	XXX	I think she's saying "we can't hold the line much longer"... Need to redo it
 msg	300153	Hey! Hurry up and take the wounded away from here with the mech! We can't hold it here any longer!	喂！赶紧带着伤员和这些机器人离开！这里恐怕也坚持不了多久了！	ほら！急いでケガ人を連れて、このロボットとここを離れて！ここはもう持たない！
 nop	choice_meta	300154	300155
-choice	I've got you covered, you go first.	I'll defeat it.
+choice	0	I've got you covered, you go first.
+choice	0	I'll defeat it.
 msg	300156	Wait! It can't be killed! Come back!	喂！等下！你是杀不死它的！给我回来！	おい！あんたじゃ倒せっこない！戻れ！

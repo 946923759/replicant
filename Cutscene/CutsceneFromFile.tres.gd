@@ -88,7 +88,7 @@ func load_cutscene_data(name:String)->Dictionary:
 					push_warning("Unknown script metadata tag: "+meta[0])
 		elif !line.empty():
 			#print(line)
-			d['msg'].push_back(line)
+			d['msg'].push_back(line.replace("\\n","\n"))
 	f.close()
 	return d
 	#return parse_json(f.get_as_text())

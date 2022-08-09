@@ -4,8 +4,8 @@ bg	009/021_1280x720
 se	DLC_CH00_EV05_MonsterDie
 msg	300040	Sorry, sorry~ I'm a little late. Are you hurt anywhere?	抱歉抱歉~稍微来迟了一会，你没有受伤吧？	ごめん、ごめん～ちょっと遅れちゃった。ケガしてない？	Desculpe, desculpe, estou um pouco atrasado. Você está ferido?
 msg	300041	Wow, not bad~ You killed those zombies so easily. You're surely someone worth training.	嚯…干的不错嘛，居然能打倒这么多死士~看来是个值得培养的家伙呢。	わぁ……よくやったね。ゾンビをこんなに倒すなんて～育成のしがいがある子みたい！	Uau... bem feito. Bater tantos zumbis - parece uma criança que vale a pena criar!
-choice	0	You must be...	Você deve ser...
-choice	0	Who are you?	Quem é você?
+choice	0	You must be...			Você deve ser...
+choice	0	Who are you?			Quem é você?
 condjmp_c	c2dest	2
 msg	300044	Hmm~? Seems like you already recognize us. In that case, I'll make this quick!	嚯~看来你知道我们呢，既然这样的话解释起来就方便许多了~	ん～？私たちのことを知っているんだね。そういうことなら話が早いな！	Hum? Você nos conhece. Se for esse o caso, a história será rápida!
 jmp	endChoices

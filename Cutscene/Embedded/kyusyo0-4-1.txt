@@ -15,8 +15,8 @@ emote	59	1
 msg	300203	You've finally regained consciousness~! You're a total daredevil!	看来终于恢复意识了呢~真是命大的家伙啊！	やっと意識を取り戻したんだね～！まったく命知らずなんだから！
 choice	300204	Am I still alive?	我还活着么…	私、生きているの……？
 choice	300205	The voice...	刚才的声音是…	さっきの声は……？
-speaker	Bronya
 portraits	59	60
+speaker	Bronya
 emote	60	3
 msg	300206	Is that what you want to say to her?	这就是你想说的话么…	それが言いたかったことなのですか。
 speaker	Seele

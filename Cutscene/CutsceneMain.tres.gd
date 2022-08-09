@@ -27,6 +27,7 @@ enum BG_TWEEN {
 var curPos: int = -1
 var isFullscreenMessageBox:bool = false
 var shouldTextBoxBeVisible:bool=true
+var choiceResult:int=-1
 
 """var message=[
 	[OPCODES.PORTRAITS,"Nyto_7","pic_UMP9"],
@@ -55,8 +56,9 @@ onready var speakerActor = $CenterContainer/SpeakerActor
 onready var fsContainer:Control = $FSMode_ActorFrame
 onready var fsText:RichTextLabel = $FSMode_ActorFrame/TextActor
 
+onready var tw:Tween = $TextboxTween
+onready var txtTw:Tween = $TextTween
 
-var choiceResult:int=-1
 
 func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there's no need to return them, but whatever
 	for i in range(1,arr2.size()):
@@ -147,11 +149,12 @@ var msgColumn:int=1
 var lastPortraitTable = {}
 var ChoiceTable:PoolStringArray = []
 var matchedNames = []
-onready var tw = $TextboxTween
 func advance_text()->bool:
 	curPos+=1
 	var tmp_speaker = "NoSpeaker!!"
 	var tmp_tn = ""
+	#If we don't remove, the previous text tween can start overwriting the current one
+	txtTw.remove_all()
 	while true:
 		if curPos >= message.size():
 			print("Fix your code, idiot. You already hit the end.")
@@ -423,14 +426,14 @@ func advance_text()->bool:
 	#print(TEXT_SPEED)
 	if TEXT_SPEED<100:
 		#print(1/TEXT_SPEED*(text.text.length()-text.visible_characters))
-		tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+		txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
 			1/TEXT_SPEED*(text.text.length()-text.visible_characters),
 			Tween.TRANS_LINEAR,
 			Tween.EASE_IN,
 			waitForAnim
 		)
 	else: #Fake tween that just waits for waitForAnim
-		tw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+		txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
 			0,
 			Tween.TRANS_LINEAR,
 			Tween.EASE_IN,
@@ -455,6 +458,7 @@ func advance_text()->bool:
 		fsText.text=newFSText
 	print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
+	txtTw.start()
 	waitForAnim=0
 	#If there was any processing done at all, this should be true
 	return true
@@ -636,8 +640,9 @@ func _process(delta):
 	if Input.is_action_pressed("vn_skip") and isWaitingForChoice==false:
 		frameLimiter+=delta
 		if frameLimiter > .1 and curPos < message.size():
+			txtTw.remove_all()
 			advance_text()
-			tw.stop_all()
+			tw.remove_all()
 			if shouldTextBoxBeVisible:
 				textboxSpr.rect_scale.y=1
 				speakerActor.rect_scale.y=1
@@ -646,7 +651,7 @@ func _process(delta):
 			frameLimiter=0
 	
 	var forward = Input.is_action_just_pressed("ui_select") or manualTriggerForward
-	if text.visible_characters >= text.text.length():
+	if text.visible_characters >= text.text.length(): #If finished displaying characters
 		if ChoiceTable.size()>0:
 			$Choices.setChoices(ChoiceTable)
 			$Choices.visible=true
@@ -655,9 +660,11 @@ func _process(delta):
 			print("advancing")
 			if curPos >= message.size() or !advance_text():
 				end_cutscene()
-	else:
+	else: #Skip to finish
 		if forward:
-			tw.stop_all()
+			tw.remove_all() #Why doesn't godot have finishtweening() wtf
+			#txtTw.stop_all()
+			txtTw.remove_all()
 			if shouldTextBoxBeVisible:
 				textboxSpr.rect_scale.y=1
 				speakerActor.rect_scale.y=1
@@ -750,6 +757,7 @@ func _on_dim_gui_input(event):
 				ChoiceTable=[]
 				advance_text()
 				isWaitingForChoice=false
+		return
 	
 	if (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
 		event is InputEventScreenTouch and event.is_pressed()

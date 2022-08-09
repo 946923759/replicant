@@ -163,6 +163,8 @@ position = Vector2( 541.537, -60.5445 )
 pause_mode = 2
 playback_process_mode = 0
 
+[node name="TextTween" type="Tween" parent="."]
+
 [node name="HistoryTween" type="Tween" parent="."]
 
 [node name="FSMode_ActorFrame" type="Control" parent="."]

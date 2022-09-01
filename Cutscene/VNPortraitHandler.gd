@@ -102,7 +102,7 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 		tween.interpolate_property(self,
 			'position:x',
 			null,
-			portraitPositions[numPortraits-1][idx],
+			portraitPositions[numPortraits-1][idx]+_offset,
 			.5, Tween.TRANS_QUAD, Tween.EASE_OUT
 		);
 		tween.start();

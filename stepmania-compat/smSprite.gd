@@ -17,6 +17,7 @@ func Cover():
 	
 func set_rect_size():
 	#print("r")
+	#print(get_viewport().get_visible_rect().size)
 	rect_size=get_viewport().get_visible_rect().size
 
 func loadFromExternal(path:String):
@@ -111,3 +112,11 @@ func showActor(s:float,delay:float=0.0):
 	var p=seq.append(self,'modulate:a',1,s)
 	if delay>=0:
 		p.set_delay(delay)
+
+func hideShow(s:float,delay:float=0.0):
+	var seq := TweenSequence.new(get_tree())
+	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	var p=seq.append(self,'modulate:a',0,s/2)
+	if delay>=0:
+		p.set_delay(delay)
+	seq.append(self,'modulate:a',1,s/2)

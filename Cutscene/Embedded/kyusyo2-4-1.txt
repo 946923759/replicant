@@ -1,0 +1,97 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
+music	Yonah - Pluck Ver
+speaker	Seele
+bg	009/012_1280x720
+portraits	59	60
+emote	59	1
+/Seele	300900	Ahhh~ I feel refreshed!	呼~活过来了！	ふぅ～生き返った！	NONE
+msg	300901	Hmm? I bet you're wondering why we have hot springs here, right?	你这个眼神一定是想问这种地方怎么会有温泉吧？	ん？どうしてこんな場所に温泉があるのか。聞きたそうな顔してるね。	NONE
+msg	300902	This is something Bronya built herself when she escaped from the 3rd Honkai. My sister's a genius!	这可是姐姐大人以前逃离第三次崩坏的时候自己建造的哦，姐姐大人实在太聪明了~	これはお姉ちゃんが第3次崩壊から逃げ延びた時に自分で作ったんだよ。お姉ちゃんは、本当に頭がいいよね～。	NONE
+speaker	Bronya
+emote	60	4
+msg	300903	That was actually with Mei's help...	那个时候也是和芽衣姐姐一起……	あの時は芽衣姉様も一緒でした……。	NONE
+msg	300904	...	……	……。	NONE
+/Seele	300905	Bronya... Still got Mei on your mind?	姐姐大人…还在想芽衣姐姐的事情么？	ブローニャお姉ちゃん……まだ芽衣お姉ちゃんのことを？	NONE
+/Bronya	300906	No... It's all my fault. I led you two into danger. And Himeko was right. I will not make a good leader.	不…都是我害得你们两人陷入危机，姬子说的对，我根本没有资格领导大家。	いえ……あなたたち2人を危険な目に遭わせてしまい、ブローニャは反省しています。姫子の言う通りです。みんなを引っ張っていく資格なんか、ブローニャにはありません。	NONE
+speaker	Seele
+emote	59	3
+emote	60	4
+msg	300907	That's not true! You are the one who got everyone united and gave us the courage to carry on!	才不是呢！如果没有姐姐大人把大家聚集在一起！才让大家有活下去的勇气！	そんなことないよ！お姉ちゃんがいなかったら、みんなが一つになることなんてないよ！みんなに生きる勇気を与えているんだから！	NONE
+emote	59	7
+emote	60	4
+msg	300908	So please, Bronya. Don't say anything like that.	所以…请姐姐大人不要说这样的话。	だから……お姉ちゃん、そんなこと言わないで。	NONE
+speaker	Bronya
+emote	59	7
+emote	60	4
+msg	300909	Seele... I must take the responsibility for what happened today. If Himeko had not been there, we all would have died.	希儿…但是今天的事情我要负主要责任，如果不是姬子赶到我们就死在那里了。	ゼーレ……でも今日のことはブローニャに大きな責任があります。もし姫子が駆け付けてくれなかったら、あそこで死んでいました。	NONE
+speaker	Seele
+emote	59	7
+emote	60	4
+msg	300910	Bronya... We could have both died 5 years ago... And since that moment, I've made my mind that death is nothing to be feared, as long as you are here with me!	姐姐大人…也许我们在5年之前就早应该死掉了…那时候我就已经决定，只要和姐姐大人在一起，死亡根本不值一提！	お姉ちゃん……もしかしたら私たちは5年前にとっくに死んでいたかもしれないんだよ……あの時、私は決めたの。お姉ちゃんと一緒なら死んでも構わないって！	NONE
+msg	300911	But we all survived! And we have been living together ever since! I am so happy... truly happy.	但是，姐姐大人…我们活下来了！并且与姐姐大人一同活到了现在！这让我十分高兴…觉得自己特别幸福。	でも、お姉ちゃん……私たちは生き延びてきたのよ！しかもお姉ちゃんと一緒に今まで生きているの！こんな嬉しいこと他にない。とても幸せなことだと思う！	NONE
+msg	300912	The happier I am, however, the more I'm afraid of death... I'm afraid of being apart from you, Bronya. I want to stay together with you forever. Even when there are only two of us left, we will just keep going!	但是越是幸福，希儿就开始越畏惧死亡…畏惧和姐姐大人分开，希儿想和姐姐大人一起…就算只有我们两个人也好，也要永远活下去！	でも幸せになればなるほど、ゼーレはますます死ぬのが怖くなるの……お姉ちゃんと別れるのが怖くなるの。ゼーレはお姉ちゃんと一緒にいたい……私たち二人だけになっても、永遠に生き続けたい！	NONE
+speaker	Bronya
+emote	59	7
+emote	60	4
+msg	300913	Seele... I'm sorry.	希儿…对不起。	ゼーレ……ごめんなさい。	NONE
+speaker	Seele
+emote	59	6
+emote	60	4
+msg	300914	Stop saying it! I always believe in you and you will lead us to the victory! Houkai will be bested and we will stop at nothing! I know you can do this, Bronya! So please, don't say that you are sorry!	请不要道歉！希儿总是坚信姐姐大人会带领大家战胜崩坏！战胜所有挡在我们面前的困难！姐姐大人一定能办到！所以请不要道歉！	謝らないで。ゼーレはね、きっとお姉ちゃんなら崩壊との戦いを勝利に導いてくれるって信じてる！私たちの前に立ちはだかるどんな困難にも勝てる！お姉ちゃんならきっとできる！だから謝らないで！	NONE
+msg	300915	This... this is not the Bronya I know...	希儿…不想看到这样的姐姐大人……	ゼーレ……こんなお姉ちゃん見たくない……。	NONE
+speaker	Bronya
+emote	59	6
+emote	60	2
+msg	300916	Seele.... You're still the crybaby sister I used to know, aren't you?	希儿…果然还是我熟悉的妹妹呢…还是像以前那样爱哭鼻子。	ゼーレ……変わりませんね……以前のように泣き虫です。	NONE
+speaker	Seele
+emote	59	6
+emote	60	2
+msg	300917	I'm not crying! Boo-hoo... It's all your fault!	我才没哭呢！呜呜……还不都是姐姐大人的错！	泣いてなんかないよぉ！うう……お姉ちゃんのせいじゃない！	NONE
+speaker	Bronya
+emote	59	6
+emote	60	2
+msg	300918	Thank you.... I feel much better now. I'm sorry for making you worry.	谢谢你…已经没事了，让你担心了。	ありがとう……もう大丈夫。心配させました。	NONE
+speaker	Seele
+emote	59	1
+emote	60	2
+msg	300919	Yeah...	嗯……	うん……。	NONE
+portraits	59,false,4	60
+msg	300920	*Grab*	噗哟~	ぷに～。	NONE
+speaker	Bronya
+emote	59	1
+emote	60	1
+msg	300921	Seele, where are you touching....	…希儿，你在摸哪里……	ゼーレ、どこを触っているのですか……。	NONE
+speaker	Seele
+emote	59	2
+emote	60	1
+msg	300922	Haha! I always wanted to feel Bronya's tatas again!	哇哈哈~姐姐大人的胸部~终于有机会摸到了！	アハハ～お姉ちゃんの胸やっと触れた！	NONE
+portraits
+speaker	
+bg	009/030_1280x720
+speaker	Bronya
+msg	300923	What the... But weren't you just crying...	唔！你刚才不是还…	なっ！あなた、今……！	NONE
+speaker	Seele
+msg	300924	Hehehe... It's all a part of my plan to cuddle you! Just let me do it once more!	嘿嘿~这当然都是为了让姐姐大人抱我的计谋啦！姐姐大人！就让我再摸一下吧！	ヘヘ～お姉ちゃんに私を抱きしめてもらう作戦大成功！お姉ちゃん！もう1回触らせて！	NONE
+speaker	Bronya
+msg	300925	Seele! Seele, wait! Stop!	希儿！等等！不要过来！	ゼーレ！待ちなさい！やめなさい！	NONE
+speaker	Seele
+msg	300926	*Grab*	噗哟~	ぷに～。	NONE
+speaker	Bronya
+tn	0	Well, exactly one other person. I don't know why they didn't say "Seele, Kyuushou's right there!"
+msg	300927	Seele! There's people here! Don't do anything weird! 	希儿！旁边还有其他人在！不要乱来啦！	ゼーレ！人がいます！変なことをしないでください！	NONE
+speaker	Seele
+msg	300928	Bronya's tatas are just as comforting as before. They feel so good.	姐姐大人的胸部还是和以前一样呢~真好呐~	お姉ちゃんの胸は昔と変わらないね～。よかった～！	NONE
+speaker	Bronya
+msg	300929	What are you talking about!? You know how much it bothers me! And what's with that outfit you wear every day, are you just trying to show them off?!	别说了！我还是很在意的！希儿你每天穿的这个样子是想向我炫耀么！	何を言っているんですか！ブローニャは、気にしているんです！ゼーレ、あなたは毎日こんな服を着て、ブローニャに見せつけているんですか！？	NONE
+speaker	Seele
+tn	0	I used the English translation for this one. It was funnier. Go and sue me. Original was "Then you can touch mine too!", which sounds stupid.
+msg	300930	Hmm? Are you jealous, my sister~? I don't mind if you cop a feel too, y'know. 	诶？姐姐大人很羡慕么！那姐姐大人也来摸一下我的吧！	え？お姉ちゃんうらやましいの！？じゃあお姉ちゃんも私のを触っていいよ！	NONE
+speaker	Bronya
+msg	300931	No thanks!	不要！	結構です！	NONE
+speaker	Himeko
+bg	009/012_1280x720
+portraits	61
+emote	61	1
+msg	300932	...	……	……。	NONE
+msg	300933	It's really noisy... I'll come back later.	真是吵吵闹闹的…还是等会再来吧。	本当に騒がしいわね……またあとで来るわね。	NONE

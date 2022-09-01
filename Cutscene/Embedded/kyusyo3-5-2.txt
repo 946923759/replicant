@@ -1,0 +1,134 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+preload_portraits	59	60	61	55
+music	The Dark Colossus Destroys All
+speaker	
+bg	009/047_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301603	Tatatat	哒哒哒	ダダダッ	NONE
+se	DLC_CH03_EV05_ThunderBig
+msg	301604	Boom!!	轰隆！！	ドゴーン！！	NONE
+speaker	Seele
+portraits	59	60	61
+emote	59	3
+msg	301605	Bronya! There's a strong Honkai reaction over the base! I think the Herrscher's already found us!	姐姐大人！基地上空发现强烈的崩坏能反应！我们已经被律者锁定了！	お姉ちゃん！基地の上空に強烈な崩壊エネルギー反応！もう律者が来たみたい！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301606	Is everyone on board!?	所有人都上船了么！	全員、乗船しましたか！？	NONE
+speaker	Emesa
+portraits	59	60	61	55
+emote	59	3
+emote	55	4
+msg	301607	Hang on! There's still some injured left!	等下！还有一些伤员没有登船！	待ってくれ！まだ負傷者が残ってる！	NONE
+emote	59	3
+emote	61	2
+portraits	59	60	61
+/Himeko	301608	Damn it, we don't have any time left! If we don't launch now, the base and Hyperion will be reduced to ashes!	来不急了！休伯利安号必须马上出发！不然就等着和基地一起化成灰吧！	くそっ、間に合わない！今すぐ発進しないと基地もろともハイペリオンまで灰になるわよ！	NONE
+msg	301609	Hyperion! Prepare to fire the main cannon! We'll wipe out the Honkai scum in our way!	休伯利安！主炮准备发射！给我把挡在前面的崩坏渣滓杀干净！	ハイペリオン、主砲発射用意！前方を遮ってる崩壊生物どもを一掃してやるわ！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301610	Himeko! There's still combatants ahead!	姬子！前方还有战斗人员！	姫子！だめです！前方にはまだ戦闘員が——！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301611	Fire!	发射！	発射ーッ！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	6
+msg	301612	No!!	不要！！	いやっ！だめーーーーーっ！！	NONE
+speaker	
+emote	59	3
+msg	301613	Boom!!!	轰！！！	ドゴーン！！！	NONE
+emote	59	3
+emote	60	6
+portraits	60	59	61
+/Bronya	301614	Ah.... Ah.... Why... Everyone... Himeko!!!	啊…啊……不…为什么……大家……姬子！！！	あ……あ……だめ……どうして……みんな……姫子！！！	NONE
+emote	59	3
+emote	61	2
+portraits	60	59,false,2	61,false,2
+/Himeko	301615	Bronya! Pull yourself together! Board with Seele now!	布洛妮娅！振作点！快和希儿上船！	ブローニャ！しっかりなさい！ゼーレ、ブローニャを！	NONE
+emote	59	3
+emote	60	6
+/Bronya	301616	No! We can't just leave them to die!	不！我们不能丢下任何人！	だめです！誰一人捨ててはいけません！	NONE
+emote	59	3
+emote	60	6
+/Seele	301617	Bronya! If we don't get on board, we're going to die!	姐姐大人！你要去哪！	お姉ちゃん！このままじゃ、みんな死んじゃう！	NONE
+speaker	Bronya
+nop
+emote	59	3
+emote	60	6
+msg	301618	No! I'm going to bring them here! I won't give up!	我要把大家都带走！	全員、連れていきます！ブローニャはあきらめません。	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301619	Get back here! Do you want to die!?	给我回来！你要找死么！	ブローニャ戻りなさい！死にたいの！？	NONE
+msg	301620	Tsk.....! We're out of time! Close the hatch!	啧！没时间了！关闭舱门！	チッ……！時間がない！ハッチを閉めて！	NONE
+speaker	Bronya
+nop
+emote	59	3
+emote	60	6
+msg	301621	No! Himeko! Stop!	不！姬子！你给我停下！	だめです！姫子、待ってください！	NONE
+portraits	60	59,false,-1	61,false,2
+emote	59	3
+emote	60	6
+/Seele	301622	Bronya, get in! Everyone is depending on you!	姐姐大人！快上船！大家不能失去你！	お姉ちゃん！乗って！お姉ちゃんがいなくなったら、みんな希望を失う！	NONE
+emote	59	3
+emote	60	6
+portraits	60,false,1	59	61,false,2
+/Bronya	301623	Let go of me, Seele! We have to save everyone! Let go of me now!	希儿！放开我！让我去救大家！快放开我！	ゼーレ、放しなさい！みんなを助けなければ！早く放して！	NONE
+speaker	Seele
+nop
+emote	59	6
+emote	60	6
+msg	301624	Forgive me, Bronya...	对不起了…姐姐大人……	ごめんね……お姉ちゃん……。	NONE
+emote	59	3
+emote	60	6
+portraits	59,false,-2	60,false,2	61,false,2
+/Bronya	301625	Huh?!	哈！！	えいっ！！	NONE
+emote	59	3
+emote	60	6
+/Bronya	301626	Seele?!	希儿！？	ゼーレ！？	NONE
+portraits	59,false,-2	60,false,3	61,false,3
+msg	301627	What are you doing, Seele? Open the gate now, Himeko! Seele is still outside!	希儿你干什么！姬子快打开舱门！希儿还在外面！	ゼーレ、何をするんです！姫子、早くハッチを開けてください！ゼーレがまだ外に！	NONE
+speaker	Seele
+nop
+emote	59	6
+emote	60	6
+msg	301628	I'm sorry, Bronya. Only you can lead us. Please live on with the others.	抱歉…姐姐大人，只有你才能带领大家…请和大家一起活下去。	ごめんね……みんなを率いていけるのはお姉ちゃんしかいない……みんなと一緒に生きて。他の人たちは私が助けるから。	NONE
+speaker	Bronya
+nop
+emote	59	6
+emote	60	6
+msg	301629	No! No!!!!!	不！不要！不要！不要！不要！	だめっ、だめですっ！いけませんっ！いやぁっ！	NONE
+speaker	Himeko
+emote	59	6
+emote	61	2
+msg	301630	Hyperion, take off!	休伯利安出发！	ハイペリオン、発進！	NONE
+speaker	Bronya
+nop
+emote	59	6
+emote	60	6
+msg	301631	<size=60>SEELE!!!</size>	希儿！！！	ゼーレーーッ！！！	NONE
+speaker	
+portraits	59
+emote	59	6
+msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
+msg	301633	...	……	……。	NONE
+msg	301634	...	……	…………。	NONE
+speaker	Seele
+portraits	59
+emote	59	6
+msg	301635	....You've gone. Great, at least my sister survived...	走掉了么……太好了，至少姐姐大人活下来了。	行ったね……良かった、お姉ちゃんだけでも生き延びて……。	NONE
+msg	301636	I'm sorry, I wanted to act cheerful and bring a smile to everyone's face, but in the end I couldn't do anything...	对不起，一直想要扮演着开朗的样子让大家露出笑容，但是最后却还是什么都做不到呢……	ごめんなさい、ずっと明るく振る舞ってみんなを笑顔にしていたかったけど……結局最後は何もできなかった……。	NONE
+msg	301637	At least for now.... Let me be selfish.	至少现在…让希儿自私一下吧。	せめて今だけは……ゼーレのわがままを許して。	NONE
+portraits
+bg	009/050_1280x720
+msg	301638	The light in the sky... how gorgeous....	啊…天空中的光芒……好漂亮……	あ……空が輝いて……きれい……。	NONE
+msg	301639	If only it wasn't a scene of annihilation...	如果这不是代表毁灭的光景该有多好……	これが崩壊後の光景じゃなかったら、どれだけ良かったか……。	NONE
+msg	301640	It's a shame I couldn't share this scenery with Bronya...	不能和姐姐大人一起看真是太可惜了……	お姉ちゃんと一緒に見られなくて本当に残念……。	NONE
+msg	301641	Farewell...	再见了……	さよなら……。	NONE
+speaker	
+se	DLC_CH03_EV05_ThunderBig
+msg	301642	Boom!!	轰隆！！！！	ドゴーーン！！！！	NONE
+msg	301643	.....My sister.	姐姐大人。	——お姉ちゃん。	NONE

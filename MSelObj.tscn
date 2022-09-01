@@ -40,8 +40,10 @@ anchor_bottom = 0.115
 margin_right = -0.800049
 margin_bottom = -0.200005
 rect_min_size = Vector2( 800, 124 )
-hint_tooltip = "You can set the title and description using the 'title' and 'desc' variables."
 script = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": "You can set the title and description using the 'title' and 'desc' variables."
+}
 
 [node name="LeftColoring" type="TextureRect" parent="."]
 modulate = Color( 0.913725, 0.537255, 0, 1 )

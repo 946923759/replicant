@@ -1,0 +1,279 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	Amusement Park - Medium
+speaker	Bronya
+bg	009/010_1280x720
+portraits	59	60
+emote	60	3
+msg	300822	Phew... Target down. We did it.	呼…看样子是打倒了，	ふぅ……倒したようですね。	NONE
+speaker	Seele
+emote	59	5
+emote	60	3
+msg	300823	Yikes... The mucus! It's so sticky, so annoying!	唔……粘呼呼的好讨厌	うぅ……ベタベタして気持ち悪い。	NONE
+speaker	Bronya
+emote	59	5
+emote	60	1
+msg	300824	Fortunately, the mucus of those larvae is not that much corruptive. But we could surely use a good shower.	还好这些幼虫的粘液腐蚀性没有想象中的强，回去冲洗一下应该没有问题。	この幼虫の粘液の腐食性はそれほど強くないようです。帰ってから洗い流せば問題ないでしょう。	NONE
+speaker	Seele
+emote	59	1
+emote	60	1
+msg	300825	Hehehe. We took down their big boss during an investigation mission! Awesome!	嘿嘿~本来只是侦查敌情，没想到把它们的老大都打败了！这次行动真是大成功呢！	エヘヘ～敵の様子を探るだけのはずだったのに、敵のボスまで倒しちゃうなんて！今回は本当に大成功ね！	NONE
+speaker	Bronya
+emote	59	1
+emote	60	1
+msg	300826	Don't get too excited. We still need to deal with the eggs behind the throne. Let's... What!!!?	不要高兴的太早，王座后面还有这么多虫卵，必须得……！？	喜ぶのはまだ早いです。玉座の後ろにはまだこんなに虫の卵があります。必ず……！？	NONE
+speaker	Seele
+emote	59	1
+emote	60	1
+msg	300827	Bronya? What's wrong?	姐姐大人，怎么了？	お姉ちゃん、どうしたの？	NONE
+speaker	Bronya
+emote	59	1
+emote	60	4
+msg	300828	It's.... Mei....	芽衣…姐姐……	芽衣……姉様……。	NONE
+speaker	Seele
+portraits	59	60
+emote	59	3
+emote	60	4
+stopmusic	1
+msg	300829	!?	！？	！？	NONE
+portraits	
+speaker	
+bg	009/024_1280x720
+msgbox_transition
+speaker	Bronya
+msg	300831	Mei... Is that really you?	芽衣姐姐…真的是芽衣姐姐么！	芽衣姉様……本当に芽衣姉様なのですか？	NONE
+speaker	
+msg	300832	...	……	……。	NONE
+speaker	Bronya
+msg	300833	Mei! It's me, Bronya! I... I've finally found you...	芽衣姐姐！我是布洛妮娅！终于…终于找到你了……	芽衣姉様！ブローニャです！やっと……やっと見つけました……。	NONE
+music	The Color of Depression
+speaker	Seele
+msg	300834	Bronya! Watch out!	姐姐大人，小心！	お姉ちゃん、気をつけて！	NONE
+speaker	
+se	DLC_CH02_EV03_WormEggExplode
+msg	300835	Bang!!!	砰！！！	パン！！！	NONE
+se	DLC_CH02_EV04_WormFly
+msg	300836	*Loud Buzzing Sound*	嗡嗡嗡！！！	ブーン、ブーン、ブーン！！！	NONE
+speaker	Seele
+msg	300837	Those eggs... they are hatching altogether! How come...	虫卵都孵化了！怎么会……	虫の卵が孵化した！どうして……。	NONE
+speaker	Bronya
+msg	300838	Mei! Hold on there! I'm coming for you!	芽衣姐姐！我这就来救你！	芽衣姉様！助けに来ました！	NONE
+speaker	Seele
+msg	300839	Bronya! Don't! There are too many of them! We can't handle this!	姐姐大人！不要冲动！虫子的数量太多了！不是我们能够对付的！	お姉ちゃん！落ち着いて！虫の数が多すぎるよ！私たちが相手にできる数じゃない！	NONE
+speaker	Bronya
+msg	300840	Seele! Let me go! Mei... Mei is just there up ahead!	希儿！放开我！芽衣姐姐！芽衣姐姐她就在面前！	ゼーレ！離してください！芽衣姉様！芽衣姉様が目の前にいるんです！	NONE
+speaker	Seele
+msg	300841	There's something wrong with how she looks! And all the bugs are avoiding her! I have a bad feeling about this!	那个芽衣姐姐的样子有点奇怪，而且虫子都避开了她！其中一定有问题！	あの芽衣お姉ちゃんの様子は、何か変だよ！それに虫がみんな避けてる！何か嫌な予感がする！	NONE
+speaker	Bronya
+msg	300842	Don't get in my way! I'm taking Mei home! Let go of me!	放开我！我要接芽衣姐姐回去！放开我！	離してください！芽衣姉様を連れて帰ります！離してください！	NONE
+speaker	Seele
+msg	300843	Kyuushou, gimme a hand here! Help me restrain Bronya!	喂！快来帮忙！把姐姐拉回来！	ちょっと！早く手伝って！ブローニャお姉ちゃんを引っ張り戻して！	NONE
+speaker	Bronya
+msgbox_transition
+bg	009/026_1280x720
+msg	300845	Mei! Mei!	芽衣姐姐！芽衣姐姐！	芽衣姉様！芽衣姉様！	NONE
+speaker	Seele
+msg	300846	Shit! The entrance door is closed! What's going on here...... I didn't think this was a trap to lure us in!	可恶！入口的大门被关上了！这是怎么回事…难道这是引诱我们进来的陷阱么！	しまった！入口の扉が閉まってる！どういうことなの……まさかこれは私たちを誘い込むためのワナだったの！？	NONE
+speaker	Bronya
+msg	300847	Let go of me! I need to save Mei!	放开我！让我去救芽衣姐姐！	離してください！芽衣姉様を助けなくては！	NONE
+speaker	Seele
+msg	300848	Bronya! Calm down! We have to survive this first!	姐姐大人！你冷静一点！现在我们必须想办法活下来！	お姉ちゃん！落ち着いて！私たちはどうにかして生き延びなきゃ！ 	NONE
+speaker	Bronya
+msg	300849	Uh!	呃！	あっ！	NONE
+speaker	Seele
+msg	300850	We are running out of time! I'll cover you! Go open the gate with Bronya! I don't want to become some disgusting creatures' food!	没时间了！我来掩护你们！你和姐姐大人去把门打开！我可不想变成虫子的大餐！	もう時間がないよ！私が援護するから、あなたとお姉ちゃんで扉を開けて！虫のご飯になんかなりたくないもん！	NONE
+speaker	Bronya
+msg	300851	Seele, I...	希儿，我……	ゼーレ、私……。	NONE
+speaker	Seele
+msg	300852	Bronya, pull yourself together! Hurry up! Let's get out of here!	姐姐大人！振作一些！快走！	お姉ちゃん！しっかりして！行って！	NONE
+speaker	
+bg	009/010_1280x720
+se	DLC_CH02_EV05_DoorImpactA
+msg	300853	*Bang!!*	咚！！	ドンッ！！	NONE
+speaker	Seele
+portraits	59	60
+emote	59	3
+msg	300854	The sound is from the other side of the gate. So they are Houkai creatures outside, too...?	唔…这个声音是从门的另一边发出的，难道门的另一边也都是崩坏生物了么……	この音は扉の向こうから……？まさか扉の向こう側にも崩壊生物が……。	NONE
+speaker	
+se	DLC_CH02_EV05_DoorImpactB
+msg	300855	*Bang!!!*	咚！！！	ドンッ！！！	NONE
+speaker	Bronya
+emote	60	5
+msg	300856	Incoming! Watch out!	来了！小心！	来ました！気をつけて！	NONE
+speaker	Himeko
+portraits	59,false,-1	60,false,-2	61,false,1
+emote	61	1
+emote	60	5
+stopmusic	.3
+msg	300857	...	……	……。	NONE
+speaker	Seele
+emote	61	1
+emote	59	1
+music	Amusement Park - Medium
+msg	300858	Ah! Captain Himeko! Thank goodness, I thought it was another Honkai beast!	呃！姬子队长！？太好了！还以为是崩坏生物呢！	あっ！姫子隊長！？よ、よかった～！崩壊生物かと思ったよ！！	NONE
+speaker	Himeko
+emote	61	1
+emote	59	1
+msg	300859	What are you three doing here?	你们怎么会在这里？	あなたたち、どうしてここに？	NONE
+speaker	Seele
+emote	61	1
+emote	59	3
+msg	300860	This is a nest of those Honkai insectoid creatures! We have to get out of here!	这里是虫形崩坏生物的巢穴！我们离开！	ここは虫型崩壊生物の巣なの！逃げなきゃ！	NONE
+speaker	Himeko
+emote	61	1
+emote	59	3
+msg	300861	Get out of here?	离开？	逃げる？	NONE
+speaker	
+emote	59	3
+se	DLC_CH02_EV07_WormFlyB
+msg	300862	*Loud Buzzing Sound*	嗡嗡嗡！！！	ブーン、ブーン、ブーン！！！	NONE
+speaker	Himeko
+emote	61	2
+emote	59	3
+msg	300863	Hmph, let me show you what I do to these honkai scum. Grey Moths, move in!	哼，今天就让你们这些崩坏渣滓都见鬼去，灰蛾部队进攻！	フンッ、この崩壊のくずの末路を見せてあげるわ。灰蛾部隊突入！	NONE
+speaker	Teammate
+portraits	59	60	61	56
+emote	56	0
+emote	59	3
+msg	300864	Go! Go! Go!	噢！！！	おお！！！	NONE
+portraits	59
+speaker	Seele
+emote	59	1
+msg	300865	Phew... We are safe now. Bronya, that was really close, don't you think so?	呼…得救了！姐姐大人，这次真是九死一生呢……	ふぅ……助かった！お姉ちゃん、今回は九死に一生だったね……。	NONE
+emote	56	0
+emote	59	3
+msg	300866	Bronya? Eep! Did she rush inside together with Himeko?	姐姐大人？呃！难道和姬子一起冲进去了么？	あれ？お姉ちゃん？……あっ！まさか姫子と一緒に入っていったの？	NONE
+portraits	59,false,-1	60,false,-2	61,false,1
+speaker	Himeko
+emote	56	0
+emote	61	1
+msg	300867	That's all of them. Mission complete.	看来已经消灭干净了，作战结束。	きれいに片付いたみたいね。作戦終了。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300868	...	……	……。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300869	What are you staring at?	你在看什么？	何を見ているの？	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300870	Mei... She was just up there on that throne.	芽衣姐姐…刚才还在那个王座上。	芽衣姉様が……さっきまであの玉座に。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300871	Mei? Did you see her?	芽衣？你见到她了么。	芽衣？あなた、彼女に会ったの？	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300872	Great...	嗯……	はい……。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300873	I see. So she survived after all... Since she didn't want to meet us, it only could mean that she's our enemy now.	是么，她果然没有死么…既然芽衣不想见到我们，那就说明她已经是我们的敌人了。	そうなの、彼女やっぱり死んでいなかったのね……。私たちに会いたくないということは、私たちの敵ってことね。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300874	How!? Impossible!	怎么会！	そんな！	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300875	Don't you forget she's also one of the culprits who are to be blamed for the destruction of the world.	你别忘了，她也是毁掉这个世界的凶手之一。	忘れないで。彼女もこの世界を破壊した犯人の1人なのよ。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300876	No! She was just...	不是的！芽衣姐姐只是……	違います！芽衣姉様はただ……。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300877	You should be able to see it now. She's a Herrscher. To save ourselves, we must kill all Herrschers. She is no exception... and that includes Kiana, too.	你也该清醒一下了，别忘了她是律者，如果要拯救现在的人类我们就必须把律者都宰了，琪亚娜…还有她。	目を覚ましてちょうだい。彼女が律者だってことを忘れないでよね。現在の人類を救うには必ず律者を葬らなければならない。キアナ……それに彼女。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300878	Oh...	唔……	う……。	NONE
+speaker	Seele
+emote	60	4
+emote	59	1
+msg	300879	Bronya! Are you alright?	姐姐大人！你没事吧！	お姉ちゃん！大丈夫！？	NONE
+speaker	Bronya
+emote	60	4
+emote	59	1
+msg	300880	Seele, I...	希儿，我……	ゼーレ、ブローニャは……。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	300881	If she insists to look for Mei, just let her go. With that mind of hers, she won't become a capable leader who fights for the greater good of mankind.	如果她还想继续找芽衣的话就随她去吧，抱着这样的心情是无法领导人类的。	もし、まだ芽衣を探したいなら勝手にすればいいわ。ただ、そんな気持ちがあったら人類のリーダーは務まらないわよ。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300882	...	……	……。	NONE
+speaker	Seele
+emote	60	4
+emote	59	1
+msg	300883	Bronya, let's go home...	姐姐大人，我们回去吧……	お姉ちゃん、帰りましょう……。	NONE
+speaker	Bronya
+emote	60	4
+emote	59	1
+msg	300884	....Okay.	……嗯。	……はい。	NONE
+portraits
+speaker	Yssring
+bg	009/003_1280x720
+music	Peaceful Sleep - No Vocals
+portraits	59	60	54
+emote	54	0
+msg	300885	You are back! I was worried about you. It looks like you are all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
+speaker	Bronya
+emote	60	4
+emote	54	0
+msg	300886	Sorry I made you worried...	抱歉，让各位担心了……	すみません。心配させてしまって……。	NONE
+speaker	Seele
+emote	59	1
+emote	54	0
+msg	300887	Haha! A lot of things happened but we all made it through in one piece.	啊哈哈~虽然发生了很多事情，不过还是有惊无险啦~	アハハ～色々あったけど、やっぱり無事だったでしょ。	NONE
+speaker	Yssring
+emote	59	1
+emote	54	0
+msg	300888	Oh...	唔……	うっ……。	NONE
+speaker	Seele
+emote	59	1
+emote	54	0
+msg	300889	What's wrong, Yssring?	怎么了伊瑟琳？	どうしたの、イザーリン？	NONE
+speaker	Yssring
+emote	59	1
+emote	54	0
+msg	300890	It smells.	好臭。	臭い。	NONE
+speaker	Seele
+emote	59	5
+emote	54	0
+msg	300891	Huh?!	诶！？	え！？	NONE
+speaker	Yssring
+emote	59	5
+emote	54	0
+msg	300892	Your outfits are covered in mucus... It's from those pests, isn't it...	折神伤德年夜因果丝辣写充字的爸……	ソノ、カラダノ、ネンエキ、アノムシノデショ……。	NONE
+speaker	Seele
+emote	59	5
+emote	54	0
+msg	300893	Do you have to pinch your nose while you talk? Does it really smell that bad? Ugh! I need to take a bath! RIGHT NOW!	不要捏着鼻子说话啊！真的有这么臭么！呜哇！得去洗个澡！现在！立刻！	鼻をつまみながら話さないでよ！うわ！お風呂に入らなきゃ！今すぐに！	NONE
+speaker	Yssring
+emote	59	5
+emote	54	0
+msg	300894	*Cough*... Anyway, did you get the samples I need?	咳咳…窝邀的杨奔呆挥来了么。	ゴホッ、ゴホッ……ワタシガ、タノンダ、サンプルハ、モチカエッテキタノ？	NONE
+speaker	Seele
+emote	59	5
+emote	54	0
+msg	300895	...Stop pinching your nose! Here you are!	……你这家伙！诺！给你！	……あんたってやつは！ほら！どうぞ！	NONE
+speaker	Yssring
+emote	59	5
+emote	54	0
+msg	300896	Excellent! They will make some good research material!	哇~太好了！我这就去研究！	よかった！これで研究ができる！	NONE
+speaker	Seele
+emote	59	5
+emote	54	0
+msg	300897	What a heartless nerd. She's only enthusiastic about doing her research...	真是个没心没肺的家伙，只有研究才会这么热心……	本当に分別がないやつね。研究しか頭にないんだから……。	NONE
+emote	59	2
+emote	54	0
+msg	300898	C'mon Bronya, let's go! We need a bath immediately! Being covered in this sticky stuff is disgusting! And our clothes are starting to disintegrate, let's hurry up!	唔~差点忘了！姐姐大人走吧！我们去洗澡！这样一身黏糊糊的东西太恶心了！而且衣服也都快被它们腐蚀了！再不快点可就不妙了！	ブローニャお姉ちゃん、行きましょ！早くお風呂に入らないと！このベタベタ、気持ち悪いよ！しかも服も腐食し始めたし！早くしないとマズいよ！	NONE
+speaker	Bronya
+emote	59	2
+emote	60	4
+msg	300899	Sure....	嗯……	はい……。	NONE

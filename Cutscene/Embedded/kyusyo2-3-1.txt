@@ -1,0 +1,109 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+music	Amusement Park - Quiet
+speaker	Seele
+bg	009/010_1280x720
+portraits	59	60
+emote	59	1
+emote	60	1
+/Seele	300768	So this is the inside of HOMU Castle...	这里是吼姆城堡里面……	ここはホム城の中……。	NONE
+/Bronya	300769	This is also the first time I've been inside it. I didn't realize it was so spacious.	嗯，我也是第一次到这里，没想到里面的空间这么大。	ブローニャもここには初めて入ります。中の空間がこんなに大きいとは思いませんでした。	NONE
+emote	59	5
+emote	60	1
+/Seele	300770	It's so dim in here, I can barely see anything.... And something smells off... Ah! Bronya, look over there.... Woah!	这里的光线好暗…而且有一股奇怪的……唔！姐姐大人！快看那…呜呜呜！	薄暗くて見通しが悪いね……それに変なニオイ……あ！お姉ちゃん！あそこ見て……うわわ！	NONE
+emote	59	5
+emote	60	3
+/Bronya	300771	Shh, keep it down... Those must be the eggs of the new species. Looks like we found the right place.	嘘，小声点…那些恐怕就是新生种的卵了，看来我们找对地方了。	シッ、静かに……あれは恐らく新種の卵でしょう。どうやら見つけたようですね。	NONE
+emote	59	1
+emote	60	3
+/Seele	300772	... What should we do now?	…那我们接下来该怎么办？	……それで、このあとはどうするの？	NONE
+emote	59	1
+emote	60	1
+/Bronya	300773	Figure out how big this place is and how many Houkai creatures are there. Yssring gave me these vials so we can collect some samples from them.	先侦查一下巢穴的规模与崩坏生物的数量，另外临走时伊瑟琳给了我这个，用于收集崩坏生物样本的试管。	まずは巣の規模と崩壊生物の数を偵察しましょう。それから、ここに来る時にイザーリンがくれた試験管で、崩壊生物のサンプルを集めましょう。	NONE
+/Seele	300774	Well, so she's intrigued after all her jabberjack.	那家伙，嘴上说着害怕其实内心还是很感兴趣的嘛~	あいつ、口では怖がってたくせに、内心は興味津々じゃないの～。	NONE
+/Bronya	300775	Alright. Let's do this. Try to stay low and don't get too much attention.	嗯，那我们行动吧，注意不要惊动它们，尽量保持隐秘。	ええ、では行動しましょう。彼らを刺激しないように、できるだけソーッと動いてください。	NONE
+/Seele	300776	Yeah, got it! We just need to collect some samples, no need to get into any battles.	嗯！明白了~只要收集到足够的样本就行了，不要恋战哦。	うん！分かった。十分なサンプルを集めればいいんでしょ。戦おうとしないようにね。	NONE
+portraits	
+bg	009/010_1280x720
+portraits	59	60
+msg	300777	Phew. That was close. All done! These samples should be enough.	呼~总算是有惊无险地完成了~有了这些样品应该足够了吧。	ふぅ～ハラハラしたけど完了ね～！これだけサンプルがあれば足りるよね。	NONE
+/Bronya	300778	We've scanned the layout of the castle. Currently, there isn't a large amount of Honkai creatures. However, we couldn't find any trace of the "Insect Queen" that Yssring mentioned.	城堡的大致结构也调查了一遍，目前来看这些崩坏生物的数量不是特别庞大，不过倒是没有发现伊瑟琳说的王虫的迹象。	城の構造も一通り調べました。現在のところ、この崩壊生物の数はそれほど多くないようです。ですが、イザーリンの言っていた虫の王の痕跡は見つかりませんでした。	NONE
+/Seele	300779	I guess the situation isn't as bad as they thought. Let's go home, then! We'll gather our forces and annihilate those Honkai creatures immediately.	这么说事情并没有想象的那么严重嘛~那我们回去吧，立刻集合战力来消灭这里的崩坏生物吧！	ということは、事態はそんなにヤバくなかったってことだね。じゃあ帰ろう！すぐに戦力を集結させてここの崩壊生物を消滅させないと！	NONE
+/Bronya	300780	...	……	……。	NONE
+msg	300781	Seele, go home and gather the troops. I'll be continuing to investigate this area.	希儿，你们先回去准备战力吧，我在这里再继续调查一下。	ゼーレ、先に帰って戦いの準備をしておいてください。ブローニャはここで調査を続けます。	NONE
+speaker	Seele
+nop	
+emote	59	3
+emote	60	1
+msg	300782	.....Are you trying to find Mei?	…姐姐大人是要找芽衣姐姐的行踪么？	……お姉ちゃん、もしかし芽衣お姉ちゃんの行方を探すの？	NONE
+speaker	Bronya
+nop	
+emote	59	3
+emote	60	1
+msg	300783	...	……	……。	NONE
+msg	300784	/setDispChr[3]...Yes.	是的。	はい。	NONE
+speaker	Seele
+nop	
+emote	59	3
+emote	60	1
+tn	0	But Kyuushou is right here...
+msg	300785	Then let me stay here with you! I want to find Mei as much as you do! I can't leave you alone here, it's too dangerous! 	那让希儿和你一起吧！寻找芽衣姐姐的心情希儿和姐姐大人是一样的！而且我怎么放心让姐姐大人一个人在这么危险的地方呢！	じゃあゼーレも一緒に残るよ！芽衣お姉ちゃんを探したい気持ちは、ブローニャお姉ちゃんと一緒なんだから！それにお姉ちゃんだけをこんな危険な場所に残すなんてできないよ！	NONE
+speaker	Bronya
+nop	
+emote	59	3
+emote	60	4
+msg	300786	Seele... I see.	希儿……我明白了。	ゼーレ……分かりました。	NONE
+nop	
+emote	59	3
+emote	60	1
+msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
+choice	300788	Roger that!	分かった。	NONE	NONE
+choice	300789	Please, let me stay and join your investigation.	あなたたちと一緒に調べたい。	NONE	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Bronya
+bg	009/010_1280x720
+portraits	60
+emote	60	1
+msg	300790	Sorry. I understand we found some clues about your memory. But this is an emergency. Please.	抱歉，好不容易才有关于你记忆的线索。但是现在情况紧急，拜托了。	すみません。せっかくあなたの記憶につながりそうな手がかりなのに。ですが、事態は緊迫しています。お願いします。	NONE
+jmp	end_choices
+label	c2dest
+speaker	Bronya
+bg	009/010_1280x720
+portraits	60
+emote	60	1
+msg	300791	I understand how do you feel, and we found some clues about your memory. You must be eager to know more.	我明白你的心情，好不容易找到和你记忆有关的线索，一定很焦急吧。	あなたの気持ちは分かります。ようやく記憶に関する手がかりを見つけて、落ち着かないのですよね。	NONE
+label	end_choices
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Bronya
+bg	009/010_1280x720
+portraits	60
+emote	60	4
+msg	300792	But this is an emergency. You are the only one we can count on. I'm sorry. Please forgive me for my selfish request...	但是现在情况紧急，只能拜托你了。抱歉，请原谅我的自私……	ですが、事態は緊迫しています。あなたにしかお願いできません。すみませんが、ブローニャの自分勝手を許してください……。	NONE
+portraits	60
+emote	60	1
+msg	300793	Let's split up then. Give these samples to Yssring and ask her to...	那我们分头行动吧，到了基地后把这些样本交给伊瑟琳，让她……	では、ここからは別れて行動しましょう。基地に戻ったらこのサンプルをイザーリンに渡して、彼女に……。	NONE
+speaker	
+portraits	60
+emote	60	1
+se	DLC_CH02_EV03_WormEggExplode
+msg	300794	*Loud Buzzing Sound*	嗡！！！	ブーン！！！	NONE
+speaker	Seele
+nop	
+emote	59	3
+emote	60	1
+msg	300795	Eek! What's going on?	呜哇！怎么回事！	うわっ！何なの！	NONE
+speaker	Bronya
+nop	
+emote	59	3
+emote	60	3
+msg	300796	That sound... It's from the other side of the wall.	这个声音是…从墙壁的另一头传来的。	この音は……壁の反対側から聞こえてくる。	NONE
+speaker	Seele
+nop	
+emote	59	5
+emote	60	3
+msg	300797	Bronya... Those eggs on the wall. They are hatching... Yuck! Disgusting!	姐姐大人…墙上的虫卵孵化了……噫！好恶心！	お姉ちゃん……壁の卵が孵化している……うわっ！気持ち悪い！	NONE
+speaker	Bronya
+nop	
+emote	59	5
+emote	60	3
+msg	300798	Everyone on your guard. Don't get yourself surrounded.	各位，准备战斗，不要被它们包围了。	全員戦闘準備。包囲されてはいけません。	NONE

@@ -33,12 +33,15 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 				VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
 				actor.modulate.a=0
 				actor.showActor(.5)
-			elif transition=='immediate':
+			elif transition=='immediate' or transition=='instant':
 				actor.modulate.a=1
 				if is_instance_valid(lastBackground):
 					lastBackground.modulate.a=0
 			else: #Fade to black and fade in new background
-				if is_instance_valid(lastBackground):
+				if lastBackground==actor:
+					actor.hideShow(1)
+					waitForAnim+=1
+				elif is_instance_valid(lastBackground):
 					#bgFadeLayer
 					pass
 					lastBackground.hideActor(.5)

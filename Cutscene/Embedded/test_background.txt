@@ -6,3 +6,12 @@ tn	This is a translation note. You can see it by hovering your mouse over the TN
 / 	This is a background.
 msg	/closeThere is no text background! Woah!
 msg	/openTest.
+bg	009/013_1280x720	fade
+msg	Fade background.
+bg	009/011_1280x720
+msg	Normal transition. Fade to black, then fade in again.
+bg	009/016_1280x720	immediate
+msg	Set background immediately.
+nop	fg_fade
+bg	009/016_1280x720
+msg	Fade foreground.

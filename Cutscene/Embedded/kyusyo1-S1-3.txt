@@ -1,0 +1,171 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	305039	Whew~ Mission accomplished! Let's go back to the base and relax!	呼~这次的任务也顺利结束了~回基地后一定要好好休息一下！	ふぅ～今回の任務も無事に終了したわね～基地に帰ってゆっくりしましょう！	NONE
+speaker	
+msg	305040	*Swishy Sound*	沙拉沙拉……	ガサガサ……。	NONE
+speaker	Seele
+portraits	59
+emote	59	3
+msg	305041	Ah ...... what's that sound? Watch out! There could be a Honkai Beast nearby!	唔…这个声音是？小心！可能有崩坏生物在附近！	あ……この音は？気をつけて！崩壊生物が近くにいるかも！	NONE
+msg	305042	I can't believe there's Honkai Beasts this close to the base...	没想到已经潜伏到离基地这么近的地方了么……	基地のこんな近い場所にまで潜伏しているなんて……。	NONE
+speaker	
+msg	305043	<i>swish swish.....</i>	沙拉沙拉……	ガサガサ……。	NONE
+msg	305044	Meow~	喵~	ニャ～。	NONE
+speaker	???
+msg	305045	Shh... Keep your voice down, it would be bad if you were found out.	嘘…小声点，要是被发现可就不好了。	シッ……静かに、見つかっちゃったらどうするのよ。	NONE
+speaker	Seele
+portraits	59
+emote	59	3
+msg	305046	Ah.... A cat's meow, and this voice is... Let's see.	唔…猫叫声，还有这个声音是……走，我们去看看。	あ……猫の鳴き声、それにこの声は……見に行きましょう。	NONE
+speaker	
+msg	305047	<i>swish swish......</i> \n(Duplicate ID:305043)	沙拉沙拉……	ガサガサ……。	NONE
+msg	305048	Meow~	喵~	ニャ～。	NONE
+speaker	Emesa
+portraits	55
+emote	55	2
+msg	305049	Hehe~ What a cute guy~	咕嘿嘿…真是可爱的家伙~	フフフ……かわいいやつだな～。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	2
+msg	305050	Emesa?	埃米沙？	エミザ？	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305051	Don't call me Emiza! Oh, uhhhh...... Seele? What are you two doing here!?	不要叫我埃米沙！呃…希儿？你们怎么会在这里！？	エミザって呼ぶな！って、あれ……ゼーレ？あんたら、どうしてここに！？	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305052	We heard the noise and came over.... I didn't expect you to be here....	因为听到声音就过来了啊…话说回来，没想到你在这里……	声がしたから来てみたの……ところで、あなたがどうしてここに……。ははーん、なるほど。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305053	Keep your mouth shut! If you tell anyone, I'll kill you!	嘘！你要是说出去我就宰了你！	——！言ったらぶっ殺す！	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305054	Ohohoho~ That depends on how much you're willing to pay.	嚯嚯~那就要看你开的条件了~	オホホ～それは条件次第だよね～！	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305055	You little....	你这家伙……	この……。	NONE
+speaker	
+portraits	55
+emote	55	4
+msg	305056	Meow?	喵？	ニャ？	NONE
+choice	It's the cat we saw earlier!	これさっきの猫じゃない？	NONE	NONE
+choice	Where did that cat come from?	この猫どこからきたの？	NONE	NONE
+speaker	Seele
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	305059	Ugh...	啊！！	あ！！	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305060	What? You know this cat?	唔？你们见过它？	ん？この子に会ったことあるのか？	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305061	Yeah, I found it earlier when I was on patrol. I even gave it a little food!	嗯，之前在巡逻的时候发现的，还喂了它一点吃的~	うん、さっきパトロールの時に見つけたの。少し食べ物もあげたんだよ～。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305062	The first time I saw this cat was when you guys came back from patrol... It was standing at the entrance of the base looking at me.	这么说的话…第一次遇到它的时候的确是在你们巡逻回来的时候……它就站在基地的门口看着我。	ということは、最初に会ったのはあんたたちってことか……こいつ、基地の入口に立って私を見てたんだよ。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305063	Haha... So that means it was following us?	啊哈哈~这么说是跟着我们回来了啰？	アハハ～ということは、私たちの後をついて来たってこと？	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305064	So it's your fault, then! You dumb ☆☆s had a cat following you and you didn't even notice!	那根本就是你们的错好么！你OO的有只猫跟在后面都不知道么！	そういうこと。つまり、あんたたちの責任だろ。まったく、猫が後ろを着いてきてたのに気がつかないなんてな！	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305065	Sorry, sorry~ I didn't notice it~	抱歉抱歉，没有注意到呢~	ごめん、ごめん～。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	4
+tn	0	I'm not sure why she's saying streets here, doesn't seem correct
+msg	305066	Seesh! If I didn't notice this precious creature it would have starved to death on the streets! 	啧！要不是我注意到它这么宝贵的生命就要饿死街头了！	こんな小さくて貴重な命が路頭で餓死しそうだったら、私ならすぐ気づくけどな。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	4
+msg	305067	You're exaggerating. That cat was fine before we met it. It's got survival instincts, you know? Just don't give it too much food or it will become domesticated.	你说的太严重啦，在我们遇到它之前它就活得好好的，这是动物的生存本能，如果一味的饲养它反而会害了它哦。	それは言いすぎよ。私たちがこの子に会った時は元気だったもん。これは動物の生存本能よ。飼い慣らしてしまったら、この子のためによくないわ。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305068	.....You mean you're going to leave it to fend for itself in this desolate world and let it die?	……你的意思是放任它在这个混蛋世界里自生自灭么？	……それはつまり、この子をこの壊れた世界に放って死なせるってことか？	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305069	I didn't say that...	也不是这样说啦……	そんな言い方はしてないわよ……。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305070	I'm still a medic. I can't do that. If there's a life in front of me that I can save, it's my duty to do it.	我可是医务员，这样的事情我做不到。如果眼前有需要救助的生命，我就有义务保证它的安全。	私はこれでも医者だ。そんなことできない。目の前に助けられる命があったら、その安全を守る義務がある。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+tn	0	Yes, she really said that. Well, she said "the cat could be our next ration" but close enough.
+msg	305071	Hey.... Think about this seriously. We don't have any food to spare for this cat. If we start running out, this cat could be our next meal! 	哎…你可想好了，我们可没有多余的食物分给它吃哦，如果食物紧缺的时候说不定反而会变成储备粮呢~	もう……よく考えて。私たちにはこの子にあげる余分な食料はないの。もし食料が足りない時には、この子が保存食になっちゃうかもしれないんだよ～！	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+tn	0	She says 'you bastard' but that doesn't make sense in English
+msg	305072	That's vile.... Don't worry about it, I'll take care of the food myself. 	你这混蛋……不用你操心，食物的事情我自己会解决。	あんたって人は……心配いらない。食べ物のことは何とかする。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305073	Alright, alright. If you're going to go that far then do whatever you want. I'm not going to tell Bronya.	好吧好吧~既然你都这么说了那就随你高兴啦，姐姐大人那边我会保密的。	分かったわ。そこまで言うなら勝手にしてちょうだい。一応、お姉ちゃんには黙っておくから。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	1
+emote	55	1
+msg	305074	Well that's a... Surprisingly quick response. I expected you to come up with more evil terms.	呃…意外的答应的这么爽快，我还以为你要开什么卑鄙的条件呢。	なんだ……意外と素直に応じるんだな。また何か卑怯な条件でも出す気か？	NONE
+speaker	Seele
+portraits	59	55
+emote	59	5
+emote	55	1
+msg	305075	Who do you think I am....?	你把我当什么人了……	私を何だと思っているの……。	NONE
+speaker	Emesa
+portraits	59	55
+emote	59	5
+emote	55	2
+msg	305076	But thank goodness for that! You've got a new home, kitty~ You can live here from now on!	不过既然这样就太好了~怎么样你有新家了哦~以后就住在这里吧~	でも、それならよかった！何であれ、お前に新しい家ができたぞ～これからはここに住むんだ！	NONE
+speaker	
+portraits	55
+emote	55	2
+msg	305077	Meow!	喵~	にゃ～。	NONE
+speaker	Emesa
+portraits	55
+emote	55	2
+msg	305078	Hehe~	啊哈哈~啊哈哈~	あはは～あはは～。	NONE
+speaker	Seele
+portraits	59	55
+emote	59	5
+emote	55	2
+msg	305079	Was that really Emesa...?	这家伙真的是埃米沙么……	こいつ本当にエミザなの……。	NONE

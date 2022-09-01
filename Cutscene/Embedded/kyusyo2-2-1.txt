@@ -1,0 +1,77 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
+music	Amusement Park - Medium
+speaker	Seele
+bg	009/009_1280x720
+portraits	59	60
+emote	59	2
+speaker	Seele
+msg	300711	Wow~ So this is HOMU Paradise? It's a lot bigger than I imagined!	哇~这里就是吼姆乐园么！比想象中大不少呢！	わぁ～ここがホム楽園！？思っていたよりだいぶ大きいんだね！	NONE
+speaker	Bronya
+emote	59	2
+emote	60	1
+tn	0	Use a better metaphor here plz
+msg	300712	Yes, and it's very... Active. Be on your guard. The Honkai beasts here tend to swarm. If you provoke them, you'll end up in trouble. 	嗯，而且还很热闹，我们要小心前进，这里的崩坏生物都是扎堆活动的，如果惊动了它们可不好收拾。	ええ、それにとても賑やかです。気をつけて進みましょう。ここの崩壊生物は群れて行動します。もし彼らを刺激したら面倒なことになります。	NONE
+msg	300713	Follow my lead, we're not going through the main gate. I know a shortcut that will save us some trouble.	跟我来吧，我们绕过大门，我知道有一条捷径可以减少不必要的麻烦。	ついて来てください。正面ゲートを迂回しましょう。不要な面倒を減らす近道を知っています。	NONE
+speaker	Seele
+emote	59	2
+emote	60	1
+tn	0	The first sentence is "Sasuga oneechan" which can't be translated well. The literal translation would be "Wow, that's just like you, Bronya!" which makes no sense in English.
+msg	300714	Wow, awesome! You really know everything! 	不愧是姐姐大人~真是无所不知呢！	さすがはお姉ちゃん～！本当に何でも知っているのね！	NONE
+choice	300715	Have you been here before?	以前にもここに来たことがあるの？	NONE	NONE
+choice	300716	Do you have a map of this place?	ここの地図を持っているの？	NONE	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Bronya
+nop	
+nop	
+emote	60	1
+msg	300717	Yes, I've been here once. Unfortunately it was after the Honkai occurred, so I never had a chance to see this place in its full glory.	嗯，以前有机会来过一次这里。不过很遗憾，那也是崩坏发生后的事情了，无缘看到这个乐园充满生机的一面。	ええ、以前に1度来たことがあります。残念ながらそれも崩壊発生後のことで、この楽園の活気に満ちた姿は見られませんでした。	NONE
+jmp	end_choices
+label	c2dest
+speaker	Bronya
+nop	
+nop	
+emote	60	1
+msg	300718	I don't have a map, but I've been here once. Unfortunately it was after the Honkai occurred, so I never had a chance to see this place in its full glory.	这倒没有，只是之前有机会来过一次这里。不过很遗憾，那也是崩坏发生之后的事情了，无缘看到这个乐园充满生机的一面。	持ってはいませんが、以前に1度来たことがあります。残念ながらそれも崩壊発生後のことで、この楽園の活気に満ちた姿は見られませんでした。	NONE
+label	end_choices
+nop	
+speaker	Bronya
+nop	
+nop	
+emote	60	4
+msg	300719	If it wasn't for the Honkai, these cute little HOMUs could still be bringing smiles to everyone's faces...	如果不是因为崩坏，这些可爱的吼姆一定会给大家带来更多的笑容吧……	崩壊さえなければ、このかわいいホムはきっとみんなにもっと多くの笑顔を与えてくれたでしょうに……。	NONE
+choice	300720	Such a shame.	本当に残念。	NONE	NONE
+choice	300721	One day, this place will be as lively as it was. Once we prevail against Houkai.	崩壊に勝てばここもまた賑やかになる。	NONE	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Bronya
+nop	
+nop	
+emote	60	2
+msg	300722	It's a shame indeed. But during my last visit, I was actually happy because someone was teaching me a lot of important things.	嗯…是有一些遗憾。不过那个时候的我感受到更多的是幸福，因为有一个人教会了我许多重要的东西。	ええ……残念です。ですが、初めて来た時にもブローニャは幸せを感じたのです。ある人が大切なことをたくさん教えてくれたから……。	NONE
+msg	300723	The happiness was short-lived, but it's exactly what made me who I am today.	虽然是短暂的时光，但正因为有那段相遇才有了今天的我。	短い間でしたがあの時の出会いがあったからこそ、今のブローニャがいます。	NONE
+nop	
+emote	60	3
+msg	300724	If one day, I could find Her again... No. I will find Her!	如果有一天能够再次遇到她的话……不，我一定会找到的！	もし、いつの日かまたあの人に会えたら……いえ、きっと探し出します！	NONE
+jmp	end_choices
+label	c2dest
+speaker	Bronya
+nop	
+nop	
+emote	60	2
+msg	300725	You're right... And that's why we must eliminate Houkai. As a gift for Her.	你说的对…就算是为了那个人也要把崩坏消灭掉。	そうですね……あの人のためにも崩壊を滅ぼさなければ。	NONE
+msg	300726	I wish more people can share the joy that She shared with me.	那个人带给我的幸福，我也希望更多人能够看到。	あの人がくれた幸せを、もっと多くの人に見てもらいたいのです。	NONE
+nop	
+emote	60	3
+msg	300727	If one day, I could find Her again... No. I will find Her!	如果有一天能够再次遇到她的话……不，我一定会找到的。	もし、いつの日かまた会えたら……いえ、きっと探し出します。	NONE
+label	end_choices
+nop	
+speaker	Seele
+nop	
+emote	59	7
+msg	300728	Bronya...	姐姐大人……	お姉ちゃん……。	NONE
+speaker	Bronya
+emote	59	7
+emote	60	1
+msg	300729	Enough talking... Let's get moving. Our task at hand is of the most importance.	抱歉，说了很多无关紧要的话…出发吧，现在最重要的是尽快完成任务。	すみません。関係のないことを話しすぎました……行きましょう。今、重要なのはできるだけ早く任務を果たすことです。	NONE

@@ -1,0 +1,193 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Bronya	Seele	_DIM_ALL_WHEN_EMPTY
+preload_portraits	59	60	61
+music	Peaceful Sleep - No Vocals
+speaker	Seele
+bg	009/005_1280x720
+portraits	60	59
+emote	59	1
+speaker	Seele
+msg	300934	Whew~ that feels good~ my body and soul are satisfied!	呼~舒畅舒畅~身心都得到满足了呢~	ふぅ～気持ちいい～体も心も満足だわ～！	NONE
+speaker	Bronya
+emote	60	4
+emote	59	1
+msg	300935	Ahhh... And my body and soul are exhausted...	哎…真是身心俱疲……	あぁ……体も心も疲れました……。	NONE
+nop	
+emote	60	2
+emote	59	1
+msg	300936	Anyway, we have secured our base. Good job, everyone.	不过，总算是确保了基地周围的安全，今天真是辛苦各位了。	ですが、とにかく基地の周囲の安全は確保できました。みなさん、今日は本当にお疲れ様でした。	NONE
+speaker	Seele
+nop	
+emote	60	2
+emote	59	1
+msg	300937	Hehe. Bronya is back to normal! Awesome!	嘿嘿~姐姐大人又恢复到以前的样子了呢~太好了！	ヘヘ～お姉ちゃんも以前の様子に戻ったね～よかった！	NONE
+speaker	Bronya
+nop	
+emote	60	2
+emote	59	1
+msg	300938	Mhm... Sorry that I worried you guys.	嗯…让你们担心了，抱歉。	ええ……心配させてしまって、すみません。	NONE
+speaker	Seele
+nop	
+emote	60	2
+emote	59	2
+tn	0	They knew exactly what they meant when they wrote this.
+msg	300939	Then as an apology, you'll be sleeping with me tonight! 	那作为回报！今晚姐姐大人就和希儿一起睡吧~	じゃあ、お詫びに今夜はゼーレと一緒に寝ましょう！	NONE
+speaker	Bronya
+nop	
+emote	60	2
+emote	59	2
+msg	300940	I still have patrol duty. It's getting late, you two should rest.	我还有巡逻的任务呢，时间不早了，你们都去休息吧。	ブローニャにはパトロールの任務があります。もう遅いですし、あなたたちは休んでください。	NONE
+speaker	Seele
+nop	
+emote	60	2
+emote	59	2
+msg	300941	Then let's do it together! C'mon, we're sisters~	那希儿和姐姐大人一起执行任务吧！	じゃあゼーレもお姉ちゃんと一緒に任務をやる！	NONE
+speaker	Bronya
+nop	
+emote	60	2
+emote	59	2
+msg	300942	Seele, listen to what I say.	希儿，听话。	ゼーレ、言うことを聞きなさい。	NONE
+speaker	Seele
+nop	
+emote	60	2
+emote	59	1
+msg	300943	Aw.... Alright. Then, don't overdo it, okay? Be careful out there.	唔…好吧~那姐姐大人不要太勉强哦~可要注意安全。	う……分かったよ～。じゃあ、お姉ちゃんも無理しないようにね。気をつけてね。	NONE
+speaker	Bronya
+nop	
+emote	60	2
+emote	59	1
+msg	300944	I will.	嗯。	はい。	NONE
+msg	300945	Thank you.... Seele.	谢谢你…希儿。	ありがとう……ゼーレ。	NONE
+speaker	Himeko
+bg	009/014_1280x720
+portraits	60	61
+emote	60	2
+emote	61	1
+msg	300946	Finally, you are here.	来了么。	来たわね。	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	2
+emote	61	1
+msg	300947	Himeko... Thank you for what you've done. If it were not for you...	姬子…虫后的事情真是谢谢你，如果不是你及时赶到，我们就……	姫子……クイーンビーの件は本当にありがとうございました。あなたが駆け付けてくれなかったら、ブローニャたちは……。	NONE
+speaker	Himeko
+portraits	60	61
+emote	60	2
+emote	61	1
+msg	300948	Do not misunderstand me. My task was only to neutralize the Houkai creatures. I'm no babysitter of yours.	不要误会，我的任务只是消灭崩坏生物，可不是你们的保姆。	誤解しないでよね。私の任務は崩壊生物を消滅させることだけよ。あなたたちのおもりじゃないんだから。	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	2
+emote	61	1
+msg	300949	I understand... Still, you have my thanks.	嗯，我明白…不过还是得感谢你。	はい、分かっています……ですが、やはりお礼を言わせてください。	NONE
+speaker	Himeko
+portraits	60	61
+emote	60	2
+emote	61	1
+msg	300950	...	……	……。	NONE
+msg	300951	Are you really not taking them with you for this mission?	这次的任务你真的不打算带她们去么？	今回の任務……本当に彼女たちを連れて行かないつもり？	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	1
+emote	61	1
+msg	300952	No. It's my fault that they fell into danger. And I'm not doing it again. I have to protect them.	嗯，都是因为我她们才会遇到危险，所以这次不能再牵连她们了，我必须要保护她们才行。	はい、ブローニャのせいでみんなを危険な目に遭わせてしまいました。ですから、今回はもうみんなを巻き込めません。ブローニャはみんなを守らなくては。	NONE
+speaker	Himeko
+portraits	60	61
+emote	60	1
+emote	61	1
+msg	300953	Protect them? You haven't changed at all. Innocent like a child, aren't you?	保护么…你还是和小孩子的时候一样天真。	守るね……あなた、初めて会った時と同じようにまだまだ甘いわね。	NONE
+msg	300954	All I desire is to kill all those Houkai bastards before I die...	我只要在自己死之前把这些崩坏畜生都杀光就满足了……	私は自分が死ぬ前にこの崩壊どもを殺し尽くせたらそれで満足よ……。	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	4
+emote	61	1
+msg	300955	Himeko... We promised to not interfere each other. After all, we share the same goal. Please, become my power and fight alongside me.	姬子…我们曾经约定过不干涉对方的理念，不管怎么说我们的目标还是相同的，所以请你成为我的力量，帮助我吧。	姫子……以前、お互いの理念には干渉しないと約束しました。何であれ、お互いの目標は同じです。ですから、力を貸して下さい。ブローニャを助けてください。	NONE
+speaker	Himeko
+portraits	60	61
+emote	60	4
+emote	61	1
+msg	300956	Hmph! It doesn't matter, as long as I can continue to fight.	哼！无所谓，只要能让我继续战斗做什么都一样。	フンッ！構わないわよ。私に戦わせてくれるなら何でもするわ。	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	4
+emote	61	1
+msg	300957	...Thank you.	……谢谢你。	……ありがとうございます。	NONE
+speaker	Himeko
+portraits	60	61
+emote	60	4
+emote	61	1
+msg	300958	That's enough talking. Let's go. Otherwise, the sun will be rising soon.	哼，闲话少说，走吧。再拖拖拉拉天都要亮了。	無駄話はこのへんにして、行きましょう。もたもたしていたら夜が明けるわ。	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	1
+emote	61	1
+stopmusic	.5
+msg	300959	OK.	嗯。	はい。	NONE
+speaker	
+bg	009/011_1280x720
+portraits
+music	Blissful Death - No Vocals
+msg	300960	What is this place?	这里是……	ここは……。	NONE
+msg	300961	Yes... I remember now. It has been a long time.	对了…想起来了，有好久没有来这里了。	そうだ……思い出した。久しぶりにここに来たんだ。	NONE
+msg	300962	When was last time we met...? Too many things have happened. I can't remember exactly.	上次相遇大概是什么时候呢…经历了太多事情有点记不清了。	この前会ったのはいつだろう……色々なことがありすぎて、よく覚えてない。	NONE
+msg	300963	Is that person still here? Is she still sleeping in solitude? I wonder if they still look sad.	那个人还在那里么？是否依然沉睡在孤独之中，是否依然一副忧伤的样子，	あの人はまだそこにいるのかな。まだ孤独の中で眠っているのかな。まだ悲しそうな顔をしているのかな。	NONE
+msg	300964	I should go see Her...	稍微去看望一下她吧……	ちょっと様子を見てみよう……。	NONE
+bg	009/022_1280x720
+se	DLC_CH02_EV08_Walkaway
+msg	300965	......			NONE
+msg	300966	Great, She's still there. Hopefully, we can talk a bit this time.	太好了，果然还在，希望这次可以和她说上话。	よかった、やっぱりいた。今日は彼女と話をしてみたいな。	NONE
+msg	300967	At least let me know your name...	至少能让我知道你的名字……	名前が分かれば……。	NONE
+/Mei	300968	Kiana.	琪亚娜。	キアナ。	NONE
+speaker	
+msg	300969	!?	！？	！？	NONE
+match_names	Mei
+bg	009/011_1280x720
+portraits	53
+/Mei	300970	Her name is Kiana.	她的名字叫琪亚娜。	彼女の名前はキアナ。	NONE
+speaker	
+msg	300971	You're...!	你是……	あなたは……。	NONE
+/Mei	300972	Raiden Mei.... And you?	雷电芽衣…你呢？	雷電芽衣……あなたは？	NONE
+speaker	
+msg	300973	I.... Can't remember....	我是…我的名字…想不起来……	私は……私の名前……思い出せない……。	NONE
+/Mei	300974	Then what are you doing here?	那你为什么会在这里？	じゃあ、どうしてここにいるの？	NONE
+speaker	
+msg	300975	I... I don't know. I was already here when I realized it. It's the same every time.	为什么…不知道，每次察觉到的时候就已经站在这里了。	どうして……？分からない。いつも気づいたらここに立っているの。	NONE
+msg	300976	What is this place?	请问这里是什么地方？	ここはどこなの？	NONE
+/Mei	300977	This is... a forgotten place.	这里么…是被遗忘的地方。	ここはね……忘れられた場所。	NONE
+msg	300978	A meaningless place. Llike a cemetery.	就连存在都已经失去了意义，如同墓地一样的地方吧。	存在する意義すら失った、お墓のような場所よ。	NONE
+speaker	
+msg	300979	A cemetery... I see.	墓地么…	墓場……。	NONE
+/Mei	300980	That's right... A grave for Kiana and I.	没错…琪亚娜和我的墓地。	そうよ……キアナちゃんと私のお墓。	NONE
+msg	300981	And you as well, of course.	当然，也包括你。	もちろん、あなたも含まれているわ。	NONE
+speaker	
+msg	300982	I...?	我……	私……。	NONE
+/Mei	300983	Yes... Not only for you. Everyone. Those who don't belong here, those who try to disturb the peace of this place, and those who want to hurt Kiana...	嗯…不光是你，所有不属于这里的人，想要打扰这里的人…以及想要伤害琪亚娜的人…	ええ……あなただけではないわ。ここに属していない人、ここを邪魔しようとする人……キアナちゃんを傷つけようとする人……。	NONE
+msg	300984	Be gone. Otherwise...	所以快离开这里吧，不然的话……	だから早くここから出て行って。さもないと——	NONE
+msg	300985	I'll take your life.	我可是会杀死你的哦。	私はあなたを殺すわよ。	NONE
+speaker	
+portraits
+bg	black
+stopmusic	.5
+msg	300986	Hey! Wakey, wakey, eggs and bakey!	喂~起床啦！	ねえ～起きてよ！	NONE
+speaker	Seele
+bg	009/002_1280x720
+portraits	59
+emote	59	1
+emote	53	0
+music	Peaceful Sleep - No Vocals
+msg	300987	How do you feel? Did you sleep well?	怎么样？睡的还好么？	どう？よく眠れた？	NONE
+choice	300988	I had a strange dream.	変な夢をみたの。	NONE	NONE
+choice	300989	I'm so tired. I have to sleep a bit more.	眠い。もうちょっと寝かせて。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+tn	0	could be better
+/Seele	300990	Strange dream? You didn't dream you were drowning in bug mucus, right? I woke up this morning with a startled look on my face! 	奇怪的梦？难道是被虫子的粘液淹没的梦么！我今早就是被这个吓醒的！	変な夢？まさか虫の粘液に溺れる夢じゃないでしょうね！私、今朝それで驚いて起きちゃったのよ！	NONE
+msg	300991	You see... a lot has happened recently. So it's totally normal to have awkward dreams. Don't worry too much.	嘛~最近经历的事情有点多，所以做一些奇怪的梦也是正常的啦，不要想太多啦。	まぁ、最近色々あったしね。だから変な夢を見てもおかしくないよ。あまり考えすぎないで。	NONE
+msg	300992	Come on! Get up! Bronya must have been waiting for us.	好啦~快起来吧！姐姐大人一定在等我们呢。	ほら～早く起きて！お姉ちゃんが、きっと私たちを待ってるよ。	NONE
+jmp	end_choices
+
+label	c2dest
+/Seele	300993	Ahahaha~ same here! I didn't get much sleep last night either. I had nightmares about drowning in bug mucus ...... it was horrifying!	啊哈哈~你和我想的一样！我昨晚也没睡好，做了一个被虫子粘液淹没的噩梦…实在是太可怕了！	アハハ～あなたも私と一緒ね！私も昨夜はあまり寝られなかったの。虫の粘液に溺れる悪夢を見ちゃって……本当に恐かった！	NONE
+msg	300994	But unfortunately.  We have an important mission. We don't have time to be sleeping in!	不过很可惜，我们还有更重要的任务，可没时间赖床哦~	でも残念。私たちには重要な任務があるの。二度寝している時間はないわよ～！	NONE
+msg	300995	Come on! Get up! Bronya must have been waiting for us.	好啦~快起来吧！姐姐大人一定在等我们呢。	ほら～早く起きて！お姉ちゃんがきっと私たちを待ってるよ。	NONE
+label	end_choices

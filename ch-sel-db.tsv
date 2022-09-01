@@ -16,4 +16,17 @@ Survive	Protect the #(Residence#) and #(Boundary#) bases.	kyusyo0-3-1,kyusyo0-3-
 --Chapter 1
 Revive	Talk to Seele and Bronya	kyusyo0-4-1,kyusyo0-4-2
 Loot	Go to the Ruins and Desert to collect components.	kyusyo1-1-1,kyusyo1-1-2,kyusyo1-1-3
-Patrol	Go to Discovery and eliminate the Honkai creatures.	kyusyo1-S1-1,kyusyo1-S1-2	true
+Patrol	Go to Discovery and eliminate the Honkai creatures.	kyusyo1-S1-1,kyusyo1-S1-2,kyusyo1-S1-3	true
+
+--Chapter 2
+Moth	Meet Captain Himeko	kyusyo2-1-1,kyusyo2-1-2,kyusyo2-1-3
+Paradise	Search HOMU Land	kyusyo2-2-1,kyusyo2-2-2
+Throne	Search Homu Castle	kyusyo2-3-1,kyusyo2-3-2,kyusyo2-3-3
+Peace	Take a bath with Seele and Bronya	kyusyo2-4-1,kyusyo2-4-2,kyusyo2-4-3
+
+--Chatper 3
+Be dying
+Protect
+Resolution
+Transfer
+Farewell	Board the Hyperion	kyusyo3-5-1,kyusyo3-5-2

@@ -121,6 +121,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		#if nightFilter:
 		#	s.material=nightShader
 		backgrounds.add_child(s)
+		s.set_rect_size()
 		VisualServer.canvas_item_set_z_index(s.get_canvas_item(),-10)
 	backgrounds.connect("resized",self,"set_rect_size")
 	
@@ -324,6 +325,14 @@ func advance_text()->bool:
 					waitForAnim+=1
 				else:
 					print("lastBackground was null, can't fade a background when there isn't one!")
+#			'fg_fade':
+#					$FadeToBlack.modulate.a=0
+#					$FadeToBlack.visible=true
+#					var seq := TweenSequence.new(get_tree())
+#					seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+#					seq.append($FadeToBlack,'modulate:a',1,.5)
+#					seq.append($FadeToBlack,'modulate:a',0,.5)
+#					waitForAnim=max(waitForAnim,1)
 			'portraits':
 				#Badly translated lua code
 				#Duplicate curMessage while skipping the 0th element
@@ -397,7 +406,8 @@ func advance_text()->bool:
 					lastMusic.stop()
 				if m!=null:
 					print("Playing "+m.name)
-					print(m.stream)
+					#print(m.stream)
+					m.volume_db=0
 					m.play()
 					lastMusic=m
 				else:
@@ -408,7 +418,10 @@ func advance_text()->bool:
 					se.play()
 			'stopmusic':
 				if is_instance_valid(lastMusic):
-					lastMusic.fade_music(float(curMessage[1]))
+					if len(curMessage) > 1:
+						lastMusic.fade_music(float(curMessage[1]))
+					else:
+						lastMusic.stop_music()
 			"shake_camera":
 				var howMuch:float = float(curMessage[1]) if len(curMessage) > 1 else 3.0
 				backgrounds.shakeCamera(howMuch)
@@ -518,7 +531,8 @@ func shitty_interpolate_label(s:String):
 	speakerActor.text=s
 		
 func set_rect_size():
-	for child in $Backgrounds.get_children():
+	print(backgrounds.get_child_count())
+	for child in backgrounds.get_children():
 		child.set_rect_size()
 
 func _ready():
@@ -550,7 +564,7 @@ func _ready():
 	
 	if len(standalone_message)!=0:
 		init_(standalone_message,null,dim_the_background_if_standalone)
-
+	#set_rect_size()
 
 
 func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -649,6 +663,11 @@ func _process(delta):
 				speakerActor.modulate.a=1
 			text.visible_characters = text.text.length()
 			frameLimiter=0
+			for p in PORTRAITMAN.portraits:
+				if p.is_active:
+					p.modulate.a=1
+				else:
+					p.modulate.a=0
 	
 	var forward = Input.is_action_just_pressed("ui_select") or manualTriggerForward
 	if text.visible_characters >= text.text.length(): #If finished displaying characters

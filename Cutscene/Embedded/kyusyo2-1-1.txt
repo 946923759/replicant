@@ -1,0 +1,95 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	60	61
+speaker	
+msgbox_close	instant
+bg	007/006_1280x720	instant
+bg	009/033_1280x720
+msg	0				
+bg	009/003_1280x720
+msgbox_open
+se	DLC_CH02_EV01_KnockDoor
+msg	300639	Knock, knock	咚咚咚	ドンドンドン	NONE
+speaker	Bronya
+portraits	60	61
+emote	60	2
+msg	300640	Come in. Thank you for what you did in battle.	请进，之前的战斗辛苦了。	どうぞ。この前の戦いはお疲れ様でした。	NONE
+msg	300641	Let me introduce you. This is the captain of the Grey Moths, Himeko Murata.	我为你介绍一下，这位是灰蛾部队的队长，无量塔姬子。	紹介します。こちらは灰蛾部隊の隊長、無量塔姫子です。	NONE
+speaker	Himeko
+emote	60	2
+emote	61	1
+msg	300642	...	……	……。	NONE
+choice	300643	You fought beautifully in battle.	この前の戦い、本当にカッコよかった。	NONE	NONE
+choice	300644	Thank you for saving us.	この前の戦いではありがとうございました。	NONE	NONE
+speaker	Himeko
+msg	300645	You're most welcome.	客套话就免了。	お世辞は結構よ。	NONE
+speaker	Bronya
+emote	60	1
+msg	300646	We have a mission for you.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
+msg	300647	During the previous investigation, the Grey Moths lost a significant number of personnel to injuries and had to leave the front lines. Therefore, they're in need of replacements. I've recommended you to Captain Himeko.	灰蛾部队在之前的调查任务中有一批受伤的队员被换下了战斗，所以需要补充人员，因此我向姬子队长推荐了你。	灰蛾部隊はこの前の調査任務の途中、かなりの隊員が負傷して戦線を離脱しました。そのため補充人員が必要です。そこで、姫子隊長にあなたを推薦しました。	NONE
+choice	300648	Yes, it's my pleasure.	喜んで受ける。	NONE	NONE
+choice	300649	I need to think about it.	ちょっと考えさせて。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+/Himeko	300650	Don't be too happy just yet. Newbies like you only slow us down. I don't want to come back carrying a corpse.	不要高兴的太早，像你这样的新人只会碍手碍脚，我可不想托着你的尸体回来。	喜ぶのはまだ早いわよ。あなたのような新人は足手まといにしかならないの。万が一、死体を持って帰って来るなんてことになったらご免よ。	NONE
+/Bronya	300651	I can guarantee her competence. She'll definitely be a reliable helper.	她的实力我可以保证，绝对可以成为有力的帮手。	彼女の実力はブローニャが保証します。間違いなく頼りになる助っ人になるはずです。	NONE
+/Himeko	300652	Rest assured, I can handle everything by myself.	不用你操心，即使只有我一个人也能完成任务。	気遣い無用よ。私だけでも任務は完遂できるわ。	NONE
+/Bronya	300653	Himeko, you don't have to face this alone. The resistance and I can only survive in a Honkai infested world if we help each other.	姬子，不要总是一个人扛着，我们需要互相帮助才能在崩坏中活下来。	姫子、いつも一人だけで抱えこまないでください。ブローニャたちレジスタンスは、お互いに助け合ってこそ崩壊の中で生き延びられるのです。	NONE
+/Himeko	300654	Really? I didn't expect you to say something like that.	是么，没想到你也会说这种话。	ふーん、あなたがそんなことを言うようになるなんて思わなかったわ。	NONE
+emote	60	4
+/Bronya	300655	...	……	……。	NONE
+jmp	end_choices
+
+label	c2dest
+emote	60	1
+emote	61	1
+/Himeko	300656	Maybe you should give up now. Newbies like you only slow us down. I don't want to come back carrying a corpse.	还是放弃吧，像你这样的新人只会碍手碍脚，我可不想托着你的尸体回来。	やっぱり諦めましょう。あなたのような新人は足手まといにしかならないの。あなたの死体を持って帰って来るなんて、まっぴらご免よ。	NONE
+/Bronya	300657	No need to worry, I can guarantee her competence. She'll definitely be a reliable fighter. I'm sure the Grey Moths can make use of her abilities.	不用担心，她的实力我可以保证，绝对可以成为有力的帮手。我想灰蛾部队一定是她的用武之地。	心配いりません。彼女の実力はブローニャが保証します。間違いなく頼りになる助っ人になるはずです。灰蛾部隊ならきっと彼女の力を活かせると思います。	NONE
+/Himeko	300658	Rest assured, I can handle everything by myself.	不用你操心，即使只有我一个人也能完成任务。	気遣い無用よ。私だけでも任務は完遂できるわ。	NONE
+/Bronya	300659	Himeko, you don't have to do it on your own. We're supposed to help each other in the Houkai world.	姬子，不要总是一个人扛着，我们需要互相帮助才能在崩坏中活下来。	姫子、いつも一人だけで抱えこまないでください。ブローニャたちレジスタンスは、お互いに助け合ってこそ崩壊の中で生き延びられるのです。	NONE
+/Himeko	300660	I can't believe you said that.	是么，没想到你也会说这种话。	ふーん、あなたがそんなことを言うようになるなんて思わなかったわ。	NONE
+emote	60	4
+/Bronya	300661	...	……	……。	NONE
+label	end_choices
+
+portraits	60	61	59
+emote	59	1
+/Seele	300662	Hey, Bronya! I've got the new report on the investigation on the new Honkai species... Yssring asked me...	姐姐大人~新生种崩坏生物残骸的调查报告出来了，伊瑟琳让我来……	お姉ちゃん！新種の崩壊生物の残骸の調査報告が出たみたいだよ。イザーリンが私に——	NONE
+emote	59	5
+msg	300663	Er..... Is this a bad time?	唔……难道我来的不是时候么？	あれ……もしかしてタイミング悪かった？	NONE
+emote	61	1
+/Himeko	300664	.....I'll be going first. I'll investigate the insects, if I find a nest of them I'll take care of it. Don't tell me I didn't report it to you in advance this time.	……我先走了，那些虫子的事情我会先着手调查，如果发现它们的老巢的话就先动手了，这次可别说我没有事先报告。	……先に失礼するわ。あの虫のことは私も調査に着手する。あいつらの巣を見つけたらとりあえず行動に移すわ。今回は事前報告がなかったなんて言わないでね。	NONE
+speaker	Bronya
+emote	60	4
+emote	61	1
+msg	300665	Himeko...	姬子……	姫子……。	NONE
+emote	59	1
+emote	61	1
+/Seele	300666	Ahaha.... Well, take care, Captain Himeko~!	啊哈哈…那姬子队长慢走~	アハハ……じゃあ、姫子隊長気をつけて～！	NONE
+portraits	60	59
+emote	59	5
+msg	300667	It's finally over.	呼~终于结束了……	ふぅ～やっと終わった……。	NONE
+choice	300668	Is there some misunderstanding between you two?	姫子隊長と仲が悪いの？	NONE	NONE
+choice	300669	Is Captain Himeko always like this?	姫子隊長っていつもああなの？	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+emote	59	1
+/Seele	300670	Captain Himeko has always been cold towards everyone. Don't worry about it.	没有啦~姬子队长本来就是这样，一副高冷的样子，对所有人都是一样的态度，不用在意~	姫子隊長ってもとからああなのよ。冷たい感じで、誰に対しても同じ態度。気にしなくて大丈夫だよ。	NONE
+msg	300671	The Grey Moths have to have a strong heart to withstand the hardship working outside. It's probably because they've been through so many battles that they're like that...	灰蛾部队在外面作战必须要锻炼出刚毅的内心，恐怕是因为经历了太多战斗所以才变得难以接近吧~	灰蛾部隊は外での作戦が主だから、心を強く鍛えなきゃいけないの。たぶん、戦いを経験しすぎて心がマヒというか、冷たくなっちゃったんでしょうね。	NONE
+emote	59	1
+emote	60	4
+/Bronya	300672	Seele...	希儿……	ゼーレ……。	NONE
+jmp	end_choices
+
+label	c2dest
+emote	60	4
+/Bronya	300674	No, it's because...	不，姬子她是因为……	いえ、姫子は……。	NONE
+emote	59	1
+/Seele	300675	This is how Himeko is! She treats everyone the same.	姬子大人原本就是这样啦！不用在意，她对所有人都是一样的态度~	姫子さんは元からああなのよ！気にしないで。誰に対しても同じ態度だから～。	NONE
+msg	300671	The Grey Moths have to have a strong heart to withstand the hardship working outside. It's probably because they've been through so many battles that they're like that...	灰蛾部队在外面作战必须要锻炼出刚毅的内心，恐怕是因为经历了太多战斗所以才变得难以接近吧~	灰蛾部隊は外での作戦が主だから、心を強く鍛えなきゃいけないの。たぶん、戦いを経験しすぎて心がマヒというか、冷たくなっちゃったんでしょうね。	NONE
+/Bronya	300677	Wait, Seele...	等下，希儿……	待って、ゼーレ……。	NONE
+label	end_choices
+
+
+/Seele	300678	We should go now. Yssring is waiting for us.	好啦~姐姐大人我们走吧！伊瑟琳还在等我们呢！	お姉ちゃん、行きましょう！イザーリンが待ってるわ！	NONE

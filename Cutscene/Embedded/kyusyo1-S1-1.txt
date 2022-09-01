@@ -1,0 +1,24 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Seele	Teammate	_DIM_ALL_WHEN_EMPTY
+speaker	Teammate
+bg	009/003_1280x720
+portraits	59	56
+emote	56	0
+nop	This is setting it again so the dim name command works.
+speaker	Teammate
+nop	dim	0
+msg	305001	Report!!! The watchtower has informed us that they have found traces of active Honkai Beasts near the base. They would like us to investigate during the next patrol.	报告！在哨站发来情报，在基地附近发现崩坏生物活动迹象，希望巡逻队可以在巡逻时调查一下。	報告！見張り所からの情報で、基地付近に崩壊生物の活動した痕跡を発見したようです。パトロール時に調査をしてほしいとのことです。	NONE
+speaker	Seele
+emote	59	1
+msg	305002	Alright. Since Bronya is gone, you can leave the patrol duty to us!	明白了，既然姐姐大人不在了，巡逻的任务就交给我们吧~	わかったわ。お姉ちゃんがいない以上、パトロールの任務は私たちに任せてちょうだい！	NONE
+portraits	59
+msg	305003	Let's go! It's our first patrol assignment. You've got to be on top of your game!	走吧！第一次的巡逻任务，可要打起精神了哦~	行きましょう！初めてのパトロール任務よ。張り切ってちょうだいね！	NONE
+
+bg	009/013_1280x720
+portraits	59
+emote	59	1
+msg	305004	Alright, let me explain what this patrol mission is all about.	那么我来说明一下这次任务的内容吧。	じゃあ、今回のパトロール任務の内容を説明するよ。	NONE
+msg	305005	Patrol missions, as the name implies, involve patrolling the combat area near the base for any threats from Honkai Beasts. If a threat is found, it is either eliminated or reported to the base. This is the most basic mission.	巡逻任务顾名思义就是巡查基地附近战区是否有来自崩坏生物的威胁，发现威胁并消灭或是报告威胁，是最基本的任务。	パトロール任務はその名の通り、基地付近の戦闘エリアに崩壊生物の脅威がないかを見回るの。脅威を見つけたら消滅させるか、基地に報告するの。これは最も基本的な任務よ。	NONE
+msg	305006	Originally, Bronya was in charge of patrol duty near the base. It's a fairly basic mission, but things can get ugly quickly if something comes up.	原本基地附近的巡逻任务都是由姐姐大人负责的，虽然是最基本的任务，但是却隐藏着各种不确定因素，可是十分危险的。	元々、基地付近のパトロール任務はお姉ちゃんが担当していたの。基本の任務だけど、不確定要素も隠れているし、とても危険だからね。	NONE
+msg	305007	So don't let your guard down thinking it's an easy assignment!	所以不要以为是简单的任务就放松警惕了哦~	だから、簡単な任務だと思って警戒を緩めたりしないようにね！	NONE
+msg	305008	Let's start the mission. Be careful not to get hurt.	那么开始任务吧，小心不要受伤哦~	じゃあ任務の開始よ。ケガをしないように気を付けてね。	NONE

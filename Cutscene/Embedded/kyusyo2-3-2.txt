@@ -1,0 +1,97 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	Amusement Park - Quiet
+portraits	59	60
+speaker	Seele
+bg	009/010_1280x720
+emote	59	5
+msg	300799	Ewwww... The ground is covered in slime too. Gross!	呜哇~满地的粘液，好难受啊！！	うわ～地面も粘液だらけ。もう嫌っ！！	NONE
+speaker	Bronya
+nop	
+emote	59	5
+emote	60	3
+msg	300800	...!	……！	……！	NONE
+msg	300801	Seele, look! Behind that wall.	希儿，你看那个墙后面。	ゼーレ、あの壁の後ろを見てください。	NONE
+speaker	Seele
+nop	
+emote	59	1
+emote	60	3
+msg	300802	Is that... a door? Was it blocked by those eggs...?	那个是…大门？是被刚才的虫卵挡住了么……	あれは……扉？さっきまでは虫の卵でふさがれていたのかな……。	NONE
+speaker	
+emote	60	3
+msg	300803	*Buzzing Sound*	嗡……	ブーン……。	NONE
+speaker	Seele
+nop	
+emote	59	5
+emote	60	3
+msg	300804	The sound is from inside the door. I have a bad feeling about this...	声音是从门里传来的，这个毛骨悚然的感觉是怎么回事……	この音、扉の中から聞こえてくる。身の毛もよだつこの感覚……一体なんなの？	NONE
+speaker	Bronya
+nop	
+emote	59	5
+emote	60	3
+msg	300805	It seems like there's something inside. I retract my previous order. Cover Seele and I while we open the door.	看来里面一定有东西，抱歉，刚才的命令撤回，你掩护我们，我和希儿去开门。	中に何かあるようですね。すみません、さっきの命令を撤回します。ブローニャとゼーレで扉を開けます。あなたは援護してください。	NONE
+speaker	Seele
+nop	
+emote	59	3
+emote	60	3
+msg	300806	Bronya? Wait for me!	姐姐大人？等，等等我！	お姉ちゃん？ま、待ってよ！	NONE
+speaker	
+portraits	60
+emote	60	3
+se	DLC_CH02_EV02_DoorOpenSqueal
+msg	300807	*Door Creaks*	吱啦——	ギイ——	NONE
+speaker	Seele
+bg	007/006_1280x720
+portraits
+msg	300808	It's completely dark inside. Can't see anything.	唔…里面好黑，什么都看不见。	うわ……真っ暗。何も見えない。	NONE
+speaker	Bronya
+msg	300809	Be careful. The sound must be from the other side of this room...	小心一些，从刚才的声音判断，应该是从这个房间的深处传来的……	気をつけてください。さっきの音から判断して、この部屋の奥から聞こえてきていたはずです……。	NONE
+speaker	Seele
+msg	300810	Wait a sec. Let me turn my flashlight on. Let's take a close look at this room first.	稍等，我这里有手电，先观察一下里面的结构吧。	待ってね、私懐中電灯を持ってきてるから。まずは中の構造を確かめましょう。	NONE
+speaker	Bronya
+msg	300811	Alright. Proceed with caution.	嗯，小心前进。	ええ、気をつけて進んでください。	NONE
+speaker	
+bg	009/010_1280x720
+portraits	59	60
+msg	300812	*Click*	啪	パッ	NONE
+speaker	Seele
+emote	59	1
+msg	300813	Is that... a throne?	这个是…王座么？	これは……玉座？	NONE
+speaker	Bronya
+nop	
+emote	59	1
+emote	60	3
+msg	300814	Seele, Look. Behind the throne... so this is where all the eggs are.	希儿，你看王座后面…原来虫卵都集中在这里了么。	ゼーレ、玉座の後ろを見てください……虫の卵はここに集まっていたんですね。	NONE
+speaker	Seele
+nop	
+emote	59	3
+emote	60	3
+msg	300815	Their numbers are legion!!!	这个数量也太多了吧！	こんな数、対処しきれないよ！	NONE
+speaker	
+emote	60	3
+se	DLC_CH02_EV04_WormFly
+msg	300816	*Buzzing Sound*	嗡……	ブーン……。	NONE
+speaker	Seele
+nop	
+emote	59	5
+emote	60	3
+msg	300817	Oops! Sorry... I forgot we must stay quiet...	唔！对不起…要小声点……	あっ！ごめんなさい……声を小さくしなきゃ……。	NONE
+speaker	Bronya
+nop	
+emote	59	5
+emote	60	3
+music	Amusement Park - Medium
+msg	300818	That sound is from... Seele! Above you!	这个声音是从…希儿小心头顶！	この音は……ゼーレ、頭の上！	NONE
+speaker	Queen
+portraits	59,false,-3	60,false,-4	51,false,1
+emote	59	5
+emote	51	0
+msg	300819	*Loud Buzzing Sound*	嗡！！	ブーン！！	NONE
+speaker	Seele
+emote	59	3
+emote	51	0
+msg	300820	Whaaaaa-?! What is that!	呜哇！什么东西！	うわっ！何なの！	NONE
+speaker	Bronya
+nop	
+emote	59	3
+emote	60	3
+msg	300821	Must be the Hive Queen that Yssring mentioned... Ready your weapons!	看来这就是伊瑟琳说的虫后了…准备应战！	どうやらこれがイザーリンの言っていたクイーンビーのようですね……応戦準備！	NONE

@@ -1,0 +1,111 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Ext/CG054.png" type="Texture" id=2]
+[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=3]
+[ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+func _ready():
+	$smSound.load_song(\"test2\")
+	#get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_2D,SceneTree.STRETCH_ASPECT_EXPAND,Vector2(1280,720))
+	#music_player.load_song(\"Credits\",\"Rockman 4MI.nsf\",104)
+	#music_player.load_song(\"Credits\",\"3-731_-_espgaluda_stage1.nsf\",0,0)
+	#music_player.load_song(\"Credits\",\"Metroid.nsf\",11)
+	
+	
+	
+	$c2.rect_position.y = Globals.gameResolution.y
+	#var tween2 = $Tween
+	#tween2.interpolate_property($c1, 'modulate',
+	#Color(0,0,0,0), Color(1,1,1,1), .5, Tween.TRANS_QUAD, Tween.EASE_OUT);
+	#tween2.start();
+	
+	var seq := TweenSequence.new(get_tree())
+	seq.append($TextureRect,\"modulate:a\",.6,.5)
+	
+	seq.append($c2,'rect_position:y',-$c2.rect_size.y,30)
+	#seq.append($TextureRect,'modulate',Color(0,0,0,1),1)
+	#seq.append_callback(self,'screen_out')
+
+func screen_out():
+	pass
+
+func _input(_event):
+	if Input.is_action_just_pressed(\"ui_accept\"):
+		pass
+"
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+
+[node name="smQuad" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 7
+
+[node name="c2" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]
+F.M. RepliCant
+By Amaryllis Works
+
+\"Fire Moth DLC\" by MiHoYo
+No copyright infringement intended
+This visual novel is 100% non profit!
+
+English Translation:
+Amaryllis Works & DeepL
+
+Portugese Translation:
+demonbanex
+kebbini
+
+Special Thanks:
+Mister Spaceman
+Bun Bun
+...And everyone else in the Hoyostans group!
+
+Thanks for reading!"
+text = "
+F.M. RepliCant
+By Amaryllis Works
+
+\"Fire Moth DLC\" by MiHoYo
+No copyright infringement intended
+This visual novel is 100% non profit!
+
+English Translation:
+Amaryllis Works & DeepL
+
+Portugese Translation:
+demonbanex
+kebbini
+
+Special Thanks:
+Mister Spaceman
+Bun Bun
+...And everyone else in the Hoyostans group!
+
+Thanks for reading!"
+fit_content_height = true
+scroll_active = false
+
+[node name="smSound" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 3 )

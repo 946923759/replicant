@@ -1,0 +1,74 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Seele
+bg	009/005_1280x720
+portraits	59
+emote	59	1
+msg	300996	Bronya! What's our mission for the day?	姐姐大人~今天的任务是什么呀~	お姉ちゃん、今日の任務は何かな～？	NONE
+msg	300997	Huh? Where is Bronya? Does anyone know where she is?	咦？姐姐大人呢？有人知道布洛妮娅姐姐去哪里了么？	あれ？お姉ちゃんは？誰かブローニャお姉ちゃんがどこに行ったから知らない？	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	1
+emote	56	0
+msg	300998	Bronya? She went outside with Himeko last night. Haven't seen them back yet.	布洛妮娅长官么？昨天晚上和姬子队长出去之后还没有回来。	ブローニャ長官？昨夜、姫子隊長と出て行って、まだ戻ってきてないわよ。	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	300999	They are not back yet... How strange. Didn't she say it's just patrolling? It couldn't take that long. Could it be... they might be in trouble?!	还没回来…奇怪了，姐姐不是说只是巡逻任务么，怎么会这么久？难道是遇到什么意外了！？	まだ帰ってきてないなんて……おかしいわね。お姉ちゃんはただのパトロール任務だって言ってたけど。どうしてこんなに時間がかかってるんだろう？まさか何かトラブルに巻き込まれたのかな！？	NONE
+msg	301000	Tell me! Where did they go?	告诉我！她们巡逻的是哪个区域？	教えて！パトロールに行ったのはどこのエリア？	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301001	I... I don't know much. I only saw them heading towards ME Corp...	这…我也不知道，只看到是往ME社的方向去了……	それは……私も詳しくは知らないわ。ただ、ME社の方向に行くのを見たけど……。	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301002	ME Corp... But Bronya never mentioned that we are launching a counter-strike operation. What's happening...?	ME社…但是姐姐大人不是还没宣布开始反攻行动么，到底是怎么回事……	ME社……でも、お姉ちゃんはまだ反撃行動の開始を宣言していないよね。一体どういうことなの……。	NONE
+msg	301003	No! I have to go look for them! Something must be wrong!	不行！我得去找她们！一定是发生了什么！	2人を探しに行かなきゃ！きっと何かあったんだよ！	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301004	Madam! Massive Houkai creature activities detected at the outpost! Waiting for your command!	报告！哨站发现大量崩坏生物活动！请求指示！	報告！見張り所付近に大量の崩壊生物が出現！指示を求めます！	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301005	Houkai creatures? The hell! It's a bad timing that they attack us now!	崩坏生物？可恶！偏偏趁着这个时候来进攻么！	崩壊生物？まったく！よりによってこんな時に攻めてくるなんて！	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301006	Actually... the report says they are not targeting at us. They are marching towards ME Corp.	不…哨站的报告上说崩坏生物的前进方向并不是基地，而是ME社的方向。	いえ、それが……見張りの報告では、崩壊生物の進んでいる方向は基地ではなくME社の方向のようです。	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301007	ME Corp?! Again? What is going on...	又是ME社！？到底是怎么回事……	またME社！？一体どういうことなの……。	NONE
+msg	301008	Let's move! We are going to the front line!	走！跟我去前线！	よし！私と一緒に前線に行くわよ！	NONE
+speaker	Teammate
+bg	009/017_1280x720
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301009	Madam! The Houkai creatures are sieging ME Corp! The reason is not clear!	报告！崩坏生物正在集群进攻ME社！原因不明！	報告！崩壊生物は現在集団でME社へ進撃中！原因不明！	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301010	How could it be... Has Houkai figured out our intention...? It cannot be! They are merely brainless monsters. What is truly going on here...?	怎么会…难道崩坏发现了我们的意图了么…不可能！它们都是没用思考的怪物！这究竟是怎么回事……	どうして……まさか崩壊が私たちの意図に気づいたとでも……そんなはずないわ！彼らは思考のない怪物よ！これは一体……。	NONE
+msg	301011	Bronya! Where is Bronya? Have any of you found her?	对了！姐姐大人呢！你们有没有看到姐姐大人的踪影！	そうだ！お姉ちゃんは！あなたたち、お姉ちゃんの姿を見なかった！？	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301012	There's no news so far.	目前还没有消息。	現在のところ、目撃情報はありません。	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301013	I have a bad feeling about this. They can't be targeting Bronya, right...?	总有一种不好的预感，难道它们的目标是姐姐大人么……	何か嫌な予感がする。まさかあいつらの目標はお姉ちゃんなんじゃ……。	NONE
+msg	301014	Send the alarm! All units in position! Bronya must be rescued!	通知基地！让所有人全副武装！一定要把姐姐大人救出来！	基地に連絡！全員完全武装！必ずお姉ちゃんを救い出すのよ！	NONE
+msg	301015	We are taking ME Corp!	准备进攻ME社！	ME社へ進撃用意！	NONE

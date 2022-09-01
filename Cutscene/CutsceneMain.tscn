@@ -295,6 +295,13 @@ __meta__ = {
 visible = false
 rect_pivot_offset = Vector2( -1839.45, 653.5 )
 
+[node name="FadeToBlack" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]
 [connection signal="pressed" from="SkipButton" to="." method="_on_SkipButton_pressed"]

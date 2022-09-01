@@ -114,15 +114,18 @@ func _ready():
 		#add_child(e)
 		$CutscenePlayer.init_(['msg|The cutscene failed to load. Most likely the file name is incorrect.'],null)
 		return
-	$AudioStreamPlayer.load_song(cutsceneData['CDAudio'])
+	#$AudioStreamPlayer.load_song(cutsceneData['CDAudio'])
 	var msgColumn:int=1
 	if "lang" in cutsceneData:
 		#print(cutsceneData['lang'])
 		for i in range(cutsceneData['lang'].size()):
+			#print(cutsceneData['lang'][i].to_lower()+ " == "+INITrans.currentLanguage)
 			if cutsceneData['lang'][i].to_lower()==INITrans.currentLanguage:
-				print("Loading from column "+String(i))
 				msgColumn=i
 				break
+	else:
+		print("no language key found in file.")
+	print("Loading from column "+String(msgColumn))
 	$CutscenePlayer.init_(cutsceneData['msg'],null,false,"\t",msgColumn)
 	
 	

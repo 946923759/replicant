@@ -1,0 +1,161 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+preload_portraits	59	52
+music	Amusement Park - Quiet
+speaker	Seele
+bg	009/007_1280x720
+portraits	59
+emote	59	1
+msg	300359	I've finally caught you! It's a dead end up ahead!	终于让我逮到你了！前面可是死路哦~	やっと捕まえた！この先は行き止まりだよ～！	NONE
+portraits	59	52
+emote	59	1
+dim	0
+/???	300360	Crap!	啧！	しまった！	NONE
+match_names	Seele	Techies	_DIM_ALL_WHEN_EMPTY
+emote	59	1
+/Seele	300361	Those clothes... Are you the missing member of the engineering squad? What are you doing here?	这身衣服…你是工程班那个失踪的成员么？为什么会在这里？	この服……あなた、あの失踪した隊員なの？どうしてここにいるの？	NONE
+emote	59	1
+emote	52	0
+/Techies	300362	...	……	……。	NONE
+emote	59	1
+emote	52	0
+/Seele	300363	Don't worry, everything's fine now. We'll escort you back to the base. No need to be afraid.	放心吧，已经没事了，我们会保护你回到基地的，请不要害怕。	安心して。もう大丈夫だよ。私たちがあなたを基地まで守りながら帰るから。怖がらないで。	NONE
+nop
+emote	59	1
+emote	52	0
+/Techies	300364	I'm....	我是…	私は……。	NONE
+msg	300365	/setDispChr[3]I'm never going back!	绝对不会再回去的！！	もう絶対に帰らない！！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300366	!?	！？	！？	NONE
+speaker	
+emote	52	0
+se	DLC_CH01_EV10_ExplosionSomewhere
+shake_camera
+msg	300367	BOOM!!!	轰隆！！！	ゴオン！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300368	Hey! Hey! Are you alright? What the hell was that explosion just now....?	喂！你没事吧！刚才的爆炸到底是……	ちょっと！大丈夫！？今の爆発は一体……。	NONE
+speaker	Techies
+nop
+emote	59	3
+emote	52	0
+msg	300369	I've had enough of this! No food, no medicine... No matter how much you say it's for our protection, it's all bullshit! The truth is, we're all just sitting in that tiny base waiting to die!	我已经受够了！没有食物…没有药物…说着什么都是为了保护我们的鬼话！实际上就是让大家都傻傻地在那个狭小的基地里等死对吧！	もう嫌よ！食べ物もない……薬もない……何を言っても全部私たちを守るためっていうデタラメばかり！本当はあの狭い基地でみんなが死ぬのを黙って待っているだけじゃない！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300370	What are you talking about.... That's the base my sister worked so hard to build up! It's our last home!	你在说什么…那可是姐姐大人好不容易才建立起来的基地，是我们最后的家啊！	何を言っているの……あそこはお姉ちゃんがやっとの想いで作った基地なのよ。私たちの最後の家なのよ！	NONE
+speaker	Techies
+nop
+emote	59	3
+emote	52	0
+msg	300371	You call that a home? It's nothing but a graveyard. My real home would have been a warmer, happier place. And I.... I'll find a new home for everyone in my own way!	家？那里只是一个坟墓而已…真正的家应该是更加温暖，幸福的地方，而我…会用自己的方式为大家找到新的归宿！	家？あそこはただの墓場よ……本当の家はもっと暖かくて、幸せな場所だったはずよ。だから私は……自分のやり方でみんなのために新しい居場所を見つけたの！	NONE
+msg	300372	There's a large shopping mall above this area. There's tons of supplies inside! I've planted explosives on the ceiling and all we have to do is blow this place up! We can get in through the basement!	我已经调查过了，这个区域的上方是一个大型商场，里面有大量的物资！我已经在这个隧道里面装好了炸药！只要把这里炸开！我们就能从地下进入！	このエリアの上部には大型ショッピングモールがあるの。中には大量の物資があるわ！天井に爆薬を仕掛けたから、あとはここを爆破するだけ！私たちは地下から入れるわ！	NONE
+msg	300373	It's better than hiding in that cramped train station! We could go into the mall and get food and medicine... Nobody would have to die anymore!	这样总比躲在狭窄的车站好多了！只要进入商场大家都能得到食物和药物…这样就再也不会有人死掉了！	そうすれば狭苦しい駅よりマシになるわ！ショッピングモールに入れば食べ物も薬も手に入る……これでもう誰も死なないわ！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300374	No! The explosion will attract all the Honkai beasts! You'd only put everyone in danger! And even if we succeed, we can't protect an area that large on our own!	不行！爆炸会引来崩坏生物的注意！你这样只会把大家暴露在危险中！而且即使成功了凭借我们的人力也无法守住那么大的区域！	ダメ！爆発で崩壊生物の注意を引き付けちゃう！そんなことしたらみんなを危険にさらすだけだよ！それに成功したって、私たちだけじゃそんな大きなエリアを守り切れない！	NONE
+speaker	Techies
+nop
+emote	59	3
+emote	52	0
+msg	300375	So I should just hide underground like a rat!? I'm not going to die in that cold place... I want to survive!	所以就像老鼠一样躲在地下么！我才不想在那种冰冷的地方死去……我想活下去！	だからネズミみたいに地下に隠れているの！？こんな寒い場所で死ぬなんてごめんよ……私は生き延びたいの！	NONE
+speaker	Seele
+emote	59	3
+emote	52	0
+msg	300376	Shoot! Stop her now!	糟了！快阻止她！	マズい！早く彼女を止めて！	NONE
+speaker	Techies
+emote	52	0
+msg	300377	I have to save others!	我一定要…救下大家！	私は必ず……みんなを救うの！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300378	Quick, get the detonator out of her hand!	快夺走她手中的引爆器！	早く彼女から起爆装置を奪って！	NONE
+speaker	Techies
+nop
+emote	59	3
+emote	52	0
+msg	300379	I want to stay alive with everyone!	一定要和大家一起活下去……	必ずみんなと生き延びるの……。	NONE
+msg	300380	I won't die here!	绝对不要死在这里！	絶対にここで死なない！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300381	Get down!	趴下！	伏せて！	NONE
+speaker	
+emote	52	0
+se	DLC_CH01_EV11_ExplosionMultiClose
+shake_camera
+msg	300382	BOOM!!!	轰隆！！！	ゴオォン！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300383	(cough, cough!) I can't believe she really pushed it...	咳咳！居然真的按下去了……	ゴホッ、ゴホッ！本当に押すなんて……。	NONE
+emote	59	3
+emote	52	0
+portraits	59	52,false,3
+/Techies	300384	Hahahaha... It worked! I did it!	哈哈哈…成功了！我成功了！	アハハハ……成功よ！成功したわ！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300385	Wait! Don't go in there!	等下！不要过去！	待って！行っちゃダメ！	NONE
+speaker	Techies
+portraits	59
+emote	59	3
+emote	52	0
+msg	300386	C'mon, Seele! Come with me and we can bring back the supplies!	喂！希儿！和我一起进去把里面的物资搬回去！	ねえ！ゼーレ！私と一緒に中の物資を持ち帰りましょう！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300387	That idiot ran straight in! Follow me, we need to take her back!	那个笨蛋居然直接冲进去了！？和我一起追上去！一定要把她带回来！	あのバカ、そのまま入っていったの！？私と一緒に追いかけて！必ず連れ戻さなきゃ！	NONE
+speaker	Techies
+nop
+emote	59	3
+emote	52	0
+msg	300388	Damn these Honkai beasts!!\nAHHHHHHH!!!!	可恶的崩坏兽！！啊啊啊啊！！！！！	この崩壊獣めっ！！あぁあああ！！！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300389	!?	！？	！？	NONE
+speaker	
+emote	52	0
+se	DLC_CH00_EV11_MosterRoar
+music	Grandma
+msg	300390	Roar...	吼吼吼……	ゴゴゴォ～……。	NONE
+speaker	Seele
+nop
+emote	59	3
+emote	52	0
+msg	300391	The Honkai beasts... They... I can't believe so many of them were lurking...	是崩坏生物…把那个家伙给……	崩壊生物が……あの子を……。こんな数の崩壊生物が潜んでいたなんて……。	NONE
+msg	300392	That idiot!	那个笨蛋！！！	あのバカ！！！	NONE
+choice	300393	We have to kill those beasts!	絶対にあの崩壊生物を倒そう！	NONE	NONE
+choice	300394	Let's get out of here!	早くここから逃げよう！	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	300395	Let's give it up... We can't kill that many Honkai beasts with just the two of us.	放弃吧…单凭我们两人是无法战胜这么多崩坏生物的。	諦めましょう……私たち2人だけじゃあんなにたくさんの崩壊生物に勝てっこない。	NONE
+msg	300396	But we can't just ignore it... We have to stop them from reaching the base!	不过也不能放任它们不管…必须要阻止它们到达基地！	でも、このまま放っておくわけにはいかない……基地にたどり着くのだけは阻止しないと！	NONE
+msg	300397	That's right! That toolbox we saw earlier should be full of explosives. If we can blow up the tunnel, we might be able to stop them. Otherwise, we'll end up dead too!	刚才的那个工具包里应该还有炸药，如果能把隧道炸塌的话或许能挡住它们，不然我们也会死在这里……	そうだ！さっきのあの工具箱の中は爆薬のはず。もしトンネルを爆破できたら、あいつらを食い止められるかも。さもないと私たちもここで終わりだよ！	NONE
+msg	300398	I'm sorry to put you in danger like this... But this is what we have to do. We can't fail!	抱歉…让你和我一起冒险，但这是我们的职责，绝对不能失败！	ごめんなさい…あなたも一緒に危険な目に遭わせてしまって。でも、これは私たちの役目なの。絶対に失敗できないわ！	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300399	You're right... We can't kill that many Honkai beasts with just the two of us.	你说的对…光凭我们的力量是无法战胜这么多崩坏生物的。	その通りね……私たちだけの力ではあんなにたくさんの崩壊生物に勝ってこない。	NONE
+msg	300400	But if we return to the base now, those Honkai beasts are going to follow us back. We can't just ignore it.	但是现在就这样退却的话基地就会被崩坏生物发现，所以我们绝对不能就此离开。	でも、今ここで退却したら基地が崩壊生物に発見されちゃう。だから絶対にこのまま逃げるわけにはいかない！	NONE
+msg	300401	There should some explosives in that toolbox we saw earlier. We can stop them by blowing up the tunnel. If we don't, we're going to die too!	刚才的那个工具包里应该还有炸药，如果能把隧道炸塌的话或许能挡住它们，不然我们也会死在这里……	そうだ！さっきのあの工具箱の中は爆薬のはず。もしトンネルを爆破できたら、あいつらを食い止められるかも。さもないと私たちもここで終わりだよ！	NONE
+msg	300402	I'll stop them to buy you some time. You put the rest of the explosives under the load-bearing ring.	我来挡住它们为你争取时间，你把剩下的炸药放在隧道的承重柱下。	私があいつらを食い止めて時間を稼ぐから、あなたは残りの爆薬をトンネルを支える柱に仕掛けて。	NONE
+
+label	end_choices
+emote	59	3
+msg	300403	Sorry that I'm putting you at risk with me. But we've got to stop them, and we can't fail!	抱歉…让你和我一起冒险，但这是我们的职责，绝对不能失败！	ごめんね……私と一緒に危険を冒させてしまって。でもこれは私たちの役目だから、絶対に失敗できない！	NONE

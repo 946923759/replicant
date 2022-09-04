@@ -1,0 +1,80 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	60	54
+match_names	Seele	Bronya	Yssring	_DIM_ALL_WHEN_EMPTY
+music	War And War
+speaker	Bronya
+bg	009/005_1280x720
+portraits	59	60
+emote	60	1
+/Bronya	300540	Ladies and Gentlemen, the Grey Moths will be back in approximately one hour. We need to set up our defenses and prepare for the attack immediately.	各位，离“灰蛾”返回还有1个小时，我们需要立即布置防线，准备迎击。	みなさん、「灰蛾」が戻って来るまであと1時間です。直ちに防衛ラインを整えて、迎撃の準備をしてください。	NONE
+msg	300541	All squads return to their post and prepare for battle.	各小队按计划回到各自岗位进入警戒状态，准备迎击。	各小隊は計画通りにそれぞれの持ち場で警戒態勢に入り、迎撃準備。	NONE
+choice	300542	Is there any Houkai creature invading?	崩壊生物が侵入したの？	NONE	NONE
+choice	300543	Are Grey Moths our allies?	灰蛾部隊って友軍じゃないの？	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Bronya
+msg	300544	Not yet, but they'll come soon enough.	现在没有，不过马上就会来了。	まだです。ですが、すぐにやってきます。	NONE
+msg	300545	The Grey Moths are an external investigation team. They are responsible for monitoring the Honkai infestation in Nagazora City and searching for resources that can be used to replenish the base.	灰蛾部队是外部调查的部队，她们负责监视长空市崩坏区域的崩坏状况并搜索资源提供基地补给。	灰蛾部隊は外部調査の部隊です。彼女たちは長空市崩壊エリアの崩壊状況の監視と、基地の補給に使える資源の捜索を担当しています。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300548	Seems like you've heard about them already.	看来你已经有所耳闻了。	どうやら既に耳に入っているようですね。	NONE
+msg	300549	Yes, the Grey Moths are an external investigation team. They are responsible for monitoring the Honkai infestation in Nagazora City and searching for resources that can be used to replenish the base.	没错，灰蛾部队是外部调查的部队，她们负责监视长空市崩坏区域的崩坏状况并搜索资源提供基地补给。	そうです。灰蛾部隊は外部調査の部隊です。彼女たちは長空市崩壊エリアの崩壊状況の監視と、基地の補給に使える資源の捜索を担当しています。	NONE
+
+label	end_choices
+tn	0	Need a better word for 'outdoors'
+msg	300546	But investigating in the outdoors is fraught with great danger, and having to secure supplies makes it even more challenging. Therefore, these women have a unique means of transport. 	但是外部调查面临着十分巨大的危险，补给的保障更是难上加难，所以她们有着一个特殊的运输工具。	ですが、外部調査には非常に大きな危険がつきまとい、補給の確保がさらに難易度を上げています。なので、彼女たちは特殊な乗り物を持っています。	NONE
+msg	300547	However, this vehicle attracts a large number of Honkai beasts during its operation. So we have to prevent these creatures from getting in the base.	但是这个运输工具在运行的过程中会吸引大量的崩坏生物注意，所以我们要将这些崩坏生物挡在基地外。	ただし、この乗り物を使うと大量の崩壊生物を引き寄せてしまいます。そのため、私たちはこの崩壊生物を基地の外で防ぐのです。	NONE
+emote	59	1
+/Seele	300552	That's it. Prepare yourself for what might be coming.	就是这样，到时候你就知道啦，可不要被吓到哦~	そういうこと！その時になったら分かるから驚かないでね。	NONE
+msg	300553	Follow me. It's a very important mission we're entrusting you with. Don't let your guard down~!	跟我来吧，这次交给你的可是非常重要的任务，千万不要掉以轻心哦~	ついて来て。今回あなたに任せるのはとても重要な任務だよ。決して油断しないでね～！	NONE
+/Bronya	300554	Alright, let's go. Let Operation Homecoming commence!	好了，出发吧，“归巢作战”现在开始！	よし、出発しましょう。ただいまより「帰巣作戦」開始！	NONE
+bg	009/015_1280x720
+match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+portraits	59	54
+emote	59	1
+emote	60	1
+/ 	300555	"Report, Squad 3 has arrived at the designated position and is ready to intercept."	报告，第三小队到达指定位置，进入迎击准备。	報告、第3小隊は指定位置に到着、迎撃準備に入る。	NONE
+emote	59	5
+emote	60	1
+/Seele	300556	Whew~ it's freezing out here! I still can't get used to night ops...	呼~好冷好冷！果然还是不习惯夜间作战呢……	ふぅ～寒い、寒い！やっぱり夜間の作戦には慣れないなぁ……。	NONE
+emote	59	1
+emote	60	1
+msg	300557	Since there's a little time before the operation begins, I'll briefly explain the details.	乘着作战开始前还有点时间，我来简单说明一下这次的任务吧~	作戦が始まるまでもう少し時間があるから、簡単に今回の任務を説明するね！	NONE
+msg	300558	Our current location is near the gate control room at the base. This is an important facility that controls the opening and closing of the gates. Our mission is to secure the area.	我们所处的位置是基地闸门的控制室附近，这里是控制闸门闭合的重要设施，我们的任务是保护这个区域的安全。	私たちの今いる位置は基地のゲート制御室の近くよ。ここはゲートの開閉を制御する重要な施設なの。私たちの任務は、このエリアの安全を守ることよ。	NONE
+msg	300559	When they open the gate there will be an onslaught of Honkai beasts. The main force in front of the gate will take care of them.	在闸门开启的这段时间内势必会有大量的崩坏生物涌入，处于正面的主力部队会消灭这些家伙。	ゲートを開く時にはきっと大量の崩壊生物が雪崩込んでくるはずだよ。正面に位置する主力部隊がそいつらを片付けるの。	NONE
+msg	300560	What we need to do is protect the control room and ensure that the gate closes properly after the Grey Moths arrive.	我们所要做的就是保护控制室，保证闸门在灰蛾部队进入后正常关闭。	私たちがやることは制御室を守ること。そして、灰蛾部隊が入った後にゲートを正常に閉じること。	NONE
+msg	300561	Yssring will be responsible for controlling the gate. Very easy, right?	控制闸门的任务就交给伊瑟琳了，怎么样是不是很简单呢~	ゲート制御の任務はイザーリンに任せてあるよ！どうかな？とっても簡単でしょ？	NONE
+emote	59	1
+emote	54	1
+/Yssring	300562	Don't take it so lightly....... This gate is the sturdiest barricade in the base. If it were to malfunction, we're all doomed. ......	不要说的那么轻松…这个闸门是基地最牢靠的屏障，如果它出了故障我们可都得玩完。	そんなに軽々しく言わないでよ……このゲートは基地で一番頑丈なバリケードなんだから。もし故障でもしたら、私たちみんなおしまいなんだよ……。	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300563	Of course~! That's why Bronya specifically sent me, the most dependable one here, to handle it!	知道啦~知道啦~所以姐姐大人才特地派我这么可靠的人来嘛！	分かった分かった！だから、お姉ちゃんがわざわざ私のように頼りになる人を派遣したんじゃないの！	NONE
+speaker	Yssring
+emote	59	1
+emote	54	1
+msg	300564	You're the reason I'm worried about.... Forget it. At least there's someone else I can count on here.	就是因为有你才担心啊…算了，这次至少有个看起来靠谱的家伙在…	あなたがいるから心配なのよ……まぁ、いいわ。今回は頼りになりそうなヤツもいるから。	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300565	Sure, sure. Just focus on controlling the gate and we'll take care of the rest.	好啦~好啦，你就专心控制闸门，其他交给我们吧~	はいはい、あなたはゲートの制御に専念して、他のことは私たちに任せてちょうだい。	NONE
+speaker	
+emote	54	1
+se	DLC_CH01_EV16_WarningAlert
+msg	300566	"Attention all units. The Grey Moths will be arriving in 15 minutes."	「各单位注意，灰蛾部队还有15分钟抵达。」	「各部隊注意、灰蛾部隊はあと15分で到着」	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300567	Sounds like they're almost here. You can hear the rumbling in the distance, can't you?	看来快到了呢，有听到远处传来的轰鸣声么~	もう着くみたいね。遠くから轟音が聞こえてくるでしょう？	NONE
+speaker	
+emote	54	1
+se	DLC_CH01_EV17_ExplosionTwoShots
+shake_camera	1
+msg	300568	Rumble...	轰隆轰隆——	ゴォン、ゴォン——	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300569	That overwhelming noise is what attracts all the Honkai beasts. I'm sure the ones near here are starting to move too. Let's get going!	就是因为有这么大的动静所以才会吸引这么多的崩坏生物，这附近的崩坏生物也已经开始活动了，我们也开始行动吧~	こんなに大きな音を立てるから、たくさんの崩壊生物を引き寄せちゃうの。きっと、この近くの崩壊生物も動き始めてるよ。私たちも行動を開始しましょ！	NONE

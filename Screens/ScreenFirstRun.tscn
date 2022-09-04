@@ -1,0 +1,203 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Ext/other_329.png" type="Texture" id=2]
+[ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Ext/Common DialogBox.png" type="Texture" id=4]
+[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=5]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=8]
+[ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=9]
+[ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=10]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends Control
+
+onready var t:Tween = $Tween
+onready var af:TextureRect = $DialogueActorFrame
+onready var sound:AudioStreamPlayer = $AudioStreamPlayer
+
+func _ready():
+	var rect_size:Vector2 = get_viewport().get_visible_rect().size
+	t.interpolate_property(af,\"rect_position:x\",rect_size.x,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	t.interpolate_property(af,\"modulate:a\",0,1,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	t.start()
+
+func OffCommand():
+	var rect_size:Vector2 = get_viewport().get_visible_rect().size
+	t.interpolate_property(af,\"rect_position:x\",null,-rect_size.x,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	t.interpolate_property(af,\"modulate:a\",null,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	t.start()
+	yield(t,\"tween_completed\")
+	
+	print(\"Changing scene!\")
+	get_tree().change_scene(\"res://Cutscene/CutsceneFromFile.tscn\")
+	
+
+func _on_OKButton_pressed():
+	sound.play()
+	OffCommand()
+"
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0.0823529, 0.623529, 1 )
+use_filter = true
+extra_spacing_top = 8
+font_data = ExtResource( 6 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 3 )
+
+[node name="smQuad" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 10 )
+
+[node name="DialogueActorFrame" type="TextureRect" parent="."]
+self_modulate = Color( 0.462745, 0.886275, 1, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 960.0
+margin_top = -540.0
+margin_right = 2880.0
+margin_bottom = 540.0
+texture = ExtResource( 4 )
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="DialogueActorFrame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -336.0
+margin_top = -252.0
+margin_right = 343.0
+margin_bottom = -204.0
+custom_fonts/font = ExtResource( 3 )
+text = "Select your preferred language."
+
+[node name="Label2" type="Label" parent="DialogueActorFrame"]
+anchor_right = 1.0
+margin_top = 100.0
+margin_bottom = 209.0
+custom_fonts/font = ExtResource( 1 )
+text = "Initial Setup"
+align = 1
+
+[node name="Control" type="Control" parent="DialogueActorFrame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -16.0
+margin_top = -172.0
+margin_right = 24.0
+margin_bottom = -132.0
+
+[node name="Label" type="Label" parent="DialogueActorFrame/Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -436.0
+margin_top = -52.0
+margin_right = 434.0
+margin_bottom = 57.0
+custom_fonts/font = ExtResource( 1 )
+text = "Language Placeholder"
+
+[node name="TextureButton" type="TextureButton" parent="DialogueActorFrame/Control"]
+margin_left = -432.0
+margin_top = 96.0
+margin_right = -304.0
+margin_bottom = 224.0
+rect_rotation = 180.0
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureButton2" type="TextureButton" parent="DialogueActorFrame/Control"]
+margin_left = 464.0
+margin_top = -32.0
+margin_right = 592.0
+margin_bottom = 96.0
+texture_normal = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="LabelEnglishHelp" type="Label" parent="DialogueActorFrame/Control"]
+margin_left = -432.0
+margin_top = 96.0
+margin_right = 464.0
+margin_bottom = 246.0
+custom_fonts/font = SubResource( 1 )
+text = "Removes honorifics and changes instances of Seele calling Bronya \"onii-chan\" to her saying \"Bronya\"."
+align = 1
+autowrap = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogueActorFrame"]
+margin_left = 384.0
+margin_top = 576.0
+margin_right = 1536.0
+margin_bottom = 829.0
+custom_constants/separation = 40
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="DialogueActorFrame/VBoxContainer"]
+margin_right = 1152.0
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 3 )
+text = "Options such as text speed, skip mode, and volume can be accessed by right clicking or tapping with two fingers while reading."
+autowrap = true
+
+[node name="Label5" type="Label" parent="DialogueActorFrame/VBoxContainer"]
+margin_top = 190.0
+margin_right = 1152.0
+margin_bottom = 289.0
+custom_fonts/font = ExtResource( 3 )
+text = "Fullscreen can be toggled at any time by pressing F11."
+autowrap = true
+
+[node name="OKButton" type="TextureButton" parent="DialogueActorFrame"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -91.5
+margin_top = -180.0
+margin_right = 91.5
+margin_bottom = -116.0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogueActorFrame/OKButton"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "Begin"
+align = 1
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="pressed" from="DialogueActorFrame/OKButton" to="." method="_on_OKButton_pressed"]

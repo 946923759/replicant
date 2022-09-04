@@ -1,0 +1,175 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+preload_portraits	59	54
+match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+music	Grandma
+portraits	59
+speaker	Seele
+bg	009/007_1280x720
+emote	59	3
+/Seele	300404	Did you plant the explosives yet? There's too many Honkai beasts, I can't hold them off any longer!	炸药安置好了么！崩坏生物太多了！我可撑不了多久！	爆薬、仕掛けたよね！？崩壊生物が多すぎる！もう持ちこたえられないよ！	NONE
+speaker	
+se	DLC_CH00_EV11_MosterRoar
+msg	300405	Roar!	吼吼吼！！	ゴゴゴォ～！！	NONE
+speaker	Seele
+nop
+emote	59	3
+msg	300406	Damn it! They've broken through! Get out of the way!	呃！糟了！被突破了！快闪开！	マズい！突破されたっ！！どきなさい！	NONE
+speaker	
+msg	300407	Bang!!!	砰！！！	バンッ！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+msg	300408	Are you ok? Get out of here and leave it to me!	喂！你没事吧！赶紧离开这里！剩下的交给我！	ねえ！！大丈夫！？あなたは今すぐ逃げて！あとは私に任せればいいから！	NONE
+choice	300409	No. I need to protect my own home!	いやっ！私も自分の家を守る！	NONE	NONE
+choice	300410	I won't let Seele take the risk alone!	ゼーレだけを危険な目にあわせられない！	NONE	NONE
+speaker	Seele
+msg	300411	Hey! What're you doing?	喂！你要干嘛！？	ちょっと！何する気！？	NONE
+speaker	
+se	DLC_CH00_EV11_MosterRoar
+msg	300412	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+msg	300413	Do you want to die? Forget the explosives, get out of here!	你不要命了么！别管炸药了！快跑！	命いらないの！？爆薬は構わなくていいから！逃げて！	NONE
+speaker	
+se	DLC_CH00_EV04_ExplosionClose
+shake_camera
+stopmusic	.5
+msg	300414	Boom!	轰隆！！！！	ゴオオン！！！！	NONE
+speaker	Seele
+nop
+emote	59	3
+msg	300415	Why's that...	怎么会……为什么会这样……	どうして……どうしてこんな……。	NONE
+nop
+emote	59	6
+music	Amusement Park - Quiet
+msg	300416	Ughh!	可恶！！！！	九霄ーーー！！	NONE
+speaker	
+msg	300417	...	……	……。	NONE
+se	DLC_CH01_EV12_RadioReceive
+msg	300418	*Swishy Sound*	沙拉…沙拉……	サラ……サラ……。	NONE
+speaker	Seele
+nop
+emote	59	6
+msg	300419	What's that sound?	这个声音是！	この音は！	NONE
+msg	300420	You bastard...	唔…你这个家伙……	うぅ……もうあなたって人は……！	NONE
+msg	300421	You scared the hell out of me!	你是要吓死我么！！	ビックリさせないでよ！！	NONE
+choice	300422	Don't cry. Everything is ok.	泣かないでよ、何事もなかったでしょ？	NONE	NONE
+choice	300423	Don't cry, it's my fault.	泣かないで、私が悪かったから。	NONE	NONE
+speaker	Seele
+emote	59	7
+msg	300424	I'm not crying!	我才没有哭！	泣いてなんかいないわよ！	NONE
+
+
+
+bg	009/008_1280x720
+music	Peaceful Sleep - No Vocals
+emote	59	1
+se	DLC_CH01_EV25_RunToMe
+msg	300425	I'm sorry. I was a bit over my head, please don't take it personal. And I didn't cry!	唔…抱歉，刚才太激动了，你可不要往心里去……还有我刚才可没哭！你不要误会了！	うぅ～……ごめんなさい。さっきは興奮しちゃって。気にしないで……それにさっきは泣いてないからね！誤解しないでよ！	NONE
+msg	300426	And you promised! Don't put yourself in danger like this again!	另外我们可约定好了！千万不能再做出这种危险的举动了！	それから、約束だよ！もうこんな危ないマネは二度としないこと！	NONE
+choice	300427	Yes, I know.	分かった。	NONE	NONE
+choice	300428	I just made the same choice as you.	ただゼーレと同じ選択をしただけ。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+emote	59	1
+msg	300429	Alright, alright. I won't tell my sister you disobeyed her orders. You can thank me in advance~	这还差不多，那你抗命的事情我就不告诉姐姐大人了，感谢我吧~	うんうん！あなたが命令に逆らったことはお姉ちゃんには内緒にしておくから感謝してね！	NONE
+msg	300430	But we just got lucky this time. Don't just throw yourself into danger on impulse. You have to value your life. You're also a precious member of our family.	不过这次只是运气好罢了，可不要一时冲动做出无谓的牺牲，自己的生命也需要好好珍惜啊，你对我们来说也是无可代替的家人。	でも今回は運がよかっただけだよ。一時の興奮で無意味な犠牲を出しちゃダメ。自分の命は大事にしなくちゃ。あなたは私たちにとってかけがえのない家族なんだから。	NONE
+jmp	end_choices
+
+label	c2dest
+emote	59	1
+msg	300431	We were thinking about the same thing. As you were willing to sacrifice yourself for the the others, you qualify as a member of the rebels. 	呃！被反将一军么……刚才我们的确想着一样的事情。为了重要的人可以舍弃自己的生命，看来你已经是个合格的反抗军成员了呢~	なっ！逆手に取られるなんて……さっき確かに私たちは同じことを考えていたと思うよ。大事な人のために自分の命を捨ててもいいって。ふふっ、どうやらあなたはもうレジスタンスのメンバーとして合格みたいだね。	NONE
+msg	300432	Alright, Sister will not know what you did. You can thank me later. This time is just good luck. Don't make any sacrifice out of recklessness.	那你抗命的事情我就不告诉姐姐大人了，感谢我吧！但是这次只是运气好罢了，可不要一时冲动做出无谓的牺牲。	あなたが命令に逆らったことはお姉ちゃんには内緒にしておくから感謝してよね～！でも今回は運がよかっただけだよ。一時の興奮で無意味な犠牲を出しちゃダメなんだから。	NONE
+msg	300433	 You are irreplaceable to us. Take care of yourself.	自己的生命也需要好好珍惜啊，你对我们来说也是无可代替的家人。	自分の命は大事にしなくちゃ。あなたは私たちにとってかけがえのない家族なんだから。	NONE
+
+label	end_choices
+portraits	59	54
+emote	54	1
+/Yssring	300434	Welcome back.... How'd the investigation go? What did you find?	你们回来啦…怎么样，调查清楚了么？	お帰りなさい……どうだった？何か分かった？	NONE
+speaker	Seele
+emote	59	6
+emote	54	1
+msg	300435	...	……	……。	NONE
+msg	300436	We completed the investigation. The truth is, the noise in the tunnel wasn't caused by a Honkai Beast—	伊瑟琳，已经调查清楚了，隧道中的声音并不是崩坏生物引发的，而是……	イザーリン、調査は終わったよ。トンネルの音は崩壊生物によるものではなくて——	NONE
+speaker						
+
+bg	black
+portraits	
+msg	300437	(Seele told Yssring what happened in the tunnel.)	希儿将隧道中的经过告诉了伊瑟琳。	ゼーレはトンネルの中での出来事をイザーリンに話した。	NONE
+
+bg	009/008_1280x720
+portraits	59	54
+emote	54	4
+/Yssring	300438	I see... That girl... What a stupid thing to do...	是这样啊……那家伙，居然做出了这种蠢事。	そっか……あの子、そんなバカな真似を……。	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	4
+msg	300439	I'm sorry that we didn't stop her and we couldn't save her...	对不起，我们既没有阻止她，也没来得及救下她……	ごめんなさい。彼女を止められなかっただけでなく救えなかった……。	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	1
+msg	300440	It's okay. It's not your fault. And I don't want you to blame her either. It's true that she didn't get enough supplies, and her wounded comrades didn't get enough medical care....... She wanted to do what she thought was best for them.	没关系，这不是你们的错。而且我希望你们也不要责怪她，现在资源补给紧缺，受伤的伙伴得不到足够的救助，她也是为了帮助受伤的伙伴才冲昏了头脑。	いい。あなたたちのせいじゃない。それとあなたたちも彼女を責めないでほしいの。物資補給が足りないのは真実だし、負傷した仲間も十分な治療を受けられてない……。彼女も仲間のためにやったことなのよ。	NONE
+msg	300441	I'm really sorry.	实在是令人遗憾。	本当に残念……。	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	1
+msg	300442	...	……	……。	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	1
+msg	300443	I should get back to work, bye.	那我继续工作去了，再见。	それじゃあ仕事に戻るよ。じゃあね。	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	1
+msg	300444	Wait!	等下！	待って！	NONE
+msg	300445	Yssring... Is there anything you want to say?	伊瑟琳…难道没有更多想说的么…	イザーリン……それだけ？他に言うことはないの……。	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	1
+msg	300446	What?	什么？	何？	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	1
+tn	0	Might have mistranslated
+msg	300447	She was a part of the engineering team, and a priceless member of our family! There's more important things than just working... 	那个人是工程班重要的伙伴吧！也是不可或缺的家人，比起工作难道就没有什么更值得……	あの人はエンジニア班の大事な仲間でしょ！欠かすことのできない家族でしょ。仕事以上にもっとこう……。	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	4
+msg	300448	I'm sorry, I've got to get back to work. If I don't numb myself like this, I don't think I can keep functioning...	抱歉，我得去工作了，如果不用这种方式麻痹自己的话，我怕我自己会撑不下去……	ごめんなさい。仕事に行かなきゃ。こういう方法で自分を麻痺させなきゃ、自分を保っていられないの……。	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	4
+msg	300449	Oh.... Haha.... I'm sorry. I didn't know how you felt...	是…这样啊…啊哈哈，抱歉，没有体会到你的感受……	あ……あはは、ごめん。あなたの気持ち、分かってなかった……。	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	4
+msg	300450	It's fine... But Seele... How can you laugh, even after all this?	不……倒是希儿你…为什么这种情况还能笑得出来呢？	気にしてない……でも、ゼーレ……あなた、どうしてこんな状況でも笑えるの？	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	4
+msg	300451	Huh?!	诶！	え！？	NONE
+speaker	Yssring
+nop	54
+emote	59	6
+emote	54	4
+msg	300452	Sorry.	……抱歉。	……ごめん。	NONE
+msg	300453	Thank you...	谢谢你……	ありがとう……。	NONE
+speaker	Seele
+nop	54
+emote	59	6
+emote	54	4
+msg	300454	...	……	……。	NONE
+msg	300455	Ahahaha~ Looks like I screwed up again this time. ...... Let's call it a day! Thanks for your hard work. ......	啊哈哈~看来这次又失败了呢…今天先解散吧，辛苦了…	アハハ～今回も失敗しちゃったみたいだね……今日はこれで解散にしましょ！お疲れ様……。	NONE

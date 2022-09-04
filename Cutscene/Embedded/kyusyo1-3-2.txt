@@ -1,0 +1,86 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+speaker	Bronya
+bg	009/007_1280x720
+portraits	60
+emote	60	2
+msg	300477	Here we are.	就是这里，我们到了。	ここです。着きました。	NONE
+choice	300478	Where is this place?	ここは何をする場所？	NONE	NONE
+choice	300479	Shouldn't we keep patrolling?	パトロールは続けないの？	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	300480	This is the place where I hid my small bit of selfishness...	这里是储藏着我小小自私的地方…	ここはブローニャの個人的なものを隠した場所……。	NONE
+msg	300481	Follow me and you'll know.	跟我来吧，马上你就会知道了。	ついて来てください。すぐに分かります。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300482	Sorry for lying to you. Patrolling is not my purpose. I was trying to take you here.	抱歉，是我欺骗了你。其实真正的目的并不是巡逻，而是想带你到这里。	すみません、あなたを騙しました。本当の目的はパトロールではなく、あなたをここに連れて来たかったのです。	NONE
+msg	300483	Follow me and you'll know.	跟我来吧，马上你就会知道了。	ついて来てください。すぐに分かります。	NONE
+
+label	end_choices
+bg	007/006_1280x720
+portraits
+msg	300484	I stumbled on this place. Whenever I feel confused, I bring myself here and ponder on our future alone. I guess this is like a secret base.	这是我偶然间发现的地方，每次感到迷茫的时候我都会来这里，独自一个人安静地思考我们的未来，算是秘密基地一样的存在吧。	ここはブローニャが偶然見つけた場所です。戸惑うようなことがあった時はいつもここに来ます。1人で静かに未来について考える、秘密基地のようなところです。	NONE
+msg	300485	Don't tell Seele about this place. Let's keep it between us.	千万不要告诉希儿，不然她一定会跟着我不放的，这可是我们两人之间的秘密。	ゼーレには決して教えないでください。そうじゃないと、彼女は自立できませんから。これはブローニャとあなただけの秘密です。	NONE
+msg	300486	We've arrived.	到了，来吧。	着きました。どうぞ。	NONE
+speaker	
+se	DLC_CH01_EV14_WindWooshA
+msg	300487	(sound of wind)	呼呼呼——	ヒュウウウ——	NONE
+speaker	Bronya
+msg	300488	Watch your step. It's still a little dangerous here.	小心脚下，这里还是有些危险的。	足下に気をつけてください。ここは少し危ないですから。	NONE
+speaker	
+se	DLC_CH01_EV15_WindWooshB
+msg	300489	(sound of wind)	呼呼呼——	ヒュウウウ——	NONE
+choice	300490	It's so dark, I can't see anything.	ここ、暗くて何も見えない。	NONE	NONE
+choice	300491	It's cold. Is it the sound of wind?	寒い、これは風の音？	NONE	NONE
+speaker	Bronya
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	300492	It's so dark because the smoke produced by the Honkai Impact blotted out the sky, obscuring even the light of the moon and the stars.	因为大崩坏产生的烟尘挡住了天空，就连星月的光芒也被遮蔽了，所以才会这么黑暗。	大崩壊によって生み出された煙塵が空を覆っていて、星や月の光すら遮られているのでこんなに暗いんです。	NONE
+msg	300493	Wait, it's about time. It is all thanks to you, so we can catch up.	稍等，时间就快到了，多亏了你的奋斗我们才赶上了呢。	少し待ってください。もうすぐ時間です。あなたが頑張ったおかげで間に合いました。	NONE
+msg	300494	You'll see what we are trying to protect.	一会你就能看到，我们所要守护的是什么东西。	もう少しで見られます。ブローニャたちレジスタンスが守っているものが何なのか。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300495	Convection at this altitude is very intense. Here, it's easy to feel the abnormal change in climate after the Houkai explosion.	嗯，这个高度的对流十分激烈，大崩坏后气候异常的余波在这里能明显感觉到。	ええ、この高度の対流はとても激しいのです。大崩壊後の異常気象の余波をここでもはっきりと感じられます。	NONE
+msg	300496	Wait, it's about time. It is all thanks to you, so we can catch up.	稍等，时间就快到了，多亏了你的奋斗我们才赶上了呢。	少し待ってください。もうすぐ時間です。あなたが頑張ったおかげで間に合いました。	NONE
+msg	300497	You'll see what we are trying to protect soon.	马上你就能看到，我们所要守护的是什么东西。	もう少しで見られます。ブローニャたちレジスタンスが守っているものが何なのか。	NONE
+
+label	end_choices
+speaker	
+msgbox_close
+bg	009/028_1280x720
+msg	0				
+music	Significance
+msgbox_open
+/Bronya	300498	This is the state of the world we're in today.	这就是我们所处的世界现在的姿态。	これこそが私たちのいる世界の今の姿です。	NONE
+msg	300499	Only for the short moment of sunrise can we see the sunlight through the cracks between the horizon and the deadly plague.	只有在朝阳升起的瞬间，当阳光从遥远地平线的尽头穿过死斑的夹缝才能看到的光景。	朝日が昇る瞬間、日差しが遥か地平線の彼方から死斑の隙間を縫って差し込んだ時にだけ見られる光景です。	NONE
+msg	300500	It's only for a few short minutes, but this fleeting scene is my motivation to keep fighting.	虽然只有短暂的几分钟，但是这昙花一现的景象成为了我战斗的动力。	たった数分間ですが、この一瞬の光景がブローニャの戦う原動力になっています。	NONE
+msg	300501	It makes me believe that this world is still alive. Even if I'm at the bottom of the dark abyss, I'll still crawl towards the light.	它让我相信这个世界还活着，即使深陷在黑暗的深渊中也依然想要奋力爬向光明。	この世界がまだ生きていることを信じさせてくれます。暗闇の深淵の底にいても、光に向かって這い上がろうとさせてくれるんです。	NONE
+msg	300502	Living on this resilient planet, we're chasing this momentary miracle. Even if we burn up in the light of the fire.	在这样倔强地生存着的星球环抱中的我们，也随着它一起追逐着这一瞬之间的奇迹，即使会在这束火光中燃烧殆尽也在所不惜。	こんなにもたくましく生き続けている星で、ブローニャたちはこの一瞬の奇跡を追い求めているんです。たとえこの火が燃え尽きてしまったとしても。	NONE
+choice	300503	Is this what we are fighting for?	NONE	これが私たちの戦う意義なの？	NONE
+choice	300504	What a pathetic battle.	NONE	こんな戦いって本当に悲しいわ。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Bronya
+msg	300505	Well, it's not like that. Although we are as fragile as moths in this apocalyptic world, we won't be sacrificing our lives for nothing like the insects.	意义么…在我看来不全是这样，虽然我们的生命在这个末日之中如同飞蛾一般脆弱,但是盲目的飞蛾扑火只会白白牺牲自己的生命。	意義ですか……ブローニャにとっては必ずしもそうではありません。この命は虫のように弱々しいものです。盲目に飛び続ける虫では無駄に自分の命を犠牲にします。	NONE
+msg	300506	We chase hope and we understand the value of life. That's why we treasure our families, and that's why we try to live.	我们追逐着希望，我们明白生命的价值，所以才更珍惜周围的家人，所以才想要活下去。	ブローニャたちは希望を追いかけています。ブローニャたちは命の価値を知っています。だから周りの家族を大切にするんです。だから生きようとするんです。	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Bronya
+msg	300507	Don't be so pessimistic. My family and I aren't fighting to die. A bug flying blindly into the flame will simply burn up, but we're chasing hope because we know the value of life.	不要这么悲观，我们的战斗不是为了死亡，盲目的飞蛾扑火只会白白牺牲自己的生命，我们追逐的是希望，因为我们明白生命的价值。	そんなに悲観的にならないでください。ブローニャたちの戦いは死ぬためではありません。盲目に飛び続ける虫は自分の命を無駄にするだけですが、ブローニャたちは希望を追いかけています。なぜなら命の価値を知っているからです。	NONE
+msg	300508	That's why we cherish our family. That's why we try to live.	所以才更珍惜周围的家人，所以才想要活下去。	だから周りの家族を大切にするんです。だから生きようとするんです。	NONE
+
+label	end_choices
+speaker	Bronya
+msg	300509	While chasing the fire of hope, we still cherish the present.  That is the meaning of our existence, the "Flame Chasing Moths".	追逐着希望之火，却又珍惜现在的点滴。这就是我们，“逐火之蛾”存在的意义。	希望の火を追いかけながら、現在も大切にする。それがブローニャたち「火を追う蛾」の存在意義です。	NONE
+choice	300510	Is there really any hope to be found?	希望は本当に存在するの？	NONE	NONE
+choice	300511	Can we really defeat the Honkai?	私たち本当に崩壊に勝てるの？	NONE	NONE
+
+msg	300512	Don't worry. Hope does indeed exist. The dead plague that blots the sky isn't a curse that will never go away. We just have to defeat the person that created it.	不用担心，希望是确实存在的，笼罩在天空中的死斑并不是永不消散的诅咒，只要将制造它的人杀死就行。	心配いりません。希望は確かに存在します。空を覆う死斑は永遠に消えない呪いではありません。あれを作り出した人を倒せばいいだけです。	NONE
+msg	300513	Yes.... That is the ultimate goal of the team and I. The cause of the Honkai Impact—	没错…这就是我们的最终目标，引发大崩坏的元凶——	そう……それこそがブローニャたちの最終目標。大崩壊を引き起こした元凶——	NONE
+stopmusic	1
+msg	300514	Kiana.	琪亚娜。	キアナ。	NONE

@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 music	Yonah - Pluck Ver
 speaker	Seele
@@ -24,7 +24,7 @@ msg	300908	So please, Bronya. Don't say anything like that.	所以…请姐姐�
 speaker	Bronya
 emote	59	7
 emote	60	4
-msg	300909	Seele... I must take the responsibility for what happened today. If Himeko had not been there, we all would have died.	希儿…但是今天的事情我要负主要责任，如果不是姬子赶到我们就死在那里了。	ゼーレ……でも今日のことはブローニャに大きな責任があります。もし姫子が駆け付けてくれなかったら、あそこで死んでいました。	NONE
+msg	300909	Seele... But it's mostly my fault for what happened today. If Himeko hadn't arrived in time we would have died there.	希儿…但是今天的事情我要负主要责任，如果不是姬子赶到我们就死在那里了。	ゼーレ……でも今日のことはブローニャに大きな責任があります。もし姫子が駆け付けてくれなかったら、あそこで死んでいました。	NONE
 speaker	Seele
 emote	59	7
 emote	60	4
@@ -38,8 +38,8 @@ msg	300913	Seele... I'm sorry.	希儿…对不起。	ゼーレ……ごめんな
 speaker	Seele
 emote	59	6
 emote	60	4
-msg	300914	Stop saying it! I always believe in you and you will lead us to the victory! Houkai will be bested and we will stop at nothing! I know you can do this, Bronya! So please, don't say that you are sorry!	请不要道歉！希儿总是坚信姐姐大人会带领大家战胜崩坏！战胜所有挡在我们面前的困难！姐姐大人一定能办到！所以请不要道歉！	謝らないで。ゼーレはね、きっとお姉ちゃんなら崩壊との戦いを勝利に導いてくれるって信じてる！私たちの前に立ちはだかるどんな困難にも勝てる！お姉ちゃんならきっとできる！だから謝らないで！	NONE
-msg	300915	This... this is not the Bronya I know...	希儿…不想看到这样的姐姐大人……	ゼーレ……こんなお姉ちゃん見たくない……。	NONE
+msg	300914	Don't just apologize. I believe in you, and I believe that you'll be the one to lead us to victory against the Honkai. You can overcome any obstacle that stands in your path! I know you can! So don't apologize!	请不要道歉！希儿总是坚信姐姐大人会带领大家战胜崩坏！战胜所有挡在我们面前的困难！姐姐大人一定能办到！所以请不要道歉！	謝らないで。ゼーレはね、きっとお姉ちゃんなら崩壊との戦いを勝利に導いてくれるって信じてる！私たちの前に立ちはだかるどんな困難にも勝てる！お姉ちゃんならきっとできる！だから謝らないで！	NONE
+msg	300915	I don't want to see my sister like this...	希儿…不想看到这样的姐姐大人……	ゼーレ……こんなお姉ちゃん見たくない……。	NONE
 speaker	Bronya
 emote	59	6
 emote	60	2
@@ -65,7 +65,7 @@ msg	300921	Seele, where are you touching....	…希儿，你在摸哪里……	�
 speaker	Seele
 emote	59	2
 emote	60	1
-msg	300922	Haha! I always wanted to feel Bronya's tatas again!	哇哈哈~姐姐大人的胸部~终于有机会摸到了！	アハハ～お姉ちゃんの胸やっと触れた！	NONE
+msg	300922	Hahaha~ I've finally touched my sister's boobs again!	哇哈哈~姐姐大人的胸部~终于有机会摸到了！	アハハ～お姉ちゃんの胸やっと触れた！	NONE
 portraits
 speaker	
 bg	009/030_1280x720
@@ -79,9 +79,9 @@ speaker	Seele
 msg	300926	*Grab*	噗哟~	ぷに～。	NONE
 speaker	Bronya
 tn	0	Well, exactly one other person. I don't know why they didn't say "Seele, Kyuushou's right there!"
-msg	300927	Seele! There's people here! Don't do anything weird! 	希儿！旁边还有其他人在！不要乱来啦！	ゼーレ！人がいます！変なことをしないでください！	NONE
+msg	300927	Seele! She's right there! Knock it off!	希儿！旁边还有其他人在！不要乱来啦！	ゼーレ！人がいます！変なことをしないでください！	NONE
 speaker	Seele
-msg	300928	Bronya's tatas are just as comforting as before. They feel so good.	姐姐大人的胸部还是和以前一样呢~真好呐~	お姉ちゃんの胸は昔と変わらないね～。よかった～！	NONE
+msg	300928	Your boobs are still the same as before~! Thank goodness~!	姐姐大人的胸部还是和以前一样呢~真好呐~	お姉ちゃんの胸は昔と変わらないね～。よかった～！	NONE
 speaker	Bronya
 msg	300929	What are you talking about!? You know how much it bothers me! And what's with that outfit you wear every day, are you just trying to show them off?!	别说了！我还是很在意的！希儿你每天穿的这个样子是想向我炫耀么！	何を言っているんですか！ブローニャは、気にしているんです！ゼーレ、あなたは毎日こんな服を着て、ブローニャに見せつけているんですか！？	NONE
 speaker	Seele

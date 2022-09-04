@@ -23,7 +23,7 @@ speaker	Seele
 nop	
 emote	59	5
 emote	60	3
-msg	300804	The sound is from inside the door. I have a bad feeling about this...	声音是从门里传来的，这个毛骨悚然的感觉是怎么回事……	この音、扉の中から聞こえてくる。身の毛もよだつこの感覚……一体なんなの？	NONE
+msg	300804	The sound is coming from behind the door... I have a bad feeling about this...	声音是从门里传来的，这个毛骨悚然的感觉是怎么回事……	この音、扉の中から聞こえてくる。身の毛もよだつこの感覚……一体なんなの？	NONE
 speaker	Bronya
 nop	
 emote	59	5
@@ -65,7 +65,7 @@ speaker	Seele
 nop	
 emote	59	3
 emote	60	3
-msg	300815	Their numbers are legion!!!	这个数量也太多了吧！	こんな数、対処しきれないよ！	NONE
+msg	300815	There's thousands of them!	这个数量也太多了吧！	こんな数、対処しきれないよ！	NONE
 speaker	
 emote	60	3
 se	DLC_CH02_EV04_WormFly

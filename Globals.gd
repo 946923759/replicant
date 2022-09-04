@@ -88,7 +88,7 @@ var database = {}
 
 # The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
 # if we're using the "cutscene from file" scene
-var nextCutscene:String="cutscene1Data.txt"
+var nextCutscene:String="kyusyo0-1-1.txt"
 #This is optional, but if it's present the options screen
 #will display the current chapter and description.
 var currentEpisodeData:Episode
@@ -214,6 +214,7 @@ func _ready():
 		printerr("failed to open chapter database! And now everything will break...")
 	else:
 		var lastChapter = "No Grouping!!"
+		var tmp_startChapter:String = ""
 		var i = 0
 		while !f.eof_reached():
 			var line:String = f.get_line().strip_edges()
@@ -222,6 +223,10 @@ func _ready():
 				chapterDatabase[lastChapter]=[]
 			elif line.begins_with("#"):
 				continue
+			elif line.begins_with("//VN_START"):
+				var l = line.substr(len("//VN_START")+1,line.length())
+				if len(l)>0:
+					tmp_startChapter=l
 			elif !line.empty():
 				var keys = line.split("\t",true)
 				var episode = Episode.new()
@@ -239,6 +244,14 @@ func _ready():
 					episode.isSub=keys[3].to_lower()=='true'
 				episode.parentChapter=lastChapter
 				chapterDatabase[lastChapter].append(episode)
+				
+		if tmp_startChapter != "":
+			print(tmp_startChapter)
+			var keys = tmp_startChapter.split("/",true)
+			print(keys)
+			currentEpisodeData=chapterDatabase[keys[0]][int(keys[1])]
+			nextCutscene=currentEpisodeData.parts[0]+".txt"
+			
 	playerHadSystemData = load_system_data()
 	if playerHadSystemData:
 		set_audio_levels()

@@ -1,0 +1,52 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+bg	009/015_1280x720
+music	War And War
+match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+portraits	59	54
+/ 	300570	“The Grey Moths will be here in 5 minutes. All squads please stick to the plan and get ready to fight!”	「灰蛾部队还有5分钟即将抵达，请各小队按计划行动，作战开始！」	「灰蛾部隊はあと5分で到着。各部隊は計画通りに行動してください。作戦開始！」	NONE
+emote	59	1
+/Seele	300571	This side is almost clear. But the battle has just begun. Follow me to see the real boss!	呼~这边也清理的差不多了，不过现在开始才是正戏，跟我来吧！马上你就能看到那个大家伙了！	ふぅ～こっちはあらかた片付いたみたいだね。でも本番はこれからだよ。私について来て！すぐに灰蛾とも会えるはず！	NONE
+speaker	
+se	DLC_CH01_EV17_ExplosionTwoShots
+msg	300572	Bang! Bang!	轰隆！轰隆！！	ゴォン！ゴォン！！	NONE
+speaker	Seele
+emote	59	1
+msg	300573	How's the gate, Yssring?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
+speaker	Yssring
+emote	59	1
+emote	54	1
+msg	300574	No problem! It's ready to open, please protect the control room.	没问题，马上准备开启，请保护好控制室。	問題ない。すぐに開けるわ。制御室、しっかり守ってね。	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300575	Alright~	好勒~	オッケ～。	NONE
+speaker	
+emote	54	1
+se	DLC_CH01_EV17_ExplosionTwoShots
+msg	300576	Bang! Bang!	轰隆！轰隆！！	ゴォン！ゴォン！！	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300577	Oh, there it is~ There it is~! There's the Grey Moths moving through those ruins!	啊，看到了~看到了~就在那边！那就是穿梭于废墟之中的灰蛾！	あ、見えた～見えた～あそこ！あの廃墟の中をくぐり抜けているのが灰蛾だよ！	NONE
+portraits
+bg	009/025_1280x720
+msg	300578	It's orbital battleship Hyperion!	轨道战舰休伯利安！	軌道戦艦ハイペリオン！	NONE
+msg	300579	How do you like it? Isn't it awesome? It's a real aircraft cruiser! But it can't fly because of the damage to its power reactor, so it can only run on rails right now.	怎么样！很帅吧！这可是货真价实的航空战舰哦~不过因为动力炉损坏了改装成了轨道战舰~	どう？カッコいいでしょ？これが本物の航空戦艦だよ～！でも動力炉の損傷で空は飛べないんだけどね。レール、つまり軌道の上のみを走る戦艦になっちゃった。	NONE
+speaker	Yssring
+msg	300580	It took a lot of effort to get a massive battleship like this running on the rails. .....The only downside is that it's way too noisy.	让这么大的家伙在轨道上运行可是费了好大力气才实现的…现在看来唯一的缺点就是噪音大了点……	こんなに大きなやつがレールの上を走るにはかなりのパワーがいるけどね……それと唯一の欠点は騒音が大きすぎること。	NONE
+speaker	Seele
+msg	300581	But that's fine, isn't it? We can scream out to this world that's been enveloped in the silence of death from the Honkai. This is the proof of our existence~!	不是挺好的么~从这个因崩坏而变得死寂的世界中传来的嘶吼，这才是我们的存在证明啊~	別にいいじゃない。崩壊によって死の静けさに包まれたこの世界に雄叫びをあげられるんだから。これこそ私たちの存在証明だよ～！	NONE
+speaker	Yssring
+msg	300582	I wish everyone had your optimism... But every time I see the black shadow of a crowd of Honkai beasts running at me, I feel like I won't make it out alive to see the next day....	要是大家都像你这么乐观就好了…每次看到后面那片黑压压的崩坏生物，我就觉得自己活不过今晚……	みんながあなたみたいに楽観的だったらいいんだけど……いつも一緒に来るあの黒々とした崩壊生物を見るたび、生きて帰れる気がしない……。	NONE
+speaker	Seele
+msg	300583	Alright. We are prepared to take them down, aren't we?	安啦~我们如此严阵以待不就是为了消灭她们么~	ん～私たちがこんな厳重に構えているのは、あいつらを消滅させるためなんだから大丈夫だよ～！安心して！	NONE
+speaker	
+se	DLC_CH01_EV18_WarningAlertTunnel
+msg	300584	"Honkai creatures have entered the area of operation. Operation start!"	「崩坏生物进入作战区域，作战开始！」	「崩壊生物が作戦エリアに入った。作戦開始！」	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+shake_camera	2
+msg	300585	Bomb!	轰隆！！！	ゴォン！！！	NONE
+speaker	Seele
+msg	300586	Phew~ What beautiful fireworks!	咻~真是漂亮的烟花！	ヒュ～本当にきれいな花火！	NONE
+tn	0	She literally says this in Chinese
+msg	300587	Let's go! You heard the horn, it's our turn to play! 	走吧！进攻的号角已经吹响了，该轮到我们出场了！	行きましょう！攻撃ののろしが上がったわ！私たちの出番だよ！	NONE

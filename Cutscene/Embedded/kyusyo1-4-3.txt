@@ -1,0 +1,194 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	War And War
+speaker	Yssring
+bg	009/015_1280x720
+match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+portraits	59	54
+emote	54	1
+se	DLC_CH01_EV20_BaseGateOpenBig
+/Yssring	300588	The base gate is open. Hyperion is going into the station.	基地闸门开启…休伯利安号开始入站。	基地のゲート開放……ハイペリオン号受け入れ開始。	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300589	Everything is fine so far. The frontline should be ready. I think the battle is coming to an end.	呼~目前为止一切顺利，前线那边应该也差不多了，看来快接近尾声了么~	ふぅ～ここまでは全て順調ね。前線の方も大丈夫なはず。もうじき終わるよ！	NONE
+speaker	
+emote	54	1
+se	DLC_CH01_EV21_WarningAlertTunnelB
+msg	300590	"Alert! A large number of Honkai creatures have been spotted approaching! All units, please be advised! We have a large number of Honkai creatures approaching!"	「警报！发现大量崩坏生物靠近！请各单位注意！发现大量崩坏生物靠近！」	「警報！大量の崩壊生物が接近中！各部隊は注意してください！大量の崩壊生物が接近中！」	NONE
+speaker	Seele
+emote	59	5
+emote	54	1
+tn	0	In Japanese and Chinese she said something about setting a flag, so I think she was making a "death flag" joke like in anime
+msg	300591	Ugh! I jinxed us already... 	呃！这么快就立Flag了么！	うっ！こんなに早くフラグを折られるなんて！	NONE
+speaker	Yssring
+emote	59	5
+emote	54	2
+msg	300592	Hey... Seele, what the heck are those? Bugs? I've never seen Honkai creatures like that...	喂…希儿，那边到底是什么东西？是虫子么？从来没有见过这种崩坏生物……	ねえ……ゼーレ、あっちのは一体何なの？虫？あんな崩壊生物見たことない……。	NONE
+match_names	Seele	Bronya	Yssring	_DIM_ALL_WHEN_EMPTY
+portraits	59	60	54
+emote	59	5
+emote	60	3
+/Bronya	300593	Attention! A multitude of new species of Houkai creatures is at the frontline! Change of plans: Retreat to the base immediately!	各位！前线发现大量新生种崩坏生物！作战计划改变！立即返回基地！	みなさん！前線に新種の崩壊生物が大量に現れました！作戦変更！ただちに基地へ退却！	NONE
+speaker	Seele
+emote	59	1
+emote	60	3
+msg	300594	Bronya, what are you doing here?	姐姐大人，你怎么来了？	お姉ちゃん、どうして来たの？	NONE
+speaker	Bronya
+emote	59	1
+emote	60	3
+msg	300595	We're not familiar with those bug-like creatures. It's not safe to confront them right now. Yssring, close the gate immediately when Hyperion gets into the station.	那些虫形生物的特征还不明确，贸然交战的话十分不利，伊瑟琳！休伯利安入站后立刻关闸门！	あの虫のような形の特徴はまだはっきりしていませんが、軽率に戦うのは不利です。イザーリン、ハイペリオンを受け入れ後、直ちにゲート閉鎖！	NONE
+speaker	Yssring
+emote	54	3
+emote	60	3
+msg	300596	But some members are still at the frontline...	可是…前线还有没有撤退的人员……	でも、前線にはまだ撤退していない人が……。	NONE
+speaker	Bronya
+emote	54	3
+emote	60	3
+msg	300597	I'll go save them, don't worry.	我会去营救她们的，这个你不用担心。	ブローニャが回収しに行きますから心配いりません。	NONE
+speaker	Yssring
+emote	54	3
+emote	60	3
+msg	300598	But...	可是……	でも……。	NONE
+speaker	Seele
+emote	59	3
+emote	60	3
+msg	300599	I'm coming with you.	姐姐大人！我要和你一起去！	お姉ちゃん！私も一緒に行く！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	3
+msg	300600	Seele, I'm putting you in charge of handling the retreat of those near the gate. The base is in your hands.	希儿，你负责掩护闸门附近的人撤退，基地这边就交给你了。	ゼーレ、あなたはゲート近くの人の撤退を担当してください。基地のことはあなたに任せます。	NONE
+speaker	Seele
+emote	59	3
+emote	60	3
+msg	300601	But, Sister...	姐姐大人…可是！	お姉ちゃん……でも！	NONE
+speaker	Yssring
+emote	54	1
+emote	60	3
+msg	300602	Ah... The Hyperion stopped near the gate. Maybe something happened...	那个…休伯利安在闸门附近停止了，不知道发生了什么……	あ……ハイペリオンがゲートの近くで停まった。何かあった……？	NONE
+speaker	Bronya
+emote	54	1
+emote	60	3
+msg	300603	Hyperion? Can we get in touch with the Grey Moths? Tell them to get in here at once!	休伯利安？可以与灰蛾取得联系么，让他们立刻进站！	ハイペリオン？灰蛾と連絡をとれますか？彼女らを今すぐ中に！	NONE
+speaker	Yssring
+emote	54	3
+emote	60	3
+msg	300604	I can't get in contact... The communications are down. And Hyperion's main cannon is starting to move!	联系不上，通讯被切断了，而且…休伯利安的主炮似乎开始运作了……	連絡がつかない……通信が切断されてる。しかも……ハイペリオンの主砲が動き始めてる！	NONE
+speaker	Bronya
+emote	54	3
+emote	60	5
+msg	300605	The main cannon... Are they trying to... Quick, inform those on the frontlines to seek cover and get out of the cannon's range!	主炮…他们难道是想……快，通知前线人员立刻寻找掩体，远离休伯利安主炮弹道范围！	主砲……まさか！早く、前線の人たちへすぐに遮蔽物を探して、ハイペリオンの主砲弾道範囲から隠れ、離れるように伝えてください！	NONE
+speaker	Yssring
+emote	54	3
+emote	60	5
+msg	300606	But at this distance, the gate will be...	但，但是！这个距离开炮的话闸门的结构会被……	で、でも！この距離で撃たれたらゲートも……！	NONE
+speaker	Seele
+emote	54	3
+emote	59	3
+msg	300607	Yssring, don't just stand there! Quick, get down!	伊瑟琳！别傻站着！快趴下！	イザーリン、立ってちゃダメ！早く伏せて！	NONE
+speaker	
+emote	59	3
+se	DLC_CH00_EV04_ExplosionClose
+shake_camera
+msg	300608	Bomb!	砰！！！！！！	バン！！！！！！	NONE
+se	DLC_CH01_EV23_ExplosionClose
+shake_camera
+msg	300609	Bomb!	轰隆！！！！	ゴオオン！！！！	NONE
+msg	300610	...	……	……。	NONE
+speaker	Seele
+emote	59	3
+msg	300611	(cough, cough...) Those Grey Moths... What the heck's wrong with them!?	咳咳……灰蛾那群家伙…也太乱来了吧！	ゴホッ、ゴホッ……灰蛾のやつら……無茶苦茶でしょ！	NONE
+speaker	Yssring
+emote	54	3
+emote	59	3
+msg	300612	Wow, I'm still alive...	唔…我居然还活着……	う、うーん……まだ、生きてる……？	NONE
+speaker	Bronya
+emote	54	3
+emote	60	5
+msg	300613	Calling frontline. The invading Houkai cratures have been eliminated, please return to the base immediately.	…呼叫前线，崩坏生物的进攻被消灭了，立刻返回。	……前線へ、崩壊生物からの攻撃は停止しました、直ちに帰還してください。	NONE
+speaker	Yssring
+emote	54	1
+emote	60	5
+msg	300614	Bronya... We're connected to Hyperion.	布洛妮娅…休伯利安的通讯接通了。	ブローニャ……ハイペリオンと通信がつながった。	NONE
+speaker	
+portraits
+bg	009/023_1280x720
+se	DLC_CH01_EV24_RadioSignals
+msg	300615	...	……	……。	NONE
+speaker	Himeko
+msg	300616	Grey Moths to the base.	灰蛾部队呼叫基地。	灰蛾部隊より基地へ。	NONE
+msg	300617	The target has been eliminated. The Hyperion is continuing on track.	目标消灭，休伯利安继续返航…	目標消滅。ハイペリオン号、運転を継続。	NONE
+speaker	Bronya
+msg	300618	Got it. Yssring?	……明白了，伊瑟琳。	……分かりました、イザーリン。	NONE
+speaker	Yssring
+msg	300619	Er, well... The gate has been damaged because of the cannon shelling right now...	嗯，但是，那个…闸门因为刚才的炮击损坏了……	うん。でも、あの……ゲートが今の砲撃で壊れちゃって……。	NONE
+speaker	Seele
+msg	300620	Good grief~ She's as violent as always.	哎~还是一如既往暴力的女人。	やれやれ～相変わらず暴力的な女だね。	NONE
+msg	300621	That Himeko Murata...	那个无量塔姬子……	あの無量塔姫子は……。	NONE
+
+music	Peaceful Sleep - No Vocals
+bg	009/005_1280x720
+portraits	59	60	61
+match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
+emote	60	3
+/Bronya	300622	Why did you act without my permission?	为什么不经过我的同意擅自行动。	どうして同意を得ずに勝手な行動を取るのですか。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+msg	300623	Time is the most precious when we're at risk. I just picked the best choice at that time. That's why we're still alive right now.	在危机的时刻时间是最宝贵的，我只是在宝贵的时间内选择了最正确的方案而已，我们正是这样才活到现在。	危険なときに時間は最も貴重なの。私は貴重な時間の中で最良な方法を選択しただけよ。現に今こうして生きているじゃないの。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	300624	Even if it puts everyone else in danger?	即使让大家陷入危险中么？	みんなを危険に陥れたとしてもですか？	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+msg	300625	I picked the option with the least causalities.	但事实上这才是伤亡最小的选择。	でも事実として、これが被害を最小限に抑える選択よ。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	300626	...	……	……。	NONE
+speaker	Seele
+emote	60	3
+emote	59	1
+msg	300627	Alright. Isn't it great that no one hurt? Let's take a break after the long, hard fight.	好啦~好啦~既然有惊无险不是最好的结果么，大家战斗了一早上了，也休息一下吧~	ほらほら！びっくりしたけど、危険はなかったんだからよかったじゃない。みんな朝からずっと戦ったんだし、休みましょうよ～！	NONE
+speaker	Bronya
+emote	60	3
+emote	59	1
+msg	300628	Now is not the time to rest.	现在不是休息的时候。	今は休む時ではありません。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+msg	300629	Yes, we have something more important to do.	嗯，我们还有更重要的事情要做。	ええ、もっと大事なことをしないとね。	NONE
+speaker	Seele
+emote	59	5
+emote	61	1
+msg	300630	Didn't you just have a fight?	你们原来不是在吵架么……	あなたたちケンカしてたんじゃ……。	NONE
+speaker	Bronya
+emote	60	1
+emote	61	1
+msg	300631	Himeko, did you discover anything new during the reconnaissance?	姬子，这次探查有什么新的发现么？	姫子、今回の偵察で何か新しい発見はありましたか？	NONE
+speaker	Himeko
+emote	60	1
+emote	61	1
+msg	300632	Nothing. We expanded our search, but the progress is still not promising.	依然没有什么线索，我们尝试扩大了搜索范围，不过推进的非常困难。	依然として何の手がかりもないけれど、私たち捜索範囲を拡大してみたの。でも、とても難しいわね。	NONE
+msg	300633	And the biggest discovery of all was the appearance of what appeared to be a new species of Honkai organisms around Nagazora City. But we had to turn around and go back to the city to secure our supplies.	另外，最大的发现还是在长空市的外围出现的疑似新生种的崩坏生物，为了保障物资的安全所以先折回了。	それから、最大の発見は長空市の周りに新種と思われる崩壊生物が現れたことね。ただ、物資の安全を優先して先に引き返して来ちゃった。	NONE
+speaker	Bronya
+emote	60	1
+emote	61	1
+msg	300634	A new species of Honkai creature? Could it be those insects that suddenly attacked us?	新生种的崩坏生物么…莫非是这次忽然袭击我们的虫子？	新種の崩壊生物ですか……まさか今回いきなり襲撃してきた虫ですか？	NONE
+speaker	Himeko
+emote	60	1
+emote	61	1
+msg	300635	No. Based on eyewitness reports it seems to be a four-legged creature similar to a reptile. But those insects we saw must also be a new species.	不是，根据目击队员的描述似乎是四足爬行类的特征，不过刚才的虫子应该也是最近才出现的新生种。	いいえ、目撃した隊員の説明では四つ足で這うタイプのようよ。でもさっきの虫も最近現れた新種に違いなさそうね。	NONE
+speaker	Bronya
+emote	60	1
+emote	61	1
+msg	300636	The Honkai impact is not reduced, and there are new species of Honkai creatures... Looks like the Honkai is going to strike even harder in the future. We can't just sit back and wait for it to happen.	崩坏的影响并没有减弱，更有大量的新生种诞生…看来崩坏的狂潮还会更加肆虐…我们不能就这样坐以待毙了。	崩壊の影響は弱まるどころか、大量の新種を生み出している……崩壊の勢いはますます増しているようですね。しかし、このまま死ぬのをただ待つわけにはいきません。	NONE
+speaker	Himeko
+emote	60	1
+emote	61	1
+msg	300637	So you've made up your mind.	终于下定决心了么。	やっと決断したのね。	NONE
+speaker	Bronya
+emote	60	1
+emote	61	1
+msg	300638	Yes, it's time to fight back.	嗯…反攻的时候到了。	ええ……反撃の時です。	NONE

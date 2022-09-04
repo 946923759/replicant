@@ -12,8 +12,9 @@ msg	300639	Knock, knock	咚咚咚	ドンドンドン	NONE
 speaker	Bronya
 portraits	60	61
 emote	60	2
+music	Peaceful Sleep - No Vocals
 msg	300640	Come in. Thank you for what you did in battle.	请进，之前的战斗辛苦了。	どうぞ。この前の戦いはお疲れ様でした。	NONE
-msg	300641	Let me introduce you. This is the captain of the Grey Moths, Himeko Murata.	我为你介绍一下，这位是灰蛾部队的队长，无量塔姬子。	紹介します。こちらは灰蛾部隊の隊長、無量塔姫子です。	NONE
+msg	300641	Let me introduce you to the captain of the Grey Moths, Himeko Murata.	我为你介绍一下，这位是灰蛾部队的队长，无量塔姬子。	紹介します。こちらは灰蛾部隊の隊長、無量塔姫子です。	NONE
 speaker	Himeko
 emote	60	2
 emote	61	1
@@ -24,7 +25,7 @@ speaker	Himeko
 msg	300645	You're most welcome.	客套话就免了。	お世辞は結構よ。	NONE
 speaker	Bronya
 emote	60	1
-msg	300646	We have a mission for you.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
+msg	300646	I've called you here because I have a mission for uou.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
 msg	300647	During the previous investigation, the Grey Moths lost a significant number of personnel to injuries and had to leave the front lines. Therefore, they're in need of replacements. I've recommended you to Captain Himeko.	灰蛾部队在之前的调查任务中有一批受伤的队员被换下了战斗，所以需要补充人员，因此我向姬子队长推荐了你。	灰蛾部隊はこの前の調査任務の途中、かなりの隊員が負傷して戦線を離脱しました。そのため補充人員が必要です。そこで、姫子隊長にあなたを推薦しました。	NONE
 choice	300648	Yes, it's my pleasure.	喜んで受ける。	NONE	NONE
 choice	300649	I need to think about it.	ちょっと考えさせて。	NONE	NONE

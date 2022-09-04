@@ -4,6 +4,7 @@ speaker	Seele
 bg	009/003_1280x720
 portraits	59
 emote	59	1
+music	Peaceful Sleep - No Vocals
 msg	300247	hehe~ Looks like you're ready to go. I thought you'd chicken out, but it looks like you've got some courage!	嚯嚯~看来是准备好了呢，我还以为你会临阵脱逃，看来还是有点骨气的嘛~	うふふ～準備できたみたいね。土壇場になって逃げ出しちゃうかと思ったけど、結構骨があるのね！	Ufufu ~ Parece que você está pronto. Achei que ia fugir no último minuto, mas tenho muitos ossos!
 msg	300248	But be prepared for training!  I'm not as kind as my sister.  I won't stop even when you're crying or screaming.	不过既然接受了训练就要做好觉悟~我可不会像姐姐大人那样温柔，到时候哭着喊着我也不会停止的哦~	でも、訓練を受けるからには覚悟しておいてね！私はお姉ちゃんみたいに優しくないよ。泣いても喚いてもやめたりしないからね。	Mas esteja preparado para o treinamento! Não sou tão gentil quanto minha irmã. Não vou parar de chorar ou gritar.
 msg	300249	Ehehe ~ Don't be afraid!  It's all for your own good. You have to be strong against the Honkai, humans are weak and fragile.	嘿嘿~你也不用害怕啦，这一切可都是为了你好。想要在崩坏中生存下来没两下子可不行，人类可是十分脆弱的生物呢~	エヘヘ～怖がらないで！全部あなたのためだから。崩壊の中で生き残るには力がないとダメなんだよ。人間はとても弱い生き物だから。	Ehehe ~ Não tenha medo! É tudo para você. Você tem que ter o poder de sobreviver no colapso. Porque os humanos são criaturas muito fracas.
@@ -28,11 +29,10 @@ bg_fade_out_in
 se	DLC_CH01_EV04_PushDoorFast
 msgbox_open
 msg	300259	Heyooo~ Emesa! We're here to help!	哟~埃米沙！我来帮你了哦~	ヤッホ～エミザ！手伝いに来たよ～！	Yahoo ~ Emiza! Eu vim para ajudar!
-speaker	Emesa
 portraits	59	55
 emote	59	2
 emote	55	4
-msg	300260	Don't call me Emesa!	不要叫我埃米沙！	エミザって呼ぶな！	Não me chame de Emiza!
+/Emesa	300260	Don't call me Emesa!	不要叫我埃米沙！	エミザって呼ぶな！	Não me chame de Emiza!
 emote	55	2
 msg	300261	Hm? The girl behind you is... Seems like she's recovered already. Wow, she's really tough.	嗯？你身后的家伙是…哼~看来已经康复了嘛，我就说这家伙命硬着呢。	ん？あんたの後ろにいる子……あー元気になったんだな。こいつはしぶといと思ってたんだよ。	sim? A criança atrás de você... Ah, estou bem. Achei que ele estava relutante.
 tn	0	She says something along the lines of "would have ended up seeing the gates to Heaven", but it sounds weird

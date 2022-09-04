@@ -1,0 +1,159 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+match_names	Seele	Yssring
+music	Peaceful Sleep - No Vocals
+speaker	Seele
+bg	009/003_1280x720
+portraits	59
+emote	59	1
+msg	300297	Ah, you're here already~! Aren't you motivated? Let's get started on today's mission.	嚯嚯~你来啦，看来还是挺有干劲的嘛，那我们马上开始今天的任务吧。	あっ、来たわね～！それじゃ早速今日の任務を始めましょう。	NONE
+msg	300298	This time it's a request from the engineering team. According to their report, there are strange noises coming from the subway tunnel. They're afraid that there might be Honkai beasts in the tunnel. They want us to dispatch a team to investigate.	这次是工程班的委托，根据工程班汇报，地下铁的隧道中传出了奇怪的声音，工程班害怕隧道中有崩坏生物活动，希望能派遣调查队一探究竟。	今回はエンジニア班からの依頼だよ。報告によると、地下鉄のトンネルから奇妙な音がするんだって。トンネルの中に崩壊生物がいるんじゃないかって怖がってるみたい。調査チームを派遣してほしいだって。	NONE
+msg	300299	But since Bronya and the investigation team are out, we've got to do this on our own.	不过姐姐大人和调查队都出去了，看来只能靠我们了呢~	でも、ブローニャお姉ちゃんも調査チームもみんな出払っちゃっているから、私たちだけでやるしかなさそうね～！	NONE
+msg	300300	Let's go. We need to hear what's going on from the engineering team. You're officially part of the investigation team now. Good luck~!	走吧，我们去工程班了解一下情况，从现在开始你正式加入调查队了，要好好加油啊~	行きましょう。エンジニア班から事情を聞かなきゃ。今からあなたは正式に調査チームに加わるからね。頑張ってね～！	NONE
+bg	009/008_1280x720
+emote	59	5
+msg	300301	Ugh! As usual, I can smell that pungent motor oil... Hey, anyone there?	唔！还是老样子，一股刺鼻的机油味……喂喂~有人么？	うぅ！やっぱりいつものように鼻をさす機械油のにおい……ねえ、ねえ～誰かいる？	NONE
+speaker	
+msg	300302	……	……	……。	NONE
+speaker	Seele
+emote	59	1
+msg	300303	Looks like I'll just have to call them the usual way. Let me find something that doesn't look too important... This one looks good!	看来又得用老方法了，让我找个看起来不是那么重要的东西…啊！就它了！	どうやら、いつものやり方で呼ぶしかないみたいだね。それほど重要そうじゃなさそうなものを探して……うん！これかな！	NONE
+speaker	
+se	DLC_CH01_EV05_GlassBreak
+msg	300304	<i>Bang!</i>	砰！	パリンッ！	NONE
+speaker	???
+msg	300305	Ah! What just broke...?	呃！是什么东西坏了！？	ん……何か壊れた……？	NONE
+speaker	
+se	DLC_CH01_EV06_Bump
+msg	300306	<i>Thunk!</i>	咚！	ドン！	NONE
+speaker	???
+msg	300307	Argh! Ow, ow, ow...	哇！疼疼疼……	わわ！イタタタ……。	NONE
+portraits	59	54
+emote	59	1
+/Seele	300308	Oh, Yssring, there you are~!	哟~伊瑟琳你在啊~	あっイザーリン、いたいた～！	NONE
+speaker	Yssring
+emote	59	1
+emote	54	5
+msg	300309	Oh.... It's just Seele. Next time, can you call my name instead of doing that again?	呃…希儿又是你，不是让你不要用这种方法找我么！	あ……ゼーレ、またあなた。この方法で呼ぶの、次からはやめてよね。	NONE
+speaker	Seele
+emote	59	1
+emote	54	5
+msg	300310	But if I don't do this, you don't pay attention to what's going on around you. Don't worry about it, I just used a small light bulb this time. Don't be so nervous~	可是不这么做你根本注意不到周围的情况啊。放心啦，这次我可是特意找了一个普通的小灯泡，不用那么紧张~	でも、こうでもしないと周囲の状況に注意が行かないでしょ。安心して。今回はわざわざ普通の小さな電球にしてあげたから。そんなに慌てなくて大丈夫だよ！	NONE
+speaker	Yssring
+emote	59	1
+emote	54	3
+msg	300311	A small light bulb...? That.... That's the Homei mecha's camera! You broke it....	小灯泡？这…这个是…你把吼美机器人的摄像头砸坏了啊！	小さな電球？これは……ホミロボットのカメラ！壊れてる……。	NONE
+speaker	Seele
+emote	59	5
+emote	54	3
+msg	300312	Huh?	诶？	え？	NONE
+speaker	Yssring
+emote	59	5
+emote	54	5
+msg	300313	This was the only useful thing I could find out of all the garbage Ray sent me...... I'm so upset...... that it turned out like this....... Ugh. Ray will be mad at me again later.	这可是我好不容易从那家伙送来的垃圾堆里找到的唯一有用的东西，就这么被你给……呜…一会又要被雷伊骂了…	これ、レイに送ってもらったゴミから苦労して見つけ出した唯一役立つ物だったのに……。こんなになっちゃって……うぅ……またあとでレイに怒られる。	NONE
+speaker	Seele
+emote	59	5
+emote	54	5
+msg	300314	Haha..... Sorry, sorry~	哈哈…抱歉抱歉~	アハハ……ゴメン、ゴメン～。	NONE
+speaker	Yssring
+emote	59	5
+emote	54	1
+msg	300315	I can't help it if it's broken. It's only a camera anyway..... By the way, what do you want from me?	哎，算了，反正就一个摄像头也修不好什么…话说，你们来找我有什么事情么？	壊れちゃったものはしょうがない。どうせたかがカメラだし……ところで、私に何か用？	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300316	That's our line. You submitted the request, didn't you? My sister and the survey team are out, so we're supposed to be in charge of the base.	这可是我的台词，不是你提交的委托么？姐姐大人和调查队出去了所以基地里的事情都是我来负责哦~	それはこっちのセリフだよ。あなたが依頼を提出したんでしょ？お姉ちゃんと調査チームが出払ってるから、基地のことは私たちが担当することになってるの。	NONE
+speaker	Yssring
+emote	59	1
+emote	54	1
+msg	300317	Is that so.... If I knew it was going to be you I wouldn't have made the request.	这样啊…早知道是你就不提交委托了。	そうなの……知っていたら依頼なんか出さなかった。	NONE
+speaker	Seele
+emote	59	5
+emote	54	1
+msg	300318	What did you say?	嗯？你说什么？	ん？何かな？	NONE
+speaker	Yssring
+emote	59	5
+emote	54	5
+msg	300319	It's nothing...... In that case, I'll tell you what the request is about.	没，没什么…既然如此那我就讲下委托的内容吧…	何でもないわ……そういうことなら依頼の内容を話すわね。	NONE
+emote	59	5
+emote	54	1
+msg	300320	Since the last attack from the Honkai beasts, we've been hearing strange noises coming from the tunnels in the direction of Nagazora City ...... Everyone is too scared to go in and work.	事情是这样的，自从上次崩坏生物的攻击之后，往长空市方向的隧道深处总会传出奇怪的声响…大家都很害怕，不敢进去作业。	この前の崩壊生物の攻撃以降、長空市方面のトンネルから奇妙な音が聞こえてくるの……それでみんな恐がって、作業に行けなくなっちゃって。	NONE
+msg	300321	And just a short time ago a member of the engineering team disappeared while working in the tunnels... So now we're worried that the honkai beasts have made their way underground.	而且就在不久之前工程班的一个成员在隧道里作业的时候就失踪了…所以我们担心会不会是崩坏生物已经进入了地下。	それにちょっと前、エンジニア班のメンバーの1人がトンネル内で作業をしている時に失踪したのよ……だから私たちも崩壊生物が地下に入り込んだんじゃないかって心配してるの。	NONE
+speaker	Seele
+emote	59	1
+emote	54	1
+msg	300322	I see~! Don't worry, we'll take care of it. We'll check it out!	明白了~不用担心，交给我们吧，一定会调查清楚的。	なるほど～！心配しないで私たちに任せてちょうだい。調べてくるから！	NONE
+speaker	Yssring
+emote	59	1
+emote	54	1
+msg	300323	Thanks, I'm counting on you. I'm going back to work... See you later.	嗯，拜托了，那我就继续工作了…再见。	うん、頼んだわよ。じゃあ、私は仕事に戻るから……じゃあね。	NONE
+
+bg	009/007_1280x720
+music	Amusement Park - Quiet
+portraits	59
+emote	59	1
+/Seele	300324	According to the intel, it should be in this area. The terrain here is convoluted and complex due to the underground tunnel network of Nagazora City. Even with a map it's easy to get lost here, so make sure to be aware of your surroundings.	根据情报来看应该就是这块区域，这里是长空市地下隧道网，地形错综复杂。即使有地图也很容易迷路，一定要注意哦~	情報ではこの辺りのエリアのはずだよ。ここは長空市の地下トンネル網で地形が入り組んでいて複雑なの。地図を使っても迷子になりやすいから、十分気をつけてね。	NONE
+msg	300325	Well, if you follow me it shouldn't be an issue. Let's go!	嘛，不过跟着我就不会有问题啦，那我们出发吧~	まあ、でも私について来れば問題ないよ！さあ、出発しましょ！	NONE
+msg	300326	Hmm~ Hmm~ Hmm-Hmm-Hmm♪	哼哼~哼哼哼♪	フンフン～フンフンフン♪	NONE
+choice	300327	What's got you so happy?	何か嬉しいことでもあったの？	NONE	NONE
+choice	300328	Aren't you nervous?	緊張しないの？	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	300329	What's so happy about it? Nothing~! I just don't like frowns. You don't think I'm simple-minded and optimistic, do you?	高兴的事情？其实也没什么啦~我只是不喜欢板着脸而已，你该不是以为我是一个头脑简单的乐天份子？	嬉しいこと？何もないよ～！ただ、しかめっ面が嫌いなだけ。まさか、私の頭が単純で楽天的だなんて思ってないよね？	NONE
+msg	300330	I guess it's understandable- My sister Bronya often scolds me for being too laid-back. But I like the way I am now better than the way I was when I was always nervous.	这也不怪你，姐姐大人也经常责骂我太过松懈，不过与其天天绷紧神经，我还是喜欢现在的自己。	無理もないか～ブローニャお姉ちゃんからもよく緩みすぎだって叱られるもん。けど神経を張りつめっぱなしでいるより、私は今の私の方が好きなの。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300332	Nervous? Sure, I guess you would be if you're a new recruit. But I've gotten used to this kind of thing. I've experienced countless battles, and if I was on edge every single day I'd lose my head!	紧张么？像你这样的新兵的确会紧张呢，但是我已经差不多习惯这样的事情了，经历了无数次的战斗，如果每天都紧绷着神经恐怕是会疯掉的吧~	緊張してる？新兵なら確かに緊張するかもね。でも、私はこういうことに慣れちゃった。数え切れないくらいの戦いを経験したから。それにもし毎日神経を張りつめっぱなしにしていたら、頭がおかしくなっちゃうよ～！	NONE
+msg	300333	My sister Bronya often scolds me for being too laid-back. But I like the way I am now better than the way I was when I was always nervous.	虽然姐姐大人经常会责骂我太过松懈，不过与其板着脸，我还是希望现在的自己，虽然经常被人认为是头脑简单的乐天份子~	お姉ちゃんにはよく緩みすぎだって叱られるけど、しかめっ面でいるより、今の私でいたいの。周りからは頭が単純で楽天的だと思われてるけどね。	NONE
+
+label	end_choices
+msg	300331	I've seen too many sad faces in this world... Smiles are the most precious, aren't they?	这个世界已经见过太多悲伤的表情，笑容才是最稀缺的不是么？	この世界では嫌というほど悲しい表情を見てきたから……。笑顔こそ最も貴重なものでしょ？	NONE
+msg	300335	Come on, come on~! You smile too! A smile is the best accessory a pretty girl like you can have!	来吧来吧~你也多笑笑啦！像你这样可爱的女孩子笑容才是最好的装饰哦~	ほらほら～！あなたも笑って！あなたみたいにかわいい女の子には、笑顔こそが最高のアクセサリーなんだから！	NONE
+msg	300336	Well~ Our mission right now is to protect the base, so don't relax just yet.	嘛~不过我们现在的任务可是保护基地，所以也不能掉以轻心。	まぁ、でも、私たちの任務は基地を守ることだから、気を緩めるわけにはいかないけどね。	NONE
+msg	300337	Did you know? This tunnel was a massive project built under a city with a population of 10 million. Such a huge transportation network could go anywhere in the city. Amazing, isn't it?	你知道么，这个隧道可是建造在拥有千万人口的大都市之下的超级工程，如此庞大的运输网络可以到达城市的各个角落，实在是令人惊叹~	知ってる？このトンネルは人口1千万の大都市の地下に作られたすごいものだったんだよ、こんなに巨大な輸送ネットワークなら街のどこへでも行けるよね。ほんと驚きよね～！	NONE
+msg	300338	After the explosion caused by the Honkai, my sister and I looked for a way to survive here. But when we saw the originally vibrant city turn into a hell of walking corpses, we lost hope...	在崩坏爆发后，我和姐姐大人在这里寻求着最后的生机，看着原来生机磅礴的都市变成行尸走肉的地狱，一度失去了生存的希望…	崩壊による爆発後、私とお姉ちゃんはここで生きるすべを探し求めたの。けど、以前まで活き活きとしていた都市がゾンビだらけの地獄に変わって、一瞬で生きる望みを失ったんだ……。	NONE
+msg	300339	But we didn't give up. Thanks to my sister, she taught me the value of life. She said I shouldn't throw away my right to live so easily, and she helped me stand up again.	但是我们没有放弃，多亏了和姐姐大人在一起，是她告诉了我生命的重要，不要轻易舍弃自己活着的权利，才让我重新振作了起来。	でも、私たちは諦めなかったの。お姉ちゃんと一緒にいたおかげで、命の大切さを教えてもらえた。軽々しく自分が生きる権利を捨ててはいけないって。それで私はもう1度立ち上がれたの。	NONE
+tn	0	So the Japanese changed it to her having two sisters, because Sin Mal is her other sister. However, Sin Mal dies before Kyuushou appears, and Bronya and Seele never say what happened to her.
+msg	300340	And we built our base under this station. At first it was just me and my two sisters in a shack. Then slowly we found more and more surviving family members and gradually we became what we are now. 	我们在这个车站下面搭建了据点，起初是只有我和姐姐大人两个人的小屋，后来慢慢找到了更多幸存的家人，我们才渐渐变成现在的样子。	そして、私たちはこの駅の下に拠点を作ったの。最初は私とお姉ちゃん2人だけの小屋だったけど。それからゆっくりと生存者の家族を見つけて、だんだんと今みたいになっていったんだ。	NONE
+msg	300341	This subway that once carried civilization is still the rainbow bridge that leads to the Garden of Eden. It is humanity's last hope.	这个曾经承载着文明的轨道，现在则是通向伊甸园的彩虹桥，是人类最后的希望。	昔、文明を載せていたこのレールは、今でもエデンの園につながる虹の橋。人類最後の希望なんだよ。	NONE
+msg	300342	No matter what happens, I won't let the paradise my sister created be destroyed by the Honkai!	不管如何，我都决不会让姐姐大人建立起来的乐园被崩坏毁掉！	なんであれ、私はお姉ちゃんが作った楽園を絶対に崩壊に侵させやしない！	NONE
+speaker	
+se	DLC_CH01_EV07_MetalStrikeSmall
+msg	300343	Ding. Ding. Ding.	当当当——	ダンダンダン——	NONE
+emote	59	1
+/Seele	300344	That sound... That must have been the weird sound the engineering crew was talking about. It sounds like it's coming from right in front of the tunnel.	这个声音是…看来这就是工程班的人所说的异响吧，似乎就在隧道的前方。                                                                              	この音は……これがエンジニア班の人が言っていた変な音ね。トンネルの前方から聞こえるみたい。	NONE
+speaker	
+se	DLC_CH01_EV07_MetalStrikeSmall
+msg	300345	Ding. Ding. Ding.	当当当——	ダンダンダン——	NONE
+emote	59	1
+/Seele	300346	It sounds like something hitting metal...	好像是敲打金属发出的声音…	金属をたたく音みたいだね……。	NONE
+emote	59	3
+msg	300347	Slow down and pay attention to the changes around you. If you want to survive in a world filled with Honkai, you have to stay alert at all times.	放慢脚步，注意周围的变化，想要在崩坏的世界中生存就必须时刻保持警惕。	ゆっくり、周りの変化に注意して。崩壊の世界で生き残りたければ常に警戒を保たないとダメだよ。	NONE
+msg	300348	If it's a Honkai Beast, don't provoke it. Our objective this time is only reconnaissance. Avoid combat if at all possible.	如果是崩坏生物的话千万不能惊动它们。我们这次的目的只是探查而已，要尽量避免战斗。	もし崩壊生物だったら絶対に刺激してはダメ。私たちの今回の目的は偵察だけだからね。できる限り戦闘は避けて。	NONE
+msg	300349	Let me take this chance to teach you some survival skills. Watch my feet...	乘着这次机会就让我好好教教你生存的技巧吧，跟着我的脚……	この機会に生き残るために必要なすべを教えてあげるよ。いい？私と足並みを……。	NONE
+speaker	
+se	DLC_CH01_EV08_ToolKit
+msg	300350	Dong!	咚！	ドンッ！	NONE
+speaker	Seele
+emote	59	5
+msg	300351	Ugh! Ouch! Who put this big toolbox in the middle of the road!	呃！痛痛痛！是谁在路中间摆这么大的工具包啊！	わっ！イタタタ！道の真ん中にこんな大きな工具箱を置いたのは誰よ！	NONE
+choice	300352	Keep quiet.	そんな大声出さないで。	NONE	NONE
+choice	300353	This belongs to the engineering team.	これはエンジニア班のものみたい。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	300354	Ugh..... That was just demonstrating what not to do! This is what happens when you don't pay attention to what's going on around you! Got it?	咕…刚才只是做个错误的示范而已！如果不注意周围的情况后果就是这样！明白了么？	うっ……今のは悪い見本を見せただけよ！周りの状況に注意しないとこうなるの！分かった？	NONE
+jmp	end_choices
+
+label	c2dest
+msg	300355	Oh, right. I'm afraid this belongs to the missing team member.	唔！没！没错！恐怕这就是那个失踪的队员的东西！	あ！そ、そうね！おそらくこれはあの失踪した隊員のものね。	NONE
+
+label	end_choices
+speaker	
+se	DLC_CH01_EV09_ToolFall
+msg	300356	Clank!	哐啷！	ガラン！	NONE
+speaker	Seele
+emote	59	3
+msg	300357	Who's there!?	是谁！？	誰！？	NONE
+msg	300358	That's the shadow of a human... Let's chase after it!	那个影子是人类…我们快追上去！	あの影は人間？追いかけましょう！	NONE

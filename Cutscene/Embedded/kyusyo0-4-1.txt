@@ -8,6 +8,7 @@ match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 bg	009/002_1280x720
 nop	msg		/open
 msgbox_open
+music	Peaceful Sleep - No Vocals
 msg	300202	Oh...	唔……	うっ……。
 speaker	Seele
 portraits	59

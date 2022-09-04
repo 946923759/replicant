@@ -1,5 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 music	Amusement Park - Quiet
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
 bg	009/010_1280x720
 portraits	59	60
@@ -59,31 +60,25 @@ msg	300787	Hey, could you go and get the troops and tell them to prepare for bat
 choice	300788	Roger that!	分かった。	NONE	NONE
 choice	300789	Please, let me stay and join your investigation.	あなたたちと一緒に調べたい。	NONE	NONE
 condjmp_c	c2dest	2
+
 label	c1dest
 speaker	Bronya
-bg	009/010_1280x720
-portraits	60
 emote	60	1
 msg	300790	Sorry. I understand we found some clues about your memory. But this is an emergency. Please.	抱歉，好不容易才有关于你记忆的线索。但是现在情况紧急，拜托了。	すみません。せっかくあなたの記憶につながりそうな手がかりなのに。ですが、事態は緊迫しています。お願いします。	NONE
 jmp	end_choices
+
 label	c2dest
 speaker	Bronya
-bg	009/010_1280x720
-portraits	60
 emote	60	1
 msg	300791	I understand how do you feel, and we found some clues about your memory. You must be eager to know more.	我明白你的心情，好不容易找到和你记忆有关的线索，一定很焦急吧。	あなたの気持ちは分かります。ようやく記憶に関する手がかりを見つけて、落ち着かないのですよね。	NONE
+
 label	end_choices
-#LANGUAGES	KEY	EN	CH	JP	PT
 speaker	Bronya
-bg	009/010_1280x720
-portraits	60
 emote	60	4
 msg	300792	But this is an emergency. You are the only one we can count on. I'm sorry. Please forgive me for my selfish request...	但是现在情况紧急，只能拜托你了。抱歉，请原谅我的自私……	ですが、事態は緊迫しています。あなたにしかお願いできません。すみませんが、ブローニャの自分勝手を許してください……。	NONE
-portraits	60
 emote	60	1
 msg	300793	Let's split up then. Give these samples to Yssring and ask her to...	那我们分头行动吧，到了基地后把这些样本交给伊瑟琳，让她……	では、ここからは別れて行動しましょう。基地に戻ったらこのサンプルをイザーリンに渡して、彼女に……。	NONE
 speaker	
-portraits	60
 emote	60	1
 se	DLC_CH02_EV03_WormEggExplode
 msg	300794	*Loud Buzzing Sound*	嗡！！！	ブーン！！！	NONE

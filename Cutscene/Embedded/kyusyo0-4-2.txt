@@ -5,6 +5,7 @@ speaker	Seele
 bg	009/005_1280x720
 portraits	59	60
 emote	59	1
+music	Peaceful Sleep - No Vocals
 msg	300224	Bronya, we've almost finished clearing the frontlines. But it looks like there's a lot of enemies left. They're still making noise around the base. But I think the threat level itself has been lowered!	姐姐大人~前线的清理工作已经进入尾声了，不过仍然有不少散兵游勇还在不断骚扰基地周边，但是已经构不成威胁了~	お姉ちゃん、前線の片付けがもうじき終わるよ。でも、敵の残存数はかなりのものみたい。基地の周辺でも騒ぎ続けてるし。ただ、脅威レベルそのものは下がったかな！
 speaker	Bronya
 emote	60	2

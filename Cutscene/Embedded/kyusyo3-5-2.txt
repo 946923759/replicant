@@ -7,19 +7,18 @@ se	DLC_CH03_EV01_GunAndExplosion
 msg	301603	Tatatat	哒哒哒	ダダダッ	NONE
 se	DLC_CH03_EV05_ThunderBig
 msg	301604	Boom!!	轰隆！！	ドゴーン！！	NONE
-speaker	Seele
+match_names	Seele	Bronya	Himeko	Emesa
 portraits	59	60	61
 emote	59	3
-msg	301605	Bronya! There's a strong Honkai reaction over the base! I think the Herrscher's already found us!	姐姐大人！基地上空发现强烈的崩坏能反应！我们已经被律者锁定了！	お姉ちゃん！基地の上空に強烈な崩壊エネルギー反応！もう律者が来たみたい！	NONE
+/Seele	301605	Bronya! There's a strong Honkai reaction over the base! I think the Herrscher's already found us!	姐姐大人！基地上空发现强烈的崩坏能反应！我们已经被律者锁定了！	お姉ちゃん！基地の上空に強烈な崩壊エネルギー反応！もう律者が来たみたい！	NONE
 speaker	Bronya
 emote	59	3
 emote	60	5
 msg	301606	Is everyone on board!?	所有人都上船了么！	全員、乗船しましたか！？	NONE
-speaker	Emesa
 portraits	59	60	61	55
 emote	59	3
 emote	55	4
-msg	301607	Hang on! There's still some injured left!	等下！还有一些伤员没有登船！	待ってくれ！まだ負傷者が残ってる！	NONE
+/Emesa	301607	Hang on! There's still some injured left!	等下！还有一些伤员没有登船！	待ってくれ！まだ負傷者が残ってる！	NONE
 emote	59	3
 emote	61	2
 portraits	59	60	61
@@ -43,6 +42,7 @@ msg	301613	Boom!!!	轰！！！	ドゴーン！！！	NONE
 emote	59	3
 emote	60	6
 portraits	60	59	61
+match_names	Bronya	Seele	Himeko
 /Bronya	301614	Ah.... Ah.... Why... Everyone... Himeko!!!	啊…啊……不…为什么……大家……姬子！！！	あ……あ……だめ……どうして……みんな……姫子！！！	NONE
 emote	59	3
 emote	61	2
@@ -85,6 +85,7 @@ msg	301624	Forgive me, Bronya...	对不起了…姐姐大人……	ごめんね�
 emote	59	3
 emote	60	6
 portraits	59,false,-2	60,false,2	61,false,2
+match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
 /Bronya	301625	Huh?!	哈！！	えいっ！！	NONE
 emote	59	3
 emote	60	6
@@ -116,10 +117,9 @@ emote	59	6
 msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
 msg	301633	...	……	……。	NONE
 msg	301634	...	……	…………。	NONE
-speaker	Seele
-portraits	59
+match_names	Seele	_DIM_ALL_WHEN_EMPTY
 emote	59	6
-msg	301635	....You've gone. Great, at least my sister survived...	走掉了么……太好了，至少姐姐大人活下来了。	行ったね……良かった、お姉ちゃんだけでも生き延びて……。	NONE
+/Seele	301635	....You've gone. Great, at least my sister survived...	走掉了么……太好了，至少姐姐大人活下来了。	行ったね……良かった、お姉ちゃんだけでも生き延びて……。	NONE
 msg	301636	I'm sorry, I wanted to act cheerful and bring a smile to everyone's face, but in the end I couldn't do anything...	对不起，一直想要扮演着开朗的样子让大家露出笑容，但是最后却还是什么都做不到呢……	ごめんなさい、ずっと明るく振る舞ってみんなを笑顔にしていたかったけど……結局最後は何もできなかった……。	NONE
 msg	301637	At least for now.... Let me be selfish.	至少现在…让希儿自私一下吧。	せめて今だけは……ゼーレのわがままを許して。	NONE
 portraits

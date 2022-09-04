@@ -1,4 +1,4 @@
-#LANGUAGES	key	en	ch	ja	pt
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Seele
 bg	009/003_1280x720
 portraits	59
@@ -16,18 +16,18 @@ bg	007/006_1280x720
 msg	300091	...	……	……。
 msgbox_transition
 bg	009/011_1280x720
-music	Vague Hope Cold Rain No Vocals
+music	Blissful Death - No Vocals
 msg	300092	What is this place?	这里是……	ここは——	Este lugar...
 msg	300093	The view looks familiar.	好熟悉的景色，	よく知っている景色、	Me parece familiar.
 msg	300094	Under the gray sky and in this cold air, the earth is glistened by the distorted light.	灰色的天空与冰冷的空气，扭曲的光芒辐射着死去的大地。	灰色の空と冷たい空気、曲がった光が死の大地を照らす。	O céu cinzento, o ar frio e a luz torta iluminam a terra da morte.
 msg	300095	Why and how did I get here?	我为什么会在这里，又是如何来到这里的……	私、どうしてここにいるの。どうやってここに来たの……。	Por que estou aqui? Como eu cheguei aqui ...
 msg	300096	I can't remember.	已经记不起来了。	思い出せない。	Eu não consigo me lembrar.
-msg	XXX	But there's a strange impulse inside me,	但是，总有一种奇妙的冲动在驱使着我。	でも、なんだか奇妙な衝動が私を駆り立てている。	Mas alguns impulsos estranhos estão me conduzindo.
+msg	-1	But there's a strange impulse inside me,	但是，总有一种奇妙的冲动在驱使着我。	でも、なんだか奇妙な衝動が私を駆り立てている。	Mas alguns impulsos estranhos estão me conduzindo.
 se	DLC_CH00_EV07_FootStepAway
-tn	XXX	For the official English translation they opted to combine the two sentences, CN/JP are separated (no comma). I think the English way is better though.
-msg	XXX	/setDispChr[40]But there's a strange impulse inside me, driving me in no particular direction.	向着不知道在何处的目标前行——	どこを目指しているのか分からない——	Para um caminho que eu não sei onde me levará.
+tn	-1	For the official English translation they opted to combine the two sentences, CN/JP are separated (no comma). I think the English way is better though.
+msg	-1	/setDispChr[40]But there's a strange impulse inside me, driving me in no particular direction.	向着不知道在何处的目标前行——	どこを目指しているのか分からない——	Para um caminho que eu não sei onde me levará.
 msg	300099	I can't tell how long it's been, but the view in front of me is becoming clearer and clearer.	不知道过了多久，眼前的景色也越来越清晰。	どれだけ経ったのかも分からないけど、目の前の景色はますますはっきりしてきた。	Não sei quanto tempo passou, mas o cenário à minha frente tornou-se cada vez mais claro.
-msg	300100	But I still couldn't remember their origin. It's at the tip of my tongue. That feeling made my heart throb.	然而始终无法想起它们的由来，呼之欲出的情感让我心跳加快。	しかし、最後までそれが何なのかは思い出せない。喉元まできている感覚がもどかしい。	Mas não consigo lembrar o que é até o final. A sensação de ser estrangulada é frustrante.
+msg	300100	But I still can't remember where it came from. It's like the words are caught in my throat.	然而始终无法想起它们的由来，呼之欲出的情感让我心跳加快。	しかし、最後までそれが何なのかは思い出せない。喉元まできている感覚がもどかしい。	Mas não consigo lembrar o que é até o final. A sensação de ser estrangulada é frustrante.
 msg	300101	It feels like I'm trapped inside a whirlpool. The exit is right in front of me, but I can't touch it.	这种感觉仿佛进入了翻滚的螺旋之中，明明出口就在前方，但却无法触及。	渦巻の中に入ったかのような感覚。出口は前にあるのに、触れることができない。	Parece que você está em um redemoinho. A saída está na frente, mas não posso tocá-la.
 msg	300102	Everything seems so clear. Even though it looks like it's been weathered down from millennia, it's still clearly distinguishable.	一切都是那么真切，恍如隔世，却又依稀可辨。	全てがはっきりしている。時代を経ているようだけれど、はっきりと見分けられる。	Tudo está claro. Parece ser antigo, mas pode ser claramente distinguido.
 msg	300103	Then, I saw a beam of light. A sign. An end.	渐渐地，我看到了一束光，一个信标，一个终点。	だんだんと光が、ビーコンが、終点が見えてきた。	Gradualmente, a luz, o farol e o ponto final tornaram-se visíveis.
@@ -45,14 +45,17 @@ msg	300111	Watching her sleep reminds me of something, so I step to her.	看着�
 choice	0	Wake her up.			Acorde-a.
 choice	0	Never mind.			Esqueça.
 condjmp_c	c2dest	2
+
 label	c1dest
 msg	300114	It must be lonely when you're the only person here. I should wake her up.	一个人的话一定很孤独，还是试着叫醒她吧。	1人でいたらきっと孤独なはず。やっぱり起こしてみよう。	Deve ser solitário ficar sozinha, por isso é melhor tentar despertá-la.
 msg	300115	Maybe she can tell me the reason why I exist and the meaning of this world.	说不定可以告诉我存在于此的理由，以及这个世界的意义，	もしかしたら私がここにいる理由や、この世界の意義を教えてくれるかもしれない。	Talvez me diga por que estou aqui e o significado deste mundo.
 msg	300116	If I could live with her, I wouldn't have to struggle on my own.	如果可以一起生活的话，就不用一个人思考那么多麻烦的事情了。	一緒に暮らせるなら、自分だけであんな面倒なことを考えなくて済むし。	Se vocês podem viver juntos, não precisam pensar em tais problemas sozinhas.
 jmp	endChoices
+
 label	c2dest
 msg	300117	I need to solve my own problems before worrying about others.	与其担心别人不如先解决自己的问题吧。	他の人の心配より、自分の問題を解決しなきゃ。	Eu tenho que resolver meu problema ao invés de me preocupar com os outros.
 msg	300118	I can't do anything on my own. I just cause trouble for everyone else.	只靠我一个人的话什么也做不到，只会给别人添麻烦而已。	私一人じゃ何もできない。他の人に迷惑をかけるだけ。	Eu não posso fazer nada sozinho. Apenas irrito outras pessoas.
 msg	300119	A flood of swirling emotions sprouts in my head. Perhaps it's out of fear, or maybe I'm just afraid of getting into trouble.	复杂的感情涌上心头，或许是出于恐惧，又或许只是单纯的怕麻烦。	複雑な感情が沸き起こってきた。もしかしたら恐怖のせいなのかも、或いは単純に面倒が嫌なだけかも。	Emoções complexas surgiram. Talvez seja por causa do medo, ou talvez seja apenas porque eu não gosto do incômodo.
 label	endChoices
+
 msg	300120	I take a few steps backwards... And I get ready to leave——	我迈出了脚步准备离开。	足を踏み出し……出て行く準備を——	Saia...Prepare-se para sair.

@@ -1,38 +1,29 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
+music	Peaceful Sleep - No Vocals
 speaker	Bronya
+match_names	Seele	Bronya
 bg	009/003_1280x720
-portraits	60
-emote	60	1
-msg	300701	Everything is ready. Let's go.	都准备妥当了吧，那么出发吧。	準備はいいですね。では、行きましょう。	NONE
-speaker	Seele
 portraits	59	60
+emote	60	1
+/Bronya	300701	Everything is ready. Let's go.	都准备妥当了吧，那么出发吧。	準備はいいですね。では、行きましょう。	NONE
 emote	59	1
 emote	60	1
-msg	300702	Sure. But where are those Houkai creatures? Do you have any plans, Bronya?	好勒~那么我们要去哪里呢，姐姐大人有什么计划么？	オッケ～それで私たちどこに行くの？お姉ちゃん何か計画あるの？	NONE
-speaker	Bronya
-portraits	59	60
-emote	59	1
-emote	60	1
-msg	300703	Didn't Yssring say there are a lot of them? Then they need a lot of space.	嗯，刚才伊瑟琳的情报中有一点令我很在意，如果说是数量庞大的集群生物的话一定需要很大的活动空间。	ええ、今のイザーリンの情報の中で1つ、気になることがありました。もし膨大な数の群れの生物がいるのならば、とても大きな活動空間が必要になるはずです。	NONE
+/Seele	300702	Sure. But where are those Houkai creatures? Do you have any plans, Bronya?	好勒~那么我们要去哪里呢，姐姐大人有什么计划么？	オッケ～それで私たちどこに行くの？お姉ちゃん何か計画あるの？	NONE
+/Bronya	300703	Didn't Yssring say there are a lot of them? Then they need a lot of space.	嗯，刚才伊瑟琳的情报中有一点令我很在意，如果说是数量庞大的集群生物的话一定需要很大的活动空间。	ええ、今のイザーリンの情報の中で1つ、気になることがありました。もし膨大な数の群れの生物がいるのならば、とても大きな活動空間が必要になるはずです。	NONE
 msg	300704	But I've just investigated the surrounding areas a couple of days ago. There was nothing suspicious. We might have to look further.	但是就在几天前我已经将周围的区域都巡视了一遍，并没有发现任何可疑的痕迹，所以我们需要扩大调查范围才行。	しかし、数日前、ブローニャが周囲のエリアを調べた時には疑わしい痕跡が見つかりませんでした。だから調査範囲を拡大させなければなりません。	NONE
 msg	300705	I know only one place that has enough space for so many Houkai creatures.	在这个基地的周围，能满足大量崩坏生物活动的场所……或许只有一个地方。	この基地の周囲で、大量の崩壊生物を活動させられるだけの場所は……おそらく1つしかりません。	NONE
-speaker	Seele
-portraits	59	60
 emote	59	2
 emote	60	1
-msg	300706	You know where should we go?! Awesome! You are super Bronya, after all!	这么快就有线索了么！？不愧是姐姐大人！	こんなに早く手がかりが！？さすがはお姉ちゃん！	NONE
+/Seele	300706	You know where should we go?! Awesome! You are super Bronya, after all!	这么快就有线索了么！？不愧是姐姐大人！	こんなに早く手がかりが！？さすがはお姉ちゃん！	NONE
 speaker	Bronya
-portraits	59	60
 emote	59	2
 emote	60	1
 msg	300707	It's just my guess. We'd better secure more supplies and ammo. We are gonna need a lot, if we get lucky and find them.	我也只是猜测而已，如果是这样的话我们恐怕要多准备一些武器弹药了，那个地方的崩坏生物数量可比这里多得多。	私も推測にすぎないのですが、もしその通りなら、武器弾薬を多めに用意しなくては。あそこの崩壊生物の数はここより多いはずです。	NONE
 speaker	Seele
-portraits	59	60
 emote	59	1
 emote	60	1
 msg	300708	That place you're talking about... Could it be...	姐姐大人说的地方难道是……	お姉ちゃんの言っている場所ってまさか……。	NONE
 speaker	Bronya
-portraits	59	60
 emote	59	1
 emote	60	2
 msg	300709	Exactly. It's the one place where you always wanted to go.	嗯，是你一直想去的地方。	ええ、あなたがずっと行きたがっていた場所です。	NONE

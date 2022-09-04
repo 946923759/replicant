@@ -1,6 +1,7 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
 speaker	Seele
 bg	009/013_1280x720
+music	City Ruins - Medium
 portraits	59
 emote	59	1
 msg	305039	Whew~ Mission accomplished! Let's go back to the base and relax!	呼~这次的任务也顺利结束了~回基地后一定要好好休息一下！	ふぅ～今回の任務も無事に終了したわね～基地に帰ってゆっくりしましょう！	NONE

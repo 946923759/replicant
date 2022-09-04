@@ -76,17 +76,17 @@ msg	300753	...	……	……。	NONE
 portraits	59	60
 emote	59	1
 speaker	Seele
-msg	300754	Hey! What's wrong with you? Come on! Don't stand there!	喂！你怎么了，不要傻站着，快跟上~	ねえ！どうしたの、ボーっと立ちつくして。早く行こうよ～！	NONE
+msg	300754	Hey, what's the matter? Why are you standing there staring off into space? C'mon, let's go!	喂！你怎么了，不要傻站着，快跟上~	ねえ！どうしたの、ボーっと立ちつくして。早く行こうよ～！	NONE
 speaker	
-msg	300755	Now, there is a scene in my head that I don't know ...  With Mei-senpai ...	将刚才看到的景象述说了一遍。	今、知らない場面が頭の中に……。芽衣先輩と……。	NONE
+msg	300755	I saw a scene in my head that I don't recognize... With Mei...	将刚才看到的景象述说了一遍。	今、知らない場面が頭の中に……。芽衣先輩と……。	NONE
 speaker	Seele
 emote	59	3
-msg	300756	Mei …… Sister?  No way ...!	芽衣姐姐？怎么会……	芽衣……お姉ちゃん？まさか……！	NONE
+msg	300756	Mei……? But how...!	芽衣姐姐？怎么会……	芽衣……お姉ちゃん？まさか……！	NONE
 speaker	Bronya
 nop	
 emote	59	3
 emote	60	5
-msg	300757	please tell me.  Where did you see her!	快告诉我，你是在哪看到她的！	教えてください。どこで彼女を見たんですか！	NONE
+msg	300757	Please tell me. Where did you see her!	快告诉我，你是在哪看到她的！	教えてください。どこで彼女を見たんですか！	NONE
 speaker	Seele
 nop	
 emote	59	3
@@ -114,7 +114,7 @@ speaker	Seele
 nop	
 emote	59	3
 emote	60	5
-msg	300762	No, you can't just run off! We're on an important mission! This may be that bug's nest, and it's not safe to go alone!	我们现在有更重要的任务要做！既然这里是那些虫子的老巢单独行动是十分危险的！	ダメだよ！私たちは今大事な任務中なんだよ！ここはあの虫の巣なのかもしれないし、単独行動は危険だよ！	NONE
+msg	300762	No, you can't just run off! We're on an important mission! We might be near the insect hive, it's not safe to go alone!	我们现在有更重要的任务要做！既然这里是那些虫子的老巢单独行动是十分危险的！	ダメだよ！私たちは今大事な任務中なんだよ！ここはあの虫の巣なのかもしれないし、単独行動は危険だよ！	NONE
 msg	300763	If your sister Mei is here, let's make sure to look for her during the investigation. Don't let your emotions get the better of you and run headfirst into danger.	如果芽衣姐姐在这边的话，我们在调查的时候也仔细搜索一下吧，姐姐大人请不要意气用事。	もし芽衣お姉ちゃんがここにいるなら、調査の時にしっかり探しましょう。らしくないよ。感情的にならないで。	NONE
 portraits	59	60
 emote	59	3

@@ -1,6 +1,7 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
 match_names	Seele	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
+music	City Ruins - Medium
 bg	009/013_1280x720
 portraits	59
 emote	59	1

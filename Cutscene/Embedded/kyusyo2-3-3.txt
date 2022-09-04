@@ -1,10 +1,12 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
+preload_portraits	59	60	61	56
+match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
 music	Amusement Park - Medium
 speaker	Bronya
 bg	009/010_1280x720
 portraits	59	60
 emote	60	3
-msg	300822	Phew... Target down. We did it.	呼…看样子是打倒了，	ふぅ……倒したようですね。	NONE
+/Bronya	300822	Phew... Target down. We did it.	呼…看样子是打倒了，	ふぅ……倒したようですね。	NONE
 speaker	Seele
 emote	59	5
 emote	60	3
@@ -29,12 +31,10 @@ speaker	Bronya
 emote	59	1
 emote	60	4
 msg	300828	It's.... Mei....	芽衣…姐姐……	芽衣……姉様……。	NONE
-speaker	Seele
-portraits	59	60
 emote	59	3
 emote	60	4
 stopmusic	1
-msg	300829	!?	！？	！？	NONE
+/Seele	300829	!?	！？	！？	NONE
 portraits	
 speaker	
 bg	009/024_1280x720
@@ -66,7 +66,7 @@ msg	300841	There's something wrong with how she looks! And all the bugs are avoi
 speaker	Bronya
 msg	300842	Don't get in my way! I'm taking Mei home! Let go of me!	放开我！我要接芽衣姐姐回去！放开我！	離してください！芽衣姉様を連れて帰ります！離してください！	NONE
 speaker	Seele
-msg	300843	Kyuushou, gimme a hand here! Help me restrain Bronya!	喂！快来帮忙！把姐姐拉回来！	ちょっと！早く手伝って！ブローニャお姉ちゃんを引っ張り戻して！	NONE
+msg	300843	Gimme a hand here! Help me restrain Bronya!	喂！快来帮忙！把姐姐拉回来！	ちょっと！早く手伝って！ブローニャお姉ちゃんを引っ張り戻して！	NONE
 speaker	Bronya
 msgbox_transition
 bg	009/026_1280x720
@@ -80,7 +80,7 @@ msg	300848	Bronya! Calm down! We have to survive this first!	姐姐大人！你�
 speaker	Bronya
 msg	300849	Uh!	呃！	あっ！	NONE
 speaker	Seele
-msg	300850	We are running out of time! I'll cover you! Go open the gate with Bronya! I don't want to become some disgusting creatures' food!	没时间了！我来掩护你们！你和姐姐大人去把门打开！我可不想变成虫子的大餐！	もう時間がないよ！私が援護するから、あなたとお姉ちゃんで扉を開けて！虫のご飯になんかなりたくないもん！	NONE
+msg	300850	We're running out of time! I'll cover you! Go open the gate with Bronya, I don't want to become a meal for these disgusting bugs!	没时间了！我来掩护你们！你和姐姐大人去把门打开！我可不想变成虫子的大餐！	もう時間がないよ！私が援護するから、あなたとお姉ちゃんで扉を開けて！虫のご飯になんかなりたくないもん！	NONE
 speaker	Bronya
 msg	300851	Seele, I...	希儿，我……	ゼーレ、私……。	NONE
 speaker	Seele
@@ -216,12 +216,12 @@ emote	60	4
 emote	59	1
 msg	300884	....Okay.	……嗯。	……はい。	NONE
 portraits
-speaker	Yssring
 bg	009/003_1280x720
 music	Peaceful Sleep - No Vocals
 portraits	59	60	54
+match_names	Seele	Bronya	Yssring
 emote	54	0
-msg	300885	You are back! I was worried about you. It looks like you are all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
+/Yssring	300885	You're back! I was worried about you. It looks like you're all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
 speaker	Bronya
 emote	60	4
 emote	54	0
@@ -266,6 +266,7 @@ speaker	Yssring
 emote	59	5
 emote	54	0
 msg	300896	Excellent! They will make some good research material!	哇~太好了！我这就去研究！	よかった！これで研究ができる！	NONE
+portraits	59	60
 speaker	Seele
 emote	59	5
 emote	54	0

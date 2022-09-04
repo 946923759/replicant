@@ -243,6 +243,8 @@ func advance_text()->bool:
 							ChoiceTable.push_back(cMsg[0])
 					
 				break #Stop processing opcodes and wait for user to click
+			#'setvar':
+				
 			#Compatibility opcode for Girls' Frontline
 			'msgbox_transition':
 				closeTextbox(tw)
@@ -536,6 +538,8 @@ func set_rect_size():
 		child.set_rect_size()
 
 func _ready():
+	$FadeToBlack.visible=true
+	
 	$OptionsScreen.visible=false
 	$Choices.visible=false
 	$FSMode_ActorFrame.visible=false
@@ -565,6 +569,8 @@ func _ready():
 	if len(standalone_message)!=0:
 		init_(standalone_message,null,dim_the_background_if_standalone)
 	#set_rect_size()
+	tw.interpolate_property($FadeToBlack,"modulate:a",null,0,.5)
+	tw.start()
 
 
 func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):

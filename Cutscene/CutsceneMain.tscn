@@ -151,9 +151,6 @@ custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
 text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Light2D" type="Light2D" parent="."]
 visible = false

@@ -1,5 +1,8 @@
 #--CATEGORY
-#TITLE	DESCRIPTION	PARTS	IS_SUB_MISSION
+#TITLE	DESCRIPTION	FILE1,FILE2,FILE3	IS_SUB_MISSION
+
+#This controls where the VN starts after the first run screen (duh).
+//VN_START	Chapter 0/0
 
 --Debug Tests
 Music Test		test_music
@@ -16,6 +19,9 @@ Survive	Protect the #(Residence#) and #(Boundary#) bases.	kyusyo0-3-1,kyusyo0-3-
 --Chapter 1
 Revive	Talk to Seele and Bronya	kyusyo0-4-1,kyusyo0-4-2
 Loot	Go to the Ruins and Desert to collect components.	kyusyo1-1-1,kyusyo1-1-2,kyusyo1-1-3
+Sacrifice	Search the underground tunnel.	kyusyo1-2-1,kyusyo1-2-2,kyusyo1-2-3
+Dawn	Join Bronya on a special mission.	kyusyo1-3-1,kyusyo1-3-2,kyusyo1-3-3
+Back	Head to the gate to assist the Fire Moths	kyusyo1-4-1,kyusyo1-4-2,kyusyo1-4-3
 Patrol	Go to Discovery and eliminate the Honkai creatures.	kyusyo1-S1-1,kyusyo1-S1-2,kyusyo1-S1-3	true
 
 --Chapter 2

@@ -633,8 +633,12 @@ var frameLimiter:float=0.0
 
 func _process(delta):
 	
-	if isHistoryBeingShown or isOptionsScreenOpen:
+	if isHistoryBeingShown:
+		historyActor.process(delta)
 		return
+	elif isOptionsScreenOpen:
+		return
+		
 	if Input.is_action_just_pressed("ui_pause"):
 		end_cutscene()
 	elif Input.is_action_just_pressed("ui_cancel"):
@@ -715,12 +719,13 @@ func _unhandled_input(event):
 	if isWaitingForChoice:
 		return
 			
-	if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
+	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
+	if Input.is_action_just_pressed("vn_history"):
 		if isHistoryBeingShown:
 			print("Hiding history!")
 			tween_out_history()
 			isHistoryBeingShown=false
-		elif isFullscreenMessageBox==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+		elif isFullscreenMessageBox==false and isOptionsScreenOpen==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
 			#historyActor.set_history(textHistory)
@@ -732,7 +737,8 @@ func _input(event):
 		
 	if isOptionsScreenOpen:
 		return
-	if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
+	#if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
+	if Input.is_action_just_pressed("vn_history") and isHistoryBeingShown==false:
 		if isFullscreenMessageBox==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			tween_in_history()
 			get_tree().set_input_as_handled()
@@ -750,7 +756,8 @@ func _input(event):
 			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 			isOptionsScreenOpen=true
 			get_tree().set_input_as_handled()
-			
+	#elif isHistoryBeingShown:
+	#	historyActor.input(event)
 		#else:
 		#	print("Unknown mouse button pressed or don't know how to handle")
 

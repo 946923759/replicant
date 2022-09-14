@@ -63,7 +63,7 @@ func _input(event):
 	descKB.visible=(event is InputEventKey)
 	descGP.visible=(event is InputEventJoypadButton)
 	$DescrptionF.visible=(event is InputEventKey) or (event is InputEventJoypadButton)
-	if (event is InputEventScreenTouch) or (event is InputEventMouseMotion):
+	if (event is InputEventScreenTouch) or (event is InputEventMouseMotion) or (event is InputEventMouseButton):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		reset_all_button_highlights_for_touch()
 		return

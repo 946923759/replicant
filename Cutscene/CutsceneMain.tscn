@@ -165,6 +165,7 @@ playback_process_mode = 0
 [node name="HistoryTween" type="Tween" parent="."]
 
 [node name="FSMode_ActorFrame" type="Control" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -193,11 +194,7 @@ custom_constants/shadow_offset_y = 4
 custom_constants/line_separation = 12
 custom_constants/shadow_as_outline = 0
 custom_fonts/normal_font = ExtResource( 2 )
-text = "This is a test.
-asdadsasdasd
-asdassda
-ads
-asdads"
+text = "This is FSMode text"
 scroll_active = false
 scroll_following = true
 __meta__ = {

@@ -1,15 +1,33 @@
 extends Control
 
-onready var scrollContainer=$ScrollContainer
+onready var scrollContainer:ScrollContainer=$ScrollContainer
 onready var container = $ScrollContainer/GridContainer
 var font = preload("res://Cutscene/TextFont.tres")
 const fadeTop = preload("res://Cutscene/FadeTopShader.tres")
+
+#var isActive:
 
 func _ready():
 	if true: #!OS.is_debug_build()
 		for i in range(2,6):
 			$ScrollContainer/GridContainer.get_child(i).visible=false
 	#test_history()
+
+# Notice the lack of _, This is sent by CutsceneMain.
+func process(delta):
+	var d = delta*50
+	#print("Input!")
+	if Input.is_action_pressed("ui_down"):
+		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical + 40*d)
+#	elif 
+#		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical + 60)*Input.get_action_strength("analog_down")
+	elif Input.is_action_pressed("ui_up"):
+		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical - 40*d)
+	elif Input.is_action_pressed("analog_down") or Input.is_action_pressed("analog_up"):
+		#print(Input.get_action_strength("analog_down")-Input.get_action_strength("analog_up"))
+		var sc = Input.get_action_strength("analog_up")*-1+Input.get_action_strength("analog_down")
+		scrollContainer.scroll_vertical=scrollContainer.scroll_vertical + 60*sc*d
+
 
 func test_history():
 	for i in range(100):

@@ -569,8 +569,11 @@ func _ready():
 	if len(standalone_message)!=0:
 		init_(standalone_message,null,dim_the_background_if_standalone)
 	#set_rect_size()
-	tw.interpolate_property($FadeToBlack,"modulate:a",null,0,.5)
-	tw.start()
+	#tw.interpolate_property($FadeToBlack,"modulate:a",null,0,.5)
+	#tw.start()
+	var seq := TweenSequence.new(get_tree())
+	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	seq.append($FadeToBlack,"modulate:a",0,.5)
 
 
 func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -724,6 +727,9 @@ func _unhandled_input(event):
 		#isHistoryBeingShown=!isHistoryBeingShown
 		
 func _input(event):
+	if (event is InputEventMouseMotion):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
 	if isOptionsScreenOpen:
 		return
 	if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:

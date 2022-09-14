@@ -1,7 +1,7 @@
 preload_portraits	58	59	60	61	67
 music	test
 portraits	58
-tn	This is a translation note. You can see it by hovering your mouse over the TN button.
+tn	This is a translation note. You can see it by hovering your mouse over the TN button, pressing shift, or pressing the west button on a controller.
 msg	Hello world! I show portrait 58!
 stopmusic	5
 msg	Now I fade music...

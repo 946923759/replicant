@@ -231,8 +231,7 @@ margin_left = -1940.0
 margin_right = -20.0
 margin_bottom = 164.0
 __meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
+"_edit_group_": true
 }
 
 [node name="Header" type="Label" parent="EpisodeDisplay"]

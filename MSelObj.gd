@@ -44,6 +44,15 @@ func setNumParts(partDestinations_:Array):
 		else:
 			button.visible=false
 
+func getNumParts()->int:
+	var n = 0
+	for i in range(buttons.get_child_count()):
+		if buttons.get_child(i).visible:
+			n+=1
+	return n
+
+func getPartActorFrame():
+	return $HBoxContainer
 ##Not necessary right now
 #func setNumParts2(partNamesAndDestinations:Array):
 #	var length:int = partNamesAndDestinations.size()

@@ -16,6 +16,7 @@ script/source = "extends Control
 
 onready var t:Tween = $Tween
 onready var af:TextureRect = $DialogueActorFrame
+onready var af2:TextureRect = $DialogueActorFrame2
 onready var sound:AudioStreamPlayer = $AudioStreamPlayer
 
 func _ready():
@@ -24,10 +25,20 @@ func _ready():
 	t.interpolate_property(af,\"modulate:a\",0,1,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.start()
 
-func OffCommand():
+func NextFrameCommand():
 	var rect_size:Vector2 = get_viewport().get_visible_rect().size
 	t.interpolate_property(af,\"rect_position:x\",null,-rect_size.x,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.interpolate_property(af,\"modulate:a\",null,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	af2.rect_position.y=0
+	t.interpolate_property(af2,\"rect_position:x\",rect_size.x,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	
+	t.start()
+	
+
+func OffCommand():
+	var rect_size:Vector2 = get_viewport().get_visible_rect().size
+	t.interpolate_property(af2,\"rect_position:x\",null,-rect_size.x,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
+	t.interpolate_property(af2,\"modulate:a\",null,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.start()
 	yield(t,\"tween_completed\")
 	
@@ -37,7 +48,13 @@ func OffCommand():
 
 func _on_OKButton_pressed():
 	sound.play()
+	NextFrameCommand()
+
+
+func _on_BeginButton_pressed():
+	sound.play()
 	OffCommand()
+	pass # Replace with function body.
 "
 
 [sub_resource type="DynamicFont" id=1]
@@ -148,6 +165,7 @@ align = 1
 autowrap = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DialogueActorFrame"]
+visible = false
 margin_left = 384.0
 margin_top = 576.0
 margin_right = 1536.0
@@ -159,15 +177,15 @@ __meta__ = {
 
 [node name="Label3" type="Label" parent="DialogueActorFrame/VBoxContainer"]
 margin_right = 1152.0
-margin_bottom = 150.0
+margin_bottom = 156.0
 custom_fonts/font = ExtResource( 3 )
 text = "Options such as text speed, skip mode, and volume can be accessed by right clicking or tapping with two fingers while reading."
 autowrap = true
 
 [node name="Label5" type="Label" parent="DialogueActorFrame/VBoxContainer"]
-margin_top = 190.0
+margin_top = 196.0
 margin_right = 1152.0
-margin_bottom = 289.0
+margin_bottom = 299.0
 custom_fonts/font = ExtResource( 3 )
 text = "Fullscreen can be toggled at any time by pressing F11."
 autowrap = true
@@ -181,6 +199,7 @@ margin_left = -91.5
 margin_top = -180.0
 margin_right = 91.5
 margin_bottom = -116.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 8 )
 texture_hover = ExtResource( 8 )
@@ -189,6 +208,88 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="DialogueActorFrame/OKButton"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "Next"
+align = 1
+
+[node name="DialogueActorFrame2" type="TextureRect" parent="."]
+self_modulate = Color( 0.462745, 0.886275, 1, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 960.0
+margin_top = 564.0
+margin_right = 2880.0
+margin_bottom = 1644.0
+texture = ExtResource( 4 )
+stretch_mode = 6
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label2" type="Label" parent="DialogueActorFrame2"]
+anchor_right = 1.0
+margin_top = 100.0
+margin_bottom = 209.0
+custom_fonts/font = ExtResource( 1 )
+text = "Initial Setup"
+align = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogueActorFrame2"]
+margin_left = 384.0
+margin_top = 288.0
+margin_right = 1536.0
+margin_bottom = 875.0
+custom_constants/separation = 40
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="DialogueActorFrame2/VBoxContainer"]
+margin_right = 1152.0
+margin_bottom = 156.0
+custom_fonts/font = ExtResource( 3 )
+text = "Options such as text speed, skip mode, and volume can be accessed by right clicking or tapping with two fingers while reading."
+autowrap = true
+
+[node name="Label5" type="Label" parent="DialogueActorFrame2/VBoxContainer"]
+margin_top = 196.0
+margin_right = 1152.0
+margin_bottom = 299.0
+custom_fonts/font = ExtResource( 3 )
+text = "Fullscreen can be toggled at any time by pressing F11."
+autowrap = true
+
+[node name="Label6" type="Label" parent="DialogueActorFrame2/VBoxContainer"]
+margin_top = 339.0
+margin_right = 1152.0
+margin_bottom = 495.0
+custom_fonts/font = ExtResource( 3 )
+text = "Keyboard, controller, touchscreen, and mouse is fully supported.
+Read the instruction manual for controls."
+autowrap = true
+
+[node name="OKButton" type="TextureButton" parent="DialogueActorFrame2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -91.5
+margin_top = -180.0
+margin_right = 91.5
+margin_bottom = -116.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="DialogueActorFrame2/OKButton"]
 margin_right = 184.0
 margin_bottom = 60.0
 custom_fonts/font = SubResource( 2 )
@@ -201,3 +302,4 @@ align = 1
 stream = ExtResource( 5 )
 
 [connection signal="pressed" from="DialogueActorFrame/OKButton" to="." method="_on_OKButton_pressed"]
+[connection signal="pressed" from="DialogueActorFrame2/OKButton" to="." method="_on_BeginButton_pressed"]

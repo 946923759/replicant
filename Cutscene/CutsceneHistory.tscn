@@ -4,7 +4,7 @@
 [ext_resource path="res://Ext/xinxikuang.png" type="Texture" id=2]
 [ext_resource path="res://Cutscene/CutsceneHistory.gd" type="Script" id=3]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=4]
-[ext_resource path="res://Cutscene/FadeTopShader.tres" type="Material" id=5]
+[ext_resource path="res://Shaders/FadeTopShader.tres" type="Material" id=5]
 
 [node name="CutsceneHistory" type="Control"]
 material = ExtResource( 5 )

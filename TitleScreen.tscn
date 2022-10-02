@@ -180,4 +180,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ButtonGallery" type="Button" parent="."]
+margin_left = 23.3262
+margin_top = 627.604
+margin_right = 197.326
+margin_bottom = 723.604
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 5 )
+text = "Gallery"
+
+[node name="ButtonSoundTest" type="Button" parent="."]
+margin_left = 23.6314
+margin_top = 756.883
+margin_right = 338.631
+margin_bottom = 900.883
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 5 )
+text = "Sound Test"
+clip_text = true
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="gui_input" from="ButtonGallery" to="." method="_on_ButtonGallery_gui_input"]
+[connection signal="gui_input" from="ButtonSoundTest" to="." method="_on_ButtonSoundTest_gui_input"]

@@ -50,7 +50,7 @@ func loadVNBG(sprName:String):
 			var path = OS.get_executable_path().get_base_dir()+"/GameData/Backgrounds/"+sprName+ext
 			#print("Checking path "+path)
 			if f.file_exists(path):
-				print("Found external image file at "+path)
+				print_debug("Found external image file at "+path)
 				var image = Image.new()
 				f.open(path, File.READ)
 				var buffer = f.get_buffer(f.get_len())
@@ -79,7 +79,7 @@ func loadVNPortrait(sprName:String):
 		var path = OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Portraits/"+sprName+".png"
 		#print("Checking path "+path)
 		if f.file_exists(path):
-			print("Found external image file at "+path)
+			print_debug("Found external image file at "+path)
 			var image = Image.new()
 			f.open(path, File.READ)
 			var buffer = f.get_buffer(f.get_len())

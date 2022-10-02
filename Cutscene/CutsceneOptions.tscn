@@ -27,9 +27,6 @@ font_data = ExtResource( 10 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TEST" type="ColorRect" parent="."]
 visible = false
@@ -156,9 +153,6 @@ margin_top = 0.439941
 margin_bottom = -52.0
 rect_min_size = Vector2( 0, 48 )
 mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="DescrptionF"]
 anchor_right = 1.0
@@ -200,9 +194,6 @@ margin_right = 641.0
 margin_bottom = 116.0
 custom_fonts/font = ExtResource( 3 )
 text = "Options Menu"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color( 0, 0.27451, 1, 1 )

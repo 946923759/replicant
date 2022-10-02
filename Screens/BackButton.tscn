@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ext/back1.png" type="Texture" id=1]
+[ext_resource path="res://Ext/back2.png" type="Texture" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+
+[sub_resource type="Curve" id=5]
+min_value = 0.5
+max_value = 3.0
+_data = [ Vector2( 0, 0.790909 ), 0.0, 0.0, 0, 0, Vector2( 0.503247, 1.75 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0, 1.61255e-24, 1 )
+colors = PoolColorArray( 0, 0, 0, 0, 0.0588235, 0.470588, 1, 1, 1, 1, 1, 0 )
+
+[node name="BackButton" type="TextureButton"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -130.0
+margin_right = 215.0
+margin_bottom = -81.0
+rect_scale = Vector2( 2, 2 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+material = SubResource( 4 )
+position = Vector2( 138.364, 37.1144 )
+amount = 6
+randomness = 0.2
+emission_shape = 2
+emission_rect_extents = Vector2( 30, 10 )
+direction = Vector2( 5, 0 )
+gravity = Vector2( 0, 0 )
+scale_amount = 7.21
+scale_amount_random = 0.22
+scale_amount_curve = SubResource( 5 )
+color = Color( 1, 1, 1, 0.435294 )
+color_ramp = SubResource( 6 )

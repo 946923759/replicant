@@ -205,3 +205,13 @@ func _notification(what):
 func _on_AnimationPlayer_animation_finished(anim_name):
 	print("Changing scene!")
 	get_tree().change_scene("res://Cutscene/CutsceneFromFile.tscn")
+
+
+func _on_ButtonGallery_gui_input(event):
+	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
+		get_tree().change_scene("res://Screens/ScreenGallery/ScreenGallery.tscn")
+
+
+func _on_ButtonSoundTest_gui_input(event):
+	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
+		get_tree().change_scene("res://Screens/ScreenSoundTest/ScreenSoundTest.tscn")

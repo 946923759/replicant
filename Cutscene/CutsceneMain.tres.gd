@@ -115,8 +115,9 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			cover=true,
 			#rect_size=Vector2(1920,1080),
 			name=bgToLoad.replace("/","$"),
-			mouse_filter=2
+			mouse_filter=2 # mouse_filter: Ignore
 		})
+		s.set_meta("file_name",bgToLoad)
 		#s.set_rect_size()
 		#if nightFilter:
 		#	s.material=nightShader
@@ -601,6 +602,7 @@ func end_cutscene():
 	for p in PORTRAITMAN.portraits:
 		if p.is_active:
 			p.stop()
+	
 	#https://github.com/godot-extended-libraries/godot-next/pull/50
 	var seq := TweenSequence.new(get_tree())
 	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
@@ -617,6 +619,26 @@ func end_cutscene():
 	#seq.tween_callback()
 	#.from_current()
 	#queue_free()
+	
+signal cutscene_finished()
+func end_cutscene_2():
+	var needToSave:bool=false
+	for c in backgrounds.get_children():
+		var f = c.get_meta("file_name")
+		if !(f in Globals.playerData['CGunlock']):
+			print_debug("Unlocked CG "+f)
+			Globals.playerData['CGunlock'].append(f)
+			needToSave=true
+	if needToSave:
+		Globals.save_system_data()
+	
+	if parent_node:
+		get_tree().paused = false
+	else:
+		print("No parent node...")
+	emit_signal("cutscene_finished")
+	queue_free()
+
 
 # Honestly, this is a mess. When it was in lua the input handling and the VN processing
 # wasn't coupled together, instead vntext:advance() would be called and if it returned
@@ -770,14 +792,6 @@ func _notification(what):
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 		isOptionsScreenOpen=true
 
-signal cutscene_finished()
-func end_cutscene_2():
-	if parent_node:
-		get_tree().paused = false
-	else:
-		print("No parent node...")
-	emit_signal("cutscene_finished")
-	queue_free()
 
 func _on_SkipButton_pressed():
 	end_cutscene()

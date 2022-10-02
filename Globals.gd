@@ -147,8 +147,8 @@ func get_save_directory(fName:String)->String:
 var playerHadSystemData:bool=false
 var playerData={
 	"avatarsUnlocked":[0],
-	"CGunlock":[0],
-	"musicUnlock":["none"]
+	"CGunlock":['CG054_waifu2x_art_noise0_scale_tta_1'],
+	"musicUnlock":[]
 }
 func load_system_data()->bool:
 	var save_game = File.new()
@@ -170,7 +170,8 @@ func load_system_data()->bool:
 				OPTIONS[option]['value'] = OPTIONS[option]['default']
 		#Hack because json forces float type
 		OPTIONS['textSpeed']['value']=int(OPTIONS['textSpeed']['value'])
-		#playerData=dataToLoad['playerData']
+		if 'playerData' in dataToLoad:
+			playerData=dataToLoad['playerData']
 		save_game.close()
 		print("System save data loaded.")
 		return true
@@ -183,7 +184,7 @@ func save_system_data()->bool:
 		return false
 	var dataToSave = {
 		"options":{},
-		"playerdata":playerData
+		"playerData":playerData
 	}
 	for option in OPTIONS:
 		dataToSave['options'][option]=OPTIONS[option]['value']

@@ -216,7 +216,7 @@ func _ready():
 	else:
 		var lastChapter = "No Grouping!!"
 		var tmp_startChapter:String = ""
-		var i = 0
+		#var i = 0
 		while !f.eof_reached():
 			var line:String = f.get_line().strip_edges()
 			if line.begins_with("--"):
@@ -319,3 +319,20 @@ func get_matching_files(path,fname):
 			#print("Return "+path+file)
 			dir.list_dir_end()
 			return path+file
+
+var SCREENS:Dictionary = {
+	"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",
+	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
+	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery.tscn",
+	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTest.tscn",
+	"ScreenFirstRun":"res://Screens/ScreenFirstRun.tscn",
+	"ScreenSelectChapter":"res://Screens/ScreenSelectChapter/TitleScreen.tscn",
+	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn"
+
+}
+
+func change_screen(tree,screen:String)->void:
+	if screen=="Quit":
+		tree.quit();
+	else:
+		tree.change_scene(SCREENS[screen])

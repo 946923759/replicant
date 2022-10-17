@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=1]
 [ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=2]
@@ -10,6 +10,12 @@
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Fonts/NotoSerifCJKjp-Black.otf" type="DynamicFontData" id=9]
 [ext_resource path="res://Ext/arrow_small.png" type="Texture" id=10]
+[ext_resource path="res://Fonts/NotoSerifJP-Bold.otf" type="DynamicFontData" id=11]
+[ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=12]
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 11 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -42,25 +48,38 @@ margin_top = -808.981
 margin_right = 553.577
 margin_bottom = -680.981
 rect_rotation = 180.0
+mouse_default_cursor_shape = 2
 texture = ExtResource( 10 )
 
+[node name="NowPlayingTween" type="Tween" parent="."]
+
 [node name="NowPlaying" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 40.296
+margin_top = 35.7784
+margin_right = 80.296
+margin_bottom = 75.7784
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="NowPlaying"]
+margin_top = 100.0
+margin_right = 268.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 2 )
+text = "Now Playing:"
 
 [node name="Title" type="Label" parent="NowPlaying"]
-margin_left = 16.6489
 margin_top = 137.948
-margin_right = 776.649
+margin_right = 760.0
 margin_bottom = 246.948
 custom_fonts/font = ExtResource( 8 )
 text = "Name Of Song Here"
 
 [node name="Origin" type="Label" parent="NowPlaying"]
-margin_left = 16.6489
-margin_top = 250.948
-margin_right = 776.649
-margin_bottom = 306.948
+margin_top = 250.0
+margin_right = 760.0
+margin_bottom = 306.0
 custom_colors/font_color = Color( 0.764706, 0.764706, 0.764706, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "From N134:4uT0m4t4"
@@ -70,9 +89,14 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -1007.0
-margin_top = -359.5
-margin_bottom = 359.5
+margin_left = -1003.44
+margin_top = -287.728
+margin_right = -19.4364
+margin_bottom = 366.272
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 custom_constants/separation = 10
@@ -86,6 +110,7 @@ margin_left = 316.169
 margin_top = -121.619
 margin_right = 444.169
 margin_bottom = 6.3811
+mouse_default_cursor_shape = 2
 texture = ExtResource( 10 )
 
 [node name="BackButton" parent="." instance=ExtResource( 5 )]
@@ -104,6 +129,7 @@ polygon = PoolVector2Array( 0, 0, 1800, 0, 1800, 5, 0, 5 )
 vertex_colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1 )
 
 [node name="Label2" type="Label" parent="."]
+visible = false
 margin_left = 1757.65
 margin_top = 45.1899
 margin_right = 1888.65
@@ -114,4 +140,15 @@ text = "WIP..."
 [node name="smSound" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 3 )
 
+[node name="Tween" type="Tween" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 12 )
+
+[connection signal="gui_input" from="UpArrow" to="." method="_on_UpArrow_gui_input"]
+[connection signal="gui_input" from="DownArrow" to="." method="_on_DownArrow_gui_input"]
 [connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]

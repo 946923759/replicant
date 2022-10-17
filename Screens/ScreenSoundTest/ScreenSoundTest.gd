@@ -3,7 +3,10 @@ extends Control
 var musicDatabase=[]
 onready var musicActor=$smSound
 onready var scContainer=$ScrollContainer
-var font = preload("res://Fonts/OptionsFont.tres")
+var font = preload("res://Fonts/CondensedFont.tres")
+
+var curSel:int=0
+#var curSong
 
 class Music:
 	var name_
@@ -51,7 +54,7 @@ func _ready():
 			musicDatabase.append(music)
 	
 	for m in musicDatabase:
-		var w2 = font.get_string_size(m.name_).x
+		#var w2 = font.get_string_size(m.name_).x
 		
 		var optionNameActor = Def.LoadFont(font,{
 			"name":"TextActor",
@@ -60,15 +63,86 @@ func _ready():
 			mouse_filter=MOUSE_FILTER_STOP,
 			mouse_default_cursor_shape=CURSOR_POINTING_HAND,
 			#clip_text=true
-			#rect_scale=
+			#rect_scale=Vector2(.5,1),
 			#rect_min_size=Vector2(0,150)
 			#mouse_filter=MOUSE_FILTER_IGNORE
 		})
 		#optionNameActor.rect_scale=Vector2(min(1.0,scContainer.rect_size.x/w2),1.0)
 		optionNameActor.connect("gui_input",self,"text_on_click_wrapper",[m])
 		$ScrollContainer/VBoxContainer.add_child(optionNameActor)
+#	if $ScrollContainer/VBoxContainer.get_child_count()%6!=0:
+#		for i in range(6-$ScrollContainer/VBoxContainer.get_child_count()%6):
+#			$ScrollContainer/VBoxContainer.add_child(
+#				Def.LoadFont(font,{
+#					"name":"TextActor",
+#					"uppercase":false,
+#					mouse_filter=MOUSE_FILTER_IGNORE,
+#				})
+#			)
+	highlight_text(curSel)
+	$NowPlaying/Origin.text=""
+	$NowPlaying/Title.text=""
+
+func highlight_text(sel:int):
+	var container = $ScrollContainer/VBoxContainer
+	#var nowPlaying = $NowPlaying/Title.text
+	for i in range(container.get_child_count()):
+		var n = container.get_child(i)
+		
+		if i==sel:
+			n.modulate=Color.white
+		#elif nowPlaying == musicDatabase[i].original_name:
+		#	n.modulate=Color.aqua
+		else:
+			n.modulate=Color.gray
+
+func get_page_from_sel(sel:int)->int:
+	return int(floor(sel/6))
+	
+func get_current_page()->int:
+	return int(round($ScrollContainer.scroll_vertical/$ScrollContainer.rect_size.y))
+func tween_to_page(sel:int):
+	var t:Tween = $Tween
+	var rSize = $ScrollContainer.rect_size.y
+	t.interpolate_property($ScrollContainer,"scroll_vertical",null,min(rSize*sel,$ScrollContainer/VBoxContainer.rect_size.y),.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.start()
+
+func _input(_event):
+	var newSel=curSel
+	if Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
+		text_on_click(musicDatabase[curSel])
+		return
+	elif Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene("res://TitleScreen.tscn")
+	if Input.is_action_just_pressed("ui_down"):
+		if newSel < len(musicDatabase)-1:
+			newSel+=1
+	elif Input.is_action_just_pressed("ui_up"):
+		if newSel > 0:
+			newSel-=1
+	if newSel!=curSel:
+		curSel=newSel
+		#print("a")
+		highlight_text(curSel)
+		if get_current_page()!=get_page_from_sel(curSel):
+			tween_to_page(get_page_from_sel(curSel))
+		
+	if Input.is_action_just_pressed("ui_shift"):
+		#print(get_current_page())
+		print(get_page_from_sel(curSel))
+	
+	#if event is InputEventMouseMotion:
+	#	var tmpSel=get_selection_from_mouse_pos(curMenu,event)
+	#	if tmpSel!=curSel:
+	#		highlightList(curMenu,tmpSel)
+	#		curSel=tmpSel
 
 func text_on_click(music:Music):
+	for i in range(len(musicDatabase)):
+		if musicDatabase[i]==music:
+			curSel=i
+			highlight_text(curSel)
+			break
 	musicActor.load_song(music.fileName);
 	
 	var width = get_viewport().get_visible_rect().size.x/2-100
@@ -94,6 +168,16 @@ func text_on_click(music:Music):
 	var origin = $NowPlaying/Origin
 	width2 = origin.get("custom_fonts/font").get_string_size(origin.text).x
 	origin.rect_scale.x=min(1.0,width/width2)
+	
+	var t:Tween = $NowPlayingTween
+	var tTime:float = 1.0
+	t.interpolate_property($NowPlaying/Label3,"rect_position:x",-100,0,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($NowPlaying/Label3,"modulate:a",0,1,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($NowPlaying/Title,"rect_position:x",100,0,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($NowPlaying/Title,"modulate:a",0,1,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($NowPlaying/Origin,"rect_position:y",225,250,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($NowPlaying/Origin,"modulate:a",0,1,tTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.start()
 
 func text_on_click_wrapper(event:InputEvent,music:Music):
 	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
@@ -102,4 +186,14 @@ func text_on_click_wrapper(event:InputEvent,music:Music):
 
 func _on_BackButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
-		get_tree().change_scene("res://TitleScreen.tscn")
+		#get_tree().change_scene("res://TitleScreen.tscn")
+		$ColorRect.OffCommand("ScreenTitleMenu")
+
+
+func _on_DownArrow_gui_input(event):
+	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
+		tween_to_page(1)
+
+func _on_UpArrow_gui_input(event):
+	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
+		tween_to_page(0)

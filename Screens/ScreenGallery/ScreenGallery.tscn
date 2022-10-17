@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Screens/ScreenGallery/ScreenGallery.gd" type="Script" id=1]
 [ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=4]
 [ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Ext/toolbarSelected.png" type="Texture" id=7]
 [ext_resource path="res://Ext/toolbarUnsel.png" type="Texture" id=8]
@@ -437,6 +438,13 @@ stretch_mode = 6
 script = ExtResource( 69 )
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="smScreenInOut" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 4 )
 
 [connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]
 [connection signal="gui_input" from="GalleryFullscreen" to="." method="_on_GalleryFullscreen_gui_input"]

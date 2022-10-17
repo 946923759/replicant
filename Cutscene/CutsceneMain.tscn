@@ -146,7 +146,6 @@ margin_bottom = 250.0
 mouse_filter = 2
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_y = 4
-custom_constants/shadow_as_outline = 0
 custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"

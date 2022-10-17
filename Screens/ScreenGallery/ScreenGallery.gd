@@ -219,4 +219,5 @@ func _on_GalleryFullscreen_gui_input(event):
 
 func _on_BackButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
-		get_tree().change_scene("res://TitleScreen.tscn")
+		#get_tree().change_scene("res://TitleScreen.tscn")
+		$smScreenInOut.OffCommand("ScreenTitleMenu")

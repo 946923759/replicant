@@ -157,4 +157,5 @@ func end_cutscene_2():
 		get_tree().reload_current_scene()
 	else:
 		print("Didn't get a next part, returning to main menu.")
-		get_tree().change_scene("res://TitleScreen.tscn")
+		#get_tree().change_scene("res://TitleScreen.tscn")
+		Globals.change_screen(get_tree(),"ScreenSelectChapter")

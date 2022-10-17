@@ -128,7 +128,12 @@ msg	301638	The light in the sky... how gorgeous....	啊…天空中的光芒…�
 msg	301639	If only it wasn't a scene of annihilation...	如果这不是代表毁灭的光景该有多好……	これが崩壊後の光景じゃなかったら、どれだけ良かったか……。	NONE
 msg	301640	It's a shame I couldn't share this scenery with Bronya...	不能和姐姐大人一起看真是太可惜了……	お姉ちゃんと一緒に見られなくて本当に残念……。	NONE
 msg	301641	Farewell...	再见了……	さよなら……。	NONE
+stopmusic	.5
 speaker	
 se	DLC_CH03_EV05_ThunderBig
-msg	301642	Boom!!	轰隆！！！！	ドゴーーン！！！！	NONE
-msg	301643	.....My sister.	姐姐大人。	——お姉ちゃん。	NONE
+nop	msg	301642	Boom!!	轰隆！！！！	ドゴーーン！！！！	NONE
+bg	white	fade
+msgbox_close
+nop	You figure that there would be a bbcode for setting the text outline right??? Apparently not!
+set_outline	false
+msg	301643	[color=#000000].....My sister.[/color]	姐姐大人。	——お姉ちゃん。	NONE

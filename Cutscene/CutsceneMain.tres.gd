@@ -275,7 +275,12 @@ func advance_text()->bool:
 					isFullscreenMessageBox=false
 					fsContainer.visible=false
 					#shouldTextBoxBeVisible=true
-				
+			#It was totally necessary to add an opcode that will only be used one time
+			'set_outline':
+				if curMessage[1].to_lower()=="true":
+					text.set("custom_colors/font_color_shadow",Color.black)
+				else:
+					text.set("custom_colors/font_color_shadow",Color.transparent)
 			'match_names':
 				matchedNames=push_back_from_idx_one([],curMessage)
 			'speaker': 

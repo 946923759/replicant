@@ -214,6 +214,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://stepmania-compat/smQuad.gd"
 }, {
+"base": "ColorRect",
+"class": "smScreenInOut",
+"language": "GDScript",
+"path": "res://stepmania-compat/smScreenInOut.gd"
+}, {
 "base": "AudioStreamPlayer",
 "class": "smSound",
 "language": "GDScript",
@@ -266,6 +271,7 @@ _global_script_class_icons={
 "VectorDisplay2D": "",
 "VectorDisplay3D": "",
 "smQuad": "",
+"smScreenInOut": "",
 "smSound": "",
 "smSprite": ""
 }
@@ -274,7 +280,7 @@ _global_script_class_icons={
 
 config/name="F.M. RepliCant"
 config/description="GGZ Fire Moth reader"
-run/main_scene="res://TitleScreen.tscn"
+run/main_scene="res://Screens/ScreenInit.tscn"
 boot_splash/image="res://Ext/CG054.png"
 config/icon="res://icon.png"
 config/quit_on_go_back=false

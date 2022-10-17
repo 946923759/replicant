@@ -45,7 +45,8 @@ func action_chapterSelect():
 	if anyOptionWasChanged:
 		Globals.save_system_data()
 		anyOptionWasChanged=false
-	get_tree().change_scene("res://TitleScreen.tscn")
+	#get_tree().change_scene("res://TitleScreen.tscn")
+	Globals.change_screen(get_tree(),"ScreenSelectChapter")
 #func screenOut2():
 #	get_tree().change_scene("res://TitleScreen.tscn")
 func action_continue():

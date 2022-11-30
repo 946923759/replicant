@@ -70,7 +70,7 @@ texture = ExtResource( 70 )
 stretch_mode = 7
 script = ExtResource( 69 )
 
-[node name="Sections" type="GridContainer" parent="."]
+[node name="Tabs" type="GridContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -903.0
@@ -85,18 +85,18 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Base" type="Control" parent="Sections"]
+[node name="Base" type="Control" parent="Tabs"]
 margin_right = 276.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Sections/Base"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Base"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Sections/Base"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Base"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -104,7 +104,7 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Sections/Base"]
+[node name="Label" type="Label" parent="Tabs/Base"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
@@ -113,19 +113,19 @@ custom_fonts/font = SubResource( 1 )
 text = "Base"
 align = 1
 
-[node name="Outdoors1" type="Control" parent="Sections"]
+[node name="Outdoors1" type="Control" parent="Tabs"]
 margin_left = 306.0
 margin_right = 582.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Sections/Outdoors1"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Outdoors1"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Sections/Outdoors1"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Outdoors1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -133,29 +133,29 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Sections/Outdoors1"]
+[node name="Label" type="Label" parent="Tabs/Outdoors1"]
 margin_top = 20.0
 margin_right = 276.0
 margin_bottom = 103.0
 rect_min_size = Vector2( 276, 0 )
 custom_fonts/font = SubResource( 7 )
-text = "Outdoors 1"
+text = "Outdoors"
 align = 1
 valign = 1
 
-[node name="Outdoors2" type="Control" parent="Sections"]
+[node name="BronyaSeele" type="Control" parent="Tabs"]
 margin_left = 612.0
 margin_right = 888.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Sections/Outdoors2"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/BronyaSeele"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Sections/Outdoors2"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/BronyaSeele"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -163,37 +163,7 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Sections/Outdoors2"]
-margin_top = 20.0
-margin_right = 276.0
-margin_bottom = 103.0
-rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 7 )
-text = "Outdoors 2"
-align = 1
-valign = 1
-
-[node name="BronyaSeele" type="Control" parent="Sections"]
-margin_left = 918.0
-margin_right = 1194.0
-rect_min_size = Vector2( 276, 0 )
-
-[node name="TextureRect" type="TextureRect" parent="Sections/BronyaSeele"]
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
-rect_scale = Vector2( 2, 2 )
-texture = ExtResource( 7 )
-
-[node name="TextureRect2" type="TextureRect" parent="Sections/BronyaSeele"]
-margin_top = 14.0
-margin_right = 138.0
-margin_bottom = 59.0
-rect_scale = Vector2( 2, 2 )
-mouse_default_cursor_shape = 2
-texture = ExtResource( 8 )
-
-[node name="Label" type="Label" parent="Sections/BronyaSeele"]
+[node name="Label" type="Label" parent="Tabs/BronyaSeele"]
 margin_top = 20.0
 margin_right = 276.0
 margin_bottom = 103.0
@@ -203,19 +173,19 @@ text = "Bronya & Seele"
 align = 1
 valign = 1
 
-[node name="Others" type="Control" parent="Sections"]
-margin_left = 1224.0
-margin_right = 1500.0
+[node name="Others" type="Control" parent="Tabs"]
+margin_left = 918.0
+margin_right = 1194.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Sections/Others"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Others"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Sections/Others"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Others"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -223,7 +193,7 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Sections/Others"]
+[node name="Label" type="Label" parent="Tabs/Others"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
@@ -232,19 +202,19 @@ custom_fonts/font = SubResource( 1 )
 text = "Others"
 align = 1
 
-[node name="Misc" type="Control" parent="Sections"]
-margin_left = 1530.0
-margin_right = 1806.0
+[node name="Kyuushou" type="Control" parent="Tabs"]
+margin_left = 1224.0
+margin_right = 1500.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Sections/Misc"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Kyuushou"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Sections/Misc"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Kyuushou"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -252,7 +222,37 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Sections/Misc"]
+[node name="Label" type="Label" parent="Tabs/Kyuushou"]
+margin_top = 20.0
+margin_right = 276.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 276, 0 )
+custom_fonts/font = SubResource( 7 )
+text = "Kyuushou"
+align = 1
+valign = 1
+
+[node name="Misc" type="Control" parent="Tabs"]
+margin_left = 1530.0
+margin_right = 1806.0
+rect_min_size = Vector2( 276, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="Tabs/Misc"]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Misc"]
+margin_top = 14.0
+margin_right = 138.0
+margin_bottom = 59.0
+rect_scale = Vector2( 2, 2 )
+mouse_default_cursor_shape = 2
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="Tabs/Misc"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
@@ -286,6 +286,7 @@ margin_left = -880.0
 margin_top = -270.0
 margin_right = 880.0
 margin_bottom = 350.0
+mouse_filter = 2
 size_flags_horizontal = 3
 custom_constants/vseparation = 40
 custom_constants/hseparation = 40
@@ -294,85 +295,11 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="GalleryOutdoors1" type="GridContainer" parent="Galleries"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = 67.551
-margin_top = 1166.12
-margin_right = 1827.55
-margin_bottom = 1786.12
-size_flags_horizontal = 3
-custom_constants/vseparation = 40
-custom_constants/hseparation = 40
-columns = 5
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="GalleryOutdoors2" type="GridContainer" parent="Galleries"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = 70.687
-margin_top = 1872.74
-margin_right = 1830.69
-margin_bottom = 2492.74
-size_flags_horizontal = 3
-custom_constants/vseparation = 40
-custom_constants/hseparation = 40
-columns = 5
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="GalleryBronyaSeele" type="GridContainer" parent="Galleries"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = 2340.28
-margin_top = 1183.58
-margin_right = 4100.28
-margin_bottom = 1803.58
-size_flags_horizontal = 3
-custom_constants/vseparation = 40
-custom_constants/hseparation = 40
-columns = 5
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="GalleryOthers" type="GridContainer" parent="Galleries"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = 2345.62
-margin_top = 2037.88
-margin_right = 4105.62
-margin_bottom = 2657.88
-size_flags_horizontal = 3
-custom_constants/vseparation = 40
-custom_constants/hseparation = 40
-columns = 5
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="GalleryMisc" type="GridContainer" parent="Galleries"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = 3333.39
-margin_top = 258.871
-margin_right = 5093.39
-margin_bottom = 878.871
-size_flags_horizontal = 3
-custom_constants/vseparation = 40
-custom_constants/hseparation = 40
-columns = 5
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Label" type="Label" parent="."]
+[node name="GalleryHeader" type="Label" parent="."]
 margin_left = 40.0
 margin_right = 641.0
 margin_bottom = 116.0
+mouse_filter = 0
 custom_fonts/font = ExtResource( 2 )
 text = "Gallery"
 
@@ -446,5 +373,6 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 script = ExtResource( 4 )
 
+[connection signal="gui_input" from="GalleryHeader" to="." method="_on_GalleryHeader_gui_input"]
 [connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]
 [connection signal="gui_input" from="GalleryFullscreen" to="." method="_on_GalleryFullscreen_gui_input"]

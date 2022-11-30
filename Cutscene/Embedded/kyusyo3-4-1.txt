@@ -1,0 +1,183 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	Grandma
+match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
+
+speaker	
+bg	009/051_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301193	Dadada!	哒哒哒！！	ダダダッ！！	NONE
+
+portraits	59	60	61
+emote	60	5
+se	DLC_CH03_EV02_GateClose
+/Bronya	301194	This is the room! C'mon, c'mon!	就是这个房间！快进来！	この部屋です！早く入って！	NONE
+msg	301195	Seele! Shut the gate behind us!	希儿！把控制室闸门关上！	ゼーレ！制御室のゲートを閉じてください！	NONE
+speaker	Seele
+emote	59	3
+msg	301196	Leave it to me, sis!	交给我吧！姐姐大人！	任せて、お姉ちゃん！	NONE
+speaker	
+emote	59	3
+stopmusic	3
+msg	301197	[Clack Clack Clack!]	哒哒哒！	ダダダッ！	NONE
+msg	301198	Bang!	砰！	ガシャンッ！	NONE
+
+music	The Tower - Medium No Vocals
+emote	59	3
+emote	61	2
+/Himeko	301199	We finally shook off those bastards...	终于甩掉那些混蛋了……	ようやくあいつらを撒けたわ……。	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301200	This is the control room? Wow... ME Corp.'s technology is more advanced than I thought...	这里就是控制室么？好厉害…ME社的科技力量果然不可小觑。	ここが制御室なの？すごい……やっぱりME社のテクノロジーは侮れないね。	NONE
+speaker	Himeko
+emote	59	3
+emote	61	1
+msg	301201	No time to be impressed. Even this place isn't safe. We have to plan our next step.	没时间感叹了，这里也不是绝对安全，我们必须开始下一步计划了。	感心してる暇はないわ。ここだって絶対に安全とはいえない。次の計画に移らないと。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301202	Right. We need to figure out a way to hack into the ME Corp.'s system and gain administrator privileges. If we can disarm the defense system, those robots will stop coming after us.	嗯，我会想办法侵入ME社的管理权限，只要能解除这些机甲的安全警卫系统，它们就不会攻击我们了。	はい、何とかしてME社の管理者権限を乗っ取ります。機甲の防衛システムに侵入して解除さえできれば、こちらを攻撃してこなくなるでしょう。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+tn	0	Also, why would a defense system have murderbots attacking everyone in the building lol
+msg	301203	That sounds simple enough, but I really wonder if there was a defense system in the first place. There weren't any robots attacking us when we entered the building. Isn't it strange that the defense system would be triggered only after we made it into the weapons manufacturing area? 	真的只是安全警卫这么简单么？在我们进入ME社的时候根本没有遇到安全警卫系统的阻拦，直到进入了它们的包围圈才突然遭到攻击。	それならいいけど、本当に防衛システムなんてものが働いたのかしら。私たちがME社に入ったとき、機甲どもは攻めてこなかったわ。奥深く侵入してから攻撃してくるなんて、防衛システムとして杜撰すぎない？	NONE
+msg	301204	A proper defense system would have had the armored mechs patrolling the building to keep people out, not chasing us deeper inside. It's kind of creepy, as if we've been lead here by something...	如果是安全系统的话这种蓄意诱敌深入的战术似乎也太奇怪了。	ちゃんとした防衛システムなら、もっと手前で機甲兵器たちが止めてきたはず。何か誘い込まれたようで気味が悪いわ。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301205	Well, it's not like we have a choice right now. Let's try hacking in and see what happens.	不管怎么说先试试看吧，这是我们唯一的出路了。	いずれにしても試してみましょう。これが唯一の活路なのですから。	NONE
+speaker	
+emote	60	3
+msg	301206	*Beep*	滴滴滴……	ピピピ——	NONE
+speaker	Bronya
+emote	60	5
+msg	301207	...	……	……。	NONE
+
+portraits	59	60	61
+emote	59	3
+/Seele	301208	Bronya, what's wrong?	姐姐大人，怎么了？	お姉ちゃん、どうしたの？	NONE
+
+speaker	Bronya
+emote	60	5
+msg	301209	...The access for the security system has expired. It seems like there isn't any way to shut it down physically.	控制系统的权限失效了，看来从外部端口进行关闭似乎是不可能了……果然ME社的系统用通常手段侵入还是太困难了。	ここの制御システム、権限が失効しています。どうやら、普通の方法では止めることが不可能なようです。	NONE
+emote	60	3
+msg	301210	Of course... We're not limited to physical means. I've still got Project Bunny.	重装小兔…拜托了。	もちろん……普通じゃない方法なら止めることができます。重装ウサギ……お願いします。	NONE
+speaker	Seele
+emote	59	3
+msg	301211	Wait! Sister, are you going to...	等等！姐姐大人难道是想……	待って！お姉ちゃん、まさか……。	NONE
+speaker	Bronya
+emote	60	3
+msg	301212	Yes. I'm going to use Project Bunny to transfer my consciousness into the computer and hack in from there.	嗯，使用重装小兔将我的意识传输到数据库中，从内部侵入。	はい、重装ウサギを使ってブローニャの意識をデータベースに転送します。内部から侵入すれば、防衛システムを乗っ取ることが可能です。	NONE
+speaker	Seele
+emote	59	3
+msg	301213	It's too risky to use Project Bunny in it's current state! Let's find another way!	以重装小兔现在的状态使用的话太危险了！我们找找看有没有别的方法吧！	今の状態で重装ウサギを使うのは危険すぎるよ！別の方法を考えよう！	NONE
+speaker	Bronya
+emote	60	3
+msg	301214	There's no time, and hacking in with Project Bunny seems like our best chance.	已经没有时间了，用重装小兔黑入系统是成功率最高的手段。	もう時間がありません。この方法でシステムに侵入するのが一番成功率が高いです。	NONE
+msg	301215	And I believe in Project Bunny. Even in it's current state it will protect me with all its might.	而且我相信重装小兔，即使是现在这个样子它也会用全力保护我的。	それに重装ウサギを信じています。今のような状態でも全力でブローニャを守ってくれるでしょう。	NONE
+speaker	Seele
+emote	59	3
+msg	301216	Bronya...	姐姐大人……	お姉ちゃん……。	NONE
+speaker	Bronya
+emote	60	3
+msg	301217	Don't worry, Seele. I'll be back in a moment. In the meantime, please protect this room.	希儿，不要担心，我一会就会回来的，我进行在这段时间内请你们保护好这个房间。	ゼーレ、心配いりません。きっと戻ってきます。その間、この部屋をしっかり守ってください。	NONE
+speaker	Seele
+emote	59	3
+msg	301218	Okay...... I'll make sure no harm comes to you!	嗯！希儿绝对不会让它们伤害姐姐大人的！	わかった……絶対にお姉ちゃんに危害が及ばないようにするから！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	1
+msg	301219	Bronya, this might be easy for you to do, but I have a feeling things aren't going to be as simple as you say. If you encounter any danger, break the link immediately. If your mind gets burned out, there's no way to revive you.	……你自己小心，我总有种预感事情没有这么简单，如果发现有危险就立刻切断链接，要是脑子烧掉的话可接不回来。	ブローニャ、言うのは簡単だけどこれは危険なことよ。何かあったら直ちにリンクを解除なさい。脳が燃えちゃったら元に戻せないわ。いいわね？	NONE
+
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301220	Yeah, I know...	嗯，我明白……	はい、分かっています……。	NONE
+msg	301221	Project Bunny, hacking start!	重装小兔，入侵开始！	重装ウサギ、侵入開始！	NONE
+stopmusic	1
+
+bg	009/042_1280x720
+portraits	
+msg	301222	...	……	……。	NONE
+music	The Tower - 8bit
+match_names	Bronya	_DIM_ALL_WHEN_EMPTY
+portraits	60
+msg	301223	Consciousness transfer complete... Successfully hacked into the ME Corp. system.	意识传输完成…成功侵入ME社系统。	意識の転送完了……ME社のシステムに侵入。	NONE
+msg	301224	Is this the ME Corp.'s database? It's a complete mess. There seems to be abandoned data lying around everywhere... Is the security system's access blocked off by all this data?	这里是ME社的数据库么？数据的排列十分混乱，似乎还沉积了许多废弃的资料，是这些堵塞的数据让操作权限失效的么……	ここがME社のデータベースでしょうか？データの配列がずいぶん乱れています。捨てられたデータがたくさん沈殿しているようです。もしや、データが詰まって操作権限を失効したのでしょうか……。	NONE
+msg	301225	Project Bunny, perform a scan on the database and gather anything that looks like it's related to the security system.	重装小兔，立刻扫描数据库把疑似控制系统的数据筛选出来发给我。	重装ウサギ、直ちにデータベースをスキャンし、疑似制御システムのデータを選別してください。	NONE
+speaker	
+msg	301226	*Beep*	滴滴滴……	ピピピ……。	NONE
+/Bronya	301227	The scan was interrupted... Is it a firewall? Guess it wouldn't have been that easy... I'll have to break through by force.	数据侦测受到干扰…是防火墙么？果然没有那么简单就能找到，看来只能用武力突破了。	データ検出の妨害……ファイアウォールでしょうか？やはり、そう簡単には見つかりませんね。力づくで突破するしかなさそうです。	NONE
+msg	301228	Project Bunny, switch to demolition mode. We need to find that corrupted program as soon as possible!	重装小兔，切换到粉碎模式，我们必须尽快找到被破坏的系统程序！	重装ウサギ、粉砕モードにチェンジ。できるだけ早くプログラムを見つけないと……。	NONE
+msg	301230	The area in front should be where the control system's data is located. If I can activate it...	前面的区域应该就是控制系统所在的数据位置了，只要激活它的话……	前方のエリアに制御システムのデータがあるはず。これをアクティベートすれば……。	NONE
+
+/???	301231	Hehehe~	嘻嘻嘻~	うふふっ……。	NONE
+emote	60	5
+/Bronya	301232	Who's there?	谁？	誰です？	NONE
+
+speaker	???
+tn	0	The unknown person is singing a song associated with a Japanese children's game, see https://en.wikipedia.org/wiki/Kagome_Kagome 
+msg	301233	Kagome Kagome, the bird in the cage~ When will it come out ......♪	竹笼眼~竹笼眼~笼中的鸟儿何时出~	か～ごめかごめ～、籠の中の鳥は～いついつ出やる……♪	NONE
+
+emote	60	3
+/Bronya	301234	That voice is familiar.... Where in the world did I hear that from.....?	这个声音好熟悉…好像在哪里听过。	聞き覚えのある声……一体どこから……？	NONE
+
+speaker	???
+emote	60	3
+tn	0	Hopefully you read the Wikipedia page, she's telling Bronya to find her like the children's game
+msg	301235	Hey, where are you looking? Come and look for me quickly~.	你在看哪里呀~快来找我吧~	ねぇ、どこ見てるの？早く探しに来て～。	NONE
+
+/Bronya	301236	Wait! Don't go!	等下！不要走！	待ってください！	NONE
+/???	301237	Over here, over here, over here!	这边这边，我在这里哦~	こっちこっち、ここよ～！	NONE
+
+portraits	60	211
+emote	60	3
+/Mei	301238	Father~	父亲大人~	お父様～！	NONE
+
+emote	60	5
+/Bronya	301239	Sister Mei!	芽衣姐姐！	芽衣姉様！	NONE
+
+speaker	
+bg	009/051_1280x720
+music	The Tower - Medium No Vocals
+portraits	59	61
+emote	60	5
+se	DLC_CH00_EV03_WarningAlert
+msg	301240	「Warning! Warning! Honkai Reaction detected! Locking down the area! All noncombatants must evacuate immediately!」	「警报！警报！发现崩坏能反应！封锁区域！请非作战人员立即撤离！」	「警報！警報！崩壊エネルギー反応を検出！エリアを封鎖します！戦闘要員以外は速やかに撤退してください！」	NONE
+speaker	Seele
+emote	59	3
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301241	Ugh! What the hell! Why's the alarm suddenly going off?	呃！怎么回事！为什么忽然想起警报了？	え！？どういうこと？どうして急に警報が！？	NONE
+speaker	Himeko
+emote	59	3
+emote	61	1
+msg	301242	Looks like the original defense system has been restored. Did Bronya....?	看来原本瘫痪的防御系统被激活了，难道是布洛妮娅么……	どうやら麻痺していた防衛システムが復活したみたいね。まさかブローニャが……。	NONE
+speaker	
+emote	59	3
+msg	301243	Bang!	轰！	ドゴーン！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+music	Grandma
+msg	301244	Shit! The control room gate is opening! Prepare to engage!	啧！控制室的闸门要打开了！准备迎击！	チッ！制御室のゲートが開くわ！迎撃用意！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301245	Why did it have to be right now!? Let's guard the gate! We can't let these mechs in!	怎么会偏偏这种时候！各位！一定要守住大门！不能让这些机甲兵器进来！	なんでこんなときに！全員、ゲートからの侵入を防いで！あの機甲兵器を中に入れちゃいけない！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301246	We're sitting ducks here. If Bronya fails, we're going to die for sure.	我们现在就是瓮中之鳖，如果布洛妮娅失败的话我们就必死无疑了！	今の私たちは袋のネズミよ。ブローニャが失敗したら死は確実……。	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301247	She won't! I know she can do it! I believe in my sister!	不会的！我相信姐姐大人！她一定会成功的！	そんなことない、絶対に成功するもん！お姉ちゃんを信じてる！	NONE
+speaker	
+emote	59	3
+msg	301248	「Honkai Source detected! Eliminate now! Eliminate now!」	「发现崩坏源！立即消灭！立即消灭！」	「崩壊源を発見！直ちに除去せよ！」	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301249	You're so naïve! Look around us! The only person worth believing in is yourself!	闭嘴！能相信的就只有自己而已！	甘いのよっ！他人を信じるな！信じられるものなんて、自分だけよ！	NONE
+msg	301250	Fire!	开火！	撃てーッ！	NONE

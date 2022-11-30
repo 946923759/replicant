@@ -1,0 +1,113 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Seele
+music	War And War
+bg	009/013_1280x720
+portraits	59
+emote	59	3
+msg	301032	Phew~ Looks like the attack from the Honkai Beasts has started to lighten up. I didn't think we'd be able to hold them off for this long...	呼~崩坏生物的攻势似乎减弱了不少，没想到仅用这些兵力居然可以支持这么久……	ふぅ～、崩壊生物の攻勢もだいぶ弱まったみたい。この程度の戦力でここまでもつなんて思わなかったわ……。	NONE
+msg	301033	Good work, everyone! Most of the troops have finished relocating. Let's hurry up and retreat into ME Corp.'s building before they begin attacking again!	各位辛苦了！大部队基本已经转移完毕，乘着崩坏生物下一波攻势还没开始我们也赶紧撤退吧！	みんなご苦労さま！大部隊の移動はほぼ完了したわ。崩壊生物が次の攻勢に転じる前に、こちらも急いでME社内に移動しましょ！	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301034	We've got an urgent report from the task force that was dispatched to the ME Corp. building! They're under attack by an unidentified mecha in front of the building and are now engaged in battle!	报告！撤退至ME社的部队发来信号！遭到来自ME社中不明机甲兵器的攻击，目前正在交战中！	報告します！先にME社へ移動した大部隊からの緊急連絡です！ME社前で謎の機甲兵器の攻撃を受け、目下交戦中とのこと！	NONE
+speaker	Seele
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301035	Armored mechas? How can that be?	机械兵器？怎么会有这种东西！	機甲兵器？どうしてそんなものが！？	NONE
+msg	301036	Damn it! I just can't catch a break! Let's head to ME Corporation at once and join the troops as soon as possible!	可恶！管不了这么多了！立刻向ME社方向进发与大部队会合再说！	もう！次から次へと何なのよ！！直ちにME社に向かって前進！大部隊に急いで合流するわ！	NONE
+speaker	Teammate
+portraits	59	56
+emote	59	3
+emote	56	0
+msg	301037	Understood!	是！	了解っ！	NONE
+
+portraits	
+speaker	
+bg	009/017_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301038	[Tatatatat!]	哒哒哒！	パンッ！パァンッ！！	NONE
+portraits	54	55
+emote	54	2
+emote	55	4
+/Yssring	301039	Woah! What should I do, this isn't part of the plan...	呜哇！该怎么办，这和说好的不一样啊……	うわわっ！どうしろっていうの、は、話が違うじゃない……。	NONE
+/Emesa	301040	Hey! Yssring! Don't just ☆☆ing stand there! Do you want to ☆☆ing die?!	喂！伊瑟琳！你这个OO！别站着不动！你OO想死在这里么！	おい、イザーリンのバカ！何ぼさっと突っ立ってんだ、ここで死にたいのか！？	NONE
+
+tn	0	CN was a metaphor about wolves in front and tigers behind
+/Yssring	301041	But... There's monsters in front of us and killer machines behind us, we're done for! 	可是…前有狼后有虎，我们这次死定了啦！	でも……前門の虎、後門の狼じゃない、今度こそお終いよ！	NONE
+/Emesa	301042	Move it! If you keep talking, I'm going to knock you out and carry you there!	快走！不要逼我把你打晕了搬走！	行くぞ！つべこべ言ってると殴って黙らせるぞ！	NONE
+
+emote	54	3
+/Yssring	301043	Oh.....!	呜……！	うぅ……。	NONE
+
+portraits	59	54	55
+emote	59	3
+/Seele	301044	Everyone! We're back!	各位！我们回来了！	みんな！戻ったよ！	NONE
+
+emote	54	6
+/Yssring	301045	Seele! It's so great to have you back!	希儿，你回来真是太好了！	ゼーレ、戻って来てくれて良かったぁ！	NONE
+
+emote	55	4
+/Emesa	301046	Seele! What the hell's going on? As soon as we made it toME Corp., a bunch of armored mechas attacked us. Now the troops are stuck at the ME Corp.'s entrance! We have to do something!	希儿！我们转移到ME社的时候忽然遭到里面机甲兵器的攻击！现在部队卡在了ME社入口进退两难，必须得想想办法！	ゼーレ！一体何なんだ！？ME社前に着いた途端、機甲兵器どもが攻撃を仕掛けてきやがった。引き連れてきた部隊は今ME社の入口で進退窮まってる。何とかしないと！	NONE
+/Seele	301047	Damn....! How's Bronya? Did you find her?	姐姐大人怎么样！有找到她么？	くっ……ねぇお姉ちゃんは！？見つかった？	NONE
+
+emote	54	2
+/Yssring	301048	There wasn't any trace of her near the entrance.....	不知道，我们在入口附近没有发现她的踪迹……	まだ……入口付近でそれらしき痕跡はなかった……。	NONE
+/Seele	301049	Ugh... Alright. I can't believe we have to deal with these mechas too, as if the Honkai Beasts weren't enough trouble!	可恶…偏偏还有什么机甲兵器！明明崩坏生物已经够棘手的了！	そう……わかった。はぁ、こんな状況で機甲兵器だなんて。崩壊生物だけでも厄介なのにっ！	NONE
+
+emote	54	5
+/Yssring	301050	I believe these machines were manufactured inside a factory within ME Corp. I can't believe they're still functioning after all these years...	这些机甲应该是ME社内的兵工厂生产出来的，没想到隔了这么多年这些兵器居然还能运作……	この機甲は、ME社内の兵器工場で製造されたものだと思う。これだけ長い年月が経ってるのにまだ動くなんて……。	NONE
+/Seele	301051	I don't care where they're from, we don't have time for explanations!	不管它们是什么东西！我们已经没时间耽误了！	何だろうと構わないけど、後ろの崩壊生物に追いつかれたら戦線を維持できなくなるわ！	NONE
+msg	301052	Let's concentrate our firepower on breaking down the gate at the entrance. We need to hurry and build a line of defense inside the building. If the Honkai Beasts start their next attack, we're screwed!	集中火力突破大门！我们要立刻在ME社内建立防线，如果等崩坏生物下一波攻击开始的话就必死无疑了！	火力を集中して入口を突破しましょう！急いでME社内に防御線を構築しないと。崩壊生物の次の攻撃が始まったら、絶体絶命よ！	NONE
+msg	301053	Yssring, ask the engineering squad to set up a defensive perimeter at the ME Corp. building's entrance. We'll send someone to protect you so you can advance the defensive line along our front line. This will save us some time.	伊瑟琳！让工程班在ME社入口前铺设防线！我会派人专门保护你们，让防线跟着战线推进，这样可以节省时间！	イザーリン、エンジニア班はME社の入口に防御線を築いて！こちらから援護要員を派遣するから、防御線を戦線に沿って進めていって。そうすれば手間も省けるわ。	NONE
+msg	301054	The wounded should be resting within the defensive line. Wait until we break through the building's entrance then move in.	受伤的人员先在铺设好的防线内原地休整，现在崩坏生物还没开始进攻后方还算安全，等我们突破了ME社后再进行转移！	負傷者はひとまず構築した防御線内へ。今は崩壊生物が進攻してきてないから安全でしょう。ME社の入り口を突破できたら、それと同時に移動を！	NONE
+speaker	Yssring
+emote	54	2
+msg	301055	Alright...	好的……	わかった。	NONE
+speaker	Emesa
+emote	55	1
+msg	301056	Leave the wounded to me!	伤员就交给我吧！	負傷者の方は任せとけ！	NONE
+
+portraits	59
+/Seele	301057	Alright, everyone else follow me! I'll make sure we break through ME Corp.'s entrance!	嗯，其他人和我走！一定要突破ME社！	うん、あとの人は私と一緒に来て！絶対にME社入口を突破するから！	NONE
+msg	301058	Bronya, wait for me...	姐姐大人，等着我……	お姉ちゃん、待っててね……。	NONE
+msg	301059	Ha!!!	哈！！！	やぁーっ！！！	NONE
+speaker	
+msg	301060	Boom!!	轰！！	ドゴーン！！	NONE
+/Seele	301061	Now! Break through here!	就是现在！从这个缺口突破！	今よ！ここを突破口にして！	NONE
+
+portraits	59	56
+emote	56	0
+/Teammate	301062	Yaaaaaaaaaaahh!!!!	噢噢噢噢噢噢噢！！！！！	ウオオオオオ！！！	NONE
+
+/Seele	301063	Yssring! Get the engineering squad to follow behind and establish the defensive line! Don't give this scrap metal a moment to rest!	伊瑟琳！让工程班的人跟上建立防线！不要给这些破铜烂铁有喘息的机会！	イザーリン！エンジニア班は後に続いて防御線を築いて！ポンコツ機甲どもに休む暇なんて与えないんだから！	NONE
+speaker	Yssring
+portraits	59	54
+emote	59	3
+emote	54	2
+msg	301064	Alright, we'll do our best.... If I can even survive this.	好的，我们会尽力的…如果我还活着的话。	わかった、やれるだけやってみる……い、生きてればね。	NONE
+speaker	
+portraits	
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301065	[BangBangBang!!]	哒哒哒！！	ダダダッ——！！	NONE
+
+bg	009/044_1280x720
+music	The Tower - Medium No Vocals
+portraits	59	56
+emote	59	3
+emote	56	0
+/Teammate	301066	Report! All the armored mechas within the defensive line have been destroyed!	报告！防线范围内的机甲兵器已经全部歼灭！	報告します！防御線の範囲内にいる機甲兵器を殲滅しました！	NONE
+/Seele	301067	Good job, keep advancing the frontlines! Emesa, make sure the wounded stay in the rear! Those who can still move, go to the frontlines and provide cover!	干得好，继续保持战线推进！埃米沙！让后面的伤员跟上！还能动的队员在工事后面协助战斗！	上出来よ、戦線を保ったまま前進！エミザ、後方の負傷者を連れてきて！動ける隊員は陣地の後ろへ、援護に協力して！	NONE
+
+portraits	59	55
+emote	55	4
+/Emesa	301068	I know, you don't need to tell me! And don't call me Emesa!	不用你说我也知道！还有不要叫我埃米沙！	言われなくても分かってる！それからエミザって呼ぶな！	NONE
+
+portraits	59
+/Seele	301069	Everyone, just hang in there a little bit longer! Victory is within our grasp!	各位再坚持一下！胜利就在眼前了！	みんなもう少し頑張って！勝利は目前よ！	NONE
+portraits	
+speaker	
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301070	[TaTaTa!]	哒哒哒！！	よし。	NONE
+msg	301071	...	…………	もうひと踏ん張りだ。	NONE

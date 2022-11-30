@@ -60,7 +60,7 @@ msg	300838	Mei! Hold on there! I'm coming for you!	芽衣姐姐！我这就来�
 speaker	Seele
 msg	300839	Bronya! Don't! There are too many of them! We can't handle this!	姐姐大人！不要冲动！虫子的数量太多了！不是我们能够对付的！	お姉ちゃん！落ち着いて！虫の数が多すぎるよ！私たちが相手にできる数じゃない！	NONE
 speaker	Bronya
-msg	300840	Seele! Let me go! Mei... Mei is just there up ahead!	希儿！放开我！芽衣姐姐！芽衣姐姐她就在面前！	ゼーレ！離してください！芽衣姉様！芽衣姉様が目の前にいるんです！	NONE
+msg	300840	Seele! Let go of me! Mei... Mei's right in front of me!	希儿！放开我！芽衣姐姐！芽衣姐姐她就在面前！	ゼーレ！離してください！芽衣姉様！芽衣姉様が目の前にいるんです！	NONE
 speaker	Seele
 msg	300841	There's something wrong with how she looks! And all the bugs are avoiding her! I have a bad feeling about this!	那个芽衣姐姐的样子有点奇怪，而且虫子都避开了她！其中一定有问题！	あの芽衣お姉ちゃんの様子は、何か変だよ！それに虫がみんな避けてる！何か嫌な予感がする！	NONE
 speaker	Bronya

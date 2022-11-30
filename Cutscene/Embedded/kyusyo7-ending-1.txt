@@ -1,0 +1,50 @@
+#LANGUAGES	KEY	EN	CH	JP
+nop	Set speaker blank because msgbox is closed
+speaker	 
+msgbox_close	instant
+bg	007/006_1280x720
+se	DLC_CH01_EV15_WindWooshB
+msg	303148	……	……	……。
+msg	303149	………	………	…………。
+msg	303150	…………	…………	………………。
+msg	303151	Ahhhhh…………	啊…………	あぁ…………。
+set_fs	true
+music	Negai
+bg	011/030_1280x720
+msg	303152	It's finally over.	终于结束了么。	ついに終わった。
+msg	303153	This long journey has finally reached the end.	我终于将这段漫长的旅行抵达了终点，	この長い旅も、とうとう終点に到着した。
+msg	303154	Is everyone.... Still alive?	大家…都还活着么？	皆……まだ生きているよね？
+msg	303155	I haven't let everyone down, have I?	我应该没有辜负大家的期待吧？	私は、皆の期待を裏切ったりしていないよね？
+msg	303156	Surely.....	我应该……	私はきっと——
+msg	303157	I did my part, didn't I?	完成了自己的使命吧？	自分の役割を果たしたよね？
+msg	303158	Thank you..... For coming here with me.	谢谢你们…谢谢你们陪我走到现在。	ありがとう……ここまで一緒に来てくれてありがとう。
+msg	303159	\nEmesa, thank you for teaching me compassion. ......	埃米沙，谢谢你教会了我关爱……	エミザ、思いやりを教えてくれてありがとう……。
+msg	303160	Issring, thank you for sharing your bravery with me.....	伊瑟琳，谢谢你教会了我勇敢……	イザーリン、勇敢さを教えてくれてありがとう……。
+msg	303161	Theresa, thank you for teaching me to protect others....	德丽莎，谢谢你教会了我守护……	テレサ、守ることを教えてくれてありがとう……。
+msg	303162	Seele, thank you for telling me how to connect with others...	希儿，谢谢你教会了我乐观……	ゼーレ、人との繋がりを教えてくれてありがとう……。
+msg	303163	Himeko, thank you for sharing your strength with me.....	姬子，谢谢你教会了我坚强……	姫子、強さを教えてくれてありがとう……。
+msg	303164	Bronya.... Thank you for sharing your beliefs....	布洛妮娅…谢谢你教会了我信念……	ブローニャ……信念を教えてくれてありがとう……。
+msg	303165	And everyone else at the Fire Moths.... Thanks.....	还有逐火之蛾的大家…谢谢你们……	それから火を追う蛾の皆……ありがとう……。
+msg	303166	You've taught me to follow my hopes and never give up.	教会了我追逐希望，永不放弃的心。	希望を追いかけ、決して諦めない心を教えてくれた。
+msg	303167	\nNow that I think back on it.	现在想来，	今、思い返せば、
+msg	303168	This may have been the path I had to take to become a savior.	或许这就是成为救世主的必经之路吧。	これこそが、救世主になるために通らなければならない道だったのかもしれない。
+bg	007/013_1280x720
+msg	303169	I was always immersed in my own little world,	那个总是沉浸在自己世界中的我，	いつも自分の世界に浸っていた私、
+msg	303170	scared of reality, unable to take a step forward,	那个害怕现实不能踏出脚步的我，	現実を怖がって足を踏み出せずにいた私、
+msg	303171	Hiding my weak heart with an illusion,	那个用幻想隐藏着弱小的内心的我，	幻想で弱い心を隠していた私、
+msg	303172	and covering it up with lies in response to the ridicule.	那个面对嘲笑只能用谎言掩饰自己的我，	嘲笑いに対して、嘘でごまかすしかなかった私、
+msg	303173	\nHey ... Look up at me now.	喂…请你抬起头看看现在的我，	ねえ……顔を上げて今の私を見て。
+msg	303174	Look at Houraiji Kyuushou.	看看现在的蓬莱寺九霄，	今の蓬莱寺九霄を見て。
+msg	303175	How about it?	怎么样？	どう？
+msg	303176	Do I look like a savior to you?	是不是稍微有点像是救世主的样子了呢？	少しは救世主っぽく見えるようになった？
+msg	303177	Now I can look up and even go farther into the future, can't I?	现在的我也可以抬起头朝着更加遥远的未来前进了吧？	今の私なら、顔を上げてもっと遥かなる未来にだって向かっていけるよね？
+tn	0	In JP she says "Kyuushou-sama", in other words, someone you respect
+msg	303178	Hahaha.... Just thinking about it makes me happy. Maybe they'll call me Miss Kyuushou. 	嘿嘿…想想感觉稍微有点帅，不愧是九霄大人啊~	ハハッ……考えただけでも少しカッコいい。さすがは九霄様だ。
+bg	011/030_1280x720
+msg	303179	\nBut ...... maybe we need to stop for a moment before we do that. ......	不过…在这之前，或许得先停下脚步了呢……	でも……その前に少し立ち止まらないといけないのかも……。
+msg	303180	I feel tired ...	感觉好累……	疲れちゃったみたいだ……。
+msg	303181	Now I can finally ...... get some rest.	现在总算能…好好休息一下了。	今はようやく……ゆっくり休めるんだから。
+bg	007/006_1280x720
+msg	303182	\n……	……	……。
+msg	303183	………	………	………。
+msg	303184	…………	…………	…………。

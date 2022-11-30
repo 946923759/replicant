@@ -1,0 +1,198 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	009/051_1280x720
+portraits	61
+emote	61	2
+msg	301275	Seele! Wake up Bronya! We can't hold out much longer!	希儿！快把布洛妮娅叫醒！我们撑不了多久了！	ゼーレ！早くブローニャを起こしなさい！もう長くは持たないわ！	NONE
+speaker	Seele
+portraits	59	61
+emote	59	3
+emote	61	2
+msg	301276	Just hold on a little longer! I'm sure Bronya's working on it right now!	再等等！布洛妮娅姐姐一定还在想办法！我们再坚持一下！	もうちょっと待ってください！ブローニャお姉ちゃんもきっと今頑張ってるはず！もう少しだけ！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301277	I'm not going to wait to die here! Come on!	再等下去我们就完了！快去！	これ以上は待てないわ、ここで終わってもいいの！？早く！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301278	Ugh! Damn it!	呜…可恶！	う……くっ！	NONE
+msg	301279	Bronya... What on earth can I do? How am I supposed to help you?	姐姐大人…到底怎么样了，希儿到底怎么样才能帮到你呢？	お姉ちゃん……一体どうしたらいいの？ゼーレはどうしたら力になれるの？	NONE
+speaker	
+emote	59	3
+msg	301280	「Warning! A Honkai Energy reaction has been detected on Bronya, please terminate the connection immediately!」	「警告，布洛妮娅身上检测到崩坏能反应，请立刻切断链接！」	「警告！ブローニャの身体から崩壊エネルギー反応を検出。直ちにリンクを解除してください！」	NONE
+speaker	Seele
+emote	59	3
+msg	301281	Project Bunny!? What’s going on with her!	重装小兔！？姐姐大人怎么了！	重装ウサギ！？お姉ちゃん、どうしたの？！	NONE
+speaker	
+emote	59	3
+msg	301282	「Bronya’s mind has been eroded by Honkai Energy, the connection must be terminated as soon as possible.... Must be terminated.... Must... Be.... Must....」	「布洛妮娅的精神遭到崩坏能侵蚀，必须尽快切断…必须尽快切断…切…断……」	「ブローニャの精神が崩壊エネルギーに侵食されています。早急な切断を……切断して……切……断……」	NONE
+speaker	Seele
+emote	59	3
+msg	301283	Project Bunny!! Hey! What’s going on!	重装小兔！！喂！到底出什么事情了！	重装ウサギ！！ちょっと！一体何があったの！？	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301284	Seele! What are you doing!	希儿！你还愣着在干什么！	ゼーレ！何ぼさっとしてるの！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301285	Bronya's been infected by Honkai Energy! I can't wake her up!	姐姐大人被崩坏能感染了！我没办法叫醒她！	お姉ちゃんが崩壊エネルギーに感染した！呼んでも目を覚まさない！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301286	Honkai energy? I should have known this factory was contaminated with Honkai too.... Dammit, this was all a trap!	崩坏能？果然这个工厂也已经被崩坏污染了么…这一切都是圈套么！	崩壊エネルギー？やっぱり、この工場も崩壊に汚染されていたのね……何もかも罠だったんだわ！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301287	......	…… 	……。	NONE
+msg	301288	Himeko, please, just hold on for a little longer, I promise I will wake her up...	姬子，麻烦你们再撑一会，我一定会把姐姐大人唤醒的……	姫子さん、すみません……もう少し持ちこたえてください。絶対にお姉ちゃんの目を覚まさせますから！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301289	What are you going to do?	你要做什么？	何をするつもり？	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301290	Please give me some time. I'm the only one that can reach her right now!	请给我一点时间，现在只有我能够达姐姐大人的身边！	少し時間をください。今お姉ちゃんのそばに行けるのはゼーレだけなんです！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301291	You're going to enter a quantum state, aren't you...? Don't forget you once disappeared in the Great Honkai by doing that.	量子态么……你可别忘了在大崩坏中曾经消失过一次。	まさか量子状態に！？自分が大崩壊で一度消え失せてしまったこと、忘れたんじゃないでしょうね！？	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301292	It's okay. I'll make it back. Besides, my sister brought me back that time, now it's my turn.	那次是姐姐大人曾经把我找回来了，这次要换我把姐姐大人带回家！	大丈夫です。戻ってこれます。それにあのときはお姉ちゃんがゼーレを連れ戻してくれました。今度はゼーレの番です。	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+tn	0	It's hard to translate, but she's trying to say the both of them combined are a headache
+msg	301293	Tsk... You two are truly inseparable. Fine, but you'd better make it back before we die! 	哼…真是一对麻烦的姐妹，好吧，在我们还没死掉之前回来！                       	フン……まったくベッタリ姉妹ね。いいわ、こっちが死ぬ前に戻ってきなさいよ！	NONE
+choice	301654	We will protect here!	私たちはここを守ってるから！	NONE	NONE
+choice	301655	Please come back with Brony!	ブローニャと一緒に帰ってきて！	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Seele
+emote	59	3
+msg	301294	Yeah! Thank you!	嗯！拜托了！	はい！お願いします！	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Seele
+emote	59	3
+msg	301295	Yeah, we will be back!	嗯，我们一定会回来的！	絶対に戻って来る！ブローニャお姉ちゃんと一緒に。	NONE
+
+label	end_choices
+bg	009/043_1280x720
+portraits	211	60
+emote	60	4
+
+/Bronya	301296	...	……	……。	NONE
+/Mei	301297	Sister Bronya, what are you looking at?	布洛妮娅姐姐你在看什么呢？	ブローニャ姉様、何を見てるの？	NONE
+/Bronya	301298	Nothing.... It's just so.... Quiet. There's no pain, no suffering, no sadness. Everything is peaceful.	没什么…只是觉得这个世界真的很安静呢，没有痛苦和悲伤的事情，永远保持着和平的样子。	何も……ただこの世界は本当に静かで、苦痛も悲しみもなく、永遠に平和だと……そう感じているだけです。	NONE
+speaker	Mei
+msg	301299	Isn’t that good?	和平的世界不好么？	平和な世界は嫌い？	NONE
+speaker	Bronya
+msg	301300	I like a peaceful world, but sometimes I feel like I lived in a different world... One where everyone was fighting desparately to survive. It was the kind of world on the verge of destruction.	我喜欢和平的世界，不过有时候总感觉自己曾经生活在另一个世界一般…大家都拼尽全力为了生存而战斗，那里似乎是一个行走于毁灭边缘的世界。	ブローニャは平和な世界が好きです。でも、時々自分は別の世界で暮らしていたような気がします……みんなが生きるために必死に戦っていました。破滅の淵を歩んでいるような、そんな世界でした。	NONE
+speaker	Mei
+msg	301301	Bronya, you're just imagining thinks. You've been living here with me your whole life. You've never traveled anywhere else.	一定是布洛妮娅姐姐想多了，布洛妮娅姐姐一直和芽衣生活在这里，从来没有到过别的地方哦~	きっとブローニャ姉様の考えすぎよ。ブローニャ姉様は、ここでずっと芽衣と一緒に暮らしてるのよ。別の場所に行ったことなんかないでしょ？	NONE
+speaker	Bronya
+msg	301302	Yeah... But I always have that feeling in the back of my mind. The more I think about it, the more I grow uneasy and it feels like I don't belong here.	是呢…但是心中却总是有着一种不安定的感觉，总觉得自己不应该的存在于这里……	そうですね……でも、心の中にいつも何かがいるのです。それを感じようとすればするほど……心が締め付けられ、自分がここにいてはいけない存在だと考えてしまいます。どうしようもない焦燥感に駆られるのです。	NONE
+speaker	Mei
+msg	301303	Don't worry about it, Bronya. Why don't have we have dinner together? My father is cooking today.	不要想这么多啦布洛妮娅姐姐，和芽衣一起吃饭去吧，今天是父亲大人做的晚饭哦~	あまり思い詰めないで、ブローニャ姉様。芽衣と一緒にご飯食べよ？今日はお父様が晩ご飯を作ってくれるのよ。	NONE
+speaker	Bronya
+emote	60	2
+msg	301304	Yeah, let’s go.	嗯，我们走吧。	そう……ですね。行きましょう。	NONE
+speaker	Mei
+emote	60	2
+msg	301305	Hehe... My father said he would take us to HOMU Paradise after dinner, too! The ferris wheel looks the best at night!	嘻嘻~吃完晚饭父亲大人说要带我们去吼姆乐园玩哦~晚上的摩天轮最漂亮了！	うふふ～晩ご飯の後、お父様がホム楽園に連れていってくれるって。夜の観覧車はとってもきれいなのよ！	NONE
+speaker	Bronya
+emote	60	2
+msg	301306	You really love HOMU Paradise. But don't play too much, you've still got school tomorrow.	芽衣真的很喜欢吼姆乐园呢，但是不能玩过头哦，明天还要上课呢。	芽衣は本当にホム楽園が好きですね。でも遊び過ぎてはいけませんよ。明日も学校があるんですから。	NONE
+speaker	Mei
+emote	60	2
+msg	301307	I know, I know! You always nag me... But I'm glad you're there for me. I'm so glad I have a sister like you!	芽衣知道的啦！布洛妮娅姐姐真是爱说教呢~不过有布洛妮娅姐姐在真的很安心呢，能成为布洛妮娅姐姐的妹妹真是太好了~	芽衣分かってるもん！ブローニャ姉様ったらお説教ばっかり……でも、ブローニャ姉様がいてくれるから安心よ。ブローニャ姉様の妹になれて本当に良かった！	NONE
+msg	301308	I love Bronya the most!	布洛妮娅姐姐最喜欢了！	ブローニャ姉様、だーい好き！	NONE
+speaker	Bronya
+emote	60	2
+msg	301309	Yeah. I love you too. I'll always take care of you, because you're my precious sister...	嗯，我也最喜欢芽衣了，我一定会保护好的你，你是我最重要的妹……	ええ、ブローニャも芽衣が大好きです。ずっと大事にしますからね。ブローニャの大事な妹……	NONE
+speaker	???
+msg	301310	Bronya!	姐姐大人！	——お姉ちゃん！	NONE
+speaker	Bronya
+emote	60	5
+msg	301311	.....Sister? Precious sister... See...	唔…妹妹……最重要的妹妹…希……	……妹？……大事な妹……ゼー……	NONE
+speaker	Mei
+emote	60	5
+msg	301312	Bronya! Are you okay?	布洛妮娅姐姐！你怎么了？	ブローニャ姉様！どうしたの？	NONE
+speaker	Bronya
+emote	60	5
+msg	301313	It sounds like someone is calling for me... This voice......	好像有谁在呼喊我…这个声音是……	誰かがブローニャを呼んでいるような……この声は……。	NONE
+speaker	Mei
+emote	60	5
+msg	301314	You must be tired. Let's skip going to the amusement park today. You should rest early!	布洛妮娅姐姐一定是太累了！我们晚上不去游乐园了！布洛妮娅姐姐还是早点休息吧！	ブローニャ姉様はきっと疲れてるのよ。夜にホム楽園へ行くのはやめましょ。ブローニャ姉様は、早く休んだほうがいいわ。	NONE
+speaker	Bronya
+emote	60	5
+msg	301315	Yeah... Sorry, Mei...	嗯…抱歉，芽衣……	ええ……ごめんなさい、芽衣……。	NONE
+speaker	???
+msg	301316	Bronya!! Wake up!	姐姐大人！快醒醒！	お姉ちゃん！目を覚まして！	NONE
+msg	301317	Ugh! This voice is from .......	唔！这个声音…	うっ！この声は……。	NONE
+msg	301318	See...	希…	ゼー……	NONE
+msg	301319	/setDispChr[6]See... Le...	儿……	……レ……	NONE
+speaker	Mei
+msg	301320	No! No! No! Don't think about it!	不行！不能想起来！	だめ！思い出しちゃ！	NONE
+speaker	???
+msg	301321	We had a promise! You said you would come back! Bronya! Answer me!	我们约定好了啊！你一定会回来的！姐姐大人！请回答我！	約束したじゃない！必ず帰ってくるって！お姉ちゃん！返事して！	NONE
+msg	301322	You're my sister, aren't you?	布洛妮娅姐姐！	ブローニャお姉ちゃん！	NONE
+speaker	Bronya
+emote	60	4
+msg	301323	Seele... I have to go back... Everyone’s waiting for me!	希儿…我得回去…大家在等着我！	ゼーレ……帰らなければ……みんなが待っているところへ……。	NONE
+speaker	Mei
+msg	301324	Bronya! Don't you want to live here forever with Mei?	布洛妮娅姐姐！你难道不想和芽衣一起幸福地生活在这里么？	ブローニャ姉様！芽衣と一緒にここで幸せに暮らすのが嫌なの？	NONE
+speaker	Bronya
+msg	301325	Mei... I've obtained enough happiness from you, so I have to pass it on to everyone else.	芽衣…我已经从芽衣的身上得到了足够的幸福了，所以必须得将芽衣姐姐传递给我的幸福交给更多的人。	芽衣……ブローニャは芽衣の側にいられて十分幸せでした。だから、芽衣……いえ、芽衣姉様がくれた幸せをもっとたくさんの人に伝えていかないと……。	NONE
+msg	301326	Seele... Himeko... Yssring... Emesa...	希儿…姬子…伊瑟琳…埃米沙……	ゼーレ……姫子……イザーリン……エミザ……。	NONE
+msg	301327	There are many people sacrificing their lives to fight for a better future. Bringing happiness to everyone... That's my mission.	还有许多为了未来而不断奋斗牺牲的人，把幸福交到她们的手中…这就是我的使命。	それから、未来のために戦って犠牲になった大勢の人たち……皆のところに幸せを届けないと……それがブローニャの使命です。	NONE
+speaker	Mei
+msg	301328	Are you leaving me... Sister Bronya...	已经要走了么…布洛妮娅姐姐……	行っちゃうんだね……ブローニャ姉様……。	NONE
+speaker	Bronya
+msg	301329	Yeah. Please live happily here, Mei. I'll be living happily too in another world.	嗯，芽衣，请在这里幸福地生活下去吧，我也会好好的，在另一个世界幸福地生活着。	はい、芽衣はここで幸せに暮らしてください。ブローニャも大丈夫です、別の世界で幸せに暮らします。	NONE
+speaker	Mei
+msg	301330	So... I understand.	是么…芽衣明白了。	そう……芽衣わかった。	NONE
+msg	301331	Goodbye then~ Sister Bronya!	那么再见了~布洛妮娅姐姐！	じゃあ、またね……ブローニャ姉様。	NONE
+speaker	Bronya
+emote	60	2
+msg	301332	Yeah... Goodbye, sister Mei...	嗯…再见了，芽衣姐姐……	ええ……またお会いしましょう、芽衣姉様……。	NONE
+emote	60	0
+msg	301333	*Cries*…	呜……	うう……。	NONE
+
+bg	009/042_1280x720
+portraits	59	60
+emote	59	7
+emote	60	0
+/Seele	301334	Bronya!	布洛妮娅姐姐！	ブローニャお姉ちゃん！	NONE
+speaker	Bronya
+emote	59	7
+emote	60	4
+msg	301335	Seele......	希儿……	ゼーレ……。	NONE
+speaker	Seele
+emote	59	7
+emote	60	4
+msg	301336	Bronya... thank god! You're finally awake!	布洛妮娅姐姐…太好了！终于醒了！	ブローニャお姉ちゃん……良かった！やっと目を覚ました！	NONE
+bg	009/048_1280x720
+portraits	
+/Bronya	301337	...I'm back. Sorry for making you worry again....	…布洛妮娅回来了。抱歉，又让你担心了……	……ただいま戻りました。ごめんなさい、心配させて……。	NONE
+/Seele	301338	Bronya, you idiot! You scare me every time! Idiot! Idiot, idiot, idiot!	布洛妮娅姐姐这个笨蛋…每次都吓希儿！笨蛋！笨蛋！	ブローニャお姉ちゃんのバカ！いつもゼーレをびっくりさせて！バカ！バカバカ！	NONE
+/Bronya	301339	Seele, you haven't changed at all. You still cry a lot.	还是和以前一样爱哭的妹妹呢…希儿真的完全没有改变呢。	相変わらず泣き虫な妹ですね……ゼーレは昔のままです。	NONE
+msg	301340	You always pretend to be outgoing and happy, always smiling, trying to make everyone happy... But you are the one that’s most scared...	平时假装着开朗，努力露出笑容，努力让大家开心起来，其实你的内心才是最害怕的吧……	いつもは明るく振る舞って、頑張って笑顔を見せて、みんなを楽しませようとしますけど、内心ではとても脅えている……。	NONE
+msg	301341	I'm sorry... I've been a terrible sister. I couldn't protect you, and I'm always making you worry about me.	抱歉…布洛妮娅不是一个称职的姐姐，没有保护好希儿，每次都让希儿担心受怕。	ごめんなさい……ブローニャは姉失格ですね、ゼーレをちゃんと守れなくて。いつもゼーレに心配ばかりかけて。	NONE
+/Seele	301342	Waaaaaaah!!!! I'm.... I'm just so scared... How am I supposed to live without you...? No matter how much I think about it, I can't imagine it!	呜呜呜！希儿真的好害怕…如果没有了布洛妮娅姐姐，希儿要怎么生活下去……	うわぁぁん！……あのね、怖くてしかたないの……もしブローニャお姉ちゃんがいなくなったら、ゼーレはどうやって生きていけばいいのか……。いくら考えても答えが見つからないの！	NONE
+/Bronya	301343	Seele, do you remember the promise you made in the X-10 experiment? No matter how difficult it is, I'll always rescue you, and we will never give up until that day, because Bronya is Seele's hope. You said so.	希儿，还记得我们在实验室里的约定么？布洛妮娅会成为希儿的希望，将希儿带回现实世界，成为希儿的依靠。	ゼーレ、X-10実験での約束を覚えていますか？どんなに難しくてもブローニャが必ずゼーレを救い出す、その日まで絶対に諦めない、ブローニャはゼーレの希望だから。そう言いましたよね。	NONE
+/Seele	301344	Yeah... I do.	嗯…希儿记得。	うん……覚えてる。	NONE
+/Bronya	301345	And now you have become my hope... Seele, you have really grown up. But I have not moved on from the back, always making you worry.	但是现在希儿却成了布洛妮娅的希望了呢…希儿真的长大了，而布洛妮娅却还是停留在过去止步不前，总是让希儿担心。	でも、今ではゼーレがブローニャの希望になりました……ゼーレは本当に成長しましたね。なのに、ブローニャは過去に留まったまま前に進めず、いつもゼーレに心配をかけてしまっています。	NONE
+msg	301346	Sorry, Seele. I couldn't make a world for you to be happy...	对不起，希儿。没能创造出让你幸福的世界……	ごめんなさい、ゼーレ。幸せな世界を作ってあげられなくて……。	NONE
+/Seele	301347	That doesn't matter! The happiest world for me is anywhere I can be with you!	不！对于希儿来说只要有布洛妮娅姐姐在的地方就是最幸福的世界！	ちがうよ！ゼーレにとって……ブローニャお姉ちゃんがいるところが、一番幸せな世界だよ！	NONE
+/Bronya	301348	I see... I am really a fool. I should have realized this...	原来如此…看来布洛妮娅果然是笨蛋呢，连这么简单的道理都没有明白……	そう……そうだったんですね……やっぱりブローニャはバカでした。こんな簡単なことも分からないなんて……。	NONE
+msg	301349	Seele, let's go back. Back to the world where we belong.	希儿，让我们回去吧，回到属于我们的世界。	ゼーレ、帰りましょう。私たちのいるべき世界へ。	NONE
+msg	301350	A broken and dying world, but a world where everyone is together...	那个破烂不堪，却是与大家在一起的……	あのボロボロの、でもみんなが一緒にいる——	NONE
+msg	301351	The happiest world.	最幸福的世界。	——最も幸せな世界へ。	NONE

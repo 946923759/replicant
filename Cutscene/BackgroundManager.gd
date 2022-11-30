@@ -35,6 +35,8 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 				actor.showActor(.5)
 			elif transition=='immediate' or transition=='instant':
 				actor.modulate.a=1
+				if actor is smVideo:
+					actor.showActor(0)
 				if is_instance_valid(lastBackground):
 					lastBackground.modulate.a=0
 			else: #Fade to black and fade in new background

@@ -2,7 +2,7 @@ extends Control
 
 onready var scrollContainer:ScrollContainer=$ScrollContainer
 onready var container = $ScrollContainer/GridContainer
-var font = preload("res://Cutscene/TextFont.tres")
+var font = preload("res://Fonts/TextFont.tres")
 const fadeTop = preload("res://Shaders/FadeTopShader.tres")
 
 #var isActive:

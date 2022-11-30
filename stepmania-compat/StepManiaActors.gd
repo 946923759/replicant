@@ -40,6 +40,19 @@ static func Sprite(d)->smSprite:
 			s.set(property,d[property])
 	return s
 
+static func Video(d)->smVideo:
+	var s = smVideo.new()
+	for property in d:
+		if property=="Texture":
+			s.loadVNBG(d[property])
+		#elif property=="TextureFromDisk":
+		#	s.loadFromExternal(d[property])
+		elif property=="cover":
+			s.Cover()
+		else:
+			s.set(property,d[property])
+	return s
+
 static func Sound(d)->smSound:
 	var s = smSound.new()
 

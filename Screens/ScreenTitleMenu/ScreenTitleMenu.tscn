@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=2]
@@ -9,9 +9,23 @@
 [ext_resource path="res://Screens/ScreenTitleMenu/ScreenTitleMenu.gd" type="Script" id=7]
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=8]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=9]
+[ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=10]
+[ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=11]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=13]
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=14]
+[ext_resource path="res://Screens/ScreenTitleMenu/MainMenuOptions.tscn" type="PackedScene" id=15]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.321569, 0.92549, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0.0823529, 0.623529, 1 )
+use_filter = true
+extra_spacing_top = 8
+font_data = ExtResource( 12 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -52,10 +66,13 @@ color_ramp = SubResource( 1 )
 
 [node name="Kyuushou" type="TextureRect" parent="."]
 anchor_left = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
+anchor_bottom = 1.0
 margin_left = -1036.0
+margin_top = -1080.0
 margin_right = 819.0
-margin_bottom = 1639.0
+margin_bottom = 559.0
 texture = ExtResource( 5 )
 script = ExtResource( 2 )
 
@@ -103,6 +120,31 @@ position = Vector2( -281.136, 359.852 )
 [node name="smSound" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 8 )
 
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 233.0
+margin_bottom = 114.0
+columns = 2
+
+[node name="OKButton" type="TextureButton" parent="GridContainer"]
+margin_right = 183.0
+margin_bottom = 64.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="GridContainer/OKButton"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "Credits"
+align = 1
+
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 anchor_right = 1.0
@@ -110,3 +152,21 @@ anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 script = ExtResource( 9 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="DebugLabel" type="Label" parent="."]
+visible = false
+margin_left = 1867.06
+margin_top = 14.2705
+margin_right = 1907.06
+margin_bottom = 123.27
+custom_fonts/font = ExtResource( 14 )
+text = "1"
+
+[node name="OptionsScreen" parent="." instance=ExtResource( 15 )]
+visible = false
+
+[connection signal="pressed" from="GridContainer/OKButton" to="." method="_on_OKButton_pressed"]
+[connection signal="options_closed" from="OptionsScreen" to="." method="_on_OptionsScreen_options_closed"]

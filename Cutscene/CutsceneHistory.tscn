@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Ext/xinxikuang.png" type="Texture" id=2]
 [ext_resource path="res://Cutscene/CutsceneHistory.gd" type="Script" id=3]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=4]

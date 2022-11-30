@@ -228,6 +228,11 @@ _global_script_classes=[ {
 "class": "smSprite",
 "language": "GDScript",
 "path": "res://stepmania-compat/smSprite.gd"
+}, {
+"base": "VideoPlayer",
+"class": "smVideo",
+"language": "GDScript",
+"path": "res://stepmania-compat/smVideo.gd"
 } ]
 _global_script_class_icons={
 "Array2D": "",
@@ -273,7 +278,8 @@ _global_script_class_icons={
 "smQuad": "",
 "smScreenInOut": "",
 "smSound": "",
-"smSprite": ""
+"smSprite": "",
+"smVideo": ""
 }
 
 [application]
@@ -397,4 +403,5 @@ common/enable_pause_aware_picking=true
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"

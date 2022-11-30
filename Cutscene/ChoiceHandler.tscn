@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Cutscene/ChoiceHandler.gd" type="Script" id=1]
-[ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Cutscene/ChoiceShaderFadeSides.tres" type="Material" id=3]
 
 [node name="ChoiceHandler" type="Control"]

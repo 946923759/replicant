@@ -1,0 +1,121 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	60	59	61
+match_names	Bronya	Himeko
+speaker	
+bg	009/020_1280x720
+music	Grandma
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301146	Dadada!	哒哒哒！！	ダダダッ！！	NONE
+portraits	60	61
+emote	60	5
+emote	61	2
+/Bronya	301147	Himeko, watch out for the enemies on your right!	姬子，小心右翼的敌人！	姫子、右翼の敵に気をつけてください！	NONE
+speaker	Himeko
+emote	60	5
+msg	301148	Cut the crap! Worry about yourself first!	少废话！还是担心你自己吧！	余計なお世話よ！そんなことより自分の心配をしたらどう！？	NONE
+speaker	Bronya
+emote	60	5
+emote	61	2
+msg	301149	We can't keep going like this. We have to find a way to shut down the production line for those mechas or they're not going to stop coming!	这样下去不是办法，我们得想办法停止机甲兵器的生产线，不然会有源源不断的敌人！	このままではいけません。何とかして機甲兵器の生産ラインを止めないと。敵がどんどん湧いて出てきます。	NONE
+speaker	Himeko
+emote	60	5
+emote	61	2
+msg	301150	I told you already that we should just blow it up!	所以说炸掉这里不就行了么！	だから、ここを爆破しようって言ってるじゃない！	NONE
+speaker	Bronya
+emote	60	5
+emote	61	2
+msg	301151	No, we can't! We have to secure the production lines. This factory can be our trump card against the Honkai!	不行！我们一定要确保这些生产线，它们是我们对抗崩坏的底牌！	だめです！ここの生産ラインは絶対に確保しないと。崩壊に抵抗する切り札ですから。	NONE
+speaker	Himeko
+emote	60	5
+emote	61	2
+msg	301152	I don't need Anti-Entropy's help to kill those damn Honkai Beasts!	不需要借助逆熵的力量我也可以把崩坏生物都杀光！	ネゲントロピーの力なんか借りなくたって、崩壊生物くらい始末してやるわよ！	NONE
+speaker	Bronya
+portraits	60
+emote	60	5
+msg	301153	Himeko, don't run off on your own! It's too dangerous!	姬子，不要逞强快回来！	姫子、一人で突っ走らないでください。危険です！	NONE
+speaker	
+emote	60	5
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301154	(bullet noises)	哒哒哒！！	ダダダッ！！	NONE
+match_names	Seele	Bronya
+speaker	Seele
+portraits	59	60
+emote	59	3
+msg	301155	Bronya!	姐姐大人！	お姉ちゃん！	NONE
+speaker	Bronya
+emote	60	5
+msg	301156	Seele? How did you guys...	希儿？你们怎么会……	ゼーレ！？どうしてここに……。	NONE
+speaker	Seele
+emote	59	3
+msg	301157	You moron! Why are you risking your life alone again!? You promised that we were in this together!	姐姐大人这个笨蛋！为什么又一个人冒险啦！不是说好要大家一起的么！	お姉ちゃんのバカ！どうしてまた一人で危険なことするの！みんな一緒って言ったじゃない！	NONE
+
+match_names	Seele	Bronya	Himeko
+portraits	59	60	61
+emote	59	3
+emote	61	1
+/Himeko	301158	Hey, I'm here too...	你别忘了我也在啊……	私もいるんだけどね……。	NONE
+
+speaker	Seele
+emote	59	5
+emote	61	1
+msg	301159	Oh.... Himeko, sorry! I didn't see you there~	唔…姬子，抱歉！我差点把你忘了~	あ……姫子さん、ごめんなさい！視界に入っていませんでした！	NONE
+speaker	Himeko
+emote	59	5
+emote	61	2
+tn	0	Literal translation is "You little girl"
+msg	301160	You brat... 	你这丫头……	この小娘……。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	2
+msg	301161	I'm sorry, Seele... But there's a valid reason for this. We wanted to investigate ME Corp. and confirm the status of the weapons manufacturing plant. I had no idea that all these armored mechas were still operating...	对不起，希儿…但这次是有原因的，我们本来是想来探查ME社的状况，确认生产线的状况，没想到这里还有这么多的机甲兵器在运作。	ごめんなさい、ゼーレ……でも、今回は訳があるのです。本来はME社を調査して、生産ラインの状況を確認するだけのつもりでした。こんなにも機甲兵器が稼働しているとは思わなかったのです……。	NONE
+emote	60	4
+emote	61	2
+msg	301162	I didn't want to put you guys in danger. We thought we'd be able to handle it on our own, no matter the situation...	本来不想让你们冒险，如果是我和姬子的话不管什么情况都可以应对……	あなたたちを危険な目に遭わせたくなかった。ブローニャと姫子だけなら、どんな状況になっても対応できますから……。	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301163	What, so you don't believe in me?	姐姐大人这是不相信我嘛！	お姉ちゃんったら、ゼーレのこと信用してないの？	NONE
+speaker	Bronya
+emote	60	4
+emote	61	2
+msg	301164	That's not what I meant.... I just didn't want you to be injured because of my decisions...	不是的…只是因为之前我的错误导致……	そういうことではありません……ただブローニャのせいでケガをさせたくなかったのです……。	NONE
+speaker	Himeko
+emote	60	4
+emote	61	1
+msg	301165	Hey, you two sisters, can you stop with the lover's quarrel as soon as you see each other? We're still in the middle of a battle.	你们两姐妹能不能不要一见面就这么腻，现在可是战斗中。	そこの姉妹、会うなり痴話ゲンカやめてくれる？今は戦闘中なのよ。	NONE
+speaker	Seele
+emote	59	1
+emote	61	1
+msg	301166	Ah... Alright! I'll forgive you for now.	呃…好吧！这次先原谅姐姐大人。	あ……はい！ひとまずお姉ちゃんのこと許してあげる。	NONE
+emote	59	3
+emote	61	1
+msg	301167	More importantly, the situation outside the building is critical! There's tons of Honkai beasts surrounding ME Corp. Everyone is holed up in the main lobby fighting them off, so we need to get back there and provide support!	总之现在的情况很危机！大批的崩坏生物都朝着ME社围了过来！大家正在大厅迎击崩坏生物，我们得立即回撤支援！	とにかく、今は危機的状況なの！大量の崩壊生物がME社を取り囲んでて！みんながホールで崩壊生物を迎撃してくれてるから、急いで支援に戻らないと！	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301168	I understand. There's no point in continuing to fight off these armored mechas. Himeko, let's rendezvous with the troops.	好吧，在这里与机甲兵器干耗着也不是办法。姬子，我们与部队汇合吧。	分かりました。ここで機甲兵器と睨み合ってても仕方ありません。姫子、部隊と合流しましょう。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+msg	301169	That's if we can even make it back.	那也得回得才行。	そう、だったら急ぎましょう。	NONE
+speaker	
+emote	60	3
+se	DLC_CH00_EV03_WarningAlert
+msg	301170	*Beep*	滴滴滴——	ピピピ——	NONE
+speaker	Bronya
+emote	60	5
+msg	301171	!?	！？	！？	NONE
+speaker	Seele
+emote	59	3
+msg	301172	Bronya! The factory gate is closing! We have to get out of here!	姐姐大人！工厂的大门正在关闭！我们得赶紧出去！	お姉ちゃん！工場のゲートが閉まるよ！急いで脱出しないと！	NONE
+speaker	Bronya
+emote	60	5
+msg	301173	Seems like those machines want to lock us in. We're going to have to fight our way through!	看来这些机甲是想把我们围杀在这里，必须杀出一条路了！	どうやら、ここの機甲は私たちを閉じ込めるつもりですね。血路を開かねばなりません！	NONE
+speaker	Himeko
+emote	60	5
+emote	61	1
+msg	301174	As if that wasn't obvious!	不用你说我也知道！	言われなくったって分かってるわ！	NONE
+speaker	Seele
+emote	59	3
+emote	61	1
+msg	301175	Let's go! We'll follow her, we can't be the ones holding back my sister!	走吧！我们也跟上去，不能给姐姐大人拖后腿！	行こう！私たちも後に続くよ、お姉ちゃんの足を引っ張らないように！	NONE

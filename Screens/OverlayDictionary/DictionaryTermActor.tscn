@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.176471, 0.176471, 0.176471, 1 )
+shadow_color = Color( 0, 0, 0, 0.427451 )
+shadow_size = 8
+shadow_offset = Vector2( 5, 5 )
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends Panel
+signal clicked()
+
+onready var l = $Label
+var text:String=\"\" setget set_text
+
+func set_text(t_:String):
+	text=t_
+	if is_instance_valid(l):
+		l.text=t_
+	else:
+		push_error(\"You must add a DictionaryCategoryActor to a parent before setting text!\")
+
+
+func _on_Panel_gui_input(event):
+	if event is InputEventMouseButton and event.button_index == 1:
+		if event.pressed:
+			emit_signal(\"clicked\")
+"
+
+[node name="Panel" type="Panel"]
+margin_right = 550.0
+margin_bottom = 100.0
+grow_horizontal = 2
+rect_min_size = Vector2( 0, 100 )
+mouse_default_cursor_shape = 2
+custom_styles/panel = SubResource( 4 )
+script = SubResource( 5 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "fuck"
+align = 1
+valign = 1
+autowrap = true
+
+[connection signal="gui_input" from="." to="." method="_on_Panel_gui_input"]

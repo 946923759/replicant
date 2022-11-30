@@ -8,6 +8,9 @@ script/source = "extends Control
 export(bool) var testInitScreen = false
 
 func _ready():
+	if OS.is_debug_build() and testInitScreen==false:
+		Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
+		return
 	var t = $Tween
 	t.connect(\"tween_completed\",self,\"next_screen\")
 	t.interpolate_property($TextureRect,\"modulate:a\",null,0,.5)

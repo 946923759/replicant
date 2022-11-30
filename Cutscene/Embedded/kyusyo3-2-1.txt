@@ -1,0 +1,15 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	The Tower - Medium No Vocals
+speaker	Seele
+bg	009/044_1280x720
+portraits	59
+emote	59	1
+msg	301098	Looks like everyone from the investigation team is here. I'll share the intel on ME Corp. and explain our mission objectives.	调查队的各位已经集结完毕了吧，那我先说明一下ME社的情报和这次的任务目标。	突撃隊のメンバーは集結したね。じゃあ、ME社の情報と今回の任務目標を共有するわ。	NONE
+msg	301099	As we all know, ME Corporation, located right in Nagazora City, is the world's largest science and technology engineering company. It wouldn't be an exaggeration to say that the ME Corp. headquaraters where we are right now is the heart of all technology.	众所周知，ME社是世界最大的科技工程企业，我们现在所处的长空市本部更是人类引以为傲的科技中心。	知っての通り、ME社は世界最大のハイテク企業だよ。私たちが今いる長空市のME社本部は、人類が誇るハイテク技術の中心と言っても過言ではないわ。	NONE
+msg	301100	However, ME Corp. used to cooperate with an organization called Anti-Entropy, manufacturing various equipment and armored mechs to resist the Honkai. The mecha we just fought is one of them. In other words, ME Corp. also an extremely dangerous military enterprise.	而ME社曾经服务于名为逆熵的组织，并帮助他们制造对抗崩坏的各类装备与机甲武器，刚才与我们战斗的机甲兵器也是其中的杰作之一，所以它也是一家极其危险的军工企业。	ただME社はかつてネゲントロピーという組織に協力し、崩壊に抵抗するための各種装備と機甲武器を製造していてね……さっき戦った機甲兵器もそのうちのひとつ。つまり、極めて危険な軍需企業でもあるの。	NONE
+msg	301101	According to our intel, there is a huge weapons manufacturing plant hidden here. Normally, the explosion of the great Honkai would have destroyed and wiped out the entire plant.......	根据我们的情报，这里隐藏着一个巨大的兵工厂用于生产制造这些兵器，但是随着大崩坏的爆发这个庞大的兵工厂也随之关闭。	情報によると、ここにはそういった兵器を製造する巨大な工場が隠されているわ。普通だったら大崩壊の爆発によって、その兵器工場ごと壊れてなくなってしまうはずだったんだけど……。	NONE
+msg	301102	But thanks to this building's fortifications by ME Corp., the weapons manufacturing plant wasn't completely destroyed. The equipment inside is still functioning and weapons can still be produced. If we can seize control of this factory, we can produce weapons to fight back against the Honkai.	然而多亏了ME社坚固的建筑结构，大崩坏并没有对这个兵工厂造成损伤，所以里面的设备应该还能够正常运作，如果能够占领这个兵工厂，我们就可以生产武器装备与崩坏进行对抗，是我们反攻崩坏的重要目标。	ME社はそんな爆発をものともせず、兵器工場も致命的な損傷を受けなかったの。だから、中の設備はまだ動くし武器も作れる。つまり、この工場を占領できれば、武器を作って崩壊に反撃できるようになるってわけ。	NONE
+msg	301103	To be honest, the plan to take over ME Corp.'s factory has been in preparation for a long time. I think the reason why my sister secretly inflitrated ME Corp.'s headquarters was to find the factory. So if we do the same, we should be able to find her!	对于夺取ME社的计划早有预想，这也是姐姐大人长久以来准备的作战。我想这次姐姐大人瞒着我们潜入ME社的目就是寻找这座兵工厂。所以我们只要以此为目标就能找到姐姐大人！	実はME社を奪取する計画は昔からあって、長い間準備していたの。お姉ちゃんが内緒でME社に潜入したのも、おそらくこの工場を探すためっていうのがあるんだと思う。だから、これを目標にすればお姉ちゃんに辿り着くはず！	NONE
+msg	301104	However, this building has been abandoned for a very long time, and we have no idea what the state of the inside is like. There's even armored mechas inside. This investigation will be very dangerous, so don't be careless.	不过ME社的情况很复杂，长期废弃所导致的隐藏危险有很多，再加上机甲兵器的攻击导致我们的情况并不乐观，所以本次调查一定要小心谨慎，避免不必要的麻烦。	ただ長期間放置されていた影響から、中に何が棲みついているのかはまったくもっての未知。さらに機甲兵器までいる状況。今回の調査はとても危険なものになるわ。くれぐれも慎重に。	NONE
+emote	59	3
+msg	301105	Let's get moving. Things are heating up. We have to complete the mission before the Honkai beasts attack!	那么开始行动吧，时间紧迫，我们一定要在崩坏生物的进攻到来之前完成任务！	じゃあ、行動開始よ。事態は切迫しているわ。崩壊生物が攻めてくる前に任務を完了しないと！	NONE

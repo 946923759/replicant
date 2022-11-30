@@ -71,6 +71,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	var musicToLoad:Array=[]
 	var soundsToLoad:Array=[]
 	var backgrounds_to_load:Array=[]
+	var videos_to_load:Array=[]
 	message = []
 	#Should return false if delimiter is incorrect
 	for s in arr:
@@ -88,6 +89,9 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			"bg":
 				if splitString[1] != "black" and splitString[1] != "none" and !(splitString[1] in backgrounds_to_load):
 					backgrounds_to_load.append(splitString[1])
+			"bg_video":
+				if !(splitString[1] in videos_to_load):
+					videos_to_load.append(splitString[1])
 			"music":
 				#message.push_back([OPCODES.MUSIC,splitString[1]])
 				if !(splitString[1] in musicToLoad):
@@ -100,7 +104,9 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 					splitString=['speaker','']
 				#print(splitString)
 		message.push_back(splitString)
-					
+	
+	
+	var c = Color(1,1,1,0)
 	for i in range(len(backgrounds_to_load)):
 		var bgToLoad = backgrounds_to_load[i]
 		
@@ -108,7 +114,6 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		if "," in bgToLoad:
 			#nightFilter = bgToLoad.split(",")[1].to_lower()=="true"
 			bgToLoad = bgToLoad.split(",")[0]
-		var c = Color(1,1,1,0)
 		var s = Def.Sprite({
 			modulate=c,
 			Texture=bgToLoad,
@@ -123,6 +128,19 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		#	s.material=nightShader
 		backgrounds.add_child(s)
 		s.set_rect_size()
+		VisualServer.canvas_item_set_z_index(s.get_canvas_item(),-10)
+	for i in range(len(videos_to_load)):
+		var bgToLoad = videos_to_load[i]
+		var s = Def.Video({
+			modulate=c,
+			Texture=bgToLoad,
+			cover=true,
+			name=bgToLoad.replace("/","$"),
+			mouse_filter=2 # mouse_filter: Ignore
+		})
+		s.set_meta("file_name",bgToLoad)
+		backgrounds.add_child(s)
+		#s.set_rect_size()
 		VisualServer.canvas_item_set_z_index(s.get_canvas_item(),-10)
 	backgrounds.connect("resized",self,"set_rect_size")
 	
@@ -318,7 +336,7 @@ func advance_text()->bool:
 				#print(speakerActor.text)
 			'preload_portraits':
 				PORTRAITMAN.preload_portraits(curMessage)
-			'bg':
+			'bg','bg_video':
 				var transition:String = curMessage[2].to_lower() if curMessage.size() > 2 else ""
 				waitForAnim=backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
 			'bg_fade_out_in':

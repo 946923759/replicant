@@ -30,16 +30,18 @@ var GALLERY = {
 		
 	],
 	"Outdoors1":[
-		['009/004_1280x720','009/013_1280x720'],
+		['009/004_1280x720','009/013_1280x720','011/006_1280x720'],
 		['009/014_1280x720','009/015_1280x720'],
-		['009/047_1280x720','009/039_1280x720']
-	],
-	"Outdoors2":[
-		['009/064_1280x720','009/065_1280x720']
+		['009/047_1280x720','009/039_1280x720'],
+		['009/064_1280x720','009/065_1280x720'],
+		['009/017_1280x720','009/038_1280x720','011/005_1280x720'],
+		['011/035_1280x720']
 	],
 	"BronyaSeele":[
 		['009/021_1280x720'],
 		['009/029_1280x720'],
+		['009/027_1280x720'],
+		['009/026_1280x720'],
 		['009/030_1280x720'],
 		['009/048_1280x720'],
 		['009/050_1280x720'],
@@ -58,19 +60,33 @@ var GALLERY = {
 		['009/040_1280x720'],
 		['009/031_1280x720','009/053_1280x720'],
 		['009/056_1280x720'],
-		['009/070_1280x720'],
 		['009/071_1280x720'],
 		['009/072_1280x720'],
 		['009/073_1280x720'],
+		['011/001_1280x720'],
+		['011/002_1280x720'],
+		['011/003_1280x720'],
+		['011/022_1280x720','011/019_1280x720','011/020_1280x720','011/021_1280x720'],
+		['011/023_1280x720'],
+	],
+	"Kyuushou":[
+		['009/070_1280x720','012/001_1280x720'],
+		['011/024_1280x720'],
+		['011/033_1280x720'],
+		['011/031_1280x720'],
 		['011/030_1280x720'],
-		['011/023_1280x720']
+		['007/013_1280x720'],
+		['011/025_1280x720'],
+		['007/012_1280x720'],
+		['007/020_1280x720']
+		
 	],
 	"Misc":[
 		['CG054_waifu2x_art_noise0_scale_tta_1'],
 		['007/005_1280x720'],
 		['009/074_1280x720'],
 		['011/029_1280x720'],
-		['007/013_1280x720']
+		['007/014_1280x720']
 	]
 }
 
@@ -84,9 +100,10 @@ export(bool) var mute_music_in_debug=true
 func is_image_unlocked(s:String)->bool:
 	var unlockList = Globals.playerData['CGunlock']
 	#unlockList = ['009/001_1280x720','009/008_1280x720']
-	#return true
+	return true
 	return (s in unlockList)
 
+onready var tabs:GridContainer = $Tabs
 func _ready():
 	#print(Globals.playerData['CGunlock'])
 	if OS.is_debug_build() == false or mute_music_in_debug==false:
@@ -100,28 +117,80 @@ func _ready():
 	
 	var galleryBasePos:Vector2=get_node("Galleries/GalleryBase").rect_position
 	
+	var mainGalleryFrame = $Galleries
 	for k in GALLERY:
-		var galleryActorFrame:GridContainer = get_node("Galleries/Gallery"+k)
+		var galleryActorFrame:GridContainer
+		if k!="Base":
+			var sc = ScrollContainer.new()
+			sc.mouse_filter=MOUSE_FILTER_STOP
+			galleryActorFrame = GridContainer.new()
+			galleryActorFrame.columns=5
+			galleryActorFrame.mouse_filter=MOUSE_FILTER_IGNORE
+			galleryActorFrame.set("custom_constants/vseparation",40)
+			galleryActorFrame.set("custom_constants/hseparation",40)
+			#galleryActorFrame.hseparation = 40
+			sc.add_child(galleryActorFrame)
+			sc.rect_position=galleryBasePos
+			sc.name="Gallery"+k
+			#var rectSize = 
+			#galleryActorFrame.rect_size=Vector2(9999999,9999999)
+			sc.rect_size=get_node("Galleries/GalleryBase").rect_size+Vector2(50,40)
+			mainGalleryFrame.add_child(sc)
+			sc.visible=false
+		else:
+			galleryActorFrame=mainGalleryFrame.get_node("GalleryBase")
+		
+		
 		for i in range(len(GALLERY[k])):
 			var galleryEntry:Array = GALLERY[k][i]
 			var m = GalleryObject.instance()
 			var thumbName = galleryEntry[0].replace("/","_")
 			galleryActorFrame.add_child(m)
-			
+
 			var unlockedEntries:Array = []
 			for g in galleryEntry:
 				if is_image_unlocked(g):
 					unlockedEntries.append(g)
 			m.setUnlockedCount(len(unlockedEntries),len(galleryEntry),unlockedEntries)
 			m.icon.loadVNBG("thumb/"+thumbName)
-			if len(unlockedEntries)>0:
-				m.icon.connect("gui_input",self,"gallery_icon_clicked_wrapper",[m])
-		if galleryActorFrame.name!="GalleryBase":
-			galleryActorFrame.rect_position=galleryBasePos
-			galleryActorFrame.visible=false
+			#if len(unlockedEntries)>0:
+			m.connect("clicked",self,"gallery_icon_clicked_wrapper",[m])
+		
+		if galleryActorFrame.get_child_count() > 0 and k!="Base":
+			var rectSize = get_node("Galleries/GalleryBase").rect_size+Vector2(50,10)
+			var galleryObjSize = galleryActorFrame.get_child(0).rect_size.y+40 # +vseparation
+			print(galleryActorFrame.get_child_count())
+			var rows = ceil(float(galleryActorFrame.get_child_count())/float(galleryActorFrame.columns))
+			print(rows)
+			var sc = mainGalleryFrame.get_node("Gallery"+k)
+			print(rectSize)
+			rectSize=Vector2(rectSize.x,max(galleryObjSize*rows,rectSize.y))
+			#galleryActorFrame.rect_min_size=Vector2(9999999,9999999)
+			galleryActorFrame.rect_min_size=rectSize
+		
+	
+#	for k in GALLERY:
+#		var galleryActorFrame:GridContainer = get_node("Galleries/Gallery"+k)
+#		for i in range(len(GALLERY[k])):
+#			var galleryEntry:Array = GALLERY[k][i]
+#			var m = GalleryObject.instance()
+#			var thumbName = galleryEntry[0].replace("/","_")
+#			galleryActorFrame.add_child(m)
+#
+#			var unlockedEntries:Array = []
+#			for g in galleryEntry:
+#				if is_image_unlocked(g):
+#					unlockedEntries.append(g)
+#			m.setUnlockedCount(len(unlockedEntries),len(galleryEntry),unlockedEntries)
+#			m.icon.loadVNBG("thumb/"+thumbName)
+#			#if len(unlockedEntries)>0:
+#			m.connect("clicked",self,"gallery_icon_clicked_wrapper",[m])
+#		if galleryActorFrame.name!="GalleryBase":
+#			galleryActorFrame.rect_position=galleryBasePos
+#			galleryActorFrame.visible=false
 			
-	for i in range($Sections.get_child_count()):
-		var c:Control = $Sections.get_child(i)
+	for i in range(tabs.get_child_count()):
+		var c:Control = tabs.get_child(i)
 		toggle_section_highlighted(c,i==0)
 		c.get_node("TextureRect2").connect("gui_input",self,"set_gallery_input_wrapper",[c.name])
 	pass
@@ -131,8 +200,8 @@ func toggle_section_highlighted(c:Control,visible:bool=false):
 	c.get_node("TextureRect2").visible=!visible
 
 func set_gallery_to(name:String):
-	for i in range($Sections.get_child_count()):
-		var c:Control = $Sections.get_child(i)
+	for i in range(tabs.get_child_count()):
+		var c:Control = tabs.get_child(i)
 		toggle_section_highlighted(c,c.name==name)
 	for gallery in get_node("Galleries").get_children():
 		gallery.visible=(gallery.name == "Gallery"+name)
@@ -200,11 +269,9 @@ func gallery_icon_clicked(entries:Array):
 	galleryFull_LoadImages(currentFullscreenImages)
 	galleryFull_OnCommand()
 
-func gallery_icon_clicked_wrapper(event:InputEvent,galleryObject):
-	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
-		gallery_icon_clicked(galleryObject.unlockedEntries)
-		
-		#print(GALLERY[galleryKey][galleryIndex])
+#There isn't any need for a wrapper function for this
+func gallery_icon_clicked_wrapper(galleryObject):
+	gallery_icon_clicked(galleryObject.unlockedEntries)
 
 func _on_TextureRect2_mouse_entered():
 	#print("Mouse entered")
@@ -221,3 +288,20 @@ func _on_BackButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		#get_tree().change_scene("res://TitleScreen.tscn")
 		$smScreenInOut.OffCommand("ScreenTitleMenu")
+
+
+var tapped:int=0
+func _on_GalleryHeader_gui_input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
+		#print("AAA")
+		if tapped <= 8:
+			tapped+=1
+		if tapped==8:
+			print("Unlocking all!!")
+			for k in GALLERY:
+				var galleryActorFrame:GridContainer = get_node("Galleries/Gallery"+k)
+				for i in range(len(GALLERY[k])):
+					var m = galleryActorFrame.get_child(i)
+					var galleryEntry:Array = GALLERY[k][i]
+					m.setUnlockedCount(len(galleryEntry),len(galleryEntry),galleryEntry)
+					m.debugUnlock()

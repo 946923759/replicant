@@ -1,0 +1,50 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	54	55	56	59
+speaker	
+msgbox_close	instant
+bg	009/045_1280x720
+msg	
+music	War And War
+bg	009/013_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msgbox_open
+msg	301017	Tatatat	哒哒哒！	ダダダダッ——！	NONE
+speaker	Teammate
+portraits	56,false,3
+msg	301018	Report! We were able to intercept the enemy reinforcements approaching from the rear. However, the number of Honkai Beasts is still not decreasing, and we think it is only a matter of time before they break through..... Please give us instructions!	报告！后方崩坏生物的增援暂时被截断了！不过它们的增援并没有减少！我们抵抗不了多少时间，请求后续指示！	報告します！後方より迫る敵の増援を遮ることができました。しかし、崩壊生物の数は依然として減っておらず、突破されるのも時間の問題かと……指示をお願いします！！	NONE
+
+match_names	Emesa	Teammate	Yssring
+portraits	55,false,3	56,false,2
+emote	55	4
+/Emesa	301019	Seele! There's too many injured on the battlefield. We have to get them off the front lines!	希儿！战场上的伤员太多了，我们必须想办法让他们撤回前线！	ゼーレ！戦場の負傷者が多すぎる。何とかして前線から撤退させないと！	NONE
+portraits	55,false,4	56,false,3	54,false,2
+emote	54	5
+/Yssring	301020	The supply lines have been cut off by the Honkai beasts. The front lines aren't going to last much longer without them.	崩坏生物截断了补给线，如果没有补给的话战线维持不了多久……	崩壊生物に補給線を断たれた。補給がないと戦線は長く持たないわ……。	NONE
+match_names	Seele	Emesa	Teammate	Yssring
+portraits	59	55,false,4	56,false,3	54,false,2
+emote	59	3
+/Seele	301021	Man... So these are the kind of difficult decisions my sister had to make in every battle.	咕！姐姐大人在战斗中每次都面临着这么沉重的抉择么。	うう～……お姉ちゃんは戦闘中、いつもこんな重い決断を迫られてたのね。	NONE
+msg	301022	I've gotta pull myself together! I need to protect everyone while she's gone!	不行！我要振作起来！姐姐大人不在的时候我一定要保护好大家！	だめだめ、元気出さなきゃ！お姉ちゃんがいない間、絶対みんなを守るんだから！	NONE
+msg	301023	All troops, move towards ME Corp.! Cover the wounded, we'll reorganize inside the building!	命令部队朝ME社方向转移，掩护伤员撤退到ME社内！	部隊はME社に向かって移動！負傷者を援護しつつME社内へ避難させて！	NONE
+/Teammate	301024	Understood!	了解！	了解！	NONE
+match_names	Seele	Emesa	Yssring
+portraits	59	55,false,4	54,false,2
+tn	0	How would she find Bronya inside the building if they're stationed outside?
+/Seele	301025	Yssring, direct the engineering squad and set up a defensive line outside the ME Corp. building. We'll intercept the honkai beasts there. If you find Bronya inside ME Corp., then follow her commands instead. 	伊瑟琳！你先带着工程班以ME为后盾建立防御工事！我们要在那里迎击崩坏生物！如果在ME社中发现姐姐大人的话就把指挥权转交给姐姐大人！	イザーリンは、エンジニア班とともにME社を守る形で防御陣地を築いて。そこで崩壊生物を迎え撃つわ！もしME社内でお姉ちゃんを発見したら、その後はお姉ちゃんの指揮に従って。	NONE
+emote	54	3
+/Yssring	301026	Understood.	我知道了。	分かった！	NONE
+nop	match_names	Seele	Emesa
+portraits	59	55
+emote	59	3
+emote	55	1
+/Emesa	301027	Alright, let's move out! Be careful!	那我们先转移，你们小心！	じゃあ、先に移動するよ。そっちも気をつけろよ！	NONE
+portraits	59
+emote	59	1
+/Seele	301028	Don't worry, we'll be there right after you.	放心吧，我们马上也会转移的~	安心して、こちらもすぐに追っかけるから。	NONE
+emote	59	3
+msg	301029	Phew... The front lines are depending on us. We need to stall the Honkai beasts and buy some time while the troops are on the move!	呼…前线就靠我们了，在部队转移的过程中我们要抵挡住崩坏生物的进攻给她们创造时间！	ふぅ……前線は私たちが頼りよ。部隊が移動する間、崩壊生物の進攻を食い止めて時間を稼がなきゃ！	NONE
+choice	301644	I'll be with you!	私も一緒に戦う！	NONE	NONE
+choice	301645	I shall protect Seele!	ゼーレは私が守るから！	NONE	NONE
+emote	59	1
+/Seele	301030	Heheh, I'm almost falling for you. Unfortunately, my heart is only for my sister Bronya~	嚯嚯，稍微有点迷上你了呢，可惜我的心里只有姐姐大人呢~	ふふ、ちょっと見惚れちゃった。でも、ゼーレの心はお姉ちゃんのものだけどね～。	NONE
+msg	301031	But if you can survive this, you might have a chance with me. So try not to die, alright?	不过如果你能活下来的话，还是有一点机会的，所以就算是为了我也千万不要死哦。	生き残ろう。一緒に。絶対に死なせない。	NONE

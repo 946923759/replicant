@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Ext/other_329.png" type="Texture" id=2]
-[ext_resource path="res://Cutscene/TextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Ext/Common DialogBox.png" type="Texture" id=4]
 [ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=5]
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=6]
@@ -21,15 +21,18 @@ onready var sound:AudioStreamPlayer = $AudioStreamPlayer
 
 func _ready():
 	var rect_size:Vector2 = get_viewport().get_visible_rect().size
+	af.rect_size = rect_size
 	t.interpolate_property(af,\"rect_position:x\",rect_size.x,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.interpolate_property(af,\"modulate:a\",0,1,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.start()
 
 func NextFrameCommand():
 	var rect_size:Vector2 = get_viewport().get_visible_rect().size
+	#print(rect_size.x)
 	t.interpolate_property(af,\"rect_position:x\",null,-rect_size.x,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	t.interpolate_property(af,\"modulate:a\",null,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	af2.rect_position.y=0
+	af2.rect_size = rect_size
 	t.interpolate_property(af2,\"rect_position:x\",rect_size.x,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)
 	
 	t.start()
@@ -222,7 +225,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 960.0
 margin_top = 564.0
-margin_right = 2880.0
+margin_right = 3376.0
 margin_bottom = 1644.0
 texture = ExtResource( 4 )
 stretch_mode = 6
@@ -239,10 +242,14 @@ text = "Initial Setup"
 align = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DialogueActorFrame2"]
-margin_left = 384.0
-margin_top = 288.0
-margin_right = 1536.0
-margin_bottom = 875.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -576.0
+margin_top = -293.5
+margin_right = 576.0
+margin_bottom = 293.5
 custom_constants/separation = 40
 __meta__ = {
 "_edit_group_": true

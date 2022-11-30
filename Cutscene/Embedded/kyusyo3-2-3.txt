@@ -1,0 +1,50 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	007/006_1280x720
+msg	301131	(Rumble rumble)	轰隆……	ゴゴゴゴゴ……！	NONE
+speaker	Seele
+music	The Tower - Medium No Vocals
+bg	009/019_1280x720
+portraits	59
+emote	59	3
+msg	301132	The gate is open. Everyone stay alert!	闸门打开了，各位保持警惕！	ゲートが開いた。みんな警戒して！	NONE
+msg	301133	There's a lot of traps inside ME Corp. designed to keep out intruders. Everyone stand by outside, I'll check it out first.	ME社内的机关很多……你们在外面待机，我先进去调查一下。	……ふぅ、とりあえず異常はなさそうね。ME社内には侵入者用のトラップがたくさんあるから、みんなは外で待機。私が先に調査してくるわ。	NONE
+choice	301652	It's dangerous to go alone. Let me join you.	一人で行くのは危険過ぎる。私も一緒に行く。	NONE	NONE
+choice	301653	Don't push yourself to hard. I will go with you.	強がらないで。私も一緒に行く。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Seele
+emote	59	1
+msg	301134	There's no need to risk putting us both in danger. If anything goes wrong, you can help from the outside.	不能让大家和我一起冒险，如果有什么意外的话你们还能在外面接应。	二人揃って危険を冒す必要はないわ。何かあったら外から支援して。	NONE
+msg	301135	Hmmm~? Are you worried about me? Don't worry, I'll be fine~!	你是在担心我么？放心吧，我不会有事的~	ふふ、何？私の心配してくれてるの？大丈夫だから、安心して～！	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Seele
+emote	59	4
+msg	301136	I'm not trying to be brave! I can't let you risk your life with me. If anything goes wrong, you can help from the outside.	我才没有逞强！不能让大家和我一起冒险，如果有什么意外的话你们还能在外面接应！	強がってなんかないって！みんな揃って危険を冒すわけにいかないでしょ。何かあったら外から支援してちょうだい。	NONE
+msg	301137	What the hell! You're starting to sound more and more like my sister!	真是的！怎么感觉你的口气越来越像姐姐大人了！	まったくもう！あなたの口ぶり、だんだんお姉ちゃんに似てきた気がするわ！	NONE
+
+label	end_choices
+speaker	Seele
+emote	59	1
+msg	301138	Hey, don't give me that look, are you that worried? ....Alright, I guess you'll be able to help me if we go in together. Follow me~	不过…你说的也对，两个人一起也有个照应，那就跟我来吧~	もう、そんな目で見つめないでよ、そんなに心配？……わかったわ、二人一緒なら何かと協力もできるし、ついてきて。	NONE
+
+bg	009/020_1280x720
+emote	59	3
+tn	0	For those of you wondering if it's even possible to tell, yes, depending on which bullets she prefers. Hypothetically if she used fragmenting bullets then it would be easy to guess it was her. More importantly, isn't Bronya's main firearm a sniper rifle? Has she been fighting those androids in corridors with a sniper rifle? Seems like it would be kind of hard to aim that while running for your life.
+msg	301140	There's a lot of wreckage caused by those armored mechas here... And these bullet holes are from Bronya's gun. I knew it, she must have gone through here! 	一路上好多机甲兵器的残骸…这些弹痕是布洛妮娅姐姐的枪形成的，她们果然来过这里！	途中に機甲兵器の残骸がいっぱいあった……しかも、この弾痕はブローニャお姉ちゃんの銃。やっぱり、ここを通ったのよ！	NONE
+speaker	
+portraits	59
+emote	59	3
+se	DLC_CH00_EV03_WarningAlert
+msg	301141	*Beep*	滴滴滴——	ピピピ——	NONE
+music	Grandma
+msg	301142	「Intruders detected. Eliminate now! Eliminate now!」	「发现入侵者，立即驱逐！立即驱逐！」	「侵入者発見、直ちに駆逐せよ！」	NONE
+speaker	Seele
+portraits	59
+emote	59	3
+msg	301143	Shoot! Why are there still so many of these mechas!	糟了！怎么还有这么多机甲兵器！	まずい！まだ、こんなに機甲兵器がいたの！？	NONE
+msg	301144	Damn it, they're behind us...! We've got to keep moving forward! If they surround us, we're done for!	回去的路已经被拦截了！看来只能往前进攻了！如果被它们包夹的话就逃不掉了！	くっ、帰り道がふさがれた……！先を急ぎましょう！挟み撃ちにされたら逃げられなくなっちゃう。	NONE
+msg	301145	Cover my back. We've gotta save Bronya!	我的身后就交给你了，一定要救出姐姐大人！	背後は任せるわ。絶対にお姉ちゃんを救出しなきゃ！	NONE

@@ -1,0 +1,287 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Fonts/NotoSerifCJKjp-Black.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Ext/CG054.png" type="Texture" id=4]
+[ext_resource path="res://FM RepliCant Logo.png" type="Texture" id=5]
+[ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=6]
+[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=7]
+[ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=8]
+[ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=9]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Ext/hoyostans-logo-2.webp" type="Texture" id=11]
+[ext_resource path="res://Ext/Common Arrow.png" type="Texture" id=12]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=13]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+var curPage=0
+onready var t:Tween = $Tween
+
+func _ready():
+	$smSound.load_song(\"Negai\")
+	$Page2.rect_position.x=get_viewport().get_visible_rect().size.x
+
+
+func _on_OKButton_pressed():
+	$Click.play()
+	$FadeOut.OffCommand(\"ScreenTitleMenu\")
+
+#If Android back button pressed
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
+		#get_tree().quit();
+		$FadeOut.OffCommand(\"ScreenTitleMenu\")
+
+func _input(_event):
+	if Input.is_action_just_pressed(\"ui_accept\") or Input.is_action_just_pressed(\"ui_cancel\"):
+		$FadeOut.OffCommand(\"ScreenTitleMenu\")
+	if Input.is_action_just_pressed(\"ui_right\") and curPage==0:
+		set_page(1)
+	elif Input.is_action_just_pressed(\"ui_left\") and curPage==1:
+		set_page(0)
+	elif Input.is_action_just_pressed(\"ui_pause\") and curPage==1:
+		_on_HoyostansButton_pressed()
+		
+
+func set_page(i:int):
+	if i==0:
+		curPage=0
+		var s = get_viewport().get_visible_rect().size.x
+		t.interpolate_property($Page1,\"rect_position:x\",null,0,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+		t.interpolate_property($Page2,\"rect_position:x\",null,s,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+		t.interpolate_property($Arrow,\"rect_scale:x\",null,1,.3)
+		t.start()
+	else:
+		curPage=1
+		var s = get_viewport().get_visible_rect().size.x
+		t.interpolate_property($Page1,\"rect_position:x\",null,s*-1,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+		t.interpolate_property($Page2,\"rect_position:x\",null,0,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+		t.interpolate_property($Arrow,\"rect_scale:x\",null,-1,.3)
+		t.start()
+		
+
+func _on_Arrow_gui_input(event):
+	if (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
+		if curPage==0:
+			set_page(1)
+		else:
+			set_page(0)
+
+
+func _on_HoyostansButton_pressed():
+	OS.shell_open(\"https://hoyostans.be\")
+"
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0.0823529, 0.623529, 1 )
+use_filter = true
+extra_spacing_top = 8
+font_data = ExtResource( 10 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -1477.5, -498.388 )
+script = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 0.392157, 0.392157, 0.392157, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 7
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="smSound" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 2 )
+
+[node name="Page1" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect2" type="TextureRect" parent="Page1"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -580.0
+margin_top = 20.0
+margin_right = 580.0
+margin_bottom = 240.0
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Page1/TextureRect2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -389.0
+margin_top = -20.0
+margin_right = 389.0
+margin_bottom = 89.0
+custom_fonts/font = ExtResource( 3 )
+text = "By Amaryllis Works"
+align = 1
+
+[node name="Label" type="Label" parent="Page1"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 50.0
+margin_top = -140.0
+margin_right = 721.0
+margin_bottom = 313.0
+custom_fonts/font = SubResource( 2 )
+text = "English Translation:
+Amaryllis Works & DeepL
+
+Portugese Translation:
+demonbanex
+kebbini"
+
+[node name="Label2" type="Label" parent="Page1"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -827.0
+margin_top = -140.0
+margin_bottom = 313.0
+custom_fonts/font = SubResource( 2 )
+text = "Special Thanks:
+Mister Spaceman
+Bun Bun
+...And everyone else in the Hoyostans group!
+"
+autowrap = true
+
+[node name="Label3" type="Label" parent="Page1"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -413.0
+margin_top = -180.0
+margin_right = 414.0
+margin_bottom = -95.0
+custom_fonts/font = SubResource( 2 )
+text = "Thanks for reading!"
+align = 1
+autowrap = true
+
+[node name="Page2" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1920.0
+margin_right = 1920.0
+
+[node name="TextureRect3" type="TextureRect" parent="Page2"]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -550.0
+margin_bottom = -118.0
+texture = ExtResource( 11 )
+stretch_mode = 6
+
+[node name="Label4" type="Label" parent="Page2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -850.0
+margin_top = -540.0
+margin_right = 850.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 2 )
+text = "F.M. RepliCant is a free and open source fan project created by the Hoyostans team. Many of the assets were taken from the original game. It was created to help English speaking players experience the game's story due to GGZ not being available in English any more.
+
+Press Start or click the button to view our other projects, including a VN for GGZ's Retrospective story, translated light novels, and more!"
+align = 1
+autowrap = true
+
+[node name="HoyostansButton" type="Button" parent="Page2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -498.0
+margin_top = -380.0
+margin_right = 498.0
+margin_bottom = -235.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 13 )
+text = ">> Launch Website"
+flat = true
+
+[node name="OKButton" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -91.5
+margin_top = -100.0
+margin_right = 91.5
+margin_bottom = -36.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="OKButton"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 3 )
+text = "Close"
+align = 1
+
+[node name="FadeOut" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 6 )
+
+[node name="Arrow" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -130.0
+margin_top = -103.0
+margin_bottom = 103.0
+rect_min_size = Vector2( 130, 206 )
+rect_rotation = 180.0
+rect_pivot_offset = Vector2( 65, 103 )
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource( 12 )
+stretch_mode = 6
+
+[node name="TextureButton" type="TextureButton" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 130, 206 )
+texture_normal = ExtResource( 12 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="pressed" from="Page2/HoyostansButton" to="." method="_on_HoyostansButton_pressed"]
+[connection signal="pressed" from="OKButton" to="." method="_on_OKButton_pressed"]
+[connection signal="gui_input" from="Arrow" to="." method="_on_Arrow_gui_input"]

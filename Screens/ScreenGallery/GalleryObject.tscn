@@ -24,6 +24,7 @@ font_data = ExtResource( 7 )
 margin_right = 320.0
 margin_bottom = 180.0
 rect_min_size = Vector2( 320, 180 )
+mouse_filter = 1
 script = ExtResource( 3 )
 
 [node name="DropShadow" type="TextureRect" parent="."]
@@ -61,5 +62,6 @@ mouse_default_cursor_shape = 8
 texture = ExtResource( 8 )
 stretch_mode = 4
 
+[connection signal="gui_input" from="GalleryIcon" to="." method="onClickWrapper"]
 [connection signal="mouse_entered" from="GalleryIcon" to="." method="_on_GalleryIcon_mouse_entered"]
 [connection signal="mouse_exited" from="GalleryIcon" to="." method="_on_GalleryIcon_mouse_exited"]

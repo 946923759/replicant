@@ -5,7 +5,7 @@ signal mouse_selected_choice(selection)
 
 const Def = preload("res://stepmania-compat/StepManiaActors.gd")
 const choiceShader = preload("res://Cutscene/ChoiceShaderFadeSides.tres")
-var font = load("res://Cutscene/TextFont.tres")
+var font = load("res://Fonts/TextFont.tres")
 
 const MAX_NUM_CHOICES:int = 5
 

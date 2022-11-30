@@ -75,11 +75,8 @@ speaker	Seele
 msg	300924	Hehehe... It's all a part of my plan to cuddle you! Just let me do it once more!	嘿嘿~这当然都是为了让姐姐大人抱我的计谋啦！姐姐大人！就让我再摸一下吧！	ヘヘ～お姉ちゃんに私を抱きしめてもらう作戦大成功！お姉ちゃん！もう1回触らせて！	NONE
 speaker	Bronya
 msg	300925	Seele! Seele, wait! Stop!	希儿！等等！不要过来！	ゼーレ！待ちなさい！やめなさい！	NONE
-speaker	Seele
-msg	300926	*Grab*	噗哟~	ぷに～。	NONE
-speaker	Bronya
-tn	0	Well, exactly one other person. I don't know why they didn't say "Seele, Kyuushou's right there!"
-msg	300927	Seele! She's right there! Knock it off!	希儿！旁边还有其他人在！不要乱来啦！	ゼーレ！人がいます！変なことをしないでください！	NONE
+/Seele	300926	*Grab*	噗哟~	ぷに～。	NONE
+/Bronya	300927	Seele! She's right there! Knock it off!	希儿！旁边还有其他人在！不要乱来啦！	ゼーレ！人がいます！変なことをしないでください！	NONE
 speaker	Seele
 msg	300928	Your boobs are still the same as before~! Thank goodness~!	姐姐大人的胸部还是和以前一样呢~真好呐~	お姉ちゃんの胸は昔と変わらないね～。よかった～！	NONE
 speaker	Bronya

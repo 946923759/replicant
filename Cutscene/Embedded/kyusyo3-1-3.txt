@@ -1,0 +1,86 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	56	54	55
+music	The Tower - Medium No Vocals
+speaker	Teammate
+bg	009/044_1280x720
+portraits	59	56
+msg	301072	Report, the main hall has been secured. The armored mechas have been suppressed. We can finally take a break...	报告，大厅区域已经安全，机甲兵器攻击已经被压制了，这下终于可以松口气了……	ほ、報告します。社内ホールエリアはもう安全です。機甲兵器も制圧しました。これでやっと一息つけます……。	NONE
+portraits	59
+emote	59	1
+emote	56	0
+/Seele	301073	Good work, everyone~ Phew! What a fight!	各位辛苦了~呼！还真是一场恶斗呢！	みんな、お疲れ様～！ふう、なかなか際どかったわね……。	NONE
+emote	59	6
+emote	56	0
+msg	301074	I'm sorry... I put you all in danger because of this arbitrary decision. If I just returned to the base, this wouldn't have happened...	抱歉…都是因为我的一意孤行才让大家遇到这么大的危险，如果退回基地的话就不会……	ごめんね……私の独断専行のせいでみんなをこんな目に遭わせて。基地に引き返していればこんなことには……。	NONE
+match_names	Seele	Yssring	Emesa
+
+portraits	59	54,false,2	55,false,1
+emote	59	6
+emote	54	1
+/Yssring	301075	I honestly thought I was going to die.... It's thanks to your command that I'm still alive. Thank you.	多亏了希儿的指挥，这次真的以为要死了…能活下来真是太好了~	違う、ゼーレの指揮のおかげ。今度こそ本当に死ぬかと思った……まだ生きてて良かった。	NONE
+speaker	Emesa
+emote	59	6
+emote	55	2
+msg	301076	I don't want to admit it, but we were successful because of your efforts. So don't feel down. We still have a lot of work to do! You're going to rescue Bronya, aren't you?	虽然不想承认，不过这次战斗的成功都是你努力的成果，所以你一个人低落些什么呢，要做的事情还很多呢！不是还要救出布洛妮娅么？	今回の戦闘が成功したのはゼーレが頑張ったおかげだ、それは認める。だから一人で落ち込むな。やるべきことはまだたくさんあるんだから！ブローニャを救出するんだろ？	NONE
+speaker	Seele
+emote	59	1
+emote	55	2
+msg	301077	Everyone... Thank you~	各位…谢谢你们~	みんな……ありがと……。	NONE
+speaker	Yssring
+emote	59	1
+emote	54	1
+msg	301078	But this place is full of armored mechas... What if Bronya's already...	不过这个地方这么多机甲兵器，布洛妮娅该不会已经……	でも、こんなに機甲兵器がいるなんて……。もしかしたら、ブローニャはもう……。	NONE
+speaker	Emesa
+emote	59	1
+emote	55	4
+msg	301079	Yssring! If you say that again I'll tie you to a sandbag at the entrance and feed you to the zombies!	伊瑟琳！你要是再说这种话小心我把你绑在门口的沙袋上喂死士！	イザーリン！！それ以上言ったら、入口の柱にくくりつけてゾンビの餌にするぞ！	NONE
+emote	59	1
+emote	54	5
+/Yssring	301080	I'm sorry...	我错了……	わ、悪かったわ……。	NONE
+emote	59	6
+emote	54	5
+/Seele	301081	...	……	……。	NONE
+
+choice	301646	Don't worry, I'm sure Bronya's alright.	安心して、ブローニャならきっと大丈夫。	NONE	NONE
+choice	301647	I'd rather turn worries into action.	ここで心配してるくらいなら、今すぐ行動に移ろう。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+emote	59	1
+msg	301082	Yeah.... You're right, these robots are no match for Bronya! I've got to believe in her.	嗯…你说的对，以布洛妮娅姐姐的实力这些机甲兵器根本不算什么！我一定要相信布洛妮娅姐姐！	うん……そうよ、ブローニャお姉ちゃんの実力ならこんな機甲兵器、どうってことないわ！お姉ちゃんを信じなきゃ。	NONE
+msg	301083	The first task now is to find my sister and give her a good lecture! How can she abandon everyone at the base like that, what was she thinking?	现在的第一任务是找到姐姐然后好好说教一番！居然一声不响地抛弃大家，实在太不像话了！	今、重要なのはお姉ちゃんを探し出して説教すること！一言も告げることなくみんなを置いてくなんて、ひどすぎるもん！	NONE
+
+jmp	end_choices
+
+label	c2dest
+emote	59	6
+msg	301084	Sorry... You're right. Our biggest priority right now is to find Bronya.	抱歉…你说的对，现在的第一任务是找到布洛妮娅姐姐。	ごめん……あなたの言う通り。今、大事なのはブローニャお姉ちゃんを探すことよね。	NONE
+emote	59	1
+msg	301085	These robots are no match for her... I've got to believe in her!	以布洛妮娅姐姐的实力这些机甲兵器根本不算什么…我一定要相信她！	ブローニャお姉ちゃんの実力ならこんな機甲兵器、どうってことないわ。お姉ちゃんを信じなきゃ！	NONE
+msg	301086	When we find my sister, I'm going to talk her ear off! How the heck can she just ditch everyone at the base without saying anything like that?	等找到姐姐大人后一定要好好说教一番！居然一声不响地抛弃大家，太不像话了！	お姉ちゃんを見つけたらよーく説教しないと！一言も告げることなくみんなを置いてくなんて、ひどすぎるもん！	NONE
+
+label	end_choices
+emote	55	2
+emote	54	1
+/Yssring	301087	Seele, leave it to us to guard the camp.	阵地就交给我们守护吧……	ゼーレ、陣地の守りはこちらに任せて。	NONE
+msg	301088	...is what I'd like to day, but I'm not optimistic about our current situation. Without supplies, there's no way to keep defending ME Corp.	虽然很想说这种帅气的话…但是我们现在的情况也不容乐观，如果没有补给的话想要守住ME社是不可能的……	——って格好良く言いたいところだけど、今は楽観視できる状況じゃなくて……。補給物資がないと、ME社で戦い抜くのは不可能……。	NONE
+msg	301089	And we've built the defensive line in a rush... There's no way it's going to hold against an onslaught of Honkai beasts.	而且刚才急急忙忙铺设的应急防线防御能力很差…如果有大批的崩坏生物进攻的话很难维持下去。	さっき突貫工事で築いた防御線の防御力も心許ないし……崩壊生物が大量に攻めてきたら持ちこたえられない。	NONE
+msg	301090	On top of that, we don't have enough intel on ME Corp.'s armored mechas. If we try launching an offensive against them while the defensive line behind us is still weak, we could be surrounded on both sides. In addition——	另外，对于ME社的机甲兵器也没有足够的了解，如果在后方阵地不稳定的情况下盲目进攻的话，被前后夹击的可能性很高，另外……	それにME社の機甲兵器がいつ来るかも分からない。後方の陣地が不安定な状況でむやみに攻め込むと、前後で挟撃される可能性もある。それから——	NONE
+emote	55	4
+/Emesa	301091	Can't you ever say something to boost our morale!?	你这家伙就不能说点鼓舞士气的话么！！	もうちょっと士気を鼓舞するような話ができないのかよ！！	NONE
+emote	54	5
+/Yssring	301092	Ugh... But that's the truth...	唔…可是事实就是这样……	うぐ……でも事実はこうだし……。	NONE
+emote	59	1
+emote	54	5
+/Seele	301093	Yssring is right. We need to consolidate our defense, then investigate the surroundings. Safety is the first priority, we can’t put our family in danger anymore...	伊瑟琳说的没错，我们要先稳住阵地然后对周围的情况进行调查，必须保证部队的安全，不能再让家人涉险了……	イザーリンの話はもっともよね。まずは陣地を安定させて、それから周囲を調査しましょう。部隊の安全を確保しなきゃ。二度と家族を危険な目に遭わせないように……。	NONE
+msg	301094	Let's split up the troops. I'll lead an assault team deeper into the ME Corp. building and look for a way to stop these armored mechas.	我建议将部队分为两队，我负责突击队深入ME社调查，并找到解决这些机甲兵器的方法。	部隊を二手に分けましょう。私は突撃隊を率いてME社の奥に向かうわ。そこで、この機甲兵器を停止させる方法を探してみる。	NONE
+
+emote	59	3
+emote	54	5
+msg	301095	I'll leave the defensive line to you. Continue to fortify the defenses and hold off the advancing Honkai beasts outside. Don't let them destroy this building!	防御队就交给你们了，继续加强防御工事，将进攻的崩坏生物拦截在ME社防线外，绝对不能让它们破坏ME社！	守備隊はそちらに任せるわ。引き続き防御陣地を強化して。進攻してくる崩壊生物は、ME社の防御線の外で食い止めて。絶対にME社を破壊させないように！	NONE
+
+emote	54	1
+/Yssring	301096	Understood... We will do our best.	明白了…我们会尽力的。	わかった……全力を尽くすわ。	NONE
+
+emote	59	1
+/Seele	301097	Any more questions? No? Alright, let's move!	嗯，没有问题的话我们就开始行动吧！	うん、問題なければ、行動開始！	NONE

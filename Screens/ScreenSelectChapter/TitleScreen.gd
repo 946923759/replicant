@@ -44,6 +44,9 @@ func _ready():
 	biggestMissionNum=mSelObjs.get_child_count() #We're never adding any more so it's fine
 	
 	set_new_mission_listing(database.keys()[0])
+	
+	#Only show by default if there is a controller plugged in
+	$DescrptionF.visible = Input.get_connected_joypads().size() > 0
 	#mSelObjs.queue_sort()
 
 func handle_chapter_click(event:InputEvent,internalName:String):
@@ -121,6 +124,8 @@ func _input(event):
 	elif Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
 		mSelObjs.get_child(curMissionNumForGamepad).buttonTrigger(curMissionPartNumForGamepad)
 		return
+	elif Input.is_action_just_pressed("ui_cancel"):
+		$FadeOut.OffCommand("ScreenTitleMenu")
 	
 	if tmpChNum!=curChapterNum:
 		curChapterNum=tmpChNum

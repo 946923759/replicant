@@ -9,7 +9,7 @@ Music Test		test_music
 Choice Test		test_choice
 Background Test		test_background
 Black background test		test_blackbg
-Ending Test (SPOILERS)		test_ending
+Video Test		final_round_test
 
 --Chapter 0
 Settle Down	Check out the base.	kyusyo0-1-1,kyusyo0-1-2
@@ -31,8 +31,27 @@ Throne	Search Homu Castle	kyusyo2-3-1,kyusyo2-3-2,kyusyo2-3-3
 Peace	Take a bath with Seele and Bronya	kyusyo2-4-1,kyusyo2-4-2,kyusyo2-4-3
 
 --Chatper 3
-Be dying
-Protect
-Resolution
-Transfer
+At Death's Door	Head to ME Corporation's Headquarters	kyusyo3-1-1,kyusyo3-1-2,kyusyo3-1-3
+Protect	Find ME Corp.'s Weapons Manufacturing Plant	kyusyo3-2-1,kyusyo3-2-2,kyusyo3-2-3
+Analogus Memories 1	Save Bronya & Himeko	kyusyo3-3-1,kyusyo3-3-2
+Analogus Memories 2	Hack into ME Corp.'s mainframe	kyusyo3-4-1,kyusyo3-4-2,kyusyo3-4-3
+Resolution	Search the rest of ME Corp.'s factory
+Transfer	Head to the new base.
 Farewell	Board the Hyperion	kyusyo3-5-1,kyusyo3-5-2
+
+--Chapter 7
+Hope
+Wings
+Black Cloud
+Old Enemy
+Dead End
+Clear Way
+Wish
+Forbidden
+Fantasy
+--Chapter 7.5
+Destruction
+False Thing
+Together
+The Savior
+Ending		kyusyo7-ending-1,kyusyo7-ending-2

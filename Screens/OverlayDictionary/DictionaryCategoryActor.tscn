@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends ColorRect
+signal clicked()
+
+onready var l:Label=$Label
+var text:String=\"\" setget set_text
+#var color:Color setget set_colorr,get_colorr
+
+func set_text(t_:String):
+	text=t_
+	if is_instance_valid(l):
+		l.text=t_
+	else:
+		push_error(\"You must add a DictionaryCategoryActor to a parent before setting text!\")
+
+##It has two rs because get_color is an existing function
+#func set_colorr(c:Color):
+#	print(\"Set to \"+String(c))
+#	self.get(\"custom_styles/panel\").set(\"bg_color\",c)
+#	#color=c #Is there any point in doing this?
+#
+#func get_colorr()->Color:
+#	return self.get(\"custom_styles/panel\").get(\"bg_color\")
+
+func GainFocus():
+	print(\"GainFocus!\")
+#	set_colorr(Color.aqua)
+	#color=Color.white
+	color=Color(0, 0.564706, 0.623529, 0.596078)
+	#l.set(\"custom_colors/font_color\",Color.black)
+	
+func LoseFocus():
+	color=Color(0.14902, 0.14902, 0.14902)
+	#l.set(\"custom_colors/font_color\",Color.white)
+
+func _on_Panel_gui_input(event):
+	if event is InputEventMouseButton and event.button_index == 1:
+		if event.pressed:
+			emit_signal(\"clicked\")
+
+"
+
+[node name="Panel" type="ColorRect"]
+margin_top = 180.0
+margin_right = 400.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 400, 120 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.14902, 0.14902, 0.14902, 1 )
+script = SubResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Test Label 1
+aaaaaaa"
+align = 1
+valign = 1
+
+[connection signal="gui_input" from="." to="." method="_on_Panel_gui_input"]

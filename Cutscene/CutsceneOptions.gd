@@ -306,13 +306,7 @@ func generateMenu(optFrameActor:Control,optionsDict:Dictionary,arrowAnimation:An
 	print("[OptionsMenu] Created new menu with "+String(i)+" options")
 	#return optFrameActor
 
-func _init():
-	add_child(Def.Quad({
-		color=Color(0,0,0,.8),
-		rect_size=Vector2(1920,1080),
-		anchor_right=1,
-		anchor_bottom=1
-	}));
+func init():
 	
 	#for k in Globals.OPTIONS:
 	#	options[k]=Globals.OPTIONS[k]
@@ -364,6 +358,16 @@ func _init():
 	generateMenu(systemOptionsSubmenu,systemOptions,animation)
 	add_child(systemOptionsSubmenu)
 	#
+
+func _init():
+	add_child(Def.Quad({
+		color=Color(0,0,0,.8),
+		rect_size=Vector2(1920,1080),
+		anchor_right=1,
+		anchor_bottom=1
+	}));
+	init()
+	
 	
 onready var t = $Tween
 func _ready():

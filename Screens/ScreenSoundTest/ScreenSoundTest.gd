@@ -60,7 +60,7 @@ func _ready():
 			"name":"TextActor",
 			"text":m.name_,
 			"uppercase":false,
-			mouse_filter=MOUSE_FILTER_STOP,
+			mouse_filter=MOUSE_FILTER_PASS,
 			mouse_default_cursor_shape=CURSOR_POINTING_HAND,
 			#clip_text=true
 			#rect_scale=Vector2(.5,1),
@@ -101,10 +101,13 @@ func get_page_from_sel(sel:int)->int:
 	
 func get_current_page()->int:
 	return int(round($ScrollContainer.scroll_vertical/$ScrollContainer.rect_size.y))
+func num_pages()->int:
+	return int(len(musicDatabase)/6)
+
 func tween_to_page(sel:int):
 	var t:Tween = $Tween
 	var rSize = $ScrollContainer.rect_size.y
-	t.interpolate_property($ScrollContainer,"scroll_vertical",null,min(rSize*sel,$ScrollContainer/VBoxContainer.rect_size.y),.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.interpolate_property($ScrollContainer,"scroll_vertical",null,min(rSize*sel+20,$ScrollContainer/VBoxContainer.rect_size.y),.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
 	t.start()
 
 func _input(_event):
@@ -113,7 +116,7 @@ func _input(_event):
 		text_on_click(musicDatabase[curSel])
 		return
 	elif Input.is_action_just_pressed("ui_cancel"):
-		get_tree().change_scene("res://TitleScreen.tscn")
+		$ColorRect.OffCommand("ScreenTitleMenu")
 	if Input.is_action_just_pressed("ui_down"):
 		if newSel < len(musicDatabase)-1:
 			newSel+=1

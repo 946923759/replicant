@@ -1,0 +1,80 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	The Tower - Medium No Vocals
+preload_portraits	59	56
+match_names	Seele	Teammate
+speaker	Seele
+bg	009/018_1280x720
+portraits	59
+emote	59	1
+
+tn	0	What the heck is the hall area? The main entrance? The reception desk?
+msg	301106	We've made it through the hall area. We're now in the ME headquarters' main corridor. I didn't expect this place to be completely unscathed after the Honkai Explosion, they must have put a lot of effort into fortifying this building... 	看来我们已经突破了大厅区域，现在所在的位置是ME社内的主廊道。没想到经历了大崩坏后这里看起来居然毫无损伤，ME社的实力果然强大…	ホールエリアは突破できたわね。今いる位置はME社内のメイン通路よ……それにしても大崩壊を経たっていうのに、ここは全く損傷を受けてないみたい。ME社の技術力はやっぱりすごいね……。	NONE
+msg	301107	Let's examine this corridor carefully. Based on our intel, there's a passage that leads into the weapons manufacturing plant.	我们仔细探查一下，根据之前的情报这里应该有通往兵工厂的通道。	詳しく調査してみましょ。事前情報によると、ここに兵器工場へと続く通路があるみたい。	NONE
+
+portraits	59	56
+/Teammate	301108	Report. The gate in front of the corridor is closed. We tried to open it just now, but there doesn't seem to be any power being supplied for its operation.	报告，廊道前方的闸门被关闭了，我们刚才尝试打开，但是似乎没有电力供应，无法运作。	報告します、通路前方のゲートが閉鎖されています。さきほど開けようとしましたが、電力供給がないようでビクともしません。	NONE
+/Seele	301109	Power, huh... The main hall had power, so the backup generator must still be functioning. I wonder if the cable leading to the main corridor is cut.	电力么…大厅的电力供应还在，这表示ME社的备用发电设备尚在运作，有可能是连接主廊道的电缆被切断了。	電力か……ホールには電気が通ってたから、ME社の予備発電装置はまだ生きてるはずよね。メイン通路に繋がるケーブルが切れてしまっているのかしら。	NONE
+msg	301110	Let's search carefully and see if there's anything suspicious.	我们仔细找一下，看看有没有可疑的地方。	詳しく調べてみましょ。あやしい場所がないかどうか。	NONE
+speaker	Teammate
+se	DLC_CH00_EV07_FootStepAway
+msg	301111	Understood!	是！	はい！	NONE
+
+portraits	59
+/Seele	301113	Phew~ There aren't too many armored mechas here, I can finally catch a break. My face is numb from acting so serious in front of everyone.... I finally understand why Bronya doesn't like to smile.	呼~这里的机甲兵器也减少了，终于可以松一口气了，在大家面前表现的一本正经的样子脸都要僵硬了……终于明白姐姐大人为什么总是不喜欢笑了。	ふう～ここの機甲兵器も減ってきたね。やっと一息つけるわ。みんなの前で真剣な表情をしてたら顔が引きつっちゃった……お姉ちゃんが、どうしていつも笑わないのかやっと分かったわ。	NONE
+choice	301648	Seele looks cool when she's giving orders.	指揮してるときのゼーレってカッコイイ。	NONE	NONE
+choice	301649	I'm not used to this Seele.	こういうゼーレにはちょっと慣れない。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Seele
+msg	301114	Oh, really? Guess it's nice to change my image once in a while.	咦？真的么？看来偶尔换个形象也不错嘛。	え、ほんと？たまには雰囲気を変えてみるのもいいかもね。	NONE
+msg	301115	Ah, but I can't stand being this tense all the time. I'd rather be my normal self, you know? I prefer being friends with everyone, not leading them.	不过总是这样绷紧的样子我自己都受不了，果然我还是习惯现在的样子，与其领导大家我更喜欢成为大家的朋友~	あー、でもいつもこんなに神経を張り詰めてたら自分が持たないわ。やっぱり、今のままがいいな。みんなを指揮するより友達として一緒にワイワイしていたいもの。	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Seele
+msg	301116	Hahaha... Is that so? I can't stand being tense like this.	哈哈…果然是这样么，这样紧绷的样子我自己都受不了呢。	アハハ……やっぱりそうよね。こんなに神経を張り詰めてたら自分が持たないわ。	NONE
+msg	301117	I'd rather be my normal self. I prefer being friends with everyone over leading them.	果然我还是习惯现在的样子，与其领导大家我更喜欢成为大家的朋友~	やっぱり、元の私のままでいたいな。みんなを指揮するより友達として一緒にワイワイしていたいもの。	NONE
+
+label	end_choices
+speaker	Seele
+msg	301118	I don't think I can be as dependable as my sister. Sorry to disappoint you~	看来我还是不能像姐姐那样表现出可靠的样子呢，抱歉让你见笑了~	お姉ちゃんみたいに頼れる感じは出せないかな。恥ずかしいな～。	NONE
+choice	301650	You look reliable to me.	ゼーレは頼りになると思う。	NONE	NONE
+choice	301651	We must learn from Bronya.	もっとブローニャを見習わなきゃ。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	301119	Really...? Thanks for believing in me.	是么…谢谢你这么相信我。	そう……？そんな風に思ってくれてたんだ。ありがと。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	301120	Well.... I'm not too sure I'm capable of rising to her level.	是么…也许我成为不了姐姐大人那样伟大的人。	そうだよね。ゼーレもお姉ちゃんみたいに立派な人にならないと！	NONE
+
+label	end_choices
+msg	301121	Do you know? I used to be an absolute coward. More than I am now.	你知道么？以前的我比现在还要懦弱，是一个不折不扣的胆小鬼。	昔のゼーレはね、今よりもっと弱虫だったの。本当に臆病者で……。	NONE
+msg	301122	I was afraid of being hurt and hurting others. I would always hide myself so people couldn't see me. At one point I even wanted to disappear...	因为害怕被伤害，也害怕伤害他人，所以总是小心翼翼地隐藏着自己生怕被别人看到，一度想着就这样消失就好了……	傷つけられるのも、人を傷つけるのも怖かった。だから、いつもびくびくして隠れて、人に見られるのさえ怖くて。一度はこのまま消えてしまいたいって思ったことも……。	NONE
+msg	301123	But I have my sister to thank for changing that. She's always protected me, giving me the courage to keep on living.	不过多亏了姐姐大人在，是姐姐大人一直保护着我，给了我继续存在着的勇气与理由。	でも、お姉ちゃんがいてくれたおかげで……お姉ちゃんがずっと守ってくれたから、生き続ける勇気と理由ができたの。	NONE
+msg	301124	So I've gotta be strong for her. At the very least, I can't let her see me being a coward again or she'll trip all over herself trying to help me.	所以为了姐姐大人我也要变得坚强起来，至少不能让姐姐大人再看到我懦弱的样子，这样她又会被我绊住而无法前进。	だから、お姉ちゃんのためにも強くならなきゃ。少なくとも、お姉ちゃんにもう弱いところは見せられない。また足手まといにはなりたくないもの。	NONE
+
+emote	59	6
+msg	301125	Because she needs to find the person she's searching for...	无法找到她想要追逐的那个身影……	お姉ちゃんが、あの人を探す邪魔にならないように……。	NONE
+
+portraits	59	56
+emote	56	0
+/Teammate	301126	We've found the damaged cable and we're repairing it now. The power should be restored shortly.	报告，我们找到了损坏的电缆了，目前正在抢修中，应该马上就能恢复电力了。	報告します。損壊したケーブルを発見しました。現在、応急処置をしています。間もなく電力も復旧する見込みです。	NONE
+
+speaker	Seele
+emote	59	3
+emote	56	0
+msg	301127	Got it. Assemble the rest of the squad and have them protect the ones repairing it!	明白了，让其他队员立即集合，保护电缆抢修！	わかった。他の隊員も集合させてケーブル修理を援護して！	NONE
+
+speaker	Teammate
+emote	59	3
+emote	56	0
+msg	301128	Understood!	了解！	了解！	NONE
+
+speaker	Seele
+emote	59	1
+emote	56	0
+msg	301129	Sorry for boring you with my monologuing.	抱歉，说了这么多无聊的话~	ごめんね、こんなつまらない話をして。	NONE
+msg	301130	Let's go, the real battle begins now!	我们走吧，真正的战斗现在才开始！	行きましょ、まだまだ戦わなきゃいけないんだから！	NONE

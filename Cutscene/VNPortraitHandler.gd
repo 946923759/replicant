@@ -26,7 +26,11 @@ var blendAdd:Light2D
 #onready var tween = Tween.new()
 
 func _draw():
-	if portrait_textures.size()==0 or !is_instance_valid(portrait_textures[cur_expression]):
+	if cur_expression > len(portrait_textures)-1:
+		#print("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(cur_expression)+"!!")
+		return
+		
+	elif portrait_textures.size()==0 or !is_instance_valid(portrait_textures[cur_expression]):
 		#print("No texture present at idx "+String(cur_expression)+".")
 		return
 	if is_masked:
@@ -205,6 +209,7 @@ func is_tweening()->bool:
 
 func set_texture_wrapper(sprName):
 	lastLoaded=sprName
+	cur_expression=0
 	if sprName in Globals.database:
 		var toLoad = Globals.database[sprName]
 		print("Got textures to load... "+String(toLoad))

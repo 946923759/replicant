@@ -194,7 +194,31 @@ func save_system_data()->bool:
 	return true
 
 func _ready():
+	
 	gameResolution = get_viewport().get_visible_rect().size
+	
+	var forcedFullscreen = 0
+	for arg in OS.get_cmdline_args():
+		print("Cmdline arg: "+arg)
+		if arg.find("=") > -1:
+			var kv = arg.split("=")
+			if kv[0]=="--force-res":
+				#print("Found cmdline arg --force-res="+kv[1])
+				if kv[1].find("x") > -1:
+					var w_h = kv[1].split('x')
+					if w_h[0].is_valid_integer() and w_h[1].is_valid_integer():
+						var w = int(w_h[0])
+						var h = int(w_h[1])
+						if w>0 and h>0:
+							gameResolution=Vector2(w,h)
+							OS.window_size = gameResolution
+							OS.center_window()
+			elif kv[1]=="--fullscreen":
+				if kv[1].to_lower()=="true":
+					forcedFullscreen=2
+				else:
+					forcedFullscreen=1
+	
 # warning-ignore:narrowing_conversion
 	SCREEN_CENTER_X = gameResolution.x/2
 # warning-ignore:narrowing_conversion
@@ -256,9 +280,19 @@ func _ready():
 	playerHadSystemData = load_system_data()
 	if playerHadSystemData:
 		set_audio_levels()
-		INITrans.SetLanguage(Globals.OPTIONS["language"]['value'])
+		INITrans.SetLanguage(OPTIONS["language"]['value'])
 	else:
-		INITrans.SetLanguage(Globals.OPTIONS["language"]['default'])
+		INITrans.SetLanguage(OPTIONS["language"]['default'])
+
+		
+	if forcedFullscreen>0:
+		set_fullscreen(forcedFullscreen==2)
+	elif playerHadSystemData:
+		#It's annoying when I'm debugging
+		if !OS.is_debug_build():
+			set_fullscreen(OPTIONS['isFullscreen']['value'])
+		else:
+			print("Fullscreen setting is ignored in debug.")
 
 
 var wasFullscreen:bool = false
@@ -327,7 +361,8 @@ var SCREENS:Dictionary = {
 	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTest.tscn",
 	"ScreenFirstRun":"res://Screens/ScreenFirstRun.tscn",
 	"ScreenSelectChapter":"res://Screens/ScreenSelectChapter/TitleScreen.tscn",
-	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn"
+	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn",
+	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV2.tscn"
 
 }
 

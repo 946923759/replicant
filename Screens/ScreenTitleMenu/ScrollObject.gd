@@ -1,6 +1,7 @@
 extends Node2D
 tool
 signal clicked()
+#signal mouseover()
 
 export(int,"Read","Gallery","Music","Options","Quit") var ToLoad setget set_sprite
 var l = ["Read","Gallery","Music","Options","Quit"]

@@ -25,7 +25,7 @@ speaker	Himeko
 msg	300645	You're most welcome.	客套话就免了。	お世辞は結構よ。	NONE
 speaker	Bronya
 emote	60	1
-msg	300646	I've called you here because I have a mission for uou.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
+msg	300646	I've called you here because I have a mission for you.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
 msg	300647	During the previous investigation, the Grey Moths lost a significant number of personnel to injuries and had to leave the front lines. Therefore, they're in need of replacements. I've recommended you to Captain Himeko.	灰蛾部队在之前的调查任务中有一批受伤的队员被换下了战斗，所以需要补充人员，因此我向姬子队长推荐了你。	灰蛾部隊はこの前の調査任務の途中、かなりの隊員が負傷して戦線を離脱しました。そのため補充人員が必要です。そこで、姫子隊長にあなたを推薦しました。	NONE
 choice	300648	Yes, it's my pleasure.	喜んで受ける。	NONE	NONE
 choice	300649	I need to think about it.	ちょっと考えさせて。	NONE	NONE

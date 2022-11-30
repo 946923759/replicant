@@ -1,0 +1,64 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	60	59	61
+music	Grandma
+speaker	
+bg	009/020_1280x720
+se	DLC_CH03_EV02_GateClose
+msg	301176	Bang!	轰！	ゴゴゴゴゴ……！	NONE
+match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
+portraits	59	60	61
+emote	59	3
+/Seele	301177	Oh no... The gate's closed!	大门关上了……	そんな……ゲートが閉まっちゃった！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301178	Shit, we didn't make it!	啧！没赶上么！	チッ、間に合わなかった！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301179	Let's find another way out!	我们找找看有没有其他的出口吧！	他の出口を探しましょ！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	1
+msg	301180	Wait, moving around unnecessarily will only drain your energy. It's not a good idea to exhaust yourself in this situation.	没有目标的行动只会消耗战力，还是不要白费功夫了，我们现在没有这么多时间浪费。	待ちなさい、むやみに動き回っても体力を消耗するだけよ。この状況での消耗は得策ではないわ。	NONE
+speaker	Seele
+emote	59	3
+emote	61	1
+msg	301181	But...	可是……	でも……。	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301182	Don't panic, there must be a way.	不要着急，肯定还有方法。	焦らないでください、必ず方法はあります。	NONE
+msg	301183	A massive weapons manufacturing plant like this should have a system to control the entire site at once. If we can get to the control room, we might be able to stop the production of these mechs.	这么大的兵工厂有着统一的管理系统，如果能到达控制室或许就能阻止这些机甲的生产。	こんなに大きな兵器工場なら、一括で現場を管理するシステムがあるはず。制御室に辿り着ければ、この機甲の生産を止められるかも。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	1
+msg	301184	Are you kidding me? We'd die before we ever find the control room!	等你找到控制室我们尸体都凉了！	これから崩壊生物との戦いが控えてるっていうのに、まだ機甲兵器と戦おうって言うの！？制御室を見つける前に、こっちが死体になってるわよ！	NONE
+speaker	Bronya
+emote	60	3
+emote	61	1
+msg	301185	Trust me... I know where it is! Follow me!	相信我…我知道它在哪！跟我来！	制御室の場所……いえ、知ってます！ブローニャは、制御室の場所がわかります！！ついてきてください！	NONE
+speaker	Seele
+emote	59	3
+emote	61	1
+msg	301186	Concentrate your firepower and draw away the armored weapons! Cover Bronya so she can get out of here!	我们集中火力把机甲兵器分割开，掩护姐姐大人离开！	火力を集中して機甲兵器を引き離そう！お姉ちゃんを援護して！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301187	Damn, what a pain in the ass!	啧，真是麻烦！	チッ、まったく面倒ね！	NONE
+speaker	
+emote	59	3
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301188	Dadada!	哒哒哒！！	ダダダッ！！	NONE
+speaker	Bronya
+emote	60	3
+msg	301189	I've got to think... I remember what I experienced when I was with ME Corp. with my sister Mei. The location of the control room is.....	仔细想想…那个时候和芽衣姐姐在ME社中经历的事情，兵工厂的控制室位置一定记录过……	思い出すのです……あのとき芽衣姉様とME社内で経験したことを。兵器工場の制御室の場所は……。	NONE
+msg	301190	...	……	……。	NONE
+speaker	Himeko
+emote	60	3
+emote	61	2
+msg	301191	Hey! Hey! What are you dawdling for? Hurry up!	喂！别愣着你倒是快走啊！	ちょっと！何ぼんやりしてるの、急いで！	NONE
+speaker	Bronya
+emote	60	3
+emote	61	2
+msg	301192	This way!	这边！	こっちです！	NONE

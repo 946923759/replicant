@@ -1,68 +1,169 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
-speaker	Himeko
-bg	009/014_1280x720
-portraits	60	61
-emote	61	1
-/Himeko	301580	The Grey Moths are beginning to board.	灰蛾部队开始登舰。	灰蛾部隊、搭乗開始。	NONE
-emote	60	1
-emote	61	1
-/Bronya	301581	Be careful. If you encounter a Herrscher, retreat immediately and don't try to engage her.	你们要小心。如果遇到律者千万不要战斗，立刻返回。	気をつけてください。もし律者に遭遇したらくれぐれも戦いは避け、直ちに引き返してください。	NONE
-emote	60	1
-emote	61	1
-/Himeko	301582	That depends on if she's willing to let us go.	前提是她得放我们走。	向こうが逃がしてくれればね。	NONE
-speaker	Yssring
-portraits	60	61	54
-emote	60	1
-emote	54	1
-msg	301583	Testing... Is the Hyperion ready to take off? The gates are about to open.	喂喂…休伯利安准备好了么？闸门马上要开启了。	ねぇ……ハイペリオンの準備はいい？ゲート、開くわよ。	NONE
-speaker	Himeko
-emote	60	1
-emote	61	1
-msg	301584	The Hyperion is ready, let's go!	准备完毕，出发！	OKよ。ハイペリオン、出発！！	NONE
-speaker	Yssring
-emote	60	1
-emote	54	1
-msg	301585	Copy that. Opening the gates.	了解，闸门开启。	了解、ゲート開放。	NONE
-music	The Dark Colossus Destroys All
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	60	61	54	55
+match_names	Yssring	Emesa	_DIM_ALL_WHEN_EMPTY
+music	The Tower - Medium No Vocals
+portraits	54	55
 speaker	
-emote	60	1
-se	DLC_CH00_EV04_ExplosionClose
-shake_camera
-msg	301586	Boom!!	轰隆！！！！	ドゴーン！！！！	NONE
-se	DLC_CH00_EV03_WarningAlert
-msg	301587	"Alert! Alert! The base is under attack!"	「警报！警报！基地遭到攻击！」	「警報！警報！基地が攻撃を受けました！」	NONE
+bg	009/044_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301352	[Tatatatat!]	哒哒哒！！	ダダダッ！！	NONE
+
 speaker	Yssring
-emote	60	1
+emote	54	5
+emote	55	4
+msg	301353	Ayeeeee! I'm gonna die! We're all gonna die! There's enemies everywhere! We're going to die for real!!!	呜哇！要死了！要死了！要死了！到处都是敌人！这次死定了！	ぎゃあ！死ぬ死ぬ、もう死ぬ！どこもかしこも敵だらけ！今度こそ死ぬ……！	NONE
+speaker	Emesa
+msg	301354	Shut the ☆☆ up! If you make any more noise I'm going to ☆☆ing throw you to a horde of zombies!	你个OO吵死了！再鬼叫就OO把你扔到怪堆里去！！	うっせえな！それ以上わめくとゾンビの山に放り投げるぞ！！	NONE
+speaker	Yssring
 emote	54	3
-msg	301588	Ugh! What now?!	呃！又发生什么了！	ええっ？！今度は何？！	NONE
-speaker	Teammate
-portraits	60	61	56
-emote	60	1
-emote	56	0
-msg	301589	Report! A large number of Honkai beasts have been spotted near the base! We are surrounded!	报告！基地附近发现大量崩坏生物！我们被包围了！	報告します！基地の周囲で大量の崩壊生物を発見！包囲されています！	NONE
-emote	60	5
-emote	56	0
-/Bronya	301590	What?! I can't believe they're here already....	什么！居然这么快就……	まさか！こんなに早く……。	NONE
-speaker	Teammate
-emote	60	5
-emote	56	0
-msg	301591	Hey, look! What's that in the sky!?	喂！你们看！天上那个是什么东西！	ねぇ、見て！空のあれは何！？	NONE
-portraits
-speaker	
-bg	009/039_1280x720
-/Bronya	301593	That's... A new species of Honkai beast?!	这个是……新生种！？	あれは……新種の崩壊生物！？	NONE
+msg	301355	No! Give me a wrench! I'd rather die painlessly by my own hands than be blown to bits by a machine!	不要！你给我把扳手！与其被机甲炸成灰我宁愿死在自己手上！	やだ！スパナをちょうだい！機甲に焼かれ悶えながら灰になるくらいなら、自分の手で苦しむことなく死ぬわ！	NONE
+speaker	Emesa
+emote	55	4
+msg	301356	Then how about I ☆☆ing beat you to death with this wrench!	那就让我OO先一扳手砸死你！	だったら、その前に叩き殺してやるよ！	NONE
 speaker	Yssring
-msg	301594	What is that thing...? That's.... A dragon!?	怎！怎么会有这种东西……这个是龙么！？	なっ……何であんなのが……あれは……ドラゴン！？	NONE
+emote	54	3
+msg	301357	Whoa! Don’t kill me, Emesa! Help!	呜哇！埃米沙你要杀了我么！救命！！！	いやあ！エミザに殺されるぅ！助けてぇ！！！	NONE
+speaker	Emesa
+emote	55	4
+msg	301358	Don't Call me Emesa!	不要叫我埃米沙！	エミザって呼ぶな！	NONE
 speaker	
-shake_camera	.2
-se	DLC_CH03_EV05_ThunderBig
-msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
-/Seele	301595	There's thunderclouds in the sky... Is that Mei!?	芽衣姐姐！天空中的雷暴云…难道是芽衣姐姐么！	上空の雷雲……もしかして芽衣お姉ちゃんじゃない！？	NONE
-/Bronya	301596	The Herrscher....	律者……	律者……。	NONE
-bg	009/047_1280x720	fade
-msg	301597	Seele! Inform everyone! Abandon the base and board the Hyperion! We need to evacuate immediately!	希儿！传达给所有人！放弃基地全部登船！我们得立刻撤离！	ゼーレ！全員に伝えてください！基地を捨てて全員ハイペリオンへ乗船！ただちにここを離れます！	NONE
-/Seele	301598	Ah... Got it!	好…好的！	わ……わかった！	NONE
-/Yssring	301599	Waaaa... Let, Let me on first!	呜哇…让！让我先上去！	うわわ……さ、先に乗せて！	NONE
-/Emesa	301600	Yssring, get the ☆☆ down! Let the children board the ship first! Help me carry the wounded!	伊瑟琳！你OO给我下来！让孩子们先登船！给我去搬伤员！	イザーリン！このバカ、降りてこい！子どもたちを先に乗せろ！負傷者を運ぶの手伝え！	NONE
-/Bronya	301601	Calm down! Just leave your things there! Queue up! Combatants should fend off the Houkai beasts in front of the gate with me! We must guarantee Hyperion's successful launch!	大家冷静！不要管物品了！有序登船！战斗人员跟我一起清理闸门前的崩坏生物！我们要保证休伯利安出站！	みなさん冷静に！持ち物には構わず、慌てず乗船してください！戦闘員は私と一緒にゲート前へ！崩壊生物を退治し、ハイペリオンが出航できるようにします！	NONE
-/Seele	301602	Let's go! We have to help Bronya! Stop those Honkai beasts!	走！我们去帮姐姐大人！一定要挡住崩坏生物！	行こう！お姉ちゃんを助けないと！崩壊生物を食い止めよう！	NONE
+msg	301359	[ka-chink, Ka-chink]	喀拉…喀拉…！	ギ……ガガ……。	NONE
+speaker	Emesa
+emote	55	4
+msg	301360	Huh? What's going on, the machines stopped moving... Did they run out of power?	呃！怎么回事，这些机甲怎么不动了，难道是没电了？	え！？なんだ、機甲の動きが止まった……電池切れか？	NONE
+speaker	Yssring
+emote	54	6
+msg	301361	Huh? Really? Wooo! We're saved!	咦？真的么！呜哇！得救了！	え、ほんと！？た、助かった……の？	NONE
+
+match_names	Seele	Bronya	Himeko	Yssring	Emesa	_DIM_ALL_WHEN_EMPTY
+portraits	59,false,-1	60,false,-1	61,false,-1	54,false,2	55,false,1
+emote	59	3
+emote	54	6
+/Seele	301362	Emesa! Yssring!	埃米沙！伊瑟琳！	エミザ！イザーリン！	NONE
+speaker	Yssring
+emote	59	3
+emote	54	6
+msg	301363	It's Seele! And Bronya and the others too!	是希儿！还有布洛妮娅他们！	ゼーレ！！ブローニャたちもいる……！	NONE
+speaker	Emesa
+emote	59	3
+emote	55	2
+msg	301364	Huh. ...... Looks like it's safe and sound over there, too. Lucky bastards.	呼…看来他们果然也没事呢，真是狗屎运十足的家伙们~	ふぅ……どうやら、あちらも無事みたいだな。まったく運のいい奴らだ。	NONE
+speaker	Yssring
+emote	59	3
+emote	54	6
+msg	301365	Bronya, the armored mechas here suddenly stopped moving. Did you guys do it?	布洛妮娅，这里的机甲兵器忽然瘫痪了，是你们干的么？	ブローニャ、ここの機甲兵器が突然動きを止めたんだけど、あなたたちのおかげ？	NONE
+speaker	Seele
+emote	59	1
+emote	54	6
+msg	301366	Of course! Bronya hacked into the ME Corp.'s network to stop them!	那当然！多亏了姐姐大人侵入到了ME社的系统中才把这就家伙停住的呢！	当然でしょ！お姉ちゃんがME社のシステムに侵入してくれたから、こいつらは止まったのよ！	NONE
+speaker	Himeko
+emote	59	1
+emote	61	1
+msg	301367	Hmph... It was because she did that that she got eroded by honkai energy and nearly got our team wiped out.	哼…为此意思还被崩坏能侵蚀，差点全军覆没。	フン……そのために崩壊エネルギーに侵食されて、あやうく全滅するところだったけど。	NONE
+speaker	Seele
+emote	59	4
+emote	61	1
+msg	301368	Himeko, would it kill you to keep quiet!?	姬子你少说几句话会死么！	姫子さん、余計なこと言わない！	NONE
+speaker	Yssring
+emote	59	4
+emote	54	3
+msg	301369	Honkai Energy... I should have considered that. The black boxes from the disassembled ones showed that their systems had been damaged beyond operation, but somehow they were still moving. Something else must have been controlling them.	崩坏能么…我应该早点想到的，这些机甲的黑匣子显示它们的系统都已经被破坏了，然而却还能运作战斗，一定是有着其他的东西在控制着它们。	崩壊エネルギーか……早く気づくべきだった。この機甲のブラックボックスを見ると、システムはとうに破壊されてる。それでもまだ動いていたということは、何か別のものにコントロールされていたのは明白……。	NONE
+msg	301370	I didn't expect it to be Honkai... So Honkai can erode even mechanical things....	没想到居然是崩坏，这个灾难已经连机械都可以侵蚀了么……	それが崩壊だったとはね。この厄災はもはや機械だろうと侵食できちゃうのね……。	NONE
+speaker	Emesa
+emote	59	4
+emote	55	1
+msg	301371	Bronya, are you feeling alright!? You're not zombifying, right?! I can't cure Honkai erosion!	布洛妮娅你现在没事吧！？被崩坏侵蚀不是会变成死士么！我可治不了这个啊！	ブローニャは大丈夫なのか！？崩壊に侵食されてゾンビ化しなかったの？それはこっちじゃ治せないからな！	NONE
+speaker	Bronya
+emote	59	4
+emote	60	2
+tn	0	Literal translation was "Luckily seele helped me complete the mission in time. The connection to the Honkai energy was also cut off."
+msg	301372	I'm fine... Luckily Seele helped me finish the mission and cut off the connection before it could kill me. 	我已经没事了…幸好希儿帮我及时完成了任务，切断了崩坏能的连接。	もう大丈夫です……幸いゼーレが助けてくれたので任務を遂行できました。崩壊エネルギーとの接続も解除されています。	NONE
+speaker	Seele
+emote	59	2
+emote	60	2
+msg	301373	Hehe~ This time I'm the star of the show!	嘿嘿~这次我可是立大功了哦！	エヘヘ～今回はゼーレ、大手柄でしょ！	NONE
+speaker	Bronya
+emote	59	2
+emote	60	2
+msg	301374	Sorry for making everyone worry.	抱歉，让各位担心了。	すみません、心配をかけて。	NONE
+msg	301375	Thanks to everyone’s hard work, this operation is successful!	多亏了大家的努力奋战，这次的作战才能宣告成功！	みなさんが頑張って戦ってくれたおかげで、今回の作戦は成功したのです。	NONE
+speaker	Seele
+emote	59	2
+emote	60	2
+msg	301376	Alriiiiight! Victory!!	噢噢噢！！胜利啦！！	やったああ！！勝利ーー！！	NONE
+speaker	Himeko
+emote	59	2
+emote	61	1
+msg	301377	Don't celebrate just yet. There's still Honkai Beasts outside the buildings. We're not completely safe yet.	别高兴的太早，门外不是还有崩坏生物么，我们还没有脱离危险呢。	喜ぶのは早いわ。外にはまだ崩壊生物がいるんでしょ。まだ危機は脱していないのよ。	NONE
+speaker	Seele
+emote	59	4
+emote	61	1
+msg	301378	Ugh, Himeko, read the room! C'mon, someone join me and let's all cheer for our victory. Hey, don't just stand there, you join too!	呃！姬子真是讨厌！难道就没有人欢呼一下助助兴么！喂！你怎么站在一旁一句话也不说呀！	もう、姫子さんったら空気読まないんだから！誰か一緒にバンザイして盛り上げてよ。ねえ、あなたも黙って突っ立ってないで！	NONE
+choice	301656	The battle tired me out...	戦闘で疲れすぎて力が出ない……	NONE	NONE
+choice	301657	I'm relieved that everyone is safe and sound.	みんな生きてて本当に良かった。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Seele
+emote	59	1
+msg	301379	Hmph~ Sounds like you need more training. There's going to be a lot more battles like this~	哼~看来你的锻炼还不够呢，严酷的战斗还在后面呢~	もうっ、どうやら鍛錬が足りないみたいね。バンザイする気力もないなんて！	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Seele
+emote	59	1
+msg	301380	Yeah... That battle was really tough. It's good that everyone survived, but it's going to get harder from here on out.	呜…说的也是，这次的战斗真的很不容易，不过更严酷的战斗还在后面。	そうね。今回の戦いは本当にきつかったわ。でも、こうしてまたみんなに会えて良かった。	NONE
+
+label	end_choices
+emote	60	2
+msg	301381	Our victory at ME Corporation is only the first step in our counterattack. Now that we've secured the weapons manufacturing plant, we have to fight back against the Herrschers. Like Seele said, it's only going to get harder from here on out.	希儿说的没错，ME社的胜利只是第一步，夺取兵工厂的机甲制造线后面要向律者发起挑战，那才是最困难的战斗。	ME社での勝利は、反撃の第一歩に過ぎません。兵器工場の機甲製造ラインを奪取したのです、次は律者に戦いを挑みます。これは想像を絶するような、非常に苦しい戦いになるでしょう。	NONE
+speaker	Yssring
+emote	54	6
+msg	301382	Huh? You've secured the manufacturing plant? So.... We can produce our own mechas now?	诶！你们夺取了机甲的制造流水线了么！这么说我们也可以制造机甲兵器了？	えっ！機甲の製造ラインを奪取した！？……ってことは、私たちも機甲兵器を製造できるの？	NONE
+speaker	Bronya
+emote	60	2
+msg	301383	That's right. We're able to manufacture armored mechas and repair HOMU robots. We'll be able to increase our fighting power with this.	没错，不仅是机甲兵器，吼姆机器人也可以得到完备的补给，成为更强的战力。	その通りです。機甲兵器だけでなく、ホムロボットにも万全な整備ができます。もっと戦力を補強できるでしょう。	NONE
+speaker	Yssring
+emote	54	6
+msg	301384	Woohoo! That's great! Today is the happiest day I've had in years!	呜哇！太好了！今天是我这几年来最幸福的一天！	わお！やったあ！！今日はここ数年で一番幸せな日だわ！	NONE
+speaker	Emesa
+emote	55	2
+msg	301385	Yssring is so excited, is something wrong with her?	伊瑟琳这家伙居然这么兴奋，是不是脑子烧坏了？	いっつも気怠げなイザーリンがこんなに興奮するなんてな。頭、イカレちまったか？	NONE
+speaker	Yssring
+emote	54	6
+msg	301386	You wouldn't understand... How difficult it was to manufacture things under these conditions! Where's the production line! Let's go, let's go!	你是不会懂的…在艰苦的条件下制造发明的过程有多痛苦！流水线在哪！快带我去！	あなたには分からないでしょうね……この厳しい状況下で製造や発明をするのがどれだけ大変なことかを……製造ラインはあっち？早く行きましょう！	NONE
+speaker	Himeko
+emote	61	1
+msg	301387	Calm down. There's still Honkai beasts outside. I hope you haven't forgotten.	别太高兴了，不要忘了门口的崩坏生物还没有消灭。	落ち着きなさい。入口にはまだ崩壊生物がいるのよ。忘れてないでしょうね。	NONE
+speaker	Bronya
+emote	60	2
+msg	301388	Right. Let's not rush things, everyone. There's still a lot of work that needs to be done. We have to eliminate the Honkai beasts outside, then migrate from the station to the ME Corporation's building, and then....	嗯，各位不要太着急。我们后面要做的事情还很多，在战胜外面的崩坏生物后我们要把基地从车站转移到ME社，还有……	ええ、みなさん焦りすぎてはいけません。まだこれからやらねばならないことがたくさんあります。外の崩壊生物を退治して、基地を駅からME社に移して、それから……。	NONE
+speaker	
+se	DLC_CH00_EV03_WarningAlert
+msg	301389	「Warning! Warning! A Honkai Energy leak has detected within the building! All entrances will be locked! Please evacuate to the designated location!」	「警报！警报！ME社内发现崩坏能泄露反应！全部入口即将封锁！请内部人员达到指定地点避难！」	「警報！警報！ME社内で崩壊エネルギーの漏出反応あり！全ての入口がまもなく封鎖されます！中にいる人は指定の地点に避難してください！」	NONE
+speaker	Bronya
+emote	60	5
+msg	301390	!?	！？	なっ！？	NONE
+
+speaker	Teammate
+portraits	59,false,-1	60,false,-1	61,false,-1	56,false,2
+emote	56	0
+msg	301391	Report! The gate at the main hall's entrance has been shut. The Honkai beasts can't get in, but we can't get out!	报告！大厅入口处的大门关闭了，虽然阻隔了崩坏生物的进攻但是我们也出不去了！	報告します！ホール入口のゲートが閉鎖されました。崩壊生物の進攻は阻めますが、これでは外に出ることもできません！	NONE
+
+speaker	Yssring
+portraits	59,false,-1	60,false,-1	61,false,-1	54,false,2	55,false,1
+emote	54	3
+msg	301392	What's going on? I thought Bronya already took control of ME Corp.'s security system, why is this....	怎么回事，ME社的系统不是被布洛妮娅控制了么？为什么还会……	どういうこと？ME社のシステムはブローニャが制御したんじゃなかったの？どうしてこんな……。	NONE
+speaker	Bronya
+emote	60	3
+msg	301393	Project Bunny detected a large Honkai Energy reaction inside the building. Did I fail to get rid of all the energy....?	重装小兔检测到ME社内部有巨大的崩坏能反应，难道刚才的那些崩坏能并没有消散么……	……重装ウサギがME社の内部で巨大な崩壊エネルギー反応を検出しました。ブローニャを侵食した崩壊エネルギーが消え去っていなかったのでしょうか……。	NONE
+speaker	Himeko
+emote	61	2
+msg	301394	Damn, what a total pain in the ass! Let's go! Whatever's in there, I'm going to destroy it completely!	啧！真是烦死了！我们走！不管里面是什么东西这次一定要宰它！	チッ、まったく厄介ね！行くわよ！中に何がいようと、今度こそ葬ってやるわ！	NONE
+speaker	Bronya
+emote	60	3
+msg	301395	Yeah, let's go! Everyone, stay alert! The armored mechas from earlier might be active again.	嗯，我们也去！大家保持警惕！也许里面的机甲兵器又重新活动了也说不定！	ええ、行きましょう！みなさん警戒を怠らずに！もしかしたら、機甲兵器がまた活動を再開するかもしれません。	NONE
+speaker	Seele
+emote	59	3
+emote	60	3
+msg	301396	Roger!	了解！	了解！	NONE

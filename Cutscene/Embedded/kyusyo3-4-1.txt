@@ -145,14 +145,12 @@ portraits	59	61
 emote	60	5
 se	DLC_CH00_EV03_WarningAlert
 msg	301240	「Warning! Warning! Honkai Reaction detected! Locking down the area! All noncombatants must evacuate immediately!」	「警报！警报！发现崩坏能反应！封锁区域！请非作战人员立即撤离！」	「警報！警報！崩壊エネルギー反応を検出！エリアを封鎖します！戦闘要員以外は速やかに撤退してください！」	NONE
-speaker	Seele
+match_names	Seele	Himeko
 emote	59	3
 se	DLC_CH03_EV01_GunAndExplosion
-msg	301241	Ugh! What the hell! Why's the alarm suddenly going off?	呃！怎么回事！为什么忽然想起警报了？	え！？どういうこと？どうして急に警報が！？	NONE
-speaker	Himeko
-emote	59	3
+/Seele	301241	Ugh! What the hell! Why's the alarm suddenly going off?	呃！怎么回事！为什么忽然想起警报了？	え！？どういうこと？どうして急に警報が！？	NONE
 emote	61	1
-msg	301242	Looks like the original defense system has been restored. Did Bronya....?	看来原本瘫痪的防御系统被激活了，难道是布洛妮娅么……	どうやら麻痺していた防衛システムが復活したみたいね。まさかブローニャが……。	NONE
+/Himeko	301242	Looks like the original defense system has been restored. Did Bronya....?	看来原本瘫痪的防御系统被激活了，难道是布洛妮娅么……	どうやら麻痺していた防衛システムが復活したみたいね。まさかブローニャが……。	NONE
 speaker	
 emote	59	3
 msg	301243	Bang!	轰！	ドゴーン！	NONE

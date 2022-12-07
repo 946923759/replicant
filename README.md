@@ -1,13 +1,13 @@
-# RepliCant
-A standalone VN engine written for Guns Girl Z and (soon) Girls' Frontline. Currently being used in Reina-Chan to power its cutscenes.
+![F.M. RepliCant](FM RepliCant Logo.png)
+A standalone VN engine written for Guns Girl Z: Fire Moth DLC.
 
 ## Features
-- Resize window on the fly
+- Resize window on the fly, supports any resolutions close to 16:9
 - Automatic portrait positioning
-- Load database from GGZ or GFL
+- Load portrait database from GGZ or GFL
 - Load music internally or externally
-- Multilanguage messages
-- Supports mouse and touchscreen, keyboard is WIP but mostly works
+- Scripts have multilanguage support built in
+- Supports mouse, keyboard, game controller, and touchscreen
 
 ## Project Structure
 Backgrounds: Dumped game backgrounds, matches game structure

@@ -1,4 +1,5 @@
-![F.M. RepliCant](FM RepliCant Logo.png)
+![F.M. RepliCant](https://github.com/946923759/replicant/blob/main/FM%20RepliCant%20Logo.png?raw=true)
+
 A standalone VN engine written for Guns Girl Z: Fire Moth DLC.
 
 ## Features

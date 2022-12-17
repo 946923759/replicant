@@ -1,0 +1,38 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	007/006_1280x720
+msg	301496	...	……	……。	NONE
+msg	301497	.........	………	…………。	NONE
+msg	301498	I'm back here again.......	又回到这里了么……	また、ここに戻って来た……。	NONE
+msg	301499	The last thing I remember was a tense battle.... And then suddenly I couldn't hear anything....	印象里还记得刚才还在经历紧张的战斗，忽然世界突然安静了下来，然后就听不到任何的声音。	さっきまでの緊迫した戦闘が、生々しい感触を私の中に残している……それなのに突然世界が静まりかえって、何の音も聞こえなくなって……。	NONE
+msg	301500	Am I dead? Or is this another bizarre dream?	我难道是死了么…还是又是一场无聊的梦境而已呢？	もしかして私死んだの……それとも、またくだらない夢を見てるだけ？	NONE
+msg	301501	Forget it.... I'm too tired. I'll take a nap.......	算了…好累，还是先休息一下吧……	ま、いっか……疲れた……とりあえずひと休みしよう……。	NONE
+/???	301502	No, don't sleep. Otherwise you will end up like me and cannot wake up again......	不要睡，睡着的话就会像我一样再也醒不来了……	眠っちゃだめ。寝ちゃったら、私みたいに二度と目を覚まさなくなるわよ……。	NONE
+music	Blissful Death - No Vocals
+bg	009/041_1280x720
+/ 	301504	You... have you finally awakened?	是你…你终于醒了么？	あなた……ようやく目覚めたの？	NONE
+/???	301505	I'm not awake, rather, you've fallen asleep.... But you must stay awake. Otherwise, you'll be sleeping here forever.	我并没有醒，而是你睡着了……但是你一定要保持清醒，不然你将会永远留在这里。	目覚めてなんかいないわ、あんたが眠りについたの……でも、意識をしっかり持ってなさい。でないと、永遠にここに留まることになるわよ。	NONE
+/ 	301506	Does staying here mean.... Dying?	留在这里…是指死掉么？	ここに留まるって……死ぬってこと？	NONE
+/???	301507	You're not dead, but you're not alive... This is the boundary between life and death.  An illusionary world that does not exist anywhere in reality.	虽然不是死亡但也不是活着…这里是死与生的交界点，不存在于世界任何地方的假象。	死んではいないけど生きてもいない……ここは生と死の境目よ。世界のどこにも存在しない仮想世界。	NONE
+msg	301508	It's simply the bubble of dream that was destroyed by me, but created by you...	一个由我毁灭但却你所创造的梦幻泡影罢了……	私が滅ぼしてあんたが創り出した、うたかたの夢……。	NONE
+/ 	301509	I.... Created it?	我所…创造的？	私が……創り出した？	NONE
+/???	301510	You won't understand it now. But one day you'll understand what it all means. The tragedy of a generation.... And two people's love.	现在的你还无法理解，但是终有一天你会明白一切的意义…那属于一个世代的悲恸…和两个人的爱恋。	今のあんたには理解できないでしょう。でも、いつか全ての意味が分かるときが来るわ……一つの世代の悲哀と……二人の恋を。	NONE
+/ 	301511	Ugh... You're right, I can't remember anything. it's like a fog is obscuring my memories and I can't get rid of it. I don't know who I am or why I'm here.	你说的对…现在我的脑子一团乱，感觉什么都想不起来。甚至不知道自己是谁，为何来到这里。	うぅ、何もわからない……頭の中に白いモヤが掛かったようで、それを取り払うこともできない。自分が誰で、どうしてここに来たのか……何も……何もわからない。	NONE
+msg	301512	How long have you been here? Can you tell me?	你在这里这么久，可以给我答案么？	あなたは、ここにどのくらいいるの？教えてくれる？	NONE
+/???	301513	The answer... I don't know. There's no answers here, and there's no point to any answers.	答案么…我不知道，这里不存在答案，也没有存在答案的必要。	……分からないわ。ここではそんな質問に意味なんてないし、答える必要もない。	NONE
+speaker	
+msg	301514	Then what are you waiting for here?	那你在这里等待什么呢？	じゃあ、ここで何を待ってるの？	NONE
+/???	301515	Waiting? It's too late for that... Redemption, forgiveness, it's all become meaningless.	等待么？对我来说已经不重要了…赎罪也好，原谅也好，一切都变得毫无价值了。	待ってる？もう、そんなことしても手遅れ……贖罪にせよ、許しにせよ、すべては無意味なものになってしまった。	NONE
+msg	301516	Time can only go forwards... This place is just a fragment of the past. The only people that still hold on to it are those under the illusion that they are still alive...	世代变迁已经无法回溯…这里只是一个遗留在过去的符号罢了，无法释怀的只是那些以为自己还活着的人吧……	世代が移り変わってからはもう遡れない……そこは過去に残された記号にすぎない場所。それに納得できていないのは、まだ生きていると錯覚しているあの人たちだけ……。	NONE
+msg	301517	All I want now is one thing... To be together with her in eternal slumber.... That's all.	现在的我所期盼的只有一件事情…永远与她一起依偎着进入永眠…仅此而已。	今の私の望みはただ一つ……永遠に彼女に寄り添って永眠すること……ただそれだけ。	NONE
+speaker	
+msg	301518	Her? You mean Mei?	她是谁？芽衣么？	彼女って誰？芽衣先輩のこと？	NONE
+/???	301519	How greedy you are.... Always quick to ask questions and trying to figure everything out.	呵呵，你还真是贪心呢…总是想要将一切都弄明白。	アハハ、本当に欲張りだね……分からないことはすぐ聞いて、いつも何かをはっきりさせようとする。	NONE
+msg	301520	We are running out of time. She will be back shortly...... Return to where you belong.	已经没有时间了，她马上就会回来的…你必须回到她们的身边，和她们一起离开。	もう時間がないわ。彼女は間もなく戻ってくる……あんたは元の居場所に帰りなさい。	NONE
+speaker	
+msg	301521	Wait... I still want to talk!	不…我还想和你多聊一些。	待って……もう少し話を！	NONE
+/???	301522	Off you go. It'll be too late otherwise.	回去吧，不然一切都晚了。	帰りなさい……でないと、何もかも手遅れになる。	NONE
+speaker	
+msg	301523	Wait, at least, please tell me your name!	等下，那请至少告诉我你的名字！	待って……じゃあ、せめてあなたの名前を教えて！	NONE
+/???	301524	My name?	我的名字么……	私の名は——	NONE
+/Kiana	301525	[color=#42f2f5]Kiana[/color], the one you want to kill.	琪亚娜，那个你们想要杀死的人。	——キアナ。あんたたちが殺したがっている者よ……。	NONE

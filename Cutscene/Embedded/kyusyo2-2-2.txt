@@ -57,13 +57,13 @@ bg	009/027_1280x720
 msgbox_close
 set_fs	true
 msg	300741	Bronya! Look over there! It's a Ferris wheel!	布洛妮娅！快看，是摩天轮！	あれがホム大観覧車？	NONE
-msg	300742	\nThat was the most famous attraction of Nagazora. The name's HOMU's Eye. 300 meters tall, the tallest wheel in the world. It rotates at...	嗯，那是长空市的吼姆乐园里最著名的景点吼姆摩天轮，高达三百米，是世界上最高的摩天轮。它的转速为……	——長空市のホム楽園で、もっとも有名なのがホム大観覧車です。その高さは300ｍと世界一です。回転速度は……。	NONE
+msg	300742	\nThat's the most famous attraction in HOMU Paradise in Nagazora City, the HOMU's eye. It is 300 meters tall, the highest in the world. It rotates at...	嗯，那是长空市的吼姆乐园里最著名的景点吼姆摩天轮，高达三百米，是世界上最高的摩天轮。它的转速为……	——長空市のホム楽園で、もっとも有名なのがホム大観覧車です。その高さは300ｍと世界一です。回転速度は……。	NONE
 msg	300743	\nBronya, you are really interested in that place, aren't you?	布洛妮娅，你很在意那个地方么？	ブローニャちゃん、どうしたの？	NONE
-msg	300744	\nYes... And I was just explaining to you how marvelous HOMU's Eye is.	在意…布洛妮娅只是想介绍吼姆摩天轮的伟大。	ブローニャはホム大観覧車を紹介しています。	NONE
-msg	300745	\nPerhaps Bronya is just learning how to express her feelings. She's showing how much she likes the Ferris wheel by describing it to us.	嗯，可能这正是布洛妮娅在学习如何表达自己的想法哦~通过解说那个摩天轮，表达自己对那处地方的向往。	——ふふっ、そうね。ブローニャちゃんなりに気持ちを表現しているんじゃないかしら。解説をすることで気になっていること伝えたいんだと思う。	NONE
-msg	300746	\nYou want to go check it out, Bronya?	布洛妮娅想去那边看看吗？	ブローニャちゃん、行ってみたい？	NONE
+msg	300744	\nBronya was simply explaining the greatness of the HOMU's eye.	在意…布洛妮娅只是想介绍吼姆摩天轮的伟大。	ブローニャはホム大観覧車を紹介しています。	NONE
+msg	300745	\n—I guess this is how she's learning how to express her feelings. She's trying to convey how much she likes that ferris wheel by giving us an explanation.	嗯，可能这正是布洛妮娅在学习如何表达自己的想法哦~通过解说那个摩天轮，表达自己对那处地方的向往。	——ふふっ、そうね。ブローニャちゃんなりに気持ちを表現しているんじゃないかしら。解説をすることで気になっていること伝えたいんだと思う。	NONE
+msg	300746	\nBronya, would you like to go and check it out?	布洛妮娅想去那边看看吗？	ブローニャちゃん、行ってみたい？	NONE
 msg	300747	\n...Yes!	……想！	……はい！	NONE
-msg	300748	\nThen let's go ride it! A reward for Bronya trying to express herself!	那我们就去坐吼姆摩天轮吧，就当做是对布洛妮娅表达自己想法的奖励~	じゃあ、ホム大観覧車に行きましょう。ブローニャちゃんが自分の考えを口にしたご褒美よ。	NONE
+msg	300748	\nThen let's go ride the HOMU's Eye. It's your reward for expressing your thoughts.	那我们就去坐吼姆摩天轮吧，就当做是对布洛妮娅表达自己想法的奖励~	じゃあ、ホム大観覧車に行きましょう。ブローニャちゃんが自分の考えを口にしたご褒美よ。	NONE
 msg	300749	\nThank you...	嗯…谢谢你…	はい！	NONE
 msg	300750	Mei.	芽衣姐姐。	芽衣姉様。	NONE
 msg	300751	\nWell...	呐…	その……。	NONE

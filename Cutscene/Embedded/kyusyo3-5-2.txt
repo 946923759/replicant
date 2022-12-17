@@ -1,34 +1,19 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
 speaker	Bronya
+music	The Tower - Medium No Vocals
+match_names	Seele	Bronya	Himeko
 bg	009/019_1280x720
-portraits	60
-emote	60	3
-msg	301397	The source of the Honkai should be around here...	崩坏源的位置就在这个附近……	崩壊源の位置はこの辺り……。	NONE
-speaker	Seele
-portraits	59	60
+portraits	59	60	61
 emote	59	3
 emote	60	3
-msg	301398	Those armored mechas are functioning again. What a pain!	机甲兵器果然又运作起来了，实在是太烦人了！	やっぱり機甲兵器が動き出してる。厄介ね……。	NONE
+emote	61	1
+/Bronya	301397	The source of the Honkai should be around here...	崩坏源的位置就在这个附近……	崩壊源の位置はこの辺り……。	NONE
+/Seele	301398	Those armored mechas are functioning again. What a pain!	机甲兵器果然又运作起来了，实在是太烦人了！	やっぱり機甲兵器が動き出してる。厄介ね……。	NONE
 msg	301399	Hmm? Sis, that gate over there is open. It was closed when I went through the hallway earlier!	姐姐大人，那边有一扇闸门打开了，明明之前经过长廊的时候都是关着的！	あれ？お姉ちゃん、あそこのゲートが開いてる。さっき通路を通ったときは閉まってたのに！	NONE
 msg	301400	Does that mean there's someone else here besides us....? I don't know, should we go in?	也就是除了我们还有别人在这里么……怎么办，我们要进去么？	私たちの他にもここに誰かいるってことかな……？どうしよう、入ってみる？	NONE
+/Himeko	301401	It's probably a trap. We've been through plenty of them already.	很可能是陷阱，我们在这个地方被坑的已经够多了。	罠かもしれないわね。防衛システムでもしてやられたし……。	NONE
+/Bronya	301402	Yeah... But all the other gates are closed. I don't see any other options.	嗯…不过通往其他通道的闸门都被关闭了，似乎给我们的选项只有一个。	はい……でも、他の通路につながるゲートは全て閉まっています。他に選択肢はないようです。	NONE
 speaker	Himeko
-portraits	59	61
-emote	59	3
-emote	61	1
-msg	301401	It's probably a trap. We've been through plenty of them already.	很可能是陷阱，我们在这个地方被坑的已经够多了。	罠かもしれないわね。防衛システムでもしてやられたし……。	NONE
-speaker	Bronya
-portraits	59	60
-emote	59	3
-emote	60	3
-msg	301402	Yeah... But all the other gates are closed. I don't see any other options.	嗯…不过通往其他通道的闸门都被关闭了，似乎给我们的选项只有一个。	はい……でも、他の通路につながるゲートは全て閉まっています。他に選択肢はないようです。	NONE
-speaker	Himeko
-portraits	59	61
-emote	59	3
-emote	61	1
 tn	0	Original text was "Hmph, looks like they're giving us an invitation"
 msg	301403	Hmph, looks like they're rolling out the red carpet for us. Let's go! I won't be underestimated by the Honkai. 	哼，看来是在邀请我们呢，走吧！可别被崩坏小瞧了！	フン、強引な招待状ね。行くわよ！崩壊に侮られてなるもんですか！	NONE
-speaker	Bronya
-portraits	59	60
-emote	59	3
-emote	60	3
-msg	301404	Alright. Everyone, pay attention to our formation and proceed with caution.	嗯，大家注意阵型，小心前进。	はい、みなさん隊形に注意。気をつけて進みましょう。	NONE
+/Bronya	301404	Alright. Everyone, pay attention to our formation and proceed with caution.	嗯，大家注意阵型，小心前进。	はい、みなさん隊形に注意。気をつけて進みましょう。	NONE

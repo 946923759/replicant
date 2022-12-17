@@ -100,7 +100,7 @@ export(bool) var mute_music_in_debug=true
 func is_image_unlocked(s:String)->bool:
 	var unlockList = Globals.playerData['CGunlock']
 	#unlockList = ['009/001_1280x720','009/008_1280x720']
-	return true
+	#return true
 	return (s in unlockList)
 
 onready var tabs:GridContainer = $Tabs
@@ -117,6 +117,23 @@ func _ready():
 	
 	var galleryBasePos:Vector2=get_node("Galleries/GalleryBase").rect_position
 	
+	"""
+	Because godot can't into tables
+	Def.Control{
+		Def.GridContainer{
+			Name="GalleryBase"
+		},
+		Def.ScrollContainer{
+			Name="Gallery"+k;
+			Def.GridContainer{
+				Name="GalleryActorFrame"
+				GalleryObject{},
+				GalleryObject{},
+				...
+			}
+		}
+	}
+	"""
 	var mainGalleryFrame = $Galleries
 	for k in GALLERY:
 		var galleryActorFrame:GridContainer
@@ -124,6 +141,7 @@ func _ready():
 			var sc = ScrollContainer.new()
 			sc.mouse_filter=MOUSE_FILTER_STOP
 			galleryActorFrame = GridContainer.new()
+			galleryActorFrame.name="GalleryActorFrame"
 			galleryActorFrame.columns=5
 			galleryActorFrame.mouse_filter=MOUSE_FILTER_IGNORE
 			galleryActorFrame.set("custom_constants/vseparation",40)
@@ -299,7 +317,13 @@ func _on_GalleryHeader_gui_input(event):
 		if tapped==8:
 			print("Unlocking all!!")
 			for k in GALLERY:
-				var galleryActorFrame:GridContainer = get_node("Galleries/Gallery"+k)
+				var g = $Galleries.get_node("Gallery"+k)
+				var galleryActorFrame:GridContainer
+				if k=="Base":
+					galleryActorFrame=g
+				else:
+					galleryActorFrame = g.get_node("GalleryActorFrame")
+				#var galleryActorFrame:GridContainer = $Galleries.get_node("Gallery"+k).get_node("GalleryActorFrame")
 				for i in range(len(GALLERY[k])):
 					var m = galleryActorFrame.get_child(i)
 					var galleryEntry:Array = GALLERY[k][i]

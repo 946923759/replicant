@@ -49,6 +49,7 @@ emote	61	1
 msg	301205	Well, it's not like we have a choice right now. Let's try hacking in and see what happens.	不管怎么说先试试看吧，这是我们唯一的出路了。	いずれにしても試してみましょう。これが唯一の活路なのですから。	NONE
 speaker	
 emote	60	3
+se	UI_Menu_Open
 msg	301206	*Beep*	滴滴滴……	ピピピ——	NONE
 speaker	Bronya
 emote	60	5
@@ -95,6 +96,7 @@ emote	60	3
 emote	61	1
 msg	301220	Yeah, I know...	嗯，我明白……	はい、分かっています……。	NONE
 msg	301221	Project Bunny, hacking start!	重装小兔，入侵开始！	重装ウサギ、侵入開始！	NONE
+se	AVG_The_Division_Decompose_Items
 stopmusic	1
 
 bg	009/042_1280x720

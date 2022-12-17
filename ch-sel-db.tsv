@@ -3,6 +3,8 @@
 
 #This controls where the VN starts after the first run screen (duh).
 //VN_START	Chapter 0/0
+#This controls when the VN returns to the chapter select. It stops at the end of the specified chapter.
+//VN_STOP	Chapter 3
 
 --Debug Tests
 Music Test		test_music
@@ -36,23 +38,23 @@ Protect	Find ME Corp.'s Weapons Manufacturing Plant	kyusyo3-2-1,kyusyo3-2-2,kyus
 Analogus Memories 1	Save Bronya & Himeko	kyusyo3-3-1,kyusyo3-3-2
 Analogus Memories 2	Hack into ME Corp.'s mainframe	kyusyo3-4-1,kyusyo3-4-2,kyusyo3-4-3
 Resolution 1	Search the rest of ME Corp.'s factory	kyusyo3-5-1,kyusyo3-5-2
-Resolution 2	Take cover.	kyusyo-3-6-1,kyusyo3-6-2
-Transfer	Head to the new base.
-Farewell	Board the Hyperion	kyusyo3-7-1,kyusyo3-7-2
+Resolution 2	Take cover.	kyusyo3-6-1,kyusyo3-6-2,kyusyo3-6-3
+Transfer	Head to the new base.	kyusyo3-7-1,kyusyo3-7-2,kyusyo3-7-3
+Farewell	Board the Hyperion	kyusyo3-8-1,kyusyo3-8-2
 
---Chapter 7
-Hope
-Wings
-Black Cloud
-Old Enemy
-Dead End
-Clear Way
-Wish
-Forbidden
-Fantasy
---Chapter 7.5
-Destruction
-False Thing
-Together
-The Savior
-Ending		kyusyo7-ending-1,kyusyo7-ending-2
+#--Chapter 7
+#Hope
+#Wings
+#Black Cloud
+#Old Enemy
+#Dead End
+#Clear Way
+#Wish
+#Forbidden
+#Fantasy
+#--Chapter 7.5
+#Destruction
+#False Thing
+#Together
+#The Savior
+#Ending		kyusyo7-ending-1,kyusyo7-ending-2

@@ -19,6 +19,8 @@ func _ready():
 	var c = chapterActorFrame
 	c.get_child(0).visible=false #Hide "Test" label
 	for chapterName in database.keys():
+		if database[chapterName].size()==0:
+			continue
 		biggestMissionNum=max(database[chapterName].size(),biggestMissionNum)
 		#var chapter:Globals.Chapter = database[chapterName]
 		#biggestMissionNum=max(chapter.parts,biggestMissionNum)
@@ -43,7 +45,7 @@ func _ready():
 		#m.connect("wtf",self,'test2')
 	biggestMissionNum=mSelObjs.get_child_count() #We're never adding any more so it's fine
 	
-	set_new_mission_listing(database.keys()[0])
+	set_new_mission_listing(database.keys()[1])
 	
 	#Only show by default if there is a controller plugged in
 	$DescrptionF.visible = Input.get_connected_joypads().size() > 0

@@ -1,68 +1,71 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
-speaker	Himeko
-bg	009/014_1280x720
-portraits	60	61
-emote	61	1
-/Himeko	301580	The Grey Moths are beginning to board.	灰蛾部队开始登舰。	灰蛾部隊、搭乗開始。	NONE
-emote	60	1
-emote	61	1
-/Bronya	301581	Be careful. If you encounter a Herrscher, retreat immediately and don't try to engage her.	你们要小心。如果遇到律者千万不要战斗，立刻返回。	気をつけてください。もし律者に遭遇したらくれぐれも戦いは避け、直ちに引き返してください。	NONE
-emote	60	1
-emote	61	1
-/Himeko	301582	That depends on if she's willing to let us go.	前提是她得放我们走。	向こうが逃がしてくれればね。	NONE
-speaker	Yssring
-portraits	60	61	54
-emote	60	1
-emote	54	1
-msg	301583	Testing... Is the Hyperion ready to take off? The gates are about to open.	喂喂…休伯利安准备好了么？闸门马上要开启了。	ねぇ……ハイペリオンの準備はいい？ゲート、開くわよ。	NONE
-speaker	Himeko
-emote	60	1
-emote	61	1
-msg	301584	The Hyperion is ready, let's go!	准备完毕，出发！	OKよ。ハイペリオン、出発！！	NONE
-speaker	Yssring
-emote	60	1
-emote	54	1
-msg	301585	Copy that. Opening the gates.	了解，闸门开启。	了解、ゲート開放。	NONE
-music	The Dark Colossus Destroys All
+#LANGUAGES	KEY	EN	CH	JP	PT
 speaker	
-emote	60	1
-se	DLC_CH00_EV04_ExplosionClose
-shake_camera
-msg	301586	Boom!!	轰隆！！！！	ドゴーン！！！！	NONE
-se	DLC_CH00_EV03_WarningAlert
-msg	301587	"Alert! Alert! The base is under attack!"	「警报！警报！基地遭到攻击！」	「警報！警報！基地が攻撃を受けました！」	NONE
-speaker	Yssring
-emote	60	1
-emote	54	3
-msg	301588	Ugh! What now?!	呃！又发生什么了！	ええっ？！今度は何？！	NONE
-speaker	Teammate
-portraits	60	61	56
-emote	60	1
-emote	56	0
-msg	301589	Report! A large number of Honkai beasts have been spotted near the base! We are surrounded!	报告！基地附近发现大量崩坏生物！我们被包围了！	報告します！基地の周囲で大量の崩壊生物を発見！包囲されています！	NONE
+preload_portraits	59	60
+match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
+music	Significance
+bg	009/001_1280x720
+portraits	59
+msg	301526	[Cough cough!]	咳咳！	ゲッゲホッ！	NONE
+msg	301527	Ugh! Everything hurts...	呃！好痛……	うう！いたたた……。	NONE
+emote	59	1
 emote	60	5
-emote	56	0
-/Bronya	301590	What?! I can't believe they're here already....	什么！居然这么快就……	まさか！こんなに早く……。	NONE
-speaker	Teammate
+/Seele	301528	Ah, you're awake! Sis, she's awake!	唔！你醒了么！姐姐大人！她醒过来了！	あ！目が覚めた！お姉ちゃん、気がついたよ！	NONE
+portraits	59	60
+/Bronya	301529	How are you feeling? Do you know who I am? Does it hurt anywhere?	怎么样？知道我是谁么？身体有什么问题么？还有哪里疼么？	どうです？私が誰だか分かりますか？身体は問題ないですか？まだどこか痛みますか？	NONE
+emote	59	5
 emote	60	5
-emote	56	0
-msg	301591	Hey, look! What's that in the sky!?	喂！你们看！天上那个是什么东西！	ねぇ、見て！空のあれは何！？	NONE
-portraits
+/Seele	301530	Hold on! Slow down!	等下！等下！姐姐大人太心急啦！	待って待って、お姉ちゃん、焦りすぎ！	NONE
+choice	301658	(This is a familiar scene...)	この光景いつかどこかで見たような気がする。	NONE	NONE
+choice	301659	(I got Bronya worried again.)	またブローニャに心配かけちゃった。	NONE	NONE
+emote	59	1
+/Seele	301531	Ehehe, the last time this happened Bronya really chewed me out.	嘿嘿，上次这样的时候可是被姐姐大人狠批了一顿呢。	エヘヘ、前回こうなったときは、お姉ちゃんにこってりしぼられたのにね。	NONE
+emote	59	1
+emote	60	2
+/Bronya	301532	Oh... I'm sorry. I didn't want to, but I had to train you... Now that you're a reliable soldier. The operation could not run that smooth without you. Although it was quite close at the end.	唔…抱歉，那是为了锻炼你才迫不得已…不过现在的你已经变得十分可靠了，这次的作战多亏了你才能顺利结束，虽然最后遇到在那样的危机，不过还好有惊无险。	う……すみません、あれはあなたを鍛えるためにやむを得ず……でも、今のあなたはもう十分頼りになります。今回の作戦はあなたのおかげで順調にいきました。最後は危なかったですが、無事で良かったです。	NONE
+msg	301533	Looks like you're alright. You were out cold for an entire day.	看你的样子似乎也没什么大碍了，你整整昏迷了一整天呢，真是太好了。	その様子だと命に別状はなさそうですね。丸一日気を失っていたのですよ。本当に良かった。	NONE
+emote	59	1
+emote	60	2
+/Seele	301534	Yeah, it's true! And Bronya here was so worried she barely ate.	对啊，这段时间姐姐大人可是坐立不安，饭都没吃好呢~	そうそう、お姉ちゃんは居ても立ってもいられず、ずっとご飯も食べてないんだよ～！	NONE
+emote	59	1
+emote	60	1
+/Bronya	301535	Seele! Don't say that.... Ahem. Since you're awake, let me give you a briefing on what's going on right now.	希儿！咳咳！先别说这些了……既然醒了就跟你简单说明一下现在的情况吧。	ゼーレ！それは言うなと……ゴホン、目が覚めたのなら簡単に今の状況を説明しましょう。	NONE
+msg	301536	ME Corporation was serverely damaged by the Herrscher's attack. The weapons manufacturing plant was also severely damaged. Luckily we've managed to salvage one of the production lines, so it wasn't all in vain.	ME社在律者的攻击下受到的重创，兵工厂也损失严重，不过幸好我们抢救回了一条制造流水线，所以这次的作战也不是一无所获。	ME社は、律者の攻撃で激しく損壊しました。兵器工場の損傷も深刻です。ただ、幸いなことに製造ラインの1本は復旧できました。ですから、今回の作戦は無駄なものではありません。この収穫は大きなものです。	NONE
+msg	301537	I don't know why the Herrscher didn't finish us off, but things still aren't looking great for us...	虽然不知道为什么律者没有对我们进行致命一击，但是我们现在的情况依然不乐观……	どうして、律者が私たちにトドメを刺さなかったのかは分かりません。ただ、依然として楽観視できる状況ではありませんが……。	NONE
+msg	301538	...Let's get into the details later. I don't want to stress you out right after you've woken up. You should get some rest. I'll have Emesa check your condition again just in case.	算了…先不讲这个了，你刚醒还是再休息一下吧，以防万一让埃米沙再来给你检查一下吧。	……詳細はまた今度にしましょう。意識が戻ったばかりの身体に障ってはいけません。ゆっくり休んでください。万一に備えて、エミザにもう一度検査してもらいましょう。	NONE
+emote	59	1
+emote	60	1
+/Seele	301539	Hmm, you looked pretty sad before you woke up. Was it a nightmare? That worried me a lot.	嗯，你醒来之前表情很痛苦，真的吓死我了呢，是做噩梦了么？	うん、目が覚める前、表情がとても辛そうでびっくりしたわ。怖い夢でも見たの？	NONE
+
 speaker	
-bg	009/039_1280x720
-/Bronya	301593	That's... A new species of Honkai beast?!	这个是……新生种！？	あれは……新種の崩壊生物！？	NONE
-speaker	Yssring
-msg	301594	What is that thing...? That's.... A dragon!?	怎！怎么会有这种东西……这个是龙么！？	なっ……何であんなのが……あれは……ドラゴン！？	NONE
-speaker	
-shake_camera	.2
-se	DLC_CH03_EV05_ThunderBig
-msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
-/Seele	301595	There's thunderclouds in the sky... Is that Mei!?	芽衣姐姐！天空中的雷暴云…难道是芽衣姐姐么！	上空の雷雲……もしかして芽衣お姉ちゃんじゃない！？	NONE
-/Bronya	301596	The Herrscher....	律者……	律者……。	NONE
-bg	009/047_1280x720	fade
-msg	301597	Seele! Inform everyone! Abandon the base and board the Hyperion! We need to evacuate immediately!	希儿！传达给所有人！放弃基地全部登船！我们得立刻撤离！	ゼーレ！全員に伝えてください！基地を捨てて全員ハイペリオンへ乗船！ただちにここを離れます！	NONE
-/Seele	301598	Ah... Got it!	好…好的！	わ……わかった！	NONE
-/Yssring	301599	Waaaa... Let, Let me on first!	呜哇…让！让我先上去！	うわわ……さ、先に乗せて！	NONE
-/Emesa	301600	Yssring, get the ☆☆ down! Let the children board the ship first! Help me carry the wounded!	伊瑟琳！你OO给我下来！让孩子们先登船！给我去搬伤员！	イザーリン！このバカ、降りてこい！子どもたちを先に乗せろ！負傷者を運ぶの手伝え！	NONE
-/Bronya	301601	Calm down! Just leave your things there! Queue up! Combatants should fend off the Houkai beasts in front of the gate with me! We must guarantee Hyperion's successful launch!	大家冷静！不要管物品了！有序登船！战斗人员跟我一起清理闸门前的崩坏生物！我们要保证休伯利安出站！	みなさん冷静に！持ち物には構わず、慌てず乗船してください！戦闘員は私と一緒にゲート前へ！崩壊生物を退治し、ハイペリオンが出航できるようにします！	NONE
-/Seele	301602	Let's go! We have to help Bronya! Stop those Honkai beasts!	走！我们去帮姐姐大人！一定要挡住崩坏生物！	行こう！お姉ちゃんを助けないと！崩壊生物を食い止めよう！	NONE
+portraits	
+bg	007/006_1280x720	fade
+msg	301540	(I told them what I had seen in my dream.)	将梦里的事情说了出来。	夢で見たことを話した。	NONE
+bg	009/001_1280x720	fade
+
+portraits	59	60
+speaker	Bronya
+emote	59	1
+emote	60	1
+msg	301541	Kiana woke up in the dream... In the theme park you also mentioned that you met Mei... And now the Herrscher. Perhaps it's more than a coincidence.	梦里沉睡的琪亚娜苏醒了么……之前你在游乐园中也说过遇见过芽衣姐…律者的事情，看来或许不是巧合。	夢の中で眠っていたキアナが目覚めたのですか……この前遊園地でも芽衣姉……律者に会ったと言ってましたね。これは偶然の一致ではなさそうです。	NONE
+msg	301542	You're a mystery. You've lost your memory, but you keep seeing strange things in your dreams...	你真是有些不可思议，虽然记忆还没有恢复，但是却总能看到一些奇特的光景。	本当に不思議です。まだ記憶も回復していないのに、そのような奇妙な光景を見るなんて。いや、記憶がないからでしょうか。	NONE
+msg	301543	I don't know what it means, but I feel like it might be fortelling something ominous.	虽然不知道是怎么回事，但一定预示着什么…总有一种不好的预感。	どういうことかは分かりませんが、きっと何かの暗示でしょう……何だか悪い予感がします。	NONE
+msg	301544	Seele, please tell Himeko. Let's check the surroundings together. Perhaps the threat is just around the corner.	希儿，通知姬子。我们一起到周围调查一下吧，也许危机已经朝我们逼近了。	ゼーレ、姫子に伝えてください。一緒に周囲を調べてみましょう。もしかしたら、脅威はすぐそこまで来ているかもしれません。	NONE
+speaker	Seele
+emote	59	2
+emote	60	1
+/Seele	301545	Okay, sister-sama~	好的，姐姐大人~	分かったわ、お姉ちゃん。	NONE
+choice	301660	Please let me go with you.	どうか私も連れてって。	NONE	NONE
+choice	301661	Hold on, let me get ready.	すぐに支度するから。	NONE	NONE
+emote	60	1
+/Bronya	301546	You should stay here. You're still weak, you should get some more rest.	你不用去，你现在还很虚弱，还是好好休息吧。	あなたは行かなくていいです。今は身体を休めるのが先決です。よく休んでください。	NONE
+emote	59	1
+emote	60	1
+/Seele	301547	Look at the determination in her eyes. It doesn't seem like she's going to take no for an answer, so why don't you let her tag along? It's pretty safe right now when there's no Honkai Beasts around.	嘛…看她的眼神好像非去不可呢，既然现在基地周围出奇的安全，姐姐大人就让她出去活动一下吧，躺了这么久身体也会僵硬的吧？	ん～、どうしても行きたいって目つきだよ。今基地の周囲は珍しく安全だし、少し外に出て動いてもいいんじゃない？ずっと寝ていたら身体がなまっちゃうでしょ？	NONE
+/Bronya	301548	...Alright, you can come with us. If your dream was fortelling something, you might discover something we'd overlook.	……好吧，那就和我们一起去吧，如果你的梦境是真的，或许会有我们看不到的发现，	……わかりました、では、一緒に行きましょう。あなたの夢が現実になるなら、ブローニャたちには気づけないような違和感を見つけられるかもしれません。	NONE
+msg	301549	But the absence of Honkai beasts is strange... Don't force yourself too much and retreat immediately if you're in danger.	不过现在崩坏生物的活动状态很诡异，一定不要逞强，遇到危险就立即撤退。	ただ、くれぐれも無理はしないように。……実は崩壊生物の動きが不穏なのです。	NONE
+
+choice	301662	It's safe?	ゼーレが言ってた、珍しく安全っていうのは？	NONE	NONE
+choice	301663	There's no Honkai Beasts?	崩壊生物の動きが不穏って？	NONE	NONE
+
+/Bronya	301550	Oh, right. While you were unconscious, all the Honkai Beasts around the base disappeared.	嗯，在你昏迷的这段时间里，基地周围的崩坏生物全不见了……	あなたが気を失っている間に、基地周辺の崩壊生物が姿を消しました。何かの予兆かもしれません。もし危険があれば即撤退をします。	NONE
+msg	301551	I'm not sure where they went, but this might be a bad omen...	仿佛凭空消失了一般。	一体、崩壊生物に何が……まるで消滅してしまったかのよう。	NONE

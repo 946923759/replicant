@@ -83,7 +83,9 @@ chapterDatabase = {
 	]
 }
 """
-var chapterDatabase = {}
+var chapterDatabase = {
+	#"No Grouping!!":[]
+}
 var database = {}
 
 # The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
@@ -252,6 +254,8 @@ func _ready():
 				var l = line.substr(len("//VN_START")+1,line.length())
 				if len(l)>0:
 					tmp_startChapter=l
+			elif line.begins_with("//VN_STOP"):
+				continue
 			elif !line.empty():
 				var keys = line.split("\t",true)
 				var episode = Episode.new()

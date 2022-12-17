@@ -1,0 +1,117 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	???
+bg	009/046_1280x720
+portraits	59,false,-2	60,false,-2	50,false,2
+emote	59	3
+emote	60	3
+/???	301453	Serious... Damage... System shutting down... Function stop...	机体损伤…严重…系统即将关闭…机能停止……	機体の損傷は……深刻……システムはまもなくシャットダウン……機能停止……。	NONE
+msg	301454	[zzzt zzzt-]	滋啦滋啦…	ジ、ジジ、ガ——。	NONE
+/Seele	301455	Phew.... Did we win...?	呼…赢了么……姐姐大人没事吧？	ふぅ……勝ったの？……お姉ちゃん大丈夫？	NONE
+/Bronya	301456	Yeah... We finally defeated this machine...	嗯…总算是战胜了这台机甲……	はい……何とか機甲には勝てましたが……。	NONE
+msg	301457	Where's Mei....?	芽衣姐姐呢？她在哪里！	芽衣姉様は……どこに？	NONE
+/Seele	301458	She disappeared while we were fighting... Maybe she ran away?	刚才战斗的时候就消失了…可能是逃走了吧？	さっきの戦闘中に消えちゃったよ……逃げたのかな？	NONE
+emote	60	5
+/Bronya	301459	No.... There must be a reason why Mei showed up. Project Bunny, scan the area and locate the highest concentration of Honkai energy.	不…芽衣姐姐的目的不可能这么简单，重装小兔检测附近最大的崩坏源位置！	いえ……芽衣姉様のことです、現れたのには何か理由があるはずです。重装ウサギ、この付近で高い崩壊源の位置を測定してください。	NONE
+speaker	
+msg	301460	Beep...	滴滴滴…	ピピピ——	NONE
+msg	301461	[Scan complete. A high concentration of Honkai Energy has been located approximately 800 meters directly above.]	「检测完毕，上方垂直高度800米发现高强度崩坏能反应。」	「測定完了。上方の垂直高度800メートルに高強度の崩壊エネルギー反応を検出」	NONE
+/Bronya	301462	800 meters above... Could it be!? 	上方800米…难道！？	上方800メートル……まさか！？	NONE
+msg	301463	Everyone, take cover!	大家快找掩体！	全員、急いで隠れてください！	NONE
+
+portraits	
+bg	009/034_1280x720
+music	The Dark Colossus Destroys All
+speaker	Mei
+msg	301465	There is no need for life in this world of nothingness.	虚无的世界里不需要生命。	虚無の世界に生命は不要。	NONE
+msg	301466	Struggling like this only has meaning when it meets it doom.	无谓的抗争在破灭的时候才有价值……	無意味な抗争は、破滅のときこそ価値のあるもの……。	NONE
+msg	301467	Farewell... Disappear with your illusions of hope.	永别了…怀抱着名为希望的泡影消失吧。	さよなら……希望という名の幻想を抱いて、消え失せなさい。	NONE
+speaker	
+bg	009/035_1280x720	fade
+se	DLC_CH01_EV23_ExplosionClose
+msg	301468	Boom!!	轰！！	ドォーン！！	NONE
+bg	009/036_1280x720	fade
+speaker	Mei
+msg	301470	!?	！？	！？	NONE
+speaker	
+bg	009/038_1280x720
+se	DLC_CH01_EV23_ExplosionClose
+msg	301471	Boom!!	轰隆！！	ドゴォォン！！	NONE
+speaker	Mei
+msg	301472	...	……	……ちっ、ズレたか。	NONE
+speaker	
+bg	009/049_1280x720
+speaker	Mei
+msg	301474	Seems to be another imbecile......	看来又多了一个愚蠢人……	愚か者がまた一人……。	NONE
+speaker	
+msg	301475	[zza, zzzzzza...]	呲拉呲拉……	ザ、ザザ……。	NONE
+speaker	Mei
+msg	301476	I've run out of energy... Fine, this is enough for today.	能量耗尽了么，看来今天只能到此为止了。	エネルギーが……今日はここまでにしておきましょう。	NONE
+msg	301477	No matter how much you struggle, only destruction awaits you in the end. Enjoy your brief glimmer of hope while you still can.......	不论如何挣扎最后迎来的也只是毁灭而已，就趁现在多享受一下短暂的光明吧……	どれだけ足掻こうと、最後に待ち受けているのは破滅だけ。今のうちにせいぜい束の間の光を味わいなさい……。	NONE
+speaker	Seele
+bg	007/006_1280x720
+music	The Color of Depression
+portraits	59	60	54	55
+emote	59	3
+msg	301479	*Cough, cough!* Such destructive power....	咳咳！这个破坏力……	ゲホッゲホ！この威力……何が起こったの！？	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301480	Is everyone alright!? [Cough!] Anyone that can still move, check your surroundings! Move the wounded to an open area!	大家都没事吧？咳咳！可以活动的人确认一下周围的状况！将伤员运输到开阔的地方！	みなさん大丈夫ですか？ゲホッ……！動ける者は周囲の状況を確認してください！負傷者を見つけたら、広いところに運んで！	NONE
+speaker	Emesa
+emote	59	3
+emote	55	4
+msg	301481	The electrical system was hit.... It's pitch black here, I can't see anything! Hey, if anyone here is alive, speak up!	电力系统瘫痪了…一片漆黑什么都看不见！喂！还活着的人赶紧吱个声！	電力系統がやられた……真っ暗で何も見えない。おーい！生きてるやつは声を上げろ！	NONE
+speaker	Yssring
+emote	54	3
+emote	55	4
+msg	301482	Ugh... That was terrifying.... What was that attack just now!? That's not something any normal Honkai beast can do, is it?	呜呜……太可怕了…刚才的攻击是怎么回事！这根本不是崩坏生物能做的到的吧？	ううう……怖い……さっきの攻撃は何なの！？崩壊生物ができるレベルのものじゃないでしょ？	NONE
+speaker	Himeko
+portraits	59	60	54	55	61
+emote	54	3
+emote	61	2
+msg	301483	It's a Herrscher.	是律者。	律者よ。	NONE
+speaker	Yssring
+emote	54	3
+emote	61	2
+msg	301484	Her... Herrscher!?	律！律者！？	り、律者ぁ！？	NONE
+speaker	Himeko
+emote	54	3
+emote	61	2
+msg	301485	Damn her.... She could have easily wiped out ME Corporation if she wanted to, so why did she miss? Was she just toying with us?	芽衣那个混蛋…刚才明明可以将ME社夷为平地，为什么会故意打偏，难道是在戏弄我们么！	芽衣のヤツ……その気になればME社を廃墟にできたのに、なぜわざと外したの？私たちを弄んでるの？	NONE
+speaker	Bronya
+emote	54	3
+emote	60	5
+msg	301486	Let's discuss that later! Right now we have to save the injured! The ME Corporation's building could collapse at any moment. We need to retreat immediately!	没时间想这些了！快进行救援！受到这么大的冲击ME社的结构很可能会崩塌！我们必须立刻撤离这里！	考えている暇はありません、負傷者の救護を最優先しましょう！これだけ大きな衝撃を受けたら、いくらME社でも倒壊するかもしれません。直ちにここから撤退しないと！	NONE
+speaker	Yssring
+emote	54	2
+emote	60	5
+msg	301487	But... What about the production lines...?	那…那工厂的流水线怎么办？	じゃあ……工場の製造ラインはどうなるの？	NONE
+speaker	Bronya
+emote	54	2
+emote	60	5
+msg	301488	Forget the production lines! We need to save everyone first!	先别管那些！凭我们是搬不走它们的，先保证大家的安全！	今はそれどころではありません！まずはみなさんの安全を確保しないと！	NONE
+speaker	Seele
+emote	59	3
+emote	60	5
+msg	301489	Hey! Are you okay? Wake up!	喂！你怎么样了！快醒醒！	ん？あれ？……ちょっと、どうしたの！？目を覚まして！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301490	Seele, what's going on?	希儿怎么了？	ゼーレ、どうしたんです？	NONE
+speaker	Seele
+emote	59	3
+emote	60	5
+msg	301491	Kyuushou... Kyuushou's....	九霄…九霄她……	九霄……九霄が……。	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301492	Somebody! We need a medic! Hurry!	快来人帮忙救援！快！	誰か！救援に来てください、早く！	NONE
+speaker	Seele
+emote	59	3
+emote	60	5
+msg	301493	Hey, hang in there! Heeeyy!	喂！你坚持住啊！喂！！	ちょっと！しっかりしなさいよ！ねえ！！	NONE
+portraits	
+stopmusic	1
+speaker	
+msg	301494	...	……	……。	NONE
+msg	301495	.........	………	…………。	NONE

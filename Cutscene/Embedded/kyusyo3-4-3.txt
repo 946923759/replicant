@@ -1,4 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	61	211	60
+music	Grandma
 speaker	Himeko
 match_names	Seele	Himeko
 bg	009/051_1280x720

@@ -1,0 +1,155 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	59	60	61	53
+match_names	Seele	Bronya	Himeko	Mei	_DIM_ALL_WHEN_EMPTY
+speaker	Seele
+music	The Tower - Medium No Vocals
+bg	009/046_1280x720
+portraits	59,false,-2	60,false,-2	61,false,-2	0,false,2
+emote	59	3
+emote	61	2
+emote	60	5
+/Seele	301405	This is..... A lab?	这里是…实验室么？	ここは……実験室？	NONE
+speaker	Himeko
+msg	301406	Tsk! The concentration of Honkai energy is really high here... Make the other team members evacuate first. Their bodies can't withstand this level of radiation.	啧！这里的崩坏能浓度很高…让其他队员先出去！他们的身体经不住这种程度的污染！	うっ！崩壊エネルギー濃度が高すぎる……他の隊員を外に出して！普通の体じゃこの汚染に耐えられない！	NONE
+speaker	Seele
+msg	301407	Ah! Roger!	啊！好的！	あ、はい！	NONE
+speaker	Bronya
+msg	301408	How did this powerful Honkai Energy...	这么强大的崩坏能是怎么……	こんな強大な崩壊エネルギーがどうして……。	NONE
+portraits	59,false,-2	60,false,-2	61,false,-2	53,false,2
+/Mei	301409	...	……	……。	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301410	Sister Mei!?	芽衣姐姐！？	芽衣姉様！？	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301411	Bronya, move aside!	布洛妮娅闪开！	ブローニャ、どいて！	NONE
+speaker	
+emote	59	3
+se	AVG_Pistol
+msg	301412	[BANG BANG BANG!]	砰砰砰！	バンバンバン！	NONE
+speaker	Mei
+emote	59	3
+emote	53	0
+msg	301413	...	……	…………。	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301414	Damn it! Bullets don't work! How about this!	切！子弹果然没用么！那这招怎么样！！	チッ！やっぱり銃弾は効かないわね！それならこれでどう？！	NONE
+portraits	59,false,-2	60,false,-2	61,false,2	53,false,2
+speaker	
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+msg	301415	Bang!	轰！	——キンッ！	NONE
+speaker	Seele
+emote	59	3
+msg	301416	I can't believe it... She actually caught Himeko's greatsword with her bare hands!	居然…徒手接住了姬子的大剑！	そんな……姫子さんの大剣を素手で受け止めた！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+portraits	59,false,-2	60,false,-2	61,false,1	53,false,2
+msg	301417	Himeko! Stop!	姬子！住手！	姫子！やめてください！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301418	Don't be naïve! She's a Herrscher now! The one responsible for destroying the world!	不要天真了！她现在可是律者！是毁灭世界的元凶！！	甘い考えは捨てなさい！今の芽衣は律者よ！世界を滅ぼした元凶なのよ！！	NONE
+msg	301419	Ha!!!	哈！！！	ハァッ！！！	NONE
+speaker	
+emote	59	3
+portraits	59,false,-2	60,false,-2	61,false,2	53,false,2
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+msg	301420	Boom!!	轰隆！！！	ドガン！！！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301421	Stop it! Sister Mei! Stop fighting! Come back with us!	住手！芽衣姐姐！不要再战斗了！和我们一起回去吧！	やめてください、芽衣姉様！戦いはやめて！一緒に帰りましょう！	NONE
+speaker	Mei
+emote	59	3
+msg	301422	...	……	……。	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+portraits	59,false,-2	60,false,-2	61,false,1	53,false,2
+msg	301423	She's not going to listen to you! Mei is no different from a Honkai Beast now!	她是不会听你的！现在的芽衣和崩坏生物没区别！	あんたの言うことなんか耳に入ってないわ！今の芽衣は崩壊生物と変わらないのよ！	NONE
+msg	301424	Seele! I'll restrict her movements! Help me kill the Herrscher!	希儿！我来限制她的动作！和我一起把律者杀了！	ゼーレ！私が律者の動きを封じるから！その隙に殺るのよ！	NONE
+speaker	Seele
+emote	59	3
+emote	61	2
+msg	301425	But… But!	可…可是！	で……でも……！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301426	That's an order!	这是命令！	これは命令よ！	NONE
+speaker	Mei
+emote	59	3
+msg	301427	...	……	…………。	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301428	Himeko! Get out of the way!	姬子！快从离开！	姫子！早く離れてください！	NONE
+speaker	
+emote	59	3
+se	DLC_CH03_EV04_ElectricSound
+portraits	59,false,-2	60,false,-2	61,false,-2	53,false,2
+msg	301429	*Slash*	呲拉！！	シャンッ！！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301430	Argh!	呃！	ぐっ！	NONE
+speaker	Bronya
+emote	59	3
+emote	60	5
+msg	301431	Himeko!	姬子！	姫子！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301432	I'm fine... Damn it!	我没事…可恶！	平気よ……くそっ！	NONE
+speaker	Mei
+emote	59	3
+msg	301433	...	……	……。	NONE
+
+portraits	59,false,-2	60,false,-2	61,false,-2
+emote	59	3
+emote	60	5
+/Bronya	301434	Mei! Wait!	芽衣姐姐！等下！	芽衣姉様！待ってください！	NONE
+speaker	Himeko
+emote	59	3
+emote	61	2
+msg	301435	Don't worry about me! Go after her!	别管我！快追上去！	私に構わず！早く追うのよ！	NONE
+
+speaker	Bronya
+bg	009/046_1280x720
+match_names	Seele	Bronya	Mei	_DIM_ALL_WHEN_EMPTY
+portraits	59,false,-2	60,false,-1	53,false,2
+emote	59	3
+emote	60	5
+msg	301436	Sister Mei!	芽衣姐姐！	芽衣姉様！	NONE
+speaker	Mei
+msg	301437	...	……	……。	NONE
+speaker	Bronya
+msg	301438	Mei, please listen to me! Let's stop fighting! I've already united all the surviving humans. If we all work together, we can start a new life!	芽衣姐姐请听我说，我们不要再战斗下去了！我已经将幸存的人类全部联合起来了，大家齐心协力的话一定可以重新开始新的生活！	芽衣姉様、聞いてください。これ以上の戦いはやめましょう！ブローニャは生き残った人間を集結させました。みんなで力を合わせれば、きっと新しい生活が始められます！	NONE
+msg	301439	So please... Mei... Please come back... And together, we can restore this broken world!	所以芽衣姐姐也回来吧…我们一起把世界恢复到原来的样子！	だから……お願いします。芽衣姉様も、戻って来てください……一緒に、この世界を元に戻しましょう！	NONE
+speaker	Mei
+msg	301440	...	……	……。	NONE
+msg	301441	It's already... Impossible to go back.	已经…不可能回去了。	もう……戻れない。	NONE
+msg	301442	The world has already ended... And you will die here.	这个世界已经结束了…而你也会死在这里。	この世界はもう終わったの……あなたもここで死ぬのよ。	NONE
+speaker	
+portraits	59,false,-2	60,false,-2	53,false,-2
+se	DLC_CH03_EV03_SwordsHit
+msg	301443	*Slash*!	蹭！	ザンッ！	NONE
+speaker	Seele
+msg	301444	Bronya!	姐姐大人！	お姉ちゃん！	NONE
+speaker	Bronya
+msg	301445	Argh...!	呜！	うっ！	NONE
+portraits	59,false,-2	60,false,-2	53,false,2
+speaker	Mei
+msg	301446	Kill them.	杀了她们。	彼女たちを殺しなさい。	NONE
+match_names	Seele	Bronya	???	_DIM_ALL_WHEN_EMPTY
+portraits	59,false,-2	60,false,-2	50,false,2
+/???	301447	Order confirmed. Core data is threatened. Annihilation program activated.	命令确认，核心数据遭到威胁，启动歼灭程序，	命令確認。コアデータが脅威を感知、殲滅プログラム起動……。	NONE
+/Bronya	301448	Is there no room for negotiation....?	已经没有交涉的余地了么……	もう話し合いの余地はないのですか……。	NONE
+/Seele	301449	Sis! Himeko's right, that person isn't your sister anymore!	姐姐大人！姬子说的对，她已经不是芽衣姐姐了！	お姉ちゃん！姫子さんの言う通りだよ、その人はもう芽衣姉様じゃない！	NONE
+/Bronya	301450	But, why would Mei...	可是，芽衣姐姐为什么要……	でも、芽衣姉様はどうして……。	NONE
+tn	0	She says Mei-neesama but since honorifics are omitted in the Localized translation I tried to get the point across by saying "My sister"
+msg	301451	Mei, I'm sorry. We have our own reasons for living in this world. Even if you're my sister, you won't stop us! 	芽衣姐姐，请原谅我。我们有着自己生存下去的理由，即使是芽衣姐姐也无法阻止我们！	ブローニャたちには、この世界で生きていく理由があります。たとえ、芽衣姉様でもそれは止められません！！	NONE
+msg	301452	If you're going to stand against us, then we'll have to defeat you by force!	既然芽衣姐姐是敌人，那就只能用武力来战胜你了！	芽衣姉様……どうか許してください。芽衣姉様が敵だというなら、武力で倒すしかありません！	NONE

@@ -206,9 +206,9 @@ margin_top = -540.0
 margin_right = 850.0
 margin_bottom = 540.0
 custom_fonts/font = SubResource( 2 )
-text = "F.M. RepliCant is a free and open source fan project created by the Hoyostans team. Many of the assets were taken from the original game. It was created to help English speaking players experience the game's story due to GGZ not being available in English any more.
+text = "F.M. RepliCant is a free and open source fan project. Many of the assets were taken from the original game. It was created to help English speaking players experience the game's story due to GGZ not being available in English any more.
 
-Press Start or click the button to view our other projects, including a VN for GGZ's Retrospective story, translated light novels, and more!"
+Press Start or click below to view related projects, including a VN for GGZ's Retrospective story, translated light novels, and more!"
 align = 1
 autowrap = true
 
@@ -217,13 +217,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -498.0
+margin_left = -561.0
 margin_top = -380.0
-margin_right = 498.0
-margin_bottom = -235.0
+margin_right = 561.0
+margin_bottom = -212.0
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 13 )
-text = ">> Launch Website"
+text = ">> https://hoyostans.be <<"
 flat = true
 
 [node name="OKButton" type="TextureButton" parent="."]

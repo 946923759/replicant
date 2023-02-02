@@ -5,27 +5,18 @@ music	War And War
 bg	009/014_1280x720
 portraits	60	61
 emote	61	1
+emote	61	1
 /Himeko	301580	The Grey Moths are beginning to board.	灰蛾部队开始登舰。	灰蛾部隊、搭乗開始。	NONE
-emote	60	1
-emote	61	1
 /Bronya	301581	Be careful. If you encounter a Herrscher, retreat immediately and don't try to engage her.	你们要小心。如果遇到律者千万不要战斗，立刻返回。	気をつけてください。もし律者に遭遇したらくれぐれも戦いは避け、直ちに引き返してください。	NONE
-emote	60	1
-emote	61	1
 /Himeko	301582	That depends on if she's willing to let us go.	前提是她得放我们走。	向こうが逃がしてくれればね。	NONE
 portraits	60	61	54
-emote	60	1
 emote	54	1
 /Yssring	301583	Testing... Is the Hyperion ready to take off? The gates are about to open.	喂喂…休伯利安准备好了么？闸门马上要开启了。	ねぇ……ハイペリオンの準備はいい？ゲート、開くわよ。	NONE
 speaker	Himeko
-emote	60	1
-emote	61	1
 msg	301584	The Hyperion is ready, let's go!	准备完毕，出发！	OKよ。ハイペリオン、出発！！	NONE
 speaker	Yssring
-emote	60	1
-emote	54	1
 msg	301585	Copy that. Opening the gates.	了解，闸门开启。	了解、ゲート開放。	NONE
 speaker	
-emote	60	1
 se	DLC_CH00_EV04_ExplosionClose
 stopmusic	1.5
 shake_camera
@@ -33,7 +24,6 @@ msg	301586	Boom!!	轰隆！！！！	ドゴーン！！！！	NONE
 se	DLC_CH00_EV03_WarningAlert
 msg	301587	"Alert! Alert! The base is under attack!"	「警报！警报！基地遭到攻击！」	「警報！警報！基地が攻撃を受けました！」	NONE
 speaker	Yssring
-emote	60	1
 emote	54	3
 msg	301588	Ugh! What now?!	呃！又发生什么了！	ええっ？！今度は何？！	NONE
 speaker	Teammate

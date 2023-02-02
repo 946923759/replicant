@@ -299,12 +299,9 @@ func _ready():
 			print("Fullscreen setting is ignored in debug.")
 
 
-var wasFullscreen:bool = false
-
 func _input(_event):
 	if Input.is_action_just_pressed("Fullscreen"):
-		wasFullscreen=!wasFullscreen
-		set_fullscreen(wasFullscreen)
+		set_fullscreen(!OS.window_fullscreen)
 
 func set_fullscreen(b):
 	if b:

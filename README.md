@@ -22,6 +22,12 @@ stepmania-compat: Wrappers that make nodes slightly closer to how Actors work in
 ## Syntax
 Unfortunately syntax is not standard yet.
 
-## License
+
+# Compilation Instructions
+Download Godot Engine v3.4.4 (NOT the Mono one). Download the zip for this project, extract, open the project.godot in Godot Engine. Go to Project -> Export and select export type.
+
+Only Windows (Win32 not UWP), Linux, and Android is being targeted currently.
+
+# License
 
 This engine is CC-BY-NC-SA, no commercial use, feel free to modify it and do whatever you want besides that.

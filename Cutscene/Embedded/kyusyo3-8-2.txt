@@ -51,30 +51,17 @@ portraits	60	59,false,2	61,false,2
 emote	59	3
 emote	60	6
 /Bronya	301616	No! We can't just leave them to die!	不！我们不能丢下任何人！	だめです！誰一人捨ててはいけません！	NONE
-emote	59	3
-emote	60	6
 /Seele	301617	Bronya! If we don't get on board, we're going to die!	姐姐大人！你要去哪！	お姉ちゃん！このままじゃ、みんな死んじゃう！	NONE
 speaker	Bronya
-nop
-emote	59	3
-emote	60	6
 msg	301618	No! I'm going to bring them here! I won't give up!	我要把大家都带走！	全員、連れていきます！ブローニャはあきらめません。	NONE
 speaker	Himeko
-emote	59	3
-emote	61	2
 msg	301619	Get back here! Do you want to die!?	给我回来！你要找死么！	ブローニャ戻りなさい！死にたいの！？	NONE
 msg	301620	Tsk.....! We're out of time! Close the hatch!	啧！没时间了！关闭舱门！	チッ……！時間がない！ハッチを閉めて！	NONE
 speaker	Bronya
 nop
-emote	59	3
-emote	60	6
 msg	301621	No! Himeko! Stop!	不！姬子！你给我停下！	だめです！姫子、待ってください！	NONE
 portraits	60	59,false,-1	61,false,2
-emote	59	3
-emote	60	6
 /Seele	301622	Bronya, get in! Everyone is depending on you!	姐姐大人！快上船！大家不能失去你！	お姉ちゃん！乗って！お姉ちゃんがいなくなったら、みんな希望を失う！	NONE
-emote	59	3
-emote	60	6
 portraits	60,false,1	59	61,false,2
 /Bronya	301623	Let go of me, Seele! We have to save everyone! Let go of me now!	希儿！放开我！让我去救大家！快放开我！	ゼーレ、放しなさい！みんなを助けなければ！早く放して！	NONE
 speaker	Seele
@@ -87,8 +74,6 @@ emote	60	6
 portraits	59,false,-2	60,false,2	61,false,2
 match_names	Seele	Bronya	Himeko	_DIM_ALL_WHEN_EMPTY
 /Bronya	301625	Huh?!	哈！！	えいっ！！	NONE
-emote	59	3
-emote	60	6
 /Bronya	301626	Seele?!	希儿！？	ゼーレ！？	NONE
 portraits	59,false,-2	60,false,3	61,false,3
 msg	301627	What are you doing, Seele? Open the gate now, Himeko! Seele is still outside!	希儿你干什么！姬子快打开舱门！希儿还在外面！	ゼーレ、何をするんです！姫子、早くハッチを開けてください！ゼーレがまだ外に！	NONE
@@ -99,8 +84,6 @@ emote	60	6
 msg	301628	I'm sorry, Bronya. Only you can lead us. Please live on with the others.	抱歉…姐姐大人，只有你才能带领大家…请和大家一起活下去。	ごめんね……みんなを率いていけるのはお姉ちゃんしかいない……みんなと一緒に生きて。他の人たちは私が助けるから。	NONE
 speaker	Bronya
 nop
-emote	59	6
-emote	60	6
 msg	301629	No! No!!!!!	不！不要！不要！不要！不要！	だめっ、だめですっ！いけませんっ！いやぁっ！	NONE
 speaker	Himeko
 emote	59	6
@@ -110,13 +93,14 @@ speaker	Bronya
 nop
 emote	59	6
 emote	60	6
-msg	301631	<size=60>SEELE!!!</size>	希儿！！！	ゼーレーーッ！！！	NONE
+msg	301631	[font=res://Fonts/TextFont_Large.tres]SEELE!!![/font]	[font=res://Fonts/TextFont_Large.tres]希儿！！！[/font]	[font=res://Fonts/TextFont_Large.tres]ゼーレーーッ！！！[/font]	NONE
 speaker	
 portraits	59
 emote	59	6
+shake_camera	3
 msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
 msg	301633	...	……	……。	NONE
-msg	301634	...	……	…………。	NONE
+msg	301634	/setDispChr[3]......	……	…………。	NONE
 match_names	Seele	_DIM_ALL_WHEN_EMPTY
 emote	59	6
 /Seele	301635	....You've gone. Great, at least my sister survived...	走掉了么……太好了，至少姐姐大人活下来了。	行ったね……良かった、お姉ちゃんだけでも生き延びて……。	NONE

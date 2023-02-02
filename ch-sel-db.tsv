@@ -9,6 +9,7 @@
 --Debug Tests
 Music Test		test_music
 Choice Test		test_choice
+Font Test		test_font
 Background Test		test_background
 Black background test		test_blackbg
 Video Test		final_round_test
@@ -42,19 +43,19 @@ Resolution 2	Take cover.	kyusyo3-6-1,kyusyo3-6-2,kyusyo3-6-3
 Transfer	Head to the new base.	kyusyo3-7-1,kyusyo3-7-2,kyusyo3-7-3
 Farewell	Board the Hyperion	kyusyo3-8-1,kyusyo3-8-2
 
-#--Chapter 7
-#Hope
-#Wings
-#Black Cloud
-#Old Enemy
-#Dead End
-#Clear Way
-#Wish
-#Forbidden
-#Fantasy
-#--Chapter 7.5
-#Destruction
-#False Thing
-#Together
-#The Savior
-#Ending		kyusyo7-ending-1,kyusyo7-ending-2
+--Chapter 7
+Hope
+Wings
+Black Cloud
+Old Enemy
+Dead End
+Clear Way
+Wish
+Forbidden
+Fantasy
+--Chapter 7.5
+Destruction
+False Thing		kyusyo75-2-1
+Together
+The Savior
+Ending		kyusyo7-ending-1,kyusyo7-ending-2

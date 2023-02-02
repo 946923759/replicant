@@ -1,0 +1,109 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Kiana
+music	Significance
+match_names	Kyuushou	Kiana	_DIM_ALL_WHEN_EMPTY
+bg	011/035_1280x720
+portraits	58	107
+emote	58	3
+emote	107	0
+/Kiana	302760	This is the end... Houraiji Kyuushou.	到此为止了…蓬莱寺九霄。	ここまでね……蓬莱寺九霄。	NONE
+/Kyuushou	302761	No ... it's not over yet ...	不…还没有结束……	いや……まだ終わってなどない……。	NONE
+msg	302762	I won't give up until I see the light of victory!	在看到胜利的希望之前我是…不会倒下的！	希望を前に、勝利をこの手に掴むまで我は……倒れはしない！	NONE
+/Kiana	302763	……Hmph.  You still seem to have an unrealistic illusion about this world.	……是么，看来你还对这个世界抱有不切实际的幻想。	……そう。あなた、まだこの世界に対して非現実的な幻想を抱いているようね。	NONE
+msg	302764	The hope you are chasing now is something that disappeared from your world more than 40,000 years ago.  \nAll those people you've cared about are already dead. You're already dead.	你们现在所追逐的希望，早在四万多年前就已经熄灭了。你所珍惜的那些人也是，早在那个时代就已经死去。	あなたたちが今追いかけている希望は、あなたのいる世界から4万年以上も前に消えてしまったもの。#nあなたが大切にしているあの人たちもそう。過去の時代にとっくに死んでいるのよ。	NONE
+/Kyuushou	302765	What are you talking about...?	我听不懂你在说什么……	貴様、何を言っているのだ……。	NONE
+/Kiana	302766	Well then, I'll tell you the truth. \nI'm going to talk about the past that died 42,000 years ago.	那就让我告诉你真相吧…这早在四万两千年前就已经破灭的过去。	それじゃあ、あなたに真実を教えてあげる。#n今から語るのは、4万2千年前に滅びた過去の話よ。	NONE
+/Kiana	302767	How did a girl named Kiana destroy everything she protects?	以及名为琪亚娜的少女，如何将自己守护的一切全部破坏掉的经过……	キアナという名前の少女が……自分の守る全てをどう破壊したのか、その経緯を……。	NONE
+
+music	Dispossession - Music Box Version
+bg	011/010_1280x720
+emote	58	6
+/Kyuushou	302768	This is ... St. Freyja Academy?	这里是…圣芙蕾雅学园？	ここは……聖フレイヤ学園？	NONE
+msg	302769	Bronya... Seele...	布洛妮娅…希儿……	ブローニャ……ゼーレ……。	NONE
+emote	58	4
+emote	107	0
+msg	302770	And even Himeko and Teresa... everyone... everyone is dead...?	还有姬子…德丽莎…大家…大家都死去了……	それに姫子にテレサまで……みんな……みんな死んでる……。	NONE
+msg	302771	What the hell is this...!	这是怎么回事……	これは一体どういうことだ……！	NONE
+speaker	Kiana
+emote	58	4
+emote	107	0
+msg	302772	This is the place where the Honkai Impact began 42,000 years ago. At St. Freyja Academy, the center of the explosion, they rushed to cure Kiana, who became a Herrscher.	这里是四万两千年前的大崩坏开始的地方，在爆发中心的圣芙蕾雅学园中，为了唤醒变为律者的琪亚娜，她们义无反顾地冲向了律者。	ここは4万2千年前に大崩壊が始まった場所。#n爆発の中心である聖フレイヤ学園で、律者になったキアナを元に戻すため、彼女たちは突撃していった。	NONE
+msg	302773	But all their effort was in vain. Their effort amounted to little more than an ant's when facing the will of the mighty Herrscher.	然而，一切的努力都只是徒劳，人类的力量在律者面前根本不堪一击。	しかし、その全ては無駄でしかなかった。律者の前では、人類の力など虫けらも同然だったのよ。	NONE
+msg	302774	Due to the destructive power of the Honkai, Kiana killed them with her own hands...  \nThe battle was a one-sided slaughter. You couldn't even call it a battle.	在崩坏赋予的毁灭力量面前，琪亚娜将她们亲手杀死…那场战斗就是单方面的屠杀，甚至都称不上是战斗。	崩壊の与えた破壊的な力によって、キアナは自らの手で彼女たちを殺した……。#nその戦いは一方的な虐殺だった。戦いとすら呼べないものだったわ。	NONE
+msg	302775	The people you cherish have already died. \nThe Fire Moths are nothing more than ghosts created by their obsession... They didn't exist from the beginning.	你所珍惜的那些人早就已经死去，逐火之蛾只是由她们执念虚构而出的亡灵…从一开始就不曾存在过。	あなたが大切にしている人たちはとっくに死んだの。#n火を追う蛾は、彼女たちの執念が作り出した亡霊でしかない……最初から存在していなかったの。	NONE
+emote	58	3
+emote	107	0
+/Kyuushou	302776	Nonsense! Is this what you meant when you said everything was false... But even still, everyone is fighting for their lives in this world! You say that's a lie, but these feelings are real!	不要胡说八道了！你一直强调的虚假就是这个意思么…但她们在这个世界中为了生存而不断战斗的一切都只是骗人的么！那些感情绝对不可能是虚构的！	デタラメを言うな！そうか、貴様がずっと偽りだと言っていたのは、#nそういう意味だったんだな。……でも、彼女たちはこの世界で、生きるために戦っているじゃないか！#nそれも全て嘘だったと言うのか！？あの感情は絶対に偽りなんかじゃない！	NONE
+/Kiana	302777	It's just an illusion that they themselves created... If I feel like it, they will disappear from this world in an instant.	那只不过是以她们的原型创造出来的假象罢了…只要我愿意，她们就会立刻消失在你的面前。	あれは彼女たち自身が作り出した、幻影でしかないのよ……。#n私がその気になれば、彼女たちは一瞬にしてあなたの前から消えるわ。	NONE
+emote	58	6
+emote	107	0
+/Kyuushou	303143	That means... You created the Fire Moths?	你的意思是…逐火之蛾的大家都是由你创造的么？	それは、つまり……火を追う蛾の皆は、貴様が作り出したってことか？	NONE
+emote	58	6
+emote	107	0
+/Kiana	303144	No, you are the one who really created them, and this world too... The individuals you know have been unconsciously created based on our memories.	不，真正创造她们的是你自己，就连这个世界也一样…是你根据我们记忆中认知的她们而无意识中产生的个体。	いえ、本当の意味で彼女たちを作り出したのはあなた自身よ。#nこの世界も同じ……あなたが私たちの記憶の中で知っている彼女たちを基にして、#n無意識の中で生み出した個体なの。	NONE
+msg	303145	The girls, who should have slept forever, have appeared in this turbulent land due to your interference. You put them in such suffering ...	原本应该长眠的她们因为你的干涉而在此出现在这片狼藉的土地上，是你让她们在此陷入这样的痛苦中……	長く眠っているはずだった彼女たちは、あなたの干渉によってこの乱れ切った土地に現れた。#nあなたが彼女たちを、このような苦しみの中に陥れたの……。	NONE
+emote	58	4
+emote	107	0
+/Kyuushou	303146	Really....	不是的……	そんな……。	NONE
+emote	58	4
+emote	107	0
+/Kiana	303147	In my past, after they died, human civilization was destroyed by the waves of catastrophe.  #n Even if there were a small number of individuals who escaped the difficulties, they were wiped out by the subsequent disaster ...	在我所处的过去中，她们死去之后人类的文明也在大崩坏的热浪中摧枯拉朽，即使有逃过一劫的少数个体，也在之后的清缴中全军覆没……	私のいた過去では彼女たちが死んだ後、人類の文明は大崩壊の波によって朽ち果てたわ。#n難を逃れた少数の個体がいたとしても、その後の災いによって全滅していた……。	NONE
+speaker	
+
+portraits	
+bg	011/026_1280x720
+msgbox_close
+set_fs	true
+/Kiana	302778	Kiana became mankind's worst nightmare, and by the guidance of the Honkai, became a demon whose sole purpose was to destroy everything.	琪亚娜成为了人类的噩梦，在崩坏的驱使下成为了仅仅为了毁灭一切而存在的恶魔。	キアナは人類の悪夢となり、崩壊の導きによって、全てを滅ぼすためだけに存在する悪魔となった。	NONE
+msg	302779	She was quietly floating over this star ... unconscious, unmoving, unemotional ... just waiting for the command given by the Honkai and executing the goal of the Honkai.	她安静地漂浮在这颗星球的上空…没有意识，没有动作，也没有感情…仅仅只是等待着崩坏给予的指令，消灭崩坏标记的目标。	彼女は静かにこの星の上空を漂っていた……意識もなく、動くこともなく、感情もないまま……ただ崩壊が与える命令だけを待ち、崩壊が示した目標を消滅させるだけ。	NONE
+msg	302780	Every time the flame of human civilization reignited, she appeared before the rebels and slaughtered them with absolute power.	每当人类文明的火种燃起的时候，她就会出现在那些反抗者的头顶，用绝对的力量将他们屠戮殆尽。	人類の文明の火種が燃え上がるたびに、彼女は反抗する者たちの前に現れ、絶対的な力で彼らを虐殺し尽くした。	NONE
+msg	302781	She kept repeating the same thing over and over.	她一直重复着同样的事情。	彼女はずっと同じことを繰り返していた。	NONE
+msg	302782	Killing ... Waiting ... Killing ... Waiting ... Killing ...	杀戮…等待…杀戮…等待…杀戮……	殺戮……待機……殺戮……待機……殺戮……。	NONE
+msg	302783	Long enough for time to lose all meaning...	这段漫长的过程不知道经历了多久……	この長い長い道のりを、どれだけ過ごしたのか……。	NONE
+msg	302784	It could be just a few hundred years ... or even tens of thousands of years ...	也许只有短短的数百年…也许是漫长的数万年……	わずか数百年かもしれないし……或いは数万年もの長きに及ぶかもしれない……。	NONE
+msg	302785	She no longer remembered how long she stood on the desolate land.	她已经不记得自己在荒芜的大地上矗立了多久。	彼女はもう、自分が荒れ果てた大地にどれだけ立っていたのか、それすら覚えていなかった。	NONE
+msg	302786	Until the time when the species named human beings is completely eradicated and the halberd is put in place, the consciousness of human beings may not return.	或许直到名为人类的物种完全灭绝，才能停下自己的刀刃，重新恢复了意识……	人類という名の種が完全に根絶し、矛を収めるその時まで、人間だった頃の意識が戻ることはないのかもしれない……。	NONE
+msg	302787	However, her consciousness suddenly awakens.	但只有那一刻她没有忘记。	しかし、彼女の意識は突然目覚める。	NONE
+bg	007/006_1280x720
+msg	302788	At that moment ... all the memories flowed into her mind like a nightmare.	当她再次醒来的时候…一切的记忆都如同一场噩梦一般涌向她的脑海的那一刻。	その瞬間……全ての記憶が、悪夢のように彼女の脳裏に流れ込んできた。	NONE
+msg	302789	Countless screams echoed in her ears.  #n Countless corpses were piled up under her feet.  #n Countless fresh blood ... was flowing down between her fingers.	无数的悲鸣在她的耳边响起，无数的尸骸堆积在她的脚下，无数的鲜血在她的指间流淌。	無数の悲鳴が彼女の耳元で響いた。#n無数の死体が彼女の足下に積まれていた。#n無数の鮮血が……彼女の指の合間から流れ落ちていた。	NONE
+msg	302790	As if to punish her ... the moment she wakes up, all the sins she has committed reappear in her brain.	崩坏为了惩罚她…在她苏醒的一刹那将她犯下的所有罪恶都保留在了她的记忆中。	まるで彼女を罰するかのように……彼女が目覚めた瞬間に、彼女の犯した全ての罪が脳内に蘇る。	NONE
+msg	302791	In the face of her sins ... she fell into despair and madness ...  #n Only the cry of pain echoes into the land of nothingness...	面对自己犯下的罪行…她陷入了绝望与疯狂…只有痛苦的嘶吼声徘徊在虚无的大地上。	自分の犯した罪を前にして……彼女は絶望と狂気の淵に陥った……。#n苦痛の叫び声だけが、ただただ虚無の大地へと響き渡る。	NONE
+msg	302792	And ... she couldn't accept the unbearable sadness and chose to save herself.	最后…她无法承受这巨大的悲伤，得出了唯一的结论。	そして……彼女は、その抱えきれないほどの悲しみを受け入れることができず、自らが救われる道を選んだ。	NONE
+bg	011/027_1280x720
+msg	302793	Rather than suffering... She chose death.	与其这样痛苦…不如选择死亡。	苦しみよりも……死という道を。	NONE
+msg	302794	She aimed her gun at her throat and pulled the trigger. \n And thus, she would kill the final surviving member of the human race.	她用自己的枪刃穿透了自己的身体…试图杀死最后的一个人类。	彼女は銃を喉元に当て、そのまま引き金を引く。#n……そして、最後の1人となった人類を殺そうとした。	NONE
+msg	302795	But she could not die...	但即使这样也无法死去……	しかし、死ぬことはできなかった……。	NONE
+msg	302796	That's right... Because she was a Herrscher.  The Herrscher is the strongest life form created by the Honkai, and its body has already deviated from the category of "human beings".	没错…因为她是律者，是崩坏创造的最强生命，已经脱离了“人类”的范畴。	そう……彼女は律者だったから。#n律者とは崩壊が造り出した最強の生命体であり、その肉体は既に「人類」の範疇から逸脱をしていた。	NONE
+msg	302797	No one could kill her. Including herself.	没有人能够杀死她，也包括她自己。	彼女を殺せる者は存在しなかった。彼女自身も含めて。	NONE
+msg	302798	When she realized this fact, Kiana gave up resisting.	在理解到这一事实的时候，琪亚娜放弃了抵抗。	この事実を悟った時、キアナは抵抗することを諦めた。	NONE
+msg	302799	She sealed herself in the memories of the past ...  \n To paralyze myself with her beautiful memories.	她将自己封闭在过去的回忆中…用那些美好的一切来麻痹自己。	彼女は、自分自身を過去の思い出の中に封印した……。#nその美しい思い出で、自分を麻痺させるために。	NONE
+msg	302800	When the Honkai disappears from the world... Only then will she truly be freed.	直到崩坏从这颗星球上散去的那一刻…她才真正迎来了解脱。	崩壊がこの星から消え去るその時……彼女は本当の意味で解放される。	NONE
+bg	011/035_1280x720
+music	Significance
+set_fs	false
+msgbox_open
+portraits	58	107
+emote	58	4
+/Kiana	302801	This is all the truth.	这就是一切的真相。	これが全ての真相。	NONE
+msg	302802	A world much crueler than the playhouse you have experienced.	比你经历的过家家游戏更为残酷的世界。	あなたが経験したおままごとよりも、ずっと残酷な世界。	NONE
+msg	302803	What can you do in the face of such a world?	面对这样的世界，你究竟能做到什么？	このような世界を前にして、あなたに一体何ができるの？	NONE
+msg	302804	Hey.... Houraiji Kyuushou.	呐…蓬莱寺九霄。	ねぇ……蓬莱寺九霄。	NONE
+bg	007/006_1280x720
+msg	302805	In such despair, can you find a single hope for me? \nCan you give me salvation? Tell me, Houaiji Kyuushou...	在这样的绝望中，你可以为我找到一丝希望么？你可以为我带来一丝救赎么？告诉我……蓬莱寺九霄……	このような絶望の中で、私のために一縷の希望を見つけられるの？#n私に救いを与えられるの？教えて……蓬莱寺九霄……。	NONE
+bg	011/035_1280x720
+speaker	Kiana
+emote	107	0
+msg	302806	Can you save me, even when I'm like this!?	即使是这样的我你也可以拯救么！！	このような私でも、あなたは救えるの！？	NONE
+speaker	Kyuushou
+emote	107	0
+msg	302807	Uh....	呃……	うっ……。	NONE
+msg	302808	I, I.... I will...	我…我……	わ、我は……わた、私は……。	NONE
+speaker	Kiana
+emote	58	4
+emote	107	0
+msg	302809	It seems like an answer is unneeded.	看来已经没有回答的必要了。	どうやら、もう答えてもらう必要はないみたいね。	NONE
+msg	302810	Disappear with this false world.	与这个虚假的世界一同陨落吧。	この虚構の世界と共に、終わるがいいわ。	NONE
+emote	58	3
+/Kyuushou	302811	Ahhhhhhh!!!	啊啊啊啊——！！！	あぁああああ——ッ！！！	NONE
+/Kiana	302812	Goodbye, Houraiji Kyuushou.	再见了，蓬莱寺九霄。	さようなら、蓬莱寺九霄。	NONE

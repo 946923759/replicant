@@ -45,12 +45,17 @@ func action_chapterSelect():
 	if anyOptionWasChanged:
 		Globals.save_system_data()
 		anyOptionWasChanged=false
-	#get_tree().change_scene("res://TitleScreen.tscn")
-	Globals.change_screen(get_tree(),"ScreenSelectChapter")
-#func screenOut2():
-#	get_tree().change_scene("res://TitleScreen.tscn")
+	
+	var root = get_parent()
+	if root:
+		print("Found cutscene player")
+		Globals.change_screen(get_tree(),root.PrevScreen)
+	else:
+		Globals.change_screen(get_tree(),"ScreenSelectChapter")
+
 func action_continue():
 	OffCommand()
+
 func action_skip():
 	
 	if anyOptionWasChanged:
@@ -377,16 +382,17 @@ func _ready():
 		#var epNum:int = 99
 		#var partNum:int=99
 		
-		var episodes = Globals.chapterDatabase[e.parentChapter]
-		for i in range(episodes.size()):
-			if episodes[i].title==e.title:
-				heading+="-"+String(i+1)
-				if episodes[i].parts.size()>1:
-					for j in range(episodes[i].parts.size()):
-						if episodes[i].parts[j]==Globals.nextCutscene:
-							heading+="-"+String(j+1)
-							break
-				break
+		if e.parentChapter in Globals.chapterDatabase:
+			var episodes = Globals.chapterDatabase[e.parentChapter]
+			for i in range(episodes.size()):
+				if episodes[i].title==e.title:
+					heading+="-"+String(i+1)
+					if episodes[i].parts.size()>1:
+						for j in range(episodes[i].parts.size()):
+							if episodes[i].parts[j]==Globals.nextCutscene:
+								heading+="-"+String(j+1)
+								break
+					break
 		heading+=": "+e.title
 		$EpisodeDisplay/Header.text=heading
 		$EpisodeDisplay/Description.text=e.desc

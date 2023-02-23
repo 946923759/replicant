@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ScrollItem.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/NotoSerif-CondensedBlack.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/sel_outline.png" type="Texture" id=3]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/sel_outline_focus.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+text = "Retrospective"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+margin_left = 120.0
+margin_right = 697.0
+margin_bottom = 149.0
+custom_fonts/font = SubResource( 1 )
+text = "Retrospective"
+align = 1
+valign = 1

@@ -6,6 +6,8 @@ That means NO COMMERCIAL USE! Contact me for commercial use.
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 - Amaryllis Works
 """
+var PrevScreen = "ScreenSelectChapter"
+
 
 var time: float = 0.0
 var waitForAnim: float = 0.0
@@ -359,6 +361,12 @@ func advance_text()->bool:
 #					seq.append($FadeToBlack,'modulate:a',1,.5)
 #					seq.append($FadeToBlack,'modulate:a',0,.5)
 #					waitForAnim=max(waitForAnim,1)
+			'flash':
+				$FadeToBlack.color=Color.white
+				$FadeToBlack.visible=true
+				#print("A")
+				tw.interpolate_property($FadeToBlack,"color:a",null,0,.02,Tween.TRANS_LINEAR,Tween.EASE_IN,.02)
+				tw.interpolate_property($FadeToBlack,"color",null,Color(0,0,0,0),.02,Tween.TRANS_BACK,Tween.EASE_IN,.04)
 			'portraits':
 				#Badly translated lua code
 				#Duplicate curMessage while skipping the 0th element
@@ -506,17 +514,27 @@ func advance_text()->bool:
 func closeTextbox(t:Tween,delay:float=0,animTime:float=.3)->float:
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
 	#print("Closing textbox with delay of "+String(delay))
-	t.interpolate_property(textboxSpr,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-	t.interpolate_property(speakerActor,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-	t.interpolate_property(speakerActor,"modulate:a",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+	if animTime<=0 and delay<=0:
+		textboxSpr.rect_scale.y=0
+		speakerActor.rect_scale.y=0
+		speakerActor.modulate.a=0
+	else:
+		t.interpolate_property(textboxSpr,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+		t.interpolate_property(speakerActor,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+		t.interpolate_property(speakerActor,"modulate:a",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
 	shouldTextBoxBeVisible=false
 	return animTime
 
-func openTextbox(t:Tween,delay:float=0)->float:
+func openTextbox(t:Tween,delay:float=0,animTime:float=.3)->float:
 	#print("Opening textbox with delay of "+String(delay))
-	t.interpolate_property(textboxSpr,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
-	t.interpolate_property(speakerActor,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
-	t.interpolate_property(speakerActor,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
+	if animTime<=0 and delay<=0:
+		textboxSpr.rect_scale.y=1
+		speakerActor.rect_scale.y=1
+		speakerActor.modulate.a=1
+	else:
+		t.interpolate_property(textboxSpr,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
+		t.interpolate_property(speakerActor,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
+		t.interpolate_property(speakerActor,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
 	shouldTextBoxBeVisible=true
 	return .3
 	
@@ -597,7 +615,7 @@ func _ready():
 	#tw.start()
 	var seq := TweenSequence.new(get_tree())
 	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
-	seq.append($FadeToBlack,"modulate:a",0,.5)
+	seq.append($FadeToBlack,"color:a",0,.5)
 
 
 func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -743,9 +761,9 @@ func _process(delta):
 			#txtTw.stop_all()
 			txtTw.remove_all()
 			if shouldTextBoxBeVisible:
-				textboxSpr.rect_scale.y=1
-				speakerActor.rect_scale.y=1
-				speakerActor.modulate.a=1
+				openTextbox(tw,0,0)
+			else:
+				closeTextbox(tw,0,0)
 			text.visible_characters = text.text.length()
 
 			if isFullscreenMessageBox:

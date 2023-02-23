@@ -66,6 +66,24 @@ class Episode:
 	var desc:String
 	var parts:Array
 	var isSub:bool=false
+	
+	func _to_string():
+		var s = title+":"
+		s+="\n\tDescription: "+desc
+		s+="\n\tParts: "+String(parts)
+		s+="\n\tisSub: "+String(isSub)
+		return s
+	
+	"""
+	Example:
+		Episode {
+			parentChapter = "Chapter 1"
+			title = "Significance"
+			desc = "Description here"
+			parts = ["kyusyo0-3-1", "kyusyo0-3-2", "kyusyo0-3-3"]
+			isSub = false
+		}
+	"""
 
 """
 Typed dict support when?
@@ -116,15 +134,19 @@ func get_next_cutscene(curEpisode:Episode,curPart:String):
 	if nextPart!="":
 		return [nextPart+".txt",curEpisode]
 	else:
-		var episodes = chapterDatabase[curEpisode.parentChapter]
-		for i in range(episodes.size()):
-			if episodes[i].title==curEpisode.title:
-				if i+1<episodes.size():
-					nextEpisode=episodes[i+1]
-					nextPart=nextEpisode.parts[0]
-					print("[Globals] Found next episode in chapter: "+nextEpisode.title)
-					return [nextPart+'.txt',nextEpisode]
-				break
+		if curEpisode.parentChapter in chapterDatabase:
+			var episodes = chapterDatabase[curEpisode.parentChapter]
+			for i in range(episodes.size()):
+				if episodes[i].title==curEpisode.title:
+					if i+1<episodes.size():
+						nextEpisode=episodes[i+1]
+						if len(nextEpisode.parts)>0:
+							nextPart=nextEpisode.parts[0]
+							print("[Globals] Found next episode in chapter: "+nextEpisode.title)
+							return [nextPart+'.txt',nextEpisode]
+						else:
+							print("[Globals] Next episode's parts were empty?")
+					break
 		
 		var k = chapterDatabase.keys()
 		for i in range(k.size()):
@@ -136,6 +158,7 @@ func get_next_cutscene(curEpisode:Episode,curPart:String):
 				else:
 					print("[Globals] Hit the end of all the episodes, returning to main menu.")
 					return ["",null]
+	return ["",null]
 		
 #SAVE DATA
 func get_save_directory(fName:String)->String:
@@ -332,7 +355,7 @@ func set_audio_levels():
 			AudioServer.set_bus_volume_db(d,realVolumeLevel)
 			AudioServer.set_bus_mute(d,false)
 
-func get_matching_files(path,fname):
+static func get_matching_files(path,fname):
 	#var files = []
 	var dir = Directory.new()
 	print("Opening "+path)
@@ -355,16 +378,30 @@ func get_matching_files(path,fname):
 			dir.list_dir_end()
 			return path+file
 
+static func get_cutscene_path()->String:
+	if not OS.has_feature("console"):
+		match OS.get_name():
+			"Windows","X11","macOS":
+				if OS.has_feature("standalone"):
+					return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
+	#If not compiled or if the platform doesn't allow writing to the game's current directory
+	return "res://Cutscene/Embedded/"
+
 var SCREENS:Dictionary = {
 	"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",
 	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
-	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery.tscn",
-	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTest.tscn",
+	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery_v2.tscn",
+	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTestV2.tscn",
 	"ScreenFirstRun":"res://Screens/ScreenFirstRun.tscn",
 	"ScreenSelectChapter":"res://Screens/ScreenSelectChapter/TitleScreen.tscn",
 	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn",
-	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV2.tscn"
+	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV3.tscn",
 
+	"ScreenSelectEra":"res://Screens/RetroRemake/EraSelect/ScreenSelectEra.tscn",
+
+	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
+	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",
+	"RR-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-rr.tscn",
 }
 
 func change_screen(tree,screen:String)->void:

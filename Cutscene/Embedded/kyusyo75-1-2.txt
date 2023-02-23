@@ -1,0 +1,21 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Kyuushou
+bg	011/035_1280x720
+portraits	58
+emote	58	3
+msg	302755	Haaaa.. Haaa.... Did it work?	呼…呼…成功了么？	ハァッ……ハァッ……上手くいったか？	NONE
+speaker	Kiana
+portraits	58	107
+emote	58	3
+emote	107	0
+msg	302756	For a human being, your efforts are truly admirable.	作为人类而言，你的努力确实令人钦佩。	人類にしては、その努力確かに素晴らしいものだったわ。	NONE
+msg	302757	But even if you push the limit of your humanity, this is the end for you. You can't win against the Honkai.	但人类的极限也不过如此，在崩坏的面前，你毫无胜算。	でも、たかが人類が限界を振り絞っても、この程度で終わり。崩壊の前で、あなたに勝ち目はないの。	NONE
+speaker	
+portraits	107
+emote	107	0
+msg	302758	<i>Boom!!!</i>	砰！！！	パンッ！！！	NONE
+speaker	Kyuushou
+portraits	58	107
+emote	58	3
+emote	107	0
+msg	302759	呃啊啊啊！！	呃啊啊啊！！	あァああああぁああッ！！！	NONE

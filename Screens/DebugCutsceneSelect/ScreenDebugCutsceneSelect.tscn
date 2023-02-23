@@ -1,0 +1,121 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Fonts/TextFont_Large.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Screens/DebugCutsceneSelect/ScreenDebugCutsceneSelect.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Screens/DebugCutsceneSelect/EpisodeTree.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 47.0
+margin_top = 376.0
+margin_right = 887.0
+margin_bottom = 443.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 62.706
+margin_top = 272.248
+margin_right = 866.706
+margin_bottom = 347.248
+custom_fonts/font = ExtResource( 1 )
+text = "Enter your text file here"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1085.72
+margin_top = 219.675
+margin_right = 1734.72
+margin_bottom = 294.675
+custom_fonts/font = ExtResource( 1 )
+text = "Get Episode Data"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 461.855
+margin_top = 899.682
+margin_right = 1470.85
+margin_bottom = 980.682
+custom_fonts/font = ExtResource( 1 )
+text = "Click to start cutscene player"
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 988.332
+margin_top = 503.703
+margin_right = 1894.33
+margin_bottom = 807.703
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="Panel/GridContainer"]
+margin_right = 906.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "Set Episode Data (Optional)"
+align = 1
+
+[node name="ItemList" type="GridContainer" parent="Panel/GridContainer"]
+margin_top = 54.0
+margin_right = 906.0
+margin_bottom = 123.0
+columns = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Panel/GridContainer/ItemList"]
+margin_right = 225.0
+margin_bottom = 33.0
+custom_fonts/font = SubResource( 1 )
+text = "Parent Chapter"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/GridContainer/ItemList"]
+margin_left = 229.0
+margin_right = 229.0
+margin_bottom = 33.0
+text = "enter your text here lol"
+
+[node name="Label2" type="Label" parent="Panel/GridContainer/ItemList"]
+margin_top = 37.0
+margin_right = 225.0
+margin_bottom = 51.0
+text = "Title"
+
+[node name="TextEdit2" type="TextEdit" parent="Panel/GridContainer/ItemList"]
+margin_left = 229.0
+margin_top = 37.0
+margin_right = 229.0
+margin_bottom = 51.0
+text = "enter your text here lol"
+
+[node name="Label3" type="Label" parent="Panel/GridContainer/ItemList"]
+margin_top = 55.0
+margin_right = 225.0
+margin_bottom = 69.0
+text = "Parts in chapter"
+
+[node name="TextEdit3" type="TextEdit" parent="Panel/GridContainer/ItemList"]
+margin_left = 229.0
+margin_top = 55.0
+margin_right = 229.0
+margin_bottom = 69.0
+text = "enter your text here lol"
+
+[node name="Tree" type="Tree" parent="."]
+margin_right = 642.0
+margin_bottom = 176.0
+script = ExtResource( 5 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

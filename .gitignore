@@ -3,6 +3,7 @@ Sounds/*
 Backgrounds/*
 Portraits/*
 Fonts/*
+Ext/RetroRemake/*
 
 # Godot-specific ignores
 .import/

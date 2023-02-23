@@ -1,0 +1,50 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+music	Significance
+speaker	
+match_names	Kyuushou	Kiana
+preload_portraits	58	107
+bg	011/035_1280x720
+portraits	107
+msg	302725	Space... A really quiet place.	宇宙…真是安静的地方。	宇宙……本当に静かな場所ね。	NONE
+msg	302726	I can't see the desolate land, I can't hear the deafening screams, and I can't feel the warmth of life...	看不到破败的大地，听不到嘶声的悲鸣，同样也触摸不到生命的温度……	荒れ果てた大地も見えず、耳をつんざく悲鳴も聞こえず、そして命の温もりにも触れられない……。	NONE
+msg	302727	The earth overlooking from here is... just a gravel-filled planet.  It has lost its former brilliance and has withered like a faded photo.	在这里俯瞰而下的地球…只是一颗充满砂砾的行星，失去了曾经的蔚蓝，枯萎一如泛黄的相片。	ここから見下ろす地球は……ただの砂利に満ちた惑星にすぎない。かつての青さを失い、色あせた写真のように枯れている。	NONE
+msg	302728	This is the present world ... the dead world, the forgotten world, the false world...	这就是现在的世界…死去的世界，被遗忘的世界，错误的世界……	これこそが今の世界……死んだ世界、忘れられた世界、誤った世界……。	NONE
+msg	302729	This is an empty world with no meaning.	同样也没有任何意义的世界。	そして、何の意味もない世界。	NONE
+msg	302730	But... is it worth saving?	但就算是这样…也有拯救的价值么？	それなのに……救う価値があるの？	NONE
+
+nop	music	The Sound of the End
+portraits	58	107
+emote	107	0
+emote	58	3
+/Kiana	302731	Houraiji Kyuushou.	蓬莱寺九霄。	蓬莱寺九霄。	NONE
+/Kyuushou	302732	Hah, hah...	呼…呼……	ハァ、ハァ……。	NONE
+/Kiana	302733	It looks like you were the only one who made it here. What a shame.\n...After such a long journey, no one is near you.	看来只有你一个人来到了这里，真是遗憾…经过如此漫长的旅行，你的身边也一样空无一人。	ここに来れたのはあなただけみたいね。本当に残念。#n……これほど長い旅を経て、あなたの傍には誰もいないなんて。	NONE
+emote	58	7
+/Kyuushou	302734	No!  Everyone is by my side.  I'm standing here now because of their power...! \nAnd with my own power, I'll bring them the light of hope!	不！所有人都在我的身边，是她们的力量让我站在了这里…而我也会继续战斗，将希望的曙光带回到她们身边！	違うッ！皆、我の傍にいる。彼女たちの力があったからこそ、今の我はここに立っているんだ……！#nそして、我の力で希望の光を彼女たちに届ける！	NONE
+/Kiana	302735	The light of hope?  Have you seen even a glimpse of light since you stepped into this world?	希望的曙光？在你踏入这个世界的那一刻起，你可曾见过曙光的雏形？	希望の光？あなたがこの世界に足を踏み入れてから、光の片鱗を目にすることなんてあった？	NONE
+msg	302736	All that awaits you is infinite despair and sadness... only separation from friends and death ... \n There has never been a light of hope in this faded world.	等待你们的只有无尽的绝望和悲伤…只有同伴的离别和死亡…在这个枯萎的地方从来就没有什么希望的曙光。	あなたたちを待ち受けているのは、無限の絶望と悲しみだけ……仲間との離別や死だけよ……。#nこの色あせた世界に、希望の光なんて今までなかったのだから。	NONE
+msg	302737	Houraiji Kyuushou, you already know why you've appeared in this world.  \nYou know why this world is beyond saving.	蓬莱寺九霄，你应该已经知道自己为什么会出现在这个世界的理由，也应该明白，这早就已经是无法挽回的事情。	蓬莱寺九霄——あなた、どうして自分がこの世界に現れたのか、もう分かっているんでしょう。#nそれなら、これがもう取り返しのつかないことだっていうのも分かっているはず。	NONE
+msg	302738	All you are doing now is just repeating the tragedy of that time.  \nThere is no salvation in this world, and I don't need it.  So why do you need to deceive yourself and suffer?	你们现在所做的一切都只是在重复那个时候的悲剧罢了，这个世界不存在救赎，也不需要救赎，既然如此，为什么要欺骗自己呢？	あなたたちが今していることは、どれもあの時の悲劇を繰り返しているだけなの。#nこの世界に救いなんて存在しないし、必要ともしていない。それなのに、どうして自分を騙してまで苦しむ必要があるの？	NONE
+/Kyuushou	302739	You're wrong! I haven't deceived myself!	不！我没有欺骗！	違う！我は、自分を騙してなんかいない！	NONE
+/Kiana	302740	Or... Do you think that only you can play the role of savior in such a world?  \nWhen in reality, you are nothing but a weak and incompetent ordinary person?	还是你觉得，在这样的世界中你就可以承担起救世主的角色，因为在现实中你只是软弱无能的平凡人呢？	それとも……このような世界の中で、あなただけは救世主の役割を担えると思っているの？#n現実のあなたは、ただの軟弱で無能な凡人なのに？	NONE
+msg	302741	Just like the screams you heard in the tower ...You really are just a meager pebble in it.\nYou can only wait in despair for the others to save you.	正如同你在塔中听到的那些悲鸣一般…真正的你也只是其中的一颗砂砾而已…只能在绝望中等待着别人的救赎。	あなたが塔の中で聞いたあの悲鳴と同じように……本当のあなたも、その中の一粒の砂利にすぎないのよ。#n……絶望の中で、他の人の救いを待っているだけ。	NONE
+emote	58	6
+/Kyuushou	302742	Ah......	呃……	あ……。	NONE
+/Kiana	302743	Answer me, Houraiji Kyuushou.  What on earth are you fighting for?	回答我，蓬莱寺九霄，你究竟为了什么而战斗呢？	答えて、蓬莱寺九霄。あなたは、一体何のために戦っているの？	NONE
+/Kyuushou	302744	I.... I fight for.....	我…我为了……	わ……我……我は——	NONE
+emote	58	7
+msg	302745	I have continued fighting until now so everyone can obtain the happiness they want!	我是为了让所有人获得她们想要的幸福才战斗到现在！	全ての人が、自分の望む幸せを手にできるよう、我はここまで戦ってきた！	NONE
+msg	302746	Kiana should feel the same!  The sight I saw in this tower... is what Kiana really wants from the bottom of her heart!	其实，我们都怀抱着同样的想法，在塔中我所看到的那段光景…那才是你内心真正的愿望吧！	キアナだって、同じ気持ちのはずだ！この塔の中で我が見た光景こそ……キアナが心の底から願っているものなんだろう！	NONE
+msg	302747	Like me, you want to change this ruthless world ...and spend time with who you love!	你也和我一样希望改变这个无情的世界，想要和重要的人在一起！	我と同じように、この無情な世界を変えたいと……そして、大切な人と一緒に過ごしたいと思っているはずだ！	NONE
+msg	302748	So what if I'm nothing but a pebble!  The hope I carry is a mountain solidified by countless pebbles! We'll keep moving forward, until we touch the light of day!	就算是渺小的砂砾又如何！我所肩负着的希望就是由无数的砂砾组成的山峰！我们会不断向上！直到触及到那片曙光为止！	小さな砂利だからって何だ！我が背負っている希望は、無数の砂利によって固められた山だ！#n九霄様たちはひたすら上に向かう！そして、その光に触れてみせる！	NONE
+emote	58	2
+tn	0	Maybe incorrect
+msg	302749	Kiana! Kiana's hope is also included in that... The wish that you couldn't fulfill alone, I can make it come true! 	琪亚娜！那其中也包括了你的希望…你所无法实现的愿望，就让我蓬莱寺九霄为你实现吧！	キアナ！その中にはキアナの希望も含まれているんだ……貴様が叶えられなかった願い、この蓬莱寺九霄様が叶えてみせよう！	NONE
+/Kiana	302750	……	……	……。	NONE
+msg	302751	I'll tell you.  How powerless that obsession is...	我会告诉你们，这份执念是多么的无力……	あなたたちに教えてあげる。その執念がどれだけ無力かってことをね……。	NONE
+msg	302752	Sleep forever... Houraiji Kyuushou!	在这里安眠吧…蓬莱寺九霄！	ここで安らかに眠りなさい……蓬莱寺九霄ッ！	NONE
+flash
+emote	58	3
+/Kyuushou	302753	Graaaaaaaaah!	呃啊啊啊！！！	ぐぁあああああッ！
+/Kiana	302754	After all, the power of mankind is tiny ... you have no chance of winning in the face of Honkai.	果然人类的力量是这么的渺小…在崩坏的面前，你们毫无胜算。	所詮、人類の力はちっぽけなのよ……崩壊を前にして、あなたたちに勝ち目はまったくないわ。
+

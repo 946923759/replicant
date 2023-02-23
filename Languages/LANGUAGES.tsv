@@ -1,12 +1,7 @@
 [Common]
-ON=ON
-OFF=OFF
-WindowTitle=F.M. RepliCant
-
-[DebugOverlay]
-Reload=Reload
-Send NextScreen=Send NextScreen
-Send PrevScreen=Send PrevScreen
+ON	ON
+OFF	OFF
+WindowTitle	F.M. RepliCant
 
 [ChapterMenu]
 Main=Main

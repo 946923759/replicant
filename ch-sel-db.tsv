@@ -1,4 +1,4 @@
-#--CATEGORY
+#--CATEGORY	LOCKED
 #TITLE	DESCRIPTION	FILE1,FILE2,FILE3	IS_SUB_MISSION
 
 #This controls where the VN starts after the first run screen (duh).
@@ -54,7 +54,7 @@ Wish
 Forbidden
 Fantasy
 --Chapter 7.5
-Destruction
+Destruction		kyusyo75-1-1,kyusyo75-1-2
 False Thing		kyusyo75-2-1
 Together
 The Savior

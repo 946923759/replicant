@@ -36,6 +36,10 @@ rect_scale = Vector2( 1.5, 1.5 )
 mouse_filter = 0
 mouse_default_cursor_shape = 2
 texture = SubResource( 4 )
+__meta__ = {
+"_editor_description_": "This texturerect is invisible, it's just
+here to handle mouse input."
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 274, -78 )

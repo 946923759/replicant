@@ -1,0 +1,91 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=1]
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Music/CDAudio/17 - Dearly Beloved ~reprise~.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/ScrollObj.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/EraRetro.jpg" type="Texture" id=6]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/frame.png" type="Texture" id=7]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/EraZERO.jpg" type="Texture" id=8]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/mpv-shot0004.jpg" type="Texture" id=9]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/EraFM.jpg" type="Texture" id=10]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/ScreenSelectEra.gd" type="Script" id=11]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/BigImage.gd" type="Script" id=12]
+[ext_resource path="res://Screens/RetroRemake/EraSelect/EraReborn.jpg" type="Texture" id=13]
+
+[node name="ScreenSelectEra" instance=ExtResource( 2 )]
+script = ExtResource( 11 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+stretch_mode = 7
+
+[node name="BackButton" parent="." index="1"]
+visible = false
+
+[node name="Music" type="AudioStreamPlayer" parent="." index="2"]
+stream = ExtResource( 3 )
+autoplay = true
+
+[node name="ActorScroller" type="Node2D" parent="." index="3"]
+position = Vector2( -100, 540 )
+script = ExtResource( 1 )
+item_position = 0
+
+[node name="Tween" type="Tween" parent="ActorScroller" index="0"]
+
+[node name="Node2D" parent="ActorScroller" index="1" instance=ExtResource( 4 )]
+position = Vector2( -221.871, -303.769 )
+destinationScreenOrSubmenu = "RR-ScreenTitleMenu"
+size = Vector2( 700, 154 )
+
+[node name="Node2D3" parent="ActorScroller" index="2" instance=ExtResource( 4 )]
+position = Vector2( -42.4194, -154.949 )
+text = "Reborn"
+size = Vector2( 700, 154 )
+
+[node name="Node2D2" parent="ActorScroller" index="3" instance=ExtResource( 4 )]
+position = Vector2( -133.189, 39.5468 )
+text = "Fire Moth DLC"
+destinationScreenOrSubmenu = "ScreenTitleMenu"
+size = Vector2( 700, 154 )
+
+[node name="Node2D4" parent="ActorScroller" index="4" instance=ExtResource( 4 )]
+position = Vector2( 18.9832, 154.343 )
+text = "Era:ZERO"
+size = Vector2( 700, 154 )
+
+[node name="Node2D5" parent="ActorScroller" index="5" instance=ExtResource( 4 )]
+position = Vector2( -61.1072, 306.515 )
+text = "Chapter of Simitri"
+size = Vector2( 700, 154 )
+
+[node name="Not an ActorScroller" type="Node2D" parent="." index="4"]
+position = Vector2( 1250, 540 )
+script = ExtResource( 12 )
+
+[node name="Retro" type="Sprite" parent="Not an ActorScroller" index="0"]
+scale = Vector2( 1.18, 1.18 )
+texture = ExtResource( 6 )
+
+[node name="Reborn" type="Sprite" parent="Not an ActorScroller" index="1"]
+texture = ExtResource( 13 )
+
+[node name="FireMoth" type="Sprite" parent="Not an ActorScroller" index="2"]
+texture = ExtResource( 10 )
+
+[node name="Zero" type="Sprite" parent="Not an ActorScroller" index="3"]
+texture = ExtResource( 8 )
+
+[node name="frame" type="Sprite" parent="Not an ActorScroller" index="4"]
+texture = ExtResource( 7 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Not an ActorScroller" index="5"]
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[connection signal="input_accepted" from="ActorScroller" to="." method="_on_ActorScroller_input_accepted"]
+[connection signal="selection_changed" from="ActorScroller" to="Not an ActorScroller" method="_on_ActorScroller_selection_changed"]

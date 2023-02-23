@@ -1,0 +1,141 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fonts/NotoSerifJP-Bold.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=2]
+[ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=3]
+[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Fonts/NotoSerifCJKjp-Black.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=7]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Ext/arrow_small.png" type="Texture" id=9]
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Screens/ScreenSoundTest/ScreenSoundTestV2.gd" type="Script" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+extra_spacing_top = -17
+font_data = ExtResource( 6 )
+
+[node name="ScreenSoundTestV2" instance=ExtResource( 10 )]
+script = ExtResource( 11 )
+PrevScreen = "ScreenTitleMenu"
+
+[node name="smSprite" type="TextureRect" parent="." index="0"]
+modulate = Color( 0.733333, 0.733333, 0.733333, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+stretch_mode = 7
+script = ExtResource( 3 )
+
+[node name="UpArrow" type="TextureRect" parent="." index="1"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 425.577
+margin_top = -808.981
+margin_right = 553.577
+margin_bottom = -680.981
+rect_rotation = 180.0
+mouse_default_cursor_shape = 2
+texture = ExtResource( 9 )
+
+[node name="NowPlayingTween" type="Tween" parent="." index="2"]
+
+[node name="NowPlaying" type="Control" parent="." index="3"]
+margin_left = 40.296
+margin_top = 35.7784
+margin_right = 80.296
+margin_bottom = 75.7784
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="NowPlaying" index="0"]
+margin_top = 100.0
+margin_right = 268.0
+margin_bottom = 159.0
+custom_fonts/font = SubResource( 1 )
+text = "Now Playing:"
+
+[node name="Title" type="Label" parent="NowPlaying" index="1"]
+margin_top = 137.948
+margin_right = 760.0
+margin_bottom = 246.948
+custom_fonts/font = ExtResource( 7 )
+text = "Name Of Song Here"
+
+[node name="Origin" type="Label" parent="NowPlaying" index="2"]
+margin_top = 250.0
+margin_right = 760.0
+margin_bottom = 306.0
+custom_colors/font_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "From N134:4uT0m4t4"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." index="4"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1003.44
+margin_top = -287.728
+margin_right = -19.4364
+margin_bottom = 366.272
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" index="0"]
+custom_constants/separation = 10
+
+[node name="DownArrow" type="TextureRect" parent="." index="5"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 316.169
+margin_top = -121.619
+margin_right = 444.169
+margin_bottom = 6.3811
+mouse_default_cursor_shape = 2
+texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="." index="6"]
+margin_left = 40.0
+margin_right = 641.0
+margin_bottom = 116.0
+custom_fonts/font = ExtResource( 8 )
+text = "Sound Test"
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="7"]
+color = Color( 0, 0.27451, 1, 1 )
+offset = Vector2( 0, 120 )
+polygon = PoolVector2Array( 0, 0, 1800, 0, 1800, 5, 0, 5 )
+vertex_colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1 )
+
+[node name="Label2" type="Label" parent="." index="8"]
+visible = false
+margin_left = 1757.65
+margin_top = 45.1899
+margin_right = 1888.65
+margin_bottom = 95.1899
+custom_fonts/font = ExtResource( 5 )
+text = "WIP..."
+
+[node name="smSound" type="AudioStreamPlayer" parent="." index="9"]
+script = ExtResource( 4 )
+
+[node name="Tween" type="Tween" parent="." index="10"]
+
+[connection signal="gui_input" from="UpArrow" to="." method="_on_UpArrow_gui_input"]
+[connection signal="gui_input" from="DownArrow" to="." method="_on_DownArrow_gui_input"]

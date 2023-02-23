@@ -1,36 +1,35 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://Screens/ScreenGallery/ScreenGallery.gd" type="Script" id=1]
-[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=4]
-[ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=1]
+[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=2]
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=6]
 [ext_resource path="res://Ext/toolbarSelected.png" type="Texture" id=7]
 [ext_resource path="res://Ext/toolbarUnsel.png" type="Texture" id=8]
-[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=9]
 [ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=10]
-[ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=69]
-[ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=70]
+[ext_resource path="res://Screens/ScreenGallery/ScreenGallery_v2.gd" type="Script" id=11]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=3]
 size = 60
 outline_size = 1
 outline_color = Color( 0, 0.717647, 1, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=4]
 size = 45
 outline_size = 1
 outline_color = Color( 0, 0.717647, 1, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=5]
 size = 33
 outline_size = 1
 outline_color = Color( 0, 0.717647, 1, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 5 )
 
-[sub_resource type="Shader" id=9]
+[sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
 render_mode blend_mix;
 
@@ -46,31 +45,30 @@ void fragment() {
 	COLOR = mix(shadow, col, col.a);
 }"
 
-[sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 9 )
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 2 )
 shader_param/offset = Vector2( 8, 8 )
 shader_param/modulate = null
 
-[node name="Node2D" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 1 )
+[node name="ScreenGallery" instance=ExtResource( 3 )]
+script = ExtResource( 11 )
+PrevScreen = "ScreenTitleMenu"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-script = ExtResource( 9 )
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="0"]
+script = ExtResource( 2 )
 
-[node name="Click" type="AudioStreamPlayer" parent="."]
+[node name="Click" type="AudioStreamPlayer" parent="." index="1"]
 stream = ExtResource( 10 )
 
-[node name="smSprite" type="TextureRect" parent="."]
+[node name="smSprite" type="TextureRect" parent="." index="2"]
 modulate = Color( 0.733333, 0.733333, 0.733333, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 70 )
+texture = ExtResource( 6 )
 stretch_mode = 7
-script = ExtResource( 69 )
+script = ExtResource( 1 )
 
-[node name="Tabs" type="GridContainer" parent="."]
+[node name="Tabs" type="GridContainer" parent="." index="3"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -903.0
@@ -85,18 +83,18 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Base" type="Control" parent="Tabs"]
+[node name="Base" type="Control" parent="Tabs" index="0"]
 margin_right = 276.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/Base"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Base" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/Base"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Base" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -104,28 +102,28 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/Base"]
+[node name="Label" type="Label" parent="Tabs/Base" index="2"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Base"
 align = 1
 
-[node name="Outdoors1" type="Control" parent="Tabs"]
+[node name="Outdoors1" type="Control" parent="Tabs" index="1"]
 margin_left = 306.0
 margin_right = 582.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/Outdoors1"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Outdoors1" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/Outdoors1"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Outdoors1" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -133,29 +131,29 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/Outdoors1"]
+[node name="Label" type="Label" parent="Tabs/Outdoors1" index="2"]
 margin_top = 20.0
 margin_right = 276.0
 margin_bottom = 103.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
 text = "Outdoors"
 align = 1
 valign = 1
 
-[node name="BronyaSeele" type="Control" parent="Tabs"]
+[node name="BronyaSeele" type="Control" parent="Tabs" index="2"]
 margin_left = 612.0
 margin_right = 888.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/BronyaSeele"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/BronyaSeele" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/BronyaSeele"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/BronyaSeele" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -163,29 +161,29 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/BronyaSeele"]
+[node name="Label" type="Label" parent="Tabs/BronyaSeele" index="2"]
 margin_top = 20.0
 margin_right = 276.0
 margin_bottom = 103.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 5 )
 text = "Bronya & Seele"
 align = 1
 valign = 1
 
-[node name="Others" type="Control" parent="Tabs"]
+[node name="Others" type="Control" parent="Tabs" index="3"]
 margin_left = 918.0
 margin_right = 1194.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/Others"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Others" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/Others"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Others" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -193,28 +191,28 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/Others"]
+[node name="Label" type="Label" parent="Tabs/Others" index="2"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Others"
 align = 1
 
-[node name="Kyuushou" type="Control" parent="Tabs"]
+[node name="Kyuushou" type="Control" parent="Tabs" index="4"]
 margin_left = 1224.0
 margin_right = 1500.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/Kyuushou"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Kyuushou" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/Kyuushou"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Kyuushou" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -222,29 +220,29 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/Kyuushou"]
+[node name="Label" type="Label" parent="Tabs/Kyuushou" index="2"]
 margin_top = 20.0
 margin_right = 276.0
 margin_bottom = 103.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
 text = "Kyuushou"
 align = 1
 valign = 1
 
-[node name="Misc" type="Control" parent="Tabs"]
+[node name="Misc" type="Control" parent="Tabs" index="5"]
 margin_left = 1530.0
 margin_right = 1806.0
 rect_min_size = Vector2( 276, 0 )
 
-[node name="TextureRect" type="TextureRect" parent="Tabs/Misc"]
+[node name="TextureRect" type="TextureRect" parent="Tabs/Misc" index="0"]
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )
 
-[node name="TextureRect2" type="TextureRect" parent="Tabs/Misc"]
+[node name="TextureRect2" type="TextureRect" parent="Tabs/Misc" index="1"]
 margin_top = 14.0
 margin_right = 138.0
 margin_bottom = 59.0
@@ -252,16 +250,16 @@ rect_scale = Vector2( 2, 2 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 8 )
 
-[node name="Label" type="Label" parent="Tabs/Misc"]
+[node name="Label" type="Label" parent="Tabs/Misc" index="2"]
 margin_top = 15.0
 margin_right = 276.0
 margin_bottom = 98.0
 rect_min_size = Vector2( 276, 0 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Misc"
 align = 1
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." index="4"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -272,12 +270,12 @@ margin_right = 900.0
 margin_bottom = 400.0
 color = Color( 0, 0.054902, 0.258824, 0.470588 )
 
-[node name="Galleries" type="Control" parent="."]
+[node name="Galleries" type="Control" parent="." index="5"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 
-[node name="GalleryBase" type="GridContainer" parent="Galleries"]
+[node name="GalleryBase" type="GridContainer" parent="Galleries" index="0"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -295,84 +293,74 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="GalleryHeader" type="Label" parent="."]
+[node name="GalleryHeader" type="Label" parent="." index="6"]
 margin_left = 40.0
 margin_right = 641.0
 margin_bottom = 116.0
 mouse_filter = 0
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 4 )
 text = "Gallery"
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
+[node name="Polygon2D" type="Polygon2D" parent="." index="7"]
 color = Color( 0, 0.27451, 1, 1 )
 offset = Vector2( 0, 120 )
 polygon = PoolVector2Array( 0, 0, 1800, 0, 1800, 5, 0, 5 )
 vertex_colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="." index="8"]
 visible = false
-material = SubResource( 3 )
+material = SubResource( 6 )
 position = Vector2( 1022, -366 )
-texture = ExtResource( 70 )
+texture = ExtResource( 6 )
 
-[node name="BackButton" parent="." instance=ExtResource( 5 )]
-
-[node name="GalleryFullscreen" type="Control" parent="."]
+[node name="GalleryFullscreen" type="Control" parent="." index="10"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_default_cursor_shape = 2
 
-[node name="ColorRect" type="ColorRect" parent="GalleryFullscreen"]
+[node name="ColorRect" type="ColorRect" parent="GalleryFullscreen" index="0"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 
-[node name="1" type="TextureRect" parent="GalleryFullscreen"]
+[node name="1" type="TextureRect" parent="GalleryFullscreen" index="1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 expand = true
 stretch_mode = 6
-script = ExtResource( 69 )
+script = ExtResource( 1 )
 
-[node name="2" type="TextureRect" parent="GalleryFullscreen"]
+[node name="2" type="TextureRect" parent="GalleryFullscreen" index="2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 stretch_mode = 6
-script = ExtResource( 69 )
+script = ExtResource( 1 )
 
-[node name="3" type="TextureRect" parent="GalleryFullscreen"]
+[node name="3" type="TextureRect" parent="GalleryFullscreen" index="3"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 stretch_mode = 6
-script = ExtResource( 69 )
+script = ExtResource( 1 )
 
-[node name="4" type="TextureRect" parent="GalleryFullscreen"]
+[node name="4" type="TextureRect" parent="GalleryFullscreen" index="4"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 mouse_default_cursor_shape = 2
 stretch_mode = 6
-script = ExtResource( 69 )
+script = ExtResource( 1 )
 
-[node name="Tween" type="Tween" parent="."]
-
-[node name="smScreenInOut" type="ColorRect" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0, 0, 0, 1 )
-script = ExtResource( 4 )
+[node name="Tween" type="Tween" parent="." index="11"]
 
 [connection signal="gui_input" from="GalleryHeader" to="." method="_on_GalleryHeader_gui_input"]
-[connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]
 [connection signal="gui_input" from="GalleryFullscreen" to="." method="_on_GalleryFullscreen_gui_input"]

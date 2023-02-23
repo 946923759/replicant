@@ -1,5 +1,6 @@
 extends Control
 
+export (String) var PrevScreen = "ScreenSelectChapter"
 var cutsceneData:Dictionary
 
 const Def = preload("res://stepmania-compat/StepManiaActors.gd")
@@ -14,14 +15,7 @@ const Def = preload("res://stepmania-compat/StepManiaActors.gd")
 #		q.set(property,d[property])
 #	return q
 
-func get_cutscene_path()->String:
-	if not OS.has_feature("console"):
-		match OS.get_name():
-			"Windows","X11","macOS":
-				if OS.has_feature("standalone"):
-					return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
-	#If not compiled or if the platform doesn't allow writing to the game's current directory
-	return "res://Cutscene/Embedded/"
+
 	
 	
 #func push_back_from_idx_one(arrToFill:Array,arr2:Array)->Array:
@@ -44,7 +38,7 @@ func load_cutscene_data(name:String)->Dictionary:
 	if "/" in name:
 		path=name
 	else:
-		path = get_cutscene_path()+name
+		path = Globals.get_cutscene_path()+name
 		if OS.is_debug_build():
 			print("Got path "+path)
 	var ok = f.open(path, File.READ)
@@ -94,6 +88,7 @@ func load_cutscene_data(name:String)->Dictionary:
 	#return parse_json(f.get_as_text())
 
 func _ready():
+	$CutscenePlayer.PrevScreen = PrevScreen
 	
 	for arg in OS.get_cmdline_args():
 		print("Cmdline arg: "+arg)
@@ -112,7 +107,7 @@ func _ready():
 		#var e = load("res://savedataError.tscn").instance()
 		#e.setNewText("The cutscene failed to load.")
 		#add_child(e)
-		$CutscenePlayer.init_(['msg|The cutscene failed to load. Most likely the file name is incorrect.'],null)
+		$CutscenePlayer.init_(['msg|The cutscene failed to load. Most likely the file name is incorrect.\nTried to load '+Globals.nextCutscene],null)
 		return
 	#$AudioStreamPlayer.load_song(cutsceneData['CDAudio'])
 	var msgColumn:int=1
@@ -151,11 +146,11 @@ func end_cutscene_2():
 	var nextEpisode = tmp[1]
 	
 	if nextPart!="":
-		print("Got new part "+nextPart+", with episode "+nextEpisode.title)
+		print("[CutsceneFromFile] Got new part "+nextPart+", with episode "+nextEpisode.title)
 		Globals.nextCutscene=nextPart
 		Globals.currentEpisodeData=nextEpisode
 		get_tree().reload_current_scene()
 	else:
-		print("Didn't get a next part, returning to main menu.")
+		print("[CutsceneFromFile] Didn't get a next part, returning to PrevScreen "+PrevScreen)
 		#get_tree().change_scene("res://TitleScreen.tscn")
-		Globals.change_screen(get_tree(),"ScreenSelectChapter")
+		Globals.change_screen(get_tree(),PrevScreen)

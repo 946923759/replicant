@@ -1,4 +1,5 @@
-extends Control
+extends "res://Screens/ScreenWithMenuElements.gd"
+
 
 var musicDatabase=[]
 onready var musicActor=$smSound
@@ -46,12 +47,16 @@ func _ready():
 				continue
 			var music = Music.new()
 			var keys = line.split("\t",true)
-			music.name_=keys[0]
-			music.original_name=keys[1]
-			music.origin=keys[2]
-			music.description=keys[3]
-			music.fileName=keys[4]
-			musicDatabase.append(music)
+			if len(keys)>=5:
+				music.name_=keys[0]
+				music.original_name=keys[1]
+				music.origin=keys[2]
+				music.description=keys[3]
+				music.fileName=keys[4]
+				musicDatabase.append(music)
+			else:
+				printerr("Hey moron, your music database is missing a column.")
+				printerr(keys)
 	
 	for m in musicDatabase:
 		#var w2 = font.get_string_size(m.name_).x
@@ -115,8 +120,6 @@ func _input(_event):
 	if Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
 		text_on_click(musicDatabase[curSel])
 		return
-	elif Input.is_action_just_pressed("ui_cancel"):
-		$ColorRect.OffCommand("ScreenTitleMenu")
 	if Input.is_action_just_pressed("ui_down"):
 		if newSel < len(musicDatabase)-1:
 			newSel+=1
@@ -185,13 +188,6 @@ func text_on_click(music:Music):
 func text_on_click_wrapper(event:InputEvent,music:Music):
 	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
 		text_on_click(music)
-
-
-func _on_BackButton_gui_input(event):
-	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
-		#get_tree().change_scene("res://TitleScreen.tscn")
-		$ColorRect.OffCommand("ScreenTitleMenu")
-
 
 func _on_DownArrow_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):

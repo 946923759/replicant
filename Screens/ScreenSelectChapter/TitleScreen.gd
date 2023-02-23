@@ -13,7 +13,7 @@ var curMissionNumForGamepad:int=0
 var biggestMissionNum:int=0
 
 var font = preload("res://ChapterListingFont.tres")
-var MSelObj = load("res://MSelObj.tscn")
+var MSelObj = load("res://Screens/ScreenSelectChapter/MSelObj.tscn")
 
 func _ready():
 	var c = chapterActorFrame

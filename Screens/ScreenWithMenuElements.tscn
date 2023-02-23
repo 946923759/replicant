@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=1]
+[ext_resource path="res://Screens/ScreenWithMenuElements.gd" type="Script" id=2]
+[ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=6]
+
+[node name="ScreenWithMenuElements" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="BackButton" parent="." instance=ExtResource( 3 )]
+
+[node name="smScreenInOut" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="smQuad" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.882353 )
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="CanvasLayer/smQuad"]
+margin_left = 50.0
+margin_top = 20.0
+margin_right = 581.0
+margin_bottom = 136.0
+custom_fonts/font = ExtResource( 6 )
+text = "Debug Menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/smQuad"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -592.0
+margin_top = 165.0
+margin_right = 593.0
+margin_bottom = 698.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LabelReload" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+margin_right = 1185.0
+margin_bottom = 50.0
+custom_fonts/font = ExtResource( 5 )
+text = "KEY 2: Reload - ScreenWithMenuElements"
+
+[node name="LabelNext" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+margin_top = 54.0
+margin_right = 1185.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 5 )
+text = "KEY 4: Send NextScreen - ScreenWithMenuElements"
+
+[node name="LabelPrev" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+margin_top = 108.0
+margin_right = 1185.0
+margin_bottom = 158.0
+custom_fonts/font = ExtResource( 5 )
+text = "KEY 5: Send PrevScreen - ScreenWithMenuElements"
+
+[connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]

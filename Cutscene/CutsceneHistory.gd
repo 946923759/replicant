@@ -67,6 +67,6 @@ func set_history(arr):
 			container.add_child(LoadSpeaker(arr[i][0]))
 			container.add_child(LoadText(arr[i][1]))
 		last_history_number=arr.size()
-	scrollContainer.scroll_vertical = scrollContainer.get_v_scrollbar().max_value	
+	scrollContainer.scroll_vertical = scrollContainer.get_v_scrollbar().max_value
 #func OnCommand():
 #	scrollContainer.scroll_vertical = scrollContainer.get_v_scrollbar().max_value	

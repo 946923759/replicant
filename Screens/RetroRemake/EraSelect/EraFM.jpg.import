@@ -14,7 +14,7 @@ dest_files=[ "res://.import/EraFM.jpg-fde6acc838a54c839d65d6c8f190138f.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

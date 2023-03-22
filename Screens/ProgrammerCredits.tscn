@@ -24,11 +24,11 @@ func _ready():
 	#Color(0,0,0,0), Color(1,1,1,1), .5, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	#tween2.start();
 	
-	var seq := TweenSequence.new(get_tree())
-	seq.append($TextureRect,\"modulate:a\",.6,.5)
+	var seq := get_tree().create_tween()
+	seq.tween_property($TextureRect,\"modulate:a\",.6,.5)
 	print($c2.rect_size)
-	seq.append($c2,'rect_position:y',-$c2.rect_size.y,30)
-	#seq.append($TextureRect,'modulate',Color(0,0,0,1),1)
+	seq.tween_property($c2,'rect_position:y',-$c2.rect_size.y,30)
+	#seq.tween_property($TextureRect,'modulate',Color(0,0,0,1),1)
 	#seq.append_callback(self,'screen_out')
 
 func screen_out():

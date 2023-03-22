@@ -1,6 +1,10 @@
 extends "res://Screens/ScreenWithMenuElements.gd"
 
 onready var scroller = $ActorScroller
+
+func _ready():
+	$Music.load_song("17 - Dearly Beloved ~reprise~")
+
 func _input(event):
 	scroller.input(event)
 

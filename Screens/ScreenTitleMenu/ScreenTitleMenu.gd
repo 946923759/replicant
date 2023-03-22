@@ -28,11 +28,12 @@ const SPACING = 200
 var keyboard_selection:int=0
 var next_screen:String = ""
 
-onready var t:Tween = $Tween
+#onready var t:Tween = $Tween
 func _ready():
 	#$DebugLabel.visible=OS.is_debug_build()
 	#var quad = $ColorRect
 	#quad.visible=true
+	var t = get_tree().create_tween().set_parallel(true)
 	var f:Node2D = $ActorFrame
 	var count = f.get_child_count()
 	var center = floor(count/2)
@@ -41,9 +42,10 @@ func _ready():
 		c.connect("clicked",self,"handle_clicked",[i])
 		c.position = Vector2(100,-SPACING*center+i*SPACING)
 		c.set_by_name(MAINMENU[i]['name'])
-		t.interpolate_property(c,"position:x",null,-274,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT,.3+.1*i)
+		# cmd(sleep,.3+.1*i;decelerate,.3;position:x,-274);
+		t.tween_property(c,"position:x",-274,.3).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT).set_delay(.3+.1*i)
 	#t.interpolate_property(quad,"modulate:a",1,0,.5)
-	t.start()
+	
 	$smSound.load_song("Significance");
 
 func _process(_delta):

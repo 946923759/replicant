@@ -32,8 +32,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 7 )
 
-[node name="Tween" type="Tween" parent="."]
-
 [node name="smSprite" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -169,4 +167,3 @@ text = "1"
 visible = false
 
 [connection signal="pressed" from="GridContainer/OKButton" to="." method="_on_OKButton_pressed"]
-[connection signal="options_closed" from="OptionsScreen" to="." method="_on_OptionsScreen_options_closed"]

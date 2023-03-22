@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=1]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Music/CDAudio/17 - Dearly Beloved ~reprise~.mp3" type="AudioStream" id=3]
+[ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=3]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/ScrollObj.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/EraRetro.jpg" type="Texture" id=6]
@@ -27,8 +27,7 @@ stretch_mode = 7
 visible = false
 
 [node name="Music" type="AudioStreamPlayer" parent="." index="2"]
-stream = ExtResource( 3 )
-autoplay = true
+script = ExtResource( 3 )
 
 [node name="ActorScroller" type="Node2D" parent="." index="3"]
 position = Vector2( -100, 540 )

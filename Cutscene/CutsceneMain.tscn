@@ -77,6 +77,9 @@ margin_left = 1076.0
 margin_top = 425.0
 margin_right = 1761.0
 margin_bottom = 522.0
+grow_vertical = 0
+rect_pivot_offset = Vector2( 342, 48 )
+mouse_filter = 2
 color = Color( 0, 0.160784, 0.537255, 1 )
 script = ExtResource( 13 )
 __meta__ = {
@@ -86,9 +89,13 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="PopupContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
 custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
-bbcode_text = "This is special popup text"
+bbcode_text = "[center]This is special popup text[/center]"
 text = "This is special popup text"
 
 [node name="CenterContainer" type="Control" parent="."]
@@ -177,8 +184,6 @@ position = Vector2( 541.537, -60.5445 )
 [node name="TextboxTween" type="Tween" parent="."]
 pause_mode = 2
 playback_process_mode = 0
-
-[node name="TextTween" type="Tween" parent="."]
 
 [node name="HistoryTween" type="Tween" parent="."]
 
@@ -273,12 +278,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TranslationNote" type="Label" parent="TN_Actor"]
+[node name="ColorRect" type="ColorRect" parent="TN_Actor"]
+anchor_right = 1.0
+margin_bottom = 288.0
+color = Color( 0, 0, 0, 0.792157 )
+
+[node name="TranslationNote" type="Label" parent="TN_Actor/ColorRect"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -636.0
+margin_left = -634.5
 margin_top = 40.0
-margin_right = 636.0
+margin_right = 637.5
 margin_bottom = 280.0
 size_flags_horizontal = 0
 size_flags_vertical = 10
@@ -325,4 +335,3 @@ color = Color( 0, 0, 0, 1 )
 [connection signal="pressed" from="SkipButton" to="." method="_on_SkipButton_pressed"]
 [connection signal="mouse_entered" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_entered"]
 [connection signal="mouse_exited" from="TN_Actor/Button" to="TN_Actor" method="_on_Button_mouse_exited"]
-[connection signal="options_closed" from="OptionsScreen" to="." method="_on_OptionsScreen_options_closed"]

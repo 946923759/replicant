@@ -1,13 +1,21 @@
 #LANGUAGES	key	en	ch	ja
-bg	007/006_1280x720
+nop	bg	007/006_1280x720
 bg	009/004_1280x720
 speaker	 
+msgbox_close	instant
+popup	-1	-1
 msg	300139	The defense line on the left is falling apart! Requesting immediate reinforcements!	左侧防线快支持不住了！请求增援！	左側の防衛ラインが持たない！増援を要請する！
+popup	-1	-1
 msg	300140	Someone's hurt here! Help!	来人！这里有人受伤了！	誰か来て！こっちにケガ人だ！
+popup	-1	-1
 msg	300141	They've broken through our defenses! Stop them!	防御工事被撞开了！快拦住它们！！！	防御工事が突き破られる！急いで食い止めるんだ！！！ 
+popup	-1	-1
 msg	300142	Ahhhhh!!!	啊啊啊！！！！	あああ！！！！
+popup	-1	-1
 msg	300143	Over here! We need backup!	那边的人！请帮我一下！	そこの人！手伝って！
+popup	-1	-1
 msg	300144	Hey! Where are you looking? I'm over here!	喂！你在看哪边呢！这里这里！	ちょっと！どこ見てるの！こっち、こっち！
+popup	false
 speaker	Emesa
 portraits	55
 emote	55	4

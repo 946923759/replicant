@@ -18,7 +18,7 @@ var parent_node
 #const nightShader = preload("res://ParticleEffects/NightShader.tres")
 #We assign in _ready() in case something wants to supply its own backgrounds
 onready var backgrounds:Control = $Backgrounds
-var lastBackground:smSprite
+#var lastBackground:smSprite
 enum BG_TWEEN {
 	DEFAULT,
 	FADE,
@@ -27,7 +27,14 @@ enum BG_TWEEN {
 }
 
 var curPos: int = -1
-var isFullscreenMessageBox:bool = false
+
+enum MSGBOX_DISP_MODE {
+	NORMAL,
+	POP_UP,
+	FULLSCREEN
+}
+var messageBoxMode=MSGBOX_DISP_MODE.NORMAL
+
 var shouldTextBoxBeVisible:bool=true
 var choiceResult:int=-1
 
@@ -59,7 +66,7 @@ onready var fsContainer:Control = $FSMode_ActorFrame
 onready var fsText:RichTextLabel = $FSMode_ActorFrame/TextActor
 
 onready var tw:Tween = $TextboxTween
-onready var txtTw:Tween = $TextTween
+onready var txtTw:SceneTreeTween
 
 
 func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there's no need to return them, but whatever
@@ -175,8 +182,10 @@ func advance_text()->bool:
 	curPos+=1
 	var tmp_speaker = "NoSpeaker!!"
 	var tmp_tn = ""
+
 	#If we don't remove, the previous text tween can start overwriting the current one
-	txtTw.remove_all()
+	txtTw = get_tree().create_tween()
+
 	while true:
 		if curPos >= message.size():
 			print("Fix your code, idiot. You already hit the end.")
@@ -227,12 +236,10 @@ func advance_text()->bool:
 #							#print("Highlighting at idx "+String(val))
 #							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 					elif tmp_txt.begins_with("/close"):
-						closeTextbox(tw,waitForAnim)
-						waitForAnim+=.3
+						closeTextbox(txtTw)
 						tmp_txt=tmp_txt.substr(6,len(tmp_txt))
 					elif tmp_txt.begins_with("/open"):
-						openTextbox(tw,waitForAnim)
-						waitForAnim+=.3
+						openTextbox(txtTw)
 						tmp_txt=tmp_txt.substr(5,len(tmp_txt))
 					elif tmp_txt.begins_with('/setDispChr['):
 						var cmd_end = tmp_txt.find("]", 5);
@@ -268,31 +275,62 @@ func advance_text()->bool:
 				
 			#Compatibility opcode for Girls' Frontline
 			'msgbox_transition':
-				closeTextbox(tw)
-				openTextbox(tw,.3)
-				waitForAnim+=.6
+				closeTextbox(txtTw)
+				openTextbox(txtTw)
 			'msgbox_close':
 				if curMessage.size() > 1 and curMessage[1]=="instant":
 					print("Removing tw")
 					#tw.remove(textboxSpr,"interpolate_property")
 					tw.remove_all()
-					closeTextbox(tw,0,0)
+					closeTextbox(txtTw,0)
 				else:
-					closeTextbox(tw)
-					waitForAnim+=.3
+					closeTextbox(txtTw)
 			'msgbox_open':
-				waitForAnim+=openTextbox(tw,waitForAnim)
-				#waitForAnim+=.3
+				openTextbox(txtTw)
+			'popup':
+				var popup = $PopupContainer
+				if curMessage[1].to_lower()=="off" or curMessage[1].to_lower()=="false":
+					messageBoxMode=MSGBOX_DISP_MODE.NORMAL
+					openTextbox(txtTw)
+					
+					txtTw.parallel().tween_property(popup,"rect_scale:y",0.0,.2).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+					txtTw.parallel().tween_property(popup,"modulate:a",0.0,.2)
+
+					
+				elif curMessage.size() > 2:
+					#Should x position be scaled to device screen width?
+					
+					var pos = Vector2(float(curMessage[1]),float(curMessage[2]))
+					if pos.x <0:
+						pos.x = randi()%int(Globals.SCREEN_CENTER_X)+Globals.SCREEN_CENTER_X/2-popup.rect_size.x
+					if pos.y<0:
+						pos.y = randi()%int(Globals.SCREEN_CENTER_Y)+Globals.SCREEN_CENTER_Y/2
+					#print(pos)
+					
+					if messageBoxMode!=MSGBOX_DISP_MODE.POP_UP:
+						if shouldTextBoxBeVisible:
+							closeTextbox(txtTw,.2)
+						else:
+							print("Textbox already seems to be closed, not closing for popup.")
+					popup.rect_scale=Vector2(1.5,0.0)
+					popup.rect_position=pos
+					popup.visible=true
+					#var seq := get_tree().create_tween()
+					txtTw.parallel().tween_property(popup,"rect_scale",Vector2(1.0,1.0),.2).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+					txtTw.parallel().tween_property(popup,"modulate:a",1.0,.2)
+					messageBoxMode=MSGBOX_DISP_MODE.POP_UP
+					shouldTextBoxBeVisible=false
+					
 			'set_fs': #Should this close the textbox too?
 				if curMessage[1].to_lower()=="true":
 					tw.interpolate_property(fsContainer,"modulate:a",null,1,.3,Tween.TRANS_QUAD,Tween.EASE_IN,waitForAnim)
-					isFullscreenMessageBox=true
+					messageBoxMode=MSGBOX_DISP_MODE.FULLSCREEN
 					fsText.text=""
 					fsContainer.visible=true
 					#shouldTextBoxBeVisible=false
 				else:
 					tw.interpolate_property(fsContainer,"modulate:a",null,1,.3,Tween.TRANS_QUAD,Tween.EASE_IN,waitForAnim)
-					isFullscreenMessageBox=false
+					messageBoxMode=MSGBOX_DISP_MODE.NORMAL
 					fsContainer.visible=false
 					#shouldTextBoxBeVisible=true
 			#It was totally necessary to add an opcode that will only be used one time
@@ -344,10 +382,10 @@ func advance_text()->bool:
 			'bg_fade_out_in':
 				var lastBackground = backgrounds.lastBackground
 				if is_instance_valid(lastBackground):
-					var seq := TweenSequence.new(get_tree())
-					seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
-					seq.append(lastBackground,'modulate:a',0,.5)
-					seq.append(lastBackground,'modulate:a',1,.5)
+					var seq := get_tree().create_tween()
+					seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
+					seq.tween_property(lastBackground,'modulate:a',0,.5)
+					seq.tween_property(lastBackground,'modulate:a',1,.5)
 					#lastBackground.hideActor(.5)
 					#lastBackground.showActor(.5,.5)
 					waitForAnim+=1
@@ -356,10 +394,10 @@ func advance_text()->bool:
 #			'fg_fade':
 #					$FadeToBlack.modulate.a=0
 #					$FadeToBlack.visible=true
-#					var seq := TweenSequence.new(get_tree())
-#					seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
-#					seq.append($FadeToBlack,'modulate:a',1,.5)
-#					seq.append($FadeToBlack,'modulate:a',0,.5)
+#					var seq := get_tree().create_tween()
+#					seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
+#					seq.tween_property($FadeToBlack,'modulate:a',1,.5)
+#					seq.tween_property($FadeToBlack,'modulate:a',0,.5)
 #					waitForAnim=max(waitForAnim,1)
 			'flash':
 				$FadeToBlack.color=Color.white
@@ -467,28 +505,32 @@ func advance_text()->bool:
 	textHistory.push_back([speakerActor.text,text.text])
 	$TN_Actor.visible=(tmp_tn!="")
 	if tmp_tn!="":
-		$TN_Actor/TranslationNote.text=tmp_tn
-		#print($TN_Actor/TranslationNote.has_focus())
+		$TN_Actor.set_text(tmp_tn)
 	var TEXT_SPEED=float(Globals['OPTIONS']['textSpeed']['value'])
 	#print(TEXT_SPEED)
 	if TEXT_SPEED<100:
+		
 		#print(1/TEXT_SPEED*(text.text.length()-text.visible_characters))
-		txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
-			1/TEXT_SPEED*(text.text.length()-text.visible_characters),
-			Tween.TRANS_LINEAR,
-			Tween.EASE_IN,
-			waitForAnim
-		)
+		txtTw.tween_property(text,"visible_characters",text.text.length(),
+			1/TEXT_SPEED*(text.text.length()-text.visible_characters)
+		).set_delay(waitForAnim)
+		#txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+		#	1/TEXT_SPEED*(text.text.length()-text.visible_characters),
+		#	Tween.TRANS_LINEAR,
+		#	Tween.EASE_IN,
+		#	waitForAnim
+		#)
 	else: #Fake tween that just waits for waitForAnim
-		txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
-			0,
-			Tween.TRANS_LINEAR,
-			Tween.EASE_IN,
-			waitForAnim
-		)
+		txtTw.tween_property(text,"visible_characters",text.text.length(),0).set_delay(waitForAnim)
+		#txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
+		#	0,
+		#	Tween.TRANS_LINEAR,
+		#	Tween.EASE_IN,
+		#	waitForAnim
+		#)
 	#This is kind of a hack, the history depends on the text actor but FSbox just appends to the same node,
-	text.visible=not isFullscreenMessageBox
-	if isFullscreenMessageBox:
+	text.visible=(messageBoxMode==MSGBOX_DISP_MODE.NORMAL)
+	if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
 		var newText = text.text
 		var numNewLines = fsText.text.count("\n")
 		var startingLength = fsText.text.length()-numNewLines #WHY????
@@ -503,41 +545,43 @@ func advance_text()->bool:
 		)
 		fsText.visible_characters=startingLength
 		fsText.text=newFSText
+	elif messageBoxMode==MSGBOX_DISP_MODE.POP_UP:
+		var popupText = $PopupContainer/RichTextLabel
+		popupText.bbcode_text = "[center]"+text.bbcode_text+"[/center]"
+		popupText.visible_characters=text.visible_characters
+		if TEXT_SPEED<100:
+			txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
+				1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
+			)
+		else: #Fake tween that just waits for waitForAnim
+			txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),0).set_delay(waitForAnim)
+
 	print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
-	txtTw.start()
 	waitForAnim=0
 	#If there was any processing done at all, this should be true
 	return true
 
 
-func closeTextbox(t:Tween,delay:float=0,animTime:float=.3)->float:
+func closeTextbox(t:SceneTreeTween,animTime:float=.3,_rect_scale:float=0.0)->float:
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
 	#print("Closing textbox with delay of "+String(delay))
-	if animTime<=0 and delay<=0:
-		textboxSpr.rect_scale.y=0
-		speakerActor.rect_scale.y=0
-		speakerActor.modulate.a=0
+	if animTime<=0:
+		textboxSpr.rect_scale.y=_rect_scale
+		speakerActor.rect_scale.y=_rect_scale
+		speakerActor.modulate.a=_rect_scale
 	else:
-		t.interpolate_property(textboxSpr,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-		t.interpolate_property(speakerActor,"rect_scale:y",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
-		t.interpolate_property(speakerActor,"modulate:a",1,0,animTime,Tween.TRANS_QUAD,Tween.EASE_IN,delay)
+		t.tween_property(textboxSpr,"rect_scale:y",_rect_scale,animTime).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		t.parallel().tween_property(speakerActor,"rect_scale:y",_rect_scale,animTime).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		t.parallel().tween_property(speakerActor,"modulate:a",_rect_scale,animTime)
 	shouldTextBoxBeVisible=false
 	return animTime
 
-func openTextbox(t:Tween,delay:float=0,animTime:float=.3)->float:
-	#print("Opening textbox with delay of "+String(delay))
-	if animTime<=0 and delay<=0:
-		textboxSpr.rect_scale.y=1
-		speakerActor.rect_scale.y=1
-		speakerActor.modulate.a=1
-	else:
-		t.interpolate_property(textboxSpr,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
-		t.interpolate_property(speakerActor,"rect_scale:y",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
-		t.interpolate_property(speakerActor,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,delay)
+func openTextbox(t:SceneTreeTween,animTime:float=.3)->float:
+	closeTextbox(t,animTime,1.0)
 	shouldTextBoxBeVisible=true
-	return .3
-	
+	return animTime
+
 
 onready var historyTween = $HistoryTween
 #Updated every frame... Might be slow
@@ -586,7 +630,7 @@ func _ready():
 	$Choices.visible=false
 	$FSMode_ActorFrame.visible=false
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
-	#$OptionsScreen.connect("options_closed",self,"_on_options_closed")
+	$OptionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
 	set_process(false)
 	#text = $textActor_better
@@ -613,9 +657,9 @@ func _ready():
 	#set_rect_size()
 	#tw.interpolate_property($FadeToBlack,"modulate:a",null,0,.5)
 	#tw.start()
-	var seq := TweenSequence.new(get_tree())
-	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
-	seq.append($FadeToBlack,"color:a",0,.5)
+	var seq := get_tree().create_tween()
+	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
+	seq.tween_property($FadeToBlack,"color:a",0,.5)
 
 
 func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -624,8 +668,8 @@ func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
 	$dim.color.a=0
 	textboxSpr.rect_scale.y=0
 	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)
-#	var t := TweenSequence.new(get_tree())
-#	t._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+#	var t := get_tree().create_tween()
+#	t.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 #	t.append(textboxSpr,'rect_scale:y',1,.5).set_trans(Tween.TRANS_QUAD)
 #	if dim_background:
 ## warning-ignore:return_value_discarded
@@ -645,18 +689,18 @@ func end_cutscene():
 			p.stop()
 	
 	#https://github.com/godot-extended-libraries/godot-next/pull/50
-	var seq := TweenSequence.new(get_tree())
-	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	var seq := get_tree().create_tween()
+	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 # warning-ignore:return_value_discarded
-	seq.append(textboxSpr,'rect_scale:y',0,.5).set_trans(Tween.TRANS_QUAD)
-	seq.parallel().append(text,'modulate:a',0,.3)
-	seq.parallel().append(speakerActor,'modulate:a',0,.3)
+	seq.tween_property(textboxSpr,'rect_scale:y',0,.5).set_trans(Tween.TRANS_QUAD)
+	seq.parallel().tween_property(text,'modulate:a',0,.3)
+	seq.parallel().tween_property(speakerActor,'modulate:a',0,.3)
 	#seq.parallel().append($SpeakerActor,'position:y',600,.3)
-	seq.parallel().append($dim,'color:a',0,.5).set_trans(Tween.TRANS_QUAD)
+	seq.parallel().tween_property($dim,'color:a',0,.5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'rect_position:x',-$PressStartToSkip.rect_size.x,.5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'modulate:a',0,.5)
 # warning-ignore:return_value_discarded
-	seq.connect("finished",self,"end_cutscene_2")
+	seq.tween_callback(self,"end_cutscene_2")
 	#seq.tween_callback()
 	#.from_current()
 	#queue_free()
@@ -730,7 +774,7 @@ func _process(delta):
 	if Input.is_action_pressed("vn_skip") and isWaitingForChoice==false:
 		frameLimiter+=delta
 		if frameLimiter > .1 and curPos < message.size():
-			txtTw.remove_all()
+			txtTw.kill()
 			advance_text()
 			tw.remove_all()
 			if shouldTextBoxBeVisible:
@@ -758,15 +802,15 @@ func _process(delta):
 	else: #Skip to finish
 		if forward:
 			tw.remove_all() #Why doesn't godot have finishtweening() wtf
-			#txtTw.stop_all()
-			txtTw.remove_all()
+			
+			txtTw.kill()
 			if shouldTextBoxBeVisible:
-				openTextbox(tw,0,0)
+				openTextbox(txtTw,0)
 			else:
-				closeTextbox(tw,0,0)
+				closeTextbox(txtTw,0)
 			text.visible_characters = text.text.length()
 
-			if isFullscreenMessageBox:
+			if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
 				fsText.visible_characters=fsText.text.length()
 		else:
 			if Input.is_action_pressed("ui_cancel"):
@@ -788,7 +832,7 @@ func _unhandled_input(event):
 			print("Hiding history!")
 			tween_out_history()
 			isHistoryBeingShown=false
-		elif isFullscreenMessageBox==false and isOptionsScreenOpen==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+		elif messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN and isOptionsScreenOpen==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
 			#historyActor.set_history(textHistory)
@@ -802,7 +846,7 @@ func _input(event):
 		return
 	#if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
 	if Input.is_action_just_pressed("vn_history") and isHistoryBeingShown==false:
-		if isFullscreenMessageBox==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			tween_in_history()
 			get_tree().set_input_as_handled()
 		#elif event.button_index==BUTTON_WHEEL_UP:
@@ -814,6 +858,7 @@ func _input(event):
 			isHistoryBeingShown=false
 			get_tree().set_input_as_handled()
 		else:
+			print("user right clicked to open options screen")
 			$OptionsScreen.visible=true
 			$OptionsScreen.OnCommand()
 			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
@@ -868,6 +913,6 @@ func _on_dim_gui_input(event):
 
 
 func _on_OptionsScreen_options_closed():
-	#print("User closed options")
+	print("User closed options")
 	isOptionsScreenOpen=false
 	$OptionsScreen.visible=false

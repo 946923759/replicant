@@ -6,6 +6,19 @@ tn	This is a translation note. You can see it by hovering your mouse over the TN
 / 	This is a background.
 msg	/closeThere is no text background! Woah!
 msg	/openTest.
+popup	500	500
+msg	This is a popup.
+popup	500	550
+msg	More popup text.
+popup	-1	-1
+msg	Random popup 1
+popup	-1	-1
+msg	Random popup 2
+popup	-1	-1
+msg	Random popup 3
+popup	-1	-1
+msg	Random popup 4 235r98u20 nr9823r00r mv038r02 r39cj0r9302 v3rk203c9 k203krc -23r0 -c0rl-0r-0
+popup	false
 bg	009/013_1280x720	fade
 msg	Fade background.
 bg	009/011_1280x720

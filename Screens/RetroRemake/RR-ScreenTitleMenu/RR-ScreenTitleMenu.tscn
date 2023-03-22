@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScrollItem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=2]
+[ext_resource path="res://Ext/RetroRemake/d3afec2656ed77de171c8fe11f3870b4.jpg" type="Texture" id=3]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=4]
-[ext_resource path="res://Backgrounds/011/017_1280x720.png" type="Texture" id=6]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.gd" type="Script" id=7]
 
 [node name="Control" type="Control"]
@@ -14,9 +14,10 @@ script = ExtResource( 7 )
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 6 )
+texture = ExtResource( 3 )
 expand = true
 stretch_mode = 7
+flip_h = true
 
 [node name="ItemScroller_MainMenu" type="Node2D" parent="."]
 position = Vector2( 1920, 540 )

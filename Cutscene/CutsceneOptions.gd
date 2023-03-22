@@ -450,6 +450,7 @@ func OffCommand():
 		null,0,.4,Tween.TRANS_QUAD,Tween.EASE_IN,i*.05)
 	t.start()
 	yield(t,"tween_completed")
+	print("Broadcasting options closed")
 	emit_signal("options_closed")
 	#self.visible=false
 	pass

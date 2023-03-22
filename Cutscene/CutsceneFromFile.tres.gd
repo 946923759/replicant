@@ -133,10 +133,10 @@ func _on_CutscenePlayer_cutscene_finished():
 	end_cutscene_2()
 	return
 	
-	var seq := TweenSequence.new(get_tree())
-	seq._tween.pause_mode = Node.PAUSE_MODE_PROCESS
+	var seq := get_tree().create_tween()
+	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 # warning-ignore:return_value_discarded
-	seq.append($fadeOut,'color:a',1,.5).set_trans(Tween.TRANS_QUAD)
+	seq.tween_property($fadeOut,'color:a',1,.5).set_trans(Tween.TRANS_QUAD)
 	seq.connect("finished",self,"end_cutscene_2")
 	pass # Replace with function body.
 

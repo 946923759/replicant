@@ -21,6 +21,7 @@ func _ready():
 	for chapterName in database.keys():
 		if database[chapterName].size()==0:
 			continue
+# warning-ignore:narrowing_conversion
 		biggestMissionNum=max(database[chapterName].size(),biggestMissionNum)
 		#var chapter:Globals.Chapter = database[chapterName]
 		#biggestMissionNum=max(chapter.parts,biggestMissionNum)
@@ -37,7 +38,7 @@ func _ready():
 		n.connect("gui_input",self,"handle_chapter_click",[chapterName])
 		c.add_child(n)
 	print(biggestMissionNum)
-	for i in range(biggestMissionNum):
+	for _i in range(biggestMissionNum):
 		var m = MSelObj.instance()
 		mSelObjs.add_child(m)
 	for m in mSelObjs.get_children():
@@ -104,6 +105,7 @@ func _input(event):
 			#Parts are right aligned so we need to do some wacky shit and get the offset from the right side
 			var offsetFromRight=prevmSelObj.getNumParts()-curMissionPartNumForGamepad-1
 			print(offsetFromRight)
+# warning-ignore:narrowing_conversion
 			curMissionPartNumForGamepad=max(mSelObj.getNumParts()-1-offsetFromRight,0)
 		print(curMissionPartNumForGamepad)
 		

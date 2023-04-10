@@ -1,13 +1,67 @@
 #LANGUAGES	en
 bg	009/002_1280x720
-msg	This is a choice test. Select a choice.
+
+label	choice_init
 choice	Test Choice 1
 choice	Test Choice 2
 choice	Test Choice 3
+msg	This is a choice test. Select a choice.
+nop	JUMP TO C2DEST IF CHOICE RESULT IS 2
 condjmp_c	c2dest	2
+condjmp_c	c3dest	3
+
 msg	You selected choice 1.
 jmp	end_choices
+
 label	c2dest
 msg	You selected choice 2.
+jmp	end_choices
+
+label	c3dest
+msg	You selected choice 3.
+
 label	end_choices
-msg	End of choice branch.
+choice	restart choices
+choice	next choice branch
+msg	...
+condjmp_c	choice_init	1
+
+msg	These choices will disappear after being clicked by setting variables and jumping. Currently the variables are not saved.
+
+label	choice_loop
+condjmp_var	no_more_choices	kyuu	3
+
+nop	Should this be changed to "cmp	kyuu	&0" and "condjmp_short	1"?
+
+condjmp_short	fi	kyuu	~0
+choice	What's your full name?
+label	fi
+
+condjmp_short	fi	kyuu	~1
+choice	You're a Herrscher, right?
+label	fi
+
+nop	condjmp_short_var	1	kyuu	&2
+
+nop	This is a really badly designed if-else statement.
+condjmp	fi	kyuu	>0
+/Kyuushou	Hello, player!
+
+condjmp	fi
+/ 	What should I ask next...?
+
+condjmp_c	kdest2	2
+condjmp_c	kdest3	3
+
+label	kdest1
+/Kyuushou	My name is Kyuushou Houraiji, the savior of the world!
+var	kyuu	&0
+jmp	choice_loop
+
+label	kdest2
+/Kyuushou	I'm the Herrscher of the Void.
+var	kyuu	&1
+jmp	choice_loop
+
+label	no_more_choices
+msg	All choices picked.

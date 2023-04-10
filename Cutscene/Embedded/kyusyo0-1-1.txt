@@ -27,9 +27,9 @@ msg	300010	Home....	回家……	家に帰る……。	De Volta pra casa.....
 msg	300011	!	！	！	!!	
 msg	300012	What happened?	这里是怎么回事？	これはどういうこと？	O que isto significa?	
 speaker	Homu robot
-msg	300013	Further explanation seems necessary. Please provide a word you like to search.	看来需要进行进一步的说明，请提供您需要检索的单词。	もう少し詳しい説明が必要のようですね。必要な検索ワードをおっしゃってください。	Parece que você precisa de uma explicação mais detalhada. Por favor, diga-nos os que você busca.	
 choice	0	I don't have any idea... Can you explain it briefly?			Não faço a menor idéia... Você pode explicar brevemente?
 choice	0	No need.			Não há necessidade.
+msg	300013	Further explanation seems necessary. Please provide a word you like to search.	看来需要进行进一步的说明，请提供您需要检索的单词。	もう少し詳しい説明が必要のようですね。必要な検索ワードをおっしゃってください。	Parece que você precisa de uma explicação mais detalhada. Por favor, diga-nos os que você busca.	
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Homu robot
@@ -53,9 +53,9 @@ msg	300024	That's enough.	已经…足够了。	もう……十分。	Já ... o 
 speaker	Homu robot
 label	c2dest
 msg	300025	I understand. Please allow me to verify some information according to the remaining files.	明白了，那么请允许我根据残存的档案和您核对一些信息。	分かりました。では、私に残されているファイルに基づいて、あなたの情報を照合させてください。	Compreendo. Agora deixe-me combinar suas informações com base nos arquivos deixados para mim.	
-msg	300027	Is your name Houraiji Kyuushou?	请问 蓬莱寺 九霄 是您的名字么？	あなたの名前は蓬莱寺九霄ですか？	É o seu nome Houraiji Kyuusyou?	
 choice	0	Yes.			Sim
 choice	0	I can't remember...			Eu não consigo lembrar...
+msg	300027	Is your name Houraiji Kyuushou?	请问 蓬莱寺 九霄 是您的名字么？	あなたの名前は蓬莱寺九霄ですか？	É o seu nome Houraiji Kyuusyou?	
 speaker	Homu robot
 msg	300030	I see. If you have any information that might help you recall your memories, please contact us and we will try our best to help.	明白了，如果您有其他能够回忆起来的信息可以告诉我，我们会尽力帮助找回您的记忆。	分かりました。他に思い出せる情報があれば教えてください。私があなたの記憶を取り戻すお手伝いをします。	Compreendo. Por favor, deixe-me saber se você tem alguma outra informação que você possa lembrar. Eu vou ajudá-la a recuperar sua memória.
 / 	300031	My memories...	我的记忆……	私の記憶……。

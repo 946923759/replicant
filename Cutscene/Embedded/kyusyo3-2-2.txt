@@ -20,14 +20,13 @@ se	DLC_CH00_EV07_FootStepAway
 msg	301111	Understood!	是！	はい！	NONE
 
 portraits	59
-/Seele	301113	Phew~ There aren't too many armored mechas here, I can finally catch a break. My face is numb from acting so serious in front of everyone.... I finally understand why Bronya doesn't like to smile.	呼~这里的机甲兵器也减少了，终于可以松一口气了，在大家面前表现的一本正经的样子脸都要僵硬了……终于明白姐姐大人为什么总是不喜欢笑了。	ふう～ここの機甲兵器も減ってきたね。やっと一息つけるわ。みんなの前で真剣な表情をしてたら顔が引きつっちゃった……お姉ちゃんが、どうしていつも笑わないのかやっと分かったわ。	NONE
 choice	301648	Seele looks cool when she's giving orders.	指揮してるときのゼーレってカッコイイ。	NONE	NONE
-choice	301649	I'm not used to this Seele.	こういうゼーレにはちょっと慣れない。	NONE	NONE
+choice	301649	I'm not used to this side of you.	こういうゼーレにはちょっと慣れない。	NONE	NONE
+/Seele	301113	Phew~ There aren't too many armored mechas here, I can finally catch a break. My face is numb from acting so serious in front of everyone.... I finally understand why Bronya doesn't like to smile.	呼~这里的机甲兵器也减少了，终于可以松一口气了，在大家面前表现的一本正经的样子脸都要僵硬了……终于明白姐姐大人为什么总是不喜欢笑了。	ふう～ここの機甲兵器も減ってきたね。やっと一息つけるわ。みんなの前で真剣な表情をしてたら顔が引きつっちゃった……お姉ちゃんが、どうしていつも笑わないのかやっと分かったわ。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
-speaker	Seele
-msg	301114	Oh, really? Guess it's nice to change my image once in a while.	咦？真的么？看来偶尔换个形象也不错嘛。	え、ほんと？たまには雰囲気を変えてみるのもいいかもね。	NONE
+/Seele	301114	Oh, really? Guess it's nice to change my image once in a while.	咦？真的么？看来偶尔换个形象也不错嘛。	え、ほんと？たまには雰囲気を変えてみるのもいいかもね。	NONE
 msg	301115	Ah, but I can't stand being this tense all the time. I'd rather be my normal self, you know? I prefer being friends with everyone, not leading them.	不过总是这样绷紧的样子我自己都受不了，果然我还是习惯现在的样子，与其领导大家我更喜欢成为大家的朋友~	あー、でもいつもこんなに神経を張り詰めてたら自分が持たないわ。やっぱり、今のままがいいな。みんなを指揮するより友達として一緒にワイワイしていたいもの。	NONE
 jmp	end_choices
 
@@ -37,10 +36,9 @@ msg	301116	Hahaha... Is that so? I can't stand being tense like this.	哈哈…�
 msg	301117	I'd rather be my normal self. I prefer being friends with everyone over leading them.	果然我还是习惯现在的样子，与其领导大家我更喜欢成为大家的朋友~	やっぱり、元の私のままでいたいな。みんなを指揮するより友達として一緒にワイワイしていたいもの。	NONE
 
 label	end_choices
-speaker	Seele
-msg	301118	I don't think I can be as dependable as my sister. Sorry to disappoint you~	看来我还是不能像姐姐那样表现出可靠的样子呢，抱歉让你见笑了~	お姉ちゃんみたいに頼れる感じは出せないかな。恥ずかしいな～。	NONE
 choice	301650	You look reliable to me.	ゼーレは頼りになると思う。	NONE	NONE
 choice	301651	We must learn from Bronya.	もっとブローニャを見習わなきゃ。	NONE	NONE
+/Seele	301118	I don't think I can be as dependable as my sister. Sorry to disappoint you~	看来我还是不能像姐姐那样表现出可靠的样子呢，抱歉让你见笑了~	お姉ちゃんみたいに頼れる感じは出せないかな。恥ずかしいな～。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

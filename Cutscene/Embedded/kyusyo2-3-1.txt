@@ -31,23 +31,16 @@ msg	300777	Phew. That was close. All done! These samples should be enough.	呼~�
 /Seele	300779	I guess the situation isn't as bad as they thought. Let's go home, then! We'll gather our forces and annihilate those Honkai creatures immediately.	这么说事情并没有想象的那么严重嘛~那我们回去吧，立刻集合战力来消灭这里的崩坏生物吧！	ということは、事態はそんなにヤバくなかったってことだね。じゃあ帰ろう！すぐに戦力を集結させてここの崩壊生物を消滅させないと！	NONE
 /Bronya	300780	...	……	……。	NONE
 msg	300781	Seele, go home and gather the troops. I'll be continuing to investigate this area.	希儿，你们先回去准备战力吧，我在这里再继续调查一下。	ゼーレ、先に帰って戦いの準備をしておいてください。ブローニャはここで調査を続けます。	NONE
+emote	59	3
+emote	60	1
+/Seele	300782	.....Are you trying to find Mei?	…姐姐大人是要找芽衣姐姐的行踪么？	……お姉ちゃん、もしかし芽衣お姉ちゃんの行方を探すの？	NONE
+/Bronya	300783	...	……	……。	NONE
+extend	300784	 Yes.	 是的。	 はい。	NONE
+
 speaker	Seele
-nop	
-emote	59	3
-emote	60	1
-msg	300782	.....Are you trying to find Mei?	…姐姐大人是要找芽衣姐姐的行踪么？	……お姉ちゃん、もしかし芽衣お姉ちゃんの行方を探すの？	NONE
-speaker	Bronya
-nop	
-emote	59	3
-emote	60	1
-msg	300783	...	……	……。	NONE
-msg	300784	/setDispChr[3]...Yes.	是的。	はい。	NONE
-speaker	Seele
-nop	
-emote	59	3
-emote	60	1
 tn	0	But Kyuushou is right here...
 msg	300785	Then let me stay here with you! I want to find Mei as much as you do! I can't leave you alone here, it's too dangerous! 	那让希儿和你一起吧！寻找芽衣姐姐的心情希儿和姐姐大人是一样的！而且我怎么放心让姐姐大人一个人在这么危险的地方呢！	じゃあゼーレも一緒に残るよ！芽衣お姉ちゃんを探したい気持ちは、ブローニャお姉ちゃんと一緒なんだから！それにお姉ちゃんだけをこんな危険な場所に残すなんてできないよ！	NONE
+
 speaker	Bronya
 nop	
 emote	59	3
@@ -56,9 +49,10 @@ msg	300786	Seele... I see.	希儿……我明白了。	ゼーレ……分かり�
 nop	
 emote	59	3
 emote	60	1
-msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
+
 choice	300788	Roger that!	分かった。	NONE	NONE
 choice	300789	Please, let me stay and join your investigation.	あなたたちと一緒に調べたい。	NONE	NONE
+msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

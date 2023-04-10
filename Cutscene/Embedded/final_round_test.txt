@@ -1,5 +1,5 @@
 music	The Sound of the End
-bg_video	Final_Round_Dance_c	instant
+bg_video	Final_Round_Dance	instant
 /Kiana	Possibility as a human being... What a joke.
 msg	Together, we will bring destruction for this pathetic species called humanity.
 msg	All the fires of reincarnation and hope will be extinguished at this moment.

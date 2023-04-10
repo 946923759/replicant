@@ -1,19 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Cutscene/ChoiceHandler.gd" type="Script" id=1]
+[ext_resource path="res://Cutscene/ChoiceOverlay/ChoiceHandler_v2.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Cutscene/ChoiceShaderFadeSides.tres" type="Material" id=3]
+[ext_resource path="res://Cutscene/ChoiceOverlay/ChoiceActorFrame.tscn" type="PackedScene" id=4]
 
 [node name="ChoiceHandler" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 input_pass_on_modal_close_click = false
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Dim" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.560784 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -28,6 +32,7 @@ __meta__ = {
 }
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -79,4 +84,39 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tween" type="Tween" parent="."]
+[node name="ChoiceFrame" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Choice" parent="ChoiceFrame" instance=ExtResource( 4 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -648.0
+margin_top = -46.0
+margin_right = 648.0
+margin_bottom = 46.0
+
+[node name="Choice2" parent="ChoiceFrame" instance=ExtResource( 4 )]
+margin_left = -643.524
+margin_top = 132.109
+margin_right = 660.476
+margin_bottom = 228.109
+
+[node name="Choice3" parent="ChoiceFrame" instance=ExtResource( 4 )]
+margin_left = -662.595
+margin_top = -242.941
+margin_right = 641.405
+margin_bottom = -146.941
+
+[node name="Choice4" parent="ChoiceFrame" instance=ExtResource( 4 )]
+margin_left = -656.238
+margin_top = -382.79
+margin_right = 647.762
+margin_bottom = -286.79
+
+[node name="Choice5" parent="ChoiceFrame" instance=ExtResource( 4 )]
+margin_top = 284.672
+margin_bottom = 380.672

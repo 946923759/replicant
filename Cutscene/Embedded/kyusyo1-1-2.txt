@@ -4,9 +4,9 @@ speaker	Seele
 bg	009/013_1280x720
 portraits	59
 emote	59	5
-msg	300281	Man, Emesa really likes to work people to the bone. You have to be careful with her requests from now on and make sure she doesn't lead you by the nose.	真是的，埃米沙那个家伙太会使唤人了，以后她的委托你可得留心一些，不要被她牵着鼻子走。	まったく。エミザったら人使いが荒いんだから。これからは彼女の依頼には気をつけなきゃ。あごで使われないようにしないと。	Eita. Se Emesa é um ser humano, é difícil. De agora em diante, tenho que ter cuidado com o pedido dela. Eu tenho que evitar que ele seja usado no meu queixo.
 choice	300282	She's all good to me.	彼女はいい人だと思う。	NONE	NONE
 choice	300283	Alright, I'll be more careful.	たしかに、これからは気をつけよう。	NONE	NONE
+msg	300281	Man, Emesa really likes to work people to the bone. You have to be careful with her requests from now on and make sure she doesn't lead you by the nose.	真是的，埃米沙那个家伙太会使唤人了，以后她的委托你可得留心一些，不要被她牵着鼻子走。	まったく。エミザったら人使いが荒いんだから。これからは彼女の依頼には気をつけなきゃ。あごで使われないようにしないと。	Eita. Se Emesa é um ser humano, é difícil. De agora em diante, tenho que ter cuidado com o pedido dela. Eu tenho que evitar que ele seja usado no meu queixo.
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -19,8 +19,8 @@ label	c2dest
 speaker	Seele
 emote	59	1
 msg	300285	Hey, don't look so serious! I was just joking. She's short-tempered, but she's a good person.	呃！你也不用这么认真啦，我是开玩笑的~那家伙除了脾气差了点其实是个烂好人。	え！あなたもそんなに真面目なの。冗談だよ～！あの子は気性が荒い以外はいい人なんだよ。	Huh! Você é tão sério também. É uma piada! Aquele garoto é uma boa pessoa, exceto por seu temperamento duro.
-label	end_choices
 
+label	end_choices
 emote	59	1
 tn	0	I have no idea what this sentence means, sorry. DeepL didn't understand the Chinese or Japanese and it seems like the official English translation isn't correct either. I'm assuming Seele means Emesa owes her a favor.
 msg	300286	Anyways, this mission ought to help me out! One day she might have to give me a piggyback ride home from the battlefield. 	总之这次的任务就当是为了自己吧，或许哪天我们也得靠她背回家呢~	とにかく今回の任務は自分のためだからね！いつの日か彼女に戦場からおんぶしてもらって帰ることになるかもしれないもの。	Enfim, esta missão é para mim! Algum dia ela pode pegar carona no campo de batalha e ir para casa.

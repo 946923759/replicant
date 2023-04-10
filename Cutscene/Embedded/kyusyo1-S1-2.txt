@@ -12,18 +12,22 @@ speaker	Seele
 emote	59	3
 msg	305011	Ah! Something's there!	唔！有东西在！	あ！何かいる！	NONE
 speaker	
-msg	305012	<i>rustle rustle</i>... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
+
 choice	305013	That sounds like a cat.	猫の鳴き声みたい。	NONE	NONE
 choice	305014	Is that a Honkai beast?	崩壊獣なの？	NONE	NONE
+msg	305012	<i>rustle rustle</i>... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
 speaker	Seele
 condjmp_c	c2dest	2
+
 label	c1dest
 emote	59	3
 msg	305015	A cat? No way... Wait, maybe it's a new species!	猫？怎么可能…等等！难道是新生种么！？	猫？まさか……待って！もしかして新種！？	NONE
 jmp	end_choices
+
 label	c2dest
 emote	59	3
 msg	305016	A Honkai Beast? But it sounded just like a cat, didn't it? Maybe it's a new species...?	崩坏兽…但是刚才的声音好像是猫叫吧？难道是新生种么……	崩壊獣？でも今のは猫の鳴き声みたいだったけど？まさか新種……。	NONE
+
 label	end_choices
 msg	305017	Stay alert... Approach the target slowly...	保持警惕…慢慢接近……	警戒したままゆっくり近づいて……。	NONE
 speaker	 
@@ -45,10 +49,12 @@ msg	305025	Meow!	喵~	ニャ～。	NONE
 speaker	Seele
 nop	
 emote	59	1
-msg	305026	This whole world is a wasteland after the Honkai, but even the smallest creatures haven't stopped fighting to survive just like us.	虽然整个世界在崩坏的影响下分崩离析，但是依然有这样的小生命和我们一样顽强地生存着呢？	世界全体が崩壊の影響でめちゃくちゃになっているけど、こんな小さな命も私たちと同じようにたくましく生きているんだよね。	NONE
+
 choice	Should we take him back home?	基地に連れて帰る？	NONE	NONE
 choice	It looks like we need to prepare some pet food.	キャットフードを用意しなくちゃね。	NONE	NONE
+msg	305026	This whole world is a wasteland after the Honkai, but even the smallest creatures haven't stopped fighting to survive just like us.	虽然整个世界在崩坏的影响下分崩离析，但是依然有这样的小生命和我们一样顽强地生存着呢？	世界全体が崩壊の影響でめちゃくちゃになっているけど、こんな小さな命も私たちと同じようにたくましく生きているんだよね。	NONE
 condjmp_c	c2dest	2
+
 label	c1dest
 speaker	Seele
 bg	009/013_1280x720
@@ -57,6 +63,7 @@ emote	59	1
 msg	305029	No, we don't have the resources to be taking care of pets. And since they've been able to survive the Honkai, they must have been surviving on their own. I think they'll be fine without us.	不，我们可没有养宠物的余力，而且既然它能在崩坏中生存下来，就一定有自己的生存之道，不用我们去打扰它也能好好地活下来。	いえ、私たちにはペットを養う余力はないわ。それに崩壊の中で生き残っているのだから、きっと自分で生存するすべをもっているはず。私たちが余計なことをしなくてもしっかり生きていけると思う。	NONE
 msg	305030	But it must be fate that we met here, right? I'll give it some food as a parting gift ~	不过既然遇到了也是某种缘分，把身上的食物分给它一点作为饯别礼吧~	でも、ここで会ったのも何かの縁よね。餞別代わりに少し食べ物をあげよ～！	NONE
 jmp	end_choices
+
 label	c2dest
 speaker	Seele
 bg	009/013_1280x720
@@ -64,6 +71,7 @@ nop
 emote	59	1
 msg	305031	Hehe~ But I guess it's fate that we met here. I'll give it some food as a gift~!	嘿嘿~既然遇到了也是某种缘分，把身上的食物分给它一点作为见面礼吧~	ヘヘ～、でもここで会ったのも何かの縁よね。挨拶代わりに少し食べ物あげよ～！	NONE
 msg	305032	But we can't be taking it home with us. We don't have the resources to take care of pets. And since they've been able to survive the Honkai, they must have been surviving on their own. I think they'll be fine without us.	不过带回家可是禁止的哦，我们也没有养宠物的余力呢，既然它能在崩坏中生存下来，就一定有自己的生存之道，不用我们去打扰它也能好好地活下来。	私たちにペットを養う余力はないけど、崩壊の中で生き残っているんだから、きっと自分で生存するすべをもっているはずよね。私たちが余計なことしなくてもしっかり生きていける……よね？	NONE
+
 label	end_choices
 speaker	
 msg	305033	Meow!	喵~	ニャ～。	NONE

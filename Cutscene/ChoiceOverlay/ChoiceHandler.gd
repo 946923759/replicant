@@ -133,6 +133,7 @@ func input_cursor(pos:Vector2,_clicked:bool=false)->bool:
 		#	print(String(c.rect_position.y)+"<"+String(pos.y)+"<"+String(c.rect_position.y+c.rect_size.y))
 		if pos.y > c.rect_position.y-15 and pos.y < c.rect_position.y+c.rect_size.y+15:
 			selection=i
+			#print("Choice selection is "+String(selection))
 			update_selections()
 			return true
 	selection=-1

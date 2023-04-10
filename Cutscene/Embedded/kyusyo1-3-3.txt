@@ -6,10 +6,11 @@ emote	60	2
 msg	300515	Thank you for your hard work. Tonight's mission has been successfully completed.	辛苦了，今晚的任务完成的很顺利。	お疲れ様でした。今夜の任務は無事に完了しました。	NONE
 msg	300516	You've proven your strength. From today on, you'll be fighting alongside us. Welcome to the "Flame Chasing Moths", the resistance against the Honkai.	你的实力已经合格了，从现在开始你将与我们共同战斗，欢迎加入“逐火之蛾”。	あなたの実力なら文句なく合格です。今日からはブローニャたちと一緒に戦ってもらいます。ようこそ、対崩壊レジスタンス「火を追う蛾」へ。	NONE
 msg	300517	Sorry. it's not much of an induction, right? I wish I could give you a grand welcome, but.... Please accept this instead.	抱歉，没有什么盛大的仪式，不过作为证明请把这个收下吧。	すみません。ささやかな入隊式になってしまいましたね。盛大にお迎えしたい気持ちはいっぱいなのですが……そうでした証明書がわりにこれを受け取ってください。	NONE
-msg	300518	This is the proof of a combatant. You are on the front lines fighting the Honkai with a mission to protect your family. You will be the moth that chases the light and fights for hope.	这是作战人员的证明，你将肩负起保护家人的使命战斗在崩坏的最前线，成为追逐光明的飞蛾，为了希望而战。	これは戦闘要員の証明です。あなたは家族を守るという使命を担って崩壊と戦う最前線に立つのです。光を追う蛾となり、希望のために戦うのです。	NONE
 choice	300519	I'm honored.	光栄だ。	NONE	NONE
-choice	300520	I'm not yet ready.	まだ準備ができてなくて……。	NONE	NONE
+choice	300520	I'm not ready yet.	まだ準備ができてなくて……。	NONE	NONE
+msg	300518	This is the proof of a combatant. You are on the front lines fighting the Honkai with a mission to protect your family. You will be the moth that chases the light and fights for hope.	这是作战人员的证明，你将肩负起保护家人的使命战斗在崩坏的最前线，成为追逐光明的飞蛾，为了希望而战。	これは戦闘要員の証明です。あなたは家族を守るという使命を担って崩壊と戦う最前線に立つのです。光を追う蛾となり、希望のために戦うのです。	NONE
 condjmp_c	c2dest	2
+
 label	c1dest
 speaker	Bronya
 bg	009/003_1280x720
@@ -18,6 +19,7 @@ emote	60	2
 msg	300521	Your eyes are shining with confidence. I believe in you. Come live with us.	你的眼神很有自信，我相信你一定能办到，让我们一起活下去吧。	あなたの目には自信が満ち溢れています。あなたならきっとできるはずです。ブローニャたちと一緒に生きていきましょう。	NONE
 msg	300522	Well, I look forward to working with you in the future. That's all for today, please go back and get some rest.	那么以后也多关照，今天就到这里，回去好好休息吧。	では、これからよろしくお願いします。今日はこの辺にして帰ってゆっくり休んでください。	NONE
 jmp	end_choices
+
 label	c2dest
 speaker	Bronya
 bg	009/003_1280x720
@@ -25,8 +27,8 @@ portraits	60
 emote	60	2
 msg	300523	Seele and I will be helping you. Well, not just us, everyone in the base is willing to give you a hand, so don't worry.	我和希儿也会帮助你的。不仅是我们，基地的大家都会成为你的力量，所以不用担心。	ブローニャとゼーレがお手伝いします。それだけではありません。基地のみんながあなたの力になりますから、心配はいりません。	NONE
 msg	300524	That's it for today. Take some rest.	那么以后也多关照，今天就到这里，回去好好休息吧。	では、これからよろしくお願いします。今日はこの辺にして帰ってゆっくり休んでください。	NONE
+
 label	end_choices
-#LANGUAGES	KEY	EN	CH	JP	PT
 speaker	Seele
 bg	009/005_1280x720
 portraits	59

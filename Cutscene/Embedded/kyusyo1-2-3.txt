@@ -19,11 +19,12 @@ msg	300407	Bang!!!	砰！！！	バンッ！！！	NONE
 speaker	Seele
 nop
 emote	59	3
-msg	300408	Are you ok? Get out of here and leave it to me!	喂！你没事吧！赶紧离开这里！剩下的交给我！	ねえ！！大丈夫！？あなたは今すぐ逃げて！あとは私に任せればいいから！	NONE
+
 choice	300409	No. I need to protect my own home!	いやっ！私も自分の家を守る！	NONE	NONE
 choice	300410	I won't let Seele take the risk alone!	ゼーレだけを危険な目にあわせられない！	NONE	NONE
-speaker	Seele
-msg	300411	Hey! What're you doing?	喂！你要干嘛！？	ちょっと！何する気！？	NONE
+msg	300408	Are you ok? Get out of here and leave it to me!	喂！你没事吧！赶紧离开这里！剩下的交给我！	ねえ！！大丈夫！？あなたは今すぐ逃げて！あとは私に任せればいいから！	NONE
+
+/Seele	300411	Hey! What're you doing?	喂！你要干嘛！？	ちょっと！何する気！？	NONE
 speaker	
 se	DLC_CH00_EV11_MosterRoar
 msg	300412	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！	NONE
@@ -53,10 +54,9 @@ nop
 emote	59	6
 msg	300419	What's that sound?	这个声音是！	この音は！	NONE
 msg	300420	You bastard...	唔…你这个家伙……	うぅ……もうあなたって人は……！	NONE
-msg	300421	You scared the hell out of me!	你是要吓死我么！！	ビックリさせないでよ！！	NONE
 choice	300422	Don't cry. Everything is ok.	泣かないでよ、何事もなかったでしょ？	NONE	NONE
 choice	300423	Don't cry, it's my fault.	泣かないで、私が悪かったから。	NONE	NONE
-speaker	Seele
+/Seele	300421	You scared the hell out of me!	你是要吓死我么！！	ビックリさせないでよ！！	NONE
 emote	59	7
 msg	300424	I'm not crying!	我才没有哭！	泣いてなんかいないわよ！	NONE
 
@@ -67,9 +67,10 @@ music	Peaceful Sleep - No Vocals
 emote	59	1
 se	DLC_CH01_EV25_RunToMe
 msg	300425	I'm sorry. I was a bit over my head, please don't take it personal. And I didn't cry!	唔…抱歉，刚才太激动了，你可不要往心里去……还有我刚才可没哭！你不要误会了！	うぅ～……ごめんなさい。さっきは興奮しちゃって。気にしないで……それにさっきは泣いてないからね！誤解しないでよ！	NONE
-msg	300426	And you promised! Don't put yourself in danger like this again!	另外我们可约定好了！千万不能再做出这种危险的举动了！	それから、約束だよ！もうこんな危ないマネは二度としないこと！	NONE
+
 choice	300427	Yes, I know.	分かった。	NONE	NONE
 choice	300428	I just made the same choice as you.	ただゼーレと同じ選択をしただけ。	NONE	NONE
+msg	300426	And you promised! Don't put yourself in danger like this again!	另外我们可约定好了！千万不能再做出这种危险的举动了！	それから、約束だよ！もうこんな危ないマネは二度としないこと！	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

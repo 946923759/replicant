@@ -4,6 +4,9 @@ nop	portraits	58
 bg	009/022_1280x720	immediate
 tn	This is a translation note. You can see it by hovering your mouse over the TN button.
 / 	This is normal text.
+extend	 This text extends from the previous text.
+extend	 The extend command can be stacked infinitely, but you cannot combine the "/setDispChr[]" text command and the extend command.
+msg	/setDispChr[-1]This text appears instantly.
 msg	[color=#FF0000]This is red text.[/color]
 msg	You can combine normal and [color=#FF0000]colored[/color] text in the same message.
 msg	[font=res://Fonts/TextFont_Large.tres]This is large text.[/font] It can also be combined, but it will look weird.

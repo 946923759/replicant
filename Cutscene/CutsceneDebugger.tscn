@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=2]
+[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+onready var scrollContainer:ScrollContainer = $ScrollContainer
+
+func set_text(arr:Array):
+	var txt= \"\"
+	for l in arr:
+		#print(l)
+		txt+=\"[\"
+		for a in l:
+			txt+=String(a)+\", \"
+		txt+=\"]\\n\"
+	$ScrollContainer/Label.text=txt
+
+# Notice the lack of _, This is sent by CutsceneMain.
+func process(delta):
+	var d = delta*50
+	#print(\"Input!\")
+	if Input.is_action_pressed(\"ui_down\"):
+		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical + 40*d)
+#	elif 
+#		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical + 60)*Input.get_action_strength(\"analog_down\")
+	elif Input.is_action_pressed(\"ui_up\"):
+		scrollContainer.scroll_vertical= (scrollContainer.scroll_vertical - 40*d)
+	elif Input.is_action_pressed(\"analog_down\") or Input.is_action_pressed(\"analog_up\"):
+		#print(Input.get_action_strength(\"analog_down\")-Input.get_action_strength(\"analog_up\"))
+		var sc = Input.get_action_strength(\"analog_up\")*-1+Input.get_action_strength(\"analog_down\")
+		scrollContainer.scroll_vertical=scrollContainer.scroll_vertical + 60*sc*d
+"
+
+[node name="CutsceneDebug" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+
+[node name="smQuad" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 60.0
+margin_right = -60.0
+scroll_horizontal_enabled = false
+
+[node name="Label" type="Label" parent="ScrollContainer"]
+margin_right = 1800.0
+margin_bottom = 262.0
+rect_min_size = Vector2( 1800, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "[afsfkas]fksaf]sakfsaf.]asfafasfasf
+asdopfjk30r0kapfk
+asf90akf0pskfa
+fskoapfkopsf
+"
+autowrap = true
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -735.155
+margin_top = 15.119
+margin_right = -83.1548
+margin_bottom = 131.119
+custom_fonts/font = ExtResource( 3 )
+text = "Press F2 to exit"

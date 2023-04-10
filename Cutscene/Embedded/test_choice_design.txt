@@ -1,0 +1,50 @@
+preload_portraits	58	59	60
+msg	This file uses if statements instead of jumps. Internally if/else gets converted to a jump.
+
+label	loop_1
+choice	I like Kyuushou.
+choice	I like Seele.
+choice	I like someone else...
+msg	Who do you like?
+if	__choice__	1
+    portraits	58
+    /Kyuushou	Awesome! Let's go save the world!
+if	__choice__	2
+    portraits	59
+    /Seele	I like you too, player!
+if	__choice__	3
+    portraits	60
+    /Bronya	Are you a fan of me?
+
+choice	restart loop
+choice	continue
+condjmp_c	loop_1	0
+
+msg	These choices disappear. Additionally, the message Kyuushou says is different once you've picked a choice.
+
+label	loop_2
+if	kyuu	3:
+    jmp	no_more_choices
+
+if	kyuu	&0:
+    nop	"dchoice" means dest choice
+    dchoice	0	What's your full name?
+
+if	kyuu	&1:
+    dchoice	1	You're a Herrscher, right?
+
+if	kyuu	>0:
+    /Kyuushou	Hello, player!
+else:
+    / 	What should I ask next...?
+
+if	choice	0:
+  /Kyuushou	My name is Kyuushou Houraiji, the savior of the world!
+  var	kyuu	&0
+if	choice	1:
+  /Kyuushou	I'm the Herrscher of the Void.
+  var	kyuu	&1
+jmp	choice_loop
+
+label	no_more_choices
+/ 	You've asked everything there is to know.

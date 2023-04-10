@@ -13,12 +13,15 @@ emote	59	5
 msg	300251	Oops, I forgot you've lost your memories before arriving here. Sorry.	啊~差点忘了你不记得以前的事情了，抱歉抱歉~	あ～忘れてた。あなた以前のこと覚えていないんだったよね。ごめんなさい。	Ah, esqueci. Eu não me lembrava antes de você. desculpe.
 emote	59	1
 msg	300252	Based on the way you fought the other day, it seems like you've still got some survival instincts. It's just that your fighting style needs some improvement, so let me correct it for you~	不过从之前的战斗来看对于生存的本能还是好好保存着呢，只是战斗的方法有些问题，就让我来好好为你矫正一下吧~	でも、この間の戦いぶりからして生存本能はしっかり残っていると思うよ。ただ戦い方に問題があるから、私が少し修正してあげる。	Mesmo em japonês, acho que o instinto de sobrevivência ainda permanece firme na batalha durante esse período. No entanto, há um problema com a forma de lutar, então vou corrigi-lo um pouco.
-msg	300253	Let's go! There's plenty of assignments for you to take on.	那么走吧！基地中可是有很多任务可以来锻炼你哦~	じゃあ行きましょ！色々な任務を受けて鍛えてみよ～！	Vamos! Faça várias missões e treine!
+
 choice	300254	Didn't you say you were going to train me first?	訓練って言ってなかった？	Didn't you say you were going to train me first?	NONE
 choice	300255	Are you sure I'm capable of that?	私の実力で本当にできるの？	Are you sure I'm capable of that?	NONE
+msg	300253	Let's go! There's plenty of assignments for you to take on.	那么走吧！基地中可是有很多任务可以来锻炼你哦~	じゃあ行きましょ！色々な任務を受けて鍛えてみよ～！	Vamos! Faça várias missões e treine!
 condjmp_c	c2dest	2
+
 label	c1dest
 msg	300256	In this situation we don't have the luxury to spend time training you one-on-one. You'll be starting out training by completing some simple missions~	现在这个情况可没有这么奢侈的时间单独给你训练，想要锻炼的话只有从简单的任务开始~	今の状況だと、あなただけに訓練を施すなんて時間の余裕はないの。簡単な任務を積み重ねて鍛えるのが一番効率いいから我慢してね。	Na situação atual, não posso me dar ao luxo de treinar só para você. É mais eficiente empilhar e treinar missões simples, então seja paciente.
+
 label	c2dest
 msg	300258	Don't worry! Fighting is also part of the training. The battlefield is the best classroom, after all. Get your weapons and follow me.	不用担心啦~实战也是训练的一环，战场可是最好的课堂。准备好你的武器跟我来吧~	心配しなくて大丈夫だよ～！実践も訓練の一環だから。戦場は最高の教室だよ。武器を用意して私について来てね。	Não se preocupe! A prática também faz parte do treinamento. O campo de batalha é a melhor sala de aula. Peguem suas armas e me sigam.
 label	end_choices
@@ -47,23 +50,25 @@ msg	300264	I'm Ray. Emesa's my first name, but don't ever call me by that name. 
 speaker	Seele
 tn	0	You know, Japanese honorific stuff... In English It would be like "miss Ray" I guess
 msg	300265	Even though the name Emesa is so cute! Why do I have to call you by your last name? Aren't we friends? 	埃米沙这名字多可爱~为什么要用姓氏来称呼啦，多见外！	エミザっていう名前かわいいのに～！どうして苗字で呼ばなきゃいけないの。よそよそしくない？	Mesmo que o nome Emiza seja fofo! Por que eu tenho que chamá-lo pelo sobrenome? Não é estranho?
-speaker	Emesa
+
 emote	55	4
-msg	300266	For the last time, I hate that name! Don't ☆☆ing make me say it again!	说过很多次了！我讨厌这个名字，不要让我OO的说第二遍！	何回も言っただろ。この名前が嫌いなんだ！何回も言わせるな！	Você disse isso muitas vezes. Eu odeio esse nome! Não me deixe dizer isso de novo e de novo!
+
 choice	300267	That anger... I remember now!	この悪口知ってる……思い出した！	NONE	NONE
 choice	300268	I think your name is cute too.	かわいい名前だと思うな。	NONE	NONE
-condjmp_c	c2dest	2
-label	c1dest
+/Emesa	300266	For the last time, I hate that name! Don't ☆☆ing make me say it again!	说过很多次了！我讨厌这个名字，不要让我OO的说第二遍！	何回も言っただろ。この名前が嫌いなんだ！何回も言わせるな！	Você disse isso muitas vezes. Eu odeio esse nome! Não me deixe dizer isso de novo e de novo!
 emote	55	1
+condjmp_c	c2dest	2
+
+label	c1dest
 msg	300269	Ha? You remembered? I heard you had amnesia, but it seems like it's pretty serious. How about I give you a refresher with my fists?	哈？你才想起来么，虽然听说你的记忆出现了问题，看来还是挺严重的，需要我用拳头帮你检查一下么。	はあ？やっと思い出したのか？あんた、記憶に問題があるって聞いていたけど、どうやら相当重いみたいだな。調べてやろっか、拳で。	Que? Você finalmente se lembrou? Ouvi dizer que você tem um problema de memória, mas parece que é bem pesado. Confira, com o punho.
 jmp	end_choices
+
 label	c2dest
-emote	55	1
 msg	300270	Oh? Sounds like you want to go back to the hospital bed... Would you like me to carry you?	嚯。我看你是还想回病床躺一会，需要我把你抬回去么？	何？あんた、まだベッドで寝ていたいみたいだね。私が元に戻してあげよっか？	que? Você ainda quer dormir na cama. Devo colocá-lo de volta?
+
 label	end_choices
-speaker	Seele
 emote	59	1
-msg	300271	Don't take it so seriously, we're just joking. Anyways, tell me about the commission. I'm pretty busy.	好啦~不要这么认真嘛，只是开玩笑而已啦。赶紧说说委托的内容吧，我可是很忙的哦~	ほら～そんなに真面目にとらないで。冗談でしょ。早く依頼の内容を教えてよ。こっちだって忙しいんだから。	Olha, não leve tão a sério. você está brincando. Por favor, diga-me o conteúdo do seu pedido o mais rápido possível. Estou muito ocupado aqui.
+/Seele	300271	Don't take it so seriously, we're just joking. Anyways, tell me about the commission. I'm pretty busy.	好啦~不要这么认真嘛，只是开玩笑而已啦。赶紧说说委托的内容吧，我可是很忙的哦~	ほら～そんなに真面目にとらないで。冗談でしょ。早く依頼の内容を教えてよ。こっちだって忙しいんだから。	Olha, não leve tão a sério. você está brincando. Por favor, diga-me o conteúdo do seu pedido o mais rápido possível. Estou muito ocupado aqui.
 speaker	Emesa
 msg	300272	You're the one who's... Well, I'll explain the request.	你这家伙…好吧，事情是这样的。	あんたってやつは……まぁいい、依頼内容を説明するよ。	Vocês são... bem, vou explicar o que vocês pediram.
 msg	300273	You know that battle we had the other day? The Homei mech was badly damaged during that battle. I asked the engineering team to repair it, but they said they didn't have enough parts and that they needed to wait for more parts to arrive.	之前的战斗中吼美机器人的损坏比较严重，但是工程班那边的家伙说由于缺少零件很多都无法修复，需要等待零件补充才行。	この前の戦いあっただろ？その時のホミロボットの損傷が激しくてね。エンジニア班に修理を頼んだんだけど、部品が足りないっていうんだよ。部品の補充をしないと無理だって。	Houve uma batalha da última vez? O dano ao robô Homu naquela época foi grave. Pedi à equipe de engenheiros para consertá-lo, mas eles disseram que estavam faltando peças. É impossível sem reposição de peças.

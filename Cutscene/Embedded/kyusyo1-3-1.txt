@@ -9,9 +9,11 @@ portraits	60
 emote	60	2
 msg	300458	Can't fall asleep?	还没休息么？	まだ寝てないんですか？	NONE
 msg	300459	Then let me impose on you for a bit. I want to talk to you.	那就陪我一会吧，想和你聊聊。	だったら少し付き合ってください。少しお話したいです。	NONE
-msg	300460	Seele told me what happened today. She has quite the high opinion of you (redo). She said that you're a trustworthy colleague that protects those she cares about, even if it means sacrificing yourself during a mission.	希儿把今天的事情和我说了，她对你的评价很高呢，在任务中愿意牺牲自己来保护重要的人，是个值得信赖的伙伴。	ゼーレが今日のことを話してくれました。彼女のあなたに対する評価はとても高いです。任務中に自分を犠牲にしてでも大切な人を守る、信頼できる仲間だと。	NONE
+
 choice	300461	She said she wouldn't tell anyone.	秘密にするって言ったのに……。	NONE	NONE
 choice	300462	How's Seele?	ゼーレは今どんな感じ？	NONE	NONE
+msg	300460	Seele told me what happened today. She has quite the high opinion of you (redo). She said that you're a trustworthy colleague that protects those she cares about, even if it means sacrificing yourself during a mission.	希儿把今天的事情和我说了，她对你的评价很高呢，在任务中愿意牺牲自己来保护重要的人，是个值得信赖的伙伴。	ゼーレが今日のことを話してくれました。彼女のあなたに対する評価はとても高いです。任務中に自分を犠牲にしてでも大切な人を守る、信頼できる仲間だと。	NONE
+
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Bronya
@@ -21,8 +23,8 @@ emote	60	2
 msg	300463	Seele was so overjoyed when talking about you that she accidentally let it slip. But as you know, those who disobey orders must be punished.	希儿谈到你的时候很兴奋哦，所以一不小心说漏嘴了，不过既然是抗命了那就要接受惩罚。	ゼーレはあなたのことになると興奮して、ついうっかり漏らしてしまったみたいです。ですが、命令に背いた以上は罰を受けなければなりません。	NONE
 msg	300464	Don't give me that look. Even though we lost a family member on this mission, you two did the right thing afterwards. Without you, the damage would have been much worse.	不要露出这种表情，这次任务中虽然损失了一位家人，但是你们的后续应对很正确，如果没有你的话损失或许会更大。	そんな顔をしないでください。今回の任務では家族を1人失ったとはいえ、あなたたちの後処理はとても正確でした。あなたがいなければ被害はもっと大きかったでしょう。	NONE
 msg	300465	So, about the punishment... Let's say you and I go on a secret mission right now.	嗯，惩罚的话让我想想…那就和我去执行一个秘密任务好了。	それで、罰のことですが……ブローニャと一緒に秘密の任務に行くということにしましょう。	NONE
-msg	300466	Let's go. We won't be able to make it if we don't hurry.	出发吧，如果不快点的话可是赶不上的。	出発しましょう。急がないと間に合わなくなります。	NONE
 jmp	end_choices
+
 label	c2dest
 speaker	Bronya
 bg	009/002_1280x720
@@ -32,9 +34,10 @@ msg	300467	Seele?  She's the same. She wants me to tell you not to blame yoursel
 msg	300468	If it wasn't for you, we would have lost so much more. Seele told me to thank you.	如果没有你的话损失或许会更大，希儿也让我好好赞赏你一番。	あなたがいなければ被害はもっと大きかったでしょう。ゼーレも私にあなたのことを褒めるように言っていましたよ。	NONE
 msg	300469	But you did disobey our command. You have to be punished for that.	不过既然是抗命了，那就要接受相应的惩罚。	ですが、命令に背いた以上は、相応の罰を受けなければなりません。	NONE
 msg	300470	Come on, there's nothing to fear. Let me think... You will come with me for another secret mission.	不要露出这种表情，不是什么可怕的事情，让我想想…那就和我去执行一个秘密任务好了。	そんな顔をしないでください。そんなに怖がることはありません。そうですね……ブローニャと一緒に秘密の任務に行くということにしましょう。	NONE
-msg	300471	(Duplicate of 300466) Let's go. We won't be able to make it if we don't hurry.	出发吧，如果不快点的话可是赶不上的。	出発しましょう。急がないと間に合わなくなります。	NONE
+
 label	end_choices
-#LANGUAGES	KEY	EN	CH	JP	PT
+msg	300466	Let's go. We won't be able to make it if we don't hurry.	出发吧，如果不快点的话可是赶不上的。	出発しましょう。急がないと間に合わなくなります。	NONE
+
 speaker	Bronya
 bg	009/007_1280x720
 portraits	60

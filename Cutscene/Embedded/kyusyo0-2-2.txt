@@ -41,9 +41,9 @@ msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒
 msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	彼女の悲しそうな表情。	Ela tem uma expressão triste.
 msg	300109	In this world of emptiness, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。	Quem ela está esperando neste mundo vazio ...?
 msg	300110	A sense of nostalgia lingers in my heart.	有种令人怀念的感觉缠绕在胸口。	何だか懐かしいような感覚が胸を締め付ける。	Um sentimento de nostalgia aperta meu coração.
-msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
 choice	0	Wake her up.			Acorde-a.
 choice	0	Never mind.			Esqueça.
+msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
 condjmp_c	c2dest	2
 
 label	c1dest

@@ -41,6 +41,9 @@ func loadFromExternal(path:String):
 		"webm":
 			video = VideoStreamWebm.new()
 			video.set_file(path)
+		"ogv", "ogg":
+			video = VideoStreamTheora.new()
+			video.set_file(path)
 		_:
 			printerr("Non webm videos are not supported.")
 			return false
@@ -51,20 +54,25 @@ func loadFromExternal(path:String):
 func loadVNBG(sprName:String):
 	#loadFromExternal(OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Backgrounds/"+sprName)
 	var f = File.new()
-	if OS.has_feature("standalone") and !f.file_exists("res://Backgrounds/"+sprName+".webm"):
-		for ext in [".webm"]:
-			var path = OS.get_executable_path().get_base_dir()+"/GameData/Backgrounds/"+sprName+ext
-			#print("Checking path "+path)
-			if f.file_exists(path):
-				print_debug("Found external video file at "+path)
-				loadFromExternal(path)
+	
+	
+	
+	#standalone = compiled
+	for ext in [".ogg",".ogv",".webm"]:
+		var path = "res://Backgrounds/"+sprName+ext
+		var standalonePath = OS.get_executable_path().get_base_dir()+"/GameData/Backgrounds/"+sprName+ext
+		#print("Checking path "+path)
+		if f.file_exists(path):
+			print_debug("Found internal video file at "+path)
+			loadFromExternal(path)
+			return true
+		elif OS.has_feature("standalone") and f.file_exists(standalonePath):
+				print_debug("Found external video file at "+standalonePath)
+				loadFromExternal(standalonePath)
 				return true
-			#else:
-		printerr("background video not embedded in pck and no external file found!!")
-		return false
-	else:
-		loadFromExternal("res://Backgrounds/"+sprName+".webm")
-		return true
+			
+	printerr("background video not embedded in pck and no external file found!!")
+	return false
 
 func hideActor(s:float,delay:float=0.0):
 	var seq := get_tree().create_tween()

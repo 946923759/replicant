@@ -18,15 +18,18 @@ msg	300641	Let me introduce you to the captain of the Grey Moths, Himeko Murata.
 speaker	Himeko
 emote	60	2
 emote	61	1
-msg	300642	...	……	……。	NONE
+
 choice	300643	You fought beautifully in battle.	この前の戦い、本当にカッコよかった。	NONE	NONE
 choice	300644	Thank you for saving us.	この前の戦いではありがとうございました。	NONE	NONE
+msg	300642	...	……	……。	NONE
+
 /Himeko	300645	You're most welcome.	客套话就免了。	お世辞は結構よ。	NONE
 emote	60	1
 /Bronya	300646	I've called you here because I have a mission for you.	这次叫你过来有一件任务想要交给你。	今回、あなたを呼んだのは任務をお任せしたいからです。	NONE
-msg	300647	During the previous investigation, the Grey Moths lost a significant number of personnel to injuries and had to leave the front lines. Therefore, they're in need of replacements. I've recommended you to Captain Himeko.	灰蛾部队在之前的调查任务中有一批受伤的队员被换下了战斗，所以需要补充人员，因此我向姬子队长推荐了你。	灰蛾部隊はこの前の調査任務の途中、かなりの隊員が負傷して戦線を離脱しました。そのため補充人員が必要です。そこで、姫子隊長にあなたを推薦しました。	NONE
+
 choice	300648	Yes, it's my pleasure.	喜んで受ける。	NONE	NONE
 choice	300649	I need to think about it.	ちょっと考えさせて。	NONE	NONE
+msg	300647	During the previous investigation, the Grey Moths lost a significant number of personnel to injuries and had to leave the front lines. Therefore, they're in need of replacements. I've recommended you to Captain Himeko.	灰蛾部队在之前的调查任务中有一批受伤的队员被换下了战斗，所以需要补充人员，因此我向姬子队长推荐了你。	灰蛾部隊はこの前の調査任務の途中、かなりの隊員が負傷して戦線を離脱しました。そのため補充人員が必要です。そこで、姫子隊長にあなたを推薦しました。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -68,9 +71,10 @@ emote	61	1
 match_names	Bronya	Seele
 portraits	60	59
 emote	59	5
-msg	300667	It's finally over.	呼~终于结束了……	ふぅ～やっと終わった……。	NONE
+
 choice	300668	Is there some misunderstanding between you two?	姫子隊長と仲が悪いの？	NONE	NONE
 choice	300669	Is Captain Himeko always like this?	姫子隊長っていつもああなの？	NONE	NONE
+msg	300667	It's finally over.	呼~终于结束了……	ふぅ～やっと終わった……。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

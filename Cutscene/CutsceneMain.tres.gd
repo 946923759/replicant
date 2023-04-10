@@ -82,10 +82,23 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	var backgrounds_to_load:Array=[]
 	var videos_to_load:Array=[]
 	message = []
+	
+	var prevIndentLevel = 0
 	#Should return false if delimiter is incorrect
-	for s in arr:
+	for ii in range(len(arr)):
+		
 		#print("'"+s+"'")
-		var splitString = s.split(delimiter,true) #,true,1
+		var splitString = arr[ii].split(delimiter,true) #,true,1
+		
+		var indentLevel = 0
+		for i in range(len(splitString[0])):
+			if splitString[0][i]==" ":
+				pass
+			else:
+				splitString[0]=splitString[0].substr(i)
+				indentLevel=i
+				#print(indentLevel)
+				break
 		#print(splitString)
 		#This changes the command order, so it probably shouldn't be preprocessed right?
 		if splitString[0].begins_with('/'): #Chaosoup's idea, since typing two opcodes every time was getting obnoxious
@@ -111,7 +124,57 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			"speaker":
 				if splitString.size() < 2:
 					splitString=['speaker','']
-				#print(splitString)
+			"extend":
+				var msg_to_append:Array = []
+				for i in range(len(message)-1,0,-1):
+					#print(message[i])
+					if message[i][0]=="msg":
+						msg_to_append=message[i]
+						break
+				if len(msg_to_append) > 0:
+					#if splitString.size() < msg_to_append.size():
+						
+					
+					for mi in range(1, splitString.size()):
+						if mi < msg_to_append.size() and !msg_to_append.empty():
+							var setDispChr = msg_to_append[mi].find('/setDispChr[')
+							if setDispChr == 0:
+								var cmd_end = msg_to_append[mi].find("]", 12); #skip scanning in "/setDispChr" section
+								if cmd_end!=-1:
+									print(cmd_end)
+									splitString[mi] = "/setDispChr["+String(len(msg_to_append[mi])-cmd_end) \
+									+ "]" \
+									+ msg_to_append[mi].substr(cmd_end+1,len(msg_to_append[mi])) \
+									+ splitString[mi]
+#								else:
+#									printerr("No cmd_end!")
+							else:
+								splitString[mi] = "/setDispChr["+String(len(msg_to_append[mi]))+"]"+msg_to_append[mi]+splitString[mi]
+						else:
+							printerr("extend was bigger than message size! "+String(splitString.size())+" > "+String(msg_to_append.size()))
+							#splitString[mi] = + splitString[mi]
+					splitString = push_back_from_idx_one(['msg'],splitString)
+				else:
+					splitString = push_back_from_idx_one(['msg'],splitString)
+				#Skip adding the original command.
+				#continue
+				#print(splitString
+			"condjmp_c":
+				splitString=["condjmp",splitString[1],"__choice__",splitString[2]]
+			"if":
+				splitString=["condjmp_neg","__fi__",splitString[1],splitString[2]]
+			"else","else:":
+				for i in range(len(message)-1,0,-1):
+					#print(message[i])
+					if message[i][0]=="condjmp_neg":
+						message[i][1]="__else__"
+						break
+				message.push_back(["jmp","__fi__"])
+				splitString=["label","__else__"]
+		
+		if indentLevel < prevIndentLevel and splitString[1] != "__else__":
+			message.push_back(["label","__fi__"])
+		prevIndentLevel=indentLevel
 		message.push_back(splitString)
 	
 	
@@ -176,7 +239,10 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 
 var msgColumn:int=1
 var lastPortraitTable = {}
+
 var ChoiceTable:PoolStringArray = []
+var cutsceneVars:Dictionary = {}
+
 var matchedNames = []
 func advance_text()->bool:
 	curPos+=1
@@ -245,7 +311,8 @@ func advance_text()->bool:
 						var cmd_end = tmp_txt.find("]", 5);
 						if cmd_end!=-1:
 							#We have to subtract setDispChr characters
-							text.visible_characters=int(tmp_txt.substr(4,cmd_end-4))
+							#Well, actually we don't since int() ignores non integer values
+							text.visible_characters=int(tmp_txt.substr(12,cmd_end-1))
 							tmp_txt=tmp_txt.substr(cmd_end+1,len(tmp_txt))
 							print(tmp_txt.substr(text.visible_characters,len(tmp_txt)))
 							#print(val)
@@ -254,21 +321,13 @@ func advance_text()->bool:
 					else:
 						printerr("Unknown command used, giving up: "+tmp_txt)
 						break
-					
+				
+				#Failsafe. Maybe not needed?
+				if text.visible_characters<0:
+					text.visible_characters=tmp_txt.length()
 				text.bbcode_text = tmp_txt
 				
-				if curPos < message.size()-1 and message[curPos+1][0]=='choice':
-					ChoiceTable = []
-					for i in range(curPos+1,curPos+5): #5 choice limit
-						var cMsg = message[i]
-						if cMsg[0]!='choice':
-							break
-						if msgColumn < cMsg.size():
-							ChoiceTable.push_back(cMsg[msgColumn])
-						else:
-							print("Current language is "+String(msgColumn)+", but this choice only had "+String(cMsg.size())+" languages to choose from")
-							print(cMsg)
-							ChoiceTable.push_back(cMsg[0])
+
 					
 				break #Stop processing opcodes and wait for user to click
 			#'setvar':
@@ -302,7 +361,7 @@ func advance_text()->bool:
 					
 					var pos = Vector2(float(curMessage[1]),float(curMessage[2]))
 					if pos.x <0:
-						pos.x = randi()%int(Globals.SCREEN_CENTER_X)+Globals.SCREEN_CENTER_X/2-popup.rect_size.x
+						pos.x = randi()%int(Globals.SCREEN_CENTER_X)+Globals.SCREEN_CENTER_X/2-popup.rect_size.x/2
 					if pos.y<0:
 						pos.y = randi()%int(Globals.SCREEN_CENTER_Y)+Globals.SCREEN_CENTER_Y/2
 					#print(pos)
@@ -313,6 +372,9 @@ func advance_text()->bool:
 						else:
 							print("Textbox already seems to be closed, not closing for popup.")
 					popup.rect_scale=Vector2(1.5,0.0)
+					#This seems correct at first, but the textbox has to be centered.
+					#And we can't center it until after we know the text and the size of the text.
+					#I guess it doesn't matter for now since only random positions are used.
 					popup.rect_position=pos
 					popup.visible=true
 					#var seq := get_tree().create_tween()
@@ -446,32 +508,148 @@ func advance_text()->bool:
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
-			'choice', 'nop','label':
+			'choice':
+				if msgColumn < curMessage.size():
+					ChoiceTable.push_back(curMessage[msgColumn])
+				else:
+					print("Current language is "+String(msgColumn)+", but this choice only had "+String(curMessage.size())+" languages to choose from")
+					print(curMessage)
+					ChoiceTable.push_back(curMessage[0])
+			
+			'nop','label':
 				pass
-			#OPCODES.JMP:
-			#	curPos+=curMessage[1]
-			'jmp','condjmp_c':
-				#if curMessage[0] == OPCODES.CONDJMP_CHOICE:
-				#	print("Processing CONDJUMP... cRes is "+String(choiceResult)+", jump if "+String(curMessage[2]))
-				#else:
-				#	print("processing LONGJUMP")
-				if curMessage[0] == 'jmp' or int(curMessage[2])==choiceResult:
-					#print(curMessage)
+			'var':
+				var varName = curMessage[1]
+				#var varToSet = 0
+				var varToCheck = curMessage[2].to_lower()
+				if varToCheck=="true":
+					cutsceneVars[varName]=1
+				elif varToCheck=="false":
+					cutsceneVars[varName]=0
+				else:
+					match varToCheck[0]:
+						
+						'"':
+							var cmd_end = varToCheck.rfind("\"");
+							if cmd_end>0:
+								cutsceneVars[varName] = varToCheck.substr(1,cmd_end)
+							else:
+								printerr("String is malformed in var command, missing end")
+						'&':
+							var bitflag = int(varToCheck.substr(1))
+							if !(varName in cutsceneVars):
+								cutsceneVars[varName] = (1<<bitflag)
+							elif typeof(cutsceneVars[varName])==TYPE_INT:
+								cutsceneVars[varName] = cutsceneVars[varName] | (1<<bitflag)
+							else:
+								printerr("Tried to set a bitflag, but variable is not an integer.")
+						'~':
+							var bitflag = int(varToCheck.substr(1))
+							if !(varName in cutsceneVars):
+								cutsceneVars[varName] = 0 #If the variable doesn't exist, it's zero...
+							elif typeof(cutsceneVars[varName])==TYPE_INT:
+								cutsceneVars[varName] = cutsceneVars[varName] & ~(1<<bitflag)
+							else:
+								printerr("Tried to set a bitflag, but variable is not an integer.")
+						_:
+							if varToCheck.is_valid_integer():
+								cutsceneVars[varName]=int(varToCheck)
+							else:
+								printerr("Failed to deduce type for variable "+varToCheck)
+#			'jmp_short':
+#				curPos+=int(curMessage[1])
+			'condjmp','condjmp_neg','jmp':
+				var labelToJump = curMessage[1]
+				
+				var varName="____"
+				if curMessage[0]!="jmp":
+					varName = curMessage[2]
+				var SHOULD_JUMP:bool=false
+				
+				if varName=="____":
+					SHOULD_JUMP=true
+				elif varName=="__choice__":
+					print("PROCESSING CONDJUMP... DEST IS "+labelToJump+", TEST "+curMessage[3]+" == "+String(choiceResult))
+					SHOULD_JUMP=(choiceResult==int(curMessage[3]))
+					print("Should jump? "+String(SHOULD_JUMP))
+				elif (varName in cutsceneVars):
+					var varToCheck = curMessage[3].to_lower()
+					if varToCheck=="true":
+						SHOULD_JUMP=cutsceneVars[varName]==1
+					elif varToCheck=="false":
+						SHOULD_JUMP=cutsceneVars[varName]==0
+					else:
+						if varToCheck[0]=='"':
+							
+							var cmd_end = varToCheck.rfind("\"");
+							if cmd_end>0:
+								if typeof(cutsceneVars[varName])==TYPE_STRING:
+									SHOULD_JUMP = cutsceneVars[varName] == varToCheck.substr(1,cmd_end)
+							else:
+								printerr("String is malformed in var command, missing end")
+						elif typeof(cutsceneVars[varName])==TYPE_INT:
+							match varToCheck[0]:
+								'&':
+									var bitflag = int(varToCheck.substr(1))
+									SHOULD_JUMP = cutsceneVars[varName] & (1<<bitflag)
+								'~':
+									var bitflag = int(varToCheck.substr(1))
+									SHOULD_JUMP= ~cutsceneVars[varName] & (1<<bitflag)
+								'>':
+									SHOULD_JUMP = cutsceneVars[varName] > int(varToCheck)
+								'<':
+									SHOULD_JUMP = cutsceneVars[varName] < int(varToCheck)
+								'!':
+									SHOULD_JUMP = cutsceneVars[varName] != int(varToCheck)
+								_:
+									if varToCheck.is_valid_integer():
+										SHOULD_JUMP = cutsceneVars[varName]==int(varToCheck)
+									else:
+										printerr("Failed to deduce type for variable "+varToCheck)
+						else:
+							print("Tried to compare an integer with a string. Good job, genius.")
+				else:
+					printerr("Hey moron, the variable you're checking hasn't been set.")
+				
+				if curMessage[0]=="condjmp_neg":
+					SHOULD_JUMP=!SHOULD_JUMP
+					print("negative Should jump? "+String(SHOULD_JUMP))
+				
+				if SHOULD_JUMP:
 					var jumped:bool=false
 					for i in range(curPos,message.size()):
-						if message[i][0]=='label' and curMessage[1]==message[i][1]:
+						if message[i][0]=='label' and labelToJump==message[i][1]:
 							curPos=i
 							jumped=true
 							break
 					if !jumped:
 						for i in range(0,curPos):
-							if message[i][0]=='label' and curMessage[1]==message[i][1]:
+							if message[i][0]=='label' and labelToJump==message[i][1]:
 								curPos=i
 								jumped=true
 					if !jumped:
-						printerr("The label '"+curMessage[1]+"' was not found!")
-				#Reset here?
-				choiceResult=-1
+						printerr("The label '"+labelToJump+"' was not found!")
+					else:
+						print("Jumped to message: "+String(message[curPos]))
+
+#			'jmp':
+##				if curMessage[0] == "condjmp_c":
+##					print("PROCESSING CONDJUMP... DEST IS "+curMessage[1]+", TEST "+curMessage[2]+" == "+String(choiceResult))
+#				if true:
+#					#print(curMessage)
+#					var jumped:bool=false
+#					for i in range(curPos,message.size()):
+#						if message[i][0]=='label' and curMessage[1]==message[i][1]:
+#							curPos=i
+#							jumped=true
+#							break
+#					if !jumped:
+#						for i in range(0,curPos):
+#							if message[i][0]=='label' and curMessage[1]==message[i][1]:
+#								curPos=i
+#								jumped=true
+#					if !jumped:
+#						printerr("The label '"+curMessage[1]+"' was not found!")
 			'music':
 				var m = $Music.get_node_or_null(curMessage[1].replace("/","$"))
 				if is_instance_valid(lastMusic):
@@ -488,7 +666,7 @@ func advance_text()->bool:
 				var se = $SoundEffects.get_node_or_null(curMessage[1].replace("/","$"))
 				if se!=null:
 					se.play()
-			'stopmusic':
+			'stopmusic', 'stop_music':
 				if is_instance_valid(lastMusic):
 					if len(curMessage) > 1:
 						lastMusic.fade_music(float(curMessage[1]))
@@ -549,6 +727,7 @@ func advance_text()->bool:
 		var popupText = $PopupContainer/RichTextLabel
 		popupText.bbcode_text = "[center]"+text.bbcode_text+"[/center]"
 		popupText.visible_characters=text.visible_characters
+		$PopupContainer.rect_size.y = popupText.get_content_height()+7
 		if TEXT_SPEED<100:
 			txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
 				1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
@@ -583,7 +762,7 @@ func openTextbox(t:SceneTreeTween,animTime:float=.3)->float:
 	return animTime
 
 
-onready var historyTween = $HistoryTween
+#onready var historyTween = $HistoryTween
 #Updated every frame... Might be slow
 #onready var screenWidth=Globals.gameResolution.x
 func tween_in_history():
@@ -591,28 +770,27 @@ func tween_in_history():
 	historyActor.set_history(textHistory)
 	#historyActor.OnCommand()
 	#tw.stop_all()
-	tw.stop(text,"visible_characters")
+	#tw.stop(text,"visible_characters")
+	var historyTween = get_tree().create_tween()
 	closeTextbox(historyTween)
-	historyTween.interpolate_property(historyActor,"rect_position:x",
-		get_viewport().get_visible_rect().size.x*-1,0,.3,
-		Tween.TRANS_QUAD,Tween.EASE_OUT,.2)
-	historyTween.interpolate_property(text,"modulate:a",null,0,.3)
-	historyTween.interpolate_property($historyQuad,"color:a",null,.8,.3)
+	#get_viewport().get_visible_rect().size.x*-1
+	historyTween.parallel().tween_property(historyActor,"rect_position:x",
+		0,.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT).set_delay(0.2)
+	historyTween.parallel().tween_property(text,"modulate:a",0,.3)
+	historyTween.parallel().tween_property($historyQuad,"color:a",.8,.3)
 	#$historyQuad.color.a=1.0
 	#VisualServer.canvas_item_set_z_index($historyQuad.get_canvas_item(),100)
 	#print($dim.visible)
-	historyTween.start()
 	
 func tween_out_history():
-	tw.resume(text,"visible_characters")
+	#tw.resume(text,"visible_characters")
+	var historyTween = get_tree().create_tween()
 	openTextbox(historyTween,.2)
-	historyTween.interpolate_property(historyActor,"rect_position:x",
-		0,get_viewport().get_visible_rect().size.x*-1,.3,
-		Tween.TRANS_QUAD,Tween.EASE_IN,0)
-	historyTween.interpolate_property(text,"modulate:a",null,1,.3,
-	Tween.TRANS_LINEAR,Tween.EASE_OUT,.2)
-	historyTween.interpolate_property($historyQuad,"color:a",null,0,.3)
-	historyTween.start()
+	historyTween.parallel().tween_property(historyActor,"rect_position:x",
+		get_viewport().get_visible_rect().size.x*-1,.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	historyTween.parallel().tween_property(text,"modulate:a",1,.3)
+	historyTween.parallel().tween_property($historyQuad,"color:a",0,.3)
+	
 
 func shitty_interpolate_label(s:String):
 	#print("Now I set speaker to"+s+"!!")
@@ -662,7 +840,7 @@ func _ready():
 	seq.tween_property($FadeToBlack,"color:a",0,.5)
 
 
-func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
+func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
 	if parent:
 		parent_node = parent
 	$dim.color.a=0
@@ -676,7 +854,9 @@ func init_(message, parent, dim_background = true,delim="|",msgColumn:int=1):
 #		t.parallel().append($dim,'color:a',.6,.5).from_current()
 	
 	self.msgColumn=msgColumn
-	preparse_string_array(message,delim)
+	preparse_string_array(message_,delim)
+	$CutsceneDebug.set_text(message)
+	$CutsceneDebug.visible=false
 	
 	advance_text()
 	set_process(true)
@@ -744,6 +924,8 @@ func _process(delta):
 		historyActor.process(delta)
 		return
 	elif isOptionsScreenOpen:
+		#if Input.is_action_just_pressed("ui_select"):
+		#	print("CutsceneMain: ui_select!")
 		return
 		
 	if Input.is_action_just_pressed("ui_pause"):
@@ -755,20 +937,10 @@ func _process(delta):
 		isOptionsScreenOpen=true
 	elif Input.is_action_just_pressed("DebugButton1"):
 		get_tree().reload_current_scene()
+	elif Input.is_action_just_pressed("DebugButton2"):
+		$CutsceneDebug.visible=!$CutsceneDebug.visible
 	
 	if isWaitingForChoice:
-		if Input.is_action_just_pressed("ui_up"):
-			$Choices.input_up()
-		elif Input.is_action_just_pressed("ui_down"):
-			$Choices.input_down()
-		elif Input.is_action_just_pressed("ui_select") and $Choices.selection!=-1:
-			choiceResult=$Choices.selection+1
-			$Choices.visible=false
-			ChoiceTable=[]
-			text.visible_characters=0
-			#advance_text()
-			isWaitingForChoice=false
-			#$Choices.input
 		return
 	
 	if Input.is_action_pressed("vn_skip") and isWaitingForChoice==false:
@@ -789,11 +961,14 @@ func _process(delta):
 				else:
 					p.modulate.a=0
 	
-	var forward = Input.is_action_just_pressed("ui_select") or manualTriggerForward
+	var forward = manualTriggerForward
+#	if forward:
+#		print("ManualTriggerForward")
 	if text.visible_characters >= text.text.length(): #If finished displaying characters
 		if ChoiceTable.size()>0:
+			print("Set choices: "+String(ChoiceTable))
 			$Choices.setChoices(ChoiceTable)
-			$Choices.visible=true
+			$Choices.OnCommand()
 			isWaitingForChoice=true
 		elif forward:
 			print("advancing")
@@ -812,6 +987,8 @@ func _process(delta):
 
 			if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
 				fsText.visible_characters=fsText.text.length()
+			elif messageBoxMode==MSGBOX_DISP_MODE.POP_UP: #Why was this using text.length in the first place?
+				$PopupContainer/RichTextLabel.visible_characters=-1
 		else:
 			if Input.is_action_pressed("ui_cancel"):
 				tw.playback_speed=2.0
@@ -827,7 +1004,10 @@ func _unhandled_input(event):
 		return
 			
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
-	if Input.is_action_just_pressed("vn_history"):
+	if Input.is_action_just_pressed("ui_select"):
+		manualTriggerForward=true
+		get_tree().set_input_as_handled()
+	elif Input.is_action_just_pressed("vn_history"):
 		if isHistoryBeingShown:
 			print("Hiding history!")
 			tween_out_history()
@@ -884,17 +1064,6 @@ func _on_SkipButton_pressed():
 
 func _on_dim_gui_input(event):
 	if isWaitingForChoice:
-		if event is InputEventMouseMotion:
-			$Choices.input_cursor(event.position)
-		elif (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
-			event is InputEventScreenTouch and event.is_pressed()
-		):
-			if $Choices.input_cursor(event.position,true):
-				choiceResult=$Choices.selection+1
-				$Choices.visible=false
-				ChoiceTable=[]
-				advance_text()
-				isWaitingForChoice=false
 		return
 	
 	if (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
@@ -903,13 +1072,13 @@ func _on_dim_gui_input(event):
 		print("clicked")
 		manualTriggerForward=true
 
-
-#func _on_Choices_mouse_selected_choice(selection):
-#	choiceResult=selection
-#	$Choices.visible=false
-#	ChoiceTable=[]
-#	advance_text()
-#	isWaitingForChoice=false
+func _on_Choices_selected_choice(selection):
+	choiceResult=$Choices.selection+1
+	print("Choice result obtained, result was "+String(choiceResult))
+	$Choices.OffCommand()
+	ChoiceTable=[]
+	advance_text()
+	isWaitingForChoice=false
 
 
 func _on_OptionsScreen_options_closed():

@@ -7,9 +7,9 @@ bg	009/005_1280x720
 portraits	59	60
 emote	60	1
 /Bronya	300540	Ladies and Gentlemen, the Grey Moths will be back in approximately one hour. We need to set up our defenses and prepare for the attack immediately.	各位，离“灰蛾”返回还有1个小时，我们需要立即布置防线，准备迎击。	みなさん、「灰蛾」が戻って来るまであと1時間です。直ちに防衛ラインを整えて、迎撃の準備をしてください。	NONE
+choice	300542	Did the Honkai Beasts start attacking?	崩壊生物が侵入したの？	NONE	NONE
+choice	300543	Are the Grey Moths our allies?	灰蛾部隊って友軍じゃないの？	NONE	NONE
 msg	300541	All squads return to their post and prepare for battle.	各小队按计划回到各自岗位进入警戒状态，准备迎击。	各小隊は計画通りにそれぞれの持ち場で警戒態勢に入り、迎撃準備。	NONE
-choice	300542	Is there any Houkai creature invading?	崩壊生物が侵入したの？	NONE	NONE
-choice	300543	Are Grey Moths our allies?	灰蛾部隊って友軍じゃないの？	NONE	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

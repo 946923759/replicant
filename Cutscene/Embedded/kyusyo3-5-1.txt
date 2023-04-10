@@ -98,9 +98,9 @@ msg	301377	Don't celebrate just yet. There's still Honkai Beasts outside the bui
 speaker	Seele
 emote	59	4
 emote	61	1
-msg	301378	Ugh, Himeko, read the room! C'mon, someone join me and let's all cheer for our victory. Hey, don't just stand there, you join too!	呃！姬子真是讨厌！难道就没有人欢呼一下助助兴么！喂！你怎么站在一旁一句话也不说呀！	もう、姫子さんったら空気読まないんだから！誰か一緒にバンザイして盛り上げてよ。ねえ、あなたも黙って突っ立ってないで！	NONE
 choice	301656	The battle tired me out...	戦闘で疲れすぎて力が出ない……	NONE	NONE
 choice	301657	I'm relieved that everyone is safe and sound.	みんな生きてて本当に良かった。	NONE	NONE
+msg	301378	Ugh, Himeko, read the room! C'mon, someone join me and let's all cheer for our victory. Hey, don't just stand there, you join too!	呃！姬子真是讨厌！难道就没有人欢呼一下助助兴么！喂！你怎么站在一旁一句话也不说呀！	もう、姫子さんったら空気読まないんだから！誰か一緒にバンザイして盛り上げてよ。ねえ、あなたも黙って突っ立ってないで！	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

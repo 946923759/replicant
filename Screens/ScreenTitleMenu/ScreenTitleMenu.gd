@@ -47,6 +47,7 @@ func _ready():
 	#t.interpolate_property(quad,"modulate:a",1,0,.5)
 	
 	$smSound.load_song("Significance");
+	update_background_parallax(get_viewport().get_mouse_position())
 
 func _process(_delta):
 	var s = get_viewport().get_visible_rect().size
@@ -66,9 +67,26 @@ func update_keyboard_selections():
 		else:
 			f.get_child(i)._on_TextureRect2_mouse_exited()
 
+func update_background_parallax(mousePos:Vector2):
+		var mousePosOffsetFromCenter = mousePos-Globals.gameResolution/2
+		#$DebugLabel2.text = String(mousePosOffsetFromCenter)
+		$smSprite.rect_position=-mousePosOffsetFromCenter*.05
+		$Kyuushou.rect_position=-mousePosOffsetFromCenter*.03
+		#When mousePos is Globals.gameResolution/2, offset should be 0
+		#The size of the image is gameResolution*1.2
+		#So when the mouse is all the way on the left it would be
+		#gameResolution.x*1.1 -gameResolution.x/2+mousePosOffsetFromCenter
+		#$smSprite.rect_position = SCREEN_SIZE*1.1 - SCREEN_SIZE/2+mousePosOffsetFromCenter
+		
+
 func _input(event):
 	if event is InputEventMouseMotion:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		#var SCREEN_SIZE = Globals.gameResolution
+		#var mouseZoom = Globals.gameResolution*1.2
+		update_background_parallax(event.position)
+
+		
 	if Input.is_action_just_pressed("ui_down"):
 		if keyboard_selection<$ActorFrame.get_child_count()-1:
 			keyboard_selection+=1

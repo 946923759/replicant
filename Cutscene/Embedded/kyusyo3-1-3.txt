@@ -39,17 +39,16 @@ emote	54	5
 /Yssring	301080	I'm sorry...	我错了……	わ、悪かったわ……。	NONE
 emote	59	6
 emote	54	5
-/Seele	301081	...	……	……。	NONE
 
 choice	301646	Don't worry, I'm sure Bronya's alright.	安心して、ブローニャならきっと大丈夫。	NONE	NONE
 choice	301647	I'd rather turn worries into action.	ここで心配してるくらいなら、今すぐ行動に移ろう。	NONE	NONE
+/Seele	301081	...	……	……。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
 emote	59	1
 msg	301082	Yeah.... You're right, these robots are no match for Bronya! I've got to believe in her.	嗯…你说的对，以布洛妮娅姐姐的实力这些机甲兵器根本不算什么！我一定要相信布洛妮娅姐姐！	うん……そうよ、ブローニャお姉ちゃんの実力ならこんな機甲兵器、どうってことないわ！お姉ちゃんを信じなきゃ。	NONE
 msg	301083	The first task now is to find my sister and give her a good lecture! How can she abandon everyone at the base like that, what was she thinking?	现在的第一任务是找到姐姐然后好好说教一番！居然一声不响地抛弃大家，实在太不像话了！	今、重要なのはお姉ちゃんを探し出して説教すること！一言も告げることなくみんなを置いてくなんて、ひどすぎるもん！	NONE
-
 jmp	end_choices
 
 label	c2dest

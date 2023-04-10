@@ -47,9 +47,9 @@ emote	60	1
 msg	300064	Right now.	比如现在。	例えば今です。	Por exemplo agora.
 speaker	Seele				
 emote	59	5			
-msg	300065	Ah!	呃！	うっ！	Ah!
 choice	0	You two are adorable sisters.	ch	ja	Vocês são adoráveis irmâs
 choice	0	You two are different in personalities.	ch	ja	Vocês tem diferentes personalidades.
+msg	300065	Ah!	呃！	うっ！	Ah!
 emote	60	2			
 /Bronya	300068	Really? Perhaps you're right...	是么…或许如你所说……	そうですか……そうかもしれませんね……。	Talvez sim.......
 emote	60	1			

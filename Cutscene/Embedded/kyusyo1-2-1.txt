@@ -89,13 +89,14 @@ msg	300323	Thanks, I'm counting on you. I'm going back to work... See you later.
 
 bg	009/007_1280x720
 music	Amusement Park - Quiet
+match_names	Seele	_DIM_ALL_WHEN_EMPTY
 portraits	59
 emote	59	1
 /Seele	300324	According to the intel, it should be in this area. The terrain here is convoluted and complex due to the underground tunnel network of Nagazora City. Even with a map it's easy to get lost here, so make sure to be aware of your surroundings.	根据情报来看应该就是这块区域，这里是长空市地下隧道网，地形错综复杂。即使有地图也很容易迷路，一定要注意哦~	情報ではこの辺りのエリアのはずだよ。ここは長空市の地下トンネル網で地形が入り組んでいて複雑なの。地図を使っても迷子になりやすいから、十分気をつけてね。	NONE
 msg	300325	Well, if you follow me it shouldn't be an issue. Let's go!	嘛，不过跟着我就不会有问题啦，那我们出发吧~	まあ、でも私について来れば問題ないよ！さあ、出発しましょ！	NONE
-msg	300326	Hmm~ Hmm~ Hmm-Hmm-Hmm♪	哼哼~哼哼哼♪	フンフン～フンフンフン♪	NONE
 choice	300327	What's got you so happy?	何か嬉しいことでもあったの？	NONE	NONE
 choice	300328	Aren't you nervous?	緊張しないの？	NONE	NONE
+msg	300326	Hmm~ Hmm~ Hmm-Hmm-Hmm♪	哼哼~哼哼哼♪	フンフン～フンフンフン♪	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -134,12 +135,14 @@ msg	300348	If it's a Honkai Beast, don't provoke it. Our objective this time is 
 msg	300349	Let me take this chance to teach you some survival skills. Watch my feet...	乘着这次机会就让我好好教教你生存的技巧吧，跟着我的脚……	この機会に生き残るために必要なすべを教えてあげるよ。いい？私と足並みを……。	NONE
 speaker	
 se	DLC_CH01_EV08_ToolKit
+shake_camera	1
 msg	300350	Dong!	咚！	ドンッ！	NONE
-speaker	Seele
 emote	59	5
-msg	300351	Ugh! Ouch! Who put this big toolbox in the middle of the road!	呃！痛痛痛！是谁在路中间摆这么大的工具包啊！	わっ！イタタタ！道の真ん中にこんな大きな工具箱を置いたのは誰よ！	NONE
+
 choice	300352	Keep quiet.	そんな大声出さないで。	NONE	NONE
 choice	300353	This belongs to the engineering team.	これはエンジニア班のものみたい。	NONE	NONE
+/Seele	300351	Ugh! Ouch! Who put this big toolbox in the middle of the road!	呃！痛痛痛！是谁在路中间摆这么大的工具包啊！	わっ！イタタタ！道の真ん中にこんな大きな工具箱を置いたのは誰よ！	NONE
+
 condjmp_c	c2dest	2
 
 label	c1dest

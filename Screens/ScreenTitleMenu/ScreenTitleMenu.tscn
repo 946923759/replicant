@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=13]
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Screens/ScreenTitleMenu/MainMenuOptions.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=16]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.321569, 0.92549, 1, 1, 1, 1, 1, 0 )
@@ -35,6 +36,8 @@ script = ExtResource( 7 )
 [node name="smSprite" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_scale = Vector2( 1.05, 1.05 )
+rect_pivot_offset = Vector2( 960, 540 )
 texture = ExtResource( 1 )
 stretch_mode = 7
 script = ExtResource( 2 )
@@ -162,6 +165,13 @@ margin_right = 1907.06
 margin_bottom = 123.27
 custom_fonts/font = ExtResource( 14 )
 text = "1"
+
+[node name="DebugLabel2" type="Label" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 16 )
+text = "Mouse pos:"
 
 [node name="OptionsScreen" parent="." instance=ExtResource( 15 )]
 visible = false

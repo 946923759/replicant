@@ -61,9 +61,11 @@ msg	305055	You little....	你这家伙……	この……。	NONE
 speaker	
 portraits	55
 emote	55	4
-msg	305056	Meow?	喵？	ニャ？	NONE
+
 choice	It's the cat we saw earlier!	これさっきの猫じゃない？	NONE	NONE
 choice	Where did that cat come from?	この猫どこからきたの？	NONE	NONE
+msg	305056	Meow?	喵？	ニャ？	NONE
+
 speaker	Seele
 bg	009/013_1280x720
 portraits	59

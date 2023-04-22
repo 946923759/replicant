@@ -1,5 +1,6 @@
 extends Control
 
+#This is not used, destinations are set in the scrollItem
 var MAINMENU = [
 	{
 		'name':"Read",

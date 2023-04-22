@@ -810,6 +810,9 @@ func _ready():
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
 	$OptionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
+	
+	$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
+	
 	set_process(false)
 	#text = $textActor_better
 	#text.visible_characters=0
@@ -876,7 +879,7 @@ func end_cutscene():
 	seq.parallel().tween_property(text,'modulate:a',0,.3)
 	seq.parallel().tween_property(speakerActor,'modulate:a',0,.3)
 	#seq.parallel().append($SpeakerActor,'position:y',600,.3)
-	seq.parallel().tween_property($dim,'color:a',0,.5).set_trans(Tween.TRANS_QUAD)
+	seq.parallel().tween_property($FadeToBlack,'color:a',1,.5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'rect_position:x',-$PressStartToSkip.rect_size.x,.5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'modulate:a',0,.5)
 # warning-ignore:return_value_discarded
@@ -924,6 +927,7 @@ func _process(delta):
 		historyActor.process(delta)
 		return
 	elif isOptionsScreenOpen:
+		$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
 		#if Input.is_action_just_pressed("ui_select"):
 		#	print("CutsceneMain: ui_select!")
 		return
@@ -1085,3 +1089,5 @@ func _on_OptionsScreen_options_closed():
 	print("User closed options")
 	isOptionsScreenOpen=false
 	$OptionsScreen.visible=false
+	#print("New opacity is "+String(Globals.OPTIONS['bgOpacity']['value']/100.0))
+	#$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0

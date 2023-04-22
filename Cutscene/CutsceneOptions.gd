@@ -14,10 +14,12 @@ var options = {
 		type="none",
 		hasFunc=true
 	},
-	"textSpeed":Globals.OPTIONS['textSpeed'],
-	"skipMode":Globals.OPTIONS['skipMode'],
 	#"testOption":Globals.OPTIONS['testOption'],
 	#"language":Globals.OPTIONS['language'],
+	"textOptions":{
+		type="submenu",
+		submenu="textOptionsSubmenu"
+	},
 	"systemOptions":{
 		type="submenu",
 		submenu="systemOptionsSubmenu"
@@ -30,6 +32,12 @@ var options = {
 		type="none",
 		hasFunc=true
 	}
+}
+
+var textOptionsSubmenu = {
+	"textSpeed":Globals.OPTIONS['textSpeed'],
+	"skipMode":Globals.OPTIONS['skipMode'],
+	"bgOpacity":Globals.OPTIONS['bgOpacity']
 }
 
 func action_reload():
@@ -73,15 +81,14 @@ func action_skip():
 
 var font = preload("res://Fonts/OptionsFont.tres")
 #var displayedOptions:int=0
-onready var desc = $DescrptionF/Description
+#onready var desc = $DescrptionF/Description
 onready var selectSound = $AudioStreamPlayer
 
 #How not to program
-var selection:int = 0
-var subMenuSelection:int=0
+var mainMenuSelection:int = 0
+var subMenuSelection:PoolIntArray = []
 var isSubMenu:bool=false
 var optionsFrame:Control #created on _init()
-var systemOptionsSubmenu:Control
 
 var anyOptionWasChanged:bool=false
 
@@ -122,27 +129,35 @@ func highlightList(optFrame:Control,curSel:int):
 				var opt = node.get_meta("opt_name")
 				highlightBool(node,Globals.OPTIONS[opt]['value'])
 	if curSel!=-1:
-		desc.text=INITrans.GetString("OptionDescriptions",optFrame.get_child(curSel).get_meta("opt_name"))
-		update_desc_size()
+		var optName = optFrame.get_child(curSel).get_meta("opt_name")
+		assert($DescriptionF)
+		for node in $DescriptionF.get_children():
+			if node is Label:
+				node.visible=(node.name == optName)
+		#update_desc_size()
 	
 func highlightBool(node,b):
 	node.get_node("BoolOff").set("modulate", Color(.5,.5,.5,1) if b else Color(1,1,1,1));
 	node.get_node("BoolOn").set("modulate", Color(.5,.5,.5,1) if not b else Color(1,1,1,1));
 
-func update_desc_size():
-	var width = get_viewport().get_visible_rect().size.x-50
+func update_desc_size(desc:Label):
+	#return
+	#var width = get_viewport().get_visible_rect().size.x-50
+	var width = 1920-50
 	#print(desc.text)
-	
+
 	var width2 = desc.get("custom_fonts/font").get_string_size(desc.text).x
 	if width2 > width:
+		#print(width2, " above ",width, ", have to reposition")
 		desc.rect_scale.x=width/width2
-		desc.rect_position.x=25*width/width2
+		#desc.rect_position.x=25*width/width2
 		desc.rect_size.x=width2 #For some hilarious reason this doesn't update on its own until the next frame, so do it ourselves.
 	else:
 		desc.rect_scale.x=1.0
-		desc.rect_position.x=25
+		#desc.rect_position.x=25
 		desc.rect_size.x=width
 	#print(desc.rect_size.x)
+	#print("This desc positioned at ",desc.rect_position.x)
 	
 func updateValue(o:String,optionHolderNode:Control):
 	var valNode = optionHolderNode.get_node("Value")
@@ -154,11 +169,7 @@ func updateValue(o:String,optionHolderNode:Control):
 		#
 		var width2 = font.get_string_size(text).x
 		valNode.text=text
-		#Godot is funny and setting text will cause the rect_size to be updated...
-		#in the next idle frame. That means that the rect gets resized AFTER we
-		#set it unless we wait 1 frame. Very stupid, but whatever.
-		#set_deferred() also does not work for these properties for some reason.
-		yield(get_tree(), "idle_frame")
+
 		if width2 > MAX_VALUE_WIDTH:
 			valNode.rect_size.x=width2
 			var scaling = MAX_VALUE_WIDTH/width2
@@ -191,7 +202,17 @@ func updateValue(o:String,optionHolderNode:Control):
 		valNode.rect_size.x=MAX_VALUE_WIDTH
 
 func updateTranslation(refresh:bool=false):
-	for f in [optionsFrame,systemOptionsSubmenu]:
+	var descActorFrame = $DescriptionF
+	var descBaseActor = $DescriptionF/DescriptionBase
+	
+	var menus = [optionsFrame]
+	for k in options:
+		if options[k]['type']=="submenu":
+			print("Trying to obtain "+options[k]['submenu'])
+			var n = get_node_or_null(options[k]['submenu'])
+			assert(n,"Submenu "+options[k]['submenu']+" doesn't exist!")
+			menus.append(n)
+	for f in menus:
 		for node in f.get_children():
 			if node.has_meta("opt_name"):
 				var o = node.get_meta("opt_name")
@@ -206,12 +227,23 @@ func updateTranslation(refresh:bool=false):
 				
 				if node.has_node("Value"):
 					updateValue(o,node)
+				
+				var d = descActorFrame.get_node_or_null(o)
+				if d:
+					d.text = INITrans.GetString("OptionDescriptions",o)
+				else:
+					d = descBaseActor.duplicate()
+					d.name=o
+					d.text = INITrans.GetString("OptionDescriptions",o)
+					descActorFrame.add_child(d)
+				update_desc_size(d)
 #				#print(width)
 			#for nn in node.get_children():
 			#	if nn is Label:
 			#		nn.set("custom_fonts/font",INITrans.font)
 	#desc.text=INITrans.GetString("OptionDescriptions",optFrame.get_child(curSel).get_meta("opt_name"))
 	#update_desc_size()
+	#print(get_viewport().get_visible_rect().size.x-50)
 
 #Fuck your return oriented programming
 var arrowSprite = preload("res://Ext/other_329.png")
@@ -346,8 +378,8 @@ func init():
 	generateMenu(optionsFrame,options,animation)
 	add_child(optionsFrame)
 	
-	systemOptionsSubmenu = Control.new()
-	systemOptionsSubmenu.name="SystemOptionsSubmenu"
+	var systemOptionsSubmenu = Control.new()
+	systemOptionsSubmenu.name="systemOptionsSubmenu"
 	systemOptionsSubmenu.rect_position=Vector2(-999,150)
 	systemOptionsSubmenu.modulate.a=0
 	var systemOptions:Dictionary={}
@@ -360,9 +392,21 @@ func init():
 		systemOptions['goBack']={
 			type="go_back"
 		}
+	
 	generateMenu(systemOptionsSubmenu,systemOptions,animation)
 	add_child(systemOptionsSubmenu)
-	#
+	
+	#TODO: This really shouldn't be hardcoded
+	var textMenuActor = Control.new()
+	textMenuActor.name="textOptionsSubmenu"
+	textMenuActor.rect_position=Vector2(-999,150)
+	textMenuActor.modulate.a=0
+	generateMenu(textMenuActor,textOptionsSubmenu,animation)
+	add_child(textMenuActor)
+	
+	subMenuSelection.resize(options.size())
+	for i in range(subMenuSelection.size()):
+		subMenuSelection[i]=0
 
 func _init():
 	add_child(Def.Quad({
@@ -404,7 +448,7 @@ func _ready():
 	
 	updateTranslation()
 	OnCommand()
-	self.connect("resized",self,"update_desc_size")
+	#self.connect("resized",self,"update_desc_size")
 	#realInitPos=position
 	pass
 
@@ -415,7 +459,7 @@ func OnCommand():
 	t.interpolate_property(self,"modulate:a",0.0,1.0,.5)
 	#optionsFrame.modulate.a=1.0
 	#optionsFrame.rect_position.x=MENU_LEFT_PADDING-50
-	highlightList(optionsFrame,selection)
+	highlightList(optionsFrame,mainMenuSelection)
 	for i in range(optionsFrame.get_child_count()):
 		optionsFrame.get_child(i).modulate.a=0
 		t.interpolate_property(optionsFrame.get_child(i),"rect_position:x",
@@ -441,17 +485,20 @@ func OffCommand():
 		Globals.save_system_data()
 		anyOptionWasChanged=false
 	#t.stop_all()
-	t.interpolate_property(self,"modulate:a",null,0.0,.5)
+	var seq = get_tree().create_tween()
+	seq.tween_property(self,"modulate:a",0.0,.5)
+	seq.set_parallel(true)
 	var n = optionsFrame.get_child_count()
 	for i in range(n):
-		t.interpolate_property(optionsFrame.get_child(i),"rect_position:x",
-		null,-300,.4,Tween.TRANS_QUAD,Tween.EASE_IN,(n-i)*.05)
-		t.interpolate_property(optionsFrame.get_child(i),"modulate:a",
-		null,0,.4,Tween.TRANS_QUAD,Tween.EASE_IN,i*.05)
-	t.start()
-	yield(t,"tween_completed")
+		seq.tween_property(optionsFrame.get_child(i),"rect_position:x",
+		-300,.4).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN).set_delay((n-i)*.05)
+		seq.tween_property(optionsFrame.get_child(i),"modulate:a",
+		0,.4).set_delay((n-i)*.05)
+	
 	print("Broadcasting options closed")
-	emit_signal("options_closed")
+	seq.set_parallel(false)
+	seq.tween_callback(self,"emit_signal",["options_closed"])
+	seq.tween_property(self,"visible",false,0.0)
 	#self.visible=false
 	pass
 #func updateFocus():
@@ -504,10 +551,14 @@ func handle_option(optNode:Control,going_right:bool=true):
 		"list":
 			var val = Globals.OPTIONS[option]['value']
 			var idx = Globals.OPTIONS[option]['choices'].find(val,0)
+			if idx==-1 and typeof(val)==TYPE_REAL: #Because of json weirdness
+				idx = Globals.OPTIONS[option]['choices'].find(int(val),0)
 			#print("[OptionsMenu] found value at idx "+String(idx))
 			if idx==-1:
 				print("[OptionsMenu] could not find value "+String(val)+" in list")
-				print(typeof(val))
+				#if Globals.OPTIONS[option]['type']
+				#print(typeof(val))
+				
 				print(Globals.OPTIONS[option]['choices'])
 			if going_right:
 				if idx < len(Globals.OPTIONS[option]['choices'])-1:
@@ -515,8 +566,8 @@ func handle_option(optNode:Control,going_right:bool=true):
 					if option=="language":
 						INITrans.SetLanguage(Globals.OPTIONS[option]['value'])
 						updateTranslation(true)
-						desc.text=INITrans.GetString("OptionDescriptions",option)
-						update_desc_size()
+						#desc.text=INITrans.GetString("OptionDescriptions",option)
+						#update_desc_size()
 					print("[OptionsMenu] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
 					updateValue(option,optNode)
 					anim_option_value(optNode,going_right)
@@ -524,25 +575,28 @@ func handle_option(optNode:Control,going_right:bool=true):
 				Globals.OPTIONS[option]['value']=Globals.OPTIONS[option]['choices'][idx-1]
 				if option=="language":
 					INITrans.SetLanguage(Globals.OPTIONS[option]['value'])
-					desc.text=INITrans.GetString("OptionDescriptions",option)
+					#desc.text=INITrans.GetString("OptionDescriptions",option)
 					updateTranslation(true)
-					update_desc_size()
+					#update_desc_size()
 				print("[OptionsMenu] Set option "+option+" to "+String(Globals.OPTIONS[option]['value']))
 				updateValue(option,optNode)
 				anim_option_value(optNode,going_right)
 
-
+func get_current_submenu(curSel:int)->Node:
+	var curOpt = optionsFrame.get_child(mainMenuSelection)
+	var optName = curOpt.get_meta("opt_name")
+	return get_node(options[optName]['submenu'])
 
 func _input(event):
 	if not visible:
 		return
 	var menuSize:int=0
-	var curSel=selection
+	var curSel:int=mainMenuSelection
 	var curMenu=optionsFrame
 	if isSubMenu:
-		curSel=subMenuSelection
-		menuSize=systemOptionsSubmenu.get_child_count()
-		curMenu=systemOptionsSubmenu
+		curSel=subMenuSelection[mainMenuSelection]
+		curMenu=get_current_submenu(mainMenuSelection)
+		menuSize=curMenu.get_child_count()
 	else:
 		menuSize=optionsFrame.get_child_count()
 	
@@ -600,7 +654,8 @@ func _input(event):
 			print("triggering "+optName)
 			match curOpt.get_meta("opt_type"):
 				"submenu":
-					highlightList(systemOptionsSubmenu,subMenuSelection)
+					var submenu = get_node(options[optName]['submenu'])
+					highlightList(submenu,subMenuSelection[curSel])
 					tweenMainMenuOut();
 					isSubMenu=true
 					return
@@ -609,7 +664,7 @@ func _input(event):
 						call("action_"+optName)
 				"go_back":
 					tweenMainMenuIn();
-					highlightList(optionsFrame,selection) #This just updates the description
+					highlightList(optionsFrame,mainMenuSelection) #This just updates the description
 					isSubMenu=false
 				_:
 					print("Unhandled option!")
@@ -618,7 +673,7 @@ func _input(event):
 			return
 		if isSubMenu:
 			tweenMainMenuIn();
-			highlightList(optionsFrame,selection) #This just updates the description
+			highlightList(optionsFrame,mainMenuSelection) #This just updates the description
 			isSubMenu=false
 			return
 		else:
@@ -634,9 +689,9 @@ func _input(event):
 		#highlightList(curMenu,curSel)
 	if isSubMenu:
 		#print("update submenu sel")
-		subMenuSelection=curSel
+		subMenuSelection[mainMenuSelection]=curSel
 	else:
-		selection=curSel
+		mainMenuSelection=curSel
 	#elif Input.is_action_pressed("ui_start"):
 	#	pass
 func handle_input_accept():
@@ -675,12 +730,12 @@ func get_selection_from_mouse_pos(menuToCheck:Control,event:InputEvent)->int:
 
 func handle_mouse_entered(selection_:int):
 	print(selection_)
-	selection=selection_
+	var tmpSel=selection_
 	
 	var curMenu=optionsFrame
 	if isSubMenu:
-		curMenu=systemOptionsSubmenu
-	highlightList(curMenu,selection)
+		curMenu = get_current_submenu(mainMenuSelection)
+	highlightList(curMenu,tmpSel)
 
 func tweenMainMenuOut():
 	#TODO: Remove this shit and replace it with the newer tweens
@@ -695,7 +750,7 @@ func tweenMainMenuOut():
 	#Tween in the submenu
 	var property = "rect_position:x"
 	
-	var subList = systemOptionsSubmenu;
+	var subList = get_current_submenu(mainMenuSelection);
 	tween.interpolate_property(subList, property,
 	MENU_LEFT_PADDING+200,
 	MENU_LEFT_PADDING,
@@ -733,12 +788,13 @@ func tweenMainMenuIn():
 	
 	
 	#Tween the submenu out
+	var subMenu = get_current_submenu(mainMenuSelection)
 	var property = "rect_position:x"
-	tween.interpolate_property(systemOptionsSubmenu, property,
+	tween.interpolate_property(subMenu, property,
 	null,
 	MENU_LEFT_PADDING+200,
 	.25, Tween.TRANS_QUAD, Tween.EASE_OUT);
-	tween.interpolate_property(systemOptionsSubmenu, 'modulate:a',
+	tween.interpolate_property(subMenu, 'modulate:a',
 	null, 0.0, .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	tween.start();
 	

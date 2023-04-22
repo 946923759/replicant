@@ -191,7 +191,10 @@ func text_on_click_wrapper(event:InputEvent,music:Music):
 
 func _on_DownArrow_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
-		tween_to_page(1)
+		var curPage = get_current_page()
+		if curPage < num_pages():
+			tween_to_page(curPage+1)
+		#tween_to_page(1)
 
 func _on_UpArrow_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):

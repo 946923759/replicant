@@ -145,7 +145,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DescrptionF" type="Control" parent="."]
+[node name="DescriptionF" type="Control" parent="."]
 anchor_top = 0.907
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -154,7 +154,7 @@ margin_bottom = -52.0
 rect_min_size = Vector2( 0, 48 )
 mouse_filter = 2
 
-[node name="ColorRect" type="ColorRect" parent="DescrptionF"]
+[node name="ColorRect" type="ColorRect" parent="DescriptionF"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -163,22 +163,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Description" type="Label" parent="DescrptionF"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 25.0
-margin_right = -25.0
-margin_bottom = -6.10352e-05
-rect_min_size = Vector2( 1870, 0 )
-custom_fonts/font = ExtResource( 4 )
-text = "Resume reading."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="smSprite" type="TextureRect" parent="DescrptionF"]
+[node name="smSprite" type="TextureRect" parent="DescriptionF"]
 margin_right = 120.0
 margin_bottom = 125.0
 rect_scale = Vector2( 1, 0.4 )
@@ -187,6 +172,21 @@ script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="DescriptionBase" type="Label" parent="DescriptionF"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -935.0
+margin_top = -25.0
+margin_right = 935.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 1870, 0 )
+custom_fonts/font = ExtResource( 4 )
+text = "Resume reading."
+align = 1
+valign = 1
 
 [node name="Label" type="Label" parent="."]
 margin_left = 40.0

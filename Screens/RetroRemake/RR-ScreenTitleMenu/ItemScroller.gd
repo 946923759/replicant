@@ -15,7 +15,7 @@ enum POSITION {
 	BOTTOM
 }
 
-export (float,0,1000) var SPACING=200
+export (int,0,1000) var SPACING=200
 #export (Array,Dictionary) var test
 export (String) var previous_submenu
 

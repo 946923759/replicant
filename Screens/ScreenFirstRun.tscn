@@ -46,7 +46,11 @@ func OffCommand():
 	yield(t,\"tween_completed\")
 	
 	print(\"Changing scene!\")
-	get_tree().change_scene(\"res://Cutscene/CutsceneFromFile.tscn\")
+	#get_tree().change_scene(\"res://Cutscene/CutsceneFromFile.tscn\")
+	if OS.has_feature(\"web\"):
+		Globals.change_screen(get_tree(),\"ScreenWebWarning\")
+	else:
+		Globals.change_screen(get_tree(),\"CutsceneFromFile\")
 	
 
 func _on_OKButton_pressed():

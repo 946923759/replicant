@@ -1,8 +1,6 @@
 extends Control
 signal selected_choice(selection)
 
-#TODO: Add animations at some point
-
 const MAX_NUM_CHOICES:int = 5
 onready var choiceFrame = $ChoiceFrame
 var currentChoiceSize:int=MAX_NUM_CHOICES
@@ -58,6 +56,7 @@ func OnCommand():
 	seq = get_tree().create_tween()
 	$Dim.modulate.a=0
 	seq.tween_property($Dim,"modulate:a",1,.5)
+	
 	for i in range(currentChoiceSize):
 		var f = choiceFrame.get_child(i)
 		f.modulate.a=0

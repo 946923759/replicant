@@ -1,0 +1,43 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Yssring
+bg	009/059_1280x720
+portraits	54
+emote	54	5
+msg	301861	Ah.... There's no hope... Even God can't fix this....	哎……果然已经不行了呢，这个就算是神仙来了也修不好了啊……	あぁ……やっぱりもうダメね。こんなの神様でも直せないわ……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	301862	Yssring, how are things on your side?	伊瑟琳，你边情况如何？	イザーリン、そっちの状況はどう？	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	2
+msg	301863	Huh? Himeko! I thought you were out there fighting! Is it alright for you to be here!? Won't the Honkai beasts get in?	嗯？姬子！？你不是在外面战斗么！这样擅离职守真的好么！崩坏生物不会冲进来么！	あれ？姫子！？あなた外で戦っていたんじゃないの！？そんな勝手に持ち場を離れていいの？崩壊生物が入ってきちゃうわよ！ 	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	2
+msg	301864	The fight is over.	战斗已经结束了。	戦いはもう終わったわ。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	301865	Is it... No wonder there's a lot less noise... I was too concentrated so I forgot about the surroundings..... So we've survived once again?	结束了么…难怪外面的噪音小了少…果然专注工作的时候就能忘掉外面的事情呢，这么说我们又顺利活下来了么？	終わったの……そういえば、外の騒音もいつの間にか小さくなってるわね……仕事に集中していると、周りのことを忘れちゃうのよね。ということは、私たちは無事に生き残ったってこと？	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	301866	For now. But we're sitting ducks out here if we can't get Hyperion functioning soon.	目前是的，但是如果不赶快让休伯利安动起来的话我们依旧是待宰的羔羊。	今のところはね。でも、急いでハイペリオンを動かさないと、またただの獲物になるわよ。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	5
+tn	0	Chinese said "furnace", Japanese said "reactor"
+msg	301867	All right... But we're out of luck. Without replacement parts the Hyperion can't function properly, let along fixing the power generator. We've sustained way too much damage in the last few battles. 	好吧…不过很遗憾，如果没有补充零件的话别说是动力炉了，就连休伯利安本身都无法维系正常的运作，这几次战斗的损伤实在太大了。	わかった……でも、残念なことに動きそうもないの。補充部品がなければ動力炉どころか、ハイペリオン本体も正常に運転できない。ここ数回の戦闘での被害が大きすぎたみたい。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	301868	You are right. There are a lot of other problems that need to be solved besides the generator....	你说的没错，除了动力炉之外还有很多问题要解决……	あなたの言う通りね。動力炉以外にも解決しなくてはならない問題がたくさんあるわ……。	NONE
+msg	301869	Gather everyone on the bridge. I want the survivors to decide their own destiny.	召集所有人到舰桥，我想让活着的人自己决定他们的命运。	艦橋に全員集合。生き残った人に自分の運命を決めてもらいたいの。	NONE

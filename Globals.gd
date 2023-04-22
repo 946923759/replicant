@@ -1,5 +1,6 @@
 extends Node
 
+#Hint: use OPTIONS[option]['value'] to access these
 var OPTIONS = {
 	"AudioVolume":{
 		"type":"int",
@@ -35,6 +36,13 @@ var OPTIONS = {
 		"type":"list",
 		"choices":["Serif","Sans Serif"],
 		"default":"Sans Serif"
+	},
+	"bgOpacity":{
+		"type":"int",
+		#Due to how JSON works this can end up being cast to a float
+		#"choices":[0,10,20,30,40,50,60,70,80,90,100],
+		"localizeKey":"bgOpacity",
+		"default":60
 	},
 	"skipMode":{
 		"type":"list",
@@ -392,7 +400,10 @@ var SCREENS:Dictionary = {
 	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
 	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery_v2.tscn",
 	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTestV2.tscn",
+
 	"ScreenFirstRun":"res://Screens/ScreenFirstRun.tscn",
+	"ScreenWebWarning":"res://Screens/ScreenWebWarning/ScreenWebWarning.tscn",
+
 	"ScreenSelectChapter":"res://Screens/ScreenSelectChapter/TitleScreen.tscn",
 	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn",
 	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV3.tscn",

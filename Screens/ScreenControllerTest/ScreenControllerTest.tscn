@@ -21,6 +21,7 @@ onready var actionMappings = {
 }
 
 onready var stickL = $Sprite/StickL
+onready var stickR = $Sprite/StickR
 
 func _process(delta):
 	for a in actionMappings:
@@ -30,6 +31,13 @@ func _process(delta):
 	t+=\"\\n\"+String(Input.get_action_strength(\"analog_up\")*-1+Input.get_action_strength(\"analog_down\"))
 	stickL.offset.y=(Input.get_action_strength(\"analog_up\")*-1+Input.get_action_strength(\"analog_down\"))*100
 	$Label.text = t
+	
+	var tr = \"UP: \"+String(Input.get_action_strength(\"right_analog_up\"))+\"\\nDN: \"+String(Input.get_action_strength(\"right_analog_down\"))
+	tr+=\"\\n\"+String(Input.get_action_strength(\"right_analog_up\")*-1+Input.get_action_strength(\"right_analog_down\"))
+	stickR.offset.y=(Input.get_action_strength(\"right_analog_up\")*-1+Input.get_action_strength(\"right_analog_down\"))*100
+	stickR.offset.x=(Input.get_action_strength(\"right_analog_left\")*-1+Input.get_action_strength(\"right_analog_right\"))*100
+	$Label2.text = tr
+
 
 
 \"\"\"
@@ -140,6 +148,12 @@ position = Vector2( 388.29, 269.183 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 
+[node name="StickR" type="Sprite" parent="Sprite"]
+modulate = Color( 0, 1, 0.109804, 1 )
+position = Vector2( 574.756, 271.302 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
 [node name="OptionButton" type="Sprite" parent="Sprite"]
 modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 600.716, 136.671 )
@@ -158,6 +172,15 @@ margin_left = 709.84
 margin_top = 699.246
 margin_right = 852.84
 margin_bottom = 802.246
+custom_fonts/font = ExtResource( 2 )
+text = "X Axis:
+Y Axis:"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1082.77
+margin_top = 705.603
+margin_right = 1225.77
+margin_bottom = 808.603
 custom_fonts/font = ExtResource( 2 )
 text = "X Axis:
 Y Axis:"

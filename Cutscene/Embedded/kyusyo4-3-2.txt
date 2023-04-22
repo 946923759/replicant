@@ -1,0 +1,71 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	61	54	55
+match_names	Himeko	Yssring	Emesa	_DIM_ALL_WHEN_EMPTY
+speaker	
+bg	009/060_1280x720
+msg	301870	Himeko had explained the situation.	姬子将目前的情况陈述了一遍。	——姫子は現在の状況を皆に説明した。	NONE
+portraits	61	54	55
+emote	61	1
+emote	54	2
+emote	55	1
+/Himeko	301871	Overall, this is our situation.	目前我们的状况就是这样。	今置かれている私たちの状況はこんなところよ。	NONE
+/Yssring	301872	Is Bronya really gone...? She's not the kind of person that would abandon her family, right!?	布洛妮娅真的走了么……她不是那种会抛下同伴的人才对啊！	ブローニャは本当に行ってしまったの……？彼女はそんな風に仲間を捨てる人じゃないよね！ ？	NONE
+/Himeko	301873	I'm sorry. But it's the truth.	抱歉，但这是事实。	ごめんなさい。でも、それが事実なの。	NONE
+/Yssring	301874	Then what are we supposed to do... Are we just waiting to die?	那我们现在该怎么办…果然能做的仅仅只能等死而已么？	そしたら、私たちはどうすればいいの……やっぱり死ぬのを待つしかないの？	NONE
+/Emesa	301875	......	……	……。	NONE
+
+emote	54	3
+/Yssring	301876	Hey... Emesa, why don't you say something too? You always scold me at times like this. Why aren't you saying anything?	喂…埃米沙你也说句话啊？这个时候你不是总会骂我么，为什么你也沉默了呢！	ちょっと……エミザ、あなたも何か言ったら？こんなときはいつも私に文句を言うじゃないの。どうしてあなたまで黙っているのよ？	NONE
+
+emote	55	3
+/Emesa	301877	I don't know... What can we do when Bronya and Seele are gone...?	我也不知道…布洛妮娅和希儿都不在了，光靠我们还能做什么呢……	分からないんだよ……ブローニャもゼーレもいなくなっちゃって、私たちだけで何ができるっていうんだ……。	NONE
+/Himeko	301878	Then go ahead and wait to die. There's nothing wrong with taking it easy if you're fed up with this.	那就这样等死吧，让自己的余生活得轻松一些不是什么坏事。	じゃあ、このまま死ぬのを待っていなさい。自分の余生をゆっくりと過ごすのは悪いことじゃないわ。	NONE
+
+emote	55	4
+/Emesa	301879	Himeko, why do you always say things like this!? You were the same with Bronya when she left! Don't you understand how we all feel!	姬子…你这家伙总是这样！布洛妮娅的时候也是！现在也是！你难道不懂大家的感受么！	姫子……お前はいつもそうだな！ブローニャのときもそう！今もそう！お前には、みんなの気持ちが分からないのか！？ 	NONE
+/Himeko	301880	Whatever your feelings are, it's meaningless if you're not willing to fight.	不管是什么感受，没有战斗意志的话就没有意义了。	どんな気持ちだろうと、戦う意志がないのなら意味はないわ。	NONE
+/Emesa	301881	You always talk like you have nothing to do with it...... Bronya left you in charge of everyone! So why don't you at least say what we should do now!	总是在一旁说风凉话……既然布洛妮娅已经把大家交给你了！那你倒是说现在我们该怎么办！	いつも自分は無関係みたいな話し方をして……ブローニャはみんなのことをあんたに任せたんだろう！だったら、今私たちがどうすべきか一言くらいいったらどうなんだ！	NONE
+/Himeko	301882	......	……	……。	NONE
+msg	301883	First, we need to find ways to repair Hyperion. Try all possibilities, even if the chances are low. After that, we should put all wounded people in the compartments near the bridge. The defense on left wing compartments is too weak and we have no manpower. Also, we will use the available materials to reinforce defense around the bridge as much as possible to prepare for future battles.	首先，寻找修理休伯利安的方法，哪怕只有一点可能性也要积极尝试。然后，将伤员统一安置到舰桥附近的舱室，左翼舱室的防守太过薄弱，也没有人手抽调。另外，利用战舰上现有的材料最大可能加固舰桥周围的防御工事，准备之后的战斗。	まず、ハイペリオンを修理する方法を探す。僅かな可能性でもあれば試してみること。そして、負傷者を艦橋近くのキャビンに収容する。それから、戦艦にある材料で艦橋周囲の防御を固くして。準備ができたら戦いよ。	NONE
+msg	301884	Finally, and most importantly, the Fire Moths need a leader... We need to elect a new commander.	最后，也是最重要的一点，逐火之蛾不能没用领袖…需要选举一位新的指挥者。	最後に、一番重要なことだけど、火を追う蛾はリーダーなくしてやっていけない……投票で新しい指導者を選ぶ必要があるわ。	NONE
+/Emesa	301885	Hmph... So now you're talking about voting for a new leader!? Are you trying to escape your responsibilities? Or do you not have any confidence in yourself!	哼…现在还说什么选举，你是想推脱责任么！还是说你自己也没有信心！？	ふん……今さら投票とかなんとか言って、責任から逃れるつもり！？それとも自分に自信がないのか！？ 	NONE
+/Himeko	301886	Someone that can drop dead at any moment shouldn't be the leader. You know this better than I do.	随时都可能会死掉的人是不能成为领袖的，这点你应该比我清楚。	いつ死ぬとも分からない人間がリーダーになってはいけないわ。この点だけは私より分かっているはずよ。	NONE
+
+emote	61	1
+emote	55	1
+/Emesa	301887	Ugh.....	咕……	うぐっ……。	NONE
+
+choice	302208	I can’t take this responsibility.	私にはそんな重大な責任担えない。	NONE	NONE
+choice	302209	I think other people are more suitable.	他にもっとふさわしい人がいると思う。	NONE	NONE
+/Himeko	301888	Alright, if no one has any objections, let’s start voting. I'll start. I vote for Kyuushou.	好了，如果没有异议的话我们就开始投票吧。我先开始，我投九霄一票。	いいわね。もし異議がないなら早速投票を始めましょう。私から始めるわね。私は九霄に1票よ。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	301889	If I had a choice, I wouldn't want you to carry this huge burden either. But I'm sorry. The way I see it, you are the most qualified leader.	如果可能的话我也不想让你肩负这么大的压力，但是抱歉，以我的判断来说你是最合适成为领袖的人了。	できることなら、私もあなたにこんな大きな負担を背負わせたくないわ。でも、ごめんなさい。私の見るところ、あなたがリーダーに一番ふさわしいのよ。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	301890	No, they aren't. Emesa is too impulsive and can't make calm decisions. Yssring is too timid.	不行。埃米沙太冲动了，无法冷静地做出判断，而伊瑟琳又太怯弱，这样的是无法领导大家的。	ダメよ。エミザは衝動的すぎるわ。冷静に判断を下せないし、イザーリンは弱気すぎる。これではみんなを引っ張っていけないわ。	NONE
+
+label	end_choices
+emote	55	4
+/Emesa	301891	But it's still too hasty to let a newbie like her lead everyone!	但是让这样的新人来领导大家还是太草率了吧！	でも、こんな新人にみんなを引っ張らせるなんて、軽率すぎやしないか？ 	NONE
+
+speaker	Yssring
+emote	54	5
+tn	0	Kind of hard to translate so some meaning was lost here. Yssring says "in terms of peace of mind"
+msg	301892	Kyuushou has helped me many times... But in terms of being a reliable leader, I think Himeko is better. 	虽然被九霄帮助过很多次了…但是从安心程度上还是姬子比较值得依赖。	九霄には何度も助けられたけど、安心という点では姫子の方が信頼できる、かな。	NONE
+
+speaker	
+msg	301893	The discussion became noisy.	讨论的声音渐渐嘈杂了起来。	——議論する声が次第に騒がしくなってくる。	NONE
+
+speaker	Emesa
+emote	55	1
+/Emesa	301894	Himeko, if you really care about the bigger picture, you should not make everyone waver at this point in time!	姬子，如果你真的为大局着想的话，就不应该在这个时间点上让大家继续动摇了！	姫子、もし本当に大局を考えているのなら、今みんなを動揺させ続けるべきじゃない！ 	NONE
+
+emote	61	1
+emote	55	1
+/Himeko	301895	......	……	……。	NONE
+msg	301896	Fine. I'll be the temporary leader of the Fire Moths then.	我明白了，那我就暂时担任逐火之蛾的领袖吧。	分かったわ。じゃあ、私がしばらく火を追う蛾のリーダーを務める。	NONE
+msg	301897	But if I die in any subsequent battles, Kyuushou will become the new leader. Or....	但是，如果我在后面的战斗中死亡的话，领袖的职位将交给九霄，或者……	でも、私がこれからの戦闘で死んだらリーダーの仕事は九霄に任せるわ。あるいは……。	NONE
+msg	301898	If Bronya comes back.	如果布洛妮娅能够回来的话。	もしブローニャが戻って来てくれるなら……。	NONE

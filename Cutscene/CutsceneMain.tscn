@@ -139,7 +139,7 @@ rect_pivot_offset = Vector2( 0, 173 )
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
-color = Color( 0.0431373, 0.0784314, 0.141176, 0.572549 )
+color = Color( 0.04, 0.08, 0.14, 0.6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -227,6 +227,7 @@ __meta__ = {
 }
 
 [node name="Choices" parent="." instance=ExtResource( 7 )]
+visible = false
 
 [node name="whiteFlash" type="ColorRect" parent="."]
 visible = false

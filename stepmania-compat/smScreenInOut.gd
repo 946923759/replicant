@@ -17,6 +17,8 @@ func _ready():
 	t.start()
 	
 func OffCommand(next_screen:String):
+	if t.is_active():
+		return
 	t.interpolate_property(self,"modulate:a",0,1,timeToTweenOut)
 	t.start()
 	yield(t,"tween_completed")

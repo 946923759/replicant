@@ -1,0 +1,153 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	61	56	55	54
+speaker	Teammate
+bg	009/060_1280x720
+portraits	61	56
+emote	61	1
+emote	56	0
+msg	301680	Reporting! Emergency damage control in the ship completed. All visible fire is put out. Injured personnel have been transferred to safe compartments.	报告！舰内损坏区域的应急损管已经处理完毕，明火已经全部扑灭，受伤的人员也都已经转移到了安全仓室。	報告します！艦内の損壊エリアの応急処置が完了しました。全て消火済み、負傷者も安全なキャビンに移しました。	NONE
+/Himeko	301681	......I understand. Thanks for your help.	……好的，辛苦了。	……分かったわ。ご苦労様。	NONE
+match_names	Himeko	Emesa	Yssring
+portraits	61	55	54
+
+emote	61	1
+emote	54	5
+/Yssring	301682	*cough* I was almost burnt to death... I don't want to imagine becoming a burnt corpse on my own battleship...	咳咳…差点就被烧死了，要是死在自家的战舰上就太冤了……	ゴホッ、ゴホッ……あとちょっとで焼け死ぬところだった。自分の戦艦で焼身死体になるなんて、想像もしたくない……。	NONE
+emote	55	1
+emote	54	5
+/Emesa	301683	Keep moving! We have a lot of things to do, there's no time to waste!	走了！要做的事情还很多，没时间浪费了！	行くぞ！まだやることがいっぱいあるんだ、時間を無駄にはできないぞ！	NONE
+emote	55	1
+emote	54	3
+/Yssring	301684	Hold on... Give me a break! I'm not free labor! You should treat your few remaining technicians with more respect!	等等…让我再休息一下！我可不是苦力啊！你们要善待仅存的技术人员！	待ってよ……少し休ませて！私は奴隷じゃないんだよ。ぎ、技術者をもっと大切に扱ってよね……！	NONE
+emote	55	1
+emote	54	3
+/Emesa	301685	Cut the crap! Move it!	少废话！快走！	その減らず口、無理やり閉じさせてやろうか！次、行くぞ！	NONE
+emote	61	1
+emote	54	3
+/Himeko	301686	Emesa... How many people from the base made it on board?	埃米沙…基地里有多少人上船了？	エミザ……基地の中からは何人が乗ったの？	NONE
+emote	55	1
+emote	54	3
+/Emesa	301687	……。	……	……。	NONE
+msg	301688	Those you thought were useless didn't make it. Are you happy now?	你觉得没用的人都没有上来，这下你满意了吧？	あんたが役に立たないと思う人はみんな乗ってない。……これでいいか？	NONE
+emote	61	1
+emote	54	3
+/Himeko	301689	......	……	……。	NONE
+emote	55	4
+emote	54	3
+/Emesa	301690	Let's go!	我们走！	急いでるから。	NONE
+emote	55	4
+emote	54	6
+/Yssring	301691	Hey! Wait, Emesa! Let's get Seele too. She is the best person to do this! Speaking of it, why have I not seen her?	喂！埃米沙等下啦！我们去把希儿也叫上吧，这种事情她们最合适了！说起来怎么都没看到她？	ちょっと！エミザ待って！ゼーレも呼んでこよう。こういうことなら彼女が適任！……ってあれ、そう言えばゼーレは？見かけないような……。	NONE
+emote	55	1
+emote	54	6
+/Emesa	301692	......!	……！	……！	NONE
+msg	301693	Himeko, where's Seele and the rest of the crew!?	姬子，希儿她们在哪！	姫子、ゼーレたちはどこ！？	NONE
+emote	61	1
+emote	54	6
+/Himeko	301694	Seele... She's already...	希儿她已经……	ゼーレはもう……。	NONE
+
+speaker	Emesa
+emote	55	4
+emote	54	6
+msg	301695	You ☆☆ing asshole!!	你OO的真是个混蛋！！！	お前ッ！！！この馬鹿が！！	NONE
+
+speaker	Yssring
+emote	55	4
+emote	54	2
+msg	301696	E! Emesa! Calm down!	埃！埃米沙！冷静一些！	ちょっと！エミザ！落ち着いて！	NONE
+
+speaker	
+portraits	61,false,-1	55,false,-2	54
+emote	54	2
+msg	301697	*Slap*!	啪！	ドンッ！	NONE
+portraits	
+
+bg	009/057_1280x720
+speaker	Bronya
+msg	301698	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+extend	301699	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+choice	302194	Bronya, stop blaming yourself.	ブローニャ、自分を責めないで。	NONE	NONE
+choice	302195	Bronya, it's not your fault.	ブローニャ、これはあなたのせいじゃない。	NONE	NONE
+extend	301700	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+
+msg	301701	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+choice	302196	Seele doesn't want to see you like this.	ゼーレは、そんなあなたの姿を見たくないはず。	NONE	NONE
+choice	302197	Everyone needs your leadership now.	今こそ、あなたのリーダーシップが必要。	NONE	NONE
+extend	301702	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+
+msg	301703	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+extend	301704	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+choice	302198	Bronya, cheer up!	ブローニャ、しっかりして！	NONE	NONE
+choice	302199	Bronya, wake up!	ブローニャ、目を覚まして！	NONE	NONE
+extend	301705	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+
+
+/Himeko	301706	Enough. Nothing is going to get through to her right now.	已经够了，现在说什么都是没用的。	もうやめなさい。今、何を言っても無駄でしょうから。	NONE
+bg	009/060_1280x720
+match_names	Himeko
+portraits	61
+emote	61	1
+choice	302200	Himeko, what's that wound on your face?	姫子、その顔の傷は？	NONE	NONE
+choice	302201	Himeko, is Seele really dead?	姫子、ゼーレは本当に死んじゃったの？	NONE	NONE
+/Himeko	301707	Let's leave her alone. She might feel better after she calms down.	就让她在这里静一下吧，如果这样能让她心理好受一些的话。	そっとしておいてあげましょう。その方が心も落ち着くわ、きっと。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	301708	Don't worry about it, I reap what I sow. Emesa didn't hit me that hard anyways, it doesn't hurt.	自作自受罢了，那家伙下手还是太轻了，这样根本不痛不痒。	気にしないで自分で招いた結果だから。エミザのやつ、本気じゃなかったみたい。これじゃあ、痛くもかゆくもないわ。	NONE
+msg	301709	You know what happened to Seele, don't you? Her death was my fault, so don't blame yourself for it. Right now we have to focus on the problem at hand.	希儿的事情你也知道了吧，希儿的死都是我的责任，所以你们也不用太自责，现在还是专心应对眼前的问题吧。	ゼーレのことはあなたも知っているでしょう？彼女の死は全て私の責任よ。だから、あなたたちも自分を責めないで。今は目の前の問題に集中して。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	301710	I don't want to admit it, but there's no chance of anyone surviving an attack from a Herrscher.	我也不想承认，但是在律者的攻击下生存的几率基本已经是零了。	私だって認めたくないわ。でも、律者の攻撃を受けて生き残る可能性はゼロよ。	NONE
+msg	301711	So... Try not to think about her death too much. It's all my fault, so don't blame yourself for it. Right now we have to focus on the problem at hand.	好了，希儿的事情你也不用在多想了，她的死都是我的责任，所以你们也不用太自责，现在还是专心应对眼前的问题吧。	ほら、ゼーレのことは考えすぎないで。彼女の死は全て私の責任よ。だから、あなたたちも自分を責めないで。今は目の前の問題に集中して。	NONE
+
+label	end_choices
+emote	61	5
+msg	301712	Don't show me such a sad face... It's not good to stay depressed forever. Let's go outside for a bit, maybe the fresh air will lighten the mood. And while we're at it, I've got something I want to talk to you about.	不要露出这种忧伤的表情……稍微陪我一会吧，总是消沉的样子是做不好事情的，去外面放松一下吧，顺便也有些话想对你说。	そんな悲しい顔しないでよ……ちょっと私に付き合ってくれる？いつまでも意気消沈してたらよくないわよ。外へ出て気分転換しなさい。ついでにあなたに話したいことがあるの。	NONE
+portraits	
+bg	009/056_1280x720
+music	Yonah - Pluck Ver
+msg	301714	*Drinking*... Hah!	咕咕咕……哈！	ゴク、ゴク……プハァ！	NONE
+choice	302202	Sorry, I'm not an adult yet.	ごめんなさい。私まだ未成年だから。	NONE	NONE
+choice	302203	I'm not good at drinking.	私、お酒は苦手なの。	NONE	NONE
+msg	301715	I haven't had a drink in ages. Pretty refreshing! How about you, you want one too?	好久没有喝酒了，真是痛快啊！怎么样你也要来一罐么？	お酒なんて久しぶりだわ。本当に最高！どう？あなたも一杯やらない？	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	301716	Hah? The world is falling apart and you still want to follow those meaningless rules? Here, have a drink!	哼，地球都已经变成这个样子了你居然还遵守这种无意义的规则？来！拿去！	へ～、地球がこんな姿になってしまったのに、まだそんな無意味な規則を守ってるの？ほら、飲んで！	NONE
+jmp	end_choices
+
+label	c2dest
+msg	301717	No one is good at drinking in the beginning. Once you are used to it, alcohol will become your inseparable friend... Come on! Take it!	没有谁一开始就擅长，只要习惯的话酒会成为你不可替代的伙伴……来！拿去！	誰でも最初から飲めるわけではないわ。慣れさえすれば、お酒はかけがえのない仲間になるわよ……ほら！飲んで！ 	NONE
+label	end_choices
+msg	301718	*Drinking*!	咕咕咕！	ゴク、ゴク！	NONE
+msg	301719	I heard you've lost your memories for some reason.	听说你的记忆因为某些原因消失了么？	あなたの記憶、なんらかの原因で消えてしまったって聞いたけれど？	NONE
+msg	301720	I envy you. What would it be like if I could just forget everything...	真是令人羡慕，如果能把脑海中的记忆都消除该多好，那样的话一切都会恢复原来的样子吧……	羨ましいわ。もし頭の中の記憶を全て消せるなら、どれだけいいことか。そうすれば、全て元に戻せるのに……。	NONE
+msg	301721	*Drinking*!	咕咕咕！	ゴク、ゴク！	NONE
+msg	301722	Haaah... I used to have the same optimism as you. I used to think I could be the heroine and save this hopeless world..... That as long as I defeated the Honkai, I could live like everyone else.	呼……以前我也有和你一样的时候，以为只要成为了女武神就能变成英雄，就能改变这个无药可救的世界……只要把崩坏解决掉，就能像其他人一样活着。	ふう……以前は私にもあなたみたいなときがあったの。戦乙女にさえなれれば英雄になれるって思ってた。この救いようのない世界を変えられるって……崩壊を倒しさえすれば、他の人と同じように暮らせるって。	NONE
+msg	301723	Meeting a man I like, falling madly in love, walking into church in a wedding dress, hand in hand... Then having children, living a peaceful life... It was what I dreamed of.	与喜欢的男人相遇…谈一场轰轰烈烈的恋爱…戴上白纱与他一起走进教堂…然后与孩子们度过平静的一生…感觉就像梦境一样。	好きな男の人と出会って……激しい恋をして……白いヴェールをかぶって彼と教会に入っていく……そして子供たちと一緒に穏やかな一生を送る……まるで夢みたいね。	NONE
+msg	301724	Now that I think about it... Those dreams ended the moment I became a valkyrie.	现在想想……就在成为女武神的那一刻起，一切都已经结束了。	今、考えてみれば……戦乙女になったあのとき、全てが終わっていたのよね。	NONE
+msg	301725	*Drinking*...	咕咕咕……	ゴク、ゴク……。	NONE
+msg	301726	Sorry to dump all this crap on you... It must be pretty boring to hear an old woman like me talk about her life... Forget it, let's talk about more important things.	抱歉，听着像我这样的阿姨讲这种事一点意思都没有吧……算了，现在这种事情都不重要了。	ゴメンね。こんなおばさんの身の上話を聞かされても、ちっともおもしろくないでしょ……いいわ、今のは忘れてちょうだい、本題はここから。	NONE
+msg	301727	Do you remember when we first met? Bronya recommended you for the Grey Moths, but I turned you down. Do you know why?	还记得第一次见面的时候么，布洛妮娅让你加入灰蛾部队，但是我拒绝了，你知道为什么么？	初めて会ったときのことを覚えている？ブローニャがあなたを灰蛾部隊に推薦したけど、私が断ったの。なぜだか分かる？ 	NONE
+msg	301728	The first time I saw you, I thought... Why do you look different from others... You are always looking right into the front and keep moving forward, not afraid of getting hurt.	第一次见到你的时候我就在想…为什么你这家伙有着和其他人不一样的表情…总是正直地注视着前方，不惧怕受伤一直前进。	初めてあなたに会ったときに思ったの……どうしてあなたは他の人と違う表情をしているんだろうって……まっすぐ前を向いていて、傷つくことを恐れずに前に進むことを決意していた。	NONE
+msg	301729	I want you to remain who you are... But now, your expressions look the same as others. Too much pressure made you hard to breathe, and you have given up moving forward because of death and pain.	我想让你保持这样的自己…不过现在你的表情已经开始变得和其他人一样，在压力中喘不过气，因为死亡和痛苦而放弃了前进。	私は、あなたにそんな自分をいつまでも保っていてもらいたかったのよ……でも、今のあなたの表情は他の人と同じになっているわ。プレッシャーの中で息も絶え絶えになっている。死と苦痛から、前に進むことを諦めている。	NONE
+msg	301730	This is the correct face for this world... The more you struggle, the less hope you can see. People can only be strong when they lie to themselves... But they will only fall deeper in fear.	这才是这个世界应该有的表情吧…越是挣扎越是看不到希望，只有在自我麻痹的假象中才能让自己坚强起来…在名为恐惧的泥潭中越陷越深。	それこそが、本来この世界にある表情よ……もがけばもがくほど希望が見えなくなる。自我を麻痺させて作った幻想の中でこそ自分を強くすることができる……恐怖という名の泥沼にますます深くはまっていく。	NONE
+msg	301731	If anyone shows weakness, the rest of us would despair. That's why we put on a strong façade. Those kids Bronya and Seele knew that... But now it's just me.	只要有人露出软弱的样子，所有人的心理都会决堤。所以必须得有装作坚强的样子，所以布洛妮娅和希儿那些孩子才会那么冷静……而现在，只有我了。	誰かが軟弱な姿を見せると、みんなの心の堤防が壊れてしまう。だから、強い姿を装っていなくてはならない。ブローニャやゼーレのような子たちはそれをわかっていたから、あんなに冷静だったのよ……でも今は私だけね。	NONE
+choice	302204	You didn't do anything wrong.	あなたは間違ってない。	NONE	NONE
+choice	302205	I don't know either.	私にも分からない。	NONE	NONE
+msg	301732	Tell me... If I had waited just a little longer... Maybe that girl wouldn't have died... I wonder if I made the right choice.	…如果当时再等一下的话…是不是那个孩子就不会死了…告诉我…我是不是真的做错了……	……もし、あのときもう少し待っていれば……あの子は死ななかったのかしら……教えて……私、本当に間違えてしまったのかしら……。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	301733	Is that so... Thank you for believing in me.	是么…谢谢你，能这么相信我。	そう……ありがとう。こんなにも弱い私のこと、信じてくれて。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	301734	Sorry... For making things difficult for you.	抱歉…让你为难了。	ごめんなさい……面倒をかけて。	NONE
+
+label	end_choices
+msg	301735	All right! Don't just stand there, drink it! You are still a kid, you need a lot more exercise!	好了！别傻站着，快喝起来！像你这样的孩子还需要多加锻炼才行！	よし！湿っぽい話はやめにして、早く飲みましょう！あなたみたいな子はまだまだ鍛えなくちゃね！	NONE
+msg	301736	*Drinking*...	咕咕咕……	ゴク、ゴク……。	NONE
+speaker	
+msg	301737	Boom!	轰！	ドォォォン！	NONE

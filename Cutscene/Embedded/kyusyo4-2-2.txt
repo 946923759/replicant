@@ -1,0 +1,112 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Graymoth Member
+bg	009/062_1280x720
+portraits	66
+emote	66	0
+msg	301828	The Houkai creatures have stopped attacking! Surround Houkai creatures eliminated!	报告，崩坏生物的进攻停止了！周围的崩坏生物也已经消灭完毕！	報告します。崩壊生物の攻撃が止まりました！周囲の崩壊生物も消滅を確認！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301829	*Cough*... Is it finally over...	咳咳…终于结束了么……	ハァ、ハァ……やっと終わったのね……。	NONE
+msg	301830	Treat the wounded immediately! Investigate the damage of Hyperion and performance emergency repairs on damaged outer armor!	立刻进行伤员治疗！马上组织调查休伯利安的受损情况，对毁坏的外装甲紧急修复！	負傷者の治療を急いで！それから、今すぐハイペリオンの被害状況を調べてちょうだい。損壊した外装甲は緊急修理！ 	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301831	Got it!	是！	はい！	NONE
+speaker	Emesa
+portraits	55	66
+emote	55	1
+emote	66	0
+msg	301832	Himeko!	姬子！	姫子！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301833	Emesa, how’s the situation inside? Have all Houkai creatures been destroyed?	埃米沙么，里面的情况怎么样？崩坏生物都消灭了么？	エミザ？中の状況はどう？崩壊生物は倒した？	NONE
+speaker	Emesa
+portraits	55	66
+emote	55	3
+emote	66	0
+msg	301834	Don’t worry about that! Hurry up! Stop Bronya!	别管这个了！快！快去阻止布洛妮娅！	そんなことより早く！早くブローニャを止めて！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301835	Bronya?	布洛妮娅？	ブローニャ？	NONE
+speaker	
+portraits	66
+emote	66	0
+msg	301836	Die... Die... Die... All die...	去死…去死…去死…去死……	死ね……死ね……死ね……死ね……。	NONE
+msg	301837	You dare to hurt Seele... All of you, die!	伤害希儿的家伙…全都去死！	ゼーレを傷つけたやつ……全部死ね！	NONE
+speaker	Emesa
+portraits	55	66
+emote	55	3
+emote	66	0
+msg	301838	Bronya! It’s enough! The battle is over!	布洛妮娅！已经够了！战斗已经结束了！	ブローニャ！もういいんだ！戦闘は終わった！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301839	Bronya... What happened to you...	布洛妮娅…你到底怎么了……	ブローニャ……あなた、一体どうしたの……。	NONE
+speaker	Bronya
+bg	009/055_1280x720
+msg	301840	It’s not over... It will not end before I kill all of them...	没有结束…再杀光它们之前都不会结束……	まだ終わっていません……あいつらを殺し尽くすまでは終わりません……。	NONE
+msg	301841	Order the troops to return to Nagazora City. I'll make them pay in blood for what they did to Seele!	命令队伍返回长空市，希儿的仇我一定要它们血债血还！	部隊に命令して長空市へ戻ってください。ゼーレの仇は必ず血で贖ってもらいます！	NONE
+speaker	Emesa
+msg	301842	Calm down! You're just walking towards your own grave if you to back right now!	你冷静一下！现在这个情况回去只是送死而已！	落ち着け！今の状況で戻っても死にに行くようなもんだぞ！	NONE
+speaker	Bronya
+msg	301843	Are you going to get in my way too.... Emesa. Don't tell me you don't want to avenge Seele!	你也要妨碍我么……埃米沙。你难道不想为希儿报仇么！	あなたもブローニャを邪魔するのですか……エミザ。まさか、ゼーレの仇を討ちたくないのですか！？	NONE
+speaker	Emesa
+msg	301844	I...	我……	私は……。	NONE
+speaker	Himeko
+msg	301845	Enough! Bronya, it's my fault Seele died. If you have a problem, then you can come at me!	够了！布洛妮娅，希儿的死是我的责任，你有什么怨气就朝我来吧！	もういいわ！ブローニャ、ゼーレの死は私の責任よ。恨み言は私に言いなさい！	NONE
+speaker	Bronya
+msg	301846	It’s not your fault... It was me... I was too weak, that’s why Seele died.	不是你的错…都是因为我…是我太软弱才会害死希儿。	姫子のせいではありません……全てブローニャが……ブローニャが弱かったからゼーレを死なせてしまったんです。	NONE
+msg	301847	I will not run away anymore... Go back to Nagazora with me and keep fighting. This time, I will lead the Fire Moths to defeat the Herrscher!	我已经不会再逃避了…和我一起回到长空市继续战斗吧，这次我一定会指挥逐火之蛾战胜律者！	ブローニャはもう逃げたりしません……一緒に長空市に戻って戦い続けましょう。今度こそ火を追う蛾を指揮して律者に勝ってみせます！必ず。	NONE
+speaker	Himeko
+msg	301848	......	……	……。	NONE
+msg	301849	No, you are just desperate, immersed in your own grief and self-loathing. The only thing you'd do is lead us all to destruction.	不，你只是沉浸在自己的悲伤中自暴自弃而已，现在的你只会带着大家走向灭亡。	いいえ、あなたは自分の悲しみに浸って自暴自棄になっているだけよ。今のあなたは、みんなを滅亡に向かわせるだけだわ。	NONE
+speaker	Bronya
+msg	301850	Doom... Those comrades you killed, they were also led to doom by me... It is the same result everywhere...	灭亡么…那些被你杀掉的同伴也是在我的带领下走向灭亡的吧，反正到最后都是同样的结果……	滅亡ですか……では、姫子に殺された仲間もブローニャが滅亡に導いたのでしょう……結局最後は同じなんです……。	NONE
+speaker	Himeko
+msg	301851	You're trying to send everyone to their deaths? Seele died so everyone could live on. If you do that, Seele's death will be meaningless.	你是想让大家去送死么？希儿的死是为了大家能继续活着，你这么做只会让她的牺牲变得毫无意义。	あなた、みんなを死に追いやるつもり？みんなに生き続けてもらうためにゼーレは死んだのよ。あなたがそんなことしたら、ゼーレの死が無意味になっちゃうじゃないの。	NONE
+speaker	Bronya
+msg	301852	Himeko, you are always so calm... I get it, everyone that has survived was saved by you. I cannot decide for them. But Seele saved my life, so I must revenge for her!	姬子，你总是这么冷静呢…我明白了，现在活着的人都是你救下了的，她们怎么选择我无法决定，但是我的生命是希儿救下的，所以希儿的仇我一定会报！	姫子はいつも冷静ですね……わかりました。今生きている人はあなたが救った人たちです、無理強いはできません。ですが、ブローニャの命はゼーレに救われました。ゼーレの仇を討つ理由がブローニャにはあるのです！	NONE
+speaker	Emesa
+bg	009/062_1280x720
+portraits	55
+emote	55	0
+msg	301853	Bronya, where are you going? Himeko, stop her! It's too dangerous to go to Nagazora City right now! Think about it, Bronya! You can't achieve anything going there alone!	布洛妮娅！你要去哪！姬子！你阻止她啊！现在回长空市太危险了！布洛妮娅你也好好想想！就算你要回去一个人也是不可能的！	ブローニャ！どこに行くんだ！姫子！止めてくれ！今、長空市に戻るのは危険すぎる！ブローニャもよく考えるんだ！戻っても1人じゃ何もできない！	NONE
+speaker	Bronya
+portraits	55	60
+emote	55	0
+emote	60	7
+msg	301854	Out of my way.	让开。	どいてください。	NONE
+speaker	Emesa
+portraits	55	60
+emote	55	3
+emote	60	7
+msg	301855	Bronya!	布洛妮娅！	ブローニャ！	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	7
+msg	301856	Let her go. She will only become a burden if she stays.	让她走吧，现在留下来也只会拖后腿。	行かせてあげて。今、引き留めても、後々この艦隊内で足を引っ張る存在になるだけよ。	NONE
+speaker	Emesa
+portraits	55	60
+emote	55	4
+emote	60	7
+msg	301857	Hey!	喂！	ちょっと！	NONE
+speaker	Bronya
+portraits	55	60
+emote	55	4
+emote	60	7
+msg	301858	Right, those who follow me are always unfortunate... From now on, I am no longer a member of the Fire Moths. Himeko... You can continue to lead them forward in the darkness.	没错，大家跟着我只会遭遇不幸罢了…从现在开始，我已经不是逐火之蛾的成员了。姬子…你就带着他们在黑暗中继续前进吧。	そうです。みんながブローニャについてきたのは不幸なことでしかないんです……今からブローニャはもう火を追う蛾のメンバーではありません。姫子……みんなを連れて暗闇の中を進み続けてください。	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	7
+msg	301859	......	……	……。	NONE
+msg	301860	As you like.	随你的便。	勝手にすれば。	NONE

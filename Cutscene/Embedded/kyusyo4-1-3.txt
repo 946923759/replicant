@@ -1,0 +1,19 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Himeko	Teammate
+msgbox_close	instant
+music	Grandma
+speaker	
+bg	009/060_1280x720
+popup	640	200
+msg	301738	"Warning! Power system has stopped running. Please repair immediately! Please repair immediately!"	「警告！动力系统已停止运行，请立即修复！请立即修复！」	「警告！動力システム作動停止。直ちに修復してください！直ちに修復してください！」	NONE
+popup	false
+portraits	61
+emote	61	1
+/Himeko	301739	Damn it! Every time I try to have a drink, something happens... Gimme a break already...	啧！每次喝到尽兴的时候就有状况发生…就不能给我消停一会么……	もう！いつも楽しく飲んでいるときに限ってトラブルが起こるんだから……少しは休ませてよね……。	NONE
+portraits	61	56
+/Teammate	301740	Captain Himeko! The power system of Hyperion is completely down. We cannot move anymore!	报告！姬子队长，休伯利安号的动力系统完全瘫痪，战舰已经无法前进了！	報告します！姫子隊長、ハイペリオン号の動力システムが完全に動作停止、戦艦はこれ以上進めません！	NONE
+/Himeko	301741	I know, the broadcast already told everyone... *Burp*!	我知道了，刚才的广播已经说过了……嗝！	分かってるわよ。さっきの放送で言っていたじゃない……ゲップ！	NONE
+/Teammate	301742	Uh... The Houkai creatures around the battleship have started attacking us. Please give us orders...	那个…现在战舰周围的崩坏生物正在朝我们进攻，请求指示……	あの……現在戦艦の周りにいる崩壊生物がこちらに向かって攻めてきます。指示を……。	NONE
+/Himeko	301743	What order do you need! Attack back now!	那还用得着指示么！给我开始反击！	そんなの指示を待つまでもないでしょう！反撃しなさい！	NONE
+/Teammate	301744	Okay... Roger that!	是…是！	は……はい！	NONE
+/Himeko	301745	Sigh~ Let’s go! The break is over. Time to get back to the familiar hell.	呼~走吧！中场休息结束了，是时候该回到熟悉的地狱了。	ふぅ～、行くわよ！中休みはおしまい。おなじみの地獄へ戻る時間よ。	NONE

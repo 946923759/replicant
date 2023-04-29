@@ -1,0 +1,147 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Kiana
+portraits	101
+emote	101	3
+msg	250034	<i>Hah, hah-</i> There's no end to them. I hadn't expected the zombies to come swarming to the Honkai source here. It will be a bit of a problem if this keeps going.	呼~呼~真是没完没了！没想到周边的死士都被这里的崩坏源吸引过来了！再这样下去有点不妙呢。	ハァ、ハァ……キリがない！学園中のゾンビが、崩壊源に吸い寄せられてるみたい！ゴホッ——このままじゃ、ちょっとまずいかも。	Huh- huh-Não há fim para eles. Eu não esperava que os zumbis viessem aos montes  para a fonte de Honkai aqui. Será um pequeno problema se isto continuar.
+emote	101	0
+msg	250035	Almost out of ammo, almost out of time... I have to find the target, fast.	子弹已经快消耗完了，时间也不多了，必须立刻找到目标才行……	弾も切れちゃったし……あちこち痛む……早くターゲットを見つけないと……。	Quase sem munições, quase sem tempo... Tenho que encontrar o alvo, rápido.
+speaker	
+msg	250036	*Weird sound*	沙沙沙！	ガサッ——	NONE
+speaker	Kiana
+emote	101	3
+msg	250037	Who's there?!	谁！？	誰……ッ！？	Que-?!
+emote	101	2
+msg	250038	That figure doesn't seem like a zombie... could it be?! I finally found you! Wait!	那个人影看起来不像是死士……难道是！？终于到了你了！给我站住！	今の……ゾンビじゃない！まさかっ！？やっと見つけた、待ちなさい！	Isso não parecia um zumbi... poderia ser?! Finalmente o encontrei! Espere!
+speaker	Mei
+portraits	101	201
+
+msg	250039	……	……	……。	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250040	Eh?! This is... a student? I didn't think there were still people who hadn't been infected by the Honkai...	呃！？这是…学生么？没想到居然还有没被崩坏感染的人类…	って、学生？何だ、人違いか……もう紛らわしいな！でも、崩壊に感染してない人がまだ残ってるなんて……。	Eh?! Isto é... uma estudante? Não pensei que ainda houvesse pessoas que não tivessem sido infectadas pelo Honkai...
+msg	250041	Your uniform, it's the one used for senior students. What's your name?	看你的校服好像是高年级的学生，你叫什么名字？	その制服、ひとつ上の先輩だよね。名前は？	Seu uniforme, é o utilizado para os alunos do terceiro ano. Qual é seu nome?
+speaker	Mei
+
+
+msg	250042	……	……	……。	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250043	Hey, can you hear me? Could you like maybe... answer?	喂！你是哑巴么？给点反应好不好？	ねぇ！聞いてる？頭、溶けちゃってんの！？何か言ってよ。	Ei, você pode me ouvir? Você poderia talvez... responder?
+speaker	Mei
+
+
+msg	250044	……	……	……。	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250045	Ah... Maybe you're too scared to talk? That's okay... I can't help you right now, so you'd better find a place to hide somewhere.	哎~看样子一定是被吓坏了吧…不管了，我现在可是自身难保，你赶紧找个隐蔽的角落躲起来吧。	えっと～、もしかして恐怖で声も出ないとか？まっ、無理もないか……それより、私にあなたを守る余裕まではないからさ、落ち着くまでどっかに隠れてた方がいいよ。	Ah... Você deve estar muito assustado para falar. Tanto faz... Tenho minhas mãos ocupadas, então vá você mesmo procurar algum  lugar para se esconder.
+speaker	Zombies
+portraits	101
+emote	101	0
+msg	250046	<i>Graaaaah!!</i>	吼吼吼……	……グォオオオッ！	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250047	Gee, it's not safe here anymore! If you've lost the will to survive, then nobody can save you. Even if I take you with me, you'll just slow me down. Goodbye, don't blame me.	啧！这里已经不安全了…你如果自己放弃生存希望的话谁也救不了你，即使带上你也是拖后腿…再见，你可不要怪我哦。	くっ！早く離れないとまずそうだね……聞こえてるでしょ？あなたも逃げなさい！それじゃ……じゃあね。	Nossa, aqui não é mais seguro! Se você perdeu a vontade de sobreviver, então ninguém pode salvá-la. Mesmo se eu o levar comigo, você só me atrasará. Adeus, não me culpe.
+speaker	Mei
+
+
+msg	250048	……	……	……。	NONE
+speaker	Zombies
+
+
+msg	250049	<i>Blaa---ah--- Whoo---oorgh---</i>	吼吼吼……	ィギギギ……ア、アァア……ッ！	NONE
+speaker	Kiana
+portraits	101
+emote	101	1
+msg	250050	Ugh! Just my luck. Come with me!	哎！算我倒霉！跟我来吧！	あー、もうっ！！何で逃げようとしないのよ！ほらっ、こっち！	Ugh! Apenas a minha sorte. Venha comigo!
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250051	<i>Huf...huf...</i> Seems like escorting a normal person whilst fighting zombies is a bit much... Hey, you okay?	呼呼~果然带着一般人迎击死士还是太勉强了么…喂！你没事吧？	ハァ、ハァ……さすがに人を守りながらはキツいな。ねぇ、大丈夫？	Aff...aff… Parece que escoltar uma pessoa normal enquanto luta contra zumbis é um pouco demais… Ei, você está bem?
+speaker	Mei
+
+
+msg	250052	……	……	……。	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250053	<i> Tsk </i> I'm such an idiot. Why did I help this girl? She doesn't even say a word of thanks. And I've been busting my butt off!	啧…我真是笨蛋，为什么要救这个家伙，连一声感谢都不会说，亏我还废了这么大力气！	はぁ……まだ、だんまりなの？何でこんなヤツ助けちゃったんだろ。ありがとうの一言くらいあってもいいじゃない。	Aff... Eu sou uma idiota. Por que estou tentando salvar esta garota? Que nem mesmo pode, dizer sequer um obrigado. E eu tenho me esforçado muito!
+msg	250054	Just stay here. This is the old school building. The zombies won't find it for a while. I'm not staying here to help you anymore. You'll have to fend for yourself.	你就在这里好好待着吧，这里是旧校舍，一时半会应该不会被死士发现。这次我可不会留下来帮你了，接下来你就自求多福吧~	ここはひと気のない旧校舎だから、ゾンビたちにもそう簡単に見つからないはずだよ。あなたはここで一人残って頑張ってよね。私はもう知らないから。	Basta ficar aqui. Este é o prédio da velha escola. Os zumbis não vão encontrá-lo por um tempo. Eu não vou mais ficar aqui para ajudá-la. Você terá que cuidar de si mesmo.
+speaker	Mei
+
+
+msg	250055	........Why did you help me?	……为什么，要救我？	……どうして、助けたの？	........ Por que você me salvou?
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250056	Eh? You finally said something?	呃？终于说话了么。	うわっ！喋った！？	"Eh? Você finalmente disse algo?
+speaker	Mei
+
+
+msg	250057	A person like me should just die... Maybe even being born was a mistake...	像我这样人就应该死掉算了…或许连出生都是个错误……	私みたいな人間は死ねばよかったのよ……そもそも、生まれたのが間違いだった……。	Uma pessoa como eu deveria simplesmente morrer… Talvez até mesmo nascer foi um erro…
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250058	Ha? What are you on about? How could someone even say that about herself?	哈？你在说什么啊，哪有人会这么说自己的！	はぁ？何、言ってんのよ！生まれたのが間違いなんて、そんな人間いるわけないじゃない！自分をそんな風に言っちゃダメだよ！	Hum? Sobre o que você está falando? Como alguém poderia dizer isso sobre si mesmo?
+speaker	Mei
+
+
+msg	250059	Just leave me be. You can stop pretending to care. You just approached me because of the name 'Raiden Mei'.	不要再管我了…把你的虚情假意收起来吧，反正你也是为了雷电芽衣这个名字才假惺惺地靠近我的吧……	もう、放っといて。見せかけの優しさなんていらないの。どうせあなたも、私が雷電芽衣だから近寄って来たのでしょう？	Deixe-me em paz. Você pode parar de fingir que se importa. Você acabou de se aproximar de mim por causa do nome Raiden Mei.
+speaker	Kiana
+portraits	101
+emote	101	2
+msg	250060	'Raiden Mei'? I think I've heard that name before... Isn't she a celebrity in Senba Academy? The daughter of the president of ME Company! Is that you?	雷电芽衣？好像听说过这个名字…据说是千羽学园里的名人呢，那个什么ME社的千金，难道就是你么？	雷電、芽衣？どっかで聞いたことあるような……確か千羽学園の有名人だよね？あのME社だか何だかの社長令嬢だとか……えっ、あなたがその雷電芽衣なの？	Raiden Mei? Penso que já ouvi esse nome antes… Ela não é uma celebridade na Academia Senba? A filha do presidente da Empresa ME! É você?
+speaker	Mei
+
+
+msg	250061	……	……	……。	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250062	Oh... The same rich girl who is said to have rejected 12 boys in one day and earned the nickname 'Thunder Queen'. Yet you're looking so ashamed and dejected. What a rare sight.	嚯嚯~传言曾经在一天之内拒绝了12名男生，绰号“雷电女王”的大小姐现在居然这么一副灰头土脸的样子，还真是难得呢~	へぇ～、そっかそっか～。1日に12人の相手から告白されて、その全てを断ったっていう伝説を持つ「雷電女王様」でしたか。それがこんな姿になるなんてね、ふ～ん。	Oh... A mesma garota rica que me disseram ter rejeitado 12 garotos  em um dia e ganhou o apelido de 'Rainha do Trovão'. No entanto, você está olhando tão abatida e derrotada. Que visão rara.
+speaker	Mei
+
+
+msg	250063	Are you just going to mock me too? Sure enough, everyone's rotten on the inside.	你也是来嘲笑我的么…果然每个人都是这种丑恶的嘴脸。	あなたも私を嘲笑うのね……どうして、人は皆そんなに醜いのかしら。	Você vai zombar de mim também? Você é como todo mundo, uma escória absoluta.
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250064	Don't be mistaken, I'm not here to laugh at you. I just mean to say that instead of blaming other people or being angry at the heavens, it's better to find ways to change yourself instead.	不要误会了，我可不是来嘲笑你的。我只是想告诉你，与其在这里怨人怨天还不如自己想办法改变。	ううん、笑ってなんかないわよ。そんな風に愚痴をこぼしてるより、現状を変える方法を考えた方がいいって言おうとしたの、私は。	Não se engane, eu não estou aqui para rir de você. Só quero dizer que ao invés de reclamar de outras pessoas, por que não mudar as coisas você mesmo?
+speaker	Mei
+
+
+msg	250065	Change? That's right... It's not me who is the problem, it's this sickening world! This deceitful world should be destroyed!	改变么？没错…错的不是我，而是这个可恶的世界！这种虚伪的世界就应该被毁灭！	変える……？そう……そうよ、悪いのは私じゃないわ。悪いのは、この世界ッ！偽りに満ちたこの世界が変わるべき……滅びるべきなのよ！	Mudar? Isso mesmo… Eu não sou o problema, é este maldito mundo! Este mundo está cheio de mentiras e deve ser destruído!
+speaker	Kiana
+portraits	101
+emote	101	2
+msg	250066	Uh, that doesn't seem right... Hello?! What happened to you?!	唔，感觉不对劲，喂！你到底怎么了！？	あれっ……急にどうしちゃったの！？	Uh, Isso não parece certo… Ei?! O que aconteceu com você?!
+speaker	
+msg	250067	Bang!!!	轰隆隆隆！！！	……ゴウッ！ゴロゴォオオオオオ——ッ！！	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250068	Huh? What is going on with this weather? Could it be some sort of anomaly caused by the Honkai outbreak?	呃！这个天气到底是怎么回事？难道是崩坏引起的异变么……	えっ、何っ！？空が！ひどい雷……これも崩壊の影響！？	Hum? O que está acontecendo com o clima? Pode ser algum tipo de anomalia causada pelo surto de Honkai?
+speaker	
+msg	250069	*Phone rings*	嗡嗡嗡…	ピピッ——ピピッ——	NONE
+speaker	Kiana
+portraits	101
+emote	101	2
+msg	250070	Gee, what a time for the phone to react...Wha-! High Honkai energy alert... Distance 0 meters?	啧，连手机也在这种时候…唔！探测到崩坏能警报…距离0？	もうっ、今度は何の通知よ！……また崩壊エネルギー警報！？距離は——0m！？	Nossa, que hora é essa para o telefone reagir...O que-! alerta grande energia Honkai... Distância 0 metros?
+speaker	
+msg	250071	*Beep*	滋滋滋！	バチ——ッ！	Trrrim trrrim trrrim~
+speaker	Kiana
+portraits	101
+emote	101	2
+msg	250072	Huh? The signal cut off? Why does this crappy phone always break down in these critical moments! Isn't 0 meters away right next to me? There's nobody here except for a depressed rich girl!	咦？信号怎么中断了？这破手机每当关键时刻就出问题！距离0不就是在我身边嘛！这里除了一个死气沉沉的千金大小姐就没有别人了啊！	あ、あれ？信号が途切れた！？何でこんな大事な時に限って壊れるの、このスマホは！距離0mって何さ！傍にいるのは、このヘコんでるお嬢様だけなんだけどっ！？	Hum? Sinal cortado? Porque este telefone de merda sempre se desliga nestes momentos críticos! Não está a 0 metros de distância bem ao meu lado? Não há ninguém aqui, exceto uma garota rica e deprimida!
+speaker	Mei
+
+
+msg	250073	If this deceitful world is destroyed... All can return to how it was before... My father... everyone... will surely return to me.	只要毁灭这个虚伪的世界…一切都可以回到原来的样子……父亲大人，还有大家，一定还会回到我的身边！	偽りに満ちた世界さえ滅べば、全ては元に戻る……お父様もみんなも、全て私のところに帰ってくる！	Se este mundo falso for destruído... Tudo voltará a ser como era antes... Meu pai... todos... certamente voltarão para mim.
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250074	Hey, where are you going! This is the worst timing! Wait for me!	喂！你要去哪里啊！偏偏是这个时候！给我等下！	ちょっと、どこ行く気！？こんな時にふらつかないでよ！待ちなさいって！	Ei, onde você está indo! Este é o pior momento! Espere por mim!

@@ -807,6 +807,7 @@ func _ready():
 	$OptionsScreen.visible=false
 	$Choices.visible=false
 	$FSMode_ActorFrame.visible=false
+	$AutoModeIndicator.visible=false
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
 	$OptionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
@@ -912,6 +913,7 @@ func end_cutscene_2():
 # wasn't coupled together, instead vntext:advance() would be called and if it returned
 # false it meant there was no more text.
 var manualTriggerForward=false
+var autoModeActive:bool=false
 
 var isHistoryBeingShown=false
 var isOptionsScreenOpen=false
@@ -920,6 +922,10 @@ var isWaitingForChoice=false
 
 #limit skip speed
 var frameLimiter:float=0.0
+
+func disableAutoMode():
+	autoModeActive=false
+	$AutoModeIndicator.stop()
 
 func _process(delta):
 	
@@ -932,9 +938,8 @@ func _process(delta):
 		#	print("CutsceneMain: ui_select!")
 		return
 		
-	if Input.is_action_just_pressed("ui_pause"):
-		end_cutscene()
-	elif Input.is_action_just_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_pause") or Input.is_action_just_pressed("ui_cancel"):
+		disableAutoMode()
 		$OptionsScreen.visible=true
 		$OptionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
@@ -970,14 +975,24 @@ func _process(delta):
 #		print("ManualTriggerForward")
 	if text.visible_characters >= text.text.length(): #If finished displaying characters
 		if ChoiceTable.size()>0:
+			frameLimiter=0
+			manualTriggerForward=false
 			print("Set choices: "+String(ChoiceTable))
 			$Choices.setChoices(ChoiceTable)
 			$Choices.OnCommand()
 			isWaitingForChoice=true
 		elif forward:
+			manualTriggerForward=false
 			print("advancing")
 			if curPos >= message.size() or !advance_text():
 				end_cutscene()
+		elif autoModeActive:
+			frameLimiter+=delta
+			if frameLimiter>2:
+				manualTriggerForward=true
+				frameLimiter=0
+			elif OS.is_debug_build():
+				$AutoModeIndicator/Label.text = String(frameLimiter)
 	else: #Skip to finish
 		if forward:
 			tw.remove_all() #Why doesn't godot have finishtweening() wtf
@@ -998,7 +1013,7 @@ func _process(delta):
 				tw.playback_speed=2.0
 			else:
 				tw.playback_speed=1.0
-	manualTriggerForward=false
+		manualTriggerForward=false
 	
 #Fucking piece of shit game engine
 #Refer to https://docs.godotengine.org/en/stable/tutorials/scripting/overridable_functions.html?highlight=_unhandled_input#overridable-functions
@@ -1009,9 +1024,13 @@ func _unhandled_input(event):
 			
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
 	if Input.is_action_just_pressed("ui_select"):
-		manualTriggerForward=true
+		if autoModeActive:
+			disableAutoMode()
+		else:
+			manualTriggerForward=true
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_history"):
+		disableAutoMode()
 		if isHistoryBeingShown:
 			print("Hiding history!")
 			tween_out_history()
@@ -1048,6 +1067,12 @@ func _input(event):
 			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 			isOptionsScreenOpen=true
 			get_tree().set_input_as_handled()
+	elif Input.is_action_just_pressed("vn_auto"):
+		if autoModeActive:
+			disableAutoMode()
+		else:
+			autoModeActive=true
+			$AutoModeIndicator.play()
 	#elif isHistoryBeingShown:
 	#	historyActor.input(event)
 		#else:
@@ -1057,6 +1082,7 @@ func _input(event):
 #TODO: Ignore if cutscene playing
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOptionsScreenOpen==false:
+		disableAutoMode()
 		$OptionsScreen.visible=true
 		$OptionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
@@ -1074,7 +1100,10 @@ func _on_dim_gui_input(event):
 		event is InputEventScreenTouch and event.is_pressed()
 	):
 		print("clicked")
-		manualTriggerForward=true
+		if autoModeActive:
+			disableAutoMode()
+		else:
+			manualTriggerForward=true
 
 func _on_Choices_selected_choice(selection):
 	choiceResult=$Choices.selection+1

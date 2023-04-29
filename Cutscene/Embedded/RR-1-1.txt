@@ -1,12 +1,12 @@
 /???	[i]The night before the Honkai arrived, I couldn't fall asleep...[/i]
-/	At 14:07:47, the Honkai outbreak took effect at Senba Academy. Estimated odds of survival are 0.000000001%
+/	At 14:07:47, the Honkai outbreak took effect at Senba Academy. Estimated odds of survival are 0.000000001%.
 /	[i]Tuuu, tuuu...[/i] The number you are dialing is currently not available. Please leave a message after the beep.
 bg	015/026_1280x720
 portraits	101
 match_names	Kiana	_DIM_ALL_WHEN_EMPTY
 music	BGM_011_LIGHTING - Lighting
 /Kiana	Hey. It's me, Kiana. 
-msg	/setDispChr[21]Hey. It's me, Kiana. I am currently at Senba Academy in Nagazora, in the Far East. I know you must be going after this Honkai outbreak. Just know that I will find you, no matter where you go!
+extend	I am currently at Senba Academy in Nagazora, in the Far East. I know you must be going after this Honkai outbreak. Just know that I will find you, no matter where you go!
 /	[i]Beep![/i]
 /Kiana	(Huff...) I've talked enough. I didn't expect this outbreak to happen so suddenly. 
 msg	According to my observations, it should be a small outbreak. Let's assume the range covers the entire Senba Academy grounds.

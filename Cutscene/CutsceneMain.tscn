@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
@@ -15,8 +15,69 @@
 [ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=13]
 [ext_resource path="res://Fonts/TextFont_Italic.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Cutscene/CutsceneDebugger.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Ext/arrow_small.png" type="Texture" id=16]
+[ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=17]
 
 [sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Control
+
+func play():
+	$AnimationPlayer.play(\"New Anim\")
+	self.visible=true
+
+func stop():
+	$AnimationPlayer.stop()
+	self.visible=false
+"
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 17 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "New Anim"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TextureRect2:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 2, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TextureRect3:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 2, 3, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
+}
 
 [node name="CutscenePlayer" type="Control"]
 pause_mode = 2
@@ -328,6 +389,54 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
+
+[node name="AutoModeIndicator" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -127.659
+margin_top = 3.93091
+margin_right = -87.6589
+margin_bottom = 43.9309
+script = SubResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="AutoModeIndicator"]
+margin_right = 128.0
+margin_bottom = 128.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="TextureRect2" type="TextureRect" parent="AutoModeIndicator"]
+margin_left = 32.0
+margin_right = 160.0
+margin_bottom = 128.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="TextureRect3" type="TextureRect" parent="AutoModeIndicator"]
+modulate = Color( 1, 1, 1, 0.977477 )
+margin_left = 64.0
+margin_right = 192.0
+margin_bottom = 128.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="Label" type="Label" parent="AutoModeIndicator"]
+margin_left = -240.0
+margin_top = -64.0
+margin_right = 9.0
+rect_min_size = Vector2( 0, 64 )
+custom_fonts/font = SubResource( 3 )
+text = "Auto"
+align = 2
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AutoModeIndicator"]
+"anims/New Anim" = SubResource( 4 )
 
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]

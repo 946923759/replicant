@@ -88,7 +88,7 @@ rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 4 )
 script = ExtResource( 14 )
 
-[node name="RR-1-2" type="TextureRect" parent="ActorFrame/Chapter1" index="2"]
+[node name="RR-2-1" type="TextureRect" parent="ActorFrame/Chapter1" index="2"]
 margin_left = 358.556
 margin_top = 635.438
 margin_right = 549.556
@@ -97,7 +97,7 @@ rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 7 )
 script = ExtResource( 14 )
 
-[node name="RR-1-3" type="TextureRect" parent="ActorFrame/Chapter1" index="3"]
+[node name="RR-3-1" type="TextureRect" parent="ActorFrame/Chapter1" index="3"]
 margin_left = 574.502
 margin_top = 466.743
 margin_right = 765.502

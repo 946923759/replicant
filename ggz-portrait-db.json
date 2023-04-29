@@ -348,7 +348,12 @@
 			"roguelike/073.png"
 		],
 		"101": [
-			"kiana/101.png"
+			"kiana/101.png",
+			"kiana/101_2.png",
+			"kiana/101_3.png",
+			"kiana/101_4.png",
+			"kiana/108.png",
+			"kiana/109.png"
 		],
 		"102": [
 			"kiana/102.png"
@@ -456,7 +461,9 @@
 			"kiana/135.png"
 		],
 		"201": [
-			"mei/201.png"
+			"mei/201.png",
+			"mei/201_2.png",
+			"mei/201_3.png"
 		],
 		"202": [
 			"mei/202.png"

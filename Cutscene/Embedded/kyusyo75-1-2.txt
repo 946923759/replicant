@@ -13,7 +13,7 @@ msg	302757	But even if you push the limit of your humanity, this is the end for 
 speaker	
 portraits	107
 emote	107	0
-msg	302758	<i>Boom!!!</i>	砰！！！	パンッ！！！	NONE
+msg	302758	[i]Boom!!![/i]	砰！！！	パンッ！！！	NONE
 speaker	Kyuushou
 portraits	58	107
 emote	58	3

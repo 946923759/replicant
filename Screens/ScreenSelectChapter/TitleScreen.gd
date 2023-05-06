@@ -16,6 +16,8 @@ var font = preload("res://ChapterListingFont.tres")
 var MSelObj = load("res://Screens/ScreenSelectChapter/MSelObj.tscn")
 
 func _ready():
+	Globals.wasUsingAutoMode=false
+	
 	var c = chapterActorFrame
 	c.get_child(0).visible=false #Hide "Test" label
 	for chapterName in database.keys():

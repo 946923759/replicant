@@ -31,7 +31,11 @@ var options = {
 	"chapterSelect":{
 		type="none",
 		hasFunc=true
-	}
+	},
+	#"state":{
+	#	type='none',
+	#	hasFunc=true
+	#}
 }
 
 var textOptionsSubmenu = {
@@ -60,6 +64,12 @@ func action_chapterSelect():
 		Globals.change_screen(get_tree(),root.PrevScreen)
 	else:
 		Globals.change_screen(get_tree(),"ScreenSelectChapter")
+
+func action_state():
+	var root = get_parent()
+	if root:
+		Globals.playerData['state']=root.dump_state()
+		get_tree().change_scene("res://Screens/TestSaveLoad.tscn")
 
 func action_continue():
 	OffCommand()

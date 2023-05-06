@@ -35,6 +35,12 @@ func get_portrait_at_idx(idx):
 			return p
 	return null
 
+func get_all_portrait_idx() -> Dictionary:
+	var tmp = {}
+	for p in portraits:
+		if p.is_active:
+			tmp[p.lastLoaded]=[p.idx,false,p.offset,p.cur_expression]
+	return tmp
 
 #Load texture but don't display
 func preload_portraits(arr:Array):
@@ -83,13 +89,14 @@ func set_portrait(name: String, y_offset: float = 0, radioMask: bool = false)->N
 func update_portrait_positions_wip(relation:Dictionary,numPortraits:int=-1):
 	#Structure of relation is like
 	# {
-	#   "sprName": [pos,isMasked,offset],
-	#   "sprName2": [pos,isMasked,offset],
+	#   "sprName": [pos,isMasked,offset,cur_expression=0],
+	#   "sprName2": [pos,isMasked,offset,cur_expression=0],
 	#   "spr3" : null #if null, this portrait should be removed
 	# }
 	#Optional argument since it gets calculated in advance in CutsceneMain
 	#and doesn't need to be calculated again.
 	if numPortraits < 0:
+		numPortraits=0
 		for name in relation:
 			if typeof(relation[name])==TYPE_ARRAY:
 				numPortraits+=1
@@ -111,6 +118,8 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits:int=-1):
 			#print(pStruct)
 			lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
 			print("Set portrait "+name)
+			if pStruct.size() > 3:
+				lastUsed.cur_expression = pStruct[3]
 		else: #If null, portrait is not present anymore and should be hidden
 			#self.portraits[name].actor:playcommand("Stop")
 			var lastUsed = get_portrait_from_sprite(name)

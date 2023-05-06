@@ -2,7 +2,7 @@
 speaker	Kiana
 portraits	101
 emote	101	3
-msg	250034	<i>Hah, hah-</i> There's no end to them. I hadn't expected the zombies to come swarming to the Honkai source here. It will be a bit of a problem if this keeps going.	呼~呼~真是没完没了！没想到周边的死士都被这里的崩坏源吸引过来了！再这样下去有点不妙呢。	ハァ、ハァ……キリがない！学園中のゾンビが、崩壊源に吸い寄せられてるみたい！ゴホッ——このままじゃ、ちょっとまずいかも。	Huh- huh-Não há fim para eles. Eu não esperava que os zumbis viessem aos montes  para a fonte de Honkai aqui. Será um pequeno problema se isto continuar.
+msg	250034	[i]Hah, hah-[/i] There's no end to them. I hadn't expected the zombies to come swarming to the Honkai source here. It will be a bit of a problem if this keeps going.	呼~呼~真是没完没了！没想到周边的死士都被这里的崩坏源吸引过来了！再这样下去有点不妙呢。	ハァ、ハァ……キリがない！学園中のゾンビが、崩壊源に吸い寄せられてるみたい！ゴホッ——このままじゃ、ちょっとまずいかも。	Huh- huh-Não há fim para eles. Eu não esperava que os zumbis viessem aos montes  para a fonte de Honkai aqui. Será um pequeno problema se isto continuar.
 emote	101	0
 msg	250035	Almost out of ammo, almost out of time... I have to find the target, fast.	子弹已经快消耗完了，时间也不多了，必须立刻找到目标才行……	弾も切れちゃったし……あちこち痛む……早くターゲットを見つけないと……。	Quase sem munições, quase sem tempo... Tenho que encontrar o alvo, rápido.
 speaker	
@@ -40,7 +40,7 @@ msg	250045	Ah... Maybe you're too scared to talk? That's okay... I can't help yo
 speaker	Zombies
 portraits	101
 emote	101	0
-msg	250046	<i>Graaaaah!!</i>	吼吼吼……	……グォオオオッ！	NONE
+msg	250046	[i]Graaaaah!![/i]	吼吼吼……	……グォオオオッ！	NONE
 speaker	Kiana
 portraits	101
 emote	101	0
@@ -52,7 +52,7 @@ msg	250048	……	……	……。	NONE
 speaker	Zombies
 
 
-msg	250049	<i>Blaa---ah--- Whoo---oorgh---</i>	吼吼吼……	ィギギギ……ア、アァア……ッ！	NONE
+msg	250049	[i]Blaa---ah--- Whoo---oorgh---[/i]	吼吼吼……	ィギギギ……ア、アァア……ッ！	NONE
 speaker	Kiana
 portraits	101
 emote	101	1
@@ -61,7 +61,7 @@ msg	250050	Ugh! Just my luck. Come with me!	哎！算我倒霉！跟我来吧！
 speaker	Kiana
 portraits	101
 emote	101	0
-msg	250051	<i>Huf...huf...</i> Seems like escorting a normal person whilst fighting zombies is a bit much... Hey, you okay?	呼呼~果然带着一般人迎击死士还是太勉强了么…喂！你没事吧？	ハァ、ハァ……さすがに人を守りながらはキツいな。ねぇ、大丈夫？	Aff...aff… Parece que escoltar uma pessoa normal enquanto luta contra zumbis é um pouco demais… Ei, você está bem?
+msg	250051	[i]Huf...huf...[/i] Seems like escorting a normal person whilst fighting zombies is a bit much... Hey, you okay?	呼呼~果然带着一般人迎击死士还是太勉强了么…喂！你没事吧？	ハァ、ハァ……さすがに人を守りながらはキツいな。ねぇ、大丈夫？	Aff...aff… Parece que escoltar uma pessoa normal enquanto luta contra zumbis é um pouco demais… Ei, você está bem?
 speaker	Mei
 
 
@@ -69,7 +69,7 @@ msg	250052	……	……	……。	NONE
 speaker	Kiana
 portraits	101
 emote	101	0
-msg	250053	<i> Tsk </i> I'm such an idiot. Why did I help this girl? She doesn't even say a word of thanks. And I've been busting my butt off!	啧…我真是笨蛋，为什么要救这个家伙，连一声感谢都不会说，亏我还废了这么大力气！	はぁ……まだ、だんまりなの？何でこんなヤツ助けちゃったんだろ。ありがとうの一言くらいあってもいいじゃない。	Aff... Eu sou uma idiota. Por que estou tentando salvar esta garota? Que nem mesmo pode, dizer sequer um obrigado. E eu tenho me esforçado muito!
+msg	250053	[i] Tsk [/i] I'm such an idiot. Why did I help this girl? She doesn't even say a word of thanks. And I've been busting my butt off!	啧…我真是笨蛋，为什么要救这个家伙，连一声感谢都不会说，亏我还废了这么大力气！	はぁ……まだ、だんまりなの？何でこんなヤツ助けちゃったんだろ。ありがとうの一言くらいあってもいいじゃない。	Aff... Eu sou uma idiota. Por que estou tentando salvar esta garota? Que nem mesmo pode, dizer sequer um obrigado. E eu tenho me esforçado muito!
 msg	250054	Just stay here. This is the old school building. The zombies won't find it for a while. I'm not staying here to help you anymore. You'll have to fend for yourself.	你就在这里好好待着吧，这里是旧校舍，一时半会应该不会被死士发现。这次我可不会留下来帮你了，接下来你就自求多福吧~	ここはひと気のない旧校舎だから、ゾンビたちにもそう簡単に見つからないはずだよ。あなたはここで一人残って頑張ってよね。私はもう知らないから。	Basta ficar aqui. Este é o prédio da velha escola. Os zumbis não vão encontrá-lo por um tempo. Eu não vou mais ficar aqui para ajudá-la. Você terá que cuidar de si mesmo.
 speaker	Mei
 

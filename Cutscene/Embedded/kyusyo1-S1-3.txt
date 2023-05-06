@@ -13,7 +13,7 @@ emote	59	3
 msg	305041	Ah ...... what's that sound? Watch out! There could be a Honkai Beast nearby!	唔…这个声音是？小心！可能有崩坏生物在附近！	あ……この音は？気をつけて！崩壊生物が近くにいるかも！	NONE
 msg	305042	I can't believe there's Honkai Beasts this close to the base...	没想到已经潜伏到离基地这么近的地方了么……	基地のこんな近い場所にまで潜伏しているなんて……。	NONE
 speaker	
-msg	305043	<i>swish swish.....</i>	沙拉沙拉……	ガサガサ……。	NONE
+msg	305043	[i]swish swish.....[/i]	沙拉沙拉……	ガサガサ……。	NONE
 msg	305044	Meow~	喵~	ニャ～。	NONE
 speaker	???
 msg	305045	Shh... Keep your voice down, it would be bad if you were found out.	嘘…小声点，要是被发现可就不好了。	シッ……静かに、見つかっちゃったらどうするのよ。	NONE
@@ -22,7 +22,7 @@ portraits	59
 emote	59	3
 msg	305046	Ah.... A cat's meow, and this voice is... Let's see.	唔…猫叫声，还有这个声音是……走，我们去看看。	あ……猫の鳴き声、それにこの声は……見に行きましょう。	NONE
 speaker	
-msg	305047	<i>swish swish......</i> \n(Duplicate ID:305043)	沙拉沙拉……	ガサガサ……。	NONE
+msg	305047	[i]swish swish......[/i] \n(Duplicate ID:305043)	沙拉沙拉……	ガサガサ……。	NONE
 msg	305048	Meow~	喵~	ニャ～。	NONE
 speaker	Emesa
 portraits	55

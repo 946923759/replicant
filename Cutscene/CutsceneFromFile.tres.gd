@@ -121,7 +121,13 @@ func _ready():
 	else:
 		print("no language key found in file.")
 	print("Loading from column "+String(msgColumn))
-	$CutscenePlayer.init_(cutsceneData['msg'],null,false,"\t",msgColumn)
+	
+	if Globals.playerData.has('state') and typeof(Globals.playerData['state']) == TYPE_DICTIONARY and Globals.playerData['state'].empty()==false:
+		$CutscenePlayer.init_resume_(cutsceneData['msg'],null,Globals.playerData['state'],"\t",msgColumn)
+		#clear out the data
+		Globals.playerData['state']=false
+	else:
+		$CutscenePlayer.init_(cutsceneData['msg'],null,false,"\t",msgColumn)
 	
 	
 	#s.hide()

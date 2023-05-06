@@ -6,7 +6,7 @@ const IMAGE_CENTER_X = 512 #Size of image/2
 var portraitPositions:Array
 
 var lastLoaded: String
-var _offset: int
+var offset: int
 var numPortraits:int = 0
 var idx: int = -1
 var is_active:bool = false
@@ -87,11 +87,12 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	#return false
 	print("curPortrait is "+lastLoaded)
 	if _offset==null:
-		_offset=0
+		offset=0
 	else:
-		_offset=_offset*100
+		offset = _offset
+		_offset*=100
 	
-	self._offset = _offset;
+	#self._offset = _offset;
 	self.idx=idx_; #Needed for dim/hl to function
 	self.numPortraits=numPortraits_
 	
@@ -123,7 +124,7 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	
 	
 	assert(len(portraitPositions)>numPortraits-1, "portraitPositions doesn't go up to "+String(numPortraits))
-	assert(portraitPositions[numPortraits-1][idx])
+	assert(portraitPositions[numPortraits-1][idx],"Tried to position a portrait at "+String(idx)+" but there's only "+String(numPortraits)+" currently displayed")
 	
 	is_masked=isMasked
 	update() #Need to update if we're changing mask
@@ -194,7 +195,7 @@ func dim():
 func undim():
 	if !is_active:
 		print("Portrait was asked to highlight, but it's not active?")
-		print("idx: "+String(idx)+" offset: "+String(_offset))
+		print("idx: "+String(idx)+" offset: "+String(offset))
 		return
 	tween.interpolate_property(self,
 		'modulate',

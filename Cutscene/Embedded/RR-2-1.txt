@@ -2,7 +2,7 @@
 speaker	Kiana
 portraits	101
 emote	101	0
-msg	250017	<i>Phew-</i> I finally made it out of the library. So far so good. I should follow this plan, and find the target in the disaster area A.S.A.P.	呼~终于离开图书馆了，目前情况还算顺利。根据下面的计划，只要尽快在崩坏区域内找到目标就行了~	ふぅ～、やっと抜けれた。今のところ順調かな？あとはターゲットが見つかればいいんだけど……。	Ufa~ Finalmente saí da biblioteca, e as coisas estão indo bem até agora. De acordo com o plano a seguir, contanto que você encontre o alvo na área de colapso o mais rápido possível~
+msg	250017	[i]Phew-[/i] I finally made it out of the library. So far so good. I should follow this plan, and find the target in the disaster area A.S.A.P.	呼~终于离开图书馆了，目前情况还算顺利。根据下面的计划，只要尽快在崩坏区域内找到目标就行了~	ふぅ～、やっと抜けれた。今のところ順調かな？あとはターゲットが見つかればいいんだけど……。	Ufa~ Finalmente saí da biblioteca, e as coisas estão indo bem até agora. De acordo com o plano a seguir, contanto que você encontre o alvo na área de colapso o mais rápido possível~
 msg	250018	I'm currently here, and I should try to avoid places where zombies are crowded. Then the most effective route would be along Sakurakouji into the center of Senba Academy campus. Let's do it!	现在的位置是这里，尽量避开死士密集的地方前进，那么最有效的路径是沿着这条樱花道进入千羽学园的校区中心，就这么办吧！	ひとまず、千羽学園の中心に向かおうかな。ゾンビの多そうなところを避けるとなると……桜小路から行くのが一番良さそうだね。よし、決まりっ！	A localização atual é aqui, tente evitar o local onde os mortos estão concentrados, então o caminho mais eficaz é seguir esta estrada de flores de cerejeira até o centro do campus da Academia Senba, então vamos lá!
 portraits	101
 emote	101	2
@@ -11,7 +11,7 @@ portraits	101
 emote	101	0
 msg	250020	Ah, stop! Now's no time to be getting sentimental! There are more important things to deal with right now!	呜！等下！为什么忽然有感而发了起来！明明还有重要的事情要做呢！	んー、何か重要なことを忘れてるような……？まっ、いっか。	Ah, espere!  Agora não há tempo para sentimentalismo! Há coisas mais importantes para fazer agora!
 speaker	
-msg	250021	<i> Pip pip pip </i>	嗡嗡嗡……	ピピッ——ピピッ——	Trrrim trrrim trrrim
+msg	250021	[i] Pip pip pip [/i]	嗡嗡嗡……	ピピッ——ピピッ——	Trrrim trrrim trrrim
 speaker	Kiana
 portraits	101
 emote	101	0

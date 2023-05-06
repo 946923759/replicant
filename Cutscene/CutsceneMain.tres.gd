@@ -236,7 +236,45 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		$SoundEffects.add_child(s)
 	return true
 
+# I think at some point there can be something that
+# re-executes everything based on previously made
+# choices, because dumping and loading the state
+# seems kind of pointless
+# Also the portrait sprites aren't preloaded
+# because of this...
+func dump_state() -> Dictionary:
+	if curPos<=0:
+		return {}
+	var state = {
+		# This probably won't break since variables are cached.
+		'position':curPos-1,
+		'portraits':PORTRAITMAN.get_all_portrait_idx(),
+		'expressions':{},
+		'background':backgrounds.lastBackgroundName,
+		'variables':cutsceneVars,
+		'speaker':speakerActor.text,
+		'match_names':matchedNames,
+		#'music':
+	}
+	if lastMusic and lastMusic.playing:
+		state['music'] = lastMusic.name
+	#Maybe deep copy not needed
+	return Globals.deep_copy(state)
 
+func load_state(d: Dictionary):
+	curPos = d['position']
+	PORTRAITMAN.update_portrait_positions_wip(d['portraits'])
+	if d['background'] != "":
+		backgrounds.setNewBG(d['background'],'immediate')
+	cutsceneVars = d['variables']
+	speakerActor.text = d['speaker']
+	matchedNames = d['match_names']
+	if d.has("music"):
+		lastMusic = $Music.get_node_or_null(d['music'])
+		if lastMusic:
+			lastMusic.play()
+		else:
+			printerr("Couldn't find music node "+d['music'])
 
 func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:bool=false)-> int:
 	var labelToJump = curMessage[1]
@@ -306,31 +344,11 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 			if messages[i][0]=='label' and labelToJump==message[i][1]:
 				return i
 		printerr("The label '"+labelToJump+"' was not found!")
-
-#			'jmp':
-##				if curMessage[0] == "condjmp_c":
-##					print("PROCESSING CONDJUMP... DEST IS "+curMessage[1]+", TEST "+curMessage[2]+" == "+String(choiceResult))
-#				if true:
-#					#print(curMessage)
-#					var jumped:bool=false
-#					for i in range(curPos,message.size()):
-#						if message[i][0]=='label' and curMessage[1]==message[i][1]:
-#							curPos=i
-#							jumped=true
-#							break
-#					if !jumped:
-#						for i in range(0,curPos):
-#							if message[i][0]=='label' and curMessage[1]==message[i][1]:
-#								curPos=i
-#								jumped=true
-#					if !jumped:
-#						printerr("The label '"+curMessage[1]+"' was not found!")
 	return cur_pos
 	
 """
 It would be impossible to determine when to display choices
-without an execution engine that runs ahead until
-it finds another message.
+without executing ahead until it finds another message.
 Because otherwise you could have something like a jump that
 jumps to a table of choices OR another message.
 """
@@ -348,7 +366,7 @@ func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
 		if cur_pos >= message.size():
 			break
 		#elif cur_pos < starting_pos:
-		#	printerr("Speculative execution engine went backwards. This might cause an infinite loop, so giving up.")
+		#	printerr("choice runahead went backwards. This might cause an infinite loop, so giving up.")
 		#	break
 		var curMessage = message[cur_pos]
 		#print(cur_pos)
@@ -698,7 +716,7 @@ func advance_text()->bool:
 				if is_instance_valid(lastMusic):
 					lastMusic.stop()
 				if m!=null:
-					print("Playing "+m.name)
+					print("Playing "+m.name+" from path "+curMessage[1])
 					#print(m.stream)
 					m.volume_db=0
 					m.play()
@@ -885,6 +903,12 @@ func _ready():
 	var seq := get_tree().create_tween()
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 	seq.tween_property($FadeToBlack,"color:a",0,.5)
+	
+	$CutsceneDebug.set_text(message)
+	$CutsceneDebug.visible=false
+	
+	#This is fine, auto mode doesn't work until process(true)
+	toggleAutoMode(Globals.wasUsingAutoMode)
 
 
 func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -902,9 +926,21 @@ func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
 	
 	self.msgColumn=msgColumn
 	preparse_string_array(message_,delim)
-	$CutsceneDebug.set_text(message)
-	$CutsceneDebug.visible=false
 	
+	advance_text()
+	set_process(true)
+
+func init_resume_(message_, parent, state, delim="\t", msgColumn:int=1):
+	if parent:
+		parent_node = parent
+	$dim.color.a=0
+	textboxSpr.rect_scale.y=0
+	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)
+
+	self.msgColumn=msgColumn
+	preparse_string_array(message_,delim)
+	
+	load_state(state)
 	advance_text()
 	set_process(true)
 
@@ -932,8 +968,12 @@ func end_cutscene():
 	#.from_current()
 	#queue_free()
 	
+
+# Called immediately after end_cutscene (look above)
 signal cutscene_finished()
 func end_cutscene_2():
+	Globals.wasUsingAutoMode = autoModeActive
+	
 	var needToSave:bool=false
 	for c in backgrounds.get_children():
 		var f = c.get_meta("file_name")
@@ -966,9 +1006,12 @@ var isWaitingForChoice=false
 #limit skip speed
 var frameLimiter:float=0.0
 
-func disableAutoMode():
-	autoModeActive=false
-	$AutoModeIndicator.stop()
+func toggleAutoMode(b:bool=false):
+	autoModeActive=b
+	if b:
+		$AutoModeIndicator.play()
+	else:
+		$AutoModeIndicator.stop()
 
 func _process(delta):
 	
@@ -982,7 +1025,7 @@ func _process(delta):
 		return
 		
 	if Input.is_action_just_pressed("ui_pause") or Input.is_action_just_pressed("ui_cancel"):
-		disableAutoMode()
+		toggleAutoMode(false)
 		$OptionsScreen.visible=true
 		$OptionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
@@ -1068,12 +1111,12 @@ func _unhandled_input(event):
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
 	if Input.is_action_just_pressed("ui_select"):
 		if autoModeActive:
-			disableAutoMode()
+			toggleAutoMode(false)
 		else:
 			manualTriggerForward=true
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_history"):
-		disableAutoMode()
+		toggleAutoMode(false)
 		if isHistoryBeingShown:
 			print("Hiding history!")
 			tween_out_history()
@@ -1111,11 +1154,7 @@ func _input(event):
 			isOptionsScreenOpen=true
 			get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_auto"):
-		if autoModeActive:
-			disableAutoMode()
-		else:
-			autoModeActive=true
-			$AutoModeIndicator.play()
+		toggleAutoMode(!autoModeActive)
 	#elif isHistoryBeingShown:
 	#	historyActor.input(event)
 		#else:
@@ -1125,7 +1164,7 @@ func _input(event):
 #TODO: Ignore if cutscene playing
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOptionsScreenOpen==false:
-		disableAutoMode()
+		toggleAutoMode(false)
 		$OptionsScreen.visible=true
 		$OptionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
@@ -1144,7 +1183,7 @@ func _on_dim_gui_input(event):
 	):
 		print("clicked")
 		if autoModeActive:
-			disableAutoMode()
+			toggleAutoMode(false)
 		else:
 			manualTriggerForward=true
 

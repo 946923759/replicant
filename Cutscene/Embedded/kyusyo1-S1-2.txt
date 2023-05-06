@@ -13,7 +13,7 @@ emote	59	3
 msg	305011	Ah! Something's there!	唔！有东西在！	あ！何かいる！	NONE
 speaker	
 
-msg	305012	<i>rustle rustle</i>... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
+msg	305012	[i]rustle rustle[/i]... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
 choice	305013	That sounds like a cat.	猫の鳴き声みたい。	NONE	NONE
 choice	305014	Is that a Honkai beast?	崩壊獣なの？	NONE	NONE
 speaker	Seele

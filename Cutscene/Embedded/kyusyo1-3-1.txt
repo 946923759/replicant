@@ -3,7 +3,7 @@ speaker
 bg	009/002_1280x720
 msg	300456	...	……	……。	NONE
 se	DLC_CH01_EV13_KnockDoorWood
-msg	300457	<i>knock knock</i>	咚咚咚	コンコン	NONE
+msg	300457	[i]knock knock[/i]	咚咚咚	コンコン	NONE
 speaker	Bronya
 portraits	60
 emote	60	2

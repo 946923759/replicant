@@ -1,8 +1,11 @@
 extends Control
 
-var lastBackground
+var lastBackgroundName:String = ""
+var lastBackground:Node
 
 func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
+	lastBackgroundName=bgName
+	
 	if bgName=="black":
 		if is_instance_valid(lastBackground):
 			if transition=='immediate':

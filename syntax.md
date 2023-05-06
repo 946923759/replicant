@@ -12,6 +12,21 @@ If used right before a message, display a translation note button that can be cl
 # msg
 Display a message.
 
+## Text modifiers
+
+### Text colors
+Text can be colored at any time.
+
+Example: `You can combine normal and [color=#FF0000]colored[/color] text in the same message.`
+
+### Italics
+
+Use `[i]this[/i]` For italic text.
+
+### variables
+
+Use %var_name% to do it. Refer to 'setting variables' for more information.
+
 ## Modifier commands
 Some message modifier commands are available. Modifier commands must be at the start of the message.
 
@@ -26,13 +41,6 @@ Equivalent to open_textbox opcode, but takes no arguments.
 
 ### /setDispChr[XX]
 Starts off this message already displaying the number of characters in the argument. You probably don't need to use this, as the `extend` opcode will automatically calculate and convert it for you.
-
-## Other modifiers
-
-### Text colors
-Text can be colored at any time.
-
-Example: `You can combine normal and [color=#FF0000]colored[/color] text in the same message.`
 
 # extend
 Special opcode that makes a line extend from the previous message. Can be stacked infinitely.
@@ -117,10 +125,20 @@ Flash the screen. You probably don't want to use this.
 # portraits
 Set portraits. Portraits can be a single argument, or can take additional parameters like positions.
 
+Examples: `portraits	Kyuushou,false,0	Bronya,false,1`
+
+Supports up to five main arguments.
+
+Portrait arguments:
+
+arg1: if masked (this doesn't work so don't bother)
+
+arg2: offset from default position, from -6 to 6 usually (but can go higher)
+
 # emote
 Set portrait emote.
 
-ARgument 1 = portrait to set
+ARgument 1 = portrait to set, by name
 Argument 2 = emote to set
 
 # dim
@@ -154,6 +172,8 @@ Examples: `var testvar 7`, `var testvar "Hello!"`, `var testvar &0`, `var testva
 Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __.
 
 Argument 2: operand.
+
+Argument 3 (optional): if this variable is global.
 
 | operand examples | what it does |
 | ---------------- | ------------ |
@@ -258,3 +278,10 @@ condjmp_neg jumps if result of comparison is false.
 | &1 | Checks if bitflag 1 in the integer is TRUE. |
 | ~1 | Checks if bitflag 1 in the integer is FALSE. |
 
+
+# tween
+NOT IMPLEMENTED YET
+
+Argument 1: Before, during, or after text displays.
+
+Argument 2: tween like StepMania's language. It's name, not position based. Ex. `Kyuushou:decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`

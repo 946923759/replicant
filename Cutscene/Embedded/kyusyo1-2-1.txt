@@ -19,12 +19,12 @@ emote	59	1
 msg	300303	Looks like I'll just have to call them the usual way. Let me find something that doesn't look too important... This one looks good!	看来又得用老方法了，让我找个看起来不是那么重要的东西…啊！就它了！	どうやら、いつものやり方で呼ぶしかないみたいだね。それほど重要そうじゃなさそうなものを探して……うん！これかな！	NONE
 speaker	
 se	DLC_CH01_EV05_GlassBreak
-msg	300304	<i>Bang!</i>	砰！	パリンッ！	NONE
+msg	300304	[i]Bang![/i]	砰！	パリンッ！	NONE
 speaker	???
 msg	300305	Ah! What just broke...?	呃！是什么东西坏了！？	ん……何か壊れた……？	NONE
 speaker	
 se	DLC_CH01_EV06_Bump
-msg	300306	<i>Thunk!</i>	咚！	ドン！	NONE
+msg	300306	[i]Thunk![/i]	咚！	ドン！	NONE
 speaker	???
 msg	300307	Argh! Ow, ow, ow...	哇！疼疼疼……	わわ！イタタタ……。	NONE
 portraits	59	54

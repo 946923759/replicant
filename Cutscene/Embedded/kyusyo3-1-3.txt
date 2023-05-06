@@ -40,9 +40,9 @@ emote	54	5
 emote	59	6
 emote	54	5
 
+/Seele	301081	...	……	……。	NONE
 choice	301646	Don't worry, I'm sure Bronya's alright.	安心して、ブローニャならきっと大丈夫。	NONE	NONE
 choice	301647	I'd rather turn worries into action.	ここで心配してるくらいなら、今すぐ行動に移ろう。	NONE	NONE
-/Seele	301081	...	……	……。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

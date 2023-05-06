@@ -1,4 +1,4 @@
-#LANGUAGES	key	en	ch	jp
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	60
 match_names	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	
@@ -25,17 +25,17 @@ match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
 portraits	59	60
 emote	59	3
+msg	300129	Understood!	了解！	了解！
 choice	0	I'm coming with you!	我也一起去！	私も一緒に行く！
 choice	0	Is there anything I can help?	我能帮上什么忙么？	私にも何か手伝える？
-msg	300129	Understood!	了解！	了解！
 speaker	Bronya
 tn	literal is "(...) experience, you'd only lose your life"
 msg	300132	Stay here. Fighting Honkai beasts requires training. Entering the battlefield without any experience is practically suicide.	你留在这里。与崩坏生物战斗需要经过训练才行，让没有经验的人上战场只会送死。	あなたはここに残ってください。崩壊生物との戦闘には訓練が必要です。経験のない人が戦場に立っても死ぬだけです。
 speaker	Seele
-msg	300133	Don't worry about us, we've fought hundreds of battles! We can handle this situation in no time. Let's go, Bronya~!	安心啦~我们可是身经百战了！这样的情况是家常便饭啦~我们走吧！姐姐大人~	安心して～！私たちは百戦錬磨なんだから！こんな状況も朝飯前だよ！行こう、お姉ちゃん！
+msg	300133	Don't worry about us, we've fought hundreds of battles! We've got this under control. Let's go, Bronya~!	安心啦~我们可是身经百战了！这样的情况是家常便饭啦~我们走吧！姐姐大人~	安心して～！私たちは百戦錬磨なんだから！こんな状況も朝飯前だよ！行こう、お姉ちゃん！
 speaker	Bronya
 emote	59	1
-msg	300134	Alright. Remember, never leave the base. I'll protect you.	嗯，记住，绝对不要离开基地。我会保护你的。	はい！いいですか、絶対に基地を離れてはいけません。私が守ります。
+msg	300134	Alright. Remember, don't leave the base. I'll protect you.	嗯，记住，绝对不要离开基地。我会保护你的。	はい！いいですか、絶対に基地を離れてはいけません。私が守ります。
 speaker	
 portraits	
 msg	300135	...	……	……。

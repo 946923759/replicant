@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Bronya	Yssring
 speaker	Yssring
 bg	009/008_1280x720
@@ -8,7 +8,7 @@ music	Peaceful Sleep - No Vocals
 /Yssring	300679	You're back...	你们来啦……	来たわね……。	NONE
 emote	60	2
 emote	54	0
-/Bronya	300680	Have you taken any rest since the battle, Yssring?	伊瑟琳，辛苦你了。从作战开始到现在还没有休息过吧？	イザーリン、ご苦労様です。作戦開始から今まで休んでないのでは？	NONE
+/Bronya	300680	Yssring, thanks for all the hard work. You haven't rested since the battle, right?	伊瑟琳，辛苦你了。从作战开始到现在还没有休息过吧？	イザーリン、ご苦労様です。作戦開始から今まで休んでないのでは？	NONE
 emote	60	2
 emote	54	0
 /Yssring	300681	It's fine, I'm used to it.. Let me inform you about the results of the investigation first, then I'll go lie down for a while...	没事，习惯了…比起这个还是尽快把调查结果和你们讲下吧，这样我也好去躺一会……	大丈夫。慣れてるから……そんなことより早く調査結果を言わないとね。そうすれば私も横になれる。	NONE
@@ -19,7 +19,7 @@ msg	300684	Judging from what happened, they were probably attracted by the noise
 msg	300685	In other words...	也就是说……	ヤツラの巣は……。	NONE
 emote	60	1
 emote	54	0
-/Bronya	300686	The nest of these Houkai creatures is actually very close to the base?	这些崩坏生物的巢穴就在基地附近么？	この基地の近くにあるということですか？	NONE
+/Bronya	300686	The nest of these Honkai beasts is near the base?	这些崩坏生物的巢穴就在基地附近么？	この基地の近くにあるということですか？	NONE
 emote	60	1
 emote	54	0
 /Yssring	300687	Indeed...	是的……	はい……。	NONE

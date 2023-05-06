@@ -139,9 +139,9 @@ emote	59	3
 emote	52	0
 msg	300391	The Honkai beasts... They... I can't believe so many of them were lurking...	是崩坏生物…把那个家伙给……	崩壊生物が……あの子を……。こんな数の崩壊生物が潜んでいたなんて……。	NONE
 
+msg	300392	That idiot!	那个笨蛋！！！	あのバカ！！！	NONE
 choice	300393	We have to kill those beasts!	絶対にあの崩壊生物を倒そう！	NONE	NONE
 choice	300394	Let's get out of here!	早くここから逃げよう！	NONE	NONE
-msg	300392	That idiot!	那个笨蛋！！！	あのバカ！！！	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

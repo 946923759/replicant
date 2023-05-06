@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	61	56	55	54
 speaker	Teammate
 bg	009/060_1280x720
@@ -66,20 +66,20 @@ bg	009/057_1280x720
 speaker	Bronya
 msg	301698	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301699	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+extend	301700	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 choice	302194	Bronya, stop blaming yourself.	ブローニャ、自分を責めないで。	NONE	NONE
 choice	302195	Bronya, it's not your fault.	ブローニャ、これはあなたのせいじゃない。	NONE	NONE
-extend	301700	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 
 msg	301701	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+extend	301702	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 choice	302196	Seele doesn't want to see you like this.	ゼーレは、そんなあなたの姿を見たくないはず。	NONE	NONE
 choice	302197	Everyone needs your leadership now.	今こそ、あなたのリーダーシップが必要。	NONE	NONE
-extend	301702	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 
 msg	301703	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301704	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
+extend	301705	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 choice	302198	Bronya, cheer up!	ブローニャ、しっかりして！	NONE	NONE
 choice	302199	Bronya, wake up!	ブローニャ、目を覚まして！	NONE	NONE
-extend	301705	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 
 
 /Himeko	301706	Enough. Nothing is going to get through to her right now.	已经够了，现在说什么都是没用的。	もうやめなさい。今、何を言っても無駄でしょうから。	NONE
@@ -87,9 +87,9 @@ bg	009/060_1280x720
 match_names	Himeko
 portraits	61
 emote	61	1
+/Himeko	301707	Let's leave her alone. She might feel better after she calms down.	就让她在这里静一下吧，如果这样能让她心理好受一些的话。	そっとしておいてあげましょう。その方が心も落ち着くわ、きっと。	NONE
 choice	302200	Himeko, what's that wound on your face?	姫子、その顔の傷は？	NONE	NONE
 choice	302201	Himeko, is Seele really dead?	姫子、ゼーレは本当に死んじゃったの？	NONE	NONE
-/Himeko	301707	Let's leave her alone. She might feel better after she calms down.	就让她在这里静一下吧，如果这样能让她心理好受一些的话。	そっとしておいてあげましょう。その方が心も落ち着くわ、きっと。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -108,9 +108,9 @@ portraits
 bg	009/056_1280x720
 music	Yonah - Pluck Ver
 msg	301714	*Drinking*... Hah!	咕咕咕……哈！	ゴク、ゴク……プハァ！	NONE
+msg	301715	I haven't had a drink in ages. Pretty refreshing! How about you, you want one too?	好久没有喝酒了，真是痛快啊！怎么样你也要来一罐么？	お酒なんて久しぶりだわ。本当に最高！どう？あなたも一杯やらない？	NONE
 choice	302202	Sorry, I'm not an adult yet.	ごめんなさい。私まだ未成年だから。	NONE	NONE
 choice	302203	I'm not good at drinking.	私、お酒は苦手なの。	NONE	NONE
-msg	301715	I haven't had a drink in ages. Pretty refreshing! How about you, you want one too?	好久没有喝酒了，真是痛快啊！怎么样你也要来一罐么？	お酒なんて久しぶりだわ。本当に最高！どう？あなたも一杯やらない？	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -134,9 +134,9 @@ msg	301728	The first time I saw you, I thought... Why do you look different from
 msg	301729	I want you to remain who you are... But now, your expressions look the same as others. Too much pressure made you hard to breathe, and you have given up moving forward because of death and pain.	我想让你保持这样的自己…不过现在你的表情已经开始变得和其他人一样，在压力中喘不过气，因为死亡和痛苦而放弃了前进。	私は、あなたにそんな自分をいつまでも保っていてもらいたかったのよ……でも、今のあなたの表情は他の人と同じになっているわ。プレッシャーの中で息も絶え絶えになっている。死と苦痛から、前に進むことを諦めている。	NONE
 msg	301730	This is the correct face for this world... The more you struggle, the less hope you can see. People can only be strong when they lie to themselves... But they will only fall deeper in fear.	这才是这个世界应该有的表情吧…越是挣扎越是看不到希望，只有在自我麻痹的假象中才能让自己坚强起来…在名为恐惧的泥潭中越陷越深。	それこそが、本来この世界にある表情よ……もがけばもがくほど希望が見えなくなる。自我を麻痺させて作った幻想の中でこそ自分を強くすることができる……恐怖という名の泥沼にますます深くはまっていく。	NONE
 msg	301731	If anyone shows weakness, the rest of us would despair. That's why we put on a strong façade. Those kids Bronya and Seele knew that... But now it's just me.	只要有人露出软弱的样子，所有人的心理都会决堤。所以必须得有装作坚强的样子，所以布洛妮娅和希儿那些孩子才会那么冷静……而现在，只有我了。	誰かが軟弱な姿を見せると、みんなの心の堤防が壊れてしまう。だから、強い姿を装っていなくてはならない。ブローニャやゼーレのような子たちはそれをわかっていたから、あんなに冷静だったのよ……でも今は私だけね。	NONE
+msg	301732	Tell me... If I had waited just a little longer... Maybe that girl wouldn't have died... I wonder if I made the right choice.	…如果当时再等一下的话…是不是那个孩子就不会死了…告诉我…我是不是真的做错了……	……もし、あのときもう少し待っていれば……あの子は死ななかったのかしら……教えて……私、本当に間違えてしまったのかしら……。	NONE
 choice	302204	You didn't do anything wrong.	あなたは間違ってない。	NONE	NONE
 choice	302205	I don't know either.	私にも分からない。	NONE	NONE
-msg	301732	Tell me... If I had waited just a little longer... Maybe that girl wouldn't have died... I wonder if I made the right choice.	…如果当时再等一下的话…是不是那个孩子就不会死了…告诉我…我是不是真的做错了……	……もし、あのときもう少し待っていれば……あの子は死ななかったのかしら……教えて……私、本当に間違えてしまったのかしら……。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -147,7 +147,7 @@ label	c2dest
 msg	301734	Sorry... For making things difficult for you.	抱歉…让你为难了。	ごめんなさい……面倒をかけて。	NONE
 
 label	end_choices
-msg	301735	All right! Don't just stand there, drink it! You are still a kid, you need a lot more exercise!	好了！别傻站着，快喝起来！像你这样的孩子还需要多加锻炼才行！	よし！湿っぽい話はやめにして、早く飲みましょう！あなたみたいな子はまだまだ鍛えなくちゃね！	NONE
+msg	301735	All right! Don't just stand there, start drinking! You're still just a kid, you need to build up your tolerance!	好了！别傻站着，快喝起来！像你这样的孩子还需要多加锻炼才行！	よし！湿っぽい話はやめにして、早く飲みましょう！あなたみたいな子はまだまだ鍛えなくちゃね！	NONE
 msg	301736	*Drinking*...	咕咕咕……	ゴク、ゴク……。	NONE
 speaker	
 msg	301737	Boom!	轰！	ドォォォン！	NONE

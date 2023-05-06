@@ -6,9 +6,9 @@ emote	60	2
 msg	300515	Thank you for your hard work. Tonight's mission has been successfully completed.	辛苦了，今晚的任务完成的很顺利。	お疲れ様でした。今夜の任務は無事に完了しました。	NONE
 msg	300516	You've proven your strength. From today on, you'll be fighting alongside us. Welcome to the "Flame Chasing Moths", the resistance against the Honkai.	你的实力已经合格了，从现在开始你将与我们共同战斗，欢迎加入“逐火之蛾”。	あなたの実力なら文句なく合格です。今日からはブローニャたちと一緒に戦ってもらいます。ようこそ、対崩壊レジスタンス「火を追う蛾」へ。	NONE
 msg	300517	Sorry. it's not much of an induction, right? I wish I could give you a grand welcome, but.... Please accept this instead.	抱歉，没有什么盛大的仪式，不过作为证明请把这个收下吧。	すみません。ささやかな入隊式になってしまいましたね。盛大にお迎えしたい気持ちはいっぱいなのですが……そうでした証明書がわりにこれを受け取ってください。	NONE
+msg	300518	This is the proof of a combatant. You are on the front lines fighting the Honkai with a mission to protect your family. You will be the moth that chases the light and fights for hope.	这是作战人员的证明，你将肩负起保护家人的使命战斗在崩坏的最前线，成为追逐光明的飞蛾，为了希望而战。	これは戦闘要員の証明です。あなたは家族を守るという使命を担って崩壊と戦う最前線に立つのです。光を追う蛾となり、希望のために戦うのです。	NONE
 choice	300519	I'm honored.	光栄だ。	NONE	NONE
 choice	300520	I'm not ready yet.	まだ準備ができてなくて……。	NONE	NONE
-msg	300518	This is the proof of a combatant. You are on the front lines fighting the Honkai with a mission to protect your family. You will be the moth that chases the light and fights for hope.	这是作战人员的证明，你将肩负起保护家人的使命战斗在崩坏的最前线，成为追逐光明的飞蛾，为了希望而战。	これは戦闘要員の証明です。あなたは家族を守るという使命を担って崩壊と戦う最前線に立つのです。光を追う蛾となり、希望のために戦うのです。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

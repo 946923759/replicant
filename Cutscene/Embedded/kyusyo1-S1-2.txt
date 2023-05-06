@@ -13,9 +13,9 @@ emote	59	3
 msg	305011	Ah! Something's there!	唔！有东西在！	あ！何かいる！	NONE
 speaker	
 
+msg	305012	<i>rustle rustle</i>... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
 choice	305013	That sounds like a cat.	猫の鳴き声みたい。	NONE	NONE
 choice	305014	Is that a Honkai beast?	崩壊獣なの？	NONE	NONE
-msg	305012	<i>rustle rustle</i>... Meow!	沙沙沙……喵。	ガサガサガサ……ニャー。	NONE
 speaker	Seele
 condjmp_c	c2dest	2
 
@@ -50,9 +50,9 @@ speaker	Seele
 nop	
 emote	59	1
 
+msg	305026	This whole world is a wasteland after the Honkai, but even the smallest creatures haven't stopped fighting to survive just like us.	虽然整个世界在崩坏的影响下分崩离析，但是依然有这样的小生命和我们一样顽强地生存着呢？	世界全体が崩壊の影響でめちゃくちゃになっているけど、こんな小さな命も私たちと同じようにたくましく生きているんだよね。	NONE
 choice	Should we take him back home?	基地に連れて帰る？	NONE	NONE
 choice	It looks like we need to prepare some pet food.	キャットフードを用意しなくちゃね。	NONE	NONE
-msg	305026	This whole world is a wasteland after the Honkai, but even the smallest creatures haven't stopped fighting to survive just like us.	虽然整个世界在崩坏的影响下分崩离析，但是依然有这样的小生命和我们一样顽强地生存着呢？	世界全体が崩壊の影響でめちゃくちゃになっているけど、こんな小さな命も私たちと同じようにたくましく生きているんだよね。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

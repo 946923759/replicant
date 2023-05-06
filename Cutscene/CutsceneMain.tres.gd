@@ -237,6 +237,144 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	return true
 
 
+
+func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:bool=false)-> int:
+	var labelToJump = curMessage[1]
+	
+	var varName="____"
+	if curMessage[0] != "jmp":
+		varName = curMessage[2]
+		
+	var SHOULD_JUMP:bool=false
+	
+	
+	if varName=="____":
+		SHOULD_JUMP=true
+	elif varName=="__choice__":
+		print("PROCESSING CONDJUMP... DEST IS "+labelToJump+", TEST "+curMessage[3]+" == "+String(choiceResult))
+		SHOULD_JUMP=(choiceResult==int(curMessage[3]))
+		print("Should jump? "+String(SHOULD_JUMP))
+	elif (varName in cutsceneVars):
+		var varToCheck = curMessage[3].to_lower()
+		if varToCheck=="true":
+			SHOULD_JUMP=cutsceneVars[varName]==1
+		elif varToCheck=="false":
+			SHOULD_JUMP=cutsceneVars[varName]==0
+		else:
+			if varToCheck[0]=='"':
+				
+				var cmd_end = varToCheck.rfind("\"");
+				if cmd_end>0:
+					if typeof(cutsceneVars[varName])==TYPE_STRING:
+						SHOULD_JUMP = cutsceneVars[varName] == varToCheck.substr(1,cmd_end)
+				else:
+					printerr("String is malformed in var command, missing end")
+			elif typeof(cutsceneVars[varName])==TYPE_INT:
+				match varToCheck[0]:
+					'&':
+						var bitflag = int(varToCheck.substr(1))
+						SHOULD_JUMP = cutsceneVars[varName] & (1<<bitflag)
+					'~':
+						var bitflag = int(varToCheck.substr(1))
+						SHOULD_JUMP= ~cutsceneVars[varName] & (1<<bitflag)
+					'>':
+						SHOULD_JUMP = cutsceneVars[varName] > int(varToCheck)
+					'<':
+						SHOULD_JUMP = cutsceneVars[varName] < int(varToCheck)
+					'!':
+						SHOULD_JUMP = cutsceneVars[varName] != int(varToCheck)
+					_:
+						if varToCheck.is_valid_integer():
+							SHOULD_JUMP = cutsceneVars[varName]==int(varToCheck)
+						else:
+							printerr("Failed to deduce type for variable "+varToCheck)
+			else:
+				print("Tried to compare an integer with a string. Good job, genius.")
+	elif speculative==false:
+		printerr("Hey moron, the variable you're checking hasn't been set: "+varName)
+	
+	if curMessage[0]=="condjmp_neg":
+		SHOULD_JUMP=!SHOULD_JUMP
+		print("negative Should jump? "+String(SHOULD_JUMP))
+	
+	if SHOULD_JUMP:
+		#var jumped:bool=false
+		for i in range(curPos,messages.size()):
+			if messages[i][0]=='label' and labelToJump==message[i][1]:
+				return i
+		for i in range(0,curPos):
+			if messages[i][0]=='label' and labelToJump==message[i][1]:
+				return i
+		printerr("The label '"+labelToJump+"' was not found!")
+
+#			'jmp':
+##				if curMessage[0] == "condjmp_c":
+##					print("PROCESSING CONDJUMP... DEST IS "+curMessage[1]+", TEST "+curMessage[2]+" == "+String(choiceResult))
+#				if true:
+#					#print(curMessage)
+#					var jumped:bool=false
+#					for i in range(curPos,message.size()):
+#						if message[i][0]=='label' and curMessage[1]==message[i][1]:
+#							curPos=i
+#							jumped=true
+#							break
+#					if !jumped:
+#						for i in range(0,curPos):
+#							if message[i][0]=='label' and curMessage[1]==message[i][1]:
+#								curPos=i
+#								jumped=true
+#					if !jumped:
+#						printerr("The label '"+curMessage[1]+"' was not found!")
+	return cur_pos
+	
+"""
+It would be impossible to determine when to display choices
+without an execution engine that runs ahead until
+it finds another message.
+Because otherwise you could have something like a jump that
+jumps to a table of choices OR another message.
+"""
+func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
+	"""
+	TODO: This doesn't work because then you can't have a choice, a message,
+	and then a jump.
+	...Or I guess you can just repeat the message in each label.
+	"""
+	choiceResult = -1
+	var starting_pos = cur_pos
+	
+	var choice_table = []
+	while true:
+		if cur_pos >= message.size():
+			break
+		#elif cur_pos < starting_pos:
+		#	printerr("Speculative execution engine went backwards. This might cause an infinite loop, so giving up.")
+		#	break
+		var curMessage = message[cur_pos]
+		#print(cur_pos)
+		match curMessage[0]:
+			'msg':
+				break
+			'choice':
+				if msgColumn < curMessage.size():
+					choice_table.push_back(curMessage[msgColumn])
+				else:
+					print("Current language is "+String(msgColumn)+", but this choice only had "+String(curMessage.size())+" languages to choose from")
+					print(curMessage)
+					choice_table.push_back(curMessage[0])
+			'condjmp','condjmp_neg','jmp':
+				var tmp_pos = process_jumps(message,curMessage,cur_pos,true)
+				if tmp_pos < cur_pos:
+					printerr("It should not be possible for the choice runahead to go backwards. Giving up.")
+					printerr("Errored out at position "+String(cur_pos)+", attempted to jump to "+String(tmp_pos))
+					break
+				else:
+					cur_pos = tmp_pos
+		cur_pos+=1
+	#print("Break execution at "+String(cur_pos))
+	#print(choice_table)
+	return choice_table
+
 var msgColumn:int=1
 var lastPortraitTable = {}
 
@@ -327,7 +465,7 @@ func advance_text()->bool:
 					text.visible_characters=tmp_txt.length()
 				text.bbcode_text = tmp_txt
 				
-
+				ChoiceTable = runahead_process_choices(message,curPos+1)
 					
 				break #Stop processing opcodes and wait for user to click
 			#'setvar':
@@ -508,15 +646,7 @@ func advance_text()->bool:
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
-			'choice':
-				if msgColumn < curMessage.size():
-					ChoiceTable.push_back(curMessage[msgColumn])
-				else:
-					print("Current language is "+String(msgColumn)+", but this choice only had "+String(curMessage.size())+" languages to choose from")
-					print(curMessage)
-					ChoiceTable.push_back(curMessage[0])
-			
-			'nop','label':
+			'choice','nop','label':
 				pass
 			'var':
 				var varName = curMessage[1]
@@ -559,97 +689,10 @@ func advance_text()->bool:
 #			'jmp_short':
 #				curPos+=int(curMessage[1])
 			'condjmp','condjmp_neg','jmp':
-				var labelToJump = curMessage[1]
-				
-				var varName="____"
-				if curMessage[0]!="jmp":
-					varName = curMessage[2]
-				var SHOULD_JUMP:bool=false
-				
-				if varName=="____":
-					SHOULD_JUMP=true
-				elif varName=="__choice__":
-					print("PROCESSING CONDJUMP... DEST IS "+labelToJump+", TEST "+curMessage[3]+" == "+String(choiceResult))
-					SHOULD_JUMP=(choiceResult==int(curMessage[3]))
-					print("Should jump? "+String(SHOULD_JUMP))
-				elif (varName in cutsceneVars):
-					var varToCheck = curMessage[3].to_lower()
-					if varToCheck=="true":
-						SHOULD_JUMP=cutsceneVars[varName]==1
-					elif varToCheck=="false":
-						SHOULD_JUMP=cutsceneVars[varName]==0
-					else:
-						if varToCheck[0]=='"':
-							
-							var cmd_end = varToCheck.rfind("\"");
-							if cmd_end>0:
-								if typeof(cutsceneVars[varName])==TYPE_STRING:
-									SHOULD_JUMP = cutsceneVars[varName] == varToCheck.substr(1,cmd_end)
-							else:
-								printerr("String is malformed in var command, missing end")
-						elif typeof(cutsceneVars[varName])==TYPE_INT:
-							match varToCheck[0]:
-								'&':
-									var bitflag = int(varToCheck.substr(1))
-									SHOULD_JUMP = cutsceneVars[varName] & (1<<bitflag)
-								'~':
-									var bitflag = int(varToCheck.substr(1))
-									SHOULD_JUMP= ~cutsceneVars[varName] & (1<<bitflag)
-								'>':
-									SHOULD_JUMP = cutsceneVars[varName] > int(varToCheck)
-								'<':
-									SHOULD_JUMP = cutsceneVars[varName] < int(varToCheck)
-								'!':
-									SHOULD_JUMP = cutsceneVars[varName] != int(varToCheck)
-								_:
-									if varToCheck.is_valid_integer():
-										SHOULD_JUMP = cutsceneVars[varName]==int(varToCheck)
-									else:
-										printerr("Failed to deduce type for variable "+varToCheck)
-						else:
-							print("Tried to compare an integer with a string. Good job, genius.")
-				else:
-					printerr("Hey moron, the variable you're checking hasn't been set.")
-				
-				if curMessage[0]=="condjmp_neg":
-					SHOULD_JUMP=!SHOULD_JUMP
-					print("negative Should jump? "+String(SHOULD_JUMP))
-				
-				if SHOULD_JUMP:
-					var jumped:bool=false
-					for i in range(curPos,message.size()):
-						if message[i][0]=='label' and labelToJump==message[i][1]:
-							curPos=i
-							jumped=true
-							break
-					if !jumped:
-						for i in range(0,curPos):
-							if message[i][0]=='label' and labelToJump==message[i][1]:
-								curPos=i
-								jumped=true
-					if !jumped:
-						printerr("The label '"+labelToJump+"' was not found!")
-					else:
-						print("Jumped to message: "+String(message[curPos]))
-
-#			'jmp':
-##				if curMessage[0] == "condjmp_c":
-##					print("PROCESSING CONDJUMP... DEST IS "+curMessage[1]+", TEST "+curMessage[2]+" == "+String(choiceResult))
-#				if true:
-#					#print(curMessage)
-#					var jumped:bool=false
-#					for i in range(curPos,message.size()):
-#						if message[i][0]=='label' and curMessage[1]==message[i][1]:
-#							curPos=i
-#							jumped=true
-#							break
-#					if !jumped:
-#						for i in range(0,curPos):
-#							if message[i][0]=='label' and curMessage[1]==message[i][1]:
-#								curPos=i
-#								jumped=true
-#					if !jumped:
-#						printerr("The label '"+curMessage[1]+"' was not found!")
+				var new_pos = process_jumps(message,curMessage,curPos)
+				if new_pos != curPos:
+					print("jumped to "+String(new_pos))
+					curPos = new_pos
 			'music':
 				var m = $Music.get_node_or_null(curMessage[1].replace("/","$"))
 				if is_instance_valid(lastMusic):

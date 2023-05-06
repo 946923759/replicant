@@ -1,11 +1,11 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Himeko	Teammate
 msgbox_close	instant
 music	Grandma
 speaker	
 bg	009/060_1280x720
 popup	640	200
-msg	301738	"Warning! Power system has stopped running. Please repair immediately! Please repair immediately!"	「警告！动力系统已停止运行，请立即修复！请立即修复！」	「警告！動力システム作動停止。直ちに修復してください！直ちに修復してください！」	NONE
+msg	301738	[Warning! Power system has stopped running. Please repair immediately! Please repair immediately!]	「警告！动力系统已停止运行，请立即修复！请立即修复！」	「警告！動力システム作動停止。直ちに修復してください！直ちに修復してください！」	NONE
 popup	false
 portraits	61
 emote	61	1

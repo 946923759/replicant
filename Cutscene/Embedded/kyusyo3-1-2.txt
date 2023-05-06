@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Seele
 music	War And War
 bg	009/013_1280x720
@@ -49,7 +49,7 @@ emote	54	6
 /Yssring	301045	Seele! It's so great to have you back!	希儿，你回来真是太好了！	ゼーレ、戻って来てくれて良かったぁ！	NONE
 
 emote	55	4
-/Emesa	301046	Seele! What the hell's going on? As soon as we made it toME Corp., a bunch of armored mechas attacked us. Now the troops are stuck at the ME Corp.'s entrance! We have to do something!	希儿！我们转移到ME社的时候忽然遭到里面机甲兵器的攻击！现在部队卡在了ME社入口进退两难，必须得想想办法！	ゼーレ！一体何なんだ！？ME社前に着いた途端、機甲兵器どもが攻撃を仕掛けてきやがった。引き連れてきた部隊は今ME社の入口で進退窮まってる。何とかしないと！	NONE
+/Emesa	301046	Seele! What the hell's going on? As soon as we made it to ME Corp., a bunch of armored mechas attacked us. Now the troops are stuck at the ME Corp.'s entrance! We have to do something!	希儿！我们转移到ME社的时候忽然遭到里面机甲兵器的攻击！现在部队卡在了ME社入口进退两难，必须得想想办法！	ゼーレ！一体何なんだ！？ME社前に着いた途端、機甲兵器どもが攻撃を仕掛けてきやがった。引き連れてきた部隊は今ME社の入口で進退窮まってる。何とかしないと！	NONE
 /Seele	301047	Damn....! How's Bronya? Did you find her?	姐姐大人怎么样！有找到她么？	くっ……ねぇお姉ちゃんは！？見つかった？	NONE
 
 emote	54	2

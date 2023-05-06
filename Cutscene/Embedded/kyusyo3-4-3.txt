@@ -49,10 +49,10 @@ speaker	Seele
 msg	301292	It's okay. I'll make it back. Besides, my sister brought me back that time, now it's my turn.	那次是姐姐大人曾经把我找回来了，这次要换我把姐姐大人带回家！	大丈夫です。戻ってこれます。それにあのときはお姉ちゃんがゼーレを連れ戻してくれました。今度はゼーレの番です。	NONE
 
 speaker	Himeko
-choice	301654	We'll keep you safe!	私たちはここを守ってるから！	NONE	NONE
-choice	301655	Please come back with Bronya!	ブローニャと一緒に帰ってきて！	NONE	NONE
 tn	0	It's hard to translate, but she's trying to say the both of them combined are a headache
 msg	301293	Tsk... You two are truly inseparable. Fine, but you'd better make it back before we die! 	哼…真是一对麻烦的姐妹，好吧，在我们还没死掉之前回来！                       	フン……まったくベッタリ姉妹ね。いいわ、こっちが死ぬ前に戻ってきなさいよ！	NONE
+choice	301654	We'll keep you safe!	私たちはここを守ってるから！	NONE	NONE
+choice	301655	Please come back with Bronya!	ブローニャと一緒に帰ってきて！	NONE	NONE
 
 speaker	Seele
 emote	59	1

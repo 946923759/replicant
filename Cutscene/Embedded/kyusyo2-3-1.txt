@@ -19,8 +19,8 @@ emote	60	3
 /Seele	300772	... What should we do now?	…那我们接下来该怎么办？	……それで、このあとはどうするの？	NONE
 emote	59	1
 emote	60	1
-/Bronya	300773	Figure out how big this place is and how many Houkai creatures are there. Yssring gave me these vials so we can collect some samples from them.	先侦查一下巢穴的规模与崩坏生物的数量，另外临走时伊瑟琳给了我这个，用于收集崩坏生物样本的试管。	まずは巣の規模と崩壊生物の数を偵察しましょう。それから、ここに来る時にイザーリンがくれた試験管で、崩壊生物のサンプルを集めましょう。	NONE
-/Seele	300774	Well, so she's intrigued after all her jabberjack.	那家伙，嘴上说着害怕其实内心还是很感兴趣的嘛~	あいつ、口では怖がってたくせに、内心は興味津々じゃないの～。	NONE
+/Bronya	300773	First, let's investigate the size of the nest and the number of Honkai beasts. Then we can collect samples from them in these test dubes that Yssring gave us.	先侦查一下巢穴的规模与崩坏生物的数量，另外临走时伊瑟琳给了我这个，用于收集崩坏生物样本的试管。	まずは巣の規模と崩壊生物の数を偵察しましょう。それから、ここに来る時にイザーリンがくれた試験管で、崩壊生物のサンプルを集めましょう。	NONE
+/Seele	300774	She's always so scared, but I guess she was interested after all~	那家伙，嘴上说着害怕其实内心还是很感兴趣的嘛~	あいつ、口では怖がってたくせに、内心は興味津々じゃないの～。	NONE
 /Bronya	300775	Alright. Let's do this. Try to stay low and don't get too much attention.	嗯，那我们行动吧，注意不要惊动它们，尽量保持隐秘。	ええ、では行動しましょう。彼らを刺激しないように、できるだけソーッと動いてください。	NONE
 /Seele	300776	Yeah, got it! We just need to collect some samples, no need to get into any battles.	嗯！明白了~只要收集到足够的样本就行了，不要恋战哦。	うん！分かった。十分なサンプルを集めればいいんでしょ。戦おうとしないようにね。	NONE
 portraits	
@@ -50,9 +50,9 @@ nop
 emote	59	3
 emote	60	1
 
+msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
 choice	300788	Roger that!	分かった。	NONE	NONE
 choice	300789	Please, let me stay and join your investigation.	あなたたちと一緒に調べたい。	NONE	NONE
-msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -64,7 +64,7 @@ jmp	end_choices
 label	c2dest
 speaker	Bronya
 emote	60	1
-msg	300791	I understand how do you feel, and we found some clues about your memory. You must be eager to know more.	我明白你的心情，好不容易找到和你记忆有关的线索，一定很焦急吧。	あなたの気持ちは分かります。ようやく記憶に関する手がかりを見つけて、落ち着かないのですよね。	NONE
+msg	300791	I understand how you feel. You've finally found some clues about your memory and you're eager to know more.	我明白你的心情，好不容易找到和你记忆有关的线索，一定很焦急吧。	あなたの気持ちは分かります。ようやく記憶に関する手がかりを見つけて、落ち着かないのですよね。	NONE
 
 label	end_choices
 speaker	Bronya
@@ -90,9 +90,9 @@ speaker	Seele
 nop	
 emote	59	5
 emote	60	3
-msg	300797	Bronya... Those eggs on the wall. They are hatching... Yuck! Disgusting!	姐姐大人…墙上的虫卵孵化了……噫！好恶心！	お姉ちゃん……壁の卵が孵化している……うわっ！気持ち悪い！	NONE
+msg	300797	Bronya... Those insect eggs on the wall are hatching... Yuck! Disgusting!	姐姐大人…墙上的虫卵孵化了……噫！好恶心！	お姉ちゃん……壁の卵が孵化している……うわっ！気持ち悪い！	NONE
 speaker	Bronya
 nop	
 emote	59	5
 emote	60	3
-msg	300798	Everyone on your guard. Don't get yourself surrounded.	各位，准备战斗，不要被它们包围了。	全員戦闘準備。包囲されてはいけません。	NONE
+msg	300798	Everyone, prepare for battle! Don't let yourself get surrounded.	各位，准备战斗，不要被它们包围了。	全員戦闘準備。包囲されてはいけません。	NONE

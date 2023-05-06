@@ -15,9 +15,9 @@ portraits	59	60
 emote	59	5
 emote	60	5
 
+/Seele	301530	Hold on! Slow down!	等下！等下！姐姐大人太心急啦！	待って待って、お姉ちゃん、焦りすぎ！	NONE
 choice	301658	(This is a familiar scene...)	この光景いつかどこかで見たような気がする。	NONE	NONE
 choice	301659	(I got Bronya worried again.)	またブローニャに心配かけちゃった。	NONE	NONE
-/Seele	301530	Hold on! Slow down!	等下！等下！姐姐大人太心急啦！	待って待って、お姉ちゃん、焦りすぎ！	NONE
 
 emote	59	1
 /Seele	301531	Ehehe, the last time this happened Bronya really chewed me out.	嘿嘿，上次这样的时候可是被姐姐大人狠批了一顿呢。	エヘヘ、前回こうなったときは、お姉ちゃんにこってりしぼられたのにね。	NONE

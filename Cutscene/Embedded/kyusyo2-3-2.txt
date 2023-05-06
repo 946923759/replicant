@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 music	Amusement Park - Quiet
 portraits	59	60
 speaker	Seele
@@ -42,7 +42,7 @@ msg	300807	*Door Creaks*	吱啦——	ギイ——	NONE
 speaker	Seele
 bg	007/006_1280x720
 portraits
-msg	300808	It's completely dark inside. Can't see anything.	唔…里面好黑，什么都看不见。	うわ……真っ暗。何も見えない。	NONE
+msg	300808	Wow... It's pitch black. I can't see anything.	唔…里面好黑，什么都看不见。	うわ……真っ暗。何も見えない。	NONE
 speaker	Bronya
 msg	300809	Be careful. The sound must be from the other side of this room...	小心一些，从刚才的声音判断，应该是从这个房间的深处传来的……	気をつけてください。さっきの音から判断して、この部屋の奥から聞こえてきていたはずです……。	NONE
 speaker	Seele
@@ -74,7 +74,7 @@ speaker	Seele
 nop	
 emote	59	5
 emote	60	3
-msg	300817	Oops! Sorry... I forgot we must stay quiet...	唔！对不起…要小声点……	あっ！ごめんなさい……声を小さくしなきゃ……。	NONE
+msg	300817	Ah! Sorry... I have to lower my voice....	唔！对不起…要小声点……	あっ！ごめんなさい……声を小さくしなきゃ……。	NONE
 speaker	Bronya
 nop	
 emote	59	5
@@ -94,4 +94,4 @@ speaker	Bronya
 nop	
 emote	59	3
 emote	60	3
-msg	300821	Must be the Hive Queen that Yssring mentioned... Ready your weapons!	看来这就是伊瑟琳说的虫后了…准备应战！	どうやらこれがイザーリンの言っていたクイーンビーのようですね……応戦準備！	NONE
+msg	300821	This must be the Hive Queen Yssring was talking about... Ready your weapons!	看来这就是伊瑟琳说的虫后了…准备应战！	どうやらこれがイザーリンの言っていたクイーンビーのようですね……応戦準備！	NONE

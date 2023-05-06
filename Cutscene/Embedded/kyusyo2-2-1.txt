@@ -17,12 +17,12 @@ speaker	Seele
 emote	59	2
 emote	60	1
 
-choice	300715	Have you been here before?	以前にもここに来たことがあるの？	NONE	NONE
-choice	300716	Do you have a map of this place?	ここの地図を持っているの？	NONE	NONE
 tn	0	The first sentence is "Sasuga oneechan" which can't be translated well. The literal translation would be "Wow, that's just like you, Bronya!" which makes no sense in English.
 msg	300714	Wow, awesome! You really know everything! 	不愧是姐姐大人~真是无所不知呢！	さすがはお姉ちゃん～！本当に何でも知っているのね！	NONE
-
+choice	300715	Have you been here before?	以前にもここに来たことがあるの？	NONE	NONE
+choice	300716	Do you have a map of this place?	ここの地図を持っているの？	NONE	NONE
 condjmp_c	c2dest	2
+
 label	c1dest
 speaker	Bronya
 emote	60	1
@@ -37,9 +37,9 @@ msg	300718	I don't have a map, but I've been here once. Unfortunately it was aft
 label	end_choices
 speaker	Bronya
 emote	60	4
+msg	300719	If it wasn't for the Honkai, these cute little HOMUs could still be bringing smiles to everyone's faces...	如果不是因为崩坏，这些可爱的吼姆一定会给大家带来更多的笑容吧……	崩壊さえなければ、このかわいいホムはきっとみんなにもっと多くの笑顔を与えてくれたでしょうに……。	NONE
 choice	300720	Such a shame.	本当に残念。	NONE	NONE
 choice	300721	One day, this place will be as lively as it was. Once we prevail against Houkai.	崩壊に勝てばここもまた賑やかになる。	NONE	NONE
-msg	300719	If it wasn't for the Honkai, these cute little HOMUs could still be bringing smiles to everyone's faces...	如果不是因为崩坏，这些可爱的吼姆一定会给大家带来更多的笑容吧……	崩壊さえなければ、このかわいいホムはきっとみんなにもっと多くの笑顔を与えてくれたでしょうに……。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -55,7 +55,7 @@ label	c2dest
 speaker	Bronya
 emote	60	2
 msg	300725	You're right... And that's why we must eliminate Houkai. As a gift for Her.	你说的对…就算是为了那个人也要把崩坏消灭掉。	そうですね……あの人のためにも崩壊を滅ぼさなければ。	NONE
-msg	300726	I wish more people can share the joy that She shared with me.	那个人带给我的幸福，我也希望更多人能够看到。	あの人がくれた幸せを、もっと多くの人に見てもらいたいのです。	NONE
+msg	300726	I want more people to see the happiness that she gave me.	那个人带给我的幸福，我也希望更多人能够看到。	あの人がくれた幸せを、もっと多くの人に見てもらいたいのです。	NONE
 emote	60	3
 msg	300727	If one day, I could find Her again... No. I will find Her!	如果有一天能够再次遇到她的话……不，我一定会找到的。	もし、いつの日かまた会えたら……いえ、きっと探し出します。	NONE
 
@@ -68,4 +68,4 @@ msg	300728	Bronya...	姐姐大人……	お姉ちゃん……。	NONE
 speaker	Bronya
 emote	59	7
 emote	60	1
-msg	300729	Enough talking... Let's get moving. Our task at hand is of the most importance.	抱歉，说了很多无关紧要的话…出发吧，现在最重要的是尽快完成任务。	すみません。関係のないことを話しすぎました……行きましょう。今、重要なのはできるだけ早く任務を果たすことです。	NONE
+msg	300729	Sorry, I talked too much... Let's get moving. The important thing right now is to complete the mission as fast as possible.	抱歉，说了很多无关紧要的话…出发吧，现在最重要的是尽快完成任务。	すみません。関係のないことを話しすぎました……行きましょう。今、重要なのはできるだけ早く任務を果たすことです。	NONE

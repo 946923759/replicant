@@ -2,11 +2,11 @@
 bg	009/002_1280x720
 
 label	choice_init
+msg	This is a choice test. Select a choice.
+nop	JUMP TO C2DEST IF CHOICE RESULT IS 2
 choice	Test Choice 1
 choice	Test Choice 2
 choice	Test Choice 3
-msg	This is a choice test. Select a choice.
-nop	JUMP TO C2DEST IF CHOICE RESULT IS 2
 condjmp_c	c2dest	2
 condjmp_c	c3dest	3
 
@@ -21,34 +21,36 @@ label	c3dest
 msg	You selected choice 3.
 
 label	end_choices
+msg	...
 choice	restart choices
 choice	next choice branch
-msg	...
 condjmp_c	choice_init	1
 
 msg	These choices will disappear after being clicked by setting variables and jumping. Currently the variables are not saved.
 
+var	kyuu	0
 label	choice_loop
-condjmp_var	no_more_choices	kyuu	3
-
-nop	Should this be changed to "cmp	kyuu	&0" and "condjmp_short	1"?
-
-condjmp_short	fi	kyuu	~0
-choice	What's your full name?
-label	fi
-
-condjmp_short	fi	kyuu	~1
-choice	You're a Herrscher, right?
-label	fi
+condjmp	no_more_choices	kyuu	3
 
 nop	condjmp_short_var	1	kyuu	&2
 
 nop	This is a really badly designed if-else statement.
+
 condjmp	fi	kyuu	>0
 /Kyuushou	Hello, player!
-
-condjmp	fi
+label	fi
 / 	What should I ask next...?
+
+
+nop	Should this be changed to "cmp	kyuu	&0" and "condjmp_short	1"?
+
+condjmp	fi	kyuu	~0
+choice	What's your full name?
+label	fi
+
+condjmp	fi	kyuu	~1
+choice	You're a Herrscher, right?
+label	fi
 
 condjmp_c	kdest2	2
 condjmp_c	kdest3	3

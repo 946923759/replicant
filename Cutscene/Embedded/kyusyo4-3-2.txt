@@ -35,9 +35,9 @@ emote	61	1
 emote	55	1
 /Emesa	301887	Ugh.....	咕……	うぐっ……。	NONE
 
+/Himeko	301888	Alright, if no one has any objections, let’s start voting. I'll start. I vote for Kyuushou.	好了，如果没有异议的话我们就开始投票吧。我先开始，我投九霄一票。	いいわね。もし異議がないなら早速投票を始めましょう。私から始めるわね。私は九霄に1票よ。	NONE
 choice	302208	I can’t take this responsibility.	私にはそんな重大な責任担えない。	NONE	NONE
 choice	302209	I think other people are more suitable.	他にもっとふさわしい人がいると思う。	NONE	NONE
-/Himeko	301888	Alright, if no one has any objections, let’s start voting. I'll start. I vote for Kyuushou.	好了，如果没有异议的话我们就开始投票吧。我先开始，我投九霄一票。	いいわね。もし異議がないなら早速投票を始めましょう。私から始めるわね。私は九霄に1票よ。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

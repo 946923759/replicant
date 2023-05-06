@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	54	55	56	59
 speaker	
 msgbox_close	instant
@@ -46,5 +46,5 @@ msg	301029	Phew... The front lines are depending on us. We need to stall the Hon
 choice	301644	I'll be with you!	私も一緒に戦う！	NONE	NONE
 choice	301645	I shall protect Seele!	ゼーレは私が守るから！	NONE	NONE
 emote	59	1
-/Seele	301030	Heheh, I'm almost falling for you. Unfortunately, my heart is only for my sister Bronya~	嚯嚯，稍微有点迷上你了呢，可惜我的心里只有姐姐大人呢~	ふふ、ちょっと見惚れちゃった。でも、ゼーレの心はお姉ちゃんのものだけどね～。	NONE
+/Seele	301030	Heheh, I'm almost falling for you. Unfortunately, my heart belongs only to my sister Bronya~	嚯嚯，稍微有点迷上你了呢，可惜我的心里只有姐姐大人呢~	ふふ、ちょっと見惚れちゃった。でも、ゼーレの心はお姉ちゃんのものだけどね～。	NONE
 msg	301031	But if you can survive this, you might have a chance with me. So try not to die, alright?	不过如果你能活下来的话，还是有一点机会的，所以就算是为了我也千万不要死哦。	生き残ろう。一緒に。絶対に死なせない。	NONE

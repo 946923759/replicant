@@ -6,11 +6,14 @@ msg	300040	Sorry, sorry~ I'm a little late. Are you hurt anywhere?	抱歉抱歉~
 msg	300041	Wow, not bad~ You killed those zombies so easily. You're surely someone worth training.	嚯…干的不错嘛，居然能打倒这么多死士~看来是个值得培养的家伙呢。	わぁ……よくやったね。ゾンビをこんなに倒すなんて～育成のしがいがある子みたい！	Uau... bem feito. Bater tantos zumbis - parece uma criança que vale a pena criar!
 choice	0	You must be...			Você deve ser...
 choice	0	Who are you?			Quem é você?
+
 condjmp_c	c2dest	2
 msg	300044	Hmm~? Seems like you already recognize us. In that case, I'll make this quick!	嚯~看来你知道我们呢，既然这样的话解释起来就方便许多了~	ん～？私たちのことを知っているんだね。そういうことなら話が早いな！	Hum? Você nos conhece. Se for esse o caso, a história será rápida!
 jmp	endChoices
+
 label	c2dest
 msg	300045	No, it's not "who are you", you should be asking "who are we"? From today onwards you're one of us too.	不不不~不是“你们”，现在你已经成为了“我们”的一员了哦。	ううん「あなたたち」じゃないよ。今日からは「私たち」の一員だよ。	"Sim, não é ""vocês"". A partir de hoje, você é um de""nós""."
+
 label	endChoices
 speaker	Teammate
 msg	300046	Captain, all the Honkai Beasts on the train have been eliminated. We're approaching the station.	队长，列车上的崩坏生物已经消灭完毕，已向车站发出入站申请。	隊長、列車の崩壊生物は消滅完了しました。駅に進入申請をしています。	Capitão, as criaturas Honkai do trem desapareceram. Estou me candidatando para entrar na estação.

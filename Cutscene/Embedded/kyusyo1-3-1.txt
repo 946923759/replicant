@@ -10,9 +10,9 @@ emote	60	2
 msg	300458	Can't fall asleep?	还没休息么？	まだ寝てないんですか？	NONE
 msg	300459	Then let me impose on you for a bit. I want to talk to you.	那就陪我一会吧，想和你聊聊。	だったら少し付き合ってください。少しお話したいです。	NONE
 
+msg	300460	Seele told me what happened today. She has quite the high opinion of you (redo). She said that you're a trustworthy colleague that protects those she cares about, even if it means sacrificing yourself during a mission.	希儿把今天的事情和我说了，她对你的评价很高呢，在任务中愿意牺牲自己来保护重要的人，是个值得信赖的伙伴。	ゼーレが今日のことを話してくれました。彼女のあなたに対する評価はとても高いです。任務中に自分を犠牲にしてでも大切な人を守る、信頼できる仲間だと。	NONE
 choice	300461	She said she wouldn't tell anyone.	秘密にするって言ったのに……。	NONE	NONE
 choice	300462	How's Seele?	ゼーレは今どんな感じ？	NONE	NONE
-msg	300460	Seele told me what happened today. She has quite the high opinion of you (redo). She said that you're a trustworthy colleague that protects those she cares about, even if it means sacrificing yourself during a mission.	希儿把今天的事情和我说了，她对你的评价很高呢，在任务中愿意牺牲自己来保护重要的人，是个值得信赖的伙伴。	ゼーレが今日のことを話してくれました。彼女のあなたに対する評価はとても高いです。任務中に自分を犠牲にしてでも大切な人を守る、信頼できる仲間だと。	NONE
 
 condjmp_c	c2dest	2
 label	c1dest

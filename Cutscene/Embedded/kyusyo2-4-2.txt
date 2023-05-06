@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Bronya	Seele	_DIM_ALL_WHEN_EMPTY
 preload_portraits	59	60	61
 music	Peaceful Sleep - No Vocals
@@ -100,12 +100,12 @@ speaker	Bronya
 portraits	60	61
 emote	60	4
 emote	61	1
-msg	300955	Himeko... We promised to not interfere each other. After all, we share the same goal. Please, become my power and fight alongside me.	姬子…我们曾经约定过不干涉对方的理念，不管怎么说我们的目标还是相同的，所以请你成为我的力量，帮助我吧。	姫子……以前、お互いの理念には干渉しないと約束しました。何であれ、お互いの目標は同じです。ですから、力を貸して下さい。ブローニャを助けてください。	NONE
+msg	300955	Himeko... We promised not to get in each other's way before. No matter what, we both have the same goal. So please, become my power and fight alongside me.	姬子…我们曾经约定过不干涉对方的理念，不管怎么说我们的目标还是相同的，所以请你成为我的力量，帮助我吧。	姫子……以前、お互いの理念には干渉しないと約束しました。何であれ、お互いの目標は同じです。ですから、力を貸して下さい。ブローニャを助けてください。	NONE
 speaker	Himeko
 portraits	60	61
 emote	60	4
 emote	61	1
-msg	300956	Hmph! It doesn't matter, as long as I can continue to fight.	哼！无所谓，只要能让我继续战斗做什么都一样。	フンッ！構わないわよ。私に戦わせてくれるなら何でもするわ。	NONE
+msg	300956	Ha! I don't care. I'll do anything if you let me fight.	哼！无所谓，只要能让我继续战斗做什么都一样。	フンッ！構わないわよ。私に戦わせてくれるなら何でもするわ。	NONE
 speaker	Bronya
 portraits	60	61
 emote	60	4
@@ -121,13 +121,13 @@ portraits	60	61
 emote	60	1
 emote	61	1
 stopmusic	.5
-msg	300959	OK.	嗯。	はい。	NONE
+msg	300959	Alright.	嗯。	はい。	NONE
 speaker	
 bg	009/011_1280x720
 portraits
 music	Blissful Death - No Vocals
-msg	300960	What is this place?	这里是……	ここは……。	NONE
-msg	300961	Yes... I remember now. It has been a long time.	对了…想起来了，有好久没有来这里了。	そうだ……思い出した。久しぶりにここに来たんだ。	NONE
+msg	300960	This is.....	这里是……	ここは……。	NONE
+msg	300961	Right, I remember now.... I haven't been here in a long time.	对了…想起来了，有好久没有来这里了。	そうだ……思い出した。久しぶりにここに来たんだ。	NONE
 msg	300962	When was last time we met...? Too many things have happened. I can't remember exactly.	上次相遇大概是什么时候呢…经历了太多事情有点记不清了。	この前会ったのはいつだろう……色々なことがありすぎて、よく覚えてない。	NONE
 msg	300963	Is that person still here? Is she still sleeping in solitude? I wonder if they still look sad.	那个人还在那里么？是否依然沉睡在孤独之中，是否依然一副忧伤的样子，	あの人はまだそこにいるのかな。まだ孤独の中で眠っているのかな。まだ悲しそうな顔をしているのかな。	NONE
 msg	300964	I should go see Her...	稍微去看望一下她吧……	ちょっと様子を見てみよう……。	NONE
@@ -167,7 +167,7 @@ speaker
 portraits
 bg	black
 stopmusic	.5
-msg	300986	Hey! Wakey, wakey, eggs and bakey!	喂~起床啦！	ねえ～起きてよ！	NONE
+msg	300986	Hey~ Time to get up!	喂~起床啦！	ねえ～起きてよ！	NONE
 speaker	Seele
 bg	009/002_1280x720
 portraits	59
@@ -175,9 +175,9 @@ emote	59	1
 emote	53	0
 music	Peaceful Sleep - No Vocals
 
+msg	300987	How do you feel? Did you sleep well?	怎么样？睡的还好么？	どう？よく眠れた？	NONE
 choice	300988	I had a strange dream.	変な夢をみたの。	NONE	NONE
 choice	300989	I'm so tired.... Let me sleep a bit more.	眠い。もうちょっと寝かせて。	NONE	NONE
-msg	300987	How do you feel? Did you sleep well?	怎么样？睡的还好么？	どう？よく眠れた？	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

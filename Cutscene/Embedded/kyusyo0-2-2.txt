@@ -4,7 +4,7 @@ bg	009/003_1280x720
 portraits	59
 msg	300085	As you may have noticed before entering the base, our base is built underneath this underground station. It's a safe haven for us to fight against the Honkai Beasts~.	刚才进入基地前你也发现了吧~我们的基地构筑在这座地下车站中，是作为对抗崩坏生物相对安全的据点。	さっき基地に入る前に気づいたと思うんだけど、私たちの基地はこの地下の駅の中にあるの。崩壊生物に対抗するための安全な拠点なんだ～。	Como você deve ter notado antes de entrar na base, nossa base fica dentro desta estação do metrô.É uma base segura para lutar contra criaturas Honkai.
 msg	300086	Most of the survivors in the Far East area live on this base. It's hard to find new survivors like you now.	极东地区的幸存者几乎都生活在这个基地中，现在像你这样新发现的幸存者已经很难得了呢~	極東地区の生存者は、ほとんどがこの基地の中で生活しているの。今はあなたのような新しい生存者を見つけるのが難しいんだよ。	A maioria dos sobreviventes no Extremo Oriente vive nesta base. É difícil encontrar um novo sobrevivente como você hoje.
-msg	300087	Everyone on the base has a role to play in fighting the Honkai. From today on, you too have your own responsibilities, because we need to work together to defeat the Honkai. (TN: Redo!)	为了和崩坏对抗，基地中的大家都有着自己的职责，从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	崩壊に対抗するために、基地の中のみんなにはそれぞれ役割があるの。今日からはあなたもその一員だから協力してね。	Todos na base têm um papel a desempenhar contra o Honkai. A partir de hoje, você é um deles, então colabore.
+msg	300087	Everyone on the base has a role to play in fighting the Honkai. From today on, you too have your own responsibilities, because you're a part of our team.	为了和崩坏对抗，基地中的大家都有着自己的职责，从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	崩壊に対抗するために、基地の中のみんなにはそれぞれ役割があるの。今日からはあなたもその一員だから協力してね。	Todos na base têm um papel a desempenhar contra o Honkai. A partir de hoje, você é um deles, então colabore.
 msgbox_transition
 bg	009/002_1280x720
 msg	300088	This cabin is your room now. You're free to use the facilities and equipment. Think of it as your new home.	这节车厢今后就是你的房间啦，这里的设施你都可以自由使用，不用客气，就当是自己的家吧。	この車両があなたの部屋だよ。ここの設備は自由に使っていいからね。遠慮しないで自分の家だと思って。	Esta cabine é o seu quarto. Você pode usar o equipamento aqui livremente. Não hesite em pensar nisso como sua própria casa.
@@ -41,9 +41,9 @@ msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒
 msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	彼女の悲しそうな表情。	Ela tem uma expressão triste.
 msg	300109	In this world of emptiness, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。	Quem ela está esperando neste mundo vazio ...?
 msg	300110	A sense of nostalgia lingers in my heart.	有种令人怀念的感觉缠绕在胸口。	何だか懐かしいような感覚が胸を締め付ける。	Um sentimento de nostalgia aperta meu coração.
+msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
 choice	0	Wake her up.			Acorde-a.
 choice	0	Never mind.			Esqueça.
-msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
 condjmp_c	c2dest	2
 
 label	c1dest

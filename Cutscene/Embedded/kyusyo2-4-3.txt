@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Seele
 bg	009/005_1280x720
 portraits	59
@@ -25,7 +25,7 @@ speaker	Seele
 portraits	59	56
 emote	59	3
 emote	56	0
-msg	301002	ME Corp... But Bronya never mentioned that we are launching a counter-strike operation. What's happening...?	ME社…但是姐姐大人不是还没宣布开始反攻行动么，到底是怎么回事……	ME社……でも、お姉ちゃんはまだ反撃行動の開始を宣言していないよね。一体どういうことなの……。	NONE
+msg	301002	M.E. Corporation... But Bronya never mentioned that we were starting our counterattack. What on earth is going on....	ME社…但是姐姐大人不是还没宣布开始反攻行动么，到底是怎么回事……	ME社……でも、お姉ちゃんはまだ反撃行動の開始を宣言していないよね。一体どういうことなの……。	NONE
 msg	301003	No! I have to go look for them! Something must be wrong!	不行！我得去找她们！一定是发生了什么！	2人を探しに行かなきゃ！きっと何かあったんだよ！	NONE
 speaker	Teammate
 portraits	59	56
@@ -36,7 +36,7 @@ speaker	Seele
 portraits	59	56
 emote	59	3
 emote	56	0
-msg	301005	Houkai creatures? The hell! It's a bad timing that they attack us now!	崩坏生物？可恶！偏偏趁着这个时候来进攻么！	崩壊生物？まったく！よりによってこんな時に攻めてくるなんて！	NONE
+msg	301005	Honkai beasts? Damn it! Of all the times to attack us!	崩坏生物？可恶！偏偏趁着这个时候来进攻么！	崩壊生物？まったく！よりによってこんな時に攻めてくるなんて！	NONE
 speaker	Teammate
 portraits	59	56
 emote	59	3

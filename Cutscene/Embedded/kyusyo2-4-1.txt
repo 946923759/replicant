@@ -13,7 +13,7 @@ emote	60	4
 msg	300903	That was actually with Mei's help...	那个时候也是和芽衣姐姐一起……	あの時は芽衣姉様も一緒でした……。	NONE
 msg	300904	...	……	……。	NONE
 /Seele	300905	Bronya... Still got Mei on your mind?	姐姐大人…还在想芽衣姐姐的事情么？	ブローニャお姉ちゃん……まだ芽衣お姉ちゃんのことを？	NONE
-/Bronya	300906	No... It's all my fault. I led you two into danger. And Himeko was right. I will not make a good leader.	不…都是我害得你们两人陷入危机，姬子说的对，我根本没有资格领导大家。	いえ……あなたたち2人を危険な目に遭わせてしまい、ブローニャは反省しています。姫子の言う通りです。みんなを引っ張っていく資格なんか、ブローニャにはありません。	NONE
+/Bronya	300906	No... It's all my fault. I led you two into danger. Himeko is right, I'm not qualified to be a leader.	不…都是我害得你们两人陷入危机，姬子说的对，我根本没有资格领导大家。	いえ……あなたたち2人を危険な目に遭わせてしまい、ブローニャは反省しています。姫子の言う通りです。みんなを引っ張っていく資格なんか、ブローニャにはありません。	NONE
 speaker	Seele
 emote	59	3
 emote	60	4
@@ -28,9 +28,9 @@ msg	300909	Seele... But it's mostly my fault for what happened today. If Himeko 
 speaker	Seele
 emote	59	7
 emote	60	4
-msg	300910	Bronya... We could have both died 5 years ago... And since that moment, I've made my mind that death is nothing to be feared, as long as you are here with me!	姐姐大人…也许我们在5年之前就早应该死掉了…那时候我就已经决定，只要和姐姐大人在一起，死亡根本不值一提！	お姉ちゃん……もしかしたら私たちは5年前にとっくに死んでいたかもしれないんだよ……あの時、私は決めたの。お姉ちゃんと一緒なら死んでも構わないって！	NONE
-msg	300911	But we all survived! And we have been living together ever since! I am so happy... truly happy.	但是，姐姐大人…我们活下来了！并且与姐姐大人一同活到了现在！这让我十分高兴…觉得自己特别幸福。	でも、お姉ちゃん……私たちは生き延びてきたのよ！しかもお姉ちゃんと一緒に今まで生きているの！こんな嬉しいこと他にない。とても幸せなことだと思う！	NONE
-msg	300912	The happier I am, however, the more I'm afraid of death... I'm afraid of being apart from you, Bronya. I want to stay together with you forever. Even when there are only two of us left, we will just keep going!	但是越是幸福，希儿就开始越畏惧死亡…畏惧和姐姐大人分开，希儿想和姐姐大人一起…就算只有我们两个人也好，也要永远活下去！	でも幸せになればなるほど、ゼーレはますます死ぬのが怖くなるの……お姉ちゃんと別れるのが怖くなるの。ゼーレはお姉ちゃんと一緒にいたい……私たち二人だけになっても、永遠に生き続けたい！	NONE
+msg	300910	Bronya... We could have died five years ago. But since that moment, I've made up my mind that as long as it's with my sister, death isn't something to fear.	姐姐大人…也许我们在5年之前就早应该死掉了…那时候我就已经决定，只要和姐姐大人在一起，死亡根本不值一提！	お姉ちゃん……もしかしたら私たちは5年前にとっくに死んでいたかもしれないんだよ……あの時、私は決めたの。お姉ちゃんと一緒なら死んでも構わないって！	NONE
+msg	300911	And we survived! I've been living with you since. That makes me truly, truly happy.	但是，姐姐大人…我们活下来了！并且与姐姐大人一同活到了现在！这让我十分高兴…觉得自己特别幸福。	でも、お姉ちゃん……私たちは生き延びてきたのよ！しかもお姉ちゃんと一緒に今まで生きているの！こんな嬉しいこと他にない。とても幸せなことだと思う！	NONE
+msg	300912	But the happier I am, the more afraid of death I am. I'm afraid of being separated from you, my big sister. Even if we're the last two people remaining, I want to live forever!	但是越是幸福，希儿就开始越畏惧死亡…畏惧和姐姐大人分开，希儿想和姐姐大人一起…就算只有我们两个人也好，也要永远活下去！	でも幸せになればなるほど、ゼーレはますます死ぬのが怖くなるの……お姉ちゃんと別れるのが怖くなるの。ゼーレはお姉ちゃんと一緒にいたい……私たち二人だけになっても、永遠に生き続けたい！	NONE
 speaker	Bronya
 emote	59	7
 emote	60	4

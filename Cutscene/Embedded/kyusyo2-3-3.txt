@@ -10,11 +10,11 @@ emote	60	3
 speaker	Seele
 emote	59	5
 emote	60	3
-msg	300823	Yikes... The mucus! It's so sticky, so annoying!	唔……粘呼呼的好讨厌	うぅ……ベタベタして気持ち悪い。	NONE
+msg	300823	Yikes... There's mucus everywhere! It's so sticky! And gross!	唔……粘呼呼的好讨厌	うぅ……ベタベタして気持ち悪い。	NONE
 speaker	Bronya
 emote	59	5
 emote	60	1
-msg	300824	Fortunately, the mucus of those larvae is not that much corruptive. But we could surely use a good shower.	还好这些幼虫的粘液腐蚀性没有想象中的强，回去冲洗一下应该没有问题。	この幼虫の粘液の腐食性はそれほど強くないようです。帰ってから洗い流せば問題ないでしょう。	NONE
+msg	300824	Luckily the mucus from these larvae doesn't seem to be very corrosive. We should be fine as long as we wash it off after getting home.	还好这些幼虫的粘液腐蚀性没有想象中的强，回去冲洗一下应该没有问题。	この幼虫の粘液の腐食性はそれほど強くないようです。帰ってから洗い流せば問題ないでしょう。	NONE
 speaker	Seele
 emote	59	1
 emote	60	1
@@ -170,7 +170,7 @@ msg	300872	Great...	嗯……	はい……。	NONE
 speaker	Himeko
 emote	60	4
 emote	61	1
-msg	300873	I see. So she survived after all... Since she didn't want to meet us, it only could mean that she's our enemy now.	是么，她果然没有死么…既然芽衣不想见到我们，那就说明她已经是我们的敌人了。	そうなの、彼女やっぱり死んでいなかったのね……。私たちに会いたくないということは、私たちの敵ってことね。	NONE
+msg	300873	I see, she wasn't dead after all... If she didn't want to meet us, it could only mean that she's our enemy now.	是么，她果然没有死么…既然芽衣不想见到我们，那就说明她已经是我们的敌人了。	そうなの、彼女やっぱり死んでいなかったのね……。私たちに会いたくないということは、私たちの敵ってことね。	NONE
 speaker	Bronya
 emote	60	4
 emote	61	1
@@ -178,7 +178,7 @@ msg	300874	How!? Impossible!	怎么会！	そんな！	NONE
 speaker	Himeko
 emote	60	4
 emote	61	1
-msg	300875	Don't you forget she's also one of the culprits who are to be blamed for the destruction of the world.	你别忘了，她也是毁掉这个世界的凶手之一。	忘れないで。彼女もこの世界を破壊した犯人の1人なのよ。	NONE
+msg	300875	Don't forget. She's one of the culprits who destroyed this world.	你别忘了，她也是毁掉这个世界的凶手之一。	忘れないで。彼女もこの世界を破壊した犯人の1人なのよ。	NONE
 speaker	Bronya
 emote	60	4
 emote	61	1
@@ -202,7 +202,7 @@ msg	300880	Seele, I...	希儿，我……	ゼーレ、ブローニャは……�
 speaker	Himeko
 emote	60	4
 emote	61	1
-msg	300881	If she insists to look for Mei, just let her go. With that mind of hers, she won't become a capable leader who fights for the greater good of mankind.	如果她还想继续找芽衣的话就随她去吧，抱着这样的心情是无法领导人类的。	もし、まだ芽衣を探したいなら勝手にすればいいわ。ただ、そんな気持ちがあったら人類のリーダーは務まらないわよ。	NONE
+msg	300881	If you still want to look for Mei, go ahead. But it's impossible to lead humanity with such a weak heart.	如果她还想继续找芽衣的话就随她去吧，抱着这样的心情是无法领导人类的。	もし、まだ芽衣を探したいなら勝手にすればいいわ。ただ、そんな気持ちがあったら人類のリーダーは務まらないわよ。	NONE
 speaker	Bronya
 emote	60	4
 emote	61	1

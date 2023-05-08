@@ -3,6 +3,7 @@ extends ColorRect
 
 export(float,0,5,.1) var timeToTweenIn=.5
 export(float,0,5,.1) var timeToTweenOut=.5
+
 var t:Tween
 func _init():
 	t=Tween.new()

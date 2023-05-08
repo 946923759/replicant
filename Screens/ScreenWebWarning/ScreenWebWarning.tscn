@@ -19,7 +19,7 @@ use_filter = true
 extra_spacing_top = 8
 font_data = ExtResource( 3 )
 
-[node name="ScreenWithMenuElements" instance=ExtResource( 8 )]
+[node name="ScreenWebWarning" instance=ExtResource( 8 )]
 script = ExtResource( 2 )
 PrevScreen = "CutsceneFromFile"
 NextScreen = "CutsceneFromFile"

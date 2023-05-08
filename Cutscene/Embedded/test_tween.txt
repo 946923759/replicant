@@ -1,0 +1,9 @@
+preload_portraits	58	59	60	61	67
+portraits	58
+msg	This is a tween test. Good luck getting this working without some ridiculous bug.
+tween	current	58	linear,.5;addx,-100
+msg	This tween moved me to the left!
+tween	current	58	decelerate,1;addx,300
+msg	This tween moved me to the right, with decelerate!
+tween	current	58	decelerate,1;addx,-300;decelerate,1;addx,300
+msg	This tween is chained, I move to the left and then to the right in one single command.

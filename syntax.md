@@ -27,6 +27,17 @@ Use `[i]this[/i]` For italic text.
 
 Use %var_name% to do it. Refer to 'setting variables' for more information.
 
+**strings and integers are the only types truly stored internally. This means printing booleans and bitflags will simply print their 'real' integer.**
+
+As an alternative for booleans, you can do this:
+```
+if	my_boolean	true:
+	var	_temporary	"true"
+else:
+	var	_temporary	"false"
+msg	You set my_boolean to %_temporary%!
+```
+
 ## Modifier commands
 Some message modifier commands are available. Modifier commands must be at the start of the message.
 
@@ -182,11 +193,15 @@ Argument 3 (optional): if this variable is global.
 | "A string here" | Sets the variable to the string "A string here". DOUBLE quotes must be used, not single. |
 | &0 | Sets bitflag 0 in the variable to TRUE. If the variable is already set and not an integer type, it will fail while printing an error. |
 | ~0 | Sets bitflag 0 in the variable to FALSE. If the variable is already set and not an integer type, it will fail while printing an error. |
-
+| +1 | Adds 1 to the variable that has been set already. |
+| -1 | Subtracts 1. |
+| /2 | Divides by 2. Yes, division by 0 will crash. |
+| *2 | ... |
+| =testvar2 | Copies the contents of 'testvar2' into the variable specified in argument 1. This way you can duplicate a variable and modify it instead of modifying the original. |
 # Conditional Jumps
 
 ## if
-A special statement that simplifies logic branches by handling conditional jumps for you.
+A special statement that simplifies logic branches by handling conditional jumps for you. Refer to condjumps section for possible parameters.
 
 Starting with this statement:
 ```
@@ -284,4 +299,6 @@ NOT IMPLEMENTED YET
 
 Argument 1: Before, during, or after text displays.
 
-Argument 2: tween like StepMania's language. It's name, not position based. Ex. `Kyuushou:decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`
+Argument 2: Portrait to tween. Currently, the background cannot be tweened.
+
+Argument 3: tween like StepMania's language. Ex. `decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`

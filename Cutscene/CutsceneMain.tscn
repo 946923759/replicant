@@ -218,9 +218,6 @@ rect_pivot_offset = Vector2( 0, 90 )
 custom_fonts/font = ExtResource( 3 )
 text = "Dandelion"
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="textActor_better" type="RichTextLabel" parent="CenterContainer"]
 anchor_left = 0.5

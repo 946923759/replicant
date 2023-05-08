@@ -4,6 +4,9 @@ onready var t = $Tween
 onready var af = $DialogueActorFrame2
 
 func _ready():
+	if ThisScreenIsAnOverlay:
+		$smQuad.visible=false
+		
 	var rect_size:Vector2 = get_viewport().get_visible_rect().size
 	af.rect_size = rect_size
 	t.interpolate_property(af,"rect_position:x",rect_size.x,0,1.0,Tween.TRANS_CUBIC,Tween.EASE_OUT,0)

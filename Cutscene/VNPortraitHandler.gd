@@ -12,9 +12,9 @@ var idx: int = -1
 var is_active:bool = false
 var is_masked:bool=false
 
-var portrait_textures:Array=[]
+var portrait_textures:Dictionary={}
 #var imageTex:Array=[]
-var cur_expression:int=0
+var cur_expression:String="0"
 var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
 
@@ -26,7 +26,7 @@ var blendAdd:Light2D
 #onready var tween = Tween.new()
 
 func _draw():
-	if cur_expression > len(portrait_textures)-1:
+	if !portrait_textures.has(cur_expression):
 		#print("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(cur_expression)+"!!")
 		return
 		
@@ -207,32 +207,68 @@ func undim():
 
 func is_tweening()->bool:
 	return tween.is_active()
+	
+func apply_sm_tween(tweenString) -> float:
+	var tw = get_tree().create_tween()
+	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO
+
+func gestalt_set_textures(sprName):
+	var matching = Globals.get_matching_files("res://Portraits",sprName)
+	
+	portrait_textures = Dictionary()
+	var foundDefaultYet:bool=false
+	for path in matching:
+		if !path.ends_with(".png"):
+			continue
+		var emotes = path.split(" ",1) #Kyuushou normal.png, Kyuushou happy.png, etc
+		if emotes.size() < 2:
+			if foundDefaultYet:
+				printerr("Found image "+path+" without an expression, but there was already another loaded...")
+				continue
+			else:
+				portrait_textures['0']=load(path)
+			
+		portrait_textures[emotes[1]] = load(path)
+#		var f = File.new()
+#		var image = Image.new()
+#		f.open(path, File.READ)
+#		var buffer = f.get_buffer(f.get_len())
+#		image.load_png_from_buffer(buffer)
+#
+#		f.close()
+#		image.lock()
+#
+#		portrait_textures[i]=ImageTexture.new()
+#		portrait_textures[i].create_from_image(image);
 
 func set_texture_wrapper(sprName):
 	lastLoaded=sprName
-	cur_expression=0
+	cur_expression="0"
 	if sprName in Globals.database:
-		var toLoad = Globals.database[sprName]
+		var toLoad:Array = Globals.database[sprName]
 		print("Got textures to load... "+String(toLoad))
-		replicant_set_texture(toLoad)
+		var newDict = {}
+		for i in range(len(toLoad)):
+			newDict[String(i)]=toLoad[i]
+		replicant_set_texture(newDict)
 	else:
 		print(sprName+" not in portrait database! Falling back...")
-		replicant_set_texture([sprName])
+		gestalt_set_textures(sprName)
 
-func replicant_set_texture(toLoad:Array):
-	portrait_textures = Array()
-	portrait_textures.resize(toLoad.size())
+func replicant_set_texture(toLoad:Dictionary):
+	portrait_textures = Dictionary()
+	#portrait_textures.resize(toLoad.size())
 	#imageTex=Array()
 	#imageTex.resize(toLoad.size())
-	for i in range(toLoad.size()):
-		var sprName = toLoad[i]
+	for emoteName in toLoad:
+		var sprName = toLoad[emoteName]
 		if sprName.ends_with(".png"):
 			#print("Hey moron, don't put .png in the portrait names!")
 			sprName=sprName.rstrip(".png")
 		#set_texture(load("res://Cutscene/Portraits/"+sprName+".png"))
 		var f = File.new()
 		if f.file_exists("res://Portraits/"+sprName+".png.import"):
-			portrait_textures[i]=load("res://Portraits/"+sprName+".png")
+			portrait_textures[emoteName]=load("res://Portraits/"+sprName+".png")
 		elif OS.has_feature("standalone"):
 			var path = OS.get_executable_path().get_base_dir()+"/GameData/Portraits/"+sprName+".png"
 			#print("Checking path "+path)
@@ -250,8 +286,8 @@ func replicant_set_texture(toLoad:Array):
 				f.close()
 				image.lock()
 
-				portrait_textures[i]=ImageTexture.new()
-				portrait_textures[i].create_from_image(image);
+				portrait_textures[emoteName]=ImageTexture.new()
+				portrait_textures[emoteName].create_from_image(image);
 				#print(portrait_textures[i])
 			else:
 				printerr("Portrait "+sprName+" not embedded in pck and no external file!! Tried path "+path)

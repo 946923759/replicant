@@ -295,9 +295,9 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 	elif (varName in cutsceneVars):
 		var varToCheck = curMessage[3].to_lower()
 		if varToCheck=="true":
-			SHOULD_JUMP=cutsceneVars[varName]==1
+			SHOULD_JUMP=cutsceneVars[varName] >= 0 # Because it SHOULD be possible to check > 0 the wacky C way
 		elif varToCheck=="false":
-			SHOULD_JUMP=cutsceneVars[varName]==0
+			SHOULD_JUMP=cutsceneVars[varName] == 0
 		else:
 			if varToCheck[0]=='"':
 				
@@ -432,8 +432,7 @@ func advance_text()->bool:
 				elif curMessage.size() > 1:
 					#print("msg ")
 					tmp_txt= curMessage[1]
-				#else:
-					
+				
 				while tmp_txt.begins_with("/"):
 					if tmp_txt.begins_with("/hl["):
 						var cmd_end = tmp_txt.find("]", 4);
@@ -477,6 +476,24 @@ func advance_text()->bool:
 					else:
 						printerr("Unknown command used, giving up: "+tmp_txt)
 						break
+				
+				var hasVar = tmp_txt.find("%")
+				if hasVar != -1:
+					var endTag = -1
+					for jjjj in range(hasVar,tmp_txt.length()):
+						if tmp_txt[jjjj]==" ":
+							break
+						elif tmp_txt[jjjj]=="%":
+							endTag = jjjj
+							break
+					if endTag != -1:
+						var varName = tmp_txt.substr(hasVar,endTag)
+						print("Got story var "+varName)
+						if cutsceneVars.has(varName):
+							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTag)
+							pass
+						else:
+							printerr("Variable used in script, but not declared yet. Ignoring.")
 				
 				#Failsafe. Maybe not needed?
 				if text.visible_characters<0:
@@ -656,11 +673,28 @@ func advance_text()->bool:
 			'emote':
 				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
 				if lastUsed != null:
-					lastUsed.cur_expression = int(curMessage[2])
+					lastUsed.cur_expression = curMessage[2]
 					lastUsed.update()
 					#print("Set new portrait sprite")
 				else:
 					print("There is no active portrait named "+curMessage[1])
+			'tween':
+				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[2])
+				
+				if lastUsed != null:
+					var tweenTime = lastUsed.apply_sm_tween(curMessage[3])
+					match curMessage[2]:
+						"current","during":
+							pass
+						"before":
+							waitForAnim+=tweenTime
+						"after":
+							# not implemented yet.
+							pass
+					#lastUsed.cur_expression = int(curMessage[2])
+					#lastUsed.update()
+				else:
+					printerr("Tried to apply a tween on a portrait that doesn't exist")
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you

@@ -13,22 +13,38 @@ onready var debugOverlay = $CanvasLayer/smQuad/VBoxContainer
 
 func _ready():
 	$CanvasLayer/smQuad.visible=false
+	$smScreenInOut.visible=(!ThisScreenIsAnOverlay)
 	if !backButton.visible:
 		backButton.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	debugOverlay.get_node("LabelReload").text = "KEY 2: Reload - "+self.name
-	
-	var labelNext = debugOverlay.get_node("LabelNext")
-	labelNext.text = "KEY 5: Send NextScreen - "+self.NextScreen
-	if NextScreen=="":
-		labelNext.modulate=Color.dimgray
 	
 	var labelPrev = debugOverlay.get_node("LabelPrev")
 	labelPrev.text = "KEY 4: Send PrevScreen - "+self.PrevScreen
 	if PrevScreen=="":
 		labelPrev.modulate=Color.dimgray
+		
+	var labelNext = debugOverlay.get_node("LabelNext")
+	labelNext.text = "KEY 5: Send NextScreen - "+self.NextScreen
+	if NextScreen=="":
+		labelNext.modulate=Color.dimgray
+	
+	var scrNameNode = $CanvasLayer/smQuad/LabelScreenName
+	if ThisScreenIsAnOverlay:
+		scrNameNode.text = "[Overlay] "+self.name
+	else:
+		scrNameNode.text = self.name
+		
+	#VisualServer.canvas_item_set_z_index($ErrorDisplay.get_canvas_item(),999)
 
+func input(event):
+	pass
+
+var thisScreenIsCurrentlyHandlingInput:bool=true
 
 func _input(_event):
+	if thisScreenIsCurrentlyHandlingInput==false:
+		return
+	
 	if Input.is_action_just_pressed("ui_cancel") and HandlePhysicalBButton:
 		OffCommandPrevScreen()
 	elif (Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause")) and HandlePhysicalAButton:
@@ -47,24 +63,31 @@ func _input(_event):
 			KEY_5:
 				OffCommandNextScreen()
 		
-	
+func AddNewScreenOnTop(scr:String):
+	var packedScene = load(Globals.SCREENS[scr])
+	var inst = packedScene.instance()
+	inst.ThisScreenIsAnOverlay=true
+	add_child(inst)
+	inst.ThisScreenIsAnOverlay=true
+	thisScreenIsCurrentlyHandlingInput=false
 
 func OffCommandNextScreen(ns:String=NextScreen)->bool:
-	if ns != "":
+	if ThisScreenIsAnOverlay:
+		OffCommandOverlay()
+	elif ns != "":
 		fadeOut.OffCommand(ns)
 		return true
-	elif ThisScreenIsAnOverlay:
-		OffCommandOverlay()
+	
 	else:
 		printerr("NextScreen for "+self.name+" is not defined.")
 	return false
 
 func OffCommandPrevScreen()->bool:
-	if PrevScreen != "":
+	if ThisScreenIsAnOverlay:
+		OffCommandOverlay()
+	elif PrevScreen != "":
 		fadeOut.OffCommand(PrevScreen)
 		return true
-	elif ThisScreenIsAnOverlay:
-		OffCommandOverlay()
 	else:
 		printerr("PrevScreen for "+self.name+" is not defined.")
 	return false
@@ -83,3 +106,16 @@ func _notification(what):
 func _on_BackButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		OffCommandPrevScreen()
+
+func ReportScriptError(errorMessage:String):
+	#var errDisp = $ErrorDisplay
+	var tw = $CanvasLayer/ErrorDisplay/Tween
+	var q = $CanvasLayer/ErrorDisplay/smQuad
+	var text = $CanvasLayer/ErrorDisplay/RichTextLabel
+	
+	text.text = errorMessage
+	text.rect_position.y = q.rect_size.y-text.rect_size.y
+	
+	tw.interpolate_property($CanvasLayer/ErrorDisplay,"rect_position:y",-q.rect_size.y,-q.rect_size.y+text.rect_size.y,.3)
+	tw.interpolate_property($CanvasLayer/ErrorDisplay,"rect_position:y",-q.rect_size.y+text.rect_size.y,-q.rect_size.y,.3,Tween.TRANS_LINEAR,Tween.EASE_IN,3)
+	tw.start()

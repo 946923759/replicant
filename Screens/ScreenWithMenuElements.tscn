@@ -30,6 +30,17 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.882353 )
 script = ExtResource( 4 )
 
+[node name="LabelScreenName" type="Label" parent="CanvasLayer/smQuad"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1205.16
+margin_top = 25.1984
+margin_right = -20.1587
+margin_bottom = 75.1984
+custom_fonts/font = ExtResource( 5 )
+text = "[Overlay] ScreenWithMenuElements"
+align = 2
+
 [node name="Label" type="Label" parent="CanvasLayer/smQuad"]
 margin_left = 50.0
 margin_top = 20.0
@@ -55,18 +66,54 @@ margin_bottom = 50.0
 custom_fonts/font = ExtResource( 5 )
 text = "KEY 2: Reload - ScreenWithMenuElements"
 
-[node name="LabelNext" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+[node name="LabelPrev" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
 margin_top = 54.0
 margin_right = 1185.0
 margin_bottom = 104.0
 custom_fonts/font = ExtResource( 5 )
-text = "KEY 4: Send NextScreen - ScreenWithMenuElements"
+text = "KEY 5: Send PrevScreen - ScreenWithMenuElements"
 
-[node name="LabelPrev" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+[node name="LabelNext" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
 margin_top = 108.0
 margin_right = 1185.0
 margin_bottom = 158.0
 custom_fonts/font = ExtResource( 5 )
-text = "KEY 5: Send PrevScreen - ScreenWithMenuElements"
+text = "KEY 4: Send NextScreen - ScreenWithMenuElements"
+
+[node name="LabelErrorDisp" type="Label" parent="CanvasLayer/smQuad/VBoxContainer"]
+margin_top = 162.0
+margin_right = 1185.0
+margin_bottom = 212.0
+custom_fonts/font = ExtResource( 5 )
+text = "KEY 8: Repeat last error message"
+
+[node name="ErrorDisplay" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1920.0
+margin_bottom = -1920.0
+mouse_filter = 2
+
+[node name="smQuad" type="ColorRect" parent="CanvasLayer/ErrorDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0.160784, 0.301961, 0.52549 )
+script = ExtResource( 4 )
+
+[node name="RichTextLabel" type="Label" parent="CanvasLayer/ErrorDisplay"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = -262.0
+margin_right = 20.0
+margin_bottom = -212.0
+rect_min_size = Vector2( 1920, 0 )
+custom_fonts/font = ExtResource( 5 )
+text = "error message goes here"
+valign = 2
+
+[node name="Tween" type="Tween" parent="CanvasLayer/ErrorDisplay"]
 
 [connection signal="gui_input" from="BackButton" to="." method="_on_BackButton_gui_input"]

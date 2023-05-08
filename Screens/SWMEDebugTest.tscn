@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends \"res://Screens/ScreenWithMenuElements.gd\"
+
+var curSelection:int = 0
+
+func _on_Button_pressed():
+	ReportScriptError(\"This is a test error.\")
+
+func _on_Button2_pressed():
+	AddNewScreenOnTop(\"ScreenWebWarning\")
+"
+
+[node name="ScreenWithMenuElements" instance=ExtResource( 1 )]
+script = SubResource( 1 )
+
+[node name="BackButton" parent="." index="0"]
+visible = false
+
+[node name="Button" type="Button" parent="." index="3"]
+margin_left = 28.0
+margin_top = 40.0
+margin_right = 849.0
+margin_bottom = 192.0
+custom_fonts/font = ExtResource( 2 )
+text = "Press to create an error message"
+
+[node name="Button2" type="Button" parent="." index="4"]
+margin_left = 943.376
+margin_top = 42.1189
+margin_right = 1764.38
+margin_bottom = 194.119
+custom_fonts/font = ExtResource( 2 )
+text = "Press to spawn an overlay screen"
+
+[node name="Label5" type="Label" parent="." index="5"]
+margin_left = 557.2
+margin_top = 640.264
+margin_right = 1436.2
+margin_bottom = 690.264
+custom_fonts/font = ExtResource( 2 )
+text = "This is input handle test, use keyboard"
+
+[node name="Control" type="VBoxContainer" parent="." index="6"]
+margin_left = 837.214
+margin_top = 749.533
+margin_right = 980.214
+margin_bottom = 961.533
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Control" index="0"]
+margin_right = 143.0
+margin_bottom = 50.0
+custom_fonts/font = ExtResource( 2 )
+text = "Item 1"
+
+[node name="Label2" type="Label" parent="Control" index="1"]
+margin_top = 54.0
+margin_right = 143.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 2 )
+text = "Item 2"
+
+[node name="Label3" type="Label" parent="Control" index="2"]
+margin_top = 108.0
+margin_right = 143.0
+margin_bottom = 158.0
+custom_fonts/font = ExtResource( 2 )
+text = "Item 3"
+
+[node name="Label4" type="Label" parent="Control" index="3"]
+margin_top = 162.0
+margin_right = 143.0
+margin_bottom = 212.0
+custom_fonts/font = ExtResource( 2 )
+text = "Item 4"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

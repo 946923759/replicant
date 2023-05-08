@@ -7,7 +7,7 @@
 //VN_STOP	Chapter 3
 
 --Debug Tests
-Music Test		test_music
+Music Test		test_music,test_tween
 Choice Test		test_choice,test_choice_design
 Font Test		test_font
 Background Test		test_background

@@ -47,8 +47,6 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 					actor.hideShow(1)
 					waitForAnim+=1
 				elif is_instance_valid(lastBackground):
-					#bgFadeLayer
-					pass
 					lastBackground.hideActor(.5)
 					actor.showActor(.5,.5) #time, delay
 					waitForAnim+=1

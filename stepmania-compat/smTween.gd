@@ -92,6 +92,8 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tw.tween_property(objectToTween,"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"zoom":
 				tw.tween_property(objectToTween,"scale",Vector2(float(splitCmd[1]),float(splitCmd[2])),tweenLength).set_delay(timeToDelay)
+			"zoomx":
+				tw.tween_property(objectToTween,"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			_:
 				print("Unregistered command "+String(splitCmd))
 	return timeToDelay+tweenLength

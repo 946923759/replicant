@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Cutscene/CutsceneOptions.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=2]
-[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Ext/other_329.png" type="Texture" id=6]
@@ -57,7 +57,7 @@ polygon = PoolVector2Array( 0, 0, 1500, 0, 1250, 125, 0, 125 )
 
 [node name="Label" type="Label" parent="test_aaaaaa"]
 margin_right = 800.0
-margin_bottom = 103.0
+margin_bottom = 109.0
 rect_min_size = Vector2( 800, 0 )
 mouse_filter = 0
 custom_fonts/font = ExtResource( 5 )
@@ -69,7 +69,7 @@ __meta__ = {
 [node name="YesNo" type="Control" parent="test_aaaaaa"]
 margin_left = 804.0
 margin_right = 804.0
-margin_bottom = 103.0
+margin_bottom = 109.0
 
 [node name="Label2" type="Label" parent="test_aaaaaa/YesNo"]
 margin_right = 163.0
@@ -93,9 +93,9 @@ __meta__ = {
 }
 
 [node name="test option" type="Label" parent="test_aaaaaa"]
-margin_top = 107.0
+margin_top = 113.0
 margin_right = 800.0
-margin_bottom = 210.0
+margin_bottom = 222.0
 rect_min_size = Vector2( 800, 0 )
 mouse_filter = 0
 custom_fonts/font = ExtResource( 5 )
@@ -106,9 +106,9 @@ __meta__ = {
 
 [node name="YesNo2" type="Control" parent="test_aaaaaa"]
 margin_left = 804.0
-margin_top = 107.0
+margin_top = 113.0
 margin_right = 804.0
-margin_bottom = 210.0
+margin_bottom = 222.0
 
 [node name="100" type="Label" parent="test_aaaaaa/YesNo2"]
 anchor_bottom = 1.126

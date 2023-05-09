@@ -18,6 +18,7 @@ var parent_node
 #const nightShader = preload("res://ParticleEffects/NightShader.tres")
 #We assign in _ready() in case something wants to supply its own backgrounds
 onready var backgrounds:Control = $Backgrounds
+onready var optionsScreen = $OptionsScreen
 #var lastBackground:smSprite
 enum BG_TWEEN {
 	DEFAULT,
@@ -359,16 +360,16 @@ func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
 	...Or I guess you can just repeat the message in each label.
 	"""
 	choiceResult = -1
-	var starting_pos = cur_pos
+	#var starting_pos = cur_pos
 	
 	var choice_table = []
 	while true:
-		if cur_pos >= message.size():
+		if cur_pos >= tmp_msgs.size():
 			break
 		#elif cur_pos < starting_pos:
 		#	printerr("choice runahead went backwards. This might cause an infinite loop, so giving up.")
 		#	break
-		var curMessage = message[cur_pos]
+		var curMessage = tmp_msgs[cur_pos]
 		#print(cur_pos)
 		match curMessage[0]:
 			'msg':
@@ -381,7 +382,7 @@ func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
 					print(curMessage)
 					choice_table.push_back(curMessage[0])
 			'condjmp','condjmp_neg','jmp':
-				var tmp_pos = process_jumps(message,curMessage,cur_pos,true)
+				var tmp_pos = process_jumps(tmp_msgs,curMessage,cur_pos,true)
 				if tmp_pos < cur_pos:
 					printerr("It should not be possible for the choice runahead to go backwards. Giving up.")
 					printerr("Errored out at position "+String(cur_pos)+", attempted to jump to "+String(tmp_pos))
@@ -480,20 +481,21 @@ func advance_text()->bool:
 				var hasVar = tmp_txt.find("%")
 				if hasVar != -1:
 					var endTag = -1
-					for jjjj in range(hasVar,tmp_txt.length()):
+					for jjjj in range(hasVar+1,tmp_txt.length()):
 						if tmp_txt[jjjj]==" ":
 							break
 						elif tmp_txt[jjjj]=="%":
 							endTag = jjjj
 							break
 					if endTag != -1:
-						var varName = tmp_txt.substr(hasVar,endTag)
+						#print(endTag-hasVar)
+						var varName = tmp_txt.substr(hasVar+1,endTag-hasVar-1)
 						print("Got story var "+varName)
 						if cutsceneVars.has(varName):
-							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTag)
+							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTag+1)
 							pass
 						else:
-							printerr("Variable used in script, but not declared yet. Ignoring.")
+							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
 				
 				#Failsafe. Maybe not needed?
 				if text.visible_characters<0:
@@ -862,6 +864,7 @@ func openTextbox(t:SceneTreeTween,animTime:float=.3)->float:
 #onready var screenWidth=Globals.gameResolution.x
 func tween_in_history():
 	isHistoryBeingShown=true
+	historyActor.isHandlingInput=true
 	historyActor.set_history(textHistory)
 	#historyActor.OnCommand()
 	#tw.stop_all()
@@ -885,6 +888,8 @@ func tween_out_history():
 		get_viewport().get_visible_rect().size.x*-1,.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 	historyTween.parallel().tween_property(text,"modulate:a",1,.3)
 	historyTween.parallel().tween_property($historyQuad,"color:a",0,.3)
+	isOtherScreenHandlingInput=false
+	isHistoryBeingShown=false
 	
 
 func shitty_interpolate_label(s:String):
@@ -899,12 +904,12 @@ func set_rect_size():
 func _ready():
 	$FadeToBlack.visible=true
 	
-	$OptionsScreen.visible=false
+	optionsScreen.visible=false
 	$Choices.visible=false
 	$FSMode_ActorFrame.visible=false
 	$AutoModeIndicator.visible=false
 	VisualServer.canvas_item_set_z_index($bgFadeLayer.get_canvas_item(),-15)
-	$OptionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
+	optionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
 	
 	$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
@@ -938,9 +943,7 @@ func _ready():
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 	seq.tween_property($FadeToBlack,"color:a",0,.5)
 	
-	$CutsceneDebug.set_text(message)
 	$CutsceneDebug.visible=false
-	
 	#This is fine, auto mode doesn't work until process(true)
 	toggleAutoMode(Globals.wasUsingAutoMode)
 
@@ -948,7 +951,7 @@ func _ready():
 func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
 	if parent:
 		parent_node = parent
-	$dim.color.a=0
+	#$dim.color.a=0
 	textboxSpr.rect_scale.y=0
 	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)
 #	var t := get_tree().create_tween()
@@ -961,13 +964,15 @@ func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
 	self.msgColumn=msgColumn
 	preparse_string_array(message_,delim)
 	
+	$CutsceneDebug.set_text(message)
+	
 	advance_text()
 	set_process(true)
 
 func init_resume_(message_, parent, state, delim="\t", msgColumn:int=1):
 	if parent:
 		parent_node = parent
-	$dim.color.a=0
+	#$dim.color.a=0
 	textboxSpr.rect_scale.y=0
 	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)
 
@@ -1006,7 +1011,7 @@ func end_cutscene():
 # Called immediately after end_cutscene (look above)
 signal cutscene_finished()
 func end_cutscene_2():
-	Globals.wasUsingAutoMode = autoModeActive
+	Globals.wasUsingAutoMode = automatically_advance_text
 	
 	var needToSave:bool=false
 	for c in backgrounds.get_children():
@@ -1030,18 +1035,18 @@ func end_cutscene_2():
 # wasn't coupled together, instead vntext:advance() would be called and if it returned
 # false it meant there was no more text.
 var manualTriggerForward=false
-var autoModeActive:bool=false
 
 var isHistoryBeingShown=false
-var isOptionsScreenOpen=false
-var isWaitingForChoice=false
+
+var isOtherScreenHandlingInput:bool=false
+#var isWaitingForChoice=false
 
 
 #limit skip speed
 var frameLimiter:float=0.0
 
 func toggleAutoMode(b:bool=false):
-	autoModeActive=b
+	automatically_advance_text=b
 	if b:
 		$AutoModeIndicator.play()
 	else:
@@ -1052,27 +1057,27 @@ func _process(delta):
 	if isHistoryBeingShown:
 		historyActor.process(delta)
 		return
-	elif isOptionsScreenOpen:
+	elif $CutsceneDebug.visible and Input.is_action_just_pressed("DebugButton2"):
+		isOtherScreenHandlingInput=false
+		$CutsceneDebug.visible=false
+	elif isOtherScreenHandlingInput:
 		$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
-		#if Input.is_action_just_pressed("ui_select"):
-		#	print("CutsceneMain: ui_select!")
 		return
 		
 	if Input.is_action_just_pressed("ui_pause") or Input.is_action_just_pressed("ui_cancel"):
 		toggleAutoMode(false)
-		$OptionsScreen.visible=true
-		$OptionsScreen.OnCommand()
+		optionsScreen.visible=true
+		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
-		isOptionsScreenOpen=true
+		
+		isOtherScreenHandlingInput=true
 	elif Input.is_action_just_pressed("DebugButton1"):
 		get_tree().reload_current_scene()
 	elif Input.is_action_just_pressed("DebugButton2"):
-		$CutsceneDebug.visible=!$CutsceneDebug.visible
+		isOtherScreenHandlingInput=true
+		$CutsceneDebug.visible=true
 	
-	if isWaitingForChoice:
-		return
-	
-	if Input.is_action_pressed("vn_skip") and isWaitingForChoice==false:
+	if Input.is_action_pressed("vn_skip"):
 		frameLimiter+=delta
 		if frameLimiter > .1 and curPos < message.size():
 			txtTw.kill()
@@ -1100,13 +1105,13 @@ func _process(delta):
 			print("Set choices: "+String(ChoiceTable))
 			$Choices.setChoices(ChoiceTable)
 			$Choices.OnCommand()
-			isWaitingForChoice=true
+			isOtherScreenHandlingInput=true
 		elif forward:
 			manualTriggerForward=false
 			print("advancing")
 			if curPos >= message.size() or !advance_text():
 				end_cutscene()
-		elif autoModeActive:
+		elif automatically_advance_text:
 			frameLimiter+=delta
 			if frameLimiter>2:
 				manualTriggerForward=true
@@ -1139,23 +1144,19 @@ func _process(delta):
 #Refer to https://docs.godotengine.org/en/stable/tutorials/scripting/overridable_functions.html?highlight=_unhandled_input#overridable-functions
 #or https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-unhandled-input
 func _unhandled_input(event):
-	if isWaitingForChoice:
+	if isOtherScreenHandlingInput:
 		return
 			
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
 	if Input.is_action_just_pressed("ui_select"):
-		if autoModeActive:
+		if automatically_advance_text:
 			toggleAutoMode(false)
 		else:
 			manualTriggerForward=true
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_history"):
 		toggleAutoMode(false)
-		if isHistoryBeingShown:
-			print("Hiding history!")
-			tween_out_history()
-			isHistoryBeingShown=false
-		elif messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN and isOptionsScreenOpen==false: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
 			#historyActor.set_history(textHistory)
@@ -1165,30 +1166,27 @@ func _input(event):
 	if (event is InputEventMouseMotion):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		
-	if isOptionsScreenOpen:
+	if isOtherScreenHandlingInput:
 		return
 	#if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
 	if Input.is_action_just_pressed("vn_history") and isHistoryBeingShown==false:
 		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			tween_in_history()
 			get_tree().set_input_as_handled()
+			isOtherScreenHandlingInput=true
 		#elif event.button_index==BUTTON_WHEEL_UP:
 		#		tween_out_history()
 		#		isHistoryBeingShown=false
 	elif (event is InputEventMouseButton and event.is_pressed() and event.button_index==2) or (event is InputEventScreenTouch and event.index==1):
-		if isHistoryBeingShown:
-			tween_out_history()
-			isHistoryBeingShown=false
-			get_tree().set_input_as_handled()
-		else:
-			print("user right clicked to open options screen")
-			$OptionsScreen.visible=true
-			$OptionsScreen.OnCommand()
-			#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
-			isOptionsScreenOpen=true
-			get_tree().set_input_as_handled()
+		print("user right clicked to open options screen")
+		optionsScreen.visible=true
+		optionsScreen.OnCommand()
+		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
+		
+		isOtherScreenHandlingInput=true
+		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_auto"):
-		toggleAutoMode(!autoModeActive)
+		toggleAutoMode(!automatically_advance_text)
 	#elif isHistoryBeingShown:
 	#	historyActor.input(event)
 		#else:
@@ -1197,26 +1195,27 @@ func _input(event):
 #If Android back button pressed
 #TODO: Ignore if cutscene playing
 func _notification(what):
-	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOptionsScreenOpen==false:
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOtherScreenHandlingInput==false:
 		toggleAutoMode(false)
-		$OptionsScreen.visible=true
-		$OptionsScreen.OnCommand()
+		optionsScreen.visible=true
+		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
-		isOptionsScreenOpen=true
+		
+		isOtherScreenHandlingInput=true
 
 
 func _on_SkipButton_pressed():
 	end_cutscene()
 
 func _on_dim_gui_input(event):
-	if isWaitingForChoice:
+	if isOtherScreenHandlingInput:
 		return
 	
 	if (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
 		event is InputEventScreenTouch and event.is_pressed()
 	):
 		print("clicked")
-		if autoModeActive:
+		if automatically_advance_text:
 			toggleAutoMode(false)
 		else:
 			manualTriggerForward=true
@@ -1227,12 +1226,14 @@ func _on_Choices_selected_choice(selection):
 	$Choices.OffCommand()
 	ChoiceTable=[]
 	advance_text()
-	isWaitingForChoice=false
+	if isOtherScreenHandlingInput==false:
+		printerr("Somehow input was handed to this screen from the choice one, but choice screen shouldn't have input")
+	isOtherScreenHandlingInput=false
 
 
 func _on_OptionsScreen_options_closed():
 	print("User closed options")
-	isOptionsScreenOpen=false
-	$OptionsScreen.visible=false
+	optionsScreen.visible=false
+	isOtherScreenHandlingInput=false
 	#print("New opacity is "+String(Globals.OPTIONS['bgOpacity']['value']/100.0))
 	#$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0

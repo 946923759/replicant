@@ -180,11 +180,9 @@ The `var` opcode will set a variable. A variable can either be a boolean, a stri
 
 Examples: `var testvar 7`, `var testvar "Hello!"`, `var testvar &0`, `var testvar false`
 
-Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __.
+Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __. Prefix variables with `G_` to make them global.
 
 Argument 2: operand.
-
-Argument 3 (optional): if this variable is global.
 
 | operand examples | what it does |
 | ---------------- | ------------ |
@@ -295,7 +293,6 @@ condjmp_neg jumps if result of comparison is false.
 
 
 # tween
-NOT IMPLEMENTED YET
 
 Argument 1: Before, during, or after text displays.
 

@@ -43,7 +43,13 @@ func loadFromExternal(path:String):
 func loadVNBG(sprName:String):
 	#loadFromExternal(OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Backgrounds/"+sprName)
 	var f = File.new()
-	if OS.has_feature("standalone") and !f.file_exists("res://Backgrounds/"+sprName+".png.import"):
+	
+	for ext in [".png",".jpg"]:
+		if f.file_exists("res://Backgrounds/"+sprName+ext+".import"):
+			texture=load("res://Backgrounds/"+sprName+ext)
+			print(sprName+ext)
+			return true
+	if OS.has_feature("standalone"):
 		
 		#var found = false
 		for ext in [".png",".jpg"]:
@@ -67,11 +73,8 @@ func loadVNBG(sprName:String):
 				texture=newTexture
 				return true
 			#else:
-		printerr("background not embedded in pck and no external file found!!")
-		return false
-	else:
-		texture=load("res://Backgrounds/"+sprName+".png")
-		return true
+	printerr("background not embedded in pck and no external file found!!")
+	return false
 	
 func loadVNPortrait(sprName:String):
 	var f = File.new()

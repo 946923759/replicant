@@ -86,7 +86,7 @@ func set_portrait(name: String, y_offset: float = 0, radioMask: bool = false)->N
 
 
 
-func update_portrait_positions_wip(relation:Dictionary,numPortraits:int=-1):
+func update_portrait_positions_wip(relation:Dictionary,numPortraits_:int=-1):
 	#Structure of relation is like
 	# {
 	#   "sprName": [pos,isMasked,offset,cur_expression=0],
@@ -95,12 +95,13 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits:int=-1):
 	# }
 	#Optional argument since it gets calculated in advance in CutsceneMain
 	#and doesn't need to be calculated again.
-	if numPortraits < 0:
-		numPortraits=0
+	if numPortraits_ < 0:
+		numPortraits_=0
 		for name in relation:
 			if typeof(relation[name])==TYPE_ARRAY:
-				numPortraits+=1
-	self.numPortraits=numPortraits
+				numPortraits_+=1
+	self.numPortraits=numPortraits_
+	assert(self.numPortraits > 0,"Trying to update portrait positions without any portraits")
 	
 	for name in relation:
 		var pStruct = relation[name]
@@ -159,8 +160,8 @@ func update_positions():
 
 #Not really possible since focus_speaker depends on the portrait idx
 #and not the portrait name..
-func focus_speaker(speaker: String):
-	pass
+#func focus_speaker(speaker: String):
+#	pass
 	
 	
 #Brought to you by terrible stepmania naming conventions
@@ -197,11 +198,11 @@ func dim_idx(idx:int):
 func size():
 	return cache.size()
 
-
+const vnPortraithandler = preload("res://Cutscene/VNPortraitHandler.gd")
 func _ready():
 	SCREEN_CENTER = Vector2(self.rect_pivot_offset.x, self.rect_pivot_offset.y)
 	
-	var vnPortraithandler = load("res://Cutscene/VNPortraitHandler.gd")
+	
 	for _i in range(5):
 		var p = Node2D.new()
 		p.set_script(vnPortraithandler)

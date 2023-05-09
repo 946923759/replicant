@@ -7,3 +7,5 @@ tween	current	58	decelerate,1;addx,300
 msg	This tween moved me to the right, with decelerate!
 tween	current	58	decelerate,1;addx,-300;decelerate,1;addx,300
 msg	This tween is chained, I move to the left and then to the right in one single command.
+tween	current	58	decelerate,.5;zoomx,-1
+msg	Flip sprite.

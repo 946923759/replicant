@@ -95,6 +95,7 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	#self._offset = _offset;
 	self.idx=idx_; #Needed for dim/hl to function
 	self.numPortraits=numPortraits_
+	assert(numPortraits>0,"Attempting to position portraits when none are displayed")
 	
 	
 	print("idx: "+String(idx)+" numPortraits: "+String(numPortraits)+ " offset: "+String(_offset))

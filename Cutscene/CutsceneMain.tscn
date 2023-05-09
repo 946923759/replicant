@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
-[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Cutscene/CutsceneHistory.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Ext/skipbtn.png" type="Texture" id=5]
 [ext_resource path="res://Ext/skipbtn_click.png" type="Texture" id=6]
@@ -88,7 +88,7 @@ script = ExtResource( 8 )
 [node name="dim" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0, 0, 0, 0.701961 )
+color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -323,7 +323,6 @@ margin_left = -1920.0
 margin_right = -1920.0
 
 [node name="CutsceneDebug" parent="." instance=ExtResource( 15 )]
-visible = false
 
 [node name="TN_Actor" type="Control" parent="."]
 anchor_right = 1.0
@@ -376,7 +375,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OptionsScreen" parent="." instance=ExtResource( 12 )]
+[node name="OptionsScreen" parent="TN_Actor" instance=ExtResource( 12 )]
 visible = false
 rect_pivot_offset = Vector2( -1839.45, 653.5 )
 
@@ -434,6 +433,10 @@ valign = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AutoModeIndicator"]
 "anims/New Anim" = SubResource( 4 )
+
+[node name="OptionsScreen" parent="." instance=ExtResource( 12 )]
+visible = false
+mouse_filter = 2
 
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]

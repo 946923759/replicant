@@ -3,9 +3,9 @@ extends Control
 onready var scrollContainer:ScrollContainer=$ScrollContainer
 onready var container = $ScrollContainer/GridContainer
 var font = preload("res://Fonts/TextFont.tres")
-const fadeTop = preload("res://Shaders/FadeTopShader.tres")
+#const fadeTop = preload("res://Shaders/FadeTopShader.tres")
 
-#var isActive:
+var isHandlingInput:bool=false
 
 func _ready():
 	if true: #!OS.is_debug_build()
@@ -28,6 +28,13 @@ func process(delta):
 		var sc = Input.get_action_strength("analog_up")*-1+Input.get_action_strength("analog_down")
 		scrollContainer.scroll_vertical=scrollContainer.scroll_vertical + 60*sc*d
 
+func _input(event):
+	if isHandlingInput==false:
+		return
+	if (event is InputEventMouseButton and event.is_pressed() and event.button_index==2) or (event is InputEventScreenTouch and event.index==1):
+		get_parent().tween_out_history()
+		get_tree().set_input_as_handled()
+		isHandlingInput=false
 
 func test_history():
 	for i in range(100):
@@ -67,6 +74,7 @@ func set_history(arr):
 			container.add_child(LoadSpeaker(arr[i][0]))
 			container.add_child(LoadText(arr[i][1]))
 		last_history_number=arr.size()
+# warning-ignore:narrowing_conversion
 	scrollContainer.scroll_vertical = scrollContainer.get_v_scrollbar().max_value
 #func OnCommand():
 #	scrollContainer.scroll_vertical = scrollContainer.get_v_scrollbar().max_value	

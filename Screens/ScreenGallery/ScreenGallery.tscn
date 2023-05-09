@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Screens/ScreenGallery/ScreenGallery.gd" type="Script" id=1]
-[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=4]
 [ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=5]

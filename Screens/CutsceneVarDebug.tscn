@@ -1,0 +1,132 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+func _ready():
+	$Panel.init_({
+		\"Fake Variable 1\":100,
+		\"Fake Variable 2\":\"Marisa\"
+	})
+"
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends PanelContainer
+
+var dictReference:Dictionary
+
+#class dictToListRemap:
+#	var key:String
+#	var type:int = TYPE_INT
+
+func _ready():
+	$ScrollContainer/VBoxContainer/Button.connect(\"pressed\",self,\"queue_free\")
+
+func init_(variables:Dictionary):
+	var container = $ScrollContainer/VBoxContainer/GridContainer
+	var startLabel = $ScrollContainer/VBoxContainer/GridContainer/Label
+	var startLineEdit = $ScrollContainer/VBoxContainer/GridContainer/LineEdit
+	#for c in $Panel/GridContainer.get_children():
+	#	c.visible = false
+	for k in variables:
+		var l = Label.new()
+		l.text = k
+		l.set(\"custom_fonts/font\",startLabel.get(\"custom_fonts/font\"))
+		container.add_child(l)
+		
+		var e = LineEdit.new()
+		e.text = String(variables[k])
+		e.set(\"custom_fonts/font\",startLabel.get(\"custom_fonts/font\"))
+		container.add_child(e)
+		
+		var l2 = Label.new()
+		l2.set(\"custom_fonts/font\",startLabel.get(\"custom_fonts/font\"))
+		if typeof(variables[k]) == TYPE_INT:
+			l2.text = \"[int]\"
+		elif typeof(variables[k]) == TYPE_STRING:
+			l2.text = \"[str]\"
+		else:
+			l2.text = \"[???]\"
+		container.add_child(l2)
+		
+	dictReference=variables
+	pass
+
+func close():
+	var tw = get_tree().create_tween()
+	tw.tween_property(self,\"rect_position:x\",-500,.3).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+	tw.tween_callback(self,\"queue_free\")
+"
+
+[node name="CutsceneVarDebug" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+
+[node name="WindowDialog" type="WindowDialog" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1122.0
+margin_bottom = -285.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+window_title = "adsasdadasdasdasdasdasdsad"
+resizable = true
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -135.0
+margin_right = 762.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = SubResource( 2 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 755.0
+margin_bottom = 263.0
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+margin_right = 748.0
+margin_bottom = 120.0
+
+[node name="GridContainer" type="GridContainer" parent="Panel/ScrollContainer/VBoxContainer"]
+margin_right = 748.0
+margin_bottom = 60.0
+columns = 3
+
+[node name="Label" type="Label" parent="Panel/ScrollContainer/VBoxContainer/GridContainer"]
+margin_top = 5.0
+margin_right = 226.0
+margin_bottom = 55.0
+custom_fonts/font = ExtResource( 1 )
+text = "Variable 1"
+
+[node name="LineEdit" type="LineEdit" parent="Panel/ScrollContainer/VBoxContainer/GridContainer"]
+margin_left = 230.0
+margin_right = 649.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 1 )
+text = "variable contents"
+expand_to_text_length = true
+
+[node name="Label2" type="Label" parent="Panel/ScrollContainer/VBoxContainer/GridContainer"]
+margin_left = 653.0
+margin_top = 5.0
+margin_right = 748.0
+margin_bottom = 55.0
+custom_fonts/font = ExtResource( 1 )
+text = "[int]"
+
+[node name="Button" type="Button" parent="Panel/ScrollContainer/VBoxContainer"]
+margin_top = 64.0
+margin_right = 748.0
+margin_bottom = 120.0
+custom_fonts/font = ExtResource( 1 )
+text = "Click to close"

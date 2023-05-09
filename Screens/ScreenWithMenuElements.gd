@@ -108,14 +108,14 @@ func _on_BackButton_gui_input(event):
 		OffCommandPrevScreen()
 
 func ReportScriptError(errorMessage:String):
-	#var errDisp = $ErrorDisplay
-	var tw = $CanvasLayer/ErrorDisplay/Tween
-	var q = $CanvasLayer/ErrorDisplay/smQuad
-	var text = $CanvasLayer/ErrorDisplay/RichTextLabel
+	var errDisp = $CanvasLayer/ErrorDisplay
+	var tw = errDisp.get_node("Tween")
+	var q = errDisp.get_node("smQuad")
+	var text = errDisp.get_node("RichTextLabel")
 	
 	text.text = errorMessage
 	text.rect_position.y = q.rect_size.y-text.rect_size.y
 	
-	tw.interpolate_property($CanvasLayer/ErrorDisplay,"rect_position:y",-q.rect_size.y,-q.rect_size.y+text.rect_size.y,.3)
-	tw.interpolate_property($CanvasLayer/ErrorDisplay,"rect_position:y",-q.rect_size.y+text.rect_size.y,-q.rect_size.y,.3,Tween.TRANS_LINEAR,Tween.EASE_IN,3)
+	tw.interpolate_property(errDisp,"rect_position:y",-q.rect_size.y,-q.rect_size.y+text.rect_size.y,.3)
+	tw.interpolate_property(errDisp,"rect_position:y",-q.rect_size.y+text.rect_size.y,-q.rect_size.y,.3,Tween.TRANS_LINEAR,Tween.EASE_IN,3)
 	tw.start()

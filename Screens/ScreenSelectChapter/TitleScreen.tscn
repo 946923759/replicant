@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://Screens/ScreenSelectChapter/TitleScreen.gd" type="Script" id=2]
-[ext_resource path="res://ChapterListingFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Screens/ScreenSelectChapter/MSelObj.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=6]

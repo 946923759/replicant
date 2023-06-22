@@ -1,0 +1,11 @@
+var	temp	"Sin Mal"
+var	something	true
+var something_else	false
+var	anything	0
+var	anything	&3
+label	start
+msg	This message is reading from a variable. The variable contents is %temp%.
+msg	You can edit it in the debugger by pressing F4.
+choice	Redo
+choice	End loop
+condjmp_c	start	1

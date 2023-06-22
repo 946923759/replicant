@@ -397,6 +397,14 @@ static func deep_copy(v):
 
 static func get_matching_files(path,fname):
 	#var files = []
+	
+	if "/" in fname:
+		var d = fname.split("/")
+		for i in range(0,len(d)-1):
+			path+=d[i]+"/"
+		fname=d[-1]
+		print("dir in path, rebuilt path as dir: "+path+", fname: "+fname)
+	
 	var dir = Directory.new()
 	print("Opening "+path)
 	var ok = dir.open(path)

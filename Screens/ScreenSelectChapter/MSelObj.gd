@@ -17,9 +17,8 @@ func _ready():
 func setEpisode(episode:Globals.Episode):
 	thisEpisode=episode
 	if INITrans.HasString("ChapterParts",episode.title):
-		var s = INITrans.GetString("ChapterParts",episode.title,false).split("\t",true,1)
-		title.text=s[0]
-		desc.text=s[1]
+		title.text = INITrans.GetString("ChapterParts",episode.title,false)
+		desc.text  = INITrans.GetString("ChapterDescriptions",episode.title,false)
 	else:
 		title.text=episode.title
 		desc.text=episode.desc

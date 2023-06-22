@@ -19,6 +19,7 @@ var parent_node
 #We assign in _ready() in case something wants to supply its own backgrounds
 onready var backgrounds:Control = $Backgrounds
 onready var optionsScreen = $OptionsScreen
+const varDebugger = preload("res://Screens/CutsceneVarDebug/CutsceneVarDebug.tscn")
 #var lastBackground:smSprite
 enum BG_TWEEN {
 	DEFAULT,
@@ -225,6 +226,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			name=m.replace("/","$"),
 			bus="Music"
 		})
+		print("Loaded "+m+" as "+s.name)
 		$Music.add_child(s)
 	for m in soundsToLoad:
 		#It still returns an smSound... The name is not very good
@@ -676,7 +678,6 @@ func advance_text()->bool:
 				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
 				if lastUsed != null:
 					lastUsed.cur_expression = curMessage[2]
-					lastUsed.update()
 					#print("Set new portrait sprite")
 				else:
 					print("There is no active portrait named "+curMessage[1])
@@ -716,7 +717,7 @@ func advance_text()->bool:
 						'"':
 							var cmd_end = varToCheck.rfind("\"");
 							if cmd_end>0:
-								cutsceneVars[varName] = varToCheck.substr(1,cmd_end)
+								cutsceneVars[varName] = varToCheck.substr(1,len(varToCheck)-2)
 							else:
 								printerr("String is malformed in var command, missing end")
 						'&':
@@ -758,7 +759,7 @@ func advance_text()->bool:
 					m.play()
 					lastMusic=m
 				else:
-					printerr("FIX YOUR MUSIC NAMES!! DON'T USE SPECIAL CHARACTERS! "+curMessage[1])
+					printerr("FIX YOUR MUSIC NAMES!! DON'T USE SPECIAL CHARACTERS! File "+curMessage[1]+" not found!")
 			'se':
 				var se = $SoundEffects.get_node_or_null(curMessage[1].replace("/","$"))
 				if se!=null:
@@ -1076,6 +1077,10 @@ func _process(delta):
 	elif Input.is_action_just_pressed("DebugButton2"):
 		isOtherScreenHandlingInput=true
 		$CutsceneDebug.visible=true
+	elif Input.is_action_just_pressed("DebugButton4"):
+		var varDebugerInst = varDebugger.instance()
+		add_child(varDebugerInst)
+		varDebugerInst.init_(cutsceneVars)
 	
 	if Input.is_action_pressed("vn_skip"):
 		frameLimiter+=delta

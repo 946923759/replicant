@@ -1,0 +1,109 @@
+#LANGUAGES	CH	JA	EN	PT
+var	Translation	"Prologue"
+var	translationInfo	"Source: Chinese\nFirst Draft: Mister Spaceman\nRevision: Hoyostans Open Group\nFinal Draft: Mister Spaceman (@mister_spaceman)"
+var	translationInfoBR	"Fonte: Chinês\n Primeiro esboço: Mister Spaceman\n Revisão: Hoyostans Open Group\n Rascunho final: Mister Spaceman (@mister_spaceman) Tradução pt-bt: Demonbanex, Kebbini, Seele, Momo."
+msgbox_close	instant
+bg	rr/prologue_1
+/ 	 
+bg	rr/prologue_2
+/ 	 
+bg	rr/prologue_3
+/ 	 
+bg	rr/prologue_4
+/ 	 
+bg	rr/prologue_5
+/ 	 
+bg	rr/prologue_6
+music	rr/music_rusting
+/ 	 
+bg	rr/prologue_7
+/ 	 
+bg	rr/prologue_8
+/ 	 
+bg	rr/prologue_9
+/ 	 
+bg	rr/prologue_10
+/ 	 
+bg	rr/prologue_11
+/ 	 
+bg	rr/prologue_12
+/ 	 
+bg	rr/bg_prologue
+msgbox_open
+match_names	Kiana	_DIM_ALL_WHEN_EMPTY
+portraits	111,false,3
+tween	before	111	zoom,2;y,-150
+emote	111	5
+/Kiana	呼！呼！	ハァ、ハァ……！	{i}Huh, huh...!{/i}	{i}Hm, hm…!{/i}
+/Kiana	那些怪物应该没有追来了吧……	あの怪物たち、もう追ってこないよね……	Those monsters aren't chasing me anymore, right...?	Esses monstros não estão mais me perseguindo...?
+/Kiana	从天而降的陨石，还有变成怪物的那些人……这就是爸爸所说的崩坏么？	空から降って来た隕石、それに怪物になったあの人たち……これがパパの言ってた崩壊なの？	Meteors falling from the sky, and people turning into monsters... Is this the Honkai outbreak Daddy was talking about?	Os meteoros que caíram do céu, e as pessoas se transformando em monstros… É este o 'Honkai' que papai estava falando?
+emote	111	3
+/Kiana	爸爸你到底在哪里…为什么要松开琪亚娜的手！呜呜呜！	パパ、どこにいるの……どうしてキアナの手を放しちゃったの！ぐすっ……。	Daddy, where are you... why did you let go of Kiana's hand?! {i}Huu...{/i}	Papai, onde você está… por que você soltou a mão de Kiana?! Huu....
+nop	#"HOOONG"
+/ 	轰隆隆	ゴォォン！	DRROOOOMM	DRROOOOMM
+emote	111	2
+/Kiana	不行！不能再这里哭鼻子！爸爸他总是告诉我，卡斯兰娜家族有着对抗崩坏的使命，背负着拯救世界的重任…如果是他的话，一定会在崩坏的最中心的地方战斗！	いけないっ！こんなところで泣いている場合じゃなかった！パパがいつも言ってた。カスラナ家には崩壊を打ち倒す力があって、世界を救う使命があるんだって……パパだったら、きっと崩壊の中心に向かうはず！	Stop! Now's not the time to be crying. Daddy always tells me: We, the Kaslanas, have the power to beat the Honkai, and only we can save the world! This is Daddy, so he's sure to go to the centre of the outbreak!	Pare! Eu não deveria estar chorando agora. Papai sempre me disse. A família Kaslana tem o poder de derrotar o Honkai e tem a missão de salvar o mundo! É o papai, então ele certamente irá para o meio do Honkai!
+emote	111	1
+tn			We don't know when and how Houkai was changed to Honkai for English translations, but decided to keep it. Houkai quite literally means 'Collapse', and so does its original Chinese counterpart Benghuai. It is used both for the phenomenon, and for a literal disaster. Hence the translation 'Honkai outbreak'	Não sabemos quando e como o Houkai foi mudado para Honkai para traduções em inglês, mas decidimos mantê-lo. Houkai significa literalmente 'Colapso', assim como seu homólogo chinês original, Benghuai. Ele é usado tanto para o fenômeno, quanto para um desastre literal. Daí a tradução Honkai outbreak(surto de Honkai)
+/Kiana	那个爆炸的地方应该就是崩坏的中心了…只要去那里的话一定能找到爸爸！	さっき爆発した場所が崩壊の中心だよね……あそこに行けばパパが見つかるかも！	The place where it exploded earlier should be the centre of the Honkai outbreak ... If I go there, I will definitely find Daddy!	O lugar onde explodiu mais cedo é o centro do surto de Honkai…Se eu for até lá, talvez encontre o papai!
+emote	111	3
+/Kiana	可是我一个人真的能做到么……	で、でも私一人で本当に見つけられるかな——	But can I really find him by myself?	Mas posso realmente encontrá-lo sozinha?
+emote	111	2
+/Kiana	不行！琪亚娜要勇敢！我也是卡斯兰娜家的成员，一定也能像爸爸一样与崩坏战斗！	——って、ダメダメッ！もっと勇気を出さなくちゃ！私もカスラナ家の一員なんだもん。パパみたいに崩壊と戦えるんだから！	——That ’s no good! I have to be brave! I'm a Kaslana too. I can fight the Honkai, like Daddy!	——Isso não é bom! Tenho que ser mais corajosa!Eu também sou um membro da família Kaslana. Eu posso lutar contra o Houkai assim como papai!
+emote	111	3
+/ 	吼吼吼	ウォ～ン！	ROOOOAAAR!	ROOOOAAAR!
+emote	111	1
+/Kiana	呜呜！你们这些死士…我才不会怕你们	うぅっ！このゾンビども……あんたたちなんか恐くないんだから！	{i}Wuwu!{/i} You zombies... I'm not afraid of you!	{i}Uau!{/i} Esses zumbis... eu não tenho medo de vocês!
+
+label	part2
+emote	111	3
+/Kiana	这里就是崩坏的中心么…… 爸爸！爸爸！你在这里吗？	ここが崩壊の中心……？ パパ！パパッ！！どこにいるの！？	Is this the centre of the outbreak...? Daddy! Daddy!!! Where are you!??	Este é o centro do Surto...? Papai! Papai!!! Onde você está!??
+/ 	轰隆隆！	ゴォォン！	DRRROOOOOMMM	DRRROOOOOMMM
+/Kiana	呜哇！！	わぁっ！！	Ah!!!!!	Ah!!!!!
+portraits	110	111
+/???	......	......	......	......
+emote	111	2
+/Kiana	咦…那个是……人？请问你有看见我的爸爸么？	えっ、あれは……人？……ね、ねぇ、私のパパを見なかった？	Wait, is that a person?.... Hey~Have you seen my dad?	Espere, isso é uma pessoa? .... Ei~ Você viu meu pai?
+/???	......	......	......	......
+/Kiana	你好！能听到我说话么！请问……	ねぇってば！私の声、聞こえてる！？パパを——	Hello~Can you hear me? Excuse me....	Olá~ Você pode me ouvir? Com licença…
+emote	111	3
+/Kiana	咦…我是要问什么？我好像……唔！头好晕……	——あ、あれ？私、何を聞くんだっけ？確か……うっ！頭がクラクラする……。	Huh… What was I asking? {i}Uh,{/i} I feel dizzy...	Huh... O que eu estava perguntando? {i}Ah,{/i} eu me sinto tonta...
+portraits	816
+/???	琪亚娜！	キアナッ！！	Kiana!	Kiana!
+emote	111	2
+/Kiana	爸…爸？是爸爸么？	パ、パパ？よ、よかった……。	Da... Daddy? Is that you?	Papai, papai? É você?
+/???	琪亚娜，真是太好了，你没有受伤……	キアナ、大丈夫か。ケガはないか？	Kiana, thank goodness you're safe...	Kiana, graças a deus que você está a salvo...
+emote	111	3
+/Kiana	爸爸！我终于找到你了……呜呜呜……	パパ！やっと見つけた……ひっく……。	Daddy! I finally found you... {i}Wuuuu...{/i}	Papai! Finalmente te encontrei... {i}Wuuuu...{/i}
+/???	琪亚娜…你听我说，现在你马上离开这里，不管发生什么都不要停下脚步，一定要安全的离开！	キアナ……よく聞くんだ。お前は今すぐここから逃げるんだ。何が起こっても足を止めるな。走り続けるんだ！	Kiana, listen carefully. Run away from here, right now. No matter what happens, do not stop. You must find safety!	Kiana, ouça com atenção. Fuja daqui, agora mesmo. Não importa o que aconteça, não pare. Você deve encontrar segurança!
+/Kiana	爸爸呢？那爸爸怎么办！	パパは？それじゃ、パパはどうするの！？	Daddy? What about Daddy?!	Papai? É o papai?!
+/???	放心吧！爸爸可是卡斯兰娜家的家主！这种小崩坏根本不足挂齿！	安心しろ！パパはカスラナ家の当主だ！こんな崩壊ごときにやられはしないさ！	Don't worry. Daddy is the strong leader of the Kaslana family. This kind of small Honkai outbreak is not enough to hurt me!	Não se preocupe. Papai é o maior chefe da família Kaslana. Esse tipo de pequeno surto de Honkai não vai me machucar!
+/Kiana	但是……	でも……。	But...	Mas...
+/???	呵呵~看来琪亚娜在担心我呢~不过你也太小看你爸爸了吧？放心，一会爸爸搞定了就来找你	ははっ、キアナは心配性だな。でも、パパを見くびりすぎじゃないか？大丈夫、すぐパパが迎えに行くから。	Haha~ It seems that Kiana is worried about me~ But your Daddy is stronger than you think. Don't worry. Daddy will find you when he is done.	Haha~ Parece que Kiana está preocupada comigo, mas você não acha que está pensando muito no seu pai? Não se preocupe. Papai vai encontrá-la quando terminar..
+emote	111	4
+/Kiana	嗯！约定好了！	う、うん！約束だよ！	Okay! It's a promise!	OK! É uma promessa!
+/???	嗯……	ああ……。	It's a promise...	É uma promessa...
+/???	愚昧无知，狂妄自大，而又渺若微尘的人类……	身の程知らずが……その驕りが招く結果もわからないのか……愚かな人間め……。	Foolish, ignorant, arrogant, and insignificant humans...	Seres humanos estúpidos, ignorantes, arrogantes e insignificantes...
+/???	快走！	早く逃げろっ！	Hurry up! Go!	Se apresse! Vai!
+/???	今天，我会敲响人类这一种族的丧钟……	いと醜き人類という種に、今より滅びの福音を鳴らしてやろう……。	Today, I will make the death bells toll for the human race.	Hoje, farei os sinos da morte dobrarem para humanidade.
+/???	哼！那就要看你有没有这个本事了！律者！	ハッ！お前にそれだけの力があるのか？律者ッ！	{i}Humph!{/i} Let's see if you can live up to those words, Herrscher!	{i}Hum!{/i} Veremos se você consegue cumprir essas palavras, Herrscher!
+/???	弄哭我女儿的家伙…我齐格飞·卡斯兰娜绝不会饶过你！	娘を泣かすやつは……このジークフリート・カスラナが絶対に許さん！！	You, who made my daughter cry... For that, I, Siegfried Kaslana, will show you no mercy!	Você, que fez minha filha chorar… Eu, Siegfried Kaslana, não terei piedade de você! Hiyaaaaaah!!!
+/ 	轰隆隆！！	ゴォォン！！	DRRRROOOOMMM	DRRRROOOOMMM
+msgbox_close
+bg	prologue_13
+/ 	 
+bg	prologue_14
+/ 	 
+music	music_theme.mp3
+bg	prologue_15
+/ 	 
+bg	prologue_16
+/ 	 
+bg	prologue_17
+/ 	 
+bg	prologue_18
+/ 	 
+bg	prologue_19
+/ 	 
+bg	prologue_20
+/ 	 

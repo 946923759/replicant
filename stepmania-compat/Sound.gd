@@ -22,18 +22,18 @@ func load_song(custom_music_name:String,autoplay=true):
 			t.remove_all()
 			self.volume_db=0.0
 	else:
-		print("Warning: No music found for "+custom_music_name)
+		print("[smSound] Warning: No music found for "+custom_music_name)
 
 func load_sound(custom_music_name:String):
 	var music = get_custom_sound(custom_music_name) if custom_music_name != "" else null
 	if music != null:
-		print("Attempting to load "+music)
+		print("[smSound] Attempting to load "+music)
 		if music.ends_with(".import"):
 			self.stream = load(music.replace('.import', ''))
 		else:
 			self.stream = ExternalAudio.loadfile(music,false)
 	else:
-		print("Warning: No sound effect found for "+custom_music_name)
+		print("[smSound] Warning: No sound effect found for "+custom_music_name)
 		
 
 func fade_music(time:float=3.0):

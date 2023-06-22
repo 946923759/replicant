@@ -14,7 +14,7 @@ var is_masked:bool=false
 
 var portrait_textures:Dictionary={}
 #var imageTex:Array=[]
-var cur_expression:String="0"
+var cur_expression:String="0" setget set_cur_expression
 var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
 
@@ -25,11 +25,17 @@ var tween:Tween
 var blendAdd:Light2D
 #onready var tween = Tween.new()
 
+func set_cur_expression(e:String):
+	if !portrait_textures.has(e):
+		if e!="0":
+			printerr("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(e)+"!! "+String(portrait_textures.keys()))
+	else:
+		cur_expression=e
+		update()
+
 func _draw():
 	if !portrait_textures.has(cur_expression):
-		#print("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(cur_expression)+"!!")
 		return
-		
 	elif portrait_textures.size()==0 or !is_instance_valid(portrait_textures[cur_expression]):
 		#print("No texture present at idx "+String(cur_expression)+".")
 		return

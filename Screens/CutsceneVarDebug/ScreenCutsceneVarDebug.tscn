@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Screens/CutsceneVarDebug/CutsceneVarDebug.tscn" type="PackedScene" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+func _ready():
+	$Panel.init_({
+		\"Fake Variable 1\":100,
+		\"Fake Variable 2\":\"Marisa\"
+	})
+"
+
+[node name="CutsceneVarDebug" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = SubResource( 1 )
+
+[node name="WindowDialog" type="WindowDialog" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1122.0
+margin_bottom = -285.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+window_title = "adsasdadasdasdasdasdasdsad"
+resizable = true
+
+[node name="Panel" parent="." instance=ExtResource( 1 )]

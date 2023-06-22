@@ -59,7 +59,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Label" type="Label" parent="Panel/GridContainer"]
-margin_right = 906.0
+margin_right = 905.0
 margin_bottom = 50.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 3 )
@@ -68,7 +68,7 @@ align = 1
 
 [node name="ItemList" type="GridContainer" parent="Panel/GridContainer"]
 margin_top = 54.0
-margin_right = 906.0
+margin_right = 905.0
 margin_bottom = 123.0
 columns = 2
 __meta__ = {

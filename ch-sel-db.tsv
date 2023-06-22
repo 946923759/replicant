@@ -8,7 +8,7 @@
 
 --Debug Tests
 Music Test		test_music,test_tween
-Choice Test		test_choice,test_choice_design
+Choice Test		test_choice,test_choice_design,test_var
 Font Test		test_font
 Background Test		test_background
 Black background test		test_blackbg

@@ -48,7 +48,7 @@ scale = Vector2( 1.875, 2.109 )
 texture = ExtResource( 10 )
 centered = false
 
-[node name="test_music" type="TextureRect" parent="ActorFrame/Chapter0" index="1"]
+[node name="RR-0-1" type="TextureRect" parent="ActorFrame/Chapter0" index="1"]
 margin_left = 159.0
 margin_top = 138.0
 margin_right = 1742.0

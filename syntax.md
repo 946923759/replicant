@@ -182,6 +182,8 @@ Examples: `var testvar 7`, `var testvar "Hello!"`, `var testvar &0`, `var testva
 
 Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __. Prefix variables with `G_` to make them global.
 
+Variables are saved per-slot like any other VN, but if you want a variable to be accessible from all slots, prefix it with S_ (Short for SYSTEM, as in the systemwide save data).
+
 Argument 2: operand.
 
 | operand examples | what it does |
@@ -290,6 +292,9 @@ condjmp_neg jumps if result of comparison is false.
 | "Matching?" | Checks if the variable matches the string "matching?". |
 | &1 | Checks if bitflag 1 in the integer is TRUE. |
 | ~1 | Checks if bitflag 1 in the integer is FALSE. |
+
+## jmp
+Internally, all jump commands are converted to condjumps with "TRUE" as the variable to check.
 
 
 # tween

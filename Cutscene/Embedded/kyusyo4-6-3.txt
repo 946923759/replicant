@@ -1,0 +1,157 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	009/013_1280x720
+portraits	61
+emote	61	1
+msg	301988	We are almost at Hyperion! Everybody, prepare to help the ship!	马上就要到休伯利安了！大家打起精神！准备救援战舰！	もうすぐハイペリオンよ！みんな頑張って！着き次第、戦艦の救援行動に移るわよ！	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301989	We have detected lots of Houkai creatures in front, but there is no battle. Hyperion is safe for now.	报告，前方发现大量崩坏生物，但是并没有战斗发生，休伯利安现在安全。	報告します。前方に大量の崩壊生物を発見。ですが、まだ戦闘にはなっていません。ハイペリオンは現在のところ安全です。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301990	They didn’t attack Hyperion? Are they waiting for us to get back and kill us all...	它们没有对休伯利安发动攻击？难道是想等我们到达后一网打尽么……	ハイペリオンに攻撃を加えていない？まさか、私たちが戻るのを待って一網打尽にするつもりなのかしら……？	NONE
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301991	No matter what, we must return to the ship immediately. Everyone, prepare to attack. Watch your surroundings, Houkai creatures may attack any time.	不管怎么说，我们必须立刻返回战舰，全员准备突击，注意周围情况，崩坏生物可能会忽然发动进攻。	とにかく、今すぐ戦艦に戻らなくちゃ。全員突撃準備。周囲の状況に注意して。崩壊生物が突然攻撃を仕掛けてくるかもしれないわよ。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301992	Got it!	是！	はい！	NONE
+speaker	
+portraits	66
+emote	66	0
+se	DLC_CH00_EV13_MosterRoar
+msg	301993	Roar!!	吼吼吼！！	ウオォォォーン！！	NONE
+speaker	Yssring
+portraits	54
+emote	54	3
+msg	301994	Woah!! We're gonna die! There’s no hope this time!	哇！！要死了！这次真的没希望了！	わあ！！死ぬ死ぬッ！今回こそ、本当にダメなやつ！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	3
+msg	301995	Shut the @#$* up! Take the weapon!	少OO啰嗦！给我把武器拿上！	うっさい、黙れっ！さっさと武器持って来い！！	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	4
+emote	54	2
+msg	301996	It’s all because of you! If Kyushou is here, we may still have some hope! What are we gonna do now!	都是因为你！要是把九霄说不定还有一丝希望！现在可怎么办！	全部あなたのせいよ！九霄が残っていればまだ一縷の望みがあったかもしれないのに！どうするのよ！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	2
+msg	301997	Shut up!	闭嘴！	ぐちぐち言うな！	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	4
+emote	54	2
+msg	301998	It’s useless... Himeko and Kyushou are both not here... How can we defeat her... We’re done, we’re done, we’re really done...	没用了…姬子和九霄都不在…凭我们怎么可能战胜她的…完了完了这下真的完了……	無駄よ……姫子も九霄もいないんだもの……私たちだけじゃ勝てないわよ……終わったわ。今度こそ完全に終わりよ……。	NONE
+speaker	
+portraits	54
+emote	54	2
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301999	Dadada!	哒哒哒！	ドンッ！ダダダッ！！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	2
+msg	302000	I heard the sound of fighting! Did the Houkai creatures start to attack!?	有战斗的声音！难道是崩坏生物发动攻击了！？	戦う音！ちっ、ついに崩壊生物がここまで攻撃を仕掛けてきたか！	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	1
+emote	54	2
+msg	302001	We are dying... Dying... Dying...	要死要死要死要死要死……	死ぬんだ、死ぬんだ、死ぬんだ……。	NONE
+msg	302002	Dying... Dying... Die... Why am I still alive?	要死…要死…要……怎么还没死？	死ぬんだ……死ぬんだ……死ぬ……あれ、死んでない？	NONE
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302003	Did they give up because we don’t taste good!?	难道是因为我们太难吃了所以放弃了吧！	まさか、私たちが不味いことに気づいたのかしら！もしかして、諦めてくれた！？	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302004	You shut up! Houkai creatures will never let us go. They must be planning something so they surrounded us...	你闭嘴！崩坏生物不可能放过我们，它们把我们包围起来一定是在计划着什么……	静かに！崩壊生物が人間を放っておくはずないだろう。こうして包囲したからには、きっと何か裏があるはずだ……。	NONE
+speaker	Teammate
+portraits	55	56
+emote	55	4
+emote	56	0
+msg	302005	Captain Himeko and others are back!	报告！姬子队长她们回来了！	報告します！姫子隊長たちが戻ってきました！	NONE
+speaker	Emesa
+portraits	55	56
+emote	55	1
+emote	56	0
+msg	302006	Was that sound from Himeko? There’s Houkai creatures everywhere! We must help them!	刚才的战斗声是姬子她们么？外面都是崩坏生物！我们得去接应她们！	さっきの戦闘の音は姫子たちだったのか？外は崩壊生物だらけだ！迎えに行こうっ！	NONE
+speaker	Teammate
+portraits	55	56
+emote	55	1
+emote	56	0
+msg	302007	Seems the Houkai creatures are not attacking them. The Greymoths have entered the ship.	崩坏生物似乎没有攻击她们，灰蛾部队已经进入舰内了。	いえ、崩壊生物は灰蛾部隊を攻撃していないようです。既に部隊員は艦内に入りました。	NONE
+speaker	Emesa
+portraits	55	56
+emote	55	1
+emote	56	0
+msg	302008	No way...	怎么会……	なんだって……？	NONE
+bg	009/060_1280x720
+msg	302009	Himeko! How are you guys doing!	姬子！你们怎么样！	姫子！どうだった！？	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302010	We’re fine... And we brought everything back safely.	没事…东西都安全带回来了。	大丈夫よ……部品は全て持って帰って来たわ。	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302011	How could you be fine! You had more people when you left!	怎么可能没事！去的时候可不止你们几个啊！	何が大丈夫なんだ！ここを出たとき、もっと人がいただろう！他の隊員はどうした！？	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302012	We were under attack from Houkai creatures. Others had died.	遇到了崩坏生物的袭击，其他的人都牺牲了。	崩壊生物の襲撃に遭って……ここにいない人たちはみんな犠牲になったわ。	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302013	Was it from the Houkai creatures outside!?	是外面的崩坏生物干的么！？	今、外にいる崩壊生物にやられたのか！？	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302014	No... We didn’t face too much resistance when we broke back in. Most of the loss was from the battles with their vanguard.	不…我们突破进来的时候没有收到太大的阻碍，是在与它们的先头部队的战斗中损失的。	いいえ……私たちが突破して入って来るとき、外のやつらはそれほど邪魔にならなかったわ。それよりも、あいつらの先遣部隊にやられたのよ。	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	4
+emote	61	1
+msg	302015	Bastards! No matter what, it’s those @#$* Houkai creatures! Let’s attack them before they attack us!	混蛋！不管怎么说都是那帮OO崩坏生物干的！趁它们还没攻击我们先下手进攻吧！	クソッ！忌々しい崩壊生物どもめ！攻撃してこない今のうちに、こっちから仕掛けてやろう！	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	4
+emote	61	1
+msg	302016	No, we cannot win with our current strength. I don’t know what they are waiting for, but the situation is good for us.	不行，以我们现在的战力主动出击是不可能有胜算的，虽然不知道它们在等什么，不过目前的状况对我们来说是好事。	ダメよ。今の私たちの戦力では、どう転んでも勝ち目がないわ。あいつらが何を待っているのか分からないけれど、今の状況は私たちにとって好都合よ。	NONE
+msg	302017	Yssring, fix the power furnace with the parts collected as soon as possible. We may have a chance to break through with Hyperion.	伊瑟琳，你赶紧用收集到的零件把动力炉修好，我们依靠着休伯利安号或许还有机会突破重围。	イザーリン、今すぐ集めた部品で動力炉を修理して。ハイペリオン号さえ直れば、この包囲を突破できるはずよ。	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	4
+emote	54	1
+msg	302018	Yes, I’m on it.	好的，我这就去。	分かった。すぐに取りかかる。	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	4
+emote	61	2
+msg	302019	The rest of you, prepare the fortification with me. We will have a tough battle after they are fixed... Ouch!	其他人跟我准备火力工事，等修理完毕后一场硬仗是免不了的……呃！	他の人たちは防御方面の工事を準備して。動力炉の修理が終わったら激しい戦いになるのは間違いないわ……うっ！	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+emote	61	2
+msg	302020	Himeko, are you okay?!	姬子你没事吧！	姫子、大丈夫！？	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	302021	I’m fine, don’t worry...	没事，不要管我……	大丈夫よ。放っておいて……。	NONE

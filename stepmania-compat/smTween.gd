@@ -83,13 +83,17 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tweenLength = 0.0
 				timeToDelay += float(splitCmd[1])
 			"x":
-				tw.tween_property(objectToTween,"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)				
+			"y":
+				tw.tween_property(objectToTween,"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"addx":
 				print("Applying addx "+splitCmd[1]+" after "+String(timeToDelay)+" sec... "+String(lastKnownPosition.x)+"+"+splitCmd[1])
 				tw.tween_property(objectToTween,"position:x",lastKnownPosition.x+float(splitCmd[1]),tweenLength).from(lastKnownPosition.x).set_delay(timeToDelay)
 				lastKnownPosition.x+=float(splitCmd[1])
-			"y":
-				tw.tween_property(objectToTween,"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+			"addy":
+				print("Applying addy "+splitCmd[1]+" after "+String(timeToDelay)+" sec... "+String(lastKnownPosition.y)+"+"+splitCmd[1])
+				tw.tween_property(objectToTween,"position:y",lastKnownPosition.y+float(splitCmd[1]),tweenLength).from(lastKnownPosition.y).set_delay(timeToDelay)
+				lastKnownPosition.y+=float(splitCmd[1])
 			"zoom":
 				var v2 = Vector2()
 				if len(splitCmd) < 3:

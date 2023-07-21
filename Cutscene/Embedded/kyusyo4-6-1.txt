@@ -1,0 +1,49 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Himeko	Greymoth Member	_DIM_ALL_WHEN_EMPTY
+speaker	Greymoth Member
+bg	009/058_1280x720
+portraits	61	66
+emote	66	0
+/Greymoth Member	301957	The group has finished collecting most of the parts on the list.	清单上的零件已经基本收集完毕。	リストの部品は大体集め終わりました。	NONE
+/Himeko	301958	Okay, check the load distribution and return immediately.	好，确认负重分配，立即返回。	よし、重量の分配を確認してすぐに帰るわよ。	NONE
+/Greymoth Member	301959	Roger that.	是。	はい。	NONE
+/Himeko	301960	At least we did it... The mission is 50% complete now. Hope Hyperion is all good.	总算是有惊无险…这样至少任务已经完成了一半了，希望休伯利安号那边能平安无事。	ここまでずっと生きた心地がしなかったわね……でも、これで少なくとも任務の半分は完了ね。ハイペリオン号の方も無事でいてくれればいいんだけど。	NONE
+msg	301961	Here, take these, they're for [color=#cc66ff]you[/color]. The way back is a lot tougher, so don't fall behind.	拿着，这些是你的负重，回去的路可比来时要艰难多了，不要掉队。	ほら、持って。これはあなたの分よ。帰り道は来たときよりも大変だから遅れないようにね。	NONE
+speaker	
+se	DLC_CH00_EV13_MosterRoar
+msg	301962	Roar--!	吼吼吼——！	グルルル——！	NONE
+speaker	Himeko
+emote	61	1
+emote	66	0
+msg	301963	What’s that sound!?	这个声音是！？	この音は！？	NONE
+speaker	Graymoth Member
+emote	61	1
+emote	66	0
+msg	301964	Captain Himeko! Look up in the sky! It's that giant dragon!	姬子队长！看天上！是那条巨龙！	姫子隊長！上です！あのドラゴンです！	NONE
+speaker	Himeko
+emote	61	1
+emote	66	0
+msg	301965	Tsk! Dammit! How did it catch up so fast!	啧！见鬼！居然这么快就追上来了么！	もう！なんてこと！こんなに早く追ってくるなんて！	NONE
+speaker	
+emote	66	0
+se	DLC_CH00_EV13_MosterRoar
+msg	301966	Roar--!	吼吼吼——！	グォォォォォ！！！！	NONE
+speaker	Graymoth Member
+emote	66	0
+msg	301967	It’s gone... I think it didn’t see us.	飞走了…似乎没有发现我们。	飛んでった……私たちのことは見えていなかったのかしら。	NONE
+speaker	Himeko
+emote	61	2
+emote	66	0
+msg	301968	That direction... No! It’s targeting Hyperion!	那个方向是…不对！它的目标是休伯利安号！	あの方角は……マズい！あいつの目標はハイペリオン号よ！	NONE
+portraits	61	66	66-clone
+match_names	Himeko	_	Greymoth Member
+tn	0	There's only one grey moth NPC sprite, so pretend she doesn't look identical
+/Graymoth Member	301969	Captain! We had a report from the sentinel in front! Lots of Houkai creatures have appeared around the car park! We are surrounded!	队长！前方哨位报告！在停车场周围出现大量崩坏生物！我们被包围了！	隊長！前方の見張りから報告です！スクラップ工場の周囲に大量の崩壊生物が出現！包囲されました！	NONE
+speaker	Himeko
+emote	61	2
+emote	66	0
+msg	301970	Seems the Herrscher wants to destroy us all... Everyone, arm yourselves! Prepare to break through!	看来律者是要把我们全部消灭…命令所有人全副武装！准备突围！	どうやら律者はここで私たちを消滅させるつもりのようね……全員完全武装！突破用意！	NONE
+speaker	Graymoth Member
+emote	61	2
+emote	66	0
+msg	301971	Got it!	是！	はッ！	NONE

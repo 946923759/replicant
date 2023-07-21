@@ -1,0 +1,64 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	009/058_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301972	Dadada!	哒哒哒！	ダダダッ——！	NONE
+speaker	Himeko
+portraits	61
+emote	61	2
+msg	301973	Everyone, keep up! Focus fire to create a breaking point!	所有人跟上！集中火力创造突破口！	全員続けっ！火力を集中して突破口を開くわよ！ 	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301974	Captain! Many Honkai beasts have appeared on the left flank! We are under attack from both sides!	队长！左翼出现大量崩坏生物！我们被夹击了！	隊長！左翼から大量の崩壊生物が！このままでは挟み撃ちです！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301975	Dammit! Take cover! Establish firebase! We can’t let them come close!	可恶！寻找掩护！建立火力点！不能让它们压上来！	しまった！障壁となる壁を探して！迎撃ポイントを作るわ！あいつらを近づけたらダメよ！	NONE
+speaker	
+portraits	66
+emote	66	0
+se	DLC_CH03_EV01_GunAndExplosion
+msg	301976	Dadada!	哒哒哒！	ダダダッ——！	NONE
+speaker	Graymoth Member
+portraits	66
+emote	66	0
+msg	301977	Captain! There are too many Houkai creatures! We can’t last long! If they surround us, we can’t get out!	队长！崩坏生物太多了！我们支撑不了多久！如果崩坏兽的包围网形成我们就出不去了！	隊長！崩壊生物が多すぎます！もう、持ちこたえられません！崩壊獣に包囲網を完成させられたら、ここから出られなくなります！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301978	There are still too many of us. It’s hard for all of us to break through. Someone must play decoy to create an opportunity for the main force...	我们的人数还是太多了，要全部突围很困难，必须有人来牵制它们为大部队创造机会……	私たちの人数が多すぎる。全員でこの囲みを突破するのは難しいわ。誰かがあいつらを牽制して、部隊にチャンスを作らないと……。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301979	Captain Himeko, leave it to us!	姬子队长，把牵制的任务交给我们吧！	姫子隊長、牽制の役目は私たちに任せてください！	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301980	...Okay.	……好。	……分かったわ。	NONE
+msg	301981	Take the explosives... Hope they can be of help.	这些炸药给你们…希望能派上用处。	この爆薬をあなたたちに渡すわ……うまく使ってね。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	301982	Yeah. Thanks, Captain.	嗯，谢谢队长。	はい、ありがとうございます。隊長。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	301983	Everyone else, follow me!	其他人跟我走！	他の者は私に続いて！	NONE
+choice	302218	I will also stay to defend.	私も残って守る。	NONE	NONE
+choice	302219	We can’t leave them.	彼女たちを見捨てられない。	NONE	NONE
+speaker	Himeko
+bg	009/058_1280x720
+portraits	61
+emote	61	2
+msg	301984	Are you going to stay here and die!	你要留在这里送死么！	ここに残っていたら死ぬわよッ！	NONE
+msg	301985	Follow my orders! This is the way Greymoths fight!	给我服从命令！这就是灰蛾部队的作战方式！	命令に従いなさい！これが灰蛾部隊の戦い方なのよ！	NONE
+msg	301986	We must live and go back! Or everyone will die! If you understand, get moving!	我们必须活着回去！不然所有人都得死！明白的话就给我动起来！	私たちは必ず生きて帰らなくちゃいけないの！さもないと全員死ぬのよ！分かったら動きなさい！	NONE
+msg	301987	Go!	走！	行くわよ！	NONE

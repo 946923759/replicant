@@ -839,6 +839,20 @@ func advance_text()->bool:
 	#If there was any processing done at all, this should be true
 	return true
 
+func setTextboxStyle():
+	var classic = $CenterContainer/textBackground
+	var modern = $CenterContainer/textBackground_modern
+	var modern2 = $CenterContainer/textBackground_modern2
+	
+	var l1 = [classic,modern,modern2]
+	var l2 = ["Classic","Modern 1","Modern 2"]
+	var match_ = l2.find(Globals.OPTIONS['textboxStyle']['value'])
+	for i in range(len(l1)):
+		l1[i].visible=(match_==i)
+		if i==match_:
+			textboxSpr=l1[i]
+	textboxSpr.modulate.a = Globals.OPTIONS['bgOpacity']['value']/100.0
+	
 
 func closeTextbox(t:SceneTreeTween,animTime:float=.3,_rect_scale:float=0.0)->float:
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
@@ -913,7 +927,8 @@ func _ready():
 	optionsScreen.connect("options_closed",self,"_on_OptionsScreen_options_closed")
 	#print("Text speed is "+String(TEXT_SPEED))
 	
-	$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
+	
+	setTextboxStyle()
 	
 	set_process(false)
 	#text = $textActor_better
@@ -1062,7 +1077,7 @@ func _process(delta):
 		isOtherScreenHandlingInput=false
 		$CutsceneDebug.visible=false
 	elif isOtherScreenHandlingInput:
-		$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
+		setTextboxStyle()
 		return
 		
 	if Input.is_action_just_pressed("ui_pause") or Input.is_action_just_pressed("ui_cancel"):

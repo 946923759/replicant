@@ -1,0 +1,61 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	009/013_1280x720
+portraits	61	66
+emote	61	1
+msg	301937	3 hours into the operation now, we are about 2 kilometers away from the target. It’s faster than I expected. Fortunately, the marks left previously are still here, so we could avoid a lot of meaningless battles.	目前行动开始3小时，离目标地点还有2公里左右，比我想象中的要快，幸亏之前的留下标记还在，避免了很多无谓的战斗。	現在、行動開始から3時間。目標地点まであと2キロほど。思っていたよりも早いわね。以前のマークが残っていてよかった、無用の戦闘を避けられたわ。	NONE
+msg	301938	We'll take a 15 minute break right here. Up ahead is the scrap yard. Save your strength for the Honkai beasts, we need to make sure everyone collects their parts safely.	大家原地休息15分钟，再往前就是停车场了，留着体力消灭那里的崩坏生物，保证零件回收顺利进行。	全員その場で15分休憩。もう少し進めばスクラップ工場よ。崩壊生物を消滅させる体力を温存しておいて。全員無事に部品を回収するのよ。	NONE
+speaker	Graymoth Member
+emote	61	1
+emote	66	0
+msg	301939	Roger that.	是。	はい。	NONE
+speaker	
+portraits	66
+emote	66	0
+msg	301940	......	……	……。	NONE
+
+/Himeko	301941	What's wrong? You look exhausted.	怎么了，看你好像一副很累的样子。	どうしたの。だいぶ疲れているみたいだけど。	NONE
+choice	302214	I’m fine, don’t worry.	大丈夫、気にしないで。	NONE	NONE
+choice	302215	A bit difficult...	少し疲れた……。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Himeko
+emote	61	1
+msg	301942	Alright. After experiencing enough fights in life or death situations, you shouldn't feel tired.	那就好，毕竟也是经历了这么多场殊死战斗的人，要是这样就叫苦也太丢人了。	ならいいわ。死と隣り合わせの戦いをたくさんくぐり抜けたんだから、これくらいで音を上げていたら笑われるわよ	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Himeko
+emote	61	1
+msg	301943	You can't do important missions if your body can't endure this much.	哼，就这样的体格可难当大任。	こんなんで音を上げてたら、大きな仕事はできないわよ。	NONE
+
+label	end_choices
+speaker	
+msg	301944	......	……	……。	NONE
+
+speaker	Himeko
+emote	61	1
+msg	301945	This expression again. You look as if you're hesitating.	又是这种表情，仿佛被什么东西困住了一般犹豫不决。	またその表情。まるで何かに縛られたかのような顔をしているわね。	NONE
+msg	301946	I know what you're thinking. You want to ask me why I picked you as the leader, right?	我知道你在想什么，你一定想问我为什么要推选你做领袖吧？	あなたが何を考えているのか分かるわ。きっと、どうして私があなたをリーダーに推薦したのか聞きたいんでしょう？	NONE
+msg	301947	It’s simple, because you have something that others don’t...	原因很简单，因为你有着其他人没有的东西……	理由は簡単よ。あなたは他の人が持っていないものを持っているから……。	NONE
+msg	301948	Bronya, Seele, including myself, we are shackled by our beliefs... We are afraid of our own hearts, afraid of seeing our end results. That’s why we cannot move forward.	布洛妮娅和希儿，也包括我在内，都被自己的执念所束缚…畏惧着自己的内心，畏惧着看到自己的结局，所以才总是止步不前。	ブローニャとゼーレ、そして私もだけど、みんな自分の執念に束縛されているの……自分の内心を恐れている。自分の結末を目にすることを恐れている。だから、いつも立ち止まってしまって前に進めないの。	NONE
+emote	61	5
+msg	301949	......	……	……。	NONE
+emote	61	1
+msg	301950	There was another reason why I didn't allow you to join the Grey Moths earlier. Do you want to know why they're so good at fighting?	之前没有让你加入灰蛾部队其实还有一个原因，你知道为什么灰蛾部队会有那么强的战斗力么？	以前、あなたを灰蛾部隊に入れなかった理由の1つがそれよ。どうして灰蛾部隊があんなに強いか分かる？ 	NONE
+choice	302216	Because they have strong hearts?	彼女たちの心が強いから？	NONE	NONE
+choice	302217	Because they have something to protect?	彼女たちには守るものがあるから？	NONE	NONE
+
+speaker	Himeko
+emote	61	1
+msg	301951	Heh... Yes, both points you mentioned are important, but that's not the main reason......	呵…没错，你说的这两点都很重要，但是这不是最主要的原因……	ふふ……そうね。あなたの言うそれもとても重要よ。でも一番重要な理由ではないわ……。	NONE
+msg	301952	They, like me, are weapons "created" to fight Honkai. The meaning of their existence is to eradicate it.	因为她们和我一样都是被“制造”出来对抗崩坏的兵器，她们的存在意义就是为了消灭崩坏。	彼女たちも私と同じく崩壊に対抗するために「作られた」兵器だからよ。彼女たちの存在意義は、まさに崩壊を消滅させること。	NONE
+msg	301953	However, after the Big Houkai Outbreak, we lost our value and had no place to go back to. Our lives should have ended when this world had fallen into Houkai...	然而在大崩坏发生之后，失去了存在价值的我们已经变成了丧家之犬，我们的生命在这个世界跌落崩坏的瞬间也早就应该结束了……	そして、大崩壊が発生してから存在価値を失った私たちは、家を失くした負け犬になったの。私たちの命は、この世界が崩壊によって崩れ落ちる瞬間に終わるはずだったの……。	NONE
+portraits	61
+emote	61	2
+msg	301954	But we survived. We carry the curse of being Valkyries, but we're worthless ashes... That's one of the reasons I chose you.	但是我们却活了下来，背负着名为女武神的诅咒，却已经是没用的灰烬，这也是为什么我会选你的理由之一……	でも、私たちは生き残ってしまった。戦乙女という名の呪いを背負って。もう役立たずの灰燼なのに。	NONE
+portraits	61
+emote	61	1
+msg	301955	Alright! Let’s go, break time is over. Prepare yourselves!	好了！走吧，休息时间结束了，准备出发！	よし！行きましょう。休憩時間は終わり。出発準備！	NONE
+msg	301956	We don’t have much time left...	留给我们的时间已经不多了……	私たちに残された時間は限られているのだから……。	NONE

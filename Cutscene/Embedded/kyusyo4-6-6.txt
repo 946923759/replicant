@@ -1,0 +1,146 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	009/060_1280x720
+se	DLC_CH00_EV04_ExplosionClose
+msg	302073	Boom!!!	轰！！！	ドォォォォン！！！	NONE
+speaker	Teammate
+portraits	56
+emote	56	0
+msg	302074	The armor won’t hold the next attack! We are losing the bridge!	装甲撑不住下一次攻击了！舰桥要守不住了！	装甲がもう限界です。次の攻撃を持ちこたえられない！艦橋を守り切れません！	NONE
+speaker	Himeko
+portraits	61	56
+emote	61	2
+emote	56	0
+msg	302075	Yssring! Have you fixed the cables!	伊瑟琳！电缆修好了么！	イザーリン！ケーブルは直ったの！？	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	6
+msg	302076	*Gasp*! *Gasp*! *Gasp*! I’m on, I’m on it... Finally... Finally made it... Connection to the main gun is back, charging started.	呼！呼！呼！来了来了…总…总算是赶上了……主炮已经恢复连接，开始充能。	はぁ！はぁ！はぁ！う、うん……なん……なんとか間に合った……主砲との接続は回復したわ。エネルギー充填も開始OK。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	6
+msg	302077	Right now! Hyperion, start acceleration!	就是现在！休伯利安号开始加速！	今よ！ハイペリオン号加速！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302078	Understand. Increasing power output and accelerating. Please, don’t break...	了解，动力炉出力增加开始加速，一定不要坏掉啊……	了解。動力炉の出力を上げて加速を開始。絶対に壊れないでよね……。	NONE
+speaker	
+portraits	54
+emote	54	1
+se	DLC_CH00_EV13_MosterRoar
+msg	302079	Roar!	吼吼吼！	ウウゥ、グルル！！！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302080	We have got away from it! Main gun, aim on it! Prepare to fire!	甩掉了！主炮瞄准！准备开炮！	振り切った！主砲の照準を合わせて！発射用意！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302081	Main gun charging completed. Aiming start. Fire control unlocking in 4 seconds...	主炮填充完毕，校准开始，预计4秒后解除火控装置……	主砲充填完了。照準開始。4秒後に安全装置解除……。	NONE
+msg	302082	3... 2... 1... Target locked. Ready to fire.	3…2…1……已锁定目标，随时可以开火。	3……2……1……目標をロックオン。いつでも撃てる。	NONE
+speaker	
+portraits	54
+emote	54	1
+se	DLC_CH00_EV13_MosterRoar
+msg	302083	Roar!	吼吼吼！	ウゴォォォン！！	NONE
+speaker	Yssring
+portraits	54
+emote	54	5
+msg	302084	Whoa! That... That thing is catching up!	呜哇！那…那家伙追上来了！	うわっ！あ……あいつ追いついてきた！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302085	Fire!	开火！	てッ！！！	NONE
+speaker	
+portraits	54
+emote	54	5
+msg	302086	Boom!!!	轰！！！	ドォォォンッ！！	NONE
+se	DLC_CH00_EV13_MosterRoar
+msg	302087	Roar!	吼吼吼！	グルルル！！	NONE
+speaker	Yssring
+portraits	54
+emote	54	3
+msg	302088	Mi... Mi.. Mi...	打…打…打……	いけ……いけ……いけ……！	NONE
+portraits	54
+emote	54	5
+msg	302089	We have missed it!!!	打偏了居然！！！	そんな、外れた！！	NONE
+speaker	
+portraits	54
+emote	54	5
+se	DLC_CH00_EV13_MosterRoar
+msg	302090	Roar!	吼吼吼！	ゴォォォォ！！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302091	Don’t panic! That shot had greatly interfered its movement! Take this opportunity and rush into the vacuum area!	别慌张！刚才那一炮已经很大的干扰了它的行动，趁着这段时间冲入真空区！	慌てないで！今の一撃で行動を大きく阻害できたはずよ。今のうちに崩壊エネルギーの真空エリアに突入しましょう！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	6
+msg	302092	Right, right, right! We can see ME Corp already! We are almost in the vacuum area... If we can enter it, we will be safe!	对对对！已经能看到ME社了！我们马上就进入真空区了…只要进去的话我们就得救了！	そ、そうよね！もうME社は見えてるし……！もうすぐ真空エリアに入れる……中に入りさえすれば助かる！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	6
+msg	302093	Rest of you, don’t relax! Hold off the Houkai creatures’ attack in the passage! They will be weaker once we enter the vacuum area! 	其他人不要松懈！守住通道崩坏生物的进攻！只要进入真空区它们的攻势就会衰弱下来！	他の人たちは緊張を緩めないで！通路を守って崩壊生物の進攻を食い止めるのよっ！直に攻勢も弱まるわ！	NONE
+speaker	
+portraits	54
+emote	54	6
+se	DLC_CH03_EV01_GunAndExplosion
+msg	302094	Dadada!	哒哒哒！	ダダダッ——！	NONE
+speaker	Yssring
+portraits	54
+emote	54	6
+msg	302095	Himeko! We are in the vacuum area now! That thing will not...	姬子！我们进入真空区了！那个家伙已经追不……	姫子！真空エリアに入った！きっと、あいつももう追って……。	NONE
+speaker	
+portraits	54
+emote	54	6
+se	DLC_CH00_EV13_MosterRoar
+msg	302096	Roar!!	吼吼吼！！	ウォォォーン！！	NONE
+speaker	Yssring
+portraits	54
+emote	54	5
+msg	302097	Ahhhh! Why is it still coming after us! This is not what we are promised!	啊啊啊！怎么还在追啊！和说好的不一样啊！	な、ななッ！どうしてまだ追ってくるの！想定と違うじゃない！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302098	Ughh... This big one is different with other Houkai creatures, is it...	可恶…果然这样的大家伙和其他的崩坏生物不能相提并论么！	クソッ……やっぱり、こういうデカいやつは他の崩壊生物と同列に扱っちゃいけないのね。	NONE
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302099	Yssring! Max power output from the power furnace! We must reach ME Corp!	伊瑟琳！动力炉最大出力！一定要抵达ME社！	イザーリン！動力炉を最大出力に！必ずME社にたどり着いて！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	2
+msg	302100	Ah? Oh... Okay! Hyperion, max power!	啊？哦…好的！休伯利安最大出力！	え？あ……分かったわ！ハイペリオン、最大出力！	NONE
+speaker	
+portraits	54
+emote	54	2
+msg	302101	Boom!!!	轰！！！	ドォォォォォン！！	NONE
+speaker	Yssring
+portraits	54
+emote	54	5
+msg	302102	Whoa! Engine 3 exploded... I won’t take the responsibility if the ship is also blown up!!	呜哇！3号引擎爆炸了…要是连船一起炸了我可不管哦！！	うわっ！3番エンジンが爆発した……船まで一緒に爆発したら私知らないからね！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302103	I don’t care! If we stop now, we are done!	就算坏掉也没关系！如果在中途停下我们就完了！	壊れても構いやしないわ！途中で止まったら、それこそおしまいよ！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	6
+msg	302104	Ohhhhh---------!	哦哦哦哦哦————————！	お願いっ、ME社まで耐えて！！	NONE
+speaker	
+portraits	54
+emote	54	6
+msg	302105	Boom!!!	轰隆！！！	ゴォォン！！	NONE

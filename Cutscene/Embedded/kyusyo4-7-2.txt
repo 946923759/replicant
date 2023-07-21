@@ -1,0 +1,160 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+preload_portraits	55	61	53	60	107
+match_names	Emesa	Himeko	Mei	_DIM_ALL_WHEN_EMPTY
+speaker	
+bg	009/061_1280x720
+se	DLC_CH00_EV13_MosterRoar
+msg	302136	Roar--	吼吼吼——	——グル、グォォ……	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+msg	302137	It has fallen down... We did it!!	它掉下去了……我们成功了么！！	落ちてった……成功したんだな！	NONE
+speaker	Himeko
+emote	61	2
+msg	302138	*Gasp*... *Gasp*... Looks like so...	呼…呼…看来是的……	ふう……ふう……そのようね……。	NONE
+speaker	Emesa
+emote	55	3
+msg	302139	Himeko, how are you! Are you still holding up!	姬子你怎么样了！还撑得住么！	姫子どうしたっ！大丈夫か！？	NONE
+speaker	Himeko
+emote	61	2
+msg	302140	I’m fine... Ask the team to fall back, this place won’t last long...	没事…让队员们撤回去，这地方估计快撑不住了……	大丈夫よ……隊員たちを退却させて。この場所はもうもたないはずよ……。	NONE
+speaker	Emesa
+emote	55	1
+msg	302141	Roger!	好！	分かった！	NONE
+
+music	The Color of Depression
+/???	302142	Why...	为什么……	どうして……。	NONE
+emote	55	1
+/Emesa	302143	Who's there?	谁！？	誰！？	NONE
+
+music	The Dark Colossus Destroys All
+portraits	55,false,-3	61,false,-4	53,false,1
+emote	55	1
+emote	53	0
+/Mei	302144	Why did you come back?	为什么要回来呢？	どうして戻って来たの？	NONE
+
+emote	55	4
+emote	53	0
+/Emesa	302145	You're... A Herrscher!?	你是…律者！？	お前は……律者！？	NONE
+
+emote	55	4
+emote	53	0
+/Mei	302146	I have given you a chance to live...... Why have you come back to seek death......	明明已经给了生存的机会…为什么还要回来寻死……	せっかく生き残るチャンスをあげたのに……どうして死に戻って来たの……。	NONE
+
+emote	61	1
+emote	53	0
+/Himeko	302147	Hah... You mean those Houkai creatures didn’t attack us because of your order?	哼…你的意思是在郊外那些崩坏生物没有攻击我们的原因是因为你的命令？	なるほど……外にいる崩壊生物どもが私たちを攻撃してこなかったのは、あんたの命令だったってこと？	NONE
+speaker	Mei
+emote	61	1
+emote	53	0
+msg	302148	...The results cannot be changed, no matter what.	……不管怎么样，结果已经是无法改变的。	……どうであれ、もう手遅れよ。	NONE
+msg	302149	Even if you keep struggling, you will only feel more pain... You have nowhere to go even if you leave this place.	即使继续挣扎也只不过是徒增痛苦罢了…就算离开了这里，也无处可逃。	たとえもがき続けても、いたずらに苦しみが増すだけ……ここから出て行っても逃げる場所はない。	NONE
+msg	302150	Since you have chosen to come back, I shall free you from your suffering right here, right now...	既然你们选择了回来，就让你们在这里解脱吧……	戻ることを選択したのなら、今すぐここで苦しみから解放させてあげるわ……。	NONE
+emote	61	1
+emote	53	0
+/Himeko	302151	Emesa... Take the others and go!	埃米沙…带着其他人走！	エミザ……みんなを連れて行って！	NONE
+emote	55	4
+emote	53	0
+/Emesa	302152	No way! Are you going to fight alone again? If you're going to fight, then we're here with you!	不！你又想一个人战斗么！要打的话让我们一起上！	バカなこと言うなッ！また、あんた1人で戦うのか？戦うなら私たちも一緒だ！	NONE
+
+tn	0	It's closer to "it's almost like a stage comedy, allow me to close the curtains on the stage right here" but I couldn't figure out a good way to say it
+/Mei	302153	What a ridiculous farce. Allow me to close the curtains on it right here. 	真是可笑的闹剧，你们就在这里落幕吧。	お仲間ごっこも、そこまでいくと喜劇ね。あなたたち、ここで幕を下ろしなさい。	NONE
+
+portraits	55,false,-3	61,false,-4	53,false,2
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+/ 	302154	Boom!	砰！	パァンッ——！	NONE
+/Himeko	302155	!?	！？	ッ！？	NONE
+match_names	Emesa	Himeko	Bronya	Mei
+portraits	55,false,-3	61,false,-3	60	53,false,2
+emote	61	1
+emote	60	0
+/Bronya	302156	It’s not over yet...	还没有结束……	まだ終わっていません……。	NONE
+
+emote	55	2
+emote	60	0
+/Emesa	302157	Himeko, look! It’s Bronya! She’s back!	姬子快看！是布洛妮娅！她回来了！	姫子、見ろ！ブローニャだ！ブローニャが帰ってきたぞ！	NONE
+
+speaker	Mei
+portraits	
+bg	009/054_1280x720
+/Mei	302159	......	……	……。	NONE
+/Bronya	302160	Seele's death... I'll make you pay for what you did!	希儿的仇…我一定会让你偿还！	ゼーレの仇……必ずあなたに償わせます！	NONE
+/Mei	302161	Life and death have long since lost their value in this world. ...Pain, sadness, hatred, anger. Even these feelings you have right now are meaningless.	生死早就已经没有价值了…痛苦、悲伤、憎恨、愤怒。就连你现在拥有的这些感情，也都是毫无意义的东西。	この世界において生死なんてとっくに価値がなくなっているわ……苦痛、悲しみ、憎悪、怒り。あなたが今持っているこうした感情ですら、全て意味のないものなのよ。	NONE
+/Bronya	302162	Say whatever you want! As long as I'm still alive, I'll try to put an end to you!	随你怎么说！只要我还活着就一定会把你杀掉！	好きに言うがいいです！ブローニャが生きている限り、必ずあなたを殺します！	NONE
+/Mei	302163	.....Even if you kill me, what can you do? Do you really think you can survive in this world?	……就算杀掉了我又能怎么样呢，你真的以为凭你们的力量能在这个世界生存下来么？	……たとえ私を殺したとして、それでどうなるの。あなたたちの力でこの世界を生き抜けると本当に思っているの？ 	NONE
+/Bronya	302164	That doesn't matter anymore. My only goal right now is killing you!	那种事情已经无所谓了！现在我的目标只有你而已！	そんなことは、もうどうでもいいです。今のブローニャの目標はあなただけです！	NONE
+
+speaker	Mei
+tn	0	Mei says she'll grant Bronya her wishes in the original, but it didn't really make sense considering Mei is going to kill Bronya.
+msg	302165	Really.... Is this your choice? Fine, allow me to free you from your suffering. 	是么…这就是你们的选择么，既然这样的话就成全你吧。	そう……それがあなたたちの選択なのね。そういうことなら望みを叶えてあげるわ。	NONE
+
+speaker	Bronya
+tn	0	For some reason she doesn't say "my sister", but I guess it's because Bronya thought of Mei as a sister too.
+msg	302166	Come on, then! Kill me, just like you killed Seele! 	来吧！就像杀死希儿的时候一样杀掉我！	来なさい。ゼーレを殺したようにブローニャを殺すのです。	NONE
+
+music	The Sound of the End
+/???	302167	Mei, stop it.	芽衣，停手吧。	芽衣先輩、やめて。	NONE
+speaker	Mei
+match_names	Emesa	Himeko	Bronya	Mei	Kiana
+/Mei	302168	!?	！？	！？	NONE
+bg	009/061_1280x720
+portraits	55,false,-3	61,false,-3	60,false,-4	53,false,0	107,false,1
+msg	302169	Kiana! You're finally awake!?	琪亚娜！你终于醒了么！	キアナちゃん！やっと目覚めたの！？	NONE
+emote	61	1
+/Himeko	302170	Kiana...	琪亚娜……	キアナ……。	NONE
+/Kiana	302171	Come back with me. Killing these girls here won't change anything.	和我一起回去吧，就算在这里杀掉她们，也不会改变任何事情。	私と一緒に帰ろう。ここで彼女たちを殺しても何も変わらないわ。	NONE
+/Mei	302172	......	……	……。	NONE
+/Kiana	302173	I’m sorry... To make you bear all of this.	抱歉…让你一个人承受了这么多。	ごめんなさい……たった1人に、こんなたくさんのことを背負い込ませて。	NONE
+/Mei	302174	No... This is my own choice...	不…这是我自己的选择……	ううん……これは私自身の選択だから……。	NONE
+/Kiana	302175	Let's go, back to where we belong.	走吧，回到我们应该存在的地方。	行きましょう。私たちが存在すべき場所に帰りましょう。	NONE
+
+emote	60	7
+/Bronya	302176	Wait! I won’t let you leave!	等下！我不会让你们离开的！	待ちなさい！あなたたちを行かせはしません。	NONE
+/Kiana	302177	Bronya... You have grown up.	布洛妮娅…已经长这么大了呢。	ブローニャ……もうこんなに大きくなったのね。	NONE
+msg	302178	Don’t worry, we are not going anywhere... If you want to kill us, go to the place we met first.	放心吧，我们哪里也不会去…如果你想要杀掉我们的话就来到那最初相遇的地方吧。	安心して。私たちはどこにも行かないわ……私たちを殺したいなら最初に出会った場所に来て。	NONE
+msg	302179	It’s the beginning of everything, and the place where everything ends... You will find answers to the revenge and hope you desired there.	那里是一切的开始，也是一切终结的地方…你想要的复仇，你们想要的希望，都会在那里得到答案。	あそこが全ての始まりよ。そして、全ての終末の場所……あなたがしたい復讐、あなたたちのほしい希望、全てあそこに答えがあるわ。	NONE
+msg	302180	Including [color=#cc66ff]you[/color], too.	也包括你。	それにあなたもね。	NONE
+
+stop_music	1
+speaker	
+portraits	55	61	60
+emote	60	7
+msg	302181	......	……	……。	NONE
+speaker	Emesa
+emote	55	1
+emote	60	7
+msg	302182	She.... She's gone.... Was that the Herrscher of Finality that destroyed the world?	走…走掉了…那个家伙就是毁灭世界的最终律者么……	い……行っちゃった……あいつが世界を滅ぼした最後の律者なのか……？	NONE
+speaker	Bronya
+emote	55	1
+emote	60	7
+msg	302183	Dammit!	可恶！	悔しいです。	NONE
+speaker	Himeko
+emote	61	1
+emote	60	7
+msg	302184	Are you still just thinking about revenge...	你还是只想着复仇么……	あなたはやっぱり復讐しか考えていないのね……。	NONE
+speaker	Bronya
+emote	61	1
+emote	60	7
+msg	302185	...My goal will not change.	……我的目标是不会改变的。	……ブローニャの目標は変わりません。	NONE
+speaker	Emesa
+emote	55	1
+emote	60	7
+msg	302186	Hey! Bronya!	喂！布洛妮娅！	おいっ！ブローニャ！	NONE
+speaker	Himeko
+emote	61	2
+emote	60	7
+msg	302187	Leave her alone... The immediate priority now is...	别管她了…我们现在的当务之急是……	放っておきましょう……それより私たちは……。	NONE
+speaker	
+portraits	55	60
+emote	60	7
+msg	302188	*Thunk*!	咚！	——バタンッ！	NONE
+speaker	Emesa
+emote	55	3
+emote	60	7
+msg	302189	Himeko!?	姬子！？	姫子！？	NONE
+msg	302190	Hey! Himeko! Wake up!	喂！姬子！醒醒啊！	おい！姫子！目を覚ませ！どうしたんだ！？	NONE
+emote	55	4
+emote	60	7
+msg	302191	Oh no! The Houkai corruption has reached the limit! Somebody help!	糟了！崩坏的侵蚀已经到极限了！快来人！帮忙！	まずい！崩壊の侵蝕が限界点に達してる！誰か！手を貸してくれ！	NONE
+msg	302192	You can't die here! Hold on!	你不能死！你给我坚持住！	あんたは、こんなとこで死ぬタマじゃないだろ！目、開けろっ！	NONE
+msg	302193	Himeko!!	姬子！！	姫子ッ！！	NONE

@@ -1,0 +1,132 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	009/060_1280x720
+portraits	61
+emote	61	1
+msg	302022	The surrounding Houkai creatures are still not moving. What are they waiting for...	周围的崩坏生物依然没有动静，它们到底在等什么……	周囲の崩壊生物はまだ動きがないわね。一体何を待っているのかしら……。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302023	Himeko, the engine repairs are done... I have done my best with the parts you brought back. However, they are just substitutes, the power furnace can only run for a few hours...	姬子，引擎已经修理完毕了…我已经做了那些带回来的零件能修理的极限了，但是那毕竟只是代替品，只能支撑动力炉运作几个小时而已……	姫子、エンジンの修理が終わったよ……持ち帰ってきた部品でできる限りの修理はしたわ。だけど代替品でしかないから、動力炉を動かせるのは数時間かも……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302024	So if the power furnace is down again, we will face the same situation...	也就是说如果动力炉再次瘫痪，我们还将遇到与现在同样的状况么……	つまり、また動力炉が壊れてしまうかもしれないのね。最悪、今と同じ状況に陥る可能性もあると……。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302025	Right...	是的……	そうよ……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302026	We can leave the Nagazora area with a few hours. There is more unknown outside, seems we just have to hand our fate to the god.	如果有几小时的话就能够驶出长空市范围了，对于我们来说外面是更加未知的地方，看来只能将命运交给上天了。	数時間あれば長空市の影響外へと抜け出せるわ。ただ、私たちにとって外は未知の場所も同然……より危険な場所かもしれない。こればっかりは、天に命運を預けるしかなさそうね。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302027	If those Houkai creatures keep coming after us, we still have to fight them! Then why don’t we just fight them here! Our winning chance will only decrease if they keep running us down!	如果那些崩坏生物继续追着我们的话还是免不了与它们一战！既然这样不如在这里就决一死战！这样消耗下去我们的胜率只会越来越小！	どっちにしろあの崩壊生物たちは追ってくるだろ！？追いかけっこで精神を疲弊させるくらいなら、ここで迎え撃ってやろうじゃんか！このまま消耗していったら勝率がどんどん下がる一方だぞ！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302028	......	……	……。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	3
+msg	302029	I actually have a suggestion... But I’m not sure if I should say it...	其实我一直有一个建议…不知道该不该说……	ね、ねぇ……実はずっと言おうか迷ってたんだけど……言うべきか分からなくて……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	3
+msg	302030	Not like you are going to say anything else other than running away...	反正你除了逃跑就没有别的建议了吧……	イザーリン、どうせ逃げるに一票とか言うんだろう。	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	1
+emote	54	3
+msg	302031	No, what I mean is... Maybe we can choose to go back to ME Corp..	不，我的意思是…也许我们选择可以回到ME社……	ち、違うもん。私の意見っていうのは……ME社に戻ってもいいんじゃないかなと思って……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	3
+msg	302032	Being smart is your only advantage... But this time, did you lose your mind...	你这家伙脑袋聪明是唯一的优势，这次终于连智商也吓掉了么……	はぁ？頭の良さが唯一の取り柄だっていうのに、頭溶けちゃったのか……？	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	3
+msg	302033	Yssring, what’s your thought?	伊瑟琳，你有什么想法么？	イザーリン、あなたの考えを聞かせて。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302034	Do you remember the last time after the Herrscher attacked? A Houkai energy vacuum was formed around ME Corp, so Houkai creatures disappeared for a few days... If we can utilize that few days and get parts from the mekas in ME Corp, maybe we can fix the power furnance completely...	你们还记得之前一次律者攻击后的情形么？ME社周围形成了崩坏能的真空区导致崩坏生物消失了几天…如果利用这几天的安全期在ME社用那些机甲的零件的话，说不定能修好动力炉……	前回、律者に攻撃された後のこと覚えている？ME社の周囲に崩壊エネルギーの真空エリアが現れて崩壊生物が消えたでしょ……まだ真空エリアが残っていれば、安全な状況下でME社の機甲部品を取りつつ動力炉を直せるかも……。	NONE
+msg	302035	Maybe we can also find Bronya...	而且，说不定还能找回布洛妮娅……	それに、ブローニャを探し出せるかもしれない……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302036	...But returning to the ME Corp means we will face the Herrscher directly. Also, if we head back now, the vacuum will soon end, so it is not any less dangerous.	……但是回到ME社也就意味着将再次与律者正面交锋，而且我们现在回去，真空期的时间也即将结束，危险程度并不会降低。 	……でも、ME社に戻るということは、また律者と正面からぶつかることになるのよ。それに私たちが今戻っても、真空エリアがそう長く続くとは思えない。危険なのには変わりないわよ。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302037	So... It’s your call now...	所以…就交给你们来选择了……	だから……あなたたちに決めてほしいの……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	1
+msg	302038	So much effort to run away, and we are going back now... But if we can get Bronya back, I choose to go back!	好不容易逃出来了又要回去么…但是如果能找回布洛妮娅的话我选择回去！	せっかく逃げ出せたのにまた戻るのか……でも、ブローニャを探し出せるっていうなら戻りたい！ 	NONE
+choice	302220	I also agree to go back.	私も戻るのに賛成。	NONE	NONE
+choice	302221	I think it's too dangerous.	危なすぎると思う。	NONE	NONE
+speaker	Himeko
+bg	009/060_1280x720
+portraits	61
+emote	61	1
+msg	302039	I see.	我明白了。	分かったわ。	NONE
+msg	302040	No one knows what will happen if we leave Nagazora. If we go back to ME Corp, it will be dangerous, but we still have some hope. We are also very familiar with the environment there so the battles will be less difficult.	离开长空市的话未来的路我们也无从知晓，回到ME社虽然危险但至少能够有一线希望，而且那里的地形与环境我们也最熟悉，战斗的难度会降低很多。	長空市を離れれば、その先の道は私たちにも全く分からない。けど、ME社に戻れば危険だけど、少なくとも一縷の望みがある。それにあそこの地形と環境は私たちもよく知っているから、戦闘の難度もだいぶ下がるわね。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302041	In other words...	也就是说……	それはつまり……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	1
+msg	302042	Himeko, sometimes you can also use your brain to think~	哼，姬子你偶尔也会冷静思考问题了呢~	ふんっ、姫子もたまには冷静にものを考えるんだな。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	302043	I prefer to hold my own destiny rather than waiting for miracles to happen.	与其期待偶然发生的奇迹，不如将命运握在自己的手中，	奇跡を期待するよりも、運命を己の手で掴み取るほうがいいでしょ。	NONE
+msg	302044	Hyperion, start!	休伯利安号出发！	ハイペリオン号出発！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	6
+msg	302045	Roger... Starting the power furnace.	了解…动力炉启动。	了解……動力炉起動。	NONE
+speaker	
+portraits	54
+emote	54	6
+msg	302046	Boom--	轰——	ゴォォォォ——	NONE
+speaker	Yssring
+portraits	54
+emote	54	6
+msg	302047	Power output stable... Please, I hope there will be no problem...	目前出力稳定…千万不要出问题啊……	現在、出力安定……お願いだからトラブルは起きないでよ……。	NONE
+speaker	Teammate
+portraits	56
+emote	56	0
+msg	302048	The Houkai creatures in front have moved! They are coming towards our battleship!	报告！前方的崩坏生物有动作了！它们正在朝向战舰涌来！	報告します！前方の崩壊生物に動きあり！戦艦に向かって押し寄せてきます！	NONE
+speaker	Himeko
+portraits	61	56
+emote	61	1
+emote	56	0
+msg	302049	So, they have started the attack. There is no miracle in this world...	终于开始进攻了么，果然这个世界根本不存在什么奇迹……	ようやく攻撃を仕掛けてきたわね。やっぱり、この世界に奇跡なんて存在しないのよ……。	NONE
+portraits	61	56
+emote	61	2
+emote	56	0
+msg	302050	All personnel, first level battle preparation! We are breaking through the Houkai creatures and returning to ME Corp!	全员进入一级战斗准备！我们要突破崩坏生物的包围返回ME社！	全員、一級戦闘配置！崩壊生物の包囲を突破してME社に戻る！	NONE

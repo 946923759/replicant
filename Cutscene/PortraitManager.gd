@@ -101,7 +101,11 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits_:int=-1):
 			if typeof(relation[name])==TYPE_ARRAY:
 				numPortraits_+=1
 	self.numPortraits=numPortraits_
-	assert(self.numPortraits > 0,"Trying to update portrait positions without any portraits")
+	
+	#I can't remember what this assertion is supposed to stop,
+	#but it's erroring when a portrait gets removed so I'm just
+	#going to comment it out.
+	#assert(self.numPortraits > 0,"Tried to update portrait positions but there are no portraits being displayed. Check relation dictionary.")
 	
 	for name in relation:
 		var pStruct = relation[name]

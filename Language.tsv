@@ -39,7 +39,9 @@ skip	Skip to Next Cutscene
 textSpeed	Text Speed		Velocidade do texto
 autoRead	Auto Read		Ler automaticamente
 skipMode	Text Skip Mode		Configuração de salto de texto
+textOptions	Text Options
 systemOptions	System Options	Opciones del sistema	Opções do sistema	システムオプション
+reload	[Debug] Reload Cutscene
 chapterSelect	Return to Chapter Select
 
 AudioVolume	Music Volume	Volúmen de la Música	Volume da música
@@ -47,13 +49,18 @@ SFXVolume	SFX Volume	Volúmen de los Efectos	Volume do efeito sonoro
 isFullscreen	Fullscreen	Pantalla Completa	Tela cheia
 language	Current Language	idioma	Idioma atual
 
+bgOpacity	Textbox Opacity
+textboxStyle	Textbox Appearance
+
 --OptionDescriptions
 continue	Resume reading.
 skip	Skip to the next cutscene.
 textSpeed	Adjust how fast the text displays.	Velocidad de las Cinemáticas
 autoRead	Automatically display the next line after a delay. Press the 'auto' button on a mobile device, "B" on your controller, or "X" on the keyboard to start and stop Auto Read.
 skipMode	Whether unread text should be skipped while holding Ctrl on the keyboard or "B" on the gamepad, or just previously read text.
+textOptions	Adjust text speed and textbox appearance.
 systemOptions	Adjust the volume, language, and other programwide options.
+reload	Does what it says.
 chapterSelect	Return to the chapter select.
 
 AudioVolume	Adjust the volume of the music.
@@ -64,6 +71,8 @@ language	Choose the novel's language. This change will not take effect until the
 EnglishLocalized=Removes honorifics, changes most instances of Seele calling Bronya "onii-chan" to her calling Bronya by name, and removes Bronya's habit of referring to herself in third person. No other changes.
 EnglishLiteral=Keeps honorifics (ex. Himeko-sensei, Mei-senpai) and uses a more direct translation, so Seele will continue to call Bronya "onii-chan" instead of by name. Bronya also talks in third person sometimes. Use this one if you prefer honorifics and/or you're worried about some meaning being lost in translation.
 
+bgOpacity	Change the textbox background transparency. 0 = transparent, 100 = opaque.
+textboxStyle	Change the look of the textbox to GGZ Fire Moth's blue box, or choose a slightly more modern looking appearance.
 
 #There is probably no need for you to include this category in your translation
 --Language

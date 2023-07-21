@@ -1,0 +1,101 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Yssring
+bg	009/060_1280x720
+match_names	Himeko	Yssring	Greymoth Member
+portraits	61	54
+msg	301899	Here's the report on the Hyperion's current condition... 67% of the ship's exterior armor has been completely damaged. In addition, the internal bulkheads are...	这是休伯利安号的损害检测报告…目前全舰67%的外装甲完全损耗，另外内部隔断闸也……	これはハイペリオン号の損害検出報告書よ……今のところ全艦で67%の外装甲が完全に損傷。さらに内部隔壁も……。	NONE
+speaker	Himeko
+msg	301900	None of that matters. The most important thing right now is to see if we can get the generator up and running. We have to figure out the most feasible way to do that.	这些都不重要，现在最重要的是恢复动力炉的运作，目前最重要的是评估最可能实行的方案。	そんなのどれも後回しでいいわ。今、最も重要なのは動力炉の運転を回復できるかどうか。そして、今なすべきことは一番可能性が高い方法を考えることよ。	NONE
+speaker	Yssring
+msg	301901	We have a plan... But we can't supply the most important parts... Here is a list of parts I prepared. If we have them, we can last a bit longer.	方案是已经有了…但是关键的维修零件却无法补给…这是我整理的零件清单，如果有这些东西的话或许能再撑一会。	方法はある……けど、一番重要な修理部品が補給できないんじゃ……これはさっき整理した必要部品リストなんだけど、ここに書いてある物があれば少しは現状を打破できるかもしれない。	NONE
+emote	61	1
+emote	54	5
+msg	301902	These are the absolute minimum requirements. In the worst case scenario, we can substitute some parts from from junk cars... But I'd rather not start converting a battleship into an automobile if possible...	这已经是最低限度的需求了，实在不行的话用一些汽车的零部件代替也是可以的…但如果条件允许的话我可不想把一艘战舰改装成汽车……	これが最低限必要な部品。どうしてもダメなら自動車の部品で代替しても構わない……でも、できれば戦艦を自動車に改装したくないわね……。	NONE
+speaker	Himeko
+emote	61	1
+emote	54	5
+msg	301903	I see... We just need to get these parts then... Bring me the map of Nagazora.	明白了…只要想办法获得这些东西就行了…把长空市的探查地图拿来。	分かったわ……どうにかして、これらを手に入れればいいのね……長空市の探査地図を持ってきて。	NONE
+speaker	Graymoth Member
+portraits	61	54	66,false,2
+emote	61	1
+emote	66	0
+msg	301904	Roger that.	是。	はい。	NONE
+speaker	
+portraits	66
+emote	66	0
+msg	301905	......	……	……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	66	0
+msg	301906	This is our current location. If I remember correctly, there is a large abandoned car park around here... Here it is.	这是我们目前的位置，如果我没记错的话，在这个附近有一座大型的废弃停车场…就在这里。	ここが私たちの現在位置。記憶が間違っていなければ、この近くに大きな自動車スクラップ工場があったわ……ここよ。	NONE
+speaker	Yssring
+emote	61	1
+emote	54	2
+msg	301907	Do you mean to go here to find parts? But the distance is too far... And it's too dangerous to go out there now... How are we going to get there...?	你的意思是要去这里找零件么？但这个距离也太远了吧…而且现在外面这么危险，要怎么过去呢……	そこに部品を探しに行くってこと？でも、さすがにこの距離は遠すぎない……？それに外は今とっても危険なのよ。どうやって行くの……？	NONE
+emote	61	1
+emote	54	2
+/Himeko	301908	Leave these questions to the Grey Moths. It may be hell for you, but we're used to traveling through hell.	这些问题就交给灰蛾部队吧，对于你们来说可能是地狱，但是我们已经习惯在地狱中穿梭了。	それは灰蛾部隊に任せてちょうだい。あなたたちにとっては地獄かもしれないけれど、私たちは地獄の中をくぐり抜けるのに慣れているから。	NONE
+match_names	Himeko	Yssring	Emesa
+portraits	61	54	55
+emote	55	1
+emote	54	2
+/Emesa	301909	If that's the case, bring more people with you. It will be a little safer that way.	既然如此就多带点人吧，这样至少安全一些。	そういうことなら多めに人を連れて行って。その方が少しは安全だろう。	NONE
+emote	61	1
+emote	54	2
+/Himeko	301910	No, it’s actually the opposite. We must keep a small team. Too many members will just cause issues.	不，恰恰相反，这样的情况必须保证少人数的行动，目标太多反而会适得其反。	いえ、逆よ。このような状況では少人数で行動しなくちゃダメ。大所帯になりすぎるとかえって逆効果になってしまうのよ。	NONE
+tn	0	Maybe "I'll select less than ten elites from the Grey Moths" would work better
+msg	301911	I'll select a few elites from the Grey Moths and keep the amount in the single digits. That way we'll have enough to protect the rear lines. 	我会在灰蛾部队中挑选几个精英成员，把人数控制在个位数，这样也可以有充分的战力来保护后方。	灰蛾部隊の中から精鋭を数人選んで、人数は1桁に抑える。その方が十分な戦力で後ろを守れるわ。	NONE
+speaker	Emesa
+emote	55	1
+emote	54	2
+msg	301912	......	……	……。	NONE
+speaker	Himeko
+emote	61	1
+emote	54	2
+msg	301913	Yssring, Emesa, and you. We're leaving defending the Hyperion to you. The Honkai Beasts are going to come eventually, so make sure to keep everyone safe.	伊瑟琳，埃米沙还有你，我们出发后休伯利安的防守就交给你们了，崩坏生物一定还会再来，一定要保证大家的安全。	イザーリン、エミザ、それからあなた。私たちが出発したらハイペリオンの防備は任せたわよ。崩壊生物はきっとまたやってくるわ。必ずみんなの安全を守ってね。	NONE
+choice	302210	I will go with you.	私も一緒に行く。	NONE	NONE
+choice	302211	Leave it to me.	私に任せて。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+emote	55	1
+/Emesa	301914	I agree. Why not let her go with you? If the leader dies out there, we're all screwed.	我赞成，让她和你一起去，如果首领在外面死掉的话我们就全完了。	私は賛成だ。彼女も一緒に行かせたらどうだ？もし、リーダーが外で死んじまったら、それこそおしまいだからな。	NONE
+jmp	end_choices
+
+label	c2dest
+emote	55	1
+/Emesa	301915	No, you go with Himeko. If the leader dies out there, we're all screwed.	不，你和姬子一起去，如果首领在外面死掉的话我们就全完了。	いや、あんたも姫子と一緒に行ってくれ。もし、リーダーが外で死んじまったら、それこそおしまいだからな。	NONE
+label	end_choices
+
+speaker	Himeko
+emote	61	1
+msg	301916	If the Hyperion is breached we'd be screwed either way.	如果休伯利安被攻破的我们也完了。	もし、ハイペリオンが攻め落とされてしまったら、どうするの？それこそおしまいよ？	NONE
+speaker	Emesa
+emote	55	1
+msg	301917	We'll find a way to protect Hyperion!	休伯利安号我们会自己想办法守住！	ハイペリオン号は、なんとしてでも守る！	NONE
+msg	301918	You also said I know your condition the best. What you're doing right now seems no different than putting yourself in peril.	而且你也说了，我最清楚你的情况，你现在的行为在我看来和送死无异。	それに、死にに行くような行動に思えても、あんたなら不思議と上手くやれるような気がするんだ。	NONE
+speaker	Yssring
+emote	55	1
+emote	54	2
+msg	301919	I actually think it would be better for Kyushou to stay and protect Hyperion...	其实我觉得九霄下来保护休伯利安号挺好的……	実を言えば九霄が残ってハイペリオン号を守ってくれた方がいいけど……。	NONE
+speaker	Emesa
+emote	55	4
+emote	54	2
+msg	301920	You shut the ☆☆ up!	你OO地给我闭嘴！	うるさいっ、黙れ！	NONE
+speaker	Yssring
+emote	55	4
+emote	54	2
+msg	301921	Woah!	呜！	ううっ！	NONE
+emote	61	1
+emote	54	2
+msg	301922	Alright... Fine, you can come with. But in exchange, I'm leaving more people in the Hyperion.	好吧…我同意让你一起去。不过相对的，我会留更多的人在休伯利安上。	分かったわ……あなたも一緒に連れて行く。でもその代わり、ハイペリオンには多めに人を残すわ。	NONE
+speaker	Emesa
+emote	55	1
+emote	54	2
+msg	301923	You're so stubborn...	真是顽固的家伙…	本当に頑固なやつなんだから……。	NONE
+msg	301924	Take care of Himeko! She is quite reckless, so make sure you bring her back if you are in danger. I don’t want to take risk and retrieve your bodies!	姬子的安全就交给你了！这个家伙喜欢乱来，如果遇到危机一定要阻止她一起回来，我可不想冒着危险给你们收尸！	姫子の安全は任せたからな！こいつメチャクチャやるから、危険なことをしようとしたら必ず止めてやってくれ。絶対、一緒に帰って来るんだぞ。危険を冒してまで、あんたらの死体を拾いに行きたくないからな！	NONE
+speaker	Himeko
+emote	61	1
+emote	54	2
+msg	301925	Hmph, you'd better work hard. I don't want to come back and see Hyperion reduced to a pile of scrap metal.	哼，你们也好好努力吧，我也不想回来看到休伯利安变成一摊废铁。	ふんっ、あなたたちもしっかり頑張るのよ。私だって帰ってきたらハイペリオンがスクラップになっている光景なんて見たくないわ。	NONE

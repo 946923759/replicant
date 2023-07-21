@@ -44,6 +44,11 @@ var OPTIONS = {
 		"localizeKey":"bgOpacity",
 		"default":60
 	},
+	'textboxStyle':{
+		"type":"list",
+		"choices":["Classic","Modern 1","Modern 2"],
+		"default":"Classic"
+	},
 	"skipMode":{
 		"type":"list",
 		"choices":[false,true],

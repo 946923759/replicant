@@ -1,0 +1,145 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Yssring
+bg	009/013_1280x720
+portraits	54
+emote	54	5
+msg	302106	Finally, we arrived... Hehe... I haven’t had so much excitement in a while...	总算是到达了…呵呵…好久没有这么刺激了……	何とか着いた……フ、フフ……こんなにドキドキしたの久しぶり……。	NONE
+msg	302107	The power furnace and engine are completely wrecked... We are hopeless... Hehe... Hehehe...	动力炉和引擎已经完全报废了…我们已经没有希望了…呵呵…呵呵呵……	動力炉とエンジンは完全にオシャカね……もう希望はないわ……アハ……ハハハ……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302108	Is she okay... Hey! Stand up! The battle is not over!	这家伙已经坏掉了么…喂！快站起来！战斗还没结束呢！	こいつ、とうとうおかしくなったか……？って、おい！早く立て！まだ、崩壊生物がいるんだぞッ！ 	NONE
+speaker	
+portraits	54
+emote	54	5
+se	DLC_CH00_EV13_MosterRoar
+msg	302109	Roar!	吼吼吼！	グォォォォ！！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302110	Ouch! It’s catching up! Get up, you!	糟了！它追上来了！快起来啊你！	しまった！追いつかれた！早く立てよ！	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302111	I don’t have any strength left... I’ve reached my limit... Just let me die like this... It’s so tired to live...	没力气…已经是极限了…让我就这样死掉吧…活着好累啊……	こ、腰が抜けて力が出ない……もう限界……このまま死なせてちょうだい……生きるのに疲れちゃった……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302112	The battleship is too big a target. Everybody, leave the ship and enter ME Corp!	战舰的目标太大了，所有人下船撤入ME社！	戦艦内にいる限り、かっこうの的よ。全員船から降りてME社に入って！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302113	Did you hear me! Get up!	听到没有！给我起来！	聞こえただろう！ほら、立てって！	NONE
+speaker	Yssring
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302114	I can’t... You carry me...	起不来…你背我……	立てない……おんぶ……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302115	Tsk! Just this time!	啧！就这一次！	くそっ！今回だけだぞ！	NONE
+speaker	Himeko
+bg	009/044_1280x720
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302116	Speed up, we must establish defense before the vacuum period ends!	加快速度，一定要在真空期结束前建立防线！	急いで。崩壊エネルギーの真空期間はいつ終わるかわからないわ！それまでに防衛線を張るのよ！ 	NONE
+speaker	
+portraits	54
+emote	54	5
+se	DLC_CH00_EV13_MosterRoar
+msg	302117	Roar!	吼吼吼！	グルルル——ゴォォォォ！！！	NONE
+msg	302118	Boom!	轰！	ドンッ！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302119	It’s so annoying! I will fight that beast!	真是纠缠不休的家伙！我出去和那只畜生拼了！	本当にしつこいやつらだな！私が出てって、やっつけてやる！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302120	Emesa! Don’t go!	埃米沙！别去！	エミザ！軽率な行動は慎みなさい！	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	4
+emote	54	5
+msg	302121	What? Are you trying to stop me again!	怎么？你又要阻止我么！	なんだよ？今はむしろチャンスだろ！どうして、止める！？	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302122	No... You are right. We must finish it within the Houkai vacuum period. If the vacuum period ends, we have no hope to do it while under the attack of other Houkai creatures...	不…你说的对，我们要在崩坏能真空期内解决掉它，如果真空期结束，在其他崩坏生物的进攻下我们是没有希望的……	……そうね、たしかにあなたの言う通りかも。崩壊エネルギーの真空期間が終わって他の崩壊生物まで攻めてきたら、私たちに勝機はない……。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302123	Uh... Do you have any good ideas?	呃…你有什么好办法么？	だろ！だから、一発逆転の作戦でも立ててくれよ。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302124	The enemy is in the air. We can’t deal any damage to it with our current weapons... We need to find a way to get close.	敌人在空中，凭我们手中的武器现在是没办法对它造成伤害的…得想办法接近它。	でも、敵は空中にいるのよ。私たちの手にある武器だけじゃ、あいつに致命傷を与えられないわ……なんとかして近づかなくちゃ。	NONE
+speaker	Emesa
+portraits	55	54
+emote	55	1
+emote	54	5
+msg	302125	It moves so fast, it’s not easy!	那家伙的行动这么快，你说的容易！	言うのは簡単だけど、あんな速く動き回られちゃ難しいんじゃないか？	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302126	Think about the nearby terrain... Some place we can get close to it while limiting its movement...	仔细想想附近的地形…既能限制它的行动，又可以接近它的地方……	近くの地形をよく考えて……あいつの動きを制限できて、かつ近づける場所……。	NONE
+choice	302222	Lure it to the streets.	街道に引きつけよう。	NONE	NONE
+choice	302223	Lure it to Me Corp overpass.	ME社の陸橋に引きつけよう。	NONE	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Himeko
+bg	009/044_1280x720
+portraits	61
+emote	61	1
+msg	302127	The streets... No, if the Houkai beast attacks from the air, our movement will be restricted. It will put us in disadvantage.	街道么…不行，如果崩坏兽从空中发动进攻行动受限的是我们自己，反而会陷入被动。	街道は……ダメ、崩壊獣が空中から攻めてきたら動きを制限されるのは私たちだわ。逆に受け身になってしまう。この地形なら……そうね陸橋がいいかしら。	NONE
+jmp	end_choices
+label	c2dest
+speaker	Himeko
+bg	009/044_1280x720
+portraits	61
+emote	61	1
+msg	302128	The overpass... We have sufficient height to attack from there. It is also quite narrow. I think we can give it a try.	天桥…那个高度足够对它进行攻击，而且地行狭窄，我觉得可以一试。	陸橋……あの高さなら奴に対して攻撃するのに一役買ってくれそう。しかも、幅も狭い……試す価値はあるわね。	NONE
+label	end_choices
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	009/044_1280x720
+portraits	61
+emote	61	1
+msg	302129	All combatants, bring your weapons! We are going to lure the Houkai beast to the overpass!	所有战斗人员带上武器！我们要把崩坏兽引到天桥附近！	全戦闘員は武器を持って！私たちで崩壊獣を陸橋の近くに引きつけるわ！	NONE
+speaker	
+bg	009/061_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	302130	Dadada!	哒哒哒！	ダダダッ——！	NONE
+speaker	Emesa
+portraits	55
+emote	55	4
+msg	302131	This place is too dangerous! After the Herrscher’s attack, it is crumbling! Are you sure you want to fight here!?	这个地方太危险了！上次律者攻击后就已经摇摇欲坠了！你们确定要在这里战斗么！？	あの場所は危なすぎないか！？前回、律者が攻撃して崩れ落ちそうだっただろ！本当にあそこで戦うのか！？ 	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	302132	Indeed, it cannot hold long battles. We only have one chance and we need to take it!	的确长时间的战斗恐怕无法支撑，机会只有一次，我们要把握住！	確かに長時間の戦闘には持ちこたえられないかもしれない。チャンスは1回だけよ。この機会を逃さないことね！	NONE
+speaker	Emesa
+portraits	55
+emote	55	4
+msg	302133	Tsk! You are crazy!	啧！真是个疯子！	もう！本当、どうかしてるな！	NONE
+speaker	
+se	DLC_CH00_EV13_MosterRoar
+msg	302134	Roar!	吼吼吼！	グォォォォ！！	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	302135	Here it comes! Start attacking! We must take it down!	来了！开始战斗！一定要把它干掉！	来た！戦闘開始！必ずあいつを倒すのよ！	NONE

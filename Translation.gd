@@ -73,7 +73,7 @@ func SetLanguage(lang:String)->bool:
 	for category in tmp_translation.keys():
 		translation[category]={}
 		for k in tmp_translation[category].keys():
-			if lang_col > tmp_translation[category][k].size():
+			if lang_col >= tmp_translation[category][k].size():
 				translation[category][k]=tmp_translation[category][k][0]
 			else:
 				translation[category][k]=tmp_translation[category][k][lang_col]

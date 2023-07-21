@@ -1,0 +1,31 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+match_names	Himeko	Greymoth Member
+speaker	Himeko
+bg	009/013_1280x720
+portraits	61
+emote	61	1
+msg	301926	Our target is the abandoned car park in this area on the map. We need to arrive as fast as possible, retrieve the parts and return within 12 hours.	这次的目标是地图这里的废弃停车场，我们要以最快的速度抵达目标地点进行零件回收，并确保在12小时内返回。	今回の目標は地図のここ。スクラップ工場ね。最速でこの地点を目指し部品を回収。そして、12時間以内に戻ってくる。	NONE
+msg	301927	Based on our past scouting, this route highlighted in red is the safest. It avoids the highest concentration of Honkai Beasts, but we have to travel about 6 extra kilometers.	按照过去探查的路线来看，从这条红色的线路过去最为安全，这个路线避开了崩坏生物密集的区域，但是距离会增加6公里左右。	過去の探査ルートによれば、この赤いルートから行くのが最も安全ね。このルートは崩壊生物の密集エリアから離れているの。でも、距離が6キロほど増えるわ。	NONE
+choice	302212	It's a great map.	すごい地図。	NONE	NONE
+choice	302213	How do you know?	どうして知っているの？	NONE	NONE
+speaker	Himeko
+emote	61	1
+msg	301928	All the routes on this map are drawn with the blood of the Grey Moths. You understand what I mean, right?	这张地图上的线路都是灰蛾部队用鲜血绘制出来的，我这么说你应该明白吧？	この地図にあるルートは全て灰蛾部隊が血で描いたものなのよ。その意味分かるでしょ？ 	NONE
+msg	301929	Alright, let's move on. There's three rules to follow when working with the Grey Moths.	好了，废话少说，在灰蛾部队你只要遵循三条法则就行了。	いいわ。おしゃべりはおしまい。灰蛾部隊と行動するからには、あなたに3つのルールを守ってほしい。	NONE
+msg	301930	First, never abandon your teammates. Second, do not make sacrifices lightly.	第一不抛弃队友，第二不轻易牺牲。	その1、仲間は見捨てない。その2、軽々しく犠牲にならない。	NONE
+msg	301931	And third, if the first two rules are contradicting each other, then follow the first one.	第三，如果前两条发生冲突就以第一条为准。	その3、この2つが矛盾した場合は1つ目に従う。	NONE
+msg	301932	If there is no objection, let’s go...	如果没有异议的话就出发吧……	異議がなければ出発よ……。	NONE
+
+emote	61	2
+tween	during	61	decelerate,.3;addy,100
+msg	301933	Ugh...!	呃……！	あっ……！	NONE
+
+portraits	61	66
+/Greymoth Member	301934	Captain Himeko!	姬子队长！	姫子隊長！	NONE
+
+speaker	Himeko
+emote	61	1
+tween	during	61	decelerate,.5;addy,-100
+msg	301935	I'm okay, I just slipped... Everybody, cheer up, don't let the newcomer down!	我没事，只是脚底滑了一下…都打起精神，不要让新人看笑话！	大丈夫。足を滑らしただけよ……みんな、気合を入れてね。新人に笑われないように！ 	NONE
+
+/Greymoth Member	301936	Got it!	是！	はッ！	NONE

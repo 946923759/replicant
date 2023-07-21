@@ -1,0 +1,104 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	009/060_1280x720
+se	DLC_CH03_EV01_GunAndExplosion
+msg	302051	Dadada!	哒哒哒！	ダダダッ——！	NONE
+speaker	Teammate
+portraits	56
+emote	56	0
+msg	302052	C3, C6 compartments are breached! Houkai creatures are coming to the bridge!	C3、C6仓已被突破！崩坏生物正在朝舰桥进攻！	C3、C6キャビンが突破されました！崩壊生物が艦橋に向かって進行中！	NONE
+speaker	Himeko
+portraits	61	56
+emote	61	2
+emote	56	0
+msg	302053	Abandon sector C! Withdraw all personnel! Focus the defense on the bridge and power furnace!	舍弃C区！让人员撤回！集中力量防守舰桥和动力炉！	Cエリアを放棄！人員を撤退させて！戦力を艦橋と動力炉の防御に集中！	NONE
+speaker	
+portraits	56
+emote	56	0
+se	DLC_CH00_EV13_MosterRoar
+msg	302054	Roar!!	吼吼吼！！	グルルル——！！	NONE
+msg	302055	Boom!!	轰隆！！	ゴォォォオ！！	NONE
+speaker	Teammate
+portraits	56
+emote	56	0
+msg	302056	Dragon form Houkai beast is attacking the ship! Outer armor heavily damaged!	龙型崩坏兽正在进攻战舰！外装甲受损严重！	竜型の崩壊獣が戦艦に攻撃してきています！外装甲の被害は甚大です！	NONE
+speaker	Himeko
+portraits	61	56
+emote	61	2
+emote	56	0
+msg	302057	Yssring! How much time until we reach the Houkai vacuum!	伊瑟琳！离崩坏真空区还有多少时间！	イザーリン！崩壊の真空エリアまであとどれくらい！？	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	2
+msg	302058	About half an hour!	还有半小时左右！	あと30分くらいっ！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	2
+msg	302059	Keep accelerating! Get away from the Houkai beasts in the air!	继续加速！甩开空中的崩坏兽！	加速を続けて！空にいる崩壊獣を振り払うのよ！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302060	We are already at the limit... If we keep pushing, the power furnace will fail...	已经是极限了…再继续加速的话动力炉会撑不住的……	既に限界よ……これ以上加速したら動力炉がもたない……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302061	We just need a few minutes! Get in distance and finish it with our main gun!	只要几分钟就行了！拉开距离用主炮解决掉它！	数分間だけでいい！距離をあけたら主砲でやっつけるわ！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302062	But... But...	可…可是……	で……でも……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302063	But what! Speed up!	可是什么！快加速！	何が「でも」よ！早く加速して！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302064	Even the engine can make it, we can’t use the main gun... The lines to the main gun were cut off in the attack just now...	就算引擎能撑住主炮也发射不了…与主炮线路在刚才的攻击中被切断了……	動力炉がもったとしても、今は主砲が発射できないのよ……主砲との回路がさっきの攻撃で切断されちゃったから……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	3
+msg	302065	Find a way to fix them immediately! The ship can’t last long like this! If the outer armor of the bridge is compromised, we are done!	立即想办法修复！不然战舰撑不了多久！舰桥的外装甲被破坏的话就全完了！	今すぐ方法を考えて修理して！さもないと戦艦がもうもたないわ！艦橋の外装甲が破壊されたらおしまいよ！ 	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302066	Ouch... We have found where the damage is... It’s in the C sector you just abandoned...	咕…损坏的地点已经查明了…就在刚才被你放弃的C区……	うぅ……損壊地点はもう調べがついてるの……さっきあなたが放棄したCエリアよ……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302067	I’ll have someone to protect you and enter C sector! Get your engineering squad to reinforce the armor of the bridge. We need to hold them off as long as we could!	我会让人保护你进入C区！另外让你的工程班加固舰桥区域的装甲，能挡多久是多久！	人をつけてあなたを守るからCエリアに行きなさい！それから、あなたのエンジニア班に艦橋エリアの装甲を強化させて。できるだけ持ちこたえられるように！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302068	Can I please not go...	我能不去么……	べ、べつに行くのは私じゃなくても……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302069	Just go!	快去！	早く行きなさい！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	302070	Alright...	好吧……	分かったわよ……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	302071	Rest of you, attack harder! We can’t let the Houkai creatures break through here!	其他人加强火力！不能让崩坏生物突破这里！	他の人は火力を強化して！崩壊生物をここまで来させるわけにはいかないわよ！	NONE
+speaker	Teammate
+portraits	61	56
+emote	61	1
+emote	56	0
+msg	302072	Got it!	是！	はい！	NONE

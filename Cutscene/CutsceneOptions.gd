@@ -41,7 +41,8 @@ var options = {
 var textOptionsSubmenu = {
 	"textSpeed":Globals.OPTIONS['textSpeed'],
 	"skipMode":Globals.OPTIONS['skipMode'],
-	"bgOpacity":Globals.OPTIONS['bgOpacity']
+	"bgOpacity":Globals.OPTIONS['bgOpacity'],
+	"textboxStyle":Globals.OPTIONS['textboxStyle']
 }
 
 func action_reload():
@@ -402,6 +403,9 @@ func init():
 		systemOptions['goBack']={
 			type="go_back"
 		}
+		textOptionsSubmenu['goBack']={
+			type="go_back"
+		}
 	
 	generateMenu(systemOptionsSubmenu,systemOptions,animation)
 	add_child(systemOptionsSubmenu)
@@ -593,7 +597,7 @@ func handle_option(optNode:Control,going_right:bool=true):
 				anim_option_value(optNode,going_right)
 
 func get_current_submenu(curSel:int)->Node:
-	var curOpt = optionsFrame.get_child(mainMenuSelection)
+	var curOpt = optionsFrame.get_child(curSel)
 	var optName = curOpt.get_meta("opt_name")
 	return get_node(options[optName]['submenu'])
 
@@ -666,7 +670,8 @@ func _input(event):
 				"submenu":
 					var submenu = get_node(options[optName]['submenu'])
 					highlightList(submenu,subMenuSelection[curSel])
-					tweenMainMenuOut();
+					tweenMainMenuOut(curSel);
+					mainMenuSelection=curSel
 					isSubMenu=true
 					return
 				"none":
@@ -679,31 +684,31 @@ func _input(event):
 				_:
 					print("Unhandled option!")
 	elif Input.is_action_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index==2 and event.pressed):
-		if t.is_active(): #Because right clicking opens the options menu and this doesn't take into account that it's been handled...
-			return
-		if isSubMenu:
-			tweenMainMenuIn();
-			highlightList(optionsFrame,mainMenuSelection) #This just updates the description
-			isSubMenu=false
-			return
-		else:
-			OffCommand()
+		handle_back_button()
+		return
 	elif event is InputEventMouseMotion:
 		var tmpSel=get_selection_from_mouse_pos(curMenu,event)
 		if tmpSel!=curSel:
 			highlightList(curMenu,tmpSel)
 			curSel=tmpSel
-	#elif :
-	#	curSel=get_selection_from_mouse_pos(curMenu,event)
-		
-		#highlightList(curMenu,curSel)
+
+	#TODO: This only triggers on mouse motion
 	if isSubMenu:
-		#print("update submenu sel")
 		subMenuSelection[mainMenuSelection]=curSel
 	else:
 		mainMenuSelection=curSel
-	#elif Input.is_action_pressed("ui_start"):
-	#	pass
+
+func handle_back_button():
+	if t.is_active(): #Because right clicking opens the options menu and this doesn't take into account that it's been handled...
+		return
+	if isSubMenu:
+		tweenMainMenuIn();
+		highlightList(optionsFrame,mainMenuSelection) #This just updates the description
+		isSubMenu=false
+		#return
+	else:
+		OffCommand()
+
 func handle_input_accept():
 	print("Clicked")
 	pass
@@ -738,16 +743,11 @@ func get_selection_from_mouse_pos(menuToCheck:Control,event:InputEvent)->int:
 			break
 	return curSel
 
-func handle_mouse_entered(selection_:int):
-	print(selection_)
-	var tmpSel=selection_
-	
-	var curMenu=optionsFrame
-	if isSubMenu:
-		curMenu = get_current_submenu(mainMenuSelection)
-	highlightList(curMenu,tmpSel)
+func _notification(what):
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
+		handle_back_button()
 
-func tweenMainMenuOut():
+func tweenMainMenuOut(subMenuToTween:int=2):
 	#TODO: Remove this shit and replace it with the newer tweens
 	
 	#First tween out main menu
@@ -760,7 +760,7 @@ func tweenMainMenuOut():
 	#Tween in the submenu
 	var property = "rect_position:x"
 	
-	var subList = get_current_submenu(mainMenuSelection);
+	var subList = get_current_submenu(subMenuToTween);
 	tween.interpolate_property(subList, property,
 	MENU_LEFT_PADDING+200,
 	MENU_LEFT_PADDING,

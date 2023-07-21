@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
@@ -17,6 +17,84 @@
 [ext_resource path="res://Cutscene/CutsceneDebugger.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Ext/arrow_small.png" type="Texture" id=16]
 [ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=17]
+
+[sub_resource type="Shader" id=5]
+code = "shader_type canvas_item;
+
+//uniform float gl_FragCoord;
+//uniform float ViewportHeight;
+uniform vec4 inputColor : hint_color=vec4(0,0,0,1);
+//uniform float fadeLength = 20.0;
+//uniform float fadeTopAt;
+//uniform float fadeRightAt;
+
+void fragment(){
+	float SCREEN_WIDTH = 1.0/SCREEN_PIXEL_SIZE.x;
+	if (FRAGCOORD.x < 100.0)
+	{
+		/*Smoothstep returns a value between 0 and 1.
+		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
+		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
+		*/
+		float clr = 1.0-smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,50.0);
+    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
+	}
+	else if (FRAGCOORD.x > SCREEN_WIDTH-100.0)
+	{
+		float clr = smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,SCREEN_WIDTH-50.0);
+    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 5 )
+shader_param/inputColor = Color( 0, 0, 0, 1 )
+
+[sub_resource type="Shader" id=7]
+code = "shader_type canvas_item;
+
+uniform float fadeTopAt;
+
+void fragment(){
+	float FADE_AT_MULTIPLY = 1.0/SCREEN_PIXEL_SIZE.x/1080.0;
+	float FADE_AT = 150.0*FADE_AT_MULTIPLY;
+	
+	vec4 pixel_color = texture(TEXTURE,UV);
+	/*
+		Smoothstep returns a value between 0 and 1.
+		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
+		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
+	*/
+	float clr = smoothstep(FRAGCOORD.y-150.0,FRAGCOORD.y+150.0,FADE_AT);
+	COLOR.a = min(clr,pixel_color.a);
+}"
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = SubResource( 7 )
+shader_param/fadeTopAt = 250.0
+
+[sub_resource type="Shader" id=9]
+code = "shader_type canvas_item;
+
+uniform float fadeTopAt;
+
+void fragment(){
+	float FADE_AT_MULTIPLY = 1.0/SCREEN_PIXEL_SIZE.x/1080.0;
+	float FADE_AT = 210.0*FADE_AT_MULTIPLY;
+	
+	vec4 pixel_color = texture(TEXTURE,UV);
+	/*
+		Smoothstep returns a value between 0 and 1.
+		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
+		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
+	*/
+	float clr = smoothstep(FRAGCOORD.y-20.0,FRAGCOORD.y+20.0,FADE_AT);
+	COLOR.a = min(clr,pixel_color.a);
+}"
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = SubResource( 9 )
+shader_param/fadeTopAt = 250.0
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -165,7 +243,7 @@ scroll_active = false
 anchor_right = 1.0125
 anchor_bottom = 1.0
 margin_top = 460.0
-margin_right = -16.0
+margin_right = -24.0001
 margin_bottom = -53.0
 rect_min_size = Vector2( 876, 207 )
 mouse_filter = 2
@@ -190,20 +268,71 @@ __meta__ = {
 }
 
 [node name="textBackground" type="ColorRect" parent="CenterContainer"]
+visible = false
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_top = -63.5
-margin_right = -0.00012207
-margin_bottom = 283.5
+margin_right = -8.00012
+margin_bottom = 276.5
 rect_pivot_offset = Vector2( 0, 173 )
 mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
-color = Color( 0.04, 0.08, 0.14, 0.6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
+
+[node name="textBackground_modern" type="ColorRect" parent="CenterContainer"]
+visible = false
+modulate = Color( 1, 1, 1, 0.756863 )
+material = SubResource( 6 )
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -63.5
+margin_right = -8.00012
+margin_bottom = 276.5
+rect_pivot_offset = Vector2( 0, 173 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer/textBackground_modern"]
+use_parent_material = true
+anchor_right = 1.0
+margin_top = 30.0
+margin_bottom = 36.0
+
+[node name="ColorRect2" type="ColorRect" parent="CenterContainer/textBackground_modern"]
+use_parent_material = true
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -30.0
+margin_bottom = -24.0
+
+[node name="textBackground_modern_disabled" type="ColorRect" parent="CenterContainer"]
+visible = false
+material = SubResource( 8 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -436.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 500 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
+
+[node name="textBackground_modern2" type="ColorRect" parent="CenterContainer"]
+material = SubResource( 10 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -436.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 500 )
+mouse_filter = 2
+color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
 
 [node name="SpeakerActor" type="Label" parent="CenterContainer"]
 anchor_left = 0.5
@@ -211,9 +340,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -854.385
-margin_top = -148.447
+margin_top = -138.5
 margin_right = 21.6149
-margin_bottom = 31.5533
+margin_bottom = 41.5003
 rect_pivot_offset = Vector2( 0, 90 )
 custom_fonts/font = ExtResource( 3 )
 text = "Dandelion"
@@ -225,17 +354,21 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -754.0
-margin_top = -20.0
+margin_top = -11.5
 margin_right = 746.0
-margin_bottom = 250.0
+margin_bottom = 249.5
 mouse_filter = 2
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_y = 4
+custom_constants/line_separation = 9
 custom_fonts/italics_font = ExtResource( 14 )
 custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
-bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur [i]adipiscing elit[/i], sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
-text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)"
+bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur [i]adipiscing elit[/i], sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)
+(This is 4th line... Text should not go above 4 lines...)"
+text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)
+(This is 4th line... Text should not go above 4 lines...)"
+scroll_active = false
 
 [node name="Light2D" type="Light2D" parent="."]
 visible = false
@@ -323,8 +456,10 @@ margin_left = -1920.0
 margin_right = -1920.0
 
 [node name="CutsceneDebug" parent="." instance=ExtResource( 15 )]
+visible = false
 
 [node name="TN_Actor" type="Control" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2

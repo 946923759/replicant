@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 music	The Tower - Medium No Vocals
 preload_portraits	59	56
 match_names	Seele	Teammate
@@ -21,8 +21,8 @@ msg	301111	Understood!	是！	はい！	NONE
 
 portraits	59
 /Seele	301113	Phew~ There aren't too many armored mechas here, I can finally catch a break. My face is numb from acting so serious in front of everyone.... I finally understand why Bronya doesn't like to smile.	呼~这里的机甲兵器也减少了，终于可以松一口气了，在大家面前表现的一本正经的样子脸都要僵硬了……终于明白姐姐大人为什么总是不喜欢笑了。	ふう～ここの機甲兵器も減ってきたね。やっと一息つけるわ。みんなの前で真剣な表情をしてたら顔が引きつっちゃった……お姉ちゃんが、どうしていつも笑わないのかやっと分かったわ。	NONE
-choice	301648	Seele looks cool when she's giving orders.	指揮してるときのゼーレってカッコイイ。	NONE	NONE
-choice	301649	I'm not used to this side of you.	こういうゼーレにはちょっと慣れない。	NONE	NONE
+choice	301648	Seele looks cool when she's giving orders.	指挥时的希儿很帅气。	指揮してるときのゼーレってカッコイイ。	NONE
+choice	301649	I'm not used to this side of you.	有点不习惯这样的希儿。	こういうゼーレにはちょっと慣れない。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -37,8 +37,8 @@ msg	301117	I'd rather be my normal self. I prefer being friends with everyone ov
 
 label	end_choices
 /Seele	301118	I don't think I can be as dependable as my sister. Sorry to disappoint you~	看来我还是不能像姐姐那样表现出可靠的样子呢，抱歉让你见笑了~	お姉ちゃんみたいに頼れる感じは出せないかな。恥ずかしいな～。	NONE
-choice	301650	You look reliable to me.	ゼーレは頼りになると思う。	NONE	NONE
-choice	301651	We must learn from Bronya.	もっとブローニャを見習わなきゃ。	NONE	NONE
+choice	301650	You look reliable to me.	我觉得希儿很可靠。	ゼーレは頼りになると思う。	NONE
+choice	301651	We must learn from Bronya.	要向布洛妮娅多学习一下。	もっとブローニャを見習わなきゃ。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

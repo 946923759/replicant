@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Yssring
 music	Peaceful Sleep - No Vocals
 speaker	Seele
@@ -95,8 +95,8 @@ emote	59	1
 /Seele	300324	According to the intel, it should be in this area. The terrain here is convoluted and complex due to the underground tunnel network of Nagazora City. Even with a map it's easy to get lost here, so make sure to be aware of your surroundings.	根据情报来看应该就是这块区域，这里是长空市地下隧道网，地形错综复杂。即使有地图也很容易迷路，一定要注意哦~	情報ではこの辺りのエリアのはずだよ。ここは長空市の地下トンネル網で地形が入り組んでいて複雑なの。地図を使っても迷子になりやすいから、十分気をつけてね。	NONE
 msg	300325	Well, if you follow me it shouldn't be an issue. Let's go!	嘛，不过跟着我就不会有问题啦，那我们出发吧~	まあ、でも私について来れば問題ないよ！さあ、出発しましょ！	NONE
 msg	300326	Hmm~ Hmm~ Hmm-Hmm-Hmm♪	哼哼~哼哼哼♪	フンフン～フンフンフン♪	NONE
-choice	300327	What's got you so happy?	何か嬉しいことでもあったの？	NONE	NONE
-choice	300328	Aren't you nervous?	緊張しないの？	NONE	NONE
+choice	300327	What's got you so happy?	有什么值得高兴的事情么？	何か嬉しいことでもあったの？	NONE
+choice	300328	Aren't you nervous?	你不会紧张么？	緊張しないの？	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -140,8 +140,8 @@ msg	300350	Dong!	咚！	ドンッ！	NONE
 emote	59	5
 
 /Seele	300351	Ugh! Ouch! Who put this big toolbox in the middle of the road!	呃！痛痛痛！是谁在路中间摆这么大的工具包啊！	わっ！イタタタ！道の真ん中にこんな大きな工具箱を置いたのは誰よ！	NONE
-choice	300352	Keep quiet.	そんな大声出さないで。	NONE	NONE
-choice	300353	This belongs to the engineering team.	これはエンジニア班のものみたい。	NONE	NONE
+choice	300352	Keep quiet.	不要这么大声。	そんな大声出さないで。	NONE
+choice	300353	This belongs to the engineering team.	这个好像是工程班的东西。	これはエンジニア班のものみたい。	NONE
 
 condjmp_c	c2dest	2
 

@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Himeko	Greymoth Member
 speaker	Himeko
 bg	009/013_1280x720
@@ -6,8 +6,8 @@ portraits	61
 emote	61	1
 msg	301926	Our target is the abandoned car park in this area on the map. We need to arrive as fast as possible, retrieve the parts and return within 12 hours.	这次的目标是地图这里的废弃停车场，我们要以最快的速度抵达目标地点进行零件回收，并确保在12小时内返回。	今回の目標は地図のここ。スクラップ工場ね。最速でこの地点を目指し部品を回収。そして、12時間以内に戻ってくる。	NONE
 msg	301927	Based on our past scouting, this route highlighted in red is the safest. It avoids the highest concentration of Honkai Beasts, but we have to travel about 6 extra kilometers.	按照过去探查的路线来看，从这条红色的线路过去最为安全，这个路线避开了崩坏生物密集的区域，但是距离会增加6公里左右。	過去の探査ルートによれば、この赤いルートから行くのが最も安全ね。このルートは崩壊生物の密集エリアから離れているの。でも、距離が6キロほど増えるわ。	NONE
-choice	302212	It's a great map.	すごい地図。	NONE	NONE
-choice	302213	How do you know?	どうして知っているの？	NONE	NONE
+choice	302212	It's a great map.	好厉害的地图。	すごい地図。	NONE
+choice	302213	How do you know?	你是怎么知道的？	どうして知っているの？	NONE
 speaker	Himeko
 emote	61	1
 msg	301928	All the routes on this map are drawn with the blood of the Grey Moths. You understand what I mean, right?	这张地图上的线路都是灰蛾部队用鲜血绘制出来的，我这么说你应该明白吧？	この地図にあるルートは全て灰蛾部隊が血で描いたものなのよ。その意味分かるでしょ？ 	NONE

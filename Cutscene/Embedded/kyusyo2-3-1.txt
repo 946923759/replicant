@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 music	Amusement Park - Quiet
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
@@ -51,8 +51,8 @@ emote	59	3
 emote	60	1
 
 msg	300787	Hey, could you go and get the troops and tell them to prepare for battle? We'll return home after we finish investigating the area.	那就麻烦你回去告诉基地的部队准备战力吧，我和希儿调查结束后就回来。	では、基地の部隊に戦いの準備をするように伝えてもらえますか。私とゼーレは調査が終わったら帰ります。	NONE
-choice	300788	Roger that!	分かった。	NONE	NONE
-choice	300789	Please, let me stay and join your investigation.	あなたたちと一緒に調べたい。	NONE	NONE
+choice	300788	Roger that!	明白了。	分かった。	NONE
+choice	300789	Please, let me stay and join your investigation.	请让我和你们一起调查吧。	あなたたちと一緒に調べたい。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

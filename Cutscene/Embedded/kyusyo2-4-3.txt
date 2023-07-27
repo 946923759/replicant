@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Seele
 bg	009/005_1280x720
 portraits	59
@@ -71,4 +71,4 @@ emote	59	3
 emote	56	0
 msg	301013	I have a bad feeling about this. They can't be targeting Bronya, right...?	总有一种不好的预感，难道它们的目标是姐姐大人么……	何か嫌な予感がする。まさかあいつらの目標はお姉ちゃんなんじゃ……。	NONE
 msg	301014	Send the alarm! All units in position! Bronya must be rescued!	通知基地！让所有人全副武装！一定要把姐姐大人救出来！	基地に連絡！全員完全武装！必ずお姉ちゃんを救い出すのよ！	NONE
-msg	301015	We are taking ME Corp!	准备进攻ME社！	ME社へ進撃用意！	NONE
+msg	301015	Prepare to attack ME Corp.!	准备进攻ME社！	ME社へ進撃用意！	NONE

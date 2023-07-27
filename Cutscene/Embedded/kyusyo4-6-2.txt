@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	
 bg	009/058_1280x720
 se	DLC_CH03_EV01_GunAndExplosion
@@ -52,8 +52,8 @@ portraits	61	66
 emote	61	2
 emote	66	0
 msg	301983	Everyone else, follow me!	其他人跟我走！	他の者は私に続いて！	NONE
-choice	302218	I will also stay to defend.	私も残って守る。	NONE	NONE
-choice	302219	We can’t leave them.	彼女たちを見捨てられない。	NONE	NONE
+choice	302218	I will also stay to defend.	我也留下来防守。	私も残って守る。	NONE
+choice	302219	We can’t leave them.	不能丢下她们。	彼女たちを見捨てられない。	NONE
 speaker	Himeko
 bg	009/058_1280x720
 portraits	61

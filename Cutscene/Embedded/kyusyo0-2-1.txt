@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	60
 match_names	Seele	Bronya
 speaker	Seele				
@@ -48,8 +48,8 @@ msg	300064	Right now.	比如现在。	例えば今です。	Por exemplo agora.
 speaker	Seele				
 emote	59	5			
 msg	300065	Ah!	呃！	うっ！	Ah!
-choice	0	You two are adorable sisters.	ch	ja	Vocês são adoráveis irmâs
-choice	0	You two are different in personalities.	ch	ja	Vocês tem diferentes personalidades.
+choice	300066	You two are adorable sisters.	真是令人羡慕的姐妹呢。	すごい仲がいいんだね。	Vocês são adoráveis irmâs
+choice	300067	You two are different in personalities.	真是性格迥异的姐妹呢。	変わった姉妹だね。	Vocês tem diferentes personalidades.
 emote	60	2			
 /Bronya	300068	Really? Perhaps you're right...	是么…或许如你所说……	そうですか……そうかもしれませんね……。	Talvez sim.......
 emote	60	1			

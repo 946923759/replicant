@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	61	56	55	54
 speaker	Teammate
 bg	009/060_1280x720
@@ -67,19 +67,19 @@ speaker	Bronya
 msg	301698	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301699	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301700	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
-choice	302194	Bronya, stop blaming yourself.	ブローニャ、自分を責めないで。	NONE	NONE
-choice	302195	Bronya, it's not your fault.	ブローニャ、これはあなたのせいじゃない。	NONE	NONE
+choice	302194	Bronya, stop blaming yourself.	布洛妮娅，不要自责了。	ブローニャ、自分を責めないで。	NONE
+choice	302195	Bronya, it's not your fault.	布洛妮娅，这不是你的错。	ブローニャ、これはあなたのせいじゃない。	NONE
 
 msg	301701	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301702	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
-choice	302196	Seele doesn't want to see you like this.	ゼーレは、そんなあなたの姿を見たくないはず。	NONE	NONE
-choice	302197	Everyone needs your leadership now.	今こそ、あなたのリーダーシップが必要。	NONE	NONE
+choice	302196	Seele doesn't want to see you like this.	希儿不希望看到你这样。	ゼーレは、そんなあなたの姿を見たくないはず。	NONE
+choice	302197	Everyone needs your leadership now.	这个时候大家都需要你的领导。	今こそ、あなたのリーダーシップが必要。	NONE
 
 msg	301703	It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301704	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
 extend	301705	 It's all my fault...	都是我的错……	全てブローニャが悪いんです……。	NONE
-choice	302198	Bronya, cheer up!	ブローニャ、しっかりして！	NONE	NONE
-choice	302199	Bronya, wake up!	ブローニャ、目を覚まして！	NONE	NONE
+choice	302198	Bronya, cheer up!	布洛妮娅，快振作一些！	ブローニャ、しっかりして！	NONE
+choice	302199	Bronya, wake up!	布洛妮娅，给我清醒一下！	ブローニャ、目を覚まして！	NONE
 
 
 /Himeko	301706	Enough. Nothing is going to get through to her right now.	已经够了，现在说什么都是没用的。	もうやめなさい。今、何を言っても無駄でしょうから。	NONE
@@ -88,8 +88,8 @@ match_names	Himeko
 portraits	61
 emote	61	1
 /Himeko	301707	Let's leave her alone. She might feel better after she calms down.	就让她在这里静一下吧，如果这样能让她心理好受一些的话。	そっとしておいてあげましょう。その方が心も落ち着くわ、きっと。	NONE
-choice	302200	Himeko, what's that wound on your face?	姫子、その顔の傷は？	NONE	NONE
-choice	302201	Himeko, is Seele really dead?	姫子、ゼーレは本当に死んじゃったの？	NONE	NONE
+choice	302200	Himeko, what's that wound on your face?	姬子，你脸上的伤是？	姫子、その顔の傷は？	NONE
+choice	302201	Himeko, is Seele really dead?	姬子，希儿真的死了么？	姫子、ゼーレは本当に死んじゃったの？	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -109,8 +109,8 @@ bg	009/056_1280x720
 music	Yonah - Pluck Ver
 msg	301714	*Drinking*... Hah!	咕咕咕……哈！	ゴク、ゴク……プハァ！	NONE
 msg	301715	I haven't had a drink in ages. Pretty refreshing! How about you, you want one too?	好久没有喝酒了，真是痛快啊！怎么样你也要来一罐么？	お酒なんて久しぶりだわ。本当に最高！どう？あなたも一杯やらない？	NONE
-choice	302202	Sorry, I'm not an adult yet.	ごめんなさい。私まだ未成年だから。	NONE	NONE
-choice	302203	I'm not good at drinking.	私、お酒は苦手なの。	NONE	NONE
+choice	302202	Sorry, I'm not an adult yet.	对不起，我还没成年。	ごめんなさい。私まだ未成年だから。	NONE
+choice	302203	I'm not good at drinking.	我不擅长喝酒。	私、お酒は苦手なの。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -135,8 +135,8 @@ msg	301729	I want you to remain who you are... But now, your expressions look th
 msg	301730	This is the correct face for this world... The more you struggle, the less hope you can see. People can only be strong when they lie to themselves... But they will only fall deeper in fear.	这才是这个世界应该有的表情吧…越是挣扎越是看不到希望，只有在自我麻痹的假象中才能让自己坚强起来…在名为恐惧的泥潭中越陷越深。	それこそが、本来この世界にある表情よ……もがけばもがくほど希望が見えなくなる。自我を麻痺させて作った幻想の中でこそ自分を強くすることができる……恐怖という名の泥沼にますます深くはまっていく。	NONE
 msg	301731	If anyone shows weakness, the rest of us would despair. That's why we put on a strong façade. Those kids Bronya and Seele knew that... But now it's just me.	只要有人露出软弱的样子，所有人的心理都会决堤。所以必须得有装作坚强的样子，所以布洛妮娅和希儿那些孩子才会那么冷静……而现在，只有我了。	誰かが軟弱な姿を見せると、みんなの心の堤防が壊れてしまう。だから、強い姿を装っていなくてはならない。ブローニャやゼーレのような子たちはそれをわかっていたから、あんなに冷静だったのよ……でも今は私だけね。	NONE
 msg	301732	Tell me... If I had waited just a little longer... Maybe that girl wouldn't have died... I wonder if I made the right choice.	…如果当时再等一下的话…是不是那个孩子就不会死了…告诉我…我是不是真的做错了……	……もし、あのときもう少し待っていれば……あの子は死ななかったのかしら……教えて……私、本当に間違えてしまったのかしら……。	NONE
-choice	302204	You didn't do anything wrong.	あなたは間違ってない。	NONE	NONE
-choice	302205	I don't know either.	私にも分からない。	NONE	NONE
+choice	302204	You didn't do anything wrong.	你没有做错。	あなたは間違ってない。	NONE
+choice	302205	I don't know either.	我也不知道。	私にも分からない。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

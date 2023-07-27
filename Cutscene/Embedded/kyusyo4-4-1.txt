@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Yssring
 bg	009/060_1280x720
 match_names	Himeko	Yssring	Greymoth Member
@@ -54,8 +54,8 @@ speaker	Himeko
 emote	61	1
 emote	54	2
 msg	301913	Yssring, Emesa, and you. We're leaving defending the Hyperion to you. The Honkai Beasts are going to come eventually, so make sure to keep everyone safe.	伊瑟琳，埃米沙还有你，我们出发后休伯利安的防守就交给你们了，崩坏生物一定还会再来，一定要保证大家的安全。	イザーリン、エミザ、それからあなた。私たちが出発したらハイペリオンの防備は任せたわよ。崩壊生物はきっとまたやってくるわ。必ずみんなの安全を守ってね。	NONE
-choice	302210	I will go with you.	私も一緒に行く。	NONE	NONE
-choice	302211	Leave it to me.	私に任せて。	NONE	NONE
+choice	302210	I will go with you.	我也一起去。	私も一緒に行く。	NONE
+choice	302211	Leave it to me.	交给我吧。	私に任せて。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

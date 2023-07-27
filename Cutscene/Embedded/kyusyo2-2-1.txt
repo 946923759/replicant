@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 music	Amusement Park - Medium
 speaker	Seele
@@ -19,8 +19,8 @@ emote	60	1
 
 tn	0	The first sentence is "Sasuga oneechan" which can't be translated well. The literal translation would be "Wow, that's just like you, Bronya!" which makes no sense in English.
 msg	300714	Wow, awesome! You really know everything! 	不愧是姐姐大人~真是无所不知呢！	さすがはお姉ちゃん～！本当に何でも知っているのね！	NONE
-choice	300715	Have you been here before?	以前にもここに来たことがあるの？	NONE	NONE
-choice	300716	Do you have a map of this place?	ここの地図を持っているの？	NONE	NONE
+choice	300715	Have you been here before?	请问是以前来过这里么？	以前にもここに来たことがあるの？	NONE
+choice	300716	Do you have a map of this place?	请问是有这里的地图么？	ここの地図を持っているの？	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -38,8 +38,8 @@ label	end_choices
 speaker	Bronya
 emote	60	4
 msg	300719	If it wasn't for the Honkai, these cute little HOMUs could still be bringing smiles to everyone's faces...	如果不是因为崩坏，这些可爱的吼姆一定会给大家带来更多的笑容吧……	崩壊さえなければ、このかわいいホムはきっとみんなにもっと多くの笑顔を与えてくれたでしょうに……。	NONE
-choice	300720	Such a shame.	本当に残念。	NONE	NONE
-choice	300721	One day, this place will be as lively as it was. Once we prevail against Houkai.	崩壊に勝てばここもまた賑やかになる。	NONE	NONE
+choice	300720	Such a shame.	真是遗憾呢。	本当に残念。	NONE
+choice	300721	One day, this place will be as lively as it was. Once we prevail against Houkai.	等战胜崩坏之后这里一定会再热闹起来的。	崩壊に勝てばここもまた賑やかになる。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

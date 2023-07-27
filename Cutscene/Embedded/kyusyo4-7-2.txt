@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	55	61	53	60	107
 match_names	Emesa	Himeko	Mei	_DIM_ALL_WHEN_EMPTY
 speaker	
@@ -8,16 +8,16 @@ msg	302136	Roar--	吼吼吼——	——グル、グォォ……	NONE
 speaker	Emesa
 portraits	55	61
 emote	55	1
-msg	302137	It has fallen down... We did it!!	它掉下去了……我们成功了么！！	落ちてった……成功したんだな！	NONE
+msg	302137	It fell off... We did it!	它掉下去了……我们成功了么！！	落ちてった……成功したんだな！	NONE
 speaker	Himeko
 emote	61	2
 msg	302138	*Gasp*... *Gasp*... Looks like so...	呼…呼…看来是的……	ふう……ふう……そのようね……。	NONE
 speaker	Emesa
 emote	55	3
-msg	302139	Himeko, how are you! Are you still holding up!	姬子你怎么样了！还撑得住么！	姫子どうしたっ！大丈夫か！？	NONE
+msg	302139	Himeko, what's wrong!? Are you still holding up!?	姬子你怎么样了！还撑得住么！	姫子どうしたっ！大丈夫か！？	NONE
 speaker	Himeko
 emote	61	2
-msg	302140	I’m fine... Ask the team to fall back, this place won’t last long...	没事…让队员们撤回去，这地方估计快撑不住了……	大丈夫よ……隊員たちを退却させて。この場所はもうもたないはずよ……。	NONE
+msg	302140	Don't worry about it... Get the troops out of here... This place won't hold much longer...	没事…让队员们撤回去，这地方估计快撑不住了……	大丈夫よ……隊員たちを退却させて。この場所はもうもたないはずよ……。	NONE
 speaker	Emesa
 emote	55	1
 msg	302141	Roger!	好！	分かった！	NONE
@@ -43,7 +43,7 @@ emote	53	0
 
 emote	61	1
 emote	53	0
-/Himeko	302147	Hah... You mean those Houkai creatures didn’t attack us because of your order?	哼…你的意思是在郊外那些崩坏生物没有攻击我们的原因是因为你的命令？	なるほど……外にいる崩壊生物どもが私たちを攻撃してこなかったのは、あんたの命令だったってこと？	NONE
+/Himeko	302147	I see... So you're telling us that the only reason those Honkai beasts didn't attack us is because you ordered them not to?	哼…你的意思是在郊外那些崩坏生物没有攻击我们的原因是因为你的命令？	なるほど……外にいる崩壊生物どもが私たちを攻撃してこなかったのは、あんたの命令だったってこと？	NONE
 speaker	Mei
 emote	61	1
 emote	53	0
@@ -131,7 +131,7 @@ msg	302183	Dammit!	可恶！	悔しいです。	NONE
 speaker	Himeko
 emote	61	1
 emote	60	7
-msg	302184	Are you still just thinking about revenge...	你还是只想着复仇么……	あなたはやっぱり復讐しか考えていないのね……。	NONE
+msg	302184	Are you still only thinking about revenge......	你还是只想着复仇么……	あなたはやっぱり復讐しか考えていないのね……。	NONE
 speaker	Bronya
 emote	61	1
 emote	60	7

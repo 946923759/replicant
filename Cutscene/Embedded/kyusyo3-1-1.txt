@@ -1,9 +1,8 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	54	55	56	59
 speaker	
 msgbox_close	instant
 bg	009/045_1280x720
-msg	
 music	War And War
 bg	009/013_1280x720
 se	DLC_CH03_EV01_GunAndExplosion
@@ -43,8 +42,8 @@ emote	59	1
 /Seele	301028	Don't worry, we'll be there right after you.	放心吧，我们马上也会转移的~	安心して、こちらもすぐに追っかけるから。	NONE
 emote	59	3
 msg	301029	Phew... The front lines are depending on us. We need to stall the Honkai beasts and buy some time while the troops are on the move!	呼…前线就靠我们了，在部队转移的过程中我们要抵挡住崩坏生物的进攻给她们创造时间！	ふぅ……前線は私たちが頼りよ。部隊が移動する間、崩壊生物の進攻を食い止めて時間を稼がなきゃ！	NONE
-choice	301644	I'll be with you!	私も一緒に戦う！	NONE	NONE
-choice	301645	I shall protect Seele!	ゼーレは私が守るから！	NONE	NONE
+choice	301644	I'll be with you!	我会和你一起并肩作战的！	私も一緒に戦う！	NONE
+choice	301645	I shall protect Seele!	希儿就由我来保护！	ゼーレは私が守るから！	NONE
 emote	59	1
 /Seele	301030	Heheh, I'm almost falling for you. Unfortunately, my heart belongs only to my sister Bronya~	嚯嚯，稍微有点迷上你了呢，可惜我的心里只有姐姐大人呢~	ふふ、ちょっと見惚れちゃった。でも、ゼーレの心はお姉ちゃんのものだけどね～。	NONE
 msg	301031	But if you can survive this, you might have a chance with me. So try not to die, alright?	不过如果你能活下来的话，还是有一点机会的，所以就算是为了我也千万不要死哦。	生き残ろう。一緒に。絶対に死なせない。	NONE

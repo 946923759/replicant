@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Yssring
 bg	009/013_1280x720
 portraits	54
@@ -97,8 +97,8 @@ portraits	61	54
 emote	61	1
 emote	54	5
 msg	302126	Think about the nearby terrain... Some place we can get close to it while limiting its movement...	仔细想想附近的地形…既能限制它的行动，又可以接近它的地方……	近くの地形をよく考えて……あいつの動きを制限できて、かつ近づける場所……。	NONE
-choice	302222	Lure it to the streets.	街道に引きつけよう。	NONE	NONE
-choice	302223	Lure it to Me Corp overpass.	ME社の陸橋に引きつけよう。	NONE	NONE
+choice	302222	Lure it to the streets.	引到街道上。	街道に引きつけよう。	NONE
+choice	302223	Lure it to Me Corp overpass.	引到ME社天桥上。	ME社の陸橋に引きつけよう。	NONE
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Himeko

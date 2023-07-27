@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Graymoth Member
 bg	009/062_1280x720
 portraits	66
@@ -52,7 +52,7 @@ emote	66	0
 msg	301839	Bronya... What happened to you...	布洛妮娅…你到底怎么了……	ブローニャ……あなた、一体どうしたの……。	NONE
 speaker	Bronya
 bg	009/055_1280x720
-msg	301840	It’s not over... It will not end before I kill all of them...	没有结束…再杀光它们之前都不会结束……	まだ終わっていません……あいつらを殺し尽くすまでは終わりません……。	NONE
+msg	301840	It's not over... It's not over until I kill every last one of them...	没有结束…再杀光它们之前都不会结束……	まだ終わっていません……あいつらを殺し尽くすまでは終わりません……。	NONE
 msg	301841	Order the troops to return to Nagazora City. I'll make them pay in blood for what they did to Seele!	命令队伍返回长空市，希儿的仇我一定要它们血债血还！	部隊に命令して長空市へ戻ってください。ゼーレの仇は必ず血で贖ってもらいます！	NONE
 speaker	Emesa
 msg	301842	Calm down! You're just walking towards your own grave if you to back right now!	你冷静一下！现在这个情况回去只是送死而已！	落ち着け！今の状況で戻っても死にに行くようなもんだぞ！	NONE

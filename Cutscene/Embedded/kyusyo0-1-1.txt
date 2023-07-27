@@ -1,4 +1,4 @@
-#LANGUAGES	key	en	ch	jp	pt
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Homu robot	_DIM_ALL_WHEN_EMPTY
 speaker	Homu robot
 se	DLC_CH00_EV01_TrainStop
@@ -28,8 +28,8 @@ msg	300011	!	！	！	!!
 msg	300012	What's going on?	这里是怎么回事？	これはどういうこと？	O que isto significa?	
 speaker	Homu robot
 msg	300013	It seems that further clarification is needed, please provide the keywords you need to retrieve.	看来需要进行进一步的说明，请提供您需要检索的单词。	もう少し詳しい説明が必要のようですね。必要な検索ワードをおっしゃってください。	Parece que você precisa de uma explicação mais detalhada. Por favor, diga-nos os que você busca.	
-choice	0	I've got no idea... Could you explain the situation briefly?			Não faço a menor idéia... Você pode explicar brevemente?
-choice	0	No need.			Não há necessidade.
+choice	300014	I've got no idea... Could you explain the situation briefly?	没有什么头绪，请简单说明一下吧。	何も手がかりがない……簡単に説明してくれる？	Não faço a menor idéia... Você pode explicar brevemente?
+choice	300015	No need.	不需要。	必要ない。	Não há necessidade.
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Homu robot
@@ -54,8 +54,8 @@ speaker	Homu robot
 label	c2dest
 msg	300025	I understand. Please allow me to verify some information according to the remaining files.	明白了，那么请允许我根据残存的档案和您核对一些信息。	分かりました。では、私に残されているファイルに基づいて、あなたの情報を照合させてください。	Compreendo. Agora deixe-me combinar suas informações com base nos arquivos deixados para mim.	
 msg	300027	Is your name Houraiji Kyuushou?	请问 蓬莱寺 九霄 是您的名字么？	あなたの名前は蓬莱寺九霄ですか？	É o seu nome Houraiji Kyuusyou?	
-choice	0	Yes.			Sim
-choice	0	I can't remember...			Eu não consigo lembrar...
+choice	300028	Yes.	是的。	あってる。	Sim
+choice	300029	I can't remember...	不记得了……	覚えていない……。	Eu não consigo lembrar...
 speaker	Homu robot
 msg	300030	I see. If you have any information that might help you recall your memories, please contact us and we will try our best to help.	明白了，如果您有其他能够回忆起来的信息可以告诉我，我们会尽力帮助找回您的记忆。	分かりました。他に思い出せる情報があれば教えてください。私があなたの記憶を取り戻すお手伝いをします。	Compreendo. Por favor, deixe-me saber se você tem alguma outra informação que você possa lembrar. Eu vou ajudá-la a recuperar sua memória.
 / 	300031	My memories...	我的记忆……	私の記憶……。

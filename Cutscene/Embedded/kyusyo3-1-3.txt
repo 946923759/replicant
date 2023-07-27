@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	56	54	55
 music	The Tower - Medium No Vocals
 speaker	Teammate
@@ -41,8 +41,8 @@ emote	59	6
 emote	54	5
 
 /Seele	301081	...	……	……。	NONE
-choice	301646	Don't worry, I'm sure Bronya's alright.	安心して、ブローニャならきっと大丈夫。	NONE	NONE
-choice	301647	I'd rather turn worries into action.	ここで心配してるくらいなら、今すぐ行動に移ろう。	NONE	NONE
+choice	301646	Don't worry, I'm sure Bronya's alright.	放心，布洛妮娅一定不会有事的。	安心して、ブローニャならきっと大丈夫。	NONE
+choice	301647	I'd rather turn worries into action.	与其在这里担心，不如立即行动吧。	ここで心配してるくらいなら、今すぐ行動に移ろう。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

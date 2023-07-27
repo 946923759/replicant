@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Seele
 bg	009/003_1280x720
 portraits	59
@@ -22,10 +22,8 @@ msg	300093	The view looks familiar.	好熟悉的景色，	よく知っている�
 msg	300094	Under the gray sky and in this cold air, the earth is glistened by the distorted light.	灰色的天空与冰冷的空气，扭曲的光芒辐射着死去的大地。	灰色の空と冷たい空気、曲がった光が死の大地を照らす。	O céu cinzento, o ar frio e a luz torta iluminam a terra da morte.
 msg	300095	Why and how did I get here?	我为什么会在这里，又是如何来到这里的……	私、どうしてここにいるの。どうやってここに来たの……。	Por que estou aqui? Como eu cheguei aqui ...
 msg	300096	I can't remember.	已经记不起来了。	思い出せない。	Eu não consigo me lembrar.
-msg	-1	But there's a strange impulse inside me,	但是，总有一种奇妙的冲动在驱使着我。	でも、なんだか奇妙な衝動が私を駆り立てている。	Mas alguns impulsos estranhos estão me conduzindo.
 se	DLC_CH00_EV07_FootStepAway
 tn	-1	For the official English translation they opted to combine the two sentences, CN/JP are separated (no comma). I think the English way is better though.
-msg	-1	/setDispChr[40]But there's a strange impulse inside me, driving me in no particular direction.	向着不知道在何处的目标前行——	どこを目指しているのか分からない——	Para um caminho que eu não sei onde me levará.
 msg	300099	I can't tell how long it's been, but the view in front of me is becoming clearer and clearer.	不知道过了多久，眼前的景色也越来越清晰。	どれだけ経ったのかも分からないけど、目の前の景色はますますはっきりしてきた。	Não sei quanto tempo passou, mas o cenário à minha frente tornou-se cada vez mais claro.
 msg	300100	But I still can't remember where it came from. It's like the words are caught in my throat.	然而始终无法想起它们的由来，呼之欲出的情感让我心跳加快。	しかし、最後までそれが何なのかは思い出せない。喉元まできている感覚がもどかしい。	Mas não consigo lembrar o que é até o final. A sensação de ser estrangulada é frustrante.
 msg	300101	It feels like I'm trapped inside a whirlpool. The exit is right in front of me, but I can't touch it.	这种感觉仿佛进入了翻滚的螺旋之中，明明出口就在前方，但却无法触及。	渦巻の中に入ったかのような感覚。出口は前にあるのに、触れることができない。	Parece que você está em um redemoinho. A saída está na frente, mas não posso tocá-la.
@@ -34,7 +32,6 @@ msg	300103	Then, I saw a beam of light. A sign. An end.	渐渐地，我看到了
 msg	300104	And then, I saw her...	然后，我看到了她……	そして、彼女が見えた……。	E eu a vi...
 msgbox_close
 bg	009/022_1280x720
-msg	 	 	 	 
 msgbox_open
 msg	300106	Who is she?	这个人是谁？	この人は誰？	Quem é essa pessoa?
 msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒来的梦。	まるで醒めることがない夢を見ているみたい。	É como ter um sonho que nunca termina.
@@ -42,8 +39,8 @@ msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	�
 msg	300109	In this world of emptiness, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。	Quem ela está esperando neste mundo vazio ...?
 msg	300110	A sense of nostalgia lingers in my heart.	有种令人怀念的感觉缠绕在胸口。	何だか懐かしいような感覚が胸を締め付ける。	Um sentimento de nostalgia aperta meu coração.
 msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
-choice	0	Wake her up.			Acorde-a.
-choice	0	Never mind.			Esqueça.
+choice	300112	Wake her up.	唤醒她	彼女を起こす。	Acorde-a.
+choice	300113	Never mind.	算了	やめる。	Esqueça.
 condjmp_c	c2dest	2
 
 label	c1dest

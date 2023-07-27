@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	52
 music	Amusement Park - Quiet
 speaker	Seele
@@ -140,8 +140,8 @@ emote	52	0
 msg	300391	The Honkai beasts... They... I can't believe so many of them were lurking...	是崩坏生物…把那个家伙给……	崩壊生物が……あの子を……。こんな数の崩壊生物が潜んでいたなんて……。	NONE
 
 msg	300392	That idiot!	那个笨蛋！！！	あのバカ！！！	NONE
-choice	300393	We have to kill those beasts!	絶対にあの崩壊生物を倒そう！	NONE	NONE
-choice	300394	Let's get out of here!	早くここから逃げよう！	NONE	NONE
+choice	300393	We have to kill those beasts!	绝对要打倒这些崩坏生物！	絶対にあの崩壊生物を倒そう！	NONE
+choice	300394	Let's get out of here!	我们快离开这里！	早くここから逃げよう！	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

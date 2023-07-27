@@ -26,8 +26,8 @@ speaker	Seele
 portraits	59	60
 emote	59	3
 msg	300129	Understood!	了解！	了解！
-choice	0	I'm coming with you!	我也一起去！	私も一緒に行く！
-choice	0	Is there anything I can help?	我能帮上什么忙么？	私にも何か手伝える？
+choice	300130	I'm coming with you!	我也一起去！	私も一緒に行く！
+choice	300131	Is there anything I can help?	我能帮上什么忙么？	私にも何か手伝える？
 speaker	Bronya
 tn	literal is "(...) experience, you'd only lose your life"
 msg	300132	Stay here. Fighting Honkai beasts requires training. Entering the battlefield without any experience is practically suicide.	你留在这里。与崩坏生物战斗需要经过训练才行，让没有经验的人上战场只会送死。	あなたはここに残ってください。崩壊生物との戦闘には訓練が必要です。経験のない人が戦場に立っても死ぬだけです。

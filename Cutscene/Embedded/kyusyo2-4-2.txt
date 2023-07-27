@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Bronya	Seele	_DIM_ALL_WHEN_EMPTY
 preload_portraits	59	60	61
 music	Peaceful Sleep - No Vocals
@@ -153,10 +153,10 @@ speaker
 msg	300975	I... I don't know. I was already here when I realized it. It's the same every time.	为什么…不知道，每次察觉到的时候就已经站在这里了。	どうして……？分からない。いつも気づいたらここに立っているの。	NONE
 msg	300976	What is this place?	请问这里是什么地方？	ここはどこなの？	NONE
 /Mei	300977	This is... a forgotten place.	这里么…是被遗忘的地方。	ここはね……忘れられた場所。	NONE
-msg	300978	A meaningless place. Llike a cemetery.	就连存在都已经失去了意义，如同墓地一样的地方吧。	存在する意義すら失った、お墓のような場所よ。	NONE
+msg	300978	It's a graveyard that has lost the meaning of its existence.	就连存在都已经失去了意义，如同墓地一样的地方吧。	存在する意義すら失った、お墓のような場所よ。	NONE
 speaker	
-msg	300979	A cemetery... I see.	墓地么…	墓場……。	NONE
-/Mei	300980	That's right... A grave for Kiana and I.	没错…琪亚娜和我的墓地。	そうよ……キアナちゃんと私のお墓。	NONE
+msg	300979	A graveyard....	墓地么…	墓場……。	NONE
+/Mei	300980	That's right... A graveyard for Kiana and I.	没错…琪亚娜和我的墓地。	そうよ……キアナちゃんと私のお墓。	NONE
 msg	300981	And you as well, of course.	当然，也包括你。	もちろん、あなたも含まれているわ。	NONE
 speaker	
 msg	300982	I...?	我……	私……。	NONE
@@ -176,8 +176,8 @@ emote	53	0
 music	Peaceful Sleep - No Vocals
 
 msg	300987	How do you feel? Did you sleep well?	怎么样？睡的还好么？	どう？よく眠れた？	NONE
-choice	300988	I had a strange dream.	変な夢をみたの。	NONE	NONE
-choice	300989	I'm so tired.... Let me sleep a bit more.	眠い。もうちょっと寝かせて。	NONE	NONE
+choice	300988	I had a strange dream.	做了一个奇怪的梦。	変な夢をみたの。	NONE
+choice	300989	I'm so tired.... Let me sleep a bit more.	好困，还想再睡一会。	眠い。もうちょっと寝かせて。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

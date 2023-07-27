@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Himeko
 bg	009/060_1280x720
 portraits	61
@@ -80,8 +80,8 @@ portraits	55	54
 emote	55	1
 emote	54	1
 msg	302038	So much effort to run away, and we are going back now... But if we can get Bronya back, I choose to go back!	好不容易逃出来了又要回去么…但是如果能找回布洛妮娅的话我选择回去！	せっかく逃げ出せたのにまた戻るのか……でも、ブローニャを探し出せるっていうなら戻りたい！ 	NONE
-choice	302220	I also agree to go back.	私も戻るのに賛成。	NONE	NONE
-choice	302221	I think it's too dangerous.	危なすぎると思う。	NONE	NONE
+choice	302220	I also agree to go back.	我也赞成回去。	私も戻るのに賛成。	NONE
+choice	302221	I think it's too dangerous.	我觉得太危险了。	危なすぎると思う。	NONE
 speaker	Himeko
 bg	009/060_1280x720
 portraits	61

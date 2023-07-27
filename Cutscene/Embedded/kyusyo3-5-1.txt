@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	60	61	54	55
 match_names	Yssring	Emesa	_DIM_ALL_WHEN_EMPTY
 music	The Tower - Medium No Vocals
@@ -99,8 +99,8 @@ speaker	Seele
 emote	59	4
 emote	61	1
 msg	301378	Ugh, Himeko, read the room! C'mon, someone join me and let's all cheer for our victory. Hey, don't just stand there, you join too!	呃！姬子真是讨厌！难道就没有人欢呼一下助助兴么！喂！你怎么站在一旁一句话也不说呀！	もう、姫子さんったら空気読まないんだから！誰か一緒にバンザイして盛り上げてよ。ねえ、あなたも黙って突っ立ってないで！	NONE
-choice	301656	The battle tired me out...	戦闘で疲れすぎて力が出ない……	NONE	NONE
-choice	301657	I'm relieved that everyone is safe and sound.	みんな生きてて本当に良かった。	NONE	NONE
+choice	301656	The battle tired me out...	战斗太累没力气了……	戦闘で疲れすぎて力が出ない……	NONE
+choice	301657	I'm relieved that everyone is safe and sound.	大家都活下来真是太好了。	みんな生きてて本当に良かった。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

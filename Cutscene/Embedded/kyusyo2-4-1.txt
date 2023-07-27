@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 music	Yonah - Pluck Ver
 speaker	Seele
@@ -6,7 +6,7 @@ bg	009/012_1280x720
 portraits	59	60
 emote	59	1
 /Seele	300900	Ahhh~ I feel refreshed!	呼~活过来了！	ふぅ～生き返った！	NONE
-msg	300901	Hmm? I bet you're wondering why we have hot springs here, right?	你这个眼神一定是想问这种地方怎么会有温泉吧？	ん？どうしてこんな場所に温泉があるのか。聞きたそうな顔してるね。	NONE
+msg	300901	Hmm? You want to know how on earth there's a hot spring here, right? I can tell from the look in your eyes.	你这个眼神一定是想问这种地方怎么会有温泉吧？	ん？どうしてこんな場所に温泉があるのか。聞きたそうな顔してるね。	NONE
 msg	300902	This is something Bronya built herself when she escaped from the 3rd Honkai. My sister's a genius!	这可是姐姐大人以前逃离第三次崩坏的时候自己建造的哦，姐姐大人实在太聪明了~	これはお姉ちゃんが第3次崩壊から逃げ延びた時に自分で作ったんだよ。お姉ちゃんは、本当に頭がいいよね～。	NONE
 speaker	Bronya
 emote	60	4

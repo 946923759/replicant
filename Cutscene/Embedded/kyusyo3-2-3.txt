@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	
 bg	007/006_1280x720
 msg	301131	(Rumble rumble)	轰隆……	ゴゴゴゴゴ……！	NONE
@@ -10,8 +10,8 @@ emote	59	3
 msg	301132	The gate is open. Everyone stay alert!	闸门打开了，各位保持警惕！	ゲートが開いた。みんな警戒して！	NONE
 
 msg	301133	There's a lot of traps inside ME Corp. designed to keep out intruders. Everyone stand by outside, I'll check it out first.	ME社内的机关很多……你们在外面待机，我先进去调查一下。	……ふぅ、とりあえず異常はなさそうね。ME社内には侵入者用のトラップがたくさんあるから、みんなは外で待機。私が先に調査してくるわ。	NONE
-choice	301652	It's dangerous to go alone. Let me join you.	一人で行くのは危険過ぎる。私も一緒に行く。	NONE	NONE
-choice	301653	Don't push yourself to hard. I will go with you.	強がらないで。私も一緒に行く。	NONE	NONE
+choice	301652	It's dangerous to go alone. Let me join you.	一个人进去太危险了，我和你一起去。	一人で行くのは危険過ぎる。私も一緒に行く。	NONE
+choice	301653	Don't push yourself to hard. I will go with you.	不要逞强，我和你一起去。	強がらないで。私も一緒に行く。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest

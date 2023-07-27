@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	61	56	55	54
 speaker	Teammate
 bg	009/060_1280x720

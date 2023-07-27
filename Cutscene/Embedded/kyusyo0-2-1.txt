@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	60
 match_names	Seele	Bronya
 speaker	Seele				

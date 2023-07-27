@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	56	54	55
 music	The Tower - Medium No Vocals
 speaker	Teammate

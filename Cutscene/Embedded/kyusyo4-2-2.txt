@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Graymoth Member
 bg	009/062_1280x720
 portraits	66

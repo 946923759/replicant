@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Yssring
 music	Peaceful Sleep - No Vocals
 speaker	Seele

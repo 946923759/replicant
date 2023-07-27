@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 music	Amusement Park - Medium
 speaker	Seele

@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Seele	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
 music	City Ruins - Medium

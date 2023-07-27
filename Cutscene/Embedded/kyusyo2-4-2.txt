@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Bronya	Seele	_DIM_ALL_WHEN_EMPTY
 preload_portraits	59	60	61
 music	Peaceful Sleep - No Vocals

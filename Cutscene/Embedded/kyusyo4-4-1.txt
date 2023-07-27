@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Yssring
 bg	009/060_1280x720
 match_names	Himeko	Yssring	Greymoth Member

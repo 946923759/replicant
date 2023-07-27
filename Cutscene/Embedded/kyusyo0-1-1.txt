@@ -1,4 +1,4 @@
-#LANGUAGES	#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Homu robot	_DIM_ALL_WHEN_EMPTY
 speaker	Homu robot
 se	DLC_CH00_EV01_TrainStop

@@ -396,6 +396,13 @@ func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
 	#print(choice_table)
 	return choice_table
 
+class TextDelay:
+	var delayBeforeTween:float=0.0
+	var numChars:int=0
+	
+	func _to_string() -> String:
+		return "[TextDelay] Delay: "+String(delayBeforeTween)+", length: "+String(numChars)
+
 var msgColumn:int=1
 var lastPortraitTable = {}
 
@@ -410,6 +417,10 @@ func advance_text()->bool:
 
 	#If we don't remove, the previous text tween can start overwriting the current one
 	txtTw = get_tree().create_tween()
+	
+	#This is a 2D array for custom text pauses, ex. Hello {w=1}World
+	#delay before executing, tween towards num chars
+	var textPauses = []
 
 	while true:
 		if curPos >= message.size():
@@ -482,22 +493,64 @@ func advance_text()->bool:
 				
 				var hasVar = tmp_txt.find("%")
 				if hasVar != -1:
-					var endTag = -1
+					var endTagPos:int = -1
 					for jjjj in range(hasVar+1,tmp_txt.length()):
-						if tmp_txt[jjjj]==" ":
+						if tmp_txt[jjjj]==" ": #This also means no %% necessary like renpy
 							break
 						elif tmp_txt[jjjj]=="%":
-							endTag = jjjj
+							endTagPos = jjjj
 							break
-					if endTag != -1:
+					if endTagPos != -1:
 						#print(endTag-hasVar)
-						var varName = tmp_txt.substr(hasVar+1,endTag-hasVar-1)
+						var varName = tmp_txt.substr(hasVar+1,endTagPos-hasVar-1)
 						print("Got story var "+varName)
 						if cutsceneVars.has(varName):
-							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTag+1)
+							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTagPos+1)
 							pass
 						else:
 							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
+				
+				#OH BOY HERE WE GO
+				#So first we have to find where there is a pause
+				#Then we push numChars into the previous array... But this is very tricky
+				#because bbcode needs to be stripped out first in order to calculate the
+				#correct time
+				# Actually, I can just re-use waitForAnim... It's not like there's anything
+				# else to use it at this point
+				var prevDelay:float = waitForAnim
+				while true:
+					var bbcode_stripped_txt:String = Globals.strip_bbcode(tmp_txt)
+					var twStruct = TextDelay.new()
+					
+					var pauseAt = bbcode_stripped_txt.find("{w=")
+					if pauseAt != -1:
+						#Push pauseAt to an array
+						twStruct.numChars = pauseAt
+						
+						var endStr = bbcode_stripped_txt.find("}",pauseAt+3)
+						#print("Parsed "+bbcode_stripped_txt.substr(pauseAt+3,endStr-pauseAt-3))
+						
+						var parsedPause = float(bbcode_stripped_txt.substr(pauseAt+3,endStr-pauseAt-3))
+						twStruct.delayBeforeTween = prevDelay
+						prevDelay=parsedPause
+						
+						textPauses.append(twStruct)
+						
+						#We need to replace the pauses in the original text,
+						#which means more parsing work...
+						var bb_beginStr = tmp_txt.find("{w=")
+						var bb_endStr = tmp_txt.find("}",bb_beginStr+4)+1
+						#print("Replacing string to "+tmp_txt.substr(0,bb_beginStr)+tmp_txt.substr(bb_endStr))
+						tmp_txt = tmp_txt.substr(0,bb_beginStr)+tmp_txt.substr(bb_endStr)
+						#tmp_txt.replace()
+					else:
+						#pauseAt should be equal to text length
+						twStruct.numChars = bbcode_stripped_txt.length()
+						twStruct.delayBeforeTween = prevDelay
+						textPauses.append(twStruct)
+						break
+				for s in textPauses:
+					print(s._to_string())
 				
 				#Failsafe. Maybe not needed?
 				if text.visible_characters<0:
@@ -505,7 +558,7 @@ func advance_text()->bool:
 				text.bbcode_text = tmp_txt
 				
 				ChoiceTable = runahead_process_choices(message,curPos+1)
-					
+				
 				break #Stop processing opcodes and wait for user to click
 			#'setvar':
 				
@@ -617,7 +670,14 @@ func advance_text()->bool:
 				PORTRAITMAN.preload_portraits(curMessage)
 			'bg','bg_video':
 				var transition:String = curMessage[2].to_lower() if curMessage.size() > 2 else ""
-				waitForAnim=backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
+				if transition=="tween":
+					#This is += because it doesn't wait for previous tween... Probably could be better written
+					if len(curMessage) > 5:
+						waitForAnim+=backgrounds.setNewBG_tween(curMessage[1].replace("/","$"),curMessage[3],curMessage[4],curMessage[5])
+					else:
+						waitForAnim+=backgrounds.setNewBG_tween(curMessage[1].replace("/","$"),curMessage[3],curMessage[4])
+				else:
+					waitForAnim=backgrounds.setNewBG(curMessage[1].replace("/","$"),transition,waitForAnim)
 			'bg_fade_out_in':
 				var lastBackground = backgrounds.lastBackground
 				if is_instance_valid(lastBackground):
@@ -778,7 +838,7 @@ func advance_text()->bool:
 		curPos+=1
 	
 	#WHAT COULD POSSIBLY GO WRONG
-	textHistory.push_back([speakerActor.text,text.text])
+	textHistory.push_back([speakerActor.text,text.bbcode_text])
 	$TN_Actor.visible=(tmp_tn!="")
 	if tmp_tn!="":
 		$TN_Actor.set_text(tmp_tn)
@@ -786,16 +846,25 @@ func advance_text()->bool:
 	#print(TEXT_SPEED)
 	if TEXT_SPEED<100:
 		
-		#print(1/TEXT_SPEED*(text.text.length()-text.visible_characters))
-		txtTw.tween_property(text,"visible_characters",text.text.length(),
-			1/TEXT_SPEED*(text.text.length()-text.visible_characters)
-		).set_delay(waitForAnim)
-		#txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
-		#	1/TEXT_SPEED*(text.text.length()-text.visible_characters),
-		#	Tween.TRANS_LINEAR,
-		#	Tween.EASE_IN,
-		#	waitForAnim
-		#)
+		
+#		txtTw.tween_property(text,"visible_characters",text.text.length(),
+#			1/TEXT_SPEED*(text.text.length()-text.visible_characters)
+#		).set_delay(waitForAnim)
+		
+		for di in len(textPauses):
+			var delayStruct:TextDelay = textPauses[di]
+			var time:float = 0.0
+			if di==0:
+				time = 1/TEXT_SPEED*(delayStruct.numChars-text.visible_characters)
+			else:
+				time = 1/TEXT_SPEED*(delayStruct.numChars-textPauses[di-1].numChars)
+			
+			
+			txtTw.tween_property(text,"visible_characters",delayStruct.numChars,
+				time
+			).set_delay(delayStruct.delayBeforeTween)
+		
+		
 	else: #Fake tween that just waits for waitForAnim
 		txtTw.tween_property(text,"visible_characters",text.text.length(),0).set_delay(waitForAnim)
 		#txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
@@ -1057,7 +1126,7 @@ var isHistoryBeingShown=false
 var isOtherScreenHandlingInput:bool=false
 #var isWaitingForChoice=false
 
-
+var tracebackPos:int = -1
 #limit skip speed
 var frameLimiter:float=0.0
 
@@ -1118,7 +1187,19 @@ func _process(delta):
 	var forward = manualTriggerForward
 #	if forward:
 #		print("ManualTriggerForward")
-	if text.visible_characters >= text.text.length(): #If finished displaying characters
+
+	if tracebackPos < -1:
+		if forward:
+			manualTriggerForward=false
+			tracebackPos+=1
+			print("tracing forward... ", tracebackPos)
+			text.visible_characters=999
+			speakerActor.text = textHistory[tracebackPos][0]
+			text.bbcode_text = textHistory[tracebackPos][1]
+			
+			if tracebackPos>=-1:
+				text.modulate=Color.white
+	elif text.visible_characters >= text.text.length(): #If finished displaying characters
 		if ChoiceTable.size()>0:
 			frameLimiter=0
 			manualTriggerForward=false
@@ -1181,7 +1262,7 @@ func _unhandled_input(event):
 			tween_in_history()
 			#historyActor.set_history(textHistory)
 		#isHistoryBeingShown=!isHistoryBeingShown
-		
+
 func _input(event):
 	if (event is InputEventMouseMotion):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
@@ -1197,6 +1278,30 @@ func _input(event):
 		#elif event.button_index==BUTTON_WHEEL_UP:
 		#		tween_out_history()
 		#		isHistoryBeingShown=false
+	elif Input.is_action_just_pressed("vn_traceback"):
+		"""
+		A VN traceback mode can't go back in time for real, or else
+		it would show the choice dialogues again and set variables again.
+		Which isn't really what we want.
+		
+		What a traceback would do is just pull from the VN history.
+		"""
+		
+		
+		if tracebackPos==0 and text.visible_characters < text.text.length():
+			txtTw.kill()
+			text.visible_characters=999
+		
+		if tracebackPos*-1 >= len(textHistory):
+			return
+		tracebackPos-=1
+		print("Attempting to traceback... ",tracebackPos)
+		print(textHistory[tracebackPos])
+		speakerActor.text = textHistory[tracebackPos][0]
+		text.bbcode_text = textHistory[tracebackPos][1]
+		text.modulate=Color.gray
+		
+		pass
 	elif (event is InputEventMouseButton and event.is_pressed() and event.button_index==2) or (event is InputEventScreenTouch and event.index==1):
 		print("user right clicked to open options screen")
 		optionsScreen.visible=true

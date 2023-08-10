@@ -459,7 +459,6 @@ margin_right = -1920.0
 visible = false
 
 [node name="TN_Actor" type="Control" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -509,10 +508,6 @@ text = "TN"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="OptionsScreen" parent="TN_Actor" instance=ExtResource( 12 )]
-visible = false
-rect_pivot_offset = Vector2( -1839.45, 653.5 )
 
 [node name="FadeToBlack" type="ColorRect" parent="."]
 visible = false

@@ -3,19 +3,19 @@ speaker	Himeko
 bg	009/013_1280x720
 portraits	61	66
 emote	61	1
-msg	301937	3 hours into the operation now, we are about 2 kilometers away from the target. It’s faster than I expected. Fortunately, the marks left previously are still here, so we could avoid a lot of meaningless battles.	目前行动开始3小时，离目标地点还有2公里左右，比我想象中的要快，幸亏之前的留下标记还在，避免了很多无谓的战斗。	現在、行動開始から3時間。目標地点まであと2キロほど。思っていたよりも早いわね。以前のマークが残っていてよかった、無用の戦闘を避けられたわ。	NONE
+msg	301937	3 hours into the operation now, we are about 2 kilometers away from the target. It's faster than I expected. Fortunately, the marks left previously are still here, so we could avoid a lot of meaningless battles.	目前行动开始3小时，离目标地点还有2公里左右，比我想象中的要快，幸亏之前的留下标记还在，避免了很多无谓的战斗。	現在、行動開始から3時間。目標地点まであと2キロほど。思っていたよりも早いわね。以前のマークが残っていてよかった、無用の戦闘を避けられたわ。	NONE
 msg	301938	We'll take a 15 minute break right here. Up ahead is the scrap yard. Save your strength for the Honkai beasts, we need to make sure everyone collects their parts safely.	大家原地休息15分钟，再往前就是停车场了，留着体力消灭那里的崩坏生物，保证零件回收顺利进行。	全員その場で15分休憩。もう少し進めばスクラップ工場よ。崩壊生物を消滅させる体力を温存しておいて。全員無事に部品を回収するのよ。	NONE
 speaker	Graymoth Member
 emote	61	1
 emote	66	0
 msg	301939	Roger that.	是。	はい。	NONE
 speaker	
-portraits	66
-emote	66	0
+portraits	61
+emote	61	0
 msg	301940	......	……	……。	NONE
 
 /Himeko	301941	What's wrong? You look exhausted.	怎么了，看你好像一副很累的样子。	どうしたの。だいぶ疲れているみたいだけど。	NONE
-choice	302214	I’m fine, don’t worry.	没事，不用在意我。	大丈夫、気にしないで。	NONE
+choice	302214	I'm fine, don't worry.	没事，不用在意我。	大丈夫、気にしないで。	NONE
 choice	302215	A bit difficult...	稍微有点吃力……	少し疲れた……。	NONE
 condjmp_c	c2dest	2
 
@@ -38,8 +38,8 @@ speaker	Himeko
 emote	61	1
 msg	301945	This expression again. You look as if you're hesitating.	又是这种表情，仿佛被什么东西困住了一般犹豫不决。	またその表情。まるで何かに縛られたかのような顔をしているわね。	NONE
 msg	301946	I know what you're thinking. You want to ask me why I picked you as the leader, right?	我知道你在想什么，你一定想问我为什么要推选你做领袖吧？	あなたが何を考えているのか分かるわ。きっと、どうして私があなたをリーダーに推薦したのか聞きたいんでしょう？	NONE
-msg	301947	It’s simple, because you have something that others don’t...	原因很简单，因为你有着其他人没有的东西……	理由は簡単よ。あなたは他の人が持っていないものを持っているから……。	NONE
-msg	301948	Bronya, Seele, including myself, we are shackled by our beliefs... We are afraid of our own hearts, afraid of seeing our end results. That’s why we cannot move forward.	布洛妮娅和希儿，也包括我在内，都被自己的执念所束缚…畏惧着自己的内心，畏惧着看到自己的结局，所以才总是止步不前。	ブローニャとゼーレ、そして私もだけど、みんな自分の執念に束縛されているの……自分の内心を恐れている。自分の結末を目にすることを恐れている。だから、いつも立ち止まってしまって前に進めないの。	NONE
+msg	301947	It's simple, because you have something that others don't...	原因很简单，因为你有着其他人没有的东西……	理由は簡単よ。あなたは他の人が持っていないものを持っているから……。	NONE
+msg	301948	Bronya, Seele, including myself, we are shackled by our beliefs... We are afraid of our own hearts, afraid of seeing our end results. That's why we cannot move forward.	布洛妮娅和希儿，也包括我在内，都被自己的执念所束缚…畏惧着自己的内心，畏惧着看到自己的结局，所以才总是止步不前。	ブローニャとゼーレ、そして私もだけど、みんな自分の執念に束縛されているの……自分の内心を恐れている。自分の結末を目にすることを恐れている。だから、いつも立ち止まってしまって前に進めないの。	NONE
 emote	61	5
 msg	301949	......	……	……。	NONE
 emote	61	1
@@ -57,5 +57,5 @@ emote	61	2
 msg	301954	But we survived. We carry the curse of being Valkyries, but we're worthless ashes... That's one of the reasons I chose you.	但是我们却活了下来，背负着名为女武神的诅咒，却已经是没用的灰烬，这也是为什么我会选你的理由之一……	でも、私たちは生き残ってしまった。戦乙女という名の呪いを背負って。もう役立たずの灰燼なのに。	NONE
 portraits	61
 emote	61	1
-msg	301955	Alright! Let’s go, break time is over. Prepare yourselves!	好了！走吧，休息时间结束了，准备出发！	よし！行きましょう。休憩時間は終わり。出発準備！	NONE
-msg	301956	We don’t have much time left...	留给我们的时间已经不多了……	私たちに残された時間は限られているのだから……。	NONE
+msg	301955	Alright! Let's go, break time is over. Prepare yourselves!	好了！走吧，休息时间结束了，准备出发！	よし！行きましょう。休憩時間は終わり。出発準備！	NONE
+msg	301956	We don't have much time left...	留给我们的时间已经不多了……	私たちに残された時間は限られているのだから……。	NONE

@@ -6,6 +6,17 @@ Special opcode that gets turned into speaker & msg internally. Sets speaker and 
 
 Example: `/Kyuushou	Hello world!`
 
+# `#`
+Anything starting with # will not get compiled in. Instead, you can use two 'special' commands with #. You are free to use # for anything other than these two commands, of course.
+
+ex. `#This is a comment`
+
+## #NEXT
+Set the next cutscene manually.
+
+## #LANGUAGES
+Set the language order if this cutscene has multiple languages.
+
 # tn
 If used right before a message, display a translation note button that can be clicked or viewed by holding shift.
 
@@ -27,6 +38,8 @@ Use `[i]this[/i]` For italic text.
 
 Use %var_name% to do it. Refer to 'setting variables' for more information.
 
+Just like RenPy, you need to do %% to print a % sign.
+
 **strings and integers are the only types truly stored internally. This means printing booleans and bitflags will simply print their 'real' integer.**
 
 As an alternative for booleans, you can do this:
@@ -37,6 +50,12 @@ else:
 	var	_temporary	"false"
 msg	You set my_boolean to %_temporary%!
 ```
+
+
+### {w=}
+Wait w seconds before continuing. Works anywhere.
+
+`I am a message with pauses. H{w=.2}e{w=.2}l{w=.2}l{w=.2}o World.`
 
 ## Modifier commands
 Some message modifier commands are available. Modifier commands must be at the start of the message.
@@ -52,6 +71,7 @@ Equivalent to open_textbox opcode, but takes no arguments.
 
 ### /setDispChr[XX]
 Starts off this message already displaying the number of characters in the argument. You probably don't need to use this, as the `extend` opcode will automatically calculate and convert it for you.
+
 
 # extend
 Special opcode that makes a line extend from the previous message. Can be stacked infinitely.
@@ -124,7 +144,20 @@ Argument 2 can be:
 | --- | ------------ |
 | fade | Fade from old to new background. |
 | immediate <br> instant | Switch immediately. Duh. |
+| tween | Use a custom tween to change the background. In this case, argument 3 is the old background, argument 4 is the new background, and argument 5 (optional) is the quad when no backgrounds are displayed. |
 | (none) | If argument 2 is empty, the old background will fade to black then show the new background. |
+
+## bg custom tweens
+
+Because being limited to in-engine tweens would be a terrible idea. This is for applying a custom transition.
+
+### Flash BG white before changing
+
+arg 3: diffusealpha,0;
+
+arg 4: sleep,.1;diffusealpha,1
+
+arg 5: diffuse,#FFFFFF
 
 # bg_fade_out_in
 
@@ -158,6 +191,8 @@ Dims a portrait. 0-indexed. Unlike /hl[] this does NOT affect other portraits.
 # music
 
 Take a wild guess. Only mp3, ogg, and wav works. **If your music filename has special characters like $ it will not work.**
+
+Argument 1 (optional): How long to fade in music. Defaults to immediate.
 
 # se
 
@@ -294,6 +329,8 @@ condjmp_neg jumps if result of comparison is false.
 | ~1 | Checks if bitflag 1 in the integer is FALSE. |
 
 ## jmp
+Jumps to a label. Argument 1 is the label to jump to, obviously.
+
 Internally, all jump commands are converted to condjumps with "TRUE" as the variable to check.
 
 
@@ -304,3 +341,5 @@ Argument 1: Before, during, or after text displays.
 Argument 2: Portrait to tween. Currently, the background cannot be tweened.
 
 Argument 3: tween like StepMania's language. Ex. `decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`
+
+Refer to smTween.gd for a list of commands.

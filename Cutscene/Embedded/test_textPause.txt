@@ -1,0 +1,4 @@
+nop	bg	009/012_1280x720
+msg	I am a message with pauses. H{w=.2}e{w=.2}l{w=.2}l{w=.2}o World.
+msg	Test the % char. 100%. 120%. AAaaaaa. (% around a word means substitute with variable, but it will ignore it if there is a space)
+msg	.{w=.2}.{w=.2}.{w=.2}I'm in this place again.

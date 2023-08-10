@@ -372,6 +372,12 @@ func set_audio_levels():
 			AudioServer.set_bus_volume_db(d,realVolumeLevel)
 			AudioServer.set_bus_mute(d,false)
 
+
+static func strip_bbcode(source:String) -> String:
+	var regex = RegEx.new()
+	regex.compile("\\[.+?\\]")
+	return regex.sub(source, "", true)
+	
 static func deep_copy(v):
 	var t = typeof(v)
 

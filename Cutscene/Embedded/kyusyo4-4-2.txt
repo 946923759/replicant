@@ -14,7 +14,7 @@ msg	301928	All the routes on this map are drawn with the blood of the Grey Moths
 msg	301929	Alright, let's move on. There's three rules to follow when working with the Grey Moths.	好了，废话少说，在灰蛾部队你只要遵循三条法则就行了。	いいわ。おしゃべりはおしまい。灰蛾部隊と行動するからには、あなたに3つのルールを守ってほしい。	NONE
 msg	301930	First, never abandon your teammates. Second, do not make sacrifices lightly.	第一不抛弃队友，第二不轻易牺牲。	その1、仲間は見捨てない。その2、軽々しく犠牲にならない。	NONE
 msg	301931	And third, if the first two rules are contradicting each other, then follow the first one.	第三，如果前两条发生冲突就以第一条为准。	その3、この2つが矛盾した場合は1つ目に従う。	NONE
-msg	301932	If there is no objection, let’s go...	如果没有异议的话就出发吧……	異議がなければ出発よ……。	NONE
+msg	301932	If there is no objection, let's go...	如果没有异议的话就出发吧……	異議がなければ出発よ……。	NONE
 
 emote	61	2
 tween	during	61	decelerate,.3;addy,100

@@ -15,50 +15,65 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 				waitForAnim+=.5
 			lastBackground=null
 	else:
-		var actor = get_node(bgName)
-		if !is_instance_valid(actor):
+		var newBackground = get_node(bgName)
+		if !is_instance_valid(newBackground):
 			printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
 		else:
-			print(actor)
+			print(newBackground)
 			#print(get_child_count())
-			#print(actor.rect_position)
-			#print(actor.rect_size)
+			#print(newBackground.rect_position)
+			#print(newBackground.rect_size)
 			
 			#Shitty way of handling transitions
 			#If it works don't fix it... or something
 			for n in get_children():
-				if n!=lastBackground and n!=actor:
+				if n!=lastBackground and n!=newBackground:
 					n.modulate.a=0
 			
 			if transition=='fade':
 				if is_instance_valid(lastBackground):
 					VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
-				VisualServer.canvas_item_set_z_index(actor.get_canvas_item(),-10)
-				actor.modulate.a=0
-				actor.showActor(.5)
+				VisualServer.canvas_item_set_z_index(newBackground.get_canvas_item(),-10)
+				newBackground.modulate.a=0
+				newBackground.showActor(.5)
 			elif transition=='immediate' or transition=='instant':
-				actor.modulate.a=1
-				if actor is smVideo:
-					actor.showActor(0)
+				newBackground.modulate.a=1
+				if newBackground is smVideo:
+					newBackground.showActor(0)
 				if is_instance_valid(lastBackground):
 					lastBackground.modulate.a=0
 			else: #Fade to black and fade in new background
-				if lastBackground==actor:
-					actor.hideShow(1)
+				if lastBackground==newBackground:
+					newBackground.hideShow(1)
 					waitForAnim+=1
 				elif is_instance_valid(lastBackground):
 					lastBackground.hideActor(.5)
-					actor.showActor(.5,.5) #time, delay
+					newBackground.showActor(.5,.5) #time, delay
 					waitForAnim+=1
 					#if waitForAnim<.3: #This code is horrible
 					#	waitForAnim+=.5
 				else:
-					#print("ShowActor!")
-					actor.showActor(.5)
+					#print("ShownewBackground!")
+					newBackground.showActor(.5)
 					waitForAnim+=.5
 				#print("unknown bg tween? "+String(curMessage[2]))
-			lastBackground=actor
+			lastBackground=newBackground
 	return waitForAnim
+
+func setNewBG_tween(bgName:String, oldBGTween:String, newBGTween:String, bgLayerTween:String="") -> float:
+	var newBackground = get_node(bgName)
+	if !is_instance_valid(newBackground):
+		printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
+		return 0.0
+
+	var tw:SceneTreeTween = get_tree().create_tween()
+	var timeToWait = 0.0
+	if is_instance_valid(lastBackground):
+		timeToWait = smTween.cmd(tw,lastBackground,oldBGTween)
+	timeToWait = max(timeToWait, smTween.cmd(tw,newBackground,newBGTween))
+	if bgLayerTween:
+		timeToWait = max(timeToWait, smTween.cmd(tw,newBackground,bgLayerTween))
+	return timeToWait
 
 func _ready():
 	set_process(true)

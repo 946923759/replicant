@@ -68,11 +68,11 @@ match_names	Emesa	Himeko	Bronya	Mei
 portraits	55,false,-3	61,false,-3	60	53,false,2
 emote	61	1
 emote	60	0
-/Bronya	302156	It’s not over yet...	还没有结束……	まだ終わっていません……。	NONE
+/Bronya	302156	It's not over yet...	还没有结束……	まだ終わっていません……。	NONE
 
 emote	55	2
 emote	60	0
-/Emesa	302157	Himeko, look! It’s Bronya! She’s back!	姬子快看！是布洛妮娅！她回来了！	姫子、見ろ！ブローニャだ！ブローニャが帰ってきたぞ！	NONE
+/Emesa	302157	Himeko, look! It's Bronya! She's back!	姬子快看！是布洛妮娅！她回来了！	姫子、見ろ！ブローニャだ！ブローニャが帰ってきたぞ！	NONE
 
 speaker	Mei
 portraits	
@@ -93,26 +93,27 @@ tn	0	For some reason she doesn't say "my sister", but I guess it's because Brony
 msg	302166	Come on, then! Kill me, just like you killed Seele! 	来吧！就像杀死希儿的时候一样杀掉我！	来なさい。ゼーレを殺したようにブローニャを殺すのです。	NONE
 
 music	The Sound of the End
+nop	shake_camera	1.0
 /???	302167	Mei, stop it.	芽衣，停手吧。	芽衣先輩、やめて。	NONE
 speaker	Mei
 match_names	Emesa	Himeko	Bronya	Mei	Kiana
 /Mei	302168	!?	！？	！？	NONE
 bg	009/061_1280x720
 portraits	55,false,-3	61,false,-3	60,false,-4	53,false,0	107,false,1
-msg	302169	Kiana! You're finally awake!?	琪亚娜！你终于醒了么！	キアナちゃん！やっと目覚めたの！？	NONE
+/Mei	302169	Kiana! You're finally awake!?	琪亚娜！你终于醒了么！	キアナちゃん！やっと目覚めたの！？	NONE
 emote	61	1
 /Himeko	302170	Kiana...	琪亚娜……	キアナ……。	NONE
 /Kiana	302171	Come back with me. Killing these girls here won't change anything.	和我一起回去吧，就算在这里杀掉她们，也不会改变任何事情。	私と一緒に帰ろう。ここで彼女たちを殺しても何も変わらないわ。	NONE
 /Mei	302172	......	……	……。	NONE
-/Kiana	302173	I’m sorry... To make you bear all of this.	抱歉…让你一个人承受了这么多。	ごめんなさい……たった1人に、こんなたくさんのことを背負い込ませて。	NONE
+/Kiana	302173	I'm sorry... To make you bear all of this.	抱歉…让你一个人承受了这么多。	ごめんなさい……たった1人に、こんなたくさんのことを背負い込ませて。	NONE
 /Mei	302174	No... This is my own choice...	不…这是我自己的选择……	ううん……これは私自身の選択だから……。	NONE
 /Kiana	302175	Let's go, back to where we belong.	走吧，回到我们应该存在的地方。	行きましょう。私たちが存在すべき場所に帰りましょう。	NONE
 
 emote	60	7
-/Bronya	302176	Wait! I won’t let you leave!	等下！我不会让你们离开的！	待ちなさい！あなたたちを行かせはしません。	NONE
+/Bronya	302176	Wait! I won't let you leave!	等下！我不会让你们离开的！	待ちなさい！あなたたちを行かせはしません。	NONE
 /Kiana	302177	Bronya... You have grown up.	布洛妮娅…已经长这么大了呢。	ブローニャ……もうこんなに大きくなったのね。	NONE
-msg	302178	Don’t worry, we are not going anywhere... If you want to kill us, go to the place we met first.	放心吧，我们哪里也不会去…如果你想要杀掉我们的话就来到那最初相遇的地方吧。	安心して。私たちはどこにも行かないわ……私たちを殺したいなら最初に出会った場所に来て。	NONE
-msg	302179	It’s the beginning of everything, and the place where everything ends... You will find answers to the revenge and hope you desired there.	那里是一切的开始，也是一切终结的地方…你想要的复仇，你们想要的希望，都会在那里得到答案。	あそこが全ての始まりよ。そして、全ての終末の場所……あなたがしたい復讐、あなたたちのほしい希望、全てあそこに答えがあるわ。	NONE
+msg	302178	Don't worry, we are not going anywhere... If you want to kill us, go to the place we met first.	放心吧，我们哪里也不会去…如果你想要杀掉我们的话就来到那最初相遇的地方吧。	安心して。私たちはどこにも行かないわ……私たちを殺したいなら最初に出会った場所に来て。	NONE
+msg	302179	It's the beginning of everything, and the place where everything ends... You will find answers to the revenge and hope you desired there.	那里是一切的开始，也是一切终结的地方…你想要的复仇，你们想要的希望，都会在那里得到答案。	あそこが全ての始まりよ。そして、全ての終末の場所……あなたがしたい復讐、あなたたちのほしい希望、全てあそこに答えがあるわ。	NONE
 msg	302180	Including [color=#cc66ff]you[/color], too.	也包括你。	それにあなたもね。	NONE
 
 stop_music	1

@@ -146,6 +146,35 @@ custom_fonts/font = SubResource( 2 )
 text = "Credits"
 align = 1
 
+[node name="OKButton2" type="TextureButton" parent="GridContainer"]
+margin_left = 187.0
+margin_right = 370.0
+margin_bottom = 64.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="GridContainer/OKButton2"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "Controls"
+align = 1
+
+[node name="Label" type="Label" parent="GridContainer"]
+margin_top = 68.0
+margin_right = 183.0
+margin_bottom = 118.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = ExtResource( 16 )
+text = "v0.6.9"
+
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 anchor_right = 1.0
@@ -156,6 +185,7 @@ script = ExtResource( 9 )
 
 [node name="Click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
+bus = "SFX"
 
 [node name="DebugLabel" type="Label" parent="."]
 visible = false
@@ -178,3 +208,4 @@ visible = false
 
 [connection signal="gui_input" from="Logo" to="." method="_on_Logo_gui_input"]
 [connection signal="pressed" from="GridContainer/OKButton" to="." method="_on_OKButton_pressed"]
+[connection signal="pressed" from="GridContainer/OKButton2" to="." method="_on_OKButton_pressed"]

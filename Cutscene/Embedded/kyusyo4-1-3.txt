@@ -16,4 +16,4 @@ portraits	61	56
 /Teammate	301742	Uh... The Houkai creatures around the battleship have started attacking us. Please give us orders...	那个…现在战舰周围的崩坏生物正在朝我们进攻，请求指示……	あの……現在戦艦の周りにいる崩壊生物がこちらに向かって攻めてきます。指示を……。	NONE
 /Himeko	301743	What order do you need! Attack back now!	那还用得着指示么！给我开始反击！	そんなの指示を待つまでもないでしょう！反撃しなさい！	NONE
 /Teammate	301744	Okay... Roger that!	是…是！	は……はい！	NONE
-/Himeko	301745	Sigh~ Let’s go! The break is over. Time to get back to the familiar hell.	呼~走吧！中场休息结束了，是时候该回到熟悉的地狱了。	ふぅ～、行くわよ！中休みはおしまい。おなじみの地獄へ戻る時間よ。	NONE
+/Himeko	301745	Sigh~ Let's go! Break time's over. Time to get back to the familiar hell.	呼~走吧！中场休息结束了，是时候该回到熟悉的地狱了。	ふぅ～、行くわよ！中休みはおしまい。おなじみの地獄へ戻る時間よ。	NONE

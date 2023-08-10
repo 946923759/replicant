@@ -3,12 +3,12 @@ speaker	Emesa
 bg	009/062_1280x720
 portraits	55
 emote	55	1
-msg	301771	We must defend this gate! We can’t let the Houkai creatures in! Wounded people move towards the compartment inside!	一定要守住这扇舱门！不能让崩坏生物进来！伤员往里面的舱室移动！	必ずこのドアを守るんだ！崩壊生物を入れるんじゃないぞ！負傷者は奥のキャビンへ移動して！ 	NONE
+msg	301771	We must defend this gate! We can't let the Honkai beasts in! Wounded people move towards the compartment inside!	一定要守住这扇舱门！不能让崩坏生物进来！伤员往里面的舱室移动！	必ずこのドアを守るんだ！崩壊生物を入れるんじゃないぞ！負傷者は奥のキャビンへ移動して！ 	NONE
 speaker	Teammate
 portraits	55	56
 emote	55	1
 emote	56	0
-msg	301772	We can’t! There are too many of them!	不行！它们实在太多了！	ダメ！数が多すぎる！	NONE
+msg	301772	We can't! There are too many of them!	不行！它们实在太多了！	ダメ！数が多すぎる！	NONE
 speaker	Emesa
 portraits	55	56
 emote	55	1
@@ -18,18 +18,16 @@ speaker	Teammate
 portraits	55	56
 emote	55	1
 emote	56	0
-msg	301774	We are done... I don’t want to die...	不行了…我还不想死……	もうダメ……まだ死にたくないよ……。	NONE
+msg	301774	We're done for... I don't want to die...	不行了…我还不想死……	もうダメ……まだ死にたくないよ……。	NONE
 speaker	Emesa
 portraits	55	56
 emote	55	4
 emote	56	0
-msg	301775	Hey! Where the ★★ are you going!	喂！你OO的要去哪！	ちょっと！あんた、どこ行くんだ！	NONE
+msg	301775	Hey! Where the ☆☆ are you going!	喂！你OO的要去哪！	ちょっと！あんた、どこ行くんだ！	NONE
 speaker	
-portraits	56
 emote	56	0
 msg	301776	Roar!!	吼吼吼！！	ウゥッー！！グルルル——	NONE
 speaker	Teammate
-portraits	56
 emote	56	0
 msg	301777	It’s gone! Let’s retreat too! We can’t defend here anymore!	已经不行了！我们也撤退吧！这里守不住了！	もうダメ！私たちも撤退しましょう！ここはもう無理よ！	NONE
 speaker	Emesa
@@ -48,7 +46,6 @@ emote	56	0
 msg	301780	@#$* cowards... No matter what, I will not let you through! Die, @#$*!	OO的一群胆小鬼……不管怎么样都不会让你们这群畜生过去的！你们这些OO都给老子去死吧！	崩壊のやろうども……何があってもこの先には行かせないぜ！この下等生物が、大人しくくたばりやがれッ！	NONE
 msg	301781	Ha!!!	哈！！！	はあっ！！	NONE
 speaker	
-portraits	56
 emote	56	0
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
 msg	301782	Boom!	砰！	ガンッ！	NONE
@@ -58,7 +55,6 @@ emote	55	4
 emote	56	0
 msg	301783	No way... It’s not working at all...	居然…一点效果都没有……	まさか……全く効果がないなんて……。	NONE
 speaker	
-portraits	56
 emote	56	0
 se	DLC_CH00_EV11_MosterRoar
 msg	301784	Roar!!	吼吼吼！！	グルルル——	NONE
@@ -68,22 +64,20 @@ emote	55	4
 emote	56	0
 msg	301785	Ah!!!!	啊！！！！	……っ！！	NONE
 speaker	
-portraits	56
 emote	56	0
 se	DLC_CH00_EV11_MosterRoar
 msg	301786	Roar!!	吼吼吼！！	グォォォーン！！	NONE
 speaker	Emesa
-portraits	55	56
 emote	55	4
 emote	56	0
 msg	301787	Damn... Am I going to die here too...?	可恶…我也要死在这里么……	クソッ……ここで死ぬのか……。	NONE
+
 speaker	
-portraits	56
-emote	56	0
 msg	301788	Everybody, run! The defense is compromised!	大家快跑！防线已经被突破了！	みんな早く逃げて！防衛線が突破されたわ！ 	NONE
 msg	301789	I don’t want to die! Somebody help me!	我不想死！谁来救救我！	死にたくないわ！誰か助けて！	NONE
+
 speaker	Emesa
-portraits	55	56
+portraits	55
 emote	55	3
 emote	56	0
 msg	301790	Hehehehe... In the end, it’s still the same...	呵呵呵呵…到头来还是一样的结果么……	フフフ……逃げようと逃げまいと結局同じ結果なのか……。	NONE
@@ -96,54 +90,30 @@ se	DLC_CH00_EV11_MosterRoar
 msg	301793	Roar!!	吼吼吼！！	ゴォォォーーー！！	NONE
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
 msg	301794	Boom!!	砰！！	ザシュッ！！	NONE
-speaker	Himeko
-portraits	61
-emote	61	1
-msg	301795	Who are you calling brother?	应该叫姐姐才对吧。	お兄ちゃん？お姉さんと呼ぶべきでしょう。	NONE
-speaker	Emesa
+
 portraits	55	61
 emote	55	1
 emote	61	1
-msg	301796	Hi... Himeko!?	姬…姬子！？	ひ……姫子！？	NONE
-speaker	Himeko
-portraits	55	61
-emote	55	1
-emote	61	1
-msg	301797	Why are you still standing there? Go on, retreat!	还傻愣着干什么！快走！	何をぼーっとしているの！？退くわよ！	NONE
-speaker	Emesa
-portraits	55	61
+
+/Himeko	301795	Who are you calling brother?	应该叫姐姐才对吧。	お兄ちゃん？お姉さんと呼ぶべきでしょう。	NONE
+/Emesa	301796	Hi... Himeko!?	姬…姬子！？	ひ……姫子！？	NONE
+/Himeko	301797	Why are you still standing there? Go on, retreat!	还傻愣着干什么！快走！	何をぼーっとしているの！？退くわよ！	NONE
 emote	55	4
-emote	61	1
-msg	301798	No! I can’t! I can’t just leave the wounded here and run away!	不！我做不到！我不能丢下伤员自己逃跑！	ダメ！できない！負傷者を見捨てて自分だけ逃げるなんて！	NONE
-speaker	Himeko
-portraits	55	61
+/Emesa	301798	No! I can’t! I can’t just leave the wounded here and run away!	不！我做不到！我不能丢下伤员自己逃跑！	ダメ！できない！負傷者を見捨てて自分だけ逃げるなんて！	NONE
 emote	55	4
 emote	61	2
-msg	301799	Cut the crap, you're just a kid! Who do you think you are?	明明是个小鬼不要给我说这种臭屁的话！你以为你是谁啊！	ガキのくせに私に偉そうな口きくんじゃないの！何様のつもり！	NONE
-speaker	Emesa
-portraits	55	61
-emote	55	4
-emote	61	2
-msg	301800	You!	你！	お、おまえな！！	NONE
-speaker	Himeko
-portraits	55	61
+/Himeko	301799	Cut the crap, you're just a kid! Who do you think you are?	明明是个小鬼不要给我说这种臭屁的话！你以为你是谁啊！	ガキのくせに私に偉そうな口きくんじゃないの！何様のつもり！	NONE
+/Emesa	301800	You!	你！	お、おまえな！！	NONE
 emote	55	4
 emote	61	1
-msg	301801	No one will die this time. Trust me one more time.	这次不会再有人死掉了，再相信我一次。	もう誰も死なせたりはしないわ。1度でいいから私を信じて。	NONE
-speaker	Emesa
-portraits	55	61
+/Himeko	301801	No one will die this time. Trust me one more time.	这次不会再有人死掉了，再相信我一次。	もう誰も死なせたりはしないわ。1度でいいから私を信じて。	NONE
 emote	55	4
 emote	61	1
-msg	301802	......	……	……。	NONE
-portraits	55	61
+/Emesa	301802	......	……	……。	NONE
 emote	55	1
 emote	61	1
 msg	301803	I see... No one will die. Including you.	我知道了…一个都不准死，也包括你。	わかった……誰も死なせるんじゃないぞ……もちろん、あんたもだ。	NONE
-speaker	Himeko
-portraits	55	61
-emote	55	1
-emote	61	1
-msg	301804	Hmmm, I'm not weak enough for a kid to worry about me.	哼，我还没到要你这种小鬼担心的程度。	ふん、ガキに心配されるほど私は弱くないわよ。	NONE
+/Himeko	301804	I'm not so far gone that I need a kid like you worrying about me.	哼，我还没到要你这种小鬼担心的程度。	ふん、ガキに心配されるほど私は弱くないわよ。	NONE
 msg	301805	Non-combatants, retreat immediately! Leave it to us!	非战斗人员立即撤退！这里交给我们！	非戦闘員は直ちに撤退！ここは私たちに任せて！	NONE
 speaker	
 portraits	61
@@ -153,7 +123,7 @@ msg	301806	Dadada!	哒哒哒！	ダダダッ——！	NONE
 speaker	Himeko
 portraits	61
 emote	61	1
-msg	301807	Improve your defenses! Don’t give the Houkai creatures any chance!	加强防御！不要让崩坏生物有机可乘！	防御強化！崩壊生物にチャンスを与えるな！	NONE
+msg	301807	Improve your defenses! Don't give the Houkai creatures any chance!	加强防御！不要让崩坏生物有机可乘！	防御強化！崩壊生物にチャンスを与えるな！	NONE
 speaker	
 portraits	61
 emote	61	1
@@ -170,7 +140,7 @@ speaker	Himeko
 portraits	66	61
 emote	66	0
 emote	61	1
-msg	301811	Fill the breach up! We can’t let them in!	快把缺口堵住！不能让它们进来！	すぐに穴をふさいで！やつらを入れるな！	NONE
+msg	301811	Fill the breach up! We can't let them in!	快把缺口堵住！不能让它们进来！	すぐに穴をふさいで！やつらを入れるな！	NONE
 speaker	
 portraits	61
 emote	61	1

@@ -27,7 +27,7 @@ emote	54	3
 /Himeko	301686	Emesa... How many people from the base made it on board?	埃米沙…基地里有多少人上船了？	エミザ……基地の中からは何人が乗ったの？	NONE
 emote	55	1
 emote	54	3
-/Emesa	301687	……。	……	……。	NONE
+/Emesa	301687	......	……	……。	NONE
 msg	301688	Those you thought were useless didn't make it. Are you happy now?	你觉得没用的人都没有上来，这下你满意了吧？	あんたが役に立たないと思う人はみんな乗ってない。……これでいいか？	NONE
 emote	61	1
 emote	54	3

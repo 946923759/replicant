@@ -83,7 +83,7 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tweenLength = 0.0
 				timeToDelay += float(splitCmd[1])
 			"x":
-				tw.tween_property(objectToTween,"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)				
+				tw.tween_property(objectToTween,"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"y":
 				tw.tween_property(objectToTween,"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"addx":
@@ -104,6 +104,10 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tw.tween_property(objectToTween,"scale",v2,tweenLength).set_delay(timeToDelay)
 			"zoomx":
 				tw.tween_property(objectToTween,"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+			"diffuse","modulate":
+				tw.tween_property(objectToTween,"modulate",Color(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+			"diffusealpha":
+				tw.tween.property(objectToTween,"modulate:a",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"emote":
 				if "cur_expression" in objectToTween:
 					tw.tween_property(objectToTween,"cur_expression",splitCmd[1],0.0).set_delay(timeToDelay)

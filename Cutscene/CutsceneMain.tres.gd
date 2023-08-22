@@ -164,7 +164,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 			"condjmp_c":
 				splitString=["condjmp",splitString[1],"__choice__",splitString[2]]
 			"if":
-				splitString=["condjmp_neg","__fi__",splitString[1],splitString[2]]
+				splitString=["condjmp_neg","__fi__",splitString[1],splitString[2].rstrip(":")]
 			"else","else:":
 				for i in range(len(message)-1,0,-1):
 					#print(message[i])
@@ -295,6 +295,9 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 		print("PROCESSING CONDJUMP... DEST IS "+labelToJump+", TEST "+curMessage[3]+" == "+String(choiceResult))
 		SHOULD_JUMP=(choiceResult==int(curMessage[3]))
 		print("Should jump? "+String(SHOULD_JUMP))
+	elif curMessage[3].to_lower()=="null":
+		#print("Checking NULL... ",varName," is null? ",!(varName in cutsceneVars))
+		SHOULD_JUMP = !(varName in cutsceneVars)
 	elif (varName in cutsceneVars):
 		var varToCheck = curMessage[3].to_lower()
 		if varToCheck=="true":
@@ -331,6 +334,8 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 							printerr("Failed to deduce type for variable "+varToCheck)
 			else:
 				print("Tried to compare an integer with a string. Good job, genius.")
+	# Don't print if this is speculative execution 
+	# because it's possible the variable hasn't been set yet
 	elif speculative==false:
 		printerr("Hey moron, the variable you're checking hasn't been set: "+varName)
 	
@@ -1184,6 +1189,9 @@ func _process(delta):
 				else:
 					p.modulate.a=0
 	
+		tracebackPos=-1
+		text.modulate=Color.white
+		
 	var forward = manualTriggerForward
 #	if forward:
 #		print("ManualTriggerForward")
@@ -1288,7 +1296,7 @@ func _input(event):
 		"""
 		
 		
-		if tracebackPos==0 and text.visible_characters < text.text.length():
+		if txtTw.is_valid() and text.visible_characters < text.text.length():
 			txtTw.kill()
 			text.visible_characters=999
 		

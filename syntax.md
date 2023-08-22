@@ -38,7 +38,7 @@ Use `[i]this[/i]` For italic text.
 
 Use %var_name% to do it. Refer to 'setting variables' for more information.
 
-Just like RenPy, you need to do %% to print a % sign.
+Variables cannot have spaces in their names.
 
 **strings and integers are the only types truly stored internally. This means printing booleans and bitflags will simply print their 'real' integer.**
 
@@ -238,6 +238,8 @@ Argument 2: operand.
 ## if
 A special statement that simplifies logic branches by handling conditional jumps for you. Refer to condjumps section for possible parameters.
 
+You may choose to put ":" at the end of the conditional (ex. `if hasItem true:`), but it is not required and the ":" will be ignored. This is also true for "else" statements, you can write them with or without the ":".
+
 Starting with this statement:
 ```
 label	choice_loop
@@ -319,6 +321,7 @@ condjmp_neg jumps if result of comparison is false.
 | ---------------- | ------------ |
 | true | Take a wild guess. Attempting to compare this with an integer makes it true for anything other than 0. |
 | false | Take a wild guess. Attempting to compare this with an integer makes it false only if the variable is 0. |
+| null | Special check. True if this variable doesn't exist. |
 | 7 | Simply checks if an integer is equal to 7. |
 | >7 | Take a wild guess. |
 | >=7 | Take a wild guess. |

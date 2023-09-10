@@ -917,9 +917,10 @@ func setTextboxStyle():
 	var classic = $CenterContainer/textBackground
 	var modern = $CenterContainer/textBackground_modern
 	var modern2 = $CenterContainer/textBackground_modern2
+	var frontline = $CenterContainer/textBackground_Frontline
 	
-	var l1 = [classic,modern,modern2]
-	var l2 = ["Classic","Modern 1","Modern 2"]
+	var l1 = [classic,modern,modern2,frontline]
+	var l2 = ["Classic","Modern 1","Modern 2","Frontline"]
 	var match_ = l2.find(Globals.OPTIONS['textboxStyle']['value'])
 	for i in range(len(l1)):
 		l1[i].visible=(match_==i)
@@ -955,6 +956,10 @@ func tween_in_history():
 	isHistoryBeingShown=true
 	historyActor.isHandlingInput=true
 	historyActor.set_history(textHistory)
+	
+	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.visible=false
+	#$UI_Top_Frontline/HBoxContainer/TextureButtonHide.visible=false
+	$UI_Top_Frontline/TextureButtonSkip.visible=false
 	#historyActor.OnCommand()
 	#tw.stop_all()
 	#tw.stop(text,"visible_characters")
@@ -970,6 +975,11 @@ func tween_in_history():
 	#print($dim.visible)
 	
 func tween_out_history():
+	
+	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.visible=true
+	#$UI_Top_Frontline/HBoxContainer/TextureButtonHide.visible=true
+	$UI_Top_Frontline/TextureButtonSkip.visible=true
+	
 	#tw.resume(text,"visible_characters")
 	var historyTween = get_tree().create_tween()
 	openTextbox(historyTween,.2)
@@ -1036,6 +1046,7 @@ func _ready():
 	$CutsceneDebug.visible=false
 	#This is fine, auto mode doesn't work until process(true)
 	toggleAutoMode(Globals.wasUsingAutoMode)
+	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.pressed=Globals.wasUsingAutoMode
 
 
 func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -1370,3 +1381,17 @@ func _on_OptionsScreen_options_closed():
 	isOtherScreenHandlingInput=false
 	#print("New opacity is "+String(Globals.OPTIONS['bgOpacity']['value']/100.0))
 	#$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
+
+
+func _on_TextureButtonLog_pressed():
+	if isHistoryBeingShown:
+		tween_out_history()
+	else:
+		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
+			tween_in_history()
+			get_tree().set_input_as_handled()
+			isOtherScreenHandlingInput=true
+	
+
+func _on_TextureButtonAuto_toggled(button_pressed):
+	toggleAutoMode(button_pressed)

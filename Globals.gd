@@ -46,7 +46,7 @@ var OPTIONS = {
 	},
 	'textboxStyle':{
 		"type":"list",
-		"choices":["Classic","Modern 1","Modern 2"],
+		"choices":["Classic","Modern 1","Modern 2","Frontline"],
 		"default":"Classic"
 	},
 	"skipMode":{

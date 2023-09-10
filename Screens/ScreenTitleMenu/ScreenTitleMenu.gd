@@ -107,6 +107,9 @@ func _process(_delta):
 		var center = Globals.gameResolution/2
 		center*=Vector2(xVel,yVel)
 		update_background_parallax(Globals.gameResolution/2+center)
+		
+	#if OS.is_debug_build():
+	#	$DebugFPSLabel.text=String(Engine.get_frames_per_second())
 
 func update_keyboard_selections():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)

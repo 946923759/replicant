@@ -206,6 +206,15 @@ text = "Mouse pos:"
 [node name="OptionsScreen" parent="." instance=ExtResource( 15 )]
 visible = false
 
+[node name="DebugFPSLabel" type="Label" parent="."]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -50.0
+margin_right = 498.0
+custom_fonts/font = ExtResource( 16 )
+text = "FRAMES PER SECOND"
+
 [connection signal="gui_input" from="Logo" to="." method="_on_Logo_gui_input"]
 [connection signal="pressed" from="GridContainer/OKButton" to="." method="_on_OKButton_pressed"]
 [connection signal="pressed" from="GridContainer/OKButton2" to="." method="_on_OKButton_pressed"]

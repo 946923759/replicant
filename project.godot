@@ -420,6 +420,10 @@ vn_traceback={
  ]
 }
 
+[mono]
+
+project/assembly_name="F.M. RepliCant"
+
 [physics]
 
 common/enable_pause_aware_picking=true

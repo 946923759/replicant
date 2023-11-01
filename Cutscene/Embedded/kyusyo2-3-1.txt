@@ -33,7 +33,7 @@ msg	300777	Phew. That was close. All done! These samples should be enough.	呼~�
 msg	300781	Seele, go home and gather the troops. I'll be continuing to investigate this area.	希儿，你们先回去准备战力吧，我在这里再继续调查一下。	ゼーレ、先に帰って戦いの準備をしておいてください。ブローニャはここで調査を続けます。	NONE
 emote	59	3
 emote	60	1
-/Seele	300782	.....Are you trying to find Mei?	…姐姐大人是要找芽衣姐姐的行踪么？	……お姉ちゃん、もしかし芽衣お姉ちゃんの行方を探すの？	NONE
+/Seele	300782	....Bronya, are you trying to find Mei?	…姐姐大人是要找芽衣姐姐的行踪么？	……お姉ちゃん、もしかし芽衣お姉ちゃんの行方を探すの？	NONE
 /Bronya	300783	...	……	……。	NONE
 extend	300784	 Yes.	 是的。	 はい。	NONE
 

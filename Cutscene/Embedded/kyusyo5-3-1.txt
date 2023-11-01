@@ -1,0 +1,179 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	011/012_1280x720
+portraits	61
+emote	61	1
+msg	307132	Catch up! We are getting near to the end!	快跟上！马上就要到尽头了！	止まるなっ！あと少しよ！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307133	Ha! Ha! Ha! I can't! It's so tired! I can't breathe!	哈！哈！哈！不行了！一下跑这么久好累！感觉都快呼吸不上了！	ハァ！ハァ！ハァ！……も、もうダメだ！こんなに……走って！息も、まともに……吸えな……い！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	1
+msg	307134	Eh!	咳咳！	ゴホッ、ゴホッ！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307135	Himeko…don't be so hard to yourself, there're not many Honkai creatures, can't we take a break!	姬子…你这家伙自己也快不行了就别逞强了，崩坏生物也不是很多，我们稍微休息一下不行么！	ハァ！ハァ……！姫子……あんたの身体も限界なんだ……無茶すんな。崩壊生物も多いわけじゃないし、少しくらい休んでも……いいんじゃないか？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307136	Don't stop! We just leave behind those on the bridge! If the Honkai creatures from the otherside come, we will be attacked in the middle!	别停下！刚才引开的只是桥上的家伙！如果另有一头的崩坏生物也被引过来的话我们会被前后夹击的！	ダメよ、走りなさい！さっき注意を引いたのは橋にいたやつらだけ！もし橋を渡った先の崩壊生物まで引き寄せてたら挟み撃ちになるのよ！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307137	But…really…	可是…真的…	ああ……でも、もう本当に……。	NONE
+speaker	
+portraits	55
+emote	55	4
+se	DLC_CH00_EV11_MosterRoar
+msg	307138	Growl……	吼吼吼……	ウォオオオンッ……！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307139	This voice is…damn! They are coming to us from the other side!	这个声音是…糟了！对岸的崩坏生物正在朝大桥移动！	この鳴き声……しまった！対岸の崩壊生物が橋の方に向かってきてる！	NONE
+msg	307140	Get Emesa up! Take her to go on!	九霄把埃米沙拉起来！就算是拖也要把她拖过去！	九霄、エミザを引っ張って！引きずってでもここを離れるわよ！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307141	Huh…I can't……	呼呼…不行了……	フー、フー……もうダメ……だ。	NONE
+speaker	
+portraits	55
+emote	55	4
+se	DLC_CH00_EV13_MosterRoar
+msg	307142	Growl!!	吼吼吼！！	グォオオオォッ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307143	Damn…we don't have time! Kyushou! Jump with Emesa!	可恶…来不及了！九霄！带着埃米沙跳下去！	くっ……間に合わない！九霄ッ！エミザを連れて飛び下りなさい！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307144	Jump!? Hey! We still have at least 20 metres fromn the water!	跳！？喂！这里离水面怎么也得20米高吧！	飛び下りる！？おいっ！ここから水面まで、どう見ても20メートル以上あるぞ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307145	Shut up! Jump if you don't want to die!	别废话！不想死的话就跳！	ガタガタ言わないの！死にたくなければ飛びなさい！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307146	Ah! Wait! Don't push me!	哎！等！别推我啊！	ま、待て！押すな！おいっ……！	NONE
+msg	307147	Ahhhh!!!!	啊啊啊！！！！	うあぁあああーーー！！！	NONE
+speaker	
+bg	007/006_1280x720
+portraits	61
+emote	61	2
+se	DLC_CH01_EV06_Bump
+msg	307148	Flop!	噗通！！	ボシャンッ！！！！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	1
+msg	307149	Coo! Coo coo coo……	呜！咕咕咕……	んっ！くっ……コポ、ガボボボ……。	NONE
+speaker	
+portraits	61
+emote	61	2
+msg	307150	……	……	……。	NONE
+msg	307151	……	……	…………。	NONE
+msg	307152	……	……	——ッ！	NONE
+msg	307153	Eh!	咳咳咳！	ゴホッ、ゴホッ、ゴホッ……！	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	307154	Wake up, should be fine.	已经醒过来了，看来没什么生命危险了。	目が覚めたかしら。どうやら命に別状はなさそうね。	NONE
+speaker	
+portraits	61
+emote	61	1
+msg	307155	I just…jump from the bridge……	我刚才…从桥上跳下去了……	さっき……橋の上から跳び下りて……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307156	Whoa!!	呜哇！！	——うわぁっ！！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307157	Shh, we just get to the shore, be careful.	小声点，我们好不容易上岸了，别把崩坏生物又引过来了。	静かに、やっとの思いで岸に上げたんだから、もう崩壊生物を引き寄せないでよね。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307158	Woo…so we're saved.	唔…这么说是得救了么。	えっ……た、助かったのか。	NONE
+msg	307159	Huh.... Wait, we've arrived?!	呼……等等！那这么说我们已经到了！？	はぁー……ということは、着いたんだな！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307160	Yes, this is Academy City.	嗯，这里就是学园都市了。	ええ、ここが学園都市よ。	NONE
+speaker	Emesa
+bg	009/064_1280x720
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307161	What's with all this fog....?	呃！好大的雾气……	うわっ！何だこれ、すっごい霧だな……。	NONE
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307162	Wait, this is....	不对！这个是！？	……ん、いや違う！これは！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307163	This is the closest place to the Herrschers. The concentration of Honkai energy here is much higher than Nagazora. This fog is probably caused by the Honkai energy.	毕竟是离律者最近的地方，这里的崩坏能浓度比长空市高很多，这些雾气一样的东西恐怕是受到崩坏能的影响而形成的。	ここは律者に最も近い場所よ。崩壊エネルギーの濃度も長空市を遥かに超えているわ。この霧のような現象も崩壊エネルギーが恐らく影響してるんでしょうね。	NONE
+msg	307164	How are you all holding up?	怎么样？你们撑得住么？	どう？あなたたち、大丈夫？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307165	Hah... Hah... I'm alright, but it's hard to breathe.	呜…目前还好，只是呼吸稍微有点困难罢了。	あ、ああ……今のところは。少し呼吸しにくい気もするけど。	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307166	Ok…let's go, luckily to go across the bridge, we need to quickly find the Herrschers.	那就好…走吧，总算是有惊无险度过了大桥，我们要抓紧时间找到律者。	ならよかった……。さて、橋も渡り切れたことだし、律者の元まで急ぐわよ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307167	Wait, the city is so big, do you know where they are?	等下，学园都市这么大，你知道律者的位置么？	ちょっと待った！学園都市はこんなに大きいんだ。律者の居場所は分かるのか？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307168	Don't worry. The "place where everything began and where it ends", there's only one place there that could be, and it's Senba Academy.	放心吧，一切的开始和终结的地方，她们的归宿就只有一个。	ええ、安心なさい。全ての始まりと終わりの場所、彼女たちが行く場所は決まってるわ——千羽学園よ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+tn	0	The Japanese rewrote this so Himeko tells Emesa about Senba Academy, because why on earth would Emesa know that's the place? The current and previous line keeps this change because the Chinese wouldn't make sense.
+msg	307169	Where everything began and where it ends.... What's the significance of Senba Academy to the Herrschers? 	一切的开始…和终结的地方，你是说千羽学园么？那里对于律者来说到底有着什么意义呢？	全ての始まりと、終わりの場所……。律者にとって千羽学園はそんなに重要な場所なのか？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307170	It's significant for those two girls. If that encounter never happened, the world wouldn't be in its current state...	对于她们两人来说是特别重要的地方，如果没有那个相遇，世界也不会演变成现在这样……	彼女たち2人にとってはね。あの出会いがなければ、世界もこんな風にはなっていなかったでしょうし……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+tn	0	Again, the Japanese rewrote this to explain what Mei said
+msg	307171	I've heard some of this from Bronya. She said that Kiana and Mei, the two Herrschers, met at Senba Academy. So that's what it means by "the start".... 	这个我也听布洛妮娅说过，律者琪亚娜和芽衣就是在千羽学园结识，所以她们才选择回到那个地方么……	ブローニャから少しだけ聞いたことがある。律者であるキアナと芽衣は、千羽学園で知り合ったって。なるほど、だからここが始まりの場所なのか……。	NONE
+msg	307172	Herrschers destroy the world, the were transformed from humans, since they choose that place as the destination, maybe they still have some human emotions……	律者是毁灭世界的罪魁祸首，她们原本是由人类转化而成，既然选择了相遇的地方作为归宿，是不是代表她们还留有人类的感情……	律者は世界を滅ぼす存在だけど、元は人間なんだよな？千羽学園を終わりの場所として選ぶってことは、人間の頃の感情が残ってるのか……？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	1
+msg	307173	Hell if I know! Even if they had feelings... They're not human anymore.	鬼知道！就算还留有感情…她们也已经不是人类了。	知ったこっちゃないわ！仮に感情があったとしても……彼女たちはもう人間じゃないもの。	NONE

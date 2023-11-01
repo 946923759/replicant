@@ -30,7 +30,7 @@ speaker	Seele
 emote	59	1			
 msg	300058	That's right. The report says that there's a problem with her memory and she can't remember anything.	这个啊，就是这位。资料上显示记忆受到了创伤，似乎是记不得自己的事情了呢。	それがそうなの。資料には、記憶にダメージを受けて自分のことを覚えていないようだって書いてあるし。	Está certo. Os documentos dizem que ela parece não se lembrar de si mesma por causa dos danos à sua memória.
 emote	59	2			
-msg	300059	Oh, I'll introduce you~ This is my favorite sister!  Bronya Zaichik, the leader of the Resistance!  Hehehe~.	我给你介绍一下~这位是我最喜欢的姐姐大人！反抗军的领袖——布洛妮娅·扎伊切克！巴拉巴拉~	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。	Ah, vou te apresentar ~ Essa é minha irmã favorita! Bronya Zaychik, a líder da Resistência! Blah Blah Blah~.
+msg	300059	Let me introduce you~ This is my favorite sister! Bronya Zaychik, the leader of the Resistance! Hehehe~	我给你介绍一下~这位是我最喜欢的姐姐大人！反抗军的领袖——布洛妮娅·扎伊切克！巴拉巴拉~	あっ、紹介するね～こちらは私の一番大好きなお姉ちゃん！レジスタンスのリーダーを務めるブローニャ・ザイチク！パチパチパチ～。	Ah, vou te apresentar ~ Essa é minha irmã favorita! Bronya Zaychik, a líder da Resistência! Blah Blah Blah~.
 speaker	Bronya				
 emote	60	2			
 tn	XXX	The official English translation changed the meaning of the last sentence, but it sounds better so I kept it.			

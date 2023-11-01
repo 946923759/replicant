@@ -166,8 +166,10 @@ arg 5: diffuse,#FFFFFF
 # flash
 Flash the screen. You probably don't want to use this.
 
-# portraits
+# portrait / portraits
 Set portraits. Portraits can be a single argument, or can take additional parameters like positions.
+
+I got tired of remembering which one was valid, so both are allowed.
 
 Examples: `portraits	Kyuushou,false,0	Bronya,false,1`
 
@@ -336,6 +338,7 @@ Jumps to a label. Argument 1 is the label to jump to, obviously.
 
 Internally, all jump commands are converted to condjumps with "TRUE" as the variable to check.
 
+If you want to jump to the end, put a label at the end of the file and a jump statement to that label. Calling it `__end__` is the standard.
 
 # tween
 
@@ -346,3 +349,34 @@ Argument 2: Portrait to tween. Currently, the background cannot be tweened.
 Argument 3: tween like StepMania's language. Ex. `decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`
 
 Refer to smTween.gd for a list of commands.
+
+# vibrate
+Vibrates the controller or a mobile phone.
+
+Argument 1: duration. If not specified, defaults to 0.5.
+
+~~Argument 2: weak magnitude (vibrates the weak motor in the controller)~~
+
+~~Argument 3: strong magnitude (vibrates the strong motor in the controller)~~
+
+
+
+# IMPLEMENT SOON
+## screen
+Next screen to go to. Screens are defined in Globals.SCREENS. Short list of screens:
+
+| screen | description |
+| ------ | ----------- |
+| ScreenTitleMenu | The main menu. |
+| ScreenGallery | Gallery. |
+| ScreenSoundTest | Sound Test / Music player. |
+| ScreenFirstRun | Take a wild guess. |
+| ScreenWebWarning | Screen informing the user that this is a demo. |
+| ScreenSelectChapter | Chapter select. |
+| **CutsceneFromFile** | This is the main cutscene player. By default, the cutscene player will loop at this screen so you don't need to set it. |
+| ScreenProgrammerCredits | Programmer credits. |
+| ScreenSelectEra (Unused) | Set Retro, Reborn, or Fire Moth modes. Only Fire Moth is implemented... |
+
+
+## next
+Next cutscene to go to. Automatically selected based on ch-sel-db.tsv, but this command can override it if you want to branch to a different cutscene depending on a choice.

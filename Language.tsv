@@ -48,6 +48,7 @@ AudioVolume	Music Volume	Volúmen de la Música	Volume da música
 SFXVolume	SFX Volume	Volúmen de los Efectos	Volume do efeito sonoro
 isFullscreen	Fullscreen	Pantalla Completa	Tela cheia
 language	Current Language	idioma	Idioma atual
+vibration	Vibration
 
 bgOpacity	Textbox Opacity
 textboxStyle	Textbox Appearance
@@ -67,6 +68,7 @@ AudioVolume	Adjust the volume of the music.
 SFXVolume	Adjust the volume of the sound effects.
 isFullscreen	Switch between fullscreen and windowed. You can also press F11 on the keyboard at any time.
 language	Choose the novel's language. This change will not take effect until the next cutscene.
+vibration	Vibrate the controller or phone during certain parts.
 
 EnglishLocalized=Removes honorifics, changes most instances of Seele calling Bronya "onii-chan" to her calling Bronya by name, and removes Bronya's habit of referring to herself in third person. No other changes.
 EnglishLiteral=Keeps honorifics (ex. Himeko-sensei, Mei-senpai) and uses a more direct translation, so Seele will continue to call Bronya "onii-chan" instead of by name. Bronya also talks in third person sometimes. Use this one if you prefer honorifics and/or you're worried about some meaning being lost in translation.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/NotoSerifCJKjp-Black.otf" type="DynamicFontData" id=2]
@@ -14,12 +14,23 @@
 [ext_resource path="res://Ext/hoyostans-logo-2.webp" type="Texture" id=12]
 [ext_resource path="res://Ext/Common Arrow.png" type="Texture" id=13]
 [ext_resource path="res://Screens/ProgrammerCreditsV3.gd" type="Script" id=14]
+[ext_resource path="res://Fonts/NotoSerifCJKjp-Bold.otf" type="DynamicFontData" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
 use_filter = true
 font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 39
+font_data = ExtResource( 15 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 29
@@ -37,8 +48,10 @@ HandlePhysicalAButton = true
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]
 modulate = Color( 0.392157, 0.392157, 0.392157, 1 )
-anchor_right = 1.0
+anchor_top = 1.0
 anchor_bottom = 1.0
+margin_top = -1404.0
+margin_right = 2496.0
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 7
@@ -80,7 +93,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "By Amaryllis Works"
 align = 1
 
-[node name="Label" type="Label" parent="Pages/Page1" index="1"]
+[node name="Translation" type="Label" parent="Pages/Page1" index="1"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 50.0
@@ -95,7 +108,7 @@ Portugese Translation:
 demonbanex
 kebbini"
 
-[node name="Label2" type="Label" parent="Pages/Page1" index="2"]
+[node name="Thanks" type="Label" parent="Pages/Page1" index="2"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -152,13 +165,97 @@ margin_top = -540.0
 margin_right = 850.0
 margin_bottom = 540.0
 custom_fonts/font = SubResource( 1 )
+text = "Want to play Guns Girl Z in English? Check out
+https://ggz.amaryllisworks.pw
+or join the foxgirl discord, the #1 GGZ English discord.
+Home of the GGZ English Patch,
+play on the Japanese servers with English text!"
+align = 1
+autowrap = true
+
+[node name="PlaceholderLabel" type="Label" parent="Pages/Page2" index="2"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -850.0
+margin_top = -540.0
+margin_right = 850.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 1 )
+text = "Lorem ipsum this is censored text for an example asdadojs oasdj aosjdoa idaosiaj doaisjdojiaosdij
+wa3r
+asr
+asasdasdasd"
+align = 1
+autowrap = true
+
+[node name="FoxgirlButton" type="Button" parent="Pages/Page2" index="3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -786.0
+margin_top = -84.0
+margin_right = 786.0
+margin_bottom = 84.0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 4 )
+text = ">> https://discord.gg/6thCMjFHFR <<"
+flat = true
+
+[node name="Page3_Disabled" type="Control" parent="Pages" index="2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3840.0
+margin_right = 3840.0
+
+[node name="TextureRect3" type="TextureRect" parent="Pages/Page3_Disabled" index="0"]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -550.0
+margin_bottom = -118.0
+texture = ExtResource( 12 )
+stretch_mode = 6
+
+[node name="Label4" type="Label" parent="Pages/Page3_Disabled" index="1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -850.0
+margin_top = -540.0
+margin_right = 850.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 1 )
 text = "F.M. RepliCant is a free and open source fan project. Many of the assets were taken from the original game. It was created to help English speaking players experience the game's story as an alternative to playing the game.
 
 Press Start or click below to view related projects, including a VN for GGZ's Retrospective story, translated light novels, and more!"
 align = 1
 autowrap = true
 
-[node name="HoyostansButton" type="Button" parent="Pages/Page2" index="2"]
+[node name="Label5" type="Label" parent="Pages/Page3_Disabled" index="2"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -850.0
+margin_top = -540.0
+margin_right = 850.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 1 )
+text = "BECOME AS GODS
+
+tHIS IS PLACEHOLDER TEXT HELLO EVERYONE"
+align = 1
+autowrap = true
+
+[node name="HoyostansButton" type="Button" parent="Pages/Page3_Disabled" index="3"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -172,53 +269,56 @@ custom_fonts/font = ExtResource( 4 )
 text = ">> https://hoyostans.be <<"
 flat = true
 
-[node name="Page3" type="Control" parent="Pages" index="2"]
+[node name="Page3" type="Control" parent="Pages" index="3"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3840.0
 margin_right = 3840.0
 
-[node name="TextureRect3" type="TextureRect" parent="Pages/Page3" index="0"]
-visible = false
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -550.0
-margin_bottom = -118.0
-texture = ExtResource( 12 )
-stretch_mode = 6
-
-[node name="Label4" type="Label" parent="Pages/Page3" index="1"]
+[node name="Label4" type="Label" parent="Pages/Page3" index="0"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -850.0
-margin_top = -540.0
+margin_top = -523.0
 margin_right = 850.0
 margin_bottom = 540.0
-custom_fonts/font = SubResource( 1 )
-text = "Want to play Guns Girl Z in English? Check out
-https://ggz.amaryllisworks.pw
-or join the foxgirl discord, the #1 GGZ English discord.
-Home of the GGZ English Patch,
-play on the Japanese servers with English text!"
+custom_fonts/font = SubResource( 3 )
+text = " This game uses Godot Engine, available under the following license:
+
+    Copyright (c) 2014-present Godot Engine contributors. Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"
 align = 1
 autowrap = true
 
-[node name="FoxgirlButton" type="Button" parent="Pages/Page3" index="2"]
+[node name="Page4" type="Control" parent="Pages" index="4"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5760.0
+margin_right = 5760.0
+
+[node name="Label4" type="Label" parent="Pages/Page4" index="0"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -786.0
-margin_top = -84.0
-margin_right = 786.0
-margin_bottom = 84.0
-mouse_default_cursor_shape = 2
-custom_fonts/font = ExtResource( 4 )
-text = ">> https://discord.gg/6thCMjFHFR <<"
-flat = true
+margin_left = -850.0
+margin_top = -475.0
+margin_right = 850.0
+margin_bottom = 540.0
+custom_fonts/font = SubResource( 4 )
+text = "The Replicant Engine ©2023 by Amaryllis Works is licensed under CC BY-SA 4.0.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+align = 1
+autowrap = true
 
 [node name="OKButton" type="TextureButton" parent="." index="4"]
 anchor_left = 0.5
@@ -277,7 +377,7 @@ stretch_mode = 6
 [node name="BackButton" parent="." index="8"]
 visible = false
 
-[connection signal="pressed" from="Pages/Page3/FoxgirlButton" to="." method="_on_FoxgirlButton_pressed"]
+[connection signal="pressed" from="Pages/Page2/FoxgirlButton" to="." method="_on_FoxgirlButton_pressed"]
 [connection signal="gui_input" from="OKButton" to="." method="_on_OKButton_gui_input"]
 [connection signal="gui_input" from="LeftArrow" to="." method="_on_LeftArrow_gui_input"]
 [connection signal="gui_input" from="RightArrow" to="." method="_on_Arrow_gui_input"]

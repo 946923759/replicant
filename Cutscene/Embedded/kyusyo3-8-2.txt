@@ -6,6 +6,7 @@ bg	009/047_1280x720
 se	DLC_CH03_EV01_GunAndExplosion
 msg	301603	Tatatat	哒哒哒	ダダダッ	NONE
 se	DLC_CH03_EV05_ThunderBig
+shake_camera	1
 msg	301604	Boom!!	轰隆！！	ドゴーン！！	NONE
 match_names	Seele	Bronya	Himeko	Emesa
 portraits	59	60	61
@@ -25,30 +26,24 @@ portraits	59	60	61
 /Himeko	301608	Damn it, we don't have any time left! If we don't launch now, the base and Hyperion will be reduced to ashes!	来不急了！休伯利安号必须马上出发！不然就等着和基地一起化成灰吧！	くそっ、間に合わない！今すぐ発進しないと基地もろともハイペリオンまで灰になるわよ！	NONE
 msg	301609	Hyperion! Prepare to fire the main cannon! We'll wipe out the Honkai scum in our way!	休伯利安！主炮准备发射！给我把挡在前面的崩坏渣滓杀干净！	ハイペリオン、主砲発射用意！前方を遮ってる崩壊生物どもを一掃してやるわ！	NONE
 speaker	Bronya
-emote	59	3
 emote	60	5
 msg	301610	Himeko! There's still combatants ahead!	姬子！前方还有战斗人员！	姫子！だめです！前方にはまだ戦闘員が——！	NONE
 speaker	Himeko
-emote	59	3
 emote	61	2
 msg	301611	Fire!	发射！	発射ーッ！	NONE
 speaker	Bronya
-emote	59	3
 emote	60	6
 msg	301612	No!!	不要！！	いやっ！だめーーーーーっ！！	NONE
 speaker	
-emote	59	3
+shake_camera	2
 msg	301613	Boom!!!	轰！！！	ドゴーン！！！	NONE
-emote	59	3
 emote	60	6
 portraits	60	59	61
 match_names	Bronya	Seele	Himeko
 /Bronya	301614	Ah.... Ah.... Why... Everyone... Himeko!!!	啊…啊……不…为什么……大家……姬子！！！	あ……あ……だめ……どうして……みんな……姫子！！！	NONE
-emote	59	3
 emote	61	2
 portraits	60	59,false,2	61,false,2
 /Himeko	301615	Bronya! Pull yourself together! Board with Seele now!	布洛妮娅！振作点！快和希儿上船！	ブローニャ！しっかりなさい！ゼーレ、ブローニャを！	NONE
-emote	59	3
 emote	60	6
 /Bronya	301616	No! We can't just leave them to die!	不！我们不能丢下任何人！	だめです！誰一人捨ててはいけません！	NONE
 /Seele	301617	Bronya! If we don't get on board, we're going to die!	姐姐大人！你要去哪！	お姉ちゃん！このままじゃ、みんな死んじゃう！	NONE
@@ -120,4 +115,5 @@ bg	white	fade
 msgbox_close
 nop	You figure that there would be a bbcode for setting the text outline right??? Apparently not!
 set_outline	false
+vibrate	1
 msg	301643	[color=#000000].....My sister.[/color]	姐姐大人。	——お姉ちゃん。	NONE

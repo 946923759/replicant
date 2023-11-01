@@ -836,8 +836,25 @@ func advance_text()->bool:
 					else:
 						lastMusic.stop_music()
 			"shake_camera":
-				var howMuch:float = float(curMessage[1]) if len(curMessage) > 1 else 3.0
-				backgrounds.shakeCamera(howMuch)
+				var magnitude:float = float(curMessage[1]) if len(curMessage) > 1 else 3.0
+				backgrounds.shakeCamera(magnitude)
+				if Input.get_connected_joypads().size() > 0:
+					Input.start_joy_vibration(0,magnitude/5.0,magnitude/5.0,.4)
+				#Pointless on mobile since you can't control the magnitude
+				#elif OS.has_feature("mobile"):
+				#	#Why is this in ms and the controller one in seconds?
+				#	Input.vibrate_handheld(150)
+			"vibrate":
+				var duration:float = float(curMessage[1]) if len(curMessage) > 1 else 0.5
+				if Input.get_connected_joypads().size() > 0:
+					#print("Vibrate controller 0 for "+String(duration))
+					Input.start_joy_vibration(0,.4,.4,duration)
+				elif OS.has_feature("mobile"):
+					#Why is this in ms and the controller one in seconds?
+					Input.vibrate_handheld(duration*1000.0)
+					#print("Vibrate mobile device for "+String(duration))
+				#else:
+				#	print("No controllers are connected, not vibrating")
 			_:
 				printerr("Unknown opcode encountered: "+curMessage[0]+". It will be ignored and skipped.")
 		curPos+=1
@@ -1121,6 +1138,18 @@ func end_cutscene_2():
 			print_debug("Unlocked CG "+f)
 			Globals.playerData['CGunlock'].append(f)
 			needToSave=true
+	
+	
+	var save_idx = Globals.get_episode_index(Globals.currentEpisodeData)
+	var ch_idx = save_idx[0]
+	var ep_idx = save_idx[1]
+	if ch_idx >= 0 and ep_idx >= 0:
+		var bit = Globals.playerData['completedChapters'][ch_idx]
+		if (bit & 1<<ep_idx) == 0:
+			needToSave=true
+		Globals.playerData['completedChapters'][ch_idx] |= 1<<ep_idx
+		
+	
 	if needToSave:
 		Globals.save_system_data()
 	

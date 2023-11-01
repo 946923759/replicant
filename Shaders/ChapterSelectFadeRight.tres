@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+//uniform float gl_FragCoord;
+//uniform float ViewportHeight;
+uniform vec4 inputColor : hint_color=vec4(0,0,0,1);
+//uniform float fadeLength = 20.0;
+//uniform float fadeTopAt;
+//uniform float fadeRightAt;
+
+void fragment(){
+	//Note that shaders take effect on the window size, not the game's size! So we have to scale it
+	//to match!
+	float SCREEN_WIDTH = 1.0/SCREEN_PIXEL_SIZE.x;
+	float RATIO = SCREEN_WIDTH/1920.0;
+	float SCREEN_CENTER_X = RATIO*SCREEN_WIDTH/2.0+650.0;
+	if (FRAGCOORD.x > SCREEN_CENTER_X-50.0)
+	{
+		/*Smoothstep returns a value between 0 and 1.
+		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
+		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
+		*/
+		float clr = smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,SCREEN_CENTER_X-50.0);
+		vec4 tex_clr = texture(TEXTURE,UV).rgba;
+    	COLOR = vec4(tex_clr.rgb, min(clr,tex_clr.a)); //min(clr,pixel_color.a)
+	}
+	else
+	{
+		COLOR = texture(TEXTURE,UV).rgba;
+	}
+	/*else
+	{
+		COLOR.a = COLOR.a;
+	}*/
+	
+	//COLOR = texture(TEXTURE,UV).rgba;
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/inputColor = Color( 0, 0, 0, 1 )

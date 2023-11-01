@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
@@ -17,43 +17,12 @@
 [ext_resource path="res://Cutscene/CutsceneDebugger.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Ext/arrow_small.png" type="Texture" id=16]
 [ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=17]
+[ext_resource path="res://Shaders/TextboxModernFadeSides.tres" type="Material" id=18]
 [ext_resource path="res://Cutscene/buttonHide_GFL.png" type="Texture" id=19]
 [ext_resource path="res://Cutscene/buttonSkip_GFL.png" type="Texture" id=20]
 [ext_resource path="res://Cutscene/buttonLog_GFL.png" type="Texture" id=21]
 [ext_resource path="res://Cutscene/buttonAutoPressed_GFL.png" type="Texture" id=22]
 [ext_resource path="res://Cutscene/buttonAuto_GFL.png" type="Texture" id=23]
-
-[sub_resource type="Shader" id=5]
-code = "shader_type canvas_item;
-
-//uniform float gl_FragCoord;
-//uniform float ViewportHeight;
-uniform vec4 inputColor : hint_color=vec4(0,0,0,1);
-//uniform float fadeLength = 20.0;
-//uniform float fadeTopAt;
-//uniform float fadeRightAt;
-
-void fragment(){
-	float SCREEN_WIDTH = 1.0/SCREEN_PIXEL_SIZE.x;
-	if (FRAGCOORD.x < 100.0)
-	{
-		/*Smoothstep returns a value between 0 and 1.
-		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
-		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
-		*/
-		float clr = 1.0-smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,50.0);
-    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
-	}
-	else if (FRAGCOORD.x > SCREEN_WIDTH-100.0)
-	{
-		float clr = smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,SCREEN_WIDTH-50.0);
-    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
-	}
-}"
-
-[sub_resource type="ShaderMaterial" id=6]
-shader = SubResource( 5 )
-shader_param/inputColor = Color( 0, 0, 0, 1 )
 
 [sub_resource type="Shader" id=7]
 code = "shader_type canvas_item;
@@ -290,7 +259,7 @@ color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
 [node name="textBackground_modern" type="ColorRect" parent="CenterContainer"]
 visible = false
 modulate = Color( 1, 1, 1, 0.756863 )
-material = SubResource( 6 )
+material = ExtResource( 18 )
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5

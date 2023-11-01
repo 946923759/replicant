@@ -76,7 +76,7 @@ func setNewBG_tween(bgName:String, oldBGTween:String, newBGTween:String, bgLayer
 	return timeToWait
 
 func _ready():
-	set_process(true)
+	set_physics_process(true)
 
 #So the original ShakeCamera2D script doesn't actually work correctly
 #because it uses the completely wrong offset
@@ -114,7 +114,7 @@ var stress : float = 0.0
 var shake : float = 0.0
 
 var elapsed:float=0
-func _process(_delta):
+func _physics_process(_delta):
 	if stress == 0.0:
 		return
 	
@@ -155,6 +155,6 @@ func add_stress(amount : float) -> void:
 	stress += amount
 		
 
-func shakeCamera(howMuch:float=3.0):
+func shakeCamera(magnitude:float=3.0):
 	print("Shaking!")
-	add_stress(howMuch)
+	add_stress(magnitude)

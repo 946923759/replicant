@@ -117,7 +117,7 @@ speaker	Seele
 nop
 emote	59	3
 emote	52	0
-msg	300387	That idiot ran straight in! Follow me, we need to take her back!	那个笨蛋居然直接冲进去了！？和我一起追上去！一定要把她带回来！	あのバカ、そのまま入っていったの！？私と一緒に追いかけて！必ず連れ戻さなきゃ！	NONE
+msg	300387	That idiot ran straight in! Follow me, we need to bring her back!	那个笨蛋居然直接冲进去了！？和我一起追上去！一定要把她带回来！	あのバカ、そのまま入っていったの！？私と一緒に追いかけて！必ず連れ戻さなきゃ！	NONE
 speaker	Techies
 nop
 emote	59	3

@@ -17,6 +17,10 @@ var OPTIONS = {
 		"default":false,
 		pc_only=true
 	},
+	"vibration":{
+		"type":"bool",
+		"default":true
+	},
 	"language":{
 		"type":"list",
 		"choices":["en","ja","ch","pt"],
@@ -114,7 +118,7 @@ chapterDatabase = {
 	]
 }
 """
-var chapterDatabase = {
+var chapterDatabase:Dictionary = {
 	#"No Grouping!!":[]
 }
 var database = {}
@@ -125,6 +129,23 @@ var nextCutscene:String="kyusyo0-1-1.txt"
 #This is optional, but if it's present the options screen
 #will display the current chapter and description.
 var currentEpisodeData:Episode
+
+func get_episode_index(curEpisode:Episode)->PoolIntArray:
+	var chapter_idx:int = -1
+	var episode_idx:int = -1
+	
+	var keys = chapterDatabase.keys()
+	for i in range(keys.size()):
+		if keys[i]==curEpisode.parentChapter:
+			chapter_idx=i
+			break
+	
+	var ch = chapterDatabase[curEpisode.parentChapter]
+	for i in range(ch.size()):
+		if curEpisode == ch[i]:
+			episode_idx = i
+			break
+	return PoolIntArray([chapter_idx,episode_idx])
 
 func get_next_cutscene(curEpisode:Episode,curPart:String):
 	if curEpisode==null:
@@ -187,6 +208,11 @@ var playerData={
 	"avatarsUnlocked":[0],
 	"CGunlock":['CG054_waifu2x_art_noise0_scale_tta_1'],
 	"musicUnlock":[],
+	#This is an array of bits since we only need to
+	#store true/false
+	#It will be resized later after chapter DB is loaded
+	#so the length here is irrelevant
+	"completedChapters":[0,0,0,0,0,0,0,0,0,0,0],
 	'state':false
 }
 # Is there anywhere better to put this?
@@ -214,6 +240,8 @@ func load_system_data()->bool:
 		OPTIONS['textSpeed']['value']=int(OPTIONS['textSpeed']['value'])
 		if 'playerData' in dataToLoad:
 			playerData=dataToLoad['playerData']
+			if not ('completedChapters' in playerData):
+				playerData['completedChapters'] = [0]
 		save_game.close()
 		print("System save data loaded.")
 		return true
@@ -337,6 +365,13 @@ func _ready():
 			set_fullscreen(OPTIONS['isFullscreen']['value'])
 		else:
 			print("Fullscreen setting is ignored in debug.")
+			
+	#Resize completed chapters array
+	while playerData['completedChapters'].size() < chapterDatabase.size():
+		playerData['completedChapters'].append(0)
+	
+	for i in range(playerData['completedChapters'].size()):
+		playerData['completedChapters'][i] = int(playerData['completedChapters'][i])
 
 
 func _input(_event):
@@ -447,7 +482,7 @@ static func get_cutscene_path()->String:
 	return "res://Cutscene/Embedded/"
 
 var SCREENS:Dictionary = {
-	"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",
+	#"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",
 	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
 	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery_v2.tscn",
 	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTestV2.tscn",

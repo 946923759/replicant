@@ -13,6 +13,7 @@ Font Test		test_font,test_textPause
 Background Test		test_background
 Black background test		test_blackbg
 Video Test		final_round_test
+Vibrate Test		test_vibrate
 
 --Chapter 0
 Settle Down	Check out the base.	kyusyo0-1-1,kyusyo0-1-2
@@ -52,6 +53,13 @@ Writhing	Explore the abandoned car park.	kyusyo4-5-1
 Threat 1	Return to Hyperion.	kyusyo4-6-1,kyusyo4-6-2,kyusyo4-6-3
 Threat 2	Defend the Hyperion	kyusyo4-6-4,kyusyo4-6-5,kyusyo4-6-6
 Engaged	...?	kyusyo4-7-1,kyusyo4-7-2
+
+--Chapter 5
+Last Gasp	Deal with problems in Power Furnace and patrol Wild Area to remove nearby hazards.	kyusyo5-1-1,kyusyo5-1-2
+March	Take the bridge into Academy City	kyusyo5-2-1,kyusyo5-2-2
+Homecoming		kyusyo5-3-1
+Meet Again	Defeat the Honkai Beasts on the outskirts of Academy City	kyusyo5-4-1,kyusyo5-4-2
+Reunion	They meet again, but she's not smiling.	kyusyo5-5-1
 
 --Chapter 7
 Hope

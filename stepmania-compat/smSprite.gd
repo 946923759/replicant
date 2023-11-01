@@ -47,7 +47,7 @@ func loadVNBG(sprName:String):
 	for ext in [".png",".jpg"]:
 		if f.file_exists("res://Backgrounds/"+sprName+ext+".import"):
 			texture=load("res://Backgrounds/"+sprName+ext)
-			print(sprName+ext)
+			#print(sprName+ext)
 			return true
 	if OS.has_feature("standalone"):
 		

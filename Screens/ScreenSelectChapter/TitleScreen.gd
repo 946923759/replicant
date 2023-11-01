@@ -32,6 +32,7 @@ func _ready():
 		n.name=chapterName
 		n.set("custom_fonts/font",font)
 		n.set("mouse_filter",1)
+		n.set("use_parent_material",true)
 		n.mouse_default_cursor_shape=Control.CURSOR_POINTING_HAND
 		#n.margin_left=1000 #use VBOxContainer margin instead
 		#TODO: Translate these
@@ -39,6 +40,14 @@ func _ready():
 		#n.set_meta("chapterName",chapterName) #lmao
 		n.connect("gui_input",self,"handle_chapter_click",[chapterName])
 		c.add_child(n)
+	
+	var n = Label.new()
+	n.name="_"
+	n.set("custom_fonts/font",font)
+	n.set("mouse_filter",MOUSE_FILTER_IGNORE)
+	n.text=" "
+	c.add_child(n)
+	
 	print(biggestMissionNum)
 	for _i in range(biggestMissionNum):
 		var m = MSelObj.instance()
@@ -48,7 +57,8 @@ func _ready():
 		#m.connect("wtf",self,'test2')
 	biggestMissionNum=mSelObjs.get_child_count() #We're never adding any more so it's fine
 	
-	set_new_mission_listing(database.keys()[1])
+	#Has to be 2 because we hide idx 0...
+	set_new_mission_listing(database.keys()[1],2)
 	
 	#Only show by default if there is a controller plugged in
 	$DescrptionF.visible = Input.get_connected_joypads().size() > 0
@@ -62,7 +72,7 @@ func handle_chapter_click(event:InputEvent,internalName:String):
 				curChapterNum=i
 				break
 		#curChapterNum
-		set_new_mission_listing(internalName)
+		set_new_mission_listing(internalName,curChapterNum)
 
 onready var descKB = $DescrptionF/DescKB
 onready var descGP = $DescrptionF/DescGP
@@ -135,7 +145,7 @@ func _input(event):
 	
 	if tmpChNum!=curChapterNum:
 		curChapterNum=tmpChNum
-		set_new_mission_listing(chapterActorFrame.get_child(tmpChNum).name)
+		set_new_mission_listing(chapterActorFrame.get_child(tmpChNum).name,curChapterNum)
 
 		curMissionPartNumForGamepad=0
 		#Calculate mission num here, because some missions can have zero parts
@@ -150,30 +160,36 @@ func _input(event):
 				#if i < chLength:
 		
 
-func set_new_mission_listing(chapterName:String):
+func set_new_mission_listing(chapterName:String,chapterIndex:int):
 	for n in chapterActorFrame.get_children():
 		if n.name!=chapterName:
 			n.modulate=Color.slategray
 		else:
 			n.modulate=Color.white
 	
+	if !database.has(chapterName):
+		return
 	var chapter:Array = database[chapterName]
 	var chLength = chapter.size()
 	#print(chapter)
 	var t:Tween = $Tween
 	t.stop_all()
+	#print("IDX: ",chapterIndex)
+	#print("COMPLETED: ",Globals.playerData['completedChapters'][0] & 1<<0)
 	for i in range(biggestMissionNum):
 		var mSelObj = mSelObjs.get_child(i)
 		if i < chLength:
 			mSelObj.visible=true
-			mSelObj.setEpisode(chapter[i])
+			
+			var isCompleted = Globals.playerData['completedChapters'][chapterIndex-1] & 1<<i
+			mSelObj.setEpisode(chapter[i],isCompleted)
 #			mSelObj.title.text=chapter[i].title
 #			mSelObj.desc.text=chapter[i].desc
 #			mSelObj.setNumParts(chapter[i].parts)
 			#mSelObj.rect_position.x = i*500
 			mSelObj.modulate.a=0.0
-			t.interpolate_property(mSelObj,"rect_position:x",500,0,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.2)
-			t.interpolate_property(mSelObj,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.2)
+			t.interpolate_property(mSelObj,"rect_position:x",500,0,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.1)
+			t.interpolate_property(mSelObj,"modulate:a",0,1,.3,Tween.TRANS_QUAD,Tween.EASE_OUT,i*.1)
 		else:
 			mSelObj.visible=false
 	t.start()

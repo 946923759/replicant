@@ -53,6 +53,7 @@ shader_param/modulate = null
 [node name="ScreenGallery" instance=ExtResource( 3 )]
 script = ExtResource( 11 )
 PrevScreen = "ScreenTitleMenu"
+mute_music_in_debug = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="0"]
 script = ExtResource( 2 )

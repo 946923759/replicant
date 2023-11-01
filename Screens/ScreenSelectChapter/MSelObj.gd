@@ -14,7 +14,7 @@ func _ready():
 		buttons.get_child(i).connect("pressed",self,"buttonTrigger",[i])
 #	setNumParts2(["Test 1","Test 2","Test 3","test1.txt","test2.txt","test3.txt"])
 
-func setEpisode(episode:Globals.Episode):
+func setEpisode(episode:Globals.Episode,playerReadAlready:bool=false):
 	thisEpisode=episode
 	if INITrans.HasString("ChapterParts",episode.title):
 		title.text = INITrans.GetString("ChapterParts",episode.title,false)
@@ -31,6 +31,8 @@ func setEpisode(episode:Globals.Episode):
 	$LabelSub.visible=episode.isSub
 		
 	setNumParts(episode.parts)
+	
+	$Check.visible=playerReadAlready
 
 func setNumParts(partDestinations_:Array):
 	self.partDestinations=partDestinations_

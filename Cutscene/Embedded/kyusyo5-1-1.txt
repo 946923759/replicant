@@ -1,0 +1,162 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	101	201
+match_names	Kiana	Mei	_DIM_ALL_WHEN_EMPTY
+speaker	
+bg	007/006_1280x720
+msg	308216	Himeko…Himeko……	姬子老师…姬子老师……	姫子先生……姫子先生……。	NONE
+msg	308217	Himeko, wake up!	姬子别睡啦！	姫子、起きてっ！	NONE
+msg	308218	Umm ...... hmm?	唔……	うぅ……ん？	NONE
+portraits	101	201
+emote	101	0
+speaker	Kiana
+msg	308219	Seriously Himeko, didn't you say we were going to train in the afternoon? ....Well, if Mei hadn't insisted on dragging you out of bed, I could have skipped class! Oh well~!	真是的姬子，不是说下午训练的么？要不是芽衣坚持叫醒你我可光明正大的逃课了！	まったく姫子ったら、午後は訓練だって言ったでしょ！？……あっ、でもこのまま寝ててくれてたら、私も正々堂々と授業をサボれたのか！失敗したぁ～！	NONE
+speaker	Mei
+msg	308220	Is Ms. Himeko not feeling well? Do you want to take a break?	姬子老师是身体不舒服么，要不要去休息一下？	姫子先生、具合でも悪いのですか？今日は休みます？	NONE
+speaker	
+msg	308221	Kiana, Mei……	琪亚娜，芽衣……	キアナ、芽衣……。	NONE
+msg	308222	No, I'm fine. I was just zoning out a little.	不，我没事，只是稍微恍神了一下。	いえ、大丈夫よ。少しボーッとしてただけ。	NONE
+speaker	Kiana
+msg	308223	I bet you had too much to drink last night, didn't you? Or maybe you were rejected again?	一定是昨晚又喝多了吧？一定是又被人甩了~	きっと昨日の夜、飲みすぎたんでしょ？それか、またフラれたとか～？	NONE
+speaker	
+msg	308224	Shut up ...... you guys go to the training room first. I'll be there later.	要你管……你们先去训练室吧，我一会就来。	うるさいわよ……あなたたちは先にトレーニングルームに行きなさい。私はあとから行くから。	NONE
+speaker	Mei
+msg	308225	Ok, see you later Himeko~	嗯，姬子老师我们一会见~	はい、姫子先生。	NONE
+speaker	
+portraits	
+msg	308226	……	……	……。	NONE
+msg	308227	I can't believe I'm still dreaming about that scene even after all this time.	没想到隔了这么久还会梦到这样情景。	こんなに経ってるっていうのに、まだあの光景を夢に見るなんてね。	NONE
+msg	308228	Seems like I'm getting old……	看来我真的老了呢……	私も、歳を取っちゃったわね……。	NONE
+bg	009/059_1280x720
+msg	306996	Kara! Kara!	咔拉！咔拉！	ガラン！ガラン！	NONE
+speaker	Yssring
+portraits	54
+emote	54	1
+msg	306997	No…it's completely broken, it doesn't work.	不行了…动力装置已经完全损坏了，用应急零件修修补补的方法看来已经行不通了。	ダメね……動力装置が完全に壊れてるわ。応急処置で間に合うレベルじゃない。	NONE
+emote	54	4
+msg	306998	Even we come back to ME Co., Ltd, it's impossile to build a new nuclear furnace, is it the end……	就算是回到了ME社，想要重新制造出一台动力炉也是不可能的事情了，一切都到此为止了么……	ME社に戻ったとしても、新しい動力炉を作るなんて不可能だし、何もかもここで終わりなのかな……。	NONE
+msg	306999	Bronya, Seele and Himeko……only us…I don't how much time we can hold on.	布洛妮娅，希儿还有姬子…能够坚持的人已经所剩无几了啊…不知道还能撑到什么时候。	ブローニャ、ゼーレ、それに姫子……戦える人ももうほとんど残っていない……これじゃあ、いつまで持ちこたえられるか……。	NONE
+portraits	54
+emote	54	3
+msg	307000	We can just make a bet now…if we find that ship we probably……	事到如今只能赌一下看看了…如果能够找到那艘船的话说不定还能……	こうなったら賭けてみるしかないわね……あの艦を見つけられれば、もしかしたらまだ……！	NONE
+speaker	
+msg	307001	「Attention, attention, everyone come to the trestle.」	「全舰通告，全舰通告，请全员即刻到舰桥集合。」	「全乗員に告ぐ、全乗員に告ぐ、ただちに艦橋に集合せよ。」	NONE
+speaker	Yssring
+emote	54	1
+msg	307002	Looks like Himeko has woken up. She really is a restless woman. But ...... I hope this buys her a little more time.	看样子是姬子醒了，真是个不消停的女人。也好…至少这样还能再拖延一点时间。	どうやら、姫子の目が覚めたようね。本当に気の休まらない女なんだから。でも……これでもう少し時間が稼げるかしら。	NONE
+speaker	Emesa
+bg	009/060_1280x720
+portraits	55	61
+emote	55	4
+msg	307003	Hey! Himeko! You still have to rest!	喂！姬子！你现在还不能起来！	おいっ！姫子！まだ寝てなきゃダメだ！	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	4
+emote	61	1
+msg	307004	I don't have time to lounge around in a hospital bed!	我可没时间悠闲地躺在病床上！	ベッドでのんびり休んでる暇なんてないのよ！私にはね！	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	4
+emote	61	1
+msg	307005	Your body is already very weak! If you keep pushing yourself, it won't end with you just passing out!	你的身体已经很虚弱了！要是再勉强下去就不是晕倒那么简单了！	あんたの身体はかなり衰弱してる！これ以上無理したら、気絶だけじゃ済まないぞ！	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	4
+emote	61	2
+msg	307006	Shut up! You don't have to tell me, I know my own body better than anyone else!	少啰嗦！我自己的身体我自己清楚！	うるさいっ！言われなくとも、自分の身体は自分が一番よく分かってるわよ！	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	4
+emote	61	2
+msg	307007	Then are you intending on dying?!	你就这么想死么！	くそっ、そんなに早く死にたいのかよ！？	NONE
+speaker	Yssring
+portraits	55	61	54
+emote	55	4
+emote	54	1
+msg	307008	We're not coming to see your quarrel…I'm quite busy, can I go first?	集合就是来看你们吵架的么…我可是很忙的，可以先走么？	呼び出されたのは、あなたたちの喧嘩を見るためなの……？私、忙しいんだけど、もう行ってもいいかな？	NONE
+speaker	Emesa
+emote	55	4
+emote	54	1
+msg	307009	Shut up!	你给我闭嘴！	うっさい！！	NONE
+speaker	Yssring
+emote	55	4
+emote	54	5
+msg	307010	Coo!	咕！	うぐっ！	NONE
+speaker	Himeko
+emote	61	1
+emote	54	5
+msg	307011	Fine, alright…Sorry, I make everyone worried because of my health condition, now we need to align the next steps, I know you're all very panic.	好了，言归正传…抱歉，因为我的身体原因让大家担心了，这次集合是希望和各位商议后面的对策，我知道各位一定十分不安。	いいわ、本題に入りましょう……。まず、私のせいで心配をかけさせたことを謝るわ、ごめんなさい。集まってもらったのは、これからの対策を皆と話し合いたいからよ。皆、とても不安でしょ？	NONE
+msg	307012	Yes, even we returned successfully, but doesn't mean that we're out of danger, so far Herrschers attack us for several times, apparently they want to kill the rest of human beings.	没错，虽然我们成功返回了ME社，但是这并不意味着我们脱离了危险，目前律者已经多次对我们进行了攻击，对方的意图很明显就是要消灭残存的人类。	私たちは、確かにME社から戻ることに成功した。けれど、危機的状況から脱したわけじゃない。現在、律者は幾度となく私たちに攻撃を仕掛けてきているわ。十中八九、向こうの目的は生き残った人間の抹消でしょうね。	NONE
+portraits	61	54
+emote	61	2
+emote	54	5
+msg	307013	So wherever we are, we have no choice, but to fight.	所以不管我们到何处都无济于事，现在我们已经别无选择，只有和律者殊死一战一条道路。	だから、私たちはどこに行こうと無駄なのよ。今の私たちに選択の余地はないわ。律者に対し、決死の戦いを挑むしかないの。	NONE
+speaker	Teammate
+portraits	61	56
+emote	61	2
+emote	56	0
+msg	307014	How can we defeat that kind of monsters……	怎么可能战胜那种怪物……	あ、あんな怪物にどうやって勝つの……。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	2
+emote	66	0
+msg	307015	With our current power……	以我们现在的力量的确……	私たちの今の力では、どう足掻いたって……。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307016	I know we're all very lost. Right, we have no chance to win…but however hopeless! We need to fight until the end!	我知道大家都很迷茫。没错，我们在律者面前根本就没有胜算…但是就算再怎么害怕也好就算毫无希望也罢！我们都要战斗到最后！	皆が戸惑うのは分かるわ。そうよ、律者相手に私たちの勝算は皆無に等しい……でも、これ以上恐怖に身を震わせ希望を失ったとしても、私たちは最後まで戦うしかないのよ！	NONE
+speaker	Teammate
+portraits	61	56
+emote	61	1
+emote	56	0
+msg	307017	That equals to suicide!	意思是让我们送死么！	それって、私たち全員に死ねってことですか！？	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307018	Even Himeko doesn't think we can win, then we……	连姬子队长也觉得赢不了么，那我们……	姫子隊長ですら勝てないと思うのに、私たちなんかじゃ到底……。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	5
+emote	66	0
+msg	307019	……	……	……。	NONE
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307020	Sorry, I'm just too anxious, I will further think about it……Let's end here.	抱歉，是我太着急了，我会再考虑一下对策的……大家先解散吧。	ごめんなさい。焦りすぎたわね。もう少し考えるわ……ひとまず解散。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307021	Himeko……	姬子……	姫子……。	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307022	I have no words to say if everyone is in such a state…people who lose their desire to win would only commit suicide during the fight, the most important thing is……	以现在大家的状态说再多的话都无济于事了…失去战斗意志的人走上战场也只是白白送死而已，现在最重要的是……	今の状態じゃ、これ以上何を言っても無駄よ。戦意を失った人間が戦場に立っても、むざむざ死にに行くようなもの……今、一番重要なのは——	NONE
+portraits	61	55
+emote	61	5
+emote	55	1
+msg	307023	Eh!	咳咳！	ゴホッ、ゴホッ……！	NONE
+portraits	61	55
+emote	61	2
+emote	55	1
+msg	307024	Damn! Only if I can hold on for longer time……	可恶！如果我能再多撑一会就好了……	クソッ！私の身体がもっと持てば……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307025	Enough! Why do this to yourself!	已经够了！为什么总是要把自己逼到这种境地呢？	もう十分だっ！どうして、いつもそうやって自分を追い込むんだよ！	NONE
+msg	307026	Can't we just rest well here! Anyway we can do nothing now! At least we can have a peaceful life in the end! To end our life together!	大家就这样安静地在这里修养不就好了吗！反正现在什么也做不到！至少在最后的时间里面能够平静的度过不好么！就算是死也能死在一起啊！	もうここで休んでいいじゃないか！どうせ何もできやしないんだろ！？残された最後の時ぐらい、静かに過ごそう！死ぬにしても、それなら皆一緒だ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	5
+emote	55	4
+msg	307027	You're right…It would be more than happy if we know how to give up from the beginning……	你说的对…如果能懂得放弃的话那该有多么幸福……	あなたの言う通りね……諦めることができれば、どれだけ幸せなことか……。	NONE
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307028	But if so, we should never start it, everyone just accept the destiny peacefully, there's no need to struggle.	如果是这样的话，从一开始逐火之蛾就不应该存在，大家都平静地接受毁灭的命运就行了，也不需要这样痛苦挣扎着生存了。	こんなことなら、最初から火を追う蛾なんて存在すべきじゃなかったのよ。全員が、ただ静かに滅びゆく運命を受け入れればよかったの。そうすれば、こんなに苦しんで、もがきながら生に執着することもなかった。	NONE
+msg	307029	But, Emesa…we're fighting until now for this non-existing hope, maybe we all know we can't win, but because we fight together, we have more motivation to go ahead, the only extinction is we losing the reason for life……	但是，埃米沙…我们战斗到现在就是为了争取这本不存在的希望，也许我们心里都明白这是无法胜利的战斗，但是正因为一起奋斗，才会有前进的动力，如果失去了生存的理由那才是真正的毁灭……	でもね、エミザ……私たちがこれまで戦ってきたのは、本来なら存在しえなかった希望を勝ち取るためなの。勝てない戦いだと分かっていても飽きらめちゃダメ。そしたら、何もかもが終わる。本当の破滅よ……。	NONE
+msg	307030	So I'll never sit here doing nothing! If I have to die, I rather die in the battlefield!	所以我是绝对不会接受这样坐以待毙的结果！如果一定要死，我宁愿死在战场上！	だから、私はこのまま何もせず死を待つなんてこと、絶対に受け入れられないわ！もし死ぬとしても、戦場で死ぬ！	NONE
+msg	307031	Even if it's only me……	即使只有我一个人也罢……	たとえ、それが私1人だけだったとしても構わない……。	NONE

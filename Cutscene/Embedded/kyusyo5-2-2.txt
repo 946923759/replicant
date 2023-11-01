@@ -1,0 +1,85 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Emesa
+bg	009/013_1280x720
+portraits	55
+emote	55	4
+msg	307106	Idiot! Supid! OO Himeko! I was so kind! Damn!	笨蛋！白痴！姬子那个OO！好心当成驴肝肺！去死吧！	バカっ！アホっ！年増ッ！！せっかくの好意を台無しにしやがって！死んじゃえばいいのに！	NONE
+choice	308187	It's long time since I heard Emesa say four letter words.	エミザの暴言を聞くのも久しぶり。	NONE	NONE
+choice	308202	Himeko is worried about your safety.	姫子もあなたの安全を考えてる。	NONE	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	307107	Even you! Don't think I don't dare yell at you!	你也要惹我是不是！别以为我不敢骂你！	九霄まで私を怒らせるつもりか！？九霄だろうと容赦なく怒鳴りつけるからな、私は！	NONE
+jmp	end_choices
+
+label	c2dest
+msg	307108	For my sake? Then you should lie on the bed!	为我着想？为我着想就好好在床上躺着！	私のことを考えているだって？なら、横になって休めってんだ！	NONE
+label	end_choices
+
+msg	307109	I had it enough recently!Everyone is so self-centric! What the hell! Who take care of my mood as a doctor! A group of OO!	最近接二连三的事情早就积了一肚子火了！每个人都那么自我中心！赶着投胎啊！有谁考虑我这个医疗员的心情了！一群臭OO！	最近、次から次に色んなことが起きて、もう我慢の限界なんだ！どいつもこいつも自己中ばっか！さっさと死んじゃえばいいんだ！誰も衛生兵の気持ちなんて分からないんだろ！？全員、×××にでもなって×××ちまえ！	NONE
+msg	307110	Huh! Huh! I'm so pissed off!	呼！呼！气死我了！	フー！フー！イライラする！	NONE
+portraits	55
+emote	55	1
+msg	307111	Huh! Much better……	呼！舒服了……	フー……あー、スッキリした。	NONE
+msg	307112	Are you done? Go! Go abck!	炸药都装完了吧？走！回去！	爆薬は仕掛け終わったか？よし、橋の下に行こう！	NONE
+speaker	
+bg	011/012_1280x720
+msg	307113	……	……	……。	NONE
+extend	307114	……	……	…………。	NONE
+speaker	Emesa
+portraits	55
+emote	55	1
+msg	307115	It's been 20 minutes, where's Himeko?	已经过了20分钟了，姬子怎么还没回来？	もう20分は経ったはず。姫子のヤツ、どうして来ないんだ？	NONE
+portraits	55
+emote	55	4
+msg	307116	Things might go wrong…No! We need to find her!	难道是出事了…不行！我们去找她！	まさか、何かあったんじゃ……くそっ！探しに行くぞ！	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	4
+emote	61	1
+msg	307117	Calm down, you guys were too slow, so I went to see the situation of the bridge.	不要总是一惊一乍的，是你们两个的速度太慢了，所以我刚才去调查了一下大桥附近的情况。	そんなすぐ慌てないでくれる？あなたたちがあまりにも遅いから、周囲の様子を見て来てたのよ。	NONE
+msg	307118	Later when it's exploded we need to find a place to hide near the bridge, there's a good place in the pier, can be a good option, follow me.	一会炸药引爆的时候我们需要找一个靠近大桥的地方隐蔽，在桥墩的位置有一块可以立足的地方，是个不错的选择，跟我来吧。	爆薬の起動後、すぐ動けるよう近くに隠れる必要があるわ。橋脚の辺りに丁度いい足場があったから、そこに隠れましょう。ついて来てちょうだい。	NONE
+speaker	
+portraits	61
+emote	61	1
+msg	307119	……	……	……。	NONE
+msg	307120	……	……	…………。	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	307121	Ok, it starts. Be careful, don't expose yourself to Honkai creatures.	好了，开始引爆。你们蹲下身子注意隐蔽，不要被崩坏生物发现。	よし、爆発させるわよ。身を低くして隠れてちょうだい。崩壊生物に見つからないようにね。	NONE
+msg	307122	3, 2, 1!	3、2、1！	3、2、1！	NONE
+speaker	
+portraits	61
+emote	61	1
+se	DLC_CH00_EV04_ExplosionClose
+msg	307123	Boom!!!!!	轰隆！！！！！	ドォオオオオン！！！！！	NONE
+se	DLC_CH00_EV13_MosterRoar
+msg	307124	Growl!!!!	吼吼吼！！！！	グル……ウォオオオンッ！！！	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	307125	Woo…so many! I kind of understand Etherine now……	呜…这么多！稍微有点理解伊瑟琳害怕的心情了……	ゲッ……こんなにたくさん！イザーリンがビビる気持ちも少し分かるな……。	NONE
+speaker	Himeko
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	307126	Shut up!	别说话！	シッ、声を出さないで。	NONE
+speaker	
+portraits	61
+emote	61	1
+msg	307127	Growl!!!!!	吼吼吼！！！！！	フシュー、グォオオオ！！！	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	307128	Boom!!!	轰隆隆隆！！！	ドンッ、ドンッドンッ！！！	NONE
+se	DLC_CH00_EV11_MosterRoar
+msg	307129	Growl……	吼吼吼……	グルル……。	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	307130	Now there're less of them, let's go.	崩坏生物的数量减少了，我们走。	崩壊生物が一か所に固まったわ。行くわよっ！	NONE
+speaker	Emesa
+portraits	55	61
+emote	55	1
+emote	61	1
+msg	307131	Ok…ok!	好…好！	あ……ああっ！	NONE

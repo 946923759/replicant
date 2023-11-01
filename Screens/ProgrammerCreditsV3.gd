@@ -6,7 +6,10 @@ onready var t:Tween = $Tween
 
 func _ready():
 	$smSound.load_song("Negai")
-	$Pages/Page2.rect_position.x=get_viewport().get_visible_rect().size.x
+	
+	var s = get_viewport().get_visible_rect().size.x
+	$Pages/Page2.rect_position.x=s
+	$Pages/Page3.rect_position.x=s*2
 
 
 func _on_OKButton_gui_input(event):
@@ -23,7 +26,7 @@ func _input(_event):
 		set_page(curPage-1)
 	elif Input.is_action_just_pressed("ui_pause"):
 		if curPage==1:
-			_on_HoyostansButton_pressed()
+			_on_FoxgirlButton_pressed()
 		elif curPage==2:
 			_on_FoxgirlButton_pressed()
 
@@ -31,6 +34,7 @@ func set_page(i:int):
 	var s = get_viewport().get_visible_rect().size.x
 	$Pages/Page2.rect_position.x=s
 	$Pages/Page3.rect_position.x=s*2
+	
 	#print(i*s)
 	if i==0:
 		t.interpolate_property($LeftArrow,"rect_position:x",null,$LeftArrow.rect_size.x*-1,.2,Tween.TRANS_CUBIC,Tween.EASE_OUT)
@@ -44,6 +48,11 @@ func set_page(i:int):
 	
 	
 	t.interpolate_property($Pages,"rect_position:x",null,i*s*-1,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	
+	var bg = $TextureRect
+	var rect_lim = float(i)/float(NUM_PAGES)*(s-bg.rect_size.x)
+	#print(rect_lim)
+	t.interpolate_property($TextureRect,"rect_position:x",null,rect_lim,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
 	t.start()
 	curPage=i
 		

@@ -1,0 +1,3 @@
+msg	Vibrate controller for 1 second.
+vibrate	1
+msg	...........

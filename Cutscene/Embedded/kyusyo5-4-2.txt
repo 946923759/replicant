@@ -1,0 +1,274 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	009/064_1280x720
+se	DLC_CH00_EV13_MosterRoar
+msg	307204	Ho ho ho!!!	吼吼吼！！！	ウォオオオオッ！！！	NONE
+speaker	Himeko
+portraits	61
+emote	61	1
+msg	307205	Go to hell!	去死吧！	くたばれッ！	NONE
+speaker	
+portraits	61
+emote	61	1
+se	DLC_CH03_EV03_SwordsHit
+msg	307206	Bang!	砰！	バン——ッ！	NONE
+speaker	Himeko
+portraits	61
+emote	61	2
+msg	307207	Huh…these monsters are much difficult than those in Nagazora…get her back!	呼…这里的怪物比长空市的棘手太多了…快把九霄叫回来！	ふぅ……ここのヤツら、長空市のよりだいぶ手ごわいわね……急いで九霄を連れ戻さないと！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307208	Himeko! How are you! Any injuries?	姬子！你怎么样！受伤了么？	姫子っ！大丈夫か！？ケガは？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307209	I'm ok…where's Kyushou?	别管我…九霄呢？	私に構う必要はないわ……それより九霄は？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307210	She's ffine, hey! Why you are OO runing!	九霄她没事，喂！你OO瞎跑什么！	九霄ならきっと大丈夫だろ……くそっ！あいつ、どこほっつき歩いてんだ！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307211	She must has some impression…what a weird girl, always do weird things.	她一定是对这里有印象…真是个奇怪的家伙，每次都做出一些反常的举动。	彼女には、きっとここの記憶があるのよ……本当、変わったヤツね。いつもおかしな行動をとるんだから。	NONE
+speaker	
+portraits	61
+emote	61	1
+se	DLC_CH03_EV01_GunAndExplosion
+msg	307212	Rat rat rat!!	哒哒哒！！	ダダダ——ッ！！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307213	This voice is!	这个声音是！	この音は！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307214	It's Bronya's gun, she's near!	是布洛妮娅的枪声，她就在附近！	ブローニャの銃声！？近くにいるはずよ！	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307215	Does she met the Herrscher!?	难道是已经遇到律者了！？	おいおい、まさかもう律者と遭遇したのか！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307216	No…not Herrscher, maybe she's fighting against Honkai creatures, anyway let's go!	不…不是律者，也许是在和崩坏生物战斗，不管怎么样我们先赶过去！	いや……律者じゃないわ。おそらく崩壊生物と戦っているのよ。とにかく、急いで行ってみましょう！	NONE
+speaker	
+portraits	55
+emote	55	4
+se	DLC_CH03_EV01_GunAndExplosion
+msg	307217	Rat rat rat!	哒哒哒！	ダン——ッ！	NONE
+msg	307218	……	……	……。	NONE
+se	DLC_CH03_EV03_SwordsHit
+msg	307219	Bang!	砰！	カァンッ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307220	There!	在那里！	あそこね！	NONE
+speaker	
+portraits	55
+emote	55	4
+se	DLC_CH03_EV01_GunAndExplosion
+msg	307221	Rat rat rat!	哒哒哒！	ダダダッ！	NONE
+speaker	Bronya
+portraits	60
+emote	60	7
+msg	307222	Get away!	让开！	どくのですッ！	NONE
+msg	307223	I must kill the Herrscher!	我一定要杀掉律者！	ブローニャは、何としてでも律者を殺します！	NONE
+speaker	Emesa
+portraits	55
+emote	55	4
+msg	307224	Bronya! That one is…human?	布洛妮娅！和她战斗的那个是…人类？	ブローニャ！……なっ、戦ってる相手は人間か？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307225	……	……	……。	NONE
+msg	307226	Why you're here……	为什么你在这里……	どうして、あなたがここに……。	NONE
+msg	307227	Theresa.	德丽莎。	テレサ。	NONE
+speaker	Bronya
+portraits	61	60
+emote	61	2
+emote	60	7
+msg	307228	Ha!!	哈！！	ハアッ！！	NONE
+speaker	
+portraits	60
+emote	60	7
+se	DLC_CH03_EV03_SwordsHit
+msg	307229	Bang!	砰！	ガキィン——ッ！！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307230	……	……	……。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307231	Get out of my way!	给我让开！	どいてください！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307232	Bronya.... Are you blinded by anger?	布洛妮娅…你也被愤怒扭曲了内心么。	ブローニャ……あなたも怒りで心を捻じ曲げられてしまったの？	NONE
+msg	307233	I won't let you fight with Kiana. There's no good outcome.	我是不会让你和琪亚娜战斗的，这样的争斗是没有结果的。	あたくしは、あなたとキアナを戦わせたりしないわ。こんな戦い……何も生みはしないもの。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307234	You chose to run away that time... You have no right to say anything about me. I can't change your mind, but if you're on the side of the Herrscher, you're my enemy!	当初是你选择了逃避…你想怎么样我无法干涉，但是如果你站在律者那边的话就是我的敌人！	あの時、あなたは逃げることを選択しました……あなたにブローニャをどうこう言う資格はありません。ですが、あなたが律者の側に立つのであれば、ブローニャの敵です！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307235	I don't care. No matter what, I won't let you kill each other. Otherwise it will repeat the previous tragedy.	随你怎么想，无论如何我都不会让你们再自相残杀，不然只会重复那个时候的悲剧。	あなたがどう思おうと勝手だわ。でも、あたくしは何があってもあなたたちに殺し合いをさせたりはしない。そうじゃないと、あの時の悲劇をまた繰り返すだけですもの。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307236	Then you can sit back and watch humanity perish!	那你就继续眼睁睁地看着人类灭亡吧！	それなら、あなたはただ黙々と人類が滅亡する瞬間を見ていればいいのです！	NONE
+speaker	
+portraits	60
+emote	60	7
+se	DLC_CH03_EV01_GunAndExplosion
+msg	307237	Rat rat rat!	砰砰砰！	ダダダッ……ガンッ、カァン——ッ！	NONE
+speaker	Emesa
+portraits	55
+emote	55	4
+msg	307238	Woah! What do we do?! Should we be helping her?	呃！怎么办！我们要去帮忙么？	おい、どうする！？加勢した方がいいのか？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307239	This is their problem... I don't want to intervene, but if they keep fighting, it's going to attract all the surrounding Honkai Beasts and it's going to get nasty.	这是她们自己的问题…虽然不想插手，但这么打下去周围的崩坏生物被吸引过来的话对我们也没好处。	これは彼女たちの問題よ……手出しは不要、と言いたいところだけど、このまま戦い続けたら周囲の崩壊生物を引き寄せて厄介なことになるわ。	NONE
+portraits	61	55
+emote	61	2
+emote	55	4
+msg	307240	Hmph. They're a real nuisance.	啧！真是些麻烦的家伙。	まったく！本当に迷惑なヤツなんだから。	NONE
+speaker	
+portraits	55
+emote	55	4
+se	DLC_CH03_EV01_GunAndExplosion
+msg	307241	Rat rat rat!	哒哒哒！	ダンッ——！！	NONE
+speaker	Theresa
+portraits	62	55
+emote	62	1
+emote	55	4
+msg	307242	You'll have to step over my corpse if you want to see Kiana.	想要见到琪亚娜就从我的尸体上跨过去。	キアナに会いたいのなら、あたくしの屍を越えて行きなさい。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307243	As you wish!	那就成全你！	お望みどおりに！	NONE
+speaker	
+portraits	60
+emote	60	7
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+msg	307244	Bang!	砰！	ガキィン——ッ！！	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	7
+msg	307245	Would you like to stop now, or should I join in?	你们是要现在停手，还是来一场三方混战呢？	あなたたち、今すぐ戦うのを止めるか、三者入り乱れて戦うか、どっちがいい？	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307246	Himeko!?	姬子！？	姫子！？	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	7
+msg	307247	Why…I just want to revenge for Seele…why you all stop me!	为什么…我只是想为希儿报仇…为什么你们一个个都要妨碍我！	なぜ、なのですか……ブローニャはただゼーレの仇を討ちたいだけなのです……どうしてあなたたちは、次から次へとブローニャの邪魔をするのですかッ！？	NONE
+speaker	
+portraits	60
+emote	60	7
+msg	307248	Pa!	啪！	パシンッ！	NONE
+speaker	Bronya
+portraits	60
+emote	60	5
+msg	307249	Eh!	呃！	——うっ！	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	2
+emote	60	5
+msg	307250	Bronya, revenge and suicide are two different things. If you want to die in vain, I won't stop you. But our deaths were supposed to have meaning. Don't you remember the reason you started the Fire Moths?	布洛妮娅，报仇和送死是两回事。如果你要送死我不拦着你，但是我们得死必须有意义，你忘了逐火之蛾成立的初衷了么？	ブローニャ、復讐と無駄死には違うのよ。無駄死にしたいのなら止めないわ。だけど、私たちの死には意味がなくてはダメよ。火を追う蛾を設立した時の決意を忘れたの？	NONE
+portraits	61	60
+emote	61	1
+emote	60	5
+msg	307251	Even if they burn to ashes, they die on the path in pursuit of the light.	就算是化为灰烬，也要死在追逐光芒的道路上。	たとえ灰燼に帰しても、光を追い求める道で死ぬ。	NONE
+speaker	Bronya
+portraits	61	60
+emote	61	1
+emote	60	5
+msg	307252	……	……	……。	NONE
+portraits	61	60
+emote	61	1
+emote	60	4
+msg	307253	It's too late... My light has long since extinguished.	已经太晚了…属于我的光芒已经熄灭了。	ダメです、もう手遅れです……ブローニャの光は、とうに消えてしまいました。	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	4
+msg	307254	Bronya...... Do you fight the Herrschers seeking your own death? Do you think that if you die, you'll be able to see Seele again? ...You're wrong! Seele wouldn't want to see you like this!	布洛妮娅…你想要与律者战斗就是为了寻死么，你以为死掉之后就能回到希儿的身边么，那你就大错特错了！希儿根本不想看到你现在的样子！	ブローニャ……あなたが律者と戦うのは死ぬためなの？あなたが死んだら、ゼーレのもとに帰れるとでも思っているの？……違う、そんなの大間違いよ！ゼーレは、今のあなたみたいな姿を見たいなんて思わない！	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	5
+msg	307255	...Hmph! I'm not wrong! You don't understand anything!	你根本什么都不明白！	……っ！ブローニャは間違っていません！あなたは何も分かっていないのです！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	5
+msg	307256	I know that when...... Seele laid down her life for you, there was not an ounce of hesitation on her face. She only wanted you to survive. That was her only wish! You're the one that doesn't understand!	我当然明白…希儿为了你抛弃生命时她的脸上没有一丝的犹豫，她只是希望你能活下去，这是她唯一的愿望！不明白的是你自己！	あたくしには分かるわ……ゼーレがあなたのために命を捨てた時、その顔に一寸の躊躇いもなかった。彼女はあなたが生き延びることを願っていただけなのよ。それが彼女の唯一の願いなの！分かっていないのはあなたよ！	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	5
+msg	307257	So what if it was?! Seele is already...	那又怎么样！希儿已经……	それがどうしたのですか！ゼーレはもう……。	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	5
+msg	307258	Hold on... Theresa, you were there when Seele died?	德丽莎，你刚才的意思是…希儿死的时候你在她的身边么？	今の話……ゼーレが死んだ時、あなたは彼女の傍にいたってこと？	NONE
+speaker	Bronya
+portraits	61	60
+emote	61	1
+emote	60	6
+msg	307259	……!?	……！？	……！？	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	6
+msg	307260	Yes……	是的……	そうよ……。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	5
+msg	307261	Then why didn't you save her!!	那你为什么不救她！！	それなら、どうしてゼーレを助けなかったのですか！！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	5
+msg	307262	I did....	我救了……	助けたわよ……。	NONE
+msg	307263	She's still alive.	她还没有死。	彼女は死んでないわ。	NONE
+speaker	Bronya
+portraits	62	60
+emote	62	1
+emote	60	6
+msg	307264	What are you…saying……	你说…什么……	なっ……。	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	6
+msg	307265	Seele...	希儿……	ゼーレは——	NONE
+msg	307266	She's alive.	还活着。	生きてる。	NONE

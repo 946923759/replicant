@@ -1,0 +1,242 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Graymoth Member
+bg	009/004_1280x720
+portraits	66
+emote	66	0
+se	DLC_CH01_EV14_WindWooshA
+msg	307032	Madam, we've finish the patrol around ME.	报告，ME社周围已经巡逻完毕。	報告します、ME社周辺の見回りが完了しました。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307033	Ok.	好的。	ご苦労様。	NONE
+msg	307034	Go back first, I will do the rest.	你们先回去吧，剩下的我来好了。	あなたたちは先に戻っていいわ。あとは私がやるから。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307035	But your are still……	可是姬子队长你的身体……	しかし、姫子隊長のお身体は……。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307036	I'm fine, listen to me, go back.	已经没有大碍了，服从命令，回去吧。	問題ないわ。命令よ、帰りなさい。	NONE
+speaker	Graymoth Member
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307037	Yes……	是……	はい……。	NONE
+speaker	Himeko
+portraits	61	66
+emote	61	5
+emote	66	0
+msg	307038	……	……	……。	NONE
+msg	307039	Emesa's right, at least live a peaceful life in the end……	埃米沙说得对，至少在最后的这段时间里平静地生活吧……	最後の時くらい静かに過ごすか……こればかりはエミザの言う通りかもね。	NONE
+portraits	61	66
+emote	61	1
+emote	66	0
+msg	307040	Let me finish all these…bye.	剩下的就由我一个人来了断…再见了。	あとは私1人で片付ける……皆、さようなら。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307041	Where are you going?	你要去哪。	どこに行く気だ？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307042	!?	！？	——っ！？	NONE
+msg	307043	You……	你们怎么……	あなたたち、どうして……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307044	I'm clear of your thinking, everytime you always take the action on you own…do you want to leave us behind like Bronya?	你那点想法我还不清楚么，每次都是这样独断独行…你也想和布洛妮娅一样抛下大家么？	はぁ、あんたの頭の中はどうなってんだ？いつもこうやって独断専行して……ブローニャみたいに、全員見捨てる気か？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307045	This is my own will... I'm going to the "place where it all began" like the Herrscher said. That's the best place for me to end up.	这是我自己的意愿，你们没必要和我一起送死…就如律者所说，在一切开始的地方结束，这对于我来说是最好的归宿。	これは私自身の意志よ……律者の言っていた「全てが始まった場所」へ私は行くわ。そこが私にとって最高の終着点なのよ。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307046	The least two things you do as a researcher are impulsive and emotional, so I don't agree with you.	对于科研人员而言最忌讳的事情就是冲动和意气用事，所以我还是不赞成你的做法。	科学者にとって最も忌むべきことは、衝動と感情で物事を進めることよ。だから、私はあなたのやり方に賛成できないわ。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	2
+emote	54	1
+msg	307047	Are you trying to take me back? I've told you, this is my own……	你们是来劝我回去的么？我已经说过了，这是我自己的……	あなたたち、私を説得しに来たの？言ったでしょう、これは私の……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	2
+emote	55	1
+msg	307048	No, we're coming along.	不，我们也要一起去。	いや、そうじゃない。一緒に行くって言ってんだ。	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307049	What?	什么？	何ですって？	NONE
+choice	308186	It's our choice to fight with you.	あなたと一緒に戦うことは自分の意志でもある。	NONE	NONE
+choice	308201	I have my reason for fight.	私にも戦う理由がある。	NONE	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Himeko
+bg	009/004_1280x720
+portraits	61
+emote	61	1
+msg	307050	……	……	……。	NONE
+msg	307051	Hey, do you understand what I'm saying? The only thing that awaits you is death. Are you ready for that?	你这家伙也怎么也开始油嘴滑舌起来了，再往前走就是死路一条，你有这样的觉悟么？	ねぇ、何を言ってるのか理解してる？この先には死しか待っていないのよ？その覚悟はあるの？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307052	All of us have been ready for death for a long time.	这样的觉悟不早就是家常便饭了么？	そんな覚悟、とっくの昔にできてる。	NONE
+portraits	61	55
+emote	61	1
+emote	55	2
+msg	307053	I don't want to give up after so many desperate fights, with the reason of existence, I still want to give a try.	我可不想让多少次殊死战斗后好不容易保住的性命就这样放弃掉，拼上自己存在的理由，就算没有希望也要试试。	何度も死線をくぐり抜けて守ってきた命だ、ただこのまま呆然と待つだけで終わらせたくないんだよ。自分の存在理由が有耶無耶にならないよう、望みがなくとも挑みたい。そう思えたんだ。	NONE
+jmp	end_choices
+label	c2dest
+speaker	Himeko
+bg	009/004_1280x720
+portraits	61
+emote	61	1
+msg	307054	Do you want to find your memory back?	想要找回自己记忆么？	自分の記憶を取り戻したいの？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307055	More than that, I don't want to give up after so many desperate fights, with the reason of existence, I still want to give a try.	不仅是九霄的记忆…我可不想让多少次殊死战斗后好不容易保住的性命就这样放弃掉，拼上自己存在的理由，就算没有希望也要试试。	九霄の記憶だけじゃない……何度も死線をくぐり抜けて守ってきた命だ、このまま呆然と待つだけで終わらせたくないんだよ。自分の存在理由が有耶無耶にならないよう、望みがなくとも戦い続けたい。そう思えたんだ。	NONE
+label	end_choices
+speaker	Yssring
+bg	009/004_1280x720
+portraits	54
+emote	54	1
+msg	307056	So means you won't be convinced until you see the reality?	也就是俗话说的“不见棺材不掉泪”么？	要するに、徹底的に敗北するまで諦めないってことね……。	NONE
+speaker	Emesa
+portraits	55
+emote	55	4
+msg	307057	Can't you say something nice!	你就不能说点吉利的话么！	おい、もう少し縁起の良い言い方できないのかよ！？	NONE
+speaker	Yssring
+portraits	54
+emote	54	5
+msg	307058	Aww……sorry!	疼疼疼……我错了！	イタタ……やめて、謝るから！	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	307059	Huh…whatever.	哼…随便你们。	フンッ……勝手になさい。	NONE
+msg	307060	What a bunch of idiots. If there's any danger, I'm leaving you all behind. You'd just get in the way. Follow me if you're that eager to die.	真是一群蠢货，要是遇到什么危险我可是会丢下你们这些累赘的，要是求死心切的话就跟来吧。	本当にバカばっかりなんだから。足手まといだと判断したら、あなたたちのことは捨てていくわよ。死ぬ気で付いてきなさい。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307061	Duplicity……don't worry, you are going to Academic City? I can help then, at least I used to study there, I know there better than anyone else.	真是口是心非的家伙……放心吧，你是要去学园都市吧？那我就能帮上你的忙，怎么说我曾经也是那里的学生，没有人比我更熟悉那里。	まったく口の悪いヤツだな……安心しろ、学園都市に行くんだろ？それなら私も役に立てる。何たって、あそこで私も学んでたからな。今生きてる人間の中で、私以上にあそこに詳しいヤツなんていないはずだ。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307062	That's the first I've heard of....	第一次听说……	初めて聞いた……。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307063	You never asked.	你们又没问过我。	聞かれなかったからな。	NONE
+msg	307064	Ok! Etherine! What're you still doing here, go!	好了！伊瑟琳！你还愣着干嘛，走了！	ほら！イザーリン！何をボサッとしてんだ！行くぞ！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	2
+msg	307065	I never say I will go with you…you have your amibtions, just leave me here.	我可没说要跟你们一起去…你们有理想有抱负，就让我一个人在这里发霉吧。	私はあなたたちと一緒に行くなんて言ってないわよ……あなたたちには理想があるみたいだけど、私はここで平和に腐っていくのが理想なの。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307066	What! What is this!	你说什么！	何、寝ぼけたこと言ってんだッ！	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	307067	Jo…joking, if we all go then people here will be panic, I'm least helpful, let me take care of others, and give you all a reason of coming back.	开…开玩笑啦，如果我们都一走了之留下的大家一定会乱作一团，我是最帮不上忙的人，所以就让我留下安稳住大家的情绪，就当是给你们一个回来的理由吧。	じょ、冗談よ。もし、私たちが行ってしまったら、残された人たちが混乱するでしょ？私は戦闘じゃ一番役に立たないから、残って皆の気持ちを落ち着かせる役に徹するわ。あなたたちが帰ってくる理由にもなるでしょ。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	5
+msg	307068	Etherine is right, let her stay.	伊瑟琳说得没错，就让她留守在ME社吧。	イザーリンの言う通りね。彼女にはME社に残ってもらいましょう。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307069	Also I have my own business, I need to fix Hyperion, to give us more hope.	而且我也有我自己的做法，我会想办法修复休伯利安号，这样也能给大家更多的希望。	それに私には私なりの戦い方があるのよ。何とかしてハイペリオン号を修理できれば、皆に希望を与えられるでしょ？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307070	Woo…I don't know you would talk in this way.	唔…没想到你还会说点有骨气的话。	うわぁ……お前がそんな骨のあることを言うなんて、逆に気持ち悪い。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307071	OK…go now, based on our previous calculation,the empty space aournd ME can still last for 2 days, if you don't come back in 2 days, I will welcome you as a zombie.	好了…你们既然要去的话就快点出发吧，按照之前的计算，ME社周围的真空区估计还能持续2天，如果在2天内无法回来的话，我只能变成死士来迎接你们了。	分かったから……行くなら早く出発してちょうだい。以前の計算だと、ME社周囲の真空エリアは2日間しか持続しないわ。もし2日以内に戻れなかったら、私がゾンビになってあなたたちを迎えることになるわよ。	NONE
+msg	307072	Until then everything will end……	到那个时候一切就都结束了……	あぁ……そんなことになったら、本当に終わりね……。	NONE
+speaker	Himeko
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307073	Well, please take care of others, Etherine.	嗯，大家就交给你了，伊瑟琳。	それじゃあ、皆を頼んだわよ。イザーリン。	NONE
+speaker	
+bg	009/060_1280x720
+portraits	61
+emote	61	1
+msg	307074	……	……	…………。	NONE
+speaker	Yssring
+portraits	61	54
+emote	61	1
+emote	54	1
+msg	307075	Like this, Himeko and others left, so during this time we need to guard this place on our own.	就是这样，姬子她们已经离开了，所以在她们不在的这段时间里我们得靠自己守住这里了。	っていうことで、姫子たちは出て行ったわ。彼女たちが留守の間は私たち自身でここを守りましょう。	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	1
+msg	307076	What…then they abandon us again like Bronya!	怎么会…那不就和布洛妮娅一样抛弃我们了么！	そんな……それじゃブローニャと同じように私たちを見捨てたの！？	NONE
+speaker	Graymoth Member
+portraits	66	54
+emote	66	0
+emote	54	1
+msg	307077	Even Himeko no longer trust us……	连姬子队长也不相信我们了么……	姫子隊長まで私たちを信じられなくなったってこと……？	NONE
+speaker	Yssring
+portraits	66	54
+emote	66	0
+emote	54	6
+msg	307078	Don't think too much, they just need to investigate the Herrschers, don't be exaggerated.	你们不要想这么多啦，她们只是趁着崩坏能的真空区去探查律者的动向罢了，不要这么一惊一乍的。	皆、そんなに考えすぎないで。彼女たちは崩壊エネルギーの真空エリアへ律者の動きを探りに行っただけよ。そんな慌てなくても大丈夫。	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	6
+msg	307079	Is…it?	是…这样么？	そ、そうなの？	NONE
+speaker	Yssring
+portraits	56	54
+emote	56	0
+emote	54	1
+msg	307080	Yes, don't over think, if she really does so, the first one to get panic should be me right?	嗯，你们不要想太多，如果她们真的抛下我们了，第一个要慌的应该是我才对吧？	ええ。そんなに悪いように考えないで。もし彼女たちが本当に私たちを見捨てたのなら、最初に大慌てするのは私のはずでしょ？	NONE
+speaker	Graymoth Member
+portraits	66	54
+emote	66	0
+emote	54	1
+msg	307081	Well…make sense, even you're not afraid, it should be alright.	嗯…说的也是，连伊瑟琳都没有害怕，那应该没错了。	え、ええ……それもそうね。イザーリンですら怖がっていないんだから、きっと大丈夫よ。	NONE
+speaker	Yssring
+portraits	66	54
+emote	66	0
+emote	54	1
+msg	307082	Coo…ok ok, go back to your place, we still need to stay alert even we're less threatened by Honkai creatures.	咕…好啦好啦，都回到自己的岗位上班，虽然现在崩坏生物的威胁减少了但还是得保持警惕。	ぐっ……ほ、ほらほら、皆、自分の持ち場に戻って。この真空エリアが続いている間、崩壊生物に襲われる心配はないけど警戒は続けておかなくちゃ。	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	1
+msg	307083	Ok, we got it.	好的，明白了。	そうね、分かったわ。	NONE
+speaker	Yssring
+portraits	56	54
+emote	56	0
+emote	54	2
+msg	307084	Huh…at least this will maintain for a while.	呼…这样至少能稳住一段时间。	ふぅ……これでしばらくは大丈夫そうね。	NONE

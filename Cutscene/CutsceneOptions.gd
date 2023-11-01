@@ -394,7 +394,7 @@ func init():
 	systemOptionsSubmenu.rect_position=Vector2(-999,150)
 	systemOptionsSubmenu.modulate.a=0
 	var systemOptions:Dictionary={}
-	for opt in ["AudioVolume","SFXVolume","language"]:
+	for opt in ["AudioVolume","SFXVolume","language","vibration"]:
 		systemOptions[opt]=Globals.OPTIONS[opt]
 	if OS.has_feature("pc"):
 		systemOptions['isFullscreen']=Globals.OPTIONS['isFullscreen']

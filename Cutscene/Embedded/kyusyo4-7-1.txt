@@ -3,13 +3,13 @@ speaker	Yssring
 bg	009/013_1280x720
 portraits	54
 emote	54	5
-msg	302106	Finally, we arrived... Hehe... I haven’t had so much excitement in a while...	总算是到达了…呵呵…好久没有这么刺激了……	何とか着いた……フ、フフ……こんなにドキドキしたの久しぶり……。	NONE
+msg	302106	We finally made it... Haha... I haven't been this nervous in a long time...	总算是到达了…呵呵…好久没有这么刺激了……	何とか着いた……フ、フフ……こんなにドキドキしたの久しぶり……。	NONE
 msg	302107	The power furnace and engine are completely wrecked... We are hopeless... Hehe... Hehehe...	动力炉和引擎已经完全报废了…我们已经没有希望了…呵呵…呵呵呵……	動力炉とエンジンは完全にオシャカね……もう希望はないわ……アハ……ハハハ……。	NONE
 speaker	Emesa
 portraits	55	54
 emote	55	1
 emote	54	5
-msg	302108	Is she okay... Hey! Stand up! The battle is not over!	这家伙已经坏掉了么…喂！快站起来！战斗还没结束呢！	こいつ、とうとうおかしくなったか……？って、おい！早く立て！まだ、崩壊生物がいるんだぞッ！ 	NONE
+msg	302108	Has she finally lost her mind...? Hey, c'mon, get up! There's still honkai beasts out there!	这家伙已经坏掉了么…喂！快站起来！战斗还没结束呢！	こいつ、とうとうおかしくなったか……？って、おい！早く立て！まだ、崩壊生物がいるんだぞッ！ 	NONE
 speaker	
 portraits	54
 emote	54	5
@@ -34,7 +34,7 @@ speaker	Emesa
 portraits	55	54
 emote	55	4
 emote	54	5
-msg	302113	Did you hear me! Get up!	听到没有！给我起来！	聞こえただろう！ほら、立てって！	NONE
+msg	302113	You heard her! C'mon, get up!	听到没有！给我起来！	聞こえただろう！ほら、立てって！	NONE
 speaker	Yssring
 portraits	55	54
 emote	55	4
@@ -127,7 +127,7 @@ msg	302130	Dadada!	哒哒哒！	ダダダッ——！	NONE
 speaker	Emesa
 portraits	55
 emote	55	4
-msg	302131	This place is too dangerous! After the Herrscher’s attack, it is crumbling! Are you sure you want to fight here!?	这个地方太危险了！上次律者攻击后就已经摇摇欲坠了！你们确定要在这里战斗么！？	あの場所は危なすぎないか！？前回、律者が攻撃して崩れ落ちそうだっただろ！本当にあそこで戦うのか！？ 	NONE
+msg	302131	It's way too dangerous here! It's barely even standing after that Herrscher attacked! Are we really fighting here?!	这个地方太危险了！上次律者攻击后就已经摇摇欲坠了！你们确定要在这里战斗么！？	あの場所は危なすぎないか！？前回、律者が攻撃して崩れ落ちそうだっただろ！本当にあそこで戦うのか！？ 	NONE
 speaker	Himeko
 portraits	61
 emote	61	1
@@ -135,7 +135,7 @@ msg	302132	Indeed, it cannot hold long battles. We only have one chance and we n
 speaker	Emesa
 portraits	55
 emote	55	4
-msg	302133	Tsk! You are crazy!	啧！真是个疯子！	もう！本当、どうかしてるな！	NONE
+msg	302133	You're out of your mind!	啧！真是个疯子！	もう！本当、どうかしてるな！	NONE
 speaker	
 se	DLC_CH00_EV13_MosterRoar
 msg	302134	Roar!	吼吼吼！	グォォォォ！！	NONE

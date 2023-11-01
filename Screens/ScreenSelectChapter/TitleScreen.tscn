@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://Screens/ScreenSelectChapter/TitleScreen.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Ext/cubeThing.png" type="Texture" id=7]
 [ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=8]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=9]
+[ext_resource path="res://Shaders/ChapterSelectFadeBottom.tres" type="Material" id=10]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -45,16 +46,18 @@ __meta__ = {
 anchor_bottom = 1.0
 margin_left = 10.0
 margin_right = 484.0
+margin_bottom = -6.0
 mouse_filter = 1
 scroll_horizontal_enabled = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+material = ExtResource( 10 )
 margin_right = 180.0
 margin_bottom = 116.0
-mouse_default_cursor_shape = 2
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 modulate = Color( 55.49, 56.97, 57.8, 1 )
+use_parent_material = true
 margin_right = 180.0
 margin_bottom = 116.0
 mouse_filter = 0

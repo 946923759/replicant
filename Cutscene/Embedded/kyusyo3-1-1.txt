@@ -29,7 +29,7 @@ msg	301023	All troops, move towards ME Corp.! Cover the wounded, we'll reorganiz
 match_names	Seele	Emesa	Yssring
 portraits	59	55,false,4	54,false,2
 tn	0	How would she find Bronya inside the building if they're stationed outside?
-/Seele	301025	Yssring, direct the engineering squad and set up a defensive line outside the ME Corp. building. We'll intercept the honkai beasts there. If you find Bronya inside ME Corp., then follow her commands instead. 	伊瑟琳！你先带着工程班以ME为后盾建立防御工事！我们要在那里迎击崩坏生物！如果在ME社中发现姐姐大人的话就把指挥权转交给姐姐大人！	イザーリンは、エンジニア班とともにME社を守る形で防御陣地を築いて。そこで崩壊生物を迎え撃つわ！もしME社内でお姉ちゃんを発見したら、その後はお姉ちゃんの指揮に従って。	NONE
+/Seele	301025	Yssring, direct the engineering squad and set up a defensive line outside the ME Corp. building. We'll intercept the Honkai Beasts there. If you find Bronya inside ME Corp., then follow her commands instead. 	伊瑟琳！你先带着工程班以ME为后盾建立防御工事！我们要在那里迎击崩坏生物！如果在ME社中发现姐姐大人的话就把指挥权转交给姐姐大人！	イザーリンは、エンジニア班とともにME社を守る形で防御陣地を築いて。そこで崩壊生物を迎え撃つわ！もしME社内でお姉ちゃんを発見したら、その後はお姉ちゃんの指揮に従って。	NONE
 emote	54	3
 /Yssring	301026	Understood.	我知道了。	分かった！	NONE
 nop	match_names	Seele	Emesa

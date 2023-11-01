@@ -1,0 +1,183 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+preload_portraits	62	61	55	60
+speaker	Theresa
+bg	007/006_1280x720
+portraits	62
+emote	62	1
+emote	55	1
+/Theresa	307267	Come in.	进来吧。	来なさい。	NONE
+bg	009/077_1280x720
+portraits	62	61	55	60
+/Emesa	307268	Here is……	这里是……	ここは……。	NONE
+/Theresa	307269	Don't worry, this is a safe house I found in Academy City. It's on the border of the city, so the Honkai Energy isn't as concentrated.	放心吧，这里是我在学园都市找到的安全屋，这里处于学园都市的边缘地区，崩坏能的浓度相对较弱。	安心して。ここは私が学園都市で見つけたセーフティハウスよ。学園都市の外れに位置していて、崩壊エネルギーの濃度も比較的低いの。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	1
+msg	307270	I'm surprised you can find your way back despite such severe spacial distortion.	在空间扭曲这么剧烈的区域你居然能找到回来的路。	空間の歪曲がこんなに激しいエリアで、まったく迷わないなんて。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	1
+msg	307271	After I left you guys, I have been keeping an eye on Kiana and Mei here in the school city. That's why I've become so familiar with this place over the past few years.	和你们分开后我就一直在这个学园都市注视着琪亚娜和芽衣，所以在这几年里早就已经把这里摸透了。	あなたたちと別れた後、あたくしはずっとこの学園都市でキアナと芽衣を監視していたの。だから、この数年でここにはすっかり詳しくなったわ。	NONE
+emote	60	6
+emote	62	1
+/Bronya	307272	Seele! Where's Seele!	希儿呢！希儿在哪！	ゼーレは！？ゼーレはどこですか！？	NONE
+emote	60	6
+emote	62	1
+/Theresa	307273	Bronya……	布洛妮娅……	ブローニャ……。	NONE
+portraits	62	60	61	55
+emote	60	6
+emote	62	1
+/Bronya	307274	Out of the way! Seele!	让开！希儿！	どいてください！ゼーレッ！	NONE
+speaker	Theresa
+emote	60	6
+emote	62	1
+msg	307275	……	……	……。	NONE
+speaker	Himeko
+portraits	62	61	55
+emote	61	5
+emote	62	1
+msg	307276	Why didn't tell her the thing of Seele, is it because……	为什么你遇到布洛妮娅的时候没有直接告诉她希儿的事情，是不是希儿她……	どうして、ブローニャに会った時、すぐにゼーレのことを教えてあげなかったの？もしかして、ゼーレは……。	NONE
+speaker	Theresa
+emote	61	5
+emote	62	1
+msg	307277	I don't know what to do…I would rather not let her know the truth than let her see Seele die…...	我不知道该怎么办…与其让布洛妮娅眼睁睁地看着希儿死去不如不让她知道真相……	あたくし、どうしたらいいのか分からなくて……ゼーレはこのまま死ぬ運命よ。ブローニャに、ゼーレが死にゆく様を見せるより、真相を隠したままの方がいいと思って……。	NONE
+msg	307278	I did my best to prevent a fatal attack but.... Seele's body isn't going to hold on much longer. The Honkai has eroded her entire body, I'm afraid...	虽然我用尽全力挡下了致命的攻击，但是希儿的身体已经撑不了多久了，崩坏已经侵蚀了全身，恐怕……	あたくしが全力を尽くして致命的な攻撃は防いだわ。けど……それでもゼーレの身体は長くない。全身が崩壊に侵蝕されていて、おそらくは……。	NONE
+speaker	Emesa
+emote	61	5
+emote	55	3
+msg	307279	How come……how come! Seele!	怎么会……为什么会这样！希儿！	くそっ……こんなことってあるかよ！ゼーレ！	NONE
+speaker	Himeko
+emote	61	1
+emote	55	3
+msg	307280	Emesa! Don't go…let them stay for a while.	埃米沙！不要进去…让布洛妮娅和希儿安静地相处吧。	エミザ！入ってはダメよ……ブローニャとゼーレをそっとしておいてあげなさい。	NONE
+speaker	Emesa
+emote	61	1
+emote	55	3
+msg	307281	But!	可是！	でもっ！！	NONE
+speaker	Himeko
+emote	61	1
+emote	55	3
+msg	307282	Theresa, whtever happened, the best destination for them is to stay together.	德丽莎，不管生死与否，那两个孩子最好的归宿就是陪伴在彼此的身边。	テレサ、生き死にに関係なく、あの2人の子供にとって一番の結末は、お互いの傍にいることなの。	NONE
+msg	307283	That's enough……	这就够了……	そう、これで十分……。	NONE
+speaker	
+emote	55	3
+msg	307284	……	……	……。	NONE
+msg	307285	……	……	……。	NONE
+speaker	Bronya
+portraits	60
+emote	60	4
+emote	55	3
+msg	307286	Seele... I'm finally seeing you again.	希儿…终于又见到你了。	ゼーレ……ようやく会えました。	NONE
+msg	307287	Seele...... what's wrong...... Hurry up and open your eyes.......	希儿…你怎么了…快睁开眼睛……	ゼーレ……どうしたのですか……早く、その目を開けてください……。	NONE
+msg	307288	Let me hear your voice again...	希儿…再让我听一下你的声音……	ゼーレ……ブローニャにまたあなたの声を聞かせてください……。	NONE
+music	Dispossession - Music Box Version
+portraits	
+bg	009/069_1280x720
+msg	307289	You always call my name when I come back.... Why aren't you saying anything...	每次回来的时候你不都这么喊着我的名字么…为什么现在不说话呢……	いつもブローニャが帰って来た時、ブローニャの名前を呼んでくれたではないですか……どうして、今は何も言わないのですか……。	NONE
+msg	307290	Seele…Seele……	希儿…希儿……	ゼーレ……ゼーレ……。	NONE
+msg	307291	I'm sorry... I'm sorry... I'm sorry...	对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんな、さい……。	NONE
+msg	307292	It's all my fault... It's all my fault!	都是我的错…都是我不好！	全てブローニャのせいです……全てブローニャが悪いんです！	NONE
+msg	307293	I'm the one that should have stayed! It was my decision to make you like this! I'm the one that deserves to die, not you!	明明留下来的人应该是我才对！因为我的决定才会让你变成这样！明明真正该死的人是我！	ブローニャが残るべきでした！ブローニャの決定のせいでゼーレはこんな風になってしまいました！本当に死ぬべきは、このブローニャのはずです！	NONE
+msg	307294	Seele! Please... Open your eyes and look at me again!	希儿！求求你……求求你睁开眼睛再看我一下！	ゼーレ！お願いです……お願いですから目を開けて、もう一度その瞳にブローニャを映してください！	NONE
+msg	307295	I have so many things to tell you…...	我有好多好多的话想和你说……	ブローニャはゼーレに話したい事がたくさん、たくさんあるのです……。	NONE
+msg	307296	I won't ever call you selfish again... Or blame you for being lazy... I'll never leave you alone!	我不会再说你任性了…也不会怪你偷懒了…更不会留下你一个人！	ブローニャはもうゼーレのことをワガママだなんて言ったりしません……サボっても怒ったりしません……もちろん、ゼーレを一人ぼっちにもしたりしません！	NONE
+msg	307297	I'll do anything it takes to see you smile again!	只要你能像以前一样笑着，不管做什么我都愿意！	ゼーレが以前のように笑ってくれるなら、ブローニャは何だってします！	NONE
+msg	307298	Please… Seele… please……	求求你…希儿…求求你……	お願いです……ゼーレ……お願いです……。	NONE
+msg	307299	Please... Let me hear your voice again, calling out my name...	再让我听下你挂在嘴边的“布洛妮娅姐姐”……	その声でまた、ブローニャのことを「ブローニャお姉ちゃん」と呼んでください……。	NONE
+speaker	
+msg	307300	……	……	……。	NONE
+extend	307301	……	……	…………。	NONE
+
+stop_music	1.0
+bg	009/077_1280x720
+portraits	61
+emote	61	1
+/Himeko	307302	Bronya, do you feel better?	布洛妮娅，好些了么？	ブローニャ……。	NONE
+speaker	Bronya
+portraits	61	60
+emote	61	1
+emote	60	4
+msg	307303	Why she can't wake up…Theresa, what happened to her!	希儿为什么醒不过来…德丽莎，她到底怎么样了！	ゼーレはどうして目覚めないのですか……テレサ、ゼーレは一体どうしてしまったのですか！	NONE
+speaker	Theresa
+portraits	61	62
+emote	61	1
+emote	62	1
+msg	307304	Bronya, Seele is……	布洛妮娅，希儿她……	ブローニャ、ゼーレは……。	NONE
+speaker	Emesa
+portraits	55	62
+emote	55	4
+emote	62	1
+msg	307305	Hey! Did you all forget me as a doctor! What's in your head!	喂！你们几个是不是忘了还有我这个医生在啊！没有医学常识的人瞎想什么！	おいおいっ！お前ら、ここに医者がいることを忘れてないか！？医療の心得もない奴らが、適当なこと抜かすんじゃねえよ！	NONE
+msg	307306	Get away! Put her down! What if she has wounds!	让开！把病人放下平躺！要是希儿身上有什么伤怎么办！	どけっ！病人の周りでメソメソすんな！ゼーレの身体に障ったらどうする！	NONE
+speaker	Bronya
+portraits	55	60
+emote	55	4
+emote	60	4
+msg	307307	Eh…ok.	唔…好的。	エミザ……分かりました。	NONE
+speaker	Emesa
+portraits	55	60
+emote	55	1
+emote	60	4
+msg	307308	Let me see……	让我看看……	どれどれ……。	NONE
+msg	307309	Eh, there are some traumas, and weak hearbeats, and a bit fever.	嗯，身上有些外伤感染，心律脉搏有些虚弱，还有一些热度。	うーん、外傷による感染が少し、心拍と脈拍がやや弱く、それに熱があるな。	NONE
+portraits	55	60
+emote	55	2
+emote	60	4
+msg	307310	Don't worry, it's not very serious, she just fainted because of the strong attack, after all it's from Herrscher, she's lucky enough!	放心吧，没什么大问题，应该是受到了强大的冲击暂时昏迷了，毕竟是律者的攻击，这已经是很幸运了！	安心しろ、大したことない。きっと強い衝撃を受けたせいで、長期的に気を失っているだけだ。何たって律者の攻撃なんだからな。むしろ、この程度で済んでラッキーだ！	NONE
+speaker	Theresa
+portraits	55	62
+emote	55	2
+emote	62	1
+msg	307311	But, but I told you……	不，我不是和你说……	いえ、言ったでしょ……。	NONE
+speaker	Bronya
+portraits	55	60
+emote	55	2
+emote	60	4
+msg	307312	Really…really!?	真的么…你说的是真的么！？	本当ですか……それは本当ですか！？	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	4
+msg	307313	Bronya, it should e fine if Emesa says so, you know she drag me out of the grave, trust her.	布洛妮娅，既然埃米沙这么说了应该没什么大问题，要知道她可是让我这种半只脚踩在坟墓里的人活到了现在，相信她吧。	ブローニャ、エミザがそう言うならきっと大丈夫よ。私だって棺桶に片足を突っ込んだのに、エミザのおかげで生きてられたんだから。信じてあげましょう。	NONE
+speaker	Theresa
+portraits	61	62
+emote	61	1
+emote	62	1
+msg	307314	Himeko……	姬子……	姫子……。	NONE
+portraits	61	62
+emote	61	1
+emote	62	2
+msg	307315	Yes, she's right…Seele will be fine.	嗯，这个孩子说的没错…希儿一定没什么问题的。	ええ、その子の言う通りよ……ゼーレは、きっと大丈夫。	NONE
+speaker	Bronya
+portraits	61	60
+emote	61	1
+emote	60	4
+msg	307316	……	……	……。	NONE
+msg	307317	Really……really……	是么……没问题么……	そうなのですか……大丈夫なのですか……。	NONE
+msg	307318	That's……	真是……	本当に……。	NONE
+portraits	61	60
+emote	61	1
+emote	60	2
+msg	307319	so good……	太好了……	よかった、よかった……です……。	NONE
+speaker	Himeko
+portraits	61	60
+emote	61	1
+emote	60	2
+msg	307320	Bronya!?	布洛妮娅！	ブローニャ！？	NONE
+speaker	Emesa
+portraits	55	60
+emote	55	1
+emote	60	2
+msg	307321	Shh! It's ok, she's just asleep.	嘘！没事，她只是睡着了。	シッ！大丈夫、眠っただけだ。	NONE
+msg	307322	She must haven't slept for several days…trying to find the Herrscher for Seele……	这几天布洛妮娅一定也没有合过眼吧…为了希儿而到处寻找着律者……	きっとブローニャは、ここ数日寝てなかったんだと思う……ゼーレのためにあちこち律者を探し回ってたんだろう……。	NONE
+speaker	Theresa
+portraits	55	62
+emote	55	1
+emote	62	1
+msg	307323	...Are you all sure you want to deceive Bronya like that? I understand how you feel, but it's going to be even more cruel when she finds out the truth.	……你们这么骗她真的好么？我知道你们的心情，但是当她面对真相的时候将会变得更残酷。	……あなたたち、そうやってブローニャを騙して本当にいいの？あなたたちの気持ちは分かるけど、彼女が真相を知った時、もっと深い絶望を与えることになるわよ。	NONE
+speaker	Emesa
+portraits	55	62
+emote	55	1
+emote	62	1
+msg	307324	Sorry... I'll tell Bronya the truth when it gets to that point. At least for now, I want her to be able to relax and get some sleep.	对不起，到那个时候我会亲自告诉布洛妮娅的，至少让她暂时放下心来好好睡一觉吧。	悪い……。でも、その時は私の口からブローニャに伝えるさ。少なくとも今は心を落ち着かせて、寝させてやらないと。	NONE
+msg	307325	This is the only "treatment" I can think of right now...	但这是现在我唯一能想到的“治疗手段”了……	これが、今思いつく唯一の「治療方法」なんだ……。	NONE

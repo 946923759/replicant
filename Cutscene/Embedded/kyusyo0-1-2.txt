@@ -3,7 +3,7 @@ speaker	Seele
 bg	009/021_1280x720
 se	DLC_CH00_EV05_MonsterDie
 msg	300040	Sorry, sorry~ I'm a little late. Are you hurt anywhere?	抱歉抱歉~稍微来迟了一会，你没有受伤吧？	ごめん、ごめん～ちょっと遅れちゃった。ケガしてない？	Desculpe, desculpe, estou um pouco atrasado. Você está ferido?
-msg	300041	Wow, not bad~ You killed those zombies so easily. You're surely someone worth training.	嚯…干的不错嘛，居然能打倒这么多死士~看来是个值得培养的家伙呢。	わぁ……よくやったね。ゾンビをこんなに倒すなんて～育成のしがいがある子みたい！	Uau... bem feito. Bater tantos zumbis - parece uma criança que vale a pena criar!
+msg	300041	Wow, well done~ You didn't have any trouble taking down those zombies. You look like someone that's worth training!	嚯…干的不错嘛，居然能打倒这么多死士~看来是个值得培养的家伙呢。	わぁ……よくやったね。ゾンビをこんなに倒すなんて～育成のしがいがある子みたい！	Uau... bem feito. Bater tantos zumbis - parece uma criança que vale a pena criar!
 choice	300042	You must be...	你们难道是……	あなたたちまさか……。	Você deve ser...
 choice	300043	Who are you?	你们是谁？	あなたたち誰？	Quem é você?
 condjmp_c	c2dest	2

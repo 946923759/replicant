@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Emesa
 bg	009/062_1280x720
 portraits	55
@@ -8,12 +8,12 @@ speaker	Teammate
 portraits	55	56
 emote	55	1
 emote	56	0
-msg	301772	We can't! There are too many of them!	不行！它们实在太多了！	ダメ！数が多すぎる！	NONE
+msg	301772	We can't! There's too many of them!	不行！它们实在太多了！	ダメ！数が多すぎる！	NONE
 speaker	Emesa
 portraits	55	56
 emote	55	1
 emote	56	0
-msg	301773	We have sent out the request for reinforcements! Just wait until the reinforcements to arrive, and we will be fine! Hold on!	支援请求已经发出去了！只要等援军到达就有救了！大家撑住！	応援要請は送った！援軍が来てくれれば助かる！それまで辛抱するんだッ！	NONE
+msg	301773	I've sent for reinforcements! Just hold on until they arrive!	支援请求已经发出去了！只要等援军到达就有救了！大家撑住！	応援要請は送った！援軍が来てくれれば助かる！それまで辛抱するんだッ！	NONE
 speaker	Teammate
 portraits	55	56
 emote	55	1
@@ -23,7 +23,7 @@ speaker	Emesa
 portraits	55	56
 emote	55	4
 emote	56	0
-msg	301775	Hey! Where the ☆☆ are you going!	喂！你OO的要去哪！	ちょっと！あんた、どこ行くんだ！	NONE
+msg	301775	Hey! Where the ★★ are you going!	喂！你OO的要去哪！	ちょっと！あんた、どこ行くんだ！	NONE
 speaker	
 emote	56	0
 msg	301776	Roar!!	吼吼吼！！	ウゥッー！！グルルル——	NONE
@@ -43,7 +43,7 @@ speaker	Emesa
 portraits	55	56
 emote	55	4
 emote	56	0
-msg	301780	@#$* cowards... No matter what, I will not let you through! Die, @#$*!	OO的一群胆小鬼……不管怎么样都不会让你们这群畜生过去的！你们这些OO都给老子去死吧！	崩壊のやろうども……何があってもこの先には行かせないぜ！この下等生物が、大人しくくたばりやがれッ！	NONE
+msg	301780	★★ing cowards... Fine, I won't let you beasts through no matter what! Go to hell, you ★★!	OO的一群胆小鬼……不管怎么样都不会让你们这群畜生过去的！你们这些OO都给老子去死吧！	崩壊のやろうども……何があってもこの先には行かせないぜ！この下等生物が、大人しくくたばりやがれッ！	NONE
 msg	301781	Ha!!!	哈！！！	はあっ！！	NONE
 speaker	
 emote	56	0

@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=5]
+code = "shader_type canvas_item;
+
+//uniform float gl_FragCoord;
+//uniform float ViewportHeight;
+uniform vec4 inputColor : hint_color=vec4(0,0,0,1);
+//uniform float fadeLength = 20.0;
+//uniform float fadeTopAt;
+//uniform float fadeRightAt;
+
+void fragment(){
+	float SCREEN_WIDTH = 1.0/SCREEN_PIXEL_SIZE.x;
+	if (FRAGCOORD.x < 100.0)
+	{
+		/*Smoothstep returns a value between 0 and 1.
+		smoothstep(LOWER LIMIT, UPPER LIMIT, VALUE TO SMOOTH)
+		if 'value to smooth' is outside the lower or upper, it will return 0.0 or 1.0
+		*/
+		float clr = 1.0-smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,50.0);
+    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
+	}
+	else if (FRAGCOORD.x > SCREEN_WIDTH-100.0)
+	{
+		float clr = smoothstep(FRAGCOORD.x-50.0,FRAGCOORD.x+50.0,SCREEN_WIDTH-50.0);
+    	COLOR = vec4(COLOR.rgb, min(clr,COLOR.a)); //min(clr,pixel_color.a)
+	}
+}"
+
+[resource]
+shader = SubResource( 5 )
+shader_param/inputColor = Color( 0, 0, 0, 1 )

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Screens/ScreenControllerTest/shadedLight05.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Screens/ScreenControllerTest/shadedLight01.png" type="Texture" id=3]
 [ext_resource path="res://Screens/ScreenControllerTest/640px-Dualshock_4_Layout.svg.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/TextFont_Large.tres" type="DynamicFont" id=5]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -24,6 +25,9 @@ onready var stickL = $Sprite/StickL
 onready var stickR = $Sprite/StickR
 
 func _process(delta):
+	$Control.text = Input.get_joy_name(0);
+	
+	
 	for a in actionMappings:
 		var node = actionMappings[a]
 		node.visible=Input.is_action_pressed(a)
@@ -184,3 +188,9 @@ margin_bottom = 808.603
 custom_fonts/font = ExtResource( 2 )
 text = "X Axis:
 Y Axis:"
+
+[node name="Control" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 5 )
+text = "Current plugged controller:"

@@ -1,0 +1,98 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	Himeko
+bg	011/012_1280x720
+portraits	61
+emote	61	1
+se	DLC_CH01_EV14_WindWooshA
+msg	307085	Here it is, the bridge to connect Nagazora and Academic City, also the shortcut to the Academic City.	就是这里了，连接长空市与学园都市的大桥，也是去学园都市最快的路线。	着いたわ。ここが長空市と学園都市をつなぐ橋で、学園都市に行くための最短ルートよ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307086	Himeko... Are we really about to fight a Herrscher to the death?	姬子…真的要和律者决一死战么？	姫子……本当に律者を殺すのか？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307087	Oh, what's the matter? Are you backing out already?	怎么，这么快就要打退堂鼓了么？	あら、どうしたの？早くも怖気づいた？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307088	No.... I heard from Bronya about your relationship with the Herrschers... They used to be your students, right? That's why you're so obsessed with them....	不…我听布洛妮娅说过你与律者的关系，她们两都是你以前的学生，你对于律者的执念是否就是因为……	いや……ブローニャが、あんたと律者の関係について話しているのを聞いたことがあるんだ。2人とも以前はあんたの生徒だったんだろ？あんたが律者にこだわっているのは……。	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307089	My relationship with them in the past doesn't matter. Now they're nothing but the enemies of humanity.	以前的我们是什么样子都没有意义了，现在她们只是人类的敌人罢了。	過去の関係なんて何の意味もないわ。今の彼女たちは人類の敵でしかない。それが真実よ。	NONE
+se	DLC_CH01_EV15_WindWooshB
+msg	307090	So far the most important thing is to arrive Academic City safely, after this bridge, it would be the Herrscher Cave, if you want to go back you should leave now.	目前最重要的是保住命到达学园都市，过了这座大桥后是连灰蛾部队也没有踏足过的律者巢穴，要回头就趁现在吧。	今何よりも重要なのは、生きたまま学園都市に辿り着くこと。この橋を渡った先は、灰蛾部隊ですら足を踏み入れたことのない律者の巣窟よ。後戻りするなら今のうちね。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307091	Huh! Don't think less of me! I won't step back when I say I will go! Go!	哼！少看不起人！既然说了要去我是不会退缩的！走！	ハッ！バカにするなよ！行くと決めたら、後戻りなんてするもんか！行くぞっ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307092	You might not be able to cross the  bridge with such a personality.	你这种莽撞的性格恐怕连这座桥都没过就没命了。	そんな無鉄砲な性格だと、この橋を渡り終える前に命を落とすわよ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307093	What are you saying!	你说什么！	ど、どういう意味だよ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+se	DLC_CH01_EV14_WindWooshA
+msg	307094	See how many Honkai creatures over there, do you want us to run straight to them!	你看看那边桥上的崩坏生物的数量，你难道想让我们堂而皇之地冲过去么？	あの橋の上にいる崩壊生物の数を見てみなさい。正面から突っ込んで勝てる自信ある？	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307095	Eh…fine! Then, what's your plan!	呃…啧！好吧，那你有什么计划么？	うっ……！分かったよ。ただ、そう言うからには何かプランがあるんだろ？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307096	Take it! Put these explosives on this side of the bridge, to drive away the Honkai creatures with the bombing, during which we will go across it.	拿着！把这些炸药装在大桥的这一端，利用爆炸声引开桥上的崩坏生物，然后我们乘机穿过去。	はい、これ。この爆薬を橋の……そうね、あの辺に仕掛けるの。で、奴らが爆発に気を取られているうちに、横を通り抜ければいいわ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307097	Go across it…This bridge has several kilometres, are you sure!?	穿过去…这座大桥可是有好几公里长，你确定要从这里冲过去！？	通り抜けるったって……この橋、何キロあると思ってんだよ。さすがに遠くにいる奴らまで欺けないだろ！？	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307098	Don't worry, the noise should able to take them away in such a silent city…what I worried are those monsters on the other side, can be troublesome.	放心吧，这死寂的城市里这些动静足够把桥上的怪物都引走了…我担心的反而是对面的崩坏生物，如果吸引到它们就麻烦了。	大丈夫よ、これだけ静まり返った街だもの、爆薬ひとつで橋にいる怪物どもは全て引きつけられるわ。ただ唯一心配なのは、橋を渡った先の崩壊生物ね。彼らまで引きつけてしまったら、タイミング次第で囲まれるわ。	NONE
+msg	307099	See how lucky we are.	所以只能看运气了。	つまり、運頼みってこと。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	1
+se	DLC_CH01_EV15_WindWooshB
+msg	307100	……	……	……。	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	1
+msg	307101	Ok, what are we doing here, let's move.	好了，别愣着了，行动起来吧。	ほら、ボヤボヤしないで、さっさと動くわよ。	NONE
+msg	307102	Emesa you go with Kyushou, remember, just place the explosive, avoid any fights, let's regroup in 20 minutes under the bridge.	埃米沙你和九霄一起，记住，只要安放炸药即可，尽量避免与崩坏生物的战斗，我们20分钟后在桥下集合。	エミザ、あなたは九霄と一緒にいて。いい？爆薬を仕掛けるだけよ。崩壊生物との戦闘はできるだけ避けなさい。20分後に橋の下に集合よ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307103	What about you! Now you make me worried most!	那你怎么办！现在最让人担心的可是你自己啊！	おいおい、姫子はどうするんだ！？あんたは無茶できる身体じゃないんだぞ！	NONE
+speaker	Himeko
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307104	Don't worry, I will be fine, you'll just make it the situation more complicated.	放心吧，再怎么不济我也能保证自己脱身，你在的话反而会碍手碍脚。	安心しなさい。どんなに不調でも自分の身くらいは守れるから。それに、あなたがいたら逆に足でまといなのよ。	NONE
+speaker	Emesa
+portraits	61	55
+emote	61	1
+emote	55	4
+msg	307105	You! Fine! Let's go!	你！行！我们走！	ちっ、お前ってヤツは！もう心配なんかしてやるもんか！	NONE

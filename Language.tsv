@@ -14,6 +14,7 @@ Main	Main
 Sub	Sub
 KeyboardInputHelp	Use the Page down and Page Up keys to select a chapter using the keyboard.
 GamepadInputHelp	Use the L1 and R1 buttons to select a chapter.
+GamepadInputHelp	{G PS5_L1} {G PS5_R1} Select Chapter     {G PS5_Dpad} Select Part     {G PS5_Cross} Confirm     {G PS5_Circle} Return
 
 --ChapterParts
 Music Test	Music Test	Hello! This is the translation engine!

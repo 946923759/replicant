@@ -136,7 +136,16 @@ This opcode does nothing on its own, but a `condjmp_c` can jump to it.
 # bg
 Set background.
 
-Argument 1 is the file to display (in Backgrounds folder).
+Usage examples:
+```ini
+bg	009/022_1280x720	immediate
+bg	white
+bg	{ modulate="#FFFFFF", Texture="aliceroom1", cover=false, name="aliceroom1", mouse_filter=2 }	tween		y,500;linear,5;addy,-500
+```
+
+Argument 1 is the file to display (in Backgrounds folder). ~~However, you can supply raw Def.Sprite() parameters in place of a file name.~~
+
+~~ex. `{ modulate="#FFFFFF", Texture="aliceroom1", cover=false, name="aliceroom1", mouse_filter=2 }`~~
 
 Argument 2 can be:
 
@@ -162,6 +171,7 @@ arg 5: diffuse,#FFFFFF
 # bg_fade_out_in
 
 **This opcode is planned to be removed at some point.** It will fade the current background to black, then visible. It's obvious why this is unnecessary.
+
 
 # flash
 Flash the screen. You probably don't want to use this.

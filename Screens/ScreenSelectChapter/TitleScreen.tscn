@@ -78,11 +78,11 @@ anchor_bottom = 1.0
 margin_left = -1355.0
 margin_top = 20.0
 margin_right = -254.0
-margin_bottom = -20.0
+margin_bottom = -48.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2"]
 margin_right = 1101.0
-margin_bottom = 1040.0
+margin_bottom = 1012.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 10
@@ -101,13 +101,15 @@ margin_right = 1101.0
 margin_bottom = 258.0
 
 [node name="DescrptionF" type="Control" parent="."]
-anchor_top = 0.907
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 0.439941
-margin_bottom = -52.0
+margin_top = -48.0
 rect_min_size = Vector2( 0, 48 )
 mouse_filter = 2
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="ColorRect" type="ColorRect" parent="DescrptionF"]
 anchor_right = 1.0
@@ -117,31 +119,6 @@ color = Color( 0, 0, 0, 0.784314 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="DescKB" type="Label" parent="DescrptionF"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 25.0
-margin_right = -25.0
-margin_bottom = -6.10352e-05
-rect_min_size = Vector2( 1870, 0 )
-custom_fonts/font = ExtResource( 5 )
-text = "Use Page Down and Page Up to select a chapter using the keyboard."
-align = 1
-valign = 1
-
-[node name="DescGP" type="Label" parent="DescrptionF"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 25.0
-margin_right = -25.0
-margin_bottom = -6.10352e-05
-rect_min_size = Vector2( 1870, 0 )
-custom_fonts/font = ExtResource( 5 )
-text = "Use the L1 and R1 buttons to select a chapter."
-align = 1
-valign = 1
 
 [node name="smSprite" type="TextureRect" parent="DescrptionF"]
 margin_right = 120.0
@@ -153,7 +130,39 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="DescKB" type="RichTextLabel" parent="DescrptionF"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -560.0
+margin_top = -50.0
+margin_right = 561.0
+margin_bottom = 23.0
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_PgUp.png[/img][img=50x50]Fonts/Glyph/PC_PgDn.png[/img][/font] Select Chapter       [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Enter.png[/img][img=50x50]Fonts/Glyph/PC_Z.png[/img][/font] Confirm      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Esc.png[/img][/font] Return"
+text = " Select Chapter        Confirm       Return"
+
+[node name="DescGP" type="RichTextLabel" parent="DescrptionF"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -718.0
+margin_top = -51.0
+margin_right = 719.0
+margin_bottom = 25.0
+custom_fonts/normal_font = ExtResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_L1.png[/img][img=50x50]Fonts/Glyph/PS5_R1.png[/img][/font] Select Chapter      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Dpad.png[/img][/font] Select Part      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Cross.png[/img][/font] Confirm      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Circle.png[/img][/font] Return"
+text = " Select Chapter       Select Part       Confirm       Return"
+
 [node name="BackButton2" parent="." instance=ExtResource( 8 )]
+margin_top = -146.0
+margin_bottom = -97.0
 
 [node name="FadeOut" type="ColorRect" parent="."]
 visible = false

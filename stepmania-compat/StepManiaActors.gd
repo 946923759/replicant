@@ -36,6 +36,9 @@ static func Sprite(d)->smSprite:
 			s.loadFromExternal(d[property])
 		elif property=="cover":
 			s.Cover()
+		elif property=="zoom":
+			var param = float(d[property])
+			s.rect_scale(Vector2(param,param))
 		else:
 			s.set(property,d[property])
 	return s

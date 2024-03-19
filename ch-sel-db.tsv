@@ -10,7 +10,7 @@
 Music Test		test_music,test_tween
 Choice Test		test_choice,test_choice_design,test_var
 Font Test		test_font,test_textPause
-Background Test		test_background
+Background Test		test_background,test_background_custom
 Black background test		test_blackbg
 Video Test		final_round_test
 Vibrate Test		test_vibrate

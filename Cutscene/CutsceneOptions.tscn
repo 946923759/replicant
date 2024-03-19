@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Cutscene/CutsceneOptions.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/_change.ogg" type="AudioStream" id=2]
@@ -10,6 +10,22 @@
 [ext_resource path="res://Ext/cubeThing.png" type="Texture" id=8]
 [ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=10]
+[ext_resource path="res://Fonts/Glyph/PS5_Circle.png" type="Texture" id=11]
+[ext_resource path="res://Fonts/Glyph/PS5_Options.png" type="Texture" id=12]
+[ext_resource path="res://Fonts/Glyph/PS5_Cross.png" type="Texture" id=13]
+[ext_resource path="res://Fonts/Glyph/PC_Backspace.png" type="Texture" id=14]
+[ext_resource path="res://Fonts/Glyph/PS5_Triangle.png" type="Texture" id=15]
+[ext_resource path="res://Fonts/Glyph/PS5_Square.png" type="Texture" id=16]
+[ext_resource path="res://Fonts/Glyph/PS5_L1.png" type="Texture" id=17]
+[ext_resource path="res://Fonts/Glyph/PS5_R1.png" type="Texture" id=18]
+[ext_resource path="res://Fonts/Glyph/PS5_L2.png" type="Texture" id=19]
+[ext_resource path="res://Fonts/Glyph/PC_Esc.png" type="Texture" id=20]
+[ext_resource path="res://Fonts/Glyph/PC_Z.png" type="Texture" id=21]
+[ext_resource path="res://Fonts/Glyph/PC_Shift.png" type="Texture" id=22]
+[ext_resource path="res://Fonts/Glyph/PC_Ctrl.png" type="Texture" id=23]
+[ext_resource path="res://Fonts/Glyph/PC_PgUp.png" type="Texture" id=24]
+[ext_resource path="res://Fonts/Glyph/PC_A.png" type="Texture" id=25]
+[ext_resource path="res://Fonts/Glyph/PC_ClickLeft.png" type="Texture" id=26]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
@@ -22,6 +38,31 @@ size = 45
 outline_color = Color( 0, 0.352941, 0.662745, 0.870588 )
 use_filter = true
 font_data = ExtResource( 10 )
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends GridContainer
+
+#God why did I even use a grid container for this, kill me
+
+func _input(event):
+	if event is InputEventKey:
+		self.visible=true
+		set_mode(0)
+	elif event is InputEventJoypadButton:
+		set_mode(1)
+		self.visible=true
+	elif event is InputEventScreenTouch or event is InputEventScreenDrag:
+		self.visible=false
+
+func set_mode(mode:int):
+	for c in get_children():
+		if c.name.begins_with(\"Label\"):
+			continue
+		elif c.name.begins_with(\"PC\"):
+			c.visible= (mode==0)
+		elif c.name.begins_with(\"PS\"):
+			c.visible= (mode==1)
+"
 
 [node name="OptionsScreen" type="Control"]
 anchor_right = 1.0
@@ -240,3 +281,266 @@ margin_bottom = 113.0
 custom_fonts/font = SubResource( 2 )
 text = "Check out the base."
 align = 2
+
+[node name="DescGP" type="RichTextLabel" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1760.0
+margin_top = -92.0
+margin_right = -866.0
+margin_bottom = 340.0
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Options.png[/img][img=50x50]Fonts/Glyph/PS5_Circle.png[/img][/font] Options
+[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Triangle.png[/img][/font] Auto
+[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Cross.png[/img][/font] Advance
+Hold[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Square.png[/img][/font] Note (When TN icon is displayed)
+[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_L1.png[/img][/font] Backtrace
+[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_L2.png[/img][/font] History
+Hold[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_R1.png[/img][/font] Skip"
+text = " Options
+ Auto
+ Advance
+Hold Note (When TN icon is displayed)
+ Backtrace
+ History
+Hold Skip"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -871.0
+margin_top = -362.0
+margin_bottom = 362.0
+mouse_filter = 2
+custom_constants/hseparation = 20
+columns = 2
+script = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PSOptions" type="HBoxContainer" parent="GridContainer"]
+visible = false
+margin_right = 597.0
+margin_bottom = 100.0
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/PSOptions"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture = ExtResource( 12 )
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer/PSOptions"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+texture = ExtResource( 11 )
+
+[node name="PCOptions" type="HBoxContainer" parent="GridContainer"]
+margin_right = 204.0
+margin_bottom = 100.0
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/PCOptions"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture = ExtResource( 20 )
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer/PCOptions"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+texture = ExtResource( 26 )
+flip_h = true
+
+[node name="Label" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 25.0
+margin_right = 821.0
+margin_bottom = 75.0
+custom_fonts/font = ExtResource( 4 )
+text = "Options"
+
+[node name="PSTriangle" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 497.0
+margin_top = 104.0
+margin_right = 597.0
+margin_bottom = 204.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 15 )
+stretch_mode = 3
+
+[node name="PCTriangle" type="TextureRect" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 204.0
+margin_bottom = 204.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 25 )
+stretch_mode = 3
+
+[node name="Label2" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 129.0
+margin_right = 821.0
+margin_bottom = 179.0
+custom_fonts/font = ExtResource( 4 )
+text = "Auto"
+
+[node name="PC_Z" type="HBoxContainer" parent="GridContainer"]
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/PC_Z"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture = ExtResource( 21 )
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer/PC_Z"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+texture = ExtResource( 26 )
+
+[node name="PSX" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 104.0
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 13 )
+stretch_mode = 3
+
+[node name="Label3" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 233.0
+margin_right = 821.0
+margin_bottom = 283.0
+custom_fonts/font = ExtResource( 4 )
+text = "Advance"
+
+[node name="PSSquare" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 497.0
+margin_top = 312.0
+margin_right = 597.0
+margin_bottom = 412.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 16 )
+stretch_mode = 3
+
+[node name="PCSquare" type="TextureRect" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 312.0
+margin_right = 204.0
+margin_bottom = 412.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 22 )
+stretch_mode = 3
+
+[node name="Label4" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 337.0
+margin_right = 821.0
+margin_bottom = 387.0
+custom_fonts/font = ExtResource( 4 )
+text = "Note (When 'TN' is visible)"
+
+[node name="PSL1" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 130.0
+margin_top = 416.0
+margin_right = 230.0
+margin_bottom = 516.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 17 )
+stretch_mode = 3
+
+[node name="PCL1" type="TextureRect" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 416.0
+margin_right = 204.0
+margin_bottom = 516.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 14 )
+stretch_mode = 3
+
+[node name="Label5" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 441.0
+margin_right = 821.0
+margin_bottom = 491.0
+custom_fonts/font = ExtResource( 4 )
+text = "Traceback"
+
+[node name="PSL2" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 111.0
+margin_top = 520.0
+margin_right = 211.0
+margin_bottom = 620.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 19 )
+stretch_mode = 3
+
+[node name="PCL2" type="TextureRect" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 520.0
+margin_right = 204.0
+margin_bottom = 620.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 24 )
+stretch_mode = 3
+
+[node name="Label6" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 545.0
+margin_right = 821.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 4 )
+text = "History"
+
+[node name="PSR1" type="TextureRect" parent="GridContainer"]
+visible = false
+margin_left = 111.0
+margin_top = 624.0
+margin_right = 211.0
+margin_bottom = 724.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 18 )
+stretch_mode = 3
+
+[node name="PCR1" type="TextureRect" parent="GridContainer"]
+margin_left = 104.0
+margin_top = 624.0
+margin_right = 204.0
+margin_bottom = 724.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource( 23 )
+stretch_mode = 3
+
+[node name="Label7" type="Label" parent="GridContainer"]
+margin_left = 224.0
+margin_top = 649.0
+margin_right = 821.0
+margin_bottom = 699.0
+custom_fonts/font = ExtResource( 4 )
+text = "Skip Text"

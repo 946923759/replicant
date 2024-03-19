@@ -525,6 +525,7 @@ func advance_text()->bool:
 				var prevDelay:float = waitForAnim
 				while true:
 					var bbcode_stripped_txt:String = Globals.strip_bbcode(tmp_txt)
+					
 					var twStruct = TextDelay.new()
 					
 					var pauseAt = bbcode_stripped_txt.find("{w=")
@@ -562,6 +563,8 @@ func advance_text()->bool:
 					text.visible_characters=tmp_txt.length()
 				text.bbcode_text = tmp_txt
 				
+				#print("tmp_txt: "+tmp_txt)
+				#print("bbcode: "+text.bbcode_text)
 				ChoiceTable = runahead_process_choices(message,curPos+1)
 				
 				break #Stop processing opcodes and wait for user to click

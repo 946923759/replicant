@@ -1,0 +1,1 @@
+bg	{Texture="aliceroom1", name="aliceroom1", mouse_filter=2 }	tween		y,500;linear,5;addy,-500

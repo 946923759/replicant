@@ -1,15 +1,7 @@
 class_name smSprite
 extends TextureRect
 
-func Center():
-	print("smSprite.Center() has been removed")
-	return
-	#position=Globals.SCREEN_CENTER
-
 func Cover():
-	#if expand:
-	#	print("Do not call Cover() more than once!!!")
-	#	return
 	rect_size=Globals.gameResolution
 	#size_flags_horizontal=1
 	stretch_mode=STRETCH_KEEP_ASPECT_COVERED

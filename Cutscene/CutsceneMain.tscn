@@ -248,7 +248,6 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_top = -63.5
-margin_right = -8.00012
 margin_bottom = 276.5
 rect_pivot_offset = Vector2( 0, 173 )
 mouse_filter = 2

@@ -15,7 +15,7 @@ void fragment(){
 	float RATIO = SCREEN_HEIGHT/1080.0;
 	//float SCREEN_CENTER_X = RATIO*SCREEN_WIDTH/2.0+650.0;
 	
-	float fadeTopAt=RATIO*130.0;
+	float fadeTopAt=RATIO*150.0;
 	
 	//vec4 pixel_color = inputColor;
 	vec4 tex_clr = texture(TEXTURE,UV).rgba;

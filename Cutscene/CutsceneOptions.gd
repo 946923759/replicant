@@ -756,6 +756,8 @@ func tweenMainMenuOut(subMenuToTween:int=2):
 	null, MENU_LEFT_PADDING-200, .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	tween.interpolate_property(optionsFrame, 'modulate',
 	null, Color(1,1,1,0), .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
+	tween.interpolate_property($GridContainer, 'modulate',
+	null, Color(1,1,1,0), .15, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	
 	#Tween in the submenu
 	var property = "rect_position:x"
@@ -794,6 +796,8 @@ func tweenMainMenuIn():
 	tween.interpolate_property(optionsFrame, 'rect_position:x',
 	null, MENU_LEFT_PADDING, .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	tween.interpolate_property(optionsFrame, 'modulate',
+	null, Color(1,1,1,1), .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
+	tween.interpolate_property($GridContainer, 'modulate',
 	null, Color(1,1,1,1), .25, Tween.TRANS_QUAD, Tween.EASE_OUT);
 	
 	

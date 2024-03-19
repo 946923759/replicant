@@ -51,7 +51,7 @@ var OPTIONS = {
 	'textboxStyle':{
 		"type":"list",
 		"choices":["Classic","Modern 1","Modern 2","Frontline"],
-		"default":"Classic"
+		"default":"Modern 1"
 	},
 	"skipMode":{
 		"type":"list",
@@ -411,7 +411,11 @@ func set_audio_levels():
 static func strip_bbcode(source:String) -> String:
 	var regex = RegEx.new()
 	regex.compile("\\[.+?\\]")
-	return regex.sub(source, "", true)
+	var ret = regex.sub(source, "", true)
+	if ret:
+		return ret
+	#If failed to parse (Usually because of bracketed text like "[hello world]")
+	return source
 	
 static func deep_copy(v):
 	var t = typeof(v)

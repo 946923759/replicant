@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Screens/ScreenTitleMenu/MainMenuOptions.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=16]
+[ext_resource path="res://Ext/cubeThing.png" type="Texture" id=17]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.321569, 0.92549, 1, 1, 1, 1, 1, 0 )
@@ -96,7 +97,7 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -839.0
-margin_top = -266.0
+margin_top = -270.0
 margin_right = 580.0
 texture = ExtResource( 6 )
 
@@ -146,11 +147,22 @@ custom_fonts/font = SubResource( 2 )
 text = "Credits"
 align = 1
 
+[node name="Label" type="Label" parent="GridContainer"]
+margin_left = 187.0
+margin_top = 7.0
+margin_right = 281.0
+margin_bottom = 57.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = ExtResource( 16 )
+text = "v0.7"
+
 [node name="OKButton2" type="TextureButton" parent="GridContainer"]
 visible = false
-margin_left = 187.0
-margin_right = 370.0
-margin_bottom = 64.0
+margin_top = 68.0
+margin_right = 183.0
+margin_bottom = 132.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 10 )
@@ -166,16 +178,48 @@ custom_fonts/font = SubResource( 2 )
 text = "Controls"
 align = 1
 
-[node name="Label" type="Label" parent="GridContainer"]
-margin_left = 187.0
-margin_top = 7.0
-margin_right = 349.0
-margin_bottom = 57.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 2
-custom_fonts/font = ExtResource( 16 )
-text = "v0.6.95"
+[node name="DescrptionF" type="Control" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -48.0
+rect_min_size = Vector2( 0, 48 )
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="DescrptionF"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.784314 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="smSprite" type="TextureRect" parent="DescrptionF"]
+margin_right = 120.0
+margin_bottom = 125.0
+rect_scale = Vector2( 1, 0.4 )
+texture = ExtResource( 17 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DescrptionF"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -374.0
+margin_top = -51.0
+margin_bottom = 28.0
+custom_fonts/normal_font = ExtResource( 16 )
+bbcode_enabled = true
+bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PS5_Options.png[/img][/font] View Credits"
+text = " View Credits"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false

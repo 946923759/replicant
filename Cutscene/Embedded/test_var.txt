@@ -4,8 +4,8 @@ var	something_else	false
 var	anything	0
 var	anything	&3
 label	start
-msg	This message is reading from a variable. The variable contents is %temp%.
-msg	You can edit it in the debugger by pressing F4.
+msg	This message is reading from a variable named "temp". The variable contents is %temp%.
+msg	You can edit it in the variable debugger by pressing F4.
 if	doesnt_exist	null:
   msg	This message appears because the condjmp checked a variable that doesn't exist. The next opcode will set the variable, so you won't see this again.
   var	doesnt_exist	true

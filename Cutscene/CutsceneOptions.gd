@@ -1,4 +1,5 @@
 extends Control
+# warning-ignore:unused_signal
 signal options_closed()
 
 const MAX_OPTION_NAME_WIDTH=600

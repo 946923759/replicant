@@ -17,7 +17,7 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 	else:
 		var newBackground = get_node(bgName)
 		if !is_instance_valid(newBackground):
-			printerr(bgName+" is an invalid background! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
+			printerr("[BackgroundManager] Could not find background node "+bgName+"! DO NOT USE SLASHES IN BACKGROUNDS!!!!!!")
 		else:
 			print(newBackground)
 			#print(get_child_count())

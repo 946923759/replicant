@@ -115,3 +115,8 @@ func hideShow(s:float,delay:float=0.0):
 	if delay>=0:
 		p.set_delay(delay)
 	seq.tween_property(self,'modulate:a',1,s/2)
+
+
+func apply_sm_tween(tweenString) -> float:
+	var tw = get_tree().create_tween()
+	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO

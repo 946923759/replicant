@@ -81,7 +81,7 @@ func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there'
 func preparse_string_array(arr,delimiter:String="|")->bool:
 	var musicToLoad:Array=[]
 	var soundsToLoad:Array=[]
-	var backgrounds_to_load:Array=[]
+	var backgrounds_to_load:Dictionary={}
 	var videos_to_load:Array=[]
 	message = []
 	
@@ -112,7 +112,44 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 		match splitString[0]:
 			"bg":
 				if splitString[1] != "black" and splitString[1] != "none" and !(splitString[1] in backgrounds_to_load):
-					backgrounds_to_load.append(splitString[1])
+					backgrounds_to_load[splitString[1]] = true
+			"bg_custom":
+				#Strip {} from string
+				#var loadStr = splitString[1].substr(1,len(splitString[1])-2)
+				var loadStr = splitString[1]
+				print("[BGLoader] loadStr: "+loadStr)
+
+				var custom_bg_dict = {
+					modulate=Color(1,1,1,0),
+					mouse_filter=2 # mouse_filter: Ignore
+				}
+				for kvPair in loadStr.split(";"):
+					var kvSplit = kvPair.split("=")
+					var k = kvSplit[0].strip_edges()
+					if not k:
+						continue
+					var v = kvSplit[1].strip_edges()
+					
+					var expression = Expression.new()
+					expression.parse(v,["SCREEN_CENTER_X, SCREEN_CENTER_Y"])
+					v = expression.execute([Globals.gameResolution.x/2.0, Globals.gameResolution.y/2.0])
+#					if v.begins_with("Vector2"):
+#						pass
+#					elif v.begins_with("\""):
+#						v = v.substr(1,len(v)-2)
+#					elif v.is_valid_integer():
+#						v = int(v)
+#					elif v.is_valid_float():
+#						v = float(v)
+					
+					custom_bg_dict[k] = v
+				if !("name" in custom_bg_dict):
+					custom_bg_dict['name']=custom_bg_dict['Texture'].replace("/","$")
+				print("Generated "+String(custom_bg_dict))
+				backgrounds_to_load[custom_bg_dict['name']] = custom_bg_dict
+				
+				#Substitute in a normal 'bg' command so it will show at runtime
+				splitString = ['bg',custom_bg_dict['name']]
 			"bg_video":
 				if !(splitString[1] in videos_to_load):
 					videos_to_load.append(splitString[1])
@@ -181,22 +218,31 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 	
 	
 	var c = Color(1,1,1,0)
-	for i in range(len(backgrounds_to_load)):
-		var bgToLoad = backgrounds_to_load[i]
+	for bgToLoad in backgrounds_to_load:
+		#var bgToLoad = backgrounds_to_load[i]
+		
 		
 		#var nightFilter = false
 		if "," in bgToLoad:
 			#nightFilter = bgToLoad.split(",")[1].to_lower()=="true"
 			bgToLoad = bgToLoad.split(",")[0]
-		var s = Def.Sprite({
-			modulate=c,
-			Texture=bgToLoad,
-			cover=true,
-			#rect_size=Vector2(1920,1080),
-			name=bgToLoad.replace("/","$"),
-			mouse_filter=2 # mouse_filter: Ignore
-		})
+			
+		var s:TextureRect
+		if typeof(backgrounds_to_load[bgToLoad]) == TYPE_DICTIONARY:
+			s = Def.Sprite(backgrounds_to_load[bgToLoad])
+			s.set_meta("unlock_cg",false)
+		else:
+			s = Def.Sprite({
+				modulate=c,
+				Texture=bgToLoad,
+				cover=true,
+				#rect_size=Vector2(1920,1080),
+				name=bgToLoad.replace("/","$"),
+				mouse_filter=2 # mouse_filter: Ignore
+			})
+			s.set_meta("unlock_cg",true)
 		s.set_meta("file_name",bgToLoad)
+
 		#s.set_rect_size()
 		#if nightFilter:
 		#	s.material=nightShader
@@ -417,6 +463,9 @@ var cutsceneVars:Dictionary = {}
 var matchedNames = []
 func advance_text()->bool:
 	curPos+=1
+	
+	#Why does godot say it's unused when it's not???
+# warning-ignore:unused_variable
 	var tmp_speaker = "NoSpeaker!!"
 	var tmp_tn = ""
 
@@ -743,18 +792,22 @@ func advance_text()->bool:
 					
 				PORTRAITMAN.update_portrait_positions_wip(relation,numPortraits)
 			'emote':
-				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
-				if lastUsed != null:
-					lastUsed.cur_expression = curMessage[2]
+				var portrait = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
+				if portrait != null:
+					portrait.cur_expression = curMessage[2]
 					#print("Set new portrait sprite")
 				else:
 					print("There is no active portrait named "+curMessage[1])
 			'tween':
-				var lastUsed = PORTRAITMAN.get_portrait_from_sprite(curMessage[2])
-				
-				if lastUsed != null:
-					var tweenTime = lastUsed.apply_sm_tween(curMessage[3])
-					match curMessage[2]:
+				var portraitOrBackground = PORTRAITMAN.get_portrait_from_sprite(curMessage[2])
+				if portraitOrBackground == null:
+					portraitOrBackground = backgrounds.get_node_or_null(curMessage[2].replace("/","$"))
+				if portraitOrBackground == null: #Attempt a second time using raw path in case this is a godot path and not a file path
+					portraitOrBackground = backgrounds.get_node_or_null(curMessage[2])
+
+				if portraitOrBackground != null:
+					var tweenTime = portraitOrBackground.apply_sm_tween(curMessage[3])
+					match curMessage[1]:
 						"current","during":
 							pass
 						"before":
@@ -762,10 +815,8 @@ func advance_text()->bool:
 						"after":
 							# not implemented yet.
 							pass
-					#lastUsed.cur_expression = int(curMessage[2])
-					#lastUsed.update()
 				else:
-					printerr("Tried to apply a tween on a portrait that doesn't exist")
+					printerr("[Cutscene] Tried to apply a tween on a portrait that doesn't exist: "+curMessage[2])
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
@@ -854,7 +905,8 @@ func advance_text()->bool:
 					Input.start_joy_vibration(0,.4,.4,duration)
 				elif OS.has_feature("mobile"):
 					#Why is this in ms and the controller one in seconds?
-					Input.vibrate_handheld(duration*1000.0)
+# warning-ignore:narrowing_conversion
+					Input.vibrate_handheld(duration * 1000)
 					#print("Vibrate mobile device for "+String(duration))
 				#else:
 				#	print("No controllers are connected, not vibrating")

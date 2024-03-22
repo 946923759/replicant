@@ -26,7 +26,11 @@ static func Quad(d)->smQuad:
 		else:
 			q.set(property,d[property])
 	return q
-	
+
+
+# Yes I'm aware this is extremely inconsistent
+# StepMania uses uppercase command names and godot uses
+# lowercase command names so this doesn't really make any sense
 static func Sprite(d)->smSprite:
 	var s = smSprite.new()
 	for property in d:

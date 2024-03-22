@@ -42,7 +42,7 @@ However, the total time for a tween needs to be known, because we want to be
 able to run tweens before text displays.
 If two elements are tweened, VN engine can do max() on tween times.
 """
-static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> float:
+static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> float:
 	
 	tw.set_parallel(true)
 	var cmnds = tweenString.split(";",false)
@@ -50,9 +50,16 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 	var tweenBatch = 0
 	var tweenLength:float = 0.0
 	var timeToDelay:float = 0.0
+#It's not unused so why is it a warning???
+# warning-ignore:unused_variable
 	var curTweenType = TWEEN_TYPE.SLEEP
 	
-	var lastKnownPosition:Vector2 = objectToTween.position
+	
+	var rectPrefix = ""
+	if objectToTween is Control:
+		rectPrefix = "rect_" #BUT WHY???
+		
+	var lastKnownPosition:Vector2 = objectToTween.get(rectPrefix+"position")
 	
 	for cmd in cmnds:
 		var splitCmd = cmd.split(",")
@@ -76,6 +83,12 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tw.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 			"accelerate":
 				curTweenType = TWEEN_TYPE.ACCELERATE
+				
+				if tweenBatch>0:
+					#Add previous tween length to delay
+					timeToDelay+=tweenLength
+				tweenBatch+=1
+				
 				tweenLength = float(splitCmd[1])
 				tw.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
 			"sleep":
@@ -83,16 +96,16 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 				tweenLength = 0.0
 				timeToDelay += float(splitCmd[1])
 			"x":
-				tw.tween_property(objectToTween,"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"y":
-				tw.tween_property(objectToTween,"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"addx":
 				print("Applying addx "+splitCmd[1]+" after "+String(timeToDelay)+" sec... "+String(lastKnownPosition.x)+"+"+splitCmd[1])
-				tw.tween_property(objectToTween,"position:x",lastKnownPosition.x+float(splitCmd[1]),tweenLength).from(lastKnownPosition.x).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"position:x",lastKnownPosition.x+float(splitCmd[1]),tweenLength).from(lastKnownPosition.x).set_delay(timeToDelay)
 				lastKnownPosition.x+=float(splitCmd[1])
 			"addy":
 				print("Applying addy "+splitCmd[1]+" after "+String(timeToDelay)+" sec... "+String(lastKnownPosition.y)+"+"+splitCmd[1])
-				tw.tween_property(objectToTween,"position:y",lastKnownPosition.y+float(splitCmd[1]),tweenLength).from(lastKnownPosition.y).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"position:y",lastKnownPosition.y+float(splitCmd[1]),tweenLength).from(lastKnownPosition.y).set_delay(timeToDelay)
 				lastKnownPosition.y+=float(splitCmd[1])
 			"zoom":
 				var v2 = Vector2()
@@ -101,9 +114,9 @@ static func cmd(tw:SceneTreeTween,objectToTween:Node,tweenString:String) -> floa
 					v2.y=v2.x
 				else:
 					v2 = Vector2(float(splitCmd[1]),float(splitCmd[2]))
-				tw.tween_property(objectToTween,"scale",v2,tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"scale",v2,tweenLength).set_delay(timeToDelay)
 			"zoomx":
-				tw.tween_property(objectToTween,"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"diffuse","modulate":
 				tw.tween_property(objectToTween,"modulate",Color(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"diffusealpha":

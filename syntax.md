@@ -140,12 +140,9 @@ Usage examples:
 ```ini
 bg	009/022_1280x720	immediate
 bg	white
-bg	{ modulate="#FFFFFF", Texture="aliceroom1", cover=false, name="aliceroom1", mouse_filter=2 }	tween		y,500;linear,5;addy,-500
 ```
 
-Argument 1 is the file to display (in Backgrounds folder). ~~However, you can supply raw Def.Sprite() parameters in place of a file name.~~
-
-~~ex. `{ modulate="#FFFFFF", Texture="aliceroom1", cover=false, name="aliceroom1", mouse_filter=2 }`~~
+Argument 1 is the file to display (in Backgrounds folder).
 
 Argument 2 can be:
 
@@ -167,6 +164,21 @@ arg 3: diffusealpha,0;
 arg 4: sleep,.1;diffusealpha,1
 
 arg 5: diffuse,#FFFFFF
+
+# bg_custom
+
+Load a background image with custom parameters. Other than the first argument, everything else is identical to bg.
+
+Parameters are separated by `;` and in the format of `key=value`. Any parameter that is exposed in Godot is supported. `SCREEN_CENTER_X` and `SCREEN_CENTER_Y` are also exposed as constants, and math is also supported.
+
+Texture must be specified as a parameter (obviously). Everything else is optional. name defaults to texture if not specified.
+
+Examples:
+```
+bg_custom	modulate="#FFFFFF"; Texture="aliceroom1"; name="aliceroom1"	tween		y,500;linear,5;addy,-500
+bg_custom	Texture="aliceroom1"; name="aliceroom1"; rect_scale=Vector2(3,3); rect_position=Vector2(828,424);
+bg_custom	Texture="aliceroom1"; name="aliceroom1"; rect_position=Vector2(SCREEN_CENTER_X,SCREEN_CENTER_Y);
+```
 
 # bg_fade_out_in
 
@@ -354,12 +366,28 @@ If you want to jump to the end, put a label at the end of the file and a jump st
 
 Argument 1: Before, during, or after text displays.
 
-Argument 2: Portrait to tween. Currently, the background cannot be tweened.
+Argument 2: Portrait or background to tween. Giving the background and portrait the same file name will cause it to pick the portrait first, but GGZ groups backgrounds in folders so this shouldn't happen normally. If for some reason you want to do this (which you really shouldn't), you may load a background with custom parameters and override the name field.
 
 Argument 3: tween like StepMania's language. Ex. `decelerate,.2;x,1;decelerate,.2;x,-1;decelerate,.2;x,0`
 
-Refer to smTween.gd for a list of commands.
+Refer to smTween.gd for a list of commands, and test_tween.txt for an example of this in action.
 
+
+Example of tweening a portrait:
+```
+portraits	58
+msg	This is a tween test.
+tween	current	58	linear,.5;addx,-100
+msg	This tween moved me to the left!
+```
+
+Example of tweening a background:
+```
+bg	009/022_1280x720	immediate
+msg	This is a background. Woah!
+tween	current	009/022_1280x720
+
+```
 # vibrate
 Vibrates the controller or a mobile phone.
 

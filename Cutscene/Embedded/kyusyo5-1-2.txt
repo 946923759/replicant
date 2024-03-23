@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Graymoth Member
 bg	009/004_1280x720
 portraits	66
@@ -126,7 +126,7 @@ speaker	Himeko
 portraits	61	54
 emote	61	1
 emote	54	5
-msg	307059	Huh…whatever.	哼…随便你们。	フンッ……勝手になさい。	NONE
+msg	307059	Hmph... Do whatever you want.	哼…随便你们。	フンッ……勝手になさい。	NONE
 msg	307060	What a bunch of idiots. If there's any danger, I'm leaving you all behind. You'd just get in the way. Follow me if you're that eager to die.	真是一群蠢货，要是遇到什么危险我可是会丢下你们这些累赘的，要是求死心切的话就跟来吧。	本当にバカばっかりなんだから。足手まといだと判断したら、あなたたちのことは捨てていくわよ。死ぬ気で付いてきなさい。	NONE
 speaker	Emesa
 portraits	61	55
@@ -143,7 +143,7 @@ portraits	61	55
 emote	61	1
 emote	55	4
 msg	307063	You never asked.	你们又没问过我。	聞かれなかったからな。	NONE
-msg	307064	Ok! Etherine! What're you still doing here, go!	好了！伊瑟琳！你还愣着干嘛，走了！	ほら！イザーリン！何をボサッとしてんだ！行くぞ！	NONE
+msg	307064	Alright! Yssring! What are you waiting for? Let's go!	好了！伊瑟琳！你还愣着干嘛，走了！	ほら！イザーリン！何をボサッとしてんだ！行くぞ！	NONE
 speaker	Yssring
 portraits	61	54
 emote	61	1

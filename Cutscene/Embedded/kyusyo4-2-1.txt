@@ -34,7 +34,7 @@ speaker	Emesa
 portraits	55	56
 emote	55	4
 emote	56	0
-msg	301778	Come back! Are you going to @#$* leave your fellow people here!	给我回来！你OO要抛下自己的同伴么！	おい、戻ってこい！くそっ！自分の仲間を見捨てるのか！？	NONE
+msg	301778	Hey, come back here! Damn it! You're leaving your own people behind!	给我回来！你OO要抛下自己的同伴么！	おい、戻ってこい！くそっ！自分の仲間を見捨てるのか！？	NONE
 speaker	
 portraits	56
 emote	56	0
@@ -103,7 +103,7 @@ emote	55	4
 emote	55	4
 emote	61	2
 /Himeko	301799	Cut the crap, you're just a kid! Who do you think you are?	明明是个小鬼不要给我说这种臭屁的话！你以为你是谁啊！	ガキのくせに私に偉そうな口きくんじゃないの！何様のつもり！	NONE
-/Emesa	301800	You!	你！	お、おまえな！！	NONE
+/Emesa	301800	Why you--!!	你！	お、おまえな！！	NONE
 emote	55	4
 emote	61	1
 /Himeko	301801	No one will die this time. Trust me one more time.	这次不会再有人死掉了，再相信我一次。	もう誰も死なせたりはしないわ。1度でいいから私を信じて。	NONE

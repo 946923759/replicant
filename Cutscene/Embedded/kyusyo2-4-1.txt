@@ -17,10 +17,10 @@ msg	300904	...	……	……。	NONE
 speaker	Seele
 emote	59	3
 emote	60	4
-msg	300907	That's not true! You are the one who got everyone united and gave us the courage to carry on!	才不是呢！如果没有姐姐大人把大家聚集在一起！才让大家有活下去的勇气！	そんなことないよ！お姉ちゃんがいなかったら、みんなが一つになることなんてないよ！みんなに生きる勇気を与えているんだから！	NONE
+msg	300907	That's not true! You're the one that brought us all together and gave us the courage to live on!	才不是呢！如果没有姐姐大人把大家聚集在一起！才让大家有活下去的勇气！	そんなことないよ！お姉ちゃんがいなかったら、みんなが一つになることなんてないよ！みんなに生きる勇気を与えているんだから！	NONE
 emote	59	7
 emote	60	4
-msg	300908	So please, Bronya. Don't say anything like that.	所以…请姐姐大人不要说这样的话。	だから……お姉ちゃん、そんなこと言わないで。	NONE
+msg	300908	So.... Please don't say things like that.	所以…请姐姐大人不要说这样的话。	だから……お姉ちゃん、そんなこと言わないで。	NONE
 speaker	Bronya
 emote	59	7
 emote	60	4
@@ -83,7 +83,7 @@ speaker	Bronya
 msg	300929	What are you talking about!? You know how much it bothers me! And what's with that outfit you wear every day, are you just trying to show them off?!	别说了！我还是很在意的！希儿你每天穿的这个样子是想向我炫耀么！	何を言っているんですか！ブローニャは、気にしているんです！ゼーレ、あなたは毎日こんな服を着て、ブローニャに見せつけているんですか！？	NONE
 speaker	Seele
 tn	0	I used the English translation for this one. It was funnier. Go and sue me. Original was "Then you can touch mine too!", which sounds stupid.
-msg	300930	Hmm? Are you jealous, my sister~? I don't mind if you cop a feel too, y'know. 	诶？姐姐大人很羡慕么！那姐姐大人也来摸一下我的吧！	え？お姉ちゃんうらやましいの！？じゃあお姉ちゃんも私のを触っていいよ！	NONE
+msg	300930	Hmm? Are you jealous, my sister~? I don't mind if you cop a feel too, you know. 	诶？姐姐大人很羡慕么！那姐姐大人也来摸一下我的吧！	え？お姉ちゃんうらやましいの！？じゃあお姉ちゃんも私のを触っていいよ！	NONE
 speaker	Bronya
 msg	300931	No thanks!	不要！	結構です！	NONE
 speaker	Himeko

@@ -11,7 +11,7 @@ se	DLC_CH01_EV17_ExplosionTwoShots
 msg	300572	Bang! Bang!	轰隆！轰隆！！	ゴォン！ゴォン！！	NONE
 speaker	Seele
 emote	59	1
-msg	300573	How's the gate, Yssring?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
+msg	300573	Yssring! What's the situation on the gate?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
 speaker	Yssring
 emote	59	1
 emote	54	1
@@ -45,7 +45,7 @@ se	DLC_CH01_EV18_WarningAlertTunnel
 msg	300584	"Honkai creatures have entered the area of operation. Operation start!"	「崩坏生物进入作战区域，作战开始！」	「崩壊生物が作戦エリアに入った。作戦開始！」	NONE
 se	DLC_CH01_EV19_ExplosionOneShot
 shake_camera	2
-msg	300585	Bomb!	轰隆！！！	ゴォン！！！	NONE
+msg	300585	BOOM!!!	轰隆！！！	ゴォン！！！	NONE
 speaker	Seele
 msg	300586	Phew~ What beautiful fireworks!	咻~真是漂亮的烟花！	ヒュ～本当にきれいな花火！	NONE
 tn	0	She literally says this in Chinese

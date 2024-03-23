@@ -15,8 +15,8 @@ msg	300481	Follow me and you'll know.	跟我来吧，马上你就会知道了。
 jmp	end_choices
 
 label	c2dest
-msg	300482	Sorry for lying to you. Patrolling is not my purpose. I was trying to take you here.	抱歉，是我欺骗了你。其实真正的目的并不是巡逻，而是想带你到这里。	すみません、あなたを騙しました。本当の目的はパトロールではなく、あなたをここに連れて来たかったのです。	NONE
-msg	300483	Follow me and you'll know.	跟我来吧，马上你就会知道了。	ついて来てください。すぐに分かります。	NONE
+msg	300482	Sorry, I lied. I didn't bring you along for night patrolling, but to bring you here.	抱歉，是我欺骗了你。其实真正的目的并不是巡逻，而是想带你到这里。	すみません、あなたを騙しました。本当の目的はパトロールではなく、あなたをここに連れて来たかったのです。	NONE
+msg	300483	Follow me and you'll see.	跟我来吧，马上你就会知道了。	ついて来てください。すぐに分かります。	NONE
 
 label	end_choices
 bg	007/006_1280x720

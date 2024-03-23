@@ -33,7 +33,7 @@ emote	60	2
 msg	300467	Seele?  She's the same. She wants me to tell you not to blame yourself. It's true that we lost a family member, but what you did afterwards was right and necessary.	希儿？她还是老样子，她让我转告你，不要太过自责。这次任务中虽然损失了一位家人，但是你们的后续应对很正确。	ゼーレですか？いつも通りです。自分を責め過ぎないようにと、あなたに伝えるように言われました。今回、家族を1人失ったとはいえ、あなたたちの後処理はとても正確でした。	NONE
 msg	300468	If it wasn't for you, we would have lost so much more. Seele told me to thank you.	如果没有你的话损失或许会更大，希儿也让我好好赞赏你一番。	あなたがいなければ被害はもっと大きかったでしょう。ゼーレも私にあなたのことを褒めるように言っていましたよ。	NONE
 msg	300469	But you did disobey our command. You have to be punished for that.	不过既然是抗命了，那就要接受相应的惩罚。	ですが、命令に背いた以上は、相応の罰を受けなければなりません。	NONE
-msg	300470	Come on, there's nothing to fear. Let me think... You will come with me for another secret mission.	不要露出这种表情，不是什么可怕的事情，让我想想…那就和我去执行一个秘密任务好了。	そんな顔をしないでください。そんなに怖がることはありません。そうですね……ブローニャと一緒に秘密の任務に行くということにしましょう。	NONE
+msg	300470	Don't make that face. There's nothing to be scared of. Let me think... You and me are going on a secret mission together.	不要露出这种表情，不是什么可怕的事情，让我想想…那就和我去执行一个秘密任务好了。	そんな顔をしないでください。そんなに怖がることはありません。そうですね……ブローニャと一緒に秘密の任務に行くということにしましょう。	NONE
 
 label	end_choices
 msg	300466	Let's go. We won't be able to make it if we don't hurry.	出发吧，如果不快点的话可是赶不上的。	出発しましょう。急がないと間に合わなくなります。	NONE
@@ -48,4 +48,4 @@ msg	300474	With the expulsion of the Houkai creatures, we had nowhere to go but 
 msg	300475	But we still have hopes... That's why we keep on fighting.	但是希望依然存在…所以我们才会不断战斗下去。	ですが、希望は存在します……ですから、ブローニャたちレジスタンスは戦い続けているのです。	NONE
 portraits	60
 emote	60	2
-msg	300476	Sorry for talking much about myself. We should start night patrol now. The Houkai creatures never rest, so we'd better stay alert.	抱歉，自顾自说了这么多。走吧，开始夜间巡逻任务，崩坏生物可是不会休息的，所以我们必须保持全天警惕。	すみません。勝手にこんなに喋ってしまって。行きましょう。夜間パトロールの任務の開始です。崩壊生物は休みません。ですから、私たちは一日中警戒を保たなければいけません。	NONE
+msg	300476	Sorry for talking about myself so much. Let's start the night patrol. Honkai beasts don't rest, so even at night we have to stay vigilant.	抱歉，自顾自说了这么多。走吧，开始夜间巡逻任务，崩坏生物可是不会休息的，所以我们必须保持全天警惕。	すみません。勝手にこんなに喋ってしまって。行きましょう。夜間パトロールの任務の開始です。崩壊生物は休みません。ですから、私たちは一日中警戒を保たなければいけません。	NONE

@@ -1,9 +1,8 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	55	54	56
 msgbox_close	instant
 speaker	
 bg	009/063_1280x720
-msg	0				
 bg	009/062_1280x720
 
 
@@ -25,7 +24,7 @@ emote	54	4
 
 speaker	Emesa
 tn	0	Emesa seems to be using a very harsh word here that roughly means 'waste of space'.
-msg	301672	Useless bastard... Get up! Don't just sit there, help me! 	啧！没用的家伙！别给我装死！	この役立たずが！起きろ！そんなとこで死んでないで、手伝え！	NONE
+msg	301672	You fucking... Get up! Don't just sit there, help me! 	啧！没用的家伙！别给我装死！	この役立たずが！起きろ！そんなとこで死んでないで、手伝え！	NONE
 
 portraits	55	54	56,false,1
 emote	55	4

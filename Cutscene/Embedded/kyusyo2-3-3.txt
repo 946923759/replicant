@@ -54,7 +54,7 @@ msg	300835	Bang!!!	砰！！！	パン！！！	NONE
 se	DLC_CH02_EV04_WormFly
 msg	300836	*Loud Buzzing Sound*	嗡嗡嗡！！！	ブーン、ブーン、ブーン！！！	NONE
 speaker	Seele
-msg	300837	Those eggs... they are hatching altogether! How come...	虫卵都孵化了！怎么会……	虫の卵が孵化した！どうして……。	NONE
+msg	300837	All the eggs are hatching! But how.....	虫卵都孵化了！怎么会……	虫の卵が孵化した！どうして……。	NONE
 speaker	Bronya
 msg	300838	Mei! Hold on there! I'm coming for you!	芽衣姐姐！我这就来救你！	芽衣姉様！助けに来ました！	NONE
 speaker	Seele

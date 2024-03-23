@@ -1,9 +1,9 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Emesa
 bg	009/064_1280x720
 portraits	55
 emote	55	4
-msg	307174	Huh…huh……	呼…呼……	ふぅ……ふぅ……。	NONE
+msg	307174	Hah.... Hah....	呼…呼……	ふぅ……ふぅ……。	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1
@@ -18,29 +18,29 @@ speaker	Himeko
 portraits	61	55
 emote	61	1
 emote	55	4
-msg	307177	Ok, hold it, let's make it to the end.	嗯，再加把劲吧，既然已经来了就坚持到最后。	よし、もうひと踏ん張りよ。来たからには最後まで頑張ってちょうだい。	NONE
+msg	307177	Alright. We've already come this far, so try to hold out until we make it to the end.	嗯，再加把劲吧，既然已经来了就坚持到最后。	よし、もうひと踏ん張りよ。来たからには最後まで頑張ってちょうだい。	NONE
 speaker	Emesa
 portraits	61	55
 emote	61	1
 emote	55	4
-msg	307178	Since when I need your attention……	什么时候轮到你关心我了……	余計なお世話だ……。	NONE
-msg	307179	Huh…here the fog is thicker and thicker…we won't be able to see the path ahead.	呼…这里的雾气越来越浓了…这样根本看不到前面的道路。	ふぅ……霧がますます濃くなってきたな……これじゃ目の前の道もはっきり見えやしない。	NONE
+msg	307178	Since when are you supposed to be taking care of me...?	什么时候轮到你关心我了……	余計なお世話だ……。	NONE
+msg	307179	Whew... The fog is getting thicker and thicker... The road ahead is practically invisible.	呼…这里的雾气越来越浓了…这样根本看不到前面的道路。	ふぅ……霧がますます濃くなってきたな……これじゃ目の前の道もはっきり見えやしない。	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1
 emote	55	4
-msg	307180	The space distortion caused by Honkai covers the whole city, it's quite complicated, far more difficult than we expected.	崩坏引起的空间扭曲立场把整个学园都市都覆盖了，空间的扭曲错综复杂，看来这个学园比我们想象的更难突破。	崩壊が引き起こした空間歪曲フィールドが学園全体を覆っているのよ。空間が歪曲して複雑に入り組んでいるわ。学園を見つけ出すのは、思っていた以上に手ごわそうね。	NONE
+msg	307180	All of Academy City is being enveloped by a spacial distortion field caused by the Honkai. The distortion is really intricate. Finding our way to the school is going to be tougher than I thought.	崩坏引起的空间扭曲立场把整个学园都市都覆盖了，空间的扭曲错综复杂，看来这个学园比我们想象的更难突破。	崩壊が引き起こした空間歪曲フィールドが学園全体を覆っているのよ。空間が歪曲して複雑に入り組んでいるわ。学園を見つけ出すのは、思っていた以上に手ごわそうね。	NONE
 speaker	Emesa
 portraits	61	55
 emote	61	1
 emote	55	1
-msg	307181	Then what should we do……can we still find it?	那要怎么办…这样不是永远找不到千羽学园了？	じゃあ、どうすんだ……このまま永遠に千羽学園を見つけられないなんてことないよな？	NONE
+msg	307181	Then what should we do... Will we ever be able to find Senba Academy?	那要怎么办…这样不是永远找不到千羽学园了？	じゃあ、どうすんだ……このまま永遠に千羽学園を見つけられないなんてことないよな？	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1
 emote	55	1
-msg	307182	Don't worry, the thicker the fog is the closer we are to the centre, so the direction can't be wrong.	放心吧，雾气越浓就表示我们越接近中心区域，所以大方向一定没有错。	安心して。霧が濃くなってきたということは、私たちが中心エリアに近づいたということよ。だから、大まかな方向は間違っていないはずだわ。	NONE
-msg	307183	Also when we entered the Herrscher must noticed, even she invited us, she wouldn't let us wander around.	而且我们进入这里的时候律者肯定已经察觉到了，既然是她主动邀请我们的，就不会让我们在这里徘徊。	それに、ここに入った時点で私たちの存在に律者も気づいているでしょう。彼女から私たちを招待した以上、ここで彷徨わせたりはしないはずよ。	NONE
+msg	307182	Don't worry. If the fog is getting thicker, that means we're getting closer to the center. So we're at least sort of going in the right direction.	放心吧，雾气越浓就表示我们越接近中心区域，所以大方向一定没有错。	安心して。霧が濃くなってきたということは、私たちが中心エリアに近づいたということよ。だから、大まかな方向は間違っていないはずだわ。	NONE
+msg	307183	Besides, the Herrscher would have noticed our presence the moment we entered here. Since she invited us, she's not going to let us wander around.	而且我们进入这里的时候律者肯定已经察觉到了，既然是她主动邀请我们的，就不会让我们在这里徘徊。	それに、ここに入った時点で私たちの存在に律者も気づいているでしょう。彼女から私たちを招待した以上、ここで彷徨わせたりはしないはずよ。	NONE
 speaker	Emesa
 portraits	61	55
 emote	61	1
@@ -55,7 +55,7 @@ speaker	Emesa
 portraits	61	55
 emote	61	1
 emote	55	4
-msg	307186	Bronya…that bastard……	布洛妮娅…那个抛弃大家的混蛋……	ブローニャ……皆を見捨てたバカ野郎か……ちっ。	NONE
+msg	307186	Bronya... That jerk that left everyone behind....	布洛妮娅…那个抛弃大家的混蛋……	ブローニャ……皆を見捨てたバカ野郎か……ちっ。	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1
@@ -65,7 +65,7 @@ speaker	Emesa
 portraits	61	55
 emote	61	1
 emote	55	4
-msg	307188	Anyway I won't forgive her……	反正我是不会原谅那个家伙的……	それでも私は、アイツを許せないけどな……。	NONE
+msg	307188	That doesn't matter, I still won't forgive her...	反正我是不会原谅那个家伙的……	それでも私は、アイツを許せないけどな……。	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1
@@ -96,7 +96,7 @@ msg	307194	……	……	……。	NONE
 se	DLC_CH00_EV15_EarRing
 msg	307195	……	……	…………。	NONE
 msg	307196	Come……	来吧……	おいで——	NONE
-msg	307197	Towards the truth you want……	朝着你想要的真相前进……	——あなたが求める真相に向かって進むの……。	NONE
+msg	307197	Go towards the truth you're looking for...	朝着你想要的真相前进……	——あなたが求める真相に向かって進むの……。	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	1

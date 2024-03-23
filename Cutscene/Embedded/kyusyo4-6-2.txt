@@ -25,7 +25,7 @@ msg	301976	Dadada!	哒哒哒！	ダダダッ——！	NONE
 speaker	Graymoth Member
 portraits	66
 emote	66	0
-msg	301977	Captain! There are too many Houkai creatures! We can’t last long! If they surround us, we can’t get out!	队长！崩坏生物太多了！我们支撑不了多久！如果崩坏兽的包围网形成我们就出不去了！	隊長！崩壊生物が多すぎます！もう、持ちこたえられません！崩壊獣に包囲網を完成させられたら、ここから出られなくなります！	NONE
+msg	301977	Captain! There's too many Honkai beasts! We can't hold them for long! If they surround us, we'll never make it out of here!	队长！崩坏生物太多了！我们支撑不了多久！如果崩坏兽的包围网形成我们就出不去了！	隊長！崩壊生物が多すぎます！もう、持ちこたえられません！崩壊獣に包囲網を完成させられたら、ここから出られなくなります！	NONE
 speaker	Himeko
 portraits	61	66
 emote	61	2

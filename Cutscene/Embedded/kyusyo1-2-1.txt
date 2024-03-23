@@ -69,7 +69,7 @@ msg	300317	Is that so.... If I knew it was going to be you I wouldn't have made 
 speaker	Seele
 emote	59	5
 emote	54	1
-msg	300318	What did you say?	嗯？你说什么？	ん？何かな？	NONE
+msg	300318	Hmm? What did you say?	嗯？你说什么？	ん？何かな？	NONE
 speaker	Yssring
 emote	59	5
 emote	54	5
@@ -132,7 +132,7 @@ emote	59	1
 emote	59	3
 msg	300347	Slow down and pay attention to the changes around you. If you want to survive in a world filled with Honkai, you have to stay alert at all times.	放慢脚步，注意周围的变化，想要在崩坏的世界中生存就必须时刻保持警惕。	ゆっくり、周りの変化に注意して。崩壊の世界で生き残りたければ常に警戒を保たないとダメだよ。	NONE
 msg	300348	If it's a Honkai Beast, don't provoke it. Our objective this time is only reconnaissance. Avoid combat if at all possible.	如果是崩坏生物的话千万不能惊动它们。我们这次的目的只是探查而已，要尽量避免战斗。	もし崩壊生物だったら絶対に刺激してはダメ。私たちの今回の目的は偵察だけだからね。できる限り戦闘は避けて。	NONE
-msg	300349	Let me take this chance to teach you some survival skills. Watch my feet...	乘着这次机会就让我好好教教你生存的技巧吧，跟着我的脚……	この機会に生き残るために必要なすべを教えてあげるよ。いい？私と足並みを……。	NONE
+msg	300349	I'll take this opportunity to teach you some survival skills. Follow my footsteps...	乘着这次机会就让我好好教教你生存的技巧吧，跟着我的脚……	この機会に生き残るために必要なすべを教えてあげるよ。いい？私と足並みを……。	NONE
 speaker	
 se	DLC_CH01_EV08_ToolKit
 shake_camera	1

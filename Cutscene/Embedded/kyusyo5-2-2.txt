@@ -1,9 +1,9 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Emesa
 bg	009/013_1280x720
 portraits	55
 emote	55	4
-msg	307106	Idiot! Supid! OO Himeko! I was so kind! Damn!	笨蛋！白痴！姬子那个OO！好心当成驴肝肺！去死吧！	バカっ！アホっ！年増ッ！！せっかくの好意を台無しにしやがって！死んじゃえばいいのに！	NONE
+msg	307106	Moron! Idiot! That old ☆☆ just tramples all over my goodwill!! I hope she dies!	笨蛋！白痴！姬子那个OO！好心当成驴肝肺！去死吧！	バカっ！アホっ！年増ッ！！せっかくの好意を台無しにしやがって！死んじゃえばいいのに！	NONE
 choice	308187	It's long time since I heard Emesa say four letter words.	エミザの暴言を聞くのも久しぶり。	NONE	NONE
 choice	308202	Himeko is worried about your safety.	姫子もあなたの安全を考えてる。	NONE	NONE
 condjmp_c	c2dest	2
@@ -16,7 +16,7 @@ label	c2dest
 msg	307108	For my sake? Then you should lie on the bed!	为我着想？为我着想就好好在床上躺着！	私のことを考えているだって？なら、横になって休めってんだ！	NONE
 label	end_choices
 
-msg	307109	I had it enough recently!Everyone is so self-centric! What the hell! Who take care of my mood as a doctor! A group of OO!	最近接二连三的事情早就积了一肚子火了！每个人都那么自我中心！赶着投胎啊！有谁考虑我这个医疗员的心情了！一群臭OO！	最近、次から次に色んなことが起きて、もう我慢の限界なんだ！どいつもこいつも自己中ばっか！さっさと死んじゃえばいいんだ！誰も衛生兵の気持ちなんて分からないんだろ！？全員、×××にでもなって×××ちまえ！	NONE
+msg	307109	Lately, I've been going through one thing after another, and I'm running out of patience! They're all so selfish! They should just die! Nobody knows how a medic feels! I hope you all get ☆☆ed!	最近接二连三的事情早就积了一肚子火了！每个人都那么自我中心！赶着投胎啊！有谁考虑我这个医疗员的心情了！一群臭OO！	最近、次から次に色んなことが起きて、もう我慢の限界なんだ！どいつもこいつも自己中ばっか！さっさと死んじゃえばいいんだ！誰も衛生兵の気持ちなんて分からないんだろ！？全員、×××にでもなって×××ちまえ！	NONE
 msg	307110	Huh! Huh! I'm so pissed off!	呼！呼！气死我了！	フー！フー！イライラする！	NONE
 portraits	55
 emote	55	1

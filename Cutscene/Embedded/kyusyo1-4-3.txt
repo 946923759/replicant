@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 music	War And War
 speaker	Yssring
 bg	009/015_1280x720
@@ -80,7 +80,7 @@ msg	300605	The main cannon... Are they trying to... Quick, inform those on the f
 speaker	Yssring
 emote	54	3
 emote	60	5
-msg	300606	But at this distance, the gate will be...	但，但是！这个距离开炮的话闸门的结构会被……	で、でも！この距離で撃たれたらゲートも……！	NONE
+msg	300606	Wait, wait! If they shoot at us from this distance, the gate will be...!	但，但是！这个距离开炮的话闸门的结构会被……	で、でも！この距離で撃たれたらゲートも……！	NONE
 speaker	Seele
 emote	54	3
 emote	59	3

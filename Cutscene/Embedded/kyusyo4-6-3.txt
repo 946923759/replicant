@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Himeko
 bg	009/013_1280x720
 portraits	61
@@ -36,12 +36,12 @@ speaker	Emesa
 portraits	55	54
 emote	55	4
 emote	54	3
-msg	301995	Shut the @#$* up! Take the weapon!	少OO啰嗦！给我把武器拿上！	うっさい、黙れっ！さっさと武器持って来い！！	NONE
+msg	301995	Stop ☆☆ing crying! Grab a weapon!	少OO啰嗦！给我把武器拿上！	うっさい、黙れっ！さっさと武器持って来い！！	NONE
 speaker	Yssring
 portraits	55	54
 emote	55	4
 emote	54	2
-msg	301996	It’s all because of you! If Kyushou is here, we may still have some hope! What are we gonna do now!	都是因为你！要是把九霄说不定还有一丝希望！现在可怎么办！	全部あなたのせいよ！九霄が残っていればまだ一縷の望みがあったかもしれないのに！どうするのよ！	NONE
+msg	301996	It's all your fault! If Kyuushou remained with us we'd still have a sliver of hope left! Now what are we giong to do!?	都是因为你！要是把九霄说不定还有一丝希望！现在可怎么办！	全部あなたのせいよ！九霄が残っていればまだ一縷の望みがあったかもしれないのに！どうするのよ！	NONE
 speaker	Emesa
 portraits	55	54
 emote	55	4

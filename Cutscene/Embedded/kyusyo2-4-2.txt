@@ -15,7 +15,7 @@ msg	300935	Ahhh... And my body and soul are exhausted...	哎…真是身心俱�
 nop	
 emote	60	2
 emote	59	1
-msg	300936	Anyway, we have secured our base. Good job, everyone.	不过，总算是确保了基地周围的安全，今天真是辛苦各位了。	ですが、とにかく基地の周囲の安全は確保できました。みなさん、今日は本当にお疲れ様でした。	NONE
+msg	300936	But anyway, the perimeter of the base has been secured. Thank you all for your hard work today.	不过，总算是确保了基地周围的安全，今天真是辛苦各位了。	ですが、とにかく基地の周囲の安全は確保できました。みなさん、今日は本当にお疲れ様でした。	NONE
 speaker	Seele
 nop	
 emote	60	2
@@ -182,13 +182,13 @@ condjmp_c	c2dest	2
 
 label	c1dest
 nop	tn	0	could be better
-/Seele	300990	Strange dream? You didn't dream you were drowning in bug mucus, right? I woke up this morning with a startled look on my face! 	奇怪的梦？难道是被虫子的粘液淹没的梦么！我今早就是被这个吓醒的！	変な夢？まさか虫の粘液に溺れる夢じゃないでしょうね！私、今朝それで驚いて起きちゃったのよ！	NONE
+/Seele	300990	Strange dream? You didn't dream you were drowning in bug mucus like me, right? I woke up this morning with a startled look on my face!	奇怪的梦？难道是被虫子的粘液淹没的梦么！我今早就是被这个吓醒的！	変な夢？まさか虫の粘液に溺れる夢じゃないでしょうね！私、今朝それで驚いて起きちゃったのよ！	NONE
 msg	300991	You see... a lot has happened recently. So it's totally normal to have awkward dreams. Don't worry too much.	嘛~最近经历的事情有点多，所以做一些奇怪的梦也是正常的啦，不要想太多啦。	まぁ、最近色々あったしね。だから変な夢を見てもおかしくないよ。あまり考えすぎないで。	NONE
 msg	300992	Come on! Get up! Bronya must have been waiting for us.	好啦~快起来吧！姐姐大人一定在等我们呢。	ほら～早く起きて！お姉ちゃんが、きっと私たちを待ってるよ。	NONE
 jmp	end_choices
 
 label	c2dest
-/Seele	300993	Ahahaha~ same here! I didn't get much sleep last night either. I had nightmares about drowning in bug mucus...... it was horrifying!	啊哈哈~你和我想的一样！我昨晚也没睡好，做了一个被虫子粘液淹没的噩梦…实在是太可怕了！	アハハ～あなたも私と一緒ね！私も昨夜はあまり寝られなかったの。虫の粘液に溺れる悪夢を見ちゃって……本当に恐かった！	NONE
+/Seele	300993	Ahahaha~ same here! I didn't get much sleep last night either. I had nightmares about drowning in bug mucus...... It was horrifying!	啊哈哈~你和我想的一样！我昨晚也没睡好，做了一个被虫子粘液淹没的噩梦…实在是太可怕了！	アハハ～あなたも私と一緒ね！私も昨夜はあまり寝られなかったの。虫の粘液に溺れる悪夢を見ちゃって……本当に恐かった！	NONE
 msg	300994	But unfortunately.  We have an important mission. We don't have time to be sleeping in!	不过很可惜，我们还有更重要的任务，可没时间赖床哦~	でも残念。私たちには重要な任務があるの。二度寝している時間はないわよ～！	NONE
-msg	300995	Come on! Get up! Bronya must have been waiting for us.	好啦~快起来吧！姐姐大人一定在等我们呢。	ほら～早く起きて！お姉ちゃんがきっと私たちを待ってるよ。	NONE
+msg	300995	Come on! Get up! Bronya must be waiting for us.	好啦~快起来吧！姐姐大人一定在等我们呢。	ほら～早く起きて！お姉ちゃんがきっと私たちを待ってるよ。	NONE
 label	end_choices

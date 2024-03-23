@@ -41,7 +41,7 @@ speaker	Teammate
 portraits	59	56
 emote	59	3
 emote	56	0
-msg	301006	Actually... the report says they are not targeting at us. They are marching towards ME Corp.	不…哨站的报告上说崩坏生物的前进方向并不是基地，而是ME社的方向。	いえ、それが……見張りの報告では、崩壊生物の進んでいる方向は基地ではなくME社の方向のようです。	NONE
+msg	301006	Actually... The report said the honkai beasts are advancing towards M.E. Corp., not the base.	不…哨站的报告上说崩坏生物的前进方向并不是基地，而是ME社的方向。	いえ、それが……見張りの報告では、崩壊生物の進んでいる方向は基地ではなくME社の方向のようです。	NONE
 speaker	Seele
 portraits	59	56
 emote	59	3

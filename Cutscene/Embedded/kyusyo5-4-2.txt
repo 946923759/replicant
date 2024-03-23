@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	
 bg	009/064_1280x720
 se	DLC_CH00_EV13_MosterRoar
@@ -20,12 +20,12 @@ speaker	Emesa
 portraits	61	55
 emote	61	2
 emote	55	4
-msg	307208	Himeko! How are you! Any injuries?	姬子！你怎么样！受伤了么？	姫子っ！大丈夫か！？ケガは？	NONE
+msg	307208	Himeko! Are you okay! Are you hurt?	姬子！你怎么样！受伤了么？	姫子っ！大丈夫か！？ケガは？	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	2
 emote	55	4
-msg	307209	I'm ok…where's Kyushou?	别管我…九霄呢？	私に構う必要はないわ……それより九霄は？	NONE
+msg	307209	You don't need to worry about me. ...... More importantly, where's Kyuushou?	别管我…九霄呢？	私に構う必要はないわ……それより九霄は？	NONE
 speaker	Emesa
 portraits	61	55
 emote	61	2
@@ -140,7 +140,7 @@ speaker
 portraits	60
 emote	60	7
 se	DLC_CH03_EV01_GunAndExplosion
-msg	307237	Rat rat rat!	砰砰砰！	ダダダッ……ガンッ、カァン——ッ！	NONE
+msg	307237	Bang Bang Bang!	砰砰砰！	ダダダッ……ガンッ、カァン——ッ！	NONE
 speaker	Emesa
 portraits	55
 emote	55	4
@@ -188,7 +188,7 @@ speaker	Bronya
 portraits	62	60
 emote	62	1
 emote	60	7
-msg	307247	Why…I just want to revenge for Seele…why you all stop me!	为什么…我只是想为希儿报仇…为什么你们一个个都要妨碍我！	なぜ、なのですか……ブローニャはただゼーレの仇を討ちたいだけなのです……どうしてあなたたちは、次から次へとブローニャの邪魔をするのですかッ！？	NONE
+msg	307247	Why... I just want to avenge Seele's death... Why do you all keep getting in my way!	为什么…我只是想为希儿报仇…为什么你们一个个都要妨碍我！	なぜ、なのですか……ブローニャはただゼーレの仇を討ちたいだけなのです……どうしてあなたたちは、次から次へとブローニャの邪魔をするのですかッ！？	NONE
 speaker	
 portraits	60
 emote	60	7

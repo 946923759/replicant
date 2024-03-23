@@ -90,7 +90,7 @@ speaker	Bronya
 portraits	59	60
 emote	59	1
 emote	60	2
-msg	300538	Thank you, Seele!	嗯，谢谢你，希儿。	はい、ありがとう、ゼーレ。	NONE
+msg	300538	Thanks, Seele.	嗯，谢谢你，希儿。	はい、ありがとう、ゼーレ。	NONE
 portraits	59	60
 emote	59	1
 emote	60	3

@@ -94,7 +94,7 @@ speaker	Emesa
 emote	55	1
 emote	54	2
 msg	301923	You're so stubborn...	真是顽固的家伙…	本当に頑固なやつなんだから……。	NONE
-msg	301924	Take care of Himeko! She is quite reckless, so make sure you bring her back if you are in danger. I don’t want to take risk and retrieve your bodies!	姬子的安全就交给你了！这个家伙喜欢乱来，如果遇到危机一定要阻止她一起回来，我可不想冒着危险给你们收尸！	姫子の安全は任せたからな！こいつメチャクチャやるから、危険なことをしようとしたら必ず止めてやってくれ。絶対、一緒に帰って来るんだぞ。危険を冒してまで、あんたらの死体を拾いに行きたくないからな！	NONE
+msg	301924	I'm leaving Himeko's safety in your hands! She's quite reckless, so if she tries anything dangerous please stop her. I want both of you to come back safely. I'm not going to risk my life going out there to retrieve your corpses!	姬子的安全就交给你了！这个家伙喜欢乱来，如果遇到危机一定要阻止她一起回来，我可不想冒着危险给你们收尸！	姫子の安全は任せたからな！こいつメチャクチャやるから、危険なことをしようとしたら必ず止めてやってくれ。絶対、一緒に帰って来るんだぞ。危険を冒してまで、あんたらの死体を拾いに行きたくないからな！	NONE
 speaker	Himeko
 emote	61	1
 emote	54	2

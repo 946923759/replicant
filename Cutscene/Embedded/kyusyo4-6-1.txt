@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 match_names	Himeko	Greymoth Member	_DIM_ALL_WHEN_EMPTY
 speaker	Greymoth Member
 bg	009/058_1280x720
@@ -7,7 +7,7 @@ emote	66	0
 /Greymoth Member	301957	The group has finished collecting most of the parts on the list.	清单上的零件已经基本收集完毕。	リストの部品は大体集め終わりました。	NONE
 /Himeko	301958	Okay, check the load distribution and return immediately.	好，确认负重分配，立即返回。	よし、重量の分配を確認してすぐに帰るわよ。	NONE
 /Greymoth Member	301959	Roger that.	是。	はい。	NONE
-/Himeko	301960	At least we did it... The mission is 50% complete now. Hope Hyperion is all good.	总算是有惊无险…这样至少任务已经完成了一半了，希望休伯利安号那边能平安无事。	ここまでずっと生きた心地がしなかったわね……でも、これで少なくとも任務の半分は完了ね。ハイペリオン号の方も無事でいてくれればいいんだけど。	NONE
+/Himeko	301960	At least we did it... The mission is 50% complete now. I hope the Hyperion is still alright.	总算是有惊无险…这样至少任务已经完成了一半了，希望休伯利安号那边能平安无事。	ここまでずっと生きた心地がしなかったわね……でも、これで少なくとも任務の半分は完了ね。ハイペリオン号の方も無事でいてくれればいいんだけど。	NONE
 msg	301961	Here, take these, they're for [color=#cc66ff]you[/color]. The way back is a lot tougher, so don't fall behind.	拿着，这些是你的负重，回去的路可比来时要艰难多了，不要掉队。	ほら、持って。これはあなたの分よ。帰り道は来たときよりも大変だから遅れないようにね。	NONE
 speaker	
 se	DLC_CH00_EV13_MosterRoar

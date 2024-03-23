@@ -1,9 +1,9 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	101	201
 match_names	Kiana	Mei	_DIM_ALL_WHEN_EMPTY
 speaker	
 bg	007/006_1280x720
-msg	308216	Himeko…Himeko……	姬子老师…姬子老师……	姫子先生……姫子先生……。	NONE
+msg	308216	Ms. Himeko... Ms. Himeko... 	姬子老师…姬子老师……	姫子先生……姫子先生……。	NONE
 msg	308217	Himeko, wake up!	姬子别睡啦！	姫子、起きてっ！	NONE
 msg	308218	Umm ...... hmm?	唔……	うぅ……ん？	NONE
 portraits	101	201
@@ -20,12 +20,12 @@ msg	308223	I bet you had too much to drink last night, didn't you? Or maybe you 
 speaker	
 msg	308224	Shut up ...... you guys go to the training room first. I'll be there later.	要你管……你们先去训练室吧，我一会就来。	うるさいわよ……あなたたちは先にトレーニングルームに行きなさい。私はあとから行くから。	NONE
 speaker	Mei
-msg	308225	Ok, see you later Himeko~	嗯，姬子老师我们一会见~	はい、姫子先生。	NONE
+msg	308225	Okay. We'll see you there, Ms. Himeko.	嗯，姬子老师我们一会见~	はい、姫子先生。	NONE
 speaker	
 portraits	
 msg	308226	……	……	……。	NONE
 msg	308227	I can't believe I'm still dreaming about that scene even after all this time.	没想到隔了这么久还会梦到这样情景。	こんなに経ってるっていうのに、まだあの光景を夢に見るなんてね。	NONE
-msg	308228	Seems like I'm getting old……	看来我真的老了呢……	私も、歳を取っちゃったわね……。	NONE
+msg	308228	Seems like I'm getting old...	看来我真的老了呢……	私も、歳を取っちゃったわね……。	NONE
 bg	009/059_1280x720
 msg	306996	Kara! Kara!	咔拉！咔拉！	ガラン！ガラン！	NONE
 speaker	Yssring

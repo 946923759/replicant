@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Kiana
 music	Significance
 match_names	Kyuushou	Kiana	_DIM_ALL_WHEN_EMPTY
@@ -33,7 +33,7 @@ msg	302774	Due to the destructive power of the Honkai, Kiana killed them with he
 msg	302775	The people you cherish have already died. \nThe Fire Moths are nothing more than ghosts created by their obsession... They didn't exist from the beginning.	你所珍惜的那些人早就已经死去，逐火之蛾只是由她们执念虚构而出的亡灵…从一开始就不曾存在过。	あなたが大切にしている人たちはとっくに死んだの。#n火を追う蛾は、彼女たちの執念が作り出した亡霊でしかない……最初から存在していなかったの。	NONE
 emote	58	3
 emote	107	0
-/Kyuushou	302776	Nonsense! Is this what you meant when you said everything was false... But even still, everyone is fighting for their lives in this world! You say that's a lie, but these feelings are real!	不要胡说八道了！你一直强调的虚假就是这个意思么…但她们在这个世界中为了生存而不断战斗的一切都只是骗人的么！那些感情绝对不可能是虚构的！	デタラメを言うな！そうか、貴様がずっと偽りだと言っていたのは、#nそういう意味だったんだな。……でも、彼女たちはこの世界で、生きるために戦っているじゃないか！#nそれも全て嘘だったと言うのか！？あの感情は絶対に偽りなんかじゃない！	NONE
+/Kyuushou	302776	Nonsense! Is this what you meant when you said everything was false... But even still, everyone is fighting for their lives in this world! You say that's a lie, but these feelings can never be false!	不要胡说八道了！你一直强调的虚假就是这个意思么…但她们在这个世界中为了生存而不断战斗的一切都只是骗人的么！那些感情绝对不可能是虚构的！	デタラメを言うな！そうか、貴様がずっと偽りだと言っていたのは、#nそういう意味だったんだな。……でも、彼女たちはこの世界で、生きるために戦っているじゃないか！#nそれも全て嘘だったと言うのか！？あの感情は絶対に偽りなんかじゃない！	NONE
 /Kiana	302777	It's just an illusion that they themselves created... If I feel like it, they will disappear from this world in an instant.	那只不过是以她们的原型创造出来的假象罢了…只要我愿意，她们就会立刻消失在你的面前。	あれは彼女たち自身が作り出した、幻影でしかないのよ……。#n私がその気になれば、彼女たちは一瞬にしてあなたの前から消えるわ。	NONE
 emote	58	6
 emote	107	0

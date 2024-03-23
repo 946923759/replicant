@@ -48,7 +48,7 @@ msg	301841	Order the troops to return to Nagazora City. I'll make them pay in bl
 msg	301847	I will not run away anymore... Go back to Nagazora with me and keep fighting. This time, I will lead the Fire Moths to defeat the Herrscher!	我已经不会再逃避了…和我一起回到长空市继续战斗吧，这次我一定会指挥逐火之蛾战胜律者！	ブローニャはもう逃げたりしません……一緒に長空市に戻って戦い続けましょう。今度こそ火を追う蛾を指揮して律者に勝ってみせます！必ず。	NONE
 /Himeko	301848	......	……	……。	NONE
 msg	301849	No, you are just desperate, immersed in your own grief and self-loathing. The only thing you'd do is lead us all to destruction.	不，你只是沉浸在自己的悲伤中自暴自弃而已，现在的你只会带着大家走向灭亡。	いいえ、あなたは自分の悲しみに浸って自暴自棄になっているだけよ。今のあなたは、みんなを滅亡に向かわせるだけだわ。	NONE
-/Bronya	301850	Doom... Those comrades you killed, they were also led to doom by me... It is the same result everywhere...	灭亡么…那些被你杀掉的同伴也是在我的带领下走向灭亡的吧，反正到最后都是同样的结果……	滅亡ですか……では、姫子に殺された仲間もブローニャが滅亡に導いたのでしょう……結局最後は同じなんです……。	NONE
+/Bronya	301850	Destruction.... I've already lead your team members to destruction by leading them... The result is the same no matter what.	灭亡么…那些被你杀掉的同伴也是在我的带领下走向灭亡的吧，反正到最后都是同样的结果……	滅亡ですか……では、姫子に殺された仲間もブローニャが滅亡に導いたのでしょう……結局最後は同じなんです……。	NONE
 /Himeko	301851	You're trying to send everyone to their deaths? Seele died so everyone could live on. If you do that, Seele's death will be meaningless.	你是想让大家去送死么？希儿的死是为了大家能继续活着，你这么做只会让她的牺牲变得毫无意义。	あなた、みんなを死に追いやるつもり？みんなに生き続けてもらうためにゼーレは死んだのよ。あなたがそんなことしたら、ゼーレの死が無意味になっちゃうじゃないの。	NONE
 /Bronya	301852	Himeko, you are always so calm... I get it, everyone that has survived was saved by you. I cannot decide for them. But Seele saved my life, so I must revenge for her!	姬子，你总是这么冷静呢…我明白了，现在活着的人都是你救下了的，她们怎么选择我无法决定，但是我的生命是希儿救下的，所以希儿的仇我一定会报！	姫子はいつも冷静ですね……わかりました。今生きている人はあなたが救った人たちです、無理強いはできません。ですが、ブローニャの命はゼーレに救われました。ゼーレの仇を討つ理由がブローニャにはあるのです！	NONE
 
@@ -80,4 +80,4 @@ speaker	Himeko
 emote	61	1
 emote	60	7
 msg	301859	......	……	……。	NONE
-msg	301860	As you like.	随你的便。	勝手にすれば。	NONE
+msg	301860	Suit yourself.	随你的便。	勝手にすれば。	NONE

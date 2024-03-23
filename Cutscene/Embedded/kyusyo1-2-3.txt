@@ -166,7 +166,7 @@ speaker	Yssring
 nop	54
 emote	59	6
 emote	54	4
-msg	300452	Sorry.	……抱歉。	……ごめん。	NONE
+msg	300452	......Sorry.	……抱歉。	……ごめん。	NONE
 msg	300453	Thank you...	谢谢你……	ありがとう……。	NONE
 speaker	Seele
 nop	54

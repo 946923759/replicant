@@ -24,11 +24,22 @@ func _input(_event):
 		set_page(curPage+1)
 	elif Input.is_action_just_pressed("ui_left") and curPage>0:
 		set_page(curPage-1)
+#	elif Input.is_action_just_released("mousewheel_down") and curPage < NUM_PAGES-1:
+#		set_page(curPage+1)
 	elif Input.is_action_just_pressed("ui_pause"):
 		if curPage==1:
 			_on_FoxgirlButton_pressed()
 		elif curPage==2:
 			_on_FoxgirlButton_pressed()
+	
+	if _event is InputEventMouseMotion:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	elif _event is InputEventMouseButton and _event.button_index == BUTTON_RIGHT:
+		OffCommandPrevScreen()
+#	elif _event is InputEventMouseButton:
+#		match _event.button_index:
+#			BUTTON_WHEEL_UP:
+#
 
 func set_page(i:int):
 	var s = get_viewport().get_visible_rect().size.x

@@ -14,7 +14,13 @@ msg	/setDispChr[22]This sentence stops... And resumes on the same textbox!
 portraits	58	59	60	61	67
 emote	58	1
 stopmusic	2
-/Kyushou	Replicant supports up to 5 portraits at the same time.
+/Kyuushou	Replicant supports up to 5 portraits at the same time.
+match_names	Kyuushou	Seele	Bronya	Himeko	Sin Mal
+/Kyuushou	It also supports automatic highlighting by matching names. Check out the "match_names" command in this file.
+/Seele	Hello! I'm Seele Vollerei!
+/Bronya	I'm Bronya Zaychik.
+/Himeko	I'm Himeko Murata... Or Murata Himeko, if you're Japanese.
+/Sin Mal	I'm Sin Mal!! Muahahaha!
 se	DLC_CH00_EV01_TrainStop
 msg	Sound effect test.
 bg	009/003_1280x720

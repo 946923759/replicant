@@ -3,6 +3,8 @@ extends TextureRect
 
 func Cover():
 	rect_size=Globals.gameResolution
+	#Not sure why this works
+	rect_pivot_offset=Globals.gameResolution/2.0
 	#size_flags_horizontal=1
 	stretch_mode=STRETCH_KEEP_ASPECT_COVERED
 	expand=true

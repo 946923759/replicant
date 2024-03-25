@@ -13,3 +13,14 @@ msg	Flip sprite.
 tween	current	009/018_1280x720	accelerate,.5;addx,300;decelerate,.5;addx,-300
 msg	Backgrounds can be tweened too! Although backgrounds are a Control type and not a Node2D type, so tweens might be a bit buggy.
 msg	Check out the 2nd background test which adds a background with custom parameters, then tweens it around.
+portraits	58	59
+tween	current	58	decelerate,.5;zoomx,1
+msg	Tweens can be executed on as many things as you want at the same time.
+tween	current	58	decelerate,.5;addx,-100
+tween	current	59	decelerate,.5;addx,100
+msg	Tweening!
+tween	current	58	linear,.1;addx,-10;linear,.1;addx,10;linear,.1;addx,-10;linear,.1;addx,10
+tween	current	59	decelerate,.5;addx,-100
+msg	With tweens you can create advanced animations like shaking, zooming, and more.
+portraits	58,false,4	59
+msg	However, the default positioning system still allows you to shift characters around.

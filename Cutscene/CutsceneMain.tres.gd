@@ -1189,7 +1189,7 @@ func end_cutscene_2():
 	var needToSave:bool=false
 	for c in backgrounds.get_children():
 		var f = c.get_meta("file_name")
-		if !(f in Globals.playerData['CGunlock']):
+		if f and !(f in Globals.playerData['CGunlock']):
 			print_debug("Unlocked CG "+f)
 			Globals.playerData['CGunlock'].append(f)
 			needToSave=true

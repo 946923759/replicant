@@ -114,8 +114,13 @@ func _ready():
 	if "lang" in cutsceneData:
 		#print(cutsceneData['lang'])
 		for i in range(cutsceneData['lang'].size()):
+			var lang = cutsceneData['lang'][i].to_lower()
+			if lang == "ch":
+				lang = "zh"
+			elif lang == "jp":
+				lang = "ja"
 			#print(cutsceneData['lang'][i].to_lower()+ " == "+INITrans.currentLanguage)
-			if cutsceneData['lang'][i].to_lower()==INITrans.currentLanguage:
+			if lang==INITrans.currentLanguage:
 				msgColumn=i
 				break
 	else:

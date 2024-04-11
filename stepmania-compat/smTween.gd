@@ -118,7 +118,30 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 			"zoomx":
 				tw.tween_property(objectToTween,rectPrefix+"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"diffuse","modulate":
-				tw.tween_property(objectToTween,"modulate",Color(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				"""
+				Usage examples:
+					linear,.5;diffuse,#FF0000      <- Tween by hex colors
+					linear,.5;diffuse,darkgreen    <- Tween by constants
+					linear,.5;diffuse,1.0,0.5,0.3  <- Tween by float
+				"""
+				
+				var val:Color = Color.black
+				if splitCmd.size() == 4:
+					val = Color(float(splitCmd[1]),float(splitCmd[2]),float(splitCmd[3]))
+				elif splitCmd[1].begins_with("#"):
+					val = Color(splitCmd[1])
+				else:
+					val = ColorN(splitCmd[1])
+#					var expression = Expression.new()
+#					expression.parse(splitCmd[1])
+#					#Color.darkgreen
+#					print("Tried to parse "+splitCmd[1])
+#					#Convert Color.red, Color("#RRGGBB"), Color(1.0,0.5,1.0), etc
+#					var res = expression.execute()
+#					if res is Color:
+#						val = res
+
+				tw.tween_property(objectToTween,"modulate",val,tweenLength).set_delay(timeToDelay)
 			"diffusealpha":
 				tw.tween.property(objectToTween,"modulate:a",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"emote":

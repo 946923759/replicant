@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Himeko
 bg	011/012_1280x720
 portraits	61
@@ -171,7 +171,7 @@ emote	61	1
 emote	55	1
 tn	0	Again, the Japanese rewrote this to explain what Mei said
 msg	307171	I've heard some of this from Bronya. She said that Kiana and Mei, the two Herrschers, met at Senba Academy. So that's what it means by "the start".... 	这个我也听布洛妮娅说过，律者琪亚娜和芽衣就是在千羽学园结识，所以她们才选择回到那个地方么……	ブローニャから少しだけ聞いたことがある。律者であるキアナと芽衣は、千羽学園で知り合ったって。なるほど、だからここが始まりの場所なのか……。	NONE
-msg	307172	Herrschers destroy the world, the were transformed from humans, since they choose that place as the destination, maybe they still have some human emotions……	律者是毁灭世界的罪魁祸首，她们原本是由人类转化而成，既然选择了相遇的地方作为归宿，是不是代表她们还留有人类的感情……	律者は世界を滅ぼす存在だけど、元は人間なんだよな？千羽学園を終わりの場所として選ぶってことは、人間の頃の感情が残ってるのか……？	NONE
+msg	307172	Herrschers are those that inflict destruction upon the world, but they used to be human, right? If they picked Senba Academy as their resting place, does that mean they still have some human emotions?	律者是毁灭世界的罪魁祸首，她们原本是由人类转化而成，既然选择了相遇的地方作为归宿，是不是代表她们还留有人类的感情……	律者は世界を滅ぼす存在だけど、元は人間なんだよな？千羽学園を終わりの場所として選ぶってことは、人間の頃の感情が残ってるのか……？	NONE
 speaker	Himeko
 portraits	61	55
 emote	61	2

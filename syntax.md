@@ -1,21 +1,29 @@
 
 **Syntax is not standard! If something doesn't work, that's not my problem!**
 
-# /
-Special opcode that gets turned into speaker & msg internally. Sets speaker and message in one line.
-
-Example: `/Kyuushou	Hello world!`
-
 # `#`
 Anything starting with # will not get compiled in. Instead, you can use two 'special' commands with #. You are free to use # for anything other than these two commands, of course.
 
 ex. `#This is a comment`
 
 ## #NEXT
-Set the next cutscene manually.
+Set the next cutscene manually. Because it does not support branching or logic, this isn't nearly as useful as using `next` opcode (but that isn't implemented yet).
 
 ## #LANGUAGES
 Set the language order if this cutscene has multiple languages.
+
+Languages match the ISO-639-1 standard: https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
+
+CH is also aliased to ZH and JP is aliased to JA. Because I am clearly not an expert at language standards.
+
+You will usually see `#LANGUAGES	KEY	EN	ZH	JA	PT` at the top of the story scripts included in the VN engine.
+
+If an unsupported language is selected in the options and the file doesn't have that language, it will fall back to the first column.
+
+# /
+Special opcode that gets turned into speaker & msg internally. Sets speaker and message in one line.
+
+Example: `/Kyuushou	Hello world!`
 
 # tn
 If used right before a message, display a translation note button that can be clicked or viewed by holding shift.

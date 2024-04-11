@@ -1,0 +1,164 @@
+#LANGUAGES	KEY	EN	CH	JP	PT
+speaker	
+bg	007/006_1280x720
+msg	308233	The time has come.	终于还是到了这一刻么。	この時が、ついに訪れた。	NONE
+msg	308234	The countdown to destruction has begun, the laws of nature are interpreted to their logical end, and civilization will come to an end.	毁灭的倒计时已经开始，自然法则以最合理的方式得到解释，文明的灭亡将是最后的结论。	破滅へのカウントダウンが始まり、自然の摂理は最も合理的な形で解釈をされ、最後には文明が終焉へと至る。	NONE
+msg	308235	Maybe such a result is the best for this dying world, but I still can't accept this answer……	或许这样的结果对于这个死寂绝望的世界来说是最好的解脱，但是我却怎么也无法接受这样的答案……	この結末は、絶望に満ちたこの世界にとって解放なのかもしれない……だが、どうしてもその答えを受け入れることができない……。	NONE
+msg	308236	Well…seeking survival is the only thing in common among all lives, even for us it's the same.	没办法…追求生存是生命唯一的共性，就算是我们也一样。	仕方ない……生きることを望むのは、どの生命にもある欲望であり、私たちも例外ではないのだから。	NONE
+msg	308238	「Stigmata Space connection starts……」	「圣痕空间链接开始……」	「聖痕空間のリンクを開始……」	NONE
+msg	308239	——Because we're all selfish creatures called human beings.	——谁让我们是称为人类的自私的生物呢。	——人類は、利己的な生き物だ。	NONE
+msg	-1				
+msg	308240	……	……	……。	NONE
+msg	308241	……	……	……。	NONE
+msg	308242	……	……	…………。	NONE
+msg	308243	Go……	快走……	はやく、戻らないと……。	NONE
+msg	308244	Everyone…leave here……	大家…离开这里……	みんなのために……ここから出るんだ……。	NONE
+msg	308245	I will protect you……	我会保护大家的……	みんなのことを守らないと……。	NONE
+msg	308246	Go!	快走！	はやく……ッ！	NONE
+msg	308247	Woo……	唔……	うぅ……ん……。	NONE
+
+match_names	Bronya	Yssring
+bg	009/008_1280x720
+portraits	60	54
+emote	60	4
+/Bronya	308248	Kyuushou! Hey, what's wrong with you? Wake up!	九霄！九霄你怎么样了！快醒醒！	九霄ッ！九霄、どうしましたか！目を覚ましてください！	NONE
+speaker	
+msg	308249	Bronya……	布洛妮娅……	ブローニャ……。	NONE
+speaker	Bronya
+portraits	60
+emote	60	2
+msg	308250	Thank goodness... You finally woke up. I thought you'd sleep forever like Seele...	太好了…终于醒了么，我还以为你和希儿一样……	良かった……やっと起きたのですね。ゼーレと同じように目を覚まさないのではと思いました……。	NONE
+speaker	Yssring
+portraits	60	54
+emote	60	2
+emote	54	1
+msg	308251	Whew, you finally woke up..... Kyuushou, you've been out cold for two days now. But the situation seems to be much better than we thought.	呼~总算是醒过来了么…九霄，你已经昏迷了快两天了，不过现在看来情况要比想象中的要好不少呢。	ふぅ、やっと起きたのね……九霄、もう2日も気を失ってたのよ。でも、想定よりもだいぶ状態が良いみたいね。	NONE
+speaker	
+emote	54	1
+msg	308252	Where am…I?	我这是…在哪？	私は……ここはどこ？	NONE
+speaker	Yssring
+emote	54	4
+msg	308253	Sorry, Emesa is still in a coma, so I'm having you sleep in the repair room. It's easier for me to deal with you here.	抱歉，因为埃米沙还在昏迷中，所以只能把你安排在我的维修室里了，这样也方便我观察。	ごめんね、エミザがまだ昏睡状態だから、あなたには修理室で寝てもらってるの。ここの方が、私としても対応しやすいしね。	NONE
+emote	54	1
+msg	308254	Kyuushou, I am sure you are still disoriented, but since this is an emergency situation, can you answer my question first?	九霄，我知道你现在一定很迷茫，不过现在情况紧急，请先配合我一下吧。	九霄、きっとまだ困惑していると思うけど、今は非常事態だから先に私の質問に答えてくれる？	NONE
+emote	54	3
+msg	308255	First of all, do you remember what happened in Academy City?	首先，你还记得在学园都市发生了什么事情么？	まず、学園都市での出来事について、覚えてる？	NONE
+choice	309285	Himeko……	姬子她……	姫子が……。	NONE
+choice	309305	Is that a dream……	那一切都不是梦么……	全部夢じゃなかったんだ……。	NONE
+
+speaker	Yssring
+emote	54	1
+msg	308256	You look like remember something more or less…ok, I know you have lots of questions now, but let me explain first, it's more efficient……	看来多少还有一些印象…好吧，我知道你现在一定有很多问题想问，但请先听我说明一下现在的状况吧，这样会效率很多……	少し覚えているのね……聞きたいことはたくさんあると思うけど、少し状況を説明させてもらうわ。	NONE
+msg	308257	First, regarding you, when Brogna brought you back from the school city, you had a strong erosive reaction from the Honkai. You are fine for now, but the Honkai energy is still in your system.	首先，关于你自己，在布洛妮娅把你从学园都市带回来的时候你的身上有着强烈的崩坏侵蚀反应，虽然现在已经暂时消退了，不过这股崩坏能依旧潜伏在你的体内。	まず、あなたに関することだけど、ブローニャがあなたを学園都市から連れて戻ってきた時、崩壊による侵食反応が強く出てたの。今のところ大丈夫だけど、崩壊エネルギーはまだあなたの体内に残ってる。	NONE
+msg	308258	According to her description, when you are attacked, you were saying something weird, as if someone else is controlling you.	根据布洛妮娅的描述，在你遭受侵蚀的时候，总是说着一些令人不解的话，仿佛有另一个意识正在操控着你。	ブローニャの説明では、あなたが侵食を受けた時に意味のわからないことを口走っていたそうよ。まるで、別の意識があなたを操ってたみたいだって。	NONE
+msg	308259	Although I don't know the exact reason now…but, if I am right everything must to do with your disappearing memory and the strange transformation of this world……	虽然目前还不清楚具体的原因…不过，如果我的猜想没错的话这一切一定与你消失的记忆还有这个世界发生的异变有关……	具体的な原因はまだわかってないけど……私の予想では、おそらくそれはあなたの消えた記憶と——そして、この世界にあった異変と関係してるんだと思う……。	NONE
+
+speaker	Bronya
+emote	60	1
+emote	54	1
+msg	308260	I don't know if you still remember, during the fighting with Herrshcers the dead plague starts to shine again, after that Herrschers disappeared in the huge tower they created……	不知道你还记不记得，在与律者战斗的时候天空中的死斑重新发出了亮光，随后律者也消失在了她们创造出来的巨塔之中……	律者との戦いの後、空にある死斑が再び光を帯びたことは覚えていますか？それと、律者が作り出した巨塔は？そこに律者の二人が消えていったことは覚えていますか？	NONE
+
+speaker	Yssring
+emote	60	1
+emote	54	1
+msg	308261	Yes, when the Honkai inside of you awoke, the dead plague was activated again, I think there must be a connection.	是的，在你体内的崩坏苏醒的同时，这个世界的死斑也重新被激活了，所以我想这其中一定有什么联系。	あなたが崩壊に支配されたのと同時に、この世界の死斑が復活したの。だから、この二つにはきっと何か関係があるんだと思う。	NONE
+
+emote	60	1
+emote	54	4
+msg	308262	But these are not the most important…because the conclusion of my two-day's investitation is much worse…...	不过现在这些并不是最重要的…因为通过我这两天的调查后得出的结论远比预想的要糟糕许多……	でも、それらのことは一旦置いておきましょう……ここ2日の調査で得た結果が、予想よりもだいぶマズいことになっているの……。	NONE
+
+portraits	
+bg	011/005_1280x720
+msg	308263	As you know…the dead plague is the scar left by herrshcers after releasing big Honkai, it covers the whole earth and make the Honkai energy going to every corner of the world, during this process, the dead plague gets dark.	如你所知…死斑是律者在释放毁灭世界的大崩坏后留下的伤疤，它笼罩着整个地球并将崩坏能不断散布到这个星球各个角落，随着崩坏能的扩散，原本闪耀的死斑变得渐渐暗淡。	あなたも知っての通り、死斑とは律者が大崩壊を起こした後に、この世界に残した傷跡よ。それらは地球を包み、崩壊エネルギーを至るところにまき散らしてるわ。そして、崩壊エネルギーが拡散されるにつれ、死斑の色は徐々に暗くなっていく。	NONE
+
+bg	011/006_1280x720
+msg	308264	But now it's re-activated, according to the monitor data, it's absorbing the Honkai energy back…the process of big Honkai is going back again, which means when the dead plague absorbs all the Honkai energy, the big Honkai will happen again……	然而现在死斑被再次激活，从观测的数据来看，它正在将地表的崩坏能重新吸收回去…大崩坏的过程正在回溯，这也就意味着当地表的崩坏能重新归于死斑的时候，那场毁天灭地的大崩坏将再次降临……	死斑が再び光を帯び始めたのを見て、その状態を観察してみたところ、地表の崩壊エネルギーを吸収していることがわかったの……つまり、大崩壊の過程が巻き戻されているってわけ。地表にあった崩壊エネルギーが全て死斑に戻れば、おそらく大崩壊が再び発生するわ……。	NONE
+
+bg	009/067_1280x720
+msg	308265	Now Herrshcers all leave the earth, the tower they created that links to the dead plague also proves this point…to starts the Honkai will need Herrscher's power, when the dead plague completes activation, Herrschers will use the power of destroying the world, to repeat the tragedy five years ago.....	而如今律者已经离开了地表，她们创造的那座直通死斑中心的巨塔也验证了这个观点…想要触发这场大崩坏就需要律者的力量，当死斑完全激活的时候，律者就将再次动用灭世的力量，重演五年前的惨剧……	律者は地表を離れ、死斑の中心へと繋がる巨塔を作ると、その中へと姿を消したわ……大崩壊の発生には律者の力が必要と考えると、これらがすべてを証明しているの。死斑が完全に復活した時、5年前の惨劇が繰り返されるってね……。	NONE
+
+bg	009/008_1280x720
+portraits	60	54
+emote	54	4
+msg	308266	Until then none of us can escape from it…human civilization will walk to the end.	届时我们都将难逃一劫…人类的文明也将走向终点。	もし、そうなれば……もう誰も逃げられない……人類の文明は完全に終わりを迎える。	NONE
+speaker	
+emote	54	4
+msg	308267	……	……	……。	NONE
+speaker	Yssring
+emote	54	1
+msg	308268	Eh…after all these you must be very confused, but this is the situation we have now, though we don't know the exact time, but it seems that we are very close to the Honkai eruption……	呃…一下子说了这么多你也一定一头雾水吧，不过这就是我们现在面临的状况，虽然还不知道大崩坏具体的爆发时间，但是以现在崩坏能的衰退速度来看恐怕离那一刻的到来不会太久了……	ごめん、一気に言われてもわけがわからないよね。でも、これが今、私たちの直面している状況なの。大崩壊がいつ発生するのかはわからないけど、地表にある崩壊エネルギーの減衰速度を見ると、おそらくそう先のことではないわ……。	NONE
+choice	309286	Is this the end?	一切都结束了么？	すべて終わったの？	NONE
+choice	309306	Is there any way we can bring it back?	难道没有挽回的方法了么？	挽回する方法はないの？	NONE
+
+speaker	Bronya
+emote	60	4
+msg	308269	Based on current situation…we're quite hopeless now……	以现在的状况来看…的确是没有希望了……	この状況を見ると……確かに希望はありません……。	NONE
+msg	308270	Sorry…for telling you all these when you just recover…now people in the base are all very panic, I don't know what to do either…maybe the right choice is to wait for the end of the world quietly as Theresa said……	抱歉…明明你还刚刚恢复就和你说这些…现在基地的大家都乱做一团，我也不知道该怎么办…或许像德丽莎说的那样安静地迎接末日的降临才是正确的选择……	意識が戻ったばかりなのに、このような話をしてしまいすみません……基地の皆が混乱していて、ブローニャもどうすればいいのかわからないのです……テレサが言ったよう、静かに最後の日を迎えるのが正しい選択なのでしょうか……。	NONE
+
+emote	60	4
+emote	54	4
+/Yssring	308271	Bronya……	布洛妮娅……	ブローニャ……。	NONE
+
+emote	60	2
+emote	54	4
+/Bronya	308272	Kyushou, you should rest well…we will take care of those things, thank you for fighting with us until now……	九霄，你先好好休息吧…后面的事情就交给我们好了，谢谢你为了大家战斗到了现在现在……	九霄は、身体を休めることに専念してください……あとのことは何とかします。今までみんなのために戦ってくれたこと、心より感謝します……。	NONE
+
+portraits	60	54
+emote	60	1
+emote	54	4
+msg	308273	Sorry.... I have to go somewhere.	那么…我先失陪了。	では、失礼します。	NONE
+
+speaker	
+portraits	54
+emote	54	4
+msg	308274	……	……	……。	NONE
+
+speaker	Yssring
+emote	54	4
+msg	308275	Bronya must be very lost as well…now she also need time to cheer up, otherwise she can't do anything in this state.	布洛妮娅也一定很迷茫吧…现在的她也需要一段时间重新振作起来，如果是以这个状态的话什么事情都干不成了。	ブローニャもきっと迷ってると思う……今の彼女には、立ち直る時間が必要なの。そうでないと、きっと何もかもうまくいかない。	NONE
+emote	54	2
+msg	308276	We can only depend on ourselves now……	看来事到如今只能靠我们自己来扭转这个绝望的局面了……	今は私たち自身の力で、この絶望的な状況をなんとかしないとね……。	NONE
+msg	308277	We don't have much time left, if you still hesitate we might lose everything……	现在留给我们的时间已经不多了，如果继续犹豫下去的话一切都将无法挽回……	残された時間はそう多くないわ。これ以上、迷ってたらきっと何もかも取り返しがつかなくなる……。	NONE
+emote	54	3
+msg	308278	Kyushou.	九霄。	九霄。	NONE
+msg	308279	What I'm going to say might be very astonishing, but please trust me!	接下来我要说的话你可能会很震惊，但是无论如何请你相信我！	これから私が言うことは、あなたを驚かせるかもしれない。けど、どうか信じてほしいの。	NONE
+msg	308280	Because everything is related to your life…and the being of this world.	因为这一切都将关系到你自己的生命…也关系到这个世界的存亡。	あなたの命と……この世界の存亡に関わることだから。	NONE
+msg	308281	Kyuushou... Do you know why you have no memories of this world?	九霄…你知道自己为什么没有这个世界的记忆么？	九霄……どうして、あなたにこの世界の記憶がないかわかる？	NONE
+
+speaker	
+bg	007/006_1280x720
+portraits	
+emote	54	3
+msg	308282	It's because you weren't originally someone from this world.	那是因为你根本就不属于这个世界……	それは、あなたがこの世界の人間じゃないから……。	NONE
+
+msgbox_close
+bg	011/011_1280x720
+msg	-1				
+
+msgbox_open
+bg	007/006_1280x720
+msg	308283	Houraiji Kyuushou.	蓬莱寺九霄。	蓬莱寺九霄。	NONE
+msg	308284	The world we are in right now is just a phantom.  This is the illusionary world created by the stigmata in you.	我们身处的世界不过是一个虚幻的梦境罢了，是由你体内纠缠的数个圣痕所创造的假象。	今、私たちがいる世界は幻でしかないの。ここは、あなたの中にある聖痕が作り出した幻想の世界。	NONE
+msg	308285	The dying city of Nagazora is the cage that binds you, and the remnants of humanity here never existed in the first place.	这座濒临毁灭的长空市就是束缚你的牢笼，而这个苟延残喘的人类文明也根本不复存在。	この破滅寸前の長空市は、あなたを束縛する監獄よ。そして、この人類文明もそもそも存在しない。	NONE
+msg	308286	Right now, in the real world, you are on the verge of death. Your body is in danger of being eroded by the core of the Herrscher. My purpose is to rescue you from the Honkai's erosion.	而此时此刻，在现实层面的真正的你正濒临死亡，你的身体正遭受律者核心的侵蚀岌岌可危，而我的使命就是把你从崩坏的边缘拉回来！	今、現実世界にいるあなたは死に直面しているの。あなたの身体は、律者のコアに侵食され危険な状態にある。私の目的は、あなたを崩壊の浸蝕から助け出すこと。	NONE
+msg	308287	Based on my observation of this world, your awareness has combined with here, the world is a reflection of you.	以我这段时间对这个世界的观测来看，你的意识已经与这里融为一体，这个世界本身就是你身体的写照，	これまで、この世界を観測してきたけど、あなたの意識はすでにここと一つになってる。この世界自体が、あなたの身体の生き写しみたいなものなの。	NONE
+msg	308288	This is a dream, and a reality too, when this world dies, your life will come to the end……	这里既是幻境，也是现实，当这个世界被崩坏侵蚀消灭的时候，你的生命也将迎来真正的终结……	ここは幻であり、現実でもある。この世界が崩壊に侵食され破滅する時、あなたの命もそこで終わりを迎えるの……。	NONE
+msg	308289	But as long as this world is not ended, we will still have hope, so we can't give up!	但是只要这个世界还没有结束，我们就还有最后的希望，所以我们还不能放弃！	ただ、この世界が終わらない限り、私たちには最後の希望がある。だから、絶対に諦めないでほしい……！	NONE
+
+bg	009/008_1280x720
+portraits	54
+emote	54	3
+tn	0	Is this supposed to be the Honkai Impact? What the fuck is the Great Honkai?
+/Yssring	308290	Listen, there's only one way left to save you. It's also the only way to stop the Great Honkai. 	听着，现在还有一个办法可以挽救你，这也是唯一一个可以阻止大崩坏的方法。	ひとつだけ助かる方法があるの。これは、大崩壊を阻止する唯一の方法でもあるわ。	NONE
+emote	54	2
+msg	308291	I can't guarantee we'll succeed, but we've got no options left.	但这已经是最后的手段了，我不能保证它的成功率，但我们也别无选择。	その成功率は保証できないけど、他に選択肢もない状況よ。	NONE
+emote	54	3
+msg	308292	I hope you can help me…not only for the world, also for yourself!	如果可以的话希望你能帮助我…这不仅是为了改变这个世界，更是为了你自己！	できれば協力してほしい……この世界に変革をもたらすだけでなく、あなたのためでもあるから。	NONE
+
+choice	309287	Sorry... I still don't understand.	抱歉…我还不是很明白。	ごめん……まだよくわからない。	NONE
+choice	309307	Sorry... Let me think about it.	抱歉…让我整理一下吧。	ごめん……ちょっと整理させて。	NONE
+
+emote	54	2
+/Yssring	308293	Oh... Sorry, it must be confusing to try to explain this to you all at once.	是么…是我的错，一次和你说这些你一定也很混乱吧，抱歉。	あっ……一気に言われても混乱するわね、ごめんなさい。	NONE
+emote	54	3
+msg	308294	Take the rest of the day off for now...... I'll be waiting for you tomorrow morning outside the ME office. When you've made up your mind, come and meet me there.	今天你就好好休息吧…明天早上我会在ME社外面等你，如果你决定好了就来找我吧……	今日はひとまずゆっくり休んで……明日の朝、ME社の外で待ってるから。決心がついたら、私のところに来てほしい……。	NONE

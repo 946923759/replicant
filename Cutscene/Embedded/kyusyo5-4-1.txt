@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Emesa
 bg	009/064_1280x720
 portraits	55
@@ -102,8 +102,8 @@ portraits	61	55
 emote	61	1
 emote	55	4
 msg	307198	Kyushou? What's wrong with you?	九霄？你怎么了？	九霄？どうしたの？	NONE
-choice	308188	I heard someone call my name.	誰かが呼んだ声が聞こえた。	NONE	NONE
-choice	308203	I feel like I've been here before.	以前、ここに来たことある気がする。	NONE	NONE
+choice	308188	I heard someone call my name.	我听到有人在呼唤我。	誰かが呼んだ声が聞こえた。	NONE
+choice	308203	I feel like I've been here before.	我感觉自己曾经来过在这里。	以前、ここに来たことある気がする。	NONE
 speaker	Emesa
 bg	009/064_1280x720
 portraits	55

@@ -13,7 +13,10 @@ script/source = "extends Panel
 signal clicked()
 
 onready var l = $Label
-var text:String=\"\" setget set_text
+#var text:String=\"\" setget set_text
+#var category:String=\"\"
+export (String) var text setget set_text
+export (String) var category
 
 func set_text(t_:String):
 	text=t_

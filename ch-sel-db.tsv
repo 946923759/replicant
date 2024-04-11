@@ -11,7 +11,7 @@ Music Test	What Is going on	test_music,test_tween
 Choice Test	AASBBBDFD	test_choice,test_choice_design,test_var
 Font Test	Tests fonts, colors, pauses.	test_font,test_textPause
 Background Test		test_background,test_background_custom,test_background_advanced
-Black background test		test_blackbg
+Background Color test		test_blackbg,test_bgcolor
 Video Test		final_round_test
 Vibrate Test		test_vibrate
 
@@ -60,6 +60,12 @@ March	Take the bridge into Academy City	kyusyo5-2-1,kyusyo5-2-2
 Homecoming		kyusyo5-3-1
 Meet Again	Defeat the Honkai Beasts on the outskirts of Academy City	kyusyo5-4-1,kyusyo5-4-2
 Reunion	They meet again, but she's not smiling.	kyusyo5-5-1
+
+--Chapter 6
+Truth	It seems that Yssring has something to say to you…	kyusyo6-1-1
+New Friend	After making up your mind, you decide to meet up with Yssring.	kyusyo6-2-1,kyusyo6-2-2
+Srcuple	Now that the pink haired girl has joined you, you can head out.	kyusyo6-3-1
+Beacon	The group takes a short break while discussing philosophical things.	kyusyo6-4-1
 
 --Chapter 7
 Hope

@@ -1,0 +1,93 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	54	67
+match_names	Yssring	Sin
+music	City Ruins - Quiet
+
+speaker	Yssring
+bg	011/006_1280x720
+portraits	54	67
+emote	54	1
+se	DLC_CH01_EV15_WindWooshB
+/Yssring	308361	I'm a little tired... Let's take a break here.	稍微有些累了呢…我们先在这里休息一下吧。	少し疲れたわ……ここでしばらく休みましょう。	NONE
+msg	308362	....Kyuushou, what are you doing with that stone?	唔…九霄，你在石头上弄些什么呢？	……うん？九霄、石の上で何をしてるの？	NONE
+choice	309291	Marking, is the way Himeko taught me.	标记，是姬子教我的方法。	マーカーは姫子に教わった方法だから。	NONE
+choice	309311	Marking, can prevent us to be lost.	标记，可以防止我们迷路。	マーカーは迷子になることを防げるから。	NONE
+condjmp_c	c2dest	2
+label	c1dest
+speaker	Yssring
+emote	54	4
+msg	308363	Oh…you learned a lot after joining Grey Moth,	是么…看来你加入灰蛾部队之后学到了很多东西嘛，	そう……灰蛾部隊でいろいろ学んだのね。	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Yssring
+emote	54	4
+msg	308364	Oh…I remember Himeko has used the same method, so you learned a lot after joining Grey Moth.	是么…记得之前姬子也用过这样的方法呢，看来你加入灰蛾部队之后学到了很多东西嘛。	そう……昔、姫子もそういう方法を使ったのね。どうやら、灰蛾部隊でいろいろと学んだようね。	NONE
+msg	308365	Himeko certainly excelled in fighting back against the Honkai. If only she were still around......	姬子在对抗崩坏这方面的确有很多过人之处，如果她还在的话……	姫子は、対崩壊戦という領域で確かに優れていたわ。もし、彼女がまだいてくれてたら……。	NONE
+
+label	end_choices
+speaker	Sin
+emote	67	1
+msg	308366	Hey! What are you whispering about?	喂！你们在说什么悄悄话呢？	おいおい！何、こそこそやってるんだ？	NONE
+speaker	Yssring
+
+emote	54	2
+emote	67	1
+msg	308367	....It's nothing. By the way, aren't you tired? You've been jumping around for a while now. Just watching you is making me tired.	不…没什么。话说杏你不累么，从刚才开始就总是上蹿下跳的，看的都觉得吃力。	いえ……何でもないわ。ところでシン、疲れないの？さっきからピョンピョン跳んだりして、こっちは見てるだけで疲れるんだけど。	NONE
+speaker	Sin
+
+emote	54	2
+emote	67	1
+msg	308368	Heh, don't compare me to a weakling like you.	哼，别把我和你这种废物相提并论。	ふん、お前みたいな軟弱者と一緒にすんなよな！	NONE
+msg	308369	Come to think of it, that herrscher core is really being a pain in the ass. The core's goal is to kill Kyuushou and take over her body, right? What on earth is the purpose of recreating Nagazora like this?	话说那颗律者核心还真是舍得下血本呢，它的目的不是杀死九霄占据九霄的身体么，费这么大功夫造个长空市干什么？	そういえば、あの律者コアも面倒くさいことするよな。コアの目的は、九霄を殺して身体を奪うことだろ？こんな長空市まで作って、いったい何がしたいんだ？	NONE
+speaker	Yssring
+
+emote	54	1
+emote	67	1
+msg	308370	The state of this world doesn't have much to do with the core of the second Herrscher... The composition of the stigmata space is determined by the stigmata inside Kyuushou. But her body is in a confusing state right now, so a lot of it is still a mystery.	这个其实和第二律者的核心关系不大…圣痕空间的构成是由九霄所拥有的圣痕所决定的，但是九霄的身体情况很复杂，所以一切还没有定论。	この世界の在り方は、第二律者のコアとはあまり関係ないわ……聖痕空間の構成は九霄が待つ聖痕で決まっているの。けど、九霄の身体ってかなり複雑な状態だから、謎なことには変わりないわね。	NONE
+speaker	Sin
+
+emote	54	1
+emote	67	2
+msg	308371	Huh, the one who create the world must really like it here very much, is she also a interesting person like me?	哼，不管怎么说创造这个世界的人一定很中意这里吧，难道是和本大爷一样趣味的家伙么！	ふん、とにかくこの世界を作ったヤツは、きっとここがお気に入りなんだろうな。ひょっとしたら、ボクとおんなじ趣味なのかも？	NONE
+speaker	Yssring
+
+emote	54	2
+emote	67	2
+msg	308372	……maybe you're right, the one who create this, must has a deep emotion towards this world, otherwise why she choose sucha a painful era.	……或许说的对，创造这里的那个人，一定也对这个世界有着某种深刻的感情，不然为什么要选择这么痛苦的时代来作为依托呢。	……そうかもしれないわね。ここを作った人は、きっとこの世界に何かしらの深い思い入れがあるはずよ。でないと、こんな苦しい世界を選ぶ理由がないもの。	NONE
+msg	308373	Speaking of which, I've been meaning to ask you two... Do you girls believe in reincarnation?	其实我一直想请教你们一个问题…你们相信轮回的存在么？	そういえば、ずっとあなたたちに聞きたかったことがあったの……あなたたち、輪廻って信じる？	NONE
+choice	309292	I do.	相信。	信じる。	NONE
+choice	309312	I don't.	不相信。	信じない。	NONE
+
+emote	54	2
+/Yssring	308374	So...... Coming from an atheist who believes in science, reincarnation is a bizarre concept.	是么…对于信奉科学的无神论者来说，轮回的确是一个可笑的话题。	そう……科学を信じる無神論者からすると、やっぱり輪廻はおかしなものだわ。	NONE
+emote	54	1
+msg	308375	But the more I experience things in this world, the more I wonder if ...... what happened here is what actually happened once. ...... Maybe we were once doomed to perish. I wonder if we are all doomed to perish once .......	但是在这个世界中经历的越多就越让我产生动摇…这里的一切是否真的就是曾经发生的事情…是否真的就是一度毁灭的我们。	でも、この世界で様々なことを経験するほど疑問が生まれてくるの……ここであったことは、かつて実際にあったことなのかもって……もしかしたら、一度滅びる運命を辿った私たちなのかなって……。	NONE
+
+emote	54	1
+emote	67	4
+/Sin	308376	You really love to think about complicated things.... It's already in the past, what's the point on continuing to dwell on it?	你这家伙还真是喜欢想这种复杂的事情啊…既然都是已经是过去的事情了，有什么好纠结的。	そーいう複雑なことを考えるの、お前好きだよなぁ……もう過去の出来事なんだろ、これ以上考えてどうすんだよ。	NONE
+
+emote	54	4
+emote	67	4
+/Yssring	308377	But if all these happen again……	但是如果这样的事情再次发生的话……	でも、もし同じことがまた起きたら……。	NONE
+
+emote	54	4
+emote	67	2
+/Sin	308378	Just prevent it, then.	不让它发生不就行了。	阻止すりゃいいだろ。	NONE
+speaker	Yssring
+
+emote	54	3
+emote	67	2
+msg	308379	No.... That's... Not really what I was asking.	不…所以说不是这么简单的问题。	いや……だから、そういう簡単な問題じゃないのよ。	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	2
+msg	308380	You always make it so complicated, don't you have headache?	是你这家伙总是把事情想的太复杂啦，每次想这么多不头疼么？	お前は複雑に考えすぎなんだって。毎回そんなんで、頭痛くなんないのか？	NONE
+speaker	Yssring
+
+emote	54	1
+emote	67	2
+msg	308381	...I guess I should have expected a response like that from you. Kyuushou, you can forget about it too. It's probably too confusing for you too.	哎…说的也是，和你讨论这些果然是不会有结果的…九霄也是，忘了我这些话吧，你也一定一头雾水吧。	はぁ、そうよね、こんな話をしてもどうしようもないわね……九霄も忘れてちょうだい。きっと、訳がわからないものね。	NONE
+msg	308382	We've rested enough, let's get going. Hopefully the next stop is our last.	呼~也休息的差不多了，我们出发吧，希望下一站将会是终点呢。	ふぅ、そろそろ出発しましょう。次が目的地だといいんだけど。	NONE

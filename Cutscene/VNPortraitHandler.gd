@@ -221,6 +221,9 @@ func apply_sm_tween(tweenString) -> float:
 
 func gestalt_set_textures(sprName):
 	var matching = Globals.get_matching_files("res://Portraits",sprName)
+	if not matching:
+		printerr("No texture exists named "+sprName)
+		return false
 	
 	portrait_textures = Dictionary()
 	var foundDefaultYet:bool=false

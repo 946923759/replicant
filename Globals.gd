@@ -23,7 +23,7 @@ var OPTIONS = {
 	},
 	"language":{
 		"type":"list",
-		"choices":["en","ja","ch","pt"],
+		"choices":["en","ja","zh","pt"],
 		"localizeKey":"Language",
 		"default":"en"
 	},

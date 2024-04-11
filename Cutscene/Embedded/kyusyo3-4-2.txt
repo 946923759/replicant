@@ -72,4 +72,6 @@ msg	301270	Right, this is our home~	没错，这里就是我们的家~	そうよ
 speaker	
 portraits	60
 msg	301273	Then, fall asleep with Mei...	那就和芽衣一起沉睡吧……	じゃあ、芽衣と一緒に眠りましょ……。	NONE
+stopmusic	1.0
+bg	black
 msg	301274	/setDispChr[29]Then, fall asleep with Mei... [color=#ff0000]Forever.[/color]	直到永远。	——永遠に。	NONE

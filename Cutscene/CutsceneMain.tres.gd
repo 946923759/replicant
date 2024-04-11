@@ -130,8 +130,10 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 						continue
 					var v = kvSplit[1].strip_edges()
 					
+					#Parse the v table parameters. arg2 is "treat SCREEN_CENTER_X/Y as variables"
 					var expression = Expression.new()
 					expression.parse(v,["SCREEN_CENTER_X, SCREEN_CENTER_Y"])
+					#Execute the expression, so Vector2(1,2) would return Vector2(1,2), etc
 					v = expression.execute([Globals.gameResolution.x/2.0, Globals.gameResolution.y/2.0])
 #					if v.begins_with("Vector2"):
 #						pass

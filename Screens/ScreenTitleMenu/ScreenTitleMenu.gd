@@ -26,6 +26,7 @@ var MAINMENU_BASE = [
 ]
 var mainMenu_runtime = []
 
+export (bool) var enable_alternate_bg_in_debug = false
 const SPACING = 200
 
 var keyboard_selection:int=0
@@ -62,7 +63,16 @@ func _ready():
 			c.position=Vector2(-999,-999)
 	#t.interpolate_property(quad,"modulate:a",1,0,.5)
 	
-	$smSound.load_song("Significance");
+	
+	var USE_ALT_BG = OS.is_debug_build() and enable_alternate_bg_in_debug
+	#Check completed here
+	#USE_ALT_BG = USE_ALT_BG or
+	if USE_ALT_BG:
+		$smSound.load_song("Negai");
+		$smSprite.loadVNBG("011/023_1280x720")
+		$Kyuushou.visible = false
+	else:
+		$smSound.load_song("Significance");
 	update_background_parallax(get_viewport().get_mouse_position())
 	#set_process(true)
 	#fakeMousePos=Globals.gameResolution/2

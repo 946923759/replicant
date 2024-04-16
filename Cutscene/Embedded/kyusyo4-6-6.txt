@@ -11,8 +11,8 @@ speaker	Himeko
 portraits	61	56
 emote	61	2
 emote	56	0
-msg	302075	Yssring! Have you fixed the cables!	伊瑟琳！电缆修好了么！	イザーリン！ケーブルは直ったの！？	NONE
-speaker	Yssring
+msg	302075	Estherine! Have you fixed the cables!	伊瑟琳！电缆修好了么！	イザーリン！ケーブルは直ったの！？	NONE
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	6
@@ -22,7 +22,7 @@ portraits	61	54
 emote	61	1
 emote	54	6
 msg	302077	Right now! Hyperion, start acceleration!	就是现在！休伯利安号开始加速！	今よ！ハイペリオン号加速！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -37,7 +37,7 @@ portraits	61	54
 emote	61	1
 emote	54	1
 msg	302080	We have got away from it! Main gun, aim on it! Prepare to fire!	甩掉了！主炮瞄准！准备开炮！	振り切った！主砲の照準を合わせて！発射用意！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -48,7 +48,7 @@ portraits	54
 emote	54	1
 se	DLC_CH00_EV13_MosterRoar
 msg	302083	Roar!	吼吼吼！	ウゴォォォン！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	5
 msg	302084	Whoa! That... That thing is catching up!	呜哇！那…那家伙追上来了！	うわっ！あ……あいつ追いついてきた！	NONE
@@ -63,7 +63,7 @@ emote	54	5
 msg	302086	Boom!!!	轰！！！	ドォォォンッ！！	NONE
 se	DLC_CH00_EV13_MosterRoar
 msg	302087	Roar!	吼吼吼！	グルルル！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	3
 msg	302088	Mi... Mi.. Mi...	打…打…打……	いけ……いけ……いけ……！	NONE
@@ -80,7 +80,7 @@ portraits	61	54
 emote	61	1
 emote	54	5
 msg	302091	Don’t panic! That shot had greatly interfered its movement! Take this opportunity and rush into the vacuum area!	别慌张！刚才那一炮已经很大的干扰了它的行动，趁着这段时间冲入真空区！	慌てないで！今の一撃で行動を大きく阻害できたはずよ。今のうちに崩壊エネルギーの真空エリアに突入しましょう！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	6
@@ -95,7 +95,7 @@ portraits	54
 emote	54	6
 se	DLC_CH03_EV01_GunAndExplosion
 msg	302094	Dadada!	哒哒哒！	ダダダッ——！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	6
 msg	302095	Himeko! We are in the vacuum area now! That thing will not...	姬子！我们进入真空区了！那个家伙已经追不……	姫子！真空エリアに入った！きっと、あいつももう追って……。	NONE
@@ -104,7 +104,7 @@ portraits	54
 emote	54	6
 se	DLC_CH00_EV13_MosterRoar
 msg	302096	Roar!!	吼吼吼！！	ウォォォーン！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	5
 msg	302097	Ahhhh! Why is it still coming after us! This is not what we are promised!	啊啊啊！怎么还在追啊！和说好的不一样啊！	な、ななッ！どうしてまだ追ってくるの！想定と違うじゃない！	NONE
@@ -116,8 +116,8 @@ msg	302098	Ughh... This big one is different with other Houkai creatures, is it.
 portraits	61	54
 emote	61	2
 emote	54	5
-msg	302099	Yssring! Max power output from the power furnace! We must reach ME Corp!	伊瑟琳！动力炉最大出力！一定要抵达ME社！	イザーリン！動力炉を最大出力に！必ずME社にたどり着いて！	NONE
-speaker	Yssring
+msg	302099	Estherine! Max power output from the power furnace! We must reach ME Corp!	伊瑟琳！动力炉最大出力！一定要抵达ME社！	イザーリン！動力炉を最大出力に！必ずME社にたどり着いて！	NONE
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	2
@@ -126,7 +126,7 @@ speaker
 portraits	54
 emote	54	2
 msg	302101	Boom!!!	轰！！！	ドォォォォォン！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	5
 msg	302102	Whoa! Engine 3 exploded... I won’t take the responsibility if the ship is also blown up!!	呜哇！3号引擎爆炸了…要是连船一起炸了我可不管哦！！	うわっ！3番エンジンが爆発した……船まで一緒に爆発したら私知らないからね！	NONE
@@ -135,7 +135,7 @@ portraits	61	54
 emote	61	1
 emote	54	5
 msg	302103	I don’t care! If we stop now, we are done!	就算坏掉也没关系！如果在中途停下我们就完了！	壊れても構いやしないわ！途中で止まったら、それこそおしまいよ！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	6

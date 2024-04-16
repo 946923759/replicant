@@ -1,0 +1,145 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	Fortress of Lies - No Vocals
+speaker	
+bg	011/007_1280x720
+se	DLC_CH00_EV13_MosterRoar
+msg	308435	Growl!!	吼吼吼！！	ウォオオオオオッ——！！！！	NONE
+portraits	54	67
+match_names	Estherine	Sin
+
+emote	67	4
+/Sin	308436	Shut up! Get out of the way!	烦人的家伙！给我滚开！	うっさい！どけッ！	NONE
+speaker	Estherine
+emote	54	6
+emote	67	4
+msg	308437	Sin, we're almost there, don't fight too much! The Honkai Beasts here are far tougher than those outside!	杏！我们马上就要到了！不要恋战！这里的崩坏生物比外面棘手太多了！	シン、もうすぐ着くんだから戦いはほどほどに！ここの崩壊生物は、外のより遥かに手強いんだから！	NONE
+speaker	Sin
+
+emote	54	6
+emote	67	4
+msg	308438	Easy for you to say! You always just watch from the sidelines!	说的倒轻松！别总是躲在后面看戏啊！	言うのは簡単だよな！お前もちょっとは手を貸せよ、まったく！	NONE
+speaker	
+emote	67	4
+se	DLC_CH00_EV11_MosterRoar
+msg	308439	Growl……	吼吼吼……	フシュー……。	NONE
+speaker	Estherine
+
+emote	54	2
+emote	67	4
+msg	308440	Uh... Why did they stop attacking?	呃…这些崩坏生物怎么停止攻击了？	あれ、急に攻撃が止んだ？	NONE
+speaker	Sin
+
+emote	54	2
+emote	67	1
+msg	308441	Ha ha! They must be frightened by my strength!	哼！一定是被本大爷的力量给吓坏了吧！	ハハッ！きっとボクの力にビビったんだろ！	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	1
+msg	308442	No... That look... They're under the control of something....	不…从它们的样子来看似乎是受到了什么指令一样……	いいえ……この様子、何か指示を受けてるんだわ……。	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	2
+msg	308443	Oh, whatever! As long as we can get there, right?	哎呀你管它呢！反正顺利到达了不就行了！	まぁ、無事到着したし！ほっとけばいいさ！	NONE
+
+emote	54	3
+emote	67	4
+tween	during	54	decelerate,.5;addx,-230;addy,50;zoom,1.2
+tween	during	67	decelerate,.5;addx,-250;addy,50;zoom,1.2
+tween	during	011/007_1280x720	decelerate,.5;addx,-200;zoom,1.2
+msg	308444	Wow, the Moonlight Throne is in terrible shape. If my mom saw this, she'd have a stroke. What in the world could have done this to it?	话说从近处看还真是惨呢~到底是什么样的东西把月光王座弄成这副样子的，要是妈妈看见了一定会心疼死。	近くで見ると本当に悲惨だなぁ！一体、何が月光王座をこんな姿にしたんだ？ママに見られたら卒倒もんだぞ、こりゃ。	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	4
+msg	308445	Only those who were there during the fight would know... But the only way it could have been this bad is if there was a Herrscher involved.	这种事情只有经历过那场战斗的人才会知道吧…不过除了律者应该也没有谁能做到这种事情了。	それは、この戦いを経験した人にしかわからないでしょうね……でも、こんなになるなんて、おそらく律者絡みなんでしょうけど。	NONE
+
+emote	54	6
+emote	67	4
+msg	308446	Anyway, let's find out if there is a way to enter the Moonlight Throne first. Climbing up from the ruins over there should allow us to enter the battleship. Let's go.	总之，我们先找找看有没有进入月光王座的道路吧，从那边的废墟爬上去应该可以进入到战舰里面，我们走吧。	とにかく、月光王座の中へと入れる場所を探しましょう。たぶん、あそこの廃墟から登れば戦艦に入ることができるはずよ。行きましょう。	NONE
+bg	007/006_1280x720
+stopmusic	3.0
+
+tween	during	54	zoom,1.0
+tween	during	67	zoom,1.0
+portraits	54	67
+emote	54	2
+emote	67	4
+msg	308447	E- Everyone watch your step... If you fell from this height, you'd die for sure...	唔…大家小心脚下…要是从这里摔下去就完了……	み、みんな気を付けて……ここから落ちたら、おお、お、おしまいだからね……。	NONE
+
+emote	54	3
+emote	67	4
+msg	308448	Whoa!	呜哇！	わ、わぁ……ッ！	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	1
+msg	308449	Huh~you should take care of yourself right?	哼~该小心的是你自己吧？	はぁ、お前が一番気を付けろよ。	NONE
+speaker	Estherine
+
+emote	54	5
+emote	67	1
+msg	308450	Hah, hah.... You scared me half to death...	呼…吓死我了……	ふ、ふぅ……びっくりした……。	NONE
+speaker	
+emote	67	1
+msg	308451	……	……	……。	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	1
+msg	308452	Looks like there's a hole here... We should be able to get in though here.	这里有一个窟窿…从这边进去的话应该就能进到里面了。	ここの穴から中に入れそうね。	NONE
+speaker	
+emote	67	1
+msg	308453	Clang——!	哐啷——！	ガタン——ッ！	NONE
+speaker	Estherine
+
+emote	54	6
+emote	67	1
+msg	308454	Hmph!	嘿咻—！	よいしょっと。	NONE
+msg	308455	Phew! I managed to get in...	呼！总算是进来了……	ほっ、何とか入れたわ……。	NONE
+bg	011/009_1280x720
+music	Fortress of Lies - Vocals
+
+emote	54	3
+emote	67	1
+msg	308456	(Cough)....! The concentration of Honkai Energy here is much higher than average... All the energy outside must be leaking out from here.	咳咳！这里的崩坏能浓度果然比预想的还要高……果然外界的崩坏能都是从这里散发出来的么。	コホン……！ここの崩壊エネルギー濃度、やっぱり平均値を上回ってる……外を漂う崩壊エネルギーもここから漏れ出たのかしら。	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	4
+msg	308457	Wow, this place looks like crap. I never imagined I'd see the Moonlight Throne reduced to this.	这地方可真是破的可以，没想到月光王座居然也有变成这样的一天。	すごいボロボロだな。月光王座のこんな姿を見る日がくるなんて。	NONE
+speaker	Estherine
+
+emote	54	2
+emote	67	4
+msg	308458	Judging from the damage to the armor, the battle must have been really intense... Only the Herrscher could have done this kind of damage. Although I've encountered them a couple of times, seeing this reminds me of just how terrifying they are...	从装甲的破损程度来看战斗一定非常惨烈…也就只有律者能造成这样的破坏了…虽然已经和她们交手过几次了，但还是让人背脊发凉呢……	装甲の破損具合からして、戦闘は苛烈なものだったと想像できるわ……これだけの破壊力、やっぱり律者以外には考えられない……何度も相手にしてきたけど、あらためて恐ろしい存在だと認識させられるわ……。	NONE
+speaker	Sin
+
+emote	54	2
+emote	67	2
+msg	308459	Hee hee, I bet it was fun. I wish I could have been there! My blood's boiling  just imagining it!	嚯嚯~一定非常刺激吧！要是本大爷也能参加的话就太棒了！光是想象一下就让人热血沸腾！	ヒッヒッ、きっと面白かったんだろうなぁ。ボクも参加できたら良かったのに！想像しただけでゾクゾクする！	NONE
+speaker	
+emote	67	2
+msg	308460	Crack…Crack……	喀拉…喀拉……	ガラッ……ガラン……。	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	2
+msg	308461	This is... An Anti-Entropy armored weapon!	咕！这个是…逆熵的机甲兵器么！	これは……ネゲントロピーの機甲兵器！？	NONE
+msg	308462	Damn it... I didn't think there'd be mechas here too. Was it eroded by the Honkai just like back at the M.E. Corp. building?	糟糕…没想到这里还有残留的机甲！难道和ME社一样被崩坏侵蚀了么！	まずいわ……ここに機甲がいるなんて想定外。まさか、ME社の時と同じよう崩壊に侵食されてないよね……？	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	2
+msg	308463	Hell yeah, a welcome party just for us! I'm ready to go on a rampage!	还真是盛大的迎接啊，看来又可以大干一场了……	チッ、盛大な歓迎だなぁ！大暴れできそうだ……ッ！	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	2
+msg	308464	Sin, let's retreat! You've been through enough battles already, you're in no shape to be fighting again!	杏，我们先撤退吧，现在你的状态不合适战斗！	シン、一旦撤退しましょう。連戦続きで、今のあなたは万全な状態じゃない！	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	2
+msg	308465	Then let's fight our way out before more arrive!	那也得先杀出一条道路再说！	だったら、その前に撤退の道を作らないとだな！	NONE

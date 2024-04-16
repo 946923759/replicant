@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	54
-match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+match_names	Seele	Estherine	_DIM_ALL_WHEN_EMPTY
 music	Grandma
 portraits	59
 speaker	Seele
@@ -88,7 +88,7 @@ msg	300433	 You are irreplaceable to us. Take care of yourself.	自己的生命�
 label	end_choices
 portraits	59	54
 emote	54	1
-/Yssring	300434	Welcome back.... How'd the investigation go? What did you find?	你们回来啦…怎么样，调查清楚了么？	お帰りなさい……どうだった？何か分かった？	NONE
+/Estherine	300434	Welcome back.... How'd the investigation go? What did you find?	你们回来啦…怎么样，调查清楚了么？	お帰りなさい……どうだった？何か分かった？	NONE
 speaker	Seele
 emote	59	6
 emote	54	1
@@ -98,18 +98,18 @@ speaker
 
 bg	black
 portraits	
-msg	300437	(Seele told Yssring what happened in the tunnel.)	希儿将隧道中的经过告诉了伊瑟琳。	ゼーレはトンネルの中での出来事をイザーリンに話した。	NONE
+msg	300437	(Seele told Estherine what happened in the tunnel.)	希儿将隧道中的经过告诉了伊瑟琳。	ゼーレはトンネルの中での出来事をイザーリンに話した。	NONE
 
 bg	009/008_1280x720
 portraits	59	54
 emote	54	4
-/Yssring	300438	I see... That girl... What a stupid thing to do...	是这样啊……那家伙，居然做出了这种蠢事。	そっか……あの子、そんなバカな真似を……。	NONE
+/Estherine	300438	I see... That girl... What a stupid thing to do...	是这样啊……那家伙，居然做出了这种蠢事。	そっか……あの子、そんなバカな真似を……。	NONE
 speaker	Seele
 nop	54
 emote	59	6
 emote	54	4
 msg	300439	I'm sorry that we didn't stop her and we couldn't save her...	对不起，我们既没有阻止她，也没来得及救下她……	ごめんなさい。彼女を止められなかっただけでなく救えなかった……。	NONE
-speaker	Yssring
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	1
@@ -120,7 +120,7 @@ nop	54
 emote	59	6
 emote	54	1
 msg	300442	...	……	……。	NONE
-speaker	Yssring
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	1
@@ -130,8 +130,8 @@ nop	54
 emote	59	6
 emote	54	1
 msg	300444	Wait!	等下！	待って！	NONE
-msg	300445	Yssring... Is there anything you want to say?	伊瑟琳…难道没有更多想说的么…	イザーリン……それだけ？他に言うことはないの……。	NONE
-speaker	Yssring
+msg	300445	Estherine... Is there anything you want to say?	伊瑟琳…难道没有更多想说的么…	イザーリン……それだけ？他に言うことはないの……。	NONE
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	1
@@ -142,7 +142,7 @@ emote	59	6
 emote	54	1
 tn	0	Might have mistranslated
 msg	300447	She was a part of the engineering team, and a priceless member of our family! There's more important things than just working... 	那个人是工程班重要的伙伴吧！也是不可或缺的家人，比起工作难道就没有什么更值得……	あの人はエンジニア班の大事な仲間でしょ！欠かすことのできない家族でしょ。仕事以上にもっとこう……。	NONE
-speaker	Yssring
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	4
@@ -152,7 +152,7 @@ nop	54
 emote	59	6
 emote	54	4
 msg	300449	Oh.... Haha.... I'm sorry. I didn't know how you felt...	是…这样啊…啊哈哈，抱歉，没有体会到你的感受……	あ……あはは、ごめん。あなたの気持ち、分かってなかった……。	NONE
-speaker	Yssring
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	4
@@ -162,7 +162,7 @@ nop	54
 emote	59	6
 emote	54	4
 msg	300451	Huh?!	诶！	え！？	NONE
-speaker	Yssring
+speaker	Estherine
 nop	54
 emote	59	6
 emote	54	4

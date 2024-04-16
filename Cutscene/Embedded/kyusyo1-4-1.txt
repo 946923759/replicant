@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	59	60	54
-match_names	Seele	Bronya	Yssring	_DIM_ALL_WHEN_EMPTY
+match_names	Seele	Bronya	Estherine	_DIM_ALL_WHEN_EMPTY
 music	War And War
 speaker	Bronya
 bg	009/005_1280x720
@@ -31,7 +31,7 @@ emote	59	1
 msg	300553	Follow me. It's a very important mission we're entrusting you with. Don't let your guard down~!	跟我来吧，这次交给你的可是非常重要的任务，千万不要掉以轻心哦~	ついて来て。今回あなたに任せるのはとても重要な任務だよ。決して油断しないでね～！	NONE
 /Bronya	300554	Alright, let's go. Let Operation Homecoming commence!	好了，出发吧，“归巢作战”现在开始！	よし、出発しましょう。ただいまより「帰巣作戦」開始！	NONE
 bg	009/015_1280x720
-match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+match_names	Seele	Estherine	_DIM_ALL_WHEN_EMPTY
 portraits	59	54
 emote	59	1
 emote	60	1
@@ -45,15 +45,15 @@ msg	300557	Since there's a little time before the operation begins, I'll briefly
 msg	300558	Our current location is near the gate control room at the base. This is an important facility that controls the opening and closing of the gates. Our mission is to secure the area.	我们所处的位置是基地闸门的控制室附近，这里是控制闸门闭合的重要设施，我们的任务是保护这个区域的安全。	私たちの今いる位置は基地のゲート制御室の近くよ。ここはゲートの開閉を制御する重要な施設なの。私たちの任務は、このエリアの安全を守ることよ。	NONE
 msg	300559	When they open the gate there will be an onslaught of Honkai beasts. The main force in front of the gate will take care of them.	在闸门开启的这段时间内势必会有大量的崩坏生物涌入，处于正面的主力部队会消灭这些家伙。	ゲートを開く時にはきっと大量の崩壊生物が雪崩込んでくるはずだよ。正面に位置する主力部隊がそいつらを片付けるの。	NONE
 msg	300560	What we need to do is protect the control room and ensure that the gate closes properly after the Grey Moths arrive.	我们所要做的就是保护控制室，保证闸门在灰蛾部队进入后正常关闭。	私たちがやることは制御室を守ること。そして、灰蛾部隊が入った後にゲートを正常に閉じること。	NONE
-msg	300561	Yssring will be responsible for controlling the gate. Very easy, right?	控制闸门的任务就交给伊瑟琳了，怎么样是不是很简单呢~	ゲート制御の任務はイザーリンに任せてあるよ！どうかな？とっても簡単でしょ？	NONE
+msg	300561	Estherine will be responsible for controlling the gate. Very easy, right?	控制闸门的任务就交给伊瑟琳了，怎么样是不是很简单呢~	ゲート制御の任務はイザーリンに任せてあるよ！どうかな？とっても簡単でしょ？	NONE
 emote	59	1
 emote	54	1
-/Yssring	300562	Don't take it so lightly....... This gate is the sturdiest barricade in the base. If it were to malfunction, we're all doomed. ......	不要说的那么轻松…这个闸门是基地最牢靠的屏障，如果它出了故障我们可都得玩完。	そんなに軽々しく言わないでよ……このゲートは基地で一番頑丈なバリケードなんだから。もし故障でもしたら、私たちみんなおしまいなんだよ……。	NONE
+/Estherine	300562	Don't take it so lightly....... This gate is the sturdiest barricade in the base. If it were to malfunction, we're all doomed. ......	不要说的那么轻松…这个闸门是基地最牢靠的屏障，如果它出了故障我们可都得玩完。	そんなに軽々しく言わないでよ……このゲートは基地で一番頑丈なバリケードなんだから。もし故障でもしたら、私たちみんなおしまいなんだよ……。	NONE
 speaker	Seele
 emote	59	1
 emote	54	1
 msg	300563	Of course~! That's why Bronya specifically sent me, the most dependable one here, to handle it!	知道啦~知道啦~所以姐姐大人才特地派我这么可靠的人来嘛！	分かった分かった！だから、お姉ちゃんがわざわざ私のように頼りになる人を派遣したんじゃないの！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	1
 msg	300564	You're the reason I'm worried about.... Forget it. At least there's someone else I can count on here.	就是因为有你才担心啊…算了，这次至少有个看起来靠谱的家伙在…	あなたがいるから心配なのよ……まぁ、いいわ。今回は頼りになりそうなヤツもいるから。	NONE

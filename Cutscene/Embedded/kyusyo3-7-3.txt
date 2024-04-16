@@ -2,7 +2,7 @@
 speaker	Bronya
 music	War And War
 bg	009/005_1280x720
-match_names	Seele	Bronya	Himeko	Yssring	Emesa
+match_names	Seele	Bronya	Himeko	Estherine	Emesa
 portraits	59	60	61	54	55
 emote	60	1
 /Bronya	301568	We've been investigating the area around the base for few days and determined that the Honkai Beasts are no longer active. We still don't know the reason, but this gives us enough time to reassemble.	经过这几天的调查，基地周围很大范围内的崩坏生物停止了活动，虽然原因还没有查明，但是这个给了我们宝贵的时间重新调整。	調査班の報告によると、基地周辺の広い範囲で崩壊生物が姿を消しました。原因は明らかではありませんが、これは態勢を立て直す貴重な機会です。利用しない手はありません。	NONE
@@ -15,13 +15,13 @@ emote	61	1
 /Bronya	301571	Also, find if there is a suitable location for our next base camp near Nagazora.	另外，找一下长空市周围可以成为基地的候选吧。	それから、長空市の周囲で基地にできそうな候補地を探してきてください。	NONE
 emote	60	1
 emote	54	3
-/Yssring	301572	Huh? Are we going to relocate?	呃…怎么了？要搬家么？	え……どういうこと？引っ越すの？	NONE
+/Estherine	301572	Huh? Are we going to relocate?	呃…怎么了？要搬家么？	え……どういうこと？引っ越すの？	NONE
 emote	60	1
 emote	54	3
 /Bronya	301573	Yes. The base has been exposed to the enemies, and even a Herrscher knows our location. It's not safe here.	嗯，基地的位置已经暴露了，而且律者的攻击你们也看到了，现在这里已经不安全了。	はい、基地の場所がバレてしまいましたから。それに律者の攻撃をみなさんも見たでしょう。ここはもはや安全ではありません。	NONE
 emote	60	1
 emote	54	5
-/Yssring	301574	But! But what about all the stuff here?	但！但是！这么多东西要怎么办……	で、でも！こんなにたくさんの物をどうやって……。	NONE
+/Estherine	301574	But! But what about all the stuff here?	但！但是！这么多东西要怎么办……	で、でも！こんなにたくさんの物をどうやって……。	NONE
 emote	60	1
 emote	54	5
 /Bronya	301575	Take only what you need and abandon the rest. Everyone needs to be prepared to move within the next few days. The sooner we can move, the better.	带上最有用的东西，其他就舍弃吧。这几天大家都开始准备，我们要尽快转移。	必要な物だけを持って、あとは放棄しましょう。数日以内に動けるよう、みなさん準備しておいてください。これは早ければ早いほどいいです。	NONE

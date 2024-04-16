@@ -1,0 +1,138 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	54	67	665
+music	Grandma
+speaker	Estherine
+bg	011/009_1280x720
+match_names	Estherine	Sin	_DIM_ALL_WHEN_EMPTY
+portraits	54	67
+
+emote	54	6
+/Estherine	308466	Everyone! The reactor is right ahead of us!	各位！动力炉就在前面了！	みんな……！動力炉は、もう目の前よ！	NONE
+msg	308467	Da da da!	哒哒哒！	ダダッ、ダダダダ——ッ！	NONE
+se	DLC_CH00_EV04_ExplosionClose
+/ 	308468	Boom——!!	轰隆——！！	ドォオオオオン——ッ！！	NONE
+speaker	Sin
+emote	67	3
+msg	308469	These damn mechs just keep coming! I'm getting pretty sick of this!	这些破机甲怎么越打越多了！还有完没完！	おいおい、機甲の数が増えてないか！？キリがない！	NONE
+speaker	Estherine
+emote	54	6
+emote	67	3
+msg	308470	Sin, get in here! I'll close the gate to keep them out!	杏！快进来！我来关闭闸门拦住这些机甲！	シン、早く入って！ドアを閉めて機甲の侵入を防ぐから！	NONE
+emote	67	3
+se	DLC_CH00_EV04_ExplosionClose
+/ 	308471	Boom——!!	轰隆——！！	ドゴォオオオオンッ！！	NONE
+speaker	Sin
+emote	67	2
+msg	308472	Hahaha! Stay out there for eternity, you rusty pieces of garbage!	给本大爷在外面好好呆着吧！你们这些破机甲~	一生そこで待ってろ！このオンボロ機甲ッ！	NONE
+emote	67	2
+se	DLC_CH03_EV02_GateClose
+/ 	308473	Bang!!	砰！！	バンッ！！	NONE
+
+speaker	Estherine
+emote	54	3
+emote	67	2
+msg	308474	Phew, we finally got rid of them.... We're safe for now, I hope we don't encounter any other obstacles....	闸门关闭了…总算是甩掉它们了，呼…这下暂时安全了，希望不要再出现什么意外了……	な、何とか逃げ切れた……ふぅ、しばらくは安全そうだけど、また予想外のものに出くわさないとも限らないわね……。	NONE
+
+bg	011/008_1280x720
+music	Fortress of Lies - Vocals
+
+emote	54	1
+emote	67	2
+msg	308475	Here we are. This is the Moonlight Throne's power reactor.	我们到了，这就是月光王座的动力炉了。	着いたわ。ここが月光王座の動力炉よ。	NONE
+msg	308476	Looks like all the electrical equipment is still working.... The reactor is better preserved than I expected. Lucky us.	电力设备似乎还在运行…核心动力炉的保存情况比预想中的要好，看来我们还是挺幸运的~	電力設備はまだ動いてるようね……コア動力炉の保存状態も——うん、予想よりいいし、ラッキーね。	NONE
+speaker	Sin
+
+emote	54	1
+emote	67	1
+msg	308477	It's my first time seeing this big iron ball from close up... So this massive reactor is actually the Herrscher Core?	这么近距离看到这个大铁球还是第一次…原来这个东西这么厉害，居然就是律者的核心么！	この距離で、この鉄の玉を見るのは初めてだ……これが律者コアなのか？	NONE
+speaker	Estherine
+
+emote	54	1
+emote	67	1
+msg	308478	No. The steel spheres around the power reactor are used for energy induction and fixation. The Herrscher Core is stored in the center of it. All we have to do now is to open it up and destroy the core inside.	不，动力炉周围的钢铁结构只起到导能和拘束作用，而律者核心则保存在这个框架中心的反应炉里，我们现在要做的就是打开反应炉，将里面的律者核心摧毁掉。	いいえ、動力炉の周りにある鋼鉄球は、エネルギー誘導と固定に使われるものよ。律者コアは、その中心にある反応炉の中に保存されてるわ。今、私たちがすべきことは、この反応炉を開けて中の律者コアを壊すこと。	NONE
+speaker	Sin
+
+emote	54	1
+emote	67	1
+msg	308479	It sounds pretty simple. By the way~ What exactly is the meaning of the "Sirin" written on it?	嚯…听着还蛮简单的。对了~话说这个上面写的「Sirin」到底是什么意思？	ふん、簡単に言ってくれるな。ところで、この上に書いてある「Sirin」ってのはなんだ？	NONE
+speaker	Estherine
+
+emote	54	1
+emote	67	1
+msg	308480	That.... "Sirin" was the name of the Second Herrscher. Seems like they used it as the code name for this reactor.	这个啊…据说Sirin（西琳）是第二律者的名字，作为动力炉的代号所以标注了上去。	これね……Sirinは第二律者「シーリン」のことよ。この動力炉の名称として標記してるんでしょうね。	NONE
+speaker	Sin
+
+emote	54	1
+emote	67	1
+msg	308481	The name of a Herrscher? You're pretty studious if you can remember the name of a dead person.	律者的名字？你还真是热心呢，这种死掉的人的名字有什么价值？	律者の名前？勉強熱心だなぁ、死んだ人の名前まで覚えてるなんて。	NONE
+speaker	Estherine
+
+emote	54	1
+emote	67	1
+msg	308482	Sure... Alright, enough talk, we need to get this done sooner than later. I'm going to deactivate the reactor's protection system. The Honkai Energy stored within it is enormous, so don't get too close to it.	好了好了…与其讨论这个还是准备一下吧，我去把动力炉的防护装置解除掉，你们在这里注意警戒，千万不要太过靠近动力炉，律者核心的能量很大，需要谨慎应对。	はいはい、そんなことより早速準備しましょう。動力炉の保護装置を解除してくるから、ここで待機してて。律者コアのエネルギーは膨大だから、動力炉にはあまり近づかないようにね。	NONE
+
+emote	54	1
+emote	67	4
+/Sin	308483	Pfft, whatever. There's nothing to fear from a dead Herrscher...	死了的东西有什么好怕的，真是的……	死んだヤツの何に怯えるってんだよ……ったく。	NONE
+
+bg	black	instant
+portraits	665
+tween	during	67	stoptweening
+tween	during	54	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+se	DLC_CH01_EV12_RadioReceive
+/ 	308484	Crack——!	呲拉——！	ザザッ——！	NONE
+match_names	Sin
+se	DLC_CH02_EV07_WormFlyB
+/Sin	308485	I'll crush the Schicksal trash and their worthless spaceship too! Then mom will praise me! Hahahaha!	我会把天命的渣滓和她们的破飞船一起掰成两段的~这样妈妈就会夸奖我了！！哈哈哈！！	クックックッ……まぁ、いいさ！役立たずのブローニャが果たせなかった任務、このボクが代わりにやってやるよ！	NONE
+
+bg	011/008_1280x720	instant
+portraits	54	67
+tween	during	67	stoptweening
+tween	during	54	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+emote	54	3
+emote	67	3
+match_names	Estherine	Sin
+se	DLC_CH01_EV12_RadioReceive
+/ 	308486	Crack——!	呲拉——！	ザザ——ザ——ザ——ッ！	NONE
+/Sin	308487	......!	呃……	……っ！	NONE
+/Sin	308488	What the hell was that....?	刚才的画面是……	何だ、今の——	NONE
+/Estherine	308489	Sin, I told you not to go too close to the generator....	杏…不是和你说远离一些么，不要和动力炉靠这么近啊……	シン……動力炉に近付かないようにって言ったでしょ……。	NONE
+
+bg	black	instant
+portraits	665
+tween	during	67	stoptweening
+tween	during	54	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+se	DLC_CH01_EV12_RadioReceive
+match_names	Sin
+/ 	308490	Crack——!	呲拉——！	ザザ——ザッ——	NONE
+se	DLC_CH02_EV07_WormFlyB
+/Sin	308491	It's fine if a worthless loser like you doesn't exist... I'm the only pawn mom needs!	像你这样的废物即使不存在也没什么关系…妈妈的棋子有我一颗就够了！	でも、お前みたいな役立たず！いなくなっても問題ないね！ママの駒は、このボク一人で十分さッ！	NONE
+
+bg	011/008_1280x720	instant
+portraits	54	67
+tween	during	67	stoptweening
+tween	during	54	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+se	DLC_CH01_EV12_RadioReceive
+emote	54	3
+emote	67	3
+match_names	Estherine	Sin	_DIM_ALL_WHEN_EMPTY
+/ 	308492	Crack——!	呲拉——！	ザ——ザザ——ッ！！	NONE
+/Sin	308493	Ugh...!	咕！	くっ……！	NONE
+/Estherine	308494	Sin, what's wrong!	咕…杏你怎么了？	シン、どうしたの！？	NONE
+/ 	308495	Crack——!	呲拉——！	ザ——ザァアアァア——ッ！	NONE
+/Sin	308496	Ahhhhh——!!	啊啊啊——！！	あ、あぁあああーーーっ！！	NONE
+tn	0	Wouldn't it be closer to being irradiated, seeing as Honkai Energy kills you? Or was that just a HI3 thing?
+/Estherine	308497	Something's wrong with Sin! I think she's being infected by the Honkai Energy in this area! 	杏的情况有点不对！难道是被这个区域的崩坏能感染了么！？	シンの様子が変だわ！まさか、このエリアの崩壊エネルギーから影響を受けてる！？	NONE
+/ 	308498	Crack! Crack!	喀拉！喀拉！	ギギィ——！ガシャッ！	NONE
+music	Grandma
+/Estherine	308499	How did these armored mechs get here...?!	怎么会…居然这里还留有这机甲兵器……	そんな……ここにも機甲兵器が潜んでたなんて……。	NONE
+msg	308500	Why, at a time like this... Was this a trap....?	为什么偏偏这个时候…难道这一切都是计划好的么……	どうして、こんなタイミングで……まさか、全部仕組まれてたの……？	NONE
+msg	308501	Kyuushou, I'll take care of sin! I'm counting on you to take out those mechs!	九霄！我来照顾杏！这些机甲兵器就拜托你了！	九霄……！シンは私が何とかするから、機甲の方をお願い！	NONE

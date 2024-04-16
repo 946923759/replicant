@@ -1,0 +1,104 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	62	60	54	69	40
+speaker	Estherine
+portraits	62,false,-2	60,false,-2	54,false,-2	69,false,1
+match_names	Theresa	Bronya	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+bg	011/005_1280x720
+
+emote	54	3
+/Estherine	308695	Huh…huh……	呼…呼……	はぁ……はぁ……。	NONE
+emote	54	2
+msg	308696	The Imaginary Space disappears…have we won?	虚数空间消失了…我们胜利了么？	虚数空間が消えた……私たち、勝ったの？	NONE
+speaker	Sirin
+portraits	62,false,-2	60,false,-2	54,false,-2	40,false,1
+emote	40	2
+emote	54	2
+msg	308697	I never thought I would be defeated.	没想到真的败给你们了呢。	まさか、この私が敗れるなんて。	NONE
+
+speaker	Estherine
+emote	40	2
+emote	54	3
+msg	308698	Sirin... Your appearance.	西琳…你的样子。	シーリン……その姿。	NONE
+
+speaker	Sirin
+emote	40	2
+emote	54	3
+msg	308699	This is my true appearance... I've always been treated as a tool, and eventually I've forgotten what I looked like.	这就是我本来的样子…总是被当做道具成为别人的傀儡，不知何时已经忘记了自己原来的模样了呢。	これが、本来の私の姿……いつも道具扱いされていたせいか、いつの間にか自分の姿さえも忘れてしまっていたわ。	NONE
+emote	40	1
+emote	54	3
+msg	308700	Not only the appearance…but also my original intention。	不仅是样貌…就连自己的初衷也是。	ううん、見た目だけじゃない……自分の本心さえも。	NONE
+emote	40	2
+emote	54	3
+msg	308701	Haha~Houraiji Kyushou, the stigmata you have is amazing… with all the hope, and all the sadness of people……even mine.	呵呵~蓬莱寺九霄，你所拥有的圣痕真是不可思议呢…聚集着无数人的希望，也聚集着无数人的悲伤……就连我也一样。	ふふっ、蓬莱寺九霄、あなたの聖痕は不思議ね……たくさんの人たちの希望を持っていながら、たくさんの悲しみも持っている……私も同じね。	NONE
+msg	308702	Now, let me give back all this too you, show me how you "Saviour" can create a new story.	现在，就让我把这一切都还给你吧，就让我看看你所谓的“救世主”究竟能否开辟新的结局。	今、すべてをあなたに返すわ。「救世主」が新たな結末を作り出せるのか、私に見せてちょうだい。	NONE
+msg	308703	I don't have much time left…the world I haven't created…depends on you.	时间已经不多了…我没能创造出来的世界…就交给你们了。	もう時間がないわね……私が作り出せなかった世界は……あなたたちに託すわ。	NONE
+msg	308704	Let you write the end of this requiem……	这首安魂曲的休止符就由你们来谱写吧……	このレクイエムの終止符は、あなたたちが打ちなさい……。	NONE
+
+speaker	Bronya
+emote	60	1
+emote	54	3
+msg	308705	Sirin…is gone……	西琳…消失了……	シーリンが……消えました……。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	1
+msg	308706	No, Celine just changed back to her old self, and that was her final answer - leaving the choice of everything up to us.	不，西琳只是变回了原来的样子，这就是她最后的答案——将一切的选择权交给了我们。	いいえ、彼女は元の姿に戻っただけよ。これが彼女の最後の答え——全ての選択権を私たちに託すこと。	NONE
+speaker	Bronya
+emote	60	1
+emote	54	1
+msg	308707	This is her Herrscher core?	这个就是她律者核心么？	これが、彼女の律者コアですか？	NONE
+speaker	Estherine
+
+emote	60	1
+emote	54	1
+msg	308708	Yes…so everything is not ended, thank you, Sirin.	没错…看来一切都还没有结束，谢谢你，西琳。	そう……まだ終わっていないのよね。ありがとう、シーリン。	NONE
+
+emote	60	1
+emote	54	6
+msg	308709	Let's head back to the base. I've come up with a new plan to overcome fate and save this world!	走吧！我们回到基地吧，就在刚才我又想到了新的方法来挽回这一切！	行こう、基地に戻りましょう。この世界の逆境に打ち克つ策を思いついたわ。	NONE
+speaker	Bronya
+
+emote	60	2
+emote	54	6
+msg	308710	That's the Estherine I know.	果然是伊瑟琳的风格呢……	さすが、イザーリンですね……。	NONE
+speaker	Estherine
+
+emote	60	2
+emote	54	6
+msg	308711	Kyuushou, let's go! I have a lot to ask of you from now on.	九霄！走吧！接下来要麻烦你的事情可还有许多许多呢！	九霄、行きましょう！これから、あなたに頼みたいことがたくさんあるの。	NONE
+portraits	60
+emote	60	2
+msg	308712	……	……	……。	NONE
+speaker	Estherine
+
+emote	60	2
+emote	54	1
+msg	308713	Kyushou? What's wrong?	九霄？你怎么了？	九霄……？どうしたの？	NONE
+portraits	60
+emote	60	2
+msg	308714	Ha ha ha……	呵呵呵……	ふっ、ふふふ……っ。	NONE
+speaker	Estherine
+
+emote	60	2
+emote	54	3
+msg	308715	Oh no! Is the Honkai starting to erode her consciousness again?!	呃！难道崩坏又开始侵蚀她的意识了么！	……そんな、まさかっ！彼女の意識が、また崩壊に侵食されはじめた！？	NONE
+portraits	54
+emote	54	3
+msg	308716	I've finally remembered...	终于…回想起来了……	我はついに……思い出したぞ……。	NONE
+msg	308717	A sealed mission in this desolate world.	这尘封于荒芜世界中的神圣使命。	この荒れ果てた世界に、封印された使命を。	NONE
+speaker	Estherine
+portraits	54
+emote	54	3
+msg	308718	What… Kyuushou… You……	唔…九霄…你难道是……	えっ……九霄……まさか……！	NONE
+portraits	54
+emote	54	3
+msg	308719	This world's destiny... I, Houraiji Kyuushou, will break it!	这个终焉的宿命就我蓬莱寺九霄来打破……	この終焉の宿命は、この蓬莱寺九霄様が打ち破ってしんぜよう……ッ！！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	2
+emote	54	3
+msg	308720	——Rejoice, for the savior has returned! Hahahahaha!	——为救世主的再临而欢呼吧！！	——救世主の再臨に、歓喜するがいいッ！！ハーハッハハハ！！	NONE
+portraits	58
+emote	58	2
+msg	308721	Her memory is back!?	记忆恢复了！？	記憶が戻ったの！？	NONE
+bg	007/006_1280x720
+msg	308722	To be continued...	To be continued...	To be continued...	NONE

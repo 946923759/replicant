@@ -28,7 +28,7 @@ portraits	66
 emote	66	0
 se	DLC_CH00_EV13_MosterRoar
 msg	301993	Roar!!	吼吼吼！！	ウオォォォーン！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	3
 msg	301994	Woah!! We're gonna die! There’s no hope this time!	哇！！要死了！这次真的没希望了！	わあ！！死ぬ死ぬッ！今回こそ、本当にダメなやつ！	NONE
@@ -37,7 +37,7 @@ portraits	55	54
 emote	55	4
 emote	54	3
 msg	301995	Stop ☆☆ing crying! Grab a weapon!	少OO啰嗦！给我把武器拿上！	うっさい、黙れっ！さっさと武器持って来い！！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	4
 emote	54	2
@@ -47,7 +47,7 @@ portraits	55	54
 emote	55	4
 emote	54	2
 msg	301997	Shut up!	闭嘴！	ぐちぐち言うな！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	4
 emote	54	2
@@ -62,7 +62,7 @@ portraits	55	54
 emote	55	1
 emote	54	2
 msg	302000	I heard the sound of fighting! Did the Houkai creatures start to attack!?	有战斗的声音！难道是崩坏生物发动攻击了！？	戦う音！ちっ、ついに崩壊生物がここまで攻撃を仕掛けてきたか！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	1
 emote	54	2
@@ -134,8 +134,8 @@ portraits	55	61
 emote	55	4
 emote	61	1
 msg	302016	No, we cannot win with our current strength. I don’t know what they are waiting for, but the situation is good for us.	不行，以我们现在的战力主动出击是不可能有胜算的，虽然不知道它们在等什么，不过目前的状况对我们来说是好事。	ダメよ。今の私たちの戦力では、どう転んでも勝ち目がないわ。あいつらが何を待っているのか分からないけれど、今の状況は私たちにとって好都合よ。	NONE
-msg	302017	Yssring, fix the power furnace with the parts collected as soon as possible. We may have a chance to break through with Hyperion.	伊瑟琳，你赶紧用收集到的零件把动力炉修好，我们依靠着休伯利安号或许还有机会突破重围。	イザーリン、今すぐ集めた部品で動力炉を修理して。ハイペリオン号さえ直れば、この包囲を突破できるはずよ。	NONE
-speaker	Yssring
+msg	302017	Estherine, fix the power furnace with the parts collected as soon as possible. We may have a chance to break through with Hyperion.	伊瑟琳，你赶紧用收集到的零件把动力炉修好，我们依靠着休伯利安号或许还有机会突破重围。	イザーリン、今すぐ集めた部品で動力炉を修理して。ハイペリオン号さえ直れば、この包囲を突破できるはずよ。	NONE
+speaker	Estherine
 portraits	55	54
 emote	55	4
 emote	54	1

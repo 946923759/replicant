@@ -1,0 +1,97 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Sin
+bg	011/008_1280x720
+music	Fortress of Lies - Vocals
+match_names	Estherine	Sin	???	_DIM_ALL_WHEN_EMPTY
+portraits	54	67
+emote	67	3
+/Sin	308502	Hah ...... Hah ......!	呼…呼……	はぁ……はぁ……っ！	NONE
+speaker	Estherine
+emote	54	3
+emote	67	3
+msg	308503	Sin, are you alright?	杏…你怎么样了？	シン、大丈夫？	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	3
+msg	308504	I'm fine... Just... Hallucinating a little.	没事…只是看到了一些幻觉罢了。	平気、だ……ちょっと幻覚を見ただけさ。	NONE
+speaker	Estherine
+
+emote	54	2
+emote	67	3
+msg	308505	Hallucinating?	幻觉？	幻覚？	NONE
+speaker	Sin
+
+emote	54	2
+emote	67	3
+msg	308506	I'm seeing visions... Of fighting on a ship... But I was fighting Bronya... Tsk! It's making me uncomfortable!	……是在这艘船上战斗的景象，但我的对手却是布洛妮娅…啧！真是不爽的感觉！	……この船で戦ってる幻覚だ。でも、ボクの戦ってた相手はブローニャで……チッ！むしゃくしゃする！	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	3
+msg	308507	Are the memories of this place being disturbed...?	难道是记忆受到干扰了么……	記憶が干渉を受けてるのかしら……。	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	3
+msg	308508	...... Don't worry about me, it's no big deal. You're looking for the Herrscher core, right? Get on with it.	好了…别疑神疑鬼的，没什么大不了的，你不是要找核心么，那就别磨蹭了。	……ボクのことは気にするな、大したことない。それより、律者コアを探すんだろ？さっさとしろ。	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	3
+msg	308509	Yeah... Kyuushou, take care of Sin. I'm going to retrieve the Herrscher core. If these hallucinations are being caused by the core, we need to destroy it immediately.	嗯…九霄，杏就麻烦你照顾了。我去取出律者核心，如果是那个核心搞的鬼的话必须立刻破坏它！	うん……九霄、シンのことをよろしくね。律者コアを取り出してくる。もしこれがコアの仕業だったら、すぐに壊さないと。	NONE
+
+stopmusic
+emote	54	3
+se	DLC_CH00_EV15_EarRing
+/???	308510	La la la la♪la la la…♪	啦啦啦啦♪啦啦啦…♪	らんららら～♪らららら——♪	NONE
+
+emote	54	2
+/Estherine	308511	Huh!? This is... Singing?	呃！这个是…歌声？	……っ！これは……歌声？	NONE
+/???	308512	La la la…la la la♪	啦啦啦…啦啦啦♪	ららら……らららら～♪	NONE
+
+emote	54	3
+/Estherine	308513	I saw a figure on top of the power generator...... How... There's no way someone else can be here!	动力炉上面的人影…怎么会…这个空间里不可能还有别的人才对！	動力炉の上に人影が……嘘、この場所に他にも人がいるだなんて……いや、そんなはずは！	NONE
+
+emote	54	3
+/???	308514	You're not mother... What a pity.	原来不是妈妈么…真是遗憾。	ママじゃないのね……残念。	NONE
+speaker	Estherine
+msg	308515	Who are you!?	你到底是谁！	あなた、誰！？	NONE
+
+portraits	
+music	The Color of Depression
+bg	011/001_1280x720	fade
+/Sirin	308516	Lost people wandering in a dream... Welcome to Sirin's world.	在梦中的迷失的人们…欢迎来到西琳的世界。	夢の中で彷徨う人たち……シーリンの世界へようこそ。	NONE
+speaker	Estherine
+msg	308517	Sirin... The second Herrscher!? That's impossible! Sirin died ages ago, how can you still be alive!?	西琳…难道你是第二律者？不可能…第二律者早就已经被消灭了，怎么可能再次出现！	シーリン……第二律者！？じょ、冗談よね……？第二律者はとっくに消滅したわ、ありえない。	NONE
+speaker	Sirin
+msg	308518	This is a world of dreams, a world where everything Sirin wants can come true. Everything is possible, just like a fairy tale. If you've come here, then you are just like me, searching for something you can't have.	这里是梦中的世界，只要西琳想要得到的东西都可以实现，一切都如同童话一般自由自在。既然来到了这里，就说明你们也和我一样，追寻着无法得到的东西。	ここは夢の世界、シーリンが欲しいと願えば何でも叶えられる世界。すべてはおとぎ話のように自由なのよ。ここに来たということは、あなたたちも私と同じ、手に入らないものを探しているのね。	NONE
+speaker	Estherine
+msg	308519	Are you saying that it's an illusion born from the dream world ...... the Herrscher's Core? I didn't expect ...... that you could remain conscious even reduced to nothing but a core.	梦中的世界…难道是从律者核心中诞生出来的幻象么？律者核心之中居然还保留着律者的意识…没想到居然会出现这种情况……	夢の世界……律者コアから生まれた幻想だというの？まさか、律者コアの状態でも意識を保てたなんて……予想外だわ。	NONE
+msg	308520	You're the one that lured us into the Moonlight Throne. Those Honkai beasts at St. Freya's Academy, those armored mechs... That was all your doing?	是你诱导我们进入这座月光王座的吧！圣芙蕾雅学园的崩坏生物也好，这些机甲兵器也好…一切都是由你一手操纵的么！	あなたが、私たちをこの月光王座におびき寄せたのね。聖フレイヤ学園の崩壊生物も、ここにあった機甲兵器も……全部、あなたの仕業？	NONE
+speaker	Sirin
+msg	308521	Lured? I simply waited here for you all.... You came here on your own free will. Because if you want to wake her up, you would have surely come here.	操纵…我只是在这里等待着你们而已…一切都是你们自己选择，你们想要唤醒那个女孩，就一定会来到这里。	仕業……？私はただ、ここであなたたちを待っていただけよ……すべてはあなたたちが選んだ結果。だって、あの子を呼び起こすためには、必ずここへ来るでしょ？	NONE
+msg	308522	This is the root of all, the beginning of sorrow and despair...... I'm just waiting quietly here.... Waiting for the end of the world, the moment when all the sorrow will cease.	这里是一切的根源，是一切悲伤与绝望的开端，而我…只是在这里静静地等待…等待着世界迎来终结，等待着所有的悲伤都得到解脱的最后一刻。	ここは全ての根源、悲しみと絶望の始まり……私は、ただここで静かに待っていたの……世界の終わりを、全ての悲しみが解放されるその時を。	NONE
+speaker	Sin
+msg	308523	Sirin... So you're the one causing this! Fine, if we kill you then everything will be solved!	西琳…你这家伙就是一切的罪魁祸首吧！只要把你杀掉一切就都解决了！	シーリン……お前がこの全ての元凶だなッ！お前を殺せば、全てが丸く収まるんだろぉッ！	NONE
+speaker	Sirin
+msg	308524	Kill ......?	杀掉……	殺す……？	NONE
+msg	308525	Unfortunately, I, like all beings here, ceased to exist a long time ago.	真是遗憾，我和这里的一切一样，早在很久之前就已经消逝不在了。	残念だけど、私はここにあるすべての存在と同じで、遥か昔に消滅したわ。	NONE
+msg	308526	But you are the one that will be swallowed up here, never to return to the real world if you continue to interact with this one.	倒是你们，如果继续接触这个世界的话，也会被这里所吞噬，然后再也无法回去哦。	あなたたちこそ、これ以上この世界との接触を続ければ、ここに飲み込まれて二度と戻れなくなるわよ。	NONE
+speaker	Sin
+msg	308527	Bullshit! Ugh... Damn it!	少在那里信口开河！呃……	嘘つくな！ッ……あ、くっ！	NONE
+speaker	Sirin
+msg	308528	Your memories are beginning to resonate with this world. If you become more attuned to it than you are now, you will suffer the same fate as you did in the past.	你的记忆已经开始与这个世界产生了共鸣，如果继续深入的话，你也会堕入和过去相同的命运。	あなたの記憶は、この世界と共鳴しはじめてるわ。今以上に同調すれば、過去と同じ運命を辿ることになるわよ。	NONE
+speaker	Estherine
+msg	308529	Sirin, what did you do to Sin!	西琳，你到底对杏做了什么！	シーリン、あなたシンに何をしたの？	NONE
+speaker	Sirin
+msg	308530	I didn't do anything. This is something she must face.... Because from the moment she entered this world, there is no escaping her predetermined fate.	我什么都没有做，这是她本来就要面对的东西…当她踏入这个世界的时候，就与无法摆脱这一切的因果。	何もしてないわ。これは彼女が向き合わなければいけないものだから……この世界に入った時から、この因果からはもう逃れられないの。	NONE
+speaker	Estherine
+msg	308531	Fate.......	因果……	因果……。	NONE
+speaker	Sin
+msg	308532	Ha! I don't believe in that!	哼！本大爷才不相信什么因果！！	ハッ！そんなのボクは、信じないぞ！！	NONE
+speaker	Estherine
+msg	308533	Sin!	杏！	シン！	NONE
+speaker	Sirin
+msg	308534	Really? It seems like I can't convince you all.	是么…看来你们还是无法说服你们呢。	そう？どうやら、あなたたちに理解させるのは難しいようね。	NONE
+msg	308535	In that case.... I'll show you the truth of this world.....	既然这样…只能让你们看清这个世界的真相了。	それなら……この世界の真実を見せてあげるわ。	NONE

@@ -1,0 +1,103 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	City Ruins - Quiet
+portraits	54	67
+speaker	Estherine
+bg	011/006_1280x720
+match_names	Estherine	Sin
+
+emote	54	1
+/Estherine	308383	Here it is……	就是这里了……	ここね……。	NONE
+
+emote	54	1
+emote	67	4
+/Sin	308384	It's just like all the ruins around it. What's so special about it?	这地方有什么不同么？看起来不还是一堆废墟么？	周りの廃墟と同じじゃんかよ。どこが特別なんだ？	NONE
+/Estherine	308385	Seems like this…the Honkai energy recovered to the original state, the investigator is not working……let's see what's wrong.	看起来似乎是这样…这片区域的崩坏能又恢复到了原来的样子，探测器也没有了之前的反应…总之我们先找找看有没有异常的地方吧。	見た目はね……このエリアの崩壊エネルギーは元に戻ってるし、探知機も前回と同じ反応をしない、けど……とりあえず、異常がないか見てみましょう。	NONE
+speaker	Sin
+
+emote	67	1
+msg	308386	Youm mean I'm free now? Let me see~	意思就是自由活动咯？让我找找看有没有什么好玩的东西~	自由行動か？いいもんがないか探してこよ～と！	NONE
+
+emote	54	5
+emote	67	1
+/Estherine	308387	Eh! Wait! Let's stay together…what if you bring another group of Honkai creatures…... 	呃！等等！我们还是一起行动吧…要是你再引来一大群崩坏生物的话我可受不了……	ま、待ちなさい……！だ、団体行動で行きましょう……またあなたが崩壊生物を引き寄せたら嫌だもの……。	NONE
+/Sin	308388	Ok ok, I am not a war mania, I've got enough fun previously, will help you to find the thing you want now!	好啦好啦，我又不是战斗狂，刚才已经尽兴了，这次会好好帮你找东西的啦！	ボクは別に戦闘狂じゃないし、さっきので満足したからちゃんと探すって！	NONE
+
+speaker	Estherine
+emote	54	3
+emote	67	1
+msg	308389	No no…it's still to dangerous, if the investigator's reaction is true, then the thing we need must hide here, the Honkai energy it releases might attract more fierce Honkai creatures.	不行不行…还是太危险了，如果探测器的反应是真的，那么我们要找的东西一定隐藏在这里，它所释放出来的崩坏能说不定会引来更加凶暴的崩坏生物。	ダメよ、ダメ……危ないもの。もし前回の探知機の反応に間違いがなければ、私たちの探したいものはきっとここにあるわ。そして、そいつが放つ崩壊エネルギーは、凶暴な崩壊生物を引き寄せるかもしれない。	NONE
+
+emote	54	3
+emote	67	2
+/Sin	308390	Huh, such a chicken, then you stay here with her, let me go~	哼，胆子这么小。那你保护好这个废物在这里好好等着，本大爷给你们探路去~	ふん、臆病だなぁ。じゃあ、お前はこいつを守ってここで待ってろ。ボクが道を探してきてやるよ！	NONE
+
+portraits	54
+/Estherine	308391	Hey! Sin! Wait! You…never listen, let's go with her.	喂！杏！等一下！真是的…总不听指挥，我们也跟上去吧。	待って！シン！もう……いつも人の話を聞いてくれないんだから。私たちも行きましょう。	NONE
+speaker	
+msg	308392	Shala——	沙拉——	ザッ——	NONE
+msg	308393	Shala——	沙拉——	ガラ——ザッ——	NONE
+
+emote	54	5
+/Estherine	308394	It's the right direction…why disappear? Where is Sin going……	的确是这个方向离开的才对…怎么忽然不见了？杏那个家伙到底跑哪里去了……	こっちの方で合ってるはずだけど……シンのやつ、一体どこまで行ったの……。	NONE
+msg	308395	There's no sign of a fight, the Honkai creatures are not very active…shouldn't be dangerous, is it a trick……	这周围也没有战斗的痕迹，崩坏生物的活动也不是很活跃…照理说应该不会有什么危险，杏那个家伙该不会是在恶作剧吧……	この辺りに戦闘の痕跡はないし、崩壊生物の活動もそんなに活発じゃないから危険はないはずだけど……シンってば、隠れて私たちを驚かそうとしてるんじゃないでしょうね……。	NONE
+
+speaker	
+msg	308396	Bang——!	哐啷——！	ガタン——ッ！	NONE
+
+/Estherine	308397	Eh…isn't it the weapon of Sin, why it's here, is she in danger……	呃…这个不是杏的武器么，怎么会丢在这里了，难道她真的遭遇了什么不测么……	うわぁああっ！——って、これシンの武器よね。どうしてここに……？まさか、本当に何かあったんじゃ……。	NONE
+msg	308398	Hey, Sin! Stop playing pranks! It's really not funny! You're always getting into some kind of trouble, but it'd be really embarrassing if you died like this...	喂！杏！你不要吓我啦！这种玩笑一点都不好笑！虽然你没心没肺总是捣乱，但就这么死的不明不白也太憋屈了吧……	ねえ、シン！いたずらはやめなさい！本当に面白くないんだからっ！あなた、いつも何かやらかすけど、このまま死んじゃったらかっこ悪すぎるわよ……。	NONE
+/Sin	308399	Who said I died!?	你说谁憋屈呢！	誰がかっこ悪いって！？	NONE
+
+emote	54	3
+/Estherine	308400	Eh! It's her voice?	呃！是杏的声音？	今の、シンの声よね？	NONE
+
+portraits	54	67
+emote	54	3
+emote	67	2
+/Sin	308401	I don't see any sadness from your face! You actually hope it happen right?	从你的脸上我可一点都没看出来伤心啊！你这家伙其实是盼着我死是吧？	お前、全然悲しんでないじゃないか！本当は、このボクに早く死んでほしいんじゃないだろうな？	NONE
+speaker	Estherine
+
+emote	54	5
+emote	67	2
+msg	308402	Coo…Sin! Where are you jumping out from! It was……	咕…杏！你是从哪里出来的！明明刚才这里还……	げっ……シン！どこから出てきたのよ！さっきまで誰もいなかったのに……。	NONE
+speaker	Sin
+
+emote	54	5
+emote	67	1
+msg	308403	I don't know! I was walking normally and suddenly I got sucked into this weird space! What the hell is going on here!	我怎么知道！本大爷走的好好地就被不知道什么东西吸进了一个奇怪的空间！这到底什么鬼地方！	知るかッ！普通に歩いてたら、急に変な空間に吸い込まれたんだよ！ここ、一体どうなってんだ！	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	1
+msg	308404	Strange space…so the scene is just a fake projection……	奇怪的空间…这么说的话前面的这个景象只是一个虚伪的投影而已么……	変な空間……ということは、今、目の前にある光景は偽りの投影かもしれないわけね……。	NONE
+msg	308405	No wonder there're no sign around here…because those released Honkai energy is not from here, but leak from certain space fault……	难怪在这里转了这么久都没有发现任何痕迹…原来那些释放出来的崩坏能其实并不在这里，而是透过某个空间的断层泄露而出的……	どうりでいくら探しても何の痕跡もないわけだわ……溢れ出た崩壊エネルギーはここではなく、別の空間の断層を通してここに来てるのね……。	NONE
+speaker	Sin
+
+emote	54	3
+emote	67	1
+msg	308406	Ok, let's go.	行啊，那走吧。	ふーん……じゃあ、そこに行けばいいんだな。	NONE
+speaker	Estherine
+
+emote	54	5
+emote	67	1
+msg	308407	Wait! If that's true we need to check it first, or it can be very dangerous!	等等！如果真的是空间断层的话我们需要先调查一下才行，如果莽撞进去的话可是很危险的！	待って！本当に空間断層だったら、まずは調査しないと。むやみに入るのは危険だからね！	NONE
+speaker	Sin
+
+emote	54	5
+emote	67	1
+msg	308408	I have been to there once! No danger~	本大爷刚才都进去过一次了！哪有什么危险~	ボクは一回入ってるけど、全然危険じゃなかったぞ。ほらほら。	NONE
+speaker	Estherine
+
+emote	54	5
+emote	67	1
+msg	308409	Hey hey…don't push me! Well…you go first…I follow……	喂喂…别推我！那个…你们先进去看看…我随后再……	や、やめなさい、押さないでってば！お、お先にどうぞ……すぐ行くから……。	NONE
+speaker	Sin
+
+emote	54	5
+emote	67	2
+msg	308410	No! Get inside!	再你个头！给我进去！	すぐ行く？今、入れって！	NONE
+speaker	Estherine
+
+emote	54	3
+emote	67	2
+msg	308411	Whoa!!	呜哇！！	きゃあっ！！	NONE

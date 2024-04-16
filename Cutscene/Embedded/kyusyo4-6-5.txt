@@ -26,8 +26,8 @@ speaker	Himeko
 portraits	61	56
 emote	61	2
 emote	56	0
-msg	302057	Yssring! How much time until we reach the Houkai vacuum!	伊瑟琳！离崩坏真空区还有多少时间！	イザーリン！崩壊の真空エリアまであとどれくらい！？	NONE
-speaker	Yssring
+msg	302057	Estherine! How much time until we reach the Houkai vacuum!	伊瑟琳！离崩坏真空区还有多少时间！	イザーリン！崩壊の真空エリアまであとどれくらい！？	NONE
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	2
@@ -37,7 +37,7 @@ portraits	61	54
 emote	61	2
 emote	54	2
 msg	302059	Keep accelerating! Get away from the Houkai beasts in the air!	继续加速！甩开空中的崩坏兽！	加速を続けて！空にいる崩壊獣を振り払うのよ！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	3
@@ -47,7 +47,7 @@ portraits	61	54
 emote	61	2
 emote	54	3
 msg	302061	We just need a few minutes! Get in distance and finish it with our main gun!	只要几分钟就行了！拉开距离用主炮解决掉它！	数分間だけでいい！距離をあけたら主砲でやっつけるわ！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	3
@@ -57,7 +57,7 @@ portraits	61	54
 emote	61	2
 emote	54	3
 msg	302063	But what! Speed up!	可是什么！快加速！	何が「でも」よ！早く加速して！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	3
@@ -67,7 +67,7 @@ portraits	61	54
 emote	61	2
 emote	54	3
 msg	302065	Find a way to fix them immediately! The ship can’t last long like this! If the outer armor of the bridge is compromised, we are done!	立即想办法修复！不然战舰撑不了多久！舰桥的外装甲被破坏的话就全完了！	今すぐ方法を考えて修理して！さもないと戦艦がもうもたないわ！艦橋の外装甲が破壊されたらおしまいよ！ 	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	5
@@ -77,7 +77,7 @@ portraits	61	54
 emote	61	2
 emote	54	5
 msg	302067	I’ll have someone to protect you and enter C sector! Get your engineering squad to reinforce the armor of the bridge. We need to hold them off as long as we could!	我会让人保护你进入C区！另外让你的工程班加固舰桥区域的装甲，能挡多久是多久！	人をつけてあなたを守るからCエリアに行きなさい！それから、あなたのエンジニア班に艦橋エリアの装甲を強化させて。できるだけ持ちこたえられるように！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	5
@@ -87,7 +87,7 @@ portraits	61	54
 emote	61	2
 emote	54	5
 msg	302069	Just go!	快去！	早く行きなさい！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	2
 emote	54	5

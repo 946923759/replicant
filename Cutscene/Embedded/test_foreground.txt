@@ -1,0 +1,25 @@
+preload_portraits	54	67	70	61
+bg	011/007_1280x720
+msg	The engine has one color rect which can be manipulated with tweens. It's also used to fade out a scene at the end.
+msg	It's not very useful at the moment, but you can use it to do some tricks like blanking out the screen and replacing the characters.
+portraits	54	67
+msg	Hello, it's Estherine and Sin!
+tween	before	foreground	linear,0.0;visible,true;diffuse,black
+
+bg	015/026_1280x720	instant
+portraits	70	61
+nop	Because this seems like an intelligent idea
+tween	during	54	stoptweening
+tween	during	67	stoptweening
+tween	before	foreground	linear,.3;diffuse,0,0,0,0
+tween	during	70	stoptweening
+tween	during	61	stoptweening
+msg	And now it's Kyuushou and Himeko.
+tween	during	foreground	linear,.3;diffuse,black
+msg	The foreground rectangle can also be used for interesting animations like this.
+tween	before	foreground	linear,.3;zoomx,0
+msg	behold!
+tween	during	foreground	horizalign,left;linear,.3;zoomx,1
+msg	Or if you're not satisfied with the alignment... 
+tween	during	foreground	horizalign,right;linear,.3;zoomx,0
+extend	You can set the alignment of the rect within a tween.

@@ -1,5 +1,5 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
-speaker	Yssring
+speaker	Estherine
 bg	009/059_1280x720
 portraits	54
 emote	54	5
@@ -8,8 +8,8 @@ speaker	Himeko
 portraits	61	54
 emote	61	1
 emote	54	5
-msg	301862	Yssring, how are things on your side?	伊瑟琳，你边情况如何？	イザーリン、そっちの状況はどう？	NONE
-speaker	Yssring
+msg	301862	Estherine, how are things on your side?	伊瑟琳，你边情况如何？	イザーリン、そっちの状況はどう？	NONE
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	2
@@ -19,7 +19,7 @@ portraits	61	54
 emote	61	1
 emote	54	2
 msg	301864	The fight is over.	战斗已经结束了。	戦いはもう終わったわ。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -29,7 +29,7 @@ portraits	61	54
 emote	61	1
 emote	54	1
 msg	301866	For now. But we're sitting ducks out here if we can't get Hyperion functioning soon.	目前是的，但是如果不赶快让休伯利安动起来的话我们依旧是待宰的羔羊。	今のところはね。でも、急いでハイペリオンを動かさないと、またただの獲物になるわよ。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	5

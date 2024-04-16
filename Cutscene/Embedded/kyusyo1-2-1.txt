@@ -1,5 +1,5 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
-match_names	Seele	Yssring
+match_names	Seele	Estherine
 music	Peaceful Sleep - No Vocals
 speaker	Seele
 bg	009/003_1280x720
@@ -29,8 +29,8 @@ speaker	???
 msg	300307	Argh! Ow, ow, ow...	哇！疼疼疼……	わわ！イタタタ……。	NONE
 portraits	59	54
 emote	59	1
-/Seele	300308	Oh, Yssring, there you are~!	哟~伊瑟琳你在啊~	あっイザーリン、いたいた～！	NONE
-speaker	Yssring
+/Seele	300308	Oh, Estherine, there you are~!	哟~伊瑟琳你在啊~	あっイザーリン、いたいた～！	NONE
+speaker	Estherine
 emote	59	1
 emote	54	5
 msg	300309	Oh.... It's just Seele. Next time, can you call my name instead of doing that again?	呃…希儿又是你，不是让你不要用这种方法找我么！	あ……ゼーレ、またあなた。この方法で呼ぶの、次からはやめてよね。	NONE
@@ -38,7 +38,7 @@ speaker	Seele
 emote	59	1
 emote	54	5
 msg	300310	But if I don't do this, you don't pay attention to what's going on around you. Don't worry about it, I just used a small light bulb this time. Don't be so nervous~	可是不这么做你根本注意不到周围的情况啊。放心啦，这次我可是特意找了一个普通的小灯泡，不用那么紧张~	でも、こうでもしないと周囲の状況に注意が行かないでしょ。安心して。今回はわざわざ普通の小さな電球にしてあげたから。そんなに慌てなくて大丈夫だよ！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	3
 msg	300311	A small light bulb...? That.... That's the Homei mecha's camera! You broke it....	小灯泡？这…这个是…你把吼美机器人的摄像头砸坏了啊！	小さな電球？これは……ホミロボットのカメラ！壊れてる……。	NONE
@@ -46,7 +46,7 @@ speaker	Seele
 emote	59	5
 emote	54	3
 msg	300312	Huh?	诶？	え？	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	5
 msg	300313	This was the only useful thing I could find out of all the garbage Ray sent me...... I'm so upset...... that it turned out like this....... Ugh. Ray will be mad at me again later.	这可是我好不容易从那家伙送来的垃圾堆里找到的唯一有用的东西，就这么被你给……呜…一会又要被雷伊骂了…	これ、レイに送ってもらったゴミから苦労して見つけ出した唯一役立つ物だったのに……。こんなになっちゃって……うぅ……またあとでレイに怒られる。	NONE
@@ -54,7 +54,7 @@ speaker	Seele
 emote	59	5
 emote	54	5
 msg	300314	Haha..... Sorry, sorry~	哈哈…抱歉抱歉~	アハハ……ゴメン、ゴメン～。	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	1
 msg	300315	I can't help it if it's broken. It's only a camera anyway..... By the way, what do you want from me?	哎，算了，反正就一个摄像头也修不好什么…话说，你们来找我有什么事情么？	壊れちゃったものはしょうがない。どうせたかがカメラだし……ところで、私に何か用？	NONE
@@ -62,7 +62,7 @@ speaker	Seele
 emote	59	1
 emote	54	1
 msg	300316	That's our line. You submitted the request, didn't you? My sister and the survey team are out, so we're supposed to be in charge of the base.	这可是我的台词，不是你提交的委托么？姐姐大人和调查队出去了所以基地里的事情都是我来负责哦~	それはこっちのセリフだよ。あなたが依頼を提出したんでしょ？お姉ちゃんと調査チームが出払ってるから、基地のことは私たちが担当することになってるの。	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	1
 msg	300317	Is that so.... If I knew it was going to be you I wouldn't have made the request.	这样啊…早知道是你就不提交委托了。	そうなの……知っていたら依頼なんか出さなかった。	NONE
@@ -70,7 +70,7 @@ speaker	Seele
 emote	59	5
 emote	54	1
 msg	300318	Hmm? What did you say?	嗯？你说什么？	ん？何かな？	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	5
 msg	300319	It's nothing...... In that case, I'll tell you what the request is about.	没，没什么…既然如此那我就讲下委托的内容吧…	何でもないわ……そういうことなら依頼の内容を話すわね。	NONE
@@ -82,7 +82,7 @@ speaker	Seele
 emote	59	1
 emote	54	1
 msg	300322	I see~! Don't worry, we'll take care of it. We'll check it out!	明白了~不用担心，交给我们吧，一定会调查清楚的。	なるほど～！心配しないで私たちに任せてちょうだい。調べてくるから！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	1
 msg	300323	Thanks, I'm counting on you. I'm going back to work... See you later.	嗯，拜托了，那我就继续工作了…再见。	うん、頼んだわよ。じゃあ、私は仕事に戻るから……じゃあね。	NONE

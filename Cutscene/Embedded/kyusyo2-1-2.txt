@@ -1,17 +1,17 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
-match_names	Seele	Bronya	Yssring
-speaker	Yssring
+match_names	Seele	Bronya	Estherine
+speaker	Estherine
 bg	009/008_1280x720
 portraits	59,false,-2	60,false,-2	54,false,2
 emote	54	0
 music	Peaceful Sleep - No Vocals
-/Yssring	300679	You're back...	你们来啦……	来たわね……。	NONE
+/Estherine	300679	You're back...	你们来啦……	来たわね……。	NONE
 emote	60	2
 emote	54	0
-/Bronya	300680	Yssring, thanks for all the hard work. You haven't rested since the battle, right?	伊瑟琳，辛苦你了。从作战开始到现在还没有休息过吧？	イザーリン、ご苦労様です。作戦開始から今まで休んでないのでは？	NONE
+/Bronya	300680	Estherine, thanks for all the hard work. You haven't rested since the battle, right?	伊瑟琳，辛苦你了。从作战开始到现在还没有休息过吧？	イザーリン、ご苦労様です。作戦開始から今まで休んでないのでは？	NONE
 emote	60	2
 emote	54	0
-/Yssring	300681	It's fine, I'm used to it.. Let me inform you about the results of the investigation first, then I'll go lie down for a while...	没事，习惯了…比起这个还是尽快把调查结果和你们讲下吧，这样我也好去躺一会……	大丈夫。慣れてるから……そんなことより早く調査結果を言わないとね。そうすれば私も横になれる。	NONE
+/Estherine	300681	It's fine, I'm used to it.. Let me inform you about the results of the investigation first, then I'll go lie down for a while...	没事，习惯了…比起这个还是尽快把调查结果和你们讲下吧，这样我也好去躺一会……	大丈夫。慣れてるから……そんなことより早く調査結果を言わないとね。そうすれば私も横になれる。	NONE
 msg	300682	First, it's clear that this is a new species of Honkai creature. They have distinct insect characteristics, and they have the ability to fly. The structure of their wings is also unusual.	首先，这次的新生种与以往不同的地方很明显，这些家伙有明显的昆虫特征，而且还具备了飞行能力，羽翼结构在以往也是很少见的。	まず、この新種がこれまでと違っているのは明らか。こいつらには昆虫としての特徴がはっきりとある。しかも飛行能力まで備わってるわ。羽の構造も珍しいものね。	NONE
 msg	300683	The ability to fly gives them an advantage in the air compared to the Honkai beasts crawling on the ground.	结合当时的情况，它们很可能是被轨道战舰的噪音吸引来的群体，所以无法确切地定位具体方位。	それと飛行能力は地上を這う崩壊生物より移動スピードに優れているみたい。飛んでいるんだから、当然といえば当然だけど。	NONE
 tn	0	redo
@@ -22,7 +22,7 @@ emote	54	0
 /Bronya	300686	The nest of these Honkai beasts is near the base?	这些崩坏生物的巢穴就在基地附近么？	この基地の近くにあるということですか？	NONE
 emote	60	1
 emote	54	0
-/Yssring	300687	Indeed...	是的……	はい……。	NONE
+/Estherine	300687	Indeed...	是的……	はい……。	NONE
 emote	60	1
 emote	54	0
 /Bronya	300688	I investigated the surrounding areas after their last assault. And this new species was still not there. When exactly did they...	之前崩坏生物袭击基地之后我已经探查过周围的情况，那个时候还没有发现这个物种的生物，它们是什么时候……	この前、崩壊生物が基地を襲撃してきたあと、ブローニャは周囲の状況を調べました。その時には、まだこの種類の生物は見つかりませんでした。彼らはいつ……。	NONE
@@ -30,7 +30,7 @@ speaker	Seele
 emote	59	1
 emote	54	0
 msg	300689	Then it's simple. Let's restrict the search areas to the places near the base.	既然这样问题就简单了，就在基地附近的话调查范围就缩小了很多呢~	う～ん、不思議だね。	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	0
 msg	300690	Though we might be able to locate their nest, our forces are too weak to neutralize them... For now.	不过，就算知道它们巢穴的位置，仅凭我们现在的力量恐怕无法消灭它们……	でも、彼らの巣の位置が分かったとしても、今の私たちの力では彼らを消滅させるのは……。	NONE
@@ -39,7 +39,7 @@ speaker	Bronya
 emote	60	1
 emote	54	0
 msg	300692	If so, we have to find them as soon as possible. If they find us first, it's too late.	要是这样的话就更应该尽快找到它们，如果等到它们来找我们的话就晚了。	もしそうなら、なおさら早く見つけなければなりません。彼らが先にブローニャたちを見つけたら手遅れです。	NONE
-speaker	Yssring
+speaker	Estherine
 emote	60	1
 emote	54	0
 msg	300693	Being outnumbered isn't our only concern... I worry there might be a "Queen" type insect that controls the hive.	如果光是数量问题就好说了…最担心的是如果有虫后之类的生物存在就更麻烦了。	数だけならともかく……一番心配なのはクイーンビータイプの生物がいたらもっと面倒になる。	NONE
@@ -47,7 +47,7 @@ speaker	Bronya
 emote	60	1
 emote	54	0
 msg	300694	A queen?	虫后？	クイーンビー？	NONE
-speaker	Yssring
+speaker	Estherine
 emote	60	1
 emote	54	0
 msg	300695	Yeah... Based on our current findings, the group that attacked the base are like the "worker bees". If this new species mimics how bees function, there should be a "Queen" of the hive somewhere. That's why...	是的…从现在的调查结果来看，进攻基地的群体可能是类似“工蜂”的感觉，如果是以蜂群为生态而诞生的新生种，那么巢穴中很可能存在一只更大的虫后，所以……	ええ……現在の調査結果から見て、基地に攻め込んだグループは「働き蜂」みたいなもの。蜂の群れる生態を模して生まれた新種なら、巣の中にはもっと大きなクイーンビーがいるはず。だから……。	NONE
@@ -59,14 +59,14 @@ speaker	Seele
 emote	59	1
 emote	54	0
 msg	300697	Understood. Preparing for operation!	明白~那我这就去准备！	分かった～じゃあ準備するね！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	0
 msg	300698	Hey! Were you listening to me? Are you really going there? Do you want to die?	喂喂…你们有好好听我说话么？真的要去么？这可是送死哦……	ちょっと、ちょっと……私の話聞いてた？本気でいくつもり？死にに行くようなものよ……。	NONE
 speaker	Seele
 emote	59	1
 emote	54	0
-msg	300699	No worries, Yssring. Thanks for the info. We'll take care of the rest.	放心吧，伊瑟琳。谢谢你提供的情报，后面就交给我们吧。	安心して、イザーリン。情報の提供ありがとう。あとは私たちに任せて。	NONE
+msg	300699	No worries, Estherine. Thanks for the info. We'll take care of the rest.	放心吧，伊瑟琳。谢谢你提供的情报，后面就交给我们吧。	安心して、イザーリン。情報の提供ありがとう。あとは私たちに任せて。	NONE
 speaker	Bronya
 emote	59	1
 emote	60	1

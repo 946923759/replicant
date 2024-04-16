@@ -219,9 +219,9 @@ portraits
 bg	009/003_1280x720
 music	Peaceful Sleep - No Vocals
 portraits	59	60	54
-match_names	Seele	Bronya	Yssring
+match_names	Seele	Bronya	Estherine
 emote	54	0
-/Yssring	300885	You're back! I was worried about you. It looks like you're all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
+/Estherine	300885	You're back! I was worried about you. It looks like you're all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
 speaker	Bronya
 emote	60	4
 emote	54	0
@@ -230,15 +230,15 @@ speaker	Seele
 emote	59	1
 emote	54	0
 msg	300887	Haha! A lot of things happened but we all made it through in one piece.	啊哈哈~虽然发生了很多事情，不过还是有惊无险啦~	アハハ～色々あったけど、やっぱり無事だったでしょ。	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	1
 emote	54	0
 msg	300888	Oh...	唔……	うっ……。	NONE
 speaker	Seele
 emote	59	1
 emote	54	0
-msg	300889	What's wrong, Yssring?	怎么了伊瑟琳？	どうしたの、イザーリン？	NONE
-speaker	Yssring
+msg	300889	What's wrong, Estherine?	怎么了伊瑟琳？	どうしたの、イザーリン？	NONE
+speaker	Estherine
 emote	59	1
 emote	54	0
 msg	300890	It smells.	好臭。	臭い。	NONE
@@ -246,7 +246,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300891	Huh?!	诶！？	え！？	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	0
 msg	300892	Your outfits are covered in mucus... It's from those pests, isn't it...	折神伤德年夜因果丝辣写充字的爸……	ソノ、カラダノ、ネンエキ、アノムシノデショ……。	NONE
@@ -254,7 +254,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300893	Do you have to pinch your nose while you talk? Does it really smell that bad? Ugh! I need to take a bath! RIGHT NOW!	不要捏着鼻子说话啊！真的有这么臭么！呜哇！得去洗个澡！现在！立刻！	鼻をつまみながら話さないでよ！うわ！お風呂に入らなきゃ！今すぐに！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	0
 msg	300894	*Cough*... Anyway, did you get the samples I need?	咳咳…窝邀的杨奔呆挥来了么。	ゴホッ、ゴホッ……ワタシガ、タノンダ、サンプルハ、モチカエッテキタノ？	NONE
@@ -262,7 +262,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300895	...Stop pinching your nose! Here you are!	……你这家伙！诺！给你！	……あんたってやつは！ほら！どうぞ！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	59	5
 emote	54	0
 msg	300896	Excellent! They will make some good research material!	哇~太好了！我这就去研究！	よかった！これで研究ができる！	NONE

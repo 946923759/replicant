@@ -139,7 +139,7 @@ msg	301324	Bronya! Don't you want to live here forever with Mei?	布洛妮娅姐
 
 speaker	Bronya
 msg	301325	Mei... I've obtained enough happiness from you, so I have to pass it on to everyone else.	芽衣…我已经从芽衣的身上得到了足够的幸福了，所以必须得将芽衣姐姐传递给我的幸福交给更多的人。	芽衣……ブローニャは芽衣の側にいられて十分幸せでした。だから、芽衣……いえ、芽衣姉様がくれた幸せをもっとたくさんの人に伝えていかないと……。	NONE
-msg	301326	Seele... Himeko... Yssring... Emesa...	希儿…姬子…伊瑟琳…埃米沙……	ゼーレ……姫子……イザーリン……エミザ……。	NONE
+msg	301326	Seele... Himeko... Estherine... Emesa...	希儿…姬子…伊瑟琳…埃米沙……	ゼーレ……姫子……イザーリン……エミザ……。	NONE
 msg	301327	There are many people sacrificing their lives to fight for a better future. Bringing happiness to everyone... That's my mission.	还有许多为了未来而不断奋斗牺牲的人，把幸福交到她们的手中…这就是我的使命。	それから、未来のために戦って犠牲になった大勢の人たち……皆のところに幸せを届けないと……それがブローニャの使命です。	NONE
 
 speaker	Mei

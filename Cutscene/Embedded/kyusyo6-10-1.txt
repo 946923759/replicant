@@ -1,0 +1,156 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Sin
+preload_portraits	67	54	68	665
+bg	011/008_1280x720
+music	Grandma
+portraits	54,false,-1	67,false,-2	68
+
+match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+emote	67	2
+/Sin	308536	I'll kill you, Herrscher!!!!	哼！给我去死吧！律者！	ふん！死ねぇッ！律者ァアアアーーーーッ！	NONE
+
+
+bg	black	instant
+portraits	665
+tween	during	54	stoptweening
+tween	during	67	stoptweening
+tween	during	68	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+se	DLC_CH01_EV12_RadioReceive
+/ 	308537	Crack——!	呲拉——！	ザザ——ザ——ッ！！	NONE
+
+emote	67	2
+/Sin	308618	Ugh.....!	唔……	くっ……。	NONE
+
+emote	67	2
+emote	665	0
+se	DLC_CH02_EV07_WormFlyB
+/ 	308553	……	……	……。	NONE
+
+match_names	Sin?	Sin	_DIM_ALL_WHEN_EMPTY
+/Sin?	308539	Why..... Why.... Why do people always gather around you! You're worthless! What a bunch of fools!	为什么……为什么你这家伙身边总是有这么多人一同战斗！明明什么都做不到！明明就是个废物！	何で……どうして……どうして、お前の周りにはいつも人が集まってくるんだ！何もできないくせにッ！役立たずのくせにッ！！！！	NONE
+msg	308540	....I'll kill you all!!!	……我要杀掉你们！！！	——お前ら全員、まとめてブッ殺してやる！！！	NONE
+
+speaker	 
+match_names	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+portraits	67	68
+tween	during	67	stoptweening
+tween	during	68	stoptweening
+tween	during	665	stoptweening
+tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+emote	67	2
+se	DLC_CH01_EV12_RadioReceive
+/ 	308541	Crack——!!	呲拉——！！	ザ——ザザッ——！	NONE
+
+emote	67	3
+/Sin	308542	Stop putting these strange memories——	不要朝我的脑子里——	ボクの頭ん中に——	NONE
+se	DLC_CH01_EV12_RadioReceive
+/ 	308543	Crack——!	磁啦—！	ザ——ッ——！	NONE
+emote	67	2
+/Sin	308544	—Into my head!!	灌输奇怪的记忆！！	変な記憶を、入れるなぁッ！！	NONE
+
+emote	67	2
+emote	68	2
+/Sirin	308545	It seems like you've almost reached your limit...	看来差不多是极限了呢…	そろそろ限界ね……。	NONE
+
+emote	67	2
+emote	68	1
+/Sirin	308546	Спи, малыш, усни♪Пусть тебе снятся сны♪	Спи, малыш, усни♪Пусть тебе снятся сны♪	Спи, малыш, усни♪Пусть тебе снятся сны♪	NONE
+emote	67	3
+emote	68	1
+/Sin	308547	This is..... Mom's lullaby.....	这个是…妈妈的摇篮曲……	これは……ママの子守唄……。	NONE
+emote	68	1
+se	DLC_CH01_EV12_RadioReceive
+/ 	308548	Crack——!!	呲拉——！！	ザ——ザザ——！	NONE
+emote	67	3
+emote	68	1
+/Sin	308549	Damn it, shut the hell up!	咕！给我闭嘴！！	くっ……黙れ！！	NONE
+speaker	Sirin
+emote	67	3
+emote	68	1
+msg	308550	Open your eyes.... This is the end you will meet in this world.....	睁开眼睛吧…这就是你在这个世界所迎来的终末……	目を開けて……これが、あなたがこの世界で迎えた終末よ……。	NONE
+emote	67	3
+emote	68	1
+/Sin	308551	Ahhhhh——!!	啊啊啊——！！	あ、あぁああああーーーーッ！！	NONE
+
+portraits	
+stopmusic
+se	DLC_CH01_EV12_RadioReceive
+/ 	308552	Crack!!	呲拉！！	ザ——ザザッ——ァアア——！！	NONE
+
+msg	308553	……	……	……。	NONE
+extend	308554	……	……	…………。	NONE
+extend	308555	……	……	………………。	NONE
+
+bg	011/002_1280x720	fade
+music	Dispossession - Music Box Version
+/Sin	308556	Ahhhhh..... It hurts.....	呜……好痛……	ゴホッ……痛い……なぁ。	NONE
+msg	308557	…what's going on……	…到底是怎么回事……	……どうなってんだ……。	NONE
+msg	308558	Where did everyone go......?	大家都去哪里了……	みんな、どこいったんだよ……。	NONE
+msg	308559	Why am I here alone.......?	为什么抛下我一个人……	どうして、ボクをひとりにするのさ……。	NONE
+msg	308560	I feel so cold……	身体好冷……	寒い……。	NONE
+msg	308561	Am I going to die……	我是要死掉了么……	ボク、死ぬのかなぁ……。	NONE
+msg	308562	Please.... Someone save me......	救救我……谁来救救我……	助けてよ……誰か助けて……。	NONE
+msg	308563	Mother……I don't want to die……mother……	妈妈……我还不想死……妈妈……	ママ……まだ死にたくないよぉ……ママ——	NONE
+/???	308564	Sin……it's ok, this is the end.	杏……没关系，我们马上就会得到解脱了。	シン……大丈夫よ、すぐ解放されるわ。	NONE
+/Sin	308565	Mother…mother's voice……	妈妈…是妈妈的声音……	ママ……ママの声だ……。	NONE
+/???	308566	Mom will take you to a new shore...... where there will be no blood and killing ...... only endless fields of wheat and lullabies lulling in the wind.	妈妈会带着你们到达新的彼岸……那里将没有鲜血和杀戮……只有一望无垠的麦田与风中悠扬的摇篮曲。	——ママが、あなたたちを彼岸に連れて行ってあげる。そこは血が流れることも殺戮もない……一面の麦畑と、子守歌が聞こえてくる場所なの。	NONE
+/Sin	308567	I'm sorry Mom...... I was too weak.......	妈妈……对不起…果然我还是太弱小了……	ママ……ごめんなさい……ボク、やっぱり弱かったんだ……。	NONE
+msg	308568	Too weak to…survive……	弱小到…连活着都无法做到……	生きていることさえ、もう限界みたい……。	NONE
+/???	308569	Спи, малыш, усни♪Пусть тебе снятся сны♪	Спи, малыш, усни♪Пусть тебе снятся сны♪	Спи, малыш, усни♪Пусть тебе снятся сны♪	NONE
+/Sin	308570	Sin hears mother's lullaby……so warm……	杏听到妈妈唱的摇篮曲……好温暖的感觉……	ママの子守歌が聞こえる……あったかい……。	NONE
+/???	308571	Go to sleep. The next time you wake up, you will be in a new world.	睡吧，等下次醒来的时候就是新的世界了。	眠りなさい。次に目覚める時は、新しい世界になってるわ。	NONE
+
+bg	black	fade
+portraits	301
+/Bronya	308572	It's over.	已经结束了。	もう終わりです。	NONE
+msg	308573	Let me end your suffering....	就让我来帮你解脱吧……	この苦しみから解放してあげます……。	NONE
+msg	308574	Good bye...... Sin.	再见了…杏。	さようなら……シン。	NONE
+
+speaker	 
+msg	308575	Ka!!	咔！！	ドォオオンッ！！	NONE
+
+bg	011/008_1280x720
+music	Emil Boss - No Vocals
+portraits	54,false,-1	67,false,-2	68
+match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+emote	67	3
+emote	54	6
+/Sin	308576	Gah, ah, ah--ahhhhhhhhhhh!	嘎啊啊啊————！	く、あ、あ——あぁああああーーーッ！	NONE
+/Estherine	308577	Sin!	杏！	シン！	NONE
+/Sin	308578	I won't die here! I refuse to die here!!	我还不能死！绝对不会死在这里！	まだ死ねない！絶対、ここで死ぬわけにはいかないんだ！	NONE
+emote	67	2
+/Sin	308579	If I can kill you all! I can survive!	只要把你们全部杀掉！就一定可以活下去！	全員殺してやるッ！殺して生き残るんだぁッ！！	NONE
+msg	308580	Bronya......Bronyaaaaaaahhh!!!	布洛妮娅…布洛妮娅！！！	ブローニャ……ブロォオーニャァアアアーーッ！！	NONE
+
+emote	67	2
+emote	54	3
+/Estherine	308581	Sin, get a hold of yourself! Kyuushou, restrain her!	杏！快清醒一下！九霄！帮我压制住她！	シン、しっかりしなさい！！九霄、シンを抑えて！	NONE
+speaker	Sin
+emote	67	3
+emote	54	3
+msg	308582	Hah, hah, damn ...... ahhhhhhhhhhhh!	嘎啊啊啊！！！	はぁ、はぁ、くっ……あ、あぁあああーーーーッ！	NONE
+speaker	Estherine
+emote	67	3
+emote	54	3
+msg	308583	How come…Honkai has started to erode her consciousness…if this goes on……	怎么会…崩坏已经开始侵蚀她的意识了…这样下去的话……	そんな……崩壊が意識を侵食しはじめた……このままじゃ……。	NONE
+speaker	Sirin
+emote	68	2
+emote	54	3
+msg	308584	It's too late. The seeds sown in the past have sprouted in her heart and she has been consumed by the past. She will continue to be broken.	已经无法挽回了，过去种下的恶果正在她的心中重新绽放，她也将被过去的因果所吞噬变得支离破碎。	もう手遅れよ。過去に撒いた種が心に芽生え、彼女は過去の因果に飲み込まれたの。このまま壊れていくわ。	NONE
+msg	308585	This will be your end as well... You will dissolve in this fading world and turn into nothing, just like Sirin.	你们的结局也将是这样…沉沦在已经消逝的世界中，与西琳一同化作虚无吧。	あなたたちも、時期にそうなるわ……消えた世界へと溶けていき、シーリンと一緒に虚無になるの。	NONE
+speaker	Estherine
+
+bg	011/004_1280x720	fade
+emote	68	2
+emote	54	6
+msg	308586	What the...!? What happened to our surroundings.....	呃！周围的景象为什么……	っ……！周りの景色が、いったい何が……。	NONE
+
+emote	68	2
+emote	54	3
+msg	308587	……Second Herrscher can link to Imaginary Space…so this is……	……第二律者的能力可以链接到虚数空间之中…难道这里就是……	……たしか、第二律者の能力は虚数空間に繋がることができるもの……ここはまさか……。	NONE
+speaker	Sirin
+emote	68	1
+emote	54	3
+msg	308588	Yes, this is the perfect world I have created...... And you shall all sleep here forever...... so you don't have to suffer.	没错，这是西琳所创造的完美世界…你们就永远留在这里与我一同沉睡吧…这样至少不会再感觉到痛苦。	そうよ、ここは私が作った完璧な世界……あなたたちにはここで永遠に眠ってもらうわ……そうすれば、苦しむこともないのよ。	NONE

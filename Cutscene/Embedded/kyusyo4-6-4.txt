@@ -4,7 +4,7 @@ bg	009/060_1280x720
 portraits	61
 emote	61	1
 msg	302022	The surrounding Houkai creatures are still not moving. What are they waiting for...	周围的崩坏生物依然没有动静，它们到底在等什么……	周囲の崩壊生物はまだ動きがないわね。一体何を待っているのかしら……。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -14,7 +14,7 @@ portraits	61	54
 emote	61	1
 emote	54	1
 msg	302024	So if the power furnace is down again, we will face the same situation...	也就是说如果动力炉再次瘫痪，我们还将遇到与现在同样的状况么……	つまり、また動力炉が壊れてしまうかもしれないのね。最悪、今と同じ状況に陥る可能性もあると……。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	5
@@ -34,7 +34,7 @@ portraits	61	54
 emote	61	1
 emote	54	5
 msg	302028	......	……	……。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	3
@@ -44,7 +44,7 @@ portraits	55	54
 emote	55	1
 emote	54	3
 msg	302030	Not like you are going to say anything else other than running away...	反正你除了逃跑就没有别的建议了吧……	イザーリン、どうせ逃げるに一票とか言うんだろう。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	1
 emote	54	3
@@ -58,8 +58,8 @@ speaker	Himeko
 portraits	61	54
 emote	61	1
 emote	54	3
-msg	302033	Yssring, what’s your thought?	伊瑟琳，你有什么想法么？	イザーリン、あなたの考えを聞かせて。	NONE
-speaker	Yssring
+msg	302033	Estherine, what’s your thought?	伊瑟琳，你有什么想法么？	イザーリン、あなたの考えを聞かせて。	NONE
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -70,7 +70,7 @@ portraits	61	54
 emote	61	1
 emote	54	1
 msg	302036	...But returning to the ME Corp means we will face the Herrscher directly. Also, if we head back now, the vacuum will soon end, so it is not any less dangerous.	……但是回到ME社也就意味着将再次与律者正面交锋，而且我们现在回去，真空期的时间也即将结束，危险程度并不会降低。 	……でも、ME社に戻るということは、また律者と正面からぶつかることになるのよ。それに私たちが今戻っても、真空エリアがそう長く続くとは思えない。危険なのには変わりないわよ。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -88,7 +88,7 @@ portraits	61
 emote	61	1
 msg	302039	I see.	我明白了。	分かったわ。	NONE
 msg	302040	No one knows what will happen if we leave Nagazora. If we go back to ME Corp, it will be dangerous, but we still have some hope. We are also very familiar with the environment there so the battles will be less difficult.	离开长空市的话未来的路我们也无从知晓，回到ME社虽然危险但至少能够有一线希望，而且那里的地形与环境我们也最熟悉，战斗的难度会降低很多。	長空市を離れれば、その先の道は私たちにも全く分からない。けど、ME社に戻れば危険だけど、少なくとも一縷の望みがある。それにあそこの地形と環境は私たちもよく知っているから、戦闘の難度もだいぶ下がるわね。	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -104,7 +104,7 @@ emote	61	1
 emote	54	1
 msg	302043	I prefer to hold my own destiny rather than waiting for miracles to happen.	与其期待偶然发生的奇迹，不如将命运握在自己的手中，	奇跡を期待するよりも、運命を己の手で掴み取るほうがいいでしょ。	NONE
 msg	302044	Hyperion, start!	休伯利安号出发！	ハイペリオン号出発！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	61	54
 emote	61	1
 emote	54	6
@@ -113,7 +113,7 @@ speaker
 portraits	54
 emote	54	6
 msg	302046	Boom--	轰——	ゴォォォォ——	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	54
 emote	54	6
 msg	302047	Power output stable... Please, I hope there will be no problem...	目前出力稳定…千万不要出问题啊……	現在、出力安定……お願いだからトラブルは起きないでよ……。	NONE

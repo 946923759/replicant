@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	54	67
-match_names	Yssring	Sin
+match_names	Estherine	Sin
 music	City Ruins - Quiet
 speaker	Sin
 
@@ -8,7 +8,7 @@ bg	011/006_1280x720
 portraits	54	67
 emote	67	2
 /Sin	308335	Woohaha~nice place, there's ruins and monsters everywhere! It's like paradise!	哦嚯嚯~真是不错的地方，到处都是废墟和怪物！简直就是天堂！	クククッ——いいところだなぁ！廃墟と化け物ばかり、まるで楽園みたいだ！	NONE
-speaker	Yssring
+speaker	Estherine
 emote	54	3
 emote	67	2
 msg	308336	Sin! I told you not to run around without permission! It's dangerous here!	杏！都和你说了不要乱跑！这里可是很危险的！	シンッ！勝手に離れないでって言ったでしょ！ここは危ないのよ……！	NONE
@@ -17,7 +17,7 @@ speaker	Sin
 emote	54	3
 emote	67	1
 msg	308337	What danger? I've already crushed every Honkai Beast I've come across. They didn't scare me at all!	能有什么危险的？刚才本大爷已经把这里的崩坏生物都揍了一遍了！哪有你说的那么可怕！	どこが？ここの崩壊生物どもは一通り殴ったけど、全然怖くなかったぞ！	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	3
 emote	67	1
@@ -27,7 +27,7 @@ speaker	Sin
 emote	54	3
 emote	67	2
 msg	308339	Hmm! I just got this adult body, so I'd be a waste if I didn't get to use it~	哼！难得有了这副长大后的身体…当然要好好使用一下才行啊~	ふんッ！せっかく大人の身体を手に入れたんだ、ちゃんと使わなきゃもったいないだろ？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	5
 emote	67	2
@@ -37,7 +37,7 @@ speaker	Sin
 emote	54	5
 emote	67	1
 msg	308341	What the hell! I'm the one who offered to help you, and you're complaining so much that you'd rather die?	什么！本大爷好心帮你你居然还在这里发牢骚！不想活啦？	何だよッ！せっかくこのボクが力を貸すって言ってるのに、そんなに文句言うなんて死にたいのか？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	5
 emote	67	1
@@ -51,7 +51,7 @@ msg	308343	Hmm~ Now that's what I want to hear.	这还差不多。	ふふ～ん�
 emote	54	5
 emote	67	4
 msg	308344	By the way, why can't I go to the base? Are you worried I'll pick a fight with Bronya?	对了，话说你为什么不让我进那个基地啊？难道是怕我和布洛妮娅打起来么？	ところで、何で基地に入っちゃダメだったんだ？ブローニャと喧嘩するのを阻止するためか？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	1
 emote	67	4
@@ -61,7 +61,7 @@ speaker	Sin
 emote	54	1
 emote	67	4
 msg	308346	Tsk, is that all you can say? "Safety" this, "safety" that...	啧！你这家伙难道只会说这句话么？哪来的那么多安全安全的。	チッ、お前はそれしか言えないのかよ？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	3
 emote	67	4
@@ -77,7 +77,7 @@ speaker	Sin
 emote	54	1
 emote	67	4
 msg	308351	Huh? I don't get it.	哈？什么意思？	はぁ？意味わからん。	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	2
 emote	67	4
@@ -87,7 +87,7 @@ speaker	Sin
 emote	54	2
 emote	67	1
 msg	308353	You mean, since I don't exist in this world, you picked me to come help you?	那你的意思是，这个世界里面没有本大爷，所以你可以放心地让我进来帮你么？	この世界にはボクがいないから、安心してボクを呼べるってことか？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	2
 emote	67	1
@@ -98,7 +98,7 @@ speaker	Sin
 emote	54	2
 emote	67	4
 msg	308356	Difference... What kind of difference?	存在偏差……能有什么偏差啊？	存在のズレ……どういうことだよ？	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	3
 emote	67	4
@@ -108,7 +108,7 @@ speaker	Sin
 emote	54	3
 emote	67	2
 msg	308358	Don't be foolish!  I can't die! Hmph, discussing this question was a waste of time.	开玩笑！本大爷怎么可能会死！切…果然和你扯这些就是浪费时间。	ふざけんなっ！このボクが死ぬわけないだろ！チッ、こんな質問、時間の無駄だったぜ。	NONE
-speaker	Yssring
+speaker	Estherine
 
 emote	54	3
 emote	67	2

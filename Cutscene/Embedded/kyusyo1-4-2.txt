@@ -1,7 +1,7 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 bg	009/015_1280x720
 music	War And War
-match_names	Seele	Yssring	_DIM_ALL_WHEN_EMPTY
+match_names	Seele	Estherine	_DIM_ALL_WHEN_EMPTY
 portraits	59	54
 / 	300570	“The Grey Moths will be here in 5 minutes. All squads please stick to the plan and get ready to fight!”	「灰蛾部队还有5分钟即将抵达，请各小队按计划行动，作战开始！」	「灰蛾部隊はあと5分で到着。各部隊は計画通りに行動してください。作戦開始！」	NONE
 emote	59	1
@@ -11,8 +11,8 @@ se	DLC_CH01_EV17_ExplosionTwoShots
 msg	300572	Bang! Bang!	轰隆！轰隆！！	ゴォン！ゴォン！！	NONE
 speaker	Seele
 emote	59	1
-msg	300573	Yssring! What's the situation on the gate?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
-speaker	Yssring
+msg	300573	Estherine! What's the situation on the gate?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
+speaker	Estherine
 emote	59	1
 emote	54	1
 msg	300574	No problem! It's ready to open, please protect the control room.	没问题，马上准备开启，请保护好控制室。	問題ない。すぐに開けるわ。制御室、しっかり守ってね。	NONE
@@ -32,11 +32,11 @@ portraits
 bg	009/025_1280x720
 msg	300578	It's orbital battleship Hyperion!	轨道战舰休伯利安！	軌道戦艦ハイペリオン！	NONE
 msg	300579	How do you like it? Isn't it awesome? It's a real aircraft cruiser! But it can't fly because of the damage to its power reactor, so it can only run on rails right now.	怎么样！很帅吧！这可是货真价实的航空战舰哦~不过因为动力炉损坏了改装成了轨道战舰~	どう？カッコいいでしょ？これが本物の航空戦艦だよ～！でも動力炉の損傷で空は飛べないんだけどね。レール、つまり軌道の上のみを走る戦艦になっちゃった。	NONE
-speaker	Yssring
+speaker	Estherine
 msg	300580	It took a lot of effort to get a massive battleship like this running on the rails. .....The only downside is that it's way too noisy.	让这么大的家伙在轨道上运行可是费了好大力气才实现的…现在看来唯一的缺点就是噪音大了点……	こんなに大きなやつがレールの上を走るにはかなりのパワーがいるけどね……それと唯一の欠点は騒音が大きすぎること。	NONE
 speaker	Seele
 msg	300581	But that's fine, isn't it? We can scream out to this world that's been enveloped in the silence of death from the Honkai. This is the proof of our existence~!	不是挺好的么~从这个因崩坏而变得死寂的世界中传来的嘶吼，这才是我们的存在证明啊~	別にいいじゃない。崩壊によって死の静けさに包まれたこの世界に雄叫びをあげられるんだから。これこそ私たちの存在証明だよ～！	NONE
-speaker	Yssring
+speaker	Estherine
 msg	300582	I wish everyone had your optimism... But every time I see the black shadow of a crowd of Honkai beasts running at me, I feel like I won't make it out alive to see the next day....	要是大家都像你这么乐观就好了…每次看到后面那片黑压压的崩坏生物，我就觉得自己活不过今晚……	みんながあなたみたいに楽観的だったらいいんだけど……いつも一緒に来るあの黒々とした崩壊生物を見るたび、生きて帰れる気がしない……。	NONE
 speaker	Seele
 msg	300583	Alright. We are prepared to take them down, aren't we?	安啦~我们如此严阵以待不就是为了消灭她们么~	ん～私たちがこんな厳重に構えているのは、あいつらを消滅させるためなんだから大丈夫だよ～！安心して！	NONE

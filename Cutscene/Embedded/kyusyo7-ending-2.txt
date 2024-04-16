@@ -59,7 +59,7 @@ emote	58	7
 portraits	58
 msg	303027	Should I go inside...... Where Bronya and the others are? But if they don't remember me.......	布洛妮娅她们就在里面吧…到底要不要进去呢，要是她们不记得我的话……	ブローニャたちが中にいる……中に入るべきか。#nでも、もし彼女たちが我のことを覚えていなかったら……。
 speaker	 
-msg	303028	Hey! Yssring!	喂！伊瑟琳！	ちょっと！イザーリン！
+msg	303028	Hey! Estherine!	喂！伊瑟琳！	ちょっと！イザーリン！
 msg	303029	Whoa! It wasn't me! I swear it wasn't me!	呜哇！我没有！我不是！	うわっ！違うわ！私じゃない……！
 /Kyuushou	303030	Hmmm... There sure is a lot of noise inside.	唔…里面怎么吵吵闹闹的。	うーん……中が騒がしいな。
 preload_portraits	62	61	60	54	55
@@ -67,10 +67,10 @@ bg	009/005_1280x720
 portraits	54	55
 emote	54	5
 emote	55	4
-/Emesa	303032	Yssring! Answer me! Did you use up all the coffee beans I worked so hard to find!?	伊瑟琳！说！是不是你把我辛辛苦苦找到的咖啡豆全喝了！	イザーリン！答えろッ！#n苦労して必死に探してきたコーヒー豆、全部飲んだのお前だろ！？
-/Yssring	303033	It really wasn't me... I just... Just used a little ......	真的不是我啦…我只是…只是用了一点点……	本当に私じゃないわよ……。#n私はただ……ただほんのちょっと使っただけで……。
+/Emesa	303032	Estherine! Answer me! Did you use up all the coffee beans I worked so hard to find!?	伊瑟琳！说！是不是你把我辛辛苦苦找到的咖啡豆全喝了！	イザーリン！答えろッ！#n苦労して必死に探してきたコーヒー豆、全部飲んだのお前だろ！？
+/Estherine	303033	It really wasn't me... I just... Just used a little ......	真的不是我啦…我只是…只是用了一点点……	本当に私じゃないわよ……。#n私はただ……ただほんのちょっと使っただけで……。
 /Emesa	303034	Huh... You have a lot of ☆☆ing nerve! Do you think you're immortal now that the Honkai is gone? You seaweed head, I'm going to show you there's things way worse than death!	嚯嚯…你OO的胆子大了！你以为崩坏消失了自己就不会死了是吧！我OO今天就让你尝尝生不如死的滋味！！	ほほう……この馬鹿ヤロウ、いい度胸してるじゃねぇーか！#n崩壊が消えたら、もう死ぬことはないとでも思ってんのか！？#nこのワカメ、今日こそお前に死より辛いものがあるということを思い知らせてやる！！
-/Yssring	303035	Aaah! Help! Bronya!	呜哇！！救命！布洛妮娅！	うわぁああ！！助けて！ブローニャ！
+/Estherine	303035	Aaah! Help! Bronya!	呜哇！！救命！布洛妮娅！	うわぁああ！！助けて！ブローニャ！
 speaker	Bronya
 portraits	60	54	55
 emote	54	5

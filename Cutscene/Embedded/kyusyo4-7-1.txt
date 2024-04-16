@@ -1,5 +1,5 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
-speaker	Yssring
+speaker	Estherine
 bg	009/013_1280x720
 portraits	54
 emote	54	5
@@ -20,7 +20,7 @@ portraits	55	54
 emote	55	1
 emote	54	5
 msg	302110	Ouch! It’s catching up! Get up, you!	糟了！它追上来了！快起来啊你！	しまった！追いつかれた！早く立てよ！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	1
 emote	54	5
@@ -35,7 +35,7 @@ portraits	55	54
 emote	55	4
 emote	54	5
 msg	302113	You heard her! C'mon, get up!	听到没有！给我起来！	聞こえただろう！ほら、立てって！	NONE
-speaker	Yssring
+speaker	Estherine
 portraits	55	54
 emote	55	4
 emote	54	5

@@ -64,7 +64,7 @@ func set_portrait(name: String, y_offset: float = 0, radioMask: bool = false)->N
 	for p in portraits:
 		if p.is_active==false:
 			lastUsed = p
-			print(name)
+			print("[PORTRAITMAN] "+name)
 			p.set_texture_wrapper(name)
 			break
 #	# update positions
@@ -122,14 +122,14 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits_:int=-1):
 			#print(lastUsed.lastLoaded)
 			#print(pStruct)
 			lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
-			print("Set portrait "+name)
+			print("[PORTRAITMAN] Set portrait "+name)
 			if pStruct.size() > 3:
 				lastUsed.cur_expression = pStruct[3]
 		else: #If null, portrait is not present anymore and should be hidden
 			#self.portraits[name].actor:playcommand("Stop")
 			var lastUsed = get_portrait_from_sprite(name)
 			if lastUsed != null:
-				print("Stopping sprite"+name)
+				print("[PORTRAITMAN] Stopping sprite"+name)
 				lastUsed.stop()
 
 func update_positions():
@@ -139,7 +139,7 @@ func update_positions():
 	#VNPortrait shouldn't need to know
 	for p in portraits:
 		if p.is_active:
-			p.update_portrait_positions(get_viewport().get_visible_rect().size.x/2)
+			p.update_portrait_positions(get_viewport().get_visible_rect().size.x)
 		
 	
 #	SCREEN_CENTER.x = get_viewport().get_visible_rect().size.x/2

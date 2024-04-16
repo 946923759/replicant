@@ -13,6 +13,29 @@ func _on_Button_pressed():
 
 func _on_Button2_pressed():
 	AddNewScreenOnTop(\"ScreenWebWarning\")
+
+
+var tw:SceneTreeTween
+func _input(event):
+	if event is InputEventKey and event.is_pressed():
+		if event.scancode == KEY_1:
+			$ColorRect.rect_position.x = 100
+			if tw:
+				tw.kill()
+				tw = create_tween()
+			else:
+				tw = get_tree().create_tween()
+			tw.tween_property($ColorRect,\"rect_position:x\",500,1)
+		elif event.scancode == KEY_2:
+			if tw:
+				tw.kill()
+				tw = create_tween()
+			else:
+				tw = get_tree().create_tween()
+			tw.set_parallel(true)
+			tw.tween_property($ColorRect,\"modulate\",Color.red,.5)
+			tw.tween_property($ColorRect,\"modulate\",Color.blue,.5).from_current().set_delay(.5) #.from_current()
+			#tw.kill()
 "
 
 [node name="ScreenWithMenuElements" instance=ExtResource( 1 )]
@@ -80,6 +103,22 @@ margin_right = 143.0
 margin_bottom = 212.0
 custom_fonts/font = ExtResource( 2 )
 text = "Item 4"
+
+[node name="ColorRect" type="ColorRect" parent="." index="7"]
+anchor_right = 0.021
+anchor_bottom = 0.037
+margin_left = 146.0
+margin_top = 486.0
+margin_right = 145.68
+margin_bottom = 486.04
+
+[node name="Label" type="Label" parent="." index="8"]
+margin_left = 20.0
+margin_top = 388.0
+margin_right = 903.0
+margin_bottom = 438.0
+custom_fonts/font = ExtResource( 2 )
+text = "Press 1 to move this cube with a tween"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

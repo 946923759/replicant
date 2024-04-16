@@ -16,13 +16,14 @@ func _on_OKButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		$Click.play()
 		OffCommandPrevScreen()
-
+		
+var time_between_mousewheel = 0
 func _input(_event):
 #	if Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("ui_cancel"):
 #		OffCommandPrevScreen()
-	if Input.is_action_just_pressed("ui_right") and curPage<NUM_PAGES-1:
+	if Input.is_action_just_pressed("ui_right"):
 		set_page(curPage+1)
-	elif Input.is_action_just_pressed("ui_left") and curPage>0:
+	elif Input.is_action_just_pressed("ui_left"):
 		set_page(curPage-1)
 #	elif Input.is_action_just_released("mousewheel_down") and curPage < NUM_PAGES-1:
 #		set_page(curPage+1)
@@ -36,12 +37,25 @@ func _input(_event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	elif _event is InputEventMouseButton and _event.button_index == BUTTON_RIGHT:
 		OffCommandPrevScreen()
+		
+	elif _event is InputEventMouseButton:
+		if _event.button_index == BUTTON_WHEEL_UP:
+			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
+				time_between_mousewheel = Time.get_ticks_usec()
+				set_page(curPage+1)
+		elif _event.button_index == BUTTON_WHEEL_DOWN:
+			
+			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
+				time_between_mousewheel = Time.get_ticks_usec()
+				set_page(curPage-1)
 #	elif _event is InputEventMouseButton:
 #		match _event.button_index:
 #			BUTTON_WHEEL_UP:
 #
 
 func set_page(i:int):
+	if i < 0 or i >= NUM_PAGES:
+		return
 	var s = get_viewport().get_visible_rect().size.x
 	$Pages/Page2.rect_position.x=s
 	$Pages/Page3.rect_position.x=s*2

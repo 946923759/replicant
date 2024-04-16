@@ -802,6 +802,8 @@ func advance_text()->bool:
 					print("There is no active portrait named "+curMessage[1])
 			'tween':
 				var portraitOrBackground = PORTRAITMAN.get_portrait_from_sprite(curMessage[2])
+				if portraitOrBackground == null and curMessage[2] == "foreground":
+					portraitOrBackground = $whiteFlash
 				if portraitOrBackground == null:
 					portraitOrBackground = backgrounds.get_node_or_null(curMessage[2].replace("/","$"))
 				if portraitOrBackground == null: #Attempt a second time using raw path in case this is a godot path and not a file path
@@ -1165,15 +1167,14 @@ func end_cutscene():
 		if p.is_active:
 			p.stop()
 	
-	#https://github.com/godot-extended-libraries/godot-next/pull/50
 	var seq := get_tree().create_tween()
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 # warning-ignore:return_value_discarded
-	seq.tween_property(textboxSpr,'rect_scale:y',0,.5).set_trans(Tween.TRANS_QUAD)
-	seq.parallel().tween_property(text,'modulate:a',0,.3)
-	seq.parallel().tween_property(speakerActor,'modulate:a',0,.3)
+	seq.tween_property(textboxSpr,'rect_scale:y',0.0, .5).set_trans(Tween.TRANS_QUAD)
+	seq.parallel().tween_property(text,'modulate:a',0.0, .3)
+	seq.parallel().tween_property(speakerActor,'modulate:a',0.0, .3)
 	#seq.parallel().append($SpeakerActor,'position:y',600,.3)
-	seq.parallel().tween_property($FadeToBlack,'color:a',1,.5).set_trans(Tween.TRANS_QUAD)
+	seq.parallel().tween_property($FadeToBlack,'color:a', 1.0, .5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'rect_position:x',-$PressStartToSkip.rect_size.x,.5).set_trans(Tween.TRANS_QUAD)
 	#seq.parallel().append($PressStartToSkip,'modulate:a',0,.5)
 # warning-ignore:return_value_discarded

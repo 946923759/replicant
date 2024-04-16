@@ -18,3 +18,7 @@ func showActor(s:float):
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 # warning-ignore:return_value_discarded
 	seq.tween_property(self,'modulate:a',0,s)
+
+func apply_sm_tween(tweenString) -> float:
+	var tw = get_tree().create_tween()
+	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO

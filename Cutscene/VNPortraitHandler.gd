@@ -71,22 +71,26 @@ func _ready():
 	#var b = load("res://Cutscene/BlendAddLoop.tscn")
 	#blendAdd = b.instance()
 	#add_child(blendAdd)
-	update_portrait_positions(float(get_viewport().get_visible_rect().size.x/2))
+	update_portrait_positions(float(get_viewport().get_visible_rect().size.x))
 
-	
-func update_portrait_positions(center:float):
-	SCREEN_CENTER_X = center
-	#print(SCREEN_CENTER_X)
+#TODO: This isn't correct, it will break after applying a tween.
+func calc_portrait_position() -> float:
+	return portraitPositions[numPortraits-1][idx]+offset*100
+
+func update_portrait_positions(SCREEN_WIDTH:float):
+	SCREEN_CENTER_X = SCREEN_WIDTH/2.0
+	var SCREEN_RATIO = SCREEN_WIDTH/1920
+	#For loops? where we're going we don't need for loops
 	portraitPositions = [
 		[SCREEN_CENTER_X],
-		[SCREEN_CENTER_X-300,SCREEN_CENTER_X+300], #separation of 600px
-		[SCREEN_CENTER_X-400,SCREEN_CENTER_X,SCREEN_CENTER_X+400], #400px...
-		[SCREEN_CENTER_X-450,SCREEN_CENTER_X-150,SCREEN_CENTER_X+150,SCREEN_CENTER_X+450], #300px...
-		[SCREEN_CENTER_X-600,SCREEN_CENTER_X-300,SCREEN_CENTER_X,SCREEN_CENTER_X+300,SCREEN_CENTER_X+600] #300px
+		[SCREEN_CENTER_X-300*SCREEN_RATIO,SCREEN_CENTER_X+300*SCREEN_RATIO], #separation of 600px
+		[SCREEN_CENTER_X-400*SCREEN_RATIO,SCREEN_CENTER_X,SCREEN_CENTER_X+400*SCREEN_RATIO], #400px...
+		[SCREEN_CENTER_X-450*SCREEN_RATIO,SCREEN_CENTER_X-150*SCREEN_RATIO,SCREEN_CENTER_X+150*SCREEN_RATIO,SCREEN_CENTER_X+450*SCREEN_RATIO], #300px...
+		[SCREEN_CENTER_X-600*SCREEN_RATIO,SCREEN_CENTER_X-300*SCREEN_RATIO,SCREEN_CENTER_X,SCREEN_CENTER_X+300*SCREEN_RATIO,SCREEN_CENTER_X+600*SCREEN_RATIO] #300px
 	]
 	
 	if is_active:
-		position.x=portraitPositions[numPortraits-1][idx]
+		position.x=calc_portrait_position()
 
 #
 func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
@@ -171,6 +175,16 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	);
 	tween.start();
 
+
+func stoptweening():
+	tween.remove_all()
+	if is_active:
+		modulate.a=1.0
+		position.x = calc_portrait_position()
+	else:
+		modulate.a=0.0
+
+#What if I want to remove portraits without a tween? Or add portraits without a tween?
 func stop():
 	#return
 	tween.remove_all()

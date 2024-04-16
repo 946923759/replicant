@@ -8,7 +8,7 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 	
 	if bgName=="black":
 		if is_instance_valid(lastBackground):
-			if transition=='immediate':
+			if transition=='immediate' or transition=='instant':
 				lastBackground.modulate.a=0
 			else:
 				lastBackground.hideActor(.5)

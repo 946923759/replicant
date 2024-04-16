@@ -60,10 +60,16 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 		rectPrefix = "rect_" #BUT WHY???
 		
 	var lastKnownPosition:Vector2 = objectToTween.get(rectPrefix+"position")
+	var lastKnownColor:Color = objectToTween.modulate
 	
 	for cmd in cmnds:
 		var splitCmd = cmd.split(",")
 		match splitCmd[0]:
+			"stoptweening": #This is such a massive hack
+				if objectToTween.has_method("stoptweening"):
+					#The engine will complain about a lack of tweeners so just do it this way
+					tw.tween_callback(objectToTween,"stoptweening")
+					#objectToTween.stoptweening()
 			"linear":
 				curTweenType = TWEEN_TYPE.LINEAR
 				if tweenBatch>0:
@@ -99,6 +105,9 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				tw.tween_property(objectToTween,rectPrefix+"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"y":
 				tw.tween_property(objectToTween,rectPrefix+"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+			"xy":
+				tw.tween_property(objectToTween,rectPrefix+"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"position:y",float(splitCmd[2]),tweenLength).set_delay(timeToDelay)
 			"addx":
 				print("Applying addx "+splitCmd[1]+" after "+String(timeToDelay)+" sec... "+String(lastKnownPosition.x)+"+"+splitCmd[1])
 				tw.tween_property(objectToTween,rectPrefix+"position:x",lastKnownPosition.x+float(splitCmd[1]),tweenLength).from(lastKnownPosition.x).set_delay(timeToDelay)
@@ -126,7 +135,9 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				"""
 				
 				var val:Color = Color.black
-				if splitCmd.size() == 4:
+				if splitCmd.size() >= 5:
+					val = Color(float(splitCmd[1]),float(splitCmd[2]),float(splitCmd[3]),float(splitCmd[4]))
+				elif splitCmd.size() == 4:
 					val = Color(float(splitCmd[1]),float(splitCmd[2]),float(splitCmd[3]))
 				elif splitCmd[1].begins_with("#"):
 					val = Color(splitCmd[1])
@@ -140,10 +151,24 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 #					var res = expression.execute()
 #					if res is Color:
 #						val = res
-
-				tw.tween_property(objectToTween,"modulate",val,tweenLength).set_delay(timeToDelay)
+				# LastKnownColor needed because tweens appear to have a bug in godot 3.5
+				# https://github.com/godotengine/godot/issues/80388
+				tw.tween_property(objectToTween,"modulate",val,tweenLength).from(lastKnownColor).set_delay(timeToDelay)
+				lastKnownColor = val
+			"visible":
+				var val = splitCmd[1].to_lower()=="true"
+				tw.tween_property(objectToTween,"visible",val,tweenLength).set_delay(timeToDelay)
 			"diffusealpha":
-				tw.tween.property(objectToTween,"modulate:a",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,"modulate:a",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+			"horizalign":
+				var horizalign = 0.5
+				if splitCmd[1] == "left":
+					horizalign = 0.0
+				elif splitCmd[1] == "right":
+					horizalign = 1.0
+				tw.tween_property(objectToTween,"rect_pivot_offset:x",objectToTween.rect_size.x*horizalign,tweenLength).set_delay(timeToDelay)
+				#print(objectToTween.rect_pivot_offset.x)
+				
 			"emote":
 				if "cur_expression" in objectToTween:
 					tw.tween_property(objectToTween,"cur_expression",splitCmd[1],0.0).set_delay(timeToDelay)

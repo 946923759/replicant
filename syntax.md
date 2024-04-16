@@ -203,13 +203,15 @@ I got tired of remembering which one was valid, so both are allowed.
 
 Examples: `portraits	Kyuushou,false,0	Bronya,false,1`
 
-Supports up to five main arguments.
+Supports up to five portraits.
 
 Portrait arguments:
 
 arg1: if masked (this doesn't work so don't bother)
 
 arg2: offset from default position, from -6 to 6 usually (but can go higher)
+
+arg3: if automatic tweening should be enabled.
 
 # emote
 Set portrait emote.

@@ -37,13 +37,14 @@ func _ready():
 	#VisualServer.canvas_item_set_z_index($ErrorDisplay.get_canvas_item(),999)
 
 func input(event):
+	#set_process_input()
 	pass
 
-var thisScreenIsCurrentlyHandlingInput:bool=true
+#var thisScreenIsCurrentlyHandlingInput:bool=true
 
 func _input(_event):
-	if thisScreenIsCurrentlyHandlingInput==false:
-		return
+	#if thisScreenIsCurrentlyHandlingInput==false:
+	#	return
 	
 	if Input.is_action_just_pressed("ui_cancel") and HandlePhysicalBButton:
 		OffCommandPrevScreen()
@@ -62,14 +63,22 @@ func _input(_event):
 				OffCommandPrevScreen()
 			KEY_5:
 				OffCommandNextScreen()
-		
+
+func OverlayScreenExited():
+	#thisScreenIsCurrentlyHandlingInput=true
+	set_process_input(true)
+	print("[SCREENMAN] ["+name+"] The screen on top of this one exited, handling input again.")
+
 func AddNewScreenOnTop(scr:String):
 	var packedScene = load(Globals.SCREENS[scr])
 	var inst = packedScene.instance()
 	inst.ThisScreenIsAnOverlay=true
 	add_child(inst)
 	inst.ThisScreenIsAnOverlay=true
-	thisScreenIsCurrentlyHandlingInput=false
+	#thisScreenIsCurrentlyHandlingInput=false
+	set_process_input(false)
+	inst.connect("tree_exited",self,"OverlayScreenExited")
+	print("[SCREENMAN] ["+name+"] Pushed screen "+scr+" on top.")
 
 func OffCommandNextScreen(ns:String=NextScreen)->bool:
 	if ThisScreenIsAnOverlay:
@@ -96,6 +105,7 @@ func OffCommandOverlay():
 	fadeOut.t.interpolate_property(self,"modulate:a",null,0,.5)
 	fadeOut.t.start()
 	yield(fadeOut.t,"tween_completed")
+	#print("[SCREENMAN] ["+name+"] ScreenOff emitted for this overlay, will be disposed of.")
 	queue_free()
 
 #If Android back button pressed

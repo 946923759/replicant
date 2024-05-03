@@ -84,7 +84,7 @@ speaker	Sin
 
 emote	54	3
 emote	67	2
-msg	308380	You always make it so complicated, don't you have headache?	是你这家伙总是把事情想的太复杂啦，每次想这么多不头疼么？	お前は複雑に考えすぎなんだって。毎回そんなんで、頭痛くなんないのか？	NONE
+msg	308380	You always overcomplicate things. Don't you ever get a headache from that?	是你这家伙总是把事情想的太复杂啦，每次想这么多不头疼么？	お前は複雑に考えすぎなんだって。毎回そんなんで、頭痛くなんないのか？	NONE
 speaker	Estherine
 
 emote	54	1

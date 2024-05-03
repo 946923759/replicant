@@ -1,11 +1,11 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Emesa
 bg	009/013_1280x720
 portraits	55
 emote	55	4
 msg	307106	Moron! Idiot! That old ☆☆ just tramples all over my goodwill!! I hope she dies!	笨蛋！白痴！姬子那个OO！好心当成驴肝肺！去死吧！	バカっ！アホっ！年増ッ！！せっかくの好意を台無しにしやがって！死んじゃえばいいのに！	NONE
-choice	308187	It's long time since I heard Emesa say four letter words.	エミザの暴言を聞くのも久しぶり。	NONE	NONE
-choice	308202	Himeko is worried about your safety.	姫子もあなたの安全を考えてる。	NONE	NONE
+choice	308187	It's long time since I heard Emesa say four letter words.	好久没听到埃米沙爆粗了。	エミザの暴言を聞くのも久しぶり。	NONE
+choice	308202	Himeko is worried about your safety.	姬子也是为了你的安全着想。	姫子もあなたの安全を考えてる。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -21,7 +21,7 @@ msg	307110	Huh! Huh! I'm so pissed off!	呼！呼！气死我了！	フー！フ
 portraits	55
 emote	55	1
 msg	307111	Huh! Much better……	呼！舒服了……	フー……あー、スッキリした。	NONE
-msg	307112	Are you done? Go! Go abck!	炸药都装完了吧？走！回去！	爆薬は仕掛け終わったか？よし、橋の下に行こう！	NONE
+msg	307112	Are you done setting the explosives? All right, let's go under the bridge!	炸药都装完了吧？走！回去！	爆薬は仕掛け終わったか？よし、橋の下に行こう！	NONE
 speaker	
 bg	011/012_1280x720
 msg	307113	……	……	……。	NONE

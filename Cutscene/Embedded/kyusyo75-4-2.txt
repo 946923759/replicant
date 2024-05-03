@@ -117,8 +117,8 @@ portraits
 bg_video	Final_Round_Dance
 /Kiana	302973	Possibility as a human being... What a joke.	人类的可能性…那种东西根本就是笑话。	人類としての可能性……そんなもの、笑いぐさでしかない。	NONE
 msg	302974	Mei-senpai ... Let's sing the last requiem together for the sad race of humanity.	芽衣…让我们一同为人类这个悲哀的种族唱响最后的丧歌吧。	芽衣先輩……私たちで一緒に、人類という悲しい種族のため最後のレクイエムを歌ってあげましょう。	NONE
-/Kiana	303105	[color=#F4A460]In the name of Finality, send down divine punishment upon this misguided civilization and return it to emptiness. [/color]	<color=#F4A460FF>以终焉之名降下神罚，让错误的文明重回虚无。</color>	<color=#F4A460FF>終焉という名で下された天罰が、誤った文明を虚無に戻す。</color>	NONE
-/Mei	303106	[color=#c2b4ff]The light of death shall descend upon the earth, sounding the death knell for all living things.[/color]	<color=#c2b4ffFF>将死亡之光洒下大地，为万物敲响死亡的丧钟。</color>	<color=#c2b4ffFF>死の光が大地に降り注ぎ、万物のために死の警鐘を響かせる。</color>	NONE
+/Kiana	303105	[color=#F4A460]In the name of Finality, send down divine punishment upon this misguided civilization and return it to emptiness. [/color]	[color=#F4A460]以终焉之名降下神罚，让错误的文明重回虚无。[/color]	[color=#F4A460]終焉という名で下された天罰が、誤った文明を虚無に戻す。[/color]	NONE
+/Mei	303106	[color=#c2b4ff]The light of death shall descend upon the earth, sounding the death knell for all living things.[/color]	[color=#c2b4ff]将死亡之光洒下大地，为万物敲响死亡的丧钟。[/color]	[color=#c2b4ff]死の光が大地に降り注ぎ、万物のために死の警鐘を響かせる。[/color]	NONE
 /Kiana	303107	Together, we will bring destruction for this pathetic species called humanity.	就让我们一同为人类这个悲哀的种族带来毁灭。	人類というこの悲しき種族のために、私たちが滅亡をもたらしてあげる。	NONE
 /Mei	303108	All the fires of reincarnation and hope will be extinguished at this moment.	一切的轮回与希望的火种都将在此刻熄灭。	全ての輪廻と希望の火は、その瞬間に消えるでしょう。	NONE
 /Kiana	303109	Kyuushou... Let's end this!	九霄…让我们来结束这一切吧！	九霄……私たちに、この全てを終わらさせて！	NONE

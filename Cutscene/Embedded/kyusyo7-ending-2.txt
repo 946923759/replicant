@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 music	Negai
 /Kyuushou	303185	Hmm... Did I fall sleep?	唔…我是睡着了么？	う～ん……我は、眠っていたのか？
 bg	009/011_1280x720
@@ -69,7 +69,7 @@ speaker	Bronya
 portraits	60	54	55
 emote	54	5
 emote	60	1
-msg	303036	None	真是的，会议马上要开始了！不要吵吵闹闹的！	まったく、会議を始めます！いつまでも騒がないでください！
+msg	303036	Knock it off, you two! The meeting is about to start!	真是的，会议马上要开始了！不要吵吵闹闹的！	まったく、会議を始めます！いつまでも騒がないでください！
 msg	303037	None	姬子，我们得重新选择新的基地，随着幸存者的增加现在基地的大小已经无法容纳更多的人了。	姫子、新たに基地を選び直さなくてはなりません。#n生存者が増えてきて、今の基地の大きさではこれ以上の人を収容できません。
 msg	303038	None	姬子？	姫子？
 speaker	Himeko
@@ -93,7 +93,7 @@ msg	303042	Ugh ...... I can't ...... drink anymore .......	呜呜…我已经…
 speaker	Bronya
 emote	61	1
 emote	60	4
-msg	303043	None	哎…你们真是……	もう……あなたたちときたら……。
+msg	303043	Seriously..... You girls are......	哎…你们真是……	もう……あなたたちときたら……。
 speaker	Seele
 portraits	59	60
 emote	59	2
@@ -109,12 +109,12 @@ speaker	Seele
 portraits	59	60
 emote	59	2
 emote	60	1
-msg	303047	None	姐姐大人！一定是神明赐予我们的奇迹！我们现在要做的，就是将这个世界恢复成原来的样子！	お姉ちゃん！きっと神様が私たちに与えてくれた奇跡だよ！#nそれに私たちが今からすべきことは、この世界を元の姿に戻すことでしょ！
+msg	303047	Bronya! It must be a miracle God gave us! Besides, all we have to do now is to restore this world to what it was!	姐姐大人！一定是神明赐予我们的奇迹！我们现在要做的，就是将这个世界恢复成原来的样子！	お姉ちゃん！きっと神様が私たちに与えてくれた奇跡だよ！#nそれに私たちが今からすべきことは、この世界を元の姿に戻すことでしょ！
 speaker	Bronya
 portraits	59	60
 emote	59	2
 emote	60	2
-msg	303048	None	……嗯，你说的没错，人类的文明还没有结束，我们会重新踏上大地，继续书写我们的故事。	……ええ、その通りですね。人類の文明はまだ終わっていません。#n我々は再び足で大地を踏みしめ、自分たちの物語を綴っていくのです。
+msg	303048	......Yes, you are right. Human civilization isnt extinct yet. We will once again set our feet on the earth and tell our own story.	……嗯，你说的没错，人类的文明还没有结束，我们会重新踏上大地，继续书写我们的故事。	……ええ、その通りですね。人類の文明はまだ終わっていません。#n我々は再び足で大地を踏みしめ、自分たちの物語を綴っていくのです。
 bg	009/003_1280x720
 portraits	58
 speaker	

@@ -6,24 +6,24 @@ bg	011/005_1280x720
 portraits	54
 emote	54	4
 /Estherine	308295	Huh…you finally come, great……	呼…你终于还是来了，真是太好了……	あっ……来てくれたのね、よかった……。	NONE
-msg	308296	I thought you won't believe my words, ecause that sounded quite ridiculous…but as you come, our successful rate gets higher.	我还以为你一定不会相信我的话，因为那听起来的确很荒唐…但是既然你来了，那就代表我们成功的几率又大了许多。	信じてもらえないかと思った。荒唐無稽な話だったしね……でも、あなたは来てくれた。これで成功率も一気に上がったわ。	NONE
+msg	308296	I thought for sure you wouldn't believe me because it sounded ridiculous... but since you're here, that means our chances of success are much better.	我还以为你一定不会相信我的话，因为那听起来的确很荒唐…但是既然你来了，那就代表我们成功的几率又大了许多。	信じてもらえないかと思った。荒唐無稽な話だったしね……でも、あなたは来てくれた。これで成功率も一気に上がったわ。	NONE
 
 emote	54	1
 msg	308297	Fine, let me get it straight…here is my plan.	好了，我就不在这里绕圈子了…和你说明一下我的计划吧。	前置きはここまでにして……私の計画を説明するわね。	NONE
-msg	308298	As I said before, this world is your reflection, its change is connected to our body.	如我之前所说，现在的这个世界就是你身体的缩影，一切的变化都与你的身体状态有着必然的因果关系。	昨日言った通り、この世界はあなたの身体の生き写し、全ての変化はあなたの身体の状態とリンクしている。	NONE
-msg	308299	From this logic, when the big Honkai comes again, your body will also be completely eroded, and die in the end.	以这个世界的逻辑来说，当大崩坏将再次降临毁灭一切的时候，在你身体的层面的表现则是被崩坏能完全侵蚀，最终死亡。	この世界に大崩壊が再び訪れることは、現実世界でのあなたの身体が崩壊エネルギーに侵食され、死亡することを意味するわ。	NONE
+msg	308298	As I said yesterday, this world is a manifestation of your body. All that changes that occur here are linked to your physical state.	如我之前所说，现在的这个世界就是你身体的缩影，一切的变化都与你的身体状态有着必然的因果关系。	昨日言った通り、この世界はあなたの身体の生き写し、全ての変化はあなたの身体の状態とリンクしている。	NONE
+msg	308299	A major Honkai in this world again would mean that your body in the real world would be eroded by the Honkai energy and you would die.	以这个世界的逻辑来说，当大崩坏将再次降临毁灭一切的时候，在你身体的层面的表现则是被崩坏能完全侵蚀，最终死亡。	この世界に大崩壊が再び訪れることは、現実世界でのあなたの身体が崩壊エネルギーに侵食され、死亡することを意味するわ。	NONE
 msg	308300	So the only way now, is to prevent the Honkai energy from spreading in your body, to prevent the dead plague from absorbing Honkai energy.	所以现在唯一可行的方法，就是阻止你体内的崩坏能扩散，也就是说阻止这个世界的死斑吸收足够的崩坏能。	だから、それを阻止する唯一の方法は、あなたの体内を侵食する崩壊エネルギーを止めることよ。そうすれば、リンクしているこの世界も崩壊エネルギーがなくなって、死斑もこれ以上吸収できなくなるわ。	NONE
 portraits	54
 emote	54	2
-msg	308301	Coo…it sounds complicated, but our goal is simple, because the source of your Honkai energy is from the second Herrscher core.	咕…虽然听起来很复杂，但其实我们的目标很简单，因为你体内一切崩坏能的来源都是来自于被吸收的第二律者核心。	えっと……ちょっとややこしく聞こえるかもしれないけど、やることは簡単。あなたを蝕む崩壊エネルギーは、現実世界の体内に宿った第二律者のコアから来ているわ。	NONE
+msg	308301	Let's see, ...... It may sound a little complicated, but what you need to do is simple. The Honkai energy that is consuming you is coming from the core of the Second Herrscher that resides in your real-world body.	咕…虽然听起来很复杂，但其实我们的目标很简单，因为你体内一切崩坏能的来源都是来自于被吸收的第二律者核心。	えっと……ちょっとややこしく聞こえるかもしれないけど、やることは簡単。あなたを蝕む崩壊エネルギーは、現実世界の体内に宿った第二律者のコアから来ているわ。	NONE
 portraits	54
 emote	54	3
-msg	308302	But in reality, the Herrscher core has integrated with you, there's no way to get it apart, but here is different, every concept is represented, I think including the second Herrscher core.	然而在现实中，律者核心已经和你的身体合为一体，无法寻找剥离的方法，但是这里就不同了，在这个世界中所有的概念都被具现化了，我想也包括了第二律者的核心。	現実世界では、あなたの身体とひとつになった律者コアを剥離する方法はないでしょうけど、ここなら違う。この世界のあらゆる概念は、具現化されたもの。つまり、それが第二律者のコアであっても関係ない。	NONE
+msg	308302	In the real world, there would be no way to detach the Herrscher Core which has become integrated into your physical body. But not here. Every concept in this world is an embodiment. In other words, it doesn't matter if it is the core of the Second Herrscher.	然而在现实中，律者核心已经和你的身体合为一体，无法寻找剥离的方法，但是这里就不同了，在这个世界中所有的概念都被具现化了，我想也包括了第二律者的核心。	現実世界では、あなたの身体とひとつになった律者コアを剥離する方法はないでしょうけど、ここなら違う。この世界のあらゆる概念は、具現化されたもの。つまり、それが第二律者のコアであっても関係ない。	NONE
 msg	308303	Remember the Honkai vacuum in Nagazora, I found something weird during the time when Honkai energy starts to grow there.	还记得之前律者攻击之后在长空市内产生的崩坏能真空区么，在那段时间内真空区的崩坏能逐渐恢复的时候我发现了一些异样的地方。	以前、律者に攻撃された時、長空市内で崩壊エネルギーの真空エリアができたのを覚えてる？その時、真空エリア内の崩壊エネルギーが元に戻るまでの間で、ある違和感があったの。	NONE
 msg	308304	Theoretically the Honkai energy growth in the vaccum doesn't have a regular pattern, but some area shows higher index than others, I think there must be something releasing Honkai energy there.	按照理论来说真空区内的崩坏能填充并非规律均衡地增长，但是在某些区域却呈现出一些高于平均指标的情况，所以我觉得一定是有某样东西在散发着崩坏能才导致这样的结果。	理論上、真空エリア内に再び崩壊エネルギーが充填されるまで、そのスピードは不規則なものよ。けど、一部のエリアでは平均を上回るスピードで充填がされていたの。理由は、あるものが崩壊エネルギーをまき散らしていたから。	NONE
 portraits	54
 emote	54	2
-msg	308305	If my assumption is right, Herrscher core should be there.	如果我猜测的没错的话，律者核心或许就在那个地方。	私の考えが正しければ、律者のコアはそこにあるんだと思う。	NONE
+msg	308305	If my guess is correct, that's where the Herrscher Core would be.	如果我猜测的没错的话，律者核心或许就在那个地方。	私の考えが正しければ、律者のコアはそこにあるんだと思う。	NONE
 portraits	54
 emote	54	4
 msg	308306	Eh…sorry I spoke a lot, I haven't think about your feelings…so, any questions?	呃…一下子讲了怎么多，还没有顾虑到你的感受…对于我刚才说的那些，有什么想要提问的地方么？	あっ……また、あなたのことを考えず、一気に話してしまったわね……さっきまでの点で、質問とかある？	NONE
@@ -35,7 +35,7 @@ speaker	Estherine
 bg	011/005_1280x720
 portraits	54
 emote	54	4
-msg	308307	Woo…you're right, sorry, I'm to pushy……	呜…说的也是，抱歉，是我太着急了……	うん、そうよね、ごめんなさい、焦りすぎてたわ……。	NONE
+msg	308307	Yeah, I know, sorry, I was in too much of a hurry. ......	呜…说的也是，抱歉，是我太着急了……	うん、そうよね、ごめんなさい、焦りすぎてたわ……。	NONE
 portraits	54
 emote	54	1
 msg	308308	Anyway, at this stage our goal is to find and destroy that Herrscher core, and see what happens in future……	总之，现阶段我们的目标只要找到并摧毁那颗律者核心即可，之后的事情只能随机应变了……	とにかく、今のところ私たちの目標は、その律者のコアを探し出して壊すこと。その後のことは、臨機応変に動くしかないわ……。	NONE
@@ -53,7 +53,7 @@ speaker	Estherine
 bg	011/005_1280x720
 portraits	54
 emote	54	3
-msg	308310	We don't have much time, otherwise I wouldn't want to take such a risk to get close to the core, now we can only try.	因为时间实在紧迫，不然我也不想冒如此大的危险贸然接近核心，然而现在我们只能选择拼一下看看了。	時間に余裕があれば、コアに近づくなんて危険な方法以外にも何かあるんでしょうけど、今はこれでやってみるしかないわ。	NONE
+msg	308310	If I had more time I could come up with a less risky method than getting close to a Herrscher core, but we'll have to settle for this.	因为时间实在紧迫，不然我也不想冒如此大的危险贸然接近核心，然而现在我们只能选择拼一下看看了。	時間に余裕があれば、コアに近づくなんて危険な方法以外にも何かあるんでしょうけど、今はこれでやってみるしかないわ。	NONE
 choice	309289	Only us two?	只有我们两人么？	2人だけで？	NONE
 choice	309309	Shouldn't we contact Bronya?	不去联系布洛妮娅么？	ブローニャに連絡しなくていいの？	NONE
 condjmp_c	c2dest	2
@@ -82,6 +82,6 @@ speaker	Estherine
 bg	011/005_1280x720
 portraits	54
 emote	54	6
-msg	308315	But don't worry, I also find someone to help, maybe not the best…but can at least very powerful.	不过你放心，为了执行这个计划我也找了一位帮手，虽然不一定靠谱…但是战斗力上面还是非常有保证的。	でも、安心して。計画を遂行するために、いい助っ人を見つけたから。頼もしいかどうかは別だけど……戦力になるのは間違いないわ。	NONE
-msg	308316	Then, let's go, she must wait for a long time outside……	那么事不宜迟，我们赶紧出发吧，我想她在外面一定等的不耐烦了……	善は急げよ、早速出発しましょう。彼女も待ちくたびれてると思うし……。	NONE
+msg	308315	But don't worry. I've found someone willing to help us carry out the plan. She's not the most reliable, but her combat skills are superb.	不过你放心，为了执行这个计划我也找了一位帮手，虽然不一定靠谱…但是战斗力上面还是非常有保证的。	でも、安心して。計画を遂行するために、いい助っ人を見つけたから。頼もしいかどうかは別だけど……戦力になるのは間違いないわ。	NONE
+msg	308316	Let's hurry up and leave as soon as possible. I'm sure she's tired of waiting too......	那么事不宜迟，我们赶紧出发吧，我想她在外面一定等的不耐烦了……	善は急げよ、早速出発しましょう。彼女も待ちくたびれてると思うし……。	NONE
 

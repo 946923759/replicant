@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	101	201
 match_names	Kiana	Mei	_DIM_ALL_WHEN_EMPTY
 speaker	
@@ -31,9 +31,9 @@ msg	306996	Kara! Kara!	咔拉！咔拉！	ガラン！ガラン！	NONE
 speaker	Estherine
 portraits	54
 emote	54	1
-msg	306997	No…it's completely broken, it doesn't work.	不行了…动力装置已经完全损坏了，用应急零件修修补补的方法看来已经行不通了。	ダメね……動力装置が完全に壊れてるわ。応急処置で間に合うレベルじゃない。	NONE
+msg	306997	Oh no.... The generator's completely broken. Doesn't seem like it can be repaired, either...	不行了…动力装置已经完全损坏了，用应急零件修修补补的方法看来已经行不通了。	ダメね……動力装置が完全に壊れてるわ。応急処置で間に合うレベルじゃない。	NONE
 emote	54	4
-msg	306998	Even we come back to ME Co., Ltd, it's impossile to build a new nuclear furnace, is it the end……	就算是回到了ME社，想要重新制造出一台动力炉也是不可能的事情了，一切都到此为止了么……	ME社に戻ったとしても、新しい動力炉を作るなんて不可能だし、何もかもここで終わりなのかな……。	NONE
+msg	306998	Even if we went back to the M.E. Corp. building, there's no way we'd be able to build a new generator....	就算是回到了ME社，想要重新制造出一台动力炉也是不可能的事情了，一切都到此为止了么……	ME社に戻ったとしても、新しい動力炉を作るなんて不可能だし、何もかもここで終わりなのかな……。	NONE
 msg	306999	Bronya, Seele and Himeko……only us…I don't how much time we can hold on.	布洛妮娅，希儿还有姬子…能够坚持的人已经所剩无几了啊…不知道还能撑到什么时候。	ブローニャ、ゼーレ、それに姫子……戦える人ももうほとんど残っていない……これじゃあ、いつまで持ちこたえられるか……。	NONE
 portraits	54
 emote	54	3

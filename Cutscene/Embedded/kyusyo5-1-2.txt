@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Graymoth Member
 bg	009/004_1280x720
 portraits	66
@@ -77,8 +77,8 @@ portraits	61	55
 emote	61	1
 emote	55	1
 msg	307049	What?	什么？	何ですって？	NONE
-choice	308186	It's our choice to fight with you.	あなたと一緒に戦うことは自分の意志でもある。	NONE	NONE
-choice	308201	I have my reason for fight.	私にも戦う理由がある。	NONE	NONE
+choice	308186	It's our choice to fight with you.	あなたと一緒に戦うことは自分の意志でもある。	あなたと一緒に戦うことは自分の意志でもある。	NONE
+choice	308201	I have my reason for fight.	我也有自己战斗的理由。	私にも戦う理由がある。	NONE
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Himeko

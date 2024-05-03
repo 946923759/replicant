@@ -54,13 +54,13 @@ label	end_choices
 #LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Sin
 emote	67	1
-msg	308331	Long story short, I'm here to help you save the world. With me here, there's nothing to worry about!	蓬莱寺九霄，你只需要知道我是来帮助你拯救这个世界的就行，只要本大爷在就没有什么好怕的了！	蓬莱寺九霄、ボクはこの世界を救うため協力しに来たんだ。それさえわかってればいいさ。このボクがいるからには、もう何も怖くないぞ！	NONE
+msg	308331	Long story short, I'm here to help you save the world. With someone as great as me here, there's nothing to fear!	蓬莱寺九霄，你只需要知道我是来帮助你拯救这个世界的就行，只要本大爷在就没有什么好怕的了！	蓬莱寺九霄、ボクはこの世界を救うため協力しに来たんだ。それさえわかってればいいさ。このボクがいるからには、もう何も怖くないぞ！	NONE
 emote	67	2
-msg	308332	You should be thankful! We had to go through a lot of trouble to save you!	你可得好好感谢我！要知道为了救你我们究竟付出了多大的努力！	ちゃんと感謝しろよ！お前を助けるために、こっちはめちゃくちゃ苦労させられたんだからなッ！	NONE
+msg	308332	You should be thankful! We're putting in a lot of effort to save you!	你可得好好感谢我！要知道为了救你我们究竟付出了多大的努力！	ちゃんと感謝しろよ！お前を助けるために、こっちはめちゃくちゃ苦労させられたんだからなッ！	NONE
 speaker	Estherine
 emote	54	3
 emote	67	2
-msg	308333	Eh…that's it, let's go now!	呃…寒暄的话就到此为止吧，我们还是先启程吧！	はいはい、挨拶はその辺にしときしましょ。じゃ、さっそく出発しましょうか。	NONE
+msg	308333	Okay, okay, that's enough introduction. Let's get going.	呃…寒暄的话就到此为止吧，我们还是先启程吧！	はいはい、挨拶はその辺にしときしましょ。じゃ、さっそく出発しましょうか。	NONE
 speaker	Sin
 emote	54	3
 emote	67	2

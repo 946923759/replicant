@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	59	52
 music	Amusement Park - Quiet
 speaker	Seele
@@ -122,7 +122,7 @@ speaker	Techies
 nop
 emote	59	3
 emote	52	0
-msg	300388	Damn these Honkai beasts!!\nAHHHHHHH!!!!	可恶的崩坏兽！！啊啊啊啊！！！！！	この崩壊獣めっ！！あぁあああ！！！！！	NONE
+msg	300388	Damn these Honkai beasts!!\n[i]AHHHHHHH!!!![/i]	可恶的崩坏兽！！啊啊啊啊！！！！！	この崩壊獣めっ！！あぁあああ！！！！！	NONE
 speaker	Seele
 nop
 emote	59	3

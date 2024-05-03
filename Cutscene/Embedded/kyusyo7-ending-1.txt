@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JP
+#LANGUAGES	KEY	EN	ZH	JA	PT
 nop	Set speaker blank because msgbox is closed
 speaker	 
 msgbox_close	instant
@@ -19,7 +19,7 @@ msg	303156	Surely.....	我应该……	私はきっと——
 msg	303157	I did my part, didn't I?	完成了自己的使命吧？	自分の役割を果たしたよね？
 msg	303158	Thank you..... For coming here with me.	谢谢你们…谢谢你们陪我走到现在。	ありがとう……ここまで一緒に来てくれてありがとう。
 msg	303159	\nEmesa, thank you for teaching me compassion. ......	埃米沙，谢谢你教会了我关爱……	エミザ、思いやりを教えてくれてありがとう……。
-msg	303160	Issring, thank you for sharing your bravery with me.....	伊瑟琳，谢谢你教会了我勇敢……	イザーリン、勇敢さを教えてくれてありがとう……。
+msg	303160	Estherine, thank you for sharing your bravery with me.....	伊瑟琳，谢谢你教会了我勇敢……	イザーリン、勇敢さを教えてくれてありがとう……。
 msg	303161	Theresa, thank you for teaching me to protect others....	德丽莎，谢谢你教会了我守护……	テレサ、守ることを教えてくれてありがとう……。
 msg	303162	Seele, thank you for telling me how to connect with others...	希儿，谢谢你教会了我乐观……	ゼーレ、人との繋がりを教えてくれてありがとう……。
 msg	303163	Himeko, thank you for sharing your strength with me.....	姬子，谢谢你教会了我坚强……	姫子、強さを教えてくれてありがとう……。

@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	55	61	53	60	107
 match_names	Emesa	Himeko	Mei	_DIM_ALL_WHEN_EMPTY
 speaker	
@@ -86,7 +86,7 @@ bg	009/054_1280x720
 
 speaker	Mei
 tn	0	Mei says she'll grant Bronya her wishes in the original, but it didn't really make sense considering Mei is going to kill Bronya.
-msg	302165	Really.... Is this your choice? Fine, allow me to free you from your suffering. 	是么…这就是你们的选择么，既然这样的话就成全你吧。	そう……それがあなたたちの選択なのね。そういうことなら望みを叶えてあげるわ。	NONE
+msg	302165	I see... Allow me to grant the death you wish for. 	是么…这就是你们的选择么，既然这样的话就成全你吧。	そう……それがあなたたちの選択なのね。そういうことなら望みを叶えてあげるわ。	NONE
 
 speaker	Bronya
 tn	0	For some reason she doesn't say "my sister", but I guess it's because Bronya thought of Mei as a sister too.

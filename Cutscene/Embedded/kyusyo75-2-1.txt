@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Kiana
 music	Significance
 match_names	Kyuushou	Kiana	_DIM_ALL_WHEN_EMPTY
@@ -63,10 +63,10 @@ msg	302783	Long enough for time to lose all meaning...	这段漫长的过程不�
 msg	302784	It could be just a few hundred years ... or even tens of thousands of years ...	也许只有短短的数百年…也许是漫长的数万年……	わずか数百年かもしれないし……或いは数万年もの長きに及ぶかもしれない……。	NONE
 msg	302785	She no longer remembered how long she stood on the desolate land.	她已经不记得自己在荒芜的大地上矗立了多久。	彼女はもう、自分が荒れ果てた大地にどれだけ立っていたのか、それすら覚えていなかった。	NONE
 msg	302786	Until the time when the species named human beings is completely eradicated and the halberd is put in place, the consciousness of human beings may not return.	或许直到名为人类的物种完全灭绝，才能停下自己的刀刃，重新恢复了意识……	人類という名の種が完全に根絶し、矛を収めるその時まで、人間だった頃の意識が戻ることはないのかもしれない……。	NONE
-msg	302787	However, her consciousness suddenly awakens.	但只有那一刻她没有忘记。	しかし、彼女の意識は突然目覚める。	NONE
+msg	302787	However, her consciousness suddenly awakened.	但只有那一刻她没有忘记。	しかし、彼女の意識は突然目覚める。	NONE
 bg	007/006_1280x720
 msg	302788	At that moment ... all the memories flowed into her mind like a nightmare.	当她再次醒来的时候…一切的记忆都如同一场噩梦一般涌向她的脑海的那一刻。	その瞬間……全ての記憶が、悪夢のように彼女の脳裏に流れ込んできた。	NONE
-msg	302789	Countless screams echoed in her ears.  #n Countless corpses were piled up under her feet.  #n Countless fresh blood ... was flowing down between her fingers.	无数的悲鸣在她的耳边响起，无数的尸骸堆积在她的脚下，无数的鲜血在她的指间流淌。	無数の悲鳴が彼女の耳元で響いた。#n無数の死体が彼女の足下に積まれていた。#n無数の鮮血が……彼女の指の合間から流れ落ちていた。	NONE
+msg	302789	Countless screams echoed in her ears. Countless corpses were piled up under her feet. Immeasurable amounts of fresh blood was flowing down between her fingers.	无数的悲鸣在她的耳边响起，无数的尸骸堆积在她的脚下，无数的鲜血在她的指间流淌。	無数の悲鳴が彼女の耳元で響いた。#n無数の死体が彼女の足下に積まれていた。#n無数の鮮血が……彼女の指の合間から流れ落ちていた。	NONE
 msg	302790	As if to punish her ... the moment she wakes up, all the sins she has committed reappear in her brain.	崩坏为了惩罚她…在她苏醒的一刹那将她犯下的所有罪恶都保留在了她的记忆中。	まるで彼女を罰するかのように……彼女が目覚めた瞬間に、彼女の犯した全ての罪が脳内に蘇る。	NONE
 msg	302791	In the face of her sins ... she fell into despair and madness ...  #n Only the cry of pain echoes into the land of nothingness...	面对自己犯下的罪行…她陷入了绝望与疯狂…只有痛苦的嘶吼声徘徊在虚无的大地上。	自分の犯した罪を前にして……彼女は絶望と狂気の淵に陥った……。#n苦痛の叫び声だけが、ただただ虚無の大地へと響き渡る。	NONE
 msg	302792	And ... she couldn't accept the unbearable sadness and chose to save herself.	最后…她无法承受这巨大的悲伤，得出了唯一的结论。	そして……彼女は、その抱えきれないほどの悲しみを受け入れることができず、自らが救われる道を選んだ。	NONE

@@ -132,7 +132,7 @@ speaker	Sin
 
 emote	54	3
 emote	67	2
-msg	308463	Hell yeah, a welcome party just for us! I'm ready to go on a rampage!	还真是盛大的迎接啊，看来又可以大干一场了……	チッ、盛大な歓迎だなぁ！大暴れできそうだ……ッ！	NONE
+msg	308463	Woah, a welcome party just for us! I'm ready to go on a rampage!	还真是盛大的迎接啊，看来又可以大干一场了……	チッ、盛大な歓迎だなぁ！大暴れできそうだ……ッ！	NONE
 speaker	Estherine
 
 emote	54	3

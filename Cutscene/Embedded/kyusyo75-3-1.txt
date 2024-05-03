@@ -1,0 +1,76 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	012/001_1280x720
+speaker	Kyuushou
+music	Dispossession - Music Box Version
+msg	302813	Haah.... Haaah....	沙拉…沙拉……	ザッ、ザー……ザーザー……。	NONE
+msg	302814	I'm sorry ... I'm sorry ... I'm sorry ... I'm sorry ——	对不起…对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんなさい……ごめんなさい——	NONE
+speaker	Seele
+msg	302815	Kyuushou... Why couldn't you protect your sister!  Why were you the only survivor?!	九霄…为什么没有保护姐姐大人！为什么只有你一个人活了下来！	九霄……どうして、お姉ちゃんを守れなかったの！どうして、あなた一人だけが生き延びたの！	NONE
+speaker	Himeko
+msg	302816	Kyuushou... Is this what I get in exchange for my life? I was wrong about you.	九霄…我以生命换来的就是这样的结果么？是我看错你了。	九霄……私が命と引き換えにした結果がこれなの？私の見込み違いだったわね。	NONE
+speaker	Estherine
+msg	302817	Kyuushou!  I don't want to die here!  You'll save me, right?!  Please say something!	九霄！我不想在这里死掉！你一定会救我的！对吧？你说话啊！	九霄！私はここで死にたくないの！#nあなたならきっと助けてくれるよね！？そうでしょ？何とか言ってよ！	NONE
+speaker	Emesa
+msg	302818	Kyuushou.... I guess you and I are the same. We're both weak and incompetent, and neither of us can save anyone in the end.	九霄…看来你和我没有什么区别，都是弱小而又无能的人，到最后谁也无法拯救。	九霄……どうやら、お前は私と同じみたいだな。#n私たちは弱くて、無能な人間なんだ。最後まで誰も救うことはできない。	NONE
+speaker	Theresa
+msg	302819	Kyuushou... Were we wrong to decide this? If I had quietly waited for the end to come, I wouldn't have suffered like this!	九霄…果然我们的选择是错误的么，如果安静地等待末日降临的话就不会像现在这样痛苦了！	九霄……やっぱり、あたくしたちの選択は間違っていたの？#n静かに終末の降臨を待っていれば、こんな苦しみなんてなかったのに！	NONE
+speaker	Bronya
+msg	302820	Kyuushou.... I believed in you so much... Why.... Why didn't you bring everyone hope... Why didn't you save everyone!?	九霄…明明我是那么的相信你…为什么…为什么没有让大家看到希望…为什么没有拯救大家！！	九霄……ブローニャはあんなに信じていたのに……どうしてですか……。#nどうして、皆に希望を見せてくれなかったのですか……どうして、皆を救ってくれなかったのですか！！	NONE
+msg	302821	Kyuushou…… Why…… Answer…… Answer us…….	九霄…为什么…回答我…回答我们……	九霄……どうして……答えて……私たちに答えて……。	NONE
+speaker	Kyuushou
+msg	302822	I'm sorry ... I'm sorry ... I'm sorry ... I'm sorry ...	对不起…对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんなさい……ごめんなさい……。	NONE
+msg	302823	I couldn't do anything ... I made a pointless sacrifice for everyone ...	我什么都做不到…是我让大家白白牺牲了……	私は何もできなかった……私のせいで皆を無意味な犠牲にしてしまった……。	NONE
+msg	302824	Obviously everyone gave me everything... But I...	明明大家把一切都交付给我…但是我却……	皆は私に全てを任せてくれたのに……でも私は……。	NONE
+msg	302825	I'm sorry ... I'm sorry ... I'm sorry ...	对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんなさい……。	NONE
+bg	black
+portraits	58
+emote	58	5
+msg	302826	……	……	……。	NONE
+msg	302827	……	……	…………。	NONE
+choice	302828	Never give up! Kyuushou!	不要放弃！九霄！	諦めないで！九霄！	NONE
+choice	302829	Get up! Kyuushou!	振作起来！九霄！	しっかりして！九霄！	NONE
+
+
+bg	011/035_1280x720
+music	Faltering Prayer - Dawn Breeze
+portraits	107
+/Kyuushou	302830	I'm sorry ... I'm sorry ... I'm sorry——	对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんな——	NONE
+/Kiana	302831	Her spirit was eroded by the Honkai ... Apparently, it's over.	精神已经被崩坏侵蚀了么…看来是时候结束了。	精神が崩壊に侵食された……どうやら、終わりのようね。	NONE
+msg	302832	Mei-senpai ... I'm sorry.  I made you wait.	芽衣…抱歉，让你久等了。	芽衣先輩……ごめんね。待たせたわね。	NONE
+
+match_names	Kiana	Mei
+portraits	107	53
+/Mei	302833	Kiana-chan, did you decide?	琪亚娜，你决定好了么？	キアナちゃん、決めたの？	NONE
+/Kiana	302834	Yes. There's nothing left worth holding on to.	嗯，已经没有什么好留恋的了。	うん、もう何も思い残すことはないよ。	NONE
+/Mei	302835	Then ... let's say goodbye to this world.	那么…我们也该与这个世界告别了呢。	じゃあ……私たちもこの世界に別れを告げましょう。	NONE
+/Kiana	302836	Yes.	嗯。	うん。	NONE
+msg	302840	Entrust all of you to me ... Mei-senpai.	把你的一切交给我吧…芽衣。	あなたの全てを私に託して……芽衣先輩。	NONE
+msg	302841	From now on, I won't make you sad anymore ...	从此以后，我再也不会让你感受到悲伤……	これからは、もうあなたを悲しませたりしないわ……。	NONE
+msg	302842	Let us put an end to this world together. The curtain of the end of the universe will rise!	让我们一起来为这个世界画上句号吧，为大崩坏的降临拉开序幕！	私たちで一緒に、この世界にピリオドを打ちましょう。大崩壊降臨の幕を開けるのよ！	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302843	轰隆————！！！！	轰隆————！！！！	ドォォオオオオン————！！！！	NONE
+
+speaker	Kiana
+bg	011/014_1280x720
+portraits	
+msg	302847	……	……	……。	NONE
+msg	302848	This world of emptiness will soon disappear. Houraiji Kyuushou, your life will end with it.	马上这个这个虚无的世界就将消失，蓬莱寺九霄，你的生命也会随着它一起陨落。	この虚無の世界もじきに消えるわ。蓬莱寺九霄、あなたの命もそれと共に終わりよ。	NONE
+msg	302849	Sure enough...even in the end no one can change anything ......	果然…即使到最后也没有人可以改变什么……	やっぱり……最後まで誰も変えることができなかったわね……。	NONE
+msg	302850	Wait.......	等一下……	待て……。	NONE
+msg	302851	!?	！？	！？	NONE
+msg	302852	Houraiji Kyuushou... Why do you still stand up? Your spirit is already...	蓬莱寺九霄…为什么你还能够站起来？你的精神应该已经……	蓬莱寺九霄……あなた、どうしてまだ立ち上がれるの？あなたの精神はもう……。	NONE
+choice	302853	It's not over yet! Kiana!	还没有结束！琪亚娜！	まだ終わっていない！キアナ！	NONE
+choice	302854	I won't let you, Kiana!	不会让你得逞的！琪亚娜！	あなたの思い通りにはさせない！キアナッ！	NONE
+
+speaker	Kiana
+msg	302855	No, her consciousness has already withered... you're not Kyuushou.	不对，她的意识应该已经被崩坏给…你不是九霄。	違う、彼女の意識はもう崩壊によって……あなたは九霄じゃないわね。	NONE
+msg	302856	That was... her consciousness was asleep from the beginning when she lost her memory. You were the one standing in the battlefield instead of her.	原来是这样…从最初九霄失忆的那段时间开始，她的意识就处于沉睡的状态，是你代替她踏上了战场。	そういうことだったの……九霄が記憶を失った当初から、彼女の意識は眠った状態だった。#nあなたが彼女の代わりに戦場に立っていたのね。	NONE
+msg	302857	I didn't realize there were more than just desperate souls inhabiting her body... There were people like you that believed in this so-called hope like her?	没想到蓬莱寺九霄的体内不止寄宿着那些绝望的灵魂…还有像你这样与她一样相信所谓希望的人么？	蓬莱寺九霄の体内に宿っていたのは、あの絶望的な魂だけでなく……あなたみたいに、彼女と同じ希望とやらを信じる人間がまだいたのね？	NONE
+choice	302858	Hope is something we make ourselves.	希望是由我们自己创造的	希望は、私たち自身の手で作るもの。	NONE
+choice	302859	I will keep fighting for her!	就让我代替她继续战斗！	私が、彼女の代わりに戦い続ける！	NONE
+speaker	Kiana
+msg	302860	Still, you can't change anything.  Just like Kyuushou, sleep in infinite darkness forever.	……即使如此你也无法改变什么，就和九霄一起永远沉睡在无尽的黑暗中吧。	……それでも、あなただって何も変えられないわ。九霄と同じように、永遠に無限の暗闇で眠るがいい。	NONE
+msg	302861	Mei-senpai ... I'll leave her to you.  I will prepare the beginning of the catastrophe.	芽衣…她就交给你了，大崩坏的序幕就由我去准备。	芽衣先輩……彼女はあなたに任せるわ。大崩壊の序幕は私が用意する。	NONE
+speaker	Mei
+msg	302862	Good.	好的。	わかった。	NONE
+msg	302863	Then... I'll have you fall along with Kyuushou...	那就…请你和九霄一起倒下吧。	では……あなたには九霄と一緒に倒れてもらうわ。	NONE

@@ -1,8 +1,10 @@
 extends Control
 
 onready var database = Globals.chapterDatabase
+onready var chapterScrollbar = $ScrollContainer
 onready var chapterActorFrame = $ScrollContainer/VBoxContainer
 #We do a little trolling
+onready var missionScrollbar = $ScrollContainer2
 onready var mSelObjs = $ScrollContainer2/VBoxContainer
 
 var curChapterNum:int=1
@@ -67,12 +69,18 @@ func _ready():
 func handle_chapter_click(event:InputEvent,internalName:String):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		print("Clicked "+internalName)
+		$Click.play()
+		
+		var newChapterNum = curChapterNum
+		#Why is this even here when set_new_chapter_listing() searches for nodes anyways
+		var nodeName = internalName.replace(".","")
 		for i in range(1,chapterActorFrame.get_child_count()):
-			if chapterActorFrame.get_child(i).name==internalName:
-				curChapterNum=i
+			if chapterActorFrame.get_child(i).name==nodeName:
+				newChapterNum=i
 				break
-		#curChapterNum
-		set_new_mission_listing(internalName,curChapterNum)
+			#else:
+			#	print(chapterActorFrame.get_child(i).name+" =/= "+nodeName)
+		set_new_mission_listing(internalName,newChapterNum)
 
 onready var descKB = $DescrptionF/DescKB
 onready var descGP = $DescrptionF/DescGP
@@ -97,7 +105,7 @@ func _input(event):
 		if tmpChNum > 1:
 			tmpChNum-=1
 	elif Input.is_action_just_pressed("ui_down") or Input.is_action_just_pressed("ui_up"):
-		var chapterName = chapterActorFrame.get_child(tmpChNum).name
+		var chapterName = chapterActorFrame.get_child(tmpChNum).text
 		var chapter:Array = database[chapterName]
 		var chLength = chapter.size()
 		#var newPos = curMissionNumForGamepad
@@ -116,18 +124,51 @@ func _input(event):
 		else:
 			#Parts are right aligned so we need to do some wacky shit and get the offset from the right side
 			var offsetFromRight=prevmSelObj.getNumParts()-curMissionPartNumForGamepad-1
-			print(offsetFromRight)
+			#print(offsetFromRight)
 # warning-ignore:narrowing_conversion
 			curMissionPartNumForGamepad=max(mSelObj.getNumParts()-1-offsetFromRight,0)
-		print(curMissionPartNumForGamepad)
+		print("Cur Mission: "+String(curMissionNumForGamepad)+"."+String(curMissionPartNumForGamepad))
+		#print("cur mission part num: "+String(curMissionPartNumForGamepad))
 		
 		
+		$Navigation.play()
 		set_all_button_highlights_for_gamepad(curMissionNumForGamepad,curMissionPartNumForGamepad)
+		#scrollContainer.scroll_vertical=scrollContainer.scroll_vertical + 60*sc*d
+		
+		var thisMissionPositionOnScreen = 134*curMissionNumForGamepad-missionScrollbar.scroll_vertical
+		#print(thisMissionPositionOnScreen)
+		if thisMissionPositionOnScreen > 800:
+			#print("Attempting to tween to "+String(thisMissionPositionOnScreen-900+missionScrollbar.scroll_vertical))
+			var t:Tween = $Tween
+			#var maximum_scroll = missionScrollbar.get_v_scrollbar().max_value
+			var scroll_to = min(
+				thisMissionPositionOnScreen-800+missionScrollbar.scroll_vertical, 
+				missionScrollbar.get_v_scrollbar().max_value
+			)
+			#print(maximum)
+			t.interpolate_property(
+				missionScrollbar,
+				"scroll_vertical",
+				null,
+				scroll_to,
+				.3,
+				Tween.TRANS_CUBIC,
+				Tween.EASE_OUT
+			)
+			t.start()
+		elif thisMissionPositionOnScreen < 0:
+			#We want to calc the offset needed to scroll back to 0
+			
+			var t:Tween = $Tween
+			t.interpolate_property(missionScrollbar,"scroll_vertical",null,missionScrollbar.scroll_vertical+thisMissionPositionOnScreen,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+			t.start()
+			pass
 			#newPos-=1
 		#if newPos < 
 	elif Input.is_action_just_pressed("ui_left"):
 		if curMissionPartNumForGamepad>0:
 			curMissionPartNumForGamepad-=1
+			$Navigation.play()
 			set_all_button_highlights_for_gamepad(curMissionNumForGamepad,curMissionPartNumForGamepad)
 			
 		#
@@ -136,6 +177,7 @@ func _input(event):
 		var mSelObj = mSelObjs.get_child(curMissionNumForGamepad)
 		if curMissionPartNumForGamepad<mSelObj.getNumParts()-1:
 			curMissionPartNumForGamepad+=1
+			$Navigation.play()
 			set_all_button_highlights_for_gamepad(curMissionNumForGamepad,curMissionPartNumForGamepad)
 	elif Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
 		mSelObjs.get_child(curMissionNumForGamepad).buttonTrigger(curMissionPartNumForGamepad)
@@ -144,8 +186,10 @@ func _input(event):
 		$FadeOut.OffCommand("ScreenTitleMenu")
 	
 	if tmpChNum!=curChapterNum:
+		$Click.play()
 		curChapterNum=tmpChNum
-		set_new_mission_listing(chapterActorFrame.get_child(tmpChNum).name,curChapterNum)
+		#TODO: It will break if chapter names get localized
+		set_new_mission_listing(chapterActorFrame.get_child(tmpChNum).text,curChapterNum)
 
 		curMissionPartNumForGamepad=0
 		#Calculate mission num here, because some missions can have zero parts
@@ -160,9 +204,12 @@ func _input(event):
 				#if i < chLength:
 		
 
-func set_new_mission_listing(chapterName:String,chapterIndex:int):
+func set_new_mission_listing(chapterName:String, chapterIndex:int):
+	curChapterNum = chapterIndex
+	
+	var nodeName = chapterName.replace(".","")
 	for n in chapterActorFrame.get_children():
-		if n.name!=chapterName:
+		if n.name!=nodeName:
 			n.modulate=Color.slategray
 		else:
 			n.modulate=Color.white
@@ -171,9 +218,19 @@ func set_new_mission_listing(chapterName:String,chapterIndex:int):
 		return
 	var chapter:Array = database[chapterName]
 	var chLength = chapter.size()
-	#print(chapter)
+	#print(chapterName+" "+String(chapterIndex))
+	missionScrollbar.scroll_vertical = 0.0
 	var t:Tween = $Tween
 	t.stop_all()
+	
+	var chapter_selection_pos_on_screen = 111*(chapterIndex-1) - chapterScrollbar.scroll_vertical
+	#print("y pos: "+String(chapter_selection_pos_on_screen))
+	if chapter_selection_pos_on_screen > 800:
+		t.interpolate_property(chapterScrollbar,"scroll_vertical",null,chapter_selection_pos_on_screen-800+chapterScrollbar.scroll_vertical,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+		#chapterScrollbar.scroll_vertical
+		pass
+	if chapter_selection_pos_on_screen < 0:
+		t.interpolate_property(chapterScrollbar,"scroll_vertical",null,0,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT)
 	#print("IDX: ",chapterIndex)
 	#print("COMPLETED: ",Globals.playerData['completedChapters'][0] & 1<<0)
 	for i in range(biggestMissionNum):
@@ -230,6 +287,7 @@ func handle_btn_press(vnPlayerDest:String,episodeDest:Globals.Episode):
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
 		#get_tree().quit();
+		$BackSound.play()
 		$FadeOut.OffCommand("ScreenTitleMenu")
 
 #func _on_AnimationPlayer_animation_finished(anim_name):
@@ -240,4 +298,5 @@ func _notification(what):
 func _on_BackButton2_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		#get_tree().change_scene("res://TitleScreen.tscn")
+		$BackSound.play()
 		$FadeOut.OffCommand("ScreenTitleMenu")

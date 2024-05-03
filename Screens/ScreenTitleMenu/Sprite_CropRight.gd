@@ -1,7 +1,7 @@
 extends Sprite
 tool
 
-export(float,0,365) var toDraw=365 setget cropright
+export(float,0,365) var toDraw=365.0 setget cropright
 const POSITION = Vector2(-274,-78)
 
 func cropright(i):

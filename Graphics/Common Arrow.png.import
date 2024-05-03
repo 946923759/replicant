@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Common Arrow.png-acc2699c1bb56fc6256cc2953df3a9b7.stex"
+path="res://.import/Common Arrow.png-5868d5526492bced95a1e5313d72804a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/Common Arrow.png"
-dest_files=[ "res://.import/Common Arrow.png-acc2699c1bb56fc6256cc2953df3a9b7.stex" ]
+source_file="res://Graphics/Common Arrow.png"
+dest_files=[ "res://.import/Common Arrow.png-5868d5526492bced95a1e5313d72804a.stex" ]
 
 [params]
 

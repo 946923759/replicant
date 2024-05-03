@@ -36,9 +36,9 @@ func _ready():
 		
 	#VisualServer.canvas_item_set_z_index($ErrorDisplay.get_canvas_item(),999)
 
-func input(event):
-	#set_process_input()
-	pass
+#func input(event):
+#	#set_process_input()
+#	pass
 
 #var thisScreenIsCurrentlyHandlingInput:bool=true
 
@@ -47,6 +47,7 @@ func _input(_event):
 	#	return
 	
 	if Input.is_action_just_pressed("ui_cancel") and HandlePhysicalBButton:
+		$BackSound.play()
 		OffCommandPrevScreen()
 	elif (Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause")) and HandlePhysicalAButton:
 		OffCommandNextScreen()
@@ -111,10 +112,12 @@ func OffCommandOverlay():
 #If Android back button pressed
 func _notification(what):
 	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST:
+		$BackSound.play()
 		OffCommandPrevScreen()
 
 func _on_BackButton_gui_input(event):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
+		$BackSound.play()
 		OffCommandPrevScreen()
 
 func ReportScriptError(errorMessage:String):

@@ -12,7 +12,7 @@
 [ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=10]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Ext/hoyostans-logo-2.webp" type="Texture" id=12]
-[ext_resource path="res://Ext/Common Arrow.png" type="Texture" id=13]
+[ext_resource path="res://Graphics/Common Arrow.png" type="Texture" id=13]
 [ext_resource path="res://Screens/ProgrammerCreditsV3.gd" type="Script" id=14]
 [ext_resource path="res://Fonts/NotoSerifCJKjp-Bold.otf" type="DynamicFontData" id=15]
 

@@ -39,11 +39,11 @@ func _input(_event):
 		OffCommandPrevScreen()
 		
 	elif _event is InputEventMouseButton:
-		if _event.button_index == BUTTON_WHEEL_UP:
+		if _event.button_index == BUTTON_WHEEL_DOWN:
 			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
 				time_between_mousewheel = Time.get_ticks_usec()
 				set_page(curPage+1)
-		elif _event.button_index == BUTTON_WHEEL_DOWN:
+		elif _event.button_index == BUTTON_WHEEL_UP:
 			
 			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
 				time_between_mousewheel = Time.get_ticks_usec()

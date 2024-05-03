@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrow_small.png-48b9f3b33f627467328abb31191c97bb.stex"
+path="res://.import/music_tex.png-0fbd1684af1877db12f299a0c38072d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/arrow_small.png"
-dest_files=[ "res://.import/arrow_small.png-48b9f3b33f627467328abb31191c97bb.stex" ]
+source_file="res://Graphics/music_tex.png"
+dest_files=[ "res://.import/music_tex.png-0fbd1684af1877db12f299a0c38072d1.stex" ]
 
 [params]
 

@@ -8,7 +8,7 @@
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/103.png" type="Texture" id=6]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/102.png" type="Texture" id=7]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/104.png" type="Texture" id=8]
-[ext_resource path="res://Ext/Common Arrow.png" type="Texture" id=9]
+[ext_resource path="res://Graphics/Common Arrow.png" type="Texture" id=9]
 [ext_resource path="res://Ext/RetroRemake/mapimages/133.png" type="Texture" id=10]
 [ext_resource path="res://Ext/RetroRemake/mapimages/102_768.png" type="Texture" id=11]
 [ext_resource path="res://Ext/RetroRemake/mapimages/101_1386_768.png" type="Texture" id=12]

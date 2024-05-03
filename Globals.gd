@@ -53,6 +53,10 @@ var OPTIONS = {
 		"choices":["Classic","Modern 1","Modern 2","Frontline"],
 		"default":"Modern 1"
 	},
+	"showMusicNames":{
+		"type":"bool",
+		"default":true
+	},
 	"skipMode":{
 		"type":"list",
 		"choices":[false,true],
@@ -408,15 +412,22 @@ func set_audio_levels():
 			AudioServer.set_bus_mute(d,false)
 
 
+
+#######################
+# GLOBAL FUNCTIONS HERE
+#######################
+
 static func strip_bbcode(source:String) -> String:
 	var regex = RegEx.new()
 	regex.compile("\\[.+?\\]")
 	var ret = regex.sub(source, "", true)
 	if ret:
+		#print("ret: "+ret)
 		return ret
 	#If failed to parse (Usually because of bracketed text like "[hello world]")
+	push_warning("Failed to strip bbcode from string "+source)
 	return source
-	
+
 static func deep_copy(v):
 	var t = typeof(v)
 
@@ -484,6 +495,12 @@ static func get_cutscene_path()->String:
 					return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
 	#If not compiled or if the platform doesn't allow writing to the game's current directory
 	return "res://Cutscene/Embedded/"
+
+
+######################
+# SCREENMAN HERE
+######################
+
 
 var SCREENS:Dictionary = {
 	#"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",

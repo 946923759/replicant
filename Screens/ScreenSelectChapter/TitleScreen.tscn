@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://Screens/ScreenSelectChapter/TitleScreen.gd" type="Script" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=8]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=9]
 [ext_resource path="res://Shaders/ChapterSelectFadeBottom.tres" type="Material" id=10]
+[ext_resource path="res://MenuSounds/deck_ui_hide_modal.wav" type="AudioStream" id=11]
+[ext_resource path="res://MenuSounds/deck_ui_navigation.wav" type="AudioStream" id=12]
+[ext_resource path="res://MenuSounds/deck_ui_default_activation.wav" type="AudioStream" id=13]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -54,6 +57,7 @@ scroll_horizontal_enabled = false
 material = ExtResource( 10 )
 margin_right = 180.0
 margin_bottom = 116.0
+custom_constants/separation = -5
 
 [node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
 modulate = Color( 55.49, 56.97, 57.8, 1 )
@@ -172,5 +176,15 @@ mouse_filter = 2
 input_pass_on_modal_close_click = false
 color = Color( 0, 0, 0, 1 )
 script = ExtResource( 9 )
+
+[node name="BackSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="Navigation" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+mix_target = 2
 
 [connection signal="gui_input" from="BackButton2" to="." method="_on_BackButton2_gui_input"]

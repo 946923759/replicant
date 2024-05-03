@@ -1,0 +1,13 @@
+#LANGUAGES	KEY	EN	CH	JA	PT
+bg	black	fade
+msg	0	Test fullscreen BBcode
+msgbox_close
+nop	You figure that there would be a bbcode for setting the text outline right??? Apparently not!
+nop	set_outline	false
+msg	303005	[color=#a3f7fc]This is ... 42,000 years ago, my final wish...... [/color]	[color=#a3f7fc]这是…四万两千年前的我最后的愿望了……[/color]	[color=#a3f7fc]これは……4万2千年前の私の最後の願いだった……。[/color]	NONE
+extend	303006	[color=#a3f7fc]Please...bring the light of hope to this desperate world.\n[/color]	[color=#a3f7fc]请你…给这个绝望的世界带来希望的曙光吧。[/color]	[color=#a3f7fc]どうか……この絶望した世界に、希望の光を与えてほしい。[/color]	NONE
+msg	303007	[color=#CD6090]Alright, leave it to me.[/color]	[color=#CD6090]嗯，交给我吧。[/color]	[color=#CD6090]ああ、任された。[/color]	NONE
+bg	011/015_1280x720	fade
+se	DLC_CH01_EV11_ExplosionMultiClose
+shake_camera
+msg	303010	[font=res://Fonts/TextFont_Large.tres]Boom ------!!![/font]	轰隆——————！！！	ドォォオオオン——————！！！	NONE

@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://FM RepliCant Logo.png" type="Texture" id=3]
+[ext_resource path="res://Shaders/MotionBlur.tres" type="Material" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://Screens/ScreenWithMenuElements.gd\"
@@ -119,6 +121,11 @@ margin_right = 903.0
 margin_bottom = 438.0
 custom_fonts/font = ExtResource( 2 )
 text = "Press 1 to move this cube with a tween"
+
+[node name="Sprite" type="Sprite" parent="." index="9"]
+material = ExtResource( 4 )
+position = Vector2( 1308, 323 )
+texture = ExtResource( 3 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

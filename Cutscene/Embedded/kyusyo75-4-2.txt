@@ -1,0 +1,124 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	107	53
+bg	011/014_1280x720
+portraits	
+se	DLC_CH01_EV19_ExplosionOneShot
+music	Blinded By Light
+nop	music	The Sound of the End
+msg	302914	[Rumble ----！！！！]	轰隆————！！！！	ドォォオオオオン————！！！！	NONE
+
+portraits	107	53
+match_names	Kiana	Mei
+/Mei	302915	……	……	……。	NONE
+emote	53	1
+/Mei	302916	Looks like this is about as far as we've gotten. The last of the sparks have gone out.	看来也不过如此么，最后的一缕火光也已经消失了。	どうやら、この程度みたいね。最後の火種も消えてしまったわ。	NONE
+emote	107	0
+emote	53	1
+/Kiana	302917	Mei-senpai, come back.  Let's start the last catastrophe with me..	芽衣，回来吧，和我一起启动最后的大崩坏吧。	芽衣先輩、戻って来て。私と一緒に最後の大崩壊を始めましょう。	NONE
+emote	107	0
+emote	53	1
+/Mei	302918	Yes, it's time for this forgotten story to come to an end.......	嗯，这个被遗忘的故事也该迎来结局了……	ええ、この忘れられた物語も結末を迎える時ね……。	NONE
+emote	53	1
+
+se	DLC_CH07_EV02_HeartBeat
+vibrate	.2	.1
+portraits	58	107	53
+match_names	Kyuushou	Kiana	Mei
+/Kyuushou	303104	No......	等下……	待って……。	NONE
+msg	302919	It's not.... Over yet.....	还没……结束……	まだ……終わってない……。	NONE
+speaker	Kiana
+emote	107	0
+emote	53	1
+msg	302920	You're still alive... How resillient.\nBut it's too late.  The catastrophe has already entered the countdown stage.	还活着么…真是执着的家伙，不过已经太晚了，大崩坏已经进入了最后的阶段。	まだ生きていたの……本当にしぶといヤツね。#nでも、もう遅いわよ。大崩壊はもう秒読み段階に入ったわ。	NONE
+msg	302921	The Honkai energy compressed in the dead spots will soon explode. It will cleanse this world of these illusions, and there is nothing you can do about it.	压缩在死斑中的崩坏能马上就将爆发，重新清洗这个世界，而你什么也做不了。	死斑の中で圧縮された崩壊エネルギーがもうすぐ爆発する。#nこの世界を再び綺麗にするの。そして、あなたは何もできない。	NONE
+speaker	Kyuushou
+emote	53	1
+se	DLC_CH07_EV02_HeartBeat
+vibrate	.2	.1
+msg	302922	Is that... What you really believe...	那可…难说……	それは……どうかな……。	NONE
+speaker	Kiana
+emote	107	0
+emote	53	1
+msg	302923	?	？	？	NONE
+speaker	Kyuushou
+emote	53	1
+msg	302924	You said.... That this is the world I created.......	你曾经说过…这是我所创造的世界吧……	貴様、言ったな……これは我が作り出した世界だって……。	NONE
+msg	302925	Since it's my world....	既然是我的世界…那么……	我の世界……それなら……。	NONE
+emote	53	1
+msg	302926	I'll change it with my own hands!!!	我就用自己的双手去改变它！！！	自らの手で変えてみせるッ！！！	NONE
+
+portraits	
+bg	007/014_1280x720
+msg	302928	Lend me your strength, 	把你们的力量借给我吧，	あなたたちの力を貸して。	NONE
+extend	302929	Bronya, Seele, Himeko, Issring, Emesa.	布洛妮娅，希儿，姬子，伊瑟琳，埃米沙。	ブローニャ、ゼーレ、姫子、イザーリン、エミザ。	NONE
+msg	302930	And.... 	还有你……	それから——	NONE
+extend	302931	Sirin!	西琳！	シーリン！	NONE
+
+bg	007/040_1280x720
+se	DLC_CH07_EV02_HeartBeat
+msg	302932	...		NONE	NONE
+se	DLC_CH07_EV02_HeartBeat
+extend	302934	...		NONE	NONE
+
+bg	011/024_1280x720
+/Kiana	302935	...... Is this your answer? Kyuushou.	……这就是你的答案么，九霄。	……これが、あなたの答えなの？九霄。	NONE
+/Kyuushou	302936	Kiana ... Certainly, as you said, the past cannot be changed.  \n But even in the world of dreams, there are beautiful endings.	琪亚娜…虽然我无法改变你说的过去，但是就算是梦中的世界，我也拥有一个美好的结局。	キアナ……確かに貴様の言ったように過去は変えられない。#nでも、夢の中の世界だとしても、美しい結末はあるんだ。	NONE
+/Kiana	302937	Even if all this is a false illusion?	即使这一切都是虚假的幻影么？	この全てが偽りの幻影だったとしても？	NONE
+/Kyuushou	302938	This is not an illusion.  It's a moth chasing fire, fighting hard in that devastated land.	这并不是幻影，在那片荒芜的大地上奋战的逐火之蛾。	これは幻影なんかじゃない。あの荒廃した大地で奮戦する、火を追う蛾だってね。	NONE
+msg	302939	The stories they draw are by no means meaningless.	她们书写的故事并不是毫无价值的东西。	彼女たちの描いた物語は、決して無意味なものなんかじゃない。	NONE
+msg	302940	Because... in the next era that we know well, humanity, like them, is trying to live.	因为，在我熟知的下一个世代，人类依旧像她们一样为了生存而努力。	なぜなら……我のよく知る次の時代では、人類は彼女たちと同じく、生きるための努力をしている。	NONE
+msg	302941	That is the will of mankind that we have passed down to the present without change.	这就是我们从未改变传承至今的，属于人类的意识。	それこそが、我らが変わることなく、現在にまで伝えてきた人類の意志なんだ。	NONE
+/Kiana	302942	The will of mankind.....	人类的意识……	人類の意志……。	NONE
+/Kyuushou	302943	Kiana, do you still believe in them like I do?	琪亚娜，你也和我一样，依然相信着她们吧。	キアナ、貴様も我と同じよう、まだ彼女たちを信じているのだろう？	NONE
+msg	302944	If not, it wouldn't have kept this world alive until now.	如若不然，你也不会让这个世界持续到现在。	そうじゃなかったら、この世界を現在まで存続させ続けていなかったはずだ。	NONE
+msg	302945	You are only afraid that what you yourself believe in will be destroyed as easily as before.\nSo you are trying to cover up what you really believe.	只是你害怕自己相信的东西会像以前一样轻易的破灭…所以才掩饰着自己的内心。	貴様自身の信じているものが、以前のように簡単に滅ぼされてしまうのを恐れているだけ……。#nだから、自分の本心をごまかそうとしている。	NONE
+/Kiana	302946	You don't know anything...	你什么都不明白……	あなたは何も分かっていないわ……。	NONE
+/Kyuushou	302947	I certainly couldn't understand it before... \n But we can look at each other like this.	以前的我的确无法理解…但是我们却像这样互相对注视着对方。	以前の我では確かに理解できなかった……。#nでも、我らはこうやってお互いを見つめ合うことができる。	NONE
+msg	302948	Now that I'm looking at you like this, I finally understand.  \nEven if you have the power of a Herrscher, you have the same human heart as us.	直到与你平视的这一刻我才明白，虽然拥有着律者的力量，但我们同样也有着人类的心灵。	貴様と見つめ合った今、ようやく分かった。#n律者の力を持っていたとしても、我々と同じ人類の心があるとな。	NONE
+msg	302949	You are the same as me.  \n There are people who love deeply, people who want to protect, people who do not want to give up, and people who feel regretful ...	你和我一样，有着深爱的人，有着想要保护的人，有着不想放弃的人，有着怀有遗憾的人……	貴様は我と同じだ。#n深く愛する人がいて、守りたい人がいて、諦めたくない人がいて、無念に思う人がいる……。	NONE
+msg	302950	We are stumbling in doubt and looking for a way out filled with hope, one with the outcome we desire.	我们都在迷茫中跌跌撞撞，寻找着希望的出口，寻找着自己想要的结果。	我らは迷いの中でつまずきながら、希望の出口を探しているんだ。#nそして、自らの望む結果を探している。	NONE
+msg	302951	But fate is always so cruel... It is clear that the light is in front of you, but you couldn't reach it.	但是命运总是那么残酷…明明光芒就在眼前，却始终无法触及。	だが、運命はいつも残酷だ……光は目の前にあるのに、最後まで触れることができない。	NONE
+msg	302952	But even then, you can only move forward, because if you stop, you are afraid that you will never have the courage to start again.	但即使这样，你还是只能前进，因为如果停下脚步，就会害怕自己再也没有勇气出发。	でも、それでも進み続けるしかない。#nなぜなら、もし歩みを止めてしまえば、再び足を踏み出す勇気がなくなってしまうかもしれないから。	NONE
+msg	302953	Kiana, humans are such insignificant creatures.\nNo matter how hard we try, difficulties always appear in front of us one after another.	琪亚娜，人类就是这样渺小的生物，不管我们多么努力，总会有一个接一个的困难摆在你的面前。	キアナ、人類とは、これほどまでに小さな生き物なんだ。#n我らがどれだけ頑張ろうとも、いつも次から次へと困難が目の前に現れる。	NONE
+msg	302954	That's why we need human support.  That's why we make connections with people... You can't achieve your goal with your strength alone. But with the efforts of countless people combined, the goal is not too far away.	所以才需要有人搀扶，所以才和人产生联系…因为只靠自己的力量无法完成的目标，在无数人的努力下就不再那么遥远。	だから、人の支えが必要なのだ。だから、人との繋がりを作るんだ……。#n自分の力だけでは目標を果たせないから。無数の人の努力が合わされば、目標もそれほど遠いものではなくなる。	NONE
+msg	302955	There is no savior in this world... For all of us, we're our own saviors. Only by believing in ourselves, and the friends we believe in, can humanity build their own world.	这个世界没有什么救世主……因为所有人都是他们自己的救世主，只有相信自己…相信自己相信的他们，人类才构筑起属于自己的世界。	この世界には救世主なんてものはいない……全ての人にとって、自分こそが救世主なのだ。#n自分を信じてこそ……自分が信じる仲間を信じてこそ、人類は自分の世界を築くことができる。	NONE
+msg	302956	Kiana... Believe in me.  Together we can change this world.	琪亚娜…请你相信我吧，让我们一起改变这个世界。	キアナ……我のことを信じてくれ。我と一緒にこの世界を変えるのだ。	NONE
+msg	302957	Let's change this imperfect world... Into the one you dream of.	把她变成…那个你所期望的样子。	この完璧じゃない世界を……貴様の望み通りに変えよう。	NONE
+/Kiana	302958	......	……	……。	NONE
+tn	0	Yes, she actually says that
+extend	302959	Don't give me that bullshit! 	一派胡言！	そんなものデタラメだ！	NONE
+msg	302960	If humanity is so strong, why do they crumble under the might of the Honkai?	既然如此为何人类的文明在崩坏的面前不堪一击。	それならどうして人類の文明は、崩壊の前でひとたまりもなく崩れ去る？	NONE
+msg	302961	The things you believe in amount to nothing in front of the Honkai!	你所相信的这一切在绝对的破坏面前毫无意义！	あなたの信じているそれらは、崩壊の前では何の意味もないのよ！	NONE
+msg	302962	I'll make you face reality! You'll see how fragile the will of mankind is!	现在就让你看清现实吧！我会让你明白人类的意志是多么的脆弱！	今あなたに現実を見せてあげる！#nあなたに人類の意志がどれほど脆弱か、分からせてあげる！	NONE
+
+bg	011/014_1280x720
+msgbox_close
+msg	302963			NONE	NONE
+bg	011/013_1280x720
+msgbox_open
+shake_camera	2
+msg	302964	BOOM——————！！	轰隆隆隆——————！！	ドォォオオオオン——————！！	NONE
+music	The Sound of the End
+/Kiana	302965	The Honkai Impact has already begun. Open your eyes and see this world perish!	大崩坏已经开始了，你就眼睁睁地看着这个世界毁灭吧！	大崩壊が始まったわ。目を見開いてこの世界の滅びゆく様を見ていなさい！	NONE
+/Kyuushou	302966	Imaginary space…… Expansion!!!	虚数空间…展开！！	虚数空間……展開！！	NONE
+/ 	302967	VSSSSH————！！！	嗡————！！！	ヴォン————！！！	NONE
+
+portraits	58	107
+emote	58	2
+emote	107	0
+/Kiana	302968	...Are you going to use the power of imaginary space to prevent the spread of the catastrophe?  \n Even if you do that, you're only buying yourself some time.	……利用虚数空间的能力阻止大崩坏的扩散么，这样做也只是拖延时间而已。	……虚数空間の能力を利用して大崩壊の拡散を阻止するつもり？#nそんなことをしても、時間稼ぎにしかならないわよ。	NONE
+speaker	Kyuushou
+msg	302969	Hah.... Hah....	呼…呼……	ふぅ、ふぅ……。	NONE
+/Kyuushou	302970	You won't know if you'll earn time unless you try! If I can defeat you now, the Honkai will come crashing down with you!	是不是拖延时间试试就知道了！只要在这段时间内打败你的话崩坏也会随之瓦解！	時間稼ぎかどうかは、やってみなければわからないぞ！#n今のうちに貴様を倒せれば、崩壊も一緒に崩れ去るはず！	NONE
+/Kiana	302971	Hmph, you are pouring all your power into the imaginary space.\nThere will be no power of the Herrscher left in you anymore. It is impossible for you to defeat me.	哼，将全部力量倾泻在虚数空间上的你已经失去了律者的力量，根本没有机会战胜我。	フンッ、全ての力を虚数空間に注いでいるあなたに、#nもう律者の力なんて残っていないでしょう。私に勝つなど不可能だ。	NONE
+/Kyuushou	302972	Then I'll show you! My potential... Kyuushou Houraiji's potential as a human being!	那就让你见识一下吧！我蓬莱寺九霄身为人类的可能性！！	ならば、貴様に見せてやる！この蓬莱寺九霄が人類としての可能性をッ！！	NONE
+
+portraits	
+bg_video	Final_Round_Dance
+/Kiana	302973	Possibility as a human being... What a joke.	人类的可能性…那种东西根本就是笑话。	人類としての可能性……そんなもの、笑いぐさでしかない。	NONE
+msg	302974	Mei-senpai ... Let's sing the last requiem together for the sad race of humanity.	芽衣…让我们一同为人类这个悲哀的种族唱响最后的丧歌吧。	芽衣先輩……私たちで一緒に、人類という悲しい種族のため最後のレクイエムを歌ってあげましょう。	NONE
+/Kiana	303105	[color=#F4A460]In the name of Finality, send down divine punishment upon this misguided civilization and return it to emptiness. [/color]	<color=#F4A460FF>以终焉之名降下神罚，让错误的文明重回虚无。</color>	<color=#F4A460FF>終焉という名で下された天罰が、誤った文明を虚無に戻す。</color>	NONE
+/Mei	303106	[color=#c2b4ff]The light of death shall descend upon the earth, sounding the death knell for all living things.[/color]	<color=#c2b4ffFF>将死亡之光洒下大地，为万物敲响死亡的丧钟。</color>	<color=#c2b4ffFF>死の光が大地に降り注ぎ、万物のために死の警鐘を響かせる。</color>	NONE
+/Kiana	303107	Together, we will bring destruction for this pathetic species called humanity.	就让我们一同为人类这个悲哀的种族带来毁灭。	人類というこの悲しき種族のために、私たちが滅亡をもたらしてあげる。	NONE
+/Mei	303108	All the fires of reincarnation and hope will be extinguished at this moment.	一切的轮回与希望的火种都将在此刻熄灭。	全ての輪廻と希望の火は、その瞬間に消えるでしょう。	NONE
+/Kiana	303109	Kyuushou... Let's end this!	九霄…让我们来结束这一切吧！	九霄……私たちに、この全てを終わらさせて！	NONE

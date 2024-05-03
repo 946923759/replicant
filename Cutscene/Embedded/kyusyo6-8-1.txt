@@ -10,6 +10,7 @@ emote	54	6
 /Estherine	308466	Everyone! The reactor is right ahead of us!	各位！动力炉就在前面了！	みんな……！動力炉は、もう目の前よ！	NONE
 msg	308467	Da da da!	哒哒哒！	ダダッ、ダダダダ——ッ！	NONE
 se	DLC_CH00_EV04_ExplosionClose
+shake_camera	1
 / 	308468	Boom——!!	轰隆——！！	ドォオオオオン——ッ！！	NONE
 speaker	Sin
 emote	67	3
@@ -20,6 +21,7 @@ emote	67	3
 msg	308470	Sin, get in here! I'll close the gate to keep them out!	杏！快进来！我来关闭闸门拦住这些机甲！	シン、早く入って！ドアを閉めて機甲の侵入を防ぐから！	NONE
 emote	67	3
 se	DLC_CH00_EV04_ExplosionClose
+shake_camera	1
 / 	308471	Boom——!!	轰隆——！！	ドゴォオオオオンッ！！	NONE
 speaker	Sin
 emote	67	2
@@ -82,6 +84,7 @@ tween	during	54	stoptweening
 tween	during	665	stoptweening
 tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
 se	DLC_CH01_EV12_RadioReceive
+vibrate	.2	1
 / 	308484	Crack——!	呲拉——！	ザザッ——！	NONE
 match_names	Sin
 se	DLC_CH02_EV07_WormFlyB
@@ -110,6 +113,7 @@ tween	during	665	stoptweening
 tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 se	DLC_CH01_EV12_RadioReceive
 match_names	Sin
+vibrate	.2	1
 / 	308490	Crack——!	呲拉——！	ザザ——ザッ——	NONE
 se	DLC_CH02_EV07_WormFlyB
 /Sin	308491	It's fine if a worthless loser like you doesn't exist... I'm the only pawn mom needs!	像你这样的废物即使不存在也没什么关系…妈妈的棋子有我一颗就够了！	でも、お前みたいな役立たず！いなくなっても問題ないね！ママの駒は、このボク一人で十分さッ！	NONE

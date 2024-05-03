@@ -10,6 +10,7 @@
 Music Test	What Is going on	test_music,test_tween
 Choice Test	AASBBBDFD	test_choice,test_choice_design,test_var
 Font Test	Tests fonts, colors, pauses.	test_font,test_textPause
+BBCode FS Test	Tests BBCode when using fullscreen text	test_text_bbcode
 Background Test		test_background,test_background_custom,test_background_advanced
 Background Color test		test_blackbg,test_bgcolor
 Foreground Test	Tests the color rect which covers the screen.	test_foreground
@@ -93,8 +94,8 @@ Wish
 Forbidden
 Fantasy
 --Chapter 7.5
-Destruction		kyusyo75-1-1,kyusyo75-1-2
-False Thing		kyusyo75-2-1
-Together
-The Savior
-Ending		kyusyo7-ending-1,kyusyo7-ending-2
+Destruction	The ultimate enemy awaits you at the top.	kyusyo75-1-1,kyusyo75-1-2
+False Thing	What is a dream, what is real?	kyusyo75-2-1
+Together	Is this the end of the world...?	kyusyo75-3-1
+The Savior	Rise up, Kyuushou!	kyusyo75-4-1,kyusyo75-4-2,kyusyo75-4-3
+Ending	It's finally time to go home.	kyusyo7-ending-1,kyusyo7-ending-2

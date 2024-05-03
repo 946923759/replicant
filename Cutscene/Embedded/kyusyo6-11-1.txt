@@ -6,6 +6,7 @@ match_names	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
 bg	011/004_1280x720
 portraits	54	68
 se	DLC_CH00_EV04_ExplosionClose
+shake_camera
 msg	308589	Boom——!!	轰隆——！！	ドゴォオオオオン——ッ！！	NONE
 
 speaker	Estherine
@@ -37,10 +38,10 @@ emote	68	2
 /Sirin	308595	So you still haven't realized it.....	是么…看来你还是没有明白呢……	そう……まだわかっていないのね……。	NONE
 
 portraits	54	69
-tween	during	54	stoptweening
-tween	during	68	stoptweening
-tween	during	69	stoptweening
-tween	during	foreground	visible,true;diffuse,black;linear,.5;diffuse,0,0,0,0
+nop	tween	during	54	stoptweening
+nop	tween	during	68	stoptweening
+nop	tween	during	69	stoptweening
+nop	tween	during	foreground	visible,true;diffuse,black;linear,.5;diffuse,0,0,0,0
 /Sirin	308596	Nothing here can be changed.	这里的一切都已经无法改变了。	ここのすべては、もう変えることができないの。	NONE
 
 speaker	Estherine
@@ -81,10 +82,13 @@ portraits	67,false,-1	54,false,-2	69
 emote	67	3
 /Sin	308606	--That it's over!!!	一切都结束的啊！！！	——終わるだなんて言った！！！	NONE
 
+portraits	54,false,-2	67	69
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
 / 	308607	Bang!	砰！	パァンッ——！	NONE
 
+match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	54	4
+portraits	54,false,-2	67,false,-2	69
 /Estherine	308608	Sin……	杏……	シン……。	NONE
 
 emote	67	2
@@ -105,6 +109,7 @@ emote	69	2
 msg	308613	...I was going to let you die peacefully in your dreams, but you chose the most painful method.	……本想让你在美梦中死去，看来你还是选择了最痛苦的方式呢。	……夢の世界のまま死んでもらおうと思ったのに、よりにもよって一番苦しいのを選択するなんて。	NONE
 
 emote	69	2
+portraits	54,false,-2	67,false,-3	69
 / 	308614	Boom!!	轰隆！！	ドォオオオンッ！！	NONE
 
 speaker	Sin

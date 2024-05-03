@@ -140,6 +140,7 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				elif splitCmd.size() == 4:
 					val = Color(float(splitCmd[1]),float(splitCmd[2]),float(splitCmd[3]))
 				elif splitCmd[1].begins_with("#"):
+					#print("Parsed hex color "+splitCmd[1]+", trying to convert")
 					val = Color(splitCmd[1])
 				else:
 					val = ColorN(splitCmd[1])
@@ -186,8 +187,8 @@ static func get_total_tween_time(tweenStr:String) -> float:
 				totalTime+=float(cmd[1])
 	return totalTime
 
-func decelerate(time):
-	self.time=time
+func decelerate(time_):
+	self.time=time_
 	tween.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
 	return self
 

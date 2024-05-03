@@ -213,7 +213,7 @@ func updateValue(o:String,optionHolderNode:Control):
 		#Because min_width was removed... This shouldn't be here
 		valNode.rect_size.x=MAX_VALUE_WIDTH
 
-func updateTranslation(refresh:bool=false):
+func updateTranslation(_refresh:bool=false):
 	var descActorFrame = $DescriptionF
 	var descBaseActor = $DescriptionF/DescriptionBase
 	

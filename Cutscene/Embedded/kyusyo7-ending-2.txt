@@ -1,21 +1,15 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
-nop	Set speaker blank because msgbox is closed
-speaker	 
-bg	007/006_1280x720
-speaker	Kyuushou
 music	Negai
-msg	303185	Hmm... Did I fall sleep?	唔…我是睡着了么？	う～ん……我は、眠っていたのか？
-speaker	
+/Kyuushou	303185	Hmm... Did I fall sleep?	唔…我是睡着了么？	う～ん……我は、眠っていたのか？
 bg	009/011_1280x720
-speaker	Kyuushou
 portraits	58
 emote	58	7
-msg	303186	Is this Senba High?	这里是千羽学园么？	ここは千羽学園？
+/Kyuushou	303186	Is this Senba High?	这里是千羽学园么？	ここは千羽学園？
 msg	303187	I wonder how long I slept...	我到底睡了多久……	一体、どれくらい寝ていたんだろう……。
 msg	303188	Did all the Fire Moths survive?	逐火之蛾的大家都得救了吧？	火を追う蛾の皆は、助かったのだろうか？
 msg	303189	I don't feel any sign of the Honkai... everything is back.	感觉不到崩坏的气息…果然一切都恢复了呢。	崩壊の気配を感じない……やはり全てが元に戻ったんだ。
 msg	303190	……	……	……。
-msg	303191	………	………	…………。
+extend	303191	………	………	…………。
 emote	58	1
 msg	303192	It looks like it's time to go home ...	看来是时候该回去了……	帰る時が来たみたいだ……。
 msg	303193	Back to everyone!	回到大家的身边！	皆のところへ帰ろう！！

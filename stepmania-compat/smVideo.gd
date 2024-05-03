@@ -17,7 +17,7 @@ func set_rect_size():
 	rect_size=Vector2(1920,1080)
 	pass
 	
-func _process(delta):
+func _process(_delta):
 	if self.is_playing() == false:
 		play()
 	

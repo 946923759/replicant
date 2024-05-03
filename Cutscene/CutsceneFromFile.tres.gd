@@ -32,21 +32,22 @@ static func strip_first(arr2:Array)->Array:
 #This function produces no side effects,
 #But it can't be 'static' since the game has to be running
 #for the OS var to be available
-func load_cutscene_data(name:String)->Dictionary:
+static func load_cutscene_data(name:String)->Dictionary:
 	var f = File.new()
 	var path:String
-	if "/" in name:
+	if "/" in name: #Wait, why is this here?
 		path=name
 	else:
 		path = Globals.get_cutscene_path()+name
 		if OS.is_debug_build():
-			print("Got path "+path)
+			print("[CutsceneFromFile] Got path "+path+" from file named "+name)
 	var ok = f.open(path, File.READ)
 	if ok != OK:
 		printerr("Warning: could not open "+name+" for reading! ERROR ", ok)
 		return Dictionary()
 	
 	var d = {
+		'abs_path':path,
 		'CDAudio':"",
 		'nsf_fileName':"",
 		"nsf_trackNum":0,
@@ -100,9 +101,6 @@ func _ready():
 				break
 				
 	cutsceneData = load_cutscene_data(Globals.nextCutscene)
-	#if OS.is_debug_build():
-	#	cutsceneData = load_cutscene_data("music_test.txt")
-		#cutsceneData = load_cutscene_data("test_Midnight112.txt")
 	if cutsceneData.size()==0:
 		#var e = load("res://savedataError.tscn").instance()
 		#e.setNewText("The cutscene failed to load.")
@@ -134,6 +132,23 @@ func _ready():
 	else:
 		$CutscenePlayer.init_(cutsceneData['msg'],null,false,"\t",msgColumn)
 	
+func _input(event):
+	if event.is_action("DebugButton5") and event.is_pressed():
+		if not cutsceneData['abs_path']:
+			return
+			
+		var p = cutsceneData['abs_path']
+		if OS.has_feature("standalone") == false:
+			p = p.replace("res://","")
+		print("[CutsceneFromFile] system shell is opening "+p)
+		if OS.get_name() == "X11":
+			OS.execute("xdg-open",[p], false)
+			#"Windows","X11","macOS":
+			#	if OS.has_feature("standalone"):
+			#		return OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/"
+
+			#int execute(path: String, arguments: PoolStringArray, blocking: bool = true, output: Array = [  ], read_stderr: bool = false, open_console: bool = false)
+			
 	
 	#s.hide()
 func set_rect_size():

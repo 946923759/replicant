@@ -1,0 +1,105 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kyuushou
+music	The Sound of the End
+bg	011/035_1280x720
+
+portraits	58
+emote	58	2
+/Kyuushou	302976	Haaaaaaahhhh!!!!!	哈啊啊啊啊啊啊！！！！！	はぁあああああっ！！！！！！	NONE
+
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+/	302977	BANG！！！	砰！！！	バァアアアン！！！	NONE
+/Kyuushou	302978	Hah... Hah...	呼…呼……	ハァ、ハァ……。	NONE
+
+portraits	119	58
+emote	119	0
+emote	58	2
+/Kiana	302979	This is your power ...	这就是你的力量么……	これが、あなたの力なの……。	NONE
+/Kyuushou	303110	This is the power of everyone ... the power of humankind!	这是我们的力量…属于人类的力量！	これが皆の力……人類の力！	NONE
+
+portraits	119,false,-2	58	219,false,2
+
+/Mei	303111	Kiana-chan ... Apparently, our obsession seems to be up to this point.	琪亚娜…看来我们的固执也只能到此为止了。	キアナちゃん……どうやら、私たちの執念もここまでのようね。	NONE
+speaker	Kiana
+msg	303112	Seems like it.	你说得对。	そうみたいね。	NONE
+speaker	Mei
+msg	303113	This bet is your win.  Originally it was a dream of nothingness, but ...  #n I never thought you would show such a miracle in such a dream.	这个赌局是你赢了，本该是虚无一物的梦境…没想到在这样的梦境中，你还能让我看到如此的奇迹。	この賭けはあなたの勝ちよ。本来なら何もない虚無の夢だったのに……。#nこんな夢の中で、あなたがこのような奇跡を見せてくれるなんて思わなかったわ。	NONE
+msg	303114	Kiana-chan, I'm sorry ... I'm tired ...	琪亚娜，抱歉…我已经累了…	キアナちゃん、ごめんなさい……私、疲れちゃった……。	NONE
+/Kiana	303115	Yes.  Mei-senpai, thank you for being with me so far. For me... that's enough.	嗯，芽衣，谢谢你陪我到现在，对我来说…这已经足够了。	うん。芽衣先輩、今まで一緒にいてくれてありがとう。#n私にとっては……それだけで十分。	NONE
+/Mei	303116	Well then ... I'll go ahead.	那么…我就先走一步了。	それじゃあ……私、先に行くわね。	NONE
+/Kiana	303117	Goodbye ... my only attachment...	再见了…我唯一的依恋……	さようなら……私の唯一の心残り……。	NONE
+portraits	119	58
+msg	303118	咔！	咔！	ガッ！	NONE
+speaker	Kiana
+portraits	107	58
+emote	107	0
+emote	219	0
+msg	303119	呜！	呜！	うっ！	NONE
+msg	302980	Kyuushou, I didn't expect ...... that you really caught this ray of light.	九霄，没想到……居然真的被你抓住了这一缕曙光。	九霄、まさか……本当にあなたがこの光を掴むなんて。	NONE
+speaker	Kyuushou
+emote	58	1
+msg	302981	I win. Kiana.	是我赢了，琪亚娜。	我の勝ちだ。キアナ。	NONE
+speaker	Kiana
+emote	58	1
+emote	107	0
+msg	302982	Hmph... well done... But it's too early to rejoice...	呵呵呵…做得不错…不过现在高兴还有点早啊……	フフフ……よくやったわ……でも、喜ぶのはまだ早いわよ……。	NONE
+speaker	Kyuushou
+emote	58	7
+emote	107	0
+msg	302983	Are you still going to fight?	你还准备继续战斗么？	まだ戦いを続けるつもりか？	NONE
+speaker	Kiana
+emote	58	7
+emote	107	0
+msg	302984	I won, but ... I can't stop the spread of the dead spots anymore.	虽然你战胜了我…但是死斑的扩展已经无法阻止。	私には勝ったけれど……死斑の拡大はもう止められない。	NONE
+msg	302985	In other words, your body will be eroded by the Honkai and will perish...	这也就意味着，你的身体还是会在崩坏的侵蚀中死去……	つまり、あなたの肉体はそのまま崩壊に侵食され、そして死んでいくということなのよ……。	NONE
+speaker	Kyuushou
+emote	58	7
+emote	107	0
+msg	303120	呃……	呃……	えっ……。	NONE
+speaker	Kiana
+emote	58	7
+emote	107	0
+msg	302986	There is only one way to save you right now.	而现在，可以救你的办法只有一个。	今、あなたを救える方法は1つだけ。	NONE
+msg	302987	Kyuushou...... use my power...... to annihilate the Honkai with me...... this is the last key.	九霄…使用我的力量吧…与我一起将崩坏消灭…这才是最后的关键。	九霄……私の力を使うのよ……私と一緒に崩壊を消滅させるの……これこそが最後の鍵。	NONE
+speaker	Kyuushou
+emote	58	7
+emote	107	0
+msg	302988	Kiana...... does that mean you will help me?	琪亚娜…你的意思是要帮我？	キアナ……それはつまり、我を手伝ってくれるということか？	NONE
+speaker	Kiana
+emote	58	7
+emote	107	0
+msg	302989	This is the world I destroyed and you created...... We are both opposites and symbiotic....... From the beginning, there has been no friend or foe.	这是由我毁灭而由你创造的世界…我们既是对立也是共生…从一开始就没有敌我之分。	これは私が滅ぼして、あなたが作り出した世界……私たちは対立関係であり、共生関係でもあるの……。#n最初から、敵も味方もないのよ。	NONE
+msg	302990	I once tried to awaken your stigmata.  #n But your power at that time was so weak that your stigmata could not counter the Honkai.	我一度想要唤醒你的圣痕，但那时你的力量太过虚弱，你的圣痕还无法对抗崩坏。	私は一度、あなたの聖痕を呼び覚まそうとしたの。#nでも、その時のあなたの力はあまりに弱く、あなたの聖痕は崩壊に対抗することができなかった。	NONE
+msg	302991	But now it's different ... you're strong enough.  #n I'm strong enough to overcome my destiny ...	但现在已经不同了…你已经变得足够强大，强大到足够战胜自己的命运……	だけど、今はもう違う……あなたはもう十分に強くなった。#n自分の運命にも打ち勝てるほど強くなったわ……。	NONE
+msg	302992	Houraiji Kyuushou... Put your hands out.	蓬莱寺九霄…把你的手给我吧。	蓬莱寺九霄……手を出して。	NONE
+
+portraits	
+music	Negai
+bg	011/031_1280x720
+msgbox_close
+msg	302993			NONE	NONE
+msgbox_open
+/Kyuushou	302994	This is... Your stigmata?	这就是…琪亚娜的圣痕么。	これは……キアナの聖痕か？	NONE
+msg	302995	As I expected, it feels warm ...  #n I have sadness and regret, but I still strongly believe in my ideals and are moving toward the future.	果然和我想的一样，是那样温暖的感觉…虽然有着悲伤和遗憾，但是仍然坚信着自己的理想，朝着远方前行。	やはり我の思っていた通り、温かい感じがする……。#n悲しみと後悔の念もあるけれど、それでも自分の理想を強く信じ、未来へ向かって進んでいる。	NONE
+/Kiana	302996	Kyuushou... You gave me the courage to move forward.  #n——Let me get myself back again.	九霄…是你给了我继续前行的勇气，让我重新找回了自己。	九霄……あなたが私に前へ進む勇気を与えてくれたのよ。#n——私に再び自分を取り戻させてくれた。	NONE
+msg	302997	I will go on a journey again soon.  I'm going back to where I should be.  #n …… The other person in that world you know well, I'm still lost for the future.	马上我即将再次踏上旅程，回到自己应该回去的地方…那个在你熟悉的世界里，另一个我还在为了未来而迷茫。	私はすぐにまた旅へ出るわ。自分の還るべき場所へ還るの。#n……あなたがよく知るあの世界の、もう1人の私はまだ未来のために迷っているわ。	NONE
+msg	302998	From now on ... you may encounter greater difficulties ... more sadness ... stronger enemies ...	从今以后…你们或许还会经历更大的困难…更多的悲伤…更强的敌人……	これから先……あなたたちはもっと大きな困難……もっと多くの悲しみ……もっと強い敵に遭遇するかもしれない……。	NONE
+msg	302999	However, if you remain as strong and optimistic as you are now... I'm sure you can face difficulties with a smile like this.	但如果是现在的你…一定也会向这样带着笑容面对它们吧。	けど、今のあなたなら……きっとこうやって笑顔で困難にも向き合えるでしょうね。	NONE
+/Kyuushou	303000	Of course!  Because that's what the savior should be!	嗯！因为这才是救世主应有的姿态啊！	無論だ！だって、それこそが救世主のあるべき姿だからな！	NONE
+/Kiana	303001	Yes.... Your words... Can surely save that future from the Honkai.	是呢…你的话…一定可以拯救那个崩坏的未来。	そうね……あなたなら……きっとあの崩壊の未来を救えるはずよ。	NONE
+msg	303002	Thank you ...... Houraiji Kyuushou.	谢谢你……蓬莱寺九霄。	ありがとう……蓬莱寺九霄。	NONE
+msg	303003	The time has finally come to wake up from the dream -	梦终于到了醒来的时候了——	やっと、夢から覚める時が来たわ——	NONE
+
+stop_music
+nop	Originally white
+bg	black	fade
+msgbox_close
+nop	You figure that there would be a bbcode for setting the text outline right??? Apparently not!
+nop	set_outline	false
+msg	303005	[color=#a3f7fc]This is ... 42,000 years ago, my final wish...... [/color]	[color=#a3f7fc]这是…四万两千年前的我最后的愿望了……[/color]	[color=#a3f7fc]これは……4万2千年前の私の最後の願いだった……。[/color]	NONE
+extend	303006	[color=#a3f7fc]Please...bring the light of hope to this desperate world.\n[/color]	[color=#a3f7fc]请你…给这个绝望的世界带来希望的曙光吧。[/color]	[color=#a3f7fc]どうか……この絶望した世界に、希望の光を与えてほしい。[/color]	NONE
+msg	303007	[color=#CD6090]Alright, leave it to me.[/color]	[color=#CD6090]嗯，交给我吧。[/color]	[color=#CD6090]ああ、任された。[/color]	NONE
+bg	011/015_1280x720	fade
+se	DLC_CH01_EV11_ExplosionMultiClose
+shake_camera
+msg	303010	[font=res://Fonts/TextFont_Large.tres]Boom ------!!![/font]	轰隆——————！！！	ドォォオオオン——————！！！	NONE

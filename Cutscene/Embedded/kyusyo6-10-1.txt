@@ -77,6 +77,7 @@ emote	68	1
 portraits	
 stopmusic
 se	DLC_CH01_EV12_RadioReceive
+vibrate	.5	.5
 / 	308552	Crack!!	呲拉！！	ザ——ザザッ——ァアア——！！	NONE
 
 msg	308553	……	……	……。	NONE
@@ -109,8 +110,11 @@ msg	308573	Let me end your suffering....	就让我来帮你解脱吧……	こ�
 msg	308574	Good bye...... Sin.	再见了…杏。	さようなら……シン。	NONE
 
 speaker	 
+vibrate	.75	1
+tween	during	foreground	linear,.5;diffuse,1,0,0,.5
 msg	308575	Ka!!	咔！！	ドォオオンッ！！	NONE
 
+tween	during	foreground	visible,false
 bg	011/008_1280x720
 music	Emil Boss - No Vocals
 portraits	54,false,-1	67,false,-2	68

@@ -1,4 +1,5 @@
 extends Control
+signal song_changed(song_file_name)
 
 """
 This one file is CC-BY-NC-SA 4.0 instead of GPLv3
@@ -182,7 +183,7 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 							if setDispChr == 0:
 								var cmd_end = msg_to_append[mi].find("]", 12); #skip scanning in "/setDispChr" section
 								if cmd_end!=-1:
-									print(cmd_end)
+									#print(cmd_end)
 									splitString[mi] = "/setDispChr["+String(len(msg_to_append[mi])-cmd_end) \
 									+ "]" \
 									+ msg_to_append[mi].substr(cmd_end+1,len(msg_to_append[mi])) \
@@ -496,7 +497,7 @@ func advance_text()->bool:
 				#Do it up here since /setDispChr command might override it.
 				text.visible_characters=0
 				var tmp_txt:String
-				print(curMessage)
+				#print(curMessage)
 				if msgColumn < curMessage.size():
 					tmp_txt = curMessage[msgColumn]
 				elif curMessage.size() > 1:
@@ -876,11 +877,12 @@ func advance_text()->bool:
 				if is_instance_valid(lastMusic):
 					lastMusic.stop()
 				if m!=null:
-					print("Playing "+m.name+" from path "+curMessage[1])
+					print("Playing song "+m.name+" from path "+curMessage[1])
 					#print(m.stream)
 					m.volume_db=0
 					m.play()
 					lastMusic=m
+					emit_signal("song_changed", m.name)
 				else:
 					printerr("FIX YOUR MUSIC NAMES!! DON'T USE SPECIAL CHARACTERS! File "+curMessage[1]+" not found!")
 			'se':
@@ -931,6 +933,8 @@ func advance_text()->bool:
 #		txtTw.tween_property(text,"visible_characters",text.text.length(),
 #			1/TEXT_SPEED*(text.text.length()-text.visible_characters)
 #		).set_delay(waitForAnim)
+		if Globals['OPTIONS']['language']['value']=="en":
+			TEXT_SPEED*=1.5
 		
 		for di in len(textPauses):
 			var delayStruct:TextDelay = textPauses[di]
@@ -957,10 +961,10 @@ func advance_text()->bool:
 	#This is kind of a hack, the history depends on the text actor but FSbox just appends to the same node,
 	text.visible=(messageBoxMode==MSGBOX_DISP_MODE.NORMAL)
 	if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
-		var newText = text.text
+		#var newText = text.text
 		var numNewLines = fsText.text.count("\n")
 		var startingLength = fsText.text.length()-numNewLines #WHY????
-		var newFSText = fsText.text+"\n"+text.text
+		var newFSText = fsText.bbcode_text+"\n"+text.bbcode_text
 		#fsText.text=newFSText
 		print("Size of old text was "+String(startingLength)+", tweening to "+String(newFSText.length())+", "+String(text.text.length()+1)+" "+text.text)
 		tw.interpolate_property(fsText,"visible_characters",startingLength,newFSText.length(),
@@ -970,7 +974,7 @@ func advance_text()->bool:
 			waitForAnim
 		)
 		fsText.visible_characters=startingLength
-		fsText.text=newFSText
+		fsText.bbcode_text=newFSText
 	elif messageBoxMode==MSGBOX_DISP_MODE.POP_UP:
 		var popupText = $PopupContainer/RichTextLabel
 		popupText.bbcode_text = "[center]"+text.bbcode_text+"[/center]"

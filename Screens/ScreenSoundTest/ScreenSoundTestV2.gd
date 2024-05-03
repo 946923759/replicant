@@ -1,5 +1,5 @@
 extends "res://Screens/ScreenWithMenuElements.gd"
-
+class_name SoundTest
 
 var musicDatabase=[]
 onready var musicActor=$smSound
@@ -14,9 +14,9 @@ class Music:
 	var original_name
 	var origin
 	var description
-	var fileName
+	var file_name
 
-func get_db_path()->String:
+static func get_music_db_path()->String:
 	if not OS.has_feature("console"):
 		match OS.get_name():
 			"Windows","X11","macOS":
@@ -25,21 +25,12 @@ func get_db_path()->String:
 	#If not compiled or if the platform doesn't allow writing to the game's current directory
 	return "res://Music/"
 
-func _ready():
-	#var listPos = $ScrollContainer.rect_position
-	$UpArrow.rect_position=Vector2(
-		scContainer.rect_position.x+scContainer.rect_size.x/2+64,
-		scContainer.rect_position.y
-	)
-	$DownArrow.rect_position=Vector2(
-		scContainer.rect_position.x+scContainer.rect_size.x/2-64,
-		scContainer.rect_position.y+scContainer.rect_size.y
-	)
-	
+static func load_music_database() -> Array:
+	var musicDB:Array = []
 	var f = File.new()
-	var ok = f.open(get_db_path()+"MUSIC_DATABASE.tsv",File.READ)
+	var ok = f.open(get_music_db_path()+"MUSIC_DATABASE.tsv",File.READ)
 	if ok != OK:
-		printerr("failed to open chapter database! And now everything will break...")
+		printerr("failed to open music database! And now everything will break...")
 	else:
 		while !f.eof_reached():
 			var line:String = f.get_line().strip_edges()
@@ -52,11 +43,24 @@ func _ready():
 				music.original_name=keys[1]
 				music.origin=keys[2]
 				music.description=keys[3]
-				music.fileName=keys[4]
-				musicDatabase.append(music)
+				music.file_name=keys[4]
+				musicDB.append(music)
 			else:
 				printerr("Hey moron, your music database is missing a column.")
 				printerr(keys)
+	return musicDB
+
+func _ready():
+	#var listPos = $ScrollContainer.rect_position
+	$UpArrow.rect_position=Vector2(
+		scContainer.rect_position.x+scContainer.rect_size.x/2+64,
+		scContainer.rect_position.y
+	)
+	$DownArrow.rect_position=Vector2(
+		scContainer.rect_position.x+scContainer.rect_size.x/2-64,
+		scContainer.rect_position.y+scContainer.rect_size.y
+	)
+	musicDatabase = load_music_database()
 	
 	for m in musicDatabase:
 		#var w2 = font.get_string_size(m.name_).x
@@ -149,7 +153,7 @@ func text_on_click(music:Music):
 			curSel=i
 			highlight_text(curSel)
 			break
-	musicActor.load_song(music.fileName);
+	musicActor.load_song(music.file_name);
 	
 	var width = get_viewport().get_visible_rect().size.x/2-100
 	#print(desc.text)

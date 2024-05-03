@@ -15,7 +15,7 @@
 [ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=13]
 [ext_resource path="res://Fonts/TextFont_Italic.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Cutscene/CutsceneDebugger.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Ext/arrow_small.png" type="Texture" id=16]
+[ext_resource path="res://Graphics/arrow_small.png" type="Texture" id=16]
 [ext_resource path="res://Fonts/NotoSansHans-DemiLight.otf" type="DynamicFontData" id=17]
 [ext_resource path="res://Shaders/TextboxModernFadeSides.tres" type="Material" id=18]
 [ext_resource path="res://Cutscene/buttonHide_GFL.png" type="Texture" id=19]
@@ -23,8 +23,8 @@
 [ext_resource path="res://Cutscene/buttonLog_GFL.png" type="Texture" id=21]
 [ext_resource path="res://Cutscene/buttonAutoPressed_GFL.png" type="Texture" id=22]
 [ext_resource path="res://Cutscene/buttonAuto_GFL.png" type="Texture" id=23]
-[ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=24]
-[ext_resource path="res://Backgrounds/test.png" type="Texture" id=25]
+[ext_resource path="res://Graphics/music_tex.png" type="Texture" id=24]
+[ext_resource path="res://Cutscene/SongDisplay.tres.gd" type="Script" id=25]
 
 [sub_resource type="Shader" id=7]
 code = "shader_type canvas_item;
@@ -161,20 +161,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 script = ExtResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="smSprite" type="TextureRect" parent="Backgrounds"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_scale = Vector2( 1.2, 1.2 )
-rect_pivot_offset = Vector2( 960, 540 )
-mouse_filter = 2
-texture = ExtResource( 25 )
-stretch_mode = 7
-script = ExtResource( 24 )
 
 [node name="Portraits" type="Control" parent="."]
 anchor_top = 1.0
@@ -602,6 +588,26 @@ valign = 1
 visible = false
 mouse_filter = 2
 
+[node name="NewSongDisplay" type="TextureRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.75 )
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1596.0
+margin_top = 100.0
+margin_bottom = 169.0
+mouse_filter = 2
+texture = ExtResource( 24 )
+script = ExtResource( 25 )
+
+[node name="Label" type="Label" parent="NewSongDisplay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 95.0
+custom_fonts/font = ExtResource( 2 )
+text = "Lorem Ipsum whatever"
+valign = 1
+
+[connection signal="song_changed" from="." to="NewSongDisplay" method="songChangedMessageCommand"]
 [connection signal="gui_input" from="dim" to="." method="_on_dim_gui_input"]
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]
 [connection signal="selected_choice" from="Choices" to="." method="_on_Choices_selected_choice"]

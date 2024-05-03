@@ -1,0 +1,79 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kyuushou
+bg	012/001_1280x720
+music	Faltering Prayer - Dawn Breeze
+/Kyuushou	302864	Ah, ahhh.... Ahh——	沙拉…沙拉……	ザ、ザザッ……ザザ————	NONE
+msg	302865	I'm sorry... I'm sorry... I'm sorry...	对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんなさい……。	NONE
+/???	302866	Apparently, the will of this little girl seems to be about this level.  After all, human beings are vulnerable.	看样子，这个小姑娘的意识也就这点程度了，果然人类还是如此的脆弱。	どうやら、この小娘の意志もこの程度みたいね。やっぱり人類とはかくも脆弱なもの。	NONE
+msg	302867	But it's too bad to waste this body as it is ... I'll free you.	但是，这具躯体就这样浪费也太可惜了…就让我来帮助你解脱吧。	でも、この肉体をこのまま無駄にしてしまうのはあまりに惜しいわ……私があなたを解放してあげる。	NONE
+msg	302868	噌！	噌！	ザンッ！	NONE
+
+/Kyuushou	302869	Gah!  This light!?	啧！这个光芒是！？	なっ！この光は！？	NONE
+/???	302870	Kyuushou! Get up already! Kyuushou!!	九霄！快醒醒！！九霄！！	九霄！早く起きて！！九霄！！	NONE
+msg	302871	We've come to get you! Kyuushou! Don't give up!	我们来接你了！九霄！不要放弃啊！	私たちが迎えに来たわよ！九霄ちゃん！諦めてはダメよ！	NONE
+
+/Kyuushou	302872	Ugh.........	呜……	うっ……。	NONE
+/???	302873	You're the only one who can change this world!	能够改变这个世界的只有你一个人！	この世界を変えられるのはあんただけなのよ！	NONE
+bg	white	fade
+msg	302874	Open your eyes! Take a good look at the world!	睁开眼睛！好好看着这个世界！	目を開けなさい！この世界をしっかり見て！	NONE
+msg	302875	This is who you really are!	这才是真正的你！	これこそが本当のあんたよ！	NONE
+/Kyuushou	302876	The real..... Me.....	真正的…我……	本当の……私……。	NONE
+
+bg	007/020_1280x720	fade
+tween	current	foreground	visible,true;linear,.5;diffuse,1,.7,.5,.4
+/Kyuushou	302878	Ugh...	呜……	うっ……。	NONE
+/???	302879	Remember!  You wouldn't have thought of giving up at that time!	回忆起来！九霄！那个时候的你从来就没有想过放弃！	思い出して！あの時のあんたは諦めるなんて考えもしなかったでしょう！	NONE
+msg	302880	You saved me! You've given me a new life!	是你拯救了我！是你给了我新生！	あんたが私を救ってくれたのよ！あんたが私を生まれ変わらせてくれたのよ！	NONE
+msg	302881	Believe in your power!  ——You are the savior!  !!	九霄！相信你自己的力量！你可是救世主啊！！	自分の力を信じて！——あんたは救世主なのよ！！	NONE
+/Kyuushou	302882	I am... The savior......	我是…救世主……	私は……救世主……。	NONE
+/???	302883	That's right!  Don't be fooled by such despair!	没错！不要被这些绝望所蒙蔽！	そうよ！こんな絶望に惑わされちゃダメ！	NONE
+msg	302884	Many people still believe in you!  Many people are still waiting for you!	还有很多人相信着你！还有很多人等待着你！	まだたくさんの人があなたを信じているの！まだたくさんの人があなたを待っているの！	NONE
+msg	302885	Open your eyes!  Kyuushou!  This is the world you should save!	睁开眼睛！九霄！这才是你要拯救的世界！	目を開けて！九霄ちゃん！これこそがあなたが救うべき世界なのよ！	NONE
+/Kyuushou	302886	I'm.... Trying.... To.... Save... The world.....	我所要…拯救的…世界……	私……いや、我が……救うべき……世界……。	NONE
+bg	011/022_1280x720
+tween	current	foreground	linear,.5;diffusealpha,0
+
+speaker	Teammate
+msg	303098	Isarin!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE
+speaker	Estherine
+msg	303099	Hold on.....!\nReturn all living personnel to the bridge! Don't give up, even until the last minute!	坚持住！让活着的队员返回舰桥！就算到最后一刻都不要放弃！	持ち堪えて……！#n生きている隊員を艦橋に戻して！最後の最後まで諦めてはダメよ！	NONE
+speaker	Theresa
+msg	303100	Come here! Honkai Beasts! Even if I have to sacrifice myself, I'm not letting you through!	来吧！崩坏生物！就算是死！我也不会让你们过去的！	来なさい！崩壊生物！#nたとえ死んだとしても、あなたたちを行かせたりはしないわ！	NONE
+msg	303101	Those girls can't die here yet!\nThey need to create a more beautiful future for themselves!	那些孩子还不能在这里死去！她们还有更加美好的未来需要创造！	あの子たちは、まだここで死ぬわけにいかないの！#n彼女たちにはもっと美しい未来を作ってもらわないといけないんだから！	NONE
+speaker	Bronya
+msg	303102	Kyuushou...... all our hopes are pinned on you. Even if you can't change the ending, keep going and don't give up.	九霄…一切的希望都交付给你们了，就算结局已经无法改变也不要退缩。	九霄……全ての希望はあなたに託しました。#nたとえ結末を変えられないとしても、諦めないで進み続けてください。	NONE
+msg	303103	This is our obsession...... This is what humanity can be!	这就是我们的执著…这就是人类的可能性！	これこそが我々の執念……これこそが人類の可能性です！	NONE
+msg	302888	They fought for you, 	她们为了你而战斗，	彼女たちはあなたのために戦い、	NONE
+extend	302889	risking their lives for you, 	为了你而不惜生命，	あなたのために命すら惜しまなかった。	NONE
+extend	302890	for what they believe in.	她们所坚信的，	彼女たちが信じていたものは、	NONE
+msg	302891	It is the light that shines within you!	是你内心所闪耀的曙光！	あなたの心の中で光り輝く光！	NONE
+msg	302892	Houraiji Kyuushou, 	蓬莱寺九霄，	蓬莱寺九霄——	NONE
+extend	302893	This is the world you should protect.	这才是你要守护的世界，	これこそが、あなたの守るべき世界なんだ。	NONE
+msg	302894	Become everyone's savior. 	成为所有人的救世主…	全ての人の救世主になって……。	NONE
+extend	302895	And become your own savior!!	也成为你自己的救世主吧！！	そして、あなた自身の救世主になって！！	NONE
+
+bg	black
+portraits	58
+emote	58	5
+/Kyuushou	302896	My own savior...	我自己的救世主……	自分自身の救世主……。	NONE
+
+choice	302897	Kyuushou, it's your turn.	九霄大人，该你上场了。	九霄、あなたの出番だ。	NONE
+choice	302898	Kyuushou, it's time to wake up.	九霄大人，你也该睡醒了。	九霄、目覚める時だ。	NONE
+msg	302899	This voice is...	这个声音是……	この声は……。	NONE
+
+choice	302900	I believe in you. You can change this world.	我相信你，你一定可以改变这个世界。	あなたなら、この世界を変えられるはず。	NONE
+choice	302901	Who else but you can change this world?	除了你以外，还有谁可以改变这个世界呢？	あなた以外に、誰がこの世界を変えられるの？	NONE
+msg	302902	But...	但是……	でも……。	NONE
+
+choice	302903	Don't say "but". You can be the savior.	没有但是，你可以是救世主啊。	「でも」じゃない。あなたは救世主でいいんだ。	NONE
+choice	302904	Did you get scared? Where's your usual bravado?	你要退缩了么，那我可要把你的风头抢掉了哦。	怖気づいたの？いつもの威勢は？	NONE
+msg	302905	Right....	是么……	そう……。	NONE
+msg	302906	I understand.	我明白了。	分かった。	NONE
+msg	302907	Then the answer is simple--it's not.	既然如此，那么答案就很简单了——	それなら、答えは簡単——	NONE
+msg	302908	Thank you. Have a good rest. I'm going out for a while.	谢谢你，你好好休息吧，我去去就来~	ありがとう。ゆっくり休んでいてくれ。我はちょっと行ってくる。	NONE
+
+choice	302909	That's the savior I know.	这才是我认识的救世主大人。	それでこそ、私の知っている救世主様だ。	NONE
+choice	302910	Let's go, Kyuushou.	出发吧，九霄。	行こう、九霄。	NONE
+msg	302911	Ah.....	啊……	ああ……。	NONE
+msg	302912	The time of rebirth has come ......	再生的时刻到来了……	生まれ変わる時が来た……。	NONE
+msg	302913	Hooray for the new birth of the Savior!!!	为救世主的新生而欢呼吧！！	救世主の新生に祝福を！！	NONE

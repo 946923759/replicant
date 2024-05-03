@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Common DialogBox.png-bd3f1aa3347aa9496d47e7f3d583aedc.stex"
+path="res://.import/arrow_small.png-9ceb3b617210674f5d87516ca047681e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/Common DialogBox.png"
-dest_files=[ "res://.import/Common DialogBox.png-bd3f1aa3347aa9496d47e7f3d583aedc.stex" ]
+source_file="res://Graphics/arrow_small.png"
+dest_files=[ "res://.import/arrow_small.png-9ceb3b617210674f5d87516ca047681e.stex" ]
 
 [params]
 

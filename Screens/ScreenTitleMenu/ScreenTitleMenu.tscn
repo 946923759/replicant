@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Ext/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=2]
@@ -12,11 +12,14 @@
 [ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=10]
 [ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=11]
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=12]
-[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=13]
+[ext_resource path="res://MenuSounds/deck_ui_default_activation.wav" type="AudioStream" id=13]
 [ext_resource path="res://Fonts/OptionsFont.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Screens/ScreenTitleMenu/MainMenuOptions.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=16]
 [ext_resource path="res://Ext/cubeThing.png" type="Texture" id=17]
+[ext_resource path="res://MenuSounds/deck_ui_navigation.wav" type="AudioStream" id=18]
+[ext_resource path="res://MenuSounds/deck_ui_side_menu_fly_in.wav" type="AudioStream" id=19]
+[ext_resource path="res://MenuSounds/deck_ui_show_modal.wav" type="AudioStream" id=20]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.321569, 0.92549, 1, 1, 1, 1, 1, 0 )
@@ -33,6 +36,23 @@ font_data = ExtResource( 12 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 7 )
+
+[node name="smSound" type="AudioStreamPlayer" parent="."]
+bus = "Music"
+script = ExtResource( 8 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+mix_target = 2
+
+[node name="Navigation" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+
+[node name="ConfirmScreen" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
+
+[node name="ConfirmOverlay" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
 
 [node name="smSprite" type="TextureRect" parent="."]
 anchor_right = 1.0
@@ -100,6 +120,7 @@ margin_left = -839.0
 margin_top = -270.0
 margin_right = 580.0
 texture = ExtResource( 6 )
+stretch_mode = 3
 
 [node name="ActorFrame" type="Node2D" parent="."]
 position = Vector2( 1920, 540 )
@@ -118,9 +139,6 @@ position = Vector2( -283.514, 186.227 )
 
 [node name="ScrollObject5" parent="ActorFrame" instance=ExtResource( 3 )]
 position = Vector2( -281.136, 359.852 )
-
-[node name="smSound" type="AudioStreamPlayer" parent="."]
-script = ExtResource( 8 )
 
 [node name="GridContainer" type="GridContainer" parent="."]
 margin_left = 50.0
@@ -147,16 +165,16 @@ custom_fonts/font = SubResource( 2 )
 text = "Credits"
 align = 1
 
-[node name="Label" type="Label" parent="GridContainer"]
+[node name="Version" type="Label" parent="GridContainer"]
 margin_left = 187.0
 margin_top = 7.0
-margin_right = 281.0
+margin_right = 308.0
 margin_bottom = 57.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 16 )
-text = "v0.7"
+text = "v0.75"
 
 [node name="OKButton2" type="TextureButton" parent="GridContainer"]
 visible = false
@@ -228,10 +246,6 @@ anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 script = ExtResource( 9 )
-
-[node name="Click" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 13 )
-bus = "SFX"
 
 [node name="DebugLabel" type="Label" parent="."]
 visible = false

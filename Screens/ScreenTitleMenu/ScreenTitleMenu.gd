@@ -65,8 +65,8 @@ func _ready():
 	
 	
 	var USE_ALT_BG = OS.is_debug_build() and enable_alternate_bg_in_debug
-	#Check completed here
-	#USE_ALT_BG = USE_ALT_BG or
+	#Check if "The Savior" and "Ending" in Chapter 7.5 are read
+	USE_ALT_BG = USE_ALT_BG or Globals.playerData['completedChapters'][9] & 24
 	if USE_ALT_BG:
 		$smSound.load_song("Negai");
 		$smSprite.loadVNBG("011/023_1280x720")
@@ -80,6 +80,7 @@ func _ready():
 
 var fakeMousePos:Vector2 = Globals.gameResolution/2
 
+var logo_timeout:float = 3.0
 func _process(_delta):
 	var s = get_viewport().get_visible_rect().size
 	$ActorFrame.position=Vector2(s.x,s.y/2)
@@ -120,10 +121,17 @@ func _process(_delta):
 		
 	#if OS.is_debug_build():
 	#	$DebugFPSLabel.text=String(Engine.get_frames_per_second())
+#	if logo_timeout > 0:
+#		var rand_x_v = logo_timeout/3.0 + randf()/4.0
+#		logo_timeout-=_delta
+#		if logo_timeout<=0:
+#			rand_x_v = 0.0
+#		$Logo.get_material().set_shader_param("dir",Vector2(rand_x_v,0))
+			
 
 func update_keyboard_selections():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$DebugLabel.text=String(keyboard_selection)
+	#$DebugLabel.text=String(keyboard_selection)
 	
 	var f:Node2D = $ActorFrame
 	var count = f.get_child_count()
@@ -132,6 +140,7 @@ func update_keyboard_selections():
 			f.get_child(i)._on_TextureRect2_mouse_entered()
 		else:
 			f.get_child(i)._on_TextureRect2_mouse_exited()
+	$Navigation.play()
 
 func update_background_parallax(mousePos:Vector2):
 		var mousePosOffsetFromCenter = mousePos-Globals.gameResolution/2
@@ -183,11 +192,13 @@ func handle_clicked(sender:int):
 	if 'screen' in info:
 		next_screen = info['screen']
 		#print("Go to "+next_screen)
+		$ConfirmScreen.play()
 		$ColorRect.OffCommand(next_screen)
 		#t.start()
 		#yield(t,"tween_completed")
 		#Globals.change_screen(get_tree(),next_screen)
 	elif info['name']=="Options":
+		$ConfirmOverlay.play()
 		$OptionsScreen.visible=true
 		$OptionsScreen.OnCommand()
 	else:

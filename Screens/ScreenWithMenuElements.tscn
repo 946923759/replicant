@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=1]
 [ext_resource path="res://Screens/ScreenWithMenuElements.gd" type="Script" id=2]
@@ -6,11 +6,16 @@
 [ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=4]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=6]
+[ext_resource path="res://MenuSounds/deck_ui_hide_modal.wav" type="AudioStream" id=7]
 
 [node name="ScreenWithMenuElements" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
+
+[node name="BackSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "SFX"
 
 [node name="BackButton" parent="." instance=ExtResource( 3 )]
 

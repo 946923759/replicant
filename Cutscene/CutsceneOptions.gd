@@ -43,7 +43,8 @@ var textOptionsSubmenu = {
 	"textSpeed":Globals.OPTIONS['textSpeed'],
 	"skipMode":Globals.OPTIONS['skipMode'],
 	"bgOpacity":Globals.OPTIONS['bgOpacity'],
-	"textboxStyle":Globals.OPTIONS['textboxStyle']
+	"textboxStyle":Globals.OPTIONS['textboxStyle'],
+	"skipChoicesToo":Globals.OPTIONS['skipChoicesToo']
 }
 
 func action_reload():

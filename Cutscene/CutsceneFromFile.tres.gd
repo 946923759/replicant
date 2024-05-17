@@ -70,8 +70,10 @@ static func load_cutscene_data(name:String)->Dictionary:
 #					d['nsf_trackNum']=int(line.lstrip("#NSF_TRACKNUM\t"))
 #				"#CDAUDIO":
 #					d['CDAudio']=line.lstrip("#CDAUDIO\t")
+				"#SCREEN":
+					d['screen'] = line.trim_prefix("#SCREEN\t")
 				"#NEXT":
-					d['next']=line.lstrip("#NEXT\t")
+					d['next']=line.trim_prefix("#NEXT\t")
 				"#LANGUAGES":
 					#We don't discard the 0th element this time since
 					#the columns match the columns in the msg command,
@@ -172,7 +174,9 @@ func end_cutscene_2():
 	var nextPart = tmp[0]
 	var nextEpisode = tmp[1]
 	
-	if nextPart!="":
+	if 'screen' in cutsceneData and cutsceneData['screen'] != "":
+		Globals.change_screen(get_tree(),cutsceneData['screen'])
+	elif nextPart!="":
 		print("[CutsceneFromFile] Got new part "+nextPart+", with episode "+nextEpisode.title)
 		Globals.nextCutscene=nextPart
 		Globals.currentEpisodeData=nextEpisode

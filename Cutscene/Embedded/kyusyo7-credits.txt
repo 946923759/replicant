@@ -1,0 +1,9 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+#SCREEN	ScreenProgrammerCredits
+bg	black	fade
+msgbox_close	instant
+msg	303222	[center]FINALE：Last world, Your world[/center]	FINALE：Last world，Your world	FINALE：Last world，Your world	NONE
+msg	303092	[center]To all of you who strive to live for hope——[/center]	致所有为了希望而努力活着的你们——	希望のため、力の限り生きようとする全ての人へ——	NONE
+msg	303093	[center]As long as you believe in yourself, you are the dawn of the world.[/center]	只要相信自己，你就是世界的曙光。	自分のことを信じさえいれば、あなたは世界の光になれる。	NONE
+msg	303094	[center]Guns Girl Z: Fire Moth\nTHE END[/center]	崩坏学园2：逐火之蛾#nTHE END	崩壊学園：火を追う蛾#nTHE END	NONE
+msg	303096	[center]Thank you for playing.[/center]	Thank you for playing	Thank you for playing	NONE

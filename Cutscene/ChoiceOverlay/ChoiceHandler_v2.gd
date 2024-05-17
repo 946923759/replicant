@@ -96,6 +96,7 @@ func input_down():
 	if selection < currentChoiceSize-1:
 		selection+=1
 		update_selections()
+
 func input_accept():
 	if selection!=-1:
 		print("Player picked choice "+String(selection))
@@ -110,7 +111,7 @@ func _input(_event):
 	elif Input.is_action_just_pressed("ui_down"):
 		input_down()
 	elif Input.is_action_just_pressed("ui_select"):
-		print("ChoiceHandler: ui_select!")
+		print("[ChoiceHandler] ui_select!")
 		input_accept()
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("DebugButton2"):

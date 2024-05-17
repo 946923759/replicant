@@ -59,6 +59,8 @@ vibration	Vibration
 
 bgOpacity	Textbox Opacity
 textboxStyle	Textbox Appearance
+skipChoicesToo	Skip Choices During Auto
+showDisclaimer	Show Startup Disclaimer
 
 --OptionDescriptions
 continue	Resume reading.
@@ -71,17 +73,21 @@ systemOptions	Adjust the volume, language, and other programwide options.
 reload	Does what it says.
 chapterSelect	Return to the chapter select.
 
+# System Options
 AudioVolume	Adjust the volume of the music.
 SFXVolume	Adjust the volume of the sound effects.
 isFullscreen	Switch between fullscreen and windowed. You can also press F11 on the keyboard at any time.
 language	Choose the novel's language. This change will not take effect until the next cutscene.
 vibration	Vibrate the controller or phone during certain parts.
+showDisclaimer	Show the 5 second startup disclaimer and controller hint. Aren't you glad there's an option to skip this?
 
+# Text options
 EnglishLocalized=Removes honorifics, changes most instances of Seele calling Bronya "onii-chan" to her calling Bronya by name, and removes Bronya's habit of referring to herself in third person. No other changes.
 EnglishLiteral=Keeps honorifics (ex. Himeko-sensei, Mei-senpai) and uses a more direct translation, so Seele will continue to call Bronya "onii-chan" instead of by name. Bronya also talks in third person sometimes. Use this one if you prefer honorifics and/or you're worried about some meaning being lost in translation.
 
 bgOpacity	Change the textbox background transparency. 0 = transparent, 100 = opaque.
 textboxStyle	Change the look of the textbox to GGZ Fire Moth's blue box, or choose a slightly more modern looking appearance.
+skipChoicesToo	If choices should be automatically selected after 3 seconds during auto mode.
 
 #There is probably no need for you to include this category in your translation
 --Language

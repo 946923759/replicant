@@ -75,7 +75,7 @@ emote	60	0
 /Emesa	302157	Himeko, look! It's Bronya! She's back!	姬子快看！是布洛妮娅！她回来了！	姫子、見ろ！ブローニャだ！ブローニャが帰ってきたぞ！	NONE
 
 speaker	Mei
-portraits	
+portraits
 bg	009/054_1280x720
 /Mei	302159	......	……	……。	NONE
 /Bronya	302160	Seele's death... I'll make you pay for what you did!	希儿的仇…我一定会让你偿还！	ゼーレの仇……必ずあなたに償わせます！	NONE

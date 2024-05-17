@@ -1033,7 +1033,7 @@ func openTextbox(t:SceneTreeTween,animTime:float=.3)->float:
 #Updated every frame... Might be slow
 #onready var screenWidth=Globals.gameResolution.x
 func tween_in_history():
-	isHistoryBeingShown=true
+	otherScreenIsHandlingInput=Overlay.HISTORY
 	historyActor.isHandlingInput=true
 	historyActor.set_history(textHistory)
 	
@@ -1067,8 +1067,7 @@ func tween_out_history():
 		get_viewport().get_visible_rect().size.x*-1,.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 	historyTween.parallel().tween_property(text,"modulate:a",1,.3)
 	historyTween.parallel().tween_property($historyQuad,"color:a",0,.3)
-	isOtherScreenHandlingInput=false
-	isHistoryBeingShown=false
+	otherScreenIsHandlingInput=Overlay.NONE
 	
 
 func shitty_interpolate_label(s:String):
@@ -1113,6 +1112,14 @@ func _ready():
 #	],
 #	null,
 #	true)
+
+	#Hackjob for the end of replicant... If I could shove this in replicant script i would
+	
+	cutsceneVars['player'] = "Player"
+	if OS.has_environment("USERNAME"):
+		cutsceneVars['player'] = OS.get_environment("USERNAME")
+	elif OS.has_environment("USER"):
+		cutsceneVars['player'] = OS.get_environment("USER")
 	
 	if len(standalone_message)!=0:
 		init_(standalone_message,null,dim_the_background_if_standalone)
@@ -1228,10 +1235,16 @@ func end_cutscene_2():
 # false it meant there was no more text.
 var manualTriggerForward=false
 
-var isHistoryBeingShown=false
-
-var isOtherScreenHandlingInput:bool=false
-#var isWaitingForChoice=false
+enum Overlay {
+	NONE = 0,
+	OPTIONS,
+	HISTORY,
+	CHOICE,
+	VAR_DEBUGGER, 
+	OPCODE_DEBUGGER,
+	UI_HIDDEN
+}
+var otherScreenIsHandlingInput:int = Overlay.NONE
 
 var tracebackPos:int = -1
 #limit skip speed
@@ -1244,15 +1257,36 @@ func toggleAutoMode(b:bool=false):
 	else:
 		$AutoModeIndicator.stop()
 
+func toggleShowUI(b:bool=true):
+	var m = float(b)
+	$UI_Top_Frontline.modulate.a=m
+	for n in get_tree().get_nodes_in_group("UI_Elements"):
+		n.modulate.a=m
+	
+	if otherScreenIsHandlingInput == Overlay.NONE:
+		otherScreenIsHandlingInput = Overlay.UI_HIDDEN
+	elif otherScreenIsHandlingInput == Overlay.UI_HIDDEN:
+		otherScreenIsHandlingInput = Overlay.NONE
+	else:
+		printerr("another screen was handling input, shouldn't be possible to hide the UI at this point. Overlay was "+String(otherScreenIsHandlingInput))
+	#print("Set overlay state to "+String(otherScreenIsHandlingInput)+", "+String(b))
+
 func _process(delta):
 	
-	if isHistoryBeingShown:
+	if otherScreenIsHandlingInput==Overlay.HISTORY:
 		historyActor.process(delta)
 		return
-	elif $CutsceneDebug.visible and Input.is_action_just_pressed("DebugButton2"):
-		isOtherScreenHandlingInput=false
-		$CutsceneDebug.visible=false
-	elif isOtherScreenHandlingInput:
+	elif automatically_advance_text and $Choices.visible and Globals['OPTIONS']['skipChoicesToo']['value']:
+		frameLimiter+=delta
+		if frameLimiter>3:
+			if $Choices.selection < 0: #In case they jiggled the mouse
+				$Choices.selection = 0
+			$Choices.input_accept()
+			frameLimiter=0
+		elif OS.is_debug_build():
+			$AutoModeIndicator/Label.text = String(frameLimiter)
+		return
+	elif otherScreenIsHandlingInput > 0:
 		setTextboxStyle()
 		return
 		
@@ -1261,13 +1295,9 @@ func _process(delta):
 		optionsScreen.visible=true
 		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
-		
-		isOtherScreenHandlingInput=true
+		otherScreenIsHandlingInput = Overlay.OPTIONS
 	elif Input.is_action_just_pressed("DebugButton1"):
 		get_tree().reload_current_scene()
-	elif Input.is_action_just_pressed("DebugButton2"):
-		isOtherScreenHandlingInput=true
-		$CutsceneDebug.visible=true
 	elif Input.is_action_just_pressed("DebugButton4"):
 		var varDebugerInst = varDebugger.instance()
 		add_child(varDebugerInst)
@@ -1316,7 +1346,7 @@ func _process(delta):
 			print("Set choices: "+String(ChoiceTable))
 			$Choices.setChoices(ChoiceTable)
 			$Choices.OnCommand()
-			isOtherScreenHandlingInput=true
+			otherScreenIsHandlingInput = Overlay.CHOICE
 		elif forward:
 			manualTriggerForward=false
 			print("advancing")
@@ -1355,7 +1385,24 @@ func _process(delta):
 #Refer to https://docs.godotengine.org/en/stable/tutorials/scripting/overridable_functions.html?highlight=_unhandled_input#overridable-functions
 #or https://docs.godotengine.org/en/stable/classes/class_node.html#class-node-method-unhandled-input
 func _unhandled_input(event):
-	if isOtherScreenHandlingInput:
+	#print("Unhandled")
+	
+	if otherScreenIsHandlingInput == Overlay.UI_HIDDEN and Input.is_action_just_pressed("vn_hide"):
+		toggleShowUI(true)
+		get_tree().set_input_as_handled()
+		return
+	elif Input.is_action_just_pressed("DebugButton2"):
+		if otherScreenIsHandlingInput == 0:
+			$CutsceneDebug.visible = true
+			otherScreenIsHandlingInput = Overlay.OPCODE_DEBUGGER
+		elif otherScreenIsHandlingInput == Overlay.OPCODE_DEBUGGER:
+			$CutsceneDebug.visible=false
+			otherScreenIsHandlingInput = Overlay.NONE
+		#print($CutsceneDebug.visible)
+		#print(otherScreenIsHandlingInput)
+		get_tree().set_input_as_handled()
+		return
+	elif otherScreenIsHandlingInput > 0:
 		return
 			
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
@@ -1370,21 +1417,24 @@ func _unhandled_input(event):
 		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
+	elif Input.is_action_just_pressed("vn_hide"):
+		toggleShowUI(false)
 			#historyActor.set_history(textHistory)
 		#isHistoryBeingShown=!isHistoryBeingShown
 
 func _input(event):
 	if (event is InputEventMouseMotion):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		
-	if isOtherScreenHandlingInput:
+	
+	if otherScreenIsHandlingInput > 0:
 		return
+	
 	#if (event is InputEventMouseButton and event.is_pressed()) and event.button_index==BUTTON_WHEEL_UP and isHistoryBeingShown==false:
-	if Input.is_action_just_pressed("vn_history") and isHistoryBeingShown==false:
+	if Input.is_action_just_pressed("vn_history") and otherScreenIsHandlingInput == 0:
 		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			tween_in_history()
 			get_tree().set_input_as_handled()
-			isOtherScreenHandlingInput=true
+			otherScreenIsHandlingInput = Overlay.HISTORY
 		#elif event.button_index==BUTTON_WHEEL_UP:
 		#		tween_out_history()
 		#		isHistoryBeingShown=false
@@ -1418,7 +1468,7 @@ func _input(event):
 		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 		
-		isOtherScreenHandlingInput=true
+		otherScreenIsHandlingInput = Overlay.OPTIONS
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("vn_auto"):
 		toggleAutoMode(!automatically_advance_text)
@@ -1430,25 +1480,28 @@ func _input(event):
 #If Android back button pressed
 #TODO: Ignore if cutscene playing
 func _notification(what):
-	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and isOtherScreenHandlingInput==false:
+	if what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST and otherScreenIsHandlingInput == 0:
 		toggleAutoMode(false)
 		optionsScreen.visible=true
 		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 		
-		isOtherScreenHandlingInput=true
+		otherScreenIsHandlingInput = Overlay.OPTIONS
 
 
 func _on_SkipButton_pressed():
 	end_cutscene()
 
 func _on_dim_gui_input(event):
-	if isOtherScreenHandlingInput:
-		return
-	
 	if (event is InputEventMouseButton and event.is_pressed() and event.button_index == BUTTON_LEFT) or (
 		event is InputEventScreenTouch and event.is_pressed()
 	):
+		
+		if otherScreenIsHandlingInput == Overlay.UI_HIDDEN:
+			toggleShowUI(true)
+		elif otherScreenIsHandlingInput > 0:
+			return
+		
 		print("clicked")
 		if automatically_advance_text:
 			toggleAutoMode(false)
@@ -1461,27 +1514,27 @@ func _on_Choices_selected_choice(selection):
 	$Choices.OffCommand()
 	ChoiceTable=[]
 	advance_text()
-	if isOtherScreenHandlingInput==false:
+	if otherScreenIsHandlingInput != Overlay.CHOICE:
 		printerr("Somehow input was handed to this screen from the choice one, but choice screen shouldn't have input")
-	isOtherScreenHandlingInput=false
+	otherScreenIsHandlingInput = Overlay.NONE
 
 
 func _on_OptionsScreen_options_closed():
 	print("User closed options")
 	optionsScreen.visible=false
-	isOtherScreenHandlingInput=false
+	otherScreenIsHandlingInput = Overlay.NONE
 	#print("New opacity is "+String(Globals.OPTIONS['bgOpacity']['value']/100.0))
 	#$CenterContainer/textBackground.color.a = Globals.OPTIONS['bgOpacity']['value']/100.0
 
 
 func _on_TextureButtonLog_pressed():
-	if isHistoryBeingShown:
+	if otherScreenIsHandlingInput == Overlay.HISTORY:
 		tween_out_history()
 	else:
 		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			tween_in_history()
 			get_tree().set_input_as_handled()
-			isOtherScreenHandlingInput=true
+			otherScreenIsHandlingInput = Overlay.HISTORY
 	
 
 func _on_TextureButtonAuto_toggled(button_pressed):

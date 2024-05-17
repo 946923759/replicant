@@ -4,6 +4,7 @@ var music_database
 func _ready():
 	music_database = SoundTest.load_music_database()
 	self.modulate.a = 0.0
+	self.visible=true
 	#print($Label.get("custom_fonts/font").get_string_size("Lorem Ipsum whatever"))
 
 func songChangedMessageCommand(newSong:String):

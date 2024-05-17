@@ -102,7 +102,7 @@ margin_right = 721.0
 margin_bottom = 313.0
 custom_fonts/font = SubResource( 1 )
 text = "English Translation:
-Amaryllis Works & DeepL
+Amaryllis & DeepL
 
 Portugese Translation:
 demonbanex
@@ -196,13 +196,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -786.0
+margin_left = -960.0
 margin_top = -84.0
-margin_right = 786.0
+margin_right = 960.0
 margin_bottom = 84.0
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 4 )
-text = ">> https://discord.gg/6thCMjFHFR <<"
+text = ">> https://discord.gg/HoukaiGakuen2 <<"
 flat = true
 
 [node name="Page3_Disabled" type="Control" parent="Pages" index="2"]
@@ -374,7 +374,7 @@ stretch_mode = 6
 
 [node name="Tween" type="Tween" parent="." index="7"]
 
-[node name="BackButton" parent="." index="8"]
+[node name="BackButton" parent="." index="9"]
 visible = false
 
 [connection signal="pressed" from="Pages/Page2/FoxgirlButton" to="." method="_on_FoxgirlButton_pressed"]

@@ -19,6 +19,7 @@ var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
 
 var numberTex = preload("res://groove gauge 1x10.png")
+var activeTex = preload("res://Graphics/spriteActiveDebug.png")
 
 #TODO: PortraitManager tween is all we really need, right?
 var tween:Tween
@@ -51,11 +52,18 @@ func _draw():
 	else:
 		draw_texture(portrait_textures[cur_expression],Vector2(-IMAGE_CENTER_X,0))
 		
-	if OS.is_debug_build():
+	if OS.is_debug_build(): #
 		draw_texture_rect_region(numberTex,
 			Rect2(0,0,31,24),
 			Rect2(0,24*idx,31,24)
 		)
+		#Texture, dest, source
+		var xOff = int(is_active)*16
+		draw_texture_rect_region(activeTex,
+			Rect2(0,64,16*4,8*4),
+			Rect2(xOff,0,16,8)
+		)
+		
 	
 
 func _ready():
@@ -138,7 +146,12 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	assert(portraitPositions[numPortraits-1][idx],"Tried to position a portrait at "+String(idx)+" but there's only "+String(numPortraits)+" currently displayed")
 	
 	is_masked=isMasked
-	update() #Need to update if we're changing mask
+
+	#Need to update if we're changing mask
+	#This update call doesn't seem to work properly for displaying
+	#the idx, I'm not sure why
+	update() 
+
 	#Because this makes way too much sense right
 	#Fuck godot the tweens suck complete ass
 	#self.actor:x(portraitPositions[numPortraits][idx]+self.offset+100):decelerate(.2):x(portraitPositions[numPortraits][idx]+self.offset):diffusealpha(1)
@@ -203,6 +216,7 @@ func stop():
 	tween.start();
 	is_active=false
 	idx=-1
+	update()
 	
 func dim():
 	tween.interpolate_property(self,

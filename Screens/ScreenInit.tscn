@@ -1,6 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Ext/CG054.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/TextFont_Large.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Graphics/XboxSeriesX_Diagram.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -11,16 +14,38 @@ func _ready():
 	if OS.is_debug_build() and testInitScreen==false:
 		Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
 		return
-	var t = $Tween
-	t.connect(\"tween_completed\",self,\"next_screen\")
-	t.interpolate_property($TextureRect,\"modulate:a\",null,0,.5)
-	t.start()
 	
+	var t = $Tween
+	t.interpolate_property($NotEndorsed,\"modulate:a\", 0.0, 1.0, .25, Tween.TRANS_LINEAR, Tween.EASE_IN, .25)
+	match OS.get_name():
+		\"Windows\",\"X11\",\"macOS\":
+			if len(Input.get_connected_joypads()) == 0:
+				#t.connect(\"tween_completed\",self,\"next_screen\")
+				t.interpolate_property($ControllerHint,\"modulate:a\", 0.0, 1.0, .25, Tween.TRANS_LINEAR, Tween.EASE_IN, .25)
+				#t.interpolate_property($TextureRect,\"modulate:a\",null,0,.5)
+				#return
+	t.start()
+	#next_screen(null,null)
+	
+func _input(event):
+	if event.is_action_pressed(\"ui_select\") or event.is_action_pressed(\"ui_pause\"):
+		_on_Timer_timeout()
+
 func next_screen(_a,_b):
 	if (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:
 		Globals.change_screen(get_tree(),\"ScreenFirstRun\")
 	else:
 		Globals.change_screen(get_tree(),\"ScreenTitleMenu\")
+
+
+func _on_Timer_timeout():
+	var t = $Tween
+	t.interpolate_property($ControllerHint,\"modulate:a\", 1.0, 0.0, .25)
+	t.interpolate_property($NotEndorsed,\"modulate:a\", 1.0, 0.0, .25)
+	#t.interpolate_callback(self, .25, \"next_screen\")
+	t.start()
+	yield(t,\"tween_completed\")
+	next_screen(null,null)
 "
 
 [node name="Control" type="Control"]
@@ -34,9 +59,60 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
 stretch_mode = 6
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="ControllerHint" type="Control" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="TextureRect2" type="TextureRect" parent="ControllerHint"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -500.0
+margin_top = -540.0
+margin_right = 500.0
+margin_bottom = 540.0
+mouse_filter = 2
+texture = ExtResource( 3 )
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="ControllerHint"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -679.5
+margin_top = 335.0
+margin_right = 679.5
+margin_bottom = 488.0
+custom_fonts/font = ExtResource( 2 )
+text = "Get the best experience with a controller.
+This VN has controller/phone vibration!"
+align = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="NotEndorsed" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+margin_bottom = 198.0
+custom_fonts/font = ExtResource( 4 )
+text = "This project is not endorsed by or affiliated with miHoYo
+Guns GirlZ is property of miHoYo"
+align = 1
+valign = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

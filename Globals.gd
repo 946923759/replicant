@@ -60,13 +60,21 @@ var OPTIONS = {
 	"skipMode":{
 		"type":"list",
 		"choices":[false,true],
-		"localizeKey":"SkipModes",
+		#"localizeKey":"SkipModes", #Why would this ever be a thing
+		"default":false
+	},
+	"skipChoicesToo":{
+		"type":"bool",
 		"default":false
 	},
 	"testOption":{
 		"type":"list",
 		"choices":["LOOOOONG STRING","Short String","a","b"],
 		"default":"a"
+	},
+	"showDisclaimer":{
+		"type":"bool",
+		"default":true
 	}
 	#No need to save this
 	#"autoRead":{

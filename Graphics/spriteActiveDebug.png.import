@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/XboxSeriesX_Diagram.png-29aa7018296cb2d1c962685f723a4e5d.stex"
+path="res://.import/spriteActiveDebug.png-01fa0976e4fdab662f4fbb4b0fad2fd6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/ScreenHowToPlay/XboxSeriesX_Diagram.png"
-dest_files=[ "res://.import/XboxSeriesX_Diagram.png-29aa7018296cb2d1c962685f723a4e5d.stex" ]
+source_file="res://Graphics/spriteActiveDebug.png"
+dest_files=[ "res://.import/spriteActiveDebug.png-01fa0976e4fdab662f4fbb4b0fad2fd6.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

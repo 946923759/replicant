@@ -1,8 +1,8 @@
 extends Control
 
 onready var database = Globals.chapterDatabase
-onready var chapterScrollbar = $ScrollContainer
-onready var chapterActorFrame = $ScrollContainer/VBoxContainer
+onready var chapterScrollbar = $MarginContainer/ScrollContainer
+onready var chapterActorFrame = $MarginContainer/ScrollContainer/VBoxContainer
 #We do a little trolling
 onready var missionScrollbar = $ScrollContainer2
 onready var mSelObjs = $ScrollContainer2/VBoxContainer

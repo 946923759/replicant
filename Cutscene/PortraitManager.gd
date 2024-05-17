@@ -1,4 +1,5 @@
 extends Control
+signal portrait_positions_updated
 
 const POOL_SIZE = 8
 var SCREEN_CENTER: Vector2
@@ -44,13 +45,17 @@ func get_all_portrait_idx() -> Dictionary:
 
 #Load texture but don't display
 func preload_portraits(arr:Array):
-	#TODO: Change to a portrait pooling class
+	#TODO: Try to preload at first available portrait
 	#TODO: Do not preload until no portraits are shown
 	for i in range(get_child_count()):
 		if i < arr.size()-1:
 			#idx=i+1 since first element in the array is the command name
-			get_child(i).set_texture_wrapper(arr[i+1])
-			print("Preloaded "+arr[i+1])
+			var p = get_child(i)
+			if p.is_active:
+				print("Can't preload portrait "+arr[i+1]+" when it's active")
+			else:
+				get_child(i).set_texture_wrapper(arr[i+1])
+				print("Preloaded "+arr[i+1])
 
 func set_portrait(name: String, y_offset: float = 0, radioMask: bool = false)->Node2D:
 	# checks if exist
@@ -122,15 +127,18 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits_:int=-1):
 			#print(lastUsed.lastLoaded)
 			#print(pStruct)
 			lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
-			print("[PORTRAITMAN] Set portrait "+name)
+			print("[PORTRAITMAN] Set portrait "+name+", move to idx "+String(pStruct[0]))
 			if pStruct.size() > 3:
 				lastUsed.cur_expression = pStruct[3]
+			#Fix idx not displaying properly in debug
+			lastUsed.update()
 		else: #If null, portrait is not present anymore and should be hidden
 			#self.portraits[name].actor:playcommand("Stop")
 			var lastUsed = get_portrait_from_sprite(name)
 			if lastUsed != null:
 				print("[PORTRAITMAN] Stopping sprite"+name)
 				lastUsed.stop()
+	emit_signal("portrait_positions_updated")
 
 func update_positions():
 	#TODO: This is not good and handling should be done by PORTRAITMAN but it's WIP

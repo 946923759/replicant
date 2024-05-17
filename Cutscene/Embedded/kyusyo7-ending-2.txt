@@ -1,4 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	56
 music	Negai
 /Kyuushou	303185	Hmm... Did I fall sleep?	唔…我是睡着了么？	う～ん……我は、眠っていたのか？
 bg	009/011_1280x720
@@ -16,28 +17,23 @@ msg	303193	Back to everyone!	回到大家的身边！	皆のところへ帰ろ�
 bg	009/003_1280x720
 emote	58	2
 /Kyuushou	303016	Whew! I'm finally back. Looks like the Honkai in this world is completely gone.	呼！终于回来了，看来这个世界的崩坏已经完全消失了呢。	ふぅー！やっと戻ってきた。どうやら、この世界の崩壊は完全に消えたみたいだな。
-speaker	Teammate
+match_names	Kyuushou	Teammate
 portraits	58	56
 emote	58	2
 emote	56	0
-msg	303017	Stop! The Fire Moth base is up ahead. Who are you?	站住！在往前就是逐火之蛾的基地了，你是谁？	止まりなさい！この先は火を追う蛾の基地よ。あなた、何者？
-speaker	Kyuushou
-portraits	58	56
+/Teammate	303017	Stop! The Fire Moth base is up ahead. Who are you?	站住！在往前就是逐火之蛾的基地了，你是谁？	止まりなさい！この先は火を追う蛾の基地よ。あなた、何者？
 emote	58	6
 emote	56	0
-msg	303018	Huh? Don't you know who I am? It's me, Kyuushou!	呃！你们不认识我了么！是我！蓬莱寺九霄！	えっ！わ、我が誰か分からないのか！？蓬莱寺九霄だ！
+/Kyuushou	303018	Huh? Don't you know who I am? It's me, Kyuushou!	呃！你们不认识我了么！是我！蓬莱寺九霄！	えっ！わ、我が誰か分からないのか！？蓬莱寺九霄だ！
 speaker	Teammate
-portraits	58	56
 emote	58	6
 emote	56	0
 msg	303019	Kyuu…?	九霄……？	九霄……？
 msg	303020	Well... You don't look like a Honkai zombie, and there have been more and more people turning up after the Honkai disappeared.	嗯…看起来不像是死士呢，果然在崩坏消失之后幸存的人也多了起来呢~	うん……見たところゾンビではないみたい。#nやっぱり崩壊が消えてから、生存者の数も多くなってきたわね～。
 msg	303021	Come on, I'll take you to Bronya. She's our leader. She'll welcome you.	来吧，我带你到布洛妮娅那里，她是我们的首领那边，一定会欢迎你的。	来なさい。ブローニャのところに連れて行ってあげる。#n彼女は私たちのリーダーなの。きっとあなたを歓迎してくれるわよ。
-speaker	Kyuushou
-portraits	58	56
 emote	58	7
 emote	56	0
-msg	303022	Er......	嗯……	あ、ああ……。
+/Kyuushou	303022	Er......	嗯……	あ、ああ……。
 msg	303023	What do you mean... Don't you guys remember me?	怎么回事…大家都不记得我了么？	どういうことだ……皆、我のことを覚えていないのか？
 
 speaker	 
@@ -53,14 +49,15 @@ emote	58	7
 portraits	58
 msg	303027	Should I go inside...... Where Bronya and the others are? But if they don't remember me.......	布洛妮娅她们就在里面吧…到底要不要进去呢，要是她们不记得我的话……	ブローニャたちが中にいる……中に入るべきか。#nでも、もし彼女たちが我のことを覚えていなかったら……。
 speaker	 
-msg	303028	Hey! Estherine!	喂！伊瑟琳！	ちょっと！イザーリン！
-msg	303029	Whoa! It wasn't me! I swear it wasn't me!	呜哇！我没有！我不是！	うわっ！違うわ！私じゃない……！
+/Emesa's Voice	303028	Hey! Estherine!	喂！伊瑟琳！	ちょっと！イザーリン！
+/Estherine's Voice	303029	Whoa! It wasn't me! I swear it wasn't me!	呜哇！我没有！我不是！	うわっ！違うわ！私じゃない……！
 /Kyuushou	303030	Hmmm... There sure is a lot of noise inside.	唔…里面怎么吵吵闹闹的。	うーん……中が騒がしいな。
-preload_portraits	62	61	60	54	55
 bg	009/005_1280x720
 portraits	54	55
+preload_portraits	54	55	62	61	60
 emote	54	5
 emote	55	4
+match_names	Estherine	Emesa
 /Emesa	303032	Estherine! Answer me! Did you use up all the coffee beans I worked so hard to find!?	伊瑟琳！说！是不是你把我辛辛苦苦找到的咖啡豆全喝了！	イザーリン！答えろッ！#n苦労して必死に探してきたコーヒー豆、全部飲んだのお前だろ！？
 /Estherine	303033	It really wasn't me... I just... Just used a little ......	真的不是我啦…我只是…只是用了一点点……	本当に私じゃないわよ……。#n私はただ……ただほんのちょっと使っただけで……。
 /Emesa	303034	Huh... You have a lot of ☆☆ing nerve! Do you think you're immortal now that the Honkai is gone? You seaweed head, I'm going to show you there's things way worse than death!	嚯嚯…你OO的胆子大了！你以为崩坏消失了自己就不会死了是吧！我OO今天就让你尝尝生不如死的滋味！！	ほほう……この馬鹿ヤロウ、いい度胸してるじゃねぇーか！#n崩壊が消えたら、もう死ぬことはないとでも思ってんのか！？#nこのワカメ、今日こそお前に死より辛いものがあるということを思い知らせてやる！！
@@ -73,7 +70,7 @@ msg	303036	Knock it off, you two! The meeting is about to start!	真是的，会
 msg	303037	None	姬子，我们得重新选择新的基地，随着幸存者的增加现在基地的大小已经无法容纳更多的人了。	姫子、新たに基地を選び直さなくてはなりません。#n生存者が増えてきて、今の基地の大きさではこれ以上の人を収容できません。
 msg	303038	None	姬子？	姫子？
 speaker	Himeko
-portraits	61	60	54	55
+portraits	60	54	55	61
 emote	61	1
 emote	60	1
 msg	303039	Hic! Keep talking, I'm listening.......	嗝！你继续说…我在听。	ヒィック！話を続けて……聞いているから。
@@ -86,7 +83,7 @@ emote	61	1
 emote	60	3
 msg	303041	Theresa gave it to me. Blame her, not me.	是德丽莎给我的，你要怪就怪她吧。	テレサがくれたのよ。責めるなら彼女を責めてよね。
 speaker	Theresa
-portraits	62	61	60	54	55
+portraits	60	54	55	61	62
 emote	61	1
 emote	62	3
 msg	303042	Ugh ...... I can't ...... drink anymore .......	呜呜…我已经…喝不下了……	うぅ……もう……飲めない……。
@@ -95,23 +92,20 @@ emote	61	1
 emote	60	4
 msg	303043	Seriously..... You girls are......	哎…你们真是……	もう……あなたたちときたら……。
 speaker	Seele
-portraits	59	60
+portraits	59	60	54	55	61
 emote	59	2
 emote	60	4
 msg	303044	Sis! Don't sigh! We're all celebrating the Honkai disappearing! Let's be a little more forgiving for the next few days~	姐姐大人！不要叹气啦！大家还在为了崩坏的消失而庆祝呢！这两天就稍微宽容一些吧~	お姉ちゃん！溜息つかないで！#n皆、崩壊が消えたことを祝っているんだよ！ここ数日は大目に見てあげよう！
 speaker	Bronya
-portraits	59	60
 emote	59	2
 emote	60	1
 msg	303045	None	明明是最该考虑今后计划的时候……	だからこそ、今後の計画を考えなくてはいけない時なのに……。
 msg	303046	None	不过没想到…大崩坏留下的崩坏能居然会忽然平息…那一天空中出现的曙光究竟是怎么回事呢？	しかし、完全に予想外でした……大崩壊の残した崩壊エネルギーが突然静まるとは……。#nあの日、空に現れた光は一体どういうことなのでしょうか？
 speaker	Seele
-portraits	59	60
 emote	59	2
 emote	60	1
 msg	303047	Bronya! It must be a miracle God gave us! Besides, all we have to do now is to restore this world to what it was!	姐姐大人！一定是神明赐予我们的奇迹！我们现在要做的，就是将这个世界恢复成原来的样子！	お姉ちゃん！きっと神様が私たちに与えてくれた奇跡だよ！#nそれに私たちが今からすべきことは、この世界を元の姿に戻すことでしょ！
 speaker	Bronya
-portraits	59	60
 emote	59	2
 emote	60	2
 msg	303048	......Yes, you are right. Human civilization isnt extinct yet. We will once again set our feet on the earth and tell our own story.	……嗯，你说的没错，人类的文明还没有结束，我们会重新踏上大地，继续书写我们的故事。	……ええ、その通りですね。人類の文明はまだ終わっていません。#n我々は再び足で大地を踏みしめ、自分たちの物語を綴っていくのです。
@@ -142,5 +136,61 @@ emote	58	7
 msg	303058	I would be lying if I said I didn't miss it.	如果说没有留恋的话一定是骗人的。	名残惜しくないと言えば嘘になる。
 emote	58	1
 msg	303059	But in another world, my friends are waiting for my return.	但是在另一个世界，我的同伴还在等着我呢。	でも、もう1つの世界で、我の仲間が帰りを待っている。
+
+label	end_choices
+emote	58	1
+msg	303060	I'm sure they'd be worried if I keep sitting around here. I can already imagine their expressions...	在这里偷懒了这么久，她们一定很担心吧，已经可以想象到她们的表情了呢~	ここで油を売っていたら、彼女たちもきっと心配するからな。やつらの顔が目に浮かぶぞ～、ふっふっ。	NONE
+msg	303061	And I'm sure it will be really busy in the real world. I have a lot of work to do and a lot of obstacles to overcome.	到那个时候一定会变得很忙吧，有很多的事情要做，有很多的困难要去克服。	その時には、きっととても忙しくなる。#nやらなくちゃいけないことがたくさんあるし、克服すべき課題もたくさんあるからな。	NONE
+msg	303062	What happened here may gradually be forgotten.	这里发生的事情也会渐渐忘记也说不定呢。	ここで起こったことは、だんだんと忘れてしまうかもしれない。	NONE
+emote	58	2
+msg	303063	But one thing remains unchanged... I will work with them to make the world the way I want it to be.	不过唯有一点不会改变…我会和她们一起，将那个世界也打造成自己期望的样子。	でも、1つだけ変わらないことがある……。#n我は彼女たちと一緒に、あの世界も自分が望む通りの姿にしてみせる。	NONE
+emote	58	1
+msg	303064	By the way... I haven't thanked you yet for what happened.	对了…事到如今还没有向你道谢呢。	そうだ……今さらだけど、まだあなたにお礼を言ってなかったな。	NONE
+msg	303065	I don't know your name, but... I'm sure that you, like Bronya and the others, held onto hope even after witnessing the Great Honkai of the past. I'm sure that you too were hoping that you could change this world and create a beautiful ending...	虽然不知道你的名字…但你也一定和布洛妮娅她们一样，在目睹了那次大崩坏后依然怀抱着希望，期盼着能改变这个世界，让它走向美好结局的人吧……	あなたの名前は知らないけれど……でも、あなたもきっとブローニャたちと同じように、#nかつての大崩壊を目の当たりにしても希望を抱き続けていた。この世界を変え、美しい結末が迎えられると期待してくれていたのだろう……。	NONE
+emote	58	2
+msg	303066	Thanks to you, I was able to make this impossible dream a reality.	因为你的努力，才能将这件不可能的事情变成现实。	あなたのおかげで、この不可能な想いを現実にすることができた。	NONE
+msg	303067	Thank you. And to those of you who fought in that hopeless world. You are the real saviors.	谢谢你，还有那些在绝望的世界中不断战斗的人，你们才是真正的救世主呢~	ありがとう。それから、あの絶望した世界で戦ってくれた人も。#nあなたたちこそ、本当の救世主だ。	NONE
+emote	58	1
+msg	303068	I am just a passing traveler who has witnessed your story.	而我，只是一个偶然经过的旅人，见证了你们的故事。	我はただの通りすがりの旅人で、#n ——あなたたちの物語を見届けただけ。	NONE
+msg	303069	As a thank you, I'll let you pick how you want it to end.	那么作为回礼，最后就让你来选择故事的后续吧。	お礼として、最後に物語の続きを選ばせてあげよう。	NONE
+
+choice	303070	I want to leave with you and start a new battle.	我想和你一起离开，开始新的战斗。	あなたと一緒にここを離れ、新しい戦いを始めたい。	NONE
+choice	303071	I want to stay here and witness their joy and happiness.	我想留在这里，见证她们的幸福。	ここに留まって、彼女たちの幸せを見届けたい。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	303072	Really? Then let's go.	是么，那我们走吧。	そうか？じゃあ、行こう。	NONE
+bg	black	fade
+portraits	
+msg	303073	This world will tell its own story in the way it wishes.	让这个世界以它期望的样子继续它们的故事。	この世界は、この世界が望む形で自らの物語を綴っていく。	NONE
+msg	303074	And it's time for us, too, to continue the adventures of the Savior!	而我们，也该继续救世主的冒险了！	そして我らは、救世主の冒険を続けなければならない！	NONE
+stop_music
+msg	303075	……	……	……。	NONE
+extend	303076	……	……	…………。	NONE
+msg	303077	Beep——Beep——Beep——	滴——滴——滴——	ピッ——ピッ——ピッ——	NONE
+
+bg	011/023_1280x720
+msgbox_close
+msg	303078			NONE	NONE
+msgbox_open
+msg	303079	Everyone…… 	大家……	みんな……	NONE
+msg	303080	I'm back.	我回来了。	ただいま。	NONE
+jmp	end_choices
+
+label	c2dest
+msg	303081	Really? So it's time to say goodbye.	是么，那么是时候该告别了呢。	そうか？じゃあ、これでお別れだ。	NONE
+msg	303082	I hope you will leave a splendid trail in this world for me.	希望你可以代替我在这个世界留下绚丽的轨迹。	あなたが我の代わりに、この世界に華麗な軌跡を残してくれることを祈っているよ。	NONE
+msg	303083	Keep writing your story…	将属于你们的故事，继续书写下去……	あなたたちの物語を綴っていくんだ……。	NONE
+bg	black	fade
+portraits	
+msg	303084	……	……	……。	NONE
+extend	303085	……	……	…………。	NONE
+bg	011/025_1280x720	fade
+msgbox_close
+msg	303086			NONE	NONE
+msgbox_open
+msg	303087	Hi! Everyone!	大家好！	こんにちは！	NONE
+msg	303088	I'm the new member of the Fire Moths, "%player%".	我是逐火之蛾的新成员「#player」	私は火を追う蛾の新人「#player」。	NONE
+msg	303089	I will fight with you!	今后将与各位共同战斗！	これからは皆と一緒に戦うよ！	NONE
 
 label	end_choices

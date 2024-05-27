@@ -695,16 +695,39 @@ func advance_text()->bool:
 				matchedNames=push_back_from_idx_one([],curMessage)
 			'speaker': 
 				
+				tmp_speaker=curMessage[1] #Store it for text history
+				
+				#Is this necessary? In what context would you ever need "%var% non var"
+				#I guess for future proofing it would be good
+				#Maybe in the future there can be a function to substitute %% for both speaker and text
+				var hasVar = tmp_speaker.find("%")
+				if hasVar != -1:
+					var endTagPos:int = -1
+					for jjjj in range(hasVar+1,tmp_speaker.length()):
+						if tmp_speaker[jjjj]==" ": #This also means no %% necessary like renpy
+							break
+						elif tmp_speaker[jjjj]=="%":
+							endTagPos = jjjj
+							break
+					if endTagPos != -1:
+						#print(endTag-hasVar)
+						var varName = tmp_speaker.substr(hasVar+1,endTagPos-hasVar-1)
+						print("Got story var "+varName)
+						if cutsceneVars.has(varName):
+							tmp_speaker = tmp_speaker.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_speaker.substr(endTagPos+1)
+							pass
+						else:
+							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
+				
 				# I really didn't think this one through when I made /close and /open
 				# a mini command instead of an opcode
 				if waitForAnim>0:
-					tw.interpolate_callback(self,.3,"shitty_interpolate_label",curMessage[1])
+					tw.interpolate_callback(self,.3,"shitty_interpolate_label",tmp_speaker)
 					#tw.interpolate_property($SpeakerActor,"text","null",tmp_speaker,0,Tween.TRANS_LINEAR,Tween.EASE_IN,.3)
 				else:
-					speakerActor.text=curMessage[1]
-				tmp_speaker=curMessage[1] #Store it for text history
+					speakerActor.text=tmp_speaker
 				if len(matchedNames) > 0:
-					if curMessage[1].strip_edges()=="" and matchedNames[len(matchedNames)-1]=="_DIM_ALL_WHEN_EMPTY":
+					if tmp_speaker.strip_edges()=="" and matchedNames[len(matchedNames)-1]=="_DIM_ALL_WHEN_EMPTY":
 						for p in PORTRAITMAN.portraits:
 							if p.is_active:
 								p.dim()
@@ -712,8 +735,8 @@ func advance_text()->bool:
 					else:
 						#print(matchedNames)
 						for i in range(len(matchedNames)):
-							if matchedNames[i]==curMessage[1]:
-								print("Matched portrait "+curMessage[1]+" at idx "+String(i))
+							if matchedNames[i]==tmp_speaker:
+								print("Matched portrait "+tmp_speaker+" at idx "+String(i))
 								for p in PORTRAITMAN.portraits:
 									if p.idx==i:
 										p.undim()
@@ -1120,6 +1143,9 @@ func _ready():
 		cutsceneVars['player'] = OS.get_environment("USERNAME")
 	elif OS.has_environment("USER"):
 		cutsceneVars['player'] = OS.get_environment("USER")
+	#Uppercase the first letter
+	if len(cutsceneVars['player']) > 1:
+		cutsceneVars['player'] = cutsceneVars['player'][0].to_upper() + cutsceneVars['player'].substr(1,-1)
 	
 	if len(standalone_message)!=0:
 		init_(standalone_message,null,dim_the_background_if_standalone)

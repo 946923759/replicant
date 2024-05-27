@@ -9,6 +9,7 @@
 script/source = "extends Control
 
 export(bool) var testInitScreen = false
+export(bool) var disableControllerSupport = false
 
 func _ready():
 	if OS.is_debug_build() and testInitScreen==false:
@@ -17,9 +18,10 @@ func _ready():
 	
 	var t = $Tween
 	t.interpolate_property($NotEndorsed,\"modulate:a\", 0.0, 1.0, .25, Tween.TRANS_LINEAR, Tween.EASE_IN, .25)
-	match OS.get_name():
-		\"Windows\",\"X11\",\"macOS\":
-			if len(Input.get_connected_joypads()) == 0:
+	
+	if disableControllerSupport==false or OS.is_debug_build() == false:
+		match OS.get_name():
+			\"Windows\",\"X11\",\"macOS\":
 				#t.connect(\"tween_completed\",self,\"next_screen\")
 				t.interpolate_property($ControllerHint,\"modulate:a\", 0.0, 1.0, .25, Tween.TRANS_LINEAR, Tween.EASE_IN, .25)
 				#t.interpolate_property($TextureRect,\"modulate:a\",null,0,.5)
@@ -40,8 +42,8 @@ func next_screen(_a,_b):
 
 func _on_Timer_timeout():
 	var t = $Tween
-	t.interpolate_property($ControllerHint,\"modulate:a\", 1.0, 0.0, .25)
-	t.interpolate_property($NotEndorsed,\"modulate:a\", 1.0, 0.0, .25)
+	t.interpolate_property($ControllerHint,\"modulate:a\", null, 0.0, .25)
+	t.interpolate_property($NotEndorsed,\"modulate:a\", null, 0.0, .25)
 	#t.interpolate_callback(self, .25, \"next_screen\")
 	t.start()
 	yield(t,\"tween_completed\")

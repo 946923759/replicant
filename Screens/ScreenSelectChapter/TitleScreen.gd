@@ -5,7 +5,7 @@ onready var chapterScrollbar = $MarginContainer/ScrollContainer
 onready var chapterActorFrame = $MarginContainer/ScrollContainer/VBoxContainer
 #We do a little trolling
 onready var missionScrollbar = $ScrollContainer2
-onready var mSelObjs = $ScrollContainer2/VBoxContainer
+onready var missionSelObjs = $ScrollContainer2/VBoxContainer
 
 var curChapterNum:int=1
 #This is for gamepad
@@ -50,37 +50,36 @@ func _ready():
 	n.text=" "
 	c.add_child(n)
 	
-	print(biggestMissionNum)
+	#print(biggestMissionNum)
 	for _i in range(biggestMissionNum):
 		var m = MSelObj.instance()
-		mSelObjs.add_child(m)
-	for m in mSelObjs.get_children():
+		missionSelObjs.add_child(m)
+	for m in missionSelObjs.get_children():
 		m.connect("button_pressed",self,"handle_btn_press")
 		#m.connect("wtf",self,'test2')
-	biggestMissionNum=mSelObjs.get_child_count() #We're never adding any more so it's fine
 	
-	#Has to be 2 because we hide idx 0...
-	set_new_mission_listing(database.keys()[1],2)
+	# I don't remember what this does
+	biggestMissionNum=missionSelObjs.get_child_count() #We're never adding any more so it's fine
+	
+	if Globals.currentEpisodeData:
+		var chName = Globals.currentEpisodeData.parentChapter;
+		#Pretty sure this will always be true
+		if chName:
+			set_new_mission_listing(chName)
+	else:
+		#Has to be 2 because we hide idx 0...
+		set_new_mission_listing(database.keys()[1],2)
 	
 	#Only show by default if there is a controller plugged in
 	$DescrptionF.visible = Input.get_connected_joypads().size() > 0
-	#mSelObjs.queue_sort()
+	#missionSelObjs.queue_sort()
 
 func handle_chapter_click(event:InputEvent,internalName:String):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == 1):
 		print("Clicked "+internalName)
 		$Click.play()
 		
-		var newChapterNum = curChapterNum
-		#Why is this even here when set_new_chapter_listing() searches for nodes anyways
-		var nodeName = internalName.replace(".","")
-		for i in range(1,chapterActorFrame.get_child_count()):
-			if chapterActorFrame.get_child(i).name==nodeName:
-				newChapterNum=i
-				break
-			#else:
-			#	print(chapterActorFrame.get_child(i).name+" =/= "+nodeName)
-		set_new_mission_listing(internalName,newChapterNum)
+		set_new_mission_listing(internalName)
 
 onready var descKB = $DescrptionF/DescKB
 onready var descGP = $DescrptionF/DescGP
@@ -110,7 +109,7 @@ func _input(event):
 		var chLength = chapter.size()
 		#var newPos = curMissionNumForGamepad
 		
-		var prevmSelObj = mSelObjs.get_child(curMissionNumForGamepad)
+		var prevmSelObj = missionSelObjs.get_child(curMissionNumForGamepad)
 		if Input.is_action_just_pressed("ui_down"):
 			if curMissionNumForGamepad<chLength-1:
 				curMissionNumForGamepad+=1
@@ -118,7 +117,7 @@ func _input(event):
 		else:
 			if curMissionNumForGamepad>0:
 				curMissionNumForGamepad-=1
-		var mSelObj = mSelObjs.get_child(curMissionNumForGamepad)
+		var mSelObj = missionSelObjs.get_child(curMissionNumForGamepad)
 		if curMissionPartNumForGamepad > mSelObj.getNumParts()-1:
 			curMissionPartNumForGamepad=mSelObj.getNumParts()-1
 		else:
@@ -174,13 +173,13 @@ func _input(event):
 		#
 		#if 
 	elif Input.is_action_just_pressed("ui_right"):
-		var mSelObj = mSelObjs.get_child(curMissionNumForGamepad)
+		var mSelObj = missionSelObjs.get_child(curMissionNumForGamepad)
 		if curMissionPartNumForGamepad<mSelObj.getNumParts()-1:
 			curMissionPartNumForGamepad+=1
 			$Navigation.play()
 			set_all_button_highlights_for_gamepad(curMissionNumForGamepad,curMissionPartNumForGamepad)
 	elif Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
-		mSelObjs.get_child(curMissionNumForGamepad).buttonTrigger(curMissionPartNumForGamepad)
+		missionSelObjs.get_child(curMissionNumForGamepad).buttonTrigger(curMissionPartNumForGamepad)
 		return
 	elif Input.is_action_just_pressed("ui_cancel"):
 		$FadeOut.OffCommand("ScreenTitleMenu")
@@ -196,7 +195,7 @@ func _input(event):
 		if (event is InputEventKey) or (event is InputEventJoypadButton):
 			#var chapter:Array = database[chapterName]
 			for i in range(biggestMissionNum):
-				var mSelObj = mSelObjs.get_child(i)
+				var mSelObj = missionSelObjs.get_child(i)
 				if mSelObj.getNumParts() > 0:
 					curMissionNumForGamepad=i
 					break
@@ -204,10 +203,25 @@ func _input(event):
 				#if i < chLength:
 		
 
-func set_new_mission_listing(chapterName:String, chapterIndex:int):
+# chapterName: The name of the chapter.
+# chapterIndex: The index in the database. Mostly used for handling automatic scroll.
+func set_new_mission_listing(chapterName:String, chapterIndex:int=-1):
+	var nodeName = chapterName.replace(".","")
+	
+	if chapterIndex < 0:
+		for i in range(1,chapterActorFrame.get_child_count()):
+			if chapterActorFrame.get_child(i).name==nodeName:
+				chapterIndex=i
+				#print("Found chapter indexed at "+String(chapterIndex)+" in database (1-indexed)")
+				break
+	
+	#if still < 0 after searching for idx
+	if chapterIndex < 0:
+		printerr("Failed to find an object named "+nodeName+" in the chapter list ActorFrame.")
+		return
+	
 	curChapterNum = chapterIndex
 	
-	var nodeName = chapterName.replace(".","")
 	for n in chapterActorFrame.get_children():
 		if n.name!=nodeName:
 			n.modulate=Color.slategray
@@ -234,7 +248,7 @@ func set_new_mission_listing(chapterName:String, chapterIndex:int):
 	#print("IDX: ",chapterIndex)
 	#print("COMPLETED: ",Globals.playerData['completedChapters'][0] & 1<<0)
 	for i in range(biggestMissionNum):
-		var mSelObj = mSelObjs.get_child(i)
+		var mSelObj = missionSelObjs.get_child(i)
 		if i < chLength:
 			mSelObj.visible=true
 			
@@ -253,7 +267,7 @@ func set_new_mission_listing(chapterName:String, chapterIndex:int):
 
 func set_all_button_highlights_for_gamepad(missionNum,partNum):
 	for i in range(biggestMissionNum):
-		var mSelObj = mSelObjs.get_child(i)
+		var mSelObj = missionSelObjs.get_child(i)
 		if i!=missionNum:
 			for c in mSelObj.getPartActorFrame().get_children():
 				c.modulate=Color.slategray
@@ -268,7 +282,7 @@ func set_all_button_highlights_for_gamepad(missionNum,partNum):
 					
 func reset_all_button_highlights_for_touch():
 	for i in range(biggestMissionNum):
-		var mSelObj = mSelObjs.get_child(i)
+		var mSelObj = missionSelObjs.get_child(i)
 		for c in mSelObj.getPartActorFrame().get_children():
 			c.modulate=Color.white
 		

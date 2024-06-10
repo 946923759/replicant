@@ -6,7 +6,8 @@ This is a VN engine designed to handle simpler types of VNs. It is currently use
 - Resize window on the fly, supports any resolutions close to 16:9
 - No FPS limit. Animations are as smooth as your display can handle.
 - Supports mouse, keyboard, game controller, and touchscreen
-- Supports multiple languages.
+- Supports controller and phone vibration
+- Supports multiple languages
 - Gallery screen, automatically unlocks images displayed in cutscenes.
 - Sound Test screen.
 
@@ -17,6 +18,7 @@ This is a VN engine designed to handle simpler types of VNs. It is currently use
 - Load music internally or externally
 - Scripts have multilanguage support built in to the syntax.
 - Script syntax is simple and easy to write.
+- Scripts are dynamically loaded at runtime. F1 will reload from disk, F5 will open the current scene in the default text editor.
 
 
 ## Project Structure
@@ -35,7 +37,7 @@ Unfortunately syntax is not standard yet, but check out syntax.md.
 # Compilation Instructions
 Download Godot Engine v3.5 (NOT the Mono one). Download the zip for this project, extract, open the project.godot in Godot Engine. Go to Project -> Export and select export type.
 
-Only Windows (Win32 not UWP), Linux, and Android is being targeted currently. Web export is fully functional
+Only Windows (Win32 not UWP), Linux, and Android is being targeted currently. Web export is fully functional, but itch does not support .pak above 200MB. Currently split .pak support is not implemented due to difficulties with Godot Engine's ability to generate split .pak in a sensible way.
 
 # License
 

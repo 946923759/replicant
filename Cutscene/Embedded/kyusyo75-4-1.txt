@@ -9,32 +9,33 @@ msg	302867	But it's too bad to waste this body as it is ... I'll free you.	但�
 msg	302868	噌！	噌！	ザンッ！	NONE
 
 /Kyuushou	302869	Gah!  This light!?	啧！这个光芒是！？	なっ！この光は！？	NONE
-/???	302870	Kyuushou! Get up already! Kyuushou!!	九霄！快醒醒！！九霄！！	九霄！早く起きて！！九霄！！	NONE
+/Familiar voice	302870	Kyuushou! Get up already! Kyuushou!!	九霄！快醒醒！！九霄！！	九霄！早く起きて！！九霄！！	NONE
 msg	302871	We've come to get you! Kyuushou! Don't give up!	我们来接你了！九霄！不要放弃啊！	私たちが迎えに来たわよ！九霄ちゃん！諦めてはダメよ！	NONE
 
 /Kyuushou	302872	Ugh.........	呜……	うっ……。	NONE
-/???	302873	You're the only one who can change this world!	能够改变这个世界的只有你一个人！	この世界を変えられるのはあんただけなのよ！	NONE
+/Familiar voice	302873	You're the only one who can change this world!	能够改变这个世界的只有你一个人！	この世界を変えられるのはあんただけなのよ！	NONE
 bg	white	fade
 msg	302874	Open your eyes! Take a good look at the world!	睁开眼睛！好好看着这个世界！	目を開けなさい！この世界をしっかり見て！	NONE
 msg	302875	This is who you really are!	这才是真正的你！	これこそが本当のあんたよ！	NONE
 /Kyuushou	302876	The real..... Me.....	真正的…我……	本当の……私……。	NONE
 
 bg	007/020_1280x720	fade
-tween	current	foreground	visible,true;linear,.5;diffuse,1,.7,.5,.4
+tween	current	007/020_1280x720	linear,.5;diffuse,1,.7,.5,1
+nop	tween	current	foreground	visible,true;linear,.5;diffuse,1,.7,.5,.4
 /Kyuushou	302878	Ugh...	呜……	うっ……。	NONE
-/???	302879	Remember!  You wouldn't have thought of giving up at that time!	回忆起来！九霄！那个时候的你从来就没有想过放弃！	思い出して！あの時のあんたは諦めるなんて考えもしなかったでしょう！	NONE
+/Familiar voice	302879	Remember!  You wouldn't have thought of giving up at that time!	回忆起来！九霄！那个时候的你从来就没有想过放弃！	思い出して！あの時のあんたは諦めるなんて考えもしなかったでしょう！	NONE
 msg	302880	You saved me! You've given me a new life!	是你拯救了我！是你给了我新生！	あんたが私を救ってくれたのよ！あんたが私を生まれ変わらせてくれたのよ！	NONE
 msg	302881	Believe in your power!  ——You are the savior!  !!	九霄！相信你自己的力量！你可是救世主啊！！	自分の力を信じて！——あんたは救世主なのよ！！	NONE
 /Kyuushou	302882	I am... The savior......	我是…救世主……	私は……救世主……。	NONE
-/???	302883	That's right!  Don't be fooled by such despair!	没错！不要被这些绝望所蒙蔽！	そうよ！こんな絶望に惑わされちゃダメ！	NONE
+/Familiar voice	302883	That's right!  Don't be fooled by such despair!	没错！不要被这些绝望所蒙蔽！	そうよ！こんな絶望に惑わされちゃダメ！	NONE
 msg	302884	Many people still believe in you!  Many people are still waiting for you!	还有很多人相信着你！还有很多人等待着你！	まだたくさんの人があなたを信じているの！まだたくさんの人があなたを待っているの！	NONE
 msg	302885	Open your eyes!  Kyuushou!  This is the world you should save!	睁开眼睛！九霄！这才是你要拯救的世界！	目を開けて！九霄ちゃん！これこそがあなたが救うべき世界なのよ！	NONE
 /Kyuushou	302886	I'm.... Trying.... To.... Save... The world.....	我所要…拯救的…世界……	私……いや、我が……救うべき……世界……。	NONE
 bg	011/022_1280x720
-tween	current	foreground	linear,.5;diffusealpha,0
+nop	tween	current	foreground	linear,.5;diffusealpha,0
 
 speaker	Teammate
-msg	303098	Isarin!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE
+msg	303098	Estherine!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE
 speaker	Estherine
 msg	303099	Hold on.....!\nReturn all living personnel to the bridge! Don't give up, even until the last minute!	坚持住！让活着的队员返回舰桥！就算到最后一刻都不要放弃！	持ち堪えて……！#n生きている隊員を艦橋に戻して！最後の最後まで諦めてはダメよ！	NONE
 speaker	Theresa

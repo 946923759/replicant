@@ -266,7 +266,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="F.M. RepliCant"
+config/name="GGZ F.M. RepliCant"
 config/description="GGZ Fire Moth reader"
 run/main_scene="res://Screens/ScreenInit.tscn"
 boot_splash/show_image=false

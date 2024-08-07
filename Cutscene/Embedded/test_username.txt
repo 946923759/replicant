@@ -4,5 +4,5 @@ var	something_else	false
 var	anything	0
 var	anything	&3
 label	start
-msg	The username env var is %Player%. This is always set.
+msg	The username env var is %player%. This is always set.
 

@@ -145,14 +145,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -560.0
+margin_left = -586.0
 margin_top = -50.0
-margin_right = 561.0
-margin_bottom = 23.0
+margin_right = 586.0
+margin_bottom = 8.0
 size_flags_vertical = 4
 custom_fonts/normal_font = ExtResource( 5 )
 bbcode_enabled = true
-bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_PgUp.png[/img][img=50x50]Fonts/Glyph/PC_PgDn.png[/img][/font] Select Chapter       [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Enter.png[/img][img=50x50]Fonts/Glyph/PC_Z.png[/img][/font] Confirm      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Esc.png[/img][/font] Return"
+bbcode_text = "[font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_PgUp.png[/img][img=50x50]Fonts/Glyph/PC_PgDn.png[/img][/font] Select Chapter       [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Enter.png[/img][img=50x50]Fonts/Glyph/PC_Z.png[/img][/font] Confirm      [font=Fonts/PS5Glyphs.tres][img=50x50]Fonts/Glyph/PC_Esc.png[/img][img=50x50]Fonts/Glyph/PC_X.png[/img][/font] Return"
 text = " Select Chapter        Confirm       Return"
 
 [node name="DescGP" type="RichTextLabel" parent="DescrptionF"]

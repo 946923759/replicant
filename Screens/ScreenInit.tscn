@@ -12,6 +12,12 @@ export(bool) var testInitScreen = false
 export(bool) var disableControllerSupport = false
 
 func _ready():
+	#TODO: Localize this
+	#var windowTitle:String = INITrans.GetString(\"Common\",\"WindowTitle\")
+	#if OS.is_debug_build():
+	#	windowTitle+= \" (DEBUG)\"
+	#OS.set_window_title(windowTitle)
+	
 	if OS.is_debug_build() and testInitScreen==false:
 		Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
 		return

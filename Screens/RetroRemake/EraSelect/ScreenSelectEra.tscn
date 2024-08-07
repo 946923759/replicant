@@ -23,9 +23,6 @@ anchor_bottom = 1.0
 texture = ExtResource( 9 )
 stretch_mode = 7
 
-[node name="BackButton" parent="." index="1"]
-visible = false
-
 [node name="Music" type="AudioStreamPlayer" parent="." index="2"]
 script = ExtResource( 3 )
 
@@ -85,6 +82,9 @@ texture = ExtResource( 7 )
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Not an ActorScroller" index="5"]
 stream = ExtResource( 5 )
 volume_db = -10.0
+
+[node name="BackButton" parent="." index="5"]
+visible = false
 
 [connection signal="input_accepted" from="ActorScroller" to="." method="_on_ActorScroller_input_accepted"]
 [connection signal="selection_changed" from="ActorScroller" to="Not an ActorScroller" method="_on_ActorScroller_selection_changed"]

@@ -92,13 +92,15 @@ func _input(event):
 	if (event is InputEventScreenTouch) or (event is InputEventMouseMotion) or (event is InputEventMouseButton):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		reset_all_button_highlights_for_touch()
+		if (event is InputEventMouseButton and event.button_index == BUTTON_RIGHT):
+			$FadeOut.OffCommand("ScreenTitleMenu")
 		return
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
 	var tmpChNum = curChapterNum
 	if Input.is_action_just_pressed("ui_page_down"):
-		if tmpChNum < chapterActorFrame.get_child_count()-1:
+		if tmpChNum < chapterActorFrame.get_child_count()-2:
 			tmpChNum+=1
 	elif Input.is_action_just_pressed("ui_page_up"):
 		if tmpChNum > 1:

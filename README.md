@@ -18,7 +18,7 @@ This is a VN engine designed to handle simpler types of VNs. It is currently use
 - Load music internally or externally
 - Scripts have multilanguage support built in to the syntax.
 - Script syntax is simple and easy to write.
-- Scripts are dynamically loaded at runtime. F1 will reload from disk, F5 will open the current scene in the default text editor.
+- Scripts are dynamically loaded at runtime. F5 will reload from disk, F1 will open the current scene in the default text editor.
 
 
 ## Project Structure

@@ -135,7 +135,7 @@ func _ready():
 		$CutscenePlayer.init_(cutsceneData['msg'],null,false,"\t",msgColumn)
 	
 func _input(event):
-	if event.is_action("DebugButton5") and event.is_pressed():
+	if event.is_action("DebugButton1") and event.is_pressed():
 		if not cutsceneData['abs_path']:
 			return
 			

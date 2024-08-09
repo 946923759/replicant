@@ -1,0 +1,107 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	60	62	54
+/	302520	……	……	…………。	NONE
+se	DLC_CH01_EV24_RadioSignals
+msg	302521	Beepー ........ Kzzzt......!	呲拉…呲拉……	ピィィー……ガガッ……！	NONE
+msg	302522	Hyperion... Badly damaged...	休伯利安…受损严重……	ハイペリオン……損傷甚大——	NONE
+se	DLC_CH01_EV12_RadioReceive
+msg	302523	Kzzzzt.... Power generator...... All down.....	呲拉…动力炉…全部瘫痪……	ジジッ……動力炉……全てダウン……。	NONE
+msg	302524	Power supply interrupted...... Zzzzzt....	电力供给中断…呲啦…	電力供給中断……ガガッ……。	NONE
+se	DLC_CH01_EV12_RadioReceive
+msg	302525	....Compartments on fire..... bzzzzz...... Evacuate immediately........	大量舱室起火…呲拉…请立即撤离……	多数のキャビンから出火を、確認……ザザッ……ただちに退避してください……。	NONE
+msg	302526	……	……	ピィィィィィィ——————	NONE
+extend	302527	……	……	——————	NONE
+
+match_names	Kyuushou	Bronya	Theresa	Estherine
+portraits	58
+emote	58	3
+/Kyuushou	302528	Ugh...... Ahem, ahem!	咕…咳咳！	うぐっ……ゴホッ、ゴホッ！	NONE
+emote	58	7
+msg	302529	I'm..... Still alive....?	我还……活着么……	我は、まだ……生きているの……か。	NONE
+portraits	58	60
+emote	58	7
+emote	60	5
+
+/Bronya	302530	Ugh...	呜……	うっ……。	NONE
+msg	302531	Everyone..... Are you alright?	大家…都还好么？	皆さん……大丈夫ですか？	NONE
+
+portraits	58	60	62
+emote	62	1
+emote	60	5
+/Theresa	302532	Ugh...... ouch...... I think I twisted my back.......	呜…疼疼疼…难道是扭到腰了么……	うっ……イタタタッ……腰を捻ってしまったかしら……。	NONE
+
+bg	011/016_1280x720	fade
+music	Copied City
+speaker	Bronya
+emote	60	5
+msg	302533	Is this... Inside the tower?	这里是…塔的里面么？	ここは……塔の中なのですか？	NONE
+speaker	Theresa
+emote	62	1
+emote	60	5
+msg	302534	The inertia from the collision must have thrown us into the tower... My whole body aches, but it looks like we're all alive.	看来是被撞击的惯性甩进来了…虽然全身疼痛，不过看来我们至少成功活着进到塔里了。	どうやら、衝突時の慣性で外に投げ出されたようね……全身痛むけれど、生きて塔の中には入れたみたいよ。	NONE
+
+portraits	58	60	62	54,true,0
+emote	54	3
+emote	60	5
+se	DLC_CH01_EV24_RadioSignals
+/Estherine	302535	Zaah──...... Bronya...... hear...... zzzzzzzz--	呲拉…布洛妮娅…磁啦……	ザァ──……ブローニャ……聞こえ……ザザッ——	NONE
+
+emote	54	3
+emote	60	3
+/Bronya	302536	It's a transmission from Estherine! This is Bronya! Estherine! Do you read me? Bronya and her team are inside the tower! What's your status?	是伊瑟琳的通讯！喂！伊瑟琳！听得到么！我们进入塔的内部了！你们那边情况怎么样！	イザーリンからの通信です！#nこちらブローニャ！イザーリン！聞こえますか！ブローニャたちは塔の内部に入りました！そちらの状況はどうですか！	NONE
+
+speaker	Estherine
+emote	54	3
+emote	60	3
+se	DLC_CH01_EV12_RadioReceive
+msg	302537	...... a little ...... jiggly ...... a little mazy .......	呲啦…稍微…呲啦…有点不妙……	……ちょっと……ジジッ……ちょっとマズいわ……。	NONE
+msg	302538	The inside of the battleship is already ...... zaa ...... all down and .......	战舰内部已…呲啦…全部瘫痪了…	戦艦の内部はもう……ザァ……全てダウンしてて……。	NONE
+
+emote	54	2
+emote	60	3
+se	DLC_CH01_EV12_RadioReceive
+msg	302539	Probably won't ...... last long. ...... zzzzz...	估计…撑不了多久……呲啦……	恐らく……長くはもたない……ザザッ──	NONE
+
+speaker	Bronya
+emote	54	2
+emote	60	3
+msg	302540	Wait for us! We'll come to rescue you soon!	你等着！我们马上过来救援！	待っていてください！ブローニャたちがすぐに救助に向かいます！	NONE
+
+speaker	Estherine
+emote	54	6
+emote	60	3
+msg	302541	Don't worry...... Us..... Hurry up and head to the top of the tower..........	别…别管我们…呲啦…赶快朝塔顶前进……	わ……私たちに構わないで……ザァ……急いで塔の頂上へ向かって……だい……！	NONE
+se	DLC_CH01_EV12_RadioReceive
+msg	302542	The battleship is ...... jigging ...... the hole, while the battleship is ...... plugging the hole, while the battleship is ...... plugging the hole.	趁着…呲啦…战舰堵住了缺口…	戦艦が……ジジッ……戦艦が穴を、塞いでいるうちに……。	NONE
+
+se	DLC_CH01_EV24_RadioSignals
+msg	302543	Zaaa...... time already ...... zaaaaa--	呲啦…时间已经……呲啦……	ザァ……時間がもう……ザァァァァァァァ——	NONE
+speaker	Bronya
+emote	54	6
+emote	60	5
+msg	302544	Estherine? Come in! Damn.... The communication was cut off.	伊瑟琳？喂！啧…通讯中断了！	イザーリン？どうしたのですか！#nそんな……通信が途切れてしまいました。	NONE
+
+portraits	58	60	62
+emote	62	1
+emote	60	5
+/Theresa	302545	Bronya, Estherine is right. We need to head to the top of the tower now! If we stop, all our efforts will have been for nothing!	布洛妮娅，伊瑟琳说得对，我们得立刻赶往塔顶！如果停下脚步之前所做的努力都可能前功尽弃！	ブローニャ、イザーリンの言う通りよ。今すぐ塔の頂上に向かいましょう！足を止めていたら、これまでの努力が無駄になってしまうわ！	NONE
+
+speaker	Bronya
+emote	62	1
+emote	60	5
+msg	302546	Kk...... no way, we have to abandon these girls again?	可恶…难道又只能抛下她们了么！	クッ……まさか、また彼女たちを見捨てるしかないのですか！	NONE
+
+speaker	Kyuushou
+emote	58	1
+emote	60	5
+msg	302547	Bronya, creating a miracle always has a price. The best way to pay it back is to carry on their will and move on!	布洛妮娅，奇迹的背后总会付出代价，我们现在只有肩负起她们的意志继续前进才是对她们最好的回应！	ブローニャ、奇跡の影に代償はつきものだ。#n彼女たちの意志を引き継いで前に進むことが、彼女たちにとって最高の見返りだと思う！	NONE
+
+speaker	Bronya
+emote	58	1
+emote	60	1
+msg	302548	Kyuushou. .......	九霄……	九霄……。	NONE
+
+emote	58	1
+emote	60	3
+msg	302549	Yeah, you're right. Now's not the time to hesitate.	嗯，如你所说现在没有时间犹豫了……	はい、九霄の言う通りですね、今は迷っている時間はありません……。	NONE
+msg	303097	Estherine, please try to hold on..... Let's go. The Herrscher must be waiting for us at the top of the tower.	伊瑟琳，请一定要撑住…我们走，律者一定在塔顶等着我们！	イザーリン、何としても持ち堪えてください……。#n行きましょう。律者はきっと塔の頂上で我々を待っているはずです！	NONE

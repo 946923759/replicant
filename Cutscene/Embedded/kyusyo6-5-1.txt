@@ -11,7 +11,7 @@ emote	54	1
 emote	54	1
 emote	67	4
 /Sin	308384	It's just like all the ruins around it. What's so special about it?	这地方有什么不同么？看起来不还是一堆废墟么？	周りの廃墟と同じじゃんかよ。どこが特別なんだ？	NONE
-/Estherine	308385	Seems like this…the Honkai energy recovered to the original state, the investigator is not working……let's see what's wrong.	看起来似乎是这样…这片区域的崩坏能又恢复到了原来的样子，探测器也没有了之前的反应…总之我们先找找看有没有异常的地方吧。	見た目はね……このエリアの崩壊エネルギーは元に戻ってるし、探知機も前回と同じ反応をしない、けど……とりあえず、異常がないか見てみましょう。	NONE
+/Estherine	308385	It seems to be the case... The Honkai energy in this area has returned to its original form and the detector is not responding as it did before... Let's look around for any anomalies.	看起来似乎是这样…这片区域的崩坏能又恢复到了原来的样子，探测器也没有了之前的反应…总之我们先找找看有没有异常的地方吧。	見た目はね……このエリアの崩壊エネルギーは元に戻ってるし、探知機も前回と同じ反応をしない、けど……とりあえず、異常がないか見てみましょう。	NONE
 speaker	Sin
 
 emote	67	1

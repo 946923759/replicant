@@ -1322,7 +1322,7 @@ func _process(delta):
 		optionsScreen.OnCommand()
 		#historyTween.interpolate_property($ColorRect2,"modulate:a",null,0.85,.5)
 		otherScreenIsHandlingInput = Overlay.OPTIONS
-	elif Input.is_action_just_pressed("DebugButton1"):
+	elif Input.is_action_just_pressed("DebugButton5"):
 		get_tree().reload_current_scene()
 	elif Input.is_action_just_pressed("DebugButton4"):
 		var varDebugerInst = varDebugger.instance()

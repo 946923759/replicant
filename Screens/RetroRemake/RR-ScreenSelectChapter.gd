@@ -44,12 +44,21 @@ func _ready():
 		chapterActor.position.x=i*SCREEN_WIDTH
 	repositionFrame(start)
 
-func repositionFrame(sel:int,tweenTime:float=.5):
+func repositionFrame(sel:int, tweenTime:float=.5):
 	$Label.text= "Position: "+String(sel)
 	t.remove_all()
 	t.interpolate_property(chapterFrame,"position:x",null,-SCREEN_WIDTH*sel,tweenTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
 	t.start()
 	#chapterFrame.position.x=
+	
+func set_selection(new_sel:int):
+	if new_sel>=numChapters:
+		selection=0
+	elif new_sel < 0:
+		selection=numChapters-1
+	else:
+		selection=new_sel
+	repositionFrame(selection)
 
 func find_episode_parts(startingName:String)->Array:
 	var a = [startingName]
@@ -72,17 +81,9 @@ func _input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
 	if Input.is_action_just_pressed("ui_right"):
-		if selection<numChapters:
-			selection+=1
-		else:
-			selection=0
-		repositionFrame(selection)
+		set_selection(selection+1)
 	elif Input.is_action_just_pressed("ui_left"):
-		if selection<=0:
-			selection=numChapters-1
-		else:
-			selection-=1
-		repositionFrame(selection)
+		set_selection(selection-1)
 
 func handle_RR_icon_click(event,sender):
 	if event is InputEventMouseButton and event.button_index == 1:

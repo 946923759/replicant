@@ -1,0 +1,221 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Teammate
+bg	CG10148
+portraits	56
+emote	56	0
+msg	302306	The second reactor will soon reach criticality! The reaction index has already exceeded the predictive index!	第二反应炉即将到达临界点！反应指数已经超过预计指标！	第2原子炉が間もなく臨界点に達します！反応指数は既に予測指標を越えています！	NONE
+speaker	Estherine
+portraits	56	54
+emote	56	0
+emote	54	6
+msg	302307	It doesn't matter! Open up the 3rd and 4th reactors as buffer points and let the Honkai energy of the Herrscher core flow in!	别管它！开启第三、第四反应炉作为缓冲，把律者核心的崩坏能疏导到过去！	構うことないわ！#n第3、第4原子炉を緩衝ポイントとして開放して、律者コアの崩壊エネルギーを流し込むのよ！	NONE
+speaker	Teammate
+emote	56	0
+emote	54	6
+msg	302308	No way! The amount of energy introduced in a short period of time is too much! If this continues, the whole power furnace will be damaged!	不行！短时间内的导入能量太过庞大了！这样下去整个动力炉都会损坏的！	ダメです！短時間であまりに膨大なエネルギー量を注入しすぎです！#nこのままでは動力炉全体が壊れてしまいます！	NONE
+speaker	Estherine
+emote	56	0
+emote	54	3
+msg	302309	Damn it, ...... I don't have time for maintenance testing! Forget the numbers, just keep the output stable!	可恶…没有时间做保守测试了！别管那些数值！只要保持出力稳定即可！	くっ……保守テストに時間を掛ける暇なんてないのに！そんな数値は無視よ、無視！出力の安定を維持できればいい……！	NONE
+speaker	Teammate
+emote	56	0
+emote	54	3
+msg	302310	Understood. ...... Reactors 3 and 4 open, core energy transmission in progress--	明白…第三第四号反应炉开启，核心能量传输中……	分かりました……第3、第4号原子炉開放、コアエネルギー伝送中——	NONE
+portraits	54
+emote	54	3
+msg	302311	Boooo--!	嗡嗡嗡——！！	ブゥォォォン——！！	NONE
+speaker	Estherine
+emote	54	3
+msg	302312	Whatever you do, make sure you succeed. ......	一定要成功啊……	何としてでも、成功してちょうだいよ……。	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	3
+msg	302313	The numbers for Reactors #3 and #4 have reached a critical point! The index is still rising! The power reactors have already reached their start-up conditions!	三号四号反应炉数值达到临界点！指标仍在上升！但是已经到达动力炉启动条件！	3号、4号原子炉の数値が臨界点に達しました！指数はなおも上昇中！#nですが、既に動力炉の起動条件に達しました！	NONE
+speaker	Estherine
+emote	56	0
+emote	54	6
+msg	302314	Power reactor startup!	启动动力炉！	動力炉、起動ッ！	NONE
+portraits	54
+emote	54	6
+se	DLC_CH00_EV08_ExplosionWhileDream
+msg	302315	Goooooooooooooong ！！！！	轰隆隆隆隆！！！！	ゴォォオオオン！！！！	NONE
+speaker	Estherine
+emote	54	3
+msg	302316	Ggh! This vibration is ...... and the power reactor!	咕！这个震动……动力炉怎么样了！	ぐっ！この振動は……ど、動力炉は！？	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	3
+msg	302317	Gosh, Gosh! Numerical values are being recorded. ...... Reactor is working normally! We did it! The reactor has started to operate!	咳咳！数值记录中…反应炉运作正常！我们成功了！反应炉开始工作了！	ゴホッ、ゴホッ！数値記録中……原子炉は正常に作動！やりました！原子炉が稼働し始めました！	NONE
+portraits	54
+emote	54	3
+se	DLC_CH01_EV21_WarningAlertTunnelB
+msg	302318	Bleepy--warning! Warning! The load on the core power reactor has exceeded the allowable capacity! Shut it down immediately!	「滴滴滴——警报！警报！核心动力炉高度负载！请立刻关闭！」	「ピピピ——警告！警告！コア動力炉の負荷が許容量を突破！ただちにシャットダウンしてください！」	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	3
+msg	302319	─ ─ ─ ..! The mechanical structure of the power reactor has reached its limit! We must stop the test immediately or it will be dangerous!	呃！动力炉的机械结构已经到极限了！我们得立即停止测试！	──ッ！動力炉の機械構造が限界に達しました！ただちにテストを中止しないと危険です！	NONE
+speaker	Estherine
+emote	56	0
+emote	54	3
+msg	302320	Ha, come on! Shut down the power reactor!	快！关闭动力炉！	は、早く！動力炉のシャットダウンを！	NONE
+portraits	54
+emote	54	3
+msg	302321	--Wooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ......!	嗡——————！	——ゥゥゥゥン……！	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	3
+msg	302322	Power reactor ...... shut down .......	动力炉…已关闭……	動力炉……シャットダウンしました……。	NONE
+speaker	Estherine
+emote	56	0
+emote	54	5
+msg	302323	Whew ...... I was surprised. I would be so embarrassed if I died because of a machine I developed. ......	呼…真是吓死我了，要是死在自己研发的作品下面，可是太丢人了……	ふぅ……びっくりした。自分で開発した機械のせいで死んでたら、恥ずかしいったらありゃしないわ……。	NONE
+emote	56	0
+emote	54	1
+msg	302324	This test was not successful either, but at least we succeeded in igniting the power reactor. ...... This experimental data is the most valuable achievement of all. We can build on this and do more. ......	虽然这次测试也没有成功，但至少我们已经成功点燃了动力炉…这些实验数据将会是最宝贵的成果，只要在这个基础上再接再厉的话……	今回のテストも成功しなかったけれど、少なくとも動力炉の点火には成功したわ……この実験データは何より貴重な成果よ。これをもとにして、もっと頑張れば……。	NONE
+speaker	Theresa
+portraits	62	54
+emote	62	1
+emote	54	1
+msg	302325	Estherine! Are you okay! What was that tremor just now!	伊瑟琳！你们没事吧！刚才的震动是怎么回事！？	イザーリン！大丈夫！？さっきの揺れは何事なの！？	NONE
+speaker	Estherine
+emote	62	1
+emote	54	3
+msg	302326	Ugh ...... how are you guys here?	呜…你们怎么来了。	うっ……あなたたち、どうしてここに？	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	1
+emote	54	3
+msg	302327	We have completed the cleanup of the debris on the rails around M.E. Corporation and its restoration. So we came to see how things are going here.	ME社周边的轨道已经清理修复完毕了，所以过来看看这边的情况。	ME社周辺のレール上にあった瓦礫の片付けと、その修復が完了しました。それでこちらの様子を見に来たのです。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	1
+msg	302328	I see that you did. ...... Thanks for your efforts. Let's talk about the Hyperion situation in a different location. We just finished the experiment. We need to wrap up the results, so you guys can get some rest.	这样啊…辛苦你们了，关于休伯利安的情况我们待会换个地方讲吧。正好实验刚刚结束，我们也需要总结一下结果，你们正好也休息一下。	そうだったのね……ご苦労様。#nハイペリオンの状況については、場所を変えて話しましょう。ちょうど実験が終わったばかりなの。私たちは結果をまとめなくちゃいけないから、あなたたちも少し休んでいて。	NONE
+speaker	Bronya
+emote	60	1
+emote	54	1
+msg	302329	I understand. Bronya and her team will be waiting in the control room.	明白了，那我们去指挥室等你。	分かりました。では、ブローニャたちは指令室で待っています。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	1
+msg	302330	Yes, please do.	好的……	ええ、そうしてちょうだい。	NONE
+bg	CG10149
+portraits	54
+emote	54	1
+nop	(Empty message)
+speaker	Graymoth Member
+portraits	66
+emote	66	0
+msg	302332	Bronya...can the Hyperion really take off again?	布洛妮娅…休伯利安号真的可以再次起飞么？	ブローニャ……ハイペリオン号は本当にまた飛べるの？	NONE
+speaker	Bronya
+portraits	60	66
+emote	60	2
+emote	66	0
+msg	302333	I am sure Estherine can do it. The Hyperion is our trump card, and I am sure they will do everything in their power to make it work.	伊瑟琳一定会做到的，休伯利安号是我们最后的筹码，所以她们一定会全力以赴。	イザーリンならきっとできるはずです。ハイペリオン号は我々の切り札ですから、彼女たちもきっと全力で何とかしてくれるはずです。	NONE
+speaker	Theresa
+portraits	62	66
+emote	62	1
+emote	66	0
+msg	302334	Yes ...... I am sure Himeko would have loved to see Hyperion flying again. Let us pray that she will protect us.	没错…我想姬子队长也一定也很想看到休伯利安再次起飞的样子，希望她能够保佑我们。	そうよ……姫子もきっとハイペリオンがまた飛ぶ姿を見たかったでしょうね。彼女が私たちを守ってくれるよう祈りましょう。	NONE
+speaker	Graymoth Member
+emote	62	1
+emote	66	0
+msg	302335	Yes. .......	嗯……	はい……。	NONE
+speaker	Estherine
+portraits	62	54
+emote	62	1
+emote	54	1
+msg	302336	Hey guys, here you go: ...... I got the test results from the power reactor.	各位久等了…动力炉测试结果已经出来了。	みんな、お待たせ……動力炉のテスト結果が出たわ。	NONE
+msg	302337	First, I have good news and bad news, which would you like to hear first?	首先有好消息和坏消息，你们要先听哪个？	まず、いい知らせと悪い知らせがあるんだけど、どっちから聞く？	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	1
+emote	54	1
+msg	302338	Is that the way you want to hear it out of the blue? Well, let's start with the bad news. The situation can't get any worse anyway.	一上来就是这种模式么，先听坏消息吧，反正现在这个情况再坏能坏到哪里去呢。	いきなり、その聞き方ですか。#nでは、悪い知らせから聞きましょう。どうせ、今の状況がこれ以上悪くなることはありませんからね。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	1
+msg	302339	That's true, too, and you're right: ....... The bad news certainly isn't that bad.	好吧…你说的也对，坏消息的确也没有那么糟糕。	それもそうね、あなたの言う通り……。悪い知らせは確かにそこまでひどいものではないわ。	NONE
+emote	60	1
+emote	54	3
+msg	302340	Current test data shows that even if the power reactor were to operate properly due to limited materials, it would only last about four hours at most. ...... But that's just a calculation. ...... The power reactor's output is unstable, and the time could be much shorter if it were actually running. More importantly,.......	从现在的测试数据来看，由于受到材料的限制，动力炉即使在正常运作的状态下也仅仅只能维持四小时左右…而且目前动力炉的出力很不稳定，实际运用中可能时间更短，更别说……	現在のテストデータによると、資材が限られているせいで動力炉が正常に作動したとしても、せいぜい4時間くらいしか維持できないことがわかったわ……。#nただそれも計算上にすぎない……動力炉の出力は不安定で、実際に稼働させたら時間はもっと短くなるかもしれない。#nましてや……。	NONE
+speaker	Theresa
+portraits	62	54
+emote	62	1
+emote	54	3
+msg	302341	Not to mention having to fight Honkai creatures? ......	更别说还要与崩坏生物作战么……	ましてや崩壊生物とも戦うことを考えると……。	NONE
+speaker	Estherine
+emote	62	1
+emote	54	3
+msg	302342	That's right. The Hyperion will be a flying coffin the minute it takes off. It's a total one-way ticket. If we lose power in the air, our chances of survival are zero.	没错，现在的休伯利安号一旦起飞就将是一个空中的棺木，这是一张有去无回的单程票，如果在空中失去动力的话，我们几乎没有生还的可能。	その通り。今のハイペリオン号は飛び立ったが最後、空飛ぶ棺桶になるわ。これは完全なる片道切符なの。もし空中で動力を失えば、私たちが生還できる可能性はゼロに等しい。	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	1
+emote	54	3
+msg	302343	A one-way ticket is enough, because if we can't stop Herrscher ......, even that will be meaningless.	单程就已经足够了…如果不能阻止律者的话这都没有意义。	片道切符で十分です……律者を止めることができなければ、それすらも意味がなくなってしまいますから。	NONE
+msg	302344	Leave the children and wounded at the base. This way, even if Bronya and the others are sacrificed, we can still leave a spark of humanity.	让孩子们和伤员留在基地吧，这样即使我们牺牲了，至少人类的火种也还保存着。	子供たちと負傷者は基地に残しましょう。これでブローニャたちが犠牲になったとしても、人類の火種を残すことができます。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	3
+msg	302345	Yeah. .......	嗯……	うん……。	NONE
+speaker	Bronya
+emote	60	1
+emote	54	3
+msg	302346	I understand the bad news. So what's the good news?	坏消息就是这个吧，那么好消息呢？	悪い知らせはわかりました。では、いい知らせは？	NONE
+speaker	Estherine
+emote	60	1
+emote	54	2
+msg	302347	No, there is more than one piece of bad news: ....... Based on the observations of dead spots over the past few days, I'm guessing that the Honkai energy has already reached the level of a major Honkai. ......	不，坏消息不止有一个…在这两天对于死斑的观测来看，崩坏能的已经达到了大崩坏的量级…	いえ、悪い知らせは1つだけじゃないの……。#nここ数日の死斑の観測状況を見るに、崩壊エネルギーが既に大崩壊のレベルに達していると推測されるわ……。	NONE
+msg	302348	Probably less than 12 hours until the last explosion. If we don't act now, we won't make it in time.	离最后的爆发恐怕只有不到12小时的时间了，我们必须立即行动才行。	恐らく、最後の爆発まで12時間もないでしょうね。今すぐ行動しないと間に合わない。	NONE
+speaker	Bronya
+emote	60	1
+emote	54	2
+msg	302350	I see. .......	是么……	そうですか……。	NONE
+speaker	Estherine
+emote	60	1
+emote	54	1
+msg	302351	But the good news is, I've found a way to stabilize the power reactor so it's safe to launch. If you give the order, the Hyperion can launch any day now.	但好消息是，我们找到了如何稳定动力炉的方法，已经保证了出击的安全性，只要你一声令下，休伯利安号现在就可以出发。	でも、いい知らせはね、動力炉を安定させる方法を見つけたから、出撃しても安全は確保できるわよ。#nあなたが命令を下せば、ハイペリオン号は今にでも出撃可能よ。	NONE
+speaker	Bronya
+emote	60	3
+emote	54	1
+msg	302352	That's right. ......! Then there is no need to hesitate about anything.	啊…那就没有什么好犹豫的了！	そうなのですね……！では、何も迷う必要はありません。	NONE
+bg	CG10173
+portraits	54
+emote	54	1
+msg	302353			NONE	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	1
+msg	302354	System test on the Hyperion completed! No abnormalities! Power reactor activated! Honkai energy injection commencing!	休伯利安号系统检测结束！未发现异常！动力炉启动！开始导入崩坏能！	ハイペリオン号システムテスト終了！異常なし！動力炉起動！崩壊エネルギー注入開始！	NONE
+msg	302355	Front rail inspection complete! No obstruction to traffic! Ready to go out anytime!	前方轨道检查完毕！通行顺畅！随时可以进发！	前方レールの検査完了！通行に支障なし！いつでも出撃できますッ！	NONE
+speaker	Estherine
+emote	56	0
+emote	54	1
+msg	302356	Bronya, I'm going to try to take off using the conventional glide method to stabilize the power reactor output. I'll also need a longer run-up to gradually increase the power output and bring the battleship up to takeoff speed.	布洛妮娅，为了保证动力炉的出力稳定，我们打算采用常规滑行的手段进行升空，需要一段较长的助跑来缓慢增加出力从而使战舰达到决断速度。	ブローニャ、動力炉の出力を安定させるために、従来の滑走方式で離陸しようと思うの。#nそれと出力を徐々に高めて戦艦を離陸決心速度に持っていくために、長めの助走が必要になるわね。	NONE
+msg	302357	I estimate that we will need to cover a distance of 20 kilometers. That means we will have to plow through most of the dangerous areas of Changku City. And since we can't use our main gun along the way, you are the only ones we can rely on.	助跑的距离预计需要20公里，也就是说我们得穿过大半个长空市的危险区域才行，而且这个过程中也无法使用主炮，只能靠你们了。	助走の距離は20キロ必要になると見積もっているわ。#nつまり、私たちは長空市の危険エリアのほとんどを突っ切らなくてはいけないってこと。しかも、その途中で主砲は使えないから、あなたたちだけが頼りなの。	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	1
+emote	54	1
+msg	302358	Understood -- Attention all hands! Protect the battleship at all costs until Hyperion takes off!	我明白了，全员注意！在休伯利安升空之前全力保护战舰！	分かりました——総員注目！ハイペリオンが離陸するまで全力で戦艦を保護してください！	NONE
+speaker	Graymoth Member
+portraits	66	54
+emote	66	0
+emote	54	1
+msg	302359	Copy that! I will absolutely protect Hyperion, even if it kills me!	遵命！绝对誓死保卫休伯利安！	了解！死んでも絶対にハイペリオンを守るわ！	NONE
+speaker	Bronya
+portraits	66	60
+emote	66	0
+emote	60	1
+msg	302360	Please.	很好。	お願いします。	NONE
+emote	66	0
+emote	60	3
+msg	302361	Ladies and gentlemen! We have been crawling on the surface of the earth for far too long. Now is the time to look up to the sky!	各位！我们在地上匍匐了太久，也该抬头仰望天空了！	皆さん！我々は地表であまりにも長い間、這いつくばってきました。今こそ、大空を見上げる時です！	NONE
+msg	302362	This is the last battle! O moth that chases fire! Flap your wings high toward the light of hope!	这是最后的战斗了！逐火之蛾！向着希望的光芒展翅高飞！	これが最後の戦いです！#n火を追う蛾よ！希望の光に向かって高く羽ばたくのです！	NONE
+portraits	60
+emote	60	3
+msg	302363	The Hyperion, launch--!	休伯利安号出击！	ハイペリオン号、出撃——ッ！	NONE

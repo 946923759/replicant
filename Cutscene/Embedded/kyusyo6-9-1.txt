@@ -5,7 +5,7 @@ music	Fortress of Lies - Vocals
 match_names	Estherine	Sin	???	_DIM_ALL_WHEN_EMPTY
 portraits	54	67
 emote	67	3
-/Sin	308502	Hah ...... Hah ......!	呼…呼……	はぁ……はぁ……っ！	NONE
+/Sin	308502	Hah... Hah...!	呼…呼……	はぁ……はぁ……っ！	NONE
 speaker	Estherine
 emote	54	3
 emote	67	3
@@ -34,7 +34,7 @@ speaker	Sin
 
 emote	54	3
 emote	67	3
-msg	308508	...... Don't worry about me, it's no big deal. You're looking for the Herrscher core, right? Get on with it.	好了…别疑神疑鬼的，没什么大不了的，你不是要找核心么，那就别磨蹭了。	……ボクのことは気にするな、大したことない。それより、律者コアを探すんだろ？さっさとしろ。	NONE
+msg	308508	......Don't worry about me, it's no big deal. You're looking for the Herrscher core, right? Get on with it.	好了…别疑神疑鬼的，没什么大不了的，你不是要找核心么，那就别磨蹭了。	……ボクのことは気にするな、大したことない。それより、律者コアを探すんだろ？さっさとしろ。	NONE
 speaker	Estherine
 
 emote	54	3
@@ -77,7 +77,7 @@ msg	308523	Sirin... So you're the one causing this! Fine, if we kill you then ev
 speaker	Sirin
 msg	308524	Kill ......?	杀掉……	殺す……？	NONE
 msg	308525	Unfortunately, I, like all beings here, ceased to exist a long time ago.	真是遗憾，我和这里的一切一样，早在很久之前就已经消逝不在了。	残念だけど、私はここにあるすべての存在と同じで、遥か昔に消滅したわ。	NONE
-msg	308526	But you are the one that will be swallowed up here, never to return to the real world if you continue to interact with this one.	倒是你们，如果继续接触这个世界的话，也会被这里所吞噬，然后再也无法回去哦。	あなたたちこそ、これ以上この世界との接触を続ければ、ここに飲み込まれて二度と戻れなくなるわよ。	NONE
+msg	308526	But you? If you continue to interact with this world, you will be swallowed up, never returning to the real world.	倒是你们，如果继续接触这个世界的话，也会被这里所吞噬，然后再也无法回去哦。	あなたたちこそ、これ以上この世界との接触を続ければ、ここに飲み込まれて二度と戻れなくなるわよ。	NONE
 speaker	Sin
 msg	308527	Bullshit! Ugh... Damn it!	少在那里信口开河！呃……	嘘つくな！ッ……あ、くっ！	NONE
 speaker	Sirin

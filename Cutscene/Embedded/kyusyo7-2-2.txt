@@ -1,0 +1,118 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	66	60	62	54
+bg	CG10201
+se	DLC_CH00_EV13_MosterRoar
+msg	302364	Woow--!	吼吼吼！！	ウォォォォォ——ッ！！	NONE
+msg	302365	Dadda dadda. ......	哒哒哒！！	ダダダッ……！	NONE
+speaker	Graymoth Member
+portraits	66
+emote	66	0
+msg	302366	Report! Large number of Honkai organisms approaching port side! Request immediate assistance!	报告！左舷发现大量崩坏生物接近！请求支援！	報告します！左舷に大量の崩壊生物が接近中！至急、応援を求めます！	NONE
+speaker	Kyuushou
+portraits	58	66
+emote	58	2
+emote	66	0
+msg	302367	Rest assured! The great and mighty Kyuushou shall open up a new route for you!	放心吧！就让九霄大人为你们开辟崭新的航路！	安心するがいいっ！この九霄様が、新しい航路を切り開いてやろう！	NONE
+speaker	Bronya
+portraits	58	60	66
+emote	58	2
+emote	60	1
+msg	302368	All hands, cover Kyuushou! Concentrate all firepower! Do not allow Honkai organisms to approach the ship!	援护九霄！所有人集中火力！不要让崩坏生物靠近舰身！	総員、九霄を援護してください！！#n全員の火力を集中！崩壊生物を艦に近づけてはいけません！	NONE
+speaker	Theresa
+portraits	58	60	66	62
+emote	58	2
+emote	62	1
+msg	302369	I'll take care of it!	交给我吧！	あたくしに任せて！	NONE
+emote	62	1
+/	302370	Dooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!	轰隆！！！	ドォオオオンッ！！！	NONE
+speaker	Estherine
+portraits	58	60	66	62	54,true,0
+emote	54	2
+emote	62	1
+msg	302371	Guys! The power reactors have reached critical mass! The battleship will soon enter its final acceleration phase! Prepare for takeoff!	各位！动力炉已经达到临界点！战舰即将开始最后阶段的加速！我们要准备升空了！	みんな！動力炉が臨界点に達したわ！戦艦は間もなく最後の加速段階に入る！離陸の準備をして！	NONE
+speaker	Bronya
+emote	54	2
+emote	60	3
+msg	302372	Everyone, please keep your stances low! Hold on to the bridge fence and be careful not to be swept off by inertia!	全都趴下！抓紧舰桥上的防护栏！注意别被惯性甩飞！	全員、体勢を低くしてください！艦橋のフェンスにつかまって、慣性で振り落とされないよう気をつけてください！	NONE
+speaker	Estherine
+emote	54	6
+emote	60	3
+msg	302373	Power reactor limit released! Maximum power! Hyperion, start takeoff!	动力炉限制解除！最大出力！休伯利安开始升空！	動力炉のリミットを解除！最大出力！ハイペリオン、離陸開始！	NONE
+emote	60	3
+shake_camera	3
+/	302374	Gooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ！！！！	轰隆——————！！！！	ゴォォォーーーーッ！！！！	NONE
+speaker	Kyuushou
+emote	58	8
+emote	60	3
+msg	302375	Wow. ......!	呜哇哇哇！！	わわ……っ！	NONE
+
+portraits	
+bg	CG10196
+/Estherine	302376	It flew ...... finally!	飞起来了……我们飞起来了！	飛んだ……ついに飛んだ！	NONE
+speaker	Teammate
+msg	302377	Power reactor output stabilized! The Hyperion has successfully taken off!	动力炉出力稳定！休伯利安号成功起飞！	動力炉出力安定！ハイペリオン号、離陸成功！	NONE
+speaker	Estherine
+msg	302378	Yo, thank goodness ...... for now, nothing is wrong with .......	太好了…总算是没有出什么问题……	よ、よかった……とりあえず何も問題がなくて……。	NONE
+speaker	Teammate
+msg	302379	Altitude now 1200 meters, horizontal propulsion activated, battleship elevation returning! Begin constant velocity ascent!	目前高度1200米，水平推进器开启，战舰仰角回正！开始匀速爬升！	現在、高度1200メートル、水平推進器作動、戦艦の仰角戻ります！等速上昇開始！	NONE
+speaker	Estherine
+
+bg	CG10201
+portraits	54	60
+emote	54	1
+msg	302380	Okay, ...... Bronya! You guys are doing fine!	很好…布洛妮娅！你们没事吧！	よし……ブローニャ！あなたたちは大丈夫！？	NONE
+speaker	Bronya
+emote	54	1
+emote	60	3
+msg	302381	I'm fine! I don't know what happened to the others ...... I need to check on them soon because the turbulence is awful!	我没事！不知道其他人怎么样…空中的乱流很强，需要进一步确认！	ブローニャは大丈夫です！#n他の人たちは……どうなったのか分かりません……乱気流がヒドいので、すぐに確認する必要があります！	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	8
+emote	60	3
+msg	302382	Ugh, ahhh. ----	呜呜呜————	うぐ、あぁッ————！	NONE
+speaker	Bronya
+emote	58	8
+emote	60	3
+msg	302383	Kyuushou, how are you? Are you okay?	九霄你怎么样？没事吧！	九霄、どうしたのですか？大丈夫ですかッ！？	NONE
+speaker	Kyuushou
+emote	58	8
+emote	60	3
+msg	302384	I'm fine.... I think... For the Savior, this is no big deal...	没事…对救世主来说这都是小场…	だ、大丈夫……救世主にとって、これしきのこと大したことで——	NONE
+tween	current	58	linear,.5;addy,1024
+msg	302385	Upp.....!!!! (Vomit sounds)	呕！！！！	うぷ……ッ！！！！#n——オ˝ロ˝ロ˝ロ˝ロ˝ッ！！！	NONE
+speaker	Bronya
+emote	58	8
+emote	60	2
+msg	302386	Well, I guess there isn't anything seriously wrong.... How's everyone else?	看来没什么问题…其他人呢？	どうやら、大丈夫なようですね……他の人は？	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	2
+msg	302387	This is just a warm-up exercise!	这种小场面只是热身而已~	こんなのただの準備運動よ～！	NONE
+speaker	Graymoth Member
+portraits	62	66	60
+emote	62	1
+emote	66	0
+msg	302388	Report! The entire ash moth platoon is safe! There is no need for us to worry!	报告！灰蛾小队全员健在！不用担心我们！	報告します！灰蛾小隊は全員無事です！私たちの心配は不要です！	NONE
+speaker	Bronya
+emote	62	1
+emote	60	2
+msg	302389	Whew ...... Looks like you got through the first hurdle.	呼…看来是度过了第一个难关了。	ふぅ……どうやら最初の難関は乗り切ったようですね。	NONE
+speaker	Estherine
+portraits	54,true,0	60
+emote	54	6
+emote	60	2
+msg	302390	Bronya, the battleship has taken off without incident. It is now sailing towards that giant tower. According to previous visual estimates, the tower should reach stratospheric height. At our current rate of ascent, we should reach the top of the tower in about 20 minutes.	布洛妮娅，战舰已经顺利起飞，我们现在正在向那座巨塔航行！那座塔的高度之前目视预估下应该已经达到了平流层，以目前的爬升航速来说还有20分钟左右我们就可以抵达塔顶。	ブローニャ、戦艦は無事に離陸したわ。現在はあの巨塔に向かって航行中。#n以前、目視した見積りでは、あの塔の高さは成層圏まで達しているはずだわ。今の上昇速度からして、あと20分ほどで塔の頂上に辿り着けるはずよ。	NONE
+emote	54	1
+emote	60	2
+msg	302391	But as the altitude increases, so does the density of Honkai energy in the air. No one can predict what will happen by the time we arrive. ......	不过随着高度的爬升空中的崩坏能密度将会越来越高，届时将会发生什么谁也无法预料……	でも、高度が上昇するにつれて、空中の崩壊エネルギーの密度も高くなっていく。到着する頃には何が起こるか、誰にも予想できないわ……。	NONE
+speaker	Bronya
+emote	54	1
+emote	60	3
+msg	302392	That's right. ...... This is where the real battle begins. ......	没错…接下来才是真正的战斗……	その通りです……ここからが本当の戦いです……。	NONE
+msg	302393	Let's all take a short rest here. Save your strength and prepare for the battle ahead.	所有人原地休息一下，保存体力准备后续战斗。	全員、この場で少し休みましょう。体力を温存して、これからの戦いに備えるのです。	NONE
+speaker	Graymoth Member
+portraits	54	66
+emote	54	1
+emote	66	0
+msg	302394	Understood!	明白！	了解しました！	NONE

@@ -19,7 +19,7 @@ var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
 
 var numberTex = preload("res://groove gauge 1x10.png")
-var activeTex = preload("res://Graphics/spriteActiveDebug.png")
+#var activeTex = preload("res://Graphics/spriteActiveDebug.png")
 
 #TODO: PortraitManager tween is all we really need, right?
 var tween:Tween
@@ -44,7 +44,7 @@ func _draw():
 		draw_texture(mask1,Vector2(-196,14))
 		draw_texture_rect_region(portrait_textures[cur_expression],
 			Rect2(-319/2,26,319,457),
-			Rect2(512-319/2,0,319,457)
+			Rect2(IMAGE_CENTER_X-319/2,0,319,457)
 		)
 		#I'm pretty sure this isn't a normal overlay because it's not that blue in gfl.
 		#There's also the whole distortion thing but I don't know how that's done (Is it a shader?).
@@ -58,11 +58,11 @@ func _draw():
 			Rect2(0,24*idx,31,24)
 		)
 		#Texture, dest, source
-		var xOff = int(is_active)*16
-		draw_texture_rect_region(activeTex,
-			Rect2(0,64,16*4,8*4),
-			Rect2(xOff,0,16,8)
-		)
+		#var xOff = int(is_active)*16
+		#draw_texture_rect_region(activeTex,
+		#	Rect2(0,64,16*4,8*4),
+		#	Rect2(xOff,0,16,8)
+		#)
 		
 	
 

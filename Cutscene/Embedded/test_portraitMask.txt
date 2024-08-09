@@ -1,0 +1,9 @@
+portraits	58	59,false,3
+bg	009/018_1280x720	immediate
+msg	This is advanced portrait usage.
+portraits	58	59,false,0
+msg	Move to normal.
+portraits	58
+msg	Hide.
+portraits	58	59,true,0
+msg	Show masked.

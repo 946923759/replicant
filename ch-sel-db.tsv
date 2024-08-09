@@ -7,7 +7,7 @@
 //VN_STOP	Chapter 3
 
 --Debug Tests
-Music Test	What Is going on	test_music,test_tween
+Music Test	What Is going on	test_music,test_tween,test_portraitMask
 Choice Test	AASBBBDFD	test_choice,test_choice_design
 Variable Test	Tests variables	test_var,test_username
 Font Test	Tests fonts, colors, pauses.	test_font,test_textPause
@@ -85,15 +85,15 @@ Erosion	The girl named Sirin tells us her reasons and tries to drag us into the 
 Brave Heart	In the heat of the moment, the one who usually runs away is the one that didn't hesitate.	kyusyo6-12-1,kyusyo6-12-2,kyusyo6-12-3
 
 --Chapter 7
-Hope
-Wings
+Hope	The Fire Moths are busy fixing the Hyperion.	kyusyo7-1-1
+Wings	Prepare to take off.	kyusyo7-2-1,kyusyo7-2-2
 Black Cloud
 Old Enemy
 Dead End
-Clear Way
-Wish
-Forbidden
-Fantasy
+Clear Way		kyusyo7-6-1
+Wish		kyusyo7-7-1
+Forbidden		kyusyo7-8-1
+Fantasy		kyusyo7-9-1
 --Chapter 7.5
 Destruction	The ultimate enemy awaits you at the top.	kyusyo75-1-1,kyusyo75-1-2
 False Thing	What is a dream, what is real?	kyusyo75-2-1

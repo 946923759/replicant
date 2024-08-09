@@ -41,13 +41,14 @@ func fade_music(time:float=3.0):
 		stop_music()
 	else:
 		t.interpolate_property(self,"volume_db",null,-35,time)
+		t.interpolate_property(self,"playing",null,false,0.0,Tween.TRANS_LINEAR,Tween.EASE_IN,time)
 		t.start()
 		
 func stop_music():
 	self.stop()
 		
 func pause_music():
-	pass
+	self.playing=false
 
 func get_custom_music(fname):
 	if !OS.has_feature("standalone") or OS.has_feature("console"):

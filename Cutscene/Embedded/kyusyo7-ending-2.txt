@@ -173,7 +173,7 @@ bg	011/023_1280x720
 msgbox_close
 msg	303078			NONE	NONE
 msgbox_open
-msg	303079	Everyone…… 	大家……	みんな……	NONE
+msg	303079	Everyone......	大家……	みんな……	NONE
 msg	303080	I'm back.	我回来了。	ただいま。	NONE
 jmp	end_choices
 
@@ -190,8 +190,8 @@ msgbox_close
 msg	303086			NONE	NONE
 msgbox_open
 speaker	%player%
-msg	303087	Hi! Everyone!	大家好！	こんにちは！	NONE
+msg	303087	Hello, everyone!	大家好！	こんにちは！	NONE
 msg	303088	I'm the new member of the Fire Moths, "%player%".	我是逐火之蛾的新成员「#player」	私は火を追う蛾の新人「#player」。	NONE
-msg	303089	I will fight with you!	今后将与各位共同战斗！	これからは皆と一緒に戦うよ！	NONE
+msg	303089	I'll be fighting alongside everyone from now on!	今后将与各位共同战斗！	これからは皆と一緒に戦うよ！	NONE
 
 label	end_choices

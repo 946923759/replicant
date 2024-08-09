@@ -44,6 +44,8 @@ func setNumParts(partDestinations_:Array):
 			button.get_child(0).text="Part "+String(i+1)
 		else:
 			button.visible=false
+	if length <= 2:
+		desc.rect_size.x = 512
 
 func getNumParts()->int:
 	var n = 0

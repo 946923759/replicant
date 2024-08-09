@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	62	61	55	60
 speaker	Theresa
 bg	007/006_1280x720
@@ -17,7 +17,7 @@ msg	307270	I'm surprised you can find your way back despite such severe spacial 
 speaker	Theresa
 emote	61	1
 emote	62	1
-msg	307271	After I left you guys, I have been keeping an eye on Kiana and Mei here in the school city. That's why I've become so familiar with this place over the past few years.	和你们分开后我就一直在这个学园都市注视着琪亚娜和芽衣，所以在这几年里早就已经把这里摸透了。	あなたたちと別れた後、あたくしはずっとこの学園都市でキアナと芽衣を監視していたの。だから、この数年でここにはすっかり詳しくなったわ。	NONE
+msg	307271	After I left you guys, I've been keeping an eye on Kiana and Mei here in Academy City. That's why I've become so familiar with this place over the past few years.	和你们分开后我就一直在这个学园都市注视着琪亚娜和芽衣，所以在这几年里早就已经把这里摸透了。	あなたたちと別れた後、あたくしはずっとこの学園都市でキアナと芽衣を監視していたの。だから、この数年でここにはすっかり詳しくなったわ。	NONE
 emote	60	6
 emote	62	1
 /Bronya	307272	Seele! Where's Seele!	希儿呢！希儿在哪！	ゼーレは！？ゼーレはどこですか！？	NONE

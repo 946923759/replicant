@@ -1,0 +1,177 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	CG10007
+msg	302245	Ka…Ka…	沙拉……沙拉……	ザ、ザザ……ザ————	NONE
+speaker	Dr. Estherine
+bg	CG10057
+msg	302246	Kyuushou….	九霄……	九霄……。	NONE
+msg	302247	Are you here….Kyuushou….	你在这里么…九霄……	そこにいるの……九霄……。	NONE
+msg	302248	If you can hear my voice... please respond.....	如果听得到我的声音…请回答我……	私の声が聞こえたら……返事をして……。	NONE
+msg	302249	Ka…Ka…	沙拉……沙拉……	ザザ……ザー……ザ————	NONE
+speaker	Dr. Estherine
+msg	302250	I'll find you wherever you are…	不管你在哪里我都会找到你……	どこにいようと、あなたを見つけ出してみせる……	NONE
+msg	302251	I won't give up no matter what it takes…	不管付出什么代价我都不会放弃……	どんな代償を払おうとも、私は諦めないから……	NONE
+msg	302252	I will no longer see my partner fall…	已经不会再眼睁睁看着伙伴倒下了……	もう仲間が倒れていくのを、黙って見ていたりはしない……	NONE
+msg	302253	I'll do it this time…	这次就由我来……	今度は、私が……	NONE
+speaker	Kiana
+msg	302254	It's useless. Everything you are doing is futile.	没用的，你所做的一切都只是徒劳。	無駄よ。あなたのしていることは全て徒労に終わるわ。	NONE
+msg	302255	She is no longer here... Nor does she exist anywhere.	她已经不在这里了…也不存在于任何地方。	彼女はもうここにいない……そして、いかなる場所にも存在しないの。	NONE
+msg	302256	Her life has already been extinguished. Her soul is about to disappear. No one can change her fate.	她的生命已经熄灭，她的灵魂也即将消散，谁也无法挽回这个结局。	彼女の命はもう燃え尽きたわ。彼女の魂も消えようとしている。誰も、この結末を変えられないの。	NONE
+speaker	Dr. Estherine
+msg	302257	That can't be right... Surely there must be a way to save her!	不会的…一定还有别的方法！	そんなはずないわ……きっと何か方法があるはず！	NONE
+speaker	Kiana
+msg	302258	A way? Still thinking about that nonsense...	方法？还在考虑这种无谓的事情么……	方法？#nまだそんな無意味なことを考えているの……	NONE
+msg	302259	Well, I'll tell you. The only way to save her—	好吧，那就由我告诉你吧…唯一可以拯救她的方法——	いいわ、じゃあ私が教えてあげる……彼女を助ける唯一の方法を——	NONE
+msg	302260	Is to destroy this place....	那就是毁灭这里……	それは、ここを滅ぼすことよ……	NONE
+bg	CG10007
+msg	302261	So disappear from this world with her!	和她一起从这个世界消失吧！	彼女と一緒に、この世界から消えるがいい！	NONE
+msg	302262	Click!	咔嚓！	ガチャッ！	NONE
+nop	(Empty message)
+speaker	Estherine
+portraits	54
+emote	54	3
+msg	302263	Whoa!!!!	呜哇！！	うわっ！！	NONE
+se	DLC_CH00_EV12_MonsterRaid
+msg	302264	Ding!!!	咚！	ドン——ッ！	NONE
+speaker	Estherine
+bg	CG10148
+emote	54	5
+msg	302265	Ouch, Ouch, Ouch!	疼疼疼！	いったたた……！	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	5
+msg	302266	Estherine! Are you okay?	伊瑟琳！你没事吧？	イザーリン！大丈夫？	NONE
+speaker	Estherine
+emote	56	0
+emote	54	5
+msg	302267	Whew! Whew! Whew...was that a dream...I'm fine, just fell asleep for a bit ......	呼！呼！呼…是梦么…我没事，只是睡着了一下……	ハァ、ハァ……！ゆ、夢だったのね。大丈夫、少し眠ってただけだから……。	NONE
+speaker	Teammate
+emote	56	0
+emote	54	5
+msg	302268	Everyone's been really exhausted from having to repair the engine these past few days. How about you get some more rest?	那就好，这些天连夜改装休伯利安号的引擎大家的确都很辛苦呢，要不你再休息一会吧？	ならよかった。#nここのところ、ハイペリオン号のエンジン改装で皆とても疲れているからね。もう少し休んでいたら？	NONE
+speaker	Estherine
+emote	56	0
+emote	54	3
+msg	302269	No.... I'm fine, really.... What's the current status of the engine? Let's start the next test right away.	不…不用了…现在引擎的状况怎么样了？马上开始下一批测试吧。	だ……大丈夫よ……現在のエンジンの状況は？すぐに次のテストを始めましょう。	NONE
+speaker	Teammate
+emote	56	0
+emote	54	3
+msg	302270	The connection to the Herrscher core remains unstable. ...... There's a limit to how much we can do with the materials we have at our disposal. It's absurd to build a reactor to control the core in such a short time. ......	律者核心的链接依然很不稳定…我们手上的材料实在太有限了，想要在这么短的时间内制造出制驭核心的反应炉实在是太难了……	律者コアの接続は依然として不安定なままよ……私たちの手元にある材料では、いくらなんでも限界があるわ。#nこんな短時間でコアを制御する原子炉を作るなんて、無茶苦茶よ……。	NONE
+speaker	Estherine
+emote	56	0
+emote	54	6
+msg	302271	Don't be discouraged... No matter what, we can't lose hope. Not until the world ends for real.	不要气馁…不到最后一刻千万不能放弃，一定还有希望。	弱気にならないで……最後の最後まで絶対にあきらめちゃダメよ。きっと、まだ希望は残されているから。	NONE
+speaker	Teammate
+emote	56	0
+emote	54	6
+msg	302272	But.... The world could end a lot sooner than we think... Can we really make it....?	可是…最后一刻也许比我们想象的要快不少呢，真的能够赶得上么……	でも……この世界の最後は、私たちが思っているよりもずっと早く訪れるかもしれないわよ。本当に間に合うのかしら……？	NONE
+speaker	Estherine
+emote	56	0
+emote	54	6
+msg	302273	......Try not to dwell on it, let's do what we can. Restart the generator so we can begin the next experiment.	……与其在这里迷茫不如做些力所能及的事情吧，重新启动动力炉，开始下一批实验。	……ここで迷っている暇があるなら、今できることをしましょう。動力を再起動して。次の実験を始めるわよ。	NONE
+speaker	Teammate
+emote	56	0
+emote	54	6
+msg	302274	Yeah ...... got it.	嗯…好的。	ええ……分かった。	NONE
+speaker	Estherine
+emote	56	0
+emote	54	4
+msg	302275	……	……	……。	NONE
+msg	302276	The countdown to death is approaching. This time, you can no longer fail. ......	死亡的倒计时已经越来越近了，这次不能再失败了……	死へのカウントダウンが近づいている。今度はもう、失敗できない……。	NONE
+emote	56	0
+emote	54	2
+se	DLC_CH07_EV02_HeartBeat
+msg	302277	......!	咕！	……ッ！！	NONE
+msg	302278	Gosh, gosh--!	咳咳！	ゴホッ、ゴホッ——！	NONE
+msg	302279	The erosion of Honkai is getting worse and worse ...... if we don't hurry. ......	崩坏的侵蚀已经越来越严重了…必须抓紧时间才行……	崩壊の侵食が、ますますひどくなってきている……急がないと……。	NONE
+msg	302280	Kiana... As a Herrscher... What are you going to do... Can I really trust you...?	身为律者的琪亚娜…你究竟打算怎么做…我真的还能够相信你么？	キアナ……律者であるあなたは、一体何をするつもりなの……本当に、まだあなたを信じられるの？	NONE
+bg	CG10173
+portraits	54
+emote	54	2
+nop	(Empty message)
+speaker	Bronya
+portraits	60
+emote	60	1
+msg	302282	Everyone! Get ready!	所有人！准备！	総員！用意！	NONE
+emote	60	3
+msg	302283	Three! Two! One!	三！二！一！	3……2……1！	NONE
+speaker	Graymoth Member
+portraits	66	60
+emote	66	1
+emote	60	3
+msg	302284	Huh!	喝啊！！！	ハァッ！！！	NONE
+portraits	60
+emote	60	3
+se	DLC_CH01_EV10_ExplosionSomewhere
+msg	302285	Boom ----!	轰隆————！	ドォォン————！	NONE
+speaker	Bronya
+emote	60	2
+msg	302286	Phew.... Thank you, everyone. Get some rest.	呼…各位辛苦了，大家休息一下吧。	ふぅ……皆さん、お疲れ様でした。少し休んでください。	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	6
+emote	60	2
+msg	302287	Ugh... I never thought The Savior would be reduced to doing this kind of physical labor... How long do we have to keep moving around all this wreckage and debris?	呜…没想到本救世主居然还要做这种体力活…这么多残骸瓦砾到底要搬到什么时候啊。	うぐっ……ま、まさか救世主たる我が、こんな肉体労働を強いられるとは……。#nこの大量の残骸と瓦礫を、いつまで運び続ければいいのだ。	NONE
+speaker	Bronya
+emote	58	6
+emote	60	2
+msg	302288	In order for the Hyperion to take off safely, the obstacles on the rails must be removed. Right now, the engineering team is working day and night to modify the engine. We must make the preparations that we can do now as well.	为了让休伯利安号顺利起飞必须把轨道上的障碍物清除掉，现在工程班那边正在加班加点改造引擎，我们也得趁着这段时间把能做的事情准备好才行。	ハイペリオン号を無事に飛び立たせるためには、レール上の障害物を取り除かなければなりません。#n今、エンジニア班が昼夜を徹してエンジンを改造しています。こちらも今のうちにできる準備をしておかなければなりません。	NONE
+speaker	Kyuushou
+emote	58	2
+emote	60	2
+msg	302289	I know. But I can't believe it's so bright even though it's already night. ...This is a sign that the dark aura is getting stronger and stronger!	好吧~不过明明时间是晚上却这么明亮，果然异变的气息越来越浓烈了呢！	分かっている。でも、もう夜だというのにこんなに明るいなんて……これは暗黒のオーラがますます強まっている証拠っ！	NONE
+speaker	Bronya
+emote	58	2
+emote	60	1
+msg	302290	The dead spots in the sky keep getting brighter and brighter.... This might be a sign that the end of the world is near.	死斑的亮度正在不断上升，这股异象正在警告着我们末日的到来……	死斑の明るさが強まり続けています。この異常現象は終末の到来を警告しているのでしょう……。	NONE
+emote	58	2
+emote	60	3
+msg	302291	Kyuushou, even though the skies look foreboding, we all have to reach beyond the top of the skies... That's the only place where we have a chance of defeating the Herrscher and surviving the end...	九霄，虽然眼前的光景是那么可怖，但是我们必须到达那里…到达天空的顶端，只有在那里击败律者我们才能争取到生存的希望……	九霄、目の前の光景はとても恐ろしいものですが、#nそれでもブローニャたちは、あそこに……大空の彼方に到達しなければなりません。#nブローニャたちが律者を破り、生き残るための希望を勝ち取るためには、あの場所しかないのです……。	NONE
+speaker	Kyuushou
+emote	58	2
+emote	60	3
+msg	302292	The so-called light of the end of the world refers to this moment! The twilight of the gods is approaching, the fated battle between mankind and the Honkai! It's really exciting!	所谓灭世的光景就是指的这个时刻吧！诸神的黄昏将近，人类与崩坏的宿命之战！真是令人热血沸腾呢！	いわゆる世界の終わりの光景とやらは、今この時のことを指しているのだな！#n神々の黄昏が近づき、人類と崩壊の宿命の戦い！我の血が騒いでしょうがない！	NONE
+speaker	Bronya
+emote	58	2
+emote	60	2
+msg	302293	Pfft... Ha ha ha....	噗…呵呵呵~	フッ……フフッ……。	NONE
+speaker	Kyuushou
+emote	58	8
+emote	60	2
+msg	302294	What's so funny, Bronya?	布洛妮娅，有什么可笑的啊！	ブローニャ、何かおかしかった？	NONE
+speaker	Bronya
+emote	58	8
+emote	60	2
+msg	302295	Sorry... It's just that you haven't really changed... You've been acting weird and saying strange things after you regained your memories, but you still have a brave heart in the face of hopelessness.	抱歉，你果然一点都没变呢…虽然记忆恢复之后说话变得很奇怪，但是每当这种绝望的时刻，你都会抱着一颗勇敢的心积极的面对呢。	すみません。あなたは、やっぱり何も変わっていませんね……記憶が戻ってからはおかしな言動が目立ちますが、このような絶望的な状況でも常に勇敢な心を持ち、前を向いて立ち向かおうとしています。	NONE
+speaker	Kyuushou
+emote	58	7
+emote	60	2
+msg	302296	Well... To be honest, my memory is still a bit fuzzy... I didn't really get what Estherine said, but I heard my personality was restored while my memories aren't fully recovered...	嗯…其实我自己的记忆还是有点模糊…伊瑟琳说的我也听不懂，什么人格信息恢复到了以前，但是记忆还没有完全恢复之类的……	うーむ……実は我も自身の記憶が少し曖昧なんだ……イザーリンの話はよく分からないし。人格情報とかいうのが以前の状態に戻ったけど、記憶は完全に回復していないとか……。	NONE
+msg	302297	It's just that right now, it's hard to get a sense on who I really am... Everything is vague and unclear, and it feels like I shouldn't exist in this world.	只是，现在的我对自己的状态并没有什么实感…所有的一切都是那么暧昧不清，似乎自己本不该存在于这个世界一样。	ただ、今の自分の状態に対して、我には何の実感もない……あらゆるものがとても曖昧ではっきりせず、まるで自分がこの世界に存在していてはいけないみたいな気さえ感じてる。	NONE
+emote	58	2
+emote	60	2
+msg	302298	But I don't hate who I am now......! I don't hate this world either... It's a desolate world, but everything here is calling me, waiting for me to save it!	不过我并不讨厌现在的自己，也不讨厌这里…虽然是荒芜破碎的世界，但是这里的一切似乎都在呼唤着我，等待着我去救赎！	だけど、我は今の自分が嫌いじゃない……！#nこの世界だって嫌いじゃない……荒れ果てた世界だけど、ここの全てが我を呼んでいる。我の救いを待っている！	NONE
+speaker	Bronya
+emote	58	2
+emote	60	2
+msg	302299	You really are an incredible person... A savior? Perhaps it's true.	你果然是个不可思议的人呢…救世主么，或许真的是这样也说不定。	やっぱり、あなたは不思議な人ですね……救世主ですか。もしかしたら、本当にそうなのかもしれませんね。	NONE
+msg	302300	Kyuushou... The road ahead might be the hardest one yet, but will you accompany me until the end of this journey?	九霄…虽然前面的道路无比艰辛，但你能再陪我走完这最后一段旅程么？	九霄……この先の道のりは、これ以上ないほど辛いものかもしれませんが、最後までブローニャと共に旅路を歩んでくれますか？	NONE
+speaker	Kyuushou
+emote	58	2
+emote	60	2
+msg	302301	Haha! Of course! Nothing is impossible when The Savior is here!	哼哼！那当然！在救世主的面前没有做不到的事情！	フフン！そりゃもちろん！救世主にとって、不可能などないのだからな！	NONE
+speaker	Theresa
+portraits	62	60
+emote	62	1
+emote	60	2
+msg	302302	Hey! How long are you two going to rest? If you don't pick up the pace, we're never going to finish!	喂！你们休息完了没有啊！再不动手我可都要搬完了~	ちょっと！あなたたち、いつまで休んでいるの！さっさと手を動かさないと終わらないわよ～！	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	2
+emote	60	2
+msg	302303	Alright, alright! Sheesh... Hey, you'll be cursed for eternity if you keep treating The Savior like this!	来啦来啦！真是的！这样使唤救世主可是要遭天谴的！	はいはい……！まったく！救世主をこんなこき使っていたらバチが当たるんだからな！	NONE
+speaker	Bronya
+emote	58	2
+emote	60	2
+msg	302304	……	……	……。	NONE
+msg	302305	Thank you very much, Kyuushou.	谢谢你，九霄。	ありがとうございます、九霄。	NONE

@@ -130,7 +130,7 @@ msg	308617	Shut up! I hate weak people like you the most! If you're going to giv
 speaker	Estherine
 emote	54	4
 emote	69	2
-msg	308618	Oh.....	唔……	くっ……。	NONE
+msg	308618	Ugh.....!	唔……	くっ……。	NONE
 
 speaker	Sin
 emote	67	2

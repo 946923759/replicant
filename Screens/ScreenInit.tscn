@@ -38,6 +38,8 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed(\"ui_select\") or event.is_action_pressed(\"ui_pause\"):
 		_on_Timer_timeout()
+	elif event is InputEventMouseButton and event.pressed:
+		_on_Timer_timeout()
 
 func next_screen(_a,_b):
 	if (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:

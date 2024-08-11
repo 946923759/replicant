@@ -1235,15 +1235,16 @@ func end_cutscene_2():
 			needToSave=true
 	
 	
-	var save_idx = Globals.get_episode_index(Globals.currentEpisodeData)
-	var ch_idx = save_idx[0]
-	var ep_idx = save_idx[1]
-	if ch_idx >= 0 and ep_idx >= 0:
-		var bit = Globals.playerData['completedChapters'][ch_idx]
-		if (bit & 1<<ep_idx) == 0:
-			needToSave=true
-		Globals.playerData['completedChapters'][ch_idx] |= 1<<ep_idx
-		
+	if Globals.currentEpisodeData:
+		var save_idx = Globals.get_episode_index(Globals.currentEpisodeData)
+		var ch_idx = save_idx[0]
+		var ep_idx = save_idx[1]
+		if ch_idx >= 0 and ep_idx >= 0:
+			var bit = Globals.playerData['completedChapters'][ch_idx]
+			if (bit & 1<<ep_idx) == 0:
+				needToSave=true
+			Globals.playerData['completedChapters'][ch_idx] |= 1<<ep_idx
+			
 	
 	if needToSave:
 		Globals.save_system_data()

@@ -43,6 +43,7 @@ font_data = ExtResource( 7 )
 script = ExtResource( 14 )
 PrevScreen = "ScreenTitleMenu"
 NextScreen = "ScreenTitleMenu"
+HandleRightClickAsB = true
 HandlePhysicalAButton = true
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]

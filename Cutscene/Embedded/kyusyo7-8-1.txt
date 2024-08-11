@@ -40,13 +40,13 @@ msg	302645	[color=#F4A460]Stop your pointless resistance already. [/color]	[colo
 speaker	Bronya
 emote	62	1
 emote	60	3
-msg	302646	Is this voice ......?	这个声音是？	この声は……？	NONE
+msg	302646	That voice is....?	这个声音是？	この声は……？	NONE
 speaker	Theresa
 emote	62	1
 emote	60	3
-msg	302647	Kiana......。	琪亚娜……	キアナ……。	NONE
+msg	302647	Kiana......	琪亚娜……	キアナ……。	NONE
 msg	302648	[color=#F4A460]This tower is the graveyard of all mankind. What roams here are countless dead souls. [/color]	[color=#F4A460]这座塔是全人类的坟墓，这里徘徊着无数死去的亡魂。[/color]	[color=#F4A460]この塔は全人類の墓場。ここを徘徊しているものは、無数の死んだ魂なの。[/color]	NONE
-msg	303135	[color=#F4A460]And you will disappear here with them. [/color]	[color=#F4A460]而你们，也将在这里与它们一同消亡。[/color]	[color=#F4A460]そしてあなたたちも、それらと一緒にここで消える。[/color]	NONE
+msg	303135	[color=#F4A460]And you, too, will perish here with them. [/color]	[color=#F4A460]而你们，也将在这里与它们一同消亡。[/color]	[color=#F4A460]そしてあなたたちも、それらと一緒にここで消える。[/color]	NONE
 speaker	Bronya
 emote	62	1
 emote	60	3
@@ -54,14 +54,14 @@ msg	302649	Herrscher! Stop sneaking around and come out! If you want to kill us,
 emote	62	1
 emote	60	3
 msg	302650	[color=#F4A460]Your deaths are as meaningless as the end of this world. [/color]	[color=#F4A460]你们的死和这个世界的结局一样毫无意义。[/color]	[color=#F4A460]あなたたちの死は、この世界の結末のように無意味なものなの。[/color]	NONE
-msg	303136	[color=#F4A460]The time of the apocalypse will soon come. The entire world will return to emptiness. [/color]	[color=#F4A460]终结的时刻即将到来，整个世界都将回归虚无。[/color]	[color=#F4A460]間もなく訪れる終末の時。世界全体が虚無へと戻る。[/color]	NONE
+msg	303136	[color=#F4A460]The apocalypse will soon arrive, and the entire world will return to nothingness.[/color]	[color=#F4A460]终结的时刻即将到来，整个世界都将回归虚无。[/color]	[color=#F4A460]間もなく訪れる終末の時。世界全体が虚無へと戻る。[/color]	NONE
 msg	302651	[color=#F4A460]So ...... it was decided from the beginning ...... there's nothing worth leaving undone. [/color]	[color=#F4A460]没错…从一开始就已经注定的事情…没有丝毫值得留恋的地方。[/color]	[color=#F4A460]そう……最初から決まっていたこと……未練を残すに値するものは何もないわ。[/color]	NONE
 emote	62	1
 emote	60	3
 msg	302652	Herrscher, nothing you say is going to stop me now! If you won't come out and kill me, then I'll reach the top of the tower and kill you myself!	律者，现在说什么都已经没用了！如果你不想亲自动手那就在塔顶等着！我们一定会达到那里阻止你的！	律者、今は何を言っても無駄です！あなたが自ら手を下そうとしないのでしたら、塔の頂上で待っているのです！\n必ずそこに辿り着いて、あなたを止めてみせます！	NONE
 emote	62	1
 emote	60	3
-msg	302653	[color=#F4A460]So ......, but I don't think you'll get that chance. Your paths end here, you know. [/color]	[color=#F4A460]是么…不过恐怕没有这样的机会了，你们的道路将会在这里终结。[/color]	[color=#F4A460]そう……でも、そんなチャンスはないと思うわよ。あなたたちの道は、ここで終わりなのだから。[/color]	NONE
+msg	302653	[color=#F4A460]Is that so... But I'm afraid you won't have a chance. Your journey ends here.[/color]	[color=#F4A460]是么…不过恐怕没有这样的机会了，你们的道路将会在这里终结。[/color]	[color=#F4A460]そう……でも、そんなチャンスはないと思うわよ。あなたたちの道は、ここで終わりなのだから。[/color]	NONE
 portraits	60
 emote	60	3
 se	DLC_CH00_EV13_MosterRoar
@@ -69,7 +69,7 @@ msg	302654	Guuooooooooo--!	吼吼吼！！	グゥオオオォォォ——ッ！�
 speaker	Bronya
 emote	60	3
 msg	302655	--! A new Honkai creature has appeared again!	可恶！又有新的崩坏生物诞生了！	——ッ！新手の崩壊生物がまた現れました！	NONE
-msg	302656	Theresa! Quickly! If you stay here, you will soon be surrounded by Honkai creatures!	德丽莎！快走！这里马上就会被崩坏生物包围了！	テレサ！早く！ここにいては、すぐに崩壊生物に囲まれてしまいます！	NONE
+msg	302656	Theresa! Get outta here! This place will be surrounded by Honkai creatures soon!	德丽莎！快走！这里马上就会被崩坏生物包围了！	テレサ！早く！ここにいては、すぐに崩壊生物に囲まれてしまいます！	NONE
 speaker	Theresa
 portraits	62	60
 emote	62	1
@@ -83,7 +83,7 @@ speaker	Theresa
 emote	62	1
 emote	60	1
 msg	302659	Yes.	嗯。	ええ。	NONE
-msg	302660	I asked ...... for Kiana.	琪亚娜…就拜托你们了。	キアナのことは……頼んだわよ。	NONE
+msg	302660	I'm counting on you.... Put a stop to Kiana.	琪亚娜…就拜托你们了。	キアナのことは……頼んだわよ。	NONE
 speaker	Bronya
 emote	62	1
 emote	60	5
@@ -124,4 +124,4 @@ msg	302675	Theresa ....... Yes, endure it at all costs!	嗯…你一定要坚持
 bg	011/016_1280x720
 msg	302676	The flame chasing moths... Whether you chase hope or blind destruction, it no longer matters.	飞蛾扑火…究竟是追逐希望还是盲目的毁灭…一切都已经不重要了。	飛んで火にいる夏の虫とはこのことね……。\n果たして希望を追っているのか、盲目的な自滅なのか……。まあ、そんなのは全てどうでもいいことよね。	NONE
 msg	302677	I will be waiting for you at the top of the tower. But the flames of the apocalypse will soon consume the entire world.	我会在塔顶等你们，不过末日的火焰即将烧却整个世界。	私は塔の頂上であなたたちを待っているわ。\nでも、終末の炎が間もなく世界の全てを焼き尽くすでしょうね。	NONE
-msg	302678	[color=#F4A460]Hope you guys live to see then. ...... [/color]	[color=#F4A460]希望你们能够活到那一刻……[/color]	[color=#F4A460]あなたたちがその時まで生きていられるといいけど……。[/color]	NONE
+msg	302678	[color=#F4A460]I hope you live to see that moment......[/color]	[color=#F4A460]希望你们能够活到那一刻……[/color]	[color=#F4A460]あなたたちがその時まで生きていられるといいけど……。[/color]	NONE

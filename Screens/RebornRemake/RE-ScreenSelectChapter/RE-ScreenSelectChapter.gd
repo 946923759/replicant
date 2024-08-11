@@ -2,9 +2,12 @@ extends "res://Screens/ScreenWithMenuElements.gd"
 
 const SCREEN_WIDTH = 1920
 const start = 0
+
+const NUM_CHAPTERS:int=5
+const NUM_PARTS:int = 2
+
 var chapterSelection:int = start
 var partSelection:int = 0
-var numChapters:int=5
 
 enum PAGE {
 	AREA,
@@ -24,13 +27,27 @@ func repositionFrame(sel:int, tweenTime:float=.5):
 	#chapterFrame.position.x=
 	
 func set_chapter_selection(new_sel:int):
-	if new_sel>=numChapters:
+	if new_sel>=NUM_CHAPTERS:
 		chapterSelection=0
 	elif new_sel < 0:
-		chapterSelection=numChapters-1
+		chapterSelection=NUM_CHAPTERS-1
 	else:
 		chapterSelection=new_sel
 	repositionFrame(chapterSelection)
+	
+func set_part_selection(new_sel:int, tweenTime:float=.5):
+	if new_sel>=NUM_PARTS:
+		partSelection=0
+	elif new_sel<0:
+		partSelection=NUM_PARTS-1
+	else:
+		partSelection=new_sel
+		
+	
+	$Label.text= "Part Position: "+String(partSelection)
+	t.remove_all()
+	t.interpolate_property(stageFrame,"rect_position:x",null,-SCREEN_WIDTH*partSelection,tweenTime,Tween.TRANS_CUBIC,Tween.EASE_OUT)
+	t.start()
 
 func handle_RR_icon_click(event,sender):
 	if event is InputEventMouseButton and event.button_index == 1:
@@ -64,6 +81,15 @@ func handle_RR_icon_click(event,sender):
 			#OffCommandNextScreen("RR-CutsceneFromFile")
 			
 			pass
+			
+func handle_RE_stage_click(event, sender, partNum):
+	if event is InputEventMouseButton and event.button_index == 1:
+		if event.pressed:
+			print("Clicked "+partNum+", handling destination...")
+			Globals.nextCutscene=partNum+".txt"
+			Globals.currentEpisodeData=null
+
+			OffCommandNextScreen("RE-CutsceneFromFile")
 
 func input_go_back():
 	if current_page==PAGE.STAGE:
@@ -82,6 +108,8 @@ func input_go_back():
 		newTween.tween_property(stageFrame,"modulate:a",0.0,1)
 		newTween.tween_property(stageFrame,"visible",false,0.0).set_delay(.65) #.set_delay(.25)
 		current_page=PAGE.AREA
+	else:
+		OffCommandPrevScreen()
 		
 func _ready():
 	stageFrame.visible=false
@@ -89,6 +117,25 @@ func _ready():
 	
 	var test = get_node("ActorFrame_AreaSelect/Page1/RE-1")
 	test.connect("gui_input",self,"handle_RR_icon_click",[test])
+	
+	for page_ActorFrame in stageFrame.get_children():
+		for obj in page_ActorFrame.get_children():
+			#print(obj.get_class())
+			if obj.get_class()=="Control":
+				
+				#var ep = Globals.Episode.new()
+				#ep.parentChapter=chapterActor.name
+				#ep.title=obj.name
+				#ep.desc=obj.name #Doesn't matter since translation engine will put the real name
+				#ep.parts=find_episode_parts(obj.name)
+				#ep.isSub=("S" in obj.name)
+				
+				#retroRemake_database[chapterActor.name].append(ep)
+				#obj.episode = ep
+				
+				obj.mouse_default_cursor_shape = CURSOR_POINTING_HAND
+				obj.connect("gui_input",self,"handle_RE_stage_click",[obj, obj.name])
+		
 
 func _input(event):
 	if event is InputEventMouseMotion or event is InputEventMouseButton:
@@ -96,7 +143,7 @@ func _input(event):
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
-	if Input.is_action_just_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index == BUTTON_RIGHT):
+	if Input.is_action_just_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index == BUTTON_RIGHT and event.pressed):
 		input_go_back()
 		return
 	if current_page==PAGE.AREA:
@@ -105,15 +152,22 @@ func _input(event):
 		elif Input.is_action_just_pressed("ui_left"):
 			set_chapter_selection(chapterSelection-1)
 	elif current_page==PAGE.STAGE:
-		pass
+		if Input.is_action_just_pressed("ui_right"):
+			set_part_selection(partSelection+1)
+		elif Input.is_action_just_pressed("ui_left"):
+			set_part_selection(partSelection-1)
 
 
 func _on_ArrowLeft_gui_input(event):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
 		if current_page==PAGE.AREA:
 			set_chapter_selection(chapterSelection-1)
+		else:
+			set_part_selection(partSelection-1)
 
 func _on_ArrowRight_gui_input(event):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
 		if current_page==PAGE.AREA:
 			set_chapter_selection(chapterSelection+1)
+		else:
+			set_part_selection(partSelection+1)

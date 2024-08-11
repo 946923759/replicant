@@ -175,7 +175,7 @@ func end_cutscene_2():
 	var nextEpisode = tmp[1]
 	
 	if 'screen' in cutsceneData and cutsceneData['screen'] != "":
-		Globals.change_screen(get_tree(),cutsceneData['screen'])
+		Globals.change_screen(get_tree(),cutsceneData['screen'], self.name)
 	elif nextPart!="":
 		print("[CutsceneFromFile] Got new part "+nextPart+", with episode "+nextEpisode.title)
 		Globals.nextCutscene=nextPart
@@ -184,4 +184,4 @@ func end_cutscene_2():
 	else:
 		print("[CutsceneFromFile] Didn't get a next part, returning to PrevScreen "+PrevScreen)
 		#get_tree().change_scene("res://TitleScreen.tscn")
-		Globals.change_screen(get_tree(),PrevScreen)
+		Globals.change_screen(get_tree(),PrevScreen, self.name)

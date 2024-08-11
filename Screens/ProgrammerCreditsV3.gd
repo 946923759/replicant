@@ -35,8 +35,6 @@ func _input(_event):
 	
 	if _event is InputEventMouseMotion:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	elif _event is InputEventMouseButton and _event.button_index == BUTTON_RIGHT:
-		OffCommandPrevScreen()
 		
 	elif _event is InputEventMouseButton:
 		if _event.button_index == BUTTON_WHEEL_DOWN:

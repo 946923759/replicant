@@ -46,7 +46,7 @@ text = "Options"
 [node name="ScrollItem5" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -455.302, 379.292 )
 text = "Back"
-destinationScreenOrSubmenu = "ScreenTitleMenu"
+destinationScreenOrSubmenu = "ScreenSelectEra"
 
 [node name="ItemScroller_Story" type="Node2D" parent="."]
 position = Vector2( 3840, 540 )

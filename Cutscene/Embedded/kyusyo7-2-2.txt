@@ -17,7 +17,7 @@ speaker	Bronya
 portraits	58	60	66
 emote	58	2
 emote	60	1
-msg	302368	All hands, cover Kyuushou! Concentrate all firepower! Do not allow Honkai organisms to approach the ship!	援护九霄！所有人集中火力！不要让崩坏生物靠近舰身！	総員、九霄を援護してください！！#n全員の火力を集中！崩壊生物を艦に近づけてはいけません！	NONE
+msg	302368	All hands, cover Kyuushou! Concentrate all firepower! Do not allow Honkai organisms to approach the ship!	援护九霄！所有人集中火力！不要让崩坏生物靠近舰身！	総員、九霄を援護してください！！\n全員の火力を集中！崩壊生物を艦に近づけてはいけません！	NONE
 speaker	Theresa
 portraits	58	60	66	62
 emote	58	2
@@ -64,7 +64,7 @@ msg	302380	Okay, ...... Bronya! You guys are doing fine!	很好…布洛妮娅�
 speaker	Bronya
 emote	54	1
 emote	60	3
-msg	302381	I'm fine! I don't know what happened to the others ...... I need to check on them soon because the turbulence is awful!	我没事！不知道其他人怎么样…空中的乱流很强，需要进一步确认！	ブローニャは大丈夫です！#n他の人たちは……どうなったのか分かりません……乱気流がヒドいので、すぐに確認する必要があります！	NONE
+msg	302381	I'm fine! I don't know what happened to the others ...... I need to check on them soon because the turbulence is awful!	我没事！不知道其他人怎么样…空中的乱流很强，需要进一步确认！	ブローニャは大丈夫です！\n他の人たちは……どうなったのか分かりません……乱気流がヒドいので、すぐに確認する必要があります！	NONE
 speaker	Kyuushou
 portraits	58	60
 emote	58	8
@@ -79,7 +79,7 @@ emote	58	8
 emote	60	3
 msg	302384	I'm fine.... I think... For the Savior, this is no big deal...	没事…对救世主来说这都是小场…	だ、大丈夫……救世主にとって、これしきのこと大したことで——	NONE
 tween	current	58	linear,.5;addy,1024
-msg	302385	Upp.....!!!! (Vomit sounds)	呕！！！！	うぷ……ッ！！！！#n——オ˝ロ˝ロ˝ロ˝ロ˝ッ！！！	NONE
+msg	302385	Upp.....!!!! (Vomit sounds)	呕！！！！	うぷ……ッ！！！！\n——オ˝ロ˝ロ˝ロ˝ロ˝ッ！！！	NONE
 speaker	Bronya
 emote	58	8
 emote	60	2
@@ -102,7 +102,7 @@ speaker	Estherine
 portraits	54,true,0	60
 emote	54	6
 emote	60	2
-msg	302390	Bronya, the battleship has taken off without incident. It is now sailing towards that giant tower. According to previous visual estimates, the tower should reach stratospheric height. At our current rate of ascent, we should reach the top of the tower in about 20 minutes.	布洛妮娅，战舰已经顺利起飞，我们现在正在向那座巨塔航行！那座塔的高度之前目视预估下应该已经达到了平流层，以目前的爬升航速来说还有20分钟左右我们就可以抵达塔顶。	ブローニャ、戦艦は無事に離陸したわ。現在はあの巨塔に向かって航行中。#n以前、目視した見積りでは、あの塔の高さは成層圏まで達しているはずだわ。今の上昇速度からして、あと20分ほどで塔の頂上に辿り着けるはずよ。	NONE
+msg	302390	Bronya, the battleship has taken off without incident. It is now sailing towards that giant tower. According to previous visual estimates, the tower should reach stratospheric height. At our current rate of ascent, we should reach the top of the tower in about 20 minutes.	布洛妮娅，战舰已经顺利起飞，我们现在正在向那座巨塔航行！那座塔的高度之前目视预估下应该已经达到了平流层，以目前的爬升航速来说还有20分钟左右我们就可以抵达塔顶。	ブローニャ、戦艦は無事に離陸したわ。現在はあの巨塔に向かって航行中。\n以前、目視した見積りでは、あの塔の高さは成層圏まで達しているはずだわ。今の上昇速度からして、あと20分ほどで塔の頂上に辿り着けるはずよ。	NONE
 emote	54	1
 emote	60	2
 msg	302391	But as the altitude increases, so does the density of Honkai energy in the air. No one can predict what will happen by the time we arrive. ......	不过随着高度的爬升空中的崩坏能密度将会越来越高，届时将会发生什么谁也无法预料……	でも、高度が上昇するにつれて、空中の崩壊エネルギーの密度も高くなっていく。到着する頃には何が起こるか、誰にも予想できないわ……。	NONE

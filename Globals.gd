@@ -528,10 +528,16 @@ var SCREENS:Dictionary = {
 	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
 	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",
 	"RR-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-rr.tscn",
+	
+	"RE-ScreenTitleMenu":"res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.tscn",
+	"RE-ScreenSelectChapter":"res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-ScreenSelectChapterV2.tscn",
+	"RE-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-re.tscn",
 }
 
-func change_screen(tree,screen:String)->void:
+var previous_screen = ""
+func change_screen(tree, screen:String, prev_screen:String="")->void:
 	if screen=="Quit":
 		tree.quit();
 	else:
+		previous_screen=prev_screen
 		tree.change_scene(SCREENS[screen])

@@ -41,6 +41,7 @@ size = Vector2( 700, 154 )
 [node name="Node2D3" parent="ActorScroller" index="2" instance=ExtResource( 4 )]
 position = Vector2( -42.4194, -154.949 )
 text = "Reborn"
+destinationScreenOrSubmenu = "RE-ScreenTitleMenu"
 size = Vector2( 700, 154 )
 
 [node name="Node2D2" parent="ActorScroller" index="3" instance=ExtResource( 4 )]

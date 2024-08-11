@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/thumb_placeholder.png-f0e1dcd621281b9f3ad24575ff5a7f96.stex"
+path="res://.import/test.png-f9ef26ab26f4279cd37c3e915fbfe274.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/thumb_placeholder.png"
-dest_files=[ "res://.import/thumb_placeholder.png-f0e1dcd621281b9f3ad24575ff5a7f96.stex" ]
+source_file="res://Screens/RebornRemake/RE-ScreenTitleMenu/test.png"
+dest_files=[ "res://.import/test.png-f9ef26ab26f4279cd37c3e915fbfe274.stex" ]
 
 [params]
 

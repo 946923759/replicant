@@ -17,10 +17,11 @@ func _ready():
 	t.interpolate_property(self,"modulate:a",1,0,timeToTweenIn)
 	t.start()
 	
-func OffCommand(next_screen:String):
+func OffCommand(next_screen:String, prev_screen:String=""):
 	if t.is_active():
 		return
+	t.interpolate_property(self,'visible',null, true, 0.0)
 	t.interpolate_property(self,"modulate:a",0,1,timeToTweenOut)
 	t.start()
-	yield(t,"tween_completed")
-	Globals.change_screen(get_tree(),next_screen)
+	yield(t,"tween_all_completed")
+	Globals.change_screen(get_tree(), next_screen, prev_screen)

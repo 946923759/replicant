@@ -128,20 +128,20 @@ speaker	Estherine
 portraits	62	54
 emote	62	1
 emote	54	1
-msg	302336	Hey guys, here you go: ...... I got the test results from the power reactor.	各位久等了…动力炉测试结果已经出来了。	みんな、お待たせ……動力炉のテスト結果が出たわ。	NONE
+msg	302336	Sorry to keep everyone waiting... I've got the results from the generator.	各位久等了…动力炉测试结果已经出来了。	みんな、お待たせ……動力炉のテスト結果が出たわ。	NONE
 msg	302337	First, I have good news and bad news, which would you like to hear first?	首先有好消息和坏消息，你们要先听哪个？	まず、いい知らせと悪い知らせがあるんだけど、どっちから聞く？	NONE
 speaker	Bronya
 portraits	60	54
 emote	60	1
 emote	54	1
-msg	302338	Is that the way you want to hear it out of the blue? Well, let's start with the bad news. The situation can't get any worse anyway.	一上来就是这种模式么，先听坏消息吧，反正现在这个情况再坏能坏到哪里去呢。	いきなり、その聞き方ですか。#nでは、悪い知らせから聞きましょう。どうせ、今の状況がこれ以上悪くなることはありませんからね。	NONE
+msg	302338	Is that the way you want to hear it out of the blue? Well, let's start with the bad news. The situation can't get any worse anyway.	一上来就是这种模式么，先听坏消息吧，反正现在这个情况再坏能坏到哪里去呢。	いきなり、その聞き方ですか。\nでは、悪い知らせから聞きましょう。どうせ、今の状況がこれ以上悪くなることはありませんからね。	NONE
 speaker	Estherine
 emote	60	1
 emote	54	1
 msg	302339	That's true, too, and you're right: ....... The bad news certainly isn't that bad.	好吧…你说的也对，坏消息的确也没有那么糟糕。	それもそうね、あなたの言う通り……。悪い知らせは確かにそこまでひどいものではないわ。	NONE
 emote	60	1
 emote	54	3
-msg	302340	Current test data shows that even if the power reactor were to operate properly due to limited materials, it would only last about four hours at most. ...... But that's just a calculation. ...... The power reactor's output is unstable, and the time could be much shorter if it were actually running. More importantly,.......	从现在的测试数据来看，由于受到材料的限制，动力炉即使在正常运作的状态下也仅仅只能维持四小时左右…而且目前动力炉的出力很不稳定，实际运用中可能时间更短，更别说……	現在のテストデータによると、資材が限られているせいで動力炉が正常に作動したとしても、せいぜい4時間くらいしか維持できないことがわかったわ……。#nただそれも計算上にすぎない……動力炉の出力は不安定で、実際に稼働させたら時間はもっと短くなるかもしれない。#nましてや……。	NONE
+msg	302340	Current test data shows that even if the power reactor were to operate properly due to limited materials, it would only last about four hours at most. ...... But that's just a calculation. ...... The power reactor's output is unstable, and the time could be much shorter if it were actually running. More importantly,.......	从现在的测试数据来看，由于受到材料的限制，动力炉即使在正常运作的状态下也仅仅只能维持四小时左右…而且目前动力炉的出力很不稳定，实际运用中可能时间更短，更别说……	現在のテストデータによると、資材が限られているせいで動力炉が正常に作動したとしても、せいぜい4時間くらいしか維持できないことがわかったわ……。\nただそれも計算上にすぎない……動力炉の出力は不安定で、実際に稼働させたら時間はもっと短くなるかもしれない。\nましてや……。	NONE
 speaker	Theresa
 portraits	62	54
 emote	62	1
@@ -150,12 +150,12 @@ msg	302341	Not to mention having to fight Honkai creatures? ......	更别说还�
 speaker	Estherine
 emote	62	1
 emote	54	3
-msg	302342	That's right. The Hyperion will be a flying coffin the minute it takes off. It's a total one-way ticket. If we lose power in the air, our chances of survival are zero.	没错，现在的休伯利安号一旦起飞就将是一个空中的棺木，这是一张有去无回的单程票，如果在空中失去动力的话，我们几乎没有生还的可能。	その通り。今のハイペリオン号は飛び立ったが最後、空飛ぶ棺桶になるわ。これは完全なる片道切符なの。もし空中で動力を失えば、私たちが生還できる可能性はゼロに等しい。	NONE
+msg	302342	That's right. The Hyperion will be a flying coffin the minute it takes off. It's a one way ticket. And if we lose power while we're in the air, there's no chance we'd survive.	没错，现在的休伯利安号一旦起飞就将是一个空中的棺木，这是一张有去无回的单程票，如果在空中失去动力的话，我们几乎没有生还的可能。	その通り。今のハイペリオン号は飛び立ったが最後、空飛ぶ棺桶になるわ。これは完全なる片道切符なの。もし空中で動力を失えば、私たちが生還できる可能性はゼロに等しい。	NONE
 speaker	Bronya
 portraits	60	54
 emote	60	1
 emote	54	3
-msg	302343	A one-way ticket is enough, because if we can't stop Herrscher ......, even that will be meaningless.	单程就已经足够了…如果不能阻止律者的话这都没有意义。	片道切符で十分です……律者を止めることができなければ、それすらも意味がなくなってしまいますから。	NONE
+msg	302343	A one way ticket is enough. If we can't stop the Herrscher... Everything will have been for nothing.	单程就已经足够了…如果不能阻止律者的话这都没有意义。	片道切符で十分です……律者を止めることができなければ、それすらも意味がなくなってしまいますから。	NONE
 msg	302344	Leave the children and wounded at the base. This way, even if Bronya and the others are sacrificed, we can still leave a spark of humanity.	让孩子们和伤员留在基地吧，这样即使我们牺牲了，至少人类的火种也还保存着。	子供たちと負傷者は基地に残しましょう。これでブローニャたちが犠牲になったとしても、人類の火種を残すことができます。	NONE
 speaker	Estherine
 emote	60	1
@@ -168,7 +168,7 @@ msg	302346	I understand the bad news. So what's the good news?	坏消息就是�
 speaker	Estherine
 emote	60	1
 emote	54	2
-msg	302347	No, there is more than one piece of bad news: ....... Based on the observations of dead spots over the past few days, I'm guessing that the Honkai energy has already reached the level of a major Honkai. ......	不，坏消息不止有一个…在这两天对于死斑的观测来看，崩坏能的已经达到了大崩坏的量级…	いえ、悪い知らせは1つだけじゃないの……。#nここ数日の死斑の観測状況を見るに、崩壊エネルギーが既に大崩壊のレベルに達していると推測されるわ……。	NONE
+msg	302347	No, there is more than one piece of bad news: ....... Based on the observations of dead spots over the past few days, I'm guessing that the Honkai energy has already reached the level of a major Honkai. ......	不，坏消息不止有一个…在这两天对于死斑的观测来看，崩坏能的已经达到了大崩坏的量级…	いえ、悪い知らせは1つだけじゃないの……。\nここ数日の死斑の観測状況を見るに、崩壊エネルギーが既に大崩壊のレベルに達していると推測されるわ……。	NONE
 msg	302348	Probably less than 12 hours until the last explosion. If we don't act now, we won't make it in time.	离最后的爆发恐怕只有不到12小时的时间了，我们必须立即行动才行。	恐らく、最後の爆発まで12時間もないでしょうね。今すぐ行動しないと間に合わない。	NONE
 speaker	Bronya
 emote	60	1
@@ -177,7 +177,7 @@ msg	302350	I see. .......	是么……	そうですか……。	NONE
 speaker	Estherine
 emote	60	1
 emote	54	1
-msg	302351	But the good news is, I've found a way to stabilize the power reactor so it's safe to launch. If you give the order, the Hyperion can launch any day now.	但好消息是，我们找到了如何稳定动力炉的方法，已经保证了出击的安全性，只要你一声令下，休伯利安号现在就可以出发。	でも、いい知らせはね、動力炉を安定させる方法を見つけたから、出撃しても安全は確保できるわよ。#nあなたが命令を下せば、ハイペリオン号は今にでも出撃可能よ。	NONE
+msg	302351	But the good news is that I've found a way to stabilize the generator enough for us to launch. We can take off whenever you give the command.	但好消息是，我们找到了如何稳定动力炉的方法，已经保证了出击的安全性，只要你一声令下，休伯利安号现在就可以出发。	でも、いい知らせはね、動力炉を安定させる方法を見つけたから、出撃しても安全は確保できるわよ。#nあなたが命令を下せば、ハイペリオン号は今にでも出撃可能よ。	NONE
 speaker	Bronya
 emote	60	3
 emote	54	1
@@ -195,8 +195,8 @@ msg	302355	Front rail inspection complete! No obstruction to traffic! Ready to g
 speaker	Estherine
 emote	56	0
 emote	54	1
-msg	302356	Bronya, I'm going to try to take off using the conventional glide method to stabilize the power reactor output. I'll also need a longer run-up to gradually increase the power output and bring the battleship up to takeoff speed.	布洛妮娅，为了保证动力炉的出力稳定，我们打算采用常规滑行的手段进行升空，需要一段较长的助跑来缓慢增加出力从而使战舰达到决断速度。	ブローニャ、動力炉の出力を安定させるために、従来の滑走方式で離陸しようと思うの。#nそれと出力を徐々に高めて戦艦を離陸決心速度に持っていくために、長めの助走が必要になるわね。	NONE
-msg	302357	I estimate that we will need to cover a distance of 20 kilometers. That means we will have to plow through most of the dangerous areas of Changku City. And since we can't use our main gun along the way, you are the only ones we can rely on.	助跑的距离预计需要20公里，也就是说我们得穿过大半个长空市的危险区域才行，而且这个过程中也无法使用主炮，只能靠你们了。	助走の距離は20キロ必要になると見積もっているわ。#nつまり、私たちは長空市の危険エリアのほとんどを突っ切らなくてはいけないってこと。しかも、その途中で主砲は使えないから、あなたたちだけが頼りなの。	NONE
+msg	302356	Bronya, I'm going to try to take off using the conventional glide method to stabilize the power reactor output. I'll also need a longer run-up to gradually increase the power output and bring the battleship up to takeoff speed.	布洛妮娅，为了保证动力炉的出力稳定，我们打算采用常规滑行的手段进行升空，需要一段较长的助跑来缓慢增加出力从而使战舰达到决断速度。	ブローニャ、動力炉の出力を安定させるために、従来の滑走方式で離陸しようと思うの。\nそれと出力を徐々に高めて戦艦を離陸決心速度に持っていくために、長めの助走が必要になるわね。	NONE
+msg	302357	I estimate that we will need to cover a distance of 20 kilometers. That means we will have to plow through most of the dangerous areas of Changku City. And since we can't use our main gun along the way, you are the only ones we can rely on.	助跑的距离预计需要20公里，也就是说我们得穿过大半个长空市的危险区域才行，而且这个过程中也无法使用主炮，只能靠你们了。	助走の距離は20キロ必要になると見積もっているわ。\nつまり、私たちは長空市の危険エリアのほとんどを突っ切らなくてはいけないってこと。しかも、その途中で主砲は使えないから、あなたたちだけが頼りなの。	NONE
 speaker	Bronya
 portraits	60	54
 emote	60	1
@@ -215,7 +215,7 @@ msg	302360	Please.	很好。	お願いします。	NONE
 emote	66	0
 emote	60	3
 msg	302361	Ladies and gentlemen! We have been crawling on the surface of the earth for far too long. Now is the time to look up to the sky!	各位！我们在地上匍匐了太久，也该抬头仰望天空了！	皆さん！我々は地表であまりにも長い間、這いつくばってきました。今こそ、大空を見上げる時です！	NONE
-msg	302362	This is the last battle! O moth that chases fire! Flap your wings high toward the light of hope!	这是最后的战斗了！逐火之蛾！向着希望的光芒展翅高飞！	これが最後の戦いです！#n火を追う蛾よ！希望の光に向かって高く羽ばたくのです！	NONE
+msg	302362	This is the last battle! O moth that chases fire! Flap your wings high toward the light of hope!	这是最后的战斗了！逐火之蛾！向着希望的光芒展翅高飞！	これが最後の戦いです！\n火を追う蛾よ！希望の光に向かって高く羽ばたくのです！	NONE
 portraits	60
 emote	60	3
 msg	302363	The Hyperion, launch--!	休伯利安号出击！	ハイペリオン号、出撃——ッ！	NONE

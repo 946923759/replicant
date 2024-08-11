@@ -22,7 +22,7 @@ msg	302552	Like the Tower of Babel, an endless spiral corridor! Truly spectacula
 speaker	Bronya
 emote	58	7
 emote	60	1
-msg	302553	If Estherine was here, we could have gotten more information from her...... but we don't have time to be analyzing everything right now. We have only one goal now: the top of the tower!	如果伊瑟琳在的话或许能获得更多的情报吧…不过我们也没时间深入调查了，现在的目的只有一个，那就是到达塔顶！	イザーリンがいれば、もっと多くの情報を入手できたかもしれません……ですが、今は細かく調べている時間はありません。#n今の目的はただ1つ、塔の頂上だけです！	NONE
+msg	302553	If Estherine was here, we could have gotten more information from her...... but we don't have time to be analyzing everything right now. We have only one goal now: the top of the tower!	如果伊瑟琳在的话或许能获得更多的情报吧…不过我们也没时间深入调查了，现在的目的只有一个，那就是到达塔顶！	イザーリンがいれば、もっと多くの情報を入手できたかもしれません……ですが、今は細かく調べている時間はありません。\n今の目的はただ1つ、塔の頂上だけです！	NONE
 
 speaker	Theresa
 emote	62	1
@@ -55,7 +55,7 @@ speaker	Bronya
 emote	58	6
 emote	60	1
 msg	302561	...Sorry, I don't seem to hear anything.	…抱歉，我好像没有听到任何声音。	……すみませんが、ブローニャには何も聞こえませんでした。	NONE
-msg	302562	It may be an auditory hallucination. ...... These balls of light are glowing white and suspiciously bright. They may have the power to confuse people's audiovisual perception. ......	或许是幻觉也说不定…这些光球在白色的背景下妖异地闪烁着，很容易混淆人的视听……	幻聴かもしれません……。#nこの光の球たちは白く怪しく光り輝いています。人の視聴覚を混乱させる力があるのかもしれません……。	NONE
+msg	302562	It may be an auditory hallucination. ...... These balls of light are glowing white and suspiciously bright. They may have the power to confuse people's audiovisual perception. ......	或许是幻觉也说不定…这些光球在白色的背景下妖异地闪烁着，很容易混淆人的视听……	幻聴かもしれません……。\nこの光の球たちは白く怪しく光り輝いています。人の視聴覚を混乱させる力があるのかもしれません……。	NONE
 speaker	Kyuushou
 emote	58	7
 emote	60	1
@@ -96,25 +96,25 @@ music	Dispossession - Music Box Version
 msgbox_close
 set_fs	true
 
-msg	302572	[color=#a3f7fc]Mei Senpai ...... If there had been no Honkai in this world, what would you have done? [/color]	[color=#a3f7fc]芽衣…如果这个世界没有崩坏的话你会做什么呢？[/color]	[color=#a3f7fc]芽衣先輩……もし、この世界に崩壊がなかったら、先輩は何をしてた？[/color]	NONE
-msg	302573	[color=#c2b4ff]If there was no Honkai, you can go to ....... [/color]	[color=#c2b4ff]没有崩坏么……[/color]	[color=#c2b4ff]崩壊がなかったら……。[/color]	NONE
-msg	302574	[color=#c2b4ff]I am sure that she would have studied what she wanted, entered the university she wanted to go to, and then built her own family and lived a happy and ordinary life with her loved ones to the end, just like any other girl. [/color]	[color=#c2b4ff]大概会像普通的女孩子一样，学一些自己喜欢的东西，考上自己希望的大学，然后组建自己的家庭，和自己爱着的人走完幸福而又平淡的一生。[/color]	[color=#c2b4ff]きっと、普通の女の子と同じように、自分の好きなことを勉強して、自分の行きたい大学に入って、そして自分の家庭を築いて、自分の愛する人と幸せで平凡な一生を最後まで歩んで行たと思う。[/color]	NONE
+msg	302572	[color=#a3f7fc]Mei Senpai...... If there had been no Honkai in this world, what would you have done? [/color]	[color=#a3f7fc]芽衣…如果这个世界没有崩坏的话你会做什么呢？[/color]	[color=#a3f7fc]芽衣先輩……もし、この世界に崩壊がなかったら、先輩は何をしてた？[/color]	NONE
+msg	302573	[color=#c2b4ff]If there was no honkai...?[/color]	[color=#c2b4ff]没有崩坏么……[/color]	[color=#c2b4ff]崩壊がなかったら……。[/color]	NONE
+msg	302574	[color=#c2b4ff]I'm sure that I would have studied what I wanted, entered the university I wanted to go to, and then built my own family and lived a happy and ordinary life with my loved ones, just like any other girl. [/color]	[color=#c2b4ff]大概会像普通的女孩子一样，学一些自己喜欢的东西，考上自己希望的大学，然后组建自己的家庭，和自己爱着的人走完幸福而又平淡的一生。[/color]	[color=#c2b4ff]きっと、普通の女の子と同じように、自分の好きなことを勉強して、自分の行きたい大学に入って、そして自分の家庭を築いて、自分の愛する人と幸せで平凡な一生を最後まで歩んで行たと思う。[/color]	NONE
 msg	302575	[color=#c2b4ff]Kiana, what about you? [/color]	[color=#c2b4ff]琪亚娜，你呢？[/color]	[color=#c2b4ff]キアナちゃん、あなたは？[/color]	NONE
-msg	302576	[color=#a3f7fc]I'm, you know, ...... with Mei senior, I'm happy with that. [/color]	[color=#a3f7fc]我的话…只要和芽衣在一起，就已经满足了。[/color]	[color=#a3f7fc]私はね……芽衣先輩と一緒なら、それで満足だよ。[/color]	NONE
-msg	302577	[color=#c2b4ff]Mo, don't ...... embarrass me like that anymore ...... Kiana, you have so much more to do, don't you? [/color]	[color=#c2b4ff]真是的…不要说这种令人害羞的话啊……如果是琪亚娜的话一定有更值得追求的东西吧。[/color]	[color=#c2b4ff]も、もう……そんな恥ずかしいこと言わないでよ……キアナちゃんだったら、もっとやりたいことがたくさんあるでしょ？[/color]	NONE
-msg	302578	[color=#a3f7fc]I would have tried to get ...... countless wishes before ...... for sure. [/color]	[color=#a3f7fc]如果是以前的我…的确有成百上千个愿望想去实现……[/color]	[color=#a3f7fc]以前の私だったら……確かに数え切れないほどの望みを叶えようとしてたかもね……。[/color]	NONE
-msg	302579	[color=#a3f7fc]But for now, I just want to go to school with Mei-senpai, eat lunch together under the cherry tree, and spend a leisurely lunch break. [/color]	[color=#a3f7fc]想和芽衣一起在同一个学校上课，一同在樱花树下吃便当，然后懒洋洋地度过整个午休。[/color]	[color=#a3f7fc]でも、今はただ、芽衣先輩と一緒に学校へ通って、一緒に桜の木の下でお弁当を食べて、\nそして、のんびりと昼休みを過ごしたい。[/color]	NONE
-msg	302580	[color=#a3f7fc]I want to go around the world with Mei senior and take a picture of the two of us against a beautiful landscape and keep our image in a cherished album forever. [/color]	[color=#a3f7fc]想和芽衣一起去周游世界，在美丽的风景下合影，把我们的身影永远保存在珍贵的相册里。[/color]	[color=#a3f7fc]芽衣先輩と一緒に世界を回って、美しい景色を背に二人の写真を撮って、\n私たちの姿を大切にアルバムの中に永遠に残しておきたい。[/color]	NONE
-msg	302581	[color=#a3f7fc]I want to build a hut on the beach, watch the tide rise and fall with Mei-senpai, pick up shells on the beach in the ocean breeze together, and sleep under the moonlight while holding each other. [/color]	[color=#a3f7fc]想和芽衣盖一座海边的小木屋，一起看潮起潮落，一起在海风吹拂的沙滩上捡贝壳，然后在月光的拥抱下入眠。[/color]	[color=#a3f7fc]海辺に小屋を建てて、芽衣先輩と一緒に潮の満ち引きを見て、一緒に海風に吹かれながら砂浜で貝殻を拾って、\nそして、月明りの下で抱き合いながら眠りたい。[/color]	NONE
-msg	302582	[color=#a3f7fc]I have many, many more wishes ...... I want to do many, many more ...... [/color]	[color=#a3f7fc]还有好多好多的愿望…好还有好多好多的计划……[/color]	[color=#a3f7fc]もっとたくさんの願いがあるの……もっとたくさん、たくさんしたいことがあるの……。[/color]	NONE
-msg	302583	[color=#a3f7fc]But now it's ....... [/color]	[color=#a3f7fc]但是现在…[/color]	[color=#a3f7fc]でも今は……。[/color]	NONE
-msg	302584	[color=#a3f7fc]I just want to be here with you, quietly. Forever. [/color]	[color=#a3f7fc]我只想这样安静地陪在你的身边，直到永远。[/color]	[color=#a3f7fc]私はただこうして静かに、あなたの傍にいたいだけなの。永遠に。[/color]	NONE
-msg	302585	[color=#a3f7fc]Mei senior ...... hands. [/color]	[color=#a3f7fc]芽衣…请把手给我。[/color]	[color=#a3f7fc]芽衣先輩……手を出して。[/color]	NONE
-msg	302586	[color=#c2b4ff]Yeah. [/color]	[color=#c2b4ff]嗯。[/color]	[color=#c2b4ff]うん。[/color]	NONE
-msg	302587	[color=#a3f7fc]Would you stay with me, if you could, until the time when the end of the world comes? [/color]	[color=#a3f7fc]如果可以的话，你愿意一直陪我直到世界的最后一刻么？[/color]	[color=#a3f7fc]できることなら、世界の最後が訪れるその時まで、私と一緒にいてくれる？[/color]	NONE
-msg	302588	[color=#c2b4ff]Thank you Kiana for ....... [/color]	[color=#c2b4ff]琪亚娜…谢谢你。[/color]	[color=#c2b4ff]キアナちゃん……ありがとう。[/color]	NONE
+msg	302576	[color=#a3f7fc]About me.... I would have been happy with anything as long as it was with Mei-Senpai.[/color]	[color=#a3f7fc]我的话…只要和芽衣在一起，就已经满足了。[/color]	[color=#a3f7fc]私はね……芽衣先輩と一緒なら、それで満足だよ。[/color]	NONE
+msg	302577	[color=#c2b4ff] Really...don't say such embarrassing things...... Surely there's more important things you wanted to achieve?[/color]	[color=#c2b4ff]真是的…不要说这种令人害羞的话啊……如果是琪亚娜的话一定有更值得追求的东西吧。[/color]	[color=#c2b4ff]も、もう……そんな恥ずかしいこと言わないでよ……キアナちゃんだったら、もっとやりたいことがたくさんあるでしょ？[/color]	NONE
+msg	302578	[color=#a3f7fc]If it was the old me...I did have hundreds of wishes I wanted to fulfill ......[/color]	[color=#a3f7fc]如果是以前的我…的确有成百上千个愿望想去实现……[/color]	[color=#a3f7fc]以前の私だったら……確かに数え切れないほどの望みを叶えようとしてたかもね……。[/color]	NONE
+msg	302579	[color=#a3f7fc]I wanted to attend the same school as Mei, eat bento together under the cherry blossom tree, and spend the entire lunch break lazing around. [/color]	[color=#a3f7fc]想和芽衣一起在同一个学校上课，一同在樱花树下吃便当，然后懒洋洋地度过整个午休。[/color]	[color=#a3f7fc]でも、今はただ、芽衣先輩と一緒に学校へ通って、一緒に桜の木の下でお弁当を食べて、\nそして、のんびりと昼休みを過ごしたい。[/color]	NONE
+msg	302580	[color=#a3f7fc]I wanted to go around the world with Mei-senpai and take a picture of the two of us against a beautiful landscape, then keep the photograph in a cherished album forever.[/color]	[color=#a3f7fc]想和芽衣一起去周游世界，在美丽的风景下合影，把我们的身影永远保存在珍贵的相册里。[/color]	[color=#a3f7fc]芽衣先輩と一緒に世界を回って、美しい景色を背に二人の写真を撮って、\n私たちの姿を大切にアルバムの中に永遠に残しておきたい。[/color]	NONE
+msg	302581	[color=#a3f7fc]I wanted to build a hut on the beach, watch the tide rise and fall with Mei-senpai, pick up shells on the beach in the ocean breeze together, and sleep under the moonlight in each others' arms.[/color]	[color=#a3f7fc]想和芽衣盖一座海边的小木屋，一起看潮起潮落，一起在海风吹拂的沙滩上捡贝壳，然后在月光的拥抱下入眠。[/color]	[color=#a3f7fc]海辺に小屋を建てて、芽衣先輩と一緒に潮の満ち引きを見て、一緒に海風に吹かれながら砂浜で貝殻を拾って、\nそして、月明りの下で抱き合いながら眠りたい。[/color]	NONE
+msg	302582	[color=#a3f7fc]I had all these wishes.... And so many more....[/color]	[color=#a3f7fc]还有好多好多的愿望…好还有好多好多的计划……[/color]	[color=#a3f7fc]もっとたくさんの願いがあるの……もっとたくさん、たくさんしたいことがあるの……。[/color]	NONE
+msg	302583	[color=#a3f7fc]But now...[/color]	[color=#a3f7fc]但是现在…[/color]	[color=#a3f7fc]でも今は……。[/color]	NONE
+msg	302584	[color=#a3f7fc]I just want to sit quietly by your side forever.[/color]	[color=#a3f7fc]我只想这样安静地陪在你的身边，直到永远。[/color]	[color=#a3f7fc]私はただこうして静かに、あなたの傍にいたいだけなの。永遠に。[/color]	NONE
+msg	302585	[color=#a3f7fc] Mei... Please give me your hand. [/color]	[color=#a3f7fc]芽衣…请把手给我。[/color]	[color=#a3f7fc]芽衣先輩……手を出して。[/color]	NONE
+msg	302586	[color=#c2b4ff]Alright.[/color]	[color=#c2b4ff]嗯。[/color]	[color=#c2b4ff]うん。[/color]	NONE
+msg	302587	[color=#a3f7fc]Would you stay with me until the end of the world if you could? [/color]	[color=#a3f7fc]如果可以的话，你愿意一直陪我直到世界的最后一刻么？[/color]	[color=#a3f7fc]できることなら、世界の最後が訪れるその時まで、私と一緒にいてくれる？[/color]	NONE
+msg	302588	[color=#c2b4ff]Kiana...thank you. [/color]	[color=#c2b4ff]琪亚娜…谢谢你。[/color]	[color=#c2b4ff]キアナちゃん……ありがとう。[/color]	NONE
 msg	302589	[color=#c2b4ff]Thank you for loving me so much. For protecting me so much.[/color]	[color=#c2b4ff]谢谢你能如此的爱惜我…如此的保护我……[/color]	[color=#c2b4ff]こんなに私のことを大切にしてくれて……こんなにも私のことを守ってくれてありがとう……。[/color]	NONE
-msg	302590	[color=#c2b4ff]But both of us, no, we all, we all understand.[/color]	[color=#c2b4ff]但是，我们都明白……[/color]	[color=#c2b4ff]でも、私たちには分かっている……。[/color]	NONE
+msg	302590	[color=#c2b4ff]But, both of us understand...[/color]	[color=#c2b4ff]但是，我们都明白……[/color]	[color=#c2b4ff]でも、私たちには分かっている……。[/color]	NONE
 msg	302591	[color=#c2b4ff]That this is a long-cherished wish that simply cannot be fulfilled.[/color]	[color=#c2b4ff]这已经是无法实现的夙愿了。[/color]	[color=#c2b4ff]それはもう、叶えられない望みなんだってこと。[/color]	NONE
 msg	302592	[color=#c2b4ff]Because... Because all of it... Has been destroyed by your hands.[/color]	[color=#c2b4ff]因为…因为所有的一切…都已经被你亲手毁灭……[/color]	[color=#c2b4ff]なぜなら……なぜなら全てのものは……あなたの手によって破壊されてしまったから……。[/color]	NONE
 msg	302593	[color=#c2b4ff]Every promise has been turned into ash... And we can never go back.[/color]	[color=#c2b4ff]所有的约定也已经灰飞烟灭…再也无法回到最初的样子了。[/color]	[color=#c2b4ff]約束も全て、灰燼に帰してしまった……。\nもう最初の頃のようには戻れないの。[/color]	NONE
@@ -124,21 +124,21 @@ msg	302595	[color=#c2b4ff]It's time for us to say our farewells...[/color]	[colo
 nop	(Empty message)
 bg	CG10186
 nop	(Empty message)
-msg	302596	[color=#a3f7fc]....... [/color]	[color=#a3f7fc]……[/color]	[color=#a3f7fc]……。[/color]	NONE
-msg	302597	[color=#a3f7fc]I understand. [/color]	[color=#a3f7fc]我明白。[/color]	[color=#a3f7fc]分かってる。[/color]	NONE
+msg	302596	[color=#a3f7fc].......[/color]	[color=#a3f7fc]……[/color]	[color=#a3f7fc]……。[/color]	NONE
+msg	302597	[color=#a3f7fc]I understand.[/color]	[color=#a3f7fc]我明白。[/color]	[color=#a3f7fc]分かってる。[/color]	NONE
 msg	302598	[color=#a3f7fc]In fact, I understand it better than anyone.[/color]	[color=#a3f7fc]其实应该比谁都更加清楚……[/color]	[color=#a3f7fc]実はね、誰よりもはっきりと理解しているの……。[/color]	NONE
 msg	302599	[color=#a3f7fc]This is the mistake I made...... I've destroyed our future with my own hands. [/color]	[color=#a3f7fc]这是我所犯下的错误…是我亲手毁灭了我们的未来。[/color]	[color=#a3f7fc]これは私の犯した過ち……私がこの手で、私たちの未来を滅ぼしてしまった。[/color]	NONE
 msg	302600	[color=#a3f7fc]Such an ending is the best punishment for me. [/color]	[color=#a3f7fc]这样的结局就是最好的惩罚。[/color]	[color=#a3f7fc]このような結末こそが最高の罰なのよね。[/color]	NONE
 msg	302601	[color=#a3f7fc]Alone in a world without you. Even death is too kind for me.[/color]	[color=#a3f7fc]在没有你的世界中独自一人…就连死亡都无法选择。[/color]	[color=#a3f7fc]あなたのいない世界で一人ぼっち……死ぬことすらできないなんて。[/color]	NONE
-msg	302602	[color=#a3f7fc]Hey ....... [/color]	[color=#a3f7fc]呐……[/color]	[color=#a3f7fc]ねえ……。[/color]	NONE
-msg	302603	[color=#a3f7fc]Can you hear it? [/color]	[color=#a3f7fc]你可以听得到么？[/color]	[color=#a3f7fc]聞こえる？[/color]	NONE
+msg	302602	[color=#a3f7fc]Hey......[/color]	[color=#a3f7fc]呐……[/color]	[color=#a3f7fc]ねえ……。[/color]	NONE
+msg	302603	[color=#a3f7fc]Can you hear it?[/color]	[color=#a3f7fc]你可以听得到么？[/color]	[color=#a3f7fc]聞こえる？[/color]	NONE
 msg	302604	[color=#a3f7fc]The screams of the dead...... [/color]	[color=#a3f7fc]那些来自逝者的悲鸣……[/color]	[color=#a3f7fc]あの死者の悲鳴が……。[/color]	NONE
-msg	302605	[color=#a3f7fc]Can[/color] [color=#cc66ff]you,[/color] [color=#a3f7fc]the savior, bring me to salvation? [/color]	[color=#a3f7fc]身为救世主的你，可以让我得到救赎么？[/color]	[color=#a3f7fc]救世主であるあなたに、私を救うことできる？[/color]	NONE
+msg	302605	[color=#a3f7fc]Can [/color] [color=#cc66ff]you,[/color] [color=#a3f7fc] the 'savior', bring me to salvation?[/color]	[color=#a3f7fc]身为救世主的你，可以让我得到救赎么？[/color]	[color=#a3f7fc]救世主であるあなたに、私を救うことできる？[/color]	NONE
 se	DLC_CH01_EV12_RadioReceive
 msg	302606	Kzzzzt.... Kzzzzt....	呲拉…呲拉……	ザッ……ザザッ……。	NONE
-msg	302607	[color=#a3f7fc]Please tell me ......[/color]	[color=#a3f7fc]请你告诉我……[/color]	[color=#a3f7fc]教えて……。[/color]	NONE
+msg	302607	[color=#a3f7fc]Please tell me......[/color]	[color=#a3f7fc]请你告诉我……[/color]	[color=#a3f7fc]教えて……。[/color]	NONE
 msg	302608	[color=#a3f7fc]Houraiji──[/color]	[color=#a3f7fc]蓬莱寺……[/color]	[color=#a3f7fc]蓬莱寺──[/color]	NONE
-msg	302609	[color=#a3f7fc]Kyuushou ....... [/color]	[color=#a3f7fc]九霄……[/color]	[color=#a3f7fc]九霄……。[/color]	NONE
+msg	302609	[color=#a3f7fc]Kyuushou....... [/color]	[color=#a3f7fc]九霄……[/color]	[color=#a3f7fc]九霄……。[/color]	NONE
 
 se	DLC_CH01_EV12_RadioReceive
 stopmusic
@@ -153,7 +153,7 @@ msgbox_open
 /Bronya	302611	Kyuushou! Kyuushou!	九霄！九霄！	九霄！九霄ッ！	NONE
 
 emote	58	3
-/Kyuushou	302612	Ugh ......!	呃！	うぐッ……！	NONE
+/Kyuushou	302612	Ugh.....!	呃！	うぐッ……！	NONE
 
 emote	58	3
 emote	60	5
@@ -165,19 +165,19 @@ emote	60	5
 
 emote	58	6
 emote	62	1
-/Theresa	302615	Not at all. ...... Suddenly he just stood up and stopped moving. I was so surprised.	真是的…你忽然就站着不动了，差点吓死我了。	まったく……突然立ったまま動かなくなるんだから。ビックリしたわよ。	NONE
-msg	302616	Kyuushou, we still don't know everything about this place. I suggest you stay out of this place as much as possible. You shouldn't cause unnecessary problems now.	九霄，现在情报还不充足，尽量还是不要触碰这里的东西比较好，我们现在最好不要节外生枝。	九霄、まだここの全てを把握できたわけじゃないわ。できるだけ、ここの物には触らない方がいいわよ。\n今は不必要な問題を起こすべきではないからね。	NONE
+/Theresa	302615	Geez... You nearly scared me to death when you suddenly just stopped moving.	真是的…你忽然就站着不动了，差点吓死我了。	まったく……突然立ったまま動かなくなるんだから。ビックリしたわよ。	NONE
+msg	302616	Kyuushou, we don't know a lot about this place. It's better not to touch anything. We wouldn't want any additional setbacks when we've come this far already.	九霄，现在情报还不充足，尽量还是不要触碰这里的东西比较好，我们现在最好不要节外生枝。	九霄、まだここの全てを把握できたわけじゃないわ。できるだけ、ここの物には触らない方がいいわよ。\n今は不必要な問題を起こすべきではないからね。	NONE
 
 speaker	Kyuushou
 emote	58	6
 emote	62	1
-msg	302617	Oh, oh ...... sorry.	呜…抱歉。	あ、ああ……ごめん。	NONE
+msg	302617	Oh.... Sorry.	呜…抱歉。	あ、ああ……ごめん。	NONE
 
 /	302618	Why ...... why are you abandoning me? ......	为什么…为什么要抛下我……	どうして……どうして私を見捨てるの……。	NONE
 msg	302619	I hate ...... I don't want to die .......	不要…我还不想死……	嫌……私は死にたくない……。	NONE
 msg	302620	No ...... hope anymore ...... no more .......	不行了…已经…没有希望了……	ダメ……もう……希望がない……。	NONE
 
-/Kyuushou	302621	Ah, duh! This voice is from ......!	呃！这些声音是……	あ、くっ！この声は……！	NONE
+/Kyuushou	302621	Ugh! These voices....!	呃！这些声音是……	あ、くっ！この声は……！	NONE
 
 emote	58	6
 emote	60	1

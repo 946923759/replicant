@@ -46,6 +46,8 @@ func setNumParts(partDestinations_:Array):
 			button.visible=false
 	if length <= 2:
 		desc.rect_size.x = 512
+	else:
+		desc.rect_size.x = 312
 
 func getNumParts()->int:
 	var n = 0

@@ -1,0 +1,252 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Portraits/theresa/415.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Backgrounds/015/026_1280x720.png" type="Texture" id=4]
+[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScrollItem.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=6]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.gd" type="Script" id=7]
+[ext_resource path="res://Music/CDAudio/re/1-01 - FINAL FANTASY XIII-2 Overture.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Portraits/kyujou/121.png" type="Texture" id=9]
+[ext_resource path="res://Shaders/Gradient.gdshader" type="Shader" id=10]
+[ext_resource path="res://Portraits/kiana/112.png" type="Texture" id=11]
+[ext_resource path="res://Portraits/mei/216.png" type="Texture" id=12]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/test.png" type="Texture" id=13]
+[ext_resource path="res://Portraits/himeko/401.png" type="Texture" id=14]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/logo.png" type="Texture" id=15]
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 1, 0.486275, 0.858824, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0.639216, 0, 1, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0.952941, 0.517647, 1, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 1, 0, 0, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0, 0.811765, 1, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 0.321569, 0.745098, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.899295, 0.321569, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 64
+extra_spacing_bottom = 5
+font_data = ExtResource( 3 )
+
+[node name="RR-ScreenTitleMenu" instance=ExtResource( 1 )]
+script = ExtResource( 7 )
+PrevScreen = "ScreenSelectEra"
+HandleRightClickAsB = true
+startingMenu = "ItemScroller_MainMenu"
+
+[node name="ColorRect" type="ColorRect" parent="." index="1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="." index="2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+stretch_mode = 7
+
+[node name="BackButton" parent="." index="3"]
+visible = false
+
+[node name="Control" type="Control" parent="." index="4"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1573.0
+margin_top = -540.0
+margin_right = 7.0
+margin_bottom = 540.0
+
+[node name="Theresa" type="TextureRect" parent="Control" index="0"]
+material = SubResource( 5 )
+anchor_right = 0.756
+anchor_bottom = 1.0
+margin_left = 768.0
+margin_top = 28.0
+margin_right = 340.48
+margin_bottom = -28.0
+texture = ExtResource( 2 )
+
+[node name="Mei" type="TextureRect" parent="Control" index="1"]
+material = SubResource( 6 )
+anchor_right = 0.753
+anchor_bottom = 1.0
+margin_left = 256.0
+margin_top = 28.0
+margin_right = -165.76
+margin_bottom = -28.0
+texture = ExtResource( 12 )
+
+[node name="Kyuushou" type="TextureRect" parent="Control" index="2"]
+material = SubResource( 4 )
+anchor_right = 0.74
+anchor_bottom = 1.0
+margin_left = 512.0
+margin_top = 28.0
+margin_right = 115.2
+margin_bottom = -28.0
+texture = ExtResource( 9 )
+
+[node name="Himeko" type="TextureRect" parent="Control" index="3"]
+material = SubResource( 7 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -256.0
+margin_top = 28.0
+margin_right = -1152.0
+margin_bottom = -28.0
+texture = ExtResource( 14 )
+stretch_mode = 6
+
+[node name="Kiana" type="TextureRect" parent="Control" index="4"]
+material = SubResource( 8 )
+anchor_right = 0.741
+anchor_bottom = 1.0
+margin_top = 28.0
+margin_right = -398.72
+margin_bottom = -28.0
+texture = ExtResource( 11 )
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="5"]
+position = Vector2( 960, 1100 )
+lifetime = 5.0
+emission_shape = 2
+emission_rect_extents = Vector2( 960, 0 )
+direction = Vector2( 1, -155 )
+gravity = Vector2( 18, -50 )
+radial_accel = 6.21
+tangential_accel = 21.12
+scale_amount = 19.63
+color = Color( 0.372549, 0.807843, 1, 0.780392 )
+color_ramp = SubResource( 2 )
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="6"]
+position = Vector2( 960, 1100 )
+lifetime = 5.0
+emission_shape = 2
+emission_rect_extents = Vector2( 960, 0 )
+direction = Vector2( 1, -155 )
+gravity = Vector2( 18, -50 )
+radial_accel = 6.21
+tangential_accel = 21.12
+scale_amount = 25.0
+color = Color( 0.835294, 0.372549, 1, 0.780392 )
+color_ramp = SubResource( 1 )
+
+[node name="Logo" type="TextureRect" parent="." index="7"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -1580.0
+margin_top = 160.0
+margin_bottom = 445.0
+texture = ExtResource( 15 )
+stretch_mode = 4
+
+[node name="ItemScroller_MainMenu" type="Node2D" parent="." index="8"]
+position = Vector2( 1920, 540 )
+script = ExtResource( 6 )
+
+[node name="Tween" type="Tween" parent="ItemScroller_MainMenu" index="0"]
+
+[node name="ScrollItem" parent="ItemScroller_MainMenu" index="1" instance=ExtResource( 5 )]
+position = Vector2( -462.455, -491.639 )
+text = "Read Story"
+destinationScreenOrSubmenu = "RE-ScreenSelectChapter"
+
+[node name="ScrollItem2" parent="ItemScroller_MainMenu" index="2" instance=ExtResource( 5 )]
+position = Vector2( -460.21, -307.555 )
+text = "Gallery"
+
+[node name="ScrollItem3" parent="ItemScroller_MainMenu" index="3" instance=ExtResource( 5 )]
+position = Vector2( -454.42, -75.7965 )
+text = "Music"
+
+[node name="ScrollItem4" parent="ItemScroller_MainMenu" index="4" instance=ExtResource( 5 )]
+position = Vector2( -456.053, 171.414 )
+text = "Options"
+
+[node name="ScrollItem5" parent="ItemScroller_MainMenu" index="5" instance=ExtResource( 5 )]
+position = Vector2( -455.302, 379.292 )
+text = "Back"
+destinationScreenOrSubmenu = "ScreenSelectEra"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="11"]
+stream = ExtResource( 8 )
+autoplay = true
+
+[node name="TextureRect2" type="TextureRect" parent="." index="12"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -142.5
+margin_right = 444.0
+margin_bottom = -47.5
+texture = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="TextureRect2" index="0"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 8.0
+margin_top = -51.5
+margin_right = 432.0
+margin_bottom = 51.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 9 )
+text = "Read Story"
+valign = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." index="13"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 2.0
+margin_top = 35.0
+margin_right = 446.0
+margin_bottom = 130.0
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="TextureRect3" index="0"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 8.0
+margin_top = -51.5
+margin_right = 432.0
+margin_bottom = 51.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 9 )
+text = "Gallery"
+valign = 1
+
+[connection signal="input_accepted" from="ItemScroller_MainMenu" to="." method="ItemScrollerNewScreen"]

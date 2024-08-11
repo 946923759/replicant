@@ -1,43 +1,4 @@
-extends Control
-
-#This is not used, destinations are set in the scrollItem
-var MAINMENU = [
-	{
-		'name':"Read",
-		'submenu':true,
-		'screen':"ScreenSelectChapter"
-	},
-	{
-		'name':"Gallery",
-		'screen':"ScreenGallery"
-	},
-	{
-		'name':"Music",
-		"screen":"ScreenSoundTest"
-	},
-	{
-		"name":'Options'
-	},
-	{
-		"name":"Quit",
-		"screen":"Quit"
-	}
-]
-
-var SUBMENU_READ = [
-	{
-		'name':"Main Story",
-		'screen':"RR-ScreenSelectChapter"
-	},
-	{
-		'name':"World Boss",
-		'screen':"RR-WorldBossSelectChapter"
-	},
-	{
-		'name':"LOCKED ITEM PLACEHOLDER",
-		'locked':true
-	}
-]
+extends "res://Screens/ScreenWithMenuElements.gd"
 
 export (String) var startingMenu = "ItemScroller_MainMenu"
 var curMenuActor:Node
@@ -67,5 +28,5 @@ func _notification(what):
 
 func ItemScrollerNewScreen(selectionNum, destinationName):
 	if destinationName!="":
-		$smScreenInOut.OffCommand(destinationName)
+		OffCommandNextScreen(destinationName)
 

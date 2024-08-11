@@ -26,6 +26,7 @@ font_data = ExtResource( 6 )
 [node name="ScreenSoundTestV2" instance=ExtResource( 10 )]
 script = ExtResource( 11 )
 PrevScreen = "ScreenTitleMenu"
+HandleRightClickAsB = true
 
 [node name="smSprite" type="TextureRect" parent="." index="0"]
 modulate = Color( 0.733333, 0.733333, 0.733333, 1 )

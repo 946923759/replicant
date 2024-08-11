@@ -48,7 +48,7 @@ se	DLC_CH01_EV24_RadioSignals
 
 emote	54	3
 emote	60	3
-/Bronya	302536	It's a transmission from Estherine! This is Bronya! Estherine! Do you read me? Bronya and her team are inside the tower! What's your status?	是伊瑟琳的通讯！喂！伊瑟琳！听得到么！我们进入塔的内部了！你们那边情况怎么样！	イザーリンからの通信です！#nこちらブローニャ！イザーリン！聞こえますか！ブローニャたちは塔の内部に入りました！そちらの状況はどうですか！	NONE
+/Bronya	302536	It's a transmission from Estherine! This is Bronya! Estherine! Do you read me? Bronya and her team are inside the tower! What's your status?	是伊瑟琳的通讯！喂！伊瑟琳！听得到么！我们进入塔的内部了！你们那边情况怎么样！	イザーリンからの通信です！\nこちらブローニャ！イザーリン！聞こえますか！ブローニャたちは塔の内部に入りました！そちらの状況はどうですか！	NONE
 
 speaker	Estherine
 emote	54	3
@@ -79,7 +79,7 @@ msg	302543	Zaaa...... time already ...... zaaaaa--	呲啦…时间已经……�
 speaker	Bronya
 emote	54	6
 emote	60	5
-msg	302544	Estherine? Come in! Damn.... The communication was cut off.	伊瑟琳？喂！啧…通讯中断了！	イザーリン？どうしたのですか！#nそんな……通信が途切れてしまいました。	NONE
+msg	302544	Estherine? Come in! Damn.... The communication was cut off.	伊瑟琳？喂！啧…通讯中断了！	イザーリン？どうしたのですか！\nそんな……通信が途切れてしまいました。	NONE
 
 portraits	58	60	62
 emote	62	1
@@ -94,7 +94,7 @@ msg	302546	Kk...... no way, we have to abandon these girls again?	可恶…难�
 speaker	Kyuushou
 emote	58	1
 emote	60	5
-msg	302547	Bronya, creating a miracle always has a price. The best way to pay it back is to carry on their will and move on!	布洛妮娅，奇迹的背后总会付出代价，我们现在只有肩负起她们的意志继续前进才是对她们最好的回应！	ブローニャ、奇跡の影に代償はつきものだ。#n彼女たちの意志を引き継いで前に進むことが、彼女たちにとって最高の見返りだと思う！	NONE
+msg	302547	Bronya, creating a miracle always has a price. The best way to pay it back is to carry on their will and move on!	布洛妮娅，奇迹的背后总会付出代价，我们现在只有肩负起她们的意志继续前进才是对她们最好的回应！	ブローニャ、奇跡の影に代償はつきものだ。\n彼女たちの意志を引き継いで前に進むことが、彼女たちにとって最高の見返りだと思う！	NONE
 
 speaker	Bronya
 emote	58	1

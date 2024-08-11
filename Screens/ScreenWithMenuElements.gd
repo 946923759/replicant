@@ -3,6 +3,7 @@ extends Control
 export (String) var PrevScreen
 export (String) var NextScreen
 export (bool) var HandlePhysicalBButton=true
+export (bool) var HandleRightClickAsB=false
 export (bool) var HandlePhysicalAButton=false
 export (bool) var ThisScreenIsAnOverlay=false
 #export (bool) var ShowBackButton=true
@@ -13,6 +14,7 @@ onready var debugOverlay = $CanvasLayer/smQuad/VBoxContainer
 
 func _ready():
 	$CanvasLayer/smQuad.visible=false
+	$CanvasLayer/Watermark.visible = OS.is_debug_build() and $CanvasLayer/Watermark.visible
 	$smScreenInOut.visible=(!ThisScreenIsAnOverlay)
 	if !backButton.visible:
 		backButton.mouse_filter=Control.MOUSE_FILTER_IGNORE
@@ -47,6 +49,9 @@ func _input(_event):
 	#	return
 	
 	if Input.is_action_just_pressed("ui_cancel") and HandlePhysicalBButton:
+		$BackSound.play()
+		OffCommandPrevScreen()
+	elif HandleRightClickAsB and _event is InputEventMouseButton and _event.button_index == BUTTON_RIGHT and _event.pressed:
 		$BackSound.play()
 		OffCommandPrevScreen()
 	elif (Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause")) and HandlePhysicalAButton:
@@ -85,10 +90,12 @@ func OffCommandNextScreen(ns:String=NextScreen)->bool:
 	if ThisScreenIsAnOverlay:
 		OffCommandOverlay()
 	elif ns != "":
-		fadeOut.OffCommand(ns)
+		print("Tweening out, dest is "+ns)
+		fadeOut.OffCommand(ns, self.name)
 		return true
 	
 	else:
+		ReportScriptError("NextScreen for "+self.name+" is not defined.")
 		printerr("NextScreen for "+self.name+" is not defined.")
 	return false
 
@@ -96,9 +103,10 @@ func OffCommandPrevScreen()->bool:
 	if ThisScreenIsAnOverlay:
 		OffCommandOverlay()
 	elif PrevScreen != "":
-		fadeOut.OffCommand(PrevScreen)
+		fadeOut.OffCommand(PrevScreen, self.name)
 		return true
 	else:
+		ReportScriptError("PrevScreen for "+self.name+" is not defined.")
 		printerr("PrevScreen for "+self.name+" is not defined.")
 	return false
 

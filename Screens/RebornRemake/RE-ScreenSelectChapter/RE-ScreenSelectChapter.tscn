@@ -15,7 +15,7 @@
 [ext_resource path="res://Ext/RetroRemake/mapimages/107.png" type="Texture" id=13]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/128.png" type="Texture" id=14]
 [ext_resource path="res://Ext/RetroRemake/mapimages/127.png" type="Texture" id=15]
-[ext_resource path="res://Screens/RetroRemake/RE-StageSelectObj.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-StageSelectObj.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/132.png" type="Texture" id=17]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/131.png" type="Texture" id=18]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/138.png" type="Texture" id=19]
@@ -33,13 +33,14 @@
 [ext_resource path="res://Ext/RetroRemake/mapicons/002.png" type="Texture" id=31]
 [ext_resource path="res://Ext/back1.png" type="Texture" id=32]
 [ext_resource path="res://Graphics/Common Arrow.png" type="Texture" id=33]
-[ext_resource path="res://Screens/RetroRemake/RE-ScreenSelectChapter.gd" type="Script" id=34]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-ScreenSelectChapter.gd" type="Script" id=34]
 
 [node name="RE-ScreenSelectChapter" instance=ExtResource( 1 )]
 script = ExtResource( 34 )
+PrevScreen = "RE-ScreenTitleMenu"
 HandlePhysicalBButton = false
 
-[node name="ActorFrame_AreaSelect" type="Control" parent="." index="3"]
+[node name="ActorFrame_AreaSelect" type="Control" parent="." index="1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -214,7 +215,7 @@ margin_bottom = 628.0
 rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 21 )
 
-[node name="ActorFrame_PartSelect" type="Control" parent="." index="4"]
+[node name="ActorFrame_PartSelect" type="Control" parent="." index="2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1920.0
@@ -299,7 +300,7 @@ margin_bottom = 644.0
 icon = ExtResource( 31 )
 label = "R1-5"
 
-[node name="Label" type="Label" parent="." index="5"]
+[node name="Label" type="Label" parent="." index="3"]
 margin_right = 363.0
 margin_bottom = 75.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -309,7 +310,7 @@ custom_constants/shadow_as_outline = 2
 custom_fonts/font = ExtResource( 2 )
 text = "Position: 1"
 
-[node name="Label2" type="Label" parent="." index="6"]
+[node name="Label2" type="Label" parent="." index="4"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -328,13 +329,15 @@ Fight for the next world!!"
 valign = 2
 autowrap = true
 
-[node name="BackButton" type="TextureButton" parent="." index="7"]
+[node name="BackButton" type="TextureButton" parent="." index="5"]
+visible = false
 margin_right = 215.0
 margin_bottom = 49.0
 rect_scale = Vector2( 2, 2 )
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 32 )
 
-[node name="ArrowRight" type="TextureRect" parent="." index="8"]
+[node name="ArrowRight" type="TextureRect" parent="." index="6"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -350,7 +353,7 @@ mouse_default_cursor_shape = 2
 texture = ExtResource( 33 )
 stretch_mode = 6
 
-[node name="ArrowLeft" type="TextureRect" parent="." index="9"]
+[node name="ArrowLeft" type="TextureRect" parent="." index="7"]
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -103.0
@@ -363,7 +366,7 @@ mouse_default_cursor_shape = 2
 texture = ExtResource( 33 )
 stretch_mode = 6
 
-[node name="Tween" type="Tween" parent="." index="10"]
+[node name="Tween" type="Tween" parent="." index="8"]
 
 [connection signal="gui_input" from="ArrowRight" to="." method="_on_ArrowRight_gui_input"]
 [connection signal="gui_input" from="ArrowLeft" to="." method="_on_ArrowLeft_gui_input"]

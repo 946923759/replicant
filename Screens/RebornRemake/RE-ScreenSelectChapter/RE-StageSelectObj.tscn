@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Ext/RetroRemake/LvSelObj_Border.png" type="Texture" id=2]
 [ext_resource path="res://Ext/RetroRemake/mapicons/000.png" type="Texture" id=3]
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-StageSelectObj.gd" type="Script" id=4]
+[ext_resource path="res://Ext/RetroRemake/LvSelObj_Incomplete.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
@@ -35,7 +36,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Border" type="TextureRect" parent="."]
+[node name="Border_Complete" type="TextureRect" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -46,13 +48,28 @@ margin_right = 59.0
 margin_bottom = 82.5
 texture = ExtResource( 2 )
 
+[node name="Border_Incomplete" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -59.0
+margin_top = -67.5
+margin_right = 59.0
+margin_bottom = 97.5
+texture = ExtResource( 5 )
+stretch_mode = 4
+
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-margin_left = -185.0
-margin_top = -35.0
-margin_right = 186.0
-margin_bottom = 112.0
+anchor_bottom = 0.5
+margin_left = -90.625
+margin_top = -82.5
+margin_right = 280.375
+margin_bottom = 64.5
+rect_scale = Vector2( 0.5, 0.5 )
 custom_colors/font_color = Color( 1, 0.694118, 0.00784314, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2

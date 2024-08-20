@@ -1,6 +1,15 @@
 extends Control
 
 export (String) var PrevScreen = "ScreenSelectChapter"
+#export (String) var saveDataKey = "completedChapters"
+
+onready var saveDataKeys = [
+	"NO_SAVE",
+	"completedChapters",
+	"completedRetro",
+	"completedReborn"
+]
+export (int,"NO SAVING","Fire Moth","Retrospective","Reborn") var saveCategory = 1
 var cutsceneData:Dictionary
 
 const Def = preload("res://stepmania-compat/StepManiaActors.gd")
@@ -169,8 +178,44 @@ func _on_CutscenePlayer_cutscene_finished():
 #	pass # Replace with function body.
 
 func end_cutscene_2():
+	var needToSave:bool=false
 	
-	var tmp = Globals.get_next_cutscene(Globals.currentEpisodeData,Globals.nextCutscene)
+	var backgrounds:Control = $CutscenePlayer.backgrounds
+	for c in backgrounds.get_children():
+		var f = c.get_meta("file_name")
+		if f and !(f in Globals.playerData['CGunlock']):
+			print_debug("[CutsceneFromFile Save] Unlocked CG "+f)
+			Globals.playerData['CGunlock'].append(f)
+			needToSave=true
+	
+	var saveDataKey:String = saveDataKeys[saveCategory]
+	var currentDatabase:Dictionary = Globals.chapterDatabase
+	if saveCategory==2:
+		currentDatabase=Globals.chapterDatabase_RR
+	elif saveCategory==3:
+		currentDatabase=Globals.chapterDatabase_RE
+	
+	if saveCategory > 0 and Globals.currentEpisodeData:
+		var save_idx = Globals.get_episode_index(currentDatabase, Globals.currentEpisodeData)
+		var ch_idx = save_idx[0]
+		var ep_idx = save_idx[1]
+		if ch_idx >= 0 and ep_idx >= 0:
+			#Resize completed chapters array
+			while Globals.playerData[saveDataKey].size() < ch_idx:
+				Globals.playerData[saveDataKey].append(0)
+			
+			var bit = Globals.playerData[saveDataKey][ch_idx]
+			if (bit & 1<<ep_idx) == 0:
+				needToSave=true
+			Globals.playerData[saveDataKey][ch_idx] |= 1<<ep_idx
+			
+	
+	if needToSave:
+		#print("[CutsceneFromFile Save] Saved complete state to "+saveDataKey)
+		#print(Globals.playerData[saveDataKey])
+		Globals.save_system_data()
+	
+	var tmp = Globals.get_next_cutscene(currentDatabase, Globals.currentEpisodeData,Globals.nextCutscene)
 	var nextPart = tmp[0]
 	var nextEpisode = tmp[1]
 	

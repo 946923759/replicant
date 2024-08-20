@@ -71,7 +71,7 @@ func getPartActorFrame():
 
 func buttonTrigger(b:int):
 	click.play()
-	if b > partDestinations.size()-1:
+	if b > partDestinations.size()-1 or b < 0:
 		printerr("Pressed a button that shouldn't be pressable")
 		return
 	print(String(b)+" was pressed! Destination is "+partDestinations[b])

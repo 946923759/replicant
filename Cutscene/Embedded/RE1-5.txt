@@ -1,0 +1,35 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+bg	CG10258	instant
+portraits	101	122
+emote	101	0
+speaker	Kiana
+msg	251654	This is Kiana, come in! Come in!	这里是琪亚娜，收到请回答！收到请回答！	こちらキアナ、応答せよ！応答せよ！	NONE
+msg	251655	Bzzt... bzzzzt... bzzzzt...	呲啦呲啦……	ザ……ザザ……ザザ……。	NONE
+speaker	Kiana
+emote	101	0
+msg	251656	Of course... The thunderclouds are interrupting communications...	啧！果然是因为那个雷暴云的关系么，连通讯都中断了……	やっぱり……あの雷雲のせいで通信が繋がらない……。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251657	As long as our hearts are connected, there's no problem! Humans rely too much on machines!	只要我们的心灵彼此相连就够了，就是因为太过依赖机器，所以现在的人类才会变得冷漠啊~	我らの心さえ繋がっていれば問題ない！人間は機械に頼りすぎなのだ！	NONE
+speaker	Kiana
+emote	101	1
+emote	122	0
+msg	251658	I wonder if it's really okay. Now I'm starting to regret this a little...	哎…真是后悔刚才的决定了。	本当に大丈夫かな。今になってちょっと後悔してきた……。	NONE
+speaker	Houraiji Kyuushou
+emote	101	1
+emote	122	0
+msg	251659	Do not worry! I swear that my power will lead us to a glorious victory!	不用担心，我会把你引导向充满荣光的胜利的！	心配無用だ！我が力をもって栄光たる勝利へと導くことを約束しよう！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251660	……	……	……。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251661	Don't look at me like that! Let's distract ourselves with some good thoughts! Come on, why don't we go for a run to the horizon while we're here?	不要露出这种表情啦！人要学着乐观~走吧，朝着地平线的彼岸进发！	そんな顔するな！良いことでも考えて気を紛らわそう！ほらっ、ついでに地平線の彼方まで走ってみてはどうだ？	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251662	Ahh... I wanna go home already...	啊…好想回家啊……	あぁ……早く帰りたい……。	NONE

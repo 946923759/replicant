@@ -19,7 +19,7 @@ func _ready():
 		var f = choiceFrame.get_child(i)
 		f.connect("mouse_entered",self,"handle_mouse",[i])
 		f.connect("mouse_exited",self,"handle_mouse",[-1])
-		f.connect("gui_input",self,"onClickWrapper")
+		f.connect("gui_input",self,"onClickWrapper",[i])
 	
 	setChoices(["Hello","World",'Choice 3'])
 	OnCommand()
@@ -121,6 +121,8 @@ func handle_mouse(selection_:int):
 	selection=selection_
 	update_selections()
 
-func onClickWrapper(event:InputEvent):
+func onClickWrapper(event:InputEvent,selection_:int=-1):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
+		print("choice clicked, setting selection to "+String(selection))
+		selection=selection_
 		input_accept()

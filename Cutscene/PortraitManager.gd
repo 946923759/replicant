@@ -3,9 +3,11 @@ signal portrait_positions_updated
 
 const POOL_SIZE = 8
 var SCREEN_CENTER: Vector2
-var spacing = 400	# 200 px
-var tween: Tween
+#var spacing = 400	# 200 px
+export(int,200,600,50) var spacing = 400
+export(float,1.0,3.0,.1) var zoom_level = 1.0 setget set_zoom_level_realtime
 
+var tween: Tween
 #TODO: Shouldn't be necessary when cache is implemented, cache.size() will return
 #the size of active portraits
 var numPortraits:int=0
@@ -212,6 +214,7 @@ func size():
 
 const vnPortraithandler = preload("res://Cutscene/VNPortraitHandler.gd")
 func _ready():
+	print("[PORTRAITMAN] Init!")
 	SCREEN_CENTER = Vector2(self.rect_pivot_offset.x, self.rect_pivot_offset.y)
 	
 	
@@ -223,6 +226,13 @@ func _ready():
 		portraits.append(p)
 		add_child(p)
 	connect("resized",self,"update_positions")
-	
+	set_zoom_level_realtime(zoom_level)
 	tween = Tween.new()
 	add_child(tween)
+
+func set_zoom_level_realtime(z:float):
+	#print("[PORTRAITMAN] set zoom called")
+	for p in portraits:
+		p.scale=Vector2(z,z)
+		p.zoom_level = z
+	zoom_level=z

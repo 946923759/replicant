@@ -64,6 +64,7 @@ onready var historyActor=$CutsceneHistory
 onready var text:RichTextLabel = $CenterContainer/textActor_better
 onready var textboxSpr = $CenterContainer/textBackground
 onready var speakerActor = $CenterContainer/SpeakerActor
+onready var uiActorFrame = $UI_Top_Frontline
 
 onready var fsContainer:Control = $FSMode_ActorFrame
 onready var fsText:RichTextLabel = $FSMode_ActorFrame/TextActor
@@ -1021,9 +1022,10 @@ func setTextboxStyle():
 	var modern = $CenterContainer/textBackground_modern
 	var modern2 = $CenterContainer/textBackground_modern2
 	var frontline = $CenterContainer/textBackground_Frontline
+	var reborn = $CenterContainer/textBackground_Reborn
 	
-	var l1 = [classic,modern,modern2,frontline]
-	var l2 = ["Classic","Modern 1","Modern 2","Frontline"]
+	var l1 = [classic,modern,modern2,reborn,frontline]
+	var l2 = ["Classic","Modern 1","Modern 2","Reborn","Frontline"]
 	var match_ = l2.find(Globals.OPTIONS['textboxStyle']['value'])
 	for i in range(len(l1)):
 		l1[i].visible=(match_==i)
@@ -1031,6 +1033,23 @@ func setTextboxStyle():
 			textboxSpr=l1[i]
 	textboxSpr.modulate.a = Globals.OPTIONS['bgOpacity']['value']/100.0
 	
+	
+	var f_honkai = get_node("UI_Top_Honkai")
+	var f_frontline = get_node("UI_Top_Frontline")
+	
+	#var oldUIActorFrame = uiActorFrame
+	if Globals.OPTIONS['textboxStyle']['value']=="Reborn":
+		uiActorFrame=f_honkai
+		f_honkai.visible=true
+		f_frontline.visible=false
+	else:
+		uiActorFrame=f_frontline
+		f_frontline.visible=true
+		f_honkai.visible=false
+	#if oldUIActorFrame != uiActorFrame:
+	#	print("Set new frame")
+	#	oldUIActorFrame.visible=false
+	#	uiActorFrame.visible=true
 
 func closeTextbox(t:SceneTreeTween,animTime:float=.3,_rect_scale:float=0.0)->float:
 	#t.append(textboxSpr,'scale:y',0,.3).set_trans(Tween.TRANS_QUAD)
@@ -1060,7 +1079,7 @@ func tween_in_history():
 	historyActor.isHandlingInput=true
 	historyActor.set_history(textHistory)
 	
-	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.visible=false
+	uiActorFrame.get_node("HBoxContainer/TextureButtonAuto").visible=false
 	#$UI_Top_Frontline/HBoxContainer/TextureButtonHide.visible=false
 	$UI_Top_Frontline/TextureButtonSkip.visible=false
 	#historyActor.OnCommand()
@@ -1079,7 +1098,7 @@ func tween_in_history():
 	
 func tween_out_history():
 	
-	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.visible=true
+	uiActorFrame.get_node("HBoxContainer/TextureButtonAuto").visible=true
 	#$UI_Top_Frontline/HBoxContainer/TextureButtonHide.visible=true
 	$UI_Top_Frontline/TextureButtonSkip.visible=true
 	
@@ -1159,7 +1178,7 @@ func _ready():
 	$CutsceneDebug.visible=false
 	#This is fine, auto mode doesn't work until process(true)
 	toggleAutoMode(Globals.wasUsingAutoMode)
-	$UI_Top_Frontline/HBoxContainer/TextureButtonAuto.pressed=Globals.wasUsingAutoMode
+	uiActorFrame.get_node("HBoxContainer/TextureButtonAuto").pressed=Globals.wasUsingAutoMode
 
 
 func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
@@ -1226,29 +1245,6 @@ signal cutscene_finished()
 func end_cutscene_2():
 	Globals.wasUsingAutoMode = automatically_advance_text
 	
-	var needToSave:bool=false
-	for c in backgrounds.get_children():
-		var f = c.get_meta("file_name")
-		if f and !(f in Globals.playerData['CGunlock']):
-			print_debug("Unlocked CG "+f)
-			Globals.playerData['CGunlock'].append(f)
-			needToSave=true
-	
-	
-	if Globals.currentEpisodeData:
-		var save_idx = Globals.get_episode_index(Globals.currentEpisodeData)
-		var ch_idx = save_idx[0]
-		var ep_idx = save_idx[1]
-		if ch_idx >= 0 and ep_idx >= 0:
-			var bit = Globals.playerData['completedChapters'][ch_idx]
-			if (bit & 1<<ep_idx) == 0:
-				needToSave=true
-			Globals.playerData['completedChapters'][ch_idx] |= 1<<ep_idx
-			
-	
-	if needToSave:
-		Globals.save_system_data()
-	
 	if parent_node:
 		get_tree().paused = false
 	else:
@@ -1286,9 +1282,9 @@ func toggleAutoMode(b:bool=false):
 
 func toggleShowUI(b:bool=true):
 	var m = float(b)
-	$UI_Top_Frontline.modulate.a=m
 	for n in get_tree().get_nodes_in_group("UI_Elements"):
 		n.modulate.a=m
+	uiActorFrame.modulate.a=m
 	
 	if otherScreenIsHandlingInput == Overlay.NONE:
 		otherScreenIsHandlingInput = Overlay.UI_HIDDEN

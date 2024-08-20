@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
@@ -25,6 +25,14 @@
 [ext_resource path="res://Cutscene/buttonAuto_GFL.png" type="Texture" id=23]
 [ext_resource path="res://Graphics/music_tex.png" type="Texture" id=24]
 [ext_resource path="res://Cutscene/SongDisplay.tres.gd" type="Script" id=25]
+[ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=26]
+[ext_resource path="res://Ext/textbox.png" type="Texture" id=27]
+[ext_resource path="res://Ext/historyBtn_Reborn_txt.png" type="Texture" id=28]
+[ext_resource path="res://Ext/historyBtn_Reborn_BG.png" type="Texture" id=29]
+[ext_resource path="res://Ext/skipBtn_Reborn_txt.png" type="Texture" id=30]
+[ext_resource path="res://Ext/skipBtn_Reborn_BG.png" type="Texture" id=31]
+[ext_resource path="res://Ext/autoBtn_Reborn_txt.png" type="Texture" id=32]
+[ext_resource path="res://Ext/skipBtn_Reborn_BG_hl.png" type="Texture" id=33]
 
 [sub_resource type="Shader" id=7]
 code = "shader_type canvas_item;
@@ -71,6 +79,13 @@ void fragment(){
 [sub_resource type="ShaderMaterial" id=10]
 shader = SubResource( 9 )
 shader_param/fadeTopAt = 250.0
+
+[sub_resource type="DynamicFont" id=12]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 26 )
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -188,9 +203,7 @@ margin_bottom = -240.0
 grow_vertical = 0
 mouse_filter = 2
 script = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+zoom_level = 1.4
 
 [node name="Music" type="Node" parent="."]
 
@@ -242,6 +255,7 @@ rect_min_size = Vector2( 876, 207 )
 mouse_filter = 2
 
 [node name="textBackground_Frontline" type="Control" parent="CenterContainer"]
+visible = false
 anchor_top = 0.388
 anchor_right = 1.0
 anchor_bottom = 0.988
@@ -332,6 +346,25 @@ rect_pivot_offset = Vector2( 0, 500 )
 mouse_filter = 2
 color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
 
+[node name="textBackground_Reborn" type="Control" parent="CenterContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -58.5
+margin_right = 960.0
+margin_bottom = 281.5
+rect_pivot_offset = Vector2( 0, 170 )
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/textBackground_Reborn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 27 )
+stretch_mode = 6
+
 [node name="SpeakerActor" type="Label" parent="CenterContainer"]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -344,6 +377,25 @@ margin_bottom = 41.5003
 rect_pivot_offset = Vector2( 0, 90 )
 custom_fonts/font = ExtResource( 3 )
 text = "Dandelion"
+autowrap = true
+
+[node name="SpeakerActor_Reborn" type="Label" parent="CenterContainer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -730.0
+margin_top = -83.5
+margin_right = 146.0
+margin_bottom = 96.5003
+rect_pivot_offset = Vector2( 0, 90 )
+custom_colors/font_color = Color( 0.87451, 0.866667, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 12 )
+text = "Karin"
 autowrap = true
 
 [node name="textActor_better" type="RichTextLabel" parent="CenterContainer"]
@@ -367,10 +419,6 @@ bbcode_text = "\"[color=#ff00ff]Lorem ipsum[/color] dolor sit amet, consectetur 
 text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  (If you can see this, the cutscene failed to load. File a bug report!)
 (This is 4th line... Text should not go above 4 lines...)"
 scroll_active = false
-
-[node name="Light2D" type="Light2D" parent="."]
-visible = false
-position = Vector2( 541.537, -60.5445 )
 
 [node name="FSMode_ActorFrame" type="Control" parent="." groups=["UI_Elements"]]
 visible = false
@@ -418,6 +466,9 @@ anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 0 )
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CutsceneHistory" parent="." instance=ExtResource( 4 )]
 margin_left = -1920.0
@@ -425,12 +476,19 @@ margin_right = -1920.0
 
 [node name="CutsceneDebug" parent="." instance=ExtResource( 15 )]
 visible = false
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="UI_Top_Honkai" type="Control" parent="."]
+[node name="UI_Top_FireMoth" type="Control" parent="." groups=["UI_Elements"]]
 visible = false
 anchor_right = 1.0
+margin_bottom = 291.0
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="SkipButton" type="TextureButton" parent="UI_Top_Honkai"]
+[node name="SkipButton" type="TextureButton" parent="UI_Top_FireMoth"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -356.0
@@ -445,8 +503,89 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="UI_Top_Frontline" type="Control" parent="." groups=["UI_Elements"]]
+[node name="UI_Top_Honkai" type="Control" parent="." groups=["UI_Elements"]]
 anchor_right = 1.0
+margin_bottom = 198.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI_Top_Honkai"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -528.0
+margin_top = 31.0
+margin_right = -196.0
+margin_bottom = 95.0
+rect_scale = Vector2( 1.5, 1.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureButtonLog" type="TextureButton" parent="UI_Top_Honkai/HBoxContainer"]
+margin_right = 72.0
+margin_bottom = 64.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 29 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="UI_Top_Honkai/HBoxContainer/TextureButtonLog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 28 )
+stretch_mode = 4
+
+[node name="TextureButtonAuto" type="TextureButton" parent="UI_Top_Honkai/HBoxContainer"]
+margin_left = 76.0
+margin_right = 202.0
+margin_bottom = 64.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource( 31 )
+texture_pressed = ExtResource( 33 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="UI_Top_Honkai/HBoxContainer/TextureButtonAuto"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 83.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.6, 0.6 )
+mouse_filter = 2
+texture = ExtResource( 32 )
+stretch_mode = 4
+
+[node name="TextureButtonSkip" type="TextureButton" parent="UI_Top_Honkai/HBoxContainer"]
+margin_left = 206.0
+margin_right = 332.0
+margin_bottom = 64.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+texture_normal = ExtResource( 31 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="UI_Top_Honkai/HBoxContainer/TextureButtonSkip"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 30 )
+stretch_mode = 4
+
+[node name="UI_Top_Frontline" type="Control" parent="." groups=["UI_Elements"]]
+visible = false
+anchor_right = 1.0
+margin_bottom = 144.0
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI_Top_Frontline"]
 margin_left = 18.0
@@ -490,12 +629,14 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 20 )
 
 [node name="TN_Actor" type="Control" parent="." groups=["UI_Elements"]]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 input_pass_on_modal_close_click = false
 script = ExtResource( 9 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -609,13 +750,16 @@ margin_bottom = 169.0
 mouse_filter = 2
 texture = ExtResource( 24 )
 script = ExtResource( 25 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Label" type="Label" parent="NewSongDisplay"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 95.0
 custom_fonts/font = ExtResource( 2 )
-text = "Lorem Ipsum whatever"
+text = "Current song: Lorem Ipsum whatever"
 valign = 1
 
 [node name="PortraitDebug" type="Label" parent="."]
@@ -634,7 +778,8 @@ script = SubResource( 11 )
 [connection signal="portrait_positions_updated" from="Portraits" to="PortraitDebug" method="_on_Portraits_portrait_positions_updated"]
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]
 [connection signal="selected_choice" from="Choices" to="." method="_on_Choices_selected_choice"]
-[connection signal="pressed" from="UI_Top_Honkai/SkipButton" to="." method="_on_SkipButton_pressed"]
+[connection signal="pressed" from="UI_Top_FireMoth/SkipButton" to="." method="_on_SkipButton_pressed"]
+[connection signal="pressed" from="UI_Top_Honkai/HBoxContainer/TextureButtonSkip" to="." method="end_cutscene"]
 [connection signal="pressed" from="UI_Top_Frontline/HBoxContainer/TextureButtonLog" to="." method="_on_TextureButtonLog_pressed"]
 [connection signal="toggled" from="UI_Top_Frontline/HBoxContainer/TextureButtonAuto" to="." method="_on_TextureButtonAuto_toggled"]
 [connection signal="pressed" from="UI_Top_Frontline/TextureButtonSkip" to="." method="_on_SkipButton_pressed"]

@@ -1,0 +1,55 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kyuushou
+bg	CG10430
+portraits	101	122
+match_names	Kiana	Kyuushou
+music	re/1-05 - Eternal War
+
+/Kyuushou	251767	What on earth is the problem...? Don't tell me that there's a problem with the program logic itself...	到底是哪里出了问题呢，难道是代码逻辑上面的问题么……	一体、何に問題があるというのだ……。まさかプログラムのロジック自体に問題でもあるのか……。	Mas qual é o problema? ....... Não me diga que há um problema com a lógica do programa em si. ......
+
+speaker	Kiana
+msg	251768	Are you thinking about that game again? I think it's already a failure since there's not even a "Logout" option...	都什么时候了还惦记着那个游戏？那玩意儿连个“退出“选项都没有，也不知道你这个制作者是怎么制作的……	また、あのゲームのこと考えてるの？「ログアウト」の選択肢がない時点で、すでに失敗作だと思うけど……。	Você está pensando nesse jogo de novo? Aquela coisa nem sequer tem uma opção de ``Saída´´,  não sei como um criador faz...
+
+speaker	Kyuushou
+msg	251769	Huh...	呃……	なっ……。	Não…….\n
+msg	251770	Hahaha, I didn't expect you to be such a knowledgeable person. You found the most brilliant part of my game at a glance!	哼哼哼，没想到你居然是一个这么懂行的人，一眼就能发现我的游戏中最出彩的部分呢！	よく知っているではないか。我がゲーム一番の見所を！	Você o conhece bem, não é?
+
+speaker	Kiana
+msg	251771	Huh?	哈？	はぁ？	Huh?
+
+speaker	Kyuushou
+msg	251772	That’s right! It was designed that way on purpose! To create an immersive setting!	没错！这就是九霄大人为了这个完美的游戏世界而精心设计出来的！	これはわざとそう設計してあるのだ！リアルな世界を演出するためにな！	Foi projetado assim de propósito! Para reproduzir um mundo realista!
+msg	251773	Once you start, there's no going back... Those who have never experienced despair cannot survive in the real world!	如果连无法回头的绝望都没有体验过的话，还如何在这个险恶的世界中生存呢？	一度始めたらもう戻れない……絶望を体験したことのない者は、現実世界でも生きていけないからな！	Uma vez que você começa, você não pode voltar atrás... Quem não experimentou o desespero não pode nem viver no mundo real!
+msg	251774	In order to make players understand this, the "Logout" button has been removed! This is not just a game, nor is it just for fun! All you mere mortals should be grateful to the genius Kyuushou! Wahahaha!	为了让玩家体验到这一点，九霄大人煞费苦心，去除了“退出”这个按钮！这虽然只是一个游戏，但可不是在闹着玩！快感激这样天才的九霄大人吧！凡人们！咕哈哈哈哈！	プレイヤーにこのことを分からせるため、あえて「ログアウト」ボタンを消しているのだ！これはただのゲームでもなければ、遊びでもない！凡人どもは、この天才九霄様に感謝するがよい！はーはははっ！	Para informar o jogador sobre isso, removi intencionalmente o botão "sair"! Não é apenas um jogo, não é uma brincadeira! As pessoas comuns devem ser gratas pela a genialidade de Kyuushou! Hahahahaha!
+speaker	Kiana
+msg	251775	Then what's that error you mentioned at the start? Is it happening because you can't "Logout"?	那你最开始说的报错是怎么回事，难道不就是因为没有退出才会报错的么？	なら、君が最初に言ってたエラーはなんなの？「ログアウト」できないからエラーが発生してるんじゃないの？	Então o que aconteceu com o relatório de erro que você mencionou no início? Não é porque você não desistiu quando relatou o erro?
+speaker	Kyuushou
+msg	251776	Uhh...	咕呃……	うぐ……。	NONE
+speaker	Kiana
+msg	251777	I can't believe you call this the "official version". Even if you uploaded it to the internet, no one would play it.	亏你还说是“正式版”，这种游戏估计发到网上去的时候都没什么点击量吧？	よくこれを「正式版」なんて言えたものね。こんなのネットにアップしても、やる人なんていないでしょ。	Obrigada  a você por me avisar sobre esta ``versão oficial´´, esse tipo de jogo provavelmente não terá muito sucesso quando for postado na Internet, certo?
+speaker	Kyuushou
+msg	251778	…	……	……。	NONE
+msg	251779	Heh... Hehe! Hahaha! Ahahahah!!	哼…哼哼！哼哼哼！哈哈哈哈！	フ……フフ！フフフッ！アーハハハッ！	Hm....hmph! Hahahahaha! Hahahahaha!
+speaker	Kiana
+msg	251780	Wh-what's this? Why are you laughing all of a sudden?!	你笑什么？	な、何よ。いきなり笑ったりして、どうしたの！？	Por que você está rindo?
+speaker	Kyuushou
+msg	251781	Foolish mortals really can't understand the loneliness inside the heart of a genius... just as they can't understand the work of an artist.	愚昧的凡人果然无法理解天才内心的孤独啊……正如他们无法理解艺术家的作品一样。	愚かな凡人に天才の孤独はやはり理解できなかったか……。優れた芸術家の作品を理解できないのと同じように。	Será que uma pessoa comum e tola não poderia entender a solidão de um gênio afinal...? Assim como não entendemos o trabalho dos grandes artistas.
+speaker	Kiana
+msg	251782	But what's the point if you can't play it properly?	但是玩不了不就没有意义了么？	でも、ちゃんと遊べない時点で意味ないじゃない。	Mas não faz sentido quando você não pode joga-lo corretamente.
+
+portraits	101	122,false,2
+speaker	Kyuushou
+msg	251783	Guh...	咕……	ぐぅ……。	NONE
+
+portraits	101,false,1	122,false,2
+speaker	Kiana
+msg	251784	H-hey! Where are you going?!	喂！你要去哪？	ちょ、ちょっと！どこ行くのよ！？	Espere um minuto! Onde você está indo ! ?
+
+portraits	101,false,1	122,false,4
+speaker	Kyuushou
+msg	251785	Leave me alone! I'm going back to fix that error!!	别管我！我要把那个错误的分歧点纠正过来才行！！	ほっといて！我はあのエラーを直しに戻る！！	Me deixe em paz! Vou voltar para corrigir esse erro! !
+
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251786	You've come this far and you're going back?! Get back here!	没搞错吧？你难道又要回去么！给我回来！	ここまで来て戻る気なの！？	Você está falando sério? Você quer voltar de novo! Volte aqui!

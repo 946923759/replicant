@@ -1,7 +1,17 @@
 extends "res://Screens/ScreenWithMenuElements.gd"
 
-export (String) var startingMenu = "ItemScroller_MainMenu"
+export (String) var startingMenu = "ItemScrollerV2"
 var curMenuActor:Node
+
+"""
+All character display conditions:
+	Kiana = None
+	Mei = Chapter 2
+	Kyuushou = Chapter 1-2 to 5-14, then Chapter 11+
+	Himeko = Chapter 3
+	Theresa = Chapter 3
+"""
+
 
 func _ready():
 	curMenuActor=get_node(startingMenu)
@@ -10,8 +20,27 @@ func _ready():
 	if n:
 		n.connect("switch_submenus",self,"switch_submenus")
 		n.OffCommand()
-	
+
+func update_background_parallax(mousePos:Vector2):
+		var mousePosOffsetFromCenter = mousePos-Globals.gameResolution/2
+		$Background.rect_position = Vector2(347,0)-mousePosOffsetFromCenter*.03
+		#$DebugLabel2.text = "Mouse: "+String(mousePosOffsetFromCenter)
+		#$smSprite.rect_position=-mousePosOffsetFromCenter*.05
+		#$Kyuushou.rect_position=-mousePosOffsetFromCenter*.03
+		#When mousePos is Globals.gameResolution/2, offset should be 0
+		#The size of the image is gameResolution*1.2
+		#So when the mouse is all the way on the left it would be
+		#gameResolution.x*1.1 -gameResolution.x/2+mousePosOffsetFromCenter
+		#$smSprite.rect_position = SCREEN_SIZE*1.1 - SCREEN_SIZE/2+mousePosOffsetFromCenter
+		
 func _input(event):
+	
+	if event is InputEventMouseMotion:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		#var SCREEN_SIZE = Globals.gameResolution
+		#var mouseZoom = Globals.gameResolution*1.2
+		if !OS.has_feature("mobile"):
+			update_background_parallax(event.position)
 	curMenuActor.input(event)
 
 func switch_submenus(newMenu:String):
@@ -19,7 +48,7 @@ func switch_submenus(newMenu:String):
 	var SCREEN_SIZE = get_viewport().get_visible_rect().size
 	curMenuActor.OffCommand()
 	curMenuActor=get_node(newMenu)
-	curMenuActor.position.x=SCREEN_SIZE.x
+	curMenuActor.rect_position.x=SCREEN_SIZE.x
 	curMenuActor.OnCommand()
 
 func _notification(what):
@@ -27,6 +56,13 @@ func _notification(what):
 		curMenuActor.input_cancel()
 
 func ItemScrollerNewScreen(selectionNum, destinationName):
+	#print("new screen!")
 	if destinationName!="":
 		OffCommandNextScreen(destinationName)
+		$ConfirmSound.play()
 
+
+
+func _on_ItemScrollerV2_selection_changed(newSel, IsLocked):
+	$CursorSound.play()
+	pass

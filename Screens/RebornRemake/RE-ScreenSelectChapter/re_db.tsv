@@ -1,0 +1,27 @@
+#--CATEGORY	LOCKED
+#TITLE	DESCRIPTION	FILE1,FILE2,FILE3	IS_SUB_MISSION
+
+#This controls where the VN starts after the first run screen (duh).
+//VN_START	Chapter 0/0
+#This controls when the VN returns to the chapter select. It stops at the end of the specified chapter.
+#//VN_STOP	Chapter 3
+
+
+# This database is only used to control what chapter you are returned to
+# in the chapter select and to store part completion data.
+# Chapter groupings (What screen a chapter is on) are not stored here.
+# They're stored in RE-ScreenSelectChapter.tscn node names.
+
+--Chapter R1
+R1-1	It seems like a normal quest...	RE1-1
+R1-2		RE1-2
+R1-2A		RE1-2A
+R1-3		RE1-3
+R1-4		RE1-4
+
+R1-5		RE1-5
+R1-6		RE1-6
+R1-7		RE1-7
+R1-8		RE1-8
+
+--Chapter R2

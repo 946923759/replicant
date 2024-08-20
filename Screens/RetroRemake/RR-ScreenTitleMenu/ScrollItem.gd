@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 signal clicked()
 tool
 """
@@ -17,14 +17,18 @@ export (String) var text = "OptionItem" setget set_text,get_text
 export (bool) var locked = false
 export (bool) var submenu = false
 export (String) var destinationScreenOrSubmenu
-export (Vector2) var size = Vector2(425,112)
+#export (Vector2) var size = Vector2(425,112)
+onready var size = rect_size
 #var textActor:Label
 onready var t:Tween = $Tween
 
 
 func _ready():
 #	textActor.text=text
-	$Sprite2.modulate.a=0
+	$Sprite2.self_modulate.a=0
+	self.connect("gui_input",self,"_on_gui_input")
+	self.connect("mouse_entered",self,"GainFocus")
+	self.connect("mouse_exited",self,"LoseFocus")
 	
 func set_text(s):
 	text=s
@@ -35,17 +39,18 @@ func get_text():
 	return text
 
 func GainFocus():
+	#print("GainFocus!")
 	t.stop_all()
-	t.interpolate_property($Sprite2,"modulate:a",null,1,.2)
+	t.interpolate_property($Sprite2,"self_modulate:a",null,1,.2)
 	t.start()
 
 func LoseFocus():
 	t.stop_all()
-	t.interpolate_property($Sprite2,"modulate:a",null,0,.2)
+	t.interpolate_property($Sprite2,"self_modulate:a",null,0,.2)
 	t.start()
 
 
-func _on_Label_gui_input(event):
+func _on_gui_input(event):
 	if (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
 		#print("A")
 		emit_signal("clicked")

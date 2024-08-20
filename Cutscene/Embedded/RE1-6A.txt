@@ -1,0 +1,52 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+portraits	101
+emote	101	2
+msg	251787	By the way, are you acquainted with Raiden Mei? You seem to know a lot about her, but... it doesn't seem like you have any connection.	话说你和那个雷电芽衣感觉好像认识呢，你们之间有什么交集么？	そういえば、九霄って雷電芽衣と知り合いなの？妙に詳しいけど……接点なんてなさそうよね。	NONE
+speaker	Houraiji Kyuushou
+portraits	101	122
+emote	101	2
+emote	122	0
+msg	251788	Raiden Mei is a singularity in this world... I realized that the first time I laid my eyes on her.	没错，她是这个世界的奇异点，从刚见到她的时候我就已经确信了。	雷電芽衣はこの世界の特異点……初めて彼女を見た時、我はそれに気がついたのだ。	NONE
+msg	251789	However, even when I tried to convey this to her, the laws of causality in the world did not allow it. Every time I approached her, an invisible wall blocked my words, and they never reached her.	但是与雷电芽衣的接触受到了世界因果律的阻挠，每次会面都会被不可视之墙强行隔断，就连我的话语都无法传递到她的身边。	しかし、我がそれを伝えようとしても世界の因果律がそれを許さなかった。彼女に会うたび、見えない壁に遮断され、我の言葉がついに届くことはなかったのだ。	NONE
+speaker	Kiana
+emote	101	2
+emote	122	0
+msg	251790	Uhh, right...	呃…这么玄乎？	えっと、そうなのね……。	NONE
+speaker	Houraiji Kyuushou
+emote	101	2
+emote	122	0
+msg	251791	You don't believe me? But this is the truth. I will follow the prophecy's guidance and rescue her from the darkness. If I don't, the world will be plunged into eternal darkness!	没错，但是我会遵从预言书的指引，将她从黑暗中解救出来的，不然世界会陷入无尽的黑暗之中。	信じてないな？だが、これは真実だ。我は預言書の導きに従い、彼女を闇から救い出す。そうしなければ、世界は無限の闇に包まれてしまう！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251792	You really are strange after all. I've never seen anyone so calm and unchanged in the midst of a Honkai outbreak.	好吧……你还真是个奇怪的家伙啊，我还是第一次见到初次经历崩坏的人像你这么淡定的呢。	やっぱり九霄って変なヤツね。崩壊の真っ只中だっていうのに、こんなに落ち着いているというか自分の変わらない人、初めて見るわ。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251793	All disasters are inevitable! All we can do is lead the wheels of destruction towards hope. Yes! That is my destiny as the Savior!	所有的灾难都是无法避免的命运，我们能做的只是将驶向毁灭的车轮引向微弱的希望罢了。没错！这就是我作为救世主的使命！	全ての厄災は避けられない運命！我らに出来ることは、ただ滅びに向かう車輪を希望へと導くこと。そう！それこそが、救世主たる我の宿命だからな！	NONE
+msg	251794	Kiana, our meeting was also fate. It was an inevitable event written in the prophecy. Come! Let us save the world together!	琪亚娜，我们的相见也一定是命运的安排，是早就被预言书所记录下来的必然结果，来吧！和我一起拯救世界吧！	キアナ、我らの出会いもまた運命。預言書に記されし必然の出来事なのだ。さあ！我と一緒に世界を救おうではないか！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251795	That's nice of you to say... but I refuse!	你说的好，但是我拒绝！	いいこと言うじゃない……だが断る！	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251796	Huh...?!	咕…！	ふぇ……。	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251797	With you by my side, no matter how many lives I have, it won't be enough. Besides, my only mission is to take you to the organization. After this incident, we won't see each other again.	和你一起寿命会缩短的，我的任务只是把你安全地带到组织罢了。	九霄と一緒にいたら、いくら命があっても足りないもの。それに私の任務は、君を組織まで連れて行くことだけ。この一件が終わったら、もう会うことはないわ。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251798	Organization? ...Hoho, what kind of place is it?	组织…真是令人期待呢~那到底是什么样的地方？	組織？……ほほぉ、それはどんなところなのだ？	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251799	Unfortunately, I don't have the authority to tell you. However, I can tell you that our goal is to save the world. The rest will have to be confirmed by you, Kyuushou, by seeing it with your own eyes.	现在我没有告知你这些情报的权限，我只能告诉你我们目的也是拯救世界，剩下的还是由你自己去确认吧。	残念だけど、それを言う権限は私にはないの。ただ、私達の目的も世界を救うっていうことだけは言える。あとは九宵自身の目で見て、確かめてもらうしかないわね。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251800	Fufufu, so exciting!	嚯嚯嚯！真是令人兴奋呢！	ふふふ、ワクワクが止まらん！	NONE

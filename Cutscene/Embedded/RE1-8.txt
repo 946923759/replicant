@@ -1,0 +1,303 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	121	214	101	215
+music	re/1-05 - Eternal War
+/	251683	Rumble!!	轰隆隆！！	ゴォーーン！！	NONE
+match_names	Kiana	Kyuushou
+portraits	101	122
+emote	101	0
+/Kiana	251684	The range of the lightning is getting bigger and bigger. It seems that Senpai is gradually absorbing the Honkai.	看来在这一段时间内我们的学姐吸收了不少崩坏能呢~雷电波及的范围越来越大了……	雷の範囲がどんどん大きくなってる。どうやら、着実に先輩は崩壊を吸収しているようね。	NONE
+msg	251685	Those zombies from earlier must have mutated under her influence... If we leave her like this, she might really destroy the world.	刚才的那些死士应该也是受到了她的影响才会异化的……如果真的这样置之不理的话，说不定她真的有可能毁灭世界呢。	きっと、さっきのゾンビ達も彼女の影響で変異したのね……。もし、このまま放置したら、彼女は本当に世界を滅ぼしてしまうかもしれない。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251686	We're almost to the roof. That's the sacred ground of this school, where no one can approach...	再往前走就是天台了~那里可是个好地方哦！没有人能够打扰的圣地！	もうすぐ屋上か。あそこは何人たりとも寄せ付けぬこの学園の聖地……。	NONE
+bg	CG10272
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251687	It looks like Raiden Mei is on the roof...	雷电芽衣就在前面的天台么……	どうやら雷電芽衣は、屋上にいるみたいね……。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251688	This boss battle atmosphere is amazing! It's getting my blood pumping!	这种BOSS战特有的氛围实在是太棒了~我的血液已经开始沸腾了！	このボス戦みたいな雰囲気！素晴らしいっ！我の血は滾ってきたぞ！	NONE
+speaker	Kiana
+emote	101	1
+emote	122	0
+msg	251689	Hey, I'm the one fighting here! You've just been sitting on the sidelines and making strange poses the whole time....	少装腔作势了，一直过来战斗的人都只有我吧，你只是在一旁做着奇怪的姿势罢了……	戦っているのは私だけでしょ！九霄は、ただ変なポーズを取っているだけじゃない……。	NONE
+speaker	Kyuushou
+emote	101	1
+emote	122	0
+msg	251690	Muahaha, didn't you feel it? While you were fighting, I was sending my spiritual energy to you. In fact, you should be thanking me!	哼哼哼，你没有感受到么？在你战斗的时候我通过意念传输给你的精神能量，你应该感激我才对！	ふっふっふっ、感じていなかったのか？お主が戦っている間、我が精神エネルギーをみょんみょんとお主に送っていたのを。むしろ、お主は我に感謝すべきなのだ！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251691	Sigh, you... fine.	哎…懒得理你。	はぁ、もう……いいわよ。	NONE
+msg	251692	Anyway, let's think about a strategy before fighting Raiden Mei, Kyuushou. The opponent is a Herrscher, and if we're not careful, you might get hurt too.	先不说那么多了。九霄，在面对雷电芽衣前我们必须制定一下作战计划，面对律者我可没有办法顾及到你的安全。	それより九霄、雷電芽衣と戦う前に作戦を考えましょう。相手は律者だし、下手したら九霄まで怪我をしちゃうかも。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251693	Heheheh, don't worry. If danger approaches, I will protect you with my powers from my curse!	安心吧~如果有危险我会保护你的。	ふっふっふ、安心するがいい。もし危難が迫ろうとも、呪われし我が力で守ってやろう！	NONE
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251694	(I want to punch you so bad...) Calm down... Calm down... In my plan, you're very important, Kyuushou. Without you, I can't beat Raiden Mei.	好想揍她……冷静…冷静。听着，我的作战计划中你是非常重要的一环，没有你可能我们根本无法击败雷电芽衣。	（殴りたい……）落ち着け……落ち着け……。私の作戦では、九霄がすごく重要なの。君がいなきゃ、雷電芽衣には勝てないわ。	NONE
+speaker	Kyuushou
+emote	101	3
+emote	122	0
+msg	251695	Oh? So you finally understand the true power of Kyuushou-sama. You have said many rude things up until now, but the generous Kyuushou-sama will forgive you.	哦？终于想到要借助九霄大人的力量了么，虽然你之前一直对我很不满的样子，但是大度的九霄大人是不会在意这些的。	ほお？やっと、この九霄様の力が分かったか。今まで散々失礼なことをお主は口走ってきたが、寛大な九霄様はそれらを許すとしよう。	NONE
+msg	251696	Now, speak, Kiana!	说出你的请求吧，琪亚娜！	さぁ、言ってみるが良い、キアナ！	NONE
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251697	God, why do you have to say it like that...? Listen carefully, here's my plan——	这个蹬鼻子上脸的家伙…你听着，我的计划是这样的……	ったく、なんでそんなに上から目線なのよ……。よく聞いて、私の作戦はこうよ——	NONE
+speaker	Kyuushou
+emote	101	3
+emote	122	0
+msg	251698	——Hmm, it seems like a mission worthy of me. I have certainly received your request. Now all you have to do is sit back and gaze upon my splendor!	哼，果然是个很适合我的身份的任务呢。你的祈求我收到了，接下来就看我的表演吧！	——ふむ、どうやら我に相応しい任務のようだな。お主の願い、確かに受け取った。あとはただ指を咥えて、我の華麗なる姿を見ているがよい！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251699	Okay, looks like I managed to fool her somehow...	嗯，看来这个家伙还是蛮好糊弄的……	よし、なんとか誤魔化せたようね……。	NONE
+emote	101	3
+emote	122	0
+msg	251700	Third Herrscher... Just wait, I'll save you.	第三律者么……这次就由我来消灭你好了。	第三律者……私が救ってみせるから待ってなさい。	NONE
+
+
+bg	CG10272
+match_names	Kyuushou	Mei
+music	re/1-06 - Divine Conflict
+portraits	121	214
+emote	121	0
+emote	122	0
+speaker	Kyuushou
+msg	251701	O princess, imprisoned by disaster. I will free your broken heart!	被厄运所包围的不幸女王，就由我来拯救你崩坏的心灵吧！	災いに囚われし王女よ。その崩壊した心、我が解放してやろう！	NONE
+
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251702	How foolish of you to follow me... It seems you're prepared to die.	哼，愚蠢的家伙，居然还敢追过来，看来是已经做好了死的准备了吧。	愚かね、まさか追ってくるなんて……。どうやら死ぬ覚悟はできているようね。	NONE
+
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251703	Death? There is no need to fear death! All things cannot escape the cycle of life and death. To me, death is just another state of mind for the soul.	死？我可不会畏惧死亡，万物都是诞生于死与生的轮回之中，死对于我来说只是灵魂存在的另一种状态罢了。	死？死など恐るるに足らん！万物はいずれも生と死の輪廻から逃れられない。死は我にとって、もう一つの魂の在り方に過ぎん。	NONE
+
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251704	Hmm? So you think you can beat me?	哈？那你是以为能够击败我么？	ふーん？なら、私を倒せるとでも思っているの？	NONE
+
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251705	No! There is no meaning in killing each other. Violence is a sinful act forbidden by God, and is the origin of all original sin!	不，厮杀只是无意义的抗争，暴力是不被神所允许的罪恶，是一切原罪的开端！	否っ！殺し合いに意味などない。暴力は神が禁じる罪深き行為、すべての原罪の始まり！	NONE
+
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251706	...Then what are you going to do?	……那你想怎么样？	……だったら、君はどうする気？	NONE
+
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251707	My purpose is to bring you the light of salvation and save you from chaos. So cast away the darkness in your heart! Open your arms and embrace the light!	我的目的是为你带来救赎的曙光，将你从混沌中解救出来。来吧，抛弃心中的阴霾，张开双臂拥抱希望吧！	我の目的は汝に救済の光をもたらし、混沌より救い出すこと。さあ、心の闇を捨てよ！両手を広げるのだ！	NONE
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251708	...Huh?	……哈？	……は？	NONE
+msg	251709	...It seems that you came to help your "senpai" rather than kill her. It must be very important to you to go to such a dangerous place of your own accord.	…看来你是来救自己的学姐么，不惜把自己也置身险地，还真是深厚的感情啊。	……どうやら「先輩」を殺すのではなく助けに来たのね。危険な地に自ら赴くなんて、よほど大事なのね。	NONE
+msg	251710	But that "senpai" wishes for the end of the world. I simply inherited that wish. Don't get me wrong.	但是就是你们口中的那个学姐想着要毁灭这个世界哦，我只是继承了她的愿望罢了。	けど、その「先輩」が世界の滅びを望んでいるの。私はただその願いを継いだだけ。勘違いしないで。	NONE
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251711	That's just a trivial thing! There is darkness lurking in everyone's heart! We are slaves bound by the shackles of fate. When our soul can no longer enjoy freedom, darkness is born in our heart!	这不重要！不论是谁都会有内心黑暗的地方！我们都被名为命运的枷锁束缚着，当灵魂无法沐浴自由的时候，总会有黑暗滋生！	それは些細なことに過ぎない！誰しも心の中には闇が潜んでいる！我らは運命という名の枷に縛られし奴隷。魂が自由を謳歌できなくなった時、心に闇が生じるのだ！	NONE
+msg	251712	Throw away the memories that hold you captive to sorrow. Free your mind and regain your sense of self! Believe in the power of light, and you will escape the clutches of darkness!	请回忆起曾经善良的自己，抛弃悲恸的记忆，将心灵解放，只要坚信这光明的力量，黑暗就会被驱逐！	悲痛に囚われし記憶を捨てろ。心を開放し、自我を取り戻すのだ！光の力を信じろ、さすれば闇の支配から逃れられる！	NONE
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251713	...What are you saying? All this nonsense that I can't understand... That's enough, just die already!	……我明白了，多说无益！你给我去死吧！	……何なの？意味の分からない戯言ばかり……もういいわ、さっさと死になさい！	NONE
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251714	I won't fall... until I save you! I swear here that even if the heavens and earth are destroyed, my soul will be with you.	在将你解救出来之前我是不会倒下的！我在此起誓，即使天地毁灭，我的灵魂也会与你共赴地狱，直到……	お主を救うまで……倒れるわけにはいかない！我はここに誓おう。例え天地が滅びようとも、我の魂はお主と共にあると……。	NONE
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251715	Shut up!! Stop spouting all this nonsense! I can't understand any of it!	给我闭嘴！！	黙りなさいっ！！ふざけたことばかり……意味が分からないのよ！	NONE
+
+match_names	Kyuushou	Mei	Kiana
+portraits	121	214	101
+emote	101	0
+emote	214	0
+/Kiana	251716	Now!	就是现在！	今だっ！	NONE
+
+speaker	Mei
+emote	101	0
+emote	214	0
+msg	251717	Agh, you! You were behind me this whole time?!	呃！是你！居然从我的身后…！	なっ、お前は！まさかずっと後ろに！？	NONE
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251718	Kiana! What do you think of my speech? Did you notice that her heart wavered? The mission you entrusted to me has been splendidly accomplished!	琪亚娜！怎么样，我激昂的劝导一定让她感觉到了温暖，你交给我的任务我可是出色地完成了哦~	キアナ！どうだ我の演説は。彼女の心が揺らいだのがわかったか？お主が託した任務、見事完遂したぞ！	NONE
+speaker	Kiana
+emote	101	0
+emote	214	0
+msg	251719	Yeah... it was impressive in terms of mentally wearing her down.	没错，在让人崩溃这点上你确实很出色！	そうね……精神的に崩壊させるという点では見事だったわ。	NONE
+
+
+portraits	121	214,false,2	101,false,0
+emote	101	3
+emote	214	0
+msg	251720	Come on, Mei-senpai! With the blood of the Kaslana family, which is immune to the Honkai, I will put an end to the Honkai within you!	来吧！芽衣学姐，让我用卡斯兰娜家族的血脉，对崩坏的绝对抗性来帮你抑制体内的崩坏吧！	さあ！芽衣先輩！崩壊に対して免疫を持つ我がカスラナ家の血で、先輩の崩壊を終わらせてあげる！	NONE
+speaker	Mei
+emote	101	3
+emote	214	0
+msg	251721	You! Let go of me! I'll kill you!	混蛋！给我放手！我要杀了你们！	この！放しなさいっ！殺すっ！	NONE
+msg	251722	To think that such a young girl could...	呃…居然被这种小丫头给！	まさか、こんな小娘に……。	NONE
+msg	251723	Get... out of my body... Go...	从…我的身体里…出去……	私の……身体から出て……いって……。	NONE
+speaker	Kiana
+emote	101	0
+emote	214	0
+msg	251724	Her original personality has returned! The Herrscher's influence is fading!	原本的人格正在恢复！看来律者的力量衰弱了！	元の人格が戻って来た！律者の力が弱まっていく！	NONE
+speaker	Mei
+emote	101	0
+emote	214	0
+msg	251725	Shut up! Just give your body to me obediently! You want revenge on the world, don't you?!	给我闭嘴！乖乖的把身体交给我！难道你不想对这个世界复仇么！	黙りなさいっ！大人しく私に体を渡せばいいのよ！世界に復讐をしたいのでしょ！？	NONE
+msg	251726	Enough... just... let me die here...	已经…够了…就让我就这样死去吧…	もう……いい……このまま、私を死なせて……。	NONE
+msg	251727	You bastard! What are you doing?!	你这家伙！想要做什么！？	貴様っ！何を！？	NONE
+
+speaker	Kyuushou
+emote	121	0
+emote	214	0
+msg	251728	No... Not good!	难道是…不好！	まさか……やばい！	NONE
+speaker	Mei
+emote	121	0
+emote	214	0
+msg	251729	Thank you... Now I can at least die as a human...	谢谢你们…让我在最后的时刻能够用自己的灵魂死去……	ありがとう……これで、私は自分の魂のまま死ぬことができます……。	NONE
+speaker	Kiana
+emote	101	3
+emote	214	0
+msg	251730	Ugh... D-don't tell me you're planning to jump off from here?!	等等！难道你想从这里跳下去自杀！？	うっ……ま、まさか、ここから飛び降りる気！？	NONE
+speaker	Mei
+emote	101	3
+emote	214	0
+msg	251731	Farewell...	再见了……	さようなら……。	NONE
+
+
+portraits	
+bg	CG10010
+/Kyuushou	251732	I won't let that happen!	嘿！	そうはさせんっ！	NONE
+speaker	Mei
+msg	251733	Let me go! Let me die!	呜……放开我，让我去死吧！	は、放して！私を死なせて！	Oooh..... me solte e me deixe morrer!
+speaker	Kyuushou
+msg	251734	Are you stupid...? Dying doesn't solve anything! Miracles happen because you're alive. There's meaning to it...	你是笨蛋么…死无法解决任何问题…呃！只有活着才能拥抱奇迹……	お主はバカか……死ぬなんて、何の解決にもなってない！生きているからこそ、奇跡が起こる。意味があるのだ……。	Você é uma idiota... Morrer não resolve nenhum problema... Ugh! Só quando vivemos podemos abraçar os milagres...
+msg	251735	...K-Kiana! Help me! I can't hold on any longer!	琪亚娜！救命！我撑不住了！	……キ、キアナ！助けてっ！我、もう持たない！	NONE
+speaker	Kiana
+msg	251736	H-hey! Come on, give me your hand, Mei-senpai!	呃！我知道了！芽衣学姐把手给我！	ちょ、ちょっと！ほら、早く芽衣先輩の手を私に！	NONE
+speaker	Mei
+msg	251737	Someone like me... should just die. Why would you try to protect me even at the risk of your life?	像我这样的人，让我死掉不就好了么，为什么要冒着生命危险来救我？	私みたいな人……死んでしまえばいいのよ。どうして、命をかけてまで守ろうとするの？	NONE
+speaker	Kiana
+msg	251738	Don't try to shoulder everything on your own! Everyone is needed by someone, and everyone has a reason to live! It's not okay to throw your life away like this!	不要把所有的不幸都自己背负啊！每个人都有活着的理由，不要轻易就舍弃生命啊！	一人で全てを背負おうとしないで！誰しも人に必要とされ、生きる意味を持ってるの！簡単に命を投げ捨てるなんて、許されないんだからっ！	NONE
+
+nop	music	re/2-06 - Missing Link
+music	re/1-07 - An Arrow Through Time
+bg	CG10272
+portraits	101	121	215
+match_names	Kiana	Kyuushou	Mei
+emote	101	0
+/Kiana	251739	...Huff, huff...! Finally pulled her up!	呼！终于拉上来了！	……はぁ、はぁ、やっと引き上げられた。	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251740	Thank you…	谢谢……	ありがとう……。	NONE
+speaker	Kiana
+emote	101	0
+emote	215	0
+msg	251741	It seems like your personality has returned completely! ...I'm a bit late in introducing myself, but I'm Kiana Kaslana, a transfer student! Starting today, I'll be a student at Senba Academy, so treat me kindly!	看来人格完全恢复了呢~啊，还没有做自我介绍，我叫做琪亚娜·卡斯兰娜，是今天转到千羽学园的转校生哦~	どうやら完全に人格が戻ったようね！……自己紹介が遅れちゃったけど、私はキアナ·カスラナ、転校生よ！今日から千羽学園の生徒だから、よろしくね！	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251742	That's completely different from when you introduced yourself to me! Anyway, I am the savior of the new world, Houraiji——	喂，你最开始跟我作介绍的时候不是这么说的吧！呃，我是新世界的救世主蓬莱寺…	我に自己紹介した時と全然違うではないか！我こそは新世界の救世主、蓬莱寺——	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251743	Houraiji Kyuushou, we meet again!	蓬莱寺九霄，我们又见面了呢。	蓬莱寺九霄さん、また会いましたね！	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251744	Oh my God! You remember me!	呃！原来你记得我么！	なんと！我のことを覚えておるのか！	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251745	Yes. On the day of the entrance ceremony, you were standing by the school gates muttering something I couldn't quite understand, such as "O beings of this world, answer my summons"...	嗯，从开学的时候我就看到你站在校门口，念念有词，说着什么“此世之人听我呼唤”之类的让人搞不懂的话语。	はい。入学式の日、校門のそばで佇みながら「この世なるものよ、我が召喚に応えよ」などと、あまり理解できないことをぶつぶつと呟いてらっしゃったので……。	NONE
+msg	251746	Your outfit was quite unusual too... It left a strong impression on me.	因为你的装扮非常特别，所以其实那个时候就已经对你有印象了。	格好も珍しかったですし……とても印象に残ってるんです。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251747	If that's so, then why did you always choose to ignore me whenever I spoke to you? Wasn't it due to an interference with the laws of causality?	呃！那我每次找你搭话的时候为什么你都没有反应！难道不是因为因果律的阻挠么！？	ならば、なぜ我が話しかける度に無視を決め込んでいたのだ！因果律の妨げによるものではなかったのか！？	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251748	I'm sorry... You always said things that I didn't really understand... so if I replied, well... I was afraid other people would misunderstand, so...	对不起…因为你每次都说一些奇怪的话，感觉如果和你搭上话的话一定会被人误会，所以……	すみません……いつもあまり理解できないことを仰ってたので……返事をしてしまったら、その……他の人達に誤解されそうで、それで……。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251749	Grrr... what a devilish act.	咕……太过分了吧喂！	ぐぐぐっ……なんという鬼畜の所業。	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251750	Hehe. Hey, since we're here, can I call you Kyuushou-chan?	噗……	ふふっ。ねぇ、せっかくだから九霄ちゃんって呼んでもいいかしら？	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251751	C-call me whatever you like!	不许笑！	す、好きに呼ぶがいいっ！	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251752	Kyuushou-chan, you're really funny. You're very kind, after all. And you're very cute.	九霄同学真的是一个很有性格的人呢，人也不坏的样子，非常的可爱呢~	九霄ちゃんって、本当に面白いわね。なんだかんだ優しいし。それにとても可愛い。	NONE
+speaker	Kiana
+emote	101	0
+emote	215	0
+msg	251753	Cute? No way! Sure, she may look good, but inside she's just a chuunibyou! But Mei-senpai is way more amazing! I want you to call me "-chan" too~	可爱？不存在的，就这种家伙怎么会可爱嘛，可恨还差不多！倒是芽衣学姐刚才笑起来的时候才是真的可爱呢~	可愛い？あり得ないって！確かに見た目はいいかもしれないけど、中身はただの中二病だよ！？それよりも芽衣先輩の方が素敵だよ！私も「ちゃん」付けで呼んでほしいな～。	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251754	I'm not that amazing.... Well then, Kiana-chan, nice to meet you.	诶？没有啦……	素敵だなんてそんな……。わかったわキアナちゃん、よろしくね。	NONE
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251755	Hmph! I am the one chosen by Heaven. You mere mortals cannot comprehend my divinity!	哼~我可是天选之人，我的神格才不会在乎凡人的判断呢！	ふんっ！我は天に選ばれし者。我の神格は凡人のお主らには理解できまい！	NONE
+speaker	Mei
+emote	101	0
+emote	215	0
+msg	251756	By the way... could you please tell me what happened here? I remember that the students turned into monsters and then I lost consciousness... but you guys helped me, right?	对了，能告诉我这里到底发生了什么么，同学们都变成怪物之后，我似乎是失去意识了的样子，是你们救了我对吧？	そういえば……ここで何があったのかを教えてくれませんか。確か生徒たちが怪物になって、そのまま私は気を失ってしまったのですが……。あなた達が助けてくれたのですよね？	NONE
+speaker	Kiana
+emote	101	0
+emote	215	0
+msg	251757	The thing is…	其实是这样……	実は……。	NONE
+emote	215	0
+/	251758	Pip pip pip~	滴滴滴……	ピピピピ……。	NONE
+speaker	Kiana
+emote	101	0
+emote	215	0
+msg	251759	Ah, now that the Herrscher is gone, the thundercloud jamming is too... Hello, this is Kiana.	啊，律者消失后雷暴云的干扰也恢复了呢……喂！这里是琪亚娜。	あっ、律者が消えたから、雷雲のジャミングもなくなったのね……。はい、こちらキアナ。	NONE
+speaker	???
+emote	101	0
+msg	251760	Kiana! What were you doing?! You were supposed to leave Senba Academy as soon as you found the target. Why are you fighting the Third Herrscher?!	琪亚娜！你在搞什么鬼，我不是说了让你找到目标之后马上离开千羽学园么，谁让你去和第三律者战斗的！	キアナ！何をやっていたんだ！ターゲットを見つけ次第、千羽学園から離脱するはずだったじゃないか。何故、第三律者と戦っているんだ！	NONE
+speaker	Kiana
+emote	101	1
+msg	251761	Ugh... Dad, there's a reason for this...	呃……老爹你听我解释，这是有原因的……	うっ……パパ、これには訳が……。	NONE
+speaker	???
+emote	101	1
+msg	251762	I'll listen to your excuses later. Take the target and leave Senba Academy quickly! Anti-Entropy has already reached Senba Academy!	解释什么的等会再说，立刻带着目标离开千羽学园！逆熵已经先我们一步抵达千羽学园了！	言い訳なら後で聞く。早くターゲットを連れて、千羽学園から離脱しろ！ネゲントロピーがもう千羽学園まで来ている！	NONE
+speaker	Kiana
+emote	101	0
+msg	251763	Wha... Anti-Entropy?	呃…逆熵？	えっ……ネゲントロピー？	NONE
+/	251764	Boom…	轰隆隆…	ゴォーーン……。	NONE
+speaker	Kyuushou
+emote	122	0
+msg	251765	Kiana!! Look over there! Incredible! I can't believe flying battleships actually exist!! Wow, those magnificent lines... S-so cool!	琪亚娜！！你看那边！哇！！！好厉害！这个世界上居然真的有浮空战舰！！太帅了！	キアナ！！あそこ見てっ！すごい！まさか飛行戦艦が本当に存在するなんて！！おぉ、あの見事なライン……か、かっこいい！	NONE
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251766	That's Anti-Entropy's flying battleship... the Moonlight Throne?!	那个是逆熵的战舰…月光王座！？	あれはネゲントロピーの飛行戦艦……月光王座！？	NONE

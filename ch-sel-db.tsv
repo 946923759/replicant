@@ -4,7 +4,7 @@
 #This controls where the VN starts after the first run screen (duh).
 //VN_START	Chapter 0/0
 #This controls when the VN returns to the chapter select. It stops at the end of the specified chapter.
-//VN_STOP	Chapter 3
+#//VN_STOP	Chapter 3
 
 --Debug Tests
 Music Test	What Is going on	test_music,test_tween,test_portraitMask
@@ -37,7 +37,7 @@ Paradise	Search HOMU Land	kyusyo2-2-1,kyusyo2-2-2
 Throne	Search Homu Castle	kyusyo2-3-1,kyusyo2-3-2,kyusyo2-3-3
 Peace	Take a bath with Seele and Bronya	kyusyo2-4-1,kyusyo2-4-2,kyusyo2-4-3
 
---Chatper 3
+--Chapter 3
 At Death's Door	Head to ME Corporation's Headquarters	kyusyo3-1-1,kyusyo3-1-2,kyusyo3-1-3
 Protect	Find ME Corp.'s Weapons Manufacturing Plant	kyusyo3-2-1,kyusyo3-2-2,kyusyo3-2-3
 Analogus Memories 1	Save Bronya & Himeko	kyusyo3-3-1,kyusyo3-3-2
@@ -91,7 +91,7 @@ Black Cloud
 Old Enemy
 Dead End
 Clear Way		kyusyo7-6-1
-Wish		kyusyo7-7-1
+Wish		kyusyo7-7-1,kyusyo7-7-2
 Forbidden		kyusyo7-8-1
 Fantasy		kyusyo7-9-1
 --Chapter 7.5

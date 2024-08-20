@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/test.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=10]
+script/source = "tool
+extends TextureRect
+signal clicked()
+
+\"\"\"
+A ScrollItem is guarenteed to have three properties:
+	String  text
+	Vector2 size
+	func    GainFocus()
+	func    LoseFocus()
+	
+	signal  clicked()
+	
+	Anything else is left to be implemented by the programmer.
+\"\"\"
+
+export (String) var text = \"OptionItem\" setget set_text,get_text
+export (bool) var locked = false
+export (bool) var submenu = false
+export (String) var destinationScreenOrSubmenu
+#export (Vector2) var size = Vector2(425,112)
+#var textActor:Label
+onready var t:Tween = $Tween
+onready var size = self.rect_size
+
+func _ready():
+#	textActor.text=text
+	pass
+	
+func set_text(s):
+	text=s
+	var n = get_node_or_null(\"Label\")
+	if n:
+		n.text=text
+func get_text():
+	return text
+
+func GainFocus():
+	t.stop_all()
+	t.interpolate_property(self,\"self_modulate:a\",null,1,.2)
+	t.start()
+
+func LoseFocus():
+	t.stop_all()
+	t.interpolate_property(self,\"self_modulate:a\",null,.5,.2)
+	t.start()
+
+
+func _on_Label_gui_input(event):
+	if (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
+		#print(\"Emit clicked signal\")
+		emit_signal(\"clicked\")
+"
+
+[sub_resource type="DynamicFont" id=9]
+size = 64
+extra_spacing_bottom = 5
+font_data = ExtResource( 1 )
+
+[node name="TextureRect2" type="TextureRect"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -142.5
+margin_right = 444.0
+margin_bottom = -47.5
+mouse_default_cursor_shape = 2
+texture = ExtResource( 2 )
+script = SubResource( 10 )
+
+[node name="Label" type="Label" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 24.0
+margin_top = -51.5
+margin_right = 482.0
+margin_bottom = 51.5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 9 )
+text = "OptionItem"
+valign = 1
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="gui_input" from="." to="." method="_on_Label_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="GainFocus"]
+[connection signal="mouse_exited" from="." to="." method="LoseFocus"]

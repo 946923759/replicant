@@ -12,13 +12,17 @@ var idx: int = -1
 var is_active:bool = false
 var is_masked:bool=false
 
+#TODO: zoomx/zoomy will break the zoom level, which should be a multiple of this.
+#Tweens need to take into account this value.
+var zoom_level:float = 1.0
+
 var portrait_textures:Dictionary={}
 #var imageTex:Array=[]
 var cur_expression:String="0" setget set_cur_expression
 var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
 
-var numberTex = preload("res://groove gauge 1x10.png")
+var numberTex = preload("res://Graphics/groove gauge 1x10.png")
 #var activeTex = preload("res://Graphics/spriteActiveDebug.png")
 
 #TODO: PortraitManager tween is all we really need, right?

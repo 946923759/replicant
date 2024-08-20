@@ -1,0 +1,68 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	251663	Even if we say we're going to defeat the Herrscher, it's obvious that we'll be defeated if we don't have a plan... Attacking her head-on would be suicidal.	说是要击败律者，但还是得想一想办法呢……鲁莽地刚正面肯定是不行的……	律者を倒すって言っても、策がないとやられるのは目に見えてるわよね……。正面からなんて自殺行為だし。	NONE
+speaker	Houraiji Kyuushou
+portraits	101	122
+emote	101	0
+emote	122	0
+msg	251664	No matter how strong a person is, they have weaknesses. For example, they may be physically strong but emotionally weak...	再强大的人都会有弱点，这不是常识么，就比如，肉体强大的人他的弱点就在心灵上……	どれだけ強い人間でも弱点はあるはずだ。例えば肉体が強い半面、心が脆かったり……。	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251665	Emotionally? Yes, that's it! It seems Kyuushou is smart at least once in a while!	心灵？有了！九霄，想不到你这家伙偶尔也能给出点好建议嘛！	心？そう、それよ！九霄、たまには良いこと言うじゃない！	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251666	Huh? R-really? Eheheh. Of course! I am the savior, Kyuushou-sama, after all!	诶？那，那是当然的！我可是救世主九霄大人啊！	へっ？そ、そうか？えへへ。当然よ！我は救世主、九霄様だからな！	NONE
+speaker	Kiana
+emote	101	2
+emote	122	0
+msg	251667	I'm sure I've heard a story like this before. The Herrscher was originally a human, but their consciousness got corrupted by the Honkai, and they began thinking about destroying the world.	我记得有个家伙曾经说过，律者其实本来都是人类，只不过他们的意志正在被崩坏同化，所以才有了毁灭世界的想法。	確か、前にこんな話を聞いたことある気がするの。律者も元は人間、意識が崩壊と同化してしまったことで、世界を滅ぼそうと考えるようになっただけだって。	NONE
+emote	101	0
+emote	122	0
+msg	251668	I'm sure the same is true for Raiden Mei! If we awaken her original will, the two wills in her will repel each other and then surely the situation will be overcome!	雷电芽衣这个新生律者应该也是这样，只要我们能唤醒她自身的意志的话，我就有办法击败她！	雷電芽衣もきっとそうなのよ！彼女の中に眠る本来の意志が目覚めれば、その意志同士が反発しあって、きっとこの状況も打開できるはず！	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251669	Awakening her original will... Two wills that repel each other... Heh, hehehe, what an inspiring phrase! How cool!	唤醒本来的意志，让两股意志相互冲击从而产生矛盾么……听起来好像很帅的样子！	本来の意志を目覚めさせる……。反発し合う二つの意志……。ふ、ふふふ、なんと心くすぐるフレーズ！か、かっこいいではないか！	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251670	But to awaken her original will, she needs some kind of trigger. I wonder what on earth happened to her? Kyuushou, can you tell me everything you know about Raiden Mei?	不过要唤醒原本的意志必须了解她经历了什么，我需要雷电芽衣的资料，把你知道的事情统统告诉我吧。	でも、本来の意志を目覚めさせるには、何かきっかけが必要よね。一体、彼女に何があったのかしら？九霄、雷電芽衣について知っていること、全部教えてくれない？	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251671	Very well. Raiden Mei... She was at the top of Senba Academy even before I enrolled.	雷电芽衣……应该是在我入学之前的事了，她曾经是站在千羽学园顶点的人物。	よかろう。雷電芽衣……彼女は我が入学する前から千羽学園の頂点に立っていた人物だ。	NONE
+msg	251672	Her noble origins combined with her icy demeanor made her the envy of many. Rumor has it that she was confessed to by as many as 12 men in one day, and rejected every single one of them. That's why she was given the title "Queen of Thunder".	因为她那高贵的出身和冷艳的气质，也受到了很多人的崇奉。而且据说有着一天内击败了12个企图求爱的勇士，从而获得了“雷电女王”的称号。	高貴な出身と氷のような雰囲気が相まって、数多くの人から羨望の眼差しを送られていた。噂によると、一日に十二人もの人から告白をされ、それを一蹴したらしい。そこでついた名が「雷電女王」。	NONE
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251673	Wow, what... what an amazing young lady.	呜…这么说来还是个大人物呢。	うわ、何よそれ……すっごいお嬢様なのね。	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251674	Have you heard of ME Corp? It's a company that brings together all kinds of science and technology from around the world. She's also the daughter of its former president, Raiden Ryoma.	ME社你知道吧，那个汇聚着世界科技结晶的圣殿！她就是前任ME社社长雷电龙马的女儿。	ME社を知っているか？世界のありとあらゆる科学技術が集結する企業。彼女は、その前社長である雷電龍馬の娘でもある。	NONE
+speaker	Kiana
+emote	101	2
+emote	122	0
+msg	251675	ME Corp... Isn't that the world's largest electronics company? But, you said he's the former president, did something happen?	ME社？就是那个当今全球最大的电子企业，以制造精密机械著称的ME社？等等，你说前任社长，莫非是发生了什么事情？	ME社って……あの世界最大の電子企業の？あれ、でも前社長っていうことは、もしかして何かあったの？	NONE
+speaker	Houraiji Kyuushou
+emote	101	2
+emote	122	0
+msg	251676	Ahh, a month ago, Raiden Ryoma was arrested for allegedly plotting a financial crime. I don't know the details, but it seems to have been a serious case involving the ME Corp funds.	对，就在一个月前，雷电龙马被卷入一场经济案中，ME社被查出存在巨大的经济问题，身为社长的雷电龙马也被警方逮捕了。	ああ、一ヶ月前に雷電龍馬がある経済的事件を企てたとされ、逮捕されているのだ。詳しくは知らないが、ME社の資金に関わる重大な事件だったらしいな。	NONE
+msg	251677	That was the trigger for all of the servants who had been fond of Raiden Mei to leave her side. The Queen of Thunder, who had reigned at the top of the school, fell from grace overnight. She was now all alone. How ironic.	大概就是受到这个的影响，那些曾经围绕在雷电芽衣周围的忠实奴仆也纷纷散去，堂堂的雷电女王在一夜之间变成了人人唾弃的过街老鼠，真是讽刺呢。	それが引き金となって、雷電芽衣を慕っていた下僕達も一斉に彼女の元を去っていってな。学園の頂点に君臨していた雷電女王は一夜にして転落。たった一人になってしまったのだ。皮肉なものだな。	NONE
+msg	251678	After all, friends are only superficial. They crumble easily over the slightest thing and make people weak. That's why I don't need friends!	所以，朋友这种会使人懦弱的东西根本就是不需要的！	所詮、友など表面上だけのもの。ちょっとしたことですぐ崩れ、人間を軟弱化させる。だから、我には友など不要なのだ！	NONE
+speaker	Kiana
+emote	101	2
+emote	122	0
+msg	251679	……	……	……。	NONE
+emote	101	0
+emote	122	0
+msg	251680	Thank you for telling me. Maybe I can find out her weakness.	原来是这样……很好，说不定可以作为着手点。	話してくれてありがとう。彼女の弱点、見つけられるかもしれない。	NONE
+msg	251681	Let's go, Kyuushou! We have to wake up that senpai! Let's free her from her suffering!	走吧，九霄！我们得去让那个学姐清醒一下，把她从痛苦中解救出来了！	行こう、九霄！あの先輩の目を覚まさせてあげなくちゃ！苦しみから開放してあげましょう！	NONE
+speaker	Houraiji Kyuushou
+emote	101	0
+emote	122	0
+msg	251682	H-hey! That's my line!	喂！这应该是我的台词才对啊！	ちょ、ちょっと！それは我のセリフだ！	NONE

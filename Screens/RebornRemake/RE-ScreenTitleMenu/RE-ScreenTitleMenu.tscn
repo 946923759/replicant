@@ -1,24 +1,35 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Portraits/theresa/415.png" type="Texture" id=2]
-[ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Backgrounds/015/026_1280x720.png" type="Texture" id=4]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScrollItem.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=6]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/ItemScrollerV2.gd" type="Script" id=3]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.gd" type="Script" id=7]
 [ext_resource path="res://Music/CDAudio/re/1-01 - FINAL FANTASY XIII-2 Overture.mp3" type="AudioStream" id=8]
 [ext_resource path="res://Portraits/kyujou/121.png" type="Texture" id=9]
 [ext_resource path="res://Shaders/Gradient.gdshader" type="Shader" id=10]
 [ext_resource path="res://Portraits/kiana/112.png" type="Texture" id=11]
 [ext_resource path="res://Portraits/mei/216.png" type="Texture" id=12]
-[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/test.png" type="Texture" id=13]
+[ext_resource path="res://MenuSounds/system_me_casor.win32.wav" type="AudioStream" id=13]
 [ext_resource path="res://Portraits/himeko/401.png" type="Texture" id=14]
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/logo.png" type="Texture" id=15]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/ScrollObject.tscn" type="PackedScene" id=16]
+[ext_resource path="res://MenuSounds/system_start.win32.wav" type="AudioStream" id=17]
+[ext_resource path="res://Portraits/ningdi/035.png" type="Texture" id=18]
+[ext_resource path="res://Portraits/bronya/301.png" type="Texture" id=19]
+[ext_resource path="res://Portraits/seele/311.png" type="Texture" id=20]
+[ext_resource path="res://Portraits/seele/665.png" type="Texture" id=21]
+[ext_resource path="res://Portraits/hakase/019.png" type="Texture" id=22]
+[ext_resource path="res://MenuSounds/system_me_kette.win32.wav" type="AudioStream" id=23]
 
-[sub_resource type="ShaderMaterial" id=5]
+[sub_resource type="ShaderMaterial" id=9]
 shader = ExtResource( 10 )
-shader_param/color1 = Color( 1, 0.486275, 0.858824, 1 )
+shader_param/color1 = Color( 0.839216, 0.768627, 0, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=13]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0, 0.839216, 0.0509804, 1 )
 shader_param/color2 = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=6]
@@ -26,14 +37,34 @@ shader = ExtResource( 10 )
 shader_param/color1 = Color( 0.639216, 0, 1, 1 )
 shader_param/color2 = Color( 1, 1, 1, 1 )
 
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 1, 0, 0, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 10 )
 shader_param/color1 = Color( 0.952941, 0.517647, 1, 1 )
 shader_param/color2 = Color( 1, 1, 1, 1 )
 
-[sub_resource type="ShaderMaterial" id=7]
+[sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 10 )
-shader_param/color1 = Color( 1, 0, 0, 1 )
+shader_param/color1 = Color( 1, 0.486275, 0.631373, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=11]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 1, 0, 0.607843, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=12]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0.764706, 0.411765, 0, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = ExtResource( 10 )
+shader_param/color1 = Color( 0, 0.0627451, 1, 1 )
 shader_param/color2 = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=8]
@@ -47,32 +78,60 @@ colors = PoolColorArray( 0.321569, 0.745098, 1, 1, 1, 1, 1, 0 )
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.899295, 0.321569, 1, 1, 1, 1, 1, 0 )
 
-[sub_resource type="DynamicFont" id=9]
-size = 64
-extra_spacing_bottom = 5
-font_data = ExtResource( 3 )
+[sub_resource type="GDScript" id=14]
+script/source = "extends Label
+tool
 
-[node name="RR-ScreenTitleMenu" instance=ExtResource( 1 )]
+export(String) var versionDate = \"YYYYMMDDXX\" setget set_text_inner
+
+func set_text_inner(versionDate_):
+	
+	var verString:String = \"RRE:\"
+	
+	# Returns the name of the host OS. 
+	# Possible values are: 
+	# \"Android\", \"iOS\", \"HTML5\", \"OSX\", \"Server\", \"Windows\", \"UWP\", \"X11\".
+	verString+=OS.get_name().left(1).to_upper()+\":\"
+	if OS.is_debug_build():
+		verString+=\"B:\"
+	else:
+		verString+=\"R:\"
+
+	self.text=verString+versionDate_
+	versionDate=versionDate_
+
+func _ready():
+	set_text_inner(versionDate)
+	pass
+"
+
+[node name="RE-ScreenTitleMenu" instance=ExtResource( 1 )]
 script = ExtResource( 7 )
 PrevScreen = "ScreenSelectEra"
 HandleRightClickAsB = true
-startingMenu = "ItemScroller_MainMenu"
+startingMenu = "ItemScrollerV2"
 
-[node name="ColorRect" type="ColorRect" parent="." index="1"]
+[node name="Music" type="AudioStreamPlayer" parent="." index="0"]
+stream = ExtResource( 8 )
+autoplay = true
+
+[node name="BackSound" parent="." index="1"]
+stream = ExtResource( 17 )
+
+[node name="ColorRect" type="ColorRect" parent="." index="2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="TextureRect" type="TextureRect" parent="." index="2"]
+[node name="TextureRect" type="TextureRect" parent="." index="3"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 4 )
 stretch_mode = 7
 
-[node name="BackButton" parent="." index="3"]
+[node name="BackButton" parent="." index="4"]
 visible = false
 
-[node name="Control" type="Control" parent="." index="4"]
+[node name="Background" type="Control" parent="." index="5"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -82,17 +141,28 @@ margin_top = -540.0
 margin_right = 7.0
 margin_bottom = 540.0
 
-[node name="Theresa" type="TextureRect" parent="Control" index="0"]
-material = SubResource( 5 )
+[node name="Ninti" type="TextureRect" parent="Background" index="0"]
+visible = false
+material = SubResource( 9 )
 anchor_right = 0.756
 anchor_bottom = 1.0
-margin_left = 768.0
+margin_left = 896.0
 margin_top = 28.0
-margin_right = 340.48
+margin_right = 725.52
 margin_bottom = -28.0
-texture = ExtResource( 2 )
+texture = ExtResource( 18 )
 
-[node name="Mei" type="TextureRect" parent="Control" index="1"]
+[node name="Estherine" type="TextureRect" parent="Background" index="1"]
+material = SubResource( 13 )
+anchor_right = 0.756
+anchor_bottom = 1.0
+margin_left = 896.0
+margin_top = 28.0
+margin_right = 725.52
+margin_bottom = -28.0
+texture = ExtResource( 22 )
+
+[node name="Mei" type="TextureRect" parent="Background" index="2"]
 material = SubResource( 6 )
 anchor_right = 0.753
 anchor_bottom = 1.0
@@ -102,7 +172,18 @@ margin_right = -165.76
 margin_bottom = -28.0
 texture = ExtResource( 12 )
 
-[node name="Kyuushou" type="TextureRect" parent="Control" index="2"]
+[node name="Himeko" type="TextureRect" parent="Background" index="3"]
+material = SubResource( 7 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 700.0
+margin_top = 28.0
+margin_right = 144.0
+margin_bottom = -28.0
+texture = ExtResource( 14 )
+stretch_mode = 6
+
+[node name="Kyuushou" type="TextureRect" parent="Background" index="4"]
 material = SubResource( 4 )
 anchor_right = 0.74
 anchor_bottom = 1.0
@@ -112,18 +193,50 @@ margin_right = 115.2
 margin_bottom = -28.0
 texture = ExtResource( 9 )
 
-[node name="Himeko" type="TextureRect" parent="Control" index="3"]
-material = SubResource( 7 )
+[node name="Theresa" type="TextureRect" parent="Background" index="5"]
+material = SubResource( 5 )
+anchor_right = 0.756
+anchor_bottom = 1.0
+margin_left = -200.0
+margin_top = 28.0
+margin_right = -426.48
+margin_bottom = -28.0
+texture = ExtResource( 2 )
+
+[node name="Sin Mal" type="TextureRect" parent="Background" index="6"]
+material = SubResource( 11 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -256.0
+margin_left = -700.0
 margin_top = 28.0
-margin_right = -1152.0
+margin_right = -1256.0
 margin_bottom = -28.0
-texture = ExtResource( 14 )
+texture = ExtResource( 21 )
 stretch_mode = 6
 
-[node name="Kiana" type="TextureRect" parent="Control" index="4"]
+[node name="Bronya" type="TextureRect" parent="Background" index="7"]
+material = SubResource( 12 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -500.0
+margin_top = 28.0
+margin_right = -1056.0
+margin_bottom = -28.0
+texture = ExtResource( 19 )
+stretch_mode = 6
+
+[node name="Seele" type="TextureRect" parent="Background" index="8"]
+material = SubResource( 10 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -340.0
+margin_top = 28.0
+margin_right = -896.0
+margin_bottom = -28.0
+texture = ExtResource( 20 )
+stretch_mode = 6
+
+[node name="Kiana" type="TextureRect" parent="Background" index="9"]
 material = SubResource( 8 )
 anchor_right = 0.741
 anchor_bottom = 1.0
@@ -132,7 +245,7 @@ margin_right = -398.72
 margin_bottom = -28.0
 texture = ExtResource( 11 )
 
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="5"]
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="6"]
 position = Vector2( 960, 1100 )
 lifetime = 5.0
 emission_shape = 2
@@ -145,7 +258,7 @@ scale_amount = 19.63
 color = Color( 0.372549, 0.807843, 1, 0.780392 )
 color_ramp = SubResource( 2 )
 
-[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="6"]
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="7"]
 position = Vector2( 960, 1100 )
 lifetime = 5.0
 emission_shape = 2
@@ -158,7 +271,7 @@ scale_amount = 25.0
 color = Color( 0.835294, 0.372549, 1, 0.780392 )
 color_ramp = SubResource( 1 )
 
-[node name="Logo" type="TextureRect" parent="." index="7"]
+[node name="Logo" type="TextureRect" parent="." index="8"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -169,84 +282,81 @@ margin_bottom = 445.0
 texture = ExtResource( 15 )
 stretch_mode = 4
 
-[node name="ItemScroller_MainMenu" type="Node2D" parent="." index="8"]
-position = Vector2( 1920, 540 )
-script = ExtResource( 6 )
+[node name="ItemScrollerV2" type="Control" parent="." index="9"]
+anchor_bottom = 1.0
+margin_right = 499.0
+script = ExtResource( 3 )
+SPACING = 150
+item_position = 0
 
-[node name="Tween" type="Tween" parent="ItemScroller_MainMenu" index="0"]
+[node name="Tween" type="Tween" parent="ItemScrollerV2" index="0"]
 
-[node name="ScrollItem" parent="ItemScroller_MainMenu" index="1" instance=ExtResource( 5 )]
-position = Vector2( -462.455, -491.639 )
+[node name="TextureRect2" parent="ItemScrollerV2" index="1" instance=ExtResource( 16 )]
+margin_left = 4.0
+margin_top = -293.0
+margin_right = 448.0
+margin_bottom = -198.0
 text = "Read Story"
 destinationScreenOrSubmenu = "RE-ScreenSelectChapter"
 
-[node name="ScrollItem2" parent="ItemScroller_MainMenu" index="2" instance=ExtResource( 5 )]
-position = Vector2( -460.21, -307.555 )
+[node name="TextureRect3" parent="ItemScrollerV2" index="2" instance=ExtResource( 16 )]
+margin_left = 20.0
+margin_top = -121.5
+margin_right = 464.0
+margin_bottom = -26.5
 text = "Gallery"
 
-[node name="ScrollItem3" parent="ItemScroller_MainMenu" index="3" instance=ExtResource( 5 )]
-position = Vector2( -454.42, -75.7965 )
+[node name="TextureRect4" parent="ItemScrollerV2" index="3" instance=ExtResource( 16 )]
+margin_left = 11.0
+margin_top = 53.5
+margin_right = 455.0
+margin_bottom = 148.5
 text = "Music"
 
-[node name="ScrollItem4" parent="ItemScroller_MainMenu" index="4" instance=ExtResource( 5 )]
-position = Vector2( -456.053, 171.414 )
+[node name="TextureRect5" parent="ItemScrollerV2" index="4" instance=ExtResource( 16 )]
+margin_left = 20.0
+margin_top = 215.5
+margin_right = 464.0
+margin_bottom = 310.5
 text = "Options"
 
-[node name="ScrollItem5" parent="ItemScroller_MainMenu" index="5" instance=ExtResource( 5 )]
-position = Vector2( -455.302, 379.292 )
+[node name="TextureRect6" parent="ItemScrollerV2" index="5" instance=ExtResource( 16 )]
+margin_left = 16.0
+margin_top = 366.0
+margin_right = 460.0
+margin_bottom = 461.0
 text = "Back"
 destinationScreenOrSubmenu = "ScreenSelectEra"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="11"]
-stream = ExtResource( 8 )
-autoplay = true
+[node name="CursorSound" type="AudioStreamPlayer" parent="." index="12"]
+stream = ExtResource( 13 )
+bus = "SFX"
 
-[node name="TextureRect2" type="TextureRect" parent="." index="12"]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_top = -142.5
-margin_right = 444.0
-margin_bottom = -47.5
-texture = ExtResource( 13 )
+[node name="ConfirmSound" type="AudioStreamPlayer" parent="." index="13"]
+stream = ExtResource( 23 )
+bus = "SFX"
 
-[node name="Label" type="Label" parent="TextureRect2" index="0"]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_left = 8.0
-margin_top = -51.5
-margin_right = 432.0
-margin_bottom = 51.5
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 9 )
-text = "Read Story"
-valign = 1
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="14"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 479.0
+margin_bottom = 70.0
 
-[node name="TextureRect3" type="TextureRect" parent="." index="13"]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_left = 2.0
-margin_top = 35.0
-margin_right = 446.0
-margin_bottom = 130.0
-texture = ExtResource( 13 )
+[node name="Label" type="Label" parent="VBoxContainer" index="0"]
+margin_right = 464.0
+margin_bottom = 50.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "RRE:X:B:2024021100"
+script = SubResource( 14 )
 __meta__ = {
-"_edit_group_": true
+"_editor_description_": "CODE:REGION:DIST:REL:YYYYMMDDXX
+DIST = W for Windows, L for Linux, A for Android, H for HTML5
+REL = R for release, B for beta
+Replicant REborn = RRE
+"
 }
+versionDate = "2024021100"
 
-[node name="Label" type="Label" parent="TextureRect3" index="0"]
-anchor_top = 0.5
-anchor_bottom = 0.5
-margin_left = 8.0
-margin_top = -51.5
-margin_right = 432.0
-margin_bottom = 51.5
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 9 )
-text = "Gallery"
-valign = 1
-
-[connection signal="input_accepted" from="ItemScroller_MainMenu" to="." method="ItemScrollerNewScreen"]
+[connection signal="input_accepted" from="ItemScrollerV2" to="." method="ItemScrollerNewScreen"]
+[connection signal="selection_changed" from="ItemScrollerV2" to="." method="_on_ItemScrollerV2_selection_changed"]

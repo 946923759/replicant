@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=1]
+[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/ItemScrollerV2.gd" type="Script" id=1]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=3]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/ScrollObj.tscn" type="PackedScene" id=4]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Screens/RetroRemake/EraSelect/ScreenSelectEra.gd" type="Script" id=11]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/BigImage.gd" type="Script" id=12]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/EraReborn.jpg" type="Texture" id=13]
+[ext_resource path="res://Fonts/CondensedFont.tres" type="DynamicFont" id=14]
 
 [node name="ScreenSelectEra" instance=ExtResource( 2 )]
 script = ExtResource( 11 )
@@ -26,39 +27,34 @@ stretch_mode = 7
 [node name="Music" type="AudioStreamPlayer" parent="." index="2"]
 script = ExtResource( 3 )
 
-[node name="ActorScroller" type="Node2D" parent="." index="3"]
-position = Vector2( -100, 540 )
+[node name="ActorScroller" type="Control" parent="." index="3"]
+anchor_top = 0.5
+anchor_bottom = 0.5
 script = ExtResource( 1 )
 item_position = 0
 
 [node name="Tween" type="Tween" parent="ActorScroller" index="0"]
 
 [node name="Node2D" parent="ActorScroller" index="1" instance=ExtResource( 4 )]
-position = Vector2( -221.871, -303.769 )
+text = "Retrospective"
+locked = true
 destinationScreenOrSubmenu = "RR-ScreenTitleMenu"
-size = Vector2( 700, 154 )
 
 [node name="Node2D3" parent="ActorScroller" index="2" instance=ExtResource( 4 )]
-position = Vector2( -42.4194, -154.949 )
 text = "Reborn"
 destinationScreenOrSubmenu = "RE-ScreenTitleMenu"
-size = Vector2( 700, 154 )
 
 [node name="Node2D2" parent="ActorScroller" index="3" instance=ExtResource( 4 )]
-position = Vector2( -133.189, 39.5468 )
-text = "Fire Moth DLC"
+text = "Fire Moth"
 destinationScreenOrSubmenu = "ScreenTitleMenu"
-size = Vector2( 700, 154 )
 
 [node name="Node2D4" parent="ActorScroller" index="4" instance=ExtResource( 4 )]
-position = Vector2( 18.9832, 154.343 )
 text = "Era:ZERO"
-size = Vector2( 700, 154 )
+locked = true
 
 [node name="Node2D5" parent="ActorScroller" index="5" instance=ExtResource( 4 )]
-position = Vector2( -61.1072, 306.515 )
-text = "Chapter of Simitri"
-size = Vector2( 700, 154 )
+text = "Legacy"
+locked = true
 
 [node name="Not an ActorScroller" type="Node2D" parent="." index="4"]
 position = Vector2( 1250, 540 )
@@ -80,7 +76,24 @@ texture = ExtResource( 8 )
 [node name="frame" type="Sprite" parent="Not an ActorScroller" index="4"]
 texture = ExtResource( 7 )
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Not an ActorScroller" index="5"]
+[node name="Label" type="Label" parent="Not an ActorScroller" index="5"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -600.0
+margin_top = -450.0
+margin_right = 600.0
+margin_bottom = 450.0
+custom_fonts/font = ExtResource( 14 )
+text = "Unavailable 
+(Missing .pck?)"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Not an ActorScroller" index="6"]
 stream = ExtResource( 5 )
 volume_db = -10.0
 

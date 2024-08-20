@@ -50,7 +50,7 @@ var OPTIONS = {
 	},
 	'textboxStyle':{
 		"type":"list",
-		"choices":["Classic","Modern 1","Modern 2","Frontline"],
+		"choices":["Classic","Modern 1","Modern 2","Reborn", "Frontline"],
 		"default":"Modern 1"
 	},
 	"showMusicNames":{
@@ -86,6 +86,23 @@ var gameResolution:Vector2
 var SCREEN_CENTER:Vector2
 var SCREEN_CENTER_X:int
 var SCREEN_CENTER_Y:int
+
+# This is no different than a bitwise enum,
+# you can do RE_RR_MODE_AVAILABLE & RETRO_AVAILABLE to check status
+enum RE_RR_STATUS {
+	NO_PCK = 0,
+	RETRO_AVAILABLE = 1,    # RR
+	REBORN_AVAILABLE = 2,   # RE
+	RE_RR_AVAILABLE = 3,
+	ERA_ZERO_AVAILABLE = 4, # EZ
+	RR_EZ_AVAILABLE = 5,   # RR & EZ
+	RE_EZ_AVAILABLE = 6,
+	RE_RR_EZ_AVAILABLE = 7,
+	LEGACY_AVAILABLE = 8
+}
+# >0 if RetroRemake.pck or RebornRemake.pck
+# Quit button is replaced with back button in RE and RR title screens
+var RE_RR_MODE_AVAILABLE:int = 0
 
 class Episode:
 	#There is no easy way to get the parent without iterating through the
@@ -133,7 +150,15 @@ chapterDatabase = {
 var chapterDatabase:Dictionary = {
 	#"No Grouping!!":[]
 }
+# Defining more variables for more expansions seems like a bad idea
+var chapterDatabase_RE:Dictionary = {}
+var chapterDatabase_RR:Dictionary = {}
+
+#This should really be named "portrait_database"
 var database = {}
+
+#####################################
+#####################################
 
 # The name of the next cutscene to load from Cutscene/ or GameData/Cutscene
 # if we're using the "cutscene from file" scene
@@ -141,25 +166,62 @@ var nextCutscene:String="kyusyo0-1-1.txt"
 #This is optional, but if it's present the options screen
 #will display the current chapter and description.
 var currentEpisodeData:Episode
+# Is there anywhere better to put this?
+var wasUsingAutoMode:bool=false
 
-func get_episode_index(curEpisode:Episode)->PoolIntArray:
+#####################################
+#####################################
+
+var playerHadSystemData:bool=false
+var playerData={
+	"avatarsUnlocked":[0],
+	"CGunlock":['CG054_waifu2x_art_noise0_scale_tta_1'],
+	"musicUnlock":[],
+	#This is an array of bits since we only need to
+	#store true/false
+	#It will be resized later after chapter DB is loaded
+	#so the length here is irrelevant
+	"completedChapters":[0,0,0,0,0,0,0,0,0,0,0],
+	"completedRetro":[0],
+	"completedReborn":[0],
+	'state':false
+}
+
+static func get_episode_index(chDB:Dictionary, curEpisode:Episode)->PoolIntArray:
 	var chapter_idx:int = -1
 	var episode_idx:int = -1
 	
-	var keys = chapterDatabase.keys()
+	var keys = chDB.keys()
 	for i in range(keys.size()):
 		if keys[i]==curEpisode.parentChapter:
 			chapter_idx=i
 			break
 	
-	var ch = chapterDatabase[curEpisode.parentChapter]
+	var ch = chDB[curEpisode.parentChapter]
 	for i in range(ch.size()):
 		if curEpisode == ch[i]:
 			episode_idx = i
 			break
 	return PoolIntArray([chapter_idx,episode_idx])
+	
+static func get_episode_index_2(chDB:Dictionary, chapter_name:String, episode_name:String)->PoolIntArray:
+	var chapter_idx:int = -1
+	var episode_idx:int = -1
+	
+	var keys = chDB.keys()
+	for i in range(keys.size()):
+		if keys[i]==chapter_name:
+			chapter_idx=i
+			break
+	
+	var ch = chDB[chapter_name]
+	for i in range(ch.size()):
+		if episode_name == ch[i].title:
+			episode_idx = i
+			break
+	return PoolIntArray([chapter_idx,episode_idx])
 
-func get_next_cutscene(curEpisode:Episode,curPart:String):
+static func get_next_cutscene(chDB:Dictionary, curEpisode:Episode,curPart:String):
 	if curEpisode==null:
 		print("No episode!! No next part to load...")
 		return ["",null]
@@ -180,8 +242,8 @@ func get_next_cutscene(curEpisode:Episode,curPart:String):
 	if nextPart!="":
 		return [nextPart+".txt",curEpisode]
 	else:
-		if curEpisode.parentChapter in chapterDatabase:
-			var episodes = chapterDatabase[curEpisode.parentChapter]
+		if curEpisode.parentChapter in chDB:
+			var episodes = chDB[curEpisode.parentChapter]
 			for i in range(episodes.size()):
 				if episodes[i].title==curEpisode.title:
 					if i+1<episodes.size():
@@ -194,11 +256,11 @@ func get_next_cutscene(curEpisode:Episode,curPart:String):
 							print("[Globals] Next episode's parts were empty?")
 					break
 		
-		var k = chapterDatabase.keys()
+		var k = chDB.keys()
 		for i in range(k.size()):
 			if k[i]==curEpisode.parentChapter:
 				if i+1<k.size():
-					var next:Episode = chapterDatabase[k[i+1]][0]
+					var next:Episode = chDB[k[i+1]][0]
 					print("[Globals] Seem to hit the end of this chapter, returning next chapter "+next.parentChapter)
 					return [next.parts[0]+".txt",next]
 				else:
@@ -214,21 +276,6 @@ func get_save_directory(fName:String)->String:
 				return OS.get_executable_path().get_base_dir()+"/"+fName+".json"
 	#If not compiled or if the platform doesn't allow writing to the game's current directory
 	return "user://"+fName+".json"
-
-var playerHadSystemData:bool=false
-var playerData={
-	"avatarsUnlocked":[0],
-	"CGunlock":['CG054_waifu2x_art_noise0_scale_tta_1'],
-	"musicUnlock":[],
-	#This is an array of bits since we only need to
-	#store true/false
-	#It will be resized later after chapter DB is loaded
-	#so the length here is irrelevant
-	"completedChapters":[0,0,0,0,0,0,0,0,0,0,0],
-	'state':false
-}
-# Is there anywhere better to put this?
-var wasUsingAutoMode:bool=false
 
 func load_system_data()->bool:
 	var save_game = File.new()
@@ -254,15 +301,19 @@ func load_system_data()->bool:
 			playerData=dataToLoad['playerData']
 			if not ('completedChapters' in playerData):
 				playerData['completedChapters'] = [0]
+			if not ('completedRetro' in playerData):
+				playerData['completedRetro'] = [0]
+			if not ('completedReborn' in playerData):
+				playerData['completedReborn'] = [0]
 		save_game.close()
-		print("System save data loaded.")
+		print("[SAVEDATA] System save data loaded.")
 		return true
 		
 func save_system_data()->bool:
 	var save_game = File.new()
 	var ok = save_game.open(get_save_directory('systemData'),File.WRITE)
 	if ok != OK:
-		printerr("Warning: could not create file for writing! ERROR ", ok)
+		printerr("[SAVEDATA] Warning: could not create file for writing! ERROR ", ok)
 		return false
 	var dataToSave = {
 		"options":{},
@@ -272,9 +323,66 @@ func save_system_data()->bool:
 		dataToSave['options'][option]=OPTIONS[option]['value']
 	save_game.store_line(to_json(dataToSave))
 	save_game.close()
-	print("Saved to "+get_save_directory('systemData'))
+	print("[SAVEDATA] Saved to "+get_save_directory('systemData'))
 	return true
 
+static func load_database(path:String)->Dictionary:
+	var tmp_database:Dictionary = {}
+	
+	var f = File.new()
+	var ok = f.open(path,File.READ)
+	if ok != OK:
+		printerr("failed to open chapter database! And now everything will break...")
+	else:
+		var lastChapter = "No Grouping!!"
+		var tmp_startChapter:String = ""
+		#var i = 0
+		while !f.eof_reached():
+			var line:String = f.get_line().strip_edges()
+			if line.begins_with("--"):
+				lastChapter=line.substr(2,line.length())
+				tmp_database[lastChapter]=[]
+			elif line.begins_with("#"):
+				continue
+			elif line.begins_with("//VN_START"):
+				var l = line.substr(len("//VN_START")+1,line.length())
+				if len(l)>0:
+					tmp_startChapter=l
+			elif line.begins_with("//VN_STOP"):
+				continue
+			elif !line.empty():
+				var keys = line.split("\t",true)
+				var episode = Episode.new()
+				episode.title=keys[0]
+				if keys.size() > 1:
+					episode.desc=keys[1]
+				else:
+					episode.desc=""
+				if keys.size() > 2:
+					episode.parts=keys[2].split(",",true)
+				else:
+					episode.parts=[]
+				
+				if keys.size() > 3:
+					episode.isSub=keys[3].to_lower()=='true'
+				episode.parentChapter=lastChapter
+				tmp_database[lastChapter].append(episode)
+				
+		if tmp_startChapter != "":
+			#print(tmp_startChapter)
+			var keys = tmp_startChapter.split("/",true)
+			#print(keys)
+			
+			if tmp_database.has(keys[0]):
+				#Hopefully this doesn't cause any refcount issues
+				#Maybe this should just be a string considering it's just key,idx
+				tmp_database['__starting_episode__']=[
+					tmp_database[keys[0]][int(keys[1])]
+				]
+			else:
+				printerr("invalid start "+tmp_startChapter+" defined in ch_db "+path)
+	return tmp_database
+	
 func _ready():
 	
 	gameResolution = get_viewport().get_visible_rect().size
@@ -316,50 +424,12 @@ func _ready():
 		print("Loaded database. "+String(database.size())+" entries.")
 	f.close()
 	
-	ok = f.open("res://ch-sel-db.tsv",File.READ)
-	if ok != OK:
-		printerr("failed to open chapter database! And now everything will break...")
-	else:
-		var lastChapter = "No Grouping!!"
-		var tmp_startChapter:String = ""
-		#var i = 0
-		while !f.eof_reached():
-			var line:String = f.get_line().strip_edges()
-			if line.begins_with("--"):
-				lastChapter=line.substr(2,line.length())
-				chapterDatabase[lastChapter]=[]
-			elif line.begins_with("#"):
-				continue
-			elif line.begins_with("//VN_START"):
-				var l = line.substr(len("//VN_START")+1,line.length())
-				if len(l)>0:
-					tmp_startChapter=l
-			elif line.begins_with("//VN_STOP"):
-				continue
-			elif !line.empty():
-				var keys = line.split("\t",true)
-				var episode = Episode.new()
-				episode.title=keys[0]
-				if keys.size() > 1:
-					episode.desc=keys[1]
-				else:
-					episode.desc=""
-				if keys.size() > 2:
-					episode.parts=keys[2].split(",",true)
-				else:
-					episode.parts=[]
-				
-				if keys.size() > 3:
-					episode.isSub=keys[3].to_lower()=='true'
-				episode.parentChapter=lastChapter
-				chapterDatabase[lastChapter].append(episode)
-				
-		if tmp_startChapter != "":
-			print(tmp_startChapter)
-			var keys = tmp_startChapter.split("/",true)
-			print(keys)
-			currentEpisodeData=chapterDatabase[keys[0]][int(keys[1])]
-			nextCutscene=currentEpisodeData.parts[0]+".txt"
+	chapterDatabase=load_database("res://ch-sel-db.tsv")
+	if chapterDatabase.has('__starting_episode__'):
+		currentEpisodeData=chapterDatabase['__starting_episode__'][0]
+		nextCutscene=currentEpisodeData.parts[0]+".txt"
+		chapterDatabase.erase('__starting_episode__')
+	
 			
 	playerHadSystemData = load_system_data()
 	if playerHadSystemData:
@@ -377,18 +447,19 @@ func _ready():
 			set_fullscreen(OPTIONS['isFullscreen']['value'])
 		else:
 			print("Fullscreen setting is ignored in debug.")
-			
-	#Resize completed chapters array
-	while playerData['completedChapters'].size() < chapterDatabase.size():
-		playerData['completedChapters'].append(0)
 	
-	for i in range(playerData['completedChapters'].size()):
-		playerData['completedChapters'][i] = int(playerData['completedChapters'][i])
+	
+	#Convert floats to int (Godot treats all numbers as float)
+	for k in ['completedChapters','completedRetro','completedReborn']:
+		for i in range(playerData[k].size()):
+			playerData[k][i] = int(playerData[k][i])
 
 
 func _input(_event):
 	if Input.is_action_just_pressed("Fullscreen"):
 		set_fullscreen(!OS.window_fullscreen)
+	elif OS.is_debug_build() and Input.is_action_just_pressed("DebugButtonEnd"):
+		change_screen(get_tree(),"ScreenSelectEra")
 
 func set_fullscreen(b):
 	if b:

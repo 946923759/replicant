@@ -1,0 +1,137 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	
+music	re/1-04 - Etro's Champion
+bg	CG10430
+portraits	101	122
+match_names	Kiana	Kyuushou
+/	251550	Bang! Bang! Bang!	砰！砰！砰！	バンッ！バンッ！バンッ！——カチャ。	NONE
+
+speaker	Kyuushou
+emote	122	0
+/Kyuushou	251551	Huff... huff...	呼——呼——	はぁ、はぁ……。	NONE
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251552	You're already exhausted? We barely walked anywhere!	才跑这么点路就受不了了？你行不行啊喂。	たったこれだけの距離を走っただけで、もうバテたの？	Você já está cansada só por correr a uma distância tão curta?
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251553	Ugh... Don't get the wrong idea! It's just that I haven't fully synchronized with this body yet... That's right! It's just a backlash due to a lack of synchronization...	咕…九霄大人正在和这具躯壳进行精神同步…这，这只是同步过程中的一些不良反应而已……	うぅ……か、勘違いするな！これは、まだこの身体とシンクロしきれてないだけであって……そう！ただのシンクロ不足による反動……。	Oh não! Não me interprete mal. Apenas não estou sincronizado com este corpo ainda ... Sim! Apenas uma reação devido à falta de sincronização.
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251554	Right. Well, go ahead and take your time synchronizing. If you can't run, I'll pull you along, so don't worry.	好吧~那你慢慢同步吧，不用担心~你要是跑不动了我会拖着你走的。	あっそ。じゃあ、ゆっくりシンクロでもしてて。もし走れなくなったら私が引っ張ってあげるから、心配しないでいいわよ。	Ah, certo. Bem, vá em frente e sincronize-se lentamente. Se não conseguir correr, não te preocupes, eu vou puxá-la.
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251555	Ugh... You must be a devil from hell! You can't be human!	呃…你的真实身份一定是地狱派来的恶魔吧！太没人性了!	うぅ……お主、実は地獄から来た悪魔だろ！こ、この鬼畜め！	Ahhh! Você é realmente um demônio do inferno!  Tão Desumana!
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251556	Hehe... So you'd rather become zombie food here?	嚯嚯~那你是想在这里喂死士么？	へぇ……なら、君はここでゾンビの餌にでもなるつもり？	Ah, então você está planejando se tornar o alimento dos zumbis aqui?
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+tn	0	Might be referencing how zombies used to be called "dead apostles" in early game, but idk
+msg	251557	By zombies, do you mean those apostles of death that reek of filth? I imagined the end of the world to be something more beautiful...	你说的死士就是这些散发着污秽气息的使徒么，作为末世的前奏来说缺乏些许艺术感呢……	お主が言うゾンビとは、あの汚らしい使徒どものことか？この世の終末というものは、もっと美しいものを想像していたのだが……。	Por zombies entendem-se aqueles apóstolos imundos? Eu tinha imaginado o fim do mundo para ser algo mais belo. ......
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251558	Yep, those are zombies. They're not that strong on their own, but they become a problem when there's a lot of them, so we need to get out of here before that happens.	这些死士虽然不强，但是一旦他们聚集起来的话也不是那么轻易就能对付的，所以我们得在这之前离开这里。	そうよ、あれがゾンビ。個々はそこまで強くはないけど、数が集まると厄介だから、そうなる前にここを離れないと。	Sim, são zumbis. Eles não são tão fortes individualmente, mas podem ser problemáticos quando há muitos deles, então é melhor sair daqui enquanto podemos.
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251559	Then let them gather! I'll just wipe them out with my "Soul Explosion"!	那就让它们聚集起来再说吧！到时候就用我的“燃魂聚爆”来消灭它们！	だったら、集まらせておけばよい！そしたら、我が「ソール・エクスプロージョン」で一掃してやろう！	Então que se reúnam! Depois vou eliminá-los com o meu `Soul Explosion´.
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251560	Soul... Uhh, what the hell?	燃…什么？是什么鬼东西……	ソー……えっと、何それ？	Ehh... o que é isso?
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251561	Fufu, this is one of my sealed powers. By burning my soul, I can unleash a flame that can melt even the ice of the abyss! And that flame has the hidden power to burn away all sins! Are you impressed?	哼哼~这是我被封印的力量之一，燃烧自己的灼热的灵魂，创造出连寒冰深狱都能融化的烈焰，将一切罪恶焚烧殆尽！	ふふん、これは我が封印されし力の一つ、自らの魂を燃やすことで、深淵の氷すらも溶かす炎を解き放つのだ！そして、その炎は全ての罪を焼き尽くす威力を秘めている！どうだ驚いたか？	Este é um dos meus poderes selados: ao queimar a minha alma, desencadeio uma chama que derrete até o gelo do abismo! E esse fogo tem o poder de consumir todo o pecado! Está surpreendida?
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251562	This girl... Having stupid delusions again at a time like this...	这家伙…这么危险的时候还在想这种蠢事……	こいつ……こんな時にまたバカな妄想をして……。	Esta pessoa...... tem outra fantasia estúpida em um momento como este .......
+emote	101	2
+emote	122	0
+msg	251563	But the fact that she hasn't turned into a zombie means she hasn't been affected by the Honkai. Maybe she's compatible too?	不…等下。她在崩坏的环境下也没有变成死士，这么说她也是适格者么？	いや、でもゾンビになってないってことは、崩壊の影響を受けてないってことよね。もしかして、こいつも適合者なの？	Não, mas o fato de ela não ter se transformado em um zumbi significa que não foi afetada pelo, o Honkai. Talvez ela também seja qualificada?
+msg	251564	The organization places a lot of importance on this girl... Could she really have some power?	既然组织这么重视这家伙，那她一定有着重要的价值…难道她说她真的有着某些能力么……	組織はやたらとこいつのことを重要視してるし……まさか、本当に何か力を持っている可能性も……。	O que aconteceu? Você ficou curiosa para ver meu verdadeiro poder?
+
+speaker	Kyuushou
+emote	101	2
+emote	122	0
+msg	251565	How about it? Do you want me to show you a real miracle?	怎么样~让你见识一下真正的神迹吧！	どうした？我が真の力を見てみたくなったのか？	O que se passa?  Você quer ver meu verdadeiro poder?
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251566	...Okay. I'll trust you this time. Wait here, I'll go and gather all the zombies in this area!	……好吧，就信你一次，你在这里等着，我去把附近的死士聚集过来。	……わかったわ。今回は信じてあげる。ここで待ってて、私はこの辺一帯のゾンビを集めてくるから！	Está bem, eu já entendi. Vou acreditar em você desta vez. Fica aqui, juntarei os zumbis desta área!
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251567	Alright, go ahead. I need to chant to release my power, so go and buy some time!	哼哼~去吧，我的神迹也需要一段时间的吟唱，这段时间就交给你来守护了！	よし、行くがよい。我が力を解放するにも詠唱が必要だからな、ついでに時間稼ぎもしてくるのだ！	Tudo bem, vamos lá. É necessário um encantamento para liberar o  meu poder, e enquanto estiver nisso, vá e ganhe algum tempo para min!
+
+speaker	Kiana
+emote	101	1
+emote	122	0
+msg	251568	Yeah, yeah! Got it!	啧！知道了！知道了！	はいはい！分かったわよ！	Sim! Eu Entendi!
+
+portraits	122
+match_names	Kyuushou
+speaker	Kyuushou
+emote	101	1
+emote	122	0
+msg	251569	O jet-black soul that dwells within me! Take me as your dependent, and answer my summons.	沉眠于吾之体内的深暗魂魄！现吾将以自身之血肉召唤于汝！	我が身に宿りし漆黒の魂よ！我を依代とし召喚に応えよ。	Ó alma negra que habita em meu corpo!  Responda à minha convocação e aceite-me como a sua serva.
+
+speaker	Kiana
+emote	101	0
+emote	122	0
+msg	251570	Uhh... looks like it's started...	呃…已经开始了么……	始まったみたいね……。	Parece que já começou.......
+
+speaker	Kyuushou
+emote	101	0
+emote	122	0
+msg	251571	When the black plague descends upon this world, the wail of the end echoes through the void!	在黑煌的厄运降临凡世之际，绽放于末世的哀嚎之中！	黒き厄災がこの世に降り注ぎし時、終焉の慟哭が虚空に響く！	Quando a calamidade e as trevas cair sobre este mundo, o lamento final ecoará pelo o vazio!
+msg	251572	My will be with thee! Through perdition, I roam the abyss of samsara and taboo! Roaring flames, burn all things in the universe!	汝之意识将与吾共存！湮灭·轮回·追溯于禁忌的深渊！狂哮的烈焰将焚烧万象！	我が意志は汝と共に！滅びを経て、輪廻と禁忌の深淵を彷徨う！咆哮の炎よ、森羅万象を焼き尽くせ！	Minha vontade está com você! Vagando pelo abismo da reencarnação e tabus após perecer! Ó chamas que rugem, queimem o universo!
+
+portraits	101	122
+match_names	Kiana	Kyuushou
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251573	Hey! I've gathered all the zombies! Where's your soul or whatever yet?!	喂！死士都已经引过来了！你的咒语念完了没啊！！	ゾンビを集めたわよ！ソーなんとかとやらはまだ！？	Olá! Os zumbis já estão aqui! Você terminou seu feitiço? !
+
+speaker	Kyuushou
+emote	101	3
+emote	122	0
+msg	251574	Fufufu... Respond to my voice and manifest! Here now, the song of salvation pours forth!	哼哼哼……来吧！与吾一起将神迹显现于世吧！奏响救世的前奏！	ふっふっふっ……我が声に応え顕現せよ！今ここに救世の歌が降り注がん！	Fufufufu... Responda à minha voz e manifeste-se! A canção da salvação está sendo derramada aqui e agora!
+msg	251575	Soul•Explosion!!!	燃魂聚爆！！！	ソール・エクスプロージョンっ！！！	Soul Explosion!!!!
+
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251576	!!!	呜！	っ！！	Uau!
+
+speaker	Kyuushou
+emote	101	3
+emote	122	0
+msg	251577	Soul Explosion! Explosion!! Explosion!!! Ah, huh? Am I not feeling well today?!	爆！爆！爆！呃…嗯…嗯？哎嘿~好像失败了呢！	ソール・エクスプロージョン！エクスプロージョン！！エクスプロージョンッ！！！あ、あれ？きょ、今日は調子が悪いのかな！？	Soul Explosion! Explosion!! Explosion!!! Ah, o que foi isso? Parece que hoje não estou me sentindo bem!
+
+speaker	Kiana
+emote	101	3
+emote	122	0
+msg	251578	...I can't believe I was dumb enough to believe you!!!	果然不能相信你这蠢货！！！	分かってたけど……信じた私がバカだったわね……。	Eu sabia, mas fui estúpida por acreditar nisso...

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/groove gauge 1x10.png-26710c11b7cf545d21c0da8a056be3f8.stex"
+path="res://.import/groove gauge 1x10.png-5033bd3502f86f63a67465a399091ed5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://groove gauge 1x10.png"
-dest_files=[ "res://.import/groove gauge 1x10.png-26710c11b7cf545d21c0da8a056be3f8.stex" ]
+source_file="res://Graphics/groove gauge 1x10.png"
+dest_files=[ "res://.import/groove gauge 1x10.png-5033bd3502f86f63a67465a399091ed5.stex" ]
 
 [params]
 

@@ -9,29 +9,37 @@
 size = 64
 font_data = ExtResource( 2 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+margin_right = 700.0
+margin_bottom = 154.0
+mouse_default_cursor_shape = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-text = "Retrospective"
 
 [node name="Tween" type="Tween" parent="."]
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="TextureRect" parent="."]
+margin_left = -100.0
+margin_right = 600.0
+margin_bottom = 154.0
+mouse_filter = 2
 texture = ExtResource( 3 )
-centered = false
 
-[node name="Sprite2" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+[node name="Sprite2" type="TextureRect" parent="."]
+margin_left = -100.0
+margin_right = 600.0
+margin_bottom = 154.0
+mouse_filter = 2
 texture = ExtResource( 4 )
-centered = false
+stretch_mode = 3
 
 [node name="Label" type="Label" parent="."]
-margin_left = 120.0
-margin_right = 697.0
+margin_left = 20.0
+margin_right = 597.0
 margin_bottom = 149.0
 custom_fonts/font = SubResource( 1 )
-text = "Retrospective"
+text = "OptionItem"
 align = 1
 valign = 1

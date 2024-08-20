@@ -1,6 +1,7 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-nop	(Empty message)
 speaker	Kiana
+match_names	Kiana	Kyuushou
+bg	CG10258
 portraits	101
 music	re/1-04 - Etro's Champion
 emote	101	0
@@ -33,7 +34,6 @@ msg	251502	Target name: Houraiji Kyuushou, a first-year student at Senba Academy
 tn	0	The literal translation was "Kiana, Let's go". I know people don't use third person in English, but I think this is the best balance between literal and natural without removing too much of her catchphrase.
 msg	251503	Let's do this, Kiana! 	琪亚娜，出击！	キアナ、行きます！	Kiana, vá!
 
-bg	015/015_1280x720
 emote	101	2
 msg	251504	This school is really big. If I didn't have this GPS, I don't know how long it would take me to find it...	这学园还真大，要不是有这个GPS定位坐标，不知道我还要找多久……	——ふぅ、この学園って結構広いわよね。GPSがなかったら、どれだけ探索に時間が掛かったか分かったもんじゃないわ。	Essa academia é muito grande, se não fossem as coordenadas do GPS, não sei quanto tempo eu teria que procurar...
 emote	101	0
@@ -42,144 +42,146 @@ msg	251506	*Knock knock knock*	咚咚咚。	ドンドンドン。	NONE
 speaker	Kiana
 emote	101	0
 msg	251507	Excuse me…	请问…	あの……。	Desculpe....
-msg	251508	Aaah!!!!	呜哇！！！！	きゃあっ！！！！	NONE
-speaker	Kiana
+/???	251508	Aaah!!!!	呜哇！！！！	きゃあっ！！！！	NONE
 emote	101	0
-msg	251509	Huh? What? Is the Eruption already starting?! ...We have to hurry!	呃！难道是崩坏爆发了！？管不了这么多了！	えっ、何っ？まさかもう崩壊が！？……急がないと！	Uh! Será que a erupção honkai começou! ? Não aguento mais isto!
-msg	251510	BANG!!!	砰！！！	バンッ！！！	NONE
-speaker	Kiana
+/Kiana	251509	Huh? What? Is the Eruption already starting?! ...We have to hurry!	呃！难道是崩坏爆发了！？管不了这么多了！	えっ、何っ？まさかもう崩壊が！？……急がないと！	Uh! Será que a erupção honkai começou! ? Não aguento mais isto!
+/	251510	BANG!!!	砰！！！	バンッ！！！	NONE
 emote	101	0
-msg	251511	Come on! Get over here! If you get bitten by a zombie, it's all over! I'll protect you——	喂！到我这里来！不要被死士咬到！我来保…	ほらっ！こっちに来て！ゾンビに噛まれたらお終いよ！私が守って——	Ei! Venha até mim! E Não seja mordido por um zumbi! Eu vou te proteger...
-speaker	Houraiji Kyuushou
+/Kiana	251511	Come on! Get over here! If you get bitten by a zombie, it's all over! I'll protect you——	喂！到我这里来！不要被死士咬到！我来保…	ほらっ！こっちに来て！ゾンビに噛まれたらお終いよ！私が守って——	Ei! Venha até mim! E Não seja mordido por um zumbi! Eu vou te proteger...
+bg	CG10436
 portraits	101	122
 emote	101	0
 emote	122	0
-msg	251512	Why?! Why is there an error?! Is there something wrong with the program I wrote in exchange for my life and soul?!	为什么！为什么会报错！我用生命与灵魂谱写的代码到底哪里出了问题！？	どうして！どうしてエラーなのだ！我が生命と魂を引き換えに書いたプログラムに何か問題でもあるのか！？	Por que! Por que ele relata um erro! O que há de errado com o código que escrevi com minha vida e minha alma!
-speaker	Kiana
+/???	251512	Why?! Why is there an error?! Is there something wrong with the program I wrote in exchange for my life and soul?!	为什么！为什么会报错！我用生命与灵魂谱写的代码到底哪里出了问题！？	どうして！どうしてエラーなのだ！我が生命と魂を引き換えに書いたプログラムに何か問題でもあるのか！？	Por que! Por que ele relata um erro! O que há de errado com o código que escrevi com minha vida e minha alma!
+
 emote	101	0
 emote	122	0
-msg	251513	H-huh?	咦？	あ、あれ？	Huh?
-speaker	Houraiji Kyuushou
+/Kiana	251513	H-huh?	咦？	あ、あれ？	Huh?
 emote	101	0
 emote	122	0
-msg	251514	Calm down! Now is not the time to lose your cool. There must be something I've overlooked. Come! Cursed singularity! Reveal yourself!	冷静，现在不是慌乱的时候，一定是某处有着遗漏的缺陷等待着我去补完，来吧！被诅咒的特异点！显现出你的身姿吧！	落ち着け！今は取り乱してる場合ではない。どこか見落としている点があるはずだ。いでよっ！呪われし特異点！我の前にその姿を現すがよいっ！	Calma, este não é o momento de entrar em pânico, deve haver uma falha em algum lugar esperando para ser preenchida, vamos lá! O maldita singularidade! Mostre-se!
-speaker	Kiana
+/???	251514	Calm down! Now is not the time to lose your cool. There must be something I've overlooked. Come! Cursed singularity! Reveal yourself!	冷静，现在不是慌乱的时候，一定是某处有着遗漏的缺陷等待着我去补完，来吧！被诅咒的特异点！显现出你的身姿吧！	落ち着け！今は取り乱してる場合ではない。どこか見落としている点があるはずだ。いでよっ！呪われし特異点！我の前にその姿を現すがよいっ！	Calma, este não é o momento de entrar em pânico, deve haver uma falha em algum lugar esperando para ser preenchida, vamos lá! O maldita singularidade! Mostre-se!
 emote	101	2
 emote	122	0
-msg	251515	This girl... She's the target?	这个人……就是目标么？	この子が……ターゲットなの？	Esta pessoa é o alvo ......?
-speaker	Houraiji Kyuushou
+/Kiana	251515	This girl... She's the target?	这个人……就是目标么？	この子が……ターゲットなの？	Esta pessoa é o alvo ......?
 emote	101	2
 emote	122	0
-msg	251516	Hmm? You... you actually broke through the dimensional barrier I created. You seem to be no ordinary person.	嗯？你是…哼，居然能突破我设置的次元隔断结界，看来不是普通人呢。	ん？お主は……我の次元結界を破るとは、只者ではないようだな。	Hmm? Você é... hmmm, você realmente conseguiu romper o limite da barreira dimensional que eu estabeleci, então você não parece ser uma pessoa comum.
-speaker	Kiana
+/???	251516	Hmm? You... you actually broke through the dimensional barrier I created. You seem to be no ordinary person.	嗯？你是…哼，居然能突破我设置的次元隔断结界，看来不是普通人呢。	ん？お主は……我の次元結界を破るとは、只者ではないようだな。	Hmm? Você é... hmmm, você realmente conseguiu romper o limite da barreira dimensional que eu estabeleci, então você não parece ser uma pessoa comum.
 emote	101	0
 emote	122	0
-msg	251517	Tsk, so you have chuunibyou? No wonder the information said it might be difficult to communicate with the target... Are you Houraiji Kyuushou?	啧，原来是个中二病么，难怪资料上有说可能很难和目标交流……你就是蓬莱寺九霄么？	なるほど……中二病ってやつね。道理で資料に「ターゲットとのコミュニケーションに難あり」と書かれていたわけね、納得。……あなたが蓬莱寺九霄？	Entendo. ...... É chamado de chuunibyo. Não é à toa que o material diz dificuldade de comunicação com o alvo, faz sentido. ...... Você é Houraiji Kyuushou.
-speaker	Houraiji Kyuushou
+/Kiana	251517	Tsk, so you have chuunibyou? No wonder the information said it might be difficult to communicate with the target... Are you Houraiji Kyuushou?	啧，原来是个中二病么，难怪资料上有说可能很难和目标交流……你就是蓬莱寺九霄么？	なるほど……中二病ってやつね。道理で資料に「ターゲットとのコミュニケーションに難あり」と書かれていたわけね、納得。……あなたが蓬莱寺九霄？	Entendo. ...... É chamado de chuunibyo. Não é à toa que o material diz dificuldade de comunicação com o alvo, faz sentido. ...... Você é Houraiji Kyuushou.
+
 emote	101	0
 emote	122	0
-msg	251518	Oh, I didn't expect you to know my real name. Yes, I am the chosen one! The savior of the new world! Houraiji Kyuu——	呵，没想到居然知道我的真名，没错，我就是被选中之人！新世界的救世主！蓬莱寺九……	ほう、よもや我が真名を知るとは。そう、我こそが選ばれし者！新世界の救世主、蓬莱寺九——	Heh, eu nunca pensei que alguém saberia meu nome verdadeiro, sim, eu sou o escolhido! O salvador de um novo mundo! Houraiji k…
-speaker	Kiana
+/Kyuushou	251518	Oh, I didn't expect you to know my real name. Yes, I am the chosen one! The savior of the new world! Houraiji Kyuu——	呵，没想到居然知道我的真名，没错，我就是被选中之人！新世界的救世主！蓬莱寺九……	ほう、よもや我が真名を知るとは。そう、我こそが選ばれし者！新世界の救世主、蓬莱寺九——	Heh, eu nunca pensei que alguém saberia meu nome verdadeiro, sim, eu sou o escolhido! O salvador de um novo mundo! Houraiji k…
+
 emote	101	3
 emote	122	0
-msg	251519	Stop talking nonsense! Follow me!	少废话！跟我走！	そういうのいいから！私について来て！	Para com essa bobagem!  Venha comigo!
-speaker	Houraiji Kyuushou
+/Kiana	251519	Stop talking nonsense! Follow me!	少废话！跟我走！	そういうのいいから！私について来て！	Para com essa bobagem!  Venha comigo!
+
 emote	101	3
 emote	122	0
-msg	251520	Hey! Don't touch me with your dirty hands, I'm— Ow, It hurts! Be gentle! Who the hell are you?!	喂！不要用你那肮脏的手碰我，我可是…疼疼疼！轻点啊！你这家伙到底是谁啦！	おい！その汚い手で触るな、我は……いたたたた！やめっ、やめてよぉ！お、お主何者だ！？	Ei! Não me toque com suas mãos imundas, eu sou... isto dói! Seja gentil! Quem diabos é você!
-speaker	Kiana
+/Kyuushou	251520	Hey! Don't touch me with your dirty hands, I'm— Ow, It hurts! Be gentle! Who the hell are you?!	喂！不要用你那肮脏的手碰我，我可是…疼疼疼！轻点啊！你这家伙到底是谁啦！	おい！その汚い手で触るな、我は……いたたたた！やめっ、やめてよぉ！お、お主何者だ！？	Ei! Não me toque com suas mãos imundas, eu sou... isto dói! Seja gentil! Quem diabos é você!
+
 emote	101	0
 emote	122	0
-msg	251521	You don't need to know who I am, you just need to know that I am here to protect you.	你不用知道我是什么人，你只需要知道我是来保护你的就行了。	私が誰かなんて、今はどうでもいいことよ。ただ君を守りに来ただけ。	Você não precisa saber quem eu sou, você só precisa saber que eu estou aqui para te proteger.
-speaker	Houraiji Kyuushou
+/Kiana	251521	You don't need to know who I am, you just need to know that I am here to protect you.	你不用知道我是什么人，你只需要知道我是来保护你的就行了。	私が誰かなんて、今はどうでもいいことよ。ただ君を守りに来ただけ。	Você não precisa saber quem eu sou, você só precisa saber que eu estou aqui para te proteger.
+
 emote	101	0
 emote	122	0
-msg	251522	Kukuku~ As expected, my divine power has been discovered by my allies lurking in the world... So which organization are you from? Agency? Freemasonry? Crusaders? Or the Brotherhood?	库库库~果然我的神力已经被潜伏在世间的盟友发现了么…所以你是哪个组织的人？机关？共济会？圣教军？还是兄弟会？	クックックッ。どうやら我が神力が潜伏している盟友達にバレたということか……で、お主はどこの組織だ？機関？共済会？聖教軍？それともフラタニティ？	Kukuku~ Certamente meu poder divino foi descoberto por meus aliados à espreita no mundo...então de qual organização você é? O  Governo? Maçonaria? Cruzados? Ou será a Irmandade?
-speaker	Kiana
+/Kyuushou	251522	Kukuku~ As expected, my divine power has been discovered by my allies lurking in the world... So which organization are you from? Agency? Freemasonry? Crusaders? Or the Brotherhood?	库库库~果然我的神力已经被潜伏在世间的盟友发现了么…所以你是哪个组织的人？机关？共济会？圣教军？还是兄弟会？	クックックッ。どうやら我が神力が潜伏している盟友達にバレたということか……で、お主はどこの組織だ？機関？共済会？聖教軍？それともフラタニティ？	Kukuku~ Certamente meu poder divino foi descoberto por meus aliados à espreita no mundo...então de qual organização você é? O  Governo? Maçonaria? Cruzados? Ou será a Irmandade?
+
 emote	101	0
 emote	122	0
-msg	251523	What the hell are those? You've played too many video games...	那些都是什么玩意儿，你主机游戏玩多了吧……	何よそれ、ちょっとゲームのやり過ぎじゃない？	Tudo isto, vem dos jogos de console que você joga demais...
+/Kiana	251523	What the hell are those? You've played too many video games...	那些都是什么玩意儿，你主机游戏玩多了吧……	何よそれ、ちょっとゲームのやり過ぎじゃない？	Tudo isto, vem dos jogos de console que você joga demais...
 msg	251524	Ah... this is so troublesome. How should I explain those things to her...?	啊……好麻烦，我该怎么跟她解释那些东西……	うん、と……どう説明したらいいのかしら。もう面倒くさいわね……。	Ah ...... tão problemática, como posso explicar essas coisas a ela ......
-portraits	122
+
 emote	122	0
 msg	251525	Pip pip pip~	滴滴滴……	ピピピピ……。	NONE
+
 speaker	Kiana
-portraits	101	122
 emote	101	0
 emote	122	0
 msg	251526	Yes, this is Kiana. I'm in contact with the target now.	喂，我是琪亚娜，目前已经和目标接触，请说。	はい、キアナよ。今、ターゲットに接触したわ。	Ei, eu sou Kiana, já entrei em contato com o alvo, fale.
+
 speaker	???
-portraits	101
 emote	101	0
 msg	251527	What are you waiting for? Could it be that you're in some kind of trouble?	怎么还在磨磨蹭蹭的，莫非是遇到了什么麻烦了吗？	何をグズグズしているんだ。まさか何かトラブルでもあったのか？	Por que ainda está demorando? Será que você está tendo algum problema?
+
 speaker	Kiana
 emote	101	0
-msg	251528	Trouble? How could that be possible? This kind of small task is easy as pie for me~	麻烦？怎么可能，这种小任务对我琪亚娜来说简直像喝汤一样~	トラブル？そんな訳ないでしょう。こんな任務、私にかかれば朝飯前よ。	Problemas? De jeito nenhum, uma tarefa tão pequena  como esta é nada para, Kiana.   TN: No chinês, Kiana diz que a tarefa é como comer um pedaço de bolo que expressa a sua confiança em acreditar que ela não terá dificuldades em resolver o problema, então para não ficar confuso usei outra expressão equivalente com o mesmo sentido para facilitar a compreensão   na hora da leitura.
+msg	251528	Trouble? No way! A mission like this is a piece of cake for me~	麻烦？怎么可能，这种小任务对我琪亚娜来说简直像喝汤一样~	トラブル？そんな訳ないでしょう。こんな任務、私にかかれば朝飯前よ。	Problemas? De jeito nenhum, uma tarefa tão pequena  como esta é nada para, Kiana.   TN: No chinês, Kiana diz que a tarefa é como comer um pedaço de bolo que expressa a sua confiança em acreditar que ela não terá dificuldades em resolver o problema, então para não ficar confuso usei outra expressão equivalente com o mesmo sentido para facilitar a compreensão   na hora da leitura.
+
 speaker	???
 emote	101	0
 msg	251529	That’s good. I will send someone to pick you up after you take the target away from Changkong City.	那就好，你将目标带离长空市之后我会派人去接应的。	ならいいが……。迎えを手配する、直ちにターゲットを長空市まで連れてきてくれ。	Isto é bom, enviarei alguém para encontrá-la depois que você tiver tirado seu alvo da cidade de Nagazora.  TN: Por alguma razão na tradução global a pessoa no comunicador diz que irá enviar valquírias, tanto na versão japonesa como a chinesa nunca é dito se este alguém seria uma valquíria nos textos.
+
 speaker	Kiana
 emote	101	0
 msg	251530	Roger. With me, Kiana, here to help, you just wait for my good news!	明白了，有我琪亚娜出马，你们就等我的好消息吧！	了解。やっぱり簡単ね。すぐ戻るから待ってなさい。	Entendido, eu, Kiana, estarei à disposição, então esperem de min  boas notícias!
 msg	251531	Beep!	哔！	ピッ！	NONE
-speaker	Houraiji Kyuushou
-portraits	122
+
 emote	122	0
-msg	251532	Kiana... is that your name? Come to think of it, I believe we've met somewhere before...	琪亚娜…是你的名字么…话说回来你的样子好像在哪里…	キアナ……それがお主の名前か？そういえば、どこかで会ったことがあるような……。	Kiana. é o seu nome?... falando nisso, você parece familiar, onde eu já te vi antes?
-speaker	Kiana
-portraits	101	122
+/Kyuushou	251532	Kiana... is that your name? Come to think of it, I believe we've met somewhere before...	琪亚娜…是你的名字么…话说回来你的样子好像在哪里…	キアナ……それがお主の名前か？そういえば、どこかで会ったことがあるような……。	Kiana. é o seu nome?... falando nisso, você parece familiar, onde eu já te vi antes?
+
 emote	101	0
 emote	122	0
-msg	251533	Okay! Stop wasting time! Come with me now! Otherwise they'll keep rushing me.	好啦！不要墨迹了！赶紧和我走吧！不然又有人要来催了。	ほら、さっさと行きましょう！早くしないと、また何か言われちゃう。	Ok! Não fique distraído! Vamos logo! Se não, alguém virá nos pressionar novamente.
-speaker	Houraiji Kyuushou
+/Kiana	251533	Okay! Stop wasting time! Come with me now! Otherwise they'll keep rushing me.	好啦！不要墨迹了！赶紧和我走吧！不然又有人要来催了。	ほら、さっさと行きましょう！早くしないと、また何か言われちゃう。	Ok! Não fique distraído! Vamos logo! Se não, alguém virá nos pressionar novamente.
+
 emote	101	0
 emote	122	0
-msg	251534	W-wait! At least let me pack my holy relics!	等！等下啦！至少让我打包一下我的圣物啊！	ちょ、ちょっと待て！せ、せめて、聖遺物を……。	Espere! Espere um pouco! Pelo menos deixe-me fazer minhas malas com minhas preciosidades!
-portraits	122
+/Kyuushou	251534	W-wait! At least let me pack my holy relics!	等！等下啦！至少让我打包一下我的圣物啊！	ちょ、ちょっと待て！せ、せめて、聖遺物を……。	Espere! Espere um pouco! Pelo menos deixe-me fazer minhas malas com minhas preciosidades!
+
 emote	122	0
 msg	251535	Pip pip pip~	滴滴滴。	ピピピピ……。	NONE
+
 speaker	Kiana
-portraits	101	122
 emote	101	3
 emote	122	0
 msg	251536	Tsk! Communication again, so annoying...	啧！又是通讯么，烦死了…	もうっ！今度は何！？	Uff! De novo esse comunicador, é irritante...
 msg	251537	...What the heck?! There's not much time left before the Honkai Eruption?! Ha, I guess I'd better prepare myself to be surrounded by zombies...	什么！？距崩坏降临还有……糟糕，时间已经来不及了，看来还得想办法突破死士的包围圈……	……そんな！崩壊までもう時間がないじゃない！はぁ、ゾンビに囲まれることは覚悟しといたほうが良さそうね……。	O que!? Ainda falta tempo antes que comece a erupção Honkai... isso é ruim, já não temos tempo, parece que precisamos encontrar uma maneira de romper o cerco aos mortos-vivos...
-speaker	Houraiji Kyuushou
+
+speaker	Kyuushou
 emote	101	3
 emote	122	0
 msg	251538	Honkai? Zombies? What are you talking about...?	崩坏？死士？那是……	崩壊？ゾンビ？何の話を……。	Honkai？Zumbis? Isto é……
+
 speaker	Kiana
 emote	101	0
 emote	122	0
 msg	251539	Kyuushou, listen to me carefully. You may be confused by the suddenness of the situation, but I want you to understand that you are in a very dangerous situation.	九霄，你听我说。虽然知道你一定非常迷茫和疑惑，但是你现在的处境很危险。	九霄、よく聞いて。突然のことで困惑するかもしれないけど、今がすごい危険な状況だっていうことだけは分かって欲しい。	Kyuushou, me escute. Eu sei que você está muito confuso e com dúvidas, mas sua situação atual é muito perigosa.
 msg	251540	Soon this place will erupt into a great disaster. I've been sent here to protect you and escort you to safety.	这个地方马上就会爆发一场灾难，我是被派来保护你并且带你离开的。	もうすぐ、ここで崩壊という名の災いが発生するわ。私は、君を安全なところまで護衛するよう命じられてるの。	Uma catástrofe está prestes a ocorrer neste lugar e eu fui enviada para protegê-la e levá-la embora.
-speaker	Houraiji Kyuushou
+
+speaker	Kyuushou
 emote	101	0
 emote	122	0
 msg	251541	Disaster... Muahaha... The day of judgement has finally descended upon us!!	灾难…库库库…灭世的灾难终于要降临了么！！	災い……クックックッ……滅世の災いがついに降臨するのね！！	Catástrofe... Kukuku... o apocalipse está finalmente chegando!
+
 speaker	Kiana
 emote	101	0
 emote	122	0
 msg	251542	Huh?!	呃！？	えっ！？	NONE
-speaker	Houraiji Kyuushou
+
+speaker	Kyuushou
 emote	101	0
 emote	122	0
 msg	251543	At last, judgement has arrived. Now is the time to release the seal on my soul! I will use my power and become the Savior of the world!	终于到了裁决的时刻，就让我解放灵魂的封印，成为世界的救世主吧！	裁判の時はついに来た。今こそ我が魂の封印を解き放つ時っ！我の力で混迷の世を救ってみせよう！	Chegou finalmente o momento do julgamento. Agora é o momento de libertar o selo da minha alma! Vou usar o meu poder para salvar o mundo do caos!
 msg	251544	Oh... wait a minute... before I save the world, at least I need to fix this bug, or I will not be able to upload it today. The great Kyuushou has never once failed to keep her promises!	啊…等一下…不过就算要拯救世界的话也得等我先去把游戏的报错给修了…要不然今天就没法上传正式版了，九霄大人从来不会失信于人！	あっ……ちょっと待て……世を救う前に、せめて我にこのバグを修正させてくれ、でないと今日のアップロードに間に合わん。この九霄様は、一度たりとも約束を違ったことがないのだ！	Espera um pouco. Antes de salvar o mundo, pelo menos me permita consertar esse bug, ou eu não conseguirei fazer o upload hoje.  Kyuushou nunca quebrou uma promessa!
-portraits	122
+
 emote	122	0
-msg	251545	Roarrr!	吼吼吼！	ゴーン！ゴーン！ゴーン！	NONE
-speaker	Houraiji Kyuushou
+/	251545	Roarrr!	吼吼吼！	ゴーン！ゴーン！ゴーン！	NONE
+
+speaker	Kyuushou
 emote	122	0
 msg	251546	Hmm? What's that sound?	咦？什么声音？	ん？何の音だ？	NONE
-emote	122	0
-msg	251547	Friday, March 28th, 2014, 14:07:48: Honkai Eruption occuring at Senba Academy...	2014年3月28日，星期五，14:07:48，崩坏已成功降临千羽学园……	2014年3月28日（金）14:07:48、千羽学園に崩壊が発生……。	Em 28 de março de 2014 (sexta-feira) às 14h07min48s, a academia Senba passou por uma Erupção Honkai......
+
+/	251547	Friday, March 28th, 2014, 14:07:48: Honkai Eruption occuring at Senba Academy...	2014年3月28日，星期五，14:07:48，崩坏已成功降临千羽学园……	2014年3月28日（金）14:07:48、千羽学園に崩壊が発生……。	Em 28 de março de 2014 (sexta-feira) às 14h07min48s, a academia Senba passou por uma Erupção Honkai......
+
 speaker	Kiana
-portraits	101	122
 emote	101	0
 emote	122	0
 msg	251548	We're running out of time! Follow me!	没时间解释了，先跟我走！	もう時間がないわ！私について来て！	Não há tempo a perder! Venha comigo!
-speaker	Houraiji Kyuushou
+
+speaker	Kyuushou
 emote	101	0
 emote	122	0
 msg	251549	Ahh— Huh?!	呜诶！	えっ！えっ！？	NONE

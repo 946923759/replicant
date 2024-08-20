@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/134.png" type="Texture" id=1]
 [ext_resource path="res://Ext/RetroRemake/mapimages/179.png" type="Texture" id=2]
@@ -34,6 +34,14 @@
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/136.png" type="Texture" id=32]
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-StageSelectObj.tscn" type="PackedScene" id=33]
 [ext_resource path="res://Ext/RetroRemake/levelbuttonicons/130.png" type="Texture" id=34]
+[ext_resource path="res://Ext/RetroRemake/mapicons/015.png" type="Texture" id=35]
+[ext_resource path="res://Ext/RetroRemake/mapimages/125.png" type="Texture" id=36]
+[ext_resource path="res://Ext/RetroRemake/mapimages/120_768.png" type="Texture" id=37]
+[ext_resource path="res://Ext/RetroRemake/mapimages/109.png" type="Texture" id=38]
+[ext_resource path="res://Ext/RetroRemake/mapimages/110.png" type="Texture" id=39]
+[ext_resource path="res://Ext/RetroRemake/mapimages/119_768.png" type="Texture" id=40]
+[ext_resource path="res://MenuSounds/system_me_casor.win32.wav" type="AudioStream" id=41]
+[ext_resource path="res://MenuSounds/system_me_kette.win32.wav" type="AudioStream" id=42]
 
 [node name="RE-ScreenSelectChapter" instance=ExtResource( 18 )]
 script = ExtResource( 7 )
@@ -61,7 +69,7 @@ margin_bottom = 624.0
 texture = ExtResource( 20 )
 stretch_mode = 1
 
-[node name="RE-1" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="1"]
+[node name="RE-1>1" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="1"]
 margin_left = 446.0
 margin_top = 251.0
 margin_right = 613.0
@@ -70,7 +78,7 @@ rect_scale = Vector2( 1.5, 1.5 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 14 )
 
-[node name="RE-2" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="2"]
+[node name="RE-2>3" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="2"]
 margin_left = 282.0
 margin_top = 598.0
 margin_right = 429.0
@@ -79,7 +87,7 @@ rect_scale = Vector2( 1.5, 1.5 )
 mouse_default_cursor_shape = 2
 texture = ExtResource( 22 )
 
-[node name="RE-3" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="3"]
+[node name="RE-3>5" type="TextureRect" parent="ActorFrame_AreaSelect/Page1" index="3"]
 margin_left = 1357.0
 margin_top = 347.0
 margin_right = 1470.0
@@ -96,7 +104,7 @@ scale = Vector2( 1.875, 2.65 )
 texture = ExtResource( 5 )
 centered = false
 
-[node name="RE-4" type="TextureRect" parent="ActorFrame_AreaSelect/Page2" index="1"]
+[node name="RE-4>7" type="TextureRect" parent="ActorFrame_AreaSelect/Page2" index="1"]
 margin_left = 350.0
 margin_top = 870.0
 margin_right = 517.0
@@ -221,8 +229,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1920.0
 margin_bottom = 1920.0
+__meta__ = {
+"_editor_description_": "hgsgsdgsgsggesegdgbvsb"
+}
 
-[node name="Chapter1-1" type="Control" parent="ActorFrame_PartSelect" index="0"]
+[node name="1>Chapter R1-1" type="Control" parent="ActorFrame_PartSelect" index="0"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -232,13 +243,13 @@ margin_top = -540.0
 margin_right = 960.0
 margin_bottom = 540.0
 
-[node name="Sprite" type="TextureRect" parent="ActorFrame_PartSelect/Chapter1-1" index="0"]
+[node name="Sprite" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="0"]
 margin_right = 1920.0
 margin_bottom = 1080.0
 texture = ExtResource( 25 )
 stretch_mode = 1
 
-[node name="RE1-1" parent="ActorFrame_PartSelect/Chapter1-1" index="1" instance=ExtResource( 33 )]
+[node name="RE1-1" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="1" instance=ExtResource( 33 )]
 margin_left = 238.0
 margin_top = 438.0
 margin_right = 356.0
@@ -247,7 +258,7 @@ mouse_default_cursor_shape = 2
 icon = ExtResource( 3 )
 label = "R1-1"
 
-[node name="RE1-2" parent="ActorFrame_PartSelect/Chapter1-1" index="2" instance=ExtResource( 33 )]
+[node name="RE1-2" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="2" instance=ExtResource( 33 )]
 margin_left = 630.0
 margin_top = 302.0
 margin_right = 748.0
@@ -256,7 +267,7 @@ mouse_default_cursor_shape = 2
 icon = ExtResource( 13 )
 label = "R1-2"
 
-[node name="RE1-3" parent="ActorFrame_PartSelect/Chapter1-1" index="3" instance=ExtResource( 33 )]
+[node name="RE1-2A" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="3" instance=ExtResource( 33 )]
 margin_left = 965.0
 margin_top = 233.0
 margin_right = 1083.0
@@ -265,7 +276,7 @@ mouse_default_cursor_shape = 2
 icon = ExtResource( 19 )
 label = "R1-2A"
 
-[node name="RE1-4" parent="ActorFrame_PartSelect/Chapter1-1" index="4" instance=ExtResource( 33 )]
+[node name="RE1-3" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="4" instance=ExtResource( 33 )]
 margin_left = 1224.0
 margin_top = 366.0
 margin_right = 1342.0
@@ -274,7 +285,7 @@ mouse_default_cursor_shape = 2
 icon = ExtResource( 15 )
 label = "R1-3"
 
-[node name="RE1-5" parent="ActorFrame_PartSelect/Chapter1-1" index="5" instance=ExtResource( 33 )]
+[node name="RE1-4" parent="ActorFrame_PartSelect/1>Chapter R1-1" index="5" instance=ExtResource( 33 )]
 margin_left = 1469.0
 margin_top = 492.0
 margin_right = 1587.0
@@ -283,23 +294,151 @@ mouse_default_cursor_shape = 2
 icon = ExtResource( 9 )
 label = "R1-4"
 
-[node name="Chapter1-2" type="Control" parent="ActorFrame_PartSelect" index="1"]
-margin_left = 1920.0
-margin_right = 1920.0
+[node name="1>Chapter R1-2" type="Control" parent="ActorFrame_PartSelect" index="1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 960.0
+margin_top = -540.0
+margin_right = 2880.0
+margin_bottom = 540.0
 
-[node name="Sprite" type="TextureRect" parent="ActorFrame_PartSelect/Chapter1-2" index="0"]
+[node name="Sprite" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R1-2" index="0"]
 margin_right = 1920.0
 margin_bottom = 1080.0
 texture = ExtResource( 10 )
 stretch_mode = 1
 
-[node name="RE1-6" parent="ActorFrame_PartSelect/Chapter1-2" index="1" instance=ExtResource( 33 )]
+[node name="RE1-5" parent="ActorFrame_PartSelect/1>Chapter R1-2" index="1" instance=ExtResource( 33 )]
 margin_left = 238.0
 margin_top = 479.0
 margin_right = 356.0
 margin_bottom = 644.0
 icon = ExtResource( 17 )
 label = "R1-5"
+
+[node name="RE1-6" parent="ActorFrame_PartSelect/1>Chapter R1-2" index="2" instance=ExtResource( 33 )]
+margin_left = 667.0
+margin_top = 555.0
+margin_right = 785.0
+margin_bottom = 720.0
+icon = ExtResource( 35 )
+label = "R1-6"
+
+[node name="RE1-6A" parent="ActorFrame_PartSelect/1>Chapter R1-2" index="3" instance=ExtResource( 33 )]
+margin_left = 1064.0
+margin_top = 276.0
+margin_right = 1182.0
+margin_bottom = 441.0
+icon = ExtResource( 19 )
+label = "R1-7"
+
+[node name="RE1-8" parent="ActorFrame_PartSelect/1>Chapter R1-2" index="4" instance=ExtResource( 33 )]
+margin_left = 1463.0
+margin_top = 431.0
+margin_right = 1581.0
+margin_bottom = 596.0
+icon = ExtResource( 9 )
+label = "R1-8"
+
+[node name="1>Chapter R2-1" type="Control" parent="ActorFrame_PartSelect" index="2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 2880.0
+margin_top = -540.0
+margin_right = 4800.0
+margin_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R2-1" index="0"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 38 )
+stretch_mode = 1
+
+[node name="1>Chapter R2-2" type="Control" parent="ActorFrame_PartSelect" index="3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 4800.0
+margin_top = -540.0
+margin_right = 6720.0
+margin_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R2-2" index="0"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 39 )
+stretch_mode = 1
+
+[node name="1>Chapter R3-1" type="Control" parent="ActorFrame_PartSelect" index="4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 6720.0
+margin_top = -540.0
+margin_right = 8640.0
+margin_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R3-1" index="0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -617.0
+margin_right = 960.0
+margin_bottom = 617.0
+texture = ExtResource( 40 )
+stretch_mode = 1
+
+[node name="1>Chapter R3-2" type="Control" parent="ActorFrame_PartSelect" index="5"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 8640.0
+margin_top = -540.0
+margin_right = 10560.0
+margin_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="ActorFrame_PartSelect/1>Chapter R3-2" index="0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -617.0
+margin_right = 960.0
+margin_bottom = 617.0
+texture = ExtResource( 37 )
+stretch_mode = 1
+
+[node name="2>Chapter R4-1" type="Control" parent="ActorFrame_PartSelect" index="6"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 10560.0
+margin_top = -540.0
+margin_right = 12480.0
+margin_bottom = 540.0
+
+[node name="TextureRect" type="TextureRect" parent="ActorFrame_PartSelect/2>Chapter R4-1" index="0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -617.0
+margin_right = 960.0
+margin_bottom = 617.0
+texture = ExtResource( 36 )
+stretch_mode = 1
 
 [node name="Label" type="Label" parent="." index="4"]
 margin_right = 363.0
@@ -312,6 +451,7 @@ custom_fonts/font = ExtResource( 4 )
 text = "Position: 1"
 
 [node name="Label2" type="Label" parent="." index="5"]
+visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -368,6 +508,12 @@ texture = ExtResource( 27 )
 stretch_mode = 6
 
 [node name="Tween" type="Tween" parent="." index="9"]
+
+[node name="CursorSound" type="AudioStreamPlayer" parent="." index="12"]
+stream = ExtResource( 41 )
+
+[node name="ConfirmSound" type="AudioStreamPlayer" parent="." index="13"]
+stream = ExtResource( 42 )
 
 [connection signal="gui_input" from="ArrowRight" to="." method="_on_ArrowRight_gui_input"]
 [connection signal="gui_input" from="ArrowLeft" to="." method="_on_ArrowLeft_gui_input"]

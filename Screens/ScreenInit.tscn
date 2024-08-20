@@ -19,7 +19,8 @@ func _ready():
 	#OS.set_window_title(windowTitle)
 	
 	if OS.is_debug_build() and testInitScreen==false:
-		Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
+		Globals.change_screen(get_tree(),\"ScreenSelectEra\")
+		#Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
 		return
 	
 	var t = $Tween

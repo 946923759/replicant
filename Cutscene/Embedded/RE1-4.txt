@@ -1,0 +1,158 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+
+music	re/1-05 - Eternal War
+bg	CG10258
+match_names	Kiana	Kyuushou
+portraits	101
+emote	101	3
+/Kiana	251600	Damn it! I've already exceeded the time to complete the mission! I'm going to be scolded again... And where the hell did Kyuushou go?	可恶！已经超出预定脱离时间了，又要被骂了…九霄那个混蛋究竟跑哪里去了！	もうっ！任務遂行予定時間をオーバーしちゃったじゃない！また怒られる……。	Droga! Já passou da hora marcada para a partida, e vou levar uma bronca de novo... Para onde foi aquela maldita Kyuushou !
+msg	251601	The thunderclouds are getting closer and closer. That Kyuushou girl is always talking about miracles and all that crap, but I never imagined she would have gone towards the thunderclouds. ...Ah, there she is.	离雷暴云越来越近了，那个家伙总是说着神迹什么的鬼话，真一定是朝着这个方向……啊，找到了！	雷雲がどんどん近づいてきてる。九霄のやつ、自分の力だと思ってたし、まさか雷雲の方に行ったんじゃ。…………はぁ、やっぱりいた。	Estou  cada vez mais perto da nuvem da tempestade, aquela pessoa sempre falando em milagres e outras bobagens, deve estar indo nessa direção... Ah, achei!
+
+
+speaker	Kyuushou
+portraits	101	121
+emote	121	0
+msg	251602	It must be around here...	应该就是在这附近了……	この辺りのはず……。	Deve ser por aqui...
+speaker	Kiana
+emote	101	3
+msg	251603	Kyuushou! I finally found you!	你这家伙！终于让我逮到你了！	九霄！やっと見つけたわよ！	Kyuushou! Eu finalmente te encontrei!
+speaker	Kyuushou
+emote	121	0
+msg	251604	Whoa! Ki-Kiana! Calm down! Don't point a gun at me, even as a joke!	呜哇！琪亚娜！你冷静点！不要用枪对着我啦！	うわっ！キ、キアナ！落ち着け！冗談でも銃口をこっちに向けるな！	Ei! Kiana, acalma-te! Não me apontes essa arma, mesmo que estejas a brincando!
+speaker	Kiana
+emote	101	3
+msg	251605	If you run away from me one more time, I'm going to break your legs!	你要是再乱跑我就把你的腿也打断！	もし、また勝手な行動をしたら、本当に動けなくなるまで殴るからね！	Se você correr de novo, vou quebrar suas pernas também!
+speaker	Kyuushou
+emote	121	0
+msg	251606	Y-you devil!	你这个恶魔！	こ、この悪魔！	Você é um demônio!
+speaker	Kiana
+emote	101	0
+msg	251607	Come on! We have to get out of this academy as fast as we can!	哼！不管你怎么说！你现在必须和我一起离开这个学园！	ほら！早くこの学園から脱出するわよ！	Woah! Não importa como você diga! Você precisa sair desta Academia comigo agora!
+speaker	Kyuushou
+emote	121	0
+msg	251608	W-wait! Before we can escape, there's something we must do. We must find the girl and put an end to this demise!	等，等下！在这之前我们一定要找到那个少女，她是阻止末世降临的关键！	ま、待て！脱出する前に我らにはすべきことがある。ある少女を見つけ、この終焉に終止符を打たなければ！	Espera, Espera! Precisamos encontrar aquela garota antes de fazer qualquer outra coisa. Ela é a chave para impedir o fim do mundo!
+speaker	Kiana
+emote	101	0
+msg	251609	Huh?! What are you talking about? Everyone's a zombie now. There are no girls here except for us!	哈！？你在说什么啊！这里除了我们可都是死士啊！	ちょっと、何言ってるの？ここにはもうゾンビしかいないのよ。私達を除いて女の子なんているわけないじゃない！	Ha! ? Do que você está falando! Todos aqui estão mortos, menos nós!
+speaker	Kyuushou
+emote	121	0
+msg	251610	It's a divine revelation from God, who granted me my memories... I'm sure of it! Just trust me for once, Kiana!	这是埋藏在我记忆中的神启，绝对不会错的，请相信我，琪亚娜！	我の記憶に潜む神からの啓示だ……絶対に間違いない！今度ばかりは我を信じてくれ、キアナ！	Esta é a revelação divina enterrada em minha memória, não há absolutamente nenhum erro, por favor, acredite em mim, Kiana!
+speaker	Kiana
+emote	101	0
+msg	251611	Ugh... Even if you say that...	呜……	うぅ……そんなこと言われても……。	NONE
+
+
+bg	CG10258
+portraits	201
+emote	201	0
+/Mei	251612	There's nothing left... There's no one left... No one to care about anymore...	都不在了……大家都不在了……已经没有牵挂了……	もういない……誰もいない……思い残すことなど、もう……。	Não está aqui... Todos se foram... Nós já a deixamos ir...
+speaker	Kyuushou
+emote	121	0
+msg	251613	Ah! There!	啊！在那里！	あっ！あそこ！	Ah! Aí está!
+speaker	Kiana
+emote	101	2
+msg	251614	That girl... She's not a zombie?	那个人……不是死士？	あの人……ゾンビじゃない？	Esse cara ...... não é um zumbi?
+speaker	Kyuushou
+emote	121	0
+msg	251615	It's definitely her! Hmm? Something's wrong with her...	果然是她！但是她的状态好像有些奇怪……	やはり彼女だ！ん？何か様子がおかしいな……。	É ela! Mas sua condição parece um pouco estranha...
+speaker	Kiana
+emote	101	2
+msg	251616	Who is she? Do you know her, Kyuushou?	这个人是谁？九霄你认识么？	誰？九霄の知り合い？	NONE
+speaker	Kyuushou
+emote	121	0
+tn	0	Mei is Japanese, so her first name is Mei and her last name is Raiden. Same goes for Kyuushou. There's no in-universe explanation for this when everyone speaks the same language, so you'll just have to pretend that it's the regional custom in fantasy Asia.
+msg	251617	Her name is Raiden Mei. She's a third-year here at Senba Academy. But she's better known as the "Queen of Thunder". [i][/i]	她是雷电芽衣，是被称作“雷电女王”的三年级生。	彼女は雷電芽衣。「雷電女王」と呼ばれる千羽学園の三年生だ。	NONE
+speaker	Kiana
+emote	101	0
+msg	251618	"Queen of Thunder"... Another Chuunibyou-esque name. She didn't turn into a zombie even though the Honkai Eruption occurred, does that mean she's also compatible...?	“雷电女王”…为什么一个个名字都这么中二，在崩坏环境中也没有变成死士，这家伙也是适格者么……	「雷電女王」……また中二っぽいネーミングね。崩壊が発生したっていうのにゾンビにならなかったっていうことは、あの子も適合者……？	NONE
+speaker	Kyuushou
+emote	121	0
+
+
+portraits	101	121	201
+match_names	Kiana	Kyuushou	Mei
+msg	251619	Raiden Mei!	雷电芽衣！	雷電芽衣！	NONE
+speaker	Mei
+emote	201	0
+msg	251620	You're... that freshman who often hangs around me... Are you going to make some strange prediction about me again?	你是…那个一年生…又要来和我说你那些奇怪的预言了么……	君は……よく私の周りをうろついていた一年生……。また私に変な予言でもするつもり？	NONE
+msg	251621	...But it doesn't matter anymore. Soon this place will be destroyed too.	啊，不过已经不重要了，反正这里马上就要毁灭了。	……でも、もうどうでもいいことね。もうすぐここも滅びるのですから。	NONE
+speaker	Kyuushou
+emote	121	0
+msg	251622	What are you saying?! This place will not perish! I swear on my duty as Savior!	不，这里是不会毁灭的。我不会让这件事的发生的！以救世主之名起誓！	何を言うっ！ここは滅びない！救世主たる我が名に賭けてな！	NONE
+speaker	Kiana
+emote	101	0
+msg	251623	Sigh... I knew it would end up like this...	哎…我就知道会演变成这样……	はぁ……結局こうなるのね……。	NONE
+speaker	Mei
+emote	201	0
+msg	251624	Savior... You think a girl like you can understand my pain? You know nothing at all...	哼，救世主么…那你能明白我内心的痛苦么，明明什么都不明白却一副自命清高的样子……	救世主ですか……。あなたみたいな少女に、私の苦しみが分かるっていうの？何も知らないくせして……。	NONE
+msg	251625	There is no Savior in this world. Even if there was...	这个世界根本就没有什么救世主，即使有的话……	この世に救世主などいません。もし、いるとしても……。	NONE
+
+portraits	101	121	214
+emote	201	0
+emote	214	0
+tween	during	214	stoptweening
+tween	during	foreground	linear,0;visible,true;linear,.2;diffuse,1,1,1,0
+/Mei	251626	I would kill them!	就让我来杀掉他！	私が殺してあげます！	NONE
+
+emote	101	3
+emote	214	0
+portraits	121,false,-1	101,false,-1	214
+match_names	Kyuushou	Kiana	Mei?
+/Kiana	251628	Kyuushou, watch out!	九霄小心！	九霄！	NONE
+shake_camera	1
+/	251627	Bang!!!	轰隆隆！	ドーン！	NONE
+emote	214	0
+/Kiana	251629	The power to manipulate Honkai Energy... You're a Herrscher!	这种操控崩坏能的力量……你是律者！	崩壊エネルギーを操る力……あなた、律者ね！	NONE
+
+emote	101	3
+emote	214	0
+/Mei?	251630	It seems that you are not just some ordinary mortals. But it doesn't matter who you are. I will destroy everything in this world!	看来你们也不是一般人呢，但是不管你们是谁，这个世界都将毁灭在我的手中！	どうやら、お前達もただの一般人ではないようね。でも、何者でも関係ない。私はこの世の全てを滅ぼすのだから！	NONE
+msg	251631	No one can stop me now!	而你们无法阻止！	もう誰も私を止めることはできない！	NONE
+msg	251632	Hehe, HAHAHAHAHAHA!	哈哈哈哈!	ふふっ、ははははははっ！	NONE
+
+portraits	121	101
+match_names	Kyuushou	Kiana
+speaker	Kiana
+emote	101	0
+emote	214	0
+msg	251633	Looks like she's gone... It's good she's a newborn Herrscher though, meaning she's not that strong yet. If we had been careless, we would have been reduced to ashes...	离开了么…还好是新生律者，力量不是特别强，不然我们可都已经被电成焦炭了……	行ったようね……。新生の律者でよかったわ。まだそんなに力が強くないみたい。下手したら消し炭になってたわよ、私達……。	NONE
+msg	251634	Kyuushou, are you hurt?	九霄，你有没有受伤？	九霄、怪我してない？	NONE
+
+speaker	Kyuushou
+msg	251635	There is no need to worry. I am the blessed one chosen by God! You should worry about yourself.	不用担心~我可是被神所眷顾的人，你还是担心你自己的吧~	心配無用だ。我は神に選ばれた恵まれし者だからな！	NONE
+
+speaker	Kiana
+emote	101	1
+msg	251636	In that case, maybe I shouldn't have pushed you out of the way. It would have been nice if you'd been struck by lightning...	看来我刚才就不该把你推开，让你被雷劈一下多好……	なら、放っておいても大丈夫だったのね。いっそ雷にでも打たれてたら面白かったのに……。	NONE
+emote	101	0
+msg	251637	Let's go now. There's no point in lingering here. We have to escape before we run into that Herrscher again.	走了走了，这里已经不适合多呆了……竟然好巧不巧撞到律者，真是倒霉透了。	もう行くわよ。ここに長居する理由もないわ。律者にまた遭遇する前に脱出しましょ。	NONE
+speaker	Kyuushou
+msg	251638	Go? Why should we go? We have to save Raiden Mei!	走？为什么要走？我们得去拯救雷电芽衣才行啊！	行く？どうして行く必要がある？我らは雷電芽衣を救わねばならん！	NONE
+speaker	Kiana
+msg	251639	You can only say that because you don't know the power of a Herrscher! Herrscher are the strongest lifeform born from the Honkai. We alone cannot possibly compete with her.	你啊…不知道律者的力量才能说出这种话。律者是由崩坏诞生的最强生命，光靠我们的力量与律者对抗无疑就是送死。	君は律者の力を知らないから、そんなことが言えるのよ！律者は崩壊から生まれた最強の生命体よ。私達だけじゃ、到底太刀打ちできないわ。	NONE
+msg	251640	What we need to do now is to leave here as soon as possible. And I need to report this to the organization. If that girl is a real Herrscher, this whole area will turn into hell...	现在的最优解是先逃离这里，然后向组织报告这里的情况…如果那家伙是真正的律者的话，恐怕这里会变成地狱般的战场吧……	今するべきは、一刻も早くここを離れること。そして、組織にこのことを報告しないと。もし、あいつが本物の律者なら、ここ一帯は地獄と化すはずよ……。	NONE
+speaker	Kyuushou
+msg	251641	Hell... What a good metaphor. It seems that you are finally beginning to see the truth of the world!	地狱般的战场么…真是不错的比喻呢！看来你也终于明白了世界的真谛！	地獄……いい喩えではないか。どうやらお主もやっと世界の真理が見えてきたようだな！	NONE
+speaker	Kiana
+msg	251642	Hey! Don't associate me with that chuunibyou nonsense. Anyway, we have to get going now. We need to get out before that Herrscher's powers are fully awakened!	切！不要把我和你那种中二思想联系在一起，赶紧跟我走吧，不然等她的力量进化完全，我们可就插翅难飞了。	ちょっと……九霄と一緒にしないでくる？それより、もう行くわよ。律者の力が完全に目覚める前に脱出しなきゃ！	NONE
+speaker	Kyuushou
+msg	251643	Running away, huh? How weak! Kyuushou-sama would never run away!	哼，居然要逃避么，何等懦弱的抉择。但是九霄大人是不会这么做的！	逃げる、だと？なんと軟弱な！この九霄様は逃げたりなどしない！	NONE
+msg	251644	I will find that Herrscher and save her! This is the destined fate of the Savior!	我要去找到那个律者，然后拯救她！这样才是一个救世主的使命！	我はあの律者を見つけ救ってみせる！これは救世主に課せられた宿命なのだ！	NONE
+speaker	Kiana
+msg	251645	Are you even sane...?	你疯了么……	正気なの……？	NONE
+speaker	Kyuushou
+msg	251646	How can you be called a Savior if you leave behind someone, even one like her who is an enemy to the world?	哼，如果放任这种能够毁灭世界的存在继续肆虐的话，那根本就不配被叫做救世主！	彼女のような世界に仇なす存在を放置して、何が救世主か！	NONE
+msg	251647	And didn't you just say that she is a newborn Herrscher, that is, a baby? If we miss this chance, she will become even stronger.	而且你刚才不也说了，那只是新生的律者么，不趁现在打败她的话还要等到什么时候！	それにお主も先ほど言ったではないか、彼女は新生の律者、つまり赤ちゃんというわけだ。もし、この期を逃したら、彼女はもっと強くなってしまう。	NONE
+msg	251648	What's the matter? Don't you want to be a hero and save the world?!	难道你就不想成为拯救世界的那个人么！	どうした？世界を救う英雄になりたくはないのか？	NONE
+speaker	Kiana
+msg	251649	That doesn't interest me! My mission is to get you back to the organization, nothing else matters.	拒绝！我的任务只是把你出去，其他事情我可不想掺和！	そんなの興味ないわよ！私の任務は君を連れて組織に戻ること、他はどうでもいいわ。	NONE
+portraits	121,false,-2	101
+/Kyuushou	251650	I-I'm disappointed in you! You are not worthy to be an apostle of the Savior after all! I will create my own legend. Farewell!	哼…看来我看错你了，果然你没有资格成为救世主的队友！我将一个人创造传奇，再见了~	み、見損なったぞ！やはりお主に救世主の仲間たる資格などない！我は一人で伝説を作る。さらばだ！	NONE
+
+portraits	121,false,-2	101,false,-2
+speaker	Kiana
+msg	251651	Hey, wait a minute! ...Ahhhh! Whatever! Just do what you want!!	喂！等下…啊啊啊啊！不管了，随你高兴吧！！	ちょっと、待ちなさいよ！……あああ！もう分かったわよ！好きにしたらいいじゃない！！	NONE
+speaker	Kyuushou
+msg	251652	That's what I'm talking about! Let's go, Kiana! Let's defeat that Herrscher!	这样才对嘛！出发吧，琪亚娜！让我们去击败那个律者！	そうでなくてはな！行くぞっ、キアナ！あの律者を打ち倒そう！	NONE
+speaker	Kiana
+msg	251653	Somehow... I feel like even I'm being infected with chuunibyou...	不知道为什么……感觉智商突然被拉低了……	なんだか……私まで中二病に汚染されそう……。	NONE

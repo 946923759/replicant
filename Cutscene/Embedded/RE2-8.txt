@@ -1,0 +1,160 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kyuushou
+
+match_names	Kyuushou	Kiana	Mei
+music	re/No Way to Live
+bg	re/ch2
+portraits	121	101	201
+
+emote	121	0
+/Kyuushou	251987	Heheh, we've finally reached the end of the Rainbow Bridge! The Garden of the Gods is right in front of us!	哼哼~，看来终于走到彩虹桥的尽头了！诸神的中庭就在我们的眼前了！	フフン、ついに虹の橋の果てまで来た！神々の庭はもう目の前！	NONE
+/	251988	Bang!	砰！	パァン！	NONE
+speaker	Kyuushou
+emote	121	0
+msg	251989	Aaahh, I-I didn't mean to say that!	呜哇哇我随便说说的！	うわあぁ、な、何気なく言っただけじゃないか！	NONE
+speaker	Kiana
+nop	101
+emote	101	3
+msg	251990	So she was lying in wait here after all.	果然，你一直在这里埋伏着。	やっぱりここで待ち伏せしてたのね。	NONE
+
+
+match_names	Kyuushou	Kiana	Mei	Bronya
+portraits	121,false,-3	101,false,-3	201,false,-3	304,false,3
+
+speaker	Bronya
+nop	101	304
+emote	101	3
+emote	304	0
+msg	251991	Bronya was just following orders.	布洛妮娅只是在遵守命令而已。	ブローニャは命令に従ったまでです。	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251992	Wait... Bronya, "Silver Wolf of the Urals"! Your soul is merely being controlled by the witch of a heretical cult. This is different from your original will. ...Shake off the darkness that has taken root in your heart and proclaim the gospel of a bright future! And then——	且慢…布洛妮娅哟！你的灵魂被邪恶的女巫所操纵，现在的你的思维并不是你真正的夙愿！快醒来吧！你的内心依然还是很向往光明的未来的，所以……	待て……「ウラルの銀狼」ブローニャよ！お主の魂は邪教の魔女に操られているにすぎん。それは本来の意志とは異なるもの。……心に巣食う闇を振り払い、光溢るる未来への福音を鳴らすのだ！そして——	NONE
+/	251993	Bang!	砰！	パァン！	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	251994	Ahh! I-I'm sorry!	哇！对！对不起！	ひゃっ！ご、ごめんなさい！！	NONE
+
+speaker	Bronya
+emote	121	0
+emote	304	0
+msg	251995	I don't know what you're talking about. Subject X... if you value your life, please stay quiet.	布洛妮娅不知道你在说什么，“对象X”为了你的生命安全，请不要说话。	何を言っているのかわかりません。対象X……命が惜しければ、黙っていてください。	NONE
+speaker	Kyuushou
+emote	121	0
+emote	304	0
+msg	251996	Al... Alright.	好…好的。	ひゃ……ひゃい。	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251997	Silencing Kyuushou in an instant... well done.	好强…居然能这么快就让九霄闭嘴。	一瞬で九霄を黙らせるなんて……やるわね。	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251998	Ki... Kiana, what should I do? This child doesn't seem to be one of those guided by God. She doesn't understand what I'm saying.	琪…琪亚娜怎么办，这个人好像并不是我的队友，我的箴言居然无法感化她！	キ……キアナ、どうしよう。この子、神に導かれし仲間じゃないみたい。私の言葉が通じないよぉ。	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	251999	That's why I said she's an enemy! Where do you get the confidence to make her your ally?!	早就跟你说过了她是敌人！真不知道你从哪里来的自信认为她是队友。	だから、あの子は敵だって言ってるでしょ！仲間に出来るなんて自信、どっから湧いてくるのよ！	NONE
+
+emote	101	3
+emote	304	0
+/Bronya	252000	Subject X... Matushka said she needed you too. However, she didn't mention anything about your safety.	对象X，虽然你也是妈妈需要的，但是妈妈并没有说需要保证你的安全……	対象X……お母様はあなたのことも必要と言っていました。ただ、身の安全についてまでは言っていませんでした。	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	252001	...What do you mean?	她是什么意思？	……どういう意味？	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	252002	It means she doesn't care if you're alive or dead! ...Damn, when did reinforcements arrive?! She must've stalled us for time.	就是说她不会管你的死活！糟糕，我感觉她在拖延时间。	あんたの生死なんてどうでもいいってことよ！……くっ、いつの間に増援が！？見事に時間稼ぎをされたってわけね。	NONE
+msg	252003	Tch! We have no choice but to fight here!	啧！只能硬上了！	ちっ！ここは戦うしかないわね！	NONE
+speaker	Bronya
+emote	101	3
+emote	304	0
+msg	252004	You are weaker than before, and in your current state you will not be able to get them out of here.	你比之前更加虚弱了，这样的你是无法带着她们通过这里的。	あなたは以前より弱くなっています。その状態では、彼女達を連れてここを抜けることはできないでしょう。	NONE
+speaker	Kiana
+emote	101	3
+emote	304	0
+msg	252005	You shouldn't decide for yourself whether we can do it or not!	行不行，可不是你说了算！	出来るかどうかを、そっちが勝手に決めないでよね！	NONE
+emote	101	0
+emote	304	0
+msg	252006	Hmm! How's that? You're just a little girl who can only hide and snipe, now do you know just how amazing I am?!	哼！怎么样，只会放黑枪的小鬼，现在知道本小姐的厉害了吧！	ふんっ！どう？隠れて狙撃するだけのお嬢ちゃん、このお姉さんのすごさを思い知った！？	NONE
+speaker	Bronya
+emote	101	0
+emote	304	0
+msg	252007	……	……	……。	NONE
+msg	252008	...Matushka, please remove the functional restrictions on Armored Bunny. At this rate, we are in danger of not being able to complete our mission.	妈妈，为了保证任务成功，布洛妮娅请求解除重装小兔的机能限制。	……お母様、重装ウサギの機能制限を解除してください。このままでは任務遂行が危ぶまれます。	NONE
+speaker	Cocolia
+nop	101	620
+emote	101	0
+emote	620	0
+msg	252009	Rejected. I haven't been able to check on the Herrscher's condition yet. There's a high possibility that she will awaken again. Also, Armored Bunny is still unstable, so I can't take that risk.	驳回，目前律者的状态还没有确认，很有可能再次觉醒，重装小兔目前还没有完全稳定，不能冒这个风险。	却下。まだ律者の状態を確認できていないわ。再び覚醒する可能性も高い。それに重装ウサギはまだ不安定なのよ、そのような危険は冒せないわ。	NONE
+msg	252010	Don't worry, your sisters have dealt with the obstacles and will join you shortly.	你放心吧，你的姐妹已经处理完障碍了，马上就会与你汇合了。	安心なさい、あなたの姉妹達が障害物を処理したから、もうすぐ合流するはずよ。	NONE
+speaker	Bronya
+nop	101	304
+emote	101	0
+emote	304	0
+msg	252011	Roger that.	了解。	了解。	NONE
+speaker	Kiana
+emote	101	0
+emote	304	0
+msg	252012	Hey! What are you muttering to yourself?!	你这家伙！在自言自语些什么呢！	ちょっと！何ぶつぶつ独り言いってんの！	NONE
+msg	252013	Hmph, I hate to bully a child, but... you're going to have to get some sleep!	哼~虽然伤害小孩子不是我的本意，不过不好意思了，只能麻烦你先躺一会了！	ふんっ、子どもをいじめるのは不本意だけど……しばらく寝ててもらうわよ！	NONE
+
+speaker	???
+msg	252014	Ufufufu, if anyone tries to hurt Bronya, I'll to punish that naughty child. For example... a horrible death that makes them writhe in agony.	呵呵呵~伤害布洛妮娅姐姐的人，可是会死的很惨哦~	うふふふ～、ブローニャお姉ちゃんを傷つけようなんて、そんないけない子にはお仕置きしないとね。たとえば……悶え苦しむような凄惨な死とか。	NONE
+
+speaker	Mei
+nop	201
+emote	201	0
+msg	252015	Kiana-chan! Watch out!!	琪亚娜！小心！	キアナちゃん！危ないっ！！	NONE
+speaker	???
+emote	201	0
+msg	252016	Hehehe, you lost lambs, death is just around the corner, can you feel it?	库库库~东张西望的小羊羔~死亡就在你的身边哦！	ククク、迷える子ヒツジども、死がすぐそこまで来ているのを感じるだろ？	NONE
+
+portraits	
+bg	CG10011
+/Kyuushou	252017	Whoa! Wh-what!? Are these ghosts? W-where did they come from!	哇！这！这些家伙是幽灵么！怎么忽然冒出来的！	わわっ！な、何！？こいつら幽霊？ど、どこから出てきた！	NONE
+/Kiana	252018	You guys... are you Anti-Entropy's reinforcements?	你们是……逆熵的援军？	あんた達……ネゲントロピーの援軍？	NONE
+speaker	Seele
+msg	252019	Ufufufu~, so you're the one who hurt Bronya...? I wonder how I should torture  you. I'm looking forward to it.	呵呵呵~你就是伤害布洛妮娅姐姐的人吧~要怎么折磨你呢~真是令人期待呢~	うふふふ～、ブローニャお姉ちゃんを傷つけたのはあんたね……？どうやっていたぶってやろうかしら。楽しみだわ。	NONE
+speaker	Sin
+msg	252020	Bronya, you're pretty useless if you were defeated by such garbage. Hehehe, I guess you really do need me when it really matters.	布洛妮娅，居然被这几个废物给击败了，你还真是没用呢~库库库库~果然，关键时刻总是需要本大爷来救场~	ブローニャ、こんなクズにやられるなんて、ほんと役立たずだなあ。クククク～やっぱり肝心な時はボクが必要なんだな。	NONE
+speaker	Seele
+msg	252021	Sin, I won't forgive you if you say anything bad about Bronya.	杏，你要是再污蔑布洛妮娅姐姐我可是不会饶过你的哦~	シン、ブローニャお姉ちゃんの悪口なら許さないわよ。	NONE
+speaker	Sin
+msg	252022	Hehe, bring it on! If it weren't for Matushka's orders, I would have killed a yandere like you a long time ago!	哼~来吧！要不是妈妈的命令，我早就把你这个病娇小鬼杀掉了！	クク、かかって来いよ。ママの命令じゃなきゃお前みたいなヤンデレ、とっくに殺ってるさ！	NONE
+speaker	Kiana
+msg	252023	Is this... internal dispute?	这是…内讧了？	これって……内輪もめ？	NONE
+speaker	Bronya
+msg	252024	Seele, Sin. We're on a mission. Refrain from talking about unnecessary things.	希儿，杏。这是在任务中，请不要说一些多余的话。	ゼーレ、シン。任務中です、余計な話は慎みましょう。	NONE
+msg	252025	Matsuhka will come to pick them up soon. Until then, we need to keep them still so they don't run away.	妈妈马上就会来接我们了，在这段时间内控制住这些人，不能让她们乘机逃走。	お母様がすぐに迎えに来てくれます。それまで彼女らが逃げないよう、動きを封じておきましょう。	NONE
+speaker	Sin
+msg	252026	Hehehe, I guess I'll just chop off their legs...	库库库~那就把她们的腿砍断吧~	ククク～、じゃあこいつらの足をぶった切ってやるか……。	NONE
+speaker	Seele
+msg	252027	Hmph, for once you say something good. Alright, let's do that——	哼，没想到你也能说出有用的意见呢，那就这么办吧~	フン、たまにはいいこと言うじゃない。じゃあ、そうしま——	NONE
+speaker	Bronya
+msg	252028	——Matushka mother needs them. Don't hurt them.	她们是妈妈需要的，不能伤害她们。	——お母様が彼女たちを必要としています。傷つけてはいけません。	NONE
+speaker	Sin
+msg	252029	Tch, boring.	切，真可惜~	ちぇ、つまんない。	NONE
+msg	252030	Well, I guess I'll wait until Matushka's done with them. Then I'll make them my toys...	那就等妈妈使用完了再跟她们玩好啦！	じゃあ、ママが使い終わってからでいいや。そしたら、おもちゃにしてやる……。	NONE
+bg	black
+msg	252031	Boom boom boom...	轰隆隆隆……	ゴゴゴゴゴ……。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	252032	Wow! Kiana, look! The battleship is coming down! I'm so impressed to be able to see it so close!!!	呜哇！琪亚娜！你看！那艘战舰降下来了！果然近距离看简直帅到爆炸啊！！！	うわっ！キアナ、見て見て！あの戦艦、降りてくる！こんな間近で見られるなんて、感動！！！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	252033	You…	你啊……	あんたね……。	NONE
+speaker	Cocolia
+nop	101	621
+emote	101	0
+emote	621	0
+msg	252034	Welcome to the battleship "Moonlight Throne". You are now under the protection of Anti-Entropy.	欢迎来到我的战舰“月光王座”，从现在起，你们将受到逆熵的保护。	戦艦「月光王座」へようこそ。今からあなたたちはネゲントロピーの保護下に入るのよ。	NONE
+msg	252035	Don't worry... your wish will come true and you'll leave this ruined place.	安心吧…你们会如愿以偿，离开这片崩坏之地的。	安心なさい……あなたたちの願いは叶うから。この崩壊の地を離れて、ね。	NONE

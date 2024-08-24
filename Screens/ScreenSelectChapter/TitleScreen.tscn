@@ -10,9 +10,9 @@
 [ext_resource path="res://Screens/BackButton.tscn" type="PackedScene" id=8]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=9]
 [ext_resource path="res://Shaders/ChapterSelectFadeBottom.tres" type="Material" id=10]
-[ext_resource path="res://MenuSounds/deck_ui_hide_modal.wav" type="AudioStream" id=11]
-[ext_resource path="res://MenuSounds/deck_ui_navigation.wav" type="AudioStream" id=12]
-[ext_resource path="res://MenuSounds/deck_ui_default_activation.wav" type="AudioStream" id=13]
+[ext_resource path="res://MenuSounds/fm/deck_ui_hide_modal.wav" type="AudioStream" id=11]
+[ext_resource path="res://MenuSounds/fm/deck_ui_navigation.wav" type="AudioStream" id=12]
+[ext_resource path="res://MenuSounds/fm/deck_ui_default_activation.wav" type="AudioStream" id=13]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0

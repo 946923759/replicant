@@ -6,7 +6,7 @@
 [ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=4]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Fonts/ChapterListingFont.tres" type="DynamicFont" id=6]
-[ext_resource path="res://MenuSounds/deck_ui_hide_modal.wav" type="AudioStream" id=7]
+[ext_resource path="res://MenuSounds/fm/deck_ui_hide_modal.wav" type="AudioStream" id=7]
 [ext_resource path="res://Fonts/gi-ja-jp.ttf" type="DynamicFontData" id=8]
 
 [sub_resource type="DynamicFont" id=1]

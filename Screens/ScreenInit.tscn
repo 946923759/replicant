@@ -10,6 +10,7 @@ script/source = "extends Control
 
 export(bool) var testInitScreen = false
 export(bool) var disableControllerSupport = false
+export(int,\"Disabled\",\"Fire Moth\",\"Retro\",\"Reborn\",\"Era Select\") var debugBootTo = 1
 
 func _ready():
 	#TODO: Localize this
@@ -18,9 +19,19 @@ func _ready():
 	#	windowTitle+= \" (DEBUG)\"
 	#OS.set_window_title(windowTitle)
 	
-	if OS.is_debug_build() and testInitScreen==false:
-		Globals.change_screen(get_tree(),\"ScreenSelectEra\")
+	if OS.is_debug_build() and debugBootTo>0:
+		var sc = \"ScreenSelectEra\"
+		match debugBootTo:
+			1:
+				sc = \"ScreenSelectChapter\"
+			2:
+				sc = \"RR-ScreenTitleMenu\"
+			3:
+				sc = \"RE-ScreenSelectChapter\"
+			#_:
+			#	Globals.change_screen(get_tree(),\"ScreenSelectEra\")
 		#Globals.change_screen(get_tree(),\"ScreenSelectChapter\")
+		Globals.change_screen(get_tree(),sc)
 		return
 	
 	var t = $Tween
@@ -43,7 +54,9 @@ func _input(event):
 		_on_Timer_timeout()
 
 func next_screen(_a,_b):
-	if (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:
+	if Globals.RE_RR_MODE_AVAILABLE>0:
+		Globals.change_screen(get_tree(),\"ScreenSelectEra\")
+	elif (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:
 		Globals.change_screen(get_tree(),\"ScreenFirstRun\")
 	else:
 		Globals.change_screen(get_tree(),\"ScreenTitleMenu\")
@@ -63,6 +76,7 @@ func _on_Timer_timeout():
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = SubResource( 1 )
+debugBootTo = 3
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0

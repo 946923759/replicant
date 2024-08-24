@@ -3,8 +3,8 @@ tool
 signal clicked()
 #signal mouseover()
 
-export(int,"Read","Gallery","Music","Options","Quit") var ToLoad setget set_sprite
-var l = ["Read","Gallery","Music","Options","Quit"]
+export(int,"Read","Gallery","Music","Options","Quit","Back") var ToLoad setget set_sprite
+var l = ["Read","Gallery","Music","Options","Quit","Back"]
 
 onready var text = $Node2D/Text
 onready var texthl = $Node2D/TextHighlight

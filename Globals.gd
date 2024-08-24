@@ -115,6 +115,7 @@ class Episode:
 	
 	func _to_string():
 		var s = title+":"
+		s+="\n\tParent Chapter: "+parentChapter
 		s+="\n\tDescription: "+desc
 		s+="\n\tParts: "+String(parts)
 		s+="\n\tisSub: "+String(isSub)
@@ -214,11 +215,12 @@ static func get_episode_index_2(chDB:Dictionary, chapter_name:String, episode_na
 			chapter_idx=i
 			break
 	
-	var ch = chDB[chapter_name]
-	for i in range(ch.size()):
-		if episode_name == ch[i].title:
-			episode_idx = i
-			break
+	if chapter_idx >= 0:
+		var ch = chDB[chapter_name]
+		for i in range(ch.size()):
+			if episode_name == ch[i].title:
+				episode_idx = i
+				break
 	return PoolIntArray([chapter_idx,episode_idx])
 
 static func get_next_cutscene(chDB:Dictionary, curEpisode:Episode,curPart:String):
@@ -385,6 +387,13 @@ static func load_database(path:String)->Dictionary:
 	
 func _ready():
 	
+	#false = Do not overwrite base pck data with files of the same name in additional pck
+	var success = ProjectSettings.load_resource_pack("res://Reborn.pck",false)
+	if success:
+		Globals.RE_RR_MODE_AVAILABLE |= Globals.RE_RR_STATUS.REBORN_AVAILABLE
+		print("Loaded Reborn.pck!")
+
+	
 	gameResolution = get_viewport().get_visible_rect().size
 	
 	var forcedFullscreen = 0
@@ -418,10 +427,10 @@ func _ready():
 	var f = File.new()
 	var ok = f.open("res://ggz-portrait-db.json",File.READ)
 	if ok != OK:
-		printerr("Failed to open portrait database")
+		printerr("[Init] Failed to open portrait database")
 	else:
 		database=parse_json(f.get_as_text())
-		print("Loaded database. "+String(database.size())+" entries.")
+		print("[Init] Loaded database. "+String(database.size())+" entries.")
 	f.close()
 	
 	chapterDatabase=load_database("res://ch-sel-db.tsv")
@@ -446,7 +455,7 @@ func _ready():
 		if !OS.is_debug_build():
 			set_fullscreen(OPTIONS['isFullscreen']['value'])
 		else:
-			print("Fullscreen setting is ignored in debug.")
+			print("[Init] Fullscreen setting is ignored in debug.")
 	
 	
 	#Convert floats to int (Godot treats all numbers as float)
@@ -534,6 +543,26 @@ static func deep_copy(v):
 		# Other types should be fine,
 		# they are value types (except poolarrays maybe)
 		return v
+		
+# This will 'reverse' your array because binary is 'right' sided.
+# In other words, doing arr[4] would be ret & 1<<4 to check if arr[4] is true.
+static func bitArrayToInt32(arr:Array)->int:
+	var ret:int = 0;
+	var tmp:int;
+	for i in range(len(arr)):
+		tmp = arr[i]; #0 or 1, this abuses the fact that booleans are '1' if you cast them as ints
+		# Bitwise inclusive OR...
+		# Shift tmp left by i (so it starts rightmost)
+		# then OR it so it sets that bit on ret. If tmp is 0, no effect.
+		ret |= tmp<<i;
+	return ret;
+	
+static func Int32ToBitArray(bitflag:int, arr_len:int=12)->PoolByteArray:
+	var arr = []
+	arr.resize(arr_len)
+	for i in range(arr_len):
+		arr[i] = bitflag & 1<<i
+	return PoolByteArray(arr)
 
 static func get_matching_files(path,fname):
 	#var files = []
@@ -603,6 +632,7 @@ var SCREENS:Dictionary = {
 	"RE-ScreenTitleMenu":"res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.tscn",
 	"RE-ScreenSelectChapter":"res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-ScreenSelectChapterV2.tscn",
 	"RE-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-re.tscn",
+	"RE-ScreenProgrammerCredits":"res://Screens/RebornRemake/RE-ProgrammerCreditsV3.tscn"
 }
 
 var previous_screen = ""

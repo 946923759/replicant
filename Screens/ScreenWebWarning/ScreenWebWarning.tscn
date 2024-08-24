@@ -9,7 +9,7 @@
 [ext_resource path="res://Graphics/Common DialogBox.png" type="Texture" id=7]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=8]
 [ext_resource path="res://stepmania-compat/smQuad.gd" type="Script" id=9]
-[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=10]
+[ext_resource path="res://MenuSounds/Assets_Sounds_Click.wav" type="AudioStream" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 29

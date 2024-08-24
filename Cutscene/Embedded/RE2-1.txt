@@ -1,0 +1,115 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	121	101	201
+nop	This is a hack to make the ch2 bg layer appear right below CG10009 and to make sure the engine pre-caches it
+bg	re/ch2	instant
+bg	black	instant
+
+/???	251801	Matushka, we will soon arrive at the operation area, Senba Academy, and begin sniping operations.	妈妈，即将到达作战区域千羽学园，准备开始狙击作战。	ママ、まもなく作戦エリアの千羽学園に到着、狙撃作戦を開始します。	NONE
+/Cocolia	251802	According to the reconnaissance team's report, the transformation of "Subject A" into a Herrscher has been halted... The target is currently moving away from Senba Academy and towards the Bay Bridge...	根据前方侦查单位的报告，“对象A”的状态发生了变化，看来律者化似乎中断了…目前目标正在离开千羽学园，朝着海湾大桥方向移动。	偵察部隊の報告によると「対象A」の律者化は中断したようね……。現在目標は千羽学園から離れ、ベイブリッジに向かって移動している。	NONE
+msg	251803	Due to the change in plans, the sniping location will also change. Land immediately on the Bay Bridge and hide.	计划改变，变更狙击地点，立即降落至海湾大桥，进行埋伏。	計画変更に伴い狙撃地点も変更する。ただちにベイブリッジに着陸し、潜伏せよ。	NONE
+/???	251804	Copy.	收到。	了解。	NONE
+/Cocolia	251805	The fact that "Subject A"'s transformation into a Herrscher has been suppressed suggests that she might have been interfered with in some way. It's probably "Schicksal". If you find their forces, don't attack them right away, but first find out their strength.	“对象A”的律者表征似乎也已经被压制，也许是遭到了攻击……很可能“天命”已经介入本次崩坏，你要小心。如果发现天命的作战单位不要急于进攻，先试探一下对方的战力。	「対象A」の律者化が抑え込まれたということは、何か妨害をされたのかもしれない。おそらく「天命」組織だろう。もし奴らの部隊を見つけたらすぐには攻撃せず、まずは戦力を探りなさい。	NONE
+/???	251806	Copy.	了解。	了解。	NONE
+/Cocolia	251807	Also, the reinforcements were ambushed by Honkai beasts and won't be able to arrive on time. Please hold them off until they arrive.	那就交给你了，目前增援部队遭到崩坏生物的突袭无法按指定时间到达，在这之前一定要拖住目标的脚步。	それと増援部隊は崩壊生物の奇襲に遭い、時間通りに到着できないわ。到着するまで、なんとか足止めをしなさい。	NONE
+msg	251808	And... no, she's probably just a normal human. She wouldn't be able to survive the Honkai...	另外如果可以的话……算了……她大概只是一个普通人，应该是没有希望在崩坏中生存。	それから……いや、彼女はおそらく普通の人間。崩壊の中では生き延びられないはず……。	NONE
+msg	251809	You can leave "Subject X" alone for now. However, "Subject A" must survive. Don't let her die.	就这样吧，“对象X”的事你暂时不用管了……但是，必须保证“对象A”的生命迹象，绝对不能让她死亡。	「対象X」はひとまず放っておいていいわ。ただし「対象A」の生存は絶対条件よ。決して死なせてはだめ。	NONE
+/???	251810	Yes, Matushka.	是，妈妈。	はい、ママ。	NONE
+/Cocolia	251811	Well then, I wish you success, my dear daughter...	那么，祝你成功，我的女儿……	それじゃあ、成功を祈るわ。私の可愛い娘……。	NONE
+/???	251812	Copy that. Entering area of operation and preparing to land.	遵命。进入作战区域，开始降落。	はい。作戦エリアに進入、着陸準備に入ります。	NONE
+
+bg	CG10009
+/Bronya	251813	Operation start.	作战开始。	作戦開始。	NONE
+
+nop	Was this REALLY necessary
+portraits	121	101	201
+tween	during	foreground	visible,true;horizalign,left;zoomx,0;diffuse,0,0,0,1;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
+tween	during	CG10009	sleep,.3;diffusealpha,0
+tween	during	re/ch2	sleep,.3;diffusealpha,1
+tween	during	121	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+tween	during	101	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+tween	during	201	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+
+music	re/March of the Dreadnoughts
+emote	121	0
+match_names	Kyuushou	Kiana	Mei
+/Kyuushou	251814	Kiana, Kiana! You know that battleship, right? D-don't you think it's cool? ...Although the name Moonlight Throne is kind of lame.	琪亚娜琪亚娜，你认识那个东西的吧？那个战舰听你说好像是叫月光王座？怎么那么帅的东西有一个这么土的名字……	キアナ、キアナ！あの戦艦知ってるんでしょ？カ、カッコイイと思わないか！……ただ月光王座っていう名前だけはダサいけど。	NONE
+msg	251815	A flying battleship like that should be named something like "Chains of Heaven"! No, that's not it, something more profound... like "Crown of the Gods"!	这种浮空战舰怎么着也该有个像“天之锁”这样子的名字才对吧！不对不对，感觉应该更沉重一点…“诸神之冠”应该不错的样子……	ああいう飛行戦艦には「天の鎖」みたいな名前をつけてあげるべき！ううん、違う、もっと重厚感のある……そう「神々の冠」とか！	NONE
+nop	Force bg to appear if player held ctrl
+bg	re/ch2	instant
+
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251816	Sigh... she's being chuunibyou again.	这家伙又开始犯中二了……	はぁ……また中二病が始まっちゃったよ。	NONE
+
+speaker	???
+emote	101	0
+msg	251817	Kiana? Can you hear me?	琪亚娜？你有在听吗？	キアナ？聞こえるか？	NONE
+speaker	Kiana
+emote	101	0
+msg	251818	Ahhh… I'm listening!	啊啊…我听着呢！	っと通信ね、聞こえてるわよ。	NONE
+speaker	???
+emote	101	0
+msg	251819	Anti-Entropy has already begun to act. Abandon your original planned retreat route and leave Senba Academy as soon as possible.	逆熵已经开始行动了，原来安排给你的迂回路线废弃，必须争分夺秒离开千羽学园。	ネゲントロピーは既に行動を開始している。当初予定していた退路は破棄し、一刻もはやく千羽学園から離れろ。	NONE
+msg	251820	Take the target and head directly from the Bay Bridge to downtown Changkong City. There's a Schicksal squad in the city, so I will send them to pick you up.	你带着目标直接从海湾大桥前往长空市市区吧。市区里有天命的小队，我会让他们去接应你们的。	目標を連れて直接ベイブリッジから長空市市内に向かうんだ。市内には天命の小隊がいるから、迎えに行かせよう。	NONE
+speaker	Kiana
+emote	101	0
+msg	251821	The Bay Bridge?! But a place with that many people would be full of zombies!	海湾大桥！？那里可是人流量超大的地方啊！这就意味着我们从茫茫多的死士堆里爬过去！你不是在开玩笑吧！	ベイブリッジ！？あんな人の多かったところ、ゾンビだらけに決まってるじゃない！	NONE
+msg	251822	Besides, I haven't heard of a Schicksal squad being stationed in Changkong City!	而且长空市里有天命的部队驻扎？来之前我可没有听说过这种事啊！	それに長空市に天命の部隊がいるなんて、今まで聞いたことないわよ！	NONE
+speaker	???
+emote	101	0
+msg	251823	I'll explain the details later, but this is a squad that Theresa has assigned to carry out a secret mission in Changkong City. I've already been in contact with Theresa. She will help you with your mission.	具体的情况回来再说，那是由德丽莎安排的一支在长空市执行秘密任务的小队，我已经与德丽莎取得联系，她们会配合你的任务。	詳しい説明は後でするが、長空市で機密任務を遂行するためテレサが配置した小隊なんだ。テレサとはもう連絡がついている。お前の任務に協力してくれるだろう。	NONE
+speaker	Kiana
+emote	101	0
+msg	251824	Got it, it's certainly better to have a companion. Theresa, huh. I wonder what that secret mission is anyway...	好吧，有队友我也不用这么辛苦了，大姨妈也真是的，也不知道到底是什么机密的任务……	分かった、仲間がいるほうが助かるのは確かだし。テレサもまったく、そもそも機密任務って何なのかかしら……。	NONE
+speaker	???
+emote	101	0
+msg	251825	We'll talk about that another time. First, take care of your business. And... don't cause any more trouble.	这些你就先别管了，先办好你自己的事吧，别再多惹事端了。	その話はまた今度だ。まずは自分の仕事を片付けろ。それと……これ以上面倒事は起こすなよ。	NONE
+speaker	Kiana
+emote	101	1
+msg	251826	It's not my fault—!	那明明是——	別に私のせいじゃ——！	NONE
+speaker	???
+emote	101	1
+msg	251827	And one more thing, watch out for Anti-Entropy's—...... wolf—......	哦对了，还有一件事，你要小心逆熵……的……狼——	あとそれから一つ、ヤツには気をつけろ。ネゲントロピー……の……狼——	NONE
+msg	251828	Bzzzzt... bzzt...	滋啦滋啦……	ザザ……ザー……。	NONE
+speaker	Kiana
+emote	101	0
+msg	251829	Wh-wha—?! The battery's dead again! I wonder if this communicator is even okay...	喂！？喂喂？怎么又没信号了？这手机行不行啊……	ちょ、ちょっと！？また電池切れ！？この通信機大丈夫かしら……。	NONE
+emote	101	2
+msg	251830	So, Dad told me to be careful of... a wolf? Hmm, well, never mind. Whether it's a wolf or not, I, Lady Kiana, will KO them with one hit!	好像刚才老爹是让我小心什么狼来着……算了…管他来的是狼还是人，我琪亚娜都会把他一枪撂倒。	さっきパパ、何かに気をつけろって言ってたけど……狼？うーん、まぁいいわ。狼だろうとなんだろうと、このキアナ様が一発KOしてやるんだから！	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251831	Kiana-chan... who are you? You're not just a student, are you?	琪亚娜……你似乎并不像是一个普通的学生，你究竟是什么人？	キアナちゃん……あなた一体何者なの？ただの学生、じゃないわよね。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251832	I'm sorry, Mei-senpai, we have to talk about that another time. I don't have time to explain right now.	芽衣学姐，虽然知道现在你还是有很多疑问，但是现在没时间说太多了。	ごめんなさい芽衣先輩、その話はまた今度。今は説明している時間も惜しいの。	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251833	Okay, then let me know when we can talk, alright?	我明白了，等你什么时候想说的时候再告诉我吧。	分かったわ、また話せる時に教えてくれる？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251834	Yes, definitely. Let's go then. We have to get to downtown before the Anti-Entropy forces arrive. Mei-senpai, can you move? If you can't, I'll carry you on my back.	嗯，那我们走吧，我们得赶在逆熵的部队到来之前到达长空市才行。芽衣学姐，你还能撑得住么？实在不行的话我背你吧？	うん、必ず。じゃあ行きましょ。ネゲントロピーの部隊がやって来る前に長空市に行かないと。芽衣先輩、動ける？無理ならおぶって行くけど？	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251835	It's okay, I'm just a little weak. But I'm not some frail young lady. I train in kendo.	我没事的，只是稍微有些虚弱而已。再说了，我也不是那么娇贵的大小姐，我可是练过剑道的。	大丈夫よ、ちょっと体が弱いだけ。といってもそんなひ弱なお嬢様じゃないわ。剣道で鍛えてるんだから。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251836	Really? Well then, let's go!	那我们出发咯~！	そう？じゃあ、しゅっぱーつ！	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251837	Wait, not yet...	等一下，不是还有……	待って、まだ……。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251838	Kiana! Look, there's someone in the sky... Agh, don't pull me, I can walk by myself!!	琪亚娜！你快看，天上有个人……哇哇哇，别扯我啊，我自己会走的啦！！	キアナ！見ろ、空に人がいる……わわわ引っ張るな、自分で歩けるから！！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251839	What person? Don't be silly, let's hurry!	哪有什么人？别废话，快走！	どこに誰がいるって？バカ言ってないで、急ぐわよ！	NONE

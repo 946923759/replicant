@@ -23,3 +23,13 @@ tween	during	foreground	horizalign,left;linear,.3;zoomx,1
 msg	Or if you're not satisfied with the alignment... 
 tween	during	foreground	horizalign,right;linear,.3;zoomx,0
 extend	You can set the alignment of the rect within a tween.
+
+bg	re/ch2	instant
+bg	CG10009	instant
+portraits	
+msg	And to transition without pauses... You can do something like this!
+nop	tween	during	CG10009	
+tween	during	foreground	visible,true;horizalign,left;zoomx,0;diffuse,0,0,0,1;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
+tween	during	CG10009	sleep,.3;diffusealpha,0
+tween	during	re/ch2	sleep,.3;diffusealpha,1
+msg	Test.

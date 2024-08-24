@@ -1,0 +1,61 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	re/ch2	instant
+portraits	121	101	201
+match_names	Kyuushou	Kiana	Mei
+music	re/March of the Dreadnoughts
+
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251869	Phew, good thing I made it in time. I cut off both of the mecha's transmission systems. But it's still possible they've found us, so we have to be careful.	呼~还好反应地快，率先把两台机甲的信息传输系统给切断了，不过就算是这样也还是有暴露的可能…还是小心一点好了。	ふぅ、間に合って良かった。機甲の伝送システムは2台とも切断したわ。ただ、それでもバレている可能性はあるから、気をつけないと。	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251870	Kiana-chan, are you okay?	琪亚娜，你还好吧？	キアナちゃん、大丈夫？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251871	It's okay, I just broke the transmitter. See, no one was hurt!	没事~就是拆个发信器而已，我是不会受伤的啦~	大丈夫よ、発信機を壊しただけだから。ほら、ケガも全くなし！	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251872	Mmmpph——!! Mmmm!	唔唔唔唔唔！	もごぉーー！！むぐぐ！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251873	Thank you, Mei-senpai, for taking care of this kid. But... even though she's tied up, she doesn't stay quiet at all.	芽衣学姐才是，照顾这个家伙辛苦了吧~虽然被绑起来了，看起来也一点都没有消停呢。	芽衣先輩こそ、この子の面倒を見てくれてありがとう。それにしても……縛られてるっていうのに全然大人しくならないわね。	NONE
+speaker	Mei
+nop	201
+emote	201	1
+msg	251874	T-that's right... Anyway, I'm glad you're safe, Kiana-chan. ...By the way, it seems like you've been on your guard against Anti-Entropy for a while now, are you enemies?	啊哈哈，没有啦…你没事就好……话说回来，琪亚娜，你似乎一直在防备着那些逆熵的人，你们是敌对关系吧？	そ、そうね……。とりあえず、キアナちゃんが無事で良かったわ。……ところで、ずっとネゲントロピーのことを警戒しているようだけど、敵同士なの？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251875	……	……	……。	NONE
+msg	251876	That's right. We're like oil and water.	你说的没错，我们和那些家伙确实是势同水火的关系。	その通りよ。あいつらとは正に水と油のような関係ね。	NONE
+msg	251877	In recent years, the anti-Honkai activities of Schicksal have been disrupted all over the world. Investigations have revealed that another organization with similar goals to ours is operating in the shadows.	近几年，天命在世界各地的对抗崩坏的行动中受到了不同程度的阻碍，据我们调查，还有一个和我们有着相似目的的组织在暗中活跃。	ここ数年、世界各地で天命組織による対崩壊活動が妨害されているの。調査によると、私たちと似た目的を持つ別の組織が暗躍しているらしくて。	NONE
+msg	251878	However, the inner workings of that organization are mostly shrouded in mystery. According to information, it seems that the organization has a deep connection with Anti-Entropy. Incidentally, that organization is also related to you, Mei-senpai.	这个组织藏得很深，但我们还是掌握了一些信息，逆熵和一个势力有着莫切的联系，而这个势力跟芽衣学姐还有些关系呢。	ただ、その組織の内情はほぼ謎に包まれているの。情報によると、その組織とネゲントロピーには深い関係があるみたい。ちなみに、その組織というのは芽衣先輩とも関係があるのよ。	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251879	Something to do with me... maybe my father?!	跟我有关，难道是父亲！？	私と関係があるって、もしかしてお父様！？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251880	The president of ME Corp., Raiden Ryoma. Numerous sources confirm that he's an Anti-Entropy Executor.	没错。雷电龙马，ME社的社长，有多条情报证明他是逆熵的高层之一。	そうME社の社長、雷電龍馬。数多くの情報が彼をネゲントロピーの幹部だと裏付けているわ。	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251881	I see... I also sometimes felt that Father's work was strange... But he never told me anything about it.	居然会是这样…我也察觉到一些父亲工作的异样，但是父亲从来不告诉我关于他的事情。	そうだったの……私もお父様の仕事を異様に感じることはあったの……。でも、お父様は何も教えてくれなくて。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251882	According to Kyuushou, Mr. Raiden was suddenly arrested by the police a month ago. The key clues are in the prison cell... There are still many mysteries surrounding this.	不过听九霄说就在一个月前雷电龙马居然被警方逮捕了，看来这其中还有很多谜团呢，倒是我们又断了一条线索……	九霄の話では、雷電氏は1ヶ月前に突然警察に捕まったそうよ。肝心な手がかりは牢獄の中……。まだまだ謎は多そうね。	NONE
+speaker	Mei
+nop	201
+emote	201	1
+msg	251883	Thank you, Kiana-chan. You've given me a lot of information.	谢谢你，琪亚娜，让我知道了这么多事情。	ありがとう、キアナちゃん。いろいろ教えてくれて。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251884	No, you're one of us now, Mei-senpai! Although there are some confidential information I can't tell you, there are some things I can explain in detail.	没事！毕竟芽衣现在是我的同伴嘛~既然是同伴的话，虽然有些机密的情报不能告诉你，但是一些具体情况还是能让你了解的啦~	ううん、芽衣先輩は今や私たちの仲間でしょ！話せない機密情報もあるにはあるけど、詳しく説明できることもあるから。	NONE

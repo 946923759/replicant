@@ -1,0 +1,73 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+
+speaker	Kyuushou
+match_names	Kyuushou	Kiana	Mei
+music	re/XIII-3 2-15 - Bluesy Chocobo
+bg	re/ch2
+portraits	121	101	201
+
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251970	Hmmm....	唔……	うーん……。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251971	Kyuushou? What've you been thinking about all this time?	九霄？你这家伙从刚才起就在思考些什么啊？	九霄？あんたさっきから何考えこんでんの？	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251972	Kiana, earlier you mentioned "Silver Wolf of the Urals." So, are there other talented members of Anti-Entropy with nicknames like "Hawk of the Alps" or "Piranha of the Amazon"?	琪亚娜，你刚才说逆熵有一个叫“乌拉尔银狼”的精英，那是不是还有“阿尔卑斯隼鹰”、“亚马逊食人鱼”之类更多的大人物！？	キアナ、さっき「ウラルの銀狼」って言ったでしょ。じゃあ、ネゲントロピーには他にも「アルプスの鷹」とか「アマゾンのピラニア」とか、そんな異名を持つ凄腕のメンバーがいるのかな！？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251973	There isn't. You overthink too much.	没有，你想多了。	いないから。考えすぎ。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251974	Aww, how disappointing...	咕！那真是太令人失望了……	な～んだ、がっかり……。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251975	But my dad did say there was a scythe user and a very violent person in the same unit as the "Silver Wolf". All of them are forces to watch out for.	不过，老爹倒是还跟我提到过，乌拉尔银狼所在的逆熵部队，除了她之外还有一个镰刀使和一个暴虐狂，都是值得注意的战力。	でも、パパの話だと「ウラルの銀狼」が所属する部隊には、他にも鎌使いや残虐非道な奴がいるみたい。どちらも注意すべき戦力だって。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251976	Well then, their titles would be "Soul-Reaping Scythe" and "Bloodthirsty Fiend"!	啊哈，那她们的称号一定是“夺魂之镰”和“嗜血狂花”吧！	それじゃあ彼女たちの称号は、さしずめ「魂狩りの鎌」と「血に飢えた悪鬼」ね！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251977	If those people heard what you just said, they would go have heart attacks.	你这话要是被她们听到了的话估计会立马归西吧。	今の話、もし本人達が聞いてたら即刻あの世行きよ。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251978	Ehehe, Anti-Entropy is a more prestigious organization than I thought. It may be more suitable for this Savior than Schicksal!	哼哼哼~没想到逆熵是这么有格调的组织，相比天命或许更适合我这种救世主的身份！	ふへへ、ネゲントロピーって思ったより格調高い組織なのね。天命組織よりもこの救世主には相応しいかも！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251979	Oh, so you're planning on switching sides to the enemy? Then I guess we need to get rid of this traitor while we still can.	嚯嚯…你小子是想投敌当二五仔么？看来我得就地处决你以除后患啊。	ほぉ～、敵に寝返ろうっていうの？じゃあ、裏切り者は今のうちに始末しとかないとね。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251980	S-Stop it! I-I-I wouldn't do that! Don't point your gun at me!!	不！不是的啦！你别用枪指着我啊！！	や、やめっ！そ、そそそんなことしないから！銃をこっちに向けるな！！	NONE
+msg	251981	U-um... that's right! So, do you have a title, Kiana?	那，那个…对了！那琪亚娜你有没有什么称号啊？	そ、その……そうだ！じゃあキアナには称号があるの？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251982	Heheh, of course I do. In Schicksal, I'm known as the strongest Valkyrie, "White Moonlight"!	哼哼~当然有了，在天命我可是被称为“白色月光”的最强女武神哦！	ふっふーん、もちろんあるわよ。天命組織じゃ最強の戦乙女「白き月光」って呼ばれてるんだから！	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251983	Pffft...! What a lame name——	噗噗个噗！这个名字真土，我看不如叫……	プププッ……！何その名前、ダサ——	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251984	Hmm? Lame... what?	嗯？不如叫什么？	ん？ダサ……何？	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251985	It's nothing! "White Moonlight" is pretty cool, I think. Yeah. Hehehehe...	呃！就叫白色月光吧！这名字简直帅炸了！啊哈哈哈……	なんでもありません！「白き月光」ね、なかなかカッコイイと思う。うん。くっ、くくく……。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251986	Oh, you know what I mean. Anyway, let's stop talking and move on.	哼，算你识相。给我走，赶紧的！	へぇ、わかってるじゃない。さてと、無駄話はここら辺にして先を急ぐわよ。	NONE

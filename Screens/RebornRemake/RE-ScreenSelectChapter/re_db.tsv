@@ -2,7 +2,7 @@
 #TITLE	DESCRIPTION	FILE1,FILE2,FILE3	IS_SUB_MISSION
 
 #This controls where the VN starts after the first run screen (duh).
-//VN_START	Chapter 0/0
+//VN_START	Chapter R1/0
 #This controls when the VN returns to the chapter select. It stops at the end of the specified chapter.
 #//VN_STOP	Chapter 3
 
@@ -11,6 +11,10 @@
 # in the chapter select and to store part completion data.
 # Chapter groupings (What screen a chapter is on) are not stored here.
 # They're stored in RE-ScreenSelectChapter.tscn node names.
+
+--Debug Room
+Foreground Test	Tests the color rect which covers the screen.	test_foreground
+
 
 --Chapter R1
 R1-1	It seems like a normal quest...	RE1-1
@@ -21,7 +25,13 @@ R1-4		RE1-4
 
 R1-5		RE1-5
 R1-6		RE1-6
-R1-7		RE1-7
+R1-7	What is the mission of the so-called savior?	RE1-7
 R1-8		RE1-8
 
 --Chapter R2
+R2-1		RE2-1
+R2-2		RE2-2
+R2-3		RE2-3
+R2-4		RE2-4
+
+R2-5		RE2-5

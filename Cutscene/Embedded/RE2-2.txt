@@ -1,0 +1,90 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	re/ch2	instant
+portraits	121	101	201
+match_names	Kyuushou	Kiana	Mei
+music	re/March of the Dreadnoughts
+emote	201	2
+/Mei	251840	This bridge has always been swarming with people... but now it's deathly quiet...	这座大桥，无论什么时候都是川流不息的样子……现在却变成了这副死寂的模样……	この橋、ずっと人で溢れかえっていたのに……今じゃ死んだように静まり返ってる……。	NONE
+emote	101	0
+/Kiana	251841	If you cross this bridge, we'll reach downtown Changkong City. I think that area is also affected by Honkai, though...	只要通过了这里，就是长空市了，虽然那边应该也被崩坏侵蚀了吧……	この橋を渡れば、すぐ長空市よ。あっちも崩壊に侵されてるとは思うけど……。	NONE
+emote	201	2
+/Mei	251842	So... is the Honkai here really that frightening?	这一次的崩坏真的有那么恐怖么？	その……今回発生した崩壊は、そんなに恐ろしいものなの？	NONE
+emote	101	0
+/Kiana	251843	At first, I also thought it was nothing serious, but looking at it now, it might be at "Honkai Eruption" levels... Well, you were a Herrscher, Senpai, so this scale is reasonable.	原本我也以为只是一次小打小闹，不过现在看来或许是遇上“大崩坏”了呢，要是连这种强度都没有的话，我倒要怀疑你是不是真的律者了。	私も最初は大したことないって思ってたけど、今見ると「大崩壊」レベルなのかも……。まぁ、先輩っていう律者がいたわけだし、この規模の大きさは妥当ね。	NONE
+emote	201	2
+/Mei	251844	Herrscher... Right. Hey, Kiana, am I a human now? Or——	律者……么。琪亚娜，我现在还是活着的人类么？	律者……ね。ねぇキアナちゃん、今の私は人間なの？それとも——	NONE
+emote	101	2
+/Kiana	251845	——I don't know. No one told me about Herrschers, and I never really thought about it. But I think you're more like a human than a Herrscher right now, Mei-senpai.	……我不知道。没有人对我说过，我也从来没有想过律者到底是什么…不过现在的芽衣学姐，与其说是律者，更加接近人类吧~	——分からないわ。律者については誰も教えてくれなかったし、私も深く考えたことなかったの。ただ、今の芽衣先輩は律者というより人間に近いと思う。	NONE
+emote	121	0
+/Kyuushou	251846	Hehehe.... AHAHAHA!	哼哼哼…哈哈哈哈！	ふふふ……アハハハ！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251847	I'm amazed you can laugh in such a serious situation... I'll kill you if you laugh for weird reasons again!	你笑什么？这么严肃的气氛你居然还笑得出来！你要是编不出来一个理由我就打死你！	こんな深刻な場面でよく笑えるわね。……もし変な理由で笑ってたら怒るわよ！	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251848	Whether someone is human or demon is a silly question that's not even worth thinking about.	人还是恶魔，这种无聊的问题，根本就没有思考的价值！	人か悪魔かなんてくだらない問題、考える価値すらないってことよ。	NONE
+msg	251849	God gave us the appearance of "man"... but in the end, it's just an image that God came up with, it has no meaning. The ego engraved in our souls is what proves who we are. As long as we protect our souls from taint, it doesn't matter what we look like.	神赐予了我们名为“人”的姿态，那本就是神臆造出来的形象，根本就是没有意义的东西，只有灵魂才是人类拥有的真我，只要守护灵魂的纯净，不管是什么样的姿态，都要受到神的祝福~	神は我々に「人」の姿を賜った……けど、所詮それは神が考え出したイメージ、意味なんてない。魂に刻まれた自我こそが何者かを証明するもの。魂を汚れから守りさえすれば、どんな姿であろうと関係ない。	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251850	But I'm a Herrscher... I even thought about destroying this world once! And my soul has been corrupted by a terrible power. Can I really still call myself a human being...?	但是，我是律者…我曾经想要毁灭这个世界啊！我的内心也被可怕的力量侵蚀了，即使这样我也算是人类么……	でも私は律者で……一度はこの世界を滅ぼそうとも考えたわ！心まで恐ろしい力に蝕まれている。それでも私は人間って言えるの……？	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251851	Heheh, don't worry! I, Kyuushou-sama, will take responsibility and acknowledge your spirit! It was only thanks to Kyuushou-sama's guidance that you stopped doing stupid things like trying to destroy the world! Right?	哼哼~安心吧！我可以负责的告诉你，九霄大人认可了你的灵魂！在九霄大人的指引下，你也没有做出毁灭世界的妄举不是么？	フフン、安心するがいい！この九霄様が責任を持って先輩の魂を認めてあげよう！先輩が世界を滅ぼすなんてバカなマネをやめたのも、この九霄様の導きがあったおかげ！でしょ？	NONE
+speaker	Kiana
+nop	101
+emote	101	1
+msg	251852	Hey, wait a minute, it was me who stopped that... but, well, you have a point, so I won't argue this time.	喂喂，明明阻止这些的都是我好吧……哼，算你说的有那么一点道理，这次就不和你争了。	ちょっと、それを阻止したのは全部私なんだけど……はあ、まぁあんたの言うことにも一理あるから、今回は譲ってあげるけど。	NONE
+emote	101	0
+msg	251853	Mei-senpai, this girl talks a bit weird, but she's right. I think of you as a human being. No matter what anyone says, that won't change, and I have no intention of changing it.	芽衣学姐，虽然这个家伙说得神神叨叨的，但是她的意思没错。如果我说学姐是人类的话，那就没有任何人能够改变我的想法。	芽衣先輩、この子の話はちょっとアレだけど、その通りだわ。私は先輩を人間だと思ってる。誰が何を言おうともその考えは変わらないし、変える気もないわ。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251854	As expected of Kiana, she was able to understand the profound and meaningful words of Kyuushou-sama... She is truly a servant who was predestined by fate!	不愧是我的同伴！能够理解我晦涩的箴言，果然你就是我命运中注定的神仆！	さすがキアナ、九霄様の深奥かつ含蓄のある言葉を理解できるとは……。やはり、運命で定められた下僕！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251855	Don't get too cocky! Who am I to be your servant? You're the reason why Dad got angry with me! Come on, let's go.	少蹬鼻子上脸了，我才不是你的仆人呢！刚才我被老爹骂的帐还没跟你算呢！快给我走！	調子に乗ってんじゃないわよ、誰があんたの下僕よ！あんたのせいで、さっきパパにまで怒られたんだからね！ほら、早く行くわよ。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251856	Ahh, OW OW OW! Can't you be a little more gentle...?	哎疼疼疼！你轻点不行吗……	あいたたた！も、もうちょっと優しく扱って……。	NONE
+/	251857	Crash... crash...	喀啦~喀啦~喀啦喀啦~	ガシャン……ガシャン……。	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251858	Huh? What's that sound?	咦？这是什么声音？	え？なんの音？	NONE
+speaker	Kiana
+nop	101
+emote	101	3
+msg	251859	That's... an Anti-Entropy mecha?! Damn, we were dawdling too long. We need to hurry and find a place to hide.	这是……糟糕，耽搁地太久了！快找个掩体躲起来！那些是逆熵的机甲！	あれは……ネゲントロピーの機甲兵器！？しまった、ぐずぐずし過ぎたわね。急いで隠れる場所を探さないと。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251860	Whoooaaa, a-a robot?! I see, if there's a battleship of that magnitude, it makes sense that there would be robots— Mmphhh!!	哦哦哦！是机甲！我就知道，如果战舰存在的话机甲也一定唔唔唔！！	ふぉおおお、ロ、ロボットか！？なるほど、あれほどの戦艦があるのならロボットがあるのも道理——むぐぐ！！	NONE
+/	251861	Pipipipip——	哔哔哔哔——	ピピピピ——	NONE
+/	251862	Crash... clack, clack, clack...	喀啦喀啦~喀啦喀啦~	ガシャン……カタカタカタ……。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251863	They found us...	看来是被发现了呢……	見つかっちゃった……。	NONE
+msg	251864	Ah, this is the worst... Why do I have to clean up after this noisy, awkward, chuunibyou bitch every single time...?	啊啊啊真是倒霉……为什么偏偏总是我要来给这个既中二又喜欢惹事，学不乖还读不懂空气的人擦屁股啊……	あぁもう最悪……どうして毎度毎度この騒がしくて空気の読めない、厄介者で中二病の尻ぬぐいをしなきゃいけないの……。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251865	Wh-wh-what— Mmphhh!	哪有唔唔唔……	なな、何を——むぐぐぐ！	NONE
+speaker	Kiana
+nop	101
+emote	101	3
+msg	251866	Are you planning to cause trouble again? Senpai, keep an eye on this kid so she doesn't wander around. When she comes back, let's gag her and tie him up. It's not worth it to cause any more trouble.	你还想反驳？学姐你看住这个家伙，别让她乱走，我回来就把她嘴巴塞住，然后捆起来绑身上，看她还惹不惹事。	また騒ぐつもり？先輩、この子がうろちょろしないよう見張ってて。戻ってきたらさるぐつわを噛ませて縛り上げましょ。もう、これ以上厄介事を増やされると面倒だわ。	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251867	Where are you going?	你要去哪？	どこへ行くの？	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251868	I need to destroy the mecha's transmitter. Hopefully I can still make it in time...	我得去破坏机甲上的发信机，希望还来得及……	機甲の発信機を壊さないと。まだ間に合うといいけど……。	NONE

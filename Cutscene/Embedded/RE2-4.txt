@@ -1,0 +1,210 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	304	121	101	201
+speaker	Bronya
+portraits	304
+emote	304	0
+msg	251885	Target within range.	目标进入狙击范围。	目標が射程圏内に進入。	NONE
+msg	251886	Two other people identified as companions to the target. One is "Subject X" based on appearance. The other is a "Schicksal" Valkyrie.	与目标同行的还有两人，一人根据其相貌判断为“对象X”，另一人判断为“天命”的女武神。	目標とは別に同行者を2名確認。一人は容貌から判断して「対象X」。もう一人は「天命」の戦乙女（ヴァルキリー）。	NONE
+msg	251887	Armored Bunny, stop descent. Levitation mode activate.	重装小兔，停止降落！悬浮模式启动。	重装ウサギ、降下停止。浮遊モード起動。	NONE
+msg	251888	Determining sniper target... Target decided: "Schicksal" Valkyrie.	狙击目标判断中……选定目标：“天命”女武神。	狙撃目標判断中……目標決定「天命」のヴァルキリー。	NONE
+msg	251889	Adjusting sniper aim — distance 1,250 meters, wind force 5 above, wind direction southwest...	进行狙击调整——射距：1250米，高空风力：5级，风向：西南……	狙撃調整中——距離1250メートル、上空風力5、風向き南西……。	NONE
+emote	304	0
+msg	251890	Ballistic calculation in progress... Simulation complete... Sniper angle adjustment complete. Shooting location — Inner side of right lower leg.	弹道计算中……行动推演中……狙击角度调整完毕。射击部位：右腿小腿内侧。	弾道計算中……シミュレーション完了……狙撃角度調整完了。射撃部位——右足下腿内側。	NONE
+msg	251891	Bang!	砰！	パァンッ！	NONE
+speaker	Bronya
+emote	304	0
+msg	251892	Sniper hit, tactical retreat.	狙击命中，进行战术撤离。	狙撃命中、戦術的撤退。	NONE
+msg	251893	Armored Bunny, cancel floating mode. Land and begin contact with the target.	重装小兔，悬浮模式取消，继续降落，开始与目标接触。	重装ウサギ、浮遊モードキャンセル。着陸し、目標と接触開始。	NONE
+
+
+match_names	Kyuushou	Kiana	Mei
+music	re/No Way to Live
+bg	re/ch2
+portraits	121	101	201
+emote	201	0
+emote	304	0
+/Mei	251894	Kiana-chan! KIANA-CHAN! Are you okay?!	琪亚娜！琪亚娜！你没事吧！	キアナちゃん！キアナちゃんっ！大丈夫！？	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	251895	Damn... It's okay. ...How dare you snipe Lady Kiana while hiding... Ugh...	呃，没事。没想到我琪亚娜堂堂正正，居然中了黑枪……	くっ……大丈夫よ。……このキアナ様を隠れて狙撃するなんて……。うっ……。	NONE
+
+emote	201	0
+emote	304	0
+/Mei	251896	You're not okay! There's so much blood coming out...!	没事什么！你都流了这么多血了……	大丈夫じゃないわ！こんなに血が出てるじゃない……！	NONE
+
+emote	101	0
+emote	304	0
+/Kiana	251897	Don't worry about it, I'm a Schicksal Valkyrie too. I'm not going to be beaten so easily by something like this!	没什么啦，好歹我也是天命的“女武神”，是不会那么简单就倒下的！	気にしないで、私も天命のヴァルキリーなんだから。これくらいで簡単にやられるもんですか！	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	251898	Mmmmf! Mphhmhhh!	唔唔唔！唔唔唔唔！	うぐぐ！むぐぐぐ！	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	251899	Shh! Kyuushou, be quiet!	嘶——九霄你别乱动！	しーっ！九霄、大人しくしてて！	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	251900	Nnnngh!	唔唔唔唔唔！	んぐぐぐぐ！	NONE
+
+emote	201	2
+emote	304	0
+/Mei	251901	Kiana, maybe we should untie the rope after all...	琪亚娜，我觉得还是把九霄身上的绳索解开吧……	キアナちゃん、やっぱり縄は解いたほうがいいんじゃないかしら……。	NONE
+
+emote	101	0
+emote	304	0
+/Kiana	251902	If Mei-senpai says so... —Hey, what? If it's a useless story, I'll tie you up again!	说吧，你想说些什么，要是没什么用的话我就再把你绑起来！	芽衣先輩が言うのなら……。——ほら、何？役に立たない話だったらまた縛るからね！	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	251903	There's a girl over there!	在那边，有一个小女孩！	あそこ、女の子がいるっ！	NONE
+
+emote	101	0
+emote	304	0
+/Kiana	251904	Wha—?! That can't be... I mean, there's no way there'd be any other girls here besides us in a place so deeply affected by the Honkai.	开什么玩笑，大崩坏的爆发下连长空市都可能没有普通人存活了，这里怎么可能……	なっ！そんなはずは……だって大崩壊の影響が濃いこんな所に、私達以外の女の子がいるなんて。	NONE
+msg	251905	Why is she here...?	唔！？	どうしてこんなところに……。	NONE
+
+portraits	101	201	121,false,3
+match_names	Kiana	Mei	Kyuushou
+emote	121	0
+emote	304	0
+/Kyuushou	251906	I've seen that kid in the apocalypse!	琪亚娜，那个人我在启示录上见过！	あの子、黙示録で見たことがある！	NONE
+
+portraits	201	101,false,2	121,false,3
+match_names	Mei	Kiana	Kyuushou
+emote	101	0
+emote	304	0
+/Kiana	251907	Saying nonsense again... Where are you going? Get back here!	怎么什么人你都见过！你给我回来！	またいい加減なこと言って……。どこに行く気よ!戻って来なさい！	NONE
+
+emote	121	0
+emote	304	0
+/Kyuushou	251908	Talking to her! ——What's this, Kiana? Are you trying to get in the way? So you're trying to prevent me from finding my companions... I guess you were sent by the will of the world after all.	琪亚娜，你为什么要阻碍我和那个人的沟通？难道你是世界意志专程派来阻碍我寻找我的伙伴的吗？	あの子と話す！——なんだキアナ、邪魔をする気か？さては、私の仲間探しを妨害しようと……やはり世界の意思から使わされた者だったか。	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	251909	I don't have time to deal with your chuunibyou. Take a good look at what she's carrying.	没时间听你说傻话了，你自己好好看看人家背后背的是什么！	あんたの中二病に付き合ってる暇はないの。よく見てみなさいよ、あいつが背負ってるもの。	NONE
+
+emote	201	0
+emote	304	0
+/Mei	251910	Is that... a sniper rifle? Kiana-chan, then...	那是……狙击枪？！琪亚娜，你是说……	あれは……狙撃銃！？キアナちゃん、それじゃあ……。	NONE
+
+emote	101	3
+emote	304	0
+/Kiana	251911	Looks like she's the one who shot me.	看来报仇的时候到了！	どうやら、私を撃った犯人はあいつのようね。	NONE
+
+match_names	Mei	Kiana	Kyuushou	Bronya
+portraits	201,false,-3	101,false,-3	121,false,-3	304,false,3
+speaker	Bronya
+emote	101	3
+emote	304	0
+msg	251912	Confirmation of recovery targets. "Subject X" Houraiji Kyuushou, "Subject A" Raiden Mei, and 1 Schicksal Valkyrie.	确认回收对象，“对象X”蓬莱寺九霄，“对象A”雷电芽衣，天命女武神一名。	回収対象確認。「対象X」蓬莱寺九霄、「対象A」雷電芽衣、天命のヴァルキリー1名。	NONE
+speaker	Mei
+nop	201	304
+emote	201	2
+emote	304	0
+msg	251913	Recovery?	回收？	回収？	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251914	What? Are you gonna stuff us in bags? Typical cold-hearted, cold-blooded Anti-Entropy.	你们逆熵还是那么冷漠啊，难道你已经认为我们都是囊中之物了吗？	何？私達を袋にでも詰め込むつもり？さすが冷酷冷淡冷血のネゲントロピーね。	NONE
+speaker	Bronya
+emote	101	0
+emote	304	0
+msg	251915	You will not be able to defeat Bronya while injured. Target A's physical condition is also below normal... She will not be of any use.	你已经受伤了，现在的你是没办法胜过布洛妮娅的。而且对象A的身体状况低于正常水平，也没法成为战斗力。	負傷したあなたではブローニャに勝てません。対象Aの身体状態も正常レベル以下……戦力になりません。	NONE
+msg	251916	Recovery operations begin.	回收作业开始！	回収作業開始。	NONE
+speaker	Kiana
+emote	101	0
+emote	304	0
+msg	251917	Don't underestimate me. You've made one fatal mistake. You gave up the advantage of a sniper's long-distance attacks and went into close combat. You'll regret it!	你太小看我了！而且你犯了一个致命的错误！舍弃狙击手长距离攻击的优势，真把自己当战士了么！	甘く見ないでもらいたいわね。それに一つ致命的なミスを犯してるわよ。遠距離攻撃という狙撃手のメリットを捨てて接近戦を仕掛けたこと、後悔しなさい！	NONE
+speaker	Bronya
+emote	101	0
+emote	304	0
+msg	251918	Armored Bunny, activate armed mode.	重装小兔，武装模式启动！	重装ウサギ、武装モード起動。	NONE
+msg	251919	Combat data collection complete, uploading begins. Analysis of Herrscher information and tactical retreat starting...	战斗数据收集完毕，开始上传。申请分析律者情报，开始战术撤离……	戦闘データ収集完了、アップロード開始。律者情報の分析、戦術的撤退開始……。	NONE
+
+portraits	201,false,-3	101,false,-3	121,false,-3
+speaker	Kiana
+emote	101	0
+emote	304	0
+msg	251920	Hmph, seems Anti-Entropy warriors aren't so big after all.	哼，看来逆熵的战士也不过如此嘛。	フン、ネゲントロピーの戦士も大したことないわね。	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251921	Are you trying to run away? Wait!!	喂！你别跑！	逃げる気か、待て！！	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251922	Stop chasing!	不要追了！	追っちゃだめ！	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251923	Ahhh... Kiana, you've wasted a golden opportunity. If you hadn't let her go, I could have asked her if she was a friend given to me by God... And if you had pursued her, our victory would have been obvious...	唉……琪亚娜，你这不是错过了最好的时机了吗，刚才要是我们乘胜追击的话她肯定逃不了的，这样我就能问一下她是不是也是神明安排给我的伙伴了！	あーあ……キアナ、絶好のチャンスを棒に振ったぞ。逃さなければ、神が与えたもうた仲間なのかどうかを聞けたのに……。それに追撃してれば、こちらの勝ちは目に見えてたし……。	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251924	Our goal is to get across this bridge. I don't want any more trouble. Please, just be quiet.	我们的目的只是走过这个大桥，进入长空市，求求你别给我惹是生非了……	私達の目的はこの橋を渡ること。これ以上の面倒はごめんだわ。お願いだから、大人しくしててよね。	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251925	Fufu, don't worry! As the Savior of this world, I am well aware of that.	放心吧，身为救世主，这点局势我还是能看得懂的。	ふふっ、安心するがいい！この世の救世主として、その辺のことは重々承知している。	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251926	If you know that at least, then that's good...	你真能看得懂就好了……	本当に分かってるなら、いいんだけど……。	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+tn	0	This Chinese idiom expresses that the infinite can be encapsulated within the finite.
+msg	251927	But there are people in this world who understand the truth of space... Is this a case where "Mount Sumeru fits in a mustard seed"? [i][/i]	不过没想到这个世界上竟然已经有人领悟了空间的真谛，那就是传说中的“须弥纳于芥子”吗？	ただ、この世界にも空間の真理を会得している者がいるなんて……。「芥子（けし）の中に須弥山（しゅみせん）あり」ってやつ？	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251928	What does mustard have to do with this? Anyway, there was a lot of Honkai energy gathering around her. I bet that mecha's powered by Honkai energy too.	什么芥子须弥的，那个人的身上聚集着大量的崩坏能，大概那艘机甲也是靠崩坏能运作的吧。	何が芥子よ、あの子の周りには大量の崩壊エネルギーが集まっていたわ。きっと、あの機甲も崩壊エネルギーで動いていたんでしょ。	NONE
+msg	251929	To think that those Anti-Entropy guys had mastered the use of Honkai energy to this extent... It wouldn't be surprising if we had been defeated.	没想到逆熵对于崩坏能的运用已经到了这种地步，这次真是差点就栽了……	ネゲントロピーの奴らがここまで崩壊エネルギーを使いこなしていたなんて……。下手したらやられていてもおかしくなかったわ。	NONE
+speaker	Mei
+nop	201	304
+emote	201	0
+emote	304	0
+msg	251930	Kiana-chan, are you okay? It looks like you've got more injuries...	琪亚娜你没事吧，我看你的身上又多了一些伤口……	キアナちゃん、平気なの？また傷が増えたみたいだけど……。	NONE
+speaker	Kiana
+nop	101	304
+emote	101	0
+emote	304	0
+msg	251931	It's okay, that tin can only scratched me, so I'll just bandage it up and I'll be fine. A wound like this is no big deal.	放心啦，只是被那个被那个铁皮擦了一下，只要稍微包扎一下就好了，这点小伤，根本就不碍事……	平気よ、あのブリキの攻撃がかすっただけだから、包帯を巻いておけば大丈夫。このくらいの傷、どうってことないわ。	NONE
+msg	251932	Okay! Let's go. We need to get out of here quickly so we don't have to——	我们走吧，不赶紧逃出去的话，就来不……	よし！行きましょ、急いで逃げ出さないと間に——	NONE
+nop	304
+emote	304	0
+msg	251933	Bang!	啪！	ドサッ！	NONE
+speaker	Mei
+nop	201	304
+emote	201	0
+emote	304	0
+msg	251934	Kiana!? What's wrong?! Wake up!	琪亚娜！？琪亚娜你怎么！醒醒啊！	キアナちゃん！？どうしたの！目を覚まして！	NONE
+msg	251935	Kyuushou-chan, untie the bandages you're wearing right now!	九霄，把你身上的绷带拆下来给我！	九霄ちゃん、あなたが巻いている包帯、今すぐほどいて！	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251936	Ah?	诶？	えっ？	NONE
+msg	251937	No, no, no! Th-this is a sacred treasure that seals a demon! If I were to undo it, it would awaken the Great Demon of Calamity from his 10,000-year slumber!	不行不行不行！这些是封印恶魔的圣器，要是拆封的话会唤醒沉睡了一万年的大恶魔的！	だめだめだめ！こ、これは悪魔を封印している神器なんだから！もし解いたら、災厄の大悪魔を一万年の眠りから目覚めさせちゃう！	NONE
+speaker	Mei
+nop	201	304
+emote	201	0
+emote	304	0
+msg	251938	This is no time for joking! Hurry up!	别废话了！你到底给不给？	ふざけてる場合じゃないの！早くっ！	NONE
+speaker	Kyuushou
+nop	121	304
+emote	121	0
+emote	304	0
+msg	251939	M... Mei-senpai, calm down... I-I'll unwrap them now...	呃…芽衣学姐有话好说啦……我，我给你还不行吗……	め……芽衣先輩、落ち着いて……い、今ほどくから……。	NONE

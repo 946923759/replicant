@@ -1,7 +1,7 @@
 extends Control
 
 signal switch_submenus(new_menu)
-signal selection_changed(newSel,isLocked)
+signal selection_changed(newSel,isLocked, playSound)
 signal input_accepted(selectionNum,destinationName)
 
 enum LAYOUT {
@@ -36,6 +36,7 @@ func spawnItems(items_:Dictionary):
 	for i in range(count):
 		var c = f.get_child(i)
 		c.connect("clicked",self,"input_accept",[i])
+
 		c.position = Vector2(100,-SPACING*center+i*SPACING)
 		c.set_by_name(items[i]['name'])
 		t.interpolate_property(c,"position:x",null,-274,.3,Tween.TRANS_CUBIC,Tween.EASE_OUT,.3+.1*i)
@@ -60,6 +61,7 @@ func _ready():
 		#print("Got obj "+String(i)+c.get_class())
 		#if c.get_class()=="Node2D":
 		c.connect("clicked",self,"input_accept",[i])
+		c.connect("mouse_entered",self,"set_selection", [i, false])
 		c.rect_position = Vector2(100,-SPACING*center+i*SPACING-c.size.y/2)
 		if item_position==POSITION.LEFT:
 			c.rect_position.x=-c.size.x-100
@@ -109,7 +111,7 @@ func set_selection(sel:int, play_sound:bool=true):
 		else:
 			f.get_child(i).LoseFocus()
 	
-	emit_signal("selection_changed",sel,get_child(sel+1).locked)
+	emit_signal("selection_changed",sel,get_child(sel+1).locked, play_sound)
 
 
 

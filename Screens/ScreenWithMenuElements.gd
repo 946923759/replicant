@@ -14,7 +14,7 @@ onready var debugOverlay = $CanvasLayer/smQuad/VBoxContainer
 
 func _ready():
 	$CanvasLayer/smQuad.visible=false
-	$CanvasLayer/Watermark.visible = OS.is_debug_build() and $CanvasLayer/Watermark.visible
+	#$CanvasLayer/Watermark.visible = OS.is_debug_build() and $CanvasLayer/Watermark.visible
 	$smScreenInOut.visible=(!ThisScreenIsAnOverlay)
 	if !backButton.visible:
 		backButton.mouse_filter=Control.MOUSE_FILTER_IGNORE

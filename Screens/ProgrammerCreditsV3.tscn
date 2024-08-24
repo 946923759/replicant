@@ -9,7 +9,7 @@
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Ext/CG054.png" type="Texture" id=8]
 [ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=9]
-[ext_resource path="res://Ext/Assets_Sounds_Click.wav" type="AudioStream" id=10]
+[ext_resource path="res://MenuSounds/Assets_Sounds_Click.wav" type="AudioStream" id=10]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Graphics/Common Arrow.png" type="Texture" id=13]
 [ext_resource path="res://Screens/ProgrammerCreditsV3.gd" type="Script" id=14]

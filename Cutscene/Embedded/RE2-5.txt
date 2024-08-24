@@ -1,0 +1,63 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+match_names	Kyuushou	Kiana	Mei
+music	re/No Way to Live
+bg	re/ch2
+portraits	121	101	201
+
+speaker	Kiana
+emote	101	0
+msg	251940	Huh... what happened to me...?	唔…我这是怎么了…	あれ……私どうしちゃったの……。	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251941	Thank God, you woke up!	太好了！琪亚娜你终于醒过来了！	よかった、目を覚ました！	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251942	(Sobbing)	嘤嘤嘤……	シクシクシク……。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251943	Uhh... what's up with Kyuushou? She's acting weird.	呃…九霄那家伙怎么了，怎么忽然这么恶心。	え……九霄のやつどうしたの？気味が悪いんだけど。	NONE
+speaker	Mei
+nop	201
+emote	201	1
+msg	251944	It's nothing, I just borrowed her bandages to help stop the bleeding.	她没事，只是借用了一下她身上的绷带，还好有了这些绷带才止住了你伤口的流血。	何でもないわ、ちょっと包帯を借りただけ。そのお陰で傷口の止血ができたのよ。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251945	Oh yeah, I guess you're not as useless as I thought.	这样啊，看来你这家伙偶尔还是能派上用场嘛~	そうなんだ。あんたもたまには役に立つのね。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251946	*Sob sob*... Hmph, of course! It's a holy relic imbued with holy water. A legendary sacred treasure that can even seal away a great demon!	嘤嘤嘤…哼哼！那是当然的啦！这可都是浸泡过圣水的圣遗物，可是连大恶魔都能轻易压制住的传奇神器！	シクシク……フン、当たり前でしょ！それは聖水の染み込んだ聖遺物なんだから。大悪魔も封じておける伝説の神器なんだから！	NONE
+msg	251947	Also, there's no need to worry about the great demon inside my body! The seal has loosened a bit, but it's being contained by Kyuushou-sama's will.	不过不用担心我体内的大恶魔，虽然封印有所松动，但是九霄大人还是可以凭借意志将它压制的。	あと我の体内にいる大悪魔のことは心配無用！封印がちょっと緩んだけど、この九霄様の意志で封じ込めができているから。	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251948	Sure, sure... You sure change your mood quickly...	是是是，你这家伙情绪转化还真快……	はいはい、ほんと切り替えの早い子ね……。	NONE
+/	251949	Beep…	滋啦滋啦	ジー……ジジ……。	NONE
+speaker	Mei
+nop	201
+emote	201	2
+msg	251950	Is the communicator still not working?	通讯器还是不能使用吗？	通信機はやっぱり使えない？	NONE
+speaker	Kiana
+nop	101
+emote	101	2
+msg	251951	Yeah, it feels like we're experiencing strong electromagnetic interference. Something similar happened when you turned into a Herrscher earlier.	嗯，总感觉是受到了强电磁的干扰，之前学姐你律者化的时候也出现过类似的情况。	うん、強い電磁妨害を受けている感じ。前に先輩が律者化したときも似たような状況になったわ。	NONE
+msg	251952	That kid from before will surely call for reinforcements. We need to hurry to downtown Changkong City before Anti-Entropy reinforcements arrive.	留给我们的时间应该不多了，那个家伙打不过我们的话一定会去找帮手的，要赶在逆熵的援军赶到大桥之前进入长空市。	さっきの子はきっと援軍を呼んでくるはず。ネゲントロピーの援軍が到着してしまう前に、急いで長空市まで行かないと。	NONE
+emote	101	0
+msg	251953	Mei-senpai, Kyuushou, if there's an emergency, you two go first to find someone from Schicksal.	芽衣学姐，九霄，等会如果遇到了什么紧急情况，你们一定要先走，寻找我们的援军。	芽衣先輩、九霄、もし緊急事態になったら、二人は先に行って天命の人を探して。	NONE
+speaker	Mei
+nop	201
+emote	201	0
+msg	251954	But, Kiana, you...	可是琪亚娜你……	でもキアナちゃんは……。	NONE
+speaker	Kyuushou
+nop	121
+emote	121	0
+msg	251955	Don't worry. With my guidance, there is nothing to fear!	放心吧，我会带领大家走出这片地狱的！	心配ない。我の導きさえあれば、万事恐るることなし！	NONE
+speaker	Kiana
+nop	101
+emote	101	0
+msg	251956	You're the one I'm worried about the most...	最不放心的就是你了好吗！	あんたが一番心配なんだけど……。	NONE

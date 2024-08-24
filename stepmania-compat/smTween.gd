@@ -61,9 +61,11 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 		
 	var lastKnownPosition:Vector2 = objectToTween.get(rectPrefix+"position")
 	var lastKnownColor:Color = objectToTween.modulate
+	var lastKnownZoom:Vector2 = objectToTween.get(rectPrefix+"scale")
 	
 	for cmd in cmnds:
 		var splitCmd = cmd.split(",")
+		#print("[Tween] "+objectToTween.name+"\n\tTime: "+String(tweenLength)+'\n\tDelay: '+String(timeToDelay)+"\n\tCommand: "+cmd)
 		match splitCmd[0]:
 			"stoptweening": #This is such a massive hack
 				if objectToTween.has_method("stoptweening"):
@@ -75,6 +77,7 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				if tweenBatch>0:
 					#Add previous tween length to delay
 					timeToDelay+=tweenLength
+					#print(timeToDelay)
 				tweenBatch+=1
 				tweenLength = float(splitCmd[1])
 			"decelerate":
@@ -123,9 +126,12 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 					v2.y=v2.x
 				else:
 					v2 = Vector2(float(splitCmd[1]),float(splitCmd[2]))
-				tw.tween_property(objectToTween,rectPrefix+"scale",v2,tweenLength).set_delay(timeToDelay)
+				tw.tween_property(objectToTween,rectPrefix+"scale",v2,tweenLength).set_delay(timeToDelay).from(lastKnownZoom)
+				lastKnownZoom=v2
 			"zoomx":
-				tw.tween_property(objectToTween,rectPrefix+"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				#print("ZOOMX: "+splitCmd[1]+", time "+String(timeToDelay))
+				tw.tween_property(objectToTween,rectPrefix+"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay).from(lastKnownZoom.x)
+				lastKnownZoom.x=float(splitCmd[1])
 			"diffuse","modulate":
 				"""
 				Usage examples:
@@ -167,6 +173,8 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 					horizalign = 0.0
 				elif splitCmd[1] == "right":
 					horizalign = 1.0
+				else:
+					printerr("Invalid arg in horizalign cmd "+splitCmd[1])
 				tw.tween_property(objectToTween,"rect_pivot_offset:x",objectToTween.rect_size.x*horizalign,tweenLength).set_delay(timeToDelay)
 				#print(objectToTween.rect_pivot_offset.x)
 				
@@ -174,7 +182,7 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				if "cur_expression" in objectToTween:
 					tw.tween_property(objectToTween,"cur_expression",splitCmd[1],0.0).set_delay(timeToDelay)
 			_:
-				print("Unregistered command "+String(splitCmd))
+				printerr("Unregistered command "+String(splitCmd))
 	return timeToDelay+tweenLength
 
 static func get_total_tween_time(tweenStr:String) -> float:

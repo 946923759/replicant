@@ -34,11 +34,17 @@ var next_screen:String = ""
 
 #onready var t:Tween = $Tween
 func _ready():
+	var isMultiStory = Globals.RE_RR_MODE_AVAILABLE & Globals.RE_RR_STATUS.RE_RR_AVAILABLE or Globals.previous_screen == "ScreenSelectEra"
 	
 	for i in range(len(MAINMENU_BASE)):
 		if 'demo' in MAINMENU_BASE[i] and OS.has_feature('demo'):
 				if MAINMENU_BASE[i]['demo']==true:
 					mainMenu_runtime.append(MAINMENU_BASE[i])
+		elif isMultiStory and 'screen' in MAINMENU_BASE[i] and MAINMENU_BASE[i]['screen']=="Quit":
+			mainMenu_runtime.append({
+				"name":"Back",
+				"screen":"ScreenSelectEra"
+			})
 		else:
 			mainMenu_runtime.append(MAINMENU_BASE[i])
 				

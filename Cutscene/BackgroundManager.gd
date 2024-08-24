@@ -37,11 +37,13 @@ func setNewBG(bgName:String, transition:String="",waitForAnim:float=0.0)->float:
 				newBackground.modulate.a=0
 				newBackground.showActor(.5)
 			elif transition=='immediate' or transition=='instant':
+				if is_instance_valid(lastBackground):
+					VisualServer.canvas_item_set_z_index(lastBackground.get_canvas_item(),-11)
+					lastBackground.modulate.a=0
 				newBackground.modulate.a=1
+				VisualServer.canvas_item_set_z_index(newBackground.get_canvas_item(),-10)
 				if newBackground is smVideo:
 					newBackground.showActor(0)
-				if is_instance_valid(lastBackground):
-					lastBackground.modulate.a=0
 			else: #Fade to black and fade in new background
 				if lastBackground==newBackground:
 					newBackground.hideShow(1)

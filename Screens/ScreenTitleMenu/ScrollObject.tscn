@@ -4,7 +4,7 @@
 [ext_resource path="res://Screens/ScreenTitleMenu/TItleStuff 1x2.png" type="Texture" id=2]
 [ext_resource path="res://Screens/ScreenTitleMenu/ScrollObject.gd" type="Script" id=3]
 [ext_resource path="res://Screens/ScreenTitleMenu/Sprite_CropRight.gd" type="Script" id=4]
-[ext_resource path="res://Screens/ScreenTitleMenu/OptionIcons 2x5.png" type="Texture" id=5]
+[ext_resource path="res://Screens/ScreenTitleMenu/OptionIcons 2x6.png" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
@@ -73,14 +73,14 @@ position = Vector2( 170, 0 )
 position = Vector2( -90, 0 )
 texture = ExtResource( 5 )
 hframes = 2
-vframes = 5
+vframes = 6
 
 [node name="TextHighlight" type="Sprite" parent="Node2D"]
 visible = false
 position = Vector2( -90, 0 )
 texture = ExtResource( 5 )
 hframes = 2
-vframes = 5
+vframes = 6
 frame = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]

@@ -201,7 +201,7 @@ func end_cutscene_2():
 		var ep_idx = save_idx[1]
 		if ch_idx >= 0 and ep_idx >= 0:
 			#Resize completed chapters array
-			while Globals.playerData[saveDataKey].size() < ch_idx:
+			while Globals.playerData[saveDataKey].size() <= ch_idx:
 				Globals.playerData[saveDataKey].append(0)
 			
 			var bit = Globals.playerData[saveDataKey][ch_idx]

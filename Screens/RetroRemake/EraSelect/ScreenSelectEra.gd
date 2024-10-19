@@ -4,6 +4,9 @@ onready var scroller = $ActorScroller
 
 func _ready():
 	$Music.load_song("17 - Dearly Beloved ~reprise~")
+	# Wipe this data so the chapter select screens don't
+	# navigate to the wrong chapter
+	Globals.currentEpisodeData = null
 
 func _input(event):
 	scroller.input(event)

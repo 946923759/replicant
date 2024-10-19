@@ -4,10 +4,10 @@ bg	009/004_1280x720
 portraits	55
 emote	55	4
 msg	300150	Damn it! I can't believe these things keep flooding in! Where the ☆☆ do they keep coming from?!	混蛋！居然已经渗透进来这么多了！这帮家伙难道都是从OO里钻出来的OO么！	このヤロー！こんなにたくさん入り込んでくるなんて！
-msg	300151	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
+/	300151	Roar!!!	吼吼吼！！！	ゴゴゴォ～！！！
 portraits	55
 emote	55	4
-msg	300152	Man, this one picked a real crappy time to appear! Just my ☆☆ing luck, huh?	啧！居然在这种时候出现这种家伙！真OO的倒霉！	ゲッ！こんな時にコイツが現れるのか！本当、ツイてない！
+/Emesa	300152	Man, this one picked a real crappy time to appear! Just my ☆☆ing luck, huh?	啧！居然在这种时候出现这种家伙！真OO的倒霉！	ゲッ！こんな時にコイツが現れるのか！本当、ツイてない！
 
 tn	XXX	I think she's saying "we can't hold the line much longer"... Need to redo it
 msg	300153	Hey! Hurry up and take the wounded away from here with the mech! We can't hold it here any longer!	喂！赶紧带着伤员和这些机器人离开！这里恐怕也坚持不了多久了！	ほら！急いでケガ人を連れて、このロボットとここを離れて！ここはもう持たない！

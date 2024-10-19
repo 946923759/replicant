@@ -4,6 +4,7 @@ bg	009/046_1280x720
 portraits	59,false,-2	60,false,-2	50,false,2
 emote	59	3
 emote	60	3
+match_names	Seele	Bronya	???
 /???	301453	Serious... Damage... System shutting down... Function stop...	机体损伤…严重…系统即将关闭…机能停止……	機体の損傷は……深刻……システムはまもなくシャットダウン……機能停止……。	NONE
 msg	301454	[zzzt zzzt-]	滋啦滋啦…	ジ、ジジ、ガ——。	NONE
 /Seele	301455	Phew.... Did we win...?	呼…赢了么……姐姐大人没事吧？	ふぅ……勝ったの？……お姉ちゃん大丈夫？	NONE
@@ -28,6 +29,7 @@ msg	301467	Farewell... Disappear with your illusions of hope.	永别了…怀抱
 speaker	
 bg	009/035_1280x720	fade
 se	DLC_CH01_EV23_ExplosionClose
+shake_camera	3
 msg	301468	Boom!!	轰！！	ドォーン！！	NONE
 bg	009/036_1280x720	fade
 speaker	Mei
@@ -51,33 +53,29 @@ speaker	Seele
 bg	007/006_1280x720
 music	The Color of Depression
 portraits	59	60	54	55
+match_names	Seele	Bronya	Estherine	Emesa	Himeko
 emote	59	3
-msg	301479	*Cough, cough!* Such destructive power....	咳咳！这个破坏力……	ゲホッゲホ！この威力……何が起こったの！？	NONE
-speaker	Bronya
+/Seele	301479	*Cough, cough!* Such destructive power....	咳咳！这个破坏力……	ゲホッゲホ！この威力……何が起こったの！？	NONE
 emote	59	3
 emote	60	5
-msg	301480	Is everyone alright!? [Cough!] Anyone that can still move, check your surroundings! Move the wounded to an open area!	大家都没事吧？咳咳！可以活动的人确认一下周围的状况！将伤员运输到开阔的地方！	みなさん大丈夫ですか？ゲホッ……！動ける者は周囲の状況を確認してください！負傷者を見つけたら、広いところに運んで！	NONE
-speaker	Emesa
+/Bronya	301480	Is everyone alright!? *Cough!* Anyone that can still move, check your surroundings! Move the wounded to an open area!	大家都没事吧？咳咳！可以活动的人确认一下周围的状况！将伤员运输到开阔的地方！	みなさん大丈夫ですか？ゲホッ……！動ける者は周囲の状況を確認してください！負傷者を見つけたら、広いところに運んで！	NONE
 emote	59	3
 emote	55	4
-msg	301481	The electrical system was hit.... It's pitch black here, I can't see anything! Hey, if anyone here is alive, speak up!	电力系统瘫痪了…一片漆黑什么都看不见！喂！还活着的人赶紧吱个声！	電力系統がやられた……真っ暗で何も見えない。おーい！生きてるやつは声を上げろ！	NONE
-speaker	Estherine
+/Emesa	301481	The electrical system was hit.... It's pitch black here, I can't see anything! Hey, if anyone here is alive, speak up!	电力系统瘫痪了…一片漆黑什么都看不见！喂！还活着的人赶紧吱个声！	電力系統がやられた……真っ暗で何も見えない。おーい！生きてるやつは声を上げろ！	NONE
 emote	54	3
 emote	55	4
-msg	301482	Ugh... That was terrifying.... What was that attack just now!? That's not something any normal Honkai beast can do, is it?	呜呜……太可怕了…刚才的攻击是怎么回事！这根本不是崩坏生物能做的到的吧？	ううう……怖い……さっきの攻撃は何なの！？崩壊生物ができるレベルのものじゃないでしょ？	NONE
-speaker	Himeko
+/Estherine	301482	Ugh... That was terrifying.... What was that attack just now!? That's not something any normal Honkai beast can do, is it?	呜呜……太可怕了…刚才的攻击是怎么回事！这根本不是崩坏生物能做的到的吧？	ううう……怖い……さっきの攻撃は何なの！？崩壊生物ができるレベルのものじゃないでしょ？	NONE
+
 portraits	59	60	54	55	61
 emote	54	3
 emote	61	2
-msg	301483	It's a Herrscher.	是律者。	律者よ。	NONE
-speaker	Estherine
+/Himeko	301483	It's a Herrscher.	是律者。	律者よ。	NONE
 emote	54	3
 emote	61	2
-msg	301484	Her... Herrscher!?	律！律者！？	り、律者ぁ！？	NONE
-speaker	Himeko
+/Estherine	301484	Her... Herrscher!?	律！律者！？	り、律者ぁ！？	NONE
 emote	54	3
 emote	61	2
-msg	301485	Damn her.... She could have easily wiped out ME Corporation if she wanted to, so why did she miss? Was she just toying with us?	芽衣那个混蛋…刚才明明可以将ME社夷为平地，为什么会故意打偏，难道是在戏弄我们么！	芽衣のヤツ……その気になればME社を廃墟にできたのに、なぜわざと外したの？私たちを弄んでるの？	NONE
+/Himeko	301485	Damn her.... She could have easily wiped out ME Corporation if she wanted to, so why did she miss? Was she just toying with us?	芽衣那个混蛋…刚才明明可以将ME社夷为平地，为什么会故意打偏，难道是在戏弄我们么！	芽衣のヤツ……その気になればME社を廃墟にできたのに、なぜわざと外したの？私たちを弄んでるの？	NONE
 speaker	Bronya
 emote	54	3
 emote	60	5
@@ -114,4 +112,4 @@ portraits
 stopmusic	1
 speaker	
 msg	301494	...	……	……。	NONE
-msg	301495	.........	………	…………。	NONE
+extend	301495	.........	………	…………。	NONE

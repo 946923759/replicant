@@ -1,6 +1,6 @@
 extends Node
 
-#Hint: use OPTIONS[option]['value'] to access these
+#Hint: use Globals.OPTIONS[option]['value'] to access these
 var OPTIONS = {
 	"AudioVolume":{
 		"type":"int",
@@ -15,7 +15,7 @@ var OPTIONS = {
 	"isFullscreen":{
 		"type":"bool",
 		"default":false,
-		pc_only=true
+		"pc_only":true
 	},
 	"vibration":{
 		"type":"bool",
@@ -35,6 +35,10 @@ var OPTIONS = {
 		"choices":[10,20,30,40,50,60,70,80,90,100],
 		"localizeKey":"TextSpeed",
 		"default":80
+	},
+	"naturalPauses":{
+		"type":"bool",
+		"default":true
 	},
 	"textStyle":{
 		"type":"list",
@@ -387,6 +391,7 @@ static func load_database(path:String)->Dictionary:
 	
 func _ready():
 	
+	#TODO: Android does not support DLC. Make an all in one apk? Try .obb support?
 	#false = Do not overwrite base pck data with files of the same name in additional pck
 	var success = ProjectSettings.load_resource_pack("res://Reborn.pck",false)
 	if success:

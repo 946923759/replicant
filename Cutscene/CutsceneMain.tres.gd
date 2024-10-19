@@ -549,24 +549,48 @@ func advance_text()->bool:
 						printerr("Unknown command used, giving up: "+tmp_txt)
 						break
 				
-				var hasVar = tmp_txt.find("%")
-				if hasVar != -1:
+#				var hasVar = tmp_txt.find("%")
+#				if hasVar != -1:
+#					var endTagPos:int = -1
+#					for jjjj in range(hasVar+1,tmp_txt.length()):
+#						if tmp_txt[jjjj]==" ": #This also means no %% necessary like renpy
+#							break
+#						elif tmp_txt[jjjj]=="%":
+#							endTagPos = jjjj
+#							break
+#					if endTagPos != -1:
+#						#print(endTag-hasVar)
+#						var varName = tmp_txt.substr(hasVar+1,endTagPos-hasVar-1)
+#						print("Got story var "+varName)
+#						if cutsceneVars.has(varName):
+#							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTagPos+1)
+#							pass
+#						else:
+#							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
+#
+				
+				var hasVarCursor = tmp_txt.find("%")
+				while hasVarCursor != -1 and hasVarCursor < tmp_txt.length():
 					var endTagPos:int = -1
-					for jjjj in range(hasVar+1,tmp_txt.length()):
+					for jjjj in range(hasVarCursor+1,tmp_txt.length()):
 						if tmp_txt[jjjj]==" ": #This also means no %% necessary like renpy
+							hasVarCursor=jjjj+1
 							break
 						elif tmp_txt[jjjj]=="%":
 							endTagPos = jjjj
 							break
 					if endTagPos != -1:
 						#print(endTag-hasVar)
-						var varName = tmp_txt.substr(hasVar+1,endTagPos-hasVar-1)
-						print("Got story var "+varName)
+						var varName = tmp_txt.substr(hasVarCursor+1,endTagPos-hasVarCursor-1)
+						#print("Got story var "+varName)
 						if cutsceneVars.has(varName):
-							tmp_txt = tmp_txt.substr(0,hasVar) + String(cutsceneVars[varName]) + tmp_txt.substr(endTagPos+1)
+							tmp_txt = tmp_txt.substr(0,hasVarCursor) + String(cutsceneVars[varName]) + tmp_txt.substr(endTagPos+1)
+							#print("Replaced text to "+tmp_txt)
+							hasVarCursor = tmp_txt.find("%")
 							pass
 						else:
 							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
+				
 				
 				#OH BOY HERE WE GO
 				#So first we have to find where there is a pause
@@ -576,13 +600,18 @@ func advance_text()->bool:
 				# Actually, I can just re-use waitForAnim... It's not like there's anything
 				# else to use it at this point
 				var prevDelay:float = waitForAnim
-				while true:
+				
+				var cursor:int = 0
+				var txt_len:int = len(tmp_txt)
+				while cursor < txt_len:
 					var bbcode_stripped_txt:String = Globals.strip_bbcode(tmp_txt)
 					
 					var twStruct = TextDelay.new()
 					
-					var pauseAt = bbcode_stripped_txt.find("{w=")
+					var pauseAt = bbcode_stripped_txt.find("{w=", cursor)
 					if pauseAt != -1:
+						#Move cursor forward
+						cursor = pauseAt
 						#Push pauseAt to an array
 						twStruct.numChars = pauseAt
 						
@@ -599,15 +628,21 @@ func advance_text()->bool:
 						#which means more parsing work...
 						var bb_beginStr = tmp_txt.find("{w=")
 						var bb_endStr = tmp_txt.find("}",bb_beginStr+4)+1
-						#print("Replacing string to "+tmp_txt.substr(0,bb_beginStr)+tmp_txt.substr(bb_endStr))
+						print("Replacing string to "+tmp_txt.substr(0,bb_beginStr)+tmp_txt.substr(bb_endStr))
 						tmp_txt = tmp_txt.substr(0,bb_beginStr)+tmp_txt.substr(bb_endStr)
-						#tmp_txt.replace()
+						
 					else:
 						#pauseAt should be equal to text length
 						twStruct.numChars = bbcode_stripped_txt.length()
 						twStruct.delayBeforeTween = prevDelay
 						textPauses.append(twStruct)
 						break
+				
+				var naturalPauses = Globals.OPTIONS['naturalPauses']['value']
+				#I don't know how to do this the proper way so whatever
+				for i in range(len(tmp_txt), 0, -1):
+					pass
+					
 				for s in textPauses:
 					print(s._to_string())
 				
@@ -854,22 +889,22 @@ func advance_text()->bool:
 			'var':
 				var varName = curMessage[1]
 				#var varToSet = 0
-				var varToCheck = curMessage[2].to_lower()
-				if varToCheck=="true":
+				var varExpression = curMessage[2].to_lower()
+				if varExpression=="true":
 					cutsceneVars[varName]=1
-				elif varToCheck=="false":
+				elif varExpression=="false":
 					cutsceneVars[varName]=0
 				else:
-					match varToCheck[0]:
+					match varExpression[0]:
 						
 						'"':
-							var cmd_end = varToCheck.rfind("\"");
+							var cmd_end = varExpression.rfind("\"");
 							if cmd_end>0:
-								cutsceneVars[varName] = varToCheck.substr(1,len(varToCheck)-2)
+								cutsceneVars[varName] = curMessage[2].substr(1,len(curMessage[2])-2)
 							else:
 								printerr("String is malformed in var command, missing end")
 						'&':
-							var bitflag = int(varToCheck.substr(1))
+							var bitflag = int(varExpression.substr(1))
 							if !(varName in cutsceneVars):
 								cutsceneVars[varName] = (1<<bitflag)
 							elif typeof(cutsceneVars[varName])==TYPE_INT:
@@ -877,7 +912,7 @@ func advance_text()->bool:
 							else:
 								printerr("Tried to set a bitflag, but variable is not an integer.")
 						'~':
-							var bitflag = int(varToCheck.substr(1))
+							var bitflag = int(varExpression.substr(1))
 							if !(varName in cutsceneVars):
 								cutsceneVars[varName] = 0 #If the variable doesn't exist, it's zero...
 							elif typeof(cutsceneVars[varName])==TYPE_INT:
@@ -885,10 +920,20 @@ func advance_text()->bool:
 							else:
 								printerr("Tried to set a bitflag, but variable is not an integer.")
 						_:
-							if varToCheck.is_valid_integer():
-								cutsceneVars[varName]=int(varToCheck)
-							else:
-								printerr("Failed to deduce type for variable "+varToCheck)
+							if varExpression.is_valid_integer(): #Likely assignment expression
+								cutsceneVars[varName]=int(varExpression)
+							elif not varName in cutsceneVars:
+								printerr("Failed to deduce type for variable and this variable doesn't exist yet, nothing can be done here.")
+								printerr("(Hint: you might want to assign to this variable first)")
+							else: #Not sure what this is, attempt complex expression parsing
+								var expression:Expression = Expression.new()
+								expression.parse(varExpression,[varName])
+								#Execute the expression, so Vector2(1,2) would return Vector2(1,2), etc
+								var result = expression.execute([cutsceneVars[varName]])
+								if expression.has_execute_failed():
+									printerr("Failed to deduce type for variable "+varExpression+" and failed to parse this as an expression. "+expression.get_error_text())
+								else:
+									cutsceneVars[varName]=result
 #			'jmp_short':
 #				curPos+=int(curMessage[1])
 			'condjmp','condjmp_neg','jmp':
@@ -950,38 +995,26 @@ func advance_text()->bool:
 	if tmp_tn!="":
 		$TN_Actor.set_text(tmp_tn)
 	var TEXT_SPEED=float(Globals['OPTIONS']['textSpeed']['value'])
-	#print(TEXT_SPEED)
-	if TEXT_SPEED<100:
+	
+	if TEXT_SPEED == 100:
+		TEXT_SPEED = 1000
+	elif Globals['OPTIONS']['language']['value']=="en":
+		TEXT_SPEED *= 1.5
+	
+	for di in len(textPauses):
+		var delayStruct:TextDelay = textPauses[di]
+		var time:float = 0.0
+		if di==0:
+			time = 1/TEXT_SPEED*(delayStruct.numChars-text.visible_characters)
+		else:
+			time = 1/TEXT_SPEED*(delayStruct.numChars-textPauses[di-1].numChars)
 		
 		
-#		txtTw.tween_property(text,"visible_characters",text.text.length(),
-#			1/TEXT_SPEED*(text.text.length()-text.visible_characters)
-#		).set_delay(waitForAnim)
-		if Globals['OPTIONS']['language']['value']=="en":
-			TEXT_SPEED*=1.5
-		
-		for di in len(textPauses):
-			var delayStruct:TextDelay = textPauses[di]
-			var time:float = 0.0
-			if di==0:
-				time = 1/TEXT_SPEED*(delayStruct.numChars-text.visible_characters)
-			else:
-				time = 1/TEXT_SPEED*(delayStruct.numChars-textPauses[di-1].numChars)
-			
-			
-			txtTw.tween_property(text,"visible_characters",delayStruct.numChars,
-				time
-			).set_delay(delayStruct.delayBeforeTween)
-		
-		
-	else: #Fake tween that just waits for waitForAnim
-		txtTw.tween_property(text,"visible_characters",text.text.length(),0).set_delay(waitForAnim)
-		#txtTw.interpolate_property(text,"visible_characters",text.visible_characters,text.text.length(),
-		#	0,
-		#	Tween.TRANS_LINEAR,
-		#	Tween.EASE_IN,
-		#	waitForAnim
-		#)
+		txtTw.tween_property(text,"visible_characters",delayStruct.numChars,
+			time
+		).set_delay(delayStruct.delayBeforeTween)
+	
+	
 	#This is kind of a hack, the history depends on the text actor but FSbox just appends to the same node,
 	text.visible=(messageBoxMode==MSGBOX_DISP_MODE.NORMAL)
 	if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
@@ -1004,13 +1037,9 @@ func advance_text()->bool:
 		popupText.bbcode_text = "[center]"+text.bbcode_text+"[/center]"
 		popupText.visible_characters=text.visible_characters
 		$PopupContainer.rect_size.y = popupText.get_content_height()+7
-		if TEXT_SPEED<100:
-			txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
-				1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
-			)
-		else: #Fake tween that just waits for waitForAnim
-			txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),0).set_delay(waitForAnim)
-
+		txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
+			1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
+		)
 	print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
 	waitForAnim=0

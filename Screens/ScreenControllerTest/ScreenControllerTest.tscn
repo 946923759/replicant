@@ -148,13 +148,13 @@ texture = ExtResource( 3 )
 
 [node name="StickL" type="Sprite" parent="Sprite"]
 modulate = Color( 0, 1, 0.109804, 1 )
-position = Vector2( 388.29, 269.183 )
+position = Vector2( 387.5, 268 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 
 [node name="StickR" type="Sprite" parent="Sprite"]
 modulate = Color( 0, 1, 0.109804, 1 )
-position = Vector2( 574.756, 271.302 )
+position = Vector2( 574, 268 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 

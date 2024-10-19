@@ -28,6 +28,7 @@ speaker	Sin
 emote	67	3
 emote	54	3
 msg	308626	Let go of me... I can still—	放开我…我还能……	離せ……まだ——	NONE
+tween	during	67	decelerate,.3;addy,100
 tn	0	coughing sound
 msg	308627	——Gaaagh!! 	咕啊！！！！！	——ぐはぁッ！！！！！	NONE
 speaker	Estherine
@@ -39,6 +40,7 @@ speaker	Sin
 
 emote	67	3
 emote	54	3
+tween	during	67	decelerate,.3;y,0
 msg	308629	Let go of my hand——	给我松手……	手を離せ……。	NONE
 speaker	Estherine
 
@@ -46,7 +48,7 @@ emote	67	3
 emote	54	3
 msg	308630	Femiris... Cut Sin's connection.	菲米莉丝…断开杏的链接。	フェミリス……シンのリンクを切って。	NONE
 emote	54	3
-/Femiris	308631	[color=#00ffff](Zzzt) But... (Zzzt) the Honkai corruption will be transferred——[/color]	呲拉…但是…呲拉…这样崩坏能会转移到……	ザー……ですが……ザザー……崩壊エネルギーが——	NONE
+/Femiris	308631	(Zzzt) [color=#00ffff]But...[/color] (Zzzt) [color=#00ffff]the Honkai corruption will be transferred——[/color]	呲拉…但是…呲拉…这样崩坏能会转移到……	ザー……ですが……ザザー……崩壊エネルギーが——	NONE
 speaker	Estherine
 emote	54	3
 msg	308632	That doesn't matter... Disconnect her now!	没关系…立即断开！	いいの……今すぐ切って！	NONE
@@ -66,7 +68,7 @@ emote	67	3
 emote	54	3
 msg	308635	Don't force your plans on me... I can still....	少给我自作主张……本大爷还能……	勝手な真似はやめろ……ボクはまだ……。	NONE
 emote	54	3
-/Femiris	308636	[color=#00ffff]Zzzt.... The Stigmata space of Sin Mal.....[/color]	呲拉…杏··玛尔圣痕空间…	ザー…シン・マールの聖痕空間——	NONE
+/Femiris	308636	Zzzt.... [color=#00ffff]The Stigmata space of Sin Mal.....[/color]	呲拉…杏··玛尔圣痕空间…	ザー…シン・マールの聖痕空間——	NONE
 speaker	Sin
 
 emote	67	3
@@ -101,14 +103,14 @@ bg	011/003_1280x720
 speaker	Sirin
 msg	308644	Don't you ever give up? If you die here, everything ends. Don't you understand?	还是不准备放弃么？如果在这里死去的话一切都会结束，你难道不明白么？	諦めないの？ここで死んだら何もかもが終わるのよ、わかってないの？	NONE
 speaker	Estherine
-msg	308645	Dying here…means dying in real world……	在这个世界中死亡的话…就代表着现实世界中也会一同死去……	この世界で死んだら……現実世界の私も死ぬ……。	NONE
-msg	308646	Such kind of thing…of course I know!	这种事情…我当然知道！	そんなこと……わかってる！	NONE
+msg	308645	Dying here... Means dying in real world......	在这个世界中死亡的话…就代表着现实世界中也会一同死去……	この世界で死んだら……現実世界の私も死ぬ……。	NONE
+msg	308646	Of course I know that!	这种事情…我当然知道！	そんなこと……わかってる！	NONE
 msg	308647	But this time I can't escape!	但是唯独这次我不能逃避！	でも今回は、逃げるわけにはいかないの！	NONE
 msg	308648	Sirin... I'll defeat you and bring Kyuushou back!	西琳…我一定会打败你…把九霄和杏都带回去的！	シーリン……あなたを倒して、九霄を連れ戻す！	NONE
 speaker	Sirin
 msg	308649	Are you sure you want to fight me when your body is shaking like that?	明明身体抖成这样，还要继续战斗么？	そんな身体で、まだ戦う気？	NONE
 speaker	Estherine
-msg	308650	I will! I won't let you take away anyone's life!	我会战斗的！这次不会再让你夺走任何人的生命了！	戦うわ！もうこれ以上、命を奪わせはしない！	NONE
+msg	308650	I am! I won't let you take away anyone's life!	我会战斗的！这次不会再让你夺走任何人的生命了！	戦うわ！もうこれ以上、命を奪わせはしない！	NONE
 msg	308651	I know I'm weak, always very cautious…like a coward hiding behind others, can't do anything without them……only see people fall down as an audience……	我知道自己很懦弱，总是这么小心翼翼…畏手畏脚像个胆小鬼一样躲在别人的身后，只要离开了她们就什么也做不到……只能以旁观者的样子看着身边的人一个个倒下……	自分が弱いのはわかってる……いつも臆病者で誰かの後ろに隠れることしかできなかった……傍観者として、周りの人が倒れていくのを見ることしかできなかった……。	NONE
 msg	308652	But they are different…she doesn't care about the dilemma, always go ahead in a selfless way……	但是她们不一样…不管是什么样的困境她都毫不在意，总是一副傻傻的样子忘我地前进……	でも、彼女たちは違う……逆境でも恐れず、ただ前だけを向いて進んでいた……。	NONE
 msg	308653	I envy them…Bronya…Seele…Himeko…Emesa…and Sin……even faced with stronger enemies! Even faced with pain and confusion…they never stop, pursuing what they think are right!	我十分羡慕她们…布洛妮娅…希儿…姬子…埃米沙…还有杏……即使面对远比自己强大的对手！即使面对着痛苦与迷茫…也从没有停下脚步，追逐着自己认为正确的东西！	羨ましいと思った……ブローニャ、ゼーレ、姫子、エミザ……それからシンも……自分より強い相手が目の前にいても、苦しみながら、迷いながらでも……その歩みを止めず、自分が正しいと思ったものだけ追いかけていた。	NONE

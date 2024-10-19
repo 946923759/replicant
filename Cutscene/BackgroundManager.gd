@@ -115,19 +115,19 @@ export var shakeReduction : float = 1.0
 var stress : float = 0.0
 var shake : float = 0.0
 
-var elapsed:float=0
+#var elapsed:float=0
 func _physics_process(_delta):
 	if stress == 0.0:
 		return
 	
-	elapsed+=_delta
-	if elapsed>1/60: #Lock to the frame rate
-		elapsed=0
-		_process_shake(Vector2(0,0), 0.0, _delta)
-	pass
+#	elapsed+=_delta
+#	if elapsed>1/60: #Lock to the frame rate
+#		elapsed -= 1/60
+#		_process_shake(Vector2(0,0), 0.0, _delta)
+#	pass
+	#_physics_process() is locked to 60 so we don't need to lock it (I think)
+	_process_shake(Vector2(0,0), 0.0, _delta)
 
-
-#TODO: It's tied to the update rate which is extremely inconsistent between computers
 func _process_shake(center, angle, delta) -> void:
 	shake = stress * stress
 

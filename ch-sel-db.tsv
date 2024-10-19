@@ -14,7 +14,7 @@ Font Test	Tests fonts, colors, pauses.	test_font,test_textPause
 BBCode FS Test	Tests BBCode when using fullscreen text	test_text_bbcode
 Background Test		test_background,test_background_custom,test_background_advanced
 Background Color test		test_blackbg,test_bgcolor
-Foreground Test	Tests the color rect which covers the screen.	test_foreground
+Modulate Test	Tests the color rect which covers the screen, and tests modulating portraits.	test_foreground,test_modulate
 Video Test		final_round_test
 Vibrate Test		test_vibrate
 

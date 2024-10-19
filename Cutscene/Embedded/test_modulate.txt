@@ -1,0 +1,10 @@
+preload_portraits	54	67	70	61
+bg	011/007_1280x720
+portraits	70	61
+msg	You can apply colors to portraits as well as background/foreground.
+tween	during	70	linear,.5;diffuse,Black
+tween	during	61	linear,.5;diffuse,LightBlue
+msg	See?
+tween	during	70	linear,.5;diffuse,White
+tween	during	61	linear,.5;diffuse,White
+msg	To reset, diffuse/modulate with the White color. Modulation is additive, so white = no color added.

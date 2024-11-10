@@ -5,7 +5,7 @@ bg	011/008_1280x720
 music	Grandma
 portraits	54,false,-1	67,false,-2	68
 
-match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	67	2
 /Sin	308536	I'll kill you, Herrscher!!!!	哼！给我去死吧！律者！	ふん！死ねぇッ！律者ァアアアーーーーッ！	NONE
 
@@ -118,11 +118,11 @@ tween	during	foreground	visible,false
 bg	011/008_1280x720
 music	Emil Boss - No Vocals
 portraits	54,false,-1	67,false,-2	68
-match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	67	3
 emote	54	6
 /Sin	308576	Gah, ah, ah--ahhhhhhhhhhh!	嘎啊啊啊————！	く、あ、あ——あぁああああーーーッ！	NONE
-/Estherine	308577	Sin!	杏！	シン！	NONE
+/Yiserin	308577	Sin!	杏！	シン！	NONE
 /Sin	308578	I won't die here! I refuse to die here!!	我还不能死！绝对不会死在这里！	まだ死ねない！絶対、ここで死ぬわけにはいかないんだ！	NONE
 emote	67	2
 /Sin	308579	If I can kill you all! I can survive!	只要把你们全部杀掉！就一定可以活下去！	全員殺してやるッ！殺して生き残るんだぁッ！！	NONE
@@ -130,12 +130,12 @@ msg	308580	Bronya......Bronyaaaaaaahhh!!!	布洛妮娅…布洛妮娅！！！	�
 
 emote	67	2
 emote	54	3
-/Estherine	308581	Sin, get a hold of yourself! Kyuushou, restrain her!	杏！快清醒一下！九霄！帮我压制住她！	シン、しっかりしなさい！！九霄、シンを抑えて！	NONE
+/Yiserin	308581	Sin, get a hold of yourself! Kyuushou, restrain her!	杏！快清醒一下！九霄！帮我压制住她！	シン、しっかりしなさい！！九霄、シンを抑えて！	NONE
 speaker	Sin
 emote	67	3
 emote	54	3
 msg	308582	Hah, hah, damn ...... ahhhhhhhhhhhh!	嘎啊啊啊！！！	はぁ、はぁ、くっ……あ、あぁあああーーーーッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	67	3
 emote	54	3
 msg	308583	How come…Honkai has started to erode her consciousness…if this goes on……	怎么会…崩坏已经开始侵蚀她的意识了…这样下去的话……	そんな……崩壊が意識を侵食しはじめた……このままじゃ……。	NONE
@@ -144,7 +144,7 @@ emote	68	2
 emote	54	3
 msg	308584	It's too late. The seeds sown in the past have sprouted in her heart and she has been consumed by the past. She will continue to be broken.	已经无法挽回了，过去种下的恶果正在她的心中重新绽放，她也将被过去的因果所吞噬变得支离破碎。	もう手遅れよ。過去に撒いた種が心に芽生え、彼女は過去の因果に飲み込まれたの。このまま壊れていくわ。	NONE
 msg	308585	This will be your end as well... You will dissolve in this fading world and turn into nothing, just like Sirin.	你们的结局也将是这样…沉沦在已经消逝的世界中，与西琳一同化作虚无吧。	あなたたちも、時期にそうなるわ……消えた世界へと溶けていき、シーリンと一緒に虚無になるの。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 bg	011/004_1280x720	fade
 emote	68	2

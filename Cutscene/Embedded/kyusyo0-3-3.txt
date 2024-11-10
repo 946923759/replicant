@@ -1,4 +1,4 @@
-#LANGUAGES	key	en	ch	ja
+#LANGUAGES	KEY	EN	ZH	JA	PT
 match_names	Emesa	_DIM_ALL_WHEN_EMPTY
 speaker	Emesa
 bg	009/004_1280x720
@@ -31,7 +31,7 @@ msg	300169	Bang!!!	砰！！！	バーン！！！
 bg	009/029_1280x720
 portraits	
 /Bronya	300170	Are you alright? Didn't I tell you to wait for me at the base?	你没事吧。不是让你在基地等着么？	大丈夫ですか？ブローニャは基地で待っているよう言ったはずですが。
-msg	300171	Emesa, get her out of here as soon as possible. I'll handle the rest.	快带她离开，这里交给我。	早く彼女を連れて離れてください。ここはブローニャに任せてください。
+msg	300171	Emesa, get her out of here as soon as possible. I'll take care of this.	快带她离开，这里交给我。	早く彼女を連れて離れてください。ここはブローニャに任せてください。
 speaker	Emesa
 msg	300172	Wait, but what about you!?	可是！布洛妮娅你怎么办！？	でも！ブローニャはどうするんだよ！？
 se	DLC_CH00_EV11_MosterRoar

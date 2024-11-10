@@ -9,7 +9,7 @@ emote	60	1
 emote	59	1
 emote	60	1
 /Seele	300702	Sure. But where are those Houkai creatures? Do you have any plans, Bronya?	好勒~那么我们要去哪里呢，姐姐大人有什么计划么？	オッケ～それで私たちどこに行くの？お姉ちゃん何か計画あるの？	NONE
-/Bronya	300703	Didn't Estherine say there are a lot of them? Then they need a lot of space.	嗯，刚才伊瑟琳的情报中有一点令我很在意，如果说是数量庞大的集群生物的话一定需要很大的活动空间。	ええ、今のイザーリンの情報の中で1つ、気になることがありました。もし膨大な数の群れの生物がいるのならば、とても大きな活動空間が必要になるはずです。	NONE
+/Bronya	300703	Didn't Yiserin say there are a lot of them? Then they need a lot of space.	嗯，刚才伊瑟琳的情报中有一点令我很在意，如果说是数量庞大的集群生物的话一定需要很大的活动空间。	ええ、今のイザーリンの情報の中で1つ、気になることがありました。もし膨大な数の群れの生物がいるのならば、とても大きな活動空間が必要になるはずです。	NONE
 msg	300704	But I've just investigated the surrounding areas a couple of days ago. There was nothing suspicious. We might have to look further.	但是就在几天前我已经将周围的区域都巡视了一遍，并没有发现任何可疑的痕迹，所以我们需要扩大调查范围才行。	しかし、数日前、ブローニャが周囲のエリアを調べた時には疑わしい痕跡が見つかりませんでした。だから調査範囲を拡大させなければなりません。	NONE
 msg	300705	I know only one place that has enough space for so many Houkai creatures.	在这个基地的周围，能满足大量崩坏生物活动的场所……或许只有一个地方。	この基地の周囲で、大量の崩壊生物を活動させられるだけの場所は……おそらく1つしかりません。	NONE
 emote	59	2

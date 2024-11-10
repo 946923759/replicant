@@ -49,19 +49,19 @@ emote	58	7
 portraits	58
 msg	303027	Should I go inside...... Where Bronya and the others are? But if they don't remember me.......	布洛妮娅她们就在里面吧…到底要不要进去呢，要是她们不记得我的话……	ブローニャたちが中にいる……中に入るべきか。#nでも、もし彼女たちが我のことを覚えていなかったら……。
 speaker	 
-/Emesa's Voice	303028	Hey! Estherine!	喂！伊瑟琳！	ちょっと！イザーリン！
-/Estherine's Voice	303029	Whoa! It wasn't me! I swear it wasn't me!	呜哇！我没有！我不是！	うわっ！違うわ！私じゃない……！
+/Emesa's Voice	303028	Hey! Yiserin!	喂！伊瑟琳！	ちょっと！イザーリン！
+/Yiserin's Voice	303029	Whoa! It wasn't me! I swear it wasn't me!	呜哇！我没有！我不是！	うわっ！違うわ！私じゃない……！
 /Kyuushou	303030	Hmmm... There sure is a lot of noise inside.	唔…里面怎么吵吵闹闹的。	うーん……中が騒がしいな。
 bg	009/005_1280x720
 portraits	54	55
 preload_portraits	54	55	62	61	60
 emote	54	5
 emote	55	4
-match_names	Estherine	Emesa
-/Emesa	303032	Estherine! Answer me! Did you use up all the coffee beans I worked so hard to find!?	伊瑟琳！说！是不是你把我辛辛苦苦找到的咖啡豆全喝了！	イザーリン！答えろッ！#n苦労して必死に探してきたコーヒー豆、全部飲んだのお前だろ！？
-/Estherine	303033	It really wasn't me... I just... Just used a little ......	真的不是我啦…我只是…只是用了一点点……	本当に私じゃないわよ……。#n私はただ……ただほんのちょっと使っただけで……。
+match_names	Yiserin	Emesa
+/Emesa	303032	Yiserin! Answer me! Did you use up all the coffee beans I worked so hard to find!?	伊瑟琳！说！是不是你把我辛辛苦苦找到的咖啡豆全喝了！	イザーリン！答えろッ！#n苦労して必死に探してきたコーヒー豆、全部飲んだのお前だろ！？
+/Yiserin	303033	It really wasn't me... I just... Just used a little ......	真的不是我啦…我只是…只是用了一点点……	本当に私じゃないわよ……。#n私はただ……ただほんのちょっと使っただけで……。
 /Emesa	303034	Huh... You have a lot of ☆☆ing nerve! Do you think you're immortal now that the Honkai is gone? You seaweed head, I'm going to show you there's things way worse than death!	嚯嚯…你OO的胆子大了！你以为崩坏消失了自己就不会死了是吧！我OO今天就让你尝尝生不如死的滋味！！	ほほう……この馬鹿ヤロウ、いい度胸してるじゃねぇーか！#n崩壊が消えたら、もう死ぬことはないとでも思ってんのか！？#nこのワカメ、今日こそお前に死より辛いものがあるということを思い知らせてやる！！
-/Estherine	303035	Aaah! Help! Bronya!	呜哇！！救命！布洛妮娅！	うわぁああ！！助けて！ブローニャ！
+/Yiserin	303035	Aaah! Help! Bronya!	呜哇！！救命！布洛妮娅！	うわぁああ！！助けて！ブローニャ！
 speaker	Bronya
 portraits	60	54	55
 emote	54	5
@@ -161,18 +161,22 @@ condjmp_c	c2dest	2
 label	c1dest
 msg	303072	Really? Then let's go.	是么，那我们走吧。	そうか？じゃあ、行こう。	NONE
 bg	black	fade
-portraits	
+portraits
 msg	303073	This world will tell its own story in the way it wishes.	让这个世界以它期望的样子继续它们的故事。	この世界は、この世界が望む形で自らの物語を綴っていく。	NONE
 msg	303074	And it's time for us, too, to continue the adventures of the Savior!	而我们，也该继续救世主的冒险了！	そして我らは、救世主の冒険を続けなければならない！	NONE
 stop_music
+nop	Repeat 100x to fix skip mode
+portraits
 msg	303075	……	……	……。	NONE
 extend	303076	……	……	…………。	NONE
 msg	303077	Beep——Beep——Beep——	滴——滴——滴——	ピッ——ピッ——ピッ——	NONE
 
 bg	011/023_1280x720
 msgbox_close
+portraits
 msg	303078			NONE	NONE
 msgbox_open
+portraits
 msg	303079	Everyone......	大家……	みんな……	NONE
 msg	303080	I'm back.	我回来了。	ただいま。	NONE
 jmp	end_choices
@@ -182,11 +186,13 @@ msg	303081	Really? So it's time to say goodbye.	是么，那么是时候该告�
 msg	303082	I hope you will leave a splendid trail in this world for me.	希望你可以代替我在这个世界留下绚丽的轨迹。	あなたが我の代わりに、この世界に華麗な軌跡を残してくれることを祈っているよ。	NONE
 msg	303083	Keep writing your story…	将属于你们的故事，继续书写下去……	あなたたちの物語を綴っていくんだ……。	NONE
 bg	black	fade
-portraits	
+portraits
 msg	303084	……	……	……。	NONE
 extend	303085	……	……	…………。	NONE
+portraits
 bg	011/025_1280x720	fade
 msgbox_close
+portraits
 msg	303086			NONE	NONE
 msgbox_open
 speaker	%player%

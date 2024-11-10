@@ -1,13 +1,13 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	54	67	665
 music	Grandma
-speaker	Estherine
+speaker	Yiserin
 bg	011/009_1280x720
-match_names	Estherine	Sin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	_DIM_ALL_WHEN_EMPTY
 portraits	54	67
 
 emote	54	6
-/Estherine	308466	Everyone! The reactor is right ahead of us!	各位！动力炉就在前面了！	みんな……！動力炉は、もう目の前よ！	NONE
+/Yiserin	308466	Everyone! The reactor is right ahead of us!	各位！动力炉就在前面了！	みんな……！動力炉は、もう目の前よ！	NONE
 msg	308467	Da da da!	哒哒哒！	ダダッ、ダダダダ——ッ！	NONE
 se	DLC_CH00_EV04_ExplosionClose
 shake_camera	1
@@ -15,7 +15,7 @@ shake_camera	1
 speaker	Sin
 emote	67	3
 msg	308469	These damn mechs just keep coming! I'm getting pretty sick of this!	这些破机甲怎么越打越多了！还有完没完！	おいおい、機甲の数が増えてないか！？キリがない！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	67	3
 msg	308470	Sin, get in here! I'll close the gate to keep them out!	杏！快进来！我来关闭闸门拦住这些机甲！	シン、早く入って！ドアを閉めて機甲の侵入を防ぐから！	NONE
@@ -30,7 +30,7 @@ emote	67	2
 se	DLC_CH03_EV02_GateClose
 / 	308473	Bang!!	砰！！	バンッ！！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 emote	67	2
 msg	308474	Phew, we finally got rid of them.... We're safe for now, I hope we don't encounter any other obstacles....	闸门关闭了…总算是甩掉它们了，呼…这下暂时安全了，希望不要再出现什么意外了……	な、何とか逃げ切れた……ふぅ、しばらくは安全そうだけど、また予想外のものに出くわさないとも限らないわね……。	NONE
@@ -47,7 +47,7 @@ speaker	Sin
 emote	54	1
 emote	67	1
 msg	308477	It's my first time seeing this big iron ball from close up... So this massive reactor is actually the Herrscher Core?	这么近距离看到这个大铁球还是第一次…原来这个东西这么厉害，居然就是律者的核心么！	この距離で、この鉄の玉を見るのは初めてだ……これが律者コアなのか？	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	1
 emote	67	1
@@ -57,7 +57,7 @@ speaker	Sin
 emote	54	1
 emote	67	1
 msg	308479	It sounds pretty simple. By the way~ What exactly is the meaning of the "Sirin" written on it?	嚯…听着还蛮简单的。对了~话说这个上面写的「Sirin」到底是什么意思？	ふん、簡単に言ってくれるな。ところで、この上に書いてある「Sirin」ってのはなんだ？	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	1
 emote	67	1
@@ -67,7 +67,7 @@ speaker	Sin
 emote	54	1
 emote	67	1
 msg	308481	The name of a Herrscher? You're pretty studious if you can remember the name of a dead person.	律者的名字？你还真是热心呢，这种死掉的人的名字有什么价值？	律者の名前？勉強熱心だなぁ、死んだ人の名前まで覚えてるなんて。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	1
 emote	67	1
@@ -98,12 +98,12 @@ tween	during	665	stoptweening
 tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 emote	54	3
 emote	67	3
-match_names	Estherine	Sin
+match_names	Yiserin	Sin
 se	DLC_CH01_EV12_RadioReceive
 / 	308486	Crack——!	呲拉——！	ザザ——ザ——ザ——ッ！	NONE
 /Sin	308487	......!	呃……	……っ！	NONE
 /Sin	308488	What the hell was that....?	刚才的画面是……	何だ、今の——	NONE
-/Estherine	308489	Sin, I told you not to go too close to the generator....	杏…不是和你说远离一些么，不要和动力炉靠这么近啊……	シン……動力炉に近付かないようにって言ったでしょ……。	NONE
+/Yiserin	308489	Sin, I told you not to go too close to the generator....	杏…不是和你说远离一些么，不要和动力炉靠这么近啊……	シン……動力炉に近付かないようにって言ったでしょ……。	NONE
 
 bg	black	instant
 portraits	665
@@ -127,16 +127,16 @@ tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 se	DLC_CH01_EV12_RadioReceive
 emote	54	3
 emote	67	3
-match_names	Estherine	Sin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	_DIM_ALL_WHEN_EMPTY
 / 	308492	Crack——!	呲拉——！	ザ——ザザ——ッ！！	NONE
 /Sin	308493	Ugh...!	咕！	くっ……！	NONE
-/Estherine	308494	Sin, what's wrong!	咕…杏你怎么了？	シン、どうしたの！？	NONE
+/Yiserin	308494	Sin, what's wrong!	咕…杏你怎么了？	シン、どうしたの！？	NONE
 / 	308495	Crack——!	呲拉——！	ザ——ザァアアァア——ッ！	NONE
 /Sin	308496	Ahhhhh——!!	啊啊啊——！！	あ、あぁあああーーーっ！！	NONE
 tn	0	Wouldn't it be closer to being irradiated, seeing as Honkai Energy kills you? Or was that just a HI3 thing?
-/Estherine	308497	Something's wrong with Sin! I think she's being infected by the Honkai Energy in this area! 	杏的情况有点不对！难道是被这个区域的崩坏能感染了么！？	シンの様子が変だわ！まさか、このエリアの崩壊エネルギーから影響を受けてる！？	NONE
+/Yiserin	308497	Something's wrong with Sin! I think she's being infected by the Honkai Energy in this area! 	杏的情况有点不对！难道是被这个区域的崩坏能感染了么！？	シンの様子が変だわ！まさか、このエリアの崩壊エネルギーから影響を受けてる！？	NONE
 / 	308498	Crack! Crack!	喀拉！喀拉！	ギギィ——！ガシャッ！	NONE
 music	Grandma
-/Estherine	308499	How did these armored mechs get here...?!	怎么会…居然这里还留有这机甲兵器……	そんな……ここにも機甲兵器が潜んでたなんて……。	NONE
+/Yiserin	308499	How did these armored mechs get here...?!	怎么会…居然这里还留有这机甲兵器……	そんな……ここにも機甲兵器が潜んでたなんて……。	NONE
 msg	308500	Why, at a time like this... Was this a trap....?	为什么偏偏这个时候…难道这一切都是计划好的么……	どうして、こんなタイミングで……まさか、全部仕組まれてたの……？	NONE
 msg	308501	Kyuushou, I'll take care of sin! I'm counting on you to take out those mechs!	九霄！我来照顾杏！这些机甲兵器就拜托你了！	九霄……！シンは私が何とかするから、機甲の方をお願い！	NONE

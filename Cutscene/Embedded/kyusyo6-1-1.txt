@@ -17,7 +17,7 @@ msg	308245	I will protect you……	我会保护大家的……	みんなのこ�
 msg	308246	Go!	快走！	はやく……ッ！	NONE
 msg	308247	Woo……	唔……	うぅ……ん……。	NONE
 
-match_names	Bronya	Estherine
+match_names	Bronya	Yiserin
 bg	009/008_1280x720
 portraits	60	54
 emote	60	4
@@ -28,7 +28,7 @@ speaker	Bronya
 portraits	60
 emote	60	2
 msg	308250	Thank goodness... You finally woke up. I thought you'd sleep forever like Seele...	太好了…终于醒了么，我还以为你和希儿一样……	良かった……やっと起きたのですね。ゼーレと同じように目を覚まさないのではと思いました……。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	60	54
 emote	60	2
 emote	54	1
@@ -36,7 +36,7 @@ msg	308251	Whew, you finally woke up..... Kyuushou, you've been out cold for two
 speaker	
 emote	54	1
 msg	308252	Where am…I?	我这是…在哪？	私は……ここはどこ？	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 msg	308253	Sorry, Emesa is still in a coma, so I'm having you sleep in the repair room. It's easier for me to deal with you here.	抱歉，因为埃米沙还在昏迷中，所以只能把你安排在我的维修室里了，这样也方便我观察。	ごめんね、エミザがまだ昏睡状態だから、あなたには修理室で寝てもらってるの。ここの方が、私としても対応しやすいしね。	NONE
 emote	54	1
@@ -46,7 +46,7 @@ msg	308255	First of all, do you remember what happened in Academy City?	首先�
 choice	309285	Himeko……	姬子她……	姫子が……。	NONE
 choice	309305	Is that a dream……	那一切都不是梦么……	全部夢じゃなかったんだ……。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	1
 msg	308256	You look like remember something more or less…ok, I know you have lots of questions now, but let me explain first, it's more efficient……	看来多少还有一些印象…好吧，我知道你现在一定有很多问题想问，但请先听我说明一下现在的状况吧，这样会效率很多……	少し覚えているのね……聞きたいことはたくさんあると思うけど、少し状況を説明させてもらうわ。	NONE
 msg	308257	First, regarding you, when Brogna brought you back from the school city, you had a strong erosive reaction from the Honkai. You are fine for now, but the Honkai energy is still in your system.	首先，关于你自己，在布洛妮娅把你从学园都市带回来的时候你的身上有着强烈的崩坏侵蚀反应，虽然现在已经暂时消退了，不过这股崩坏能依旧潜伏在你的体内。	まず、あなたに関することだけど、ブローニャがあなたを学園都市から連れて戻ってきた時、崩壊による侵食反応が強く出てたの。今のところ大丈夫だけど、崩壊エネルギーはまだあなたの体内に残ってる。	NONE
@@ -58,7 +58,7 @@ emote	60	1
 emote	54	1
 msg	308260	I don't know if you still remember, during the fighting with Herrshcers the dead plague starts to shine again, after that Herrschers disappeared in the huge tower they created……	不知道你还记不记得，在与律者战斗的时候天空中的死斑重新发出了亮光，随后律者也消失在了她们创造出来的巨塔之中……	律者との戦いの後、空にある死斑が再び光を帯びたことは覚えていますか？それと、律者が作り出した巨塔は？そこに律者の二人が消えていったことは覚えていますか？	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	308261	Yes, when the Honkai inside of you awoke, the dead plague was activated again, I think there must be a connection.	是的，在你体内的崩坏苏醒的同时，这个世界的死斑也重新被激活了，所以我想这其中一定有什么联系。	あなたが崩壊に支配されたのと同時に、この世界の死斑が復活したの。だから、この二つにはきっと何か関係があるんだと思う。	NONE
@@ -84,7 +84,7 @@ msg	308266	Until then none of us can escape from it…human civilization will wa
 speaker	
 emote	54	4
 msg	308267	……	……	……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	1
 msg	308268	Eh…after all these you must be very confused, but this is the situation we have now, though we don't know the exact time, but it seems that we are very close to the Honkai eruption……	呃…一下子说了这么多你也一定一头雾水吧，不过这就是我们现在面临的状况，虽然还不知道大崩坏具体的爆发时间，但是以现在崩坏能的衰退速度来看恐怕离那一刻的到来不会太久了……	ごめん、一気に言われてもわけがわからないよね。でも、これが今、私たちの直面している状況なの。大崩壊がいつ発生するのかはわからないけど、地表にある崩壊エネルギーの減衰速度を見ると、おそらくそう先のことではないわ……。	NONE
 choice	309286	Is this the end?	一切都结束了么？	すべて終わったの？	NONE
@@ -97,7 +97,7 @@ msg	308270	Sorry…for telling you all these when you just recover…now people 
 
 emote	60	4
 emote	54	4
-/Estherine	308271	Bronya……	布洛妮娅……	ブローニャ……。	NONE
+/Yiserin	308271	Bronya……	布洛妮娅……	ブローニャ……。	NONE
 
 emote	60	2
 emote	54	4
@@ -113,7 +113,7 @@ portraits	54
 emote	54	4
 msg	308274	……	……	……。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 msg	308275	Bronya must be very lost as well…now she also need time to cheer up, otherwise she can't do anything in this state.	布洛妮娅也一定很迷茫吧…现在的她也需要一段时间重新振作起来，如果是以这个状态的话什么事情都干不成了。	ブローニャもきっと迷ってると思う……今の彼女には、立ち直る時間が必要なの。そうでないと、きっと何もかもうまくいかない。	NONE
 emote	54	2
@@ -149,7 +149,7 @@ bg	009/008_1280x720
 portraits	54
 emote	54	3
 tn	0	Is this supposed to be the Honkai Impact? What the fuck is the Great Honkai?
-/Estherine	308290	Listen, there's only one way left to save you. It's also the only way to stop the Great Honkai. 	听着，现在还有一个办法可以挽救你，这也是唯一一个可以阻止大崩坏的方法。	ひとつだけ助かる方法があるの。これは、大崩壊を阻止する唯一の方法でもあるわ。	NONE
+/Yiserin	308290	Listen, there's only one way left to save you. It's also the only way to stop the Great Honkai. 	听着，现在还有一个办法可以挽救你，这也是唯一一个可以阻止大崩坏的方法。	ひとつだけ助かる方法があるの。これは、大崩壊を阻止する唯一の方法でもあるわ。	NONE
 emote	54	2
 msg	308291	I can't guarantee we'll succeed, but we've got no options left.	但这已经是最后的手段了，我不能保证它的成功率，但我们也别无选择。	その成功率は保証できないけど、他に選択肢もない状況よ。	NONE
 emote	54	3
@@ -159,6 +159,6 @@ choice	309287	Sorry... I still don't understand.	抱歉…我还不是很明白�
 choice	309307	Sorry... Let me think about it.	抱歉…让我整理一下吧。	ごめん……ちょっと整理させて。	NONE
 
 emote	54	2
-/Estherine	308293	Oh... Sorry, it must be confusing to try to explain this to you all at once.	是么…是我的错，一次和你说这些你一定也很混乱吧，抱歉。	あっ……一気に言われても混乱するわね、ごめんなさい。	NONE
+/Yiserin	308293	Oh... Sorry, it must be confusing to try to explain this to you all at once.	是么…是我的错，一次和你说这些你一定也很混乱吧，抱歉。	あっ……一気に言われても混乱するわね、ごめんなさい。	NONE
 emote	54	3
 msg	308294	Take the rest of the day off for now...... I'll be waiting for you tomorrow morning outside the ME office. When you've made up your mind, come and meet me there.	今天你就好好休息吧…明天早上我会在ME社外面等你，如果你决定好了就来找我吧……	今日はひとまずゆっくり休んで……明日の朝、ME社の外で待ってるから。決心がついたら、私のところに来てほしい……。	NONE

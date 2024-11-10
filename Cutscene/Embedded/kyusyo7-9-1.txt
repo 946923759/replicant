@@ -2,21 +2,16 @@
 speaker	Kyuushou
 music	Copied City
 bg	011/016_1280x720
+match_names	Kyuushou	Bronya
 portraits	58	60
 emote	58	3
-msg	302679	Huh ...... huh ...... huh .......	呼…呼……	ハァッ……ハァッ……。	NONE
-speaker	Bronya
-emote	58	3
 emote	60	3
-msg	302680	Kyuushou, what's wrong? You look pale. Are you injured somewhere?	九霄，你怎么了？脸色好像不太好？是哪里受伤了么？	九霄、どうしたのですか？顔色が悪いようですが？どこか怪我でもしたのですか？	NONE
-speaker	Kyuushou
-emote	58	3
-emote	60	3
-msg	302681	The voices echoing in my head are getting stronger and stronger,...... as if countless people are in need of help,...... they call out to me. But I can't ...... do that with myself right now.	脑袋里的声音越来越强烈了…好像有成千上万的人需要得到救赎…他们在呼唤我…但是我现在……	頭の中で響く声がますます強くなってきて……まるで無数の人が救いを必要としているような……彼らが呼びかけてくる……。\nでも、今の自分じゃ……。	NONE
-speaker	Bronya
+/Kyuushou	302679	Hah... Hah.... Hah....	呼…呼……	ハァッ……ハァッ……。	NONE
+/Bronya	302680	Kyuushou, what's wrong? You look pale. Are you injured somewhere?	九霄，你怎么了？脸色好像不太好？是哪里受伤了么？	九霄、どうしたのですか？顔色が悪いようですが？どこか怪我でもしたのですか？	NONE
+/Kyuushou	302681	The voices echoing in my head are getting stronger and stronger,...... as if countless people are in need of help,...... they call out to me. But I can't ...... do that with myself right now.	脑袋里的声音越来越强烈了…好像有成千上万的人需要得到救赎…他们在呼唤我…但是我现在……	頭の中で響く声がますます強くなってきて……まるで無数の人が救いを必要としているような……彼らが呼びかけてくる……。\nでも、今の自分じゃ……。	NONE
 emote	58	3
 emote	60	5
-msg	302682	......It still looks like this ball of light is doing something bad!	呃…果然是塔里的这些光球搞的鬼么！	……やはり、この光の球が悪さをしているみたいですね！	NONE
+/Bronya	302682	......It still looks like this ball of light is doing something bad!	呃…果然是塔里的这些光球搞的鬼么！	……やはり、この光の球が悪さをしているみたいですね！	NONE
 msg	302683	Gosh, Gosh, Gosh. ...... The Honkai energy concentration here is .......	咳咳…这里的崩坏能浓度……	ゴホッ、ゴホッ……ここの崩壊エネルギー濃度は……。	NONE
 emote	60	5
 se	DLC_CH00_EV13_MosterRoar
@@ -75,16 +70,16 @@ emote	60	5
 
 bg	CG10187
 msg	302706	Kyuushou! Listen to me! We need to reach the top of the tower no matter what! Everyone's waiting for our success!	九霄！听着！我们一定要到达塔顶才行！大家都在等着我们！	九霄！聞くのです！我々は何としても塔の頂上に辿り着かなければなりません！皆が我々の成功を待っています！	NONE
-msg	302707	Estherine! Theresa! And then Seele, Emesa! We must keep these women alive, no matter what the cost!	伊瑟琳！德丽莎！还有希儿和埃米沙！我们一定要让她们活下去才行！	イザーリン！テレサ！それからゼーレに、エミザ！何に代えてでも、彼女たちを生かさなければなりません！	NONE
+msg	302707	Yiserin! Theresa! And then Seele, Emesa! We must keep these women alive, no matter what the cost!	伊瑟琳！德丽莎！还有希儿和埃米沙！我们一定要让她们活下去才行！	イザーリン！テレサ！それからゼーレに、エミザ！何に代えてでも、彼女たちを生かさなければなりません！	NONE
 /Kyuushou	302708	......!	唔……	……っ！	NONE
 /Bronya	302709	Kyuushou...... can't stop at a place like this....... No matter what you hear! Now we have to keep moving forward!	九霄…我们不能不在这里停下…不管你刚才听到了什么！现在都只能继续前进！	九霄……こんなところで止まるわけに行きません……。\nあなたに何が聞こえようとも！今は前に進み続けるしかないのです！	NONE
 msg	302710	All those people who died are just phantoms of the past! Don't let their voices stop you in your tracks ...... Bronya is no different!	那些死去的人都只是过去的幻影罢了！不要让他们困住你的脚步…就连我也一样！	あの死んでいった人たちは、どれも過去の幻影にすぎません！彼らの声で、あなたが歩みを止めてはいけません……ブローニャも同じです！	NONE
-msg	302711	No matter what the consequences may be,...... Bronya believes in you. Because if you really are who Estherine says you are,...... you are the only one who can save this world,......	不管结局如何…我都相信你，如果你真的如伊瑟琳所说的那样…那么能够拯救这个世界的就只有你而已……	どんな結末が待っていようと……ブローニャはあなたを信じています。\nあなたが本当にイザーリンの言うような人なら……この世界を救えるのは、あなたしかいないのですから……。	NONE
+msg	302711	No matter what the consequences may be,...... Bronya believes in you. Because if you really are who Yiserin says you are,...... you are the only one who can save this world,......	不管结局如何…我都相信你，如果你真的如伊瑟琳所说的那样…那么能够拯救这个世界的就只有你而已……	どんな結末が待っていようと……ブローニャはあなたを信じています。\nあなたが本当にイザーリンの言うような人なら……この世界を救えるのは、あなたしかいないのですから……。	NONE
 
 speaker	Kyuushou
-msg	302712	Bronya...... Estherine told you everything?	布洛妮娅…伊瑟琳把一切都告诉你了么？	ブローニャ……イザーリンは全てを話したの？	NONE
+msg	302712	Bronya...... Yiserin told you everything?	布洛妮娅…伊瑟琳把一切都告诉你了么？	ブローニャ……イザーリンは全てを話したの？	NONE
 speaker	Bronya
-msg	302713	Yes, Estherine came all the way to Bronya to talk to her before she left ....... I think she trusts Bronya ....... She told Bronya to protect you at all costs,...... and that only you can change this desperate world.	是的…在出发之前伊瑟琳特地找过我，她说这么做的危险很大，但是她相信了我…她让我一定要保护好你…只有你才能扭转这个绝望的世界。	そうです……出発前にイザーリンがわざわざブローニャのところへとやって来て話しました。ブローニャのことを信頼してくれているのでしょう……。彼女は、ブローニャに何としてもあなたのことを守るようにと\n……あなたにしか、この絶望した世界は変えられないと言ったのです。	NONE
+msg	302713	Yes, Yiserin came all the way to Bronya to talk to her before she left ....... I think she trusts Bronya ....... She told Bronya to protect you at all costs,...... and that only you can change this desperate world.	是的…在出发之前伊瑟琳特地找过我，她说这么做的危险很大，但是她相信了我…她让我一定要保护好你…只有你才能扭转这个绝望的世界。	そうです……出発前にイザーリンがわざわざブローニャのところへとやって来て話しました。ブローニャのことを信頼してくれているのでしょう……。彼女は、ブローニャに何としてもあなたのことを守るようにと\n……あなたにしか、この絶望した世界は変えられないと言ったのです。	NONE
 msg	302714	Since I met you, Kyuushou has always shown Bronya and her friends miracles ...... and has shown Bronya and her friends a ray of hope.	从我见到你的那一刻起，你总是为我们创造着奇迹…为我们标示着希望的方向。	あなたと出会ってから、九霄はいつもブローニャたちに奇跡を見せてくれました……ブローニャたちに希望の光を示してくれました。	NONE
 msg	302715	So ...... Bronya believes in you too! Kyuushou! If you really are the savior, you will prove everything by yourself!	所以…我也相信你！九霄！如果你真的是救世主的话就用你的力量证明这一切吧！	だから……ブローニャもあなたのことを信じます！\n九霄！あなたが本当に救世主なら、自らの力で全てを証明するのです！	NONE
 speaker	Kyuushou

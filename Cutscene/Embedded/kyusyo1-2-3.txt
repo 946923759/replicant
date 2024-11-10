@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	59	54
 match_names	Seele	Estherine	_DIM_ALL_WHEN_EMPTY
 music	Grandma
@@ -98,7 +98,7 @@ speaker
 
 bg	black
 portraits	
-msg	300437	(Seele told Estherine what happened in the tunnel.)	希儿将隧道中的经过告诉了伊瑟琳。	ゼーレはトンネルの中での出来事をイザーリンに話した。	NONE
+msg	300437	(Seele told Yiserin what happened in the tunnel.)	希儿将隧道中的经过告诉了伊瑟琳。	ゼーレはトンネルの中での出来事をイザーリンに話した。	NONE
 
 bg	009/008_1280x720
 portraits	59	54
@@ -130,7 +130,7 @@ nop	54
 emote	59	6
 emote	54	1
 msg	300444	Wait!	等下！	待って！	NONE
-msg	300445	Estherine... Is there anything you want to say?	伊瑟琳…难道没有更多想说的么…	イザーリン……それだけ？他に言うことはないの……。	NONE
+msg	300445	Yiserin... Is there anything you want to say?	伊瑟琳…难道没有更多想说的么…	イザーリン……それだけ？他に言うことはないの……。	NONE
 speaker	Estherine
 nop	54
 emote	59	6

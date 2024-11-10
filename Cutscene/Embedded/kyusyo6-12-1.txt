@@ -3,7 +3,7 @@ music	Emil Boss - No Vocals
 speaker	
 preload_portraits	54	67	68	69
 bg	011/004_1280x720
-match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 portraits	54,false,-2	67,false,-3	69
 
 /	308621	Boom!!	轰隆！！	ドォオオオオン——ッ！！	NONE
@@ -18,7 +18,7 @@ speaker	Sin
 emote	67	3
 emote	69	1
 msg	308624	It's not over yet...	还没有结束……	まだ終わってない……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	67	3
 emote	54	3
@@ -31,7 +31,7 @@ msg	308626	Let go of me... I can still—	放开我…我还能……	離せ…�
 tween	during	67	decelerate,.3;addy,100
 tn	0	coughing sound
 msg	308627	——Gaaagh!! 	咕啊！！！！！	——ぐはぁッ！！！！！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	67	3
 emote	54	3
@@ -42,14 +42,14 @@ emote	67	3
 emote	54	3
 tween	during	67	decelerate,.3;y,0
 msg	308629	Let go of my hand——	给我松手……	手を離せ……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	67	3
 emote	54	3
 msg	308630	Femiris... Cut Sin's connection.	菲米莉丝…断开杏的链接。	フェミリス……シンのリンクを切って。	NONE
 emote	54	3
 /Femiris	308631	(Zzzt) [color=#00ffff]But...[/color] (Zzzt) [color=#00ffff]the Honkai corruption will be transferred——[/color]	呲拉…但是…呲拉…这样崩坏能会转移到……	ザー……ですが……ザザー……崩壊エネルギーが——	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	308632	That doesn't matter... Disconnect her now!	没关系…立即断开！	いいの……今すぐ切って！	NONE
 speaker	Sin
@@ -57,7 +57,7 @@ speaker	Sin
 emote	67	3
 emote	54	3
 msg	308633	Seaweed head, what are you doing...!	海藻头…你要干什么……	ワカメ頭……何する気だ……！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	67	3
 emote	54	3
@@ -77,11 +77,11 @@ msg	308637	You asshole!	你这个混蛋！	やめろぉーーッ！	NONE
 speaker	 
 
 portraits	54	69,false,1
-match_names	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	54	3
 /Femiris	308638	[color=#00ffff].....Disconnecting....[/color]	断开……	切断……。	NONE
 /	308639	Crack!!	呲拉！！	ザァアアアーーーーッ！！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 vibrate	1	1
 msg	308640	Arrrrrrrgh!	咕啊！！！！	あ、ああぁああッ！！！	NONE
@@ -90,7 +90,7 @@ speaker	Sirin
 emote	69	1
 emote	54	3
 msg	308641	You transferred that child's honkai energy into your own body... What a foolish choice.	将崩坏能转移到了自己身上么…真是愚蠢的选择。	あの子の崩壊エネルギーを自分の身体に移したのね……バカな人間。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	69	1
 emote	54	3
@@ -99,17 +99,17 @@ msg	308642	Ha, ha ...... because this is the only thing I can do. ......	唔…�
 portraits	
 bg	011/003_1280x720
 
-/Estherine	308643	Sirin, I'll take you on!	西琳，接下来就由我来和你战斗！	シーリン、ここからは私が戦うわ！	NONE
+/Yiserin	308643	Sirin, I'll take you on!	西琳，接下来就由我来和你战斗！	シーリン、ここからは私が戦うわ！	NONE
 speaker	Sirin
 msg	308644	Don't you ever give up? If you die here, everything ends. Don't you understand?	还是不准备放弃么？如果在这里死去的话一切都会结束，你难道不明白么？	諦めないの？ここで死んだら何もかもが終わるのよ、わかってないの？	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	308645	Dying here... Means dying in real world......	在这个世界中死亡的话…就代表着现实世界中也会一同死去……	この世界で死んだら……現実世界の私も死ぬ……。	NONE
 msg	308646	Of course I know that!	这种事情…我当然知道！	そんなこと……わかってる！	NONE
 msg	308647	But this time I can't escape!	但是唯独这次我不能逃避！	でも今回は、逃げるわけにはいかないの！	NONE
 msg	308648	Sirin... I'll defeat you and bring Kyuushou back!	西琳…我一定会打败你…把九霄和杏都带回去的！	シーリン……あなたを倒して、九霄を連れ戻す！	NONE
 speaker	Sirin
 msg	308649	Are you sure you want to fight me when your body is shaking like that?	明明身体抖成这样，还要继续战斗么？	そんな身体で、まだ戦う気？	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	308650	I am! I won't let you take away anyone's life!	我会战斗的！这次不会再让你夺走任何人的生命了！	戦うわ！もうこれ以上、命を奪わせはしない！	NONE
 msg	308651	I know I'm weak, always very cautious…like a coward hiding behind others, can't do anything without them……only see people fall down as an audience……	我知道自己很懦弱，总是这么小心翼翼…畏手畏脚像个胆小鬼一样躲在别人的身后，只要离开了她们就什么也做不到……只能以旁观者的样子看着身边的人一个个倒下……	自分が弱いのはわかってる……いつも臆病者で誰かの後ろに隠れることしかできなかった……傍観者として、周りの人が倒れていくのを見ることしかできなかった……。	NONE
 msg	308652	But they are different…she doesn't care about the dilemma, always go ahead in a selfless way……	但是她们不一样…不管是什么样的困境她都毫不在意，总是一副傻傻的样子忘我地前进……	でも、彼女たちは違う……逆境でも恐れず、ただ前だけを向いて進んでいた……。	NONE
@@ -119,30 +119,30 @@ msg	308655	I want to be like them! I want to fight for what I believe in, even i
 
 preload_portraits	54	69	60	62
 bg	011/004_1280x720
-match_names	Estherine	Sirin
+match_names	Yiserin	Sirin
 portraits	54	69,false,1
 emote	69	2
 /Sirin	308656	……	……	……。	NONE
 emote	69	2
 emote	54	4
-/Estherine	308657	Kyuushou... I'm sorry, let me be selfish one last time.	九霄…抱歉了，这次就让我最后任性一次吧。	九霄……ごめんね、これが最後のわがままだから。	NONE
+/Yiserin	308657	Kyuushou... I'm sorry, let me be selfish one last time.	九霄…抱歉了，这次就让我最后任性一次吧。	九霄……ごめんね、これが最後のわがままだから。	NONE
 choice	309293	Don't feel sorry, it's our fight.	不用道歉，这是我们共同的战斗。	謝らないで、これは私たちの戦いだから。	NONE
 choice	309313	Let me take care of this.	放心交给我吧。	安心して、私に任せて。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
-speaker	Estherine
+speaker	Yiserin
 emote	54	1
 msg	308658	Hehe…right, now both our life are bound with this world.	嘿嘿…说的没错，现在我和你一样都只能与这个世界同生共死了呢。	ふふっ、そうね。今の私は、あなたと同じでこの世界と一蓮托生だものね。	NONE
 jmp	end_choices
 
 label	c2dest
-speaker	Estherine
+speaker	Yiserin
 emote	54	1
 msg	308659	Hehe..as reassruing as always.	嘿嘿…还是一如既往的让人安心呢。	ふふっ、相変わらず頼もしいわね。	NONE
 
 label	end_choices
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 msg	308660	This could be our last fight. We're in this together!	或许这是我们最后的战斗了，就让我们并肩作战吧！	これが最期の戦いになるかもしれない。一緒に行こう！	NONE
 portraits	60,false,-2	54,false,-2	69,false,1
@@ -151,18 +151,18 @@ emote	60	1
 /Bronya	308661	Then count us in.	既然这样那就把我们也算上吧。	それなら、ブローニャたちも仲間に入れてください。	NONE
 
 portraits	62,false,-2	60,false,-2	54,false,-2	69,false,1
-match_names	Theresa	Bronya	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Theresa	Bronya	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	62	1
 /Theresa	308662	I'd be a terrible adult if I let the kids fight on their own.	总是让小辈们赴死战斗，作为长辈的脸就挂不住了呢~	後輩に頑張ってもらってばかりじゃ、先輩として恥ずかしいものね。	NONE
 
 emote	54	3
-/Estherine	308663	Eh! Bronya! Theresa! Why you are here!?	呃！布洛妮娅！德丽莎！你们怎么会在这里！？	ブローニャ！テレサ！どうしてここに！？	NONE
+/Yiserin	308663	Eh! Bronya! Theresa! Why you are here!?	呃！布洛妮娅！德丽莎！你们怎么会在这里！？	ブローニャ！テレサ！どうしてここに！？	NONE
 emote	60	2
 /Bronya	308664	Kyushou put the marks along the way, we follow those marks to find you.	九霄在沿途放下了标记，我们是追寻着这些标记才找到你们的。	九霄が道々にマークを残してくれていたので、それを辿って追いかけてきました。	NONE
 emote	62	1
 /Theresa	308665	I never expect I will come to St.Freya, feel quite bad back to the old place……	没想到居然会来到圣芙蕾雅学园，故地重游的感觉真是有点不是滋味呢……	まさか聖フレイヤ学園に辿り着くなんて……。あまり、いい気分はしないわね。	NONE
 emote	54	3
-/Estherine	308666	But how do you enter this Imaginary Space…Coo! Sirin you let them inside!	但是你们是怎么进入这个虚数空间的…咕！难道是西琳你故意让她们进来的么！	でも、どうやってこの虚数空間に……まっ、まさかシーリン、あなたがわざと入れさせたの？	NONE
+/Yiserin	308666	But how do you enter this Imaginary Space…Coo! Sirin you let them inside!	但是你们是怎么进入这个虚数空间的…咕！难道是西琳你故意让她们进来的么！	でも、どうやってこの虚数空間に……まっ、まさかシーリン、あなたがわざと入れさせたの？	NONE
 
 emote	69	2
 emote	54	3

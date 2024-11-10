@@ -15,6 +15,7 @@ msg	302574	[color=#c2b4ff]I'm sure that I would have studied what I wanted, ente
 msg	302575	[color=#c2b4ff]Kiana, what about you? [/color]	[color=#c2b4ff]琪亚娜，你呢？[/color]	[color=#c2b4ff]キアナちゃん、あなたは？[/color]	NONE
 msg	302576	[color=#a3f7fc]About me.... I would have been happy with anything as long as it was with Mei-Senpai.[/color]	[color=#a3f7fc]我的话…只要和芽衣在一起，就已经满足了。[/color]	[color=#a3f7fc]私はね……芽衣先輩と一緒なら、それで満足だよ。[/color]	NONE
 msg	302577	[color=#c2b4ff] Really...don't say such embarrassing things...... Surely there's more important things you wanted to achieve?[/color]	[color=#c2b4ff]真是的…不要说这种令人害羞的话啊……如果是琪亚娜的话一定有更值得追求的东西吧。[/color]	[color=#c2b4ff]も、もう……そんな恥ずかしいこと言わないでよ……キアナちゃんだったら、もっとやりたいことがたくさんあるでしょ？[/color]	NONE
+clear_fs
 msg	302578	[color=#a3f7fc]If it was the old me...I did have hundreds of wishes I wanted to fulfill ......[/color]	[color=#a3f7fc]如果是以前的我…的确有成百上千个愿望想去实现……[/color]	[color=#a3f7fc]以前の私だったら……確かに数え切れないほどの望みを叶えようとしてたかもね……。[/color]	NONE
 msg	302579	[color=#a3f7fc]I wanted to attend the same school as Mei, eat bento together under the cherry blossom tree, and spend the entire lunch break lazing around. [/color]	[color=#a3f7fc]想和芽衣一起在同一个学校上课，一同在樱花树下吃便当，然后懒洋洋地度过整个午休。[/color]	[color=#a3f7fc]でも、今はただ、芽衣先輩と一緒に学校へ通って、一緒に桜の木の下でお弁当を食べて、\nそして、のんびりと昼休みを過ごしたい。[/color]	NONE
 msg	302580	[color=#a3f7fc]I wanted to go around the world with Mei-senpai and take a picture of the two of us against a beautiful landscape, then keep the photograph in a cherished album forever.[/color]	[color=#a3f7fc]想和芽衣一起去周游世界，在美丽的风景下合影，把我们的身影永远保存在珍贵的相册里。[/color]	[color=#a3f7fc]芽衣先輩と一緒に世界を回って、美しい景色を背に二人の写真を撮って、\n私たちの姿を大切にアルバムの中に永遠に残しておきたい。[/color]	NONE
@@ -22,7 +23,8 @@ msg	302581	[color=#a3f7fc]I wanted to build a hut on the beach, watch the tide r
 msg	302582	[color=#a3f7fc]I had all these wishes.... And so many more....[/color]	[color=#a3f7fc]还有好多好多的愿望…好还有好多好多的计划……[/color]	[color=#a3f7fc]もっとたくさんの願いがあるの……もっとたくさん、たくさんしたいことがあるの……。[/color]	NONE
 msg	302583	[color=#a3f7fc]But now...[/color]	[color=#a3f7fc]但是现在…[/color]	[color=#a3f7fc]でも今は……。[/color]	NONE
 msg	302584	[color=#a3f7fc]I just want to sit quietly by your side forever.[/color]	[color=#a3f7fc]我只想这样安静地陪在你的身边，直到永远。[/color]	[color=#a3f7fc]私はただこうして静かに、あなたの傍にいたいだけなの。永遠に。[/color]	NONE
-msg	302585	[color=#a3f7fc] Mei... Please give me your hand. [/color]	[color=#a3f7fc]芽衣…请把手给我。[/color]	[color=#a3f7fc]芽衣先輩……手を出して。[/color]	NONE
+clear_fs
+msg	302585	[color=#a3f7fc]Mei... Please give me your hand.[/color]	[color=#a3f7fc]芽衣…请把手给我。[/color]	[color=#a3f7fc]芽衣先輩……手を出して。[/color]	NONE
 msg	302586	[color=#c2b4ff]Alright.[/color]	[color=#c2b4ff]嗯。[/color]	[color=#c2b4ff]うん。[/color]	NONE
 msg	302587	[color=#a3f7fc]Would you stay with me until the end of the world if you could? [/color]	[color=#a3f7fc]如果可以的话，你愿意一直陪我直到世界的最后一刻么？[/color]	[color=#a3f7fc]できることなら、世界の最後が訪れるその時まで、私と一緒にいてくれる？[/color]	NONE
 msg	302588	[color=#c2b4ff]Kiana...thank you. [/color]	[color=#c2b4ff]琪亚娜…谢谢你。[/color]	[color=#c2b4ff]キアナちゃん……ありがとう。[/color]	NONE
@@ -35,8 +37,9 @@ msg	302594	[color=#c2b4ff]I'm so sorry Kiana... I'm so sorry.[/color]	[color=#c2
 msg	302595	[color=#c2b4ff]It's time for us to say our farewells...[/color]	[color=#c2b4ff]我们也是时候该道别了……[/color]	[color=#c2b4ff]私たち、もうお別れの時なの……。[/color]	NONE
 
 nop	(Empty message)
-bg	CG10186
+bg	CG10186	fade
 nop	(Empty message)
+clear_fs
 msg	302596	[color=#a3f7fc].......[/color]	[color=#a3f7fc]……[/color]	[color=#a3f7fc]……。[/color]	NONE
 msg	302597	[color=#a3f7fc]I understand.[/color]	[color=#a3f7fc]我明白。[/color]	[color=#a3f7fc]分かってる。[/color]	NONE
 msg	302598	[color=#a3f7fc]In fact, I understand it better than anyone.[/color]	[color=#a3f7fc]其实应该比谁都更加清楚……[/color]	[color=#a3f7fc]実はね、誰よりもはっきりと理解しているの……。[/color]	NONE
@@ -56,12 +59,14 @@ msg	302609	[color=#a3f7fc]Kyuushou....... [/color]	[color=#a3f7fc]九霄……[/
 se	DLC_CH01_EV12_RadioReceive
 stopmusic
 set_fs	false
+bg	black
 msg	302610	Zzztーーーーー....	呲拉…呲拉……	ザァーーーーー……。	NONE
 se	DLC_CH01_EV12_RadioReceive
 
 bg	011/016_1280x720	fade
 music	Copied City
 portraits	58	60	62
+match_names	Kyuushou	Bronya	Theresa
 msgbox_open
 /Bronya	302611	Kyuushou! Kyuushou!	九霄！九霄！	九霄！九霄ッ！	NONE
 
@@ -113,11 +118,9 @@ msg	302625	Doooooong. ----!	轰隆————！	ドォォオオン————
 se	DLC_CH00_EV13_MosterRoar
 msg	302626	Vooooooooooooo!	吼吼吼！！	ヴォオオオッ！！！	NONE
 speaker	Bronya
-portraits	60
 emote	60	5
 msg	302627	Kuh! Honkai creatures entered from outside the tower!	呃！崩坏生物居然从墙壁里面钻了出来！？	くっ！崩壊生物が塔の外から入ってきたのですか！？	NONE
 speaker	Theresa
-portraits	62
 emote	62	1
 msg	302628	Everyone, stay away from the walls! I knew there was something wrong here!	大家远离那些墙壁！果然这个地方不太对劲！	全員、壁から離れて！やっぱりここ、何だか様子が変だわ！	NONE
 emote	62	1
@@ -127,17 +130,14 @@ speaker	Theresa
 emote	62	1
 msg	302630	Get out of the way!	给我滚开！！	どきなさいッ！！	NONE
 speaker	Kyuushou
-portraits	58	62
 emote	58	3
 emote	62	1
 msg	302631	The number of Honkai beasts is increasing! They're coming out of the walls like parasites!	崩坏生物的数量越来越多了！简直就像是寄生虫一样冒出来！	崩壊生物の数が増えてる！き、寄生虫みたいに、うじゃうじゃ壁から出てきてるぞ！	NONE
 speaker	Bronya
-portraits	58	60
 emote	58	3
 emote	60	5
 msg	302632	No good! The speed of appearance is too fast! We must get out of here now! Otherwise, we will be surrounded by these Honkai creatures!	不行！它们诞生的速度太快了！我们得赶紧突破这里！不然会被源源不断的崩坏生物包围的！	ダメです！出現速度が速すぎます！今すぐここを抜けなくてはなりません！さもないと、この崩壊生物に包囲されてしまいます！	NONE
 speaker	Theresa
-portraits	62	60
 emote	62	1
 emote	60	5
 msg	302633	Bronya's right! You guys go first! I'll take the back!	你说的对！布洛妮娅！你们先走！我来殿后！	ブローニャの言う通りね！あなたたちが先行して！あたくしが殿（しんがり）を務めるわ！	NONE

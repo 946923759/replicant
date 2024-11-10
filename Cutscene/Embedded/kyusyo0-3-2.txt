@@ -14,4 +14,4 @@ msg	300153	Hey! Hurry up and take the wounded away from here with the mech! We c
 nop	choice_meta	300154	300155
 choice	300154	I've got you covered, you go first.	我掩护你，你先离开。	私が援護するから、あなたが先に離れて。
 choice	300155	I'll defeat it.	就让我来打败它	私に倒させて
-msg	300156	Wait! It can't be killed! Come back!	喂！等下！你是杀不死它的！给我回来！	おい！あんたじゃ倒せっこない！戻れ！
+msg	300156	Hey, wait! There's no way you can kill that thing! Get back here!	喂！等下！你是杀不死它的！给我回来！	おい！あんたじゃ倒せっこない！戻れ！

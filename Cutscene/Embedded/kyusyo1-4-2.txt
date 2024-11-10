@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 bg	009/015_1280x720
 music	War And War
 match_names	Seele	Estherine	_DIM_ALL_WHEN_EMPTY
@@ -11,7 +11,7 @@ se	DLC_CH01_EV17_ExplosionTwoShots
 msg	300572	Bang! Bang!	轰隆！轰隆！！	ゴォン！ゴォン！！	NONE
 speaker	Seele
 emote	59	1
-msg	300573	Estherine! What's the situation on the gate?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
+msg	300573	Yiserin! What's the situation on the gate?	伊瑟琳~闸门的情况怎么样？	イザーリン！ゲートの状況はどう？	NONE
 speaker	Estherine
 emote	59	1
 emote	54	1

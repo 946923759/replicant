@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 match_names	Seele	Emesa	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
 bg	009/003_1280x720
@@ -6,8 +6,8 @@ portraits	59
 emote	59	1
 music	Peaceful Sleep - No Vocals
 msg	300247	hehe~ Looks like you're ready to go. I thought you'd chicken out, but it looks like you've got some courage!	嚯嚯~看来是准备好了呢，我还以为你会临阵脱逃，看来还是有点骨气的嘛~	うふふ～準備できたみたいね。土壇場になって逃げ出しちゃうかと思ったけど、結構骨があるのね！	Ufufu ~ Parece que você está pronto. Achei que ia fugir no último minuto, mas tenho muitos ossos!
-msg	300248	But be prepared for training!  I'm not as kind as my sister.  I won't stop even when you're crying or screaming.	不过既然接受了训练就要做好觉悟~我可不会像姐姐大人那样温柔，到时候哭着喊着我也不会停止的哦~	でも、訓練を受けるからには覚悟しておいてね！私はお姉ちゃんみたいに優しくないよ。泣いても喚いてもやめたりしないからね。	Mas esteja preparado para o treinamento! Não sou tão gentil quanto minha irmã. Não vou parar de chorar ou gritar.
-msg	300249	Ehehe ~ Don't be afraid!  It's all for your own good. You have to be strong against the Honkai, humans are weak and fragile.	嘿嘿~你也不用害怕啦，这一切可都是为了你好。想要在崩坏中生存下来没两下子可不行，人类可是十分脆弱的生物呢~	エヘヘ～怖がらないで！全部あなたのためだから。崩壊の中で生き残るには力がないとダメなんだよ。人間はとても弱い生き物だから。	Ehehe ~ Não tenha medo! É tudo para você. Você tem que ter o poder de sobreviver no colapso. Porque os humanos são criaturas muito fracas.
+msg	300248	But be prepared for training!  I'm not as gentle as my sister.  I won't stop even when you're crying or screaming.	不过既然接受了训练就要做好觉悟~我可不会像姐姐大人那样温柔，到时候哭着喊着我也不会停止的哦~	でも、訓練を受けるからには覚悟しておいてね！私はお姉ちゃんみたいに優しくないよ。泣いても喚いてもやめたりしないからね。	Mas esteja preparado para o treinamento! Não sou tão gentil quanto minha irmã. Não vou parar de chorar ou gritar.
+msg	300249	Ehehe~ Don't be shy! It's all for your own good. You have to be strong to survive against the Honkai.	嘿嘿~你也不用害怕啦，这一切可都是为了你好。想要在崩坏中生存下来没两下子可不行，人类可是十分脆弱的生物呢~	エヘヘ～怖がらないで！全部あなたのためだから。崩壊の中で生き残るには力がないとダメなんだよ。人間はとても弱い生き物だから。	Ehehe ~ Não tenha medo! É tudo para você. Você tem que ter o poder de sobreviver no colapso. Porque os humanos são criaturas muito fracas.
 msg	300250	But if you've managed to survive in this godforsaken world until now, you must have acquired plenty of survival skills along the way. There are fewer and fewer survivors like you being discovered every day.	不过你能够活到现在，一定也在这个混账世界中学到了不少生存技巧吧，像你这样被发现的生存者已经越来越少了呢。	でも、今まで生き残って来たんだからその辺は大丈夫だよね。この混沌とした世界で生存スキルを身に着けてきたんでしょ？あなたみたいに発見される生存者って、日を追うごとに少なくなってきているんだよ。	Mas eu sobrevivi até agora, então tudo bem. Você adquiriu habilidades de sobrevivência neste mundo caótico, não é? O número de sobreviventes encontrados como você está diminuindo dia a dia.
 emote	59	5
 msg	300251	Oops, I forgot you've lost your memories before arriving here. Sorry.	啊~差点忘了你不记得以前的事情了，抱歉抱歉~	あ～忘れてた。あなた以前のこと覚えていないんだったよね。ごめんなさい。	Ah, esqueci. Eu não me lembrava antes de você. desculpe.
@@ -37,7 +37,7 @@ emote	59	2
 emote	55	4
 /Emesa	300260	Don't call me Emesa!	不要叫我埃米沙！	エミザって呼ぶな！	Não me chame de Emiza!
 emote	55	2
-msg	300261	Hm? The girl behind you is... Seems like she's recovered already. Wow, she's really tough.	嗯？你身后的家伙是…哼~看来已经康复了嘛，我就说这家伙命硬着呢。	ん？あんたの後ろにいる子……あー元気になったんだな。こいつはしぶといと思ってたんだよ。	sim? A criança atrás de você... Ah, estou bem. Achei que ele estava relutante.
+msg	300261	Hm? The girl behind you is... Seems like she's recovered already. Wow, she's really resilient.	嗯？你身后的家伙是…哼~看来已经康复了嘛，我就说这家伙命硬着呢。	ん？あんたの後ろにいる子……あー元気になったんだな。こいつはしぶといと思ってたんだよ。	sim? A criança atrás de você... Ah, estou bem. Achei que ele estava relutante.
 tn	0	She says something along the lines of "would have ended up seeing the gates to Heaven", but it sounds weird
 msg	300262	You were immensely helpful that day. Without you, everyone on the battlefield would have ended up in the afterlife. On behalf of them, thank you! 	之前的事情真是帮大忙了，没有你的话战场上的那些家伙或许已经在鬼门关搬砖了呢，我代替她们感谢你~	この前は本当に助かったよ。あんたがいなきゃ、戦場にいたやつらは全員お陀仏だったかもしれないからな。みんなに代わって礼を言うよ！	Foi muito útil no outro dia. Sem você, todos os caras no campo de batalha poderiam ter sido mortos. Obrigado em nome de todos!
 speaker	Seele
@@ -64,7 +64,7 @@ msg	300269	Ha? You remembered? I heard you had amnesia, but it seems like it's p
 jmp	end_choices
 
 label	c2dest
-msg	300270	Oh? Sounds like you want to go back to the hospital bed... Would you like me to carry you?	嚯。我看你是还想回病床躺一会，需要我把你抬回去么？	何？あんた、まだベッドで寝ていたいみたいだね。私が元に戻してあげよっか？	que? Você ainda quer dormir na cama. Devo colocá-lo de volta?
+msg	300270	Oh? Sounds like you want to end up in a hospital bed again. Why don't I give you a hand?	嚯。我看你是还想回病床躺一会，需要我把你抬回去么？	何？あんた、まだベッドで寝ていたいみたいだね。私が元に戻してあげよっか？	que? Você ainda quer dormir na cama. Devo colocá-lo de volta?
 
 label	end_choices
 emote	59	1
@@ -79,7 +79,7 @@ msg	300275	To be frank, we don't have that kind of time.  If a battle of the sam
 speaker	Seele
 msg	300276	So, what's the plan?	所以，你的想法是？	それで、どうしてほしいの？	Então o que você quer que eu faça?
 speaker	Emesa
-msg	300277	Since the Homei mecha was damaged on the battlefield, we can scavenge the broken parts from the battlefield.	既然吼美机器人是在战场上损坏的，那从战场上把损坏的零件带回来不就行了。	つまり、ホミロボットが戦場で壊れたのなら、その戦場から壊れた部品を拾ってくればいいってことさ。	Em outras palavras, se o Homu Robo quebrar no campo de batalha, você só precisa pegar as partes quebradas desse campo de batalha.
+msg	300277	Since the Homei mech was damaged on the battlefield, we can scavenge the broken parts from the battlefield.	既然吼美机器人是在战场上损坏的，那从战场上把损坏的零件带回来不就行了。	つまり、ホミロボットが戦場で壊れたのなら、その戦場から壊れた部品を拾ってくればいいってことさ。	Em outras palavras, se o Homu Robo quebrar no campo de batalha, você só precisa pegar as partes quebradas desse campo de batalha.
 speaker	Seele
 emote	59	5
 emote	55	1

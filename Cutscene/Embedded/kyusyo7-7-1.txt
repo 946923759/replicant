@@ -6,7 +6,7 @@ bg	011/016_1280x720	fade
 music	Copied City
 
 portraits	58	60	62
-match_names	Kyuushou	Bronya	Theresa	Estherine
+match_names	Kyuushou	Bronya	Theresa	Yiserin
 
 emote	62	1
 emote	60	1
@@ -22,7 +22,7 @@ msg	302552	Like the Tower of Babel, an endless spiral corridor! Truly spectacula
 speaker	Bronya
 emote	58	7
 emote	60	1
-msg	302553	If Estherine was here, we could have gotten more information from her...... but we don't have time to be analyzing everything right now. We have only one goal now: the top of the tower!	如果伊瑟琳在的话或许能获得更多的情报吧…不过我们也没时间深入调查了，现在的目的只有一个，那就是到达塔顶！	イザーリンがいれば、もっと多くの情報を入手できたかもしれません……ですが、今は細かく調べている時間はありません。\n今の目的はただ1つ、塔の頂上だけです！	NONE
+msg	302553	If Yiserin was here, we could have gotten more information from her...... but we don't have time to be analyzing everything right now. We have only one goal now: the top of the tower!	如果伊瑟琳在的话或许能获得更多的情报吧…不过我们也没时间深入调查了，现在的目的只有一个，那就是到达塔顶！	イザーリンがいれば、もっと多くの情報を入手できたかもしれません……ですが、今は細かく調べている時間はありません。\n今の目的はただ1つ、塔の頂上だけです！	NONE
 
 speaker	Theresa
 emote	62	1

@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 music	War And War
 speaker	Estherine
 bg	009/015_1280x720
@@ -36,7 +36,7 @@ msg	300594	Bronya, what are you doing here?	姐姐大人，你怎么来了？	�
 speaker	Bronya
 emote	59	1
 emote	60	3
-msg	300595	We're not familiar with those bug-like creatures. It's not safe to confront them right now. Estherine, close the gate immediately when Hyperion gets into the station.	那些虫形生物的特征还不明确，贸然交战的话十分不利，伊瑟琳！休伯利安入站后立刻关闸门！	あの虫のような形の特徴はまだはっきりしていませんが、軽率に戦うのは不利です。イザーリン、ハイペリオンを受け入れ後、直ちにゲート閉鎖！	NONE
+msg	300595	We're not familiar with those bug-like creatures. It's not safe to confront them right now. Yiserin, close the gate immediately when Hyperion gets into the station.	那些虫形生物的特征还不明确，贸然交战的话十分不利，伊瑟琳！休伯利安入站后立刻关闸门！	あの虫のような形の特徴はまだはっきりしていませんが、軽率に戦うのは不利です。イザーリン、ハイペリオンを受け入れ後、直ちにゲート閉鎖！	NONE
 speaker	Estherine
 emote	54	3
 emote	60	3
@@ -84,7 +84,7 @@ msg	300606	Wait, wait! If they shoot at us from this distance, the gate will be.
 speaker	Seele
 emote	54	3
 emote	59	3
-msg	300607	Estherine, don't just stand there! Quick, get down!	伊瑟琳！别傻站着！快趴下！	イザーリン、立ってちゃダメ！早く伏せて！	NONE
+msg	300607	Yiserin, don't just stand there! Quick, get down!	伊瑟琳！别傻站着！快趴下！	イザーリン、立ってちゃダメ！早く伏せて！	NONE
 speaker	
 emote	59	3
 se	DLC_CH00_EV04_ExplosionClose
@@ -118,7 +118,7 @@ speaker	Himeko
 msg	300616	Grey Moths to the base.	灰蛾部队呼叫基地。	灰蛾部隊より基地へ。	NONE
 msg	300617	The target has been eliminated. The Hyperion is continuing on track.	目标消灭，休伯利安继续返航…	目標消滅。ハイペリオン号、運転を継続。	NONE
 speaker	Bronya
-msg	300618	Got it. Estherine?	……明白了，伊瑟琳。	……分かりました、イザーリン。	NONE
+msg	300618	Got it. Yiserin?	……明白了，伊瑟琳。	……分かりました、イザーリン。	NONE
 speaker	Estherine
 msg	300619	Er, well... The gate has been damaged because of the cannon shelling right now...	嗯，但是，那个…闸门因为刚才的炮击损坏了……	うん。でも、あの……ゲートが今の砲撃で壊れちゃって……。	NONE
 speaker	Seele

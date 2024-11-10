@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 match_names	Seele	Estherine
 music	Peaceful Sleep - No Vocals
 speaker	Seele
@@ -29,7 +29,7 @@ speaker	???
 msg	300307	Argh! Ow, ow, ow...	哇！疼疼疼……	わわ！イタタタ……。	NONE
 portraits	59	54
 emote	59	1
-/Seele	300308	Oh, Estherine, there you are~!	哟~伊瑟琳你在啊~	あっイザーリン、いたいた～！	NONE
+/Seele	300308	Oh, Yiserin, there you are~!	哟~伊瑟琳你在啊~	あっイザーリン、いたいた～！	NONE
 speaker	Estherine
 emote	59	1
 emote	54	5

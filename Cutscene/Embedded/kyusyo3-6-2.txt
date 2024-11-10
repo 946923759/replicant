@@ -53,7 +53,7 @@ speaker	Seele
 bg	007/006_1280x720
 music	The Color of Depression
 portraits	59	60	54	55
-match_names	Seele	Bronya	Estherine	Emesa	Himeko
+match_names	Seele	Bronya	Yiserin	Emesa	Himeko
 emote	59	3
 /Seele	301479	*Cough, cough!* Such destructive power....	咳咳！这个破坏力……	ゲホッゲホ！この威力……何が起こったの！？	NONE
 emote	59	3
@@ -64,7 +64,7 @@ emote	55	4
 /Emesa	301481	The electrical system was hit.... It's pitch black here, I can't see anything! Hey, if anyone here is alive, speak up!	电力系统瘫痪了…一片漆黑什么都看不见！喂！还活着的人赶紧吱个声！	電力系統がやられた……真っ暗で何も見えない。おーい！生きてるやつは声を上げろ！	NONE
 emote	54	3
 emote	55	4
-/Estherine	301482	Ugh... That was terrifying.... What was that attack just now!? That's not something any normal Honkai beast can do, is it?	呜呜……太可怕了…刚才的攻击是怎么回事！这根本不是崩坏生物能做的到的吧？	ううう……怖い……さっきの攻撃は何なの！？崩壊生物ができるレベルのものじゃないでしょ？	NONE
+/Yiserin	301482	Ugh... That was terrifying.... What was that attack just now!? That's not something any normal Honkai beast can do, is it?	呜呜……太可怕了…刚才的攻击是怎么回事！这根本不是崩坏生物能做的到的吧？	ううう……怖い……さっきの攻撃は何なの！？崩壊生物ができるレベルのものじゃないでしょ？	NONE
 
 portraits	59	60	54	55	61
 emote	54	3
@@ -72,7 +72,7 @@ emote	61	2
 /Himeko	301483	It's a Herrscher.	是律者。	律者よ。	NONE
 emote	54	3
 emote	61	2
-/Estherine	301484	Her... Herrscher!?	律！律者！？	り、律者ぁ！？	NONE
+/Yiserin	301484	Her... Herrscher!?	律！律者！？	り、律者ぁ！？	NONE
 emote	54	3
 emote	61	2
 /Himeko	301485	Damn her.... She could have easily wiped out ME Corporation if she wanted to, so why did she miss? Was she just toying with us?	芽衣那个混蛋…刚才明明可以将ME社夷为平地，为什么会故意打偏，难道是在戏弄我们么！	芽衣のヤツ……その気になればME社を廃墟にできたのに、なぜわざと外したの？私たちを弄んでるの？	NONE
@@ -80,7 +80,7 @@ speaker	Bronya
 emote	54	3
 emote	60	5
 msg	301486	Let's discuss that later! Right now we have to save the injured! The ME Corporation's building could collapse at any moment. We need to retreat immediately!	没时间想这些了！快进行救援！受到这么大的冲击ME社的结构很可能会崩塌！我们必须立刻撤离这里！	考えている暇はありません、負傷者の救護を最優先しましょう！これだけ大きな衝撃を受けたら、いくらME社でも倒壊するかもしれません。直ちにここから撤退しないと！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	2
 emote	60	5
 msg	301487	But... What about the production lines...?	那…那工厂的流水线怎么办？	じゃあ……工場の製造ラインはどうなるの？	NONE

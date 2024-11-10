@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 preload_portraits	61	54	55
-match_names	Himeko	Estherine	Emesa	_DIM_ALL_WHEN_EMPTY
+match_names	Himeko	Yiserin	Emesa	_DIM_ALL_WHEN_EMPTY
 speaker	
 bg	009/060_1280x720
 msg	301870	Himeko had explained the situation.	姬子将目前的情况陈述了一遍。	——姫子は現在の状況を皆に説明した。	NONE
@@ -9,13 +9,13 @@ emote	61	1
 emote	54	2
 emote	55	1
 /Himeko	301871	Overall, this is our situation.	目前我们的状况就是这样。	今置かれている私たちの状況はこんなところよ。	NONE
-/Estherine	301872	Is Bronya really gone...? She's not the kind of person that would abandon her family, right!?	布洛妮娅真的走了么……她不是那种会抛下同伴的人才对啊！	ブローニャは本当に行ってしまったの……？彼女はそんな風に仲間を捨てる人じゃないよね！ ？	NONE
+/Yiserin	301872	Is Bronya really gone...? She's not the kind of person that would abandon her family, right!?	布洛妮娅真的走了么……她不是那种会抛下同伴的人才对啊！	ブローニャは本当に行ってしまったの……？彼女はそんな風に仲間を捨てる人じゃないよね！ ？	NONE
 /Himeko	301873	I'm sorry. But it's the truth.	抱歉，但这是事实。	ごめんなさい。でも、それが事実なの。	NONE
-/Estherine	301874	Then what are we supposed to do... Are we just waiting to die?	那我们现在该怎么办…果然能做的仅仅只能等死而已么？	そしたら、私たちはどうすればいいの……やっぱり死ぬのを待つしかないの？	NONE
+/Yiserin	301874	Then what are we supposed to do... Are we just waiting to die?	那我们现在该怎么办…果然能做的仅仅只能等死而已么？	そしたら、私たちはどうすればいいの……やっぱり死ぬのを待つしかないの？	NONE
 /Emesa	301875	......	……	……。	NONE
 
 emote	54	3
-/Estherine	301876	Hey... Emesa, why don't you say something too? You always scold me at times like this. Why aren't you saying anything?	喂…埃米沙你也说句话啊？这个时候你不是总会骂我么，为什么你也沉默了呢！	ちょっと……エミザ、あなたも何か言ったら？こんなときはいつも私に文句を言うじゃないの。どうしてあなたまで黙っているのよ？	NONE
+/Yiserin	301876	Hey... Emesa, why don't you say something too? You always scold me at times like this. Why aren't you saying anything?	喂…埃米沙你也说句话啊？这个时候你不是总会骂我么，为什么你也沉默了呢！	ちょっと……エミザ、あなたも何か言ったら？こんなときはいつも私に文句を言うじゃないの。どうしてあなたまで黙っているのよ？	NONE
 
 emote	55	3
 /Emesa	301877	I don't know... What can we do when Bronya and Seele are gone...?	我也不知道…布洛妮娅和希儿都不在了，光靠我们还能做什么呢……	分からないんだよ……ブローニャもゼーレもいなくなっちゃって、私たちだけで何ができるっていうんだ……。	NONE
@@ -45,15 +45,15 @@ msg	301889	If I had a choice, I wouldn't want you to carry this huge burden eith
 jmp	end_choices
 
 label	c2dest
-msg	301890	No, they aren't. Emesa is too impulsive and can't make calm decisions. Estherine is too timid.	不行。埃米沙太冲动了，无法冷静地做出判断，而伊瑟琳又太怯弱，这样的是无法领导大家的。	ダメよ。エミザは衝動的すぎるわ。冷静に判断を下せないし、イザーリンは弱気すぎる。これではみんなを引っ張っていけないわ。	NONE
+msg	301890	No, they aren't. Emesa is too impulsive and can't make calm decisions. Yiserin is too timid.	不行。埃米沙太冲动了，无法冷静地做出判断，而伊瑟琳又太怯弱，这样的是无法领导大家的。	ダメよ。エミザは衝動的すぎるわ。冷静に判断を下せないし、イザーリンは弱気すぎる。これではみんなを引っ張っていけないわ。	NONE
 
 label	end_choices
 emote	55	4
 /Emesa	301891	But it's still too hasty to let a newbie like her lead everyone!	但是让这样的新人来领导大家还是太草率了吧！	でも、こんな新人にみんなを引っ張らせるなんて、軽率すぎやしないか？ 	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	5
-tn	0	Kind of hard to translate so some meaning was lost here. Estherine says "in terms of peace of mind"
+tn	0	Kind of hard to translate so some meaning was lost here. Yiserin says "in terms of peace of mind"
 msg	301892	Kyuushou has helped me many times... But in terms of being a reliable leader, I think Himeko is better. 	虽然被九霄帮助过很多次了…但是从安心程度上还是姬子比较值得依赖。	九霄には何度も助けられたけど、安心という点では姫子の方が信頼できる、かな。	NONE
 
 speaker	

@@ -12,26 +12,26 @@ speaker	Teammate
 portraits	56,false,3
 msg	301018	Report! We were able to intercept the enemy reinforcements approaching from the rear. However, the number of Honkai Beasts is still not decreasing, and we think it is only a matter of time before they break through..... Please give us instructions!	报告！后方崩坏生物的增援暂时被截断了！不过它们的增援并没有减少！我们抵抗不了多少时间，请求后续指示！	報告します！後方より迫る敵の増援を遮ることができました。しかし、崩壊生物の数は依然として減っておらず、突破されるのも時間の問題かと……指示をお願いします！！	NONE
 
-match_names	Emesa	Teammate	Estherine
+match_names	Emesa	Teammate	Yiserin
 portraits	55,false,3	56,false,2
 emote	55	4
 /Emesa	301019	Seele! There's too many injured on the battlefield. We have to get them off the front lines!	希儿！战场上的伤员太多了，我们必须想办法让他们撤回前线！	ゼーレ！戦場の負傷者が多すぎる。何とかして前線から撤退させないと！	NONE
 portraits	55,false,4	56,false,3	54,false,2
 emote	54	5
-/Estherine	301020	The supply lines have been cut off by the Honkai beasts. The front lines aren't going to last much longer without them.	崩坏生物截断了补给线，如果没有补给的话战线维持不了多久……	崩壊生物に補給線を断たれた。補給がないと戦線は長く持たないわ……。	NONE
-match_names	Seele	Emesa	Teammate	Estherine
+/Yiserin	301020	The supply lines have been cut off by the Honkai beasts. The front lines aren't going to last much longer without them.	崩坏生物截断了补给线，如果没有补给的话战线维持不了多久……	崩壊生物に補給線を断たれた。補給がないと戦線は長く持たないわ……。	NONE
+match_names	Seele	Emesa	Teammate	Yiserin
 portraits	59	55,false,4	56,false,3	54,false,2
 emote	59	3
 /Seele	301021	Man... So these are the kind of difficult decisions my sister had to make in every battle.	咕！姐姐大人在战斗中每次都面临着这么沉重的抉择么。	うう～……お姉ちゃんは戦闘中、いつもこんな重い決断を迫られてたのね。	NONE
 msg	301022	I've gotta pull myself together! I need to protect everyone while she's gone!	不行！我要振作起来！姐姐大人不在的时候我一定要保护好大家！	だめだめ、元気出さなきゃ！お姉ちゃんがいない間、絶対みんなを守るんだから！	NONE
 msg	301023	All troops, move towards ME Corp.! Cover the wounded, we'll reorganize inside the building!	命令部队朝ME社方向转移，掩护伤员撤退到ME社内！	部隊はME社に向かって移動！負傷者を援護しつつME社内へ避難させて！	NONE
 /Teammate	301024	Understood!	了解！	了解！	NONE
-match_names	Seele	Emesa	Estherine
+match_names	Seele	Emesa	Yiserin
 portraits	59	55,false,4	54,false,2
 tn	0	How would she find Bronya inside the building if they're stationed outside?
-/Seele	301025	Estherine, direct the engineering squad and set up a defensive line outside the ME Corp. building. We'll intercept the Honkai Beasts there. If you find Bronya inside ME Corp., then follow her commands instead. 	伊瑟琳！你先带着工程班以ME为后盾建立防御工事！我们要在那里迎击崩坏生物！如果在ME社中发现姐姐大人的话就把指挥权转交给姐姐大人！	イザーリンは、エンジニア班とともにME社を守る形で防御陣地を築いて。そこで崩壊生物を迎え撃つわ！もしME社内でお姉ちゃんを発見したら、その後はお姉ちゃんの指揮に従って。	NONE
+/Seele	301025	Yiserin, direct the engineering squad and set up a defensive line outside the ME Corp. building. We'll intercept the Honkai Beasts there. If you find Bronya inside ME Corp., then follow her commands instead. 	伊瑟琳！你先带着工程班以ME为后盾建立防御工事！我们要在那里迎击崩坏生物！如果在ME社中发现姐姐大人的话就把指挥权转交给姐姐大人！	イザーリンは、エンジニア班とともにME社を守る形で防御陣地を築いて。そこで崩壊生物を迎え撃つわ！もしME社内でお姉ちゃんを発見したら、その後はお姉ちゃんの指揮に従って。	NONE
 emote	54	3
-/Estherine	301026	Understood.	我知道了。	分かった！	NONE
+/Yiserin	301026	Understood.	我知道了。	分かった！	NONE
 nop	match_names	Seele	Emesa
 portraits	59	55
 emote	59	3

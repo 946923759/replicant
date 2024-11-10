@@ -1,12 +1,12 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	62	60	54	69	40
-speaker	Estherine
+speaker	Yiserin
 portraits	62,false,-2	60,false,-2	54,false,-2	69,false,1
-match_names	Theresa	Bronya	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Theresa	Bronya	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 bg	011/005_1280x720
 
 emote	54	3
-/Estherine	308695	Huh…huh……	呼…呼……	はぁ……はぁ……。	NONE
+/Yiserin	308695	Huh…huh……	呼…呼……	はぁ……はぁ……。	NONE
 emote	54	2
 msg	308696	The Imaginary Space disappears…have we won?	虚数空间消失了…我们胜利了么？	虚数空間が消えた……私たち、勝ったの？	NONE
 speaker	Sirin
@@ -15,7 +15,7 @@ emote	40	2
 emote	54	2
 msg	308697	I never thought I would be defeated.	没想到真的败给你们了呢。	まさか、この私が敗れるなんて。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	40	2
 emote	54	3
 msg	308698	Sirin... Your appearance.	西琳…你的样子。	シーリン……その姿。	NONE
@@ -38,7 +38,7 @@ speaker	Bronya
 emote	60	1
 emote	54	3
 msg	308705	Sirin…is gone……	西琳…消失了……	シーリンが……消えました……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	308706	No, Celine just changed back to her old self, and that was her final answer - leaving the choice of everything up to us.	不，西琳只是变回了原来的样子，这就是她最后的答案——将一切的选择权交给了我们。	いいえ、彼女は元の姿に戻っただけよ。これが彼女の最後の答え——全ての選択権を私たちに託すこと。	NONE
@@ -46,7 +46,7 @@ speaker	Bronya
 emote	60	1
 emote	54	1
 msg	308707	This is her Herrscher core?	这个就是她律者核心么？	これが、彼女の律者コアですか？	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	60	1
 emote	54	1
@@ -59,8 +59,8 @@ speaker	Bronya
 
 emote	60	2
 emote	54	6
-msg	308710	That's the Estherine I know.	果然是伊瑟琳的风格呢……	さすが、イザーリンですね……。	NONE
-speaker	Estherine
+msg	308710	That's the Yiserin I know.	果然是伊瑟琳的风格呢……	さすが、イザーリンですね……。	NONE
+speaker	Yiserin
 
 emote	60	2
 emote	54	6
@@ -68,7 +68,7 @@ msg	308711	Kyuushou, let's go! I have a lot to ask of you from now on.	九霄！
 portraits	60
 emote	60	2
 msg	308712	……	……	……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	60	2
 emote	54	1
@@ -76,7 +76,7 @@ msg	308713	Kyushou? What's wrong?	九霄？你怎么了？	九霄……？どう
 portraits	60
 emote	60	2
 msg	308714	Ha ha ha……	呵呵呵……	ふっ、ふふふ……っ。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	60	2
 emote	54	3
@@ -85,7 +85,7 @@ portraits	54
 emote	54	3
 msg	308716	I've finally remembered...	终于…回想起来了……	我はついに……思い出したぞ……。	NONE
 msg	308717	A sealed mission in this desolate world.	这尘封于荒芜世界中的神圣使命。	この荒れ果てた世界に、封印された使命を。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	54
 emote	54	3
 msg	308718	What… Kyuushou… You……	唔…九霄…你难道是……	えっ……九霄……まさか……！	NONE

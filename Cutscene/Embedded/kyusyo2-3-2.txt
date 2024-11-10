@@ -94,4 +94,4 @@ speaker	Bronya
 nop	
 emote	59	3
 emote	60	3
-msg	300821	This must be the Hive Queen Estherine was talking about... Ready your weapons!	看来这就是伊瑟琳说的虫后了…准备应战！	どうやらこれがイザーリンの言っていたクイーンビーのようですね……応戦準備！	NONE
+msg	300821	This must be the Hive Queen Yiserin was talking about... Ready your weapons!	看来这就是伊瑟琳说的虫后了…准备应战！	どうやらこれがイザーリンの言っていたクイーンビーのようですね……応戦準備！	NONE

@@ -11,30 +11,30 @@ speaker
 msg	308320	Boom——!	轰隆——！	ドォオオオンッ！	NONE
 
 emote	54	5
-/Estherine	308321	Ugh.... That girl is making so much noise...	咕…那个家伙居然搞这么大动静。	くっ……ちょっと、やりすぎじゃない。	NONE
+/Yiserin	308321	Ugh.... That girl is making so much noise...	咕…那个家伙居然搞这么大动静。	くっ……ちょっと、やりすぎじゃない。	NONE
 emote	54	5
 /???	308322	Whew... What a bunch of small fry! C'mon, isn't there something out there that can fight better?	呼…真是一群废物！难道就没有什么更能打的家伙了么？	あぁ——雑魚ばっかだなぁ！もっとできるヤツはいないのか？	NONE
 emote	54	5
-/Estherine	308323	Hey! Didn't I tell you to wait for me quietly? What the are you doing...!	喂！我不是叫你安静地等我么！你这是在做什么啊！	あのね、いい子にして待っててって言ったよね？何してるのよ……！	NONE
+/Yiserin	308323	Hey! Didn't I tell you to wait for me quietly? What the are you doing...!	喂！我不是叫你安静地等我么！你这是在做什么啊！	あのね、いい子にして待っててって言ったよね？何してるのよ……！	NONE
 
 portraits	54	67
 emote	54	5
 emote	67	2
-match_names	Estherine	???
+match_names	Yiserin	???
 /???	308324	What are you arguing about? You're the one that asked me to help out! What, you've got a problem with me warming up?	吵什么吵！明明是你让我来帮忙的居然这么大口气！本大爷只是无聊热热身而已，你有什么意见么！	うるさいッ！助けてほしいくせに偉そうに！このシン様のウォーミングアップに文句でもあるのか？	NONE
 
 emote	54	3
 emote	67	2
-/Estherine	308325	Um.. Well... But I told you to not be found out by the others. It's dangerous if you make a lot of noise near the base!	咕…没有…但是我不是让你别被其他人发现么，你在基地附近大吵大闹的可是很危险的！	も、文句はないけど……他の人に気付かれないようにって言ったでしょ？それに基地の近くで暴れたら危ないじゃない！	NONE
+/Yiserin	308325	Um.. Well... But I told you to not be found out by the others. It's dangerous if you make a lot of noise near the base!	咕…没有…但是我不是让你别被其他人发现么，你在基地附近大吵大闹的可是很危险的！	も、文句はないけど……他の人に気付かれないようにって言ったでしょ？それに基地の近くで暴れたら危ないじゃない！	NONE
 
 emote	54	3
 emote	67	2
 /???	308326	Don't worry about it! If anyone sees, I'll just kill them!	放心吧，要是被谁看见的话就一起做掉不就行了~哪那么多事情。	安心しろ！誰かに見られたら、そいつも一緒にやっちゃえばいいだけの話さ！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	2
 msg	308327	Ah.... Whatever... This is my helper, Sin Mal. As you can see her fighting ability is...... Well, I don't think you could beat her in a fight.	哎…算了……这位就是我说的帮手，杏·玛尔。她的战力如你所见，作为打手来说还是很不错的。	はぁ、もういいわ……この子が助っ人のシン・マールよ。戦闘力は見ての通り……喧嘩なら負けることないと思うわ。	NONE
-match_names	Estherine	Sin
+match_names	Yiserin	Sin
 choice	309290	We haven't met before.	在基地里没有见过呢。	基地で会ったことがない。	NONE
 choice	309310	Please, are you the new one?	请多关照，请问是新人么？	よろしく。新人さん？	NONE
 condjmp_c	c2dest	2
@@ -57,7 +57,7 @@ emote	67	1
 msg	308331	Long story short, I'm here to help you save the world. With someone as great as me here, there's nothing to fear!	蓬莱寺九霄，你只需要知道我是来帮助你拯救这个世界的就行，只要本大爷在就没有什么好怕的了！	蓬莱寺九霄、ボクはこの世界を救うため協力しに来たんだ。それさえわかってればいいさ。このボクがいるからには、もう何も怖くないぞ！	NONE
 emote	67	2
 msg	308332	You should be thankful! We're putting in a lot of effort to save you!	你可得好好感谢我！要知道为了救你我们究竟付出了多大的努力！	ちゃんと感謝しろよ！お前を助けるために、こっちはめちゃくちゃ苦労させられたんだからなッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 emote	67	2
 msg	308333	Okay, okay, that's enough introduction. Let's get going.	呃…寒暄的话就到此为止吧，我们还是先启程吧！	はいはい、挨拶はその辺にしときしましょ。じゃ、さっそく出発しましょうか。	NONE

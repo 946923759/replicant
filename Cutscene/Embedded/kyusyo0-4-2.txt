@@ -2,31 +2,27 @@
 preload_portraits	59	60
 match_names	Seele	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	Seele
+
+music	Peaceful Sleep - No Vocals
 bg	009/005_1280x720
 portraits	59	60
 emote	59	1
-music	Peaceful Sleep - No Vocals
-msg	300224	Bronya, we've almost finished clearing the frontlines. But it looks like there's a lot of enemies left. They're still making noise around the base. But I think the threat level itself has been lowered!	姐姐大人~前线的清理工作已经进入尾声了，不过仍然有不少散兵游勇还在不断骚扰基地周边，但是已经构不成威胁了~	お姉ちゃん、前線の片付けがもうじき終わるよ。でも、敵の残存数はかなりのものみたい。基地の周辺でも騒ぎ続けてるし。ただ、脅威レベルそのものは下がったかな！
-speaker	Bronya
+/Seele	300224	Bronya, we've almost finished clearing the frontlines. But it looks like there's a lot of enemies left. They're still making noise around the base. But I think the threat level itself has been lowered!	姐姐大人~前线的清理工作已经进入尾声了，不过仍然有不少散兵游勇还在不断骚扰基地周边，但是已经构不成威胁了~	お姉ちゃん、前線の片付けがもうじき終わるよ。でも、敵の残存数はかなりのものみたい。基地の周辺でも騒ぎ続けてるし。ただ、脅威レベルそのものは下がったかな！
 emote	60	2
-msg	300225	Thank you. It's not easy to keep a low casualty rate in a tough defensive war like this.	辛苦了，如此严酷的防御战中能把战损控制在如此低的范围真是了不起呢。	ご苦労様です。これだけ厳しい防衛戦で被害をこれだけ小さく抑えられたのは本当に大したものです。
+/Bronya	300225	Thank you. It's not easy to keep a low casualty rate in a tough defensive war like this.	辛苦了，如此严酷的防御战中能把战损控制在如此低的范围真是了不起呢。	ご苦労様です。これだけ厳しい防衛戦で被害をこれだけ小さく抑えられたのは本当に大したものです。
+
 speaker	Seele
 emote	59	1
 emote	60	2
 tn	0	could sound better
 msg	300226	Ehehe~ My sister is too kind. It's not just my achievement, it's the result of everyone's struggle.  And the newbie also contributed a lot! 	嘿嘿~姐姐大人过奖了，这可不是我一个人的功劳，而是大家奋战的结果，还有那个新人也做出了不少的贡献哦~	エヘヘ～お姉ちゃん褒めすぎだよ。私だけの功績じゃなくて、みんなが奮戦した結果だよ。あとあの新人もだいぶ貢献してくれたよ！
-speaker	Bronya
+
 emote	59	1
 emote	60	1
-msg	300227	But what she did is unacceptable. A reckless decision like that can have serious consequences.	嗯…但是像她那样的做法可不能认同，独断的行为将会导致极其严重的后果……	ええ……ですが彼女のようなやり方は認められません。独断的な行動は重大な過失につながります。
-speaker	Seele
-emote	59	1
-emote	60	1
-msg	300228	Right, right~ She should do as you say.	是是~姐姐大人说的对~	はい、はい～お姉ちゃんの言う通り。
-speaker	Bronya
-emote	59	1
-emote	60	1
-msg	300229	That means you as well. She's not the only one that causes trouble.	我这句话也是说给你听的，你也是需要注意的对象呢。	この言葉はあなたに向けて言っているんです。あなたも注意が必要な対象ですから。
+/Bronya	300227	But what she did is unacceptable. A reckless decision like that can have serious consequences.	嗯…但是像她那样的做法可不能认同，独断的行为将会导致极其严重的后果……	ええ……ですが彼女のようなやり方は認められません。独断的な行動は重大な過失につながります。
+/Seele	300228	Right, right~ She should do as you say.	是是~姐姐大人说的对~	はい、はい～お姉ちゃんの言う通り。
+/Bronya	300229	That means you as well. She's not the only one that causes trouble.	我这句话也是说给你听的，你也是需要注意的对象呢。	この言葉はあなたに向けて言っているんです。あなたも注意が必要な対象ですから。
+
 speaker	Seele
 emote	59	5
 emote	60	1
@@ -37,43 +33,38 @@ emote	60	1
 msg	300231	Although we were able to defend against the onslaught this time, I think this is just the beginning. We have to be on alert.	虽然这次的进攻成功防御了，但是我总觉得这只是开始而已，所以我们必须更加小心。	今回の攻撃は防げましたが、これは始まりにすぎないような気がします。だから、もっと気をつけなければいけません。
 tn	0	redo
 msg	300232	Judging from the recent attacks from the Honkai beasts, their activity seems to be increasing. If it's not a coincidence, I'm sure there will be a big move soon. 	从最近几次崩坏生物的袭击频率来看，它们的活动越来越频繁了。如果不是偶然的话，之后一定会有大动作。	ここ最近の崩壊生物の襲撃頻度からして、彼らの活動はますます盛んになっています。もし偶然でなければ、きっともうすぐ大きな動きがあるでしょう。
-speaker	Seele
+
 portraits	59	60
+speaker	Seele
 emote	59	1
 emote	60	1
 tn	0	What the heck is the great honkai?
 msg	300233	What can a bunch of monsters that can't even think do? This world has been trapped in dead silence ever since the Great Honkai, and there's nothing left for them to destroy, right? 	那群连思考都做不到的怪物能够做什么呢？大崩坏之后世界已经陷入死寂，它们已经没有要毁灭的目标了吧？	あんな思考すらできない怪物たちに何ができるの？大崩壊後の世界は死に滅んでしまったんだから、もう滅ぼす目標もないよね？
-speaker	Bronya
+
 emote	59	1
 emote	60	1
-msg	300234	No, our resistance still exists.  The purpose of the Honkai remains a mystery, but if it is the extinction of humanity, our existence will be the driving force behind the continued slaughter.	不是还有我们在么…崩坏的目的从来都是一个未解之谜，但是如果它的目标是将人类全部毁灭的话，那我们的存在就是它继续杀戮的动力。	いえ、まだブローニャたちレジスタンスがいます。崩壊の目的はずっと謎のままですが、もしその目的が全人類の絶滅だとすれば、私たちの存在が殺戮を続ける原動力になります。
-speaker	Seele
+/Bronya	300234	No, our resistance still exists.  The purpose of the Honkai remains a mystery, but if it is the extinction of humanity, our existence will be the driving force behind the continued slaughter.	不是还有我们在么…崩坏的目的从来都是一个未解之谜，但是如果它的目标是将人类全部毁灭的话，那我们的存在就是它继续杀戮的动力。	いえ、まだブローニャたちレジスタンスがいます。崩壊の目的はずっと謎のままですが、もしその目的が全人類の絶滅だとすれば、私たちの存在が殺戮を続ける原動力になります。
 emote	59	5
 emote	60	1
-msg	300235	Ah~ Those things are such a pain.	哎~真是纠缠不休的家伙呢。	あぁ～ほんっとにめんどくさいヤツラ。
+/Seele	300235	Ah~ Those things are such a pain.	哎~真是纠缠不休的家伙呢。	あぁ～ほんっとにめんどくさいヤツラ。
+
 speaker	Bronya
 emote	59	5
 emote	60	3
 tn	0	redo
 msg	300236	The scale of the attack of the Honkai Beasts this time was larger than before. Perhaps this base is no longer safe either.  I have to move on to the next plan ... 	这次崩坏生物的进攻规模相比往常更大了，恐怕这个基地也已经不安全了，得开始后续的计划了……	今回の崩壊生物の攻撃規模は以前よりも大きなものでした。おそらくこの基地ももはや安全ではないでしょう。次の計画に移らなければ……。
-speaker	Seele
+
 emote	59	1
 emote	60	3
 se	DLC_CH01_EV02_ControlRoomDoorOpen
-msg	300237	Ah!  You're here~ Your complexion has improved and it looks like you've recovered a lot!	唔？你来啦~脸色已经好多了，看来恢复的不错呢~	あ！来たのね～顔色もよくなったし、大分回復したみたいだね！
-speaker	Bronya
+/Seele	300237	Ah!  [color=#cc66ff]You're[/color] here~ Your complexion has improved and it looks like you've recovered a lot!	唔？你来啦~脸色已经好多了，看来恢复的不错呢~	あ！来たのね～顔色もよくなったし、大分回復したみたいだね！
 emote	59	1
 emote	60	1
-msg	300238	If your body is alright, please start your training. Seele, I'll leave the rest to you. I'm still worried about the Honkai, so I'm going to be investigating them more in-depth. I'm counting on you to take care of the base while I'm gone.	既然身体没问题了就开始训练吧。希儿，接下来交给你了。关于崩坏生物的状况我还是有点在意，准备深入调查一下，基地这边就拜托你了。	身体に問題がないのであれば訓練を始めましょう。ゼーレ、あとは任せました。崩壊生物の状況についてはもう少し注意を続けます。もっと踏み込んで調べなければいけないようです。基地のことはお願いします。
-speaker	Seele
-emote	59	1
-emote	60	1
-msg	300239	Don't worry, sis. I'll train her to be stronger than you can possibly imagine!	放心吧姐姐大人！我一定把她训练的无比强壮！	安心して、お姉ちゃん！彼女を一人前に鍛え上げてみせるよ～！
-speaker	Bronya
-emote	59	1
-emote	60	1
-msg	300240	Okay.	嗯。	ええ。
+/Bronya	300238	If your body is alright, please start your training. Seele, I'll leave the rest to you. I'm still worried about the Honkai, so I'm going to be investigating them more in-depth. I'm counting on you to take care of the base while I'm gone.	既然身体没问题了就开始训练吧。希儿，接下来交给你了。关于崩坏生物的状况我还是有点在意，准备深入调查一下，基地这边就拜托你了。	身体に問題がないのであれば訓練を始めましょう。ゼーレ、あとは任せました。崩壊生物の状況についてはもう少し注意を続けます。もっと踏み込んで調べなければいけないようです。基地のことはお願いします。
+/Seele	300239	Don't worry, sis. I'll train her to be stronger than you can possibly imagine!	放心吧姐姐大人！我一定把她训练的无比强壮！	安心して、お姉ちゃん！彼女を一人前に鍛え上げてみせるよ～！
+/Bronya	300240	Okay.	嗯。	ええ。
 speaker	
+
 portraits	59
 se	DLC_CH01_EV03_BronyaWalkawayBoot
 msg	300241	/hl[0]...	……	……。

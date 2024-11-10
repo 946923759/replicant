@@ -67,6 +67,7 @@ speaker	Bronya
 msg	300842	Don't get in my way! I'm taking Mei home! Let go of me!	放开我！我要接芽衣姐姐回去！放开我！	離してください！芽衣姉様を連れて帰ります！離してください！	NONE
 speaker	Seele
 msg	300843	Gimme a hand here! Help me restrain Bronya!	喂！快来帮忙！把姐姐拉回来！	ちょっと！早く手伝って！ブローニャお姉ちゃんを引っ張り戻して！	NONE
+
 speaker	Bronya
 msgbox_transition
 bg	009/026_1280x720
@@ -86,6 +87,7 @@ msg	300851	Seele, I...	希儿，我……	ゼーレ、私……。	NONE
 speaker	Seele
 msg	300852	Bronya, pull yourself together! Hurry up! Let's get out of here!	姐姐大人！振作一些！快走！	お姉ちゃん！しっかりして！行って！	NONE
 speaker	
+
 bg	009/010_1280x720
 se	DLC_CH02_EV05_DoorImpactA
 msg	300853	*Bang!!*	咚！！	ドンッ！！	NONE
@@ -99,29 +101,23 @@ msg	300855	*Bang!!!*	咚！！！	ドンッ！！！	NONE
 speaker	Bronya
 emote	60	5
 msg	300856	Incoming! Watch out!	来了！小心！	来ました！気をつけて！	NONE
-speaker	Himeko
+
 portraits	59,false,-1	60,false,-2	61,false,1
+match_names	Seele	Bronya	Himeko	Teammate
 emote	61	1
 emote	60	5
 stopmusic	.3
-msg	300857	...	……	……。	NONE
-speaker	Seele
+/Himeko	300857	...	……	……。	NONE
+
 emote	61	1
 emote	59	1
 music	Amusement Park - Medium
-msg	300858	Ah! Captain Himeko! Thank goodness, I thought it was another Honkai beast!	呃！姬子队长！？太好了！还以为是崩坏生物呢！	あっ！姫子隊長！？よ、よかった～！崩壊生物かと思ったよ！！	NONE
-speaker	Himeko
-emote	61	1
-emote	59	1
-msg	300859	What are you three doing here?	你们怎么会在这里？	あなたたち、どうしてここに？	NONE
-speaker	Seele
+/Seele	300858	Ah! Captain Himeko! Thank goodness, I thought it was another Honkai beast!	呃！姬子队长！？太好了！还以为是崩坏生物呢！	あっ！姫子隊長！？よ、よかった～！崩壊生物かと思ったよ！！	NONE
+/Himeko	300859	What are you three doing here?	你们怎么会在这里？	あなたたち、どうしてここに？	NONE
 emote	61	1
 emote	59	3
-msg	300860	This is a nest of those Honkai insectoid creatures! We have to get out of here!	这里是虫形崩坏生物的巢穴！我们离开！	ここは虫型崩壊生物の巣なの！逃げなきゃ！	NONE
-speaker	Himeko
-emote	61	1
-emote	59	3
-msg	300861	Get out of here?	离开？	逃げる？	NONE
+Seele	300860	This is a nest of those Honkai insectoid creatures! We have to get out of here!	这里是虫形崩坏生物的巢穴！我们离开！	ここは虫型崩壊生物の巣なの！逃げなきゃ！	NONE
+/Himeko	300861	Get out of here?	离开？	逃げる？	NONE
 speaker	
 emote	59	3
 se	DLC_CH02_EV07_WormFlyB
@@ -135,13 +131,15 @@ portraits	59	60	61	56
 emote	56	0
 emote	59	3
 msg	300864	Go! Go! Go!	噢！！！	おお！！！	NONE
+
 portraits	59
-speaker	Seele
 emote	59	1
-msg	300865	Phew... We are safe now. Bronya, that was really close, don't you think so?	呼…得救了！姐姐大人，这次真是九死一生呢……	ふぅ……助かった！お姉ちゃん、今回は九死に一生だったね……。	NONE
+/Seele	300865	Phew... We're safe now. Bronya, that was really close, don't you think so?	呼…得救了！姐姐大人，这次真是九死一生呢……	ふぅ……助かった！お姉ちゃん、今回は九死に一生だったね……。	NONE
+
 emote	56	0
 emote	59	3
 msg	300866	Bronya? Eep! Did she rush inside together with Himeko?	姐姐大人？呃！难道和姬子一起冲进去了么？	あれ？お姉ちゃん？……あっ！まさか姫子と一緒に入っていったの？	NONE
+
 portraits	59,false,-1	60,false,-2	61,false,1
 speaker	Himeko
 emote	56	0
@@ -151,45 +149,23 @@ speaker	Bronya
 emote	60	4
 emote	61	1
 msg	300868	...	……	……。	NONE
+
+/Himeko	300869	What are you staring at?	你在看什么？	何を見ているの？	NONE
+/Bronya	300870	Mei... She was just up there on that throne.	芽衣姐姐…刚才还在那个王座上。	芽衣姉様が……さっきまであの玉座に。	NONE
+/Himeko	300871	Mei? Did you see her?	芽衣？你见到她了么。	芽衣？あなた、彼女に会ったの？	NONE
+/Bronya	300872	Yes...	嗯……	はい……。	NONE
+
 speaker	Himeko
-emote	60	4
-emote	61	1
-msg	300869	What are you staring at?	你在看什么？	何を見ているの？	NONE
-speaker	Bronya
-emote	60	4
-emote	61	1
-msg	300870	Mei... She was just up there on that throne.	芽衣姐姐…刚才还在那个王座上。	芽衣姉様が……さっきまであの玉座に。	NONE
-speaker	Himeko
-emote	60	4
-emote	61	1
-msg	300871	Mei? Did you see her?	芽衣？你见到她了么。	芽衣？あなた、彼女に会ったの？	NONE
-speaker	Bronya
-emote	60	4
-emote	61	1
-msg	300872	Great...	嗯……	はい……。	NONE
-speaker	Himeko
-emote	60	4
-emote	61	1
 msg	300873	I see, she wasn't dead after all... If she didn't want to meet us, it could only mean that she's our enemy now.	是么，她果然没有死么…既然芽衣不想见到我们，那就说明她已经是我们的敌人了。	そうなの、彼女やっぱり死んでいなかったのね……。私たちに会いたくないということは、私たちの敵ってことね。	NONE
 speaker	Bronya
-emote	60	4
-emote	61	1
 msg	300874	How!? Impossible!	怎么会！	そんな！	NONE
 speaker	Himeko
-emote	60	4
-emote	61	1
 msg	300875	Don't forget. She's one of the culprits who destroyed this world.	你别忘了，她也是毁掉这个世界的凶手之一。	忘れないで。彼女もこの世界を破壊した犯人の1人なのよ。	NONE
 speaker	Bronya
-emote	60	4
-emote	61	1
 msg	300876	No! She was just...	不是的！芽衣姐姐只是……	違います！芽衣姉様はただ……。	NONE
 speaker	Himeko
-emote	60	4
-emote	61	1
 msg	300877	You should be able to see it now. She's a Herrscher. To save ourselves, we must kill all Herrschers. She is no exception... and that includes Kiana, too.	你也该清醒一下了，别忘了她是律者，如果要拯救现在的人类我们就必须把律者都宰了，琪亚娜…还有她。	目を覚ましてちょうだい。彼女が律者だってことを忘れないでよね。現在の人類を救うには必ず律者を葬らなければならない。キアナ……それに彼女。	NONE
 speaker	Bronya
-emote	60	4
-emote	61	1
 msg	300878	Oh...	唔……	う……。	NONE
 speaker	Seele
 emote	60	4
@@ -219,9 +195,9 @@ portraits
 bg	009/003_1280x720
 music	Peaceful Sleep - No Vocals
 portraits	59	60	54
-match_names	Seele	Bronya	Estherine
+match_names	Seele	Bronya	Yiserin
 emote	54	0
-/Estherine	300885	You're back! I was worried about you. It looks like you're all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
+/Yiserin	300885	You're back! I was worried about you. It looks like you're all fine.	啊…我还担心你们是不是回不回来了呢，看来平安无事呢。	あ……帰ってこないんじゃないかって心配したよ。無事でよかった。	NONE
 speaker	Bronya
 emote	60	4
 emote	54	0
@@ -230,15 +206,15 @@ speaker	Seele
 emote	59	1
 emote	54	0
 msg	300887	Haha! A lot of things happened but we all made it through in one piece.	啊哈哈~虽然发生了很多事情，不过还是有惊无险啦~	アハハ～色々あったけど、やっぱり無事だったでしょ。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	59	1
 emote	54	0
 msg	300888	Oh...	唔……	うっ……。	NONE
 speaker	Seele
 emote	59	1
 emote	54	0
-msg	300889	What's wrong, Estherine?	怎么了伊瑟琳？	どうしたの、イザーリン？	NONE
-speaker	Estherine
+msg	300889	What's wrong, Yiserin?	怎么了伊瑟琳？	どうしたの、イザーリン？	NONE
+speaker	Yiserin
 emote	59	1
 emote	54	0
 msg	300890	It smells.	好臭。	臭い。	NONE
@@ -246,7 +222,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300891	Huh?!	诶！？	え！？	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	59	5
 emote	54	0
 msg	300892	Your outfits are covered in mucus... It's from those pests, isn't it...	折神伤德年夜因果丝辣写充字的爸……	ソノ、カラダノ、ネンエキ、アノムシノデショ……。	NONE
@@ -254,7 +230,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300893	Do you have to pinch your nose while you talk? Does it really smell that bad? Ugh! I need to take a bath! RIGHT NOW!	不要捏着鼻子说话啊！真的有这么臭么！呜哇！得去洗个澡！现在！立刻！	鼻をつまみながら話さないでよ！うわ！お風呂に入らなきゃ！今すぐに！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	59	5
 emote	54	0
 msg	300894	*Cough*... Anyway, did you get the samples I need?	咳咳…窝邀的杨奔呆挥来了么。	ゴホッ、ゴホッ……ワタシガ、タノンダ、サンプルハ、モチカエッテキタノ？	NONE
@@ -262,7 +238,7 @@ speaker	Seele
 emote	59	5
 emote	54	0
 msg	300895	...Stop pinching your nose! Here you are!	……你这家伙！诺！给你！	……あんたってやつは！ほら！どうぞ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	59	5
 emote	54	0
 msg	300896	Excellent! They will make some good research material!	哇~太好了！我这就去研究！	よかった！これで研究ができる！	NONE

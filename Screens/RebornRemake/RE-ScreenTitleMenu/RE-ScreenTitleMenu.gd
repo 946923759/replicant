@@ -17,8 +17,9 @@ func _ready():
 	$Music.load_song("re/1-01 - FINAL FANTASY XIII-2 Overture")
 	
 	var saveData = Globals.playerData['completedReborn']
-	$Background/Kyuushou.visible = saveData[1] & 1
-	$Background/Mei.visible = saveData[1] & 1<<8
+	if len(saveData) > 1:
+		$Background/Kyuushou.visible = saveData[1] & 1
+		$Background/Mei.visible = saveData[1] & 1<<8
 	
 	$Background/Kiana.set_meta("zorder",1)
 	$Background/Kyuushou.set_meta("zorder",1)
@@ -30,7 +31,7 @@ func _ready():
 	$Background/Theresa.set_meta("zorder",2.5)
 	$Background/Bronya.set_meta("zorder",2.1)
 	$"Background/Sin Mal".set_meta("zorder",2.7)
-	$Background/Estherine.set_meta("zorder",2.7)
+	$Background/Yiserin.set_meta("zorder",2.7)
 	$Background/Ninti.set_meta("zorder",3)
 	
 	for c in $Background.get_children():
@@ -101,4 +102,18 @@ func _on_Logo_gui_input(event):
 			for c in $Background.get_children():
 				c.visible=true
 		#print("Pressed! "+String(presses))
+	pass # Replace with function body.
+
+
+func _on_HideUIButton_pressed():
+	#for n in get_groups()
+	get_tree().call_group("UIElements","set_visible",false)
+	pass # Replace with function body.
+
+
+func _on_WhiteBackground_gui_input(event):
+	if event is InputEventMouseButton:
+		if !$Logo.visible:
+			get_tree().call_group("UIElements","set_visible",true)
+		#print("press")
 	pass # Replace with function body.

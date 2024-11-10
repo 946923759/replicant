@@ -1,12 +1,12 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
-speaker	Estherine
+speaker	Yiserin
 bg	009/060_1280x720
-match_names	Himeko	Estherine	Greymoth Member
+match_names	Himeko	Yiserin	Greymoth Member
 portraits	61	54
 msg	301899	Here's the report on the Hyperion's current condition... 67% of the ship's exterior armor has been completely damaged. In addition, the internal bulkheads are...	这是休伯利安号的损害检测报告…目前全舰67%的外装甲完全损耗，另外内部隔断闸也……	これはハイペリオン号の損害検出報告書よ……今のところ全艦で67%の外装甲が完全に損傷。さらに内部隔壁も……。	NONE
 speaker	Himeko
 msg	301900	None of that matters. The most important thing right now is to see if we can get the generator up and running. We have to figure out the most feasible way to do that.	这些都不重要，现在最重要的是恢复动力炉的运作，目前最重要的是评估最可能实行的方案。	そんなのどれも後回しでいいわ。今、最も重要なのは動力炉の運転を回復できるかどうか。そして、今なすべきことは一番可能性が高い方法を考えることよ。	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	301901	We have a plan... But we can't supply the most important parts... Here is a list of parts I prepared. If we have them, we can last a bit longer.	方案是已经有了…但是关键的维修零件却无法补给…这是我整理的零件清单，如果有这些东西的话或许能再撑一会。	方法はある……けど、一番重要な修理部品が補給できないんじゃ……これはさっき整理した必要部品リストなんだけど、ここに書いてある物があれば少しは現状を打破できるかもしれない。	NONE
 emote	61	1
 emote	54	5
@@ -29,14 +29,14 @@ portraits	61	54
 emote	61	1
 emote	66	0
 msg	301906	This is our current location. If I remember correctly, there is a large abandoned car park around here... Here it is.	这是我们目前的位置，如果我没记错的话，在这个附近有一座大型的废弃停车场…就在这里。	ここが私たちの現在位置。記憶が間違っていなければ、この近くに大きな自動車スクラップ工場があったわ……ここよ。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	61	1
 emote	54	2
 msg	301907	Do you mean to go here to find parts? But the distance is too far... And it's too dangerous to go out there now... How are we going to get there...?	你的意思是要去这里找零件么？但这个距离也太远了吧…而且现在外面这么危险，要怎么过去呢……	そこに部品を探しに行くってこと？でも、さすがにこの距離は遠すぎない……？それに外は今とっても危険なのよ。どうやって行くの……？	NONE
 emote	61	1
 emote	54	2
 /Himeko	301908	Leave these questions to the Grey Moths. It may be hell for you, but we're used to traveling through hell.	这些问题就交给灰蛾部队吧，对于你们来说可能是地狱，但是我们已经习惯在地狱中穿梭了。	それは灰蛾部隊に任せてちょうだい。あなたたちにとっては地獄かもしれないけれど、私たちは地獄の中をくぐり抜けるのに慣れているから。	NONE
-match_names	Himeko	Estherine	Emesa
+match_names	Himeko	Yiserin	Emesa
 portraits	61	54	55
 emote	55	1
 emote	54	2
@@ -53,7 +53,7 @@ msg	301912	......	……	……。	NONE
 speaker	Himeko
 emote	61	1
 emote	54	2
-msg	301913	Estherine, Emesa, and you. We're leaving defending the Hyperion to you. The Honkai Beasts are going to come eventually, so make sure to keep everyone safe.	伊瑟琳，埃米沙还有你，我们出发后休伯利安的防守就交给你们了，崩坏生物一定还会再来，一定要保证大家的安全。	イザーリン、エミザ、それからあなた。私たちが出発したらハイペリオンの防備は任せたわよ。崩壊生物はきっとまたやってくるわ。必ずみんなの安全を守ってね。	NONE
+msg	301913	Yiserin, Emesa, and you. We're leaving defending the Hyperion to you. The Honkai Beasts are going to come eventually, so make sure to keep everyone safe.	伊瑟琳，埃米沙还有你，我们出发后休伯利安的防守就交给你们了，崩坏生物一定还会再来，一定要保证大家的安全。	イザーリン、エミザ、それからあなた。私たちが出発したらハイペリオンの防備は任せたわよ。崩壊生物はきっとまたやってくるわ。必ずみんなの安全を守ってね。	NONE
 choice	302210	I will go with you.	我也一起去。	私も一緒に行く。	NONE
 choice	302211	Leave it to me.	交给我吧。	私に任せて。	NONE
 condjmp_c	c2dest	2
@@ -75,7 +75,7 @@ speaker	Emesa
 emote	55	1
 msg	301917	We'll find a way to protect Hyperion!	休伯利安号我们会自己想办法守住！	ハイペリオン号は、なんとしてでも守る！	NONE
 msg	301918	You also said I know your condition the best. What you're doing right now seems no different than putting yourself in peril.	而且你也说了，我最清楚你的情况，你现在的行为在我看来和送死无异。	それに、死にに行くような行動に思えても、あんたなら不思議と上手くやれるような気がするんだ。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	55	1
 emote	54	2
 msg	301919	I actually think it would be better for Kyushou to stay and protect Hyperion...	其实我觉得九霄下来保护休伯利安号挺好的……	実を言えば九霄が残ってハイペリオン号を守ってくれた方がいいけど……。	NONE
@@ -83,7 +83,7 @@ speaker	Emesa
 emote	55	4
 emote	54	2
 msg	301920	You shut the ☆☆ up!	你OO地给我闭嘴！	うるさいっ、黙れ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	55	4
 emote	54	2
 msg	301921	Woah!	呜！	ううっ！	NONE

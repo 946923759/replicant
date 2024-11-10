@@ -1,13 +1,13 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 bg	CG10007
 msg	302245	Ka…Ka…	沙拉……沙拉……	ザ、ザザ……ザ————	NONE
-speaker	Dr. Estherine
+speaker	Dr. Yiserin
 bg	CG10057
 msg	302246	Kyuushou….	九霄……	九霄……。	NONE
 msg	302247	Are you here….Kyuushou….	你在这里么…九霄……	そこにいるの……九霄……。	NONE
 msg	302248	If you can hear my voice... please respond.....	如果听得到我的声音…请回答我……	私の声が聞こえたら……返事をして……。	NONE
 msg	302249	Ka…Ka…	沙拉……沙拉……	ザザ……ザー……ザ————	NONE
-speaker	Dr. Estherine
+speaker	Dr. Yiserin
 msg	302250	I'll find you wherever you are…	不管你在哪里我都会找到你……	どこにいようと、あなたを見つけ出してみせる……	NONE
 msg	302251	I won't give up no matter what it takes…	不管付出什么代价我都不会放弃……	どんな代償を払おうとも、私は諦めないから……	NONE
 msg	302252	I will no longer see my partner fall…	已经不会再眼睁睁看着伙伴倒下了……	もう仲間が倒れていくのを、黙って見ていたりはしない……	NONE
@@ -16,7 +16,7 @@ speaker	Kiana
 msg	302254	It's useless. Everything you are doing is futile.	没用的，你所做的一切都只是徒劳。	無駄よ。あなたのしていることは全て徒労に終わるわ。	NONE
 msg	302255	She is no longer here... Nor does she exist anywhere.	她已经不在这里了…也不存在于任何地方。	彼女はもうここにいない……そして、いかなる場所にも存在しないの。	NONE
 msg	302256	Her life has already been extinguished. Her soul is about to disappear. No one can change her fate.	她的生命已经熄灭，她的灵魂也即将消散，谁也无法挽回这个结局。	彼女の命はもう燃え尽きたわ。彼女の魂も消えようとしている。誰も、この結末を変えられないの。	NONE
-speaker	Dr. Estherine
+speaker	Dr. Yiserin
 msg	302257	That can't be right... Surely there must be a way to save her!	不会的…一定还有别的方法！	そんなはずないわ……きっと何か方法があるはず！	NONE
 speaker	Kiana
 msg	302258	A way? Still thinking about that nonsense...	方法？还在考虑这种无谓的事情么……	方法？#nまだそんな無意味なことを考えているの……	NONE
@@ -26,13 +26,13 @@ bg	CG10007
 msg	302261	So disappear from this world with her!	和她一起从这个世界消失吧！	彼女と一緒に、この世界から消えるがいい！	NONE
 msg	302262	Click!	咔嚓！	ガチャッ！	NONE
 nop	(Empty message)
-speaker	Estherine
+speaker	Yiserin
 portraits	54
 emote	54	3
 msg	302263	Whoa!!!!	呜哇！！	うわっ！！	NONE
 se	DLC_CH00_EV12_MonsterRaid
 msg	302264	Ding!!!	咚！	ドン——ッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 bg	CG10148
 emote	54	5
 msg	302265	Ouch, Ouch, Ouch!	疼疼疼！	いったたた……！	NONE
@@ -40,8 +40,8 @@ speaker	Teammate
 portraits	56	54
 emote	56	0
 emote	54	5
-msg	302266	Estherine! Are you okay?	伊瑟琳！你没事吧？	イザーリン！大丈夫？	NONE
-speaker	Estherine
+msg	302266	Yiserin! Are you okay?	伊瑟琳！你没事吧？	イザーリン！大丈夫？	NONE
+speaker	Yiserin
 emote	56	0
 emote	54	5
 msg	302267	Whew! Whew! Whew...was that a dream...I'm fine, just fell asleep for a bit ......	呼！呼！呼…是梦么…我没事，只是睡着了一下……	ハァ、ハァ……！ゆ、夢だったのね。大丈夫、少し眠ってただけだから……。	NONE
@@ -49,7 +49,7 @@ speaker	Teammate
 emote	56	0
 emote	54	5
 msg	302268	Everyone's been really exhausted from having to repair the engine these past few days. How about you get some more rest?	那就好，这些天连夜改装休伯利安号的引擎大家的确都很辛苦呢，要不你再休息一会吧？	ならよかった。#nここのところ、ハイペリオン号のエンジン改装で皆とても疲れているからね。もう少し休んでいたら？	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	3
 msg	302269	No.... I'm fine, really.... What's the current status of the engine? Let's start the next test right away.	不…不用了…现在引擎的状况怎么样了？马上开始下一批测试吧。	だ……大丈夫よ……現在のエンジンの状況は？すぐに次のテストを始めましょう。	NONE
@@ -57,7 +57,7 @@ speaker	Teammate
 emote	56	0
 emote	54	3
 msg	302270	The connection to the Herrscher core remains unstable. ...... There's a limit to how much we can do with the materials we have at our disposal. It's absurd to build a reactor to control the core in such a short time. ......	律者核心的链接依然很不稳定…我们手上的材料实在太有限了，想要在这么短的时间内制造出制驭核心的反应炉实在是太难了……	律者コアの接続は依然として不安定なままよ……私たちの手元にある材料では、いくらなんでも限界があるわ。#nこんな短時間でコアを制御する原子炉を作るなんて、無茶苦茶よ……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	6
 msg	302271	Don't be discouraged... No matter what, we can't lose hope. Not until the world ends for real.	不要气馁…不到最后一刻千万不能放弃，一定还有希望。	弱気にならないで……最後の最後まで絶対にあきらめちゃダメよ。きっと、まだ希望は残されているから。	NONE
@@ -65,7 +65,7 @@ speaker	Teammate
 emote	56	0
 emote	54	6
 msg	302272	But.... The world could end a lot sooner than we think... Can we really make it....?	可是…最后一刻也许比我们想象的要快不少呢，真的能够赶得上么……	でも……この世界の最後は、私たちが思っているよりもずっと早く訪れるかもしれないわよ。本当に間に合うのかしら……？	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	6
 msg	302273	......Try not to dwell on it, let's do what we can. Restart the generator so we can begin the next experiment.	……与其在这里迷茫不如做些力所能及的事情吧，重新启动动力炉，开始下一批实验。	……ここで迷っている暇があるなら、今できることをしましょう。動力を再起動して。次の実験を始めるわよ。	NONE
@@ -73,7 +73,7 @@ speaker	Teammate
 emote	56	0
 emote	54	6
 msg	302274	Yeah ...... got it.	嗯…好的。	ええ……分かった。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	4
 msg	302275	……	……	……。	NONE
@@ -146,7 +146,7 @@ msg	302295	Sorry... It's just that you haven't really changed... You've been act
 speaker	Kyuushou
 emote	58	7
 emote	60	2
-msg	302296	Well... To be honest, my memory is still a bit fuzzy... I didn't really get what Estherine said, but I heard my personality was restored while my memories aren't fully recovered...	嗯…其实我自己的记忆还是有点模糊…伊瑟琳说的我也听不懂，什么人格信息恢复到了以前，但是记忆还没有完全恢复之类的……	うーむ……実は我も自身の記憶が少し曖昧なんだ……イザーリンの話はよく分からないし。人格情報とかいうのが以前の状態に戻ったけど、記憶は完全に回復していないとか……。	NONE
+msg	302296	Well... To be honest, my memory is still a bit fuzzy... I didn't really get what Yiserin said, but I heard my personality was restored while my memories aren't fully recovered...	嗯…其实我自己的记忆还是有点模糊…伊瑟琳说的我也听不懂，什么人格信息恢复到了以前，但是记忆还没有完全恢复之类的……	うーむ……実は我も自身の記憶が少し曖昧なんだ……イザーリンの話はよく分からないし。人格情報とかいうのが以前の状態に戻ったけど、記憶は完全に回復していないとか……。	NONE
 msg	302297	It's just that right now, it's hard to get a sense on who I really am... Everything is vague and unclear, and it feels like I shouldn't exist in this world.	只是，现在的我对自己的状态并没有什么实感…所有的一切都是那么暧昧不清，似乎自己本不该存在于这个世界一样。	ただ、今の自分の状態に対して、我には何の実感もない……あらゆるものがとても曖昧ではっきりせず、まるで自分がこの世界に存在していてはいけないみたいな気さえ感じてる。	NONE
 emote	58	2
 emote	60	2

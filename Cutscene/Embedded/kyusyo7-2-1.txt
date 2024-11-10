@@ -4,7 +4,7 @@ bg	CG10148
 portraits	56
 emote	56	0
 msg	302306	The second reactor will soon reach criticality! The reaction index has already exceeded the predictive index!	第二反应炉即将到达临界点！反应指数已经超过预计指标！	第2原子炉が間もなく臨界点に達します！反応指数は既に予測指標を越えています！	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	56	54
 emote	56	0
 emote	54	6
@@ -13,7 +13,7 @@ speaker	Teammate
 emote	56	0
 emote	54	6
 msg	302308	No way! The amount of energy introduced in a short period of time is too much! If this continues, the whole power furnace will be damaged!	不行！短时间内的导入能量太过庞大了！这样下去整个动力炉都会损坏的！	ダメです！短時間であまりに膨大なエネルギー量を注入しすぎです！#nこのままでは動力炉全体が壊れてしまいます！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	3
 msg	302309	Damn it, ...... I don't have time for maintenance testing! Forget the numbers, just keep the output stable!	可恶…没有时间做保守测试了！别管那些数值！只要保持出力稳定即可！	くっ……保守テストに時間を掛ける暇なんてないのに！そんな数値は無視よ、無視！出力の安定を維持できればいい……！	NONE
@@ -24,7 +24,7 @@ msg	302310	Understood. ...... Reactors 3 and 4 open, core energy transmission in
 portraits	54
 emote	54	3
 msg	302311	Boooo--!	嗡嗡嗡——！！	ブゥォォォン——！！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	302312	Whatever you do, make sure you succeed. ......	一定要成功啊……	何としてでも、成功してちょうだいよ……。	NONE
 speaker	Teammate
@@ -32,7 +32,7 @@ portraits	56	54
 emote	56	0
 emote	54	3
 msg	302313	The numbers for Reactors #3 and #4 have reached a critical point! The index is still rising! The power reactors have already reached their start-up conditions!	三号四号反应炉数值达到临界点！指标仍在上升！但是已经到达动力炉启动条件！	3号、4号原子炉の数値が臨界点に達しました！指数はなおも上昇中！#nですが、既に動力炉の起動条件に達しました！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	6
 msg	302314	Power reactor startup!	启动动力炉！	動力炉、起動ッ！	NONE
@@ -40,7 +40,7 @@ portraits	54
 emote	54	6
 se	DLC_CH00_EV08_ExplosionWhileDream
 msg	302315	Goooooooooooooong ！！！！	轰隆隆隆隆！！！！	ゴォォオオオン！！！！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	302316	Ggh! This vibration is ...... and the power reactor!	咕！这个震动……动力炉怎么样了！	ぐっ！この振動は……ど、動力炉は！？	NONE
 speaker	Teammate
@@ -57,7 +57,7 @@ portraits	56	54
 emote	56	0
 emote	54	3
 msg	302319	─ ─ ─ ..! The mechanical structure of the power reactor has reached its limit! We must stop the test immediately or it will be dangerous!	呃！动力炉的机械结构已经到极限了！我们得立即停止测试！	──ッ！動力炉の機械構造が限界に達しました！ただちにテストを中止しないと危険です！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	3
 msg	302320	Ha, come on! Shut down the power reactor!	快！关闭动力炉！	は、早く！動力炉のシャットダウンを！	NONE
@@ -69,7 +69,7 @@ portraits	56	54
 emote	56	0
 emote	54	3
 msg	302322	Power reactor ...... shut down .......	动力炉…已关闭……	動力炉……シャットダウンしました……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	5
 msg	302323	Whew ...... I was surprised. I would be so embarrassed if I died because of a machine I developed. ......	呼…真是吓死我了，要是死在自己研发的作品下面，可是太丢人了……	ふぅ……びっくりした。自分で開発した機械のせいで死んでたら、恥ずかしいったらありゃしないわ……。	NONE
@@ -80,8 +80,8 @@ speaker	Theresa
 portraits	62	54
 emote	62	1
 emote	54	1
-msg	302325	Estherine! Are you okay! What was that tremor just now!	伊瑟琳！你们没事吧！刚才的震动是怎么回事！？	イザーリン！大丈夫！？さっきの揺れは何事なの！？	NONE
-speaker	Estherine
+msg	302325	Yiserin! Are you okay! What was that tremor just now!	伊瑟琳！你们没事吧！刚才的震动是怎么回事！？	イザーリン！大丈夫！？さっきの揺れは何事なの！？	NONE
+speaker	Yiserin
 emote	62	1
 emote	54	3
 msg	302326	Ugh ...... how are you guys here?	呜…你们怎么来了。	うっ……あなたたち、どうしてここに？	NONE
@@ -90,7 +90,7 @@ portraits	60	54
 emote	60	1
 emote	54	3
 msg	302327	We have completed the cleanup of the debris on the rails around M.E. Corporation and its restoration. So we came to see how things are going here.	ME社周边的轨道已经清理修复完毕了，所以过来看看这边的情况。	ME社周辺のレール上にあった瓦礫の片付けと、その修復が完了しました。それでこちらの様子を見に来たのです。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	302328	I see that you did. ...... Thanks for your efforts. Let's talk about the Hyperion situation in a different location. We just finished the experiment. We need to wrap up the results, so you guys can get some rest.	这样啊…辛苦你们了，关于休伯利安的情况我们待会换个地方讲吧。正好实验刚刚结束，我们也需要总结一下结果，你们正好也休息一下。	そうだったのね……ご苦労様。#nハイペリオンの状況については、場所を変えて話しましょう。ちょうど実験が終わったばかりなの。私たちは結果をまとめなくちゃいけないから、あなたたちも少し休んでいて。	NONE
@@ -98,7 +98,7 @@ speaker	Bronya
 emote	60	1
 emote	54	1
 msg	302329	I understand. Bronya and her team will be waiting in the control room.	明白了，那我们去指挥室等你。	分かりました。では、ブローニャたちは指令室で待っています。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	302330	Yes, please do.	好的……	ええ、そうしてちょうだい。	NONE
@@ -114,7 +114,7 @@ speaker	Bronya
 portraits	60	66
 emote	60	2
 emote	66	0
-msg	302333	I am sure Estherine can do it. The Hyperion is our trump card, and I am sure they will do everything in their power to make it work.	伊瑟琳一定会做到的，休伯利安号是我们最后的筹码，所以她们一定会全力以赴。	イザーリンならきっとできるはずです。ハイペリオン号は我々の切り札ですから、彼女たちもきっと全力で何とかしてくれるはずです。	NONE
+msg	302333	I am sure Yiserin can do it. The Hyperion is our trump card, and I am sure they will do everything in their power to make it work.	伊瑟琳一定会做到的，休伯利安号是我们最后的筹码，所以她们一定会全力以赴。	イザーリンならきっとできるはずです。ハイペリオン号は我々の切り札ですから、彼女たちもきっと全力で何とかしてくれるはずです。	NONE
 speaker	Theresa
 portraits	62	66
 emote	62	1
@@ -124,7 +124,7 @@ speaker	Graymoth Member
 emote	62	1
 emote	66	0
 msg	302335	Yes. .......	嗯……	はい……。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	62	54
 emote	62	1
 emote	54	1
@@ -135,7 +135,7 @@ portraits	60	54
 emote	60	1
 emote	54	1
 msg	302338	Is that the way you want to hear it out of the blue? Well, let's start with the bad news. The situation can't get any worse anyway.	一上来就是这种模式么，先听坏消息吧，反正现在这个情况再坏能坏到哪里去呢。	いきなり、その聞き方ですか。\nでは、悪い知らせから聞きましょう。どうせ、今の状況がこれ以上悪くなることはありませんからね。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	302339	That's true, too, and you're right: ....... The bad news certainly isn't that bad.	好吧…你说的也对，坏消息的确也没有那么糟糕。	それもそうね、あなたの言う通り……。悪い知らせは確かにそこまでひどいものではないわ。	NONE
@@ -147,7 +147,7 @@ portraits	62	54
 emote	62	1
 emote	54	3
 msg	302341	Not to mention having to fight Honkai creatures? ......	更别说还要与崩坏生物作战么……	ましてや崩壊生物とも戦うことを考えると……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	62	1
 emote	54	3
 msg	302342	That's right. The Hyperion will be a flying coffin the minute it takes off. It's a one way ticket. And if we lose power while we're in the air, there's no chance we'd survive.	没错，现在的休伯利安号一旦起飞就将是一个空中的棺木，这是一张有去无回的单程票，如果在空中失去动力的话，我们几乎没有生还的可能。	その通り。今のハイペリオン号は飛び立ったが最後、空飛ぶ棺桶になるわ。これは完全なる片道切符なの。もし空中で動力を失えば、私たちが生還できる可能性はゼロに等しい。	NONE
@@ -157,7 +157,7 @@ emote	60	1
 emote	54	3
 msg	302343	A one way ticket is enough. If we can't stop the Herrscher... Everything will have been for nothing.	单程就已经足够了…如果不能阻止律者的话这都没有意义。	片道切符で十分です……律者を止めることができなければ、それすらも意味がなくなってしまいますから。	NONE
 msg	302344	Leave the children and wounded at the base. This way, even if Bronya and the others are sacrificed, we can still leave a spark of humanity.	让孩子们和伤员留在基地吧，这样即使我们牺牲了，至少人类的火种也还保存着。	子供たちと負傷者は基地に残しましょう。これでブローニャたちが犠牲になったとしても、人類の火種を残すことができます。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	3
 msg	302345	Yeah. .......	嗯……	うん……。	NONE
@@ -165,7 +165,7 @@ speaker	Bronya
 emote	60	1
 emote	54	3
 msg	302346	I understand the bad news. So what's the good news?	坏消息就是这个吧，那么好消息呢？	悪い知らせはわかりました。では、いい知らせは？	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	2
 msg	302347	No, there is more than one piece of bad news: ....... Based on the observations of dead spots over the past few days, I'm guessing that the Honkai energy has already reached the level of a major Honkai. ......	不，坏消息不止有一个…在这两天对于死斑的观测来看，崩坏能的已经达到了大崩坏的量级…	いえ、悪い知らせは1つだけじゃないの……。\nここ数日の死斑の観測状況を見るに、崩壊エネルギーが既に大崩壊のレベルに達していると推測されるわ……。	NONE
@@ -174,7 +174,7 @@ speaker	Bronya
 emote	60	1
 emote	54	2
 msg	302350	I see. .......	是么……	そうですか……。	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	60	1
 emote	54	1
 msg	302351	But the good news is that I've found a way to stabilize the generator enough for us to launch. We can take off whenever you give the command.	但好消息是，我们找到了如何稳定动力炉的方法，已经保证了出击的安全性，只要你一声令下，休伯利安号现在就可以出发。	でも、いい知らせはね、動力炉を安定させる方法を見つけたから、出撃しても安全は確保できるわよ。#nあなたが命令を下せば、ハイペリオン号は今にでも出撃可能よ。	NONE
@@ -192,7 +192,7 @@ emote	56	0
 emote	54	1
 msg	302354	System test on the Hyperion completed! No abnormalities! Power reactor activated! Honkai energy injection commencing!	休伯利安号系统检测结束！未发现异常！动力炉启动！开始导入崩坏能！	ハイペリオン号システムテスト終了！異常なし！動力炉起動！崩壊エネルギー注入開始！	NONE
 msg	302355	Front rail inspection complete! No obstruction to traffic! Ready to go out anytime!	前方轨道检查完毕！通行顺畅！随时可以进发！	前方レールの検査完了！通行に支障なし！いつでも出撃できますッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	56	0
 emote	54	1
 msg	302356	Bronya, I'm going to try to take off using the conventional glide method to stabilize the power reactor output. I'll also need a longer run-up to gradually increase the power output and bring the battleship up to takeoff speed.	布洛妮娅，为了保证动力炉的出力稳定，我们打算采用常规滑行的手段进行升空，需要一段较长的助跑来缓慢增加出力从而使战舰达到决断速度。	ブローニャ、動力炉の出力を安定させるために、従来の滑走方式で離陸しようと思うの。\nそれと出力を徐々に高めて戦艦を離陸決心速度に持っていくために、長めの助走が必要になるわね。	NONE

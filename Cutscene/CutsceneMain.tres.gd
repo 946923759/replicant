@@ -640,8 +640,8 @@ func advance_text()->bool:
 				
 				var naturalPauses = Globals.OPTIONS['naturalPauses']['value']
 				#I don't know how to do this the proper way so whatever
-				for i in range(len(tmp_txt), 0, -1):
-					pass
+				#for i in range(len(tmp_txt), 0, -1):
+				#	pass
 					
 				for s in textPauses:
 					print(s._to_string())
@@ -721,6 +721,8 @@ func advance_text()->bool:
 					messageBoxMode=MSGBOX_DISP_MODE.NORMAL
 					fsContainer.visible=false
 					#shouldTextBoxBeVisible=true
+			"clear_fs":
+				fsText.bbcode_text = ""
 			#It was totally necessary to add an opcode that will only be used one time
 			'set_outline':
 				if curMessage[1].to_lower()=="true":
@@ -887,9 +889,9 @@ func advance_text()->bool:
 			'choice','nop','label':
 				pass
 			'var':
-				var varName = curMessage[1]
-				#var varToSet = 0
-				var varExpression = curMessage[2].to_lower()
+				var varName:String = curMessage[1]
+				var varExpression:String = curMessage[2].to_lower()
+
 				if varExpression=="true":
 					cutsceneVars[varName]=1
 				elif varExpression=="false":
@@ -1022,7 +1024,7 @@ func advance_text()->bool:
 		var numNewLines = fsText.text.count("\n")
 		var startingLength = fsText.text.length()-numNewLines #WHY????
 		var newFSText = fsText.bbcode_text+"\n"+text.bbcode_text
-		#fsText.text=newFSText
+		#TODO: if newFStext is larger than box size, should clear box and then redo
 		print("Size of old text was "+String(startingLength)+", tweening to "+String(newFSText.length())+", "+String(text.text.length()+1)+" "+text.text)
 		tw.interpolate_property(fsText,"visible_characters",startingLength,newFSText.length(),
 			1/TEXT_SPEED*(newFSText.length()-startingLength),
@@ -1213,6 +1215,7 @@ func _ready():
 func init_(message_, parent, dim_background = true,delim="|",msgColumn:int=1):
 	if parent:
 		parent_node = parent
+	speakerActor.text = ""
 	#$dim.color.a=0
 	textboxSpr.rect_scale.y=0
 	tw.interpolate_property(textboxSpr,'rect_scale:y',null,1,.5,Tween.TRANS_QUAD,Tween.EASE_IN)

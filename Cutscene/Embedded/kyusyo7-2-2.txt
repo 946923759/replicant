@@ -25,7 +25,7 @@ emote	62	1
 msg	302369	I'll take care of it!	交给我吧！	あたくしに任せて！	NONE
 emote	62	1
 /	302370	Dooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!	轰隆！！！	ドォオオオンッ！！！	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	58	60	66	62	54,true,0
 emote	54	2
 emote	62	1
@@ -34,7 +34,7 @@ speaker	Bronya
 emote	54	2
 emote	60	3
 msg	302372	Everyone, please keep your stances low! Hold on to the bridge fence and be careful not to be swept off by inertia!	全都趴下！抓紧舰桥上的防护栏！注意别被惯性甩飞！	全員、体勢を低くしてください！艦橋のフェンスにつかまって、慣性で振り落とされないよう気をつけてください！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	60	3
 msg	302373	Power reactor limit released! Maximum power! Hyperion, start takeoff!	动力炉限制解除！最大出力！休伯利安开始升空！	動力炉のリミットを解除！最大出力！ハイペリオン、離陸開始！	NONE
@@ -48,14 +48,14 @@ msg	302375	Wow. ......!	呜哇哇哇！！	わわ……っ！	NONE
 
 portraits	
 bg	CG10196
-/Estherine	302376	It flew ...... finally!	飞起来了……我们飞起来了！	飛んだ……ついに飛んだ！	NONE
+/Yiserin	302376	It flew ...... finally!	飞起来了……我们飞起来了！	飛んだ……ついに飛んだ！	NONE
 speaker	Teammate
 msg	302377	Power reactor output stabilized! The Hyperion has successfully taken off!	动力炉出力稳定！休伯利安号成功起飞！	動力炉出力安定！ハイペリオン号、離陸成功！	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	302378	Yo, thank goodness ...... for now, nothing is wrong with .......	太好了…总算是没有出什么问题……	よ、よかった……とりあえず何も問題がなくて……。	NONE
 speaker	Teammate
 msg	302379	Altitude now 1200 meters, horizontal propulsion activated, battleship elevation returning! Begin constant velocity ascent!	目前高度1200米，水平推进器开启，战舰仰角回正！开始匀速爬升！	現在、高度1200メートル、水平推進器作動、戦艦の仰角戻ります！等速上昇開始！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 bg	CG10201
 portraits	54	60
@@ -98,7 +98,7 @@ speaker	Bronya
 emote	62	1
 emote	60	2
 msg	302389	Whew ...... Looks like you got through the first hurdle.	呼…看来是度过了第一个难关了。	ふぅ……どうやら最初の難関は乗り切ったようですね。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	54,true,0	60
 emote	54	6
 emote	60	2

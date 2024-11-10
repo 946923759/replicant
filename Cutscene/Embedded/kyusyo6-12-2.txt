@@ -1,7 +1,7 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	
 portraits	62,false,-2	60,false,-2	54,false,-2	69,false,1
-match_names	Theresa	Bronya	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Theresa	Bronya	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 bg	011/004_1280x720
 / 	308669	Boom——!!	轰隆——！！	ドォオオオン——ッ！！	NONE
 
@@ -10,7 +10,7 @@ emote	69	2
 msg	308671	My Herrscher core is the pillar that holds up this world. Killing me will kill Kyuushou and this world. Your actions are pointless.	我的律者核心就是支撑这个世界存在的基柱，如果杀掉我的话不论是九霄还是这个世界都会迎来终结，这样的结果只是白费力气而已……	私の律者コアは、この世界を支える柱よ。私を殺すと、九霄もこの世界も終わる。あなたたちの行動は非効率極まりないの……。	NONE
 emote	69	2
 emote	54	6
-/Estherine	308672	No…it's not……	不…这一切并非白费……	いいえ……非効率なんかじゃないわ……。	NONE
+/Yiserin	308672	No…it's not……	不…这一切并非白费……	いいえ……非効率なんかじゃないわ……。	NONE
 msg	308673	The Kiana and Mei of this world are consciousnesses born from the Herrscher Core, just like you.	琪亚娜还有芽衣…都是由这颗律者核心之中产生的意识，就连你也一样。	キアナも芽衣も……律者コアから生まれた意識で、目の前のあなたもそう。	NONE
 emote	69	2
 emote	54	4
@@ -26,7 +26,7 @@ emote	69	1
 emote	54	6
 msg	308677	If I could change everything with my consciousness, why would I want to be stuck in this decaying world?	如果仅凭我的意识就可以改变这一切的话，谁又想困在这个已经注定了结局的世界中呢？	この私の意識で全てを変えられるなら、この閉じられた世界に誰がいたいと望むのかしら？	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	69	1
 emote	54	3
 msg	308678	Eh……	呃……	あ……。	NONE
@@ -37,7 +37,7 @@ emote	54	3
 msg	308679	From the beginning, there was nothing that could be done. I exist here to watch as the world ends.	我从一开始就什么也做不了…只能成为他人的工具，见证一个个悲惨的结局。	最初から何もできないの……悲しい終わりを見るための存在でしかないのよ。	NONE
 msg	308680	Neither Kiana nor Mei had a choice.... The end was predetermined. All they could do was repeat history and bring an end to this world.	琪亚娜也是…芽衣也是……她们都没有选择，因为结局已经注定，她们能做的也只是遵循历史，为这个世界带来终结而已。	キアナも芽衣にも……選択権はなかったわ。終わりはすでに決められたことだから、彼女たちができるのは歴史を再現して、この世界に終わりをもたらすことだけ。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	69	2
 emote	54	4
 msg	308681	Coo…but……	咕…可是……	っ……けど……。	NONE
@@ -49,7 +49,7 @@ msg	308682	But this is not the end!	可是这并不是结束！	これは終わ�
 msg	308683	No matter how hopeless…I don't believe this is the end!	不论希望有多渺茫…我都不会相信这就是终结！	希望がどれほど少なくとも……これが終わりだとは思っていません！	NONE
 msg	308684	We stand here because we win over the depression again and again! No matter the past or the future! They can't stop our pursue of hope!	正是因为战胜了一次又一次的绝望我们才会站在这里！不管是过去还是未来！都无法阻止我们追逐希望的脚步！	絶望に何度も勝ち続けて来たからこそ、ブローニャたちはここにいます！過去でも未来でも、希望を追いかける者たちの歩みを止めることはできません！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	69	2
 emote	54	4
 msg	308685	Bronya……	布洛妮娅……	ブローニャ……。	NONE
@@ -59,7 +59,7 @@ emote	69	2
 emote	62	1
 msg	308686	Even it's the end…I would rather fall on the way to hope, this is what those kids taught me!	就算是结束…也要倒在追寻希望的道路上，这就是那些孩子教会给我的东西！	たとえ、これが終わりだとしても……最期は希望を追い求める道で倒れる……この子たちに教わったことよ！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	69	2
 emote	54	4
 msg	308687	Woo woo…Bronya…Theresa……	呜呜…布洛妮娅…德丽莎……	ぐすっ……うぅ……ブローニャ……テレサ……。	NONE
@@ -67,9 +67,9 @@ msg	308687	Woo woo…Bronya…Theresa……	呜呜…布洛妮娅…德丽莎…
 speaker	Bronya
 emote	69	2
 emote	60	2
-msg	308688	Hey hey, don't cry, Estherine.	喂喂，别哭啊，伊瑟琳。	泣かないでください、イザーリン。	NONE
+msg	308688	Hey hey, don't cry, Yiserin.	喂喂，别哭啊，伊瑟琳。	泣かないでください、イザーリン。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	69	2
 emote	54	3
 msg	308689	Right……we won't give up until the last minute……we will find a new way when other ways are blocked……	没错……不到无计可施的时候绝对不会放弃……就算万策俱休也会找出新的道路……	そうね……最後まであきらめないわ……絶対、新たな道を見つけ出して見せる……！	NONE

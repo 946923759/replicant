@@ -1,11 +1,11 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 music	City Ruins - Quiet
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 
 portraits	54
 emote	54	4
-/Estherine	308295	Huh…you finally come, great……	呼…你终于还是来了，真是太好了……	あっ……来てくれたのね、よかった……。	NONE
+/Yiserin	308295	Huh…you finally come, great……	呼…你终于还是来了，真是太好了……	あっ……来てくれたのね、よかった……。	NONE
 msg	308296	I thought for sure you wouldn't believe me because it sounded ridiculous... but since you're here, that means our chances of success are much better.	我还以为你一定不会相信我的话，因为那听起来的确很荒唐…但是既然你来了，那就代表我们成功的几率又大了许多。	信じてもらえないかと思った。荒唐無稽な話だったしね……でも、あなたは来てくれた。これで成功率も一気に上がったわ。	NONE
 
 emote	54	1
@@ -31,7 +31,7 @@ choice	309288	There're so many problems that I don't know where to start.	问题
 choice	309308	Anyway, it should be fine if we can find that core?	总之，先找到那个核心就可以了吧？	とりあえず、例のコアを見つけ出せばいい？	NONE
 condjmp_c	c2dest	2
 label	c1dest
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	4
@@ -41,7 +41,7 @@ emote	54	1
 msg	308308	Anyway, at this stage our goal is to find and destroy that Herrscher core, and see what happens in future……	总之，现阶段我们的目标只要找到并摧毁那颗律者核心即可，之后的事情只能随机应变了……	とにかく、今のところ私たちの目標は、その律者のコアを探し出して壊すこと。その後のことは、臨機応変に動くしかないわ……。	NONE
 jmp	end_choices
 label	c2dest
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	1
@@ -49,7 +49,7 @@ msg	308309	Yes, you're right…so far our goal is to find that Herrscher core, a
 label	end_choices
 
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	3
@@ -58,7 +58,7 @@ choice	309289	Only us two?	只有我们两人么？	2人だけで？	NONE
 choice	309309	Shouldn't we contact Bronya?	不去联系布洛妮娅么？	ブローニャに連絡しなくていいの？	NONE
 condjmp_c	c2dest	2
 label	c1dest
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	2
@@ -68,7 +68,7 @@ emote	54	6
 msg	308312	But everyone is so panice, it's hard to collect enough people…let Bronya stay here, we can only depend on ourselves.	但是现在基地人心惶惶的样子，想要聚集人手还是很困难的…这里就交给布洛妮娅她们吧，我们只能靠自己的力量来战斗了。	でも、この基地の人たちは今、混乱してるわ。人手を集めるのもそう簡単じゃない……基地のことは、ブローニャたちに任せましょう。私たちは、私たちだけの力で戦うしかないわ。	NONE
 jmp	end_choices
 label	c2dest
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	2
@@ -78,7 +78,7 @@ emote	54	4
 msg	308314	But Bronya got her own stuff to do, now people in the base are very panic, she needs to manage their emotions, so I haven't told her about this……	不过布洛妮娅她有自己的事情要做，现在基地人心涣散，需要她来稳定大家的情绪，所以我还是没有告诉她这次的行动……	でも、ブローニャにもやるべきことがあるの。今、この基地にいる人たちは混乱してるでしょ？基地のみんなには、彼女の力が必要なのよ。だから今回、彼女には伝えないことにしたの……。	NONE
 label	end_choices
 
-speaker	Estherine
+speaker	Yiserin
 bg	011/005_1280x720
 portraits	54
 emote	54	6

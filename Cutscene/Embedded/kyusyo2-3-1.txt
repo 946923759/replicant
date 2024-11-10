@@ -19,7 +19,7 @@ emote	60	3
 /Seele	300772	... What should we do now?	…那我们接下来该怎么办？	……それで、このあとはどうするの？	NONE
 emote	59	1
 emote	60	1
-/Bronya	300773	First, let's investigate the size of the nest and the number of Honkai beasts. Then we can collect samples from them in these test dubes that Estherine gave us.	先侦查一下巢穴的规模与崩坏生物的数量，另外临走时伊瑟琳给了我这个，用于收集崩坏生物样本的试管。	まずは巣の規模と崩壊生物の数を偵察しましょう。それから、ここに来る時にイザーリンがくれた試験管で、崩壊生物のサンプルを集めましょう。	NONE
+/Bronya	300773	First, let's investigate the size of the nest and the number of Honkai beasts. Then we can collect samples from them in these test tubes that Yiserin gave us.	先侦查一下巢穴的规模与崩坏生物的数量，另外临走时伊瑟琳给了我这个，用于收集崩坏生物样本的试管。	まずは巣の規模と崩壊生物の数を偵察しましょう。それから、ここに来る時にイザーリンがくれた試験管で、崩壊生物のサンプルを集めましょう。	NONE
 /Seele	300774	She's always so scared, but I guess she was interested after all~	那家伙，嘴上说着害怕其实内心还是很感兴趣的嘛~	あいつ、口では怖がってたくせに、内心は興味津々じゃないの～。	NONE
 /Bronya	300775	Alright. Let's do this. Try to stay low and don't get too much attention.	嗯，那我们行动吧，注意不要惊动它们，尽量保持隐秘。	ええ、では行動しましょう。彼らを刺激しないように、できるだけソーッと動いてください。	NONE
 /Seele	300776	Yeah, got it! We just need to collect some samples, no need to get into any battles.	嗯！明白了~只要收集到足够的样本就行了，不要恋战哦。	うん！分かった。十分なサンプルを集めればいいんでしょ。戦おうとしないようにね。	NONE
@@ -27,7 +27,7 @@ portraits
 bg	009/010_1280x720
 portraits	59	60
 msg	300777	Phew. That was close. All done! These samples should be enough.	呼~总算是有惊无险地完成了~有了这些样品应该足够了吧。	ふぅ～ハラハラしたけど完了ね～！これだけサンプルがあれば足りるよね。	NONE
-/Bronya	300778	We've scanned the layout of the castle. Currently, there isn't a large amount of Honkai creatures. However, we couldn't find any trace of the "Insect Queen" that Estherine mentioned.	城堡的大致结构也调查了一遍，目前来看这些崩坏生物的数量不是特别庞大，不过倒是没有发现伊瑟琳说的王虫的迹象。	城の構造も一通り調べました。現在のところ、この崩壊生物の数はそれほど多くないようです。ですが、イザーリンの言っていた虫の王の痕跡は見つかりませんでした。	NONE
+/Bronya	300778	We've scanned the layout of the castle. Currently, there isn't a large amount of Honkai creatures. However, we couldn't find any trace of the "Insect Queen" that Yiserin mentioned.	城堡的大致结构也调查了一遍，目前来看这些崩坏生物的数量不是特别庞大，不过倒是没有发现伊瑟琳说的王虫的迹象。	城の構造も一通り調べました。現在のところ、この崩壊生物の数はそれほど多くないようです。ですが、イザーリンの言っていた虫の王の痕跡は見つかりませんでした。	NONE
 /Seele	300779	I guess the situation isn't as bad as they thought. Let's go home, then! We'll gather our forces and annihilate those Honkai creatures immediately.	这么说事情并没有想象的那么严重嘛~那我们回去吧，立刻集合战力来消灭这里的崩坏生物吧！	ということは、事態はそんなにヤバくなかったってことだね。じゃあ帰ろう！すぐに戦力を集結させてここの崩壊生物を消滅させないと！	NONE
 /Bronya	300780	...	……	……。	NONE
 msg	300781	Seele, go home and gather the troops. I'll be continuing to investigate this area.	希儿，你们先回去准备战力吧，我在这里再继续调查一下。	ゼーレ、先に帰って戦いの準備をしておいてください。ブローニャはここで調査を続けます。	NONE
@@ -71,7 +71,7 @@ speaker	Bronya
 emote	60	4
 msg	300792	But this is an emergency. You are the only one we can count on. I'm sorry. Please forgive me for my selfish request...	但是现在情况紧急，只能拜托你了。抱歉，请原谅我的自私……	ですが、事態は緊迫しています。あなたにしかお願いできません。すみませんが、ブローニャの自分勝手を許してください……。	NONE
 emote	60	1
-msg	300793	Let's split up then. Give these samples to Estherine and ask her to...	那我们分头行动吧，到了基地后把这些样本交给伊瑟琳，让她……	では、ここからは別れて行動しましょう。基地に戻ったらこのサンプルをイザーリンに渡して、彼女に……。	NONE
+msg	300793	Let's split up then. Give these samples to Yiserin and ask her to...	那我们分头行动吧，到了基地后把这些样本交给伊瑟琳，让她……	では、ここからは別れて行動しましょう。基地に戻ったらこのサンプルをイザーリンに渡して、彼女に……。	NONE
 speaker	
 emote	60	1
 se	DLC_CH02_EV03_WormEggExplode

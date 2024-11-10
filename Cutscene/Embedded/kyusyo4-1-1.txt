@@ -10,17 +10,17 @@ music	Grandma
 popup	640	-1
 msg	301665	"Warning! Severe damage to the hull! Fire in cabin 2-17! Power system failure! We're losing power!"	「警告！船体严重受损！2-17仓室起火！动力系统发现故障！出力下降中！	「警告！船体が激しく損傷！2-17キャビンから出火！動力システムに故障発生！出力低下中！」	NONE
 popup	false
-match_names	Emesa	Estherine	Teammate
+match_names	Emesa	Yiserin	Teammate
 portraits	55	54
 emote	55	4
 emote	54	5
 /Emesa	301666	Hurry! Get the wounded to the safe cabin! It's too dangerous here!	快！把伤员转移到安全的舱室！这里太危险了！	急げ！負傷者を安全なキャビンに！ここは危険すぎる！ 	NONE
 msg	301667	Over there! Leave those ☆☆ supplies alone! We've gotta get the hell out of here!	那边的！别OO地管那些破烂物资了！赶紧从这里撤离！	そこっ！そんなグチャグチャになった物資はほっとけ！急いでここから撤退するんだ！	NONE
-/Estherine	301668	......	……	……。	NONE
+/Yiserin	301668	......	……	……。	NONE
 msg	301669	Are we...... Still alive......?	我们…还活着么……	私たち……まだ生きているの……？	NONE
-/Emesa	301670	Estherine! C'mon, get the hell up! Get those crap robots of yours up and running, we need more manpower!	伊瑟琳！给我起来！去把你那些破机器人启动了！现在急需人手！	イザーリン！何、寝ぼけたこと言ってんだ！お前のあのボロロボットを起動させろ！人手が足りない！	NONE
+/Emesa	301670	Yiserin! C'mon, get the hell up! Get those crap robots of yours up and running, we need more manpower!	伊瑟琳！给我起来！去把你那些破机器人启动了！现在急需人手！	イザーリン！何、寝ぼけたこと言ってんだ！お前のあのボロロボットを起動させろ！人手が足りない！	NONE
 emote	54	4
-/Estherine	301671	Those... Homu mechas? They're all gone... All my hard work... My life's effort... It's all over....	啊…吼姆机器人…它们都没了……我的心血…全都完了……	ホムロボットのこと……？全部なくなっちゃったわ……私の苦労が……全ておしまいよ……。	NONE
+/Yiserin	301671	Those... Homu mechas? They're all gone... All my hard work... My life's effort... It's all over....	啊…吼姆机器人…它们都没了……我的心血…全都完了……	ホムロボットのこと……？全部なくなっちゃったわ……私の苦労が……全ておしまいよ……。	NONE
 
 speaker	Emesa
 tn	0	Emesa seems to be using a very harsh word here that roughly means 'waste of space'.
@@ -35,7 +35,7 @@ emote	56	0
 /Emesa	301676	So what if there's Honkai Beasts! Go and fight them! If you don't put it out, everyone's going to burn to death!	崩坏生物又怎么样！给我上！如果不扑灭的话就等着都被烧死吧！	崩壊生物がどうした！行ってこいっ！倒せなかったら、ここで焼け死ぬだけだぞ！	NONE
 emote	55	4
 emote	54	5
-/Estherine	301677	No! Don't! Don't pull me into the fire, I don't want to burn!	不！不要！不要拉着我进火海啊！！	い、嫌っ！焼け死ぬなんてこわい……！	NONE
+/Yiserin	301677	No! Don't! Don't pull me into the fire, I don't want to burn!	不！不要！不要拉着我进火海啊！！	い、嫌っ！焼け死ぬなんてこわい……！	NONE
 portraits	55
 /Emesa	301678	Hey! And [color=#cc66ff]you[/color]! Come and help! There could be invading Honkai Beasts in the damaged compartments! Kill them all!	喂！还有你！你也来帮忙！损坏的舱室中应该还有入侵的崩坏生物！给我OO地把它们都宰了！！	おい！あんたも手伝ってやってくれ！壊れたキャビンの中にクソったれな崩壊生物がまだ残ってるはずだ！葬ってこいっ！！	NONE
 msg	301679	Remember! Don't let any of them go! We must avenge everyone!	记住！一只也不能放走！一定要给大家报仇！	いいか！？1体たりとも生かすなよ！……必ずみんなの仇を討つぞ！	NONE

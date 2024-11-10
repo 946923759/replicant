@@ -7,18 +7,18 @@ emote	61	1
 emote	56	0
 msg	301680	Reporting! Emergency damage control in the ship completed. All visible fire is put out. Injured personnel have been transferred to safe compartments.	报告！舰内损坏区域的应急损管已经处理完毕，明火已经全部扑灭，受伤的人员也都已经转移到了安全仓室。	報告します！艦内の損壊エリアの応急処置が完了しました。全て消火済み、負傷者も安全なキャビンに移しました。	NONE
 /Himeko	301681	......I understand. Thanks for your help.	……好的，辛苦了。	……分かったわ。ご苦労様。	NONE
-match_names	Himeko	Emesa	Estherine
+match_names	Himeko	Emesa	Yiserin
 portraits	61	55	54
 
 emote	61	1
 emote	54	5
-/Estherine	301682	*cough* I was almost burnt to death... I don't want to imagine becoming a burnt corpse on my own battleship...	咳咳…差点就被烧死了，要是死在自家的战舰上就太冤了……	ゴホッ、ゴホッ……あとちょっとで焼け死ぬところだった。自分の戦艦で焼身死体になるなんて、想像もしたくない……。	NONE
+/Yiserin	301682	*cough* I was almost burnt to death... I don't want to imagine becoming a burnt corpse on my own battleship...	咳咳…差点就被烧死了，要是死在自家的战舰上就太冤了……	ゴホッ、ゴホッ……あとちょっとで焼け死ぬところだった。自分の戦艦で焼身死体になるなんて、想像もしたくない……。	NONE
 emote	55	1
 emote	54	5
 /Emesa	301683	Keep moving! We have a lot of things to do, there's no time to waste!	走了！要做的事情还很多，没时间浪费了！	行くぞ！まだやることがいっぱいあるんだ、時間を無駄にはできないぞ！	NONE
 emote	55	1
 emote	54	3
-/Estherine	301684	Hold on... Give me a break! I'm not free labor! You should treat your few remaining technicians with more respect!	等等…让我再休息一下！我可不是苦力啊！你们要善待仅存的技术人员！	待ってよ……少し休ませて！私は奴隷じゃないんだよ。ぎ、技術者をもっと大切に扱ってよね……！	NONE
+/Yiserin	301684	Hold on... Give me a break! I'm not free labor! You should treat your few remaining technicians with more respect!	等等…让我再休息一下！我可不是苦力啊！你们要善待仅存的技术人员！	待ってよ……少し休ませて！私は奴隷じゃないんだよ。ぎ、技術者をもっと大切に扱ってよね……！	NONE
 emote	55	1
 emote	54	3
 /Emesa	301685	Cut the crap! Move it!	少废话！快走！	その減らず口、無理やり閉じさせてやろうか！次、行くぞ！	NONE
@@ -37,7 +37,7 @@ emote	54	3
 /Emesa	301690	Let's go!	我们走！	急いでるから。	NONE
 emote	55	4
 emote	54	6
-/Estherine	301691	Hey! Wait, Emesa! Let's get Seele too. She is the best person to do this! Speaking of it, why have I not seen her?	喂！埃米沙等下啦！我们去把希儿也叫上吧，这种事情她们最合适了！说起来怎么都没看到她？	ちょっと！エミザ待って！ゼーレも呼んでこよう。こういうことなら彼女が適任！……ってあれ、そう言えばゼーレは？見かけないような……。	NONE
+/Yiserin	301691	Hey! Wait, Emesa! Let's get Seele too. She is the best person to do this! Speaking of it, why have I not seen her?	喂！埃米沙等下啦！我们去把希儿也叫上吧，这种事情她们最合适了！说起来怎么都没看到她？	ちょっと！エミザ待って！ゼーレも呼んでこよう。こういうことなら彼女が適任！……ってあれ、そう言えばゼーレは？見かけないような……。	NONE
 emote	55	1
 emote	54	6
 /Emesa	301692	......!	……！	……！	NONE
@@ -51,7 +51,7 @@ emote	55	4
 emote	54	6
 msg	301695	You ☆☆ing asshole!!	你OO的真是个混蛋！！！	お前ッ！！！この馬鹿が！！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	55	4
 emote	54	2
 msg	301696	E! Emesa! Calm down!	埃！埃米沙！冷静一些！	ちょっと！エミザ！落ち着いて！	NONE

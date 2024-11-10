@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	CH	JA	PT
 speaker	Himeko
-match_names	Bronya	Himeko	Estherine	_DIM_ALL_WHEN_EMPTY
+match_names	Bronya	Himeko	Yiserin	_DIM_ALL_WHEN_EMPTY
 music	War And War
 bg	009/014_1280x720
 portraits	60	61
@@ -11,10 +11,10 @@ emote	61	1
 /Himeko	301582	That depends on if she's willing to let us go.	前提是她得放我们走。	向こうが逃がしてくれればね。	NONE
 portraits	60	61	54
 emote	54	1
-/Estherine	301583	Testing... Is the Hyperion ready to take off? The gates are about to open.	喂喂…休伯利安准备好了么？闸门马上要开启了。	ねぇ……ハイペリオンの準備はいい？ゲート、開くわよ。	NONE
+/Yiserin	301583	Testing... Is the Hyperion ready to take off? The gates are about to open.	喂喂…休伯利安准备好了么？闸门马上要开启了。	ねぇ……ハイペリオンの準備はいい？ゲート、開くわよ。	NONE
 speaker	Himeko
 msg	301584	The Hyperion is ready, let's go!	准备完毕，出发！	OKよ。ハイペリオン、出発！！	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	301585	Copy that. Opening the gates.	了解，闸门开启。	了解、ゲート開放。	NONE
 speaker	
 se	DLC_CH00_EV04_ExplosionClose
@@ -23,7 +23,7 @@ shake_camera
 msg	301586	Boom!!	轰隆！！！！	ドゴーン！！！！	NONE
 se	DLC_CH00_EV03_WarningAlert
 msg	301587	"Alert! Alert! The base is under attack!"	「警报！警报！基地遭到攻击！」	「警報！警報！基地が攻撃を受けました！」	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	301588	Ugh! What now?!	呃！又发生什么了！	ええっ？！今度は何？！	NONE
 speaker	Teammate
@@ -43,7 +43,7 @@ speaker
 music	The Dark Colossus Destroys All
 bg	009/039_1280x720
 /Bronya	301593	That's... A new species of Honkai beast?!	这个是……新生种！？	あれは……新種の崩壊生物！？	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	301594	What is that thing...? That's.... A dragon!?	怎！怎么会有这种东西……这个是龙么！？	なっ……何であんなのが……あれは……ドラゴン！？	NONE
 speaker	
 shake_camera	.2
@@ -54,7 +54,7 @@ msg	301632	Boom!!	轰隆！！	ドゴーンッ……！！	NONE
 bg	009/047_1280x720	fade
 msg	301597	Seele! Inform everyone! Abandon the base and board the Hyperion! We need to evacuate immediately!	希儿！传达给所有人！放弃基地全部登船！我们得立刻撤离！	ゼーレ！全員に伝えてください！基地を捨てて全員ハイペリオンへ乗船！ただちにここを離れます！	NONE
 /Seele	301598	Ah... Got it!	好…好的！	わ……わかった！	NONE
-/Estherine	301599	Waaaa... Let, Let me on first!	呜哇…让！让我先上去！	うわわ……さ、先に乗せて！	NONE
-/Emesa	301600	Estherine, get the ☆☆ down! Let the children board the ship first! Help me carry the wounded!	伊瑟琳！你OO给我下来！让孩子们先登船！给我去搬伤员！	イザーリン！このバカ、降りてこい！子どもたちを先に乗せろ！負傷者を運ぶの手伝え！	NONE
+/Yiserin	301599	Waaaa... Let, Let me on first!	呜哇…让！让我先上去！	うわわ……さ、先に乗せて！	NONE
+/Emesa	301600	Yiserin, get the ☆☆ down! Let the children board the ship first! Help me carry the wounded!	伊瑟琳！你OO给我下来！让孩子们先登船！给我去搬伤员！	イザーリン！このバカ、降りてこい！子どもたちを先に乗せろ！負傷者を運ぶの手伝え！	NONE
 /Bronya	301601	Calm down! Just leave your things there! Queue up! Combatants should fend off the Houkai beasts in front of the gate with me! We must guarantee Hyperion's successful launch!	大家冷静！不要管物品了！有序登船！战斗人员跟我一起清理闸门前的崩坏生物！我们要保证休伯利安出站！	みなさん冷静に！持ち物には構わず、慌てず乗船してください！戦闘員は私と一緒にゲート前へ！崩壊生物を退治し、ハイペリオンが出航できるようにします！	NONE
 /Seele	301602	Let's go! We have to help Bronya! Stop those Honkai beasts!	走！我们去帮姐姐大人！一定要挡住崩坏生物！	行こう！お姉ちゃんを助けないと！崩壊生物を食い止めよう！	NONE

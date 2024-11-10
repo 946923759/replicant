@@ -1,7 +1,7 @@
 #LANGUAGES	KEY	EN	CH	JP	PT
 preload_portraits	60	211
 match_names	Bronya	Mei
-music	The Tower - 8bit
+music	The Tower - Dynamic No Vocals
 
 bg	009/042_1280x720
 portraits	60	211
@@ -71,7 +71,7 @@ msg	301270	Right, this is our home~	没错，这里就是我们的家~	そうよ
 /Mei	301272	Hehehe~ Bronya is such a good kid~	呵呵呵~布洛妮娅姐姐真是乖孩子呢~	ふふっ、ブローニャ姉様だーい好き！！	NONE
 speaker	
 portraits	60
-msg	301273	Then, fall asleep with Mei...	那就和芽衣一起沉睡吧……	じゃあ、芽衣と一緒に眠りましょ……。	NONE
+msg	301273	Then, fall asleep with Mei... 	那就和芽衣一起沉睡吧……	じゃあ、芽衣と一緒に眠りましょ……。	NONE
 stopmusic	1.0
 bg	black
-msg	301274	/setDispChr[29]Then, fall asleep with Mei... [color=#ff0000]Forever.[/color]	直到永远。	——永遠に。	NONE
+extend	301274	[color=#ff0000]Forever.[/color]	直到永远。	——永遠に。	NONE

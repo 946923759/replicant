@@ -12,7 +12,7 @@ msg	302525	....Compartments on fire..... bzzzzz...... Evacuate immediately......
 msg	302526	……	……	ピィィィィィィ——————	NONE
 extend	302527	……	……	——————	NONE
 
-match_names	Kyuushou	Bronya	Theresa	Estherine
+match_names	Kyuushou	Bronya	Theresa	Yiserin
 portraits	58
 emote	58	3
 /Kyuushou	302528	Ugh...... Ahem, ahem!	咕…咳咳！	うぐっ……ゴホッ、ゴホッ！	NONE
@@ -44,13 +44,13 @@ portraits	58	60	62	54,true,0
 emote	54	3
 emote	60	5
 se	DLC_CH01_EV24_RadioSignals
-/Estherine	302535	Zaah──...... Bronya...... hear...... zzzzzzzz--	呲拉…布洛妮娅…磁啦……	ザァ──……ブローニャ……聞こえ……ザザッ——	NONE
+/Yiserin	302535	Zaah──...... Bronya...... hear...... zzzzzzzz--	呲拉…布洛妮娅…磁啦……	ザァ──……ブローニャ……聞こえ……ザザッ——	NONE
 
 emote	54	3
 emote	60	3
-/Bronya	302536	It's a transmission from Estherine! This is Bronya! Estherine! Do you read me? Bronya and her team are inside the tower! What's your status?	是伊瑟琳的通讯！喂！伊瑟琳！听得到么！我们进入塔的内部了！你们那边情况怎么样！	イザーリンからの通信です！\nこちらブローニャ！イザーリン！聞こえますか！ブローニャたちは塔の内部に入りました！そちらの状況はどうですか！	NONE
+/Bronya	302536	It's a transmission from Yiserin! This is Bronya! Yiserin! Do you read me? Bronya and her team are inside the tower! What's your status?	是伊瑟琳的通讯！喂！伊瑟琳！听得到么！我们进入塔的内部了！你们那边情况怎么样！	イザーリンからの通信です！\nこちらブローニャ！イザーリン！聞こえますか！ブローニャたちは塔の内部に入りました！そちらの状況はどうですか！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 emote	60	3
 se	DLC_CH01_EV12_RadioReceive
@@ -67,7 +67,7 @@ emote	54	2
 emote	60	3
 msg	302540	Wait for us! We'll come to rescue you soon!	你等着！我们马上过来救援！	待っていてください！ブローニャたちがすぐに救助に向かいます！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	60	3
 msg	302541	Don't worry...... Us..... Hurry up and head to the top of the tower..........	别…别管我们…呲啦…赶快朝塔顶前进……	わ……私たちに構わないで……ザァ……急いで塔の頂上へ向かって……だい……！	NONE
@@ -79,12 +79,12 @@ msg	302543	Zaaa...... time already ...... zaaaaa--	呲啦…时间已经……�
 speaker	Bronya
 emote	54	6
 emote	60	5
-msg	302544	Estherine? Come in! Damn.... The communication was cut off.	伊瑟琳？喂！啧…通讯中断了！	イザーリン？どうしたのですか！\nそんな……通信が途切れてしまいました。	NONE
+msg	302544	Yiserin? Come in! Damn.... The communication was cut off.	伊瑟琳？喂！啧…通讯中断了！	イザーリン？どうしたのですか！\nそんな……通信が途切れてしまいました。	NONE
 
 portraits	58	60	62
 emote	62	1
 emote	60	5
-/Theresa	302545	Bronya, Estherine is right. We need to head to the top of the tower now! If we stop, all our efforts will have been for nothing!	布洛妮娅，伊瑟琳说得对，我们得立刻赶往塔顶！如果停下脚步之前所做的努力都可能前功尽弃！	ブローニャ、イザーリンの言う通りよ。今すぐ塔の頂上に向かいましょう！足を止めていたら、これまでの努力が無駄になってしまうわ！	NONE
+/Theresa	302545	Bronya, Yiserin is right. We need to head to the top of the tower now! If we stop, all our efforts will have been for nothing!	布洛妮娅，伊瑟琳说得对，我们得立刻赶往塔顶！如果停下脚步之前所做的努力都可能前功尽弃！	ブローニャ、イザーリンの言う通りよ。今すぐ塔の頂上に向かいましょう！足を止めていたら、これまでの努力が無駄になってしまうわ！	NONE
 
 speaker	Bronya
 emote	62	1
@@ -104,4 +104,4 @@ msg	302548	Kyuushou. .......	九霄……	九霄……。	NONE
 emote	58	1
 emote	60	3
 msg	302549	Yeah, you're right. Now's not the time to hesitate.	嗯，如你所说现在没有时间犹豫了……	はい、九霄の言う通りですね、今は迷っている時間はありません……。	NONE
-msg	303097	Estherine, please try to hold on..... Let's go. The Herrscher must be waiting for us at the top of the tower.	伊瑟琳，请一定要撑住…我们走，律者一定在塔顶等着我们！	イザーリン、何としても持ち堪えてください……。#n行きましょう。律者はきっと塔の頂上で我々を待っているはずです！	NONE
+msg	303097	Yiserin, please try to hold on..... Let's go. The Herrscher must be waiting for us at the top of the tower.	伊瑟琳，请一定要撑住…我们走，律者一定在塔顶等着我们！	イザーリン、何としても持ち堪えてください……。#n行きましょう。律者はきっと塔の頂上で我々を待っているはずです！	NONE

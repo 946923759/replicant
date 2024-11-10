@@ -39,7 +39,7 @@ speaker	Bronya
 emote	60	4
 msg	300719	If it wasn't for the Honkai, these cute little HOMUs could still be bringing smiles to everyone's faces...	如果不是因为崩坏，这些可爱的吼姆一定会给大家带来更多的笑容吧……	崩壊さえなければ、このかわいいホムはきっとみんなにもっと多くの笑顔を与えてくれたでしょうに……。	NONE
 choice	300720	Such a shame.	真是遗憾呢。	本当に残念。	NONE
-choice	300721	One day, this place will be as lively as it was. Once we prevail against Houkai.	等战胜崩坏之后这里一定会再热闹起来的。	崩壊に勝てばここもまた賑やかになる。	NONE
+choice	300721	If we can defeat the Honkai, this place will become lively again.	等战胜崩坏之后这里一定会再热闹起来的。	崩壊に勝てばここもまた賑やかになる。	NONE
 condjmp_c	c2dest	2
 
 label	c1dest
@@ -54,7 +54,7 @@ jmp	end_choices
 label	c2dest
 speaker	Bronya
 emote	60	2
-msg	300725	You're right... And that's why we must eliminate Houkai. As a gift for Her.	你说的对…就算是为了那个人也要把崩坏消灭掉。	そうですね……あの人のためにも崩壊を滅ぼさなければ。	NONE
+msg	300725	You're right... And that's why we must eliminate the Honkai. As a gift for Her.	你说的对…就算是为了那个人也要把崩坏消灭掉。	そうですね……あの人のためにも崩壊を滅ぼさなければ。	NONE
 msg	300726	I want more people to see the happiness that she gave me.	那个人带给我的幸福，我也希望更多人能够看到。	あの人がくれた幸せを、もっと多くの人に見てもらいたいのです。	NONE
 emote	60	3
 msg	300727	If one day, I could find Her again... No. I will find Her!	如果有一天能够再次遇到她的话……不，我一定会找到的。	もし、いつの日かまた会えたら……いえ、きっと探し出します。	NONE

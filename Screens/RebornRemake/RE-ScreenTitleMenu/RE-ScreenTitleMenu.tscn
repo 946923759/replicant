@@ -87,7 +87,7 @@ script/source = "extends TextureButton
 export(String) var screen_to_go = \"RE-ScreenProgrammerCredits\"
 
 func _ready():
-	self.connect(\"pressed\",get_parent(),\"ItemScrollerNewScreen\",[-1,screen_to_go])
+	self.connect(\"pressed\",get_node(\"/root/RE-ScreenTitleMenu\"),\"ItemScrollerNewScreen\",[-1,screen_to_go])
 "
 
 [sub_resource type="DynamicFont" id=16]
@@ -138,20 +138,14 @@ script = ExtResource( 8 )
 [node name="BackSound" parent="." index="1"]
 stream = ExtResource( 17 )
 
-[node name="ColorRect" type="ColorRect" parent="." index="2"]
+[node name="WhiteBackground" type="ColorRect" parent="." index="2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="TextureRect" type="TextureRect" parent="." index="3"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-stretch_mode = 7
-
-[node name="BackButton" parent="." index="4"]
+[node name="BackButton" parent="." index="3"]
 visible = false
 
-[node name="Background" type="Control" parent="." index="5"]
+[node name="Background" type="Control" parent="." index="4"]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -160,6 +154,7 @@ margin_left = -1573.0
 margin_top = -540.0
 margin_right = 7.0
 margin_bottom = 540.0
+mouse_filter = 2
 
 [node name="Ninti" type="TextureRect" parent="Background" index="0"]
 visible = false
@@ -170,9 +165,10 @@ margin_left = 896.0
 margin_top = 28.0
 margin_right = 725.52
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 18 )
 
-[node name="Estherine" type="TextureRect" parent="Background" index="1"]
+[node name="Yiserin" type="TextureRect" parent="Background" index="1"]
 material = SubResource( 13 )
 anchor_right = 0.756
 anchor_bottom = 1.0
@@ -180,6 +176,7 @@ margin_left = 896.0
 margin_top = 28.0
 margin_right = 725.52
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 22 )
 
 [node name="Sin Mal" type="TextureRect" parent="Background" index="2"]
@@ -190,6 +187,7 @@ margin_left = -700.0
 margin_top = 28.0
 margin_right = -1256.0
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 21 )
 stretch_mode = 6
 
@@ -201,6 +199,7 @@ margin_left = -200.0
 margin_top = 28.0
 margin_right = -370.48
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 2 )
 
 [node name="Bronya" type="TextureRect" parent="Background" index="4"]
@@ -211,6 +210,7 @@ margin_left = -500.0
 margin_top = 28.0
 margin_right = -1056.0
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 19 )
 stretch_mode = 6
 
@@ -222,6 +222,7 @@ margin_left = 256.0
 margin_top = 28.0
 margin_right = -165.76
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 12 )
 
 [node name="Himeko" type="TextureRect" parent="Background" index="6"]
@@ -232,6 +233,7 @@ margin_left = 700.0
 margin_top = 28.0
 margin_right = 144.0
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 14 )
 stretch_mode = 6
 
@@ -243,6 +245,7 @@ margin_left = 512.0
 margin_top = 28.0
 margin_right = 115.2
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 9 )
 
 [node name="Seele" type="TextureRect" parent="Background" index="8"]
@@ -253,6 +256,7 @@ margin_left = -340.0
 margin_top = 28.0
 margin_right = -896.0
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 20 )
 stretch_mode = 6
 
@@ -263,9 +267,10 @@ anchor_bottom = 1.0
 margin_top = 28.0
 margin_right = -398.72
 margin_bottom = -28.0
+mouse_filter = 2
 texture = ExtResource( 11 )
 
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="6"]
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="5"]
 position = Vector2( 960, 1100 )
 lifetime = 5.0
 emission_shape = 2
@@ -278,7 +283,7 @@ scale_amount = 19.63
 color = Color( 0.372549, 0.807843, 1, 0.780392 )
 color_ramp = SubResource( 2 )
 
-[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="7"]
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="6"]
 position = Vector2( 960, 1100 )
 lifetime = 5.0
 emission_shape = 2
@@ -291,7 +296,7 @@ scale_amount = 25.0
 color = Color( 0.835294, 0.372549, 1, 0.780392 )
 color_ramp = SubResource( 1 )
 
-[node name="Logo" type="TextureRect" parent="." index="8"]
+[node name="Logo" type="TextureRect" parent="." index="7" groups=["UIElements"]]
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -302,7 +307,7 @@ margin_bottom = 445.0
 texture = ExtResource( 15 )
 stretch_mode = 4
 
-[node name="ItemScrollerV2" type="Control" parent="." index="9"]
+[node name="ItemScrollerV2" type="Control" parent="." index="8" groups=["UIElements"]]
 anchor_bottom = 1.0
 margin_right = 499.0
 script = ExtResource( 3 )
@@ -348,13 +353,17 @@ margin_bottom = 461.0
 text = "Back"
 destinationScreenOrSubmenu = "ScreenSelectEra"
 
-[node name="OKButton" type="TextureButton" parent="." index="10"]
+[node name="TopRightButtons" type="GridContainer" parent="." index="9" groups=["UIElements"]]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -226.0
-margin_top = 24.0
-margin_right = -43.0
-margin_bottom = 88.0
+margin_left = -208.0
+margin_top = 25.0
+margin_right = -25.0
+margin_bottom = 157.0
+
+[node name="OKButton" type="TextureButton" parent="TopRightButtons" index="0"]
+margin_right = 183.0
+margin_bottom = 64.0
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 0
 texture_normal = ExtResource( 24 )
@@ -365,22 +374,42 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Label" type="Label" parent="OKButton" index="0"]
+[node name="Label" type="Label" parent="TopRightButtons/OKButton" index="0"]
 margin_right = 184.0
 margin_bottom = 60.0
 custom_fonts/font = SubResource( 16 )
 text = "Credits"
 align = 1
 
-[node name="CursorSound" type="AudioStreamPlayer" parent="." index="13"]
+[node name="HideUIButton" type="TextureButton" parent="TopRightButtons" index="1"]
+margin_top = 68.0
+margin_right = 183.0
+margin_bottom = 132.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource( 24 )
+texture_pressed = ExtResource( 5 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="TopRightButtons/HideUIButton" index="0"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 16 )
+text = "Hide UI"
+align = 1
+
+[node name="CursorSound" type="AudioStreamPlayer" parent="." index="12"]
 stream = ExtResource( 13 )
 bus = "SFX"
 
-[node name="ConfirmSound" type="AudioStreamPlayer" parent="." index="14"]
+[node name="ConfirmSound" type="AudioStreamPlayer" parent="." index="13"]
 stream = ExtResource( 23 )
 bus = "SFX"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." index="15"]
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="14" groups=["UIElements"]]
 margin_left = 20.0
 margin_top = 20.0
 margin_right = 479.0
@@ -402,6 +431,8 @@ Replicant REborn = RRE
 }
 versionDate = "2024082200"
 
+[connection signal="gui_input" from="WhiteBackground" to="." method="_on_WhiteBackground_gui_input"]
 [connection signal="gui_input" from="Logo" to="." method="_on_Logo_gui_input"]
 [connection signal="input_accepted" from="ItemScrollerV2" to="." method="ItemScrollerNewScreen"]
 [connection signal="selection_changed" from="ItemScrollerV2" to="." method="_on_ItemScrollerV2_selection_changed"]
+[connection signal="pressed" from="TopRightButtons/HideUIButton" to="." method="_on_HideUIButton_pressed"]

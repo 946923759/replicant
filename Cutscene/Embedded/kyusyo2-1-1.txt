@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	59	60	61
 speaker	
 msgbox_close	instant
@@ -51,7 +51,7 @@ emote	60	4
 
 portraits	60	61	59
 emote	59	1
-/Seele	300662	Hey, Bronya! I've got the new report on the investigation on the new Honkai species... Estherine asked me...	姐姐大人~新生种崩坏生物残骸的调查报告出来了，伊瑟琳让我来……	お姉ちゃん！新種の崩壊生物の残骸の調査報告が出たみたいだよ。イザーリンが私に——	NONE
+/Seele	300662	Hey, Bronya! I've got the new report on the investigation on the new Honkai species... Yiserin asked me...	姐姐大人~新生种崩坏生物残骸的调查报告出来了，伊瑟琳让我来……	お姉ちゃん！新種の崩壊生物の残骸の調査報告が出たみたいだよ。イザーリンが私に——	NONE
 emote	59	5
 msg	300663	Er..... Is this a bad time?	唔……难道我来的不是时候么？	あれ……もしかしてタイミング悪かった？	NONE
 emote	61	1
@@ -91,4 +91,4 @@ msg	300671	The Grey Moths have to have a strong heart to withstand the hardship 
 label	end_choices
 
 
-/Seele	300678	We should go now. Estherine is waiting for us.	好啦~姐姐大人我们走吧！伊瑟琳还在等我们呢！	お姉ちゃん、行きましょう！イザーリンが待ってるわ！	NONE
+/Seele	300678	We should go now. Yiserin is waiting for us.	好啦~姐姐大人我们走吧！伊瑟琳还在等我们呢！	お姉ちゃん、行きましょう！イザーリンが待ってるわ！	NONE

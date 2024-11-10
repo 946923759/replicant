@@ -2,14 +2,14 @@
 preload_portraits	54	67	68	69
 music	Emil Boss - No Vocals
 speaker	 
-match_names	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 bg	011/004_1280x720
 portraits	54	68
 se	DLC_CH00_EV04_ExplosionClose
 shake_camera
 msg	308589	Boom——!!	轰隆——！！	ドゴォオオオオン——ッ！！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	308590	Whoa!!	呜哇！！	うわぁ！！	NONE
 
@@ -18,7 +18,7 @@ emote	54	3
 emote	68	2
 msg	308591	Give up. If you leave now, at least you alone will survive.	放弃吧，离开这里，这样至少还能保全自己的性命。	諦めなさい。ここから離れれば、少なくとも生き残れるわ。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	68	2
 msg	308592	You're telling me to abandon them?	你的意思是让我舍弃她们么……	彼女たちを見捨てろっていうの？	NONE
@@ -28,7 +28,7 @@ emote	54	6
 emote	68	2
 msg	308593	You can't get my core, and you can't wake up Kyuushou. The child you've brought from the outside world will die here. Resistance is pointless.	你无法得到我的核心，同样也无法唤醒九霄…甚至连你带来的这个孩子也会死亡，这样的挣扎是不会有结果的。	あなたは、私のコアを手に入れられない。九霄を呼び覚ますこともできない……あなたが連れてきた子も死んでしまう。抵抗なんて無意味なの。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	68	2
 msg	308594	No, it's not over yet! We just need to destroy the Herrscher Core....!	不！还没有结束！只要摧毁律者核心的话……	いえ、まだ終わってない！律者コアさえ破壊できれば……！	NONE
@@ -44,7 +44,7 @@ nop	tween	during	69	stoptweening
 nop	tween	during	foreground	visible,true;diffuse,black;linear,.5;diffuse,0,0,0,0
 /Sirin	308596	Nothing here can be changed.	这里的一切都已经无法改变了。	ここのすべては、もう変えることができないの。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	3
 msg	308597	Sirin... That figure, why... Do you look like Kyuushou...	西琳…为什么……变成了九霄的样子……	シーリン……その姿、どうして……九霄に……。	NONE
 
@@ -52,7 +52,7 @@ speaker	Sirin
 emote	54	3
 msg	308598	Her body has been infected with Honkai. Every time she uses my powers, she becomes eroded by me. That's the price to pay for obtaining the power of a Herrscher.	她的身体已经被崩坏占据，使用我的力量就将被我所侵蚀，这就是获得律者之力的代价。	彼女の身体は崩壊に支配され、私の力を使うたび私に侵食されていく。これが律者の力を手に入れるために必要な代価なの。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	2
 msg	308599	You mean.... Kyuushou is already....	你的意思是…九霄已经……	つまり……九霄はもう……。	NONE
 
@@ -60,7 +60,7 @@ speaker	Sirin
 emote	54	2
 msg	308600	Yes.... It's too late. If you destroy my core, that girl will perish as well.	没错…一切都已经晚了，如果破坏我的核心，这个少女也会和我一起死亡。	ええ……もう遅いわ。私のコアを壊せば、この少女も私と一緒に死ぬことになるの。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 msg	308601	How can this be....? My hypothesis was wrong from the start...? Was everything doomed all along...?	怎么会…我的想法从一开始就是错误的……难道…这一切从一开始就已经无法挽回了么……	そんな……私の考えは最初から間違ってたの……嘘よ……もう手の施しようがないってこと……？	NONE
 
@@ -68,7 +68,7 @@ speaker	Sirin
 emote	54	4
 msg	308602	Your fight means nothing, just like the remaining humans that think they're still alive.... Everything is just a pointless mirage within a dream.	你们的战斗没有丝毫的意义…就和那些自以为还活着的人类一样，一切都是梦幻泡影中无谓的涟漪而已。	あなたたちの戦いには何の意味もない……まだ生きてると思い込んでいる人類と同じ、全て夢の中の出来事に過ぎないのよ。	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 msg	308603	Damn it... Damn it... I can't do anything on my own....	可恶…可恶……果然…我还是什么也办不到么……	そんな……何で……やっぱり……私なんかの力じゃ何もできないってこと……。	NONE
 
@@ -77,7 +77,7 @@ emote	54	4
 msg	308604	You've finally given up. Then let's get this over with.	看来终于还是选择放弃了么，那就让一切结束吧。	やっと諦めてくれるのね。じゃあ、全て終わらせましょうか。	NONE
 /Sin	308605	Who said--	谁说……	誰が——	NONE
 
-match_names	Sin	Estherine	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Sin	Yiserin	Sirin	_DIM_ALL_WHEN_EMPTY
 portraits	67,false,-1	54,false,-2	69
 emote	67	3
 /Sin	308606	--That it's over!!!	一切都结束的啊！！！	——終わるだなんて言った！！！	NONE
@@ -86,10 +86,10 @@ portraits	54,false,-2	67	69
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
 / 	308607	Bang!	砰！	パァンッ——！	NONE
 
-match_names	Estherine	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
+match_names	Yiserin	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 emote	54	4
 portraits	54,false,-2	67,false,-2	69
-/Estherine	308608	Sin……	杏……	シン……。	NONE
+/Yiserin	308608	Sin……	杏……	シン……。	NONE
 
 emote	67	2
 /Sin	308609	Hmph.... You're a hundred years too young to kill me, Sirin!	哼哼…想杀掉本大爷你还你嫩了点！西琳！	ふんッ……このボクを殺すなんて100年早いんだよ、シーリン！	NONE
@@ -117,7 +117,7 @@ emote	67	3
 emote	69	2
 msg	308615	Arrrrrgh!	咕啊！！	ぐぁああああぁあ——ッ！！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 emote	69	2
 msg	308616	Sin! Stop fighting! It's pointless... Everything is over!	杏！不要再战斗了！我们已经失败了……已经结束了！	シン！もう戦わないで！もうダメなの……何もかも終わったの！	NONE
@@ -127,7 +127,7 @@ emote	67	3
 emote	69	2
 msg	308617	Shut up! I hate weak people like you the most! If you're going to give up, go ahead and give up on your own!	闭嘴！果然像你这样软弱的家伙是我最讨厌的类型！要放弃的话就随你的便！	うるさいッ！やっぱお前みたいな弱いヤツ、一番嫌いだ！諦めるなら勝手にひとりで諦めてろ！	NONE
 
-speaker	Estherine
+speaker	Yiserin
 emote	54	4
 emote	69	2
 msg	308618	Ugh.....!	唔……	くっ……。	NONE

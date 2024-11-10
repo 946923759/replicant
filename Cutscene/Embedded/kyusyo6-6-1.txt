@@ -1,28 +1,28 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Estherine
+speaker	Yiserin
 nop	bg	007/006_1280x720
-/Estherine	308412	Ugh ...... is there an exit yet ......?	呜…还没到出口么……	うぅっ……出口はまだなの……？	NONE
+/Yiserin	308412	Ugh ...... is there an exit yet ......?	呜…还没到出口么……	うぅっ……出口はまだなの……？	NONE
 /Sin	308413	Hey! Stop your whining!	喂！别磨磨蹭蹭的！	おいっ！グズグズするな！	NONE
-/Estherine	308414	Ah, fine, fine... Let's hurry up...	哎…真是不省心的家伙，我们也加快脚步吧。	はぁ、油断ならないやつなんだから。急ごう。	NONE
+/Yiserin	308414	Ah, fine, fine... Let's hurry up...	哎…真是不省心的家伙，我们也加快脚步吧。	はぁ、油断ならないやつなんだから。急ごう。	NONE
 speaker	
 msg	308415	……	……	……。	NONE
-/Estherine	308416	Woo…so bright…are we back to Nagazora?	唔…好耀眼…我们是回到长空市了么？	っ……眩しい……長空市に戻ってきたの？	NONE
+/Yiserin	308416	Woo…so bright…are we back to Nagazora?	唔…好耀眼…我们是回到长空市了么？	っ……眩しい……長空市に戻ってきたの？	NONE
 
 music	Fortress of Lies - No Vocals
 bg	011/010_1280x720
 portraits	54	67
-match_names	Estherine	Sin
+match_names	Yiserin	Sin
 emote	54	3
 emote	67	1
-/Estherine	308417	Let's see...... This place is...... St. Freya Academy!?	唔…这里是……圣芙蕾雅学园！？	えっと……ここって……まさか聖フレイヤ学園！？	NONE
+/Yiserin	308417	Let's see...... This place is...... St. Freya Academy!?	唔…这里是……圣芙蕾雅学园！？	えっと……ここって……まさか聖フレイヤ学園！？	NONE
 /Sin	308418	Isn't this the place where we fought with Schicksal the other day? How'd it end up here?	这不是之前和天命干架的那个地方么…怎么会跑到这里来了？	この前、天命と戦ったところじゃんか……何でここに通じてんだ？	NONE
-/Estherine	308419	The fault links to the sea hundreds miles from the Fast East area…incredible.	没想到空间的断层居然链接到了极东地区数百公里外的海面上…实在是太不可思议了。	あの空間断層が、極東エリアから数百キロも離れた地点に繋がってるなんて……不思議ね。	NONE
+/Yiserin	308419	The fault links to the sea hundreds miles from the Fast East area…incredible.	没想到空间的断层居然链接到了极东地区数百公里外的海面上…实在是太不可思议了。	あの空間断層が、極東エリアから数百キロも離れた地点に繋がってるなんて……不思議ね。	NONE
 msg	308420	Bronya told me that the last battle with the Herrschers happened at St. Freya's Academy five years ago... This must be that place.	布洛妮娅之前说过…五年前大崩坏时与律者的最后一战是在圣芙蕾雅学园打响的…也就是说这里就是当时的战场么。	5年前、律者との最後の戦いは聖フレイヤ学園で起きたってブローニャが言ってたわ……つまり、ここがその戦場。	NONE
 /Sin	308421	No wonder this place looks like a wreck...... Hey, Seaweed head! Is what you're looking for really here?	难怪到处都破破烂烂的…喂！海藻头！你要找的东西真的在这里么？	どうりでボロボロだな……なぁ、ワカメ頭！探し物って、本当にここにあるのか？	NONE
 
 emote	54	1
 emote	67	1
-/Estherine	308422	It must be…the Honkai energy is very thick here, only Herrscher core can release such strong Honkai energy.	不会错的…这里的崩坏能浓度很高，也就只有律者核心可以散发出这么强烈的崩坏能了。	間違いないわ……ここの崩壊エネルギーの濃度、かなり高いもの。ここまで強烈な崩壊エネルギーを出せるのは、律者コアくらいよ。	NONE
+/Yiserin	308422	It must be…the Honkai energy is very thick here, only Herrscher core can release such strong Honkai energy.	不会错的…这里的崩坏能浓度很高，也就只有律者核心可以散发出这么强烈的崩坏能了。	間違いないわ……ここの崩壊エネルギーの濃度、かなり高いもの。ここまで強烈な崩壊エネルギーを出せるのは、律者コアくらいよ。	NONE
 
 emote	54	1
 emote	67	2
@@ -30,13 +30,13 @@ emote	67	2
 
 emote	54	1
 emote	67	2
-/Estherine	308424	Don't worry, if this is constructed as same as before…then you must be very familiar with where the Herrscher core is……	不用着急，如果这里的一切也是依照历史的格局构建的话…那么律者核心所在的位置一定是你最熟悉不过的东西了……	焦る必要はないわ。ここもこの世界の歴史通りに構築されているなら、律者コアは、きっとあなたもよく知ってる場所にあるはず。	NONE
+/Yiserin	308424	Don't worry, if this is constructed as same as before…then you must be very familiar with where the Herrscher core is……	不用着急，如果这里的一切也是依照历史的格局构建的话…那么律者核心所在的位置一定是你最熟悉不过的东西了……	焦る必要はないわ。ここもこの世界の歴史通りに構築されているなら、律者コアは、きっとあなたもよく知ってる場所にあるはず。	NONE
 speaker	Sin
 
 emote	54	1
 emote	67	1
 msg	308425	How familiar! Make it clear!	什么熟不熟悉的！能不能说明白一些！	あぁん？どこだよ、それ！もっとわかりやすく言えって！！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	6
 emote	67	1
@@ -49,10 +49,10 @@ msg	308427	What is shining……	什么东西一惊一乍的……	なんだな�
 portraits	
 bg	011/007_1280x720
 msg	308428	Huh! This is the Moonlight Throne! Why is it here!	呃！这个是！月光王座！？为什么会在这里！	はぁっ！？これって月光王座じゃんか！何でこんなところに！？	NONE
-/Estherine	308429	Right…Bronya is right, there is a big fight between Schicsial and Anti-Entropy, and the Moonlight Therone fell in the school…like this.	果然…布洛妮娅说的没错，看来这座圣芙蕾雅学园中的确发生过一场天命与逆熵的大战，在这场战斗中月光王座坠落在了学园中…变成了我们现在看到的样子。	やっぱりね……ブローニャの言った通り、この聖フレイヤ学園では確かに天命とネゲントロピーの戦いがあったんだわ。あの戦闘で月光王座は学園に墜落して……そして、今、私たちの目の前にある通りの状態になった。	NONE
+/Yiserin	308429	Right…Bronya is right, there is a big fight between Schicsial and Anti-Entropy, and the Moonlight Therone fell in the school…like this.	果然…布洛妮娅说的没错，看来这座圣芙蕾雅学园中的确发生过一场天命与逆熵的大战，在这场战斗中月光王座坠落在了学园中…变成了我们现在看到的样子。	やっぱりね……ブローニャの言った通り、この聖フレイヤ学園では確かに天命とネゲントロピーの戦いがあったんだわ。あの戦闘で月光王座は学園に墜落して……そして、今、私たちの目の前にある通りの状態になった。	NONE
 /Sin	308430	So the Herrscher core is inside of it!	这么说的话律者核心就在月光王座中么！	っていうことは、律者コアはあの月光王座の中にあんのか？	NONE
-/Estherine	308431	Yes…more precisely, it's the engine of Moonlight Throne, the energy of this ship is from Herrscher core.	没错…准确的说是月光王座的动力炉，因为这艘船的动力来源就是律者核心。	そうね……正確に言うと、月光王座の動力炉にあるはずよ。あの船の動力が律者コアだからね。	NONE
+/Yiserin	308431	Yes…more precisely, it's the engine of Moonlight Throne, the energy of this ship is from Herrscher core.	没错…准确的说是月光王座的动力炉，因为这艘船的动力来源就是律者核心。	そうね……正確に言うと、月光王座の動力炉にあるはずよ。あの船の動力が律者コアだからね。	NONE
 msg	308432	Let's go, we still need to walk for a while to that church, and we need to prepare, based on the high level of Honkai energy here, there must be lots of Honkai creatures……	走吧，从这里走到那个大教堂也有很长一段距离，我们需要做好万全的准备，以这个空间的崩坏能浓度来说，一定寄宿着强大的崩坏生物……	行こう。ここから大聖堂まで結構距離があるわ、万全な準備をしないと。この空間の崩壊エネルギー濃度からして、きっと強力な崩壊生物もいるわ……。	NONE
 /Sin	308433	Why, are you afraid?	怎么，害怕了么？	ん～？何だ、怖いのか？	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	308434	Of course…but, we must not flinch.	害怕是当然的…但是，不能在这里退缩。	怖いのは当たり前よ……でも、ここで逃げるなんてできないから。	NONE

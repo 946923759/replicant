@@ -5,11 +5,11 @@ bg	011/007_1280x720
 se	DLC_CH00_EV13_MosterRoar
 msg	308435	Growl!!	吼吼吼！！	ウォオオオオオッ——！！！！	NONE
 portraits	54	67
-match_names	Estherine	Sin
+match_names	Yiserin	Sin
 
 emote	67	4
 /Sin	308436	Shut up! Get out of the way!	烦人的家伙！给我滚开！	うっさい！どけッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	6
 emote	67	4
 msg	308437	Sin, we're almost there, don't fight too much! The Honkai Beasts here are far tougher than those outside!	杏！我们马上就要到了！不要恋战！这里的崩坏生物比外面棘手太多了！	シン、もうすぐ着くんだから戦いはほどほどに！ここの崩壊生物は、外のより遥かに手強いんだから！	NONE
@@ -22,7 +22,7 @@ speaker
 emote	67	4
 se	DLC_CH00_EV11_MosterRoar
 msg	308439	Growl……	吼吼吼……	フシュー……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	2
 emote	67	4
@@ -32,7 +32,7 @@ speaker	Sin
 emote	54	2
 emote	67	1
 msg	308441	Ha ha! They must be frightened by my strength!	哼！一定是被本大爷的力量给吓坏了吧！	ハハッ！きっとボクの力にビビったんだろ！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	3
 emote	67	1
@@ -49,7 +49,7 @@ tween	during	54	decelerate,.5;addx,-230;addy,50;zoom,1.2
 tween	during	67	decelerate,.5;addx,-250;addy,50;zoom,1.2
 tween	during	011/007_1280x720	decelerate,.5;addx,-200;zoom,1.2
 msg	308444	Wow, the Moonlight Throne is in terrible shape. If my mom saw this, she'd have a stroke. What in the world could have done this to it?	话说从近处看还真是惨呢~到底是什么样的东西把月光王座弄成这副样子的，要是妈妈看见了一定会心疼死。	近くで見ると本当に悲惨だなぁ！一体、何が月光王座をこんな姿にしたんだ？ママに見られたら卒倒もんだぞ、こりゃ。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	3
 emote	67	4
@@ -76,7 +76,7 @@ speaker	Sin
 emote	54	3
 emote	67	1
 msg	308449	Huh~you should take care of yourself right?	哼~该小心的是你自己吧？	はぁ、お前が一番気を付けろよ。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	5
 emote	67	1
@@ -84,7 +84,7 @@ msg	308450	Hah, hah.... You scared me half to death...	呼…吓死我了……	
 speaker	
 emote	67	1
 msg	308451	……	……	……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	3
 emote	67	1
@@ -92,7 +92,7 @@ msg	308452	Looks like there's a hole here... We should be able to get in though 
 speaker	
 emote	67	1
 msg	308453	Clang——!	哐啷——！	ガタン——ッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	6
 emote	67	1
@@ -109,7 +109,7 @@ speaker	Sin
 emote	54	3
 emote	67	4
 msg	308457	Wow, this place looks like crap. I never imagined I'd see the Moonlight Throne reduced to this.	这地方可真是破的可以，没想到月光王座居然也有变成这样的一天。	すごいボロボロだな。月光王座のこんな姿を見る日がくるなんて。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	2
 emote	67	4
@@ -122,7 +122,7 @@ msg	308459	Hee hee, I bet it was fun. I wish I could have been there! My blood's
 speaker	
 emote	67	2
 msg	308460	Crack…Crack……	喀拉…喀拉……	ガラッ……ガラン……。	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	3
 emote	67	2
@@ -133,7 +133,7 @@ speaker	Sin
 emote	54	3
 emote	67	2
 msg	308463	Woah, a welcome party just for us! I'm ready to go on a rampage!	还真是盛大的迎接啊，看来又可以大干一场了……	チッ、盛大な歓迎だなぁ！大暴れできそうだ……ッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 
 emote	54	3
 emote	67	2

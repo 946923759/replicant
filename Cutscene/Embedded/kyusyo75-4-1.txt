@@ -35,8 +35,8 @@ bg	011/022_1280x720
 nop	tween	current	foreground	linear,.5;diffusealpha,0
 
 speaker	Teammate
-msg	303098	Estherine!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE
-speaker	Estherine
+msg	303098	Yiserin!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE
+speaker	Yiserin
 msg	303099	Hold on.....!\nReturn all living personnel to the bridge! Don't give up, even until the last minute!	坚持住！让活着的队员返回舰桥！就算到最后一刻都不要放弃！	持ち堪えて……！#n生きている隊員を艦橋に戻して！最後の最後まで諦めてはダメよ！	NONE
 speaker	Theresa
 msg	303100	Come here! Honkai Beasts! Even if I have to sacrifice myself, I'm not letting you through!	来吧！崩坏生物！就算是死！我也不会让你们过去的！	来なさい！崩壊生物！#nたとえ死んだとしても、あなたたちを行かせたりはしないわ！	NONE

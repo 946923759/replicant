@@ -57,7 +57,7 @@ portraits	61	55
 emote	61	1
 emote	55	1
 msg	307045	This is my own will... I'm going to the "place where it all began" like the Herrscher said. That's the best place for me to end up.	这是我自己的意愿，你们没必要和我一起送死…就如律者所说，在一切开始的地方结束，这对于我来说是最好的归宿。	これは私自身の意志よ……律者の言っていた「全てが始まった場所」へ私は行くわ。そこが私にとって最高の終着点なのよ。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -109,7 +109,7 @@ emote	61	1
 emote	55	1
 msg	307055	More than that, I don't want to give up after so many desperate fights, with the reason of existence, I still want to give a try.	不仅是九霄的记忆…我可不想让多少次殊死战斗后好不容易保住的性命就这样放弃掉，拼上自己存在的理由，就算没有希望也要试试。	九霄の記憶だけじゃない……何度も死線をくぐり抜けて守ってきた命だ、このまま呆然と待つだけで終わらせたくないんだよ。自分の存在理由が有耶無耶にならないよう、望みがなくとも戦い続けたい。そう思えたんだ。	NONE
 label	end_choices
-speaker	Estherine
+speaker	Yiserin
 bg	009/004_1280x720
 portraits	54
 emote	54	1
@@ -118,7 +118,7 @@ speaker	Emesa
 portraits	55
 emote	55	4
 msg	307057	Can't you say something nice!	你就不能说点吉利的话么！	おい、もう少し縁起の良い言い方できないのかよ！？	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	54
 emote	54	5
 msg	307058	Aww……sorry!	疼疼疼……我错了！	イタタ……やめて、謝るから！	NONE
@@ -133,7 +133,7 @@ portraits	61	55
 emote	61	1
 emote	55	1
 msg	307061	Duplicity……don't worry, you are going to Academic City? I can help then, at least I used to study there, I know there better than anyone else.	真是口是心非的家伙……放心吧，你是要去学园都市吧？那我就能帮上你的忙，怎么说我曾经也是那里的学生，没有人比我更熟悉那里。	まったく口の悪いヤツだな……安心しろ、学園都市に行くんだろ？それなら私も役に立てる。何たって、あそこで私も学んでたからな。今生きてる人間の中で、私以上にあそこに詳しいヤツなんていないはずだ。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -143,8 +143,8 @@ portraits	61	55
 emote	61	1
 emote	55	4
 msg	307063	You never asked.	你们又没问过我。	聞かれなかったからな。	NONE
-msg	307064	Alright! Estherine! What are you waiting for? Let's go!	好了！伊瑟琳！你还愣着干嘛，走了！	ほら！イザーリン！何をボサッとしてんだ！行くぞ！	NONE
-speaker	Estherine
+msg	307064	Alright! Yiserin! What are you waiting for? Let's go!	好了！伊瑟琳！你还愣着干嘛，走了！	ほら！イザーリン！何をボサッとしてんだ！行くぞ！	NONE
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	2
@@ -154,7 +154,7 @@ portraits	61	55
 emote	61	1
 emote	55	4
 msg	307066	What! What is this!	你说什么！	何、寝ぼけたこと言ってんだッ！	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	5
@@ -164,7 +164,7 @@ portraits	61	54
 emote	61	1
 emote	54	5
 msg	307068	Etherine is right, let her stay.	伊瑟琳说得没错，就让她留守在ME社吧。	イザーリンの言う通りね。彼女にはME社に残ってもらいましょう。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -174,7 +174,7 @@ portraits	61	55
 emote	61	1
 emote	55	1
 msg	307070	Woo…I don't know you would talk in this way.	唔…没想到你还会说点有骨气的话。	うわぁ……お前がそんな骨のあることを言うなんて、逆に気持ち悪い。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -190,7 +190,7 @@ bg	009/060_1280x720
 portraits	61
 emote	61	1
 msg	307074	……	……	…………。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	61	54
 emote	61	1
 emote	54	1
@@ -205,7 +205,7 @@ portraits	66	54
 emote	66	0
 emote	54	1
 msg	307077	Even Himeko no longer trust us……	连姬子队长也不相信我们了么……	姫子隊長まで私たちを信じられなくなったってこと……？	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	66	54
 emote	66	0
 emote	54	6
@@ -215,7 +215,7 @@ portraits	56	54
 emote	56	0
 emote	54	6
 msg	307079	Is…it?	是…这样么？	そ、そうなの？	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	56	54
 emote	56	0
 emote	54	1
@@ -225,7 +225,7 @@ portraits	66	54
 emote	66	0
 emote	54	1
 msg	307081	Well…make sense, even you're not afraid, it should be alright.	嗯…说的也是，连伊瑟琳都没有害怕，那应该没错了。	え、ええ……それもそうね。イザーリンですら怖がっていないんだから、きっと大丈夫よ。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	66	54
 emote	66	0
 emote	54	1
@@ -235,7 +235,7 @@ portraits	56	54
 emote	56	0
 emote	54	1
 msg	307083	Ok, we got it.	好的，明白了。	そうね、分かったわ。	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	56	54
 emote	56	0
 emote	54	2

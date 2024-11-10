@@ -62,7 +62,7 @@ msg	302782	Killing ... Waiting ... Killing ... Waiting ... Killing ...	杀戮…
 msg	302783	Long enough for time to lose all meaning...	这段漫长的过程不知道经历了多久……	この長い長い道のりを、どれだけ過ごしたのか……。	NONE
 msg	302784	It could be just a few hundred years ... or even tens of thousands of years ...	也许只有短短的数百年…也许是漫长的数万年……	わずか数百年かもしれないし……或いは数万年もの長きに及ぶかもしれない……。	NONE
 msg	302785	She no longer remembered how long she stood on the desolate land.	她已经不记得自己在荒芜的大地上矗立了多久。	彼女はもう、自分が荒れ果てた大地にどれだけ立っていたのか、それすら覚えていなかった。	NONE
-msg	302786	Until the time when the species named human beings is completely eradicated and the halberd is put in place, the consciousness of human beings may not return.	或许直到名为人类的物种完全灭绝，才能停下自己的刀刃，重新恢复了意识……	人類という名の種が完全に根絶し、矛を収めるその時まで、人間だった頃の意識が戻ることはないのかもしれない……。	NONE
+msg	302786	Until the species called humanity is completely exterminated and the spear is put away, the consciousness of the time when we were human may never return...	或许直到名为人类的物种完全灭绝，才能停下自己的刀刃，重新恢复了意识……	人類という名の種が完全に根絶し、矛を収めるその時まで、人間だった頃の意識が戻ることはないのかもしれない……。	NONE
 msg	302787	However, her consciousness suddenly awakened.	但只有那一刻她没有忘记。	しかし、彼女の意識は突然目覚める。	NONE
 bg	007/006_1280x720
 msg	302788	At that moment ... all the memories flowed into her mind like a nightmare.	当她再次醒来的时候…一切的记忆都如同一场噩梦一般涌向她的脑海的那一刻。	その瞬間……全ての記憶が、悪夢のように彼女の脳裏に流れ込んできた。	NONE

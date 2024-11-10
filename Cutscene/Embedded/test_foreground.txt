@@ -3,7 +3,7 @@ bg	011/007_1280x720
 msg	The engine has one color rect which can be manipulated with tweens. It's also used to fade out a scene at the end.
 msg	It's not very useful at the moment, but you can use it to do some tricks like blanking out the screen and replacing the characters.
 portraits	54	67
-msg	Hello, it's Estherine and Sin!
+msg	Hello, it's Yiserin and Sin!
 tween	before	foreground	linear,0.0;visible,true;diffuse,black
 
 bg	015/026_1280x720	instant

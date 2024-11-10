@@ -128,7 +128,7 @@ func _physics_process(_delta):
 	#_physics_process() is locked to 60 so we don't need to lock it (I think)
 	_process_shake(Vector2(0,0), 0.0, _delta)
 
-func _process_shake(center, angle, delta) -> void:
+func _process_shake(_center, _angle, delta) -> void:
 	shake = stress * stress
 
 	#rotation_degrees = angle + (max_roll * shake *  _get_noise(randi(), delta))

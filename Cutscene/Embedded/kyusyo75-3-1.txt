@@ -8,7 +8,7 @@ speaker	Seele
 msg	302815	Kyuushou... Why couldn't you protect your sister!  Why were you the only survivor?!	九霄…为什么没有保护姐姐大人！为什么只有你一个人活了下来！	九霄……どうして、お姉ちゃんを守れなかったの！どうして、あなた一人だけが生き延びたの！	NONE
 speaker	Himeko
 msg	302816	Kyuushou... Is this what I get in exchange for my life? I was wrong about you.	九霄…我以生命换来的就是这样的结果么？是我看错你了。	九霄……私が命と引き換えにした結果がこれなの？私の見込み違いだったわね。	NONE
-speaker	Estherine
+speaker	Yiserin
 msg	302817	Kyuushou!  I don't want to die here!  You'll save me, right?!  Please say something!	九霄！我不想在这里死掉！你一定会救我的！对吧？你说话啊！	九霄！私はここで死にたくないの！#nあなたならきっと助けてくれるよね！？そうでしょ？何とか言ってよ！	NONE
 speaker	Emesa
 msg	302818	Kyuushou.... I guess you and I are the same. We're both weak and incompetent, and neither of us can save anyone in the end.	九霄…看来你和我没有什么区别，都是弱小而又无能的人，到最后谁也无法拯救。	九霄……どうやら、お前は私と同じみたいだな。#n私たちは弱くて、無能な人間なんだ。最後まで誰も救うことはできない。	NONE

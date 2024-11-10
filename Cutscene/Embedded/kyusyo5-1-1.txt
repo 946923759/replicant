@@ -28,7 +28,7 @@ msg	308227	I can't believe I'm still dreaming about that scene even after all th
 msg	308228	Seems like I'm getting old...	看来我真的老了呢……	私も、歳を取っちゃったわね……。	NONE
 bg	009/059_1280x720
 msg	306996	Kara! Kara!	咔拉！咔拉！	ガラン！ガラン！	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	54
 emote	54	1
 msg	306997	Oh no.... The generator's completely broken. Doesn't seem like it can be repaired, either...	不行了…动力装置已经完全损坏了，用应急零件修修补补的方法看来已经行不通了。	ダメね……動力装置が完全に壊れてるわ。応急処置で間に合うレベルじゃない。	NONE
@@ -40,7 +40,7 @@ emote	54	3
 msg	307000	We can just make a bet now…if we find that ship we probably……	事到如今只能赌一下看看了…如果能够找到那艘船的话说不定还能……	こうなったら賭けてみるしかないわね……あの艦を見つけられれば、もしかしたらまだ……！	NONE
 speaker	
 msg	307001	「Attention, attention, everyone come to the trestle.」	「全舰通告，全舰通告，请全员即刻到舰桥集合。」	「全乗員に告ぐ、全乗員に告ぐ、ただちに艦橋に集合せよ。」	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	54	1
 msg	307002	Looks like Himeko has woken up. She really is a restless woman. But ...... I hope this buys her a little more time.	看样子是姬子醒了，真是个不消停的女人。也好…至少这样还能再拖延一点时间。	どうやら、姫子の目が覚めたようね。本当に気の休まらない女なんだから。でも……これでもう少し時間が稼げるかしら。	NONE
 speaker	Emesa
@@ -68,7 +68,7 @@ portraits	55	61
 emote	55	4
 emote	61	2
 msg	307007	Then are you intending on dying?!	你就这么想死么！	くそっ、そんなに早く死にたいのかよ！？	NONE
-speaker	Estherine
+speaker	Yiserin
 portraits	55	61	54
 emote	55	4
 emote	54	1
@@ -77,7 +77,7 @@ speaker	Emesa
 emote	55	4
 emote	54	1
 msg	307009	Shut up!	你给我闭嘴！	うっさい！！	NONE
-speaker	Estherine
+speaker	Yiserin
 emote	55	4
 emote	54	5
 msg	307010	Coo!	咕！	うぐっ！	NONE

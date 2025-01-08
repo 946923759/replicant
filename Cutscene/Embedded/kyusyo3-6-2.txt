@@ -24,7 +24,7 @@ bg	009/034_1280x720
 music	The Dark Colossus Destroys All
 speaker	Mei
 msg	301465	There is no need for life in this world of nothingness.	虚无的世界里不需要生命。	虚無の世界に生命は不要。	NONE
-msg	301466	Struggling like this only has meaning when it meets it doom.	无谓的抗争在破灭的时候才有价值……	無意味な抗争は、破滅のときこそ価値のあるもの……。	NONE
+msg	301466	Struggling like this only has meaning when it meets its doom.	无谓的抗争在破灭的时候才有价值……	無意味な抗争は、破滅のときこそ価値のあるもの……。	NONE
 msg	301467	Farewell... Disappear with your illusions of hope.	永别了…怀抱着名为希望的泡影消失吧。	さよなら……希望という名の幻想を抱いて、消え失せなさい。	NONE
 speaker	
 bg	009/035_1280x720	fade

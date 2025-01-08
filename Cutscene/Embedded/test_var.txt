@@ -7,6 +7,10 @@ var	num	1
 label	start
 msg	This message is reading from a variable named "temp". The variable contents is %temp%. You've seen this message %num% times so far.
 msg	You can edit it in the variable debugger by pressing F4. And to see how variables work, press F1 to open this file in a text editor.
+msg	Variables are inserted into text using the % character. But you can use % during text because the parser will ignore % symbols when they are not closed or there is a space.
+msg	For example... 0%, 100%, 75%, 1% 2 % e% %jjjjj hello% world%
+msg	Invalid and valid interpolation: %jjjjj hello% world% %temp%
+msg	その後、発生した世界規模の異常気象と爆発、そして残された崩壊エネルギーの致死的な影響によって、地球は生物生存の条件を失いました。3年の災害期間を経て、地球の人口残存率は約0.00006%です。そして、あなたはその中の貴重な生存者の1人です。
 var	num	num+1
 if	doesnt_exist	null:
   msg	This message appears because the condjmp checked a variable that doesn't exist. The next opcode will set the variable, so you won't see this again.

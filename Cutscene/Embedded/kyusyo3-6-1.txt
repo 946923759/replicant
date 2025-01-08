@@ -44,11 +44,11 @@ msg	301415	Bang!	轰！	——キンッ！	NONE
 speaker	Seele
 emote	59	3
 msg	301416	I can't believe it... She actually caught Himeko's greatsword with her bare hands!	居然…徒手接住了姬子的大剑！	そんな……姫子さんの大剣を素手で受け止めた！	NONE
-speaker	Bronya
 emote	59	3
 emote	60	5
 portraits	59,false,-2	60,false,-2	61,false,1	53,false,2
-msg	301417	Himeko! Stop!	姬子！住手！	姫子！やめてください！	NONE
+/Bronya	301417	Himeko! Stop!	姬子！住手！	姫子！やめてください！	NONE
+
 speaker	Himeko
 emote	59	3
 emote	61	2
@@ -59,18 +59,16 @@ emote	59	3
 portraits	59,false,-2	60,false,-2	61,false,2	53,false,2
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
 msg	301420	Boom!!	轰隆！！！	ドガン！！！	NONE
-speaker	Bronya
 emote	59	3
 emote	60	5
-msg	301421	Stop it! Sister Mei! Stop fighting! Come back with us!	住手！芽衣姐姐！不要再战斗了！和我们一起回去吧！	やめてください、芽衣姉様！戦いはやめて！一緒に帰りましょう！	NONE
-speaker	Mei
+/Bronya	301421	Stop it! Sister Mei! Stop fighting! Come back with us!	住手！芽衣姐姐！不要再战斗了！和我们一起回去吧！	やめてください、芽衣姉様！戦いはやめて！一緒に帰りましょう！	NONE
 emote	59	3
-msg	301422	...	……	……。	NONE
-speaker	Himeko
+/Mei	301422	...	……	……。	NONE
+
 emote	59	3
 emote	61	2
 portraits	59,false,-2	60,false,-2	61,false,1	53,false,2
-msg	301423	She's not going to listen to you! Mei is no different from a Honkai Beast now!	她是不会听你的！现在的芽衣和崩坏生物没区别！	あんたの言うことなんか耳に入ってないわ！今の芽衣は崩壊生物と変わらないのよ！	NONE
+/Himeko	301423	She's not going to listen to you! Mei is no different from a Honkai Beast now!	她是不会听你的！现在的芽衣和崩坏生物没区别！	あんたの言うことなんか耳に入ってないわ！今の芽衣は崩壊生物と変わらないのよ！	NONE
 msg	301424	Seele! I'll restrict her movements! Help me kill the Herrscher!	希儿！我来限制她的动作！和我一起把律者杀了！	ゼーレ！私が律者の動きを封じるから！その隙に殺るのよ！	NONE
 speaker	Seele
 emote	59	3
@@ -87,26 +85,23 @@ speaker	Bronya
 emote	59	3
 emote	60	5
 msg	301428	Himeko! Get out of the way!	姬子！快从离开！	姫子！早く離れてください！	NONE
-speaker	
 emote	59	3
 se	DLC_CH03_EV04_ElectricSound
+
 portraits	59,false,-2	60,false,-2	61,false,-2	53,false,2
+speaker	
 msg	301429	*Slash*	呲拉！！	シャンッ！！	NONE
-speaker	Himeko
+
 emote	59	3
 emote	61	2
-msg	301430	Argh!	呃！	ぐっ！	NONE
-speaker	Bronya
+/Himeko	301430	Argh!	呃！	ぐっ！	NONE
 emote	59	3
 emote	60	5
-msg	301431	Himeko!	姬子！	姫子！	NONE
-speaker	Himeko
+/Bronya	301431	Himeko!	姬子！	姫子！	NONE
 emote	59	3
 emote	61	2
-msg	301432	I'm fine... Damn it!	我没事…可恶！	平気よ……くそっ！	NONE
-speaker	Mei
-emote	59	3
-msg	301433	...	……	……。	NONE
+/Himeko	301432	I'm fine... Damn it!	我没事…可恶！	平気よ……くそっ！	NONE
+/Mei	301433	...	……	……。	NONE
 
 portraits	59,false,-2	60,false,-2	61,false,-2
 emote	59	3
@@ -117,13 +112,12 @@ emote	59	3
 emote	61	2
 msg	301435	Don't worry about me! Go after her!	别管我！快追上去！	私に構わず！早く追うのよ！	NONE
 
-speaker	Bronya
 bg	009/046_1280x720
 match_names	Seele	Bronya	Mei	_DIM_ALL_WHEN_EMPTY
 portraits	59,false,-2	60,false,-1	53,false,2
 emote	59	3
 emote	60	5
-msg	301436	Sister Mei!	芽衣姐姐！	芽衣姉様！	NONE
+/Bronya	301436	Sister Mei!	芽衣姐姐！	芽衣姉様！	NONE
 speaker	Mei
 msg	301437	...	……	……。	NONE
 speaker	Bronya
@@ -133,17 +127,17 @@ speaker	Mei
 msg	301440	...	……	……。	NONE
 msg	301441	It's already... Impossible to go back.	已经…不可能回去了。	もう……戻れない。	NONE
 msg	301442	The world has already ended... And you will die here.	这个世界已经结束了…而你也会死在这里。	この世界はもう終わったの……あなたもここで死ぬのよ。	NONE
-speaker	
+
 portraits	59,false,-2	60,false,-2	53,false,-2
 se	DLC_CH03_EV03_SwordsHit
+speaker	
 msg	301443	*Slash*!	蹭！	ザンッ！	NONE
-speaker	Seele
-msg	301444	Bronya!	姐姐大人！	お姉ちゃん！	NONE
-speaker	Bronya
-msg	301445	Argh...!	呜！	うっ！	NONE
+/Seele	301444	Bronya!	姐姐大人！	お姉ちゃん！	NONE
+/Bronya	301445	Argh...!	呜！	うっ！	NONE
+
 portraits	59,false,-2	60,false,-2	53,false,2
-speaker	Mei
-msg	301446	Kill them.	杀了她们。	彼女たちを殺しなさい。	NONE
+/Mei	301446	Kill them.	杀了她们。	彼女たちを殺しなさい。	NONE
+
 match_names	Seele	Bronya	???	_DIM_ALL_WHEN_EMPTY
 portraits	59,false,-2	60,false,-2	50,false,2
 /???	301447	Order confirmed. Core data is threatened. Annihilation program activated.	命令确认，核心数据遭到威胁，启动歼灭程序，	命令確認。コアデータが脅威を感知、殲滅プログラム起動……。	NONE

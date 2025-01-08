@@ -7,10 +7,9 @@ msg	308235	Maybe such a result is the best for this dying world, but I still can
 msg	308236	Well…seeking survival is the only thing in common among all lives, even for us it's the same.	没办法…追求生存是生命唯一的共性，就算是我们也一样。	仕方ない……生きることを望むのは、どの生命にもある欲望であり、私たちも例外ではないのだから。	NONE
 msg	308238	「Stigmata Space connection starts……」	「圣痕空间链接开始……」	「聖痕空間のリンクを開始……」	NONE
 msg	308239	——Because we're all selfish creatures called human beings.	——谁让我们是称为人类的自私的生物呢。	——人類は、利己的な生き物だ。	NONE
-msg	-1				
 msg	308240	……	……	……。	NONE
-msg	308241	……	……	……。	NONE
-msg	308242	……	……	…………。	NONE
+extend	308241	……	……	……。	NONE
+extend	308242	……	……	…………。	NONE
 msg	308243	Go……	快走……	はやく、戻らないと……。	NONE
 msg	308244	Everyone…leave here……	大家…离开这里……	みんなのために……ここから出るんだ……。	NONE
 msg	308245	I will protect you……	我会保护大家的……	みんなのことを守らないと……。	NONE
@@ -25,11 +24,9 @@ emote	60	4
 speaker	
 msg	308249	Bronya……	布洛妮娅……	ブローニャ……。	NONE
 speaker	Bronya
-portraits	60
 emote	60	2
 msg	308250	Thank goodness... You finally woke up. I thought you'd sleep forever like Seele...	太好了…终于醒了么，我还以为你和希儿一样……	良かった……やっと起きたのですね。ゼーレと同じように目を覚まさないのではと思いました……。	NONE
 speaker	Yiserin
-portraits	60	54
 emote	60	2
 emote	54	1
 msg	308251	Whew, you finally woke up..... Kyuushou, you've been out cold for two days now. But the situation seems to be much better than we thought.	呼~总算是醒过来了么…九霄，你已经昏迷了快两天了，不过现在看来情况要比想象中的要好不少呢。	ふぅ、やっと起きたのね……九霄、もう2日も気を失ってたのよ。でも、想定よりもだいぶ状態が良いみたいね。	NONE
@@ -113,6 +110,7 @@ portraits	54
 emote	54	4
 msg	308274	……	……	……。	NONE
 
+match_names	Yiserin
 speaker	Yiserin
 emote	54	4
 msg	308275	Bronya must be very lost as well…now she also need time to cheer up, otherwise she can't do anything in this state.	布洛妮娅也一定很迷茫吧…现在的她也需要一段时间重新振作起来，如果是以这个状态的话什么事情都干不成了。	ブローニャもきっと迷ってると思う……今の彼女には、立ち直る時間が必要なの。そうでないと、きっと何もかもうまくいかない。	NONE
@@ -120,7 +118,7 @@ emote	54	2
 msg	308276	We can only depend on ourselves now……	看来事到如今只能靠我们自己来扭转这个绝望的局面了……	今は私たち自身の力で、この絶望的な状況をなんとかしないとね……。	NONE
 msg	308277	We don't have much time left, if you still hesitate we might lose everything……	现在留给我们的时间已经不多了，如果继续犹豫下去的话一切都将无法挽回……	残された時間はそう多くないわ。これ以上、迷ってたらきっと何もかも取り返しがつかなくなる……。	NONE
 emote	54	3
-msg	308278	Kyushou.	九霄。	九霄。	NONE
+msg	308278	Kyuushou.	九霄。	九霄。	NONE
 msg	308279	What I'm going to say might be very astonishing, but please trust me!	接下来我要说的话你可能会很震惊，但是无论如何请你相信我！	これから私が言うことは、あなたを驚かせるかもしれない。けど、どうか信じてほしいの。	NONE
 msg	308280	Because everything is related to your life…and the being of this world.	因为这一切都将关系到你自己的生命…也关系到这个世界的存亡。	あなたの命と……この世界の存亡に関わることだから。	NONE
 msg	308281	Kyuushou... Do you know why you have no memories of this world?	九霄…你知道自己为什么没有这个世界的记忆么？	九霄……どうして、あなたにこの世界の記憶がないかわかる？	NONE

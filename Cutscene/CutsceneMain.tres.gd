@@ -570,14 +570,21 @@ func advance_text()->bool:
 #
 				
 				var hasVarCursor = tmp_txt.find("%")
-				while hasVarCursor != -1 and hasVarCursor < tmp_txt.length():
+				while hasVarCursor != -1 and hasVarCursor < tmp_txt.length()-1:
 					var endTagPos:int = -1
 					for jjjj in range(hasVarCursor+1,tmp_txt.length()):
 						if tmp_txt[jjjj]==" ": #This also means no %% necessary like renpy
-							hasVarCursor=jjjj+1
+							hasVarCursor=tmp_txt.find("%",jjjj+1)
+							#print("encountered space while scanning for var end tag, ignoring and moving on")
+							#print("left to scan: ")
+							#print(tmp_txt.substr(hasVarCursor))
 							break
 						elif tmp_txt[jjjj]=="%":
 							endTagPos = jjjj
+							break
+						elif jjjj == tmp_txt.length()-1:
+							#print("hit EOL while checking for variable end tag, ignoring this line")
+							hasVarCursor=tmp_txt.length()
 							break
 					if endTagPos != -1:
 						#print(endTag-hasVar)
@@ -1024,16 +1031,27 @@ func advance_text()->bool:
 		var numNewLines = fsText.text.count("\n")
 		var startingLength = fsText.text.length()-numNewLines #WHY????
 		var newFSText = fsText.bbcode_text+"\n"+text.bbcode_text
-		#TODO: if newFStext is larger than box size, should clear box and then redo
-		print("Size of old text was "+String(startingLength)+", tweening to "+String(newFSText.length())+", "+String(text.text.length()+1)+" "+text.text)
+		
+		print(rect_size, fsText.rect_size)
+		
+		#height minus margin_top and margin_bottom
+		if fsText.rect_size.y > rect_size.y-200:
+			print("FS rect size > 880, resetting. ",fsText.rect_size)
+			startingLength = 0
+			newFSText = text.bbcode_text
+		else:
+			print("Size of old text was "+String(startingLength)+", tweening to "+String(newFSText.length())+", "+String(text.text.length()+1)+" "+text.text)
+		
+		fsText.bbcode_text=newFSText
+		fsText.visible_characters=startingLength
+		
 		tw.interpolate_property(fsText,"visible_characters",startingLength,newFSText.length(),
 			1/TEXT_SPEED*(newFSText.length()-startingLength),
 			Tween.TRANS_LINEAR,
 			Tween.EASE_IN,
 			waitForAnim
 		)
-		fsText.visible_characters=startingLength
-		fsText.bbcode_text=newFSText
+		#print("FS Size: ",fsText.rect_size)
 	elif messageBoxMode==MSGBOX_DISP_MODE.POP_UP:
 		var popupText = $PopupContainer/RichTextLabel
 		popupText.bbcode_text = "[center]"+text.bbcode_text+"[/center]"
@@ -1042,7 +1060,7 @@ func advance_text()->bool:
 		txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
 			1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
 		)
-	print("Tweening... waitForAnim is "+String(waitForAnim))
+	#print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
 	waitForAnim=0
 	#If there was any processing done at all, this should be true

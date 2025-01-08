@@ -525,7 +525,7 @@ margin_bottom = 433.0
 icon = ExtResource( 44 )
 label = "R2-2"
 
-[node name="RE2-3" parent="ActorFrame_PartSelect/1>Chapter R2-1" index="3" instance=ExtResource( 33 )]
+[node name="RE2-2A" parent="ActorFrame_PartSelect/1>Chapter R2-1" index="3" instance=ExtResource( 33 )]
 margin_left = 970.0
 margin_top = 240.0
 margin_right = 1088.0

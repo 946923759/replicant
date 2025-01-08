@@ -10,7 +10,7 @@
 Music Test	What Is going on	test_music,test_tween,test_portraitMask
 Choice Test	AASBBBDFD	test_choice,test_choice_design
 Variable Test	Tests variables	test_var,test_username
-Font Test	Tests fonts, colors, pauses.	test_font,test_textPause
+Font Test	Tests fonts, colors, pauses.	test_font,test_textPause,test_very_long_text
 BBCode FS Test	Tests BBCode when using fullscreen text	test_text_bbcode
 Background Test		test_background,test_background_custom,test_background_advanced
 Background Color test		test_blackbg,test_bgcolor

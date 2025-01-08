@@ -14,6 +14,7 @@ func _input(event):
 func _process(delta):
 	var s = get_viewport().get_visible_rect().size
 	$"Not an ActorScroller".position.x=s.x-670
+	$"Not an ActorScroller".position.y=s.y/2
 
 func _on_ActorScroller_input_accepted(selection,destName):
 	if destName!="":

@@ -315,11 +315,11 @@ func _input(event):
 		input_go_back()
 		return
 	# Does not work
-#	elif Input.is_action_just_pressed("DebugButton1"):
-#		var p = Globals.get_save_directory('systemData')
-#		print("[RE-ScreenSelectChapter] system shell is opening "+p)
-#		if OS.get_name() == "X11":
-#			OS.execute("xdg-open",[p], false)
+	elif Input.is_action_just_pressed("DebugButton1"):
+		#var p = Globals.get_save_directory('systemData')
+		#print("[RE-ScreenSelectChapter] system shell is opening "+p)
+		if OS.get_name() == "X11":
+			OS.execute("xdg-open",['Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv'], false)
 	elif Input.is_action_just_pressed("DebugButton5"):
 		Globals.chapterDatabase_RE=Globals.load_database("res://Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
 		get_tree().reload_current_scene()

@@ -94,68 +94,56 @@ portraits	61
 emote	61	1
 /Himeko	307302	Bronya, do you feel better?	布洛妮娅，好些了么？	ブローニャ……。	NONE
 speaker	Bronya
-portraits	61	60
+portraits	55	61	60	62
 emote	61	1
 emote	60	4
 msg	307303	Why won't she wake up... Theresa, what's wrong with her!?	希儿为什么醒不过来…德丽莎，她到底怎么样了！	ゼーレはどうして目覚めないのですか……テレサ、ゼーレは一体どうしてしまったのですか！	NONE
 speaker	Theresa
-portraits	61	62
 emote	61	1
 emote	62	1
 msg	307304	Bronya, Seele is……	布洛妮娅，希儿她……	ブローニャ、ゼーレは……。	NONE
 speaker	Emesa
-portraits	55	62
 emote	55	4
 emote	62	1
 msg	307305	Hey! Did you all forget me as a doctor! What's in your head!	喂！你们几个是不是忘了还有我这个医生在啊！没有医学常识的人瞎想什么！	おいおいっ！お前ら、ここに医者がいることを忘れてないか！？医療の心得もない奴らが、適当なこと抜かすんじゃねえよ！	NONE
 msg	307306	Get away! Put her down! What if she has wounds!	让开！把病人放下平躺！要是希儿身上有什么伤怎么办！	どけっ！病人の周りでメソメソすんな！ゼーレの身体に障ったらどうする！	NONE
 speaker	Bronya
-portraits	55	60
 emote	55	4
 emote	60	4
 msg	307307	Eh…ok.	唔…好的。	エミザ……分かりました。	NONE
 speaker	Emesa
-portraits	55	60
 emote	55	1
 emote	60	4
 msg	307308	Let me see……	让我看看……	どれどれ……。	NONE
 msg	307309	Hmmm, a little infection from trauma, a slightly weak heartbeat and pulse, and a fever.	嗯，身上有些外伤感染，心律脉搏有些虚弱，还有一些热度。	うーん、外傷による感染が少し、心拍と脈拍がやや弱く、それに熱があるな。	NONE
-portraits	55	60
 emote	55	2
 emote	60	4
 msg	307310	It's fine! She's probably in a temporary coma from the Herrscher's attack. If anything, we're lucky it's only this bad!	放心吧，没什么大问题，应该是受到了强大的冲击暂时昏迷了，毕竟是律者的攻击，这已经是很幸运了！	安心しろ、大したことない。きっと強い衝撃を受けたせいで、長期的に気を失っているだけだ。何たって律者の攻撃なんだからな。むしろ、この程度で済んでラッキーだ！	NONE
 speaker	Theresa
-portraits	55	62
 emote	55	2
 emote	62	1
 msg	307311	But, but I told you……	不，我不是和你说……	いえ、言ったでしょ……。	NONE
 speaker	Bronya
-portraits	55	60
 emote	55	2
 emote	60	4
 msg	307312	Really? Are you telling the truth?	真的么…你说的是真的么！？	本当ですか……それは本当ですか！？	NONE
 speaker	Himeko
-portraits	61	60
 emote	61	1
 emote	60	4
 msg	307313	If Emesa says it then it must be true. After all, I'm practically on death's doorstep and Emesa's been able to keep me alive. You can trust her.	布洛妮娅，既然埃米沙这么说了应该没什么大问题，要知道她可是让我这种半只脚踩在坟墓里的人活到了现在，相信她吧。	ブローニャ、エミザがそう言うならきっと大丈夫よ。私だって棺桶に片足を突っ込んだのに、エミザのおかげで生きてられたんだから。信じてあげましょう。	NONE
 speaker	Theresa
-portraits	61	62
 emote	61	1
 emote	62	1
 msg	307314	Himeko……	姬子……	姫子……。	NONE
-portraits	61	62
 emote	61	1
 emote	62	2
 msg	307315	... Yeah, she's right. Seele will be fine.	嗯，这个孩子说的没错…希儿一定没什么问题的。	ええ、その子の言う通りよ……ゼーレは、きっと大丈夫。	NONE
 speaker	Bronya
-portraits	61	60
 emote	61	1
 emote	60	4
 msg	307316	……	……	……。	NONE
 msg	307317	Really……really……	是么……没问题么……	そうなのですか……大丈夫なのですか……。	NONE
 msg	307318	That's……	真是……	本当に……。	NONE
-portraits	61	60
 emote	61	1
 emote	60	2
 msg	307319	so good……	太好了……	よかった、よかった……です……。	NONE

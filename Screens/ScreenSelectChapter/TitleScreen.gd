@@ -185,6 +185,10 @@ func _input(event):
 		return
 	elif Input.is_action_just_pressed("ui_cancel"):
 		$FadeOut.OffCommand("ScreenTitleMenu")
+	elif OS.is_debug_build() and Input.is_action_just_pressed("DebugButton1"):
+		var p = "ch-sel-db.tsv"
+		if OS.get_name() == "X11":
+			OS.execute("xdg-open",["ch-sel-db.tsv"], false)
 	
 	if tmpChNum!=curChapterNum:
 		$Click.play()

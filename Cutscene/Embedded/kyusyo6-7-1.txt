@@ -45,8 +45,8 @@ msg	308443	Oh, whatever! As long as we can get there, right?	哎呀你管它呢�
 
 emote	54	3
 emote	67	4
-tween	during	54	decelerate,.5;addx,-230;addy,50;zoom,1.2
-tween	during	67	decelerate,.5;addx,-250;addy,50;zoom,1.2
+tween	during	54	decelerate,.5;addx,-300;addy,50;zoom,2
+tween	during	67	decelerate,.5;addx,-350;addy,50;zoom,2
 tween	during	011/007_1280x720	decelerate,.5;addx,-200;zoom,1.2
 msg	308444	Wow, the Moonlight Throne is in terrible shape. If my mom saw this, she'd have a stroke. What in the world could have done this to it?	话说从近处看还真是惨呢~到底是什么样的东西把月光王座弄成这副样子的，要是妈妈看见了一定会心疼死。	近くで見ると本当に悲惨だなぁ！一体、何が月光王座をこんな姿にしたんだ？ママに見られたら卒倒もんだぞ、こりゃ。	NONE
 speaker	Yiserin
@@ -61,9 +61,7 @@ msg	308446	Anyway, let's find out if there is a way to enter the Moonlight Thron
 bg	007/006_1280x720
 stopmusic	3.0
 
-tween	during	54	zoom,1.0
-tween	during	67	zoom,1.0
-portraits	54	67
+portraits	
 emote	54	2
 emote	67	4
 msg	308447	E- Everyone watch your step... If you fell from this height, you'd die for sure...	唔…大家小心脚下…要是从这里摔下去就完了……	み、みんな気を付けて……ここから落ちたら、おお、お、おしまいだからね……。	NONE
@@ -100,7 +98,7 @@ msg	308454	Hmph!	嘿咻—！	よいしょっと。	NONE
 msg	308455	Phew! I managed to get in...	呼！总算是进来了……	ほっ、何とか入れたわ……。	NONE
 bg	011/009_1280x720
 music	Fortress of Lies - Vocals
-
+portraits	54	67
 emote	54	3
 emote	67	1
 msg	308456	(Cough)....! The concentration of Honkai Energy here is much higher than average... All the energy outside must be leaking out from here.	咳咳！这里的崩坏能浓度果然比预想的还要高……果然外界的崩坏能都是从这里散发出来的么。	コホン……！ここの崩壊エネルギー濃度、やっぱり平均値を上回ってる……外を漂う崩壊エネルギーもここから漏れ出たのかしら。	NONE

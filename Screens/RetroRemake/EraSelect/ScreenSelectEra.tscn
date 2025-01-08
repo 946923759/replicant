@@ -17,6 +17,8 @@
 
 [node name="ScreenSelectEra" instance=ExtResource( 2 )]
 script = ExtResource( 11 )
+PrevScreen = "Quit"
+HandleRightClickAsB = true
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]
 anchor_right = 1.0

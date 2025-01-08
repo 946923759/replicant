@@ -420,7 +420,7 @@ margin_right = 464.0
 margin_bottom = 50.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 4 )
-text = "RRE:X:B:2024082200"
+text = "RRE:X:B:2025010700"
 script = SubResource( 14 )
 __meta__ = {
 "_editor_description_": "CODE:REGION:DIST:REL:YYYYMMDDXX

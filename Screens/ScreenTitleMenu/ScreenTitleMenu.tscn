@@ -169,13 +169,13 @@ align = 1
 [node name="Version" type="Label" parent="GridContainer"]
 margin_left = 187.0
 margin_top = 7.0
-margin_right = 333.0
+margin_right = 339.0
 margin_bottom = 57.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 16 )
-text = "v0.79c"
+text = "v0.79d"
 
 [node name="Control" type="Control" parent="GridContainer"]
 margin_top = 68.0

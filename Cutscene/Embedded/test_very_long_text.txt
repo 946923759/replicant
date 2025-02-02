@@ -1,1 +1,15 @@
-msg	Our victory at ME Corporation is only the first step in our counterattack. Now that we've secured the weapons manufacturing plant, we have to fight back against the Herrschers. Like Seele said, it's only going to get harder from here on out.
+#LANGUAGES	KEY	EN
+msg	0	Our victory at ME Corporation is only the first step in our counterattack. Now that we've secured the weapons manufacturing plant, we have to fight back against the Herrschers. Like Seele said, it's only going to get harder from here on out.
+msgbox_close
+set_fs	true
+msg	0	This will test the full screen text filling up the screen. When it fills up, the text will be cleared.
+/Kiana	302778	Kiana became mankind's worst nightmare, and by the guidance of the Honkai, became a demon whose sole purpose was to destroy everything.	琪亚娜成为了人类的噩梦，在崩坏的驱使下成为了仅仅为了毁灭一切而存在的恶魔。	キアナは人類の悪夢となり、崩壊の導きによって、全てを滅ぼすためだけに存在する悪魔となった。	NONE
+msg	302779	She was quietly floating over this star ... unconscious, unmoving, unemotional ... just waiting for the command given by the Honkai and executing the goal of the Honkai.	她安静地漂浮在这颗星球的上空…没有意识，没有动作，也没有感情…仅仅只是等待着崩坏给予的指令，消灭崩坏标记的目标。	彼女は静かにこの星の上空を漂っていた……意識もなく、動くこともなく、感情もないまま……ただ崩壊が与える命令だけを待ち、崩壊が示した目標を消滅させるだけ。	NONE
+msg	302780	Every time the flame of human civilization reignited, she appeared before the rebels and slaughtered them with absolute power.	每当人类文明的火种燃起的时候，她就会出现在那些反抗者的头顶，用绝对的力量将他们屠戮殆尽。	人類の文明の火種が燃え上がるたびに、彼女は反抗する者たちの前に現れ、絶対的な力で彼らを虐殺し尽くした。	NONE
+msg	302781	She kept repeating the same thing over and over.	她一直重复着同样的事情。	彼女はずっと同じことを繰り返していた。	NONE
+msg	302782	Killing ... Waiting ... Killing ... Waiting ... Killing ...	杀戮…等待…杀戮…等待…杀戮……	殺戮……待機……殺戮……待機……殺戮……。	NONE
+msg	302783	Long enough for time to lose all meaning...	这段漫长的过程不知道经历了多久……	この長い長い道のりを、どれだけ過ごしたのか……。	NONE
+msg	302784	It could be just a few hundred years ... or even tens of thousands of years ...	也许只有短短的数百年…也许是漫长的数万年……	わずか数百年かもしれないし……或いは数万年もの長きに及ぶかもしれない……。	NONE
+msg	302785	She no longer remembered how long she stood on the desolate land.	她已经不记得自己在荒芜的大地上矗立了多久。	彼女はもう、自分が荒れ果てた大地にどれだけ立っていたのか、それすら覚えていなかった。	NONE
+msg	302786	Until the species called humanity is completely exterminated and the spear is put away, the consciousness of the time when we were human may never return...	或许直到名为人类的物种完全灭绝，才能停下自己的刀刃，重新恢复了意识……	人類という名の種が完全に根絶し、矛を収めるその時まで、人間だった頃の意識が戻ることはないのかもしれない……。	NONE
+msg	302787	However, her consciousness suddenly awakened.	但只有那一刻她没有忘记。	しかし、彼女の意識は突然目覚める。	NONE

@@ -21,6 +21,8 @@ func _ready():
 		$Background/Kyuushou.visible = saveData[1] & 1
 		$Background/Mei.visible = saveData[1] & 1<<8
 	
+	# godot doesn't support floating point z. What this is actually doing
+	# is controlling how far a character moves when you move the mouse.
 	$Background/Kiana.set_meta("zorder",1)
 	$Background/Kyuushou.set_meta("zorder",1)
 	
@@ -67,7 +69,10 @@ func _input(event):
 		#var mouseZoom = Globals.gameResolution*1.2
 		if !OS.has_feature("mobile"):
 			update_background_parallax(event.position)
+	elif Input.is_action_just_pressed("ui_pause"):
+		ItemScrollerNewScreen(-1,"RE-ScreenProgrammerCredits")
 	curMenuActor.input(event)
+	
 
 func switch_submenus(newMenu:String):
 	print("Switching to "+newMenu)

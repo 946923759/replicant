@@ -100,6 +100,10 @@ func OffCommand():
 
 func set_selection(sel:int, play_sound:bool=true):
 	#print("wtf")
+	if sel < 0:
+		sel = get_child_count()-2
+	elif sel > get_child_count()-2:
+		sel = 0
 	keyboard_selection=sel
 	
 	#print("GainFocus: "+String(sel))
@@ -138,17 +142,9 @@ func input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
 	if Input.is_action_just_pressed("ui_down"):
-		if keyboard_selection<get_child_count()-2:
-			set_selection(keyboard_selection+1)
-		else:
-			set_selection(0)
-		#print(keyboard_selection)
-		#update_keyboard_selections()
+		set_selection(keyboard_selection+1)
 	elif Input.is_action_just_pressed("ui_up"):
-		if keyboard_selection<=0:
-			set_selection(get_child_count()-2)
-		else:
-			set_selection(keyboard_selection-1)
+		set_selection(keyboard_selection-1)
 		#update_keyboard_selections()
 	elif Input.is_action_just_pressed("ui_select"):
 		#update_keyboard_selections()

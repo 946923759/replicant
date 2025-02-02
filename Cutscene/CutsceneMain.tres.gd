@@ -329,7 +329,15 @@ func load_state(d: Dictionary):
 		else:
 			printerr("Couldn't find music node "+d['music'])
 
-func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:bool=false)-> int:
+"""
+Processes where to jump to.
+Messages: The message array
+curMessage: The current message you're on (Same as messages[cur_pos])
+speculative: Ignore missing/invalid variable errors in case we're processing ahead for choices and not jumping somewhere
+
+Returns: index of the jump destination, if there was one. If there was no destination, returns cur_pos.
+"""
+func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:bool=false) -> int:
 	var labelToJump = curMessage[1]
 	
 	var varName="____"
@@ -339,9 +347,11 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 	var SHOULD_JUMP:bool=false
 	
 	
-	if varName=="____":
+	if varName=="____": #Convert jmp into 'condjmp true'
 		SHOULD_JUMP=true
-	elif varName=="__choice__":
+	# This is an internal handler for condjmp_c.
+	# A line like "condjmp_c no_more_choices 3" gets compiled into "condjmp no_more_choices __choice__ 3"
+	elif varName=="__choice__": 
 		print("PROCESSING CONDJUMP... DEST IS "+labelToJump+", TEST "+curMessage[3]+" == "+String(choiceResult))
 		SHOULD_JUMP=(choiceResult==int(curMessage[3]))
 		print("Should jump? "+String(SHOULD_JUMP))
@@ -364,20 +374,23 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 				else:
 					printerr("String is malformed in var command, missing end")
 			elif typeof(cutsceneVars[varName])==TYPE_INT:
+				print("Checking "+String(cutsceneVars[varName])+" "+varToCheck)
 				match varToCheck[0]:
-					'&':
+					'&': #Jump if bit at pos true
 						var bitflag = int(varToCheck.substr(1))
 						SHOULD_JUMP = cutsceneVars[varName] & (1<<bitflag)
-					'~':
+					'~': #Jump if bit at pos false
 						var bitflag = int(varToCheck.substr(1))
-						SHOULD_JUMP= ~cutsceneVars[varName] & (1<<bitflag)
-					'>':
+						#print("Checking ~"+String(cutsceneVars[varName])+" & (1<<"+String(bitflag)+")")
+						SHOULD_JUMP = ~cutsceneVars[varName] & (1<<bitflag)
+						#SHOULD_JUMP= (cutsceneVars[varName] & (1<<bitflag)) == 0
+					'>': #Jump if int is greater than
 						SHOULD_JUMP = cutsceneVars[varName] > int(varToCheck)
-					'<':
+					'<': #Jump if int is less than
 						SHOULD_JUMP = cutsceneVars[varName] < int(varToCheck)
-					'!':
+					'!': #Jump if int is not equal to
 						SHOULD_JUMP = cutsceneVars[varName] != int(varToCheck)
-					_:
+					_:  #Jump if int is equal to
 						if varToCheck.is_valid_integer():
 							SHOULD_JUMP = cutsceneVars[varName]==int(varToCheck)
 						else:
@@ -398,6 +411,7 @@ func process_jumps(messages:Array, curMessage:Array, cur_pos:int,speculative:boo
 		for i in range(curPos,messages.size()):
 			if messages[i][0]=='label' and labelToJump==message[i][1]:
 				return i
+		#print("Reached the end of the labels, restarting from the beginning!")
 		for i in range(0,curPos):
 			if messages[i][0]=='label' and labelToJump==message[i][1]:
 				return i
@@ -411,11 +425,7 @@ Because otherwise you could have something like a jump that
 jumps to a table of choices OR another message.
 """
 func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
-	"""
-	TODO: This doesn't work because then you can't have a choice, a message,
-	and then a jump.
-	...Or I guess you can just repeat the message in each label.
-	"""
+	#print("Running ahead from pos "+String(cur_pos))
 	choiceResult = -1
 	#var starting_pos = cur_pos
 	
@@ -482,9 +492,10 @@ func advance_text()->bool:
 
 	while true:
 		if curPos >= message.size():
-			print("Fix your code, idiot. You already hit the end.")
-			print("curPos: "+String(curPos))
-			print("message size: "+String(message.size()))
+			#print("Fix your code, idiot. You already hit the end.")
+			#print("curPos: "+String(curPos))
+			#print("message size: "+String(message.size()))
+			txtTw.kill()
 			return false
 		var curMessage = message[curPos]
 		
@@ -893,7 +904,7 @@ func advance_text()->bool:
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
-			'choice','nop','label':
+			'choice','dchoice','nop','label':
 				pass
 			'var':
 				var varName:String = curMessage[1]

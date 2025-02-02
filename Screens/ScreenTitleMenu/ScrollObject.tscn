@@ -28,9 +28,9 @@ position = Vector2( 250.794, 141.828 )
 script = ExtResource( 3 )
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-margin_left = -274.0
+margin_left = -273.0
 margin_top = -78.0
-margin_right = 91.0
+margin_right = 92.0
 margin_bottom = 26.0
 rect_scale = Vector2( 1.5, 1.5 )
 mouse_filter = 0

@@ -186,6 +186,8 @@ func _input(event):
 		_on_OKButton_pressed()
 	elif Input.is_action_just_pressed("ui_select"):
 		handle_clicked(keyboard_selection)
+	elif Input.is_action_just_pressed("ui_cancel"):
+		handle_clicked(4)
 
 #If Android back button pressed
 func _notification(what):
@@ -199,7 +201,7 @@ func handle_clicked(sender:int):
 		next_screen = info['screen']
 		#print("Go to "+next_screen)
 		$ConfirmScreen.play()
-		$ColorRect.OffCommand(next_screen)
+		$ColorRect.OffCommand(next_screen,"ScreenTitleMenu")
 		#t.start()
 		#yield(t,"tween_completed")
 		#Globals.change_screen(get_tree(),next_screen)

@@ -258,6 +258,7 @@ func gestalt_set_textures(sprName):
 		return false
 	
 	portrait_textures = Dictionary()
+	#What is this even doing? It never gets set to true
 	var foundDefaultYet:bool=false
 	for path in matching:
 		if !path.ends_with(".png"):
@@ -283,30 +284,14 @@ func gestalt_set_textures(sprName):
 #		portrait_textures[i]=ImageTexture.new()
 #		portrait_textures[i].create_from_image(image);
 
-func set_texture_wrapper(sprName):
-	lastLoaded=sprName
-	cur_expression="0"
-	if sprName in Globals.database:
-		var toLoad:Array = Globals.database[sprName]
-		print("Got textures to load... "+String(toLoad))
-		var newDict = {}
-		for i in range(len(toLoad)):
-			newDict[String(i)]=toLoad[i]
-		replicant_set_texture(newDict)
-	else:
-		print(sprName+" not in portrait database! Falling back...")
-		gestalt_set_textures(sprName)
 
-func replicant_set_texture(toLoad:Dictionary):
+func replicant_set_textures(toLoad:Dictionary):
 	portrait_textures = Dictionary()
 	#portrait_textures.resize(toLoad.size())
 	#imageTex=Array()
 	#imageTex.resize(toLoad.size())
 	for emoteName in toLoad:
-		var sprName = toLoad[emoteName]
-		if sprName.ends_with(".png"):
-			#print("Hey moron, don't put .png in the portrait names!")
-			sprName=sprName.rstrip(".png")
+		var sprName = toLoad[emoteName].trim_suffix(".png")
 		#set_texture(load("res://Cutscene/Portraits/"+sprName+".png"))
 		var f = File.new()
 		if f.file_exists("res://Portraits/"+sprName+".png.import"):
@@ -338,3 +323,17 @@ func replicant_set_texture(toLoad:Dictionary):
 			
 	#print(portrait_textures)
 	update()
+
+func set_texture_wrapper(sprName):
+	lastLoaded=sprName
+	cur_expression="0"
+	if sprName in Globals.database:
+		var toLoad:Array = Globals.database[sprName]
+		print("Got textures to load... "+String(toLoad))
+		var newDict = {}
+		for i in range(len(toLoad)):
+			newDict[String(i)]=toLoad[i]
+		replicant_set_textures(newDict)
+	else:
+		print(sprName+" not in portrait database! Falling back...")
+		gestalt_set_textures(sprName)

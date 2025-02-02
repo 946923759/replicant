@@ -11,12 +11,14 @@ onready var scrollContainer:ScrollContainer = $ScrollContainer
 
 func set_text(arr:Array):
 	var txt= \"\"
+	var i = 0
 	for l in arr:
 		#print(l)
-		txt+=\"[\"
+		txt+=String(i).pad_zeros(3)+\" [\"
 		for a in l:
 			txt+=String(a)+\", \"
 		txt+=\"]\\n\"
+		i+=1
 	$ScrollContainer/Label.text=txt
 	#print(\"[Cutscen Debug]\")
 	#print(txt)

@@ -7,6 +7,12 @@ func _ready():
 	# Wipe this data so the chapter select screens don't
 	# navigate to the wrong chapter
 	Globals.currentEpisodeData = null
+	
+	match Globals.previous_screen:
+		"RE-ScreenTitleMenu":
+			$ActorScroller.set_selection(1,false)
+		"ScreenTitleMenu":
+			$ActorScroller.set_selection(2,false)
 
 func _input(event):
 	scroller.input(event)

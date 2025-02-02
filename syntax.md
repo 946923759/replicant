@@ -125,8 +125,8 @@ Add to choice table, set custom result when choice picked. Short for "destinatio
 Mixing dchoice and choice can cause choices to be overwritten, so you should only use one. The only time you should ever need dchoice is if you want to make disappearing choices.
 
 ```py
-dchoice	100	Test choice 1
-dchoice	200	Test choice 2
+dchoice	10	Test choice 1
+dchoice	20	Test choice 2
 msg	Pick a choice
 
 # Jump if dchoice 2 was picked.

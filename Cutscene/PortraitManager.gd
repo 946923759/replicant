@@ -1,7 +1,7 @@
 extends Control
 signal portrait_positions_updated
 
-const POOL_SIZE = 8
+#const POOL_SIZE = 8
 var SCREEN_CENTER: Vector2
 #var spacing = 400	# 200 px
 export(int,200,600,50) var spacing = 400
@@ -212,19 +212,14 @@ func dim_idx(idx:int):
 func size():
 	return cache.size()
 
-const vnPortraithandler = preload("res://Cutscene/VNPortraitHandler.gd")
+#const vnPortraithandler = preload("res://Cutscene/VNPortraitHandler.gd")
 func _ready():
 	print("[PORTRAITMAN] Init!")
 	SCREEN_CENTER = Vector2(self.rect_pivot_offset.x, self.rect_pivot_offset.y)
 	
-	
-	for _i in range(5):
-		var p = Node2D.new()
-		p.set_script(vnPortraithandler)
-		p.modulate.a=0.0
-		#p.scale=Vector2(.75,.75) #We do it here instead of the whole node because scaling the whole node breaks positioning.
-		portraits.append(p)
-		add_child(p)
+	for c in get_children():
+		c.modulate.a=0.0
+		portraits.append(c)
 	connect("resized",self,"update_positions")
 	set_zoom_level_realtime(zoom_level)
 	tween = Tween.new()

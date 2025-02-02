@@ -30,30 +30,34 @@ msg	These choices will disappear after being clicked by setting variables and ju
 
 var	kyuu	0
 label	choice_loop
-condjmp	no_more_choices	kyuu	3
+nop	condjmp	no_more_choices	kyuu	3
 
 nop	condjmp_short_var	1	kyuu	&2
 
 nop	This is a really badly designed if-else statement.
 
 condjmp	fi	kyuu	>0
-/Kyuushou	Hello, player!
+/Kyuushou	Hello, %player%!
 label	fi
 / 	What should I ask next...?
 
-
-nop	Should this be changed to "cmp	kyuu	&0" and "condjmp_short	1"?
-
-condjmp	fi	kyuu	~0
+nop	Jump and skip this choice if bit 0 is set
+condjmp	fi	kyuu	&0
 choice	What's your full name?
 label	fi
 
-condjmp	fi	kyuu	~1
+nop	Jump and skip this choice if bit 1 is set
+condjmp	fi	kyuu	&1
 choice	You're a Herrscher, right?
 label	fi
 
+nop	Display this choice if there are no more choices
+condjmp	fi	kyuu	<3
+choice	I'm done talking.
+label	fi
+
 condjmp_c	kdest2	2
-condjmp_c	kdest3	3
+condjmp_c	no_more_choices	3
 
 label	kdest1
 /Kyuushou	My name is Kyuushou Houraiji, the savior of the world!

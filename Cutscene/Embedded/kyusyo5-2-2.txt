@@ -29,15 +29,15 @@ extend	307114	……	……	…………。	NONE
 speaker	Emesa
 portraits	55
 emote	55	1
-msg	307115	It's been 20 minutes, where's Himeko?	已经过了20分钟了，姬子怎么还没回来？	もう20分は経ったはず。姫子のヤツ、どうして来ないんだ？	NONE
+msg	307115	It's been twenty minutes. Why isn't Himeko back yet?	已经过了20分钟了，姬子怎么还没回来？	もう20分は経ったはず。姫子のヤツ、どうして来ないんだ？	NONE
 portraits	55
 emote	55	4
-msg	307116	Things might go wrong…No! We need to find her!	难道是出事了…不行！我们去找她！	まさか、何かあったんじゃ……くそっ！探しに行くぞ！	NONE
+msg	307116	Did something happen...? Damn it, let's go find her!	难道是出事了…不行！我们去找她！	まさか、何かあったんじゃ……くそっ！探しに行くぞ！	NONE
 speaker	Himeko
 portraits	55	61
 emote	55	4
 emote	61	1
-msg	307117	Calm down, you guys were too slow, so I went to see the situation of the bridge.	不要总是一惊一乍的，是你们两个的速度太慢了，所以我刚才去调查了一下大桥附近的情况。	そんなすぐ慌てないでくれる？あなたたちがあまりにも遅いから、周囲の様子を見て来てたのよ。	NONE
+msg	307117	Don't jump to conclusions. I was just investigating the bridge because you two took too long.	不要总是一惊一乍的，是你们两个的速度太慢了，所以我刚才去调查了一下大桥附近的情况。	そんなすぐ慌てないでくれる？あなたたちがあまりにも遅いから、周囲の様子を見て来てたのよ。	NONE
 msg	307118	Later when it's exploded we need to find a place to hide near the bridge, there's a good place in the pier, can be a good option, follow me.	一会炸药引爆的时候我们需要找一个靠近大桥的地方隐蔽，在桥墩的位置有一块可以立足的地方，是个不错的选择，跟我来吧。	爆薬の起動後、すぐ動けるよう近くに隠れる必要があるわ。橋脚の辺りに丁度いい足場があったから、そこに隠れましょう。ついて来てちょうだい。	NONE
 speaker	
 portraits	61

@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	59	60
 match_names	Bronya	_DIM_ALL_WHEN_EMPTY
 speaker	
@@ -6,12 +6,12 @@ bg	009/002_1280x720
 msg	300121	Boom!	轰！！	ゴォン！！
 se	DLC_CH00_EV09_WarningAlertWhileDream
 /Loudspeaker	300122	“Warning! The base is under attack. Engaging Red Alert!”	「警报！警报！基地遭到攻击，进入一级警备！进入一级警备！」	「警報！警報！基地が攻撃を受けました。1級警戒レベル！1級警戒レベル！」
-/ 	300123	What's happening?	呃！发生了什么事？	え！何が起きたの？
-msg	300124	Oh...	唔…	うぅ……。
+/ 	300123	Ah! What's happening?	呃！发生了什么事？	え！何が起きたの？
+msg	300124	Ugh...	唔…	うぅ……。
 speaker	Bronya
 portraits	60
 emote	60	3
-msg	300125	Attention! All units must fight back and stop them from coming in!	各单位注意！立即进行反击！一定要阻止它们进入！	各ユニット注意！直ちに反撃！彼らの進入を必ず阻止してください！
+msg	300125	Attention all units! Counterattack immediately! Prevent them from advancing!	各单位注意！立即进行反击！一定要阻止它们进入！	各ユニット注意！直ちに反撃！彼らの進入を必ず阻止してください！
 speaker	
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
 shake_camera
@@ -42,7 +42,7 @@ msg	300135	...	……	……。
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
 shake_camera
 msg	300136	Boom!	轰！！！	ゴオン！！！
-msg	300137	“Report! The frontier is overwhelmed! All squads to the frontier now!”	「警报！警报！前沿防线遭到突破！各小队即刻前往支援！」	「警報！警報！前線防衛ラインが突破されました！各小隊は今すぐ支援に向かってください！」
+msg	300137	"Warning! Warning! The front line of defense has been breached! All Squads, please head to support immediately!"	「警报！警报！前沿防线遭到突破！各小队即刻前往支援！」	「警報！警報！前線防衛ラインが突破されました！各小隊は今すぐ支援に向かってください！」
 se	DLC_CH00_EV10_ExplosionWithCrowdScream
 shake_camera	1
 msg	300138	Boom!	轰！！！	ゴオン！！！

@@ -10,7 +10,7 @@ portraits	61	66
 emote	61	1
 emote	66	0
 msg	307033	Ok.	好的。	ご苦労様。	NONE
-msg	307034	Go back first, I will do the rest.	你们先回去吧，剩下的我来好了。	あなたたちは先に戻っていいわ。あとは私がやるから。	NONE
+msg	307034	You guys should go back first. I'll take care of the rest.	你们先回去吧，剩下的我来好了。	あなたたちは先に戻っていいわ。あとは私がやるから。	NONE
 speaker	Graymoth Member
 portraits	61	66
 emote	61	1

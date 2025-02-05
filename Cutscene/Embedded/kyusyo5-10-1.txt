@@ -1,0 +1,80 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Theresa
+bg	009/068_1280x720
+music	Voice of no Return
+portraits	60	62	55
+match_names	Bronya	Theresa	Emesa	_DIM_ALL_WHEN_EMPTY
+emote	60	1
+emote	62	1
+/Theresa	307644	This is an old wine cellar I used to hide out in after I left you guys.	这里是我待过的酒窖，在离开你们之后有很长一段时间我都是在这里度过的。	ここは、あたくしが使っていた酒蔵なの。あなたたちのもとを離れてからかなりの間、ここで過ごしていたのよ。	NONE
+msg	307645	There's food and water alongside the wine. It should be enough for us to live for a while.	这里除了酒之外还储藏着一些食物和水，足够我们生活一段时间。	ここにはお酒以外にも食べ物や水も保管されているわ。あたくしたちが当面の間、生活するには十分なくらいね。	NONE
+/Bronya	307646	Okay.	好。	わかりました。	NONE
+msg	307647	.....Let's get Seele and Emesa in bed first. They need to rest.	……先把希儿和埃米沙安顿好吧，她们需要好好休息。	……先にゼーレとエミザを寝かせましょう。彼女たちを休ませる必要があります。	NONE
+/Theresa	307648	Yes…you're right.	嗯…你说的对。	ええ……そうね。	NONE
+emote	55	3
+/Emesa	307649	Ha…ha…ha……	哈…哈…哈……	ハァ、ハァ……ハァ……。	NONE
+/Theresa	307650	She's burning up... The Honkai energy is corrupting her body! It's too difficult to survive in a Honkai irradiated environment like Academy City...	这孩子的身体很烫…崩坏能已经开始侵蚀她的身体了！果然在学园都市这样的崩坏环境中还是太勉强了么……	この子の身体、すごく熱い……崩壊エネルギーが彼女の身体を侵蝕しているわ！やっぱり、学園都市のような崩壊環境では無理があったのね……。	NONE
+msg	307651	Bronya, you stay here and watch her. I'll go find some water. We have to cool her down somehow...	布洛妮娅，你在这里看着她！我去找一些水来，至少先想办法给她降温……	ブローニャ、あなたはここで彼女を見ていて。私は水を探してくる。とにかく、何とかして彼女の熱を下げないと……。	NONE
+/Emesa	307652	Himeko…ha…ha……	姬子…哈…哈……	姫子……くっ、ハァ、ハァ……。	NONE
+emote	60	4
+emote	55	3
+/Bronya	307653	……	……	……。	NONE
+emote	60	4
+emote	62	1
+/Theresa	307654	Phew.... We can only give her some first aid. We have to figure out how to get out of Academy City as soon as possible. The longer we stay here, the worse the effects of the Honkai will become!	呼…我们能做的也只有这种应急处理了，得想办法尽快离开学园都市，在这里呆的越久，崩坏对她的影响就会越强！	ふぅ……私たちにできることはこれくらいの応急処置が限界ね。何とかして、急いで学園都市から逃げ出さないと。ここに長く留まれば、彼女に対する崩壊の影響がますます強くなっていくわ！	NONE
+/Bronya	307655	Seele... The same thing happened to her, right?	希儿…其实也是一样的吧。	ゼーレも……同じなのですよね。	NONE
+msg	307656	Actually... I already knew that nothing's improved. Seele, Himeko... Everyone else.... It's all because of me.	其实我知道的……根本什么都没有改变，希儿也是…姬子也是…都是因为我才……	ブローニャはわかっています……何も状況が好転していないことを……。ゼーレも、姫子も……皆、ブローニャのせいで……。	NONE
+/Theresa	307657	Bronya!	布洛妮娅！	ブローニャ！	NONE
+msg	307658	Bronya... Don't think about these things right now... That was Himeko's own decision, it had nothing to do with you... You have to pull yourself together, we've got to get out of this alive!	布洛妮娅…现在先不要想这些事情…那是姬子自己的决意，与你无关，你必须振作起来，我们得一起活着离开！	ブローニャ……今はそんなこと考えないで……あれは姫子自身の意志なのよ。あなたとは関係ないわ。ほら、しっかりしなきゃダメ。私たち皆、生きてここから出るのよ！	NONE
+emote	60	5
+emote	62	1
+/Bronya	307659	But Himeko's dead! I didn't even have a chance to apologize to her... Why.... Why must I be the only one to live?	可是姬子她已经死了啊！我连向她道歉的机会都没有……为什么…为什么只有我还活着呢……	しかし、姫子はきっともう死んでしまいました！ブローニャは姫子に謝る機会すらありません……どうしてなのですか……どうして、ブローニャだけが生きているのですか……。	NONE
+/Theresa	307660	Bronya...... Himeko's body wasn't going to last much longer. She's a strong woman, and she never wanted to end up facing death helplessly on a hospital bed. This was the best ending for her.	布洛妮娅…姬子的身体已经撑不了多久了，她是个要强的人，她绝对不希望自己最后瘫倒在病床上，无力地面对死亡，这对她来说是最好的归宿。	ブローニャ……姫子の身体はもう長くはなかったのよ。彼女は強がりだから、病床で無力なまま死と向き合う最後なんて絶対に望んでいなかったわ。これは、彼女にとって一番いい結末なのよ。	NONE
+/Bronya	307661	How can dying be the best ending? ... She always told me not to die in vain.... Why couldn't she follow her own words!?	死亡怎么可能是最好的归宿…她总是让我不要白白送死…不要白白送死…为什么自己却做不到呢！	死ぬことがどうして一番いい結末なのですか……彼女はいつもブローニャに無駄死にするなと言っていました……無駄死にするなって……どうして、自分がそれを守らないのですかッ！	NONE
+
+emote	60	4
+emote	62	1
+msg	307662	She said we would go back home together… To heal Seele… And defeat the Herrschers together..... Why....?	明明自己说着我们一起回去…一起治好希儿…然后一起对抗律者…为什么……	自分から皆で一緒に帰ろう……一緒にゼーレを治そう……そして、一緒に律者を倒そうと言っておいて……どうして……。	NONE
+msg	307663	……	……	……。	NONE
+
+/Theresa	307664	(glug, glug, glug)	咕咕咕。	ゴク、ゴク、ゴク。	NONE
+/Bronya	307665	....You're drinking. Just like Himeko used to do.	……你怎么也学着姬子喝起了酒。	……どうして、あなたまで姫子みたいにお酒を飲むのですか？	NONE
+/Theresa	307666	That's how you forget things faster. Want some?	这样才能更快忘掉一些事情，怎么样，要来一点么？	こうすれば、すぐに色々忘れることができるのよ。どう、少し飲む？	NONE
+
+emote	60	3
+emote	62	1
+/Bronya	307667	I'm sorry, I never intend to forget anything, and it is because of these past experiences that I am who I am now.	抱歉，我从来没有打算忘掉什么，正因为这些过去的经历才有了现在的我。	申し訳ありません。ブローニャは何かを忘れようと思ったことがありません。このような過去の経験があるからこそ、現在のブローニャがあるのです。	NONE
+msg	307668	I hate myself……	这个讨厌的我……	この忌々しいブローニャが……。	NONE
+
+/Theresa	307669	Don't be like that... You're a strong girl.	是么…真是坚强的孩子呢。	そう……本当に強い子ね。	NONE
+msg	307670	Bronya... Give up fighting the Herrschers. You'll only cause more causalities if you don't. We can leave Academy City and find a place to live quietly.	布洛妮娅…放弃与律者战斗吧，这样只会增加更多的牺牲。我们离开长空市，找一个远离律者的地方安静地生活吧。	ブローニャ……律者と戦うことは諦めなさい。このままじゃ、もっと犠牲が増えるだけよ。長空市から出て律者から遠く離れた場所を探して、静かに暮らしましょう。	NONE
+msg	307671	Himeko entrusted you to me. I will protect you. Himeko sacrificed herself because she didn't want you to become like her.	姬子把你们托付给我，我会保护好你们的，她牺牲了自己就是不想让你们变成下一个她。	姫子は、あなたたちのことをあたくしに託したの。あたくしがあなたたちを守るわ。姫子が自分を犠牲にしたのは、あなたたちを自分と同じようにしたくなかったからよ。	NONE
+emote	60	1
+emote	62	1
+/Bronya	307672	Living quietly... At some point, that kind of wish became impossible.	安静地生活…不知道什么时候开始，这种奢望已经变的如此遥不可及了。	静かに暮らす……いつの間にか、そんな願いは手の届かないものになってしまいました。	NONE
+msg	307673	To live quietly is why we've been fighting the Herrschers.... What you're talking about is nothing but escapism.	就是为了安静地生活我们才与律者战斗至今…你所说的只是名为苟且偷生的逃避罢了。	静かに暮らすためにブローニャたちはこれまで律者と戦い続けてきたのです……あなたの言っていることは、ただ生き残るだけの現実逃避です。	NONE
+/Theresa	307674	You're right... I've been running away from it all these years. But if it was Seele in Kiana's position, would you still be able to fight her?	你说的没错…这些年我一直都在逃避，但如果把琪亚娜换做是希儿的话你还能和她战斗么？	その通りよ……この数年、あたくしはずっと逃げ続けていたわ。でも、キアナの立場にゼーレがいたら、あなたは彼女と戦える？	NONE
+msg	307675	I have no other choice, the best result for me is no result…so what's the difference, it's just another way of dying.	我没有选择的余地，对于我来说最好的结果就是没有结果…所以逃避与否又有什么区别呢，只是换了一种方法死去罢了。	あたくしには選択の余地なんてないの。私にとって一番いい結果は“結果”がないこと……だから、逃げるのも逃げないのも同じ。ただ方法を変えて、死ぬだけよ。	NONE
+
+emote	60	4
+emote	62	1
+/Bronya	307676	I don't blame you... I understand your and Himeko's thoughts. But there's no way I can give up after I've sacrificed so much.	我并没有想要责怪你的意思…我也明白你与姬子的想法，但是现在的我在付出了如此多的代价后是不可能放弃的。	ブローニャは、あなたを責めるつもりはありません……ブローニャにもあなたや姫子の考えは分かりますから。しかし、今のブローニャはこれほどまでの代償を支払っています。今さら諦められません。	NONE
+
+emote	60	3
+emote	62	1
+msg	307677	Let me end this with the Herrscher.	就让我一个人和律者做个了结吧。	ブローニャが1人で律者と決着をつけてきます。	NONE
+
+/Theresa	307678	I guess I can't change your mind after all...	看来还是无法改变你的想法么……	やっぱり、あなたの考えを変えることは無理みたいね……。	NONE
+/Bronya	307679	Headmistress Theresa, I'm leaving Seele to you. I'm sure she's going to get weaker the longer she stays here, so please take care of her.	德丽莎园长，希儿后面就交给你了…她已经没有太多的时间了吧，所以拜托了。	テレサ学園長、ゼーレのことは任せました……きっと、このままここにいては時間とともに弱っていくのでしょう。ですから、お願いします。	NONE
+msg	307680	I'm her sister, so this is my responsibility.	我是希儿的姐姐，就让我在最后做一些姐姐应尽的责任吧。	ブローニャはゼーレの姉です。最後にブローニャに姉としての責任を果たさせてください。	NONE
+/Theresa	307681	Ok…if you really decide to do so.	好吧…既然你决定的话我也没办法了。	……あなたが決めたのなら、仕方ないわね。	NONE
+
+emote	60	4
+emote	62	1
+/Bronya	307682	Sorry.	抱歉。	すみません。	NONE
+/Theresa	307683	But I won't let Himeko's sacrifice be wasted. I promised her that I'd protect you and bring you home safe and sound.	但是，姬子的牺牲绝对不能白费…我和她约定好了，一定会保护好你们，把你们安全地带回去……	だけど、姫子の犠牲を無駄になんてあたくしにはできない……あたくしは彼女と約束したの。必ずあなたたちを守って、安全に連れて帰るって……。	NONE
+msg	307684	So... I'll stop you, even if I have to use force!	所以……就算是用武力也要阻止你！	だから……たとえ力づくになったとしても、あなたを止めてみせるわ！	NONE
+
+emote	60	3
+emote	62	1
+/Bronya	307685	!?	！？	——ッ！？	NONE

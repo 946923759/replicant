@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	59	60
 match_names	Seele	Bronya
 speaker	Seele				
@@ -21,7 +21,7 @@ speaker	Bronya
 msg	300054	Thank you for the hard work, Seele.	好的，辛苦了希儿。	はい、お疲れ様。ゼーレ。	Sim, obrigada. Seele.
 speaker	Seele				
 emote	59	2			
-msg	300055	Hehe!	嘿嘿~	エヘヘ～。	ehehe
+msg	300055	Eheheh~	嘿嘿~	エヘヘ～。	ehehe
 speaker	Bronya				
 emote	60	1			
 msg	300056	...	……	……。	……
@@ -41,7 +41,7 @@ speaker	Bronya
 msg	300062	Although Seele and I aren't related and she can be a bit annoying at times, I still treat her as if she was my sister.	希儿和我虽然没有血缘，但是我最重要的妹妹，虽然有时候会让人很困扰。	ゼーレとの血縁関係はありませんが大切な妹です。時々、とても困りますが。	Eu não tenho parentesco com Seele, mas é uma irmã importante. Às vezes quando estou em apuros.
 speaker	Seele				
 emote	59	3			
-msg	300063	Annoying? When!?	诶！会么？什么时候！？	え！そうなの？いつ！？	Huh! É assim mesmo? quando!?
+msg	300063	Huh?! Annoying? When?!	诶！会么？什么时候！？	え！そうなの？いつ！？	Huh! É assim mesmo? quando!?
 speaker	Bronya				
 emote	60	1			
 msg	300064	Right now.	比如现在。	例えば今です。	Por exemplo agora.
@@ -51,7 +51,7 @@ msg	300065	Ah!	呃！	うっ！	Ah!
 choice	300066	You two are adorable sisters.	真是令人羡慕的姐妹呢。	すごい仲がいいんだね。	Vocês são adoráveis irmâs
 choice	300067	You two are different in personalities.	真是性格迥异的姐妹呢。	変わった姉妹だね。	Vocês tem diferentes personalidades.
 emote	60	2			
-/Bronya	300068	Really? Perhaps you're right...	是么…或许如你所说……	そうですか……そうかもしれませんね……。	Talvez sim.......
+/Bronya	300068	Really, now...? Perhaps you're correct...	是么…或许如你所说……	そうですか……そうかもしれませんね……。	Talvez sim.......
 emote	60	1			
 msg	300069	Let's get back on topic. We were just talking about you. The documents don't indicate any physical trauma. Your memory loss may be due to psychological damage. But we can't rule out the effects of the Honkai, so we can't draw any conclusions yet.	言归正传，刚才谈到你的情况，从资料来看你身体没有明显的外伤，记忆的创伤很可能是因为精神上的刺激，但也不排除崩坏的影响，因此还不能完全下定论。	話を戻しましょう。ちょうどあなたのことを話していました。資料を見ると外傷はないようです。記憶は精神的なダメージによるものかもしれません。ですが、崩壊の影響も排除できませんので、まだ結論は出せません。	Voltando ao Tópico. Parece a partir das informações que você não tem nenhum trauma físico óbvio e a amnesia é provavelmente devido à estimulação mental, mas os efeitos do Honkai não podem ser descartados, portanto não é possível ser completamente conclusivo.
 msg	300070	But I think your symptoms are temporary. I'm sure you'll regain your memories, so don't worry about it. Just take it easy and you'll be fine. I'll do my best to help you.	不过我觉得这个症状只是暂时的，记忆一定会再次恢复的，所以你也不用着急，只要慢慢恢复就行了，我会尽自己最大的努力帮助你的。	ですが、この症状は一時的なものだと思います。記憶はきっと蘇るはずです。ですから、あわてないでください。ゆっくり回復すれば大丈夫です。最大限、努力してお手伝いします。	Mas eu acho que este sintoma é apenas temporário, a memória certamente voltará de novo, então você não precisa se apressar, apenas tomar seu tempo para se recuperar, eu vou tentar o meu melhor para ajudá-la.
@@ -59,15 +59,15 @@ speaker	Seele
 speaker	Seele				
 emote	59	1			
 emote	60	1			
-msg	300071	Yeah, yeah~ I feel better as long as my older sister is here.	嗯嗯~只要有姐姐大人在你就安心吧~	うん、うん～お姉ちゃんがいれば安心だよ～。	Você pode descansar tranquilo, desde que tenha sua irmã com você.
+msg	300071	Mm-hmm~ As long as Bronya is here, you can rest assured~	嗯嗯~只要有姐姐大人在你就安心吧~	うん、うん～お姉ちゃんがいれば安心だよ～。	Você pode descansar tranquilo, desde que tenha sua irmã com você.
 speaker	Bronya				
 emote	60	2			
 msg	300072	Let's leave it at that for today. Seele will show you around the base. You must be tired after everything that has happened, so please rest well.	那么今天就到这里吧，接下来希儿会为你介绍一下基地的情况，经历了一路的奔波你一定也累了，回去好好休息吧。	では、今日はこの辺にしておきましょう。あとはゼーレが基地の状況を紹介します。色々なことがあって疲れたでしょうから、ゆっくり休んでください。	Então vamos deixar por aqui hoje. Depois disso, Seele apresentará a base. Você pode estar cansado de várias coisas, então, por favor, descanse.
 speaker	Seele				
 speaker	Seele				
-msg	300073	Then leave the rest to me. Follow me!	那么下面就交给我吧，跟我来~	じゃあ、あとは私に任せてね。ついて来て！	Então deixe comigo. Me siga!
+msg	300073	Well then, leave the rest to me. Follow me!	那么下面就交给我吧，跟我来~	じゃあ、あとは私に任せてね。ついて来て！	Então deixe comigo. Me siga!
 portraits	59
 msg	300074	This is the Anti-Honkai resistance base. Welcome home.	这里是人类反抗军的基地，欢迎回家。	あらためて、対崩壊レジスタンスの基地へようこそ！	Bem-vindo de volta à base da resistência Anti-Honkai!
 msg	300075	My name is Seele Vollerei. You can call me Seele.	我的名字叫做希儿·芙乐艾，叫我希儿就可以了。	私の名前はゼーレ・フェレライ、ゼーレって呼んでね。	Meu nome é Seele Vollerei,Você pode me chamar de Seele.
 msg	300076	Starting from today, you're a member of the resistance.  Remember, each of us must work together to fight back against the Honkai.	从现在开始你就是我们的一员了，为了与崩坏对抗，我们需要汇聚每一个人的力量才行。	今日からあなたも私たちレジスタンスの一員よ。崩壊に対抗するためには、私たち一人ひとり力を合わせなくちゃいけないから覚えといてね。	A partir de hoje você também é um membro da nossa resistência. Lembre-se, cada um de nós deve trabalhar em conjunto para combater o Honkai
-msg	300077	Okay, I'll give you a quick rundown of what's going on here!	那么就让我简单为你介绍一下这里的情况吧。	じゃあ、簡単にここの状況を説明するよ！	Então vou explicar brevemente a situação aqui!
+msg	300077	Alright, let me give you a quick rundown of what's going on here!	那么就让我简单为你介绍一下这里的情况吧。	じゃあ、簡単にここの状況を説明するよ！	Então vou explicar brevemente a situação aqui!

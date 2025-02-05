@@ -1,7 +1,7 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 bg	012/001_1280x720
 speaker	Kyuushou
-music	Dispossession - Music Box Version
+music	The Sound of the End - Quiet
 msg	302813	Haah.... Haaah....	沙拉…沙拉……	ザッ、ザー……ザーザー……。	NONE
 msg	302814	I'm sorry ... I'm sorry ... I'm sorry ... I'm sorry ——	对不起…对不起…对不起…对不起……	ごめんなさい……ごめんなさい……ごめんなさい……ごめんなさい——	NONE
 speaker	Seele
@@ -26,7 +26,7 @@ bg	black
 portraits	58
 emote	58	5
 msg	302826	……	……	……。	NONE
-msg	302827	……	……	…………。	NONE
+extend	302827	……	……	…………。	NONE
 choice	302828	Never give up! Kyuushou!	不要放弃！九霄！	諦めないで！九霄！	NONE
 choice	302829	Get up! Kyuushou!	振作起来！九霄！	しっかりして！九霄！	NONE
 

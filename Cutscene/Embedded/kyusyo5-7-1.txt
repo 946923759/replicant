@@ -1,0 +1,239 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	61	62
+music	Voice of no Return
+match_names	Himeko	Theresa
+speaker	Himeko
+bg	009/077_1280x720
+portraits	61	62
+emote	61	2
+/Himeko	307388	……	……	……。	NONE
+emote	61	2
+emote	62	1
+/Theresa	307389	……	……	……。	NONE
+msg	307390	Himeko, is your body still holding up?	姬子，你的身体还撑得住么？	姫子、あなたの身体は、まだ耐えられそうなの？	NONE
+speaker	Himeko
+emote	61	1
+emote	62	1
+msg	307391	Don't worry about it.	不用你操心。	あなたの心配には及ばないわ。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	1
+msg	307392	You're as stubborn as ever. You can tell me if you're in pain, there's nobody else here.	你还是和以前一样逞强呢，要是疼的话就说出来好，这里除了我也没有别人。	相変わらず強情ね。痛いなら痛いって言いなさいよ。ここには、あたくししかいないんだから。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	1
+msg	307393	......What are you, my mom?	……你是我老妈么？	……あんたは私のお母さんか。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	2
+msg	307394	You can think of it like that.	你要这么想也可以。	そう思ってくれてもいいわよ。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	2
+msg	307395	Hmm, it's better to die from the  pain than to have a mother like you that doesn't grow up.	哼，要是有你这样长不大的老妈我宁愿疼死。	フンッ、あなたみたいな成長しない母親がいるくらいなら、痛みで死んだ方がマシだわ。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	2
+msg	307396	Stop, take this! It should help to reduce your pain, it's good wine that took me a while to find.	别嘴硬了，拿着！这个应该能帮你减轻一点痛苦，这可是我好不容易找到的好酒哦。	強がらないで、ほら！これで痛みも少しは軽くなるはずよ。やっとの思いで見つけたお酒なんだからね。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	2
+msg	307397	……Don't think you can buy me with a bottle of wine.	……别以为用一瓶酒就能收买我。	……お酒なんかで私を買収できると思わないでちょうだい。	NONE
+msg	307398	(Drinking noises) Ahh...	咕咕咕！呼……	ゴク、ゴク、ゴク！プハァ……。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	2
+msg	307399	Coo coo coo……	咕咕咕……	ゴク、ゴク、ゴク……。	NONE
+speaker	Himeko
+emote	61	2
+emote	62	2
+msg	307400	Hey! Hey! Why are you drinking too? You're a terrible drunk, so don't drink!	喂！你怎么也喝上了，你每次喝酒都会发酒疯，别喝了！	ちょっと！どうしてあなたまで飲むのよ？あなた酒グセが悪いんだから、飲まないでちょうだい！	NONE
+speaker	Theresa
+emote	61	2
+emote	62	2
+msg	307401	(Drinking noises) ...... It's okay. I'm used to it. It won't be like before.	咕…没事，我已经习惯了，不会再像以前那样了。	うぐっ……大丈夫よ。もう慣れたから。以前みたいにはならないわ。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	2
+msg	307402	I wonder if it's true ...... if you went on a drinking binge, I wouldn't be able to stop you now.	真的么…你要是发酒疯我现在可拦不住你。	本当かしら……あなたがお酒で暴れたら、今の私には止められないわよ。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307403	Eh!	嗝！	ヒック！	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307404	You're drunk already...	这不已经醉了么……	もう酔っぱらったの……。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307405	I'm not!	哪有！	どこがよ！	NONE
+speaker	Himeko
+emote	61	5
+emote	62	3
+msg	307406	……	……	……。	NONE
+speaker	Theresa
+emote	61	5
+emote	62	3
+msg	307407	Himeko…I know you hate me.	姬子…我知道你很恨我。	姫子……あなたがあたくしを恨むのは分かるわ。	NONE
+msg	307408	I chose to leave when you need help the most…I should take the most of responsibilities but I gave them to the kids.	在你们最需要帮助的时候我却选择了离开…本应该承担最多责任的人却把所有的担子扔个了那些孩子。	あなたたちが一番必要としている時にあたくしは立ち去る選択をした……最も責任を負うべき人間が、全ての負担をあの子たちに押し付けたんだからね。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307409	Huh…don't be so arrogant, those kids are strong, even without you they hold to now.	哼…别把自己太当回事了，那些孩子很坚强，就算没有你也勇敢地坚持到了现在。	フンッ……自分が偉いみたいな言い方しないでちょうだい。あの子たちは強いわよ。あなたがいなくても、勇敢にこれまで耐えてきたんだから。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307410	But…now is the time?	但是…也只能坚持到现在了吧？	でも……裏を返せば、これまで耐えることしかできなかったんでしょ？	NONE
+speaker	Himeko
+emote	61	5
+emote	62	3
+msg	307411	……	……	……。	NONE
+speaker	Theresa
+emote	61	5
+emote	62	3
+tn	0	changed from "Seele became like this" because there's no English equivalent
+msg	307412	Seele is in a coma and Bronya is crushed by her loss... And your body won't hold out much longer. 	希儿变成现在这个样子，布洛妮娅也因为她而崩溃…就连你也支持不了多久了吧。	ゼーレは今のような姿になって、ブローニャはゼーレのために押しつぶされ……そして、あなたの身体ももう長くはない。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307413	So what? And what can you do?	所以呢？你又能做到什么？	だから？あなたに何ができると言うの？	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307414	I can do nothing…like before……	我什么都做不到…和那个时候一样……	あたくしには何もできないわ……あの時と同じように……。	NONE
+msg	307415	I don't want to choose between Kiana and you... Kiana may be what she is now, but my promise to Cecilia has not changed....... I will protect Kiana and I will not let her get hurt.	在琪亚娜和你们之间我无法做出选择…虽然琪亚娜变成了现在的样子，但是我对塞西莉亚的约定是不会改变的…我会保护琪亚娜，不让她受到伤害。	キアナとあなたたちの間にいるあたくしには、選択なんてできない……キアナは今のような姿になってしまったけれど、セシリアとの約束は変わっていないもの……あたくしはキアナを守り、彼女を傷つけさせたりしない。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307416	Protect Kiana...... Then kill us first. Then no one will hurt her.	保护琪亚娜…那你就先杀了我们吧，这样就没有人能伤害到她了。	キアナを守る……それなら、まず私たちを殺しなさいよ。そうすれば、誰も彼女を傷つけたりしないわ。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307417	……Hemiko. See Judah now, broken in endless fight, even the unbreakable Judah will break up one day, what about human hearts?	……姬子。你看看现在的犹大，在无休止的战斗中已经布满了裂纹，就连坚不可摧的它都有碎裂的时候，人的内心又能坚强到什么程度呢？	……姫子。今の誓約の十字架を見て。絶え間ない戦いの中で、ヒビだらけになってしまったわ。砕けることがないほど硬い誓約の十字架ですら、ヒビ割れてしまうの。そんな世界で、人の心がどれだけ強くいられると思う？	NONE
+msg	307418	Even though I did my best to rescue Seele, it didn't make a difference in the end... Even if you keep fighting through every setback, over and over, the only thing that awaits you is endless despair and desperation.	就算我用尽全力救下了希儿，但依然改变不了什么…就算一次又一次地在困难中坚持下来，等待而来的只有无休止的绝望与绝境罢了。	あたくしが全力を尽くしてゼーレを救い出しても、何も変えられなかった……たとえ1回、また1回と困難から立ち上がっても、待っているのは終わることのない絶望と窮地だけなのよ。	NONE
+msg	307419	It's too late... There's no hope left for mankind...	现在的人类已经没有胜利的希望了……	今の人間にもう勝利の希望は残っていないの……。	NONE
+speaker	Himeko
+emote	61	5
+emote	62	3
+msg	307420	……	……	……。	NONE
+speaker	Theresa
+emote	61	5
+emote	62	3
+msg	307421	Himeko, take those girls and go with me. You must be tired. This world does not deserve your tireless fighting. Find a quiet place and live there. I will protect you!	姬子，带着那些孩子和我一起走吧，你们已经太累了，这样的世界已经不值得你们继续战斗了。我们一起找一个安静的地方生活好么，我会用全力保护你们的！	姫子、あの子たちを連れてあたくしと一緒に行きましょう。もう疲れたでしょう。こんな世界、あなたたちが戦い続けるに値しないわ。静かな場所を探して、そこで暮らせばいいのよ。あたくしがあなたたちを守るから！	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307422	So... You want me to give up resisting and wait for death like you, a supposed 'adult'?	然后呢…像你一样放弃抵抗乖乖等死么？	それで……あなたのように抵抗することを諦めて、大人しく死ぬのを待つの？	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307423	I don't want you to die... I just want you to make the best of what time you have left.	不是等死…而是好好把握自己剩下的生命。	死ぬのを待つんじゃないわ……自分に残された命をしっかり生き抜くの。	NONE
+msg	307424	Winning against the Honkai is no longer possible. There are few people left alive. Continuing to fight will only hasten our demise! We have lost too much! It would be nice to leave some peace for ourselves at least for the last time!	战胜崩坏已经是不可能的事情了，活着的人已经所剩无几，就算继续战斗也只是加速人类的灭亡！我们已经失去了太多了！就不能在最后为自己保留一丝安宁么！	崩壊に勝つのは、もはや不可能なの。生きている人間はもうほとんどいない。戦いを続けても滅亡を早めるだけ！あたくしたちはあまりに多くのものを失った！最後くらい自分たちのために安寧を残したっていいじゃない！	NONE
+msg	307425	You've already spent your whole life fighting the Honkai, can't you live the rest of your life for ...... yourself?	为了与崩坏战斗，你已经把自己的一生都耗尽了……就不能……让剩下的时间为了自己而活着么？	崩壊と戦うために、あなたはもう自分の一生を費やしたわ……残りの時間を……自分のために生きられないの？	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307426	Live for myself……	为了自己而活……	自分のために生きる……。	NONE
+emote	61	5
+emote	62	3
+msg	307427	I used to think that way too. But I never got the chance. Even if they gave me that opportunity now, I wouldn't take it.	以前我这么想的时候没有机会，现在有机会了但已经来不及了。	以前、私もそんな風に考えたことがあったわ。でも、機会に恵まれることはなかった。今さらその機会を与えられても、もう間に合わないわ。	NONE
+speaker	Theresa
+emote	61	5
+emote	62	3
+msg	307428	Himeko……	姬子……	姫子……。	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307429	Say no more! We've been on different paths since the day you left. It's too late to go back.	不要再说了！从你离开的那一天起我们就已经走上了不同的道路，现在的我已经无法回头了。	それ以上言わないで！あなたが出て行ったあの日から、私たちは違う道を歩み出しているのよ。今の私はもう後戻りできないの。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307430	So do you still decide to fight against Herrschers? You're bringing those children to death for a hope that doesn't exist!	所以你还是决定要去对抗律者么？带着那些孩子一起为了本不存在的希望白白送死么！	それで、あなたは何としてでも律者に挑むの？あの子たちを道連れにして、最初からありもしない希望のために無駄死にするの！？	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307431	If it's their decision I have no right to crush their beliefs!	如果这是她们自己的决定我就无权改变她们的信念！	もし、それが彼女たち自身で決めたことなら、私にその信念を変える権利はないわ！	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307432	You're such a stubborn little brat!	你这个固执的小鬼！！	あなたって、本当に強情なガキなんだから！！	NONE
+speaker	Himeko
+emote	61	2
+emote	62	3
+msg	307433	Says the stubborn old hag!!	你才是顽固的老太婆！！	あなたこそ、頑固ババアじゃないの！！	NONE
+speaker	Theresa
+emote	61	2
+emote	62	3
+msg	307434	What did you just call me!?	你说什么！	何ですって！？	NONE
+speaker	Himeko
+emote	61	2
+emote	62	3
+msg	307435	You wanna go!?	想打架么！	やるの！？	NONE
+speaker	Theresa
+emote	61	2
+emote	62	3
+msg	307436	I! I! Coo coo coo!	我！我！咕咕咕！	あたくし！あたくしは！ゴク、ゴク、ゴクッ！	NONE
+speaker	Himeko
+emote	61	2
+emote	62	3
+msg	307437	You want to see who drinks more!? I never lose to others in terms of this! Coo coo coo!!	拼酒是么！？我告诉你就这点我还真没输过别人！咕咕咕！！	飲み比べするつもり！？言っておくけど、私はこれで負けたことがないのよ！ゴク、ゴク、ゴクッ！！	NONE
+speaker	Theresa
+emote	61	2
+emote	62	3
+msg	307438	Coo coo coo!	咕咕咕！	ゴク、ゴク、ゴクッ！	NONE
+speaker	Himeko
+emote	61	2
+emote	62	3
+msg	307439	Coo coo coo!	咕咕咕！	ゴク、ゴク、ゴクッ！	NONE
+msg	307440	Eh!	嗝！	ケプッ！	NONE
+speaker	Theresa
+emote	61	2
+emote	62	3
+msg	307441	Pfft! Ahahaha! You look ridiculous that way! You'll never get married if even men can't beat you in a drinking match.	噗！哈哈哈！你这样子蠢死了！就是因为你太能喝了没有给男人灌醉你的机会所以才一直嫁不出去的吧？	プッ！アハハハ！あなたのその姿、バカみたい！男でもあなたを飲み負かすことができないから、いつまで経ってもお嫁にいけないんじゃない？	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307442	Huh…not your business!	哼…要你管！	フンッ……大きなお世話よ！	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307443	Sorry sorry!	抱歉抱歉！	ごめん、ごめん！	NONE
+speaker	Himeko
+emote	61	5
+emote	62	3
+msg	307444	……	……	……。	NONE
+msg	307445	Hey, Theresa……	喂，德丽莎……	ねえ、テレサ……。	NONE
+emote	61	1
+emote	62	3
+msg	307446	If I can change their minds, can you promise me to protect them well?	要是能让那些孩子改变想法的话，你能答应我保护好她们么？	あの子たちの考えを変えることができたら、彼女たちを守るって約束してくれる？	NONE
+msg	307447	I'm their teacher, no matter Bronya, Seele, or Kiana and Mei. They are like you and me before, we have very deep emotions.	我是她们的老师，不管是布洛妮娅，希儿，还是琪亚娜和芽衣。她们都和当初的你我一样，有着挥之不去的感情。	私は彼女たちの先生なの。ブローニャ、ゼーレ、それにキアナと芽衣。彼女たち全員に対して、かつての私とあなたのような、忘れることのできない思い入れがある。	NONE
+msg	307448	But someone must to face the problems…isn't it the duty of teacher to solve problems for students? Take them out of the trouble, to step on the right way as they believe……	但是总有一个人要去面对现在的这些问题…给学生解决麻烦不是老师的职责么？带着她们走出困境，让她们踏上自己认为正确的道路……	だけど、誰かが今のこの問題に向き合わなくてはならない……生徒のためにトラブルを解決するのは教師としての役目よね？彼女たちを苦境から救い出し、自分が正しいと思う道を歩ませる……。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307449	You're right……	你说的对……	あなたの言う通りね……。	NONE
+msg	307450	Himeko…I'm not a qualified teacher for you right?	姬子…对你来说我不是一个合格的老师吧？	姫子……あなたにとって、あたくしは良い教師だったかしら？	NONE
+speaker	Himeko
+emote	61	1
+emote	62	3
+msg	307451	Don't be so sentimental!	少自作多情了！	自惚れないでちょうだい。	NONE
+msg	307452	At least……	至少……	ただ、少なくとも……。	NONE
+msg	307453	I didn't regret what I did.	我没有后悔自己选择的道路。	私は、自分の選んだ道を後悔していないわよ。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307454	……	……	……。	NONE
+emote	61	1
+emote	62	2
+msg	307455	I know, I promise you, will protect those kids whatever happended.	我知道了，我答应你，不管发生什么我都会保护那些孩子！	分かったわ。約束する。何が起こっても、あの子たちはあたくしが守るわ！	NONE
+speaker	Himeko
+emote	61	1
+emote	62	2
+msg	307456	Is it…good.	是么…那就好。	そう……ならよかった。	NONE
+msg	307457	Huh! I drank too much…I'm tired, and painful…no…I have to get a good sleep tonight.	呼！有点喝多了…好累，身体也开始痛起来了…不行了…今晚就好好的睡一觉吧……	ふぅ！少し飲みすぎちゃった……疲れた。身体も痛くなってきたし……もうダメ……今夜はゆっくり寝よっと……。	NONE
+speaker	Theresa
+emote	61	1
+emote	62	3
+msg	307458	Yes.	嗯。	ええ。	NONE
+msg	307459	Thank you, Himeko.	辛苦你了，姬子。	お疲れ様。姫子。	NONE

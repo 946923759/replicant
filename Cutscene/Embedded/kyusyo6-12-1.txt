@@ -170,4 +170,4 @@ emote	54	3
 
 emote	69	1
 emote	54	3
-msg	308668	Let me sing for you, at least you can die in peace in the end!	就用我的歌声来为你们送葬吧，至少最后能让你们安详的死去！	私の歌で最期を見送ってあげるわ。安らかに死になさい。	NONE
+msg	308668	Allow me to sing for you one more time, so you can sleep peacefully... Forever!	就用我的歌声来为你们送葬吧，至少最后能让你们安详的死去！	私の歌で最期を見送ってあげるわ。安らかに死になさい。	NONE

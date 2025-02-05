@@ -1,0 +1,127 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Mei
+bg	009/064_1280x720
+portraits	53
+emote	53	0
+msg	307725	……	……	……。	NONE
+msg	307726	Do you really think you can escape by hiding from me... How naïve.	以为躲起来就能够逃离这里么…真是天真。	隠れていれば、ここから逃げられるとでも思ったの……本当に単純ね。	NONE
+msg	307727	I'll find you, even if I have to reduce Academy City to ashes.	就算是把整个学园都市烧成灰烬，也要找到你们。	学園都市を全て燃やし尽くしてでも、あなたたちを探し出してみせるわ。	NONE
+emote	53	0
+se	DLC_CH03_EV04_ElectricSound
+/	307728	Crack crack……	呲拉呲拉……	ザーザー——	NONE
+/	307729	Raiden…Mei……	雷电…芽衣……	雷電、芽衣……。	NONE
+speaker	Mei
+emote	53	0
+msg	307730	Um?	嗯？	ほう？	NONE
+msg	307731	You show up, that saves my efforts, let me appreciate your courage.	没想到居然会主动迎击，看来省去了不少功夫了，让我夸一下你的勇敢吧。	まさか、そっちから打って出てくるとはね。かなり手間が省けたわ。あなたの勇敢さを褒めてあげる。	NONE
+emote	53	0
+/	307732	I'm.... The savior...	我是救世主……	私……我こそは救世主……。	NONE
+msg	307733	I won't let you.... Hurt everyone....!	不会让你…伤害大家……	お前に……皆を傷つけさせたりはしない……！	NONE
+speaker	Mei
+emote	53	0
+msg	307734	Houraiji Kyushou…you are the start of everything, without you this pain won't last until today.	蓬莱寺九霄…你是一切开始的根源，如果没有你的话这份转瞬即逝的痛苦就不会延续至今了。	蓬莱寺九霄……あなたが全ての根源よ。あなたがいたせいで、一瞬で過ぎていくはずだった苦しみが、今まで続くことになったの。	NONE
+msg	307735	If it's not you the boring dream won't happen.	如果不是你的话这个无聊的梦境就不会出现。	あなたさえいなければ、こんなつまらない夢も現れなかったのよ。	NONE
+msg	307736	I will kill you and end it all!	就让我杀掉你结束这一切吧！	私があなたを殺して、全てを終わらせる！	NONE
+speaker	Theresa
+portraits	60	62	53
+emote	62	1
+msg	307737	Stop!	住手！	やめなさいっ！	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307738	Kyuushou, are you out of your mind!? Get back here!	九霄，你疯了么！快回来！	九霄、気でも狂ったのですか！？戻ってきてください！	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307739	Bronya! I'll hold Mei off! Take the girl away!	布洛妮娅！我来牵制住芽衣！你把那个孩子带走！	ブローニャ！あたくしが芽衣を食い止めるわ！その子を連れて行って！	NONE
+speaker	Bronya
+emote	60	3
+emote	62	1
+msg	307740	Ok!	好！	はい！	NONE
+emote	62	1
+msg	307741	Boom!!	轰隆！！	ズドォオオオオォンッ！	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307742	Eh ah!!!	呃啊！！！	くっ！！！	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307743	Bronya!	布洛妮娅！	ブローニャ！	NONE
+emote	62	1
+msg	307744	Boom!!	轰隆！！	ズダァンッ！！	NONE
+speaker	Theresa
+emote	62	1
+msg	307745	Woo!!	呜！！	きゃあ！！	NONE
+speaker	Mei
+emote	53	0
+msg	307746	Now everything ends……	一切都结束了……	すべて終わりよ……。	NONE
+
+speaker	Bronya
+bg	009/072_1280x720
+portraits
+msg	307747	Ugh....	呃……	う、ううっ……。	NONE
+speaker	Mei
+msg	307748	You want to save others while you can't save yourself?	连自己都无法拯救还天真的想要救别人么？	自分すら救えないのに、他人まで救おうとしているの？	NONE
+msg	307749	You really are hopeless.	到头来还是那么天真。	本当にとことんお人好しね。	NONE
+speaker	Bronya
+msg	307750	Herrscher……	律者……	律者……。	NONE
+speaker	Mei
+msg	307751	I'll let you die painlessly, don't worry.	我会让你死的毫无痛苦，放心吧。	苦痛なく死なせてあげるから安心して。	NONE
+se	DLC_CH03_EV04_ElectricSound
+/	307752	Crack crack!	呲拉呲拉！	バチッ——ジジッ！	NONE
+speaker	Bronya
+msg	307753	I won't give up……	我是不会放弃的……	ブローニャは諦めません……。	NONE
+msg	307754	It doesn't matter if I'm selfless or not, or smart or not...... because all those things were taught to me by her.......	天真也好，无谋也罢…但这都是她教会我的东西……	お人好しでも、無謀でも構いません……そういったことは全て、あの人が教えてくれたことなのですから……。	NONE
+msg	307755	No matter how sad and lost…depressed and hopeless…she would always help others……	就算自己多么悲伤和迷茫…就算自己多么无助和绝望…她都会毫不犹豫地帮助别人……	たとえ、自分がどれだけ悲しくて困惑していても……どれだけ救いがなく絶望していても……あの人は迷うことなく他人を助けていました……。	NONE
+msg	307756	She saved me who used to be a weapon…and she saved me  who used be cold inside…I will never gave up for her!!	是她拯救了一度成为兵器的我…也是她拯救了内心冰冷的我…就算是为了她我也不会放弃！！	一度兵器となってしまったブローニャをあの人は救ってくれました……氷のように冷たい心のブローニャを救ってくれたのです……彼女のためなら、ブローニャは決して諦めません！！	NONE
+msg	307757	Even if she's no longer with us, I want to be like her... Someone who gave her heart up for others.	即使她现在已经不在了，我也想像她一样…成为那样温柔的人。	たとえ、あの人はもういなくても、ブローニャも同じように……優しい人でありたいのです。	NONE
+msg	307758	Herrscher... I'll never accept defeat by your hand! And I won't die here! My life was a gift from her! It's the only thing I can pay back!	律者…我是不会向你认输的！也绝对不能在这里死掉！我的命是她给的！这也是我唯一能报答她的东西了。	律者……ブローニャは決して負けを認めません！そして、絶対にここで死んだりもしません！ブローニャの命は、あの人がくれたものです！これもブローニャがあの人にしてあげられる唯一の恩返しなのです。	NONE
+msg	307759	The courage and responsibility that she gave me! I will live with her wish!	那个人交给我的勇气与责任！我会带着她的愿望一起活下去！	あの人は勇気と責任をくれた！その想いを背負って一緒に生きていきます！	NONE
+speaker	Bronya
+msg	307760	And create a world that Mei wish to see!	然后创造出芽衣姐姐希望看到的那个世界！	そして、芽衣姉様が見たがっていた世界を創るのです！	NONE
+se	DLC_CH03_EV01_GunAndExplosion
+/	307761	Bang!!	砰！！	ズドンッ！！	NONE
+speaker	Mei
+bg	009/064_1280x720
+emote	53	0
+msg	307762	!?	！？	くっ！	NONE
+speaker	Bronya
+portraits	60	53
+emote	60	3
+emote	53	0
+msg	307763	Herrscher! Let's settle the score right now! I'll remind you of just how strong humanity's will is!	律者！让我们新账旧账一起算！让你看看人类的意志有多么强大！	律者！これまでの恨みを全て晴らさせてもらいます！人類の意志がどれほど強いものか思い知ってください！	NONE
+speaker	Mei
+emote	60	3
+emote	53	0
+msg	307764	……	……	……。	NONE
+speaker	Bronya
+emote	60	3
+emote	53	0
+msg	307765	What's the matter, Herrscher?! Are you not going to destroy us? Come on!	怎么了律者！你不是要毁掉我们么！来啊！	どうしたのですか、律者！ブローニャたちを滅ぼすのではないのですか！？かかってくるのです！	NONE
+speaker	Mei
+emote	60	3
+emote	53	0
+msg	307766	......Is that right? I understand.	……是么…我明白了。	……そう……分かったわ。	NONE
+msg	307767	I'm going to collectively destroy you and her boring beliefs!	那就让我把你和她那些无聊的信念都摧毁吧！	それじゃあ、あなたとその彼女のつまらない信念とやらをまとめてぶち壊してあげるッ！	NONE
+emote	53	0
+/	307768	Crack…crack……	滋啦…滋啦……	ジジ……ジッ……。	NONE
+speaker	Mei
+emote	53	0
+msg	307769	Eh?	呃？	ッ！？	NONE
+msg	307770	What's wrong…Honkai can't be transferred, the Honkai here is disappearing?	怎么回事…崩坏能无法传输，这里的崩坏正在消失么？	どういうこと……崩壊エネルギーが充填できない。まさか、ここの崩壊が消失している？	NONE
+emote	53	0
+/	307771	I won't let you…hurt us……	不会让你…再伤害大家……	もうあなたに……皆を傷つけさせたりはしない……。	NONE
+speaker	Mei
+emote	53	0
+msg	307772	Houraiji Kyushou? Your look…	蓬莱寺九霄？你的样子…	蓬莱寺九霄？あなた、その姿は……。	NONE
+msg	307773	Kiana... So this is your plan!	琪亚娜…原来这就是你的打算么！	はっ！キアナ……あなたの仕業ね！	NONE
+bg	009/070_1280x720
+portraits
+/Kyuushou	307774	I'll save... This place...	我会拯救…这里……	我はここを……救う……。	NONE
+msg	307775	Save everyone……	让大家都获得救赎……	皆に救いを与えること……。	NONE
+msg	307776	This is my mission……	这是我的使命……	それこそが我の使命……。	NONE
+speaker	Mei
+msg	307777	Kiana is trying to change this world by waking you up. I never thought you would take such a gamble.	琪亚娜选择唤醒了你来试图改变这里，真是孤注一掷的决定。	キアナがあなたを目覚めさせることで、ここを変えようとしているのね。まさか、こんな賭けに出るとはね。	NONE
+msg	307778	But it's a pity, that this will only accelerate the coming of destruction.	但是很遗憾，这样也只会加速毁灭的到来罢了。	でも、残念ながら、そんなことをしても破滅の到来を早めるだけよ。	NONE
+msg	307779	Houraiji Kyuushou...... I will kill you and put an end to this farce!	蓬莱寺九霄…就让我杀掉你来结束这个闹剧！	蓬莱寺九霄……あなたを殺して、この茶番を終わらせてあげる！	NONE

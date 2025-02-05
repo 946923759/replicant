@@ -1,0 +1,141 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Mei
+bg	009/070_1280x720
+/Mei	307780	Eh!!	呃！！	……なっ！！	NONE
+/Kyuushou	307781	I will……	我要……	我は……。	NONE
+msg	307782	protect everyone……	保护大家……	皆を守る……。	NONE
+msg	307783	Kill…Herrscher……	杀掉…律者……	律者を……殺す……。	NONE
+/Mei	307784	The power of Herrshcer can't be controlled…Is the Honkai energy starting to gather towards the death spot?	律者的力量无法驱使了…崩坏能已经开始朝着死斑汇聚了么？	律者の力が使えない……崩壊エネルギーが霧散していく？	NONE
+/Kyuushou	307785	I can't let…us…get hurt……	不能让…大家…受伤……	皆を、傷つけ……させたりはしない……。	NONE
+
+bg	009/064_1280x720
+portraits	107	53
+/Kiana	307786	Am I to rush…she still doesn't find herself back, and worsen the possession of Honkai .	看来我还是太着急了么…她还是没能找回自己，反而让崩坏加剧了侵蚀。	どうやら、私が焦りすぎたみたいね……彼女は自分を取り戻せないどころか、より崩壊に侵蝕されてしまったみたい。	NONE
+/Mei	307787	Kiana…are you the one who try to wake up her memory.	琪亚娜…果然是你企图唤醒她的记忆么。	キアナ……やはり、あなたが彼女の記憶を目覚めさせようとしたのね。	NONE
+speaker	Kiana
+msg	307788	Only the people who creates the dream can change it, I am still to naïve.	只有缔造这个梦境的人才能改变它，看来我的想法也是天真了一些。	この夢を創り出した人にしか、これは変えられない。そう思ったけど……単純に考えすぎだったみたい。	NONE
+msg	307789	Mei, are you satisfied with this answer?	芽衣，对于这样的答案你满意么？	芽衣先輩、こんな答えで満足できる？	NONE
+speaker	Mei
+msg	307790	Whatever…however the process is, the ending won't be changed.	无所谓了…反正不管过程如何，结局都不会改变。	どうでもいいわ……過程がどうであろうと、結末に変わりはないのだから。	NONE
+speaker	Kiana
+msg	307791	Fine, let us finish it.	好吧，那就让我们一起结束它吧。	分かった。じゃあ、私たちで一緒に終わらせましょう。	NONE
+speaker	Mei
+msg	307792	……	……	……。	NONE
+msg	307793	Ok.	嗯。	ええ。	NONE
+
+bg	009/065_1280x720	fade
+/Kiana	307795	The sleeping Honkai wakes up again…and this world has its final result.	沉睡的崩坏再次苏醒了…这个世界也迎来了它最后的归宿。	眠っていた崩壊が再び目覚めた……この世界も真の終わりを迎えるわね。	NONE
+msg	307796	It seems that you, too, have not found the answer I wanted. But don't blame me.	看来你也无法找到我想要的那个答案，就请你不要怪我。	あなたも、私がほしかった答えを見つけられないようね。でも、私を責めないでちょうだい。	NONE
+msg	307797	But still thank you for letting me see the final image of the world, even this is a doomed tragedy, but at least I see those people who I used to treasure……	不过还是谢谢你能够让我看到这世界最后的残像，即便这还是一出无法挽回的悲剧，但至少让我见到了那些曾经珍惜过的人们……	それと、私にこの世界の最後を見せてくれたこと感謝しているわ。取り返しのつかない悲劇ではあるけれど、少なくともかつて大切にしていた人たちに会うことができた……。	NONE
+msg	307798	Farewell.	再见了。	さようなら。	NONE
+se	DLC_CH00_EV04_ExplosionClose
+/	307799	Boom!!!	轰隆！！！	ドォオオオオオン！！！	NONE
+msg	307800	……	……	……。	NONE
+msg	307801	……	……	…………。	NONE
+speaker	Kiana
+msg	307802	?	？	？	NONE
+/Theresa	307803	I won't let you hurt her……	我是不会让你伤害她的……	あなたに彼女を傷つけさせたりはしない……。	NONE
+speaker	Theresa
+portraits	107	53	62
+emote	62	1
+/Theresa	307804	Kiana!!	琪亚娜！！	キアナッ！！	NONE
+
+bg	009/073_1280x720
+portraits
+msg	307805	These children will survive! Even if there is no hope! They can't die here!	这些孩子会生存下去！就算是没有希望！她们也不能在这里死去！	この子たちは生き延びるの！希望がなくとも、彼女たちをここで死なせるわけにいかないのよ！	NONE
+speaker	Kiana
+msg	307806	Theresa…...	德丽莎……	テレサ……。	NONE
+speaker	Theresa
+msg	307807	Same with you! Live with Mei! Even if you two are Herrschers! So what if this world is on the verge of destruction! None of that matters! As long as we're together, we can be happy in the end!	你们也一样啊！和芽衣一起活下去！就算是律者又如何！就算是末日又如何！只要能在一起不就是最好的归宿么！	あなたたちも同じよ！芽衣と一緒に生きるの！律者だからって何なのよ！終末だからって何なのよ！一緒にいられれば、それこそが一番いい終わり方でしょ！	NONE
+speaker	Mei
+msg	307808	……	……	……。	NONE
+speaker	Theresa
+msg	307809	Is it really okay to end it like this!? Living in pain and regret, not being able to understand how each other feels? If we're alive, we should cherish each other's presence!	这样结束真的好么！连对方的心意都没有了解！生活在痛苦与悔恨中！既然活着就好好珍惜现在的彼此啊！	こんな終わり方で本当にいいの！？相手の気持ちすら分からないまま、苦しみと後悔の中で暮らしていくの！？生きているのなら、お互いの今を大切にするべきでしょう！	NONE
+speaker	Kiana
+msg	307810	Everything here is fake... Even you...	这里的一切都是虚假的东西…就连你们也……	ここの全ては偽り……あなたたちでさえも……。	NONE
+speaker	Theresa
+msg	307811	I don't know! I don't care if it's not real! Or a dream! At least at this moment, I can see and feel everyone else!	我不明白！就算虚假也好！就算是梦也罢！但至少在这一刻我们能真切地感触到对方的存在！	分からないわ！偽りでもいい！夢でもいい！少なくとも、この一瞬は相手の存在をしっかりと実感できる真実だから！	NONE
+tn	0	People die when they are killed?
+msg	307812	If we die, we'll never see each other again! 	如果死掉的话就再也见不到了啊！	死んだらね、もう会えないのよ！	NONE
+msg	307813	Himeko…Seele…Bronya……and you……Kiana…Mei……	姬子…希儿…布洛妮娅……还有你们……琪亚娜…芽衣……	姫子……ゼーレ……ブローニャ……それにあなたたち……キアナと芽衣……。	NONE
+msg	307814	I just want to see you all doing well in this world ...... and leaning on each other ...... that's all.	我只想在这个世界看着你们都好好的…都好好地在彼此身边……	あたくしは、この世界であなたたちが元気にしている姿を見たいだけなの……お互いに寄り添い合っている姿を……ただそれだけなの。	NONE
+msg	307815	No matter what this world becomes!	不管这个世界变成什么样子都无所谓！	それさえ叶えば、この世界がどんなに変わっても構わないわ！	NONE
+speaker	Kiana
+msg	307816	I don't care how much this world changes ...... if I can be there for them.	不管这个世界变成什么样子都无所谓…只要留在对方的身边就行了……	この世界がどんなに変わっても構わない……相手の傍にいられるのなら……。	NONE
+msg	307817	Hahaha…Mei, that's what I want to tell you.	呵呵呵…芽衣，这也是我一直想对你说的。	フフフ……芽衣先輩、これ私がずっとあなたに言いたかったことなの。	NONE
+speaker	Mei
+msg	307818	!?	！？	！？	NONE
+msg	307819	Kiana…you……	琪亚娜…你……	キアナ……あなた……。	NONE
+speaker	Kiana
+
+bg	009/065_1280x720
+portraits	107	53
+msg	307820	I know you're always restricted by what you were…but I just want to be with you at this moment.	我知道你一直被过去的自己所束缚…但我只想在这个时刻陪在你们的身边就行。	あなたがずっと過去の自分に縛られていることは分かっているわ……だけど、今はただ、あなたの傍に寄り添っていたいの。	NONE
+msg	307821	Forget about the Herrscher identity…forget about your crime…only us sleep deep, until the last second.	忘记律者的身份…忘记自己的罪恶…只有我们两个安静地沉睡，直到世界的最后一秒。	律者という肩書を忘れ……自分の罪を忘れ……私たち2人だけで静かに眠りたい。世界の最後の1秒までね。	NONE
+msg	307822	Mei, I hope you can promise me in the end.	芽衣，希望你能答应我这最后的任性。	芽衣先輩、私の最後のワガママを聞き入れてくれる？	NONE
+speaker	Mei
+msg	307823	Kiana……I…I……	琪亚娜……我…我……	キアナ……私……私……。	NONE
+msg	307824	But…what' the meaning…of what I did!	可是…我所做的一切…到底还有什么意义呢！	だけど……それじゃあ、私がしてきた全ては……一体何の意味があったのよ！	NONE
+speaker	Kiana
+msg	307825	Theresa is right, even all is fake, as long as our heart is real it would bbe enough…We just know it too late.	德丽莎说的对，就算一切都是虚假的，只要这份心意是真实存在的就够了…只是我们都明白的太晚了。	テレサの言う通りよ。全てが偽りだったとしても、この気持ちが確かに存在していることがわかれば十分……私たちは気づくのが遅すぎたけどね。	NONE
+msg	307826	Mei, come back…come back to me,	芽衣，回来吧…回到我的身边，	芽衣先輩、帰って来て……私の傍に帰ってきて。	NONE
+speaker	Mei
+msg	307827	Kiana……	琪亚娜……	キアナ……。	NONE
+msg	307828	Kiana!!	琪亚娜！！	キアナちゃん！！	NONE
+speaker	Kiana
+msg	307829	Honkai is calling us, we need to say goodbye again.	崩坏已经在呼唤我了，看来也只能再次告别了。	崩壊が私を呼んでいるわ。どうやら、またお別れみたい。	NONE
+msg	307830	Thank you…let me remember who I was before I become the Herrscher.	谢谢你们…让我在变回律者前能想起过去的自己。	あなたたち、ありがとう……律者になる前の自分を思い出させてくれて。	NONE
+msg	307831	See you, Theresa, Bronya…and Kyushou.	再见了，德丽莎，布洛妮娅…还有九霄。	さようなら、テレサ、ブローニャ……それから九霄。	NONE
+msg	307832	Let's go, Mei, let's go back together, to the place no one can bother us.	走吧，芽衣，让我们一起回去吧，回到那个谁也无法打扰的地方……	行こう、芽衣先輩。一緒に帰るのよ。あの誰にも邪魔されない場所に……。	NONE
+
+/Mei	307833	Yes.	嗯。	ええ。	NONE
+portraits
+se	DLC_CH01_EV23_ExplosionClose
+msg	307834	Boom——	轰隆隆——	ゴゴゴゴォ——	NONE
+
+speaker	Bronya
+bg	007/006_1280x720
+portraits	60	62
+emote	60	5
+msg	307835	Theresa…eh! What's wrong……	德丽莎…咳咳！这是怎么回事……	テレサ……ゴホッ、ゴホッ！これは一体どういうことですか……？	NONE
+msg	307836	Kyushou? Is she ok!	九霄呢？她没事吧！	九霄は？彼女は無事ですか！？	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307837	She's fine, she just fainted.	她没事，只是晕过去了。	彼女は大丈夫よ。気を失っているだけ。	NONE
+speaker	Bronya
+emote	60	3
+emote	62	1
+msg	307838	Is it…where's the Herrscher? Is she leaving?	是么…律者人呢？离开了么？	そうですか……律者は？いなくなったのですか？	NONE
+speaker	Theresa
+emote	60	3
+emote	62	1
+msg	307839	Yes, they won't attack us any ore……	嗯，她们已经不会再攻击我们了……	ええ、彼女たちはもうあたくしたちを攻撃してこないわ。	NONE
+speaker	Bronya
+emote	60	3
+emote	62	1
+msg	307840	You mean……by the way, why there was an earthquake?	你的意思是……对了，刚才的地震是怎么回事？	それはつまり……そうだ、さっきの地震は何事ですか？	NONE
+speaker	Theresa
+emote	60	3
+emote	62	1
+msg	307841	Bronya, let's leave here, the slide has begun.	布洛妮娅，我们赶快离开这里吧，崩塌已经开始了。	ブローニャ、急いでここから脱出しましょう。ここ一帯が崩れ落ちるわ。	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307842	Slide?	崩塌？	崩れる？	NONE
+
+bg	009/067_1280x720
+portraits
+music	The Tower - Medium No Vocals
+msg	307843	This is!?	这是！？	これは！？	NONE
+msg	307844	How come…whe does the tower……	怎么会…这座塔是什么时候……	どういうことですか……あの塔はいつの間に……。	NONE
+speaker	Theresa
+msg	307845	That's the creation of Kiana and Mei's power, to separate themselves from the world.	那是琪亚娜与芽衣用自己的力量构筑出来的产物，为了把自身与这个世界隔绝开来。	あれはキアナと芽衣が自らの力で築き上げた産物よ。自分たちと、この世界を隔絶させるためにね。	NONE
+msg	307846	Maybe……	或许……	あるいは……。	NONE
+msg	307847	It's the gravestone they built for the world.	这也是她们为这个世界所矗立的墓碑。	あれも、彼女たちがこの世界のために建てた墓石なのかもしれないわね。	NONE
+stopmusic	0.5
+msgbox_close
+bg	009/075_1280x720
+nop	(Empty message)
+bg	009/076_1280x720	fade
+nop	(Empty message)

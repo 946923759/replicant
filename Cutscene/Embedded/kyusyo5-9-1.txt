@@ -1,0 +1,147 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	Grandma
+bg	009/064_1280x720
+portraits	55	60	61	62
+match_names	Emesa	Bronya	Himeko	Theresa	_DIM_ALL_WHEN_EMPTY
+se	DLC_CH03_EV05_ThunderBig
+/	307516	Boom!!	轰隆！！	ドンッ！！	NONE
+se	DLC_CH00_EV13_MosterRoar
+/	307517	Growl!!	吼吼吼！！	グルルルッ！！	NONE
+emote	55	4
+/Emesa	307518	Why there are so may Honkai creatures at once! What happened!	为什么忽然出现这么多崩坏生物！到底发生了什么！	どうして、急にこんなたくさんの崩壊生物が現れたんだ！一体、何が！？	NONE
+emote	55	4
+emote	61	2
+/Himeko	307519	It's the Herrscher…nearby.	是律者…律者就在附近。	律者よ……律者が近くにいるの。	NONE
+emote	55	4
+emote	61	2
+/Emesa	307520	Dammit, why now!	为什么偏偏这个时候！	ちっ、こんな時にかよ！	NONE
+emote	55	4
+emote	60	3
+/Bronya	307521	It doesn't seem like she's going to let us go. The reason we were able to make it into Academy City must have been so she could annihilate us all at once!	看来她是不会放过我们的，把我们引诱到这座学园都市就是想把我们一举消灭！	どうやら、彼女はブローニャたちを見逃すつもりがないようですね。この学園都市に誘い出したのも、まとめて消滅させるためだったのでしょう！	NONE
+emote	62	1
+emote	60	3
+/Theresa	307522	Kiana…why still……	琪亚娜…为什么还要……	キアナ……どうして……。	NONE
+speaker	Himeko
+emote	62	1
+emote	61	2
+msg	307523	We're surrounded Honkai creatures, need to find a way ou!	我们已经被崩坏生物包围了，要想办法突围出去！	どうにかして、この囲みを突破しないと！	NONE
+speaker	Bronya
+emote	62	1
+emote	60	3
+msg	307524	Emesa, take Seele and follow us, Kyushou you protect them, Himeko and me start attack!	埃米沙，你带着希儿跟紧我们，九霄负责保护她们，姬子和我一起突击！	エミザ、あなたはゼーレを連れてブローニャたちについて来てください。九霄は彼女たちを守ってください。姫子はブローニャと一緒に突撃です！	NONE
+speaker	Himeko
+emote	62	1
+emote	61	1
+msg	307525	Huh, finally looks like what she used to be.	哼，总算有点以前的样子了。	フンッ、らしくなってきたじゃない。	NONE
+speaker	Bronya
+emote	62	1
+emote	60	3
+msg	307526	Theresa, mind what's behind!	德丽莎园长，后方就麻烦你了！	テレサ学園長、後方は任せました！	NONE
+speaker	Theresa
+emote	62	1
+emote	60	3
+msg	307527	……	……	……。	NONE
+speaker	Himeko
+emote	62	1
+emote	61	2
+msg	307528	Theresa, why are you still here!	德丽莎，你在愣什么！	テレサ、何をボーッとしてるの！	NONE
+speaker	Theresa
+emote	62	1
+emote	61	2
+msg	307529	Woo…ok, I know.	唔…好的，我知道了。	えっ……ええ、分かったわ。	NONE
+emote	61	2
+se	DLC_CH00_EV13_MosterRoar
+/	307530	Growl!!	吼吼吼！！	バウォオオオオンッ！	NONE
+
+shake_camera	1.0
+se	DLC_CH03_EV01_GunAndExplosion
+/	307531	Bang!!	砰！！	パァンッ！	NONE
+emote	60	3
+/Bronya	307532	Follow up!	跟上！	ついて来てください！	NONE
+emote	55	4
+emote	60	3
+/Emesa	307533	Wait! I have some one on my back!	你们慢点！我背着个人可是很重的啊！！	あんたたち、もう少しゆっくり走ってくれよ！こっちは人を背負ってんだからな！	NONE
+emote	55	4
+emote	61	2
+/Himeko	307534	Bronya you're too anxious, don't cut off the team!	布洛妮娅你太着急了，不要让队伍脱节！	ブローニャ、焦りすぎよ。チームをバラけさせないで！	NONE
+
+emote	55	4
+emote	60	3
+/Bronya	307535	Seele is still in danger, I can't waste time here!	希儿还有生命危险，不能在这里浪费时间！	ゼーレの命は、今もなお危険なことに変わりありません。ですから、こんなところで時間を無駄にはできません！	NONE
+
+speaker	Emesa
+emote	55	4
+emote	60	3
+msg	307536	No…I really can't!	不行了…真的吃不消了！	もうダメだ……本当に限界！	NONE
+
+emote	62	1
+emote	60	3
+/Theresa	307537	Let me.	给我。	あたくしが交代するわ。	NONE
+
+emote	55	4
+emote	60	3
+/Emesa	307538	Wait! Can you!	等下！你背的动么！	おい、待てって！あんたに背負えるのか！？	NONE
+msg	307539	Eh! Amazing…with only one hand……	呃！好厉害…居然一只手就把希儿给……	うおっ！すごい……片手でゼーレを……。	NONE
+emote	55	4
+emote	61	1
+/Himeko	307540	Theresa, are you ok!	德丽莎，你没问题么！	テレサ、大丈夫なの！？	NONE
+emote	62	1
+emote	61	1
+/Theresa	307541	Don't be little me, that's how I take her!	不要小看我，我就是这么带着她过来的！	バカにしないでよね。あたくしはこうやって彼女を連れて来たのよ！	NONE
+emote	62	1
+emote	60	3
+/Bronya	307542	Quick! We can't get out of here if the streets ahead are blocked!	抓紧时间！前面的街区被封锁的话我们就出不去了！	急いでください！この先のエリアが封鎖されたら出られなくなります！	NONE
+
+emote	60	3
+se	DLC_CH00_EV13_MosterRoar
+/	307543	Growl!!	吼吼吼！！	ウォオオオオンッ！！	NONE
+shake_camera
+se	DLC_CH00_EV04_ExplosionClose
+msg	307544	Bang!	砰！	カチャ——ダンッ！	NONE
+
+emote	55	4
+emote	60	3
+/Emesa	307545	Huh…huh…eh!	呼…呼…咳咳！	ふぅ……ふぅ……ゴホッ、ゴホッ！	NONE
+emote	55	4
+emote	61	1
+/Himeko	307546	Emesa, hold on! Cough!	埃米沙！坚持住！咳！	エミザ！しっかりしなさい！ゴホッ！	NONE
+emote	61	1
+se	DLC_CH00_EV13_MosterRoar
+/	307547	Growl!!	吼吼吼！！	オォオオオォンッ！！	NONE
+emote	60	3
+/Bronya	307548	Don't stop! Or you will be trapped!	不要停下脚步！不然会被包围的！	足を止めてはいけません！包囲されてしまいます！	NONE
+emote	55	4
+emote	60	3
+/Emesa	307549	It's..... really hard... To breathe....	呼吸…好困难……	息が……苦し、い……。	NONE
+emote	62	1
+emote	60	3
+/Theresa	307550	Bronya! She's inhaled too much Honkai energy, her body can't handle it. We can't just leave her behind!	布洛妮娅！这个孩子吸入了太多崩坏能身体已经支持不住了，我们不能抛下她！	ブローニャ！この子、崩壊エネルギーを吸い込みすぎて、身体がもたないわ。彼女を見捨てるわけにはいかないわよ！	NONE
+emote	62	1
+emote	60	5
+/Bronya	307551	Damn it! I need to bring Seele back no matter what!	可恶！无论如何我都要带希儿回去！	くっ！ブローニャは、何としてもゼーレを連れて帰ります！	NONE
+/???	307552	Today you will all be buried here!	今天你们都将葬身于此！	あなたたちは今日ここで死ぬのよ！	NONE
+/Bronya	307553	!?	！？	——ッ！？	NONE
+/Theresa	307554	Get down!	趴下！	伏せて！	NONE
+
+shake_camera
+se	DLC_CH03_EV05_ThunderBig
+/	307555	Boom!!	轰隆！！	ドォオオオオォンッ！！	NONE
+
+emote	55	4
+emote	60	5
+/Emesa	307556	Whoa!!	呜哇！	うぉおおッ！	NONE
+emote	55	4
+emote	61	2
+/Himeko	307557	(Cough cough cough)! Is everyone okay!?	咳咳咳！都没事吧！	ゴホッ、ゴホッ、ゴホッ！皆、大丈夫！？	NONE
+emote	62	1
+emote	61	2
+/Theresa	307558	Take cover! Don't get hit by the lightning strikes!	快找掩体！不要被雷击打中！	早く遮蔽物を探して！雷に打たれないように！	NONE
+emote	62	1
+emote	60	5
+/Bronya	307559	Herrscher... You've finally arrived!	律者…终于来了么！	律者……ついに来たのですね！	NONE
+portraits	55,false,-1	60,false,-2	61,false,-3	62,false,-4	53,false,1
+match_names	1	2	3	4	Mei
+emote	62	1
+emote	53	0
+/Mei	307560	I won't let you go this time.	这次不会再让你们逃脱了。	今度は、あなたたちを逃がしたりしないわよ。	NONE
+msg	307561	I'll obliterate you!	绝对要消灭你们！	必ず、あなたたちを始末してあげる！	NONE

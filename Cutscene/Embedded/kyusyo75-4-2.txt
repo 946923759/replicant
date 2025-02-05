@@ -99,7 +99,7 @@ msgbox_open
 shake_camera	2
 /	302964	BOOM——————！！	轰隆隆隆——————！！	ドォォオオオオン——————！！	NONE
 music	The Sound of the End
-/Kiana	302965	The Honkai Impact has already begun. Open your eyes and see this world perish!	大崩坏已经开始了，你就眼睁睁地看着这个世界毁灭吧！	大崩壊が始まったわ。目を見開いてこの世界の滅びゆく様を見ていなさい！	NONE
+/Kiana	302965	The Final Impact has already begun. Open your eyes and see this world perish!	大崩坏已经开始了，你就眼睁睁地看着这个世界毁灭吧！	大崩壊が始まったわ。目を見開いてこの世界の滅びゆく様を見ていなさい！	NONE
 /Kyuushou	302966	Imaginary space…… Expansion!!!	虚数空间…展开！！	虚数空間……展開！！	NONE
 / 	302967	VSSSSH————！！！	嗡————！！！	ヴォン————！！！	NONE
 

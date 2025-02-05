@@ -72,24 +72,24 @@ speaker	Yiserin
 portraits	55	61	54
 emote	55	4
 emote	54	1
-msg	307008	We're not coming to see your quarrel…I'm quite busy, can I go first?	集合就是来看你们吵架的么…我可是很忙的，可以先走么？	呼び出されたのは、あなたたちの喧嘩を見るためなの……？私、忙しいんだけど、もう行ってもいいかな？	NONE
+msg	307008	Did you call me over just so I could watch you fight...? I'm busy, can I go now?	集合就是来看你们吵架的么…我可是很忙的，可以先走么？	呼び出されたのは、あなたたちの喧嘩を見るためなの……？私、忙しいんだけど、もう行ってもいいかな？	NONE
 speaker	Emesa
 emote	55	4
 emote	54	1
-msg	307009	Shut up!	你给我闭嘴！	うっさい！！	NONE
+msg	307009	You shut up!	你给我闭嘴！	うっさい！！	NONE
 speaker	Yiserin
 emote	55	4
 emote	54	5
-msg	307010	Coo!	咕！	うぐっ！	NONE
+msg	307010	Woah!	咕！	うぐっ！	NONE
 speaker	Himeko
 emote	61	1
 emote	54	5
-msg	307011	Fine, alright…Sorry, I make everyone worried because of my health condition, now we need to align the next steps, I know you're all very panic.	好了，言归正传…抱歉，因为我的身体原因让大家担心了，这次集合是希望和各位商议后面的对策，我知道各位一定十分不安。	いいわ、本題に入りましょう……。まず、私のせいで心配をかけさせたことを謝るわ、ごめんなさい。集まってもらったのは、これからの対策を皆と話し合いたいからよ。皆、とても不安でしょ？	NONE
-msg	307012	Yes, even we returned successfully, but doesn't mean that we're out of danger, so far Herrschers attack us for several times, apparently they want to kill the rest of human beings.	没错，虽然我们成功返回了ME社，但是这并不意味着我们脱离了危险，目前律者已经多次对我们进行了攻击，对方的意图很明显就是要消灭残存的人类。	私たちは、確かにME社から戻ることに成功した。けれど、危機的状況から脱したわけじゃない。現在、律者は幾度となく私たちに攻撃を仕掛けてきているわ。十中八九、向こうの目的は生き残った人間の抹消でしょうね。	NONE
+msg	307011	Let's get back on topic... First of all, I'm sorry for making you all worry about my health. But I've called you here so we can determine our next steps.	好了，言归正传…抱歉，因为我的身体原因让大家担心了，这次集合是希望和各位商议后面的对策，我知道各位一定十分不安。	いいわ、本題に入りましょう……。まず、私のせいで心配をかけさせたことを謝るわ、ごめんなさい。集まってもらったのは、これからの対策を皆と話し合いたいからよ。皆、とても不安でしょ？	NONE
+msg	307012	We're not out of danger even if we've successfully managed to make it back from M.E. The Herrschers have been attacking us over and over. I'm sure that their goal is to eradicate any remaining survivors.	没错，虽然我们成功返回了ME社，但是这并不意味着我们脱离了危险，目前律者已经多次对我们进行了攻击，对方的意图很明显就是要消灭残存的人类。	私たちは、確かにME社から戻ることに成功した。けれど、危機的状況から脱したわけじゃない。現在、律者は幾度となく私たちに攻撃を仕掛けてきているわ。十中八九、向こうの目的は生き残った人間の抹消でしょうね。	NONE
 portraits	61	54
 emote	61	2
 emote	54	5
-msg	307013	So wherever we are, we have no choice, but to fight.	所以不管我们到何处都无济于事，现在我们已经别无选择，只有和律者殊死一战一条道路。	だから、私たちはどこに行こうと無駄なのよ。今の私たちに選択の余地はないわ。律者に対し、決死の戦いを挑むしかないの。	NONE
+msg	307013	So wherever we go, it won't make us any safer. We have no choice but to fight the Herrscher, even if it could mean death.	所以不管我们到何处都无济于事，现在我们已经别无选择，只有和律者殊死一战一条道路。	だから、私たちはどこに行こうと無駄なのよ。今の私たちに選択の余地はないわ。律者に対し、決死の戦いを挑むしかないの。	NONE
 speaker	Teammate
 portraits	61	56
 emote	61	2

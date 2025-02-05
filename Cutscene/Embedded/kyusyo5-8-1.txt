@@ -1,0 +1,40 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	107	53
+match_names	Kiana	Mei
+bg	009/011_1280x720
+music	Blissful Death - No Vocals
+msg	307460	……	……	……。	NONE
+msg	307461	This place... 	这里是……	ここは……。	NONE
+extend	307462	I've returned here again.	又回到这个地方了么。	また、この場所に戻ってきたの。	NONE
+
+portraits	107	53
+/Kiana	307463	Mei...... Why are you in such a hurry for results?	芽衣…为什么这么急着想要结果呢？	……どうして、そんなに結果を急ぐの？	NONE
+/Mei	307464	If it's impossible to change the outcome, there's no meaning in waiting.	既然结果已经无法改变，等待又有什么用。	結果を変えられないのなら、待っていても仕方ないでしょ。	NONE
+tn	0	What?
+msg	307465	We can't return anything to the way it was before. Then we should give them back their enemy form. Any kindness will only make them suffer more. 	一切都已经回不去从前了，就应该以敌人的样子解脱她们，多余的仁慈只会让她们更加痛苦罢了。	何もかも、以前の形には戻せないの。それなら、敵の姿で彼女たちに引導を渡すべきよ。余計な優しさは、彼女たちをより苦しめるだけですもの。	NONE
+
+speaker	Kiana
+msg	307466	...... I just want to spend the same time with you in a quiet world. Why ...... when this world has given us such a chance.	芽衣…我只是想和你在一起安静地度过这段时间，既然这个世界给了我们这样的机会，为什么……	……私はただ静かな世界で、あなたと同じ時を過ごしたいだけなの。この世界が私たちにこんなチャンスをくれたのに、どうして……。	NONE
+speaker	Mei
+msg	307467	That's your idea, isn't it?  I'm not as selfish as you.	这只是你的想法，我不会像你这样自私。	それはあなたの考えでしょ。私はあなたみたいに自分勝手じゃないの。	NONE
+speaker	Kiana
+msg	307468	……	……	……。	NONE
+speaker	Mei
+msg	307469	If you want to play the villain in this world, go ahead. But you won't save anyone. Not even yourself.	如果你想在这个世界扮演罪人的话随你的便，但是你无法救赎任何人，就连自己也一样。	あなたがこの世界で悪人を演じていたいのなら、勝手にすればいいわ。だけど、あなたは誰も救えないわよ。あなた自身もね。	NONE
+speaker	Kiana
+msg	307470	Mei……	芽衣……	芽衣、先輩……。	NONE
+speaker	Mei
+msg	307471	Kiana, this nonsensical world should have ended a long time ago. If you won't intervene then I'll end this pointless dream of yours for you.	琪亚娜，这种无意义的事情早该结束了，如果你下不去手的话就由我来替你了结这无谓的梦境吧。	キアナ、こんな意味のないこと、さっさと終わらせるべきなのよ。あなたが手を下せないのなら、私が代わりにこの無意味な夢を終わらせるわ。	NONE
+portraits	107
+/Kiana	307472	……	……	……。	NONE
+msg	307473	....So we've reached the same outcome again. Just like before.	结果还是在重复同样的事情么。	その結果、同じ事を繰り返すんでしょう。	NONE
+/	307474	[i]What were Kiana and Mei...... Arguing about?[/i]	琪亚娜和芽衣…她们是在争吵些什么么？	キアナと芽衣……彼女たちは何を言い争っているのだろう？	NONE
+/Kiana	307475	You're too late. Mei has already made her choice.	你来晚了，芽衣已经做出了自己的选择。	来るのが遅かったわね。芽衣先輩は、もう選択をしてしまったわ。	NONE
+msg	307476	Maybe for her, this place is just an extension of that cruel world. ...... I thought this time I could change something, but it seems I can't escape the curse of fate after all.	对于她来说，或许这里只不过是那个残酷世界的延续罢了…本以为这次我能够改变些什么，看来最终还是逃不过命运的诅咒。	彼女にとって、ここはあの残酷な世界の延長にすぎないのかもしれないわ……今度こそ私が何か変えられると思っていたけど、結局運命の呪いからは逃れられないみたいね。	NONE
+msg	307477	Even if it's just a fleeting dream, I can't get even the slightest moment of peace. Maybe this is my punishment.	就算只是黄粱一梦也无法获得片刻的安宁，这也许就是对我的惩罚吧。	ただの儚い夢だとしても、わずかな安寧すら手に入れられない。これはもしかしたら、私に対する罰なのかもしれないわね。	NONE
+msg	307478	I'm sorry. I knew I couldn't help you. I should have told you the whole truth sooner. I thought that if it had been you, there was a small chance something would change.	抱歉，结果还是没有能够帮到你，我应该更早告诉你一切的真相，如果是你的话或许能够找到转机。	ごめんなさい。やっぱり、あなたを助けてあげられなかった。もっと早く、あなたに全ての真相を話すべきだったわ。あなただったら、チャンスを掴めたかもしれないのに。	NONE
+/	307479	……	……	……。	NONE
+/Kiana	307480	Finally, I'll tell you how to end this world....	最后，让我来告诉你结束这个世界的方法吧……	最後に、この世界を終わらせる方法を教えてあげる……。	NONE
+msg	307481	You, the "savior," make the best choice...... And show me an ending I couldn't find.	身为“救世主”的你来做出最好的选择吧…找到我所看不到的那个结局。	「救世主」のあなたが、最も良いと思うものを選択しなさい……そして、私には見つけられなかった結末を見せて。	NONE
+msg	307482	Then... I'll leave you in charge of everything.	那么…一切就交给你了。	じゃあ……一切は任せたわよ。	NONE
+

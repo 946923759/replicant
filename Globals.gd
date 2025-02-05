@@ -569,7 +569,7 @@ static func Int32ToBitArray(bitflag:int, arr_len:int=12)->PoolByteArray:
 		arr[i] = bitflag & 1<<i
 	return PoolByteArray(arr)
 
-static func get_matching_files(path,fname):
+static func get_closest_file(path,fname) -> String:
 	#var files = []
 	
 	if "/" in fname:
@@ -584,7 +584,7 @@ static func get_matching_files(path,fname):
 	var ok = dir.open(path)
 	if ok != OK:
 		printerr("Warning: could not open directory: ERROR ", ok)
-		return null
+		return ""
 	#print(dir.get_current_dir())
 	dir.list_dir_begin(false,true)
 
@@ -593,12 +593,13 @@ static func get_matching_files(path,fname):
 		#print(file)
 		if file == "":
 			dir.list_dir_end()
-			return null
+			break
 		elif file.begins_with(fname):
 			print("Found file:"+file)
 			#print("Return "+path+file)
 			dir.list_dir_end()
 			return path+file
+	return ""
 
 static func get_cutscene_path()->String:
 	if not OS.has_feature("console"):

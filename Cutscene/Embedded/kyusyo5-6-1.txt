@@ -1,0 +1,189 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	55	61	62
+music	Voice of no Return
+portraits	55	61	62
+match_names	Emesa	Himeko	Theresa
+speaker	Himeko
+bg	009/077_1280x720
+emote	61	1
+msg	307326	……	……	……。	NONE
+emote	62	1
+/Theresa	307327	……	……	……。	NONE
+emote	55	1
+emote	62	1
+/Emesa	307328	......This is the Theresa that you and Bronya mentioned before?	……这位就是你和布洛妮娅之前提到的德丽莎么？	……このちっこいのが、以前ブローニャとあんたが話していたテレサなのか？	NONE
+emote	55	1
+emote	61	1
+/Himeko	307329	Yes.	嗯。	ええ、そうよ。	NONE
+emote	55	1
+emote	61	1
+/Emesa	307330	Erm.... I heard from Bronya that she's the headmistress of the Valkyrie academy, and your teacher as well...	那个…我听布洛妮娅说她是女武神学校的学园长也是姬子的老师……	あーっと……ブローニャの話じゃ、彼女は戦乙女で、学校の学園長で、姫子の先輩でもあるって……。	NONE
+emote	55	1
+emote	61	1
+/Himeko	307331	That's correct.	对。	そうよ。	NONE
+speaker	Emesa
+emote	55	1
+emote	61	1
+msg	307332	But…but……	可是…可是……	でもよ……。	NONE
+msg	307333	Isn't this ☆☆ a child?!	这OO的不是小孩子么！！！	ロリのただのガキじゃんかよ！！	NONE
+
+emote	55	1
+emote	62	1
+/Theresa	307334	Coo!	咕！	ごふっ！	NONE
+
+emote	55	1
+emote	62	1
+/Emesa	307335	I've been wondering about you since I first saw you! Don't tell me you were infected by the Honkai and have a body like that! Or were you stunted from birth? This kind of thing is not possible with modern science! You.......	啊啊！！从见面开始就很在意了！！是被崩坏感染才变成这样的么！还是说天生发育不良？这不科学啊！你不是已经要……	一目見た時から気になってたんだよ！まさか崩壊に感染して、そんな身体になったのか！？それとも生まれながらの発育不良？こんなの、現代医学じゃありえない！あんた……。	NONE
+emote	62	1
+/Theresa	307336	Coo!	咚！	ドンッ！	NONE
+emote	62	2
+msg	307337	If you say more, I won't forgive you ~	再说下去我就不客气了哦~	それ以上言ったら、許さないわよ～	NONE
+speaker	Emesa
+emote	55	1
+emote	62	2
+msg	307338	Sorry, sorry... Can you please put down that massive cross in your hand?	抱！抱歉…请把手里的大十字架放下好么……	す、すまん……ひとまず、その手に持っている十字架を下ろしてくれないか……。	NONE
+speaker	Himeko
+emote	55	1
+emote	61	1
+msg	307339	Hmph, still as childish as ever.	哼，还是和以前一样孩子气。	フンッ、相変わらず子供っぽいんだから。	NONE
+speaker	Theresa
+emote	55	1
+emote	62	1
+msg	307340	Woo……	呜……	うぅ……。	NONE
+speaker	Himeko
+emote	55	1
+emote	61	1
+msg	307341	……	……	……。	NONE
+speaker	Emesa
+emote	55	1
+emote	61	1
+msg	307342	Hey…don't you think the atmosphere is weird? Shouldn't you have lots of things to say after such a long time?	那个…你们不觉得气氛很僵硬么？这么久没有见面不应该有更多的话可以聊么？	なぁ……あんたら、ぎこちなさすぎないか？普通、久しぶりに会ったら積もる話もあるだろ？	NONE
+speaker	Himeko
+emote	55	1
+emote	61	1
+msg	307343	I've got nothing to say to a deserter. We're leaving when Bronya wakes up.	我和临阵脱逃的人没什么好说的，等布洛妮娅醒了我们就离开。	敵前逃亡するような人と話すことは何もないわ。ブローニャの目が覚めたら出ていくわよ。	NONE
+speaker	Theresa
+emote	55	1
+emote	62	1
+msg	307344	Where are you going? Are you going to fight the Herrscher?	你们要去哪？难道还要去和律者战斗么？	どこに行くつもり？まさか、まだ律者と戦う気？	NONE
+speaker	Himeko
+emote	55	1
+emote	61	2
+msg	307345	It's none of your business.	和你无关。	あなたには関係ないわ。	NONE
+speaker	Theresa
+emote	55	1
+emote	62	1
+msg	307346	……	……	……。	NONE
+speaker	Emesa
+emote	55	1
+emote	62	1
+msg	307347	Himeko you are such a topic killer……	姬子你这家伙还真是话题终结者啊……	姫子って、ほんと話を終わらせるのが得意だよな……。	NONE
+emote	55	2
+emote	62	1
+msg	307348	Well, is Theresa living on her own after that disaster? Impressive!	那个，德丽莎在那场大灾难之后都是一个人生活的么？实在是太厉害了！	なぁ、テレサはあの大災害の後、ずっと1人で過ごしてたんだろ？すげーじゃん！	NONE
+speaker	Himeko
+emote	55	2
+emote	61	1
+msg	307349	What's so great about it? Anyone can survive if they find a place to hide and run away from it all.	有什么厉害的，只要找个地方躲起来，一味逃避的话谁都可以苟活下来。	すごくも何ともないわよ。適当な場所を探しては隠れて、ずっと逃げ回ってただけ。誰でも生き延びられるわ。	NONE
+speaker	Emesa
+emote	55	4
+emote	61	1
+msg	307350	Shut up!	你闭嘴！	あんたは黙ってろ！	NONE
+speaker	Theresa
+emote	55	4
+emote	62	2
+msg	307351	No... She's saying the truth. I did choose to run away. I'm not brave enough to fight like the rest of you.	没事…姬子说的是事实。我的确选择了逃避，没办法像你们一样勇敢的战斗。	いいの……姫子の言っていることは事実よ。あたくしは確かに逃げることを選んだ。あなたたちのように勇敢に戦えなかったの。	NONE
+emote	55	4
+emote	62	1
+msg	307352	I didn't want to see you guys fight Kiana. That's why I...	我不想看到你们和琪亚娜战斗的样子，所以……	あたくしは、あなたたちがキアナと戦う姿を見たくなかったの。だから……。	NONE
+speaker	Himeko
+emote	55	4
+emote	61	2
+msg	307353	So you just abandoned everyone and ran away? Easy choice to make.	所以就干脆抛下所有人拍拍屁股走人么？还真是轻松的选择呢。	だからいっそのこと、皆を見捨てて尻尾を巻いて逃げたの？ずいぶんと簡単な選択ね。	NONE
+speaker	Theresa
+emote	55	4
+emote	62	1
+msg	307354	It's not like that!	不是的！	違うわよッ！	NONE
+speaker	Himeko
+emote	55	4
+emote	61	1
+msg	307355	...... I'm going to go take a look around outside, you guys get some rest.	……我去外面巡逻，你们好好休息吧。	……私は外を見回りに行ってくるから、あなたたちはゆっくり休んでてちょうだい。	NONE
+speaker	Theresa
+emote	55	4
+emote	62	1
+msg	307356	……	……	……。	NONE
+speaker	Emesa
+emote	55	4
+emote	62	1
+msg	307357	Wait! You're the one that needs to rest! Don't forget your body is…...	等等！现在最需要休息的是你！你别忘了你的身体已经……	待て！今、休息が必要なのは姫子も同じだ！忘れんなよ、あんたの身体だってもう……。	NONE
+speaker	Himeko
+emote	55	4
+emote	61	2
+msg	307358	Emesa, how many times do I have to tell you to leave me alone!	和你说了多少次了别管我！	エミザ、私に構わないでって何度言わせるつもり！	NONE
+choice	308189	Emesa's right. Let me be in charge of the patrol.	埃米沙说的对，巡逻的事情就交给我来吧。	エミザの言う通り、見回りは私に任せて。	NONE
+choice	308204	Let me go with you. It's too dangerous to do it alone.	我和你一起去吧，一个人太危险了。	一緒に行くよ。1人じゃ危険すぎるから。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Emesa
+emote	55	4
+msg	307359	She's right! You stay right where you are! If you take one step out of here today, I won't forgive you!	她说的没错！你给我好好呆着！你今天要是敢踏出这里一步我和你没完！	九霄の言うとおりだ！大人しくしろ！今日、ここから一歩でも出ようものなら、許さないからなッ！	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Emesa
+emote	55	4
+msg	307360	No! You must stay! I won't let you step out of here today!	不行！姬子必须给我在这呆着！你要是敢踏出这里一步我今天和你没完！	ダメだッ！姫子は今日一日ここで大人しくしてろ！一歩でも出ようものなら、今日こそ許さないからな！	NONE
+
+label	end_choices
+speaker	Himeko
+emote	61	1
+msg	307361	Huh? I don't care how sick I am, there's no way you're beating me in a fight.	怎么？我的身子再怎么样撂倒你还是绰绰有余的。	へぇ？どんなに身体が不調だろうと、あなたを倒すくらいわけないんだけど。	NONE
+speaker	Emesa
+emote	55	1
+emote	61	1
+msg	307362	Oh yeah? Bring it!	嚯嚯！那就试试！	ほぅ？だったら、試してみるか？見回りは私と九霄で行く。	NONE
+speaker	Theresa
+emote	55	1
+emote	62	1
+msg	307363	You two go ahead. I'll calm Himeko down.	你们去吧，姬子就由我来挡着。	あなたたち、行きなさい。姫子はあたくしがなだめておくから。	NONE
+speaker	Himeko
+emote	55	1
+emote	61	2
+msg	307364	Theresa!	德丽莎你！	テレサ、あなた！	NONE
+speaker	Theresa
+emote	55	1
+emote	62	1
+msg	307365	What? Do you want to play with me?	还是说你想和我比划一下试试么？	何？あたくしと勝負したいの？	NONE
+speaker	Himeko
+emote	55	1
+emote	61	2
+msg	307366	Hmph!	啧！	ちっ！	NONE
+speaker	Emesa
+emote	55	1
+emote	61	2
+msg	307367	Kyuushou, let's go!	九霄我们走！	九霄、行くぞ！	NONE
+msg	307368	And……	还有……	それから……。	NONE
+msg	307369	If you two have something to say, you should say it.... There might not be another opportunity. And if you want to fight each other, you'd better take it easy. I'm not going to treat any injuries.	你们两要是有什么话还是早点说清楚吧…不然可就没时间了。要是想打架的话下手轻点，我可不会给你们治疗。	あんたら、何か言いたいことがあるなら、さっさと話し合えよな……さもないと、このまま一生平行線だぞ。あと喧嘩するなら手加減しろよ。あんたらの治療はしないからな。	NONE
+speaker	Theresa
+emote	55	1
+emote	62	2
+msg	307370	……	……	……。	NONE
+speaker	Himeko
+emote	55	1
+emote	61	1
+msg	307371	All right, all right. If you're going, get going! Don't go far. If you don't come back, I won't go looking for you!	行了，要去就去！别走太远，不然回不来了我可不会来找你们！	分かったわよ。行くなら、さっさと行きなさい！遠くに行かないようにね。帰って来れなくても探しに行かないから！	NONE
+speaker	Emesa
+emote	55	1
+emote	61	1
+msg	307372	Don't you worry!	不用你操心！	ハンッ！心配いらねぇよ！	NONE
+
+portraits	61	62
+match_names	Himeko	Theresa
+emote	61	1
+se	DLC_CH03_EV02_GateClose
+/	307373	*door slam*	砰！	バンッ！	NONE
+emote	62	2
+/Theresa	307374	What a sweet girl...	真是个温柔的孩子呢。	優しい子ね。	NONE
+emote	61	1
+/Himeko	307375	Hah. She's just am arrogant brat...	哼，不过是个自以为是的自大小鬼罢了……	フンッ、自分が正しいと思ってる、ただの偉そうなガキよ……。	NONE

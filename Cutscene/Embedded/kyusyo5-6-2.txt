@@ -1,0 +1,42 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	55
+
+bg	009/064_1280x720
+emote	61	1
+msg	307376	……	……	……。	NONE
+speaker	Emesa
+portraits	55
+emote	55	1
+emote	61	1
+se	DLC_CH01_EV14_WindWooshA
+msg	307377	Sorry. I got mad and decided to follow you, but I'm the one slowing you down.	抱歉，一时激动跟了过来，现在反而变成了你的累赘了呢。	すまん。ついカッとなってついて来ちゃったけど、足手まといだよな。	NONE
+msg	307378	I'm still pretty useless...	果然我还是太没用了……	どうして私はこうも役立たずなんだ……。	NONE
+choice	308190	Emesa has already tried, don't blame yourself.	埃米沙已经很努力了，不用自责。	エミザは十分頑張った。自分を責めないで。	NONE
+choice	308205	Thanks to Emesa they have the chance to stay alone.	多亏了埃米沙才给了她们独处的机会。	エミザのおかげで彼女たちを2人にしてあげられた。	NONE
+condjmp_c	c2dest	2
+
+label	c1dest
+speaker	Emesa
+emote	55	2
+msg	307379	Thank you. It's all because of your motivation, that makes our here.	谢谢。多亏了有你鼓励着我们前进，我们才能走到这里。	ありがとう。あんたが進むよう励ましてくれたおかげで、ここまで来れたんだ。	NONE
+emote	55	1
+msg	307380	But, I guess all of you're tired, it's time to stop here.	不过，我想大家一定都累了吧，是时候该停下脚步了。	ここまでの道で姫子とブローニャは疲れてる。少し休むべき時だったんだ。	NONE
+msg	307381	At least today let them relax and rest well with important people.	至少今天让她们放下包袱和自己重要的人一起好好休息吧。	少なくとも、今日だけは彼女たちの肩の荷を下ろさせて、大切な人と一緒に休ませてあげよう。	NONE
+jmp	end_choices
+
+label	c2dest
+speaker	Emesa
+emote	55	1
+msg	307382	I just don't like it. I mean, they obviously care about each other, but they still pretend to be indifferent.	我只是看不惯而已，明明很重视对方却要装作冷漠的样子。	ただ気にくわないんだよ。明らかに相手のことを大切に思っておきながら、あんな風に冷たい態度を装うのがな。	NONE
+msg	307383	When you lose someone, you might regret not telling them your honest feelings. Those regrets will stay for the rest of your life.	当失去对方的时候才后悔没有把自己的心声说出来的话一定会后悔一辈子的。	相手を失ってから、自分の心の声を言わなかったことを後悔することがある。そういった後悔は、一生続くんだ。	NONE
+
+label	end_choices
+speaker	Emesa
+emote	55	2
+msg	307384	I'm so jealous, to have someone aside……	真是羡慕她们呢，能有这样的人在身边……	あいつらが羨ましいよ。そんな人が、今も傍にいてくれるんだから……。	NONE
+emote	55	4
+msg	307385	(Cough cough cough)!	咳咳咳！	ゴホッ、ゴホッ、ゴホッ！	NONE
+emote	55	1
+msg	307386	Sorry…I'm fine.	抱歉…我没事。	すまない……大丈夫だ。	NONE
+emote	55	2
+msg	307387	Let's go, I need to be helpful as well!	走吧，既然答应了你一起出来巡逻那我也得帮上忙才行！	行こう。あんたが見回りを引き受けてくれたからには、私も手伝わないとな！	NONE

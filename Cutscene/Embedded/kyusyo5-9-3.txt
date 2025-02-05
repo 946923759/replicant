@@ -1,0 +1,94 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	The Sound of the End - Full
+bg	009/064_1280x720
+portraits	61	53
+match_names	Himeko	Mei
+
+speaker	Mei
+/Mei	307602	What's wrong ...... are you at your limit already?	怎么了…已经撑不住了么？	どうしたの……もう限界なの？	NONE
+/Himeko	307603	Eh……	咳咳……	ゴホッ、ゴホッ……。	NONE
+/Mei	307604	You're stalling me and earning their time, right?  It doesn't make sense to give up so easily.	你不是要拖住我，给她们争取时间么，这个样子就结束的话就没有意义了。	あなたは私の足止めをして、彼女たちの時間を稼ぐんでしょ？こんな簡単に終わってしまっては意味がないわよ。	NONE
+/Himeko	307605	Hahaha ... You've really become stronger ... You've obtained the power of the Herrscher, and it's hardened your heart to stone.  Even you, who used to be kind, can be so ruthless.	咳咳…还真是变得强大了呢…拥有了律者的力量，连内心都变的如同石头一样坚硬，没想到曾经那样温柔的你，也会有如此冷酷的时候。	ゴホッ、ゴホッ……本当に強くなったわね……律者の力を手に入れて、内心まで石のように硬くなっているわ。かつてのあの優しいあなたでも、こんなに冷酷になれるとはね。	NONE
+/Mei	307606	Is that all you have to say....?	想说的话就只有这些么……	言いたいことは、それだけかしら……。	NONE
+/Himeko	307607	I would like to talk more, but it's a shame…there's no wine here……	我倒是想和你再多叙叙旧，不过可惜了…这里现在连一瓶像样的酒都找不到……	本当は積もる話の一つや二つ、あなたとしたかったけど……残念ね、ここじゃお酒が見つかりやしない。	NONE
+msg	307608	(cough, cough)!	咳咳！	ゴホッ、ゴホッ！	NONE
+/Mei	307609	Are you still going to fight me when your body is about to give up?	这样的身体还想继续战斗么。	そんな身体で、まだ戦い続けるつもり？	NONE
+/Himeko	307610	Yeah... I have nothing left to do except to fight.	是啊…除了战斗我什么也没有剩下了。	そうよ……戦うこと以外、私には何も残されていないから。	NONE
+msg	307611	(Cough, cough!) At least I'll be able to go out fighting for what I've believed in...	咳咳！至少在最后不能晚节不保啊……	ゴホッ、ゴホッ！少なくとも、最後の最後で己の生き様を汚すわけにはいかないわ……。	NONE
+msg	307612	Ha! Break time's over... Let's get on with it! I haven't fought this hard in a long time!	呼！休息够了…继续吧！好久没有这么痛快地打一架了！	ふぅ！休憩はここまで……続けるわよ！こんな痛快な戦いは久しぶりだわ！	NONE
+
+/Mei	307613	I don't have time to play with you. I'll take care of you with the next blow.	我可没时间陪你了，下一击就解决掉你。	私にはあなたと遊んでいる時間なんてないの。次の一撃であなたを始末するわ。	NONE
+/Himeko	307614	Then try it!	那就试试看吧！	やれるものならやってみなさいッ！	NONE
+msg	307615	Ha!!!	哈！！！	ハァアアァッ！！！	NONE
+
+portraits	61,false,3	53
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+/	307616	Bang!!	砰！！	カァンッ！	NONE
+
+stopmusic	1.0
+/Mei	307617	!?	！？	！？	NONE
+msg	307618	Himeko……	姬子……	姫子……。	NONE
+
+portraits
+bg	009/071_1280x720
+
+music	The Sound of the End - Quiet
+/Himeko	307619	Eh……	咳咳……	ゴホッ、ゴホッ……。	NONE
+msg	307620	I'm sorry......I'm sure if I had more power it would have ended differently......I'm a teacher and I'm so useless......I'm so ashamed of being so useless.	抱歉…看来还是有点力不从心了…身为老师却这么没用…真是丢脸啊。	ごめんなさい……私にもっと力があれば、きっと違う結末だったのかしら……教師なのにこんなに役立たずだなんて……本当に恥ずかしいわ。	NONE
+/Mei	307621	……	……	……。	NONE
+/Himeko	307622	Hey...... Mei. I don't know if you remember who you used to be, and I don't know if you still have human emotions now that you've become a Herrscher, but .......	喂…芽衣。不管你记不记得从前的自己，不管变成律者后的你还是否拥有人类的感情……	ねぇ……芽衣。あなたが以前の自分を覚えているか分からないし、律者になったあなたにまだ人間の感情があるのかも分からないけど……。	NONE
+msg	307623	As a teacher, I'm telling you... You are wrong.	但是现在我还是想以老师的身份告诉你……你做错了。	だけど、教師としてあなたに言っておくわ……あなたは間違っているわよ。	NONE
+msg	307624	As your teacher, I have to correct your mistakes and put you on the right path..... This is my responsibility....	既然身为你们的老师就必须要纠正你的错误…让你走向正确的道路，这是我的责任……	あなたたちの教師である以上、あなたの間違いを正して……あなたに正しい道を歩ませる。これは私の責任よ……。	NONE
+msg	307625	So..... Stop it already.	所以…放手吧。	だから……もうやめなさい。	NONE
+msg	307626	At least for the short time left.... Let those kids spend the rest of it in peace.	至少在剩下的这段时间里…让那些孩子安静地度过剩下的时光。	少なくとも残された時間……あの子たちを静かに過ごさせてあげて。	NONE
+msg	307627	This is.... My final wish.....	这是我最后的心愿……	これが私の、最後の願いよ……。	NONE
+/Mei	307628	It's…too late.	已经…来不及了。	もう……間に合わないわ。	NONE
+msg	307629	Sorry....	抱歉了……	ごめんなさい……。	NONE
+msg	307630	Ms. Himeko.	姬子老师。	姫子先生。	NONE
+
+se	DLC_CH03_EV05_ThunderBig
+/	307631	Boom——!!	轰隆——！！	ドォオオオオォン——ッ！！	NONE
+
+bg	009/064_1280x720
+portraits	55	60	62
+match_names	Emesa	Bronya	Theresa
+emote	55	4
+/Emesa	307632	That... voice just now was...	刚，刚才的声音是……	い、今の音は……。	NONE
+speaker	Bronya
+emote	60	5
+emote	55	4
+msg	307633	Don't look back!!	不要回头！！	振り返ってはいけません！！	NONE
+speaker	Emesa
+emote	60	5
+emote	55	4
+msg	307634	Let go! You ☆☆s! I can't abandon Himeko!  Go back!!!	放开我！你们这些混蛋！OO养的！不能抛下姬子！给我回去！！	放せッ！このバカども！姫子を見捨てるわけにはいかない！戻るんだ！！	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307635	We're getting to the border! I left a ship there, as long as we arrive……	前面就到长空市的边界了！我在那边留了一艘船，只要到达……	この先は長空市との境界よ！そこに船を停めてあるから、辿り着けさえすれば……。	NONE
+speaker	Emesa
+emote	60	5
+emote	55	4
+msg	307636	Bronya! Go back! Go back!!	布洛妮娅！给我回去！回去啊！！	ブローニャ！戻れ！戻るんだッ！！	NONE
+speaker	Bronya
+emote	60	3
+emote	55	4
+msg	307637	……	……	……。	NONE
+speaker	Emesa
+emote	60	3
+emote	55	4
+msg	307638	Damn... Bronya... You fucking asshole! Why won't you go save Himeko?! Why?!	呜呜…布洛妮娅…你这个混蛋！为什么不救她！为什么！	クソッ……ブローニャ……このバカヤロー！どうして、姫子を助けに行かない！どうしてッ！	NONE
+msg	307639	Why are you two doing this to me... Go help her. You.... Why are you.............	为什么…不救姬子…你们这些…这些……	何でこんなことになるんだ……姫子を助けろよ……あんたら……どうして……。	NONE
+speaker	Theresa
+emote	60	3
+emote	62	1
+msg	307640	Hey! Bronya! The kid fainted!	喂！布洛妮娅！这孩子晕过去了！	ちょっと！ブローニャ！この子、気を失ったわよ！	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307641	Damn……	可恶……	くっ……。	NONE
+msg	307642	No…we can't get on the boat, if we get caught by the Herrscher we have no place to escape!	不行…我们不能上船，如果在水面上被律者追上的话根本没有地方逃！	ダメです……船には乗れません。もし水上で律者に追いつかれてしまったら逃げ場がありません！	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307643	Follow me! I know a place we can hide!	跟我来！我知道有个地方可以躲一下！	ついて来て！隠れられる場所を知ってるわ！	NONE

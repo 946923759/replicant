@@ -6,7 +6,9 @@ portraits	62
 emote	62	1
 emote	55	1
 /Theresa	307267	Come in.	进来吧。	来なさい。	NONE
+
 bg	009/077_1280x720
+music	Voice of no Return
 portraits	62	61	55	60
 /Emesa	307268	Here is……	这里是……	ここは……。	NONE
 /Theresa	307269	Don't worry, this is a safe house I found in Academy City. It's on the border of the city, so the Honkai Energy isn't as concentrated.	放心吧，这里是我在学园都市找到的安全屋，这里处于学园都市的边缘地区，崩坏能的浓度相对较弱。	安心して。ここは私が学園都市で見つけたセーフティハウスよ。学園都市の外れに位置していて、崩壊エネルギーの濃度も比較的低いの。	NONE
@@ -62,7 +64,7 @@ msg	307283	That's enough……	这就够了……	そう、これで十分……
 speaker	
 emote	55	3
 msg	307284	……	……	……。	NONE
-msg	307285	……	……	……。	NONE
+extend	307285	……	……	……。	NONE
 speaker	Bronya
 portraits	60
 emote	60	4
@@ -88,8 +90,9 @@ speaker
 msg	307300	……	……	……。	NONE
 extend	307301	……	……	…………。	NONE
 
-stop_music	1.0
+nop	stop_music	1.0
 bg	009/077_1280x720
+music	Voice of no Return
 portraits	61
 emote	61	1
 /Himeko	307302	Bronya, do you feel better?	布洛妮娅，好些了么？	ブローニャ……。	NONE
@@ -147,24 +150,20 @@ msg	307318	That's……	真是……	本当に……。	NONE
 emote	61	1
 emote	60	2
 msg	307319	so good……	太好了……	よかった、よかった……です……。	NONE
-speaker	Himeko
-portraits	61	60
+
+portraits	55	61	62
 emote	61	1
 emote	60	2
-msg	307320	Bronya!?	布洛妮娅！	ブローニャ！？	NONE
-speaker	Emesa
-portraits	55	60
+/Himeko	307320	Bronya!?	布洛妮娅！	ブローニャ！？	NONE
 emote	55	1
 emote	60	2
-msg	307321	Shh! It's ok, she's just asleep.	嘘！没事，她只是睡着了。	シッ！大丈夫、眠っただけだ。	NONE
+/Emesa	307321	Shh! It's ok, she's just asleep.	嘘！没事，她只是睡着了。	シッ！大丈夫、眠っただけだ。	NONE
 msg	307322	She must haven't slept for several days…trying to find the Herrscher for Seele……	这几天布洛妮娅一定也没有合过眼吧…为了希儿而到处寻找着律者……	きっとブローニャは、ここ数日寝てなかったんだと思う……ゼーレのためにあちこち律者を探し回ってたんだろう……。	NONE
 speaker	Theresa
-portraits	55	62
 emote	55	1
 emote	62	1
 msg	307323	...Are you all sure you want to deceive Bronya like that? I understand how you feel, but it's going to be even more cruel when she finds out the truth.	……你们这么骗她真的好么？我知道你们的心情，但是当她面对真相的时候将会变得更残酷。	……あなたたち、そうやってブローニャを騙して本当にいいの？あなたたちの気持ちは分かるけど、彼女が真相を知った時、もっと深い絶望を与えることになるわよ。	NONE
 speaker	Emesa
-portraits	55	62
 emote	55	1
 emote	62	1
 msg	307324	Sorry... I'll tell Bronya the truth when it gets to that point. At least for now, I want her to be able to relax and get some sleep.	对不起，到那个时候我会亲自告诉布洛妮娅的，至少让她暂时放下心来好好睡一觉吧。	悪い……。でも、その時は私の口からブローニャに伝えるさ。少なくとも今は心を落ち着かせて、寝させてやらないと。	NONE

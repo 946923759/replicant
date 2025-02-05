@@ -1,0 +1,84 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	009/064_1280x720
+portraits	55,false,-1	60,false,-2	61,false,-3	62,false,-4	53,false,1
+match_names	Emesa	Bronya	Himeko	Theresa	Mei	_DIM_ALL_WHEN_EMPTY
+music	The Sound of the End
+se	DLC_CH03_EV05_ThunderBig
+/	307562	Boom!!	轰隆！！	ドォオオーーン！！	NONE
+emote	60	5
+/Bronya	307563	(cough)!	咕！	ぐっ！	NONE
+emote	61	2
+/Himeko	307564	Bronya! Come on, get up!	布洛妮娅！快站起来！	ブローニャ！早く立って！	NONE
+emote	61	2
+/Mei	307565	This is your end.	到此为止了。	ここまでね。	NONE
+speaker	Theresa
+emote	62	1
+/Theresa	307566	Mei, stop it!!	芽衣住手！	芽衣、やめてっ！！	NONE
+se	DLC_CH03_EV05_ThunderBig
+/	307567	Boom!!	轰隆！！	ズドォオオオオオォンッ！	NONE
+/Mei	307568	Hmph, don't think you can still get away with blocking it this time!	哼，别以为这次还能侥幸挡下来！	フンッ、また運よく防げるなんて思わないことね！	NONE
+
+se	DLC_CH03_EV05_ThunderBig
+/	307569	Boom!!	轰隆！！！	ドォオオオオォンッ！！！	NONE
+emote	62	1
+/Theresa	307570	Ugh! I won't let you! Mei!	唔！我是不会退让的！芽衣！	うっ！あたくしは引き下がらないわよ！芽衣！	NONE
+/Mei	307571	It doesn't matter... Either way, you're all going to become ash.	无所谓…反正你们马上都会化为灰烬。	構わないわ……どちらにせよ、あなたたちは灰になるのだから。	NONE
+
+shake_camera
+se	DLC_CH00_EV04_ExplosionClose
+/	307572	Boom!!!	轰隆！！！	ドォオオオォーーン！	NONE
+/Theresa	307573	Ugh!	唔！！	うくっ！	NONE
+/Mei	307574	Why don't you fight back? If you have no intention of fighting, just give up!	为什么不反击呢？既然不打算战斗的话干脆点放弃！	どうして反撃しないの？戦うつもりがないのなら、いさぎよく諦めなさい！	NONE
+msg	307575	This world was forsaken from the beginning. All you were looking for was a false light.	这个世界从最初开始就不存在希望，你们不断追逐的只是虚假的光芒而已。	この世界には最初から希望なんて存在しないのよ。あなたたちが追い求めていたのは偽りの光にすぎないの。	NONE
+msg	307576	It's the same no matter how many times you repeat it. Your death is an unchangeable fate!	不管重复多少次都是一样，你们的死亡是无法改变的事实！	何回繰り返しても同じよ。あなたたちの死は変えようのない事実なの！	NONE
+
+shake_camera
+se	DLC_CH00_EV04_ExplosionClose
+/	307577	Boom!!	轰隆！！	ズドォオオオオオォンッ！！	NONE
+
+/Theresa	307578	Ah!!	啊！！	あっ——！！	NONE
+emote	61	2
+/Himeko	307579	Theresa!	德丽莎！	テレサッ！	NONE
+
+
+portraits	55,false,-1	60,false,-2	62,false,-3	61	53,false,1
+match_names	Emesa	Bronya	Theresa	Himeko	Mei	_DIM_ALL_WHEN_EMPTY
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+/	307580	Bang!!	砰！！	ズザァ——！！	NONE
+
+/Theresa	307581	Himeko!	姬子！	姫子ッ！	NONE
+/Himeko	307582	Take the girls and run!	带着布洛妮娅她们走！	ブローニャたちを連れて逃げて！	NONE
+/Theresa	307583	No! You won't have any chance to win on your own!	不行！你一个人是没有胜算的！	ダメよ！あなた1人じゃ勝ち目なんてないわ！	NONE
+/Himeko	307584	We're all going to die if this keeps up! Get them out of here! You're the only one who can protect them now!	这样下去我们都会死！带着她们走！现在能保护她们的只有你了！	このままじゃ、どちらにせよ全滅よ！彼女たちを連れて逃げなさい！今、彼女たちを守れるのはあなただけなのよ！	NONE
+emote	62	1
+/Theresa	307585	But!	可是！	でも！	NONE
+/Himeko	307586	That's all I can do now! Don't forget what you promise me! Protect those kids!	我现在能做到也只有这些了！不要忘了你答应我的事情！带着那些孩子活下去！	私にできることはこれだけなの！私と約束したことを忘れないで！あの子たちを連れて生きるのよ！	NONE
+/Theresa	307587	Himeko……	姬子……	姫子……。	NONE
+/Mei	307588	.....I've heard enough of your boring convictions!	……这种无聊的觉悟我已经听够了！	……そんなつまらない覚悟、聞き飽きたわ！	NONE
+se	DLC_CH03_EV05_ThunderBig
+/	307589	Boom!!	轰隆！！	ドォオオオオォンッ！！	NONE
+/Himeko	307590	Go!	快走！	早くッ！！	NONE
+emote	61	2
+emote	55	4
+/Emesa	307591	Himeko! Stop! Let's die together! I won't be afraid!	姬子！别耍帅了！要死就一起死！我才不会怕！	姫子！何、格好つけてんだよ！死ぬ時は一緒だ！恐怖なんて微塵も感じない！	NONE
+emote	61	2
+emote	55	4
+/Himeko	307592	Bronya! Don't you want to save Seele! Then don't hesitate! Go!	布洛妮娅！你不是要救希儿么！那就不要犹豫！给我走！	ブローニャ！あなたはゼーレを助けたいんでしょ！だったら迷わないで！逃げなさい！	NONE
+emote	60	5
+emote	55	4
+/Bronya	307593	……	……	……。	NONE
+msg	307594	Theresa, give me Seele. You can carry Emesa on your back.	德丽莎，把希儿给我，你背着埃米沙……	テレサ、ゼーレをブローニャに。あなたはエミザを背負ってください……。	NONE
+emote	60	5
+emote	55	4
+/Emesa	307595	Bronya!	布洛妮娅！	おいっ、何言ってんだブローニャ！	NONE
+emote	62	1
+emote	55	4
+/Theresa	307596	Damn!	可恶！	くッ！	NONE
+emote	62	1
+emote	55	4
+/Emesa	307597	Hey! Let go of me! Himeko! Himeko!!!	喂！放开我！放开我！姬子！姬子！！	おいっ！放せ！姫子！姫子ッーーーー！！	NONE
+msg	307598	……	……	……。	NONE
+msg	307599	Himeko……	姬子……	姫子……。	NONE
+emote	61	2
+/Himeko	307600	Kyuushou... Hurry up and get out of here, too.	九霄…你也快走吧	九霄……あなたも早く行きなさい。	NONE
+msg	307601	Those girls are all counting on you.	她们就拜托你了。	彼女たちのことは頼んだわよ。	NONE

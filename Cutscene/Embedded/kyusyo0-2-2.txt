@@ -1,4 +1,4 @@
-#LANGUAGES	KEY	EN	CH	JA	PT
+#LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Seele
 bg	009/003_1280x720
 portraits	59
@@ -34,9 +34,9 @@ msgbox_close
 bg	009/022_1280x720
 msgbox_open
 msg	300106	Who is she?	这个人是谁？	この人は誰？	Quem é essa pessoa?
-msg	300107	It's like she's having a never-ending dream.	仿佛在做着无法醒来的梦。	まるで醒めることがない夢を見ているみたい。	É como ter um sonho que nunca termina.
-msg	300108	She always has a melancholy face.	她总是一副忧伤的表情。	彼女の悲しそうな表情。	Ela tem uma expressão triste.
-msg	300109	In this world of emptiness, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。	Quem ela está esperando neste mundo vazio ...?
+msg	300107	It's as if she's in a never-ending dream, unable to wake up.	仿佛在做着无法醒来的梦。	まるで醒めることがない夢を見ているみたい。	É como ter um sonho que nunca termina.
+msg	300108	She always has a melancholic expression.	她总是一副忧伤的表情。	彼女の悲しそうな表情。	Ela tem uma expressão triste.
+msg	300109	In this empty world, whom is she waiting for?	在这个空无一人的世界中，她到底在等待着谁呢……	この誰もいない世界で、彼女は一体誰を待っているのだろう……。	Quem ela está esperando neste mundo vazio ...?
 msg	300110	A sense of nostalgia lingers in my heart.	有种令人怀念的感觉缠绕在胸口。	何だか懐かしいような感覚が胸を締め付ける。	Um sentimento de nostalgia aperta meu coração.
 msg	300111	Watching her sleep reminds me of something, so I step to her.	看着她沉睡的模样，我仿佛想起了什么，朝着她走去。	彼女が眠っている様子をみると、何かを思い出しそう。彼女の方に歩み寄る。	Vê-la dormindo me lembra algo. Caminhe em direção a ela.
 choice	300112	Wake her up.	唤醒她	彼女を起こす。	Acorde-a.
@@ -52,7 +52,7 @@ jmp	endChoices
 label	c2dest
 msg	300117	I need to solve my own problems before worrying about others.	与其担心别人不如先解决自己的问题吧。	他の人の心配より、自分の問題を解決しなきゃ。	Eu tenho que resolver meu problema ao invés de me preocupar com os outros.
 msg	300118	I can't do anything on my own. I just cause trouble for everyone else.	只靠我一个人的话什么也做不到，只会给别人添麻烦而已。	私一人じゃ何もできない。他の人に迷惑をかけるだけ。	Eu não posso fazer nada sozinho. Apenas irrito outras pessoas.
-msg	300119	A flood of swirling emotions sprouts in my head. Perhaps it's out of fear, or maybe I'm just afraid of getting into trouble.	复杂的感情涌上心头，或许是出于恐惧，又或许只是单纯的怕麻烦。	複雑な感情が沸き起こってきた。もしかしたら恐怖のせいなのかも、或いは単純に面倒が嫌なだけかも。	Emoções complexas surgiram. Talvez seja por causa do medo, ou talvez seja apenas porque eu não gosto do incômodo.
+msg	300119	A complex set of emotions wells up within me, perhaps fear, or perhaps I just don't want to be a bother.	复杂的感情涌上心头，或许是出于恐惧，又或许只是单纯的怕麻烦。	複雑な感情が沸き起こってきた。もしかしたら恐怖のせいなのかも、或いは単純に面倒が嫌なだけかも。	Emoções complexas surgiram. Talvez seja por causa do medo, ou talvez seja apenas porque eu não gosto do incômodo.
 label	endChoices
 
 msg	300120	I take a few steps backwards... And I get ready to leave——	我迈出了脚步准备离开。	足を踏み出し……出て行く準備を——	Saia...Prepare-se para sair.

@@ -1,0 +1,104 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	009/068_1280x720
+se	DLC_CH00_EV04_ExplosionClose
+msg	307686	Boom!!	轰隆！！	ガキィンッ！！	NONE
+speaker	Bronya
+portraits	60	62
+emote	60	5
+msg	307687	Headmistress Theresa! Get out of my way!	德丽莎园长！请让开！	テレサ学園長！どいてください！	NONE
+speaker	Theresa
+emote	60	5
+emote	62	3
+msg	307688	Why you don't understand! Just go with me!	为什么你们一个个都不明白！老老实实跟我离开不就好了么！	どうして、あなたたちは分からないの！大人しく、あたくしと逃げればいいじゃないの！	NONE
+msg	307689	Will you satisfy if you all die! As if it's only you that have dignity! Only you don't fear death! Why you're so selfish!	非要全部死掉才甘心么！就你大义凛然！就你视死如归！为什么一个个都那么自私呢！	全員死ななきゃ気が済まないの！？大義を振りかざして！死ぬことを恐れないで！どうして皆そんなに自分勝手なのよ！	NONE
+msg	307690	You don't understand how much afraid I am! Who cares about my feelings!	你们根本不明白我有多么害怕！有谁考虑过我的感受么！	あなたたち、あたくしがどれほど怖がっているのか分かっていないのよ！あたくしの気持ちを誰が考えてくれた！？	NONE
+emote	62	3
+se	DLC_CH01_EV22_BumpSave
+/	307691	Bang!	砰！	バァンッ！	NONE
+
+speaker	Bronya
+emote	60	5
+emote	62	3
+msg	307692	Eh!	呃！	うぐっ！	NONE
+msg	307693	Theresa, you're drunk!	德丽莎你喝醉了！	テレサ、酔っぱらったのですか！？	NONE
+
+speaker	Theresa
+emote	60	5
+emote	62	3
+msg	307694	I'm not! You are!	我没醉！是你们喝醉了才对！	あたくしは酔っぱらってなんかいないわ！酔狂なのはあなたたちの方よ！	NONE
+msg	307695	I just want a peaceful ending... I want to live with you all until everything ends! Is that too much to ask!?	我只想要一个平静的结局…和你们一起活到最后一刻！这样的要求过分么！	あたくしは平穏な結末がほしいだけ……あなたたちと一緒に最後の瞬間まで生きていたいだけ！こんな願いですらも贅沢なの！？	NONE
+msg	307696	If you choose to go out there and die today at Mei's hands, what would happen to Seele!?	就算你今天成全了自己死在了芽衣的手中！那希儿怎么办！	あなたが今日、願い通りに芽衣の手にかかって死んだとしたら、ゼーレはどうなるの！？	NONE
+msg	307697	Am I supposed to tell her "Your sister whom you gave up your life to protect died because of her pride"!?	我难道要告诉她你不惜用生命换回来的姐姐因为无聊的自尊死去了么！	あたくしはゼーレに「あなたが命を捨ててまで守り抜いたお姉さんは、つまらない自尊心のためだけに死んだのよ」って伝えるの！？	NONE
+msg	307698	Is your head so empty that you can't even consider what others are thinking about you!?	你的脑袋里装的都是浆糊么！	あなたの頭の中は、そんなことも考えられないくらい空っぽなの！？	NONE
+msg	307699	Not just Seele... All the others that have been fighting alongside you, do you want me to go and tell them that the girls they've been fighting alongside are dead!?	不只是希儿…还有和你一起战斗的那些人们，难道你让我回去告诉她们，一直支撑她们的人一个个都倒下了么！	ゼーレだけじゃないわ……あなたと一緒に戦ってきた他の人たちも同じ。彼女たちのもとへ戻って、その全員に死んだことを伝えなくちゃならないの！？	NONE
+emote	60	5
+emote	62	4
+msg	307700	Was Himeko's death not enough for you!? Bronya.... Just stay here. Don't fight anymore!	姬子一个人还不够么！布洛妮娅……留下来吧，不要再战斗了！	姫子だけではまだ足りないの！？ブローニャ……ここに残って。もう戦わないで！	NONE
+msg	307701	You've fought hard enough... This world doesn't need any more sacrifices...	你们已经足够努力了…这个世界不值得你们这么牺牲……	あなたたちはもう十分頑張ったわ……この世界はあなたたちが犠牲になるほど、立派なものじゃないのよ……。	NONE
+speaker	Bronya
+emote	60	5
+emote	62	4
+msg	307702	……	……	……。	NONE
+msg	307703	But…If I don't do it what else can I do……	可是…如果不这么做的话我真的不知道该怎么办……	しかし……そうする以外にブローニャはどうしていいのか分かりません……。	NONE
+emote	60	3
+emote	62	4
+msg	307704	You're right... I just want to settle things with Mei. The memories that Mei gave me are still in my heart.	你说的对…我只是想和芽衣姐姐做个了断，在我的心里还留着她给我的记忆。	あなたの言う通りです……ブローニャはただ芽衣姉様と決着をつけたいのです。ブローニャの心には芽衣姉様のくれた思い出がまだ残っています。	NONE
+msg	307705	I hate Mei because of Seele's death, so I decide to give back everything she gave me…so I have nothing else to care about.	因为希儿的死而憎恨着那样的芽衣姐姐，所以才决定把她给我的一切都还给她…这样就没有什么可以留念的了。	ゼーレの死によって芽衣姉様を憎みました。だから、芽衣姉様がブローニャにくれた全てを返すことにしたのです……こうすれば、もう何も思い残すことはありませんから。	NONE
+emote	60	4
+emote	62	4
+msg	307706	Thank you for saving Seele... So I was able to see her again.	谢谢你…谢谢你救了希儿，让我能重新见到她……	ありがとうございます……ゼーレを助けてくれて。もう一度ゼーレに会うことができました……。	NONE
+msg	307707	But... I've already decided...	但是我已经……	しかし、ブローニャはもう……。	NONE
+speaker	Theresa
+emote	60	4
+emote	62	4
+msg	307708	If you care so much about Seele, then you should keep on living! Isn't that your duty as a sister!?	既然这么重视希儿的话就给我活下去啊！这才是身为姐姐的义务不是么！	そんなにゼーレのことが大切なら、生きなさい！それこそが姉としての責務じゃないの！？	NONE
+msg	307709	You keep saying you'll protect her, that you'll be with her! But you're just thinking of yourself! You're choosing to die rather than face reality! Is that the kind of love you have for your sister!?	嘴上说着要保护她，要和她在一起！实际上却自私地只顾自己的感受！为了逃避而选择死亡！这就是你对希儿的爱么！	口では彼女を守る、彼女と一緒にいると言っておきながら！実際は自分の気持ちしか考えていないのよ！逃げるために死を選ぶ！？それがあなたのゼーレに対する愛なの！？	NONE
+speaker	Bronya
+emote	60	4
+emote	62	4
+msg	307710	I……	我……	ブローニャは……。	NONE
+speaker	Theresa
+emote	60	4
+emote	62	3
+msg	307711	Bronya! Come to your senses!	布洛妮娅！快清醒一些！	ブローニャ！いい加減、目を覚ましなさい！	NONE
+speaker	Bronya
+emote	60	4
+emote	62	3
+msg	307712	Sorry…sorry……sorry……	对不起…对不起……对不起……	……っ！ブローニャが……間違っていた……のですか。	NONE
+speaker	Theresa
+emote	60	4
+emote	62	2
+msg	307713	Bronya…dry your eyes, it's not time to cry, please hold on for Seele.	布洛妮娅…擦干眼泪吧，现在还不是哭泣的时候，为了希儿再努力一下吧。	ブローニャ……涙を拭きなさい。今はまだ泣く時じゃないわ。ゼーレのためにも、もっと頑張らなくちゃ。	NONE
+speaker	Bronya
+emote	60	4
+emote	62	2
+msg	307714	You're right……For Seele, I must hold on!	你说的对……为了希儿，我也要活下去！	学園長の言う通りです……ゼーレのためにもブローニャは生きることを選びます！	NONE
+speaker	Theresa
+emote	60	4
+emote	62	2
+msg	307715	Yes……	嗯……	ええ、そうしなさい……。	NONE
+emote	62	2
+se	DLC_CH03_EV05_ThunderBig
+/	307716	Boom!!!	轰隆！！！	ドォオオオオォンッ！	NONE
+speaker	Theresa
+emote	62	1
+msg	307717	That's the sound of thunder... The Herrscher is close to here.	是雷声…律者已经靠近这里了。	雷鳴……律者がもうすぐそこまで来ているのね。	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307718	Even we want to live peacefully after, we need to escape the attack first……	就算要平静地活下去，我们也得逃过律者的追击才行么……	平和に暮らすにしても、律者からの追撃を逃れなくてはいけません……。	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307719	Let's hide here first, don't worry, it's safe here, even the ground is attacked, the underground should be safe, I promise Himeko to protect you.	先在这里躲藏一会吧，放心，这个地下实验室很安全，就算地面受到律者攻击，这里应该也能维持，既然答应了姬子我就一定会保护你们的安全的。	とにかく、ここに隠れていましょう。安心して、ここの地下は安全よ。仮に地上が律者の攻撃を受けたとしても、ここなら持ちこたえるはず。姫子に約束した以上は、あたくしがあなたたちの安全を守るわ。	NONE
+msg	307720	Ok…now the prior mission is to bring them back to Nagazora……	嗯…现在首要任务是把她们带回长空市……	よし……今、真っ先にすべきことは彼女たちを長空市に連れて帰ることよね……。	NONE
+msg	307721	Huh? Where'd that Kyuushou girl go?	呃！那个叫九霄的孩子呢？	って、あれ！あの九霄とかいう子は……？	NONE
+speaker	Bronya
+emote	60	5
+emote	62	1
+msg	307722	Kyuushou? She was right here when we were fighting...	九霄？刚才我们战斗的时候她还……	九霄？さっきブローニャたちが戦っていた時はまだ……。	NONE
+speaker	Theresa
+emote	60	5
+emote	62	1
+msg	307723	Could she be....	难道她……	まさか……。	NONE
+msg	307724	No! Bronya! We've got to hurry after her!	不好！布洛妮娅！我们快追上去！	いけない！ブローニャ！急いで追いかけましょう！	NONE

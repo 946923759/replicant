@@ -252,37 +252,29 @@ func apply_sm_tween(tweenString) -> float:
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO
 
 func gestalt_set_textures(sprName):
-	var matching = Globals.get_matching_files("res://Portraits",sprName)
+	var matching = Globals.get_closest_file("res://Portraits",sprName)
 	if not matching:
 		printerr("No texture exists named "+sprName)
 		return false
 	
 	portrait_textures = Dictionary()
-	#What is this even doing? It never gets set to true
+	
 	var foundDefaultYet:bool=false
 	for path in matching:
 		if !path.ends_with(".png"):
 			continue
-		var emotes = path.split(" ",1) #Kyuushou normal.png, Kyuushou happy.png, etc
-		if emotes.size() < 2:
+		var emotes = path.split(" ",1) 
+		
+		if emotes.size() >= 2: #Kyuushou normal.png, Kyuushou happy.png, etc
+			#Index this portrait like ['normal'] = TEXTURE
+			portrait_textures[emotes[1].trim_suffix(".png")] = load(path)
+		else: #Kyuushou.png
 			if foundDefaultYet:
 				printerr("Found image "+path+" without an expression, but there was already another loaded...")
-				continue
 			else:
+				#Index in default slot '0'
 				portrait_textures['0']=load(path)
-			
-		portrait_textures[emotes[1]] = load(path)
-#		var f = File.new()
-#		var image = Image.new()
-#		f.open(path, File.READ)
-#		var buffer = f.get_buffer(f.get_len())
-#		image.load_png_from_buffer(buffer)
-#
-#		f.close()
-#		image.lock()
-#
-#		portrait_textures[i]=ImageTexture.new()
-#		portrait_textures[i].create_from_image(image);
+				foundDefaultYet = true
 
 
 func replicant_set_textures(toLoad:Dictionary):

@@ -1,0 +1,12 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Emesa
+bg	009/064_1280x720
+portraits	55
+emote	55	2
+msg	307384	I'm so jealous, to have someone aside……	真是羡慕她们呢，能有这样的人在身边……	あいつらが羨ましいよ。そんな人が、今も傍にいてくれるんだから……。	NONE
+emote	55	4
+msg	307385	(Cough cough cough)!	咳咳咳！	ゴホッ、ゴホッ、ゴホッ！	NONE
+emote	55	1
+msg	307386	Sorry…I'm fine.	抱歉…我没事。	すまない……大丈夫だ。	NONE
+emote	55	2
+msg	307387	Let's go, I need to be helpful as well!	走吧，既然答应了你一起出来巡逻那我也得帮上忙才行！	行こう。あんたが見回りを引き受けてくれたからには、私も手伝わないとな！	NONE

@@ -1,0 +1,109 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	55	60	61	62
+bg	black	instant
+/	307483	……	……	……。	NONE
+extend	307484	……	……	…………。	NONE
+/Emesa's Voice	307485	Kyuushou, wake up.	九霄醒醒。	九霄、起きて。	NONE
+msg	307486	Kyuushou!	九霄！	九霄！	NONE
+
+bg	009/077_1280x720
+music	Voice of no Return
+portraits	55	60	61	62
+match_names	Emesa	Bronya	Himeko	Theresa
+emote	53	0
+/	307487	Hah....	唔……	うーん……。	NONE
+
+emote	55	1
+emote	53	0
+/Emesa	307488	Even I want you to sleep a bit more, but we've gotta go! Himeko has convinced Bronya to go back!	虽然想让你再多睡一会，不过我们得准备出发了！姬子已经说服布洛妮娅回去了！	もう少し寝かせてやりたいが、姫子がブローニャを帰るよう説得したんだ！	NONE
+emote	55	1
+emote	61	1
+/Himeko	307489	It's too unsafe to leave Seele here. The Honkai energy will just make her condition worse. We need to get back to Nagazora as soon as possible.	把希儿留在这个地方太不安全了，这里的崩坏能只会恶化她的身体，我们得尽快回到长空市。	ゼーレをこの場所に残しておいては危険すぎるわ。ここの崩壊エネルギーは、彼女の容態を悪化させるだけよ。できるだけ急いで長空市に戻らなくちゃ。	NONE
+speaker	Bronya
+emote	55	1
+emote	60	1
+msg	307490	Now that we've come to a consensus, let's get out of here. Revenge on the Herrschers can wait until after Seele has been healed.	既然决定了就出发吧，律者的账等治好希儿之后一并算。	そうと決まれば出発しましょう。律者への復讐はゼーレが治った後で構いません。	NONE
+speaker	Himeko
+emote	55	1
+emote	61	1
+msg	307491	And Theresa... You're coming with us too, right?	至于德丽莎，你也会和我们一起走的吧？	テレサ、あなたも私たちと一緒に行くでしょう？	NONE
+speaker	Theresa
+emote	62	1
+emote	61	1
+msg	307492	Yes, I'll keep you all safe. Don't worry.	嗯，我会保护你们的安全的，放心吧。	ええ、あなたたちの安全を守るわ。安心して。	NONE
+speaker	Himeko
+emote	62	1
+emote	61	1
+msg	307493	Then get ready. We're leaving at runrise.	既然这样的话就准备一下吧，我们等天亮就出发。	それなら準備してちょうだい。空が明るくなったら出発しましょう。	NONE
+speaker	Emesa
+emote	55	1
+emote	61	1
+msg	307494	Ok.	嗯。	ああ。	NONE
+emote	61	1
+
+se	DLC_CH00_EV15_EarRing
+/	307495	……	……	……。	NONE
+
+emote	55	1
+emote	61	1
+/Emesa	307496	What's the matter, Kyuushou, are you still sleepy?	怎么了九霄，还没睡醒么？	どうした九霄、まだ眠いのか？	NONE
+/	307497	What was……	刚才的是……	さっきのは……。	NONE
+/Himeko	307498	What's wrong?	你怎么了？	どうしたの？	NONE
+choice	308191	I……	我是……	私は……。	NONE
+choice	308206	My……	我的……	私の……。	NONE
+
+se	DLC_CH01_EV24_RadioSignals
+stop_music
+vibrate	.3
+/	307499	Crack crack crack——	呲呲呲——	ザッ……ザザッ——	NONE
+
+
+bg	black	instant
+portraits	107
+tween	during	55	stoptweening
+tween	during	60	stoptweening
+tween	during	61	stoptweening
+tween	during	62	stoptweening
+tween	during	107	stoptweening
+tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+match_names	Kiana
+/Kiana	307500	You created this world.....	这个世界是由你所创造的……	この世界はあなたが創ったのよ……。	NONE
+se	DLC_CH01_EV24_RadioSignals
+vibrate	.3
+/	307501	Crack——	呲拉——	ザッ、ザー——	NONE
+/Kiana	307502	There are only two ways to end it...	结束的方法只有两个……	終わらせる方法は2つだけ……。	NONE
+msg	307503	Your death……	你的死亡……	あなたが死ぬこと……。	NONE
+vibrate	.3
+/	307504	Crack crack crack——	呲呲呲——	ガガッ——	NONE
+/Kiana	307505	Or mine.	或是杀死我。	または……私を殺すこと。	NONE
+
+portraits
+se	DLC_CH01_EV24_RadioSignals
+vibrate	.3
+/	307506	Crack crack crack——	呲拉呲拉——	ザザー——	NONE
+
+bg	009/077_1280x720	fade
+portraits	55	60	61	62
+match_names	Emesa	Bronya	Himeko	Theresa
+tween	during	55	stoptweening
+tween	during	60	stoptweening
+tween	during	61	stoptweening
+tween	during	62	stoptweening
+tween	during	107	stoptweening
+vibrate	.7
+/	307507	Aaaaaaaahhhh!!	呃啊！！	あぁああああっ！！	NONE
+emote	55	4
+/Emesa	307508	Kyuushou! Kyuushou, what's wrong!?	九霄！九霄你怎么了！	九霄！九霄、どうした！？	NONE
+/	307509	I'm…Houraiji…Kyuushou……	我是…蓬莱寺…九霄……	私は……蓬莱寺、九霄……。	NONE
+/	307510	My memory……	我的记忆……	私の記憶が……。	NONE
+emote	55	4
+/Emesa	307511	Kyuushou!	九霄！	九霄ッ！	NONE
+se	DLC_CH00_EV11_MosterRoar
+/	307512	Growl——	吼吼吼——	バウォオオオオッ！	NONE
+emote	62	1
+/Theresa	307513	The smell is…damn! We're surrounded by Honkai creatures!	这个气息是…糟了！我们被崩坏生物包围了！	この鳴き声……しまった！崩壊生物に囲まれてるわ！	NONE
+emote	61	2
+/Himeko	307514	The thunder cloud... It's the Herrscher!	天空的雷暴云…是律者！	空にある雷雲は……律者ッ！！	NONE
+emote	61	2
+se	DLC_CH03_EV06_ThunderSmall
+/	307515	Boom——!!	轰隆隆———！！	ゴォオオンッ——！	NONE

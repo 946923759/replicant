@@ -363,6 +363,7 @@ mouse_filter = 2
 color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
 
 [node name="textBackground_Reborn" type="Control" parent="CenterContainer"]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -419,9 +420,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -754.0
+margin_left = -750.0
 margin_top = -11.5
-margin_right = 746.0
+margin_right = 750.0
 margin_bottom = 249.5
 mouse_filter = 2
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -436,7 +437,36 @@ text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 (This is 4th line... Text should not go above 4 lines...)"
 scroll_active = false
 
+[node name="Guidelines" type="Control" parent="CenterContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 252.0
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer/Guidelines"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -764.0
+margin_top = -157.5
+margin_right = -750.0
+margin_bottom = 157.5
+color = Color( 1, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="CenterContainer/Guidelines"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 750.0
+margin_top = -157.5
+margin_right = 764.0
+margin_bottom = 157.5
+color = Color( 1, 0, 0, 1 )
+
 [node name="FSMode_ActorFrame" type="Control" parent="." groups=["UI_Elements"]]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

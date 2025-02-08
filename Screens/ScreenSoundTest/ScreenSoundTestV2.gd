@@ -50,6 +50,12 @@ static func load_music_database() -> Array:
 				printerr(keys)
 	return musicDB
 
+func debug_open_file(f:String):
+	if OS.is_debug_build():
+		var path = f.trim_prefix("res://")
+		if OS.get_name() == "X11":
+			OS.execute("xdg-open",[path], false)
+
 func _ready():
 	#var listPos = $ScrollContainer.rect_position
 	$UpArrow.rect_position=Vector2(
@@ -140,6 +146,10 @@ func _input(_event):
 	if Input.is_action_just_pressed("ui_shift"):
 		#print(get_current_page())
 		print(get_page_from_sel(curSel))
+	if Input.is_action_just_pressed("DebugButton1"):
+		debug_open_file(get_music_db_path()+"MUSIC_DATABASE.tsv")
+	elif Input.is_action_just_pressed("DebugButton5"): #You can just press F3+2, but ok
+		get_tree().reload_current_scene()
 	
 	#if event is InputEventMouseMotion:
 	#	var tmpSel=get_selection_from_mouse_pos(curMenu,event)

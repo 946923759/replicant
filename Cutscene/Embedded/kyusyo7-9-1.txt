@@ -30,9 +30,9 @@ emote	60	5
 /Kyuushou	302689	I'm sorry! Because you are already dead! I can't help you now! I have more important things to do! So go to ......!	对不起！你们已经死去了！现在的我帮不了你们！我还有更重要的事情要做！所以……	ごめんなさい！あなたたちはもう死んでいるから！今の、わ、我じゃあなたたちを助けられない！もっと大事なことを成さなくてはならないから！だから……！	NONE
 
 /	302690	I knew it, all messiahs are liars!	果然救世主什么都是骗人的！	やっぱり、救世主なんて全部嘘つきなんだ！	NONE
-msg	302691	Liar ...... liar ...... this liar .......	骗人的…骗人的…你这个骗子……	嘘つき……嘘つき……この嘘つき……。	NONE
-msg	302692	Liar ...... Liar ...... Liar ...... Liar .......	骗子…骗子…骗子……	嘘つき……嘘つき……嘘つき……。	NONE
-msg	302693	Liar! Liar! Liar!	骗子！骗子！骗子！	嘘つき！嘘つき！嘘つき！	NONE
+msg	302691	Liar ...... liar ...... this liar ....... 	骗人的…骗人的…你这个骗子……	嘘つき……嘘つき……この嘘つき……。	NONE
+extend	302692	Liar ...... Liar ...... Liar ...... Liar ....... 	骗子…骗子…骗子……	嘘つき……嘘つき……嘘つき……。	NONE
+extend	302693	Liar! Liar! Liar!	骗子！骗子！骗子！	嘘つき！嘘つき！嘘つき！	NONE
 
 /Kyuushou	302694	No... I'm not!	不是的…不是的！	違う……違うの！	NONE
 
@@ -68,6 +68,7 @@ emote	58	4
 emote	60	5
 /Bronya	302705	Just leave it!	不要管我！	ブローニャに構わないでください！	NONE
 
+portraits
 bg	CG10187
 msg	302706	Kyuushou! Listen to me! We need to reach the top of the tower no matter what! Everyone's waiting for our success!	九霄！听着！我们一定要到达塔顶才行！大家都在等着我们！	九霄！聞くのです！我々は何としても塔の頂上に辿り着かなければなりません！皆が我々の成功を待っています！	NONE
 msg	302707	Yiserin! Theresa! And then Seele, Emesa! We must keep these women alive, no matter what the cost!	伊瑟琳！德丽莎！还有希儿和埃米沙！我们一定要让她们活下去才行！	イザーリン！テレサ！それからゼーレに、エミザ！何に代えてでも、彼女たちを生かさなければなりません！	NONE

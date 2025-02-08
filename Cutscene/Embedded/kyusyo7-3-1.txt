@@ -1,0 +1,56 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	62	56	60	54
+bg	011/034_1280x720
+se	DLC_CH00_EV11_MosterRoar
+msg	302395	Vo-o-o-o-o-o-o-o--!	吼吼吼————！	ヴォォォオオオオオオ——ッ！	NONE
+speaker	Bronya
+portraits	56	60
+match_names	Teammate	Bronya	_DIM_ALL_WHEN_EMPTY
+emote	56	0
+emote	60	3
+/Bronya	302396	That sound is--!?	这个声音是！？	この声は！？	NONE
+/Teammate	302397	Warning! Large number of objects detected on radar! Something is approaching from high above!	警报！雷达探测到上方高空有大量物体正在接近！	警報！レーダー上に大量の物体を探知！上空から何かが接近してきます！	NONE
+
+emote	60	5
+/Bronya	302398	Damn! I didn't think we'd be found this quickly!	可恶！这么快就被发现了么！	くッ！こんなに早く見つかってしまうとは思いませんでした！	NONE
+
+portraits	56	60	54,true
+match_names	Teammate	Bronya	Yiserin	_DIM_ALL_WHEN_EMPTY
+emote	54	3
+emote	60	5
+/Yiserin	302399	Bronya! The speed they're approaching us is incredible! They're the insect-like Honkai beasts we encountered in the castle earlier! And there's so many of them! The radar keeps showing more and more!	布洛妮娅！对方的速度很快！那些家伙…是之前城堡中发现的昆虫形态的崩坏兽！而且数量很多！雷达上的数值还在不断上升中！！	ブローニャ！相手のスピードが尋常じゃない！あいつら……以前、城の中で見た昆虫型の崩壊獣ね！\nしかも数が多いッ！レーダー上の数値は今もまだ上がり続けてるわ！！	NONE
+emote	54	3
+emote	60	3
+/Bronya	302400	All personnel, prepare to intercept!	所有人准备迎击！！	総員、迎撃用意ッ！！	NONE
+emote	60	3
+se	DLC_CH00_EV13_MosterRoar
+/	302401	Wo-o-o-o-o!	吼吼吼！！！	ウォオオオオオッ！！！	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302402	Boom—!!!	轰隆——！！！	ドン——ッ！！！	NONE
+
+speaker	Yiserin
+emote	54	3
+emote	60	3
+msg	302403	Damn it...! They're hitting the ship's hull.... I wonder if they're aiming for Hyperion's outer shell. No, wait... They must be trying to get inside and destroy it!	呃…船体正在受到崩坏生物的冲击…那些家伙正在攻击休伯利安的外装甲，难道是打算侵入到内部进行破坏么！？	うっ、く……ヤツら、船体に体当たりをしているようね……ハイペリオンの外装甲が狙いかしら。\nまさか、内部に侵入して破壊するつもりなんじゃ……！？	NONE
+emote	60	3
+/	302404	Dada dada dada ......!	哒哒哒！！！	ダダダッ……！！！	NONE
+
+speaker	Bronya
+emote	60	5
+msg	302405	Tsk... There's a bunch of honkai beasts on the deck too... They must be trying to split up and take us out!	啧…甲板上的崩坏生物数量也很多！这些混蛋打算兵分两路么！	チッ……甲板上に崩壊生物が多すぎます！こいつら、兵力を分散させるつもりですか！？	NONE
+msg	302406	Our battle forces are concentrated near the deck, and our internal defenses are weak... If these creatures get inside, we're screwed!	我们的战力都集中在甲板附近，内部的防御很脆弱…如果让它们侵入进去的话后果不堪设想！	こちらの戦力は甲板付近に集中していて、内部の防御は手薄な状態です……。\nあいつらの侵入を許せば、その結果は火を見るより明らかです！	NONE
+emote	60	3
+msg	302407	Kyuushou! We'll have to fight separately! Take some of our troops to protect the interior! We can't let those guys destroy the battleship's control system!	九霄！我们得分开作战了！你带着一部分队员支援内部！不能让它们破坏战舰的控制系统！	九霄！ここは二手に分かれて戦うしかありません！\nあなたは隊員の一部を率いて内部の応援に向かってください！あいつらに戦艦の制御システムを破壊されるわけにはいきません！	NONE
+
+portraits	58	62	56	60	54,true
+match_names	Kyuushou	Theresa	Teammate	Bronya	Yiserin
+emote	62	0
+emote	60	3
+/Theresa	302408	Leave the deck to us! We'll take it from here!	甲板这边就交给我们了！你放心去吧！	甲板の方はあたくしたちに任せて！安心して行ってちょうだい！	NONE
+speaker	Kyuushou
+emote	58	2
+emote	60	3
+msg	302409	Hmph~! Well then, let the Savior live up to her expectations!	哼哼~那就让救世主大人回应你的期望吧！	フフン～！それじゃあ、救世主様がその期待に応えてみせよう！	NONE
+emote	58	6
+emote	60	3
+msg	302410	Ugh... This motion is still making me a little nauseous...	呜咕…虽然还是有点难受……	うぷっ……ま、まだ少し気持ち悪いけど……。	NONE

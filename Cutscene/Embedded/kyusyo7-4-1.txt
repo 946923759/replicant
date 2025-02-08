@@ -1,0 +1,90 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	009/062_1280x720
+msg	302411	Bang bang bang!!!	哒哒哒！！！	ダダダ……ッ！！！	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302412	Boom!!	轰隆——！！	バァァァーーン！！	NONE
+se	DLC_CH00_EV11_MosterRoar
+msg	302413	Grrrrrrrrrrrrrrr...	吼吼吼吼……	グルゥゥゥ——	NONE
+
+portraits	66	56	58
+match_names	Graymoth Member	Teammate	Kyuushou	Yiserin
+
+emote	66	0
+/Graymoth Member	302414	Report! The Honkai Beasts in Area C have been wiped out! Please give the next instructions!	报告！C区内的崩坏生物已经清理完毕！请求指示！！	報告します！Cエリア内の崩壊生物は一掃しました！次の指示をください！！	NONE
+emote	66	0
+emote	56	0
+/Teammate	302415	The armor in sectors B4, B6, and A3 have been severely damaged! The damage is still ongoing! Requesting backup immediately!	B4、B6、A3区的装甲都遭到严重破坏！损坏范围还在不断扩大！请立即前往救援！	B4、B6、A3エリアの装甲が激しく破壊されています！損壊範囲はなおも拡大中！ただちに応援に向かってください！	NONE
+speaker	Graymoth Member
+emote	66	0
+emote	56	0
+msg	302416	Damn it! There's too many honkai beasts invading! We don't have enough reinforcements... What do we do?	可恶！这么多区域都遭到了侵入！凭我们的人手根本来不及增援…到底该怎么办！	クソォッ！エリアへの侵入をそんなに許してしまうなんて！私たちだけじゃ増援の手がちっとも回らない……どうすればいいの！	NONE
+speaker	Teammate
+emote	66	0
+emote	56	0
+msg	302417	Alert! A large honkai organism has been detected approaching the left side of the battleship!	警报！雷达检测到战舰左侧有大型崩坏生物正在接近！！	警報！レーダーが戦艦左側から大型崩壊生物の接近を検知しました！！	NONE
+emote	56	0
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302418	Boom——!!!	轰隆——！！！	ドォオオオン——ッ！！！	NONE
+speaker	Kyuushou
+emote	58	8
+emote	56	0
+msg	302419	W-Woah! What's this shaking!?	呜哇！！这个晃动是怎么回事！	わわっ！！この揺れは何事だ！？	NONE
+
+portraits	66	56	58	54,true
+speaker	Yiserin
+emote	58	8
+emote	54	3
+msg	302420	This creature is... Oh no! It's the dragon shaped Honkai Beast we encountered earlier!	这个生物是……不！不好了！是！是之前遭遇到的龙型崩坏兽！！	あの生物は……ま、マズい！以前遭遇した竜型の崩壊獣よ！！	NONE
+msg	302421	That thing is attacking the port side of the battleship...that's a bad spot! It's close to the power reactor! If the power reactor gets damaged, we're going to die!	那家伙正在攻击战舰的左舷…那个地方很不妙啊！那里离动力炉很近如果被它破坏的话动力炉一定也会遭到波及的！	あいつが攻撃してる左舷は……だめ！！あそこは動力炉のすぐ近くなの！もし、あの近辺が破壊されれば、きっと動力炉にまで影響が及んでしまう！	NONE
+speaker	Graymoth Member
+emote	58	8
+emote	66	0
+msg	302422	Then let's focus on taking it down first!	那我们先集中力量消灭那只巨兽吧！	では、私たちは、あの巨獣の討滅に集中しましょう！	NONE
+speaker	Yiserin
+emote	58	8
+emote	54	3
+tn	0	This translation still sucks
+msg	302423	No way... Sector A is close to the bridge and we can't hold out much longer! If they break through here and destroy the bridge control system, we'll still die! 	不行…A区离舰桥室很近，我们也支撑不了太久了！如果舰桥的控制系统被破坏的话同样攸关生死！	ダメよ……このAエリアは艦橋に近いし、私たちだってそう長くは持ちこたえられない！\nもしここを突破されて、艦橋の制御システムが破壊されれば、同じように私たちの生死に関わるわ！	NONE
+speaker	Graymoth Member
+emote	58	8
+emote	66	0
+msg	302424	Oh no! Then what the hell are we supposed to do..... At this rate....	这！那我们到底该怎么办…这样下去就……	そんな！それでは私たちは一体どうすればいいの……このままじゃ……。	NONE
+speaker	Kyuushou
+emote	58	7
+emote	66	0
+msg	302425	There's no reason to hesitate! Stopping is admitting defeat! As long as you can still stand, that proves your will to fight!	不要犹豫！如果停下脚步就代表认输了！只要双脚还能行动就证明还有抗争的意志！	迷う必要などない！足を止めればそこで負けは確定してしまうぞ！両の足が動くうちは、戦う意志を見せつけるんだ！	NONE
+speaker	Graymoth Member
+emote	58	7
+emote	66	0
+msg	302426	Kyuushou......	九霄……	九霄……。	NONE
+speaker	Kyuushou
+emote	58	2
+emote	66	0
+msg	302427	Stand up for what you believe in and forget about the darkness and despair! Fight against fate until the very end! ....Isn't that how a savior should behave?	相信自己的信念吧！不要理会残酷的现实！与命运抗争到最后一刻！这才是帅气的救世者应有姿态啊！	己の信念を貫き通せ！ダークサイドなど気にしてはいけない！最後の最後までラグナロクと戦うんだ！\n……それこそ、カッコいい救世主のあるべき姿だろう？	NONE
+speaker	Graymoth Member
+emote	58	2
+emote	66	0
+msg	302428	It's not very clear...but Kyuushou must be motivating us! That's right! It's not time to give up yet!	虽然不是很明白…但是九霄一定是在激励我们！没错！还不到放弃的时候！	よ、よく分からないけど……九霄はきっと私たちを激励しているのよね！そうよ！まだ諦めるには早いわ！	NONE
+speaker	Kyuushou
+emote	58	1
+emote	66	0
+msg	302429	Hmph! That's right!	哼哼！这才对嘛！	フフン！それでいい！	NONE
+emote	58	2
+emote	66	0
+msg	302430	Leave the big one to me! You guys keep holding off the creatures in the other sectors!	那只大家伙就交给我来解决！你们去增援其他舱室吧！	あのデカいのは我に任せるのだ！そっちは他のキャビンの応援に！	NONE
+speaker	Graymoth Member
+emote	58	2
+emote	66	0
+msg	302431	But you're going to be alone....	可是光靠你一个人的话……	でも、あなた1人だけじゃ……。	NONE
+speaker	Yiserin
+emote	58	2
+emote	54	3
+msg	302432	Wait...I have an idea... Kyuushou, the location of the Honkai Beast is near the jets of the third power reactor. If we can get it to that spot, there might be a way to take it down!	等等…我有一个想法…九霄，崩坏兽的位置在三号动力炉的喷射口附近，只要能把它逼到那个地方说不定就有方法击败它！	待って……私に考えがあるわ……九霄、崩壊獣がいる場所は3号動力炉の噴射口近くなの。あいつをあの場所に追いやることができれば、倒す方法があるかもしれない！	NONE
+speaker	Kyuushou
+emote	58	2
+emote	54	3
+msg	302433	Heh heh! Don't worry! Exterminating dragons is a piece of cake for the Savior!	嘿嘿！放心吧！灭龙对于救世主来说简直小菜一碟！	ハーハッハハハ！心配無用！ドラゴンスレイヤーたる我にとって、竜を殺すなど朝飯前！	NONE
+speaker	Graymoth Member
+emote	58	2
+emote	66	0
+msg	302434	Understood... Please be careful!	明白了…请你一定要小心！	分かった……気をつけてね！	NONE

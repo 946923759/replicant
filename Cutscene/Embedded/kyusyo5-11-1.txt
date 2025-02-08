@@ -136,6 +136,8 @@ msg	307847	It's the gravestone they built for the world.	这也是她们为这�
 stopmusic	0.5
 msgbox_close
 bg	009/075_1280x720
+msg	-1	
 nop	(Empty message)
 bg	009/076_1280x720	fade
 nop	(Empty message)
+msg	-1	

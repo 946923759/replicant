@@ -102,8 +102,8 @@ msg	307765	What's the matter, Herrscher?! Are you not going to destroy us? Come 
 speaker	Mei
 emote	60	3
 emote	53	0
-msg	307766	......Is that right? I understand.	……是么…我明白了。	……そう……分かったわ。	NONE
-msg	307767	I'm going to collectively destroy you and her boring beliefs!	那就让我把你和她那些无聊的信念都摧毁吧！	それじゃあ、あなたとその彼女のつまらない信念とやらをまとめてぶち壊してあげるッ！	NONE
+msg	307766	......Is that what you think? I see.	……是么…我明白了。	……そう……分かったわ。	NONE
+msg	307767	I'm going to collectively destroy you and your sister's boring beliefs!	那就让我把你和她那些无聊的信念都摧毁吧！	それじゃあ、あなたとその彼女のつまらない信念とやらをまとめてぶち壊してあげるッ！	NONE
 emote	53	0
 /	307768	Crack…crack……	滋啦…滋啦……	ジジ……ジッ……。	NONE
 speaker	Mei

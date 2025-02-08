@@ -1,0 +1,195 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	011/034_1280x720
+se	DLC_CH00_EV11_MosterRoar
+msg	302435	Guwooooooo!!	吼吼吼！！	グゥォオオオオッ！！	NONE
+speaker	Kyuushou
+portraits	58
+emote	58	2
+msg	302436	Ugh.... That silver-winged dragon is sure putting up a fight...	呃…不愧是银色的巨龙，果然有点棘手呢。	うっ……さすがは銀翼のギガントドラゴン。やはり少し手強かったか。	NONE
+speaker	Yiserin
+portraits	58	54
+emote	58	2
+emote	54	3
+msg	302437	Kyuushou! How's it going over there!	九霄！你怎么样了！	九霄！そっちはどう！？	NONE
+speaker	Kyuushou
+emote	58	2
+emote	54	3
+msg	302438	Don't worry! The great Kyuushou's Dragon Slayer powers have just finally awakened...	不用担心！九霄大人的屠龙之力才刚刚被激发……	心配いらないっ！九霄様のドラゴンスレイヤーの力が、ようやく目覚めたところ……。	NONE
+portraits	54
+emote	54	3
+se	DLC_CH00_EV13_MosterRoar
+msg	302439	Vooooooo!	吼吼吼！！！	ヴォオオオオッ！！！	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302440	Boom-!!!	轰——！！！	ダァアアアアン！！	NONE
+speaker	Yiserin
+emote	54	3
+msg	302441	Kyuushou? What's going on? ──Come in! Kyuushou!	九霄？你怎么了！快回答！九霄！	九霄？どうしたの！？\n──応答して！九霄ッ！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	3
+emote	54	3
+msg	302442	Gugu ......!	咕……	ぐっ……！	NONE
+speaker	Bronya
+portraits	58	60
+emote	58	3
+emote	60	1
+msg	302443	It's a bad habit to lose focus during a battle.	在战斗的时候分心可不是好习惯呢。	戦闘中に集中を欠くのは悪い癖ですね。	NONE
+speaker	Kyuushou
+emote	58	6
+emote	60	1
+msg	302444	Bronya!?  Why are you here?	布洛妮娅，你怎么会在这里？	ブローニャ！？どうしてここに？	NONE
+speaker	Bronya
+emote	58	6
+emote	60	1
+msg	302445	I rushed because I heard your conversation over the communication. ...Looks like I came in at just the right time.	从通讯中听到你们的对话我就赶过来了…看来我的决断没有错。	通信であなたたちの会話が聞こえたので駆けつけたのです。\n……どうやら、その判断は間違っていなかったようですね。	NONE
+emote	58	6
+emote	60	3
+msg	302446	If the power reactor is destroyed, all our efforts will be for naught. I've left Theresa in charge of the deck! The situation here is even more urgent. We must defeat this Honkai beast quickly at all costs!	如果动力炉被破坏的话我们就前功尽弃了，甲板那边已经交给德丽莎了！这里的情况更加紧急，我们必须尽快解决这只崩坏兽！	動力炉が破壊されれば、これまでの努力が水の泡です。甲板の方はテレサに任せました！\nここの状況はさらに急を要します。何としてでも、速やかにこの崩壊獣を倒さなくてはなりません！	NONE
+msg	302447	Kyuushou! I'll cover you! Let's attack its tail together! As long as it loses its grip on the battleship, we'll have a chance!	九霄！我来掩护你！一起攻击它的尾巴！只要让它失去抓住战舰的力量我们就有机会！	九霄！ブローニャが援護します！一緒にあいつの尾を攻撃しましょう！\nあいつが戦艦を掴む力さえ失えば、こちらにチャンスが巡ってきます！	NONE
+speaker	Kyuushou
+emote	58	2
+emote	60	3
+msg	302448	Got it!	好！	わかった！	NONE
+portraits	60
+emote	60	3
+msg	302449	Pow--pow--pow!	砰砰砰！！	パァン——パァン——ッ！	NONE
+se	DLC_CH00_EV13_MosterRoar
+msg	302450	Guohhhhhhh!	吼吼吼！！	グルォオオオオオオッ！	NONE
+speaker	Bronya
+emote	60	3
+msg	302451	Kyuushou! Now's your chance!	九霄！拜托了！	九霄！お願いします！	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	2
+emote	60	3
+msg	302452	Take this, you pest! Haaaaaaaaaaah!	给我松开！！嘿呀！！	放せ、このッ！\n——ハァアアアアッ！！！	NONE
+portraits	60
+emote	60	3
+se	DLC_CH00_EV14_WeaponCollisionMonsterFall
+msg	302453	Gah!	咔！！	ガァッ！！	NONE
+se	DLC_CH00_EV13_MosterRoar
+msg	302454	Woah. ......!	吼吼吼——！！	ウォォォォン……！	NONE
+speaker	Bronya
+emote	60	3
+msg	302455	The Honkai Beast is starting to back up! Yiserin! It's now!	崩坏兽开始后退了！伊瑟琳！就是现在！	崩壊獣が後ろに下がりました！イザーリン！今です！	NONE
+speaker	Yiserin
+portraits	54
+emote	54	6
+msg	302456	On it! Hyperion's third power reactor, full power!	好的！休伯利安三号动力炉全速推进！	りょうかいッ！ハイペリオン3号動力炉、全速推進！	NONE
+emote	54	6
+msg	302457	Rumble - ！！！！	轰隆——！！！！	ゴォォォオオーーーッ！！！！	NONE
+msg	302458	Ho ho ho ......	吼吼吼……	グルルッ……ウォォォォン……！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	2
+emote	54	6
+msg	302459	It fell... I can't believe you thought of using the flames from the jet to attack it... Yiserin, you're pretty smart~!	掉下去了…居然能想到利用喷射口的火焰对它攻击，伊瑟琳你还挺聪明的嘛~	落ちていった……噴射口の火炎を利用してあいつを攻撃するなんて、イザーリンはやっぱり天才策士だなっ！	NONE
+speaker	Yiserin
+emote	58	2
+emote	54	5
+msg	302460	Eh ...... Oh, thanks for the compliment.	咕…多谢夸奖。	えっ……あ、ありがとう、褒めてくれて。	NONE
+speaker	Bronya
+portraits	58	60
+emote	58	2
+emote	60	1
+msg	302461	Kyuushou, it looks like we're all clear here. Let's hurry up and help out the other sectors!	九霄，既然这边的危机解除了，我们赶紧出发帮助其他区域吧！	九霄、ここはもう大丈夫そうだし、急いで他のエリアの応援に向かいましょう！	NONE
+speaker	Kyuushou
+emote	58	1
+emote	60	1
+msg	302462	Alright!	嗯。	わかった！	NONE
+portraits	60
+emote	60	1
+msg	302463	Vooooooooooo--!	吼吼吼！！！	ヴォォォオオオ——ッ！！！	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	6
+emote	60	1
+msg	302464	Ugh! This voice ...... don't tell me that that evil dragon has come back to visit!	唔！这个声音是…难道那只恶龙又飞回来了！？	うっ！この声……まさか、あの邪竜が舞い戻って来たか！？	NONE
+speaker	Yiserin
+portraits	58	54
+emote	58	6
+emote	54	2
+msg	302465	Chi ...... is different!	不…不对！	ち……違うわ！	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	2
+msg	302466	Estherine, this is not a broken ...... radar. ...... This is impossible .......	伊瑟琳，难道是雷达坏掉了么……这怎么可能……	イザーリン、これ……レーダーが壊れたわけじゃないよね……。\nこんなのありえない……。	NONE
+speaker	Bronya
+portraits	56	60
+emote	56	0
+emote	60	5
+msg	302467	Estherine! What in the world happened?	伊瑟琳！到底发生了什么！	イザーリン！一体、何が起こったのですか！	NONE
+speaker	Yiserin
+portraits	56	54
+emote	56	0
+emote	54	2
+msg	302468	According to the radar......	雷达显示……	レーダーによると……。	NONE
+emote	56	0
+emote	54	3
+msg	302469	A large number of dragon-type Honkai beasts are approaching.... Over a hundred of them....	有大量龙型崩坏兽正在接近……数量…已经超过了100只……	大量の竜型崩壊獣が接近中よ……。\nその数は——100体を越えているわ……。	NONE
+speaker	Bronya
+portraits	56	60
+emote	56	0
+emote	60	5
+msg	302470	Over one hundred....	100只……	100体……。	NONE
+speaker	Graymoth Member
+portraits	66	60
+emote	66	0
+emote	60	5
+msg	302471	Bronya! That thing in the distant sky ...... is densely packed! Those are all giant dragons! What are we ...... going to do?	布洛妮娅！远处的天空…密密麻麻的！全是那些巨龙！我们…我们该怎么办？	ブローニャ！遠くの空に……ぎっしりと密集しているあれ！あれが全て巨竜なの！\nわ、私たち……私たち、どうすればいいの？	NONE
+speaker	Bronya
+emote	66	0
+emote	60	5
+msg	302472	Damn it...!	呃……	くっ……！	NONE
+msg	302473	Why.... How could this happen? No way... Is this... The end of the road for us?	为什么…为什么会这样……难道…真的要到此为止了么……	どうして……どうして、こうなってしまうのですか……。\nまさか……本当にここまでなのですか……。	NONE
+msg	302474	We couldn't even make it to the Herrscher.... Are we really that insignificant?	结果居然连律者的身影都没有触及到…果然是我们太渺小了么？	結局、律者の姿にさえ手が届かなかった……やはりブローニャたちは、取るに足らないちっぽけな存在だったのでしょうか？	NONE
+speaker	Kyuushou
+portraits	58	60
+emote	58	7
+emote	60	5
+msg	302475	Hey, hey! Bronya! Don't give up! Snap out of it!	喂！布洛妮娅！不要放弃！快打起精神！	こ、こら！ブローニャ！諦めるな！シャキッとするんだ！	NONE
+speaker	Bronya
+emote	58	7
+emote	60	5
+msg	302476	But...... How on earth can we win against so many Honkai beasts? Our strength alone is no match for them...	可是…究竟要怎样才能战胜那么多的崩坏兽…仅凭我们的力量根本做不到……	しかし……一体、どうすればあんなにたくさんの崩壊獣に勝てるのでしょうか……。\nこちらの力だけでは到底敵いません……。	NONE
+speaker	Yiserin
+portraits	58	54
+emote	58	7
+emote	54	2
+msg	302477	……	……	……。	NONE
+msg	302478	No! It's not over...there must be a way!	不！还没有结束…一定还有办法！	いえ！まだ終わってない……きっと方法があるはず！	NONE
+emote	58	7
+emote	54	6
+msg	302479	Activate the Hyperion's main gun! Start filling up!	启动休伯利安号主炮！开始充能！	ハイペリオン号の主砲を起動！充填を開始して！	NONE
+speaker	Teammate
+portraits	56	54
+emote	56	0
+emote	54	6
+msg	302480	But ...... if we activate the main cannon now, it will affect the stability of the power reactor. ...... Besides, the main cannon would not be able to annihilate such a large number of Honkai beasts!	可是…现在启动主炮的话动力炉的稳定性就会受到影响…而且就算是用主炮也不可能消灭那么多的崩坏兽啊！	だけど……今、主砲を起動させたら、動力炉の安定性に影響を与えてしまいます……。\nそれに、主砲を使ったからって、あんな数の崩壊獣を消滅させることはできません！	NONE
+speaker	Yiserin
+emote	56	0
+emote	54	6
+msg	302481	No... We're not targeting the Honkai beasts. The battleship is getting close to the main tower... I'm not exactly sure what it's made of, but with the power of the main guns we should be able to damage it.	不…我们的目标不是那些崩坏兽，现在战舰距离那座塔很近，虽然还不能确定塔的材质…但如果是主炮的威力的话一定可以对它造成损伤。	いえ……目標はあの崩壊獣たちじゃないわ。今、この戦艦はあの塔にかなり近づいているでしょ。\n塔の材質を完璧に特定はできないけれど……主砲の威力なら、きっとあの塔にダメージを与えられるはず。	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	3
+emote	54	6
+msg	302482	Estherine...... what are you going to do?	伊瑟琳…你的意思是？	イザーリン……何をするつもりですか？	NONE
+speaker	Yiserin
+emote	60	3
+emote	54	6
+msg	302483	If the skies don't work, we'll have to find another way! War is like an experiment. There is always a path that leads to the truth!	如果天空不行的话那就另谋出路！战争就和实验一样，总会有通行真理的道路！	空がダメなら、他に活路を見出すしかないでしょ！戦争は実験と同じ。必ず真理につながる道があるのよ！	NONE
+bg	011/020_1280x720
+msg	302484	Hyperion, turn towards the tower! Align the sights of the main gun with that tower!	休伯利安号朝塔的方向转向！将主炮对准那座塔！	ハイペリオン号、塔を正面に旋回！主砲の照準をあの塔に合わせて！	NONE
+speaker	Teammate
+msg	302485	Copy that! Hyperion main gun is charging! Commence turning! Target locked on to the giant tower!	了解！休伯利安主炮充能中！开始转向！目标锁定为巨塔！	了解！ハイペリオン主砲、エネルギー充填中！旋回開始！目標を巨塔にロックオン！	NONE
+se	DLC_CH00_EV13_MosterRoar
+msg	302486	Grrrrrrrrrrrrrrrrrrrrrr!	吼吼吼！！！	グゥルォォォォォォッ！！！	NONE
+speaker	Yiserin
+msg	302487	Please, please, please make it in time...	一定要赶上啊……	お願いだから、間に合ってちょうだい……。	NONE
+speaker	Bronya
+bg	011/034_1280x720
+portraits	60
+emote	60	5
+msg	302488	Kyuushou! Let's go intercept the Honkai beasts! We can't let those things get anywhere near the battleship!	九霄！我们去迎击崩坏兽！不要让它们靠近战舰！	九霄！崩壊獣を迎撃しに行きましょう！あいつらを戦艦に近づかせるわけにはいきません！	NONE

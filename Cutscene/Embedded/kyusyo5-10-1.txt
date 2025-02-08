@@ -21,6 +21,7 @@ emote	55	3
 /Bronya	307653	……	……	……。	NONE
 emote	60	4
 emote	62	1
+portraits	60	62
 /Theresa	307654	Phew.... We can only give her some first aid. We have to figure out how to get out of Academy City as soon as possible. The longer we stay here, the worse the effects of the Honkai will become!	呼…我们能做的也只有这种应急处理了，得想办法尽快离开学园都市，在这里呆的越久，崩坏对她的影响就会越强！	ふぅ……私たちにできることはこれくらいの応急処置が限界ね。何とかして、急いで学園都市から逃げ出さないと。ここに長く留まれば、彼女に対する崩壊の影響がますます強くなっていくわ！	NONE
 /Bronya	307655	Seele... The same thing happened to her, right?	希儿…其实也是一样的吧。	ゼーレも……同じなのですよね。	NONE
 msg	307656	Actually... I already knew that nothing's improved. Seele, Himeko... Everyone else.... It's all because of me.	其实我知道的……根本什么都没有改变，希儿也是…姬子也是…都是因为我才……	ブローニャはわかっています……何も状況が好転していないことを……。ゼーレも、姫子も……皆、ブローニャのせいで……。	NONE

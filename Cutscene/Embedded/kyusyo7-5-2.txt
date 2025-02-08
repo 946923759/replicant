@@ -1,0 +1,106 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Teammate
+bg	011/020_1280x720
+msg	302489	Report! Filling of the main gun, completed!	报告！主炮充能完毕！	報告！主砲の充填、完了しました！	NONE
+speaker	Yiserin
+msg	302490	Fire!	发射！	発射ッーーー！	NONE
+se	DLC_CH01_EV11_ExplosionMultiClose
+msg	302491	Boom-!!!	轰隆——！！！	ドゥォォォン——ッ！！！	NONE
+speaker	Yiserin
+msg	302492	--What happened! Let me know the results of your observations!	怎么样！报告打击结果！	——どうなった！？観測結果を教えて！	NONE
+speaker	Teammate
+msg	302493	The main cannon took a direct hit. We are currently checking the damage to the exterior walls--.	主炮直击成功正在观测外壁受损情况……	主砲は直撃しました。現在、外壁の損壊状況を確認中——	NONE
+speaker	Yiserin
+msg	302494	Please ......! Please make it work!	拜托！一定要成功啊！	お願い……！どうか上手くいって！	NONE
+speaker	Teammate
+msg	302495	We report the results of the check ...... on the exterior wall ...... and find no visible damage .......	报告观测结果…外壁……没有发现明显破洞……	確認結果を報告します……外壁に……目に見える破損は見つかりません……。	NONE
+speaker	Yiserin
+msg	302496	Oh, no. .......	怎么会……	そ、そんな……。	NONE
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	302497	Dooooooooooooooooooooooo--!	轰隆——！！！	ドォォオオン——ッ！！！	NONE
+speaker	Teammate
+msg	302498	Oh, my God! Under the influence of the current main gun, the No. 2 power reactor has exploded due to overload! Other power reactor outputs have also been affected! The Hyperion's speed is gradually decreasing!	不好！受到主炮影响！二号动力炉因过载发生爆炸！其他动力炉的出力也受到影响！休伯利安号即将失速！	た、大変です！今の主砲の影響で、2号動力炉が過負荷による爆発を起こしました！その他、動力炉の出力も影響を受けています！ハイペリオン号の速度が徐々に落ちています！	NONE
+speaker	Yiserin
+msg	302499	Damn ...... it's still no good .......	难道…还是不行么……	くっ……やっぱりダメなの……。	NONE
+speaker	Teammate
+bg	011/034_1280x720
+portraits	56
+emote	56	0
+msg	302500	Please wait ...... Estherine! We have identified cracks in the exterior walls! And the cracks are spreading!	等下…伊瑟琳！观测到巨大外壁出现裂缝！并且正裂隙范围正在扩大！	待ってください……イザーリン！外壁に亀裂を確認しました！しかも、亀裂が広まっています！	NONE
+speaker	Yiserin
+portraits	56	54
+emote	56	0
+emote	54	6
+msg	302501	What? ......! Really!	呃！真的么！？	えっ……！本当！？	NONE
+speaker	Teammate
+emote	56	0
+emote	54	6
+msg	302502	No doubt about it! But ...... we can no longer refill the main gun! We're almost there!	没错！可是…主炮已经没有办法再启动了！明明就差一点！	間違いありません！ですが……主砲の再充填はもうできません！あと少しなのにッ！	NONE
+speaker	Yiserin
+emote	56	0
+emote	54	6
+msg	302503	Then there's only one ...... option: .......	既然如此…那就只有一个选择了……	それなら……選択肢は1つしかないわね……。	NONE
+speaker	Teammate
+emote	56	0
+emote	54	6
+msg	302504	Estherine...... understand! --All power reactors on the Hyperion are now at maximum output! With his last ounce of strength, he strikes the outer wall with his body and pries a hole through it!	伊瑟琳…明白！休伯利安号全动力炉最大出力！用最后的力量把外壁撞开！	イザーリン……分かりました！\n——ハイペリオン号の全動力炉を最大出力に！最後の力を振り絞って外壁に体当たりをし穴をこじ開けます！	NONE
+speaker	Yiserin
+emote	56	0
+emote	54	3
+msg	302505	What? ......!	呃！？	えっ……！？	NONE
+speaker	Teammate
+emote	56	0
+emote	54	3
+msg	302506	What's wrong with you? Isn't that what you were going to say?	怎么了？你难道不是想说这个么？	どうしたんですか？それを言おうとしていたんじゃないんですか？	NONE
+speaker	Yiserin
+emote	56	0
+emote	54	5
+msg	302507	Well, well, yes, it's ...... terrifying to hear it from someone else's mouth. ......	呜…看来大家的想法是一样的呢，虽然从别人的口中说出来还是觉得可怕……	ま、まあ、そうなんだけど……他人の口から聞くとそら恐ろしいわね……。	NONE
+emote	56	0
+emote	54	6
+msg	302508	Huh, we don't have a chance to win if we just sit on our hands and ......!	不过现在也只能破釜沉舟了！	はぁ、このまま手をこまねいていても勝機はないし……！	NONE
+portraits	54	54
+emote	54	6
+emote	54	6
+msg	302509	Attention all crew! This ship will accelerate shortly. All combatants, get off the bow! We will use the last of our power to hit the giant tower with our bodies!	通告全舰！战舰即将加速，请所有作战人员远离舰首！我们要用最后的动力撞开巨塔！	全乗員に告ぐ！当艦は間もなく加速するわ。全ての戦闘員は艦首から離れて！\n最後の動力を使って巨塔に体当たりする！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	8
+emote	54	6
+msg	302510	Yeah, yeah! A body blow!	诶诶！！撞！撞开！？	えええっ！！た、体当たり！？	NONE
+speaker	Bronya
+portraits	60	54
+emote	60	3
+emote	54	6
+msg	302511	Copy that! All hands off the bow! Prepare for impact!	收到！所有人撤离舰首！准备应对冲击！	了解！総員、艦首から退避！衝撃に備えてください！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	8
+emote	54	6
+msg	302512	Wait! Wait! I just got over my airsickness from the takeoff!!!!	等！等下！我才刚刚从起飞时的晕机里缓过来啊！！！	ま、待って！わた……我はようやく離陸時の飛行機酔いが治ったばかりなのだぞ！！！	NONE
+speaker	Yiserin
+portraits	54	54
+emote	54	6
+emote	54	6
+msg	302513	Hyperion! Maximum output! Advance!	休伯利安号！最大出力！前进！	ハイペリオン号！最大出力！前進ッ！	NONE
+speaker	Kyuushou
+portraits	58	54
+emote	58	8
+emote	54	6
+msg	302514	Woah, Aaaaaahhhhh!!!	呜哇哇哇哇！！！！	う、うわわぁぁぁぁっ！！！！	NONE
+speaker	Yiserin
+portraits	54	54
+emote	54	6
+emote	54	6
+msg	302515	Please———	给我——————————	お願い——————————	NONE
+msg	302516	Make it through!!!	撞开！！！！！！	成功してッ！！！！！！	NONE
+portraits	54
+emote	54	6
+nop	(Empty message)
+bg	007/006_1280x720
+se	DLC_CH01_EV11_ExplosionMultiClose
+msg	302517	Boom———!!!	轰隆————————————！！！	ゴォォォオオオオオン————————ッ！！！	NONE
+se	DLC_CH07_EV01_EarRing
+msg	302518	Boo ...... Boo ...... Boo .......	嗡嗡嗡——————	ブー……ブー……ブー……。	NONE
+msg	302519	……	……	……。	NONE
+msg	302520	……	……	…………。	NONE

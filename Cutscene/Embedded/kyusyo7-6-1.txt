@@ -72,7 +72,7 @@ emote	54	6
 emote	60	3
 msg	302541	Don't worry...... Us..... Hurry up and head to the top of the tower..........	别…别管我们…呲啦…赶快朝塔顶前进……	わ……私たちに構わないで……ザァ……急いで塔の頂上へ向かって……だい……！	NONE
 se	DLC_CH01_EV12_RadioReceive
-msg	302542	The battleship is ...... jigging ...... the hole, while the battleship is ...... plugging the hole, while the battleship is ...... plugging the hole.	趁着…呲啦…战舰堵住了缺口…	戦艦が……ジジッ……戦艦が穴を、塞いでいるうちに……。	NONE
+msg	302542	Go and take advantage..... Zzzzz.... battleship.... blocking the hole....	趁着…呲啦…战舰堵住了缺口…	戦艦が……ジジッ……戦艦が穴を、塞いでいるうちに……。	NONE
 
 se	DLC_CH01_EV24_RadioSignals
 msg	302543	Zaaa...... time already ...... zaaaaa--	呲啦…时间已经……呲啦……	ザァ……時間がもう……ザァァァァァァァ——	NONE

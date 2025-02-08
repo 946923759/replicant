@@ -1,74 +1,49 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 bg	011/016_1280x720
 se	DLC_CH00_EV11_MosterRoar
+music	Copied City
 msg	302635	Vooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!	吼吼吼！！	ヴォオオオオッ！！！	NONE
 speaker	Bronya
-portraits	60
-emote	60	3
-msg	302636	This way!	往这边走！	こっちです！	NONE
-emote	60	3
-se	DLC_CH00_EV13_MosterRoar
-msg	302637	Vooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!	吼吼吼！！	ヴォオオオオッ！！！	NONE
-speaker	Bronya
-emote	60	5
-msg	302638	Damn it! It's blocked here too!	可恶！这里也被堵住了么！	クッ！こっちも塞がれているのですか！？	NONE
-speaker	Theresa
+match_names	Theresa	Bronya	Kiana
 portraits	62	60
-emote	62	1
+emote	60	3
+/Bronya	302636	This way!	往这边走！	こっちです！	NONE
+se	DLC_CH00_EV13_MosterRoar
+/	302637	Vooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!	吼吼吼！！	ヴォオオオオッ！！！	NONE
 emote	60	5
-msg	302639	Don't panic! There must be a way up somewhere!	不要着急！一定还有出路！	慌てないで！きっと、どこかに突破口があるはずよ！	NONE
-portraits	60
+/Bronya	302638	Damn it! It's blocked here too!	可恶！这里也被堵住了么！	クッ！こっちも塞がれているのですか！？	NONE
+emote	62	1
+/Theresa	302639	Don't panic! There must be a way up somewhere!	不要着急！一定还有出路！	慌てないで！きっと、どこかに突破口があるはずよ！	NONE
 emote	60	5
 se	DLC_CH00_EV13_MosterRoar
-msg	302640	Fsh----ッ!	吼吼吼！！	フシュ————ッ！	NONE
+/	302640	Fsh----ッ!	吼吼吼！！	フシュ————ッ！	NONE
 se	DLC_CH00_EV14_WeaponCollisionMonsterFall
-msg	302641	Dong!	砰！！	ドンッ！！	NONE
-speaker	Theresa
-portraits	62	60
+/	302641	Dong!	砰！！	ドンッ！！	NONE
+
 emote	62	1
 emote	60	5
-msg	302642	Ah!	呃！	あッ！	NONE
-speaker	Bronya
-emote	62	1
-emote	60	5
-msg	302643	Theresa!	德丽莎！	テレサ！	NONE
-speaker	Theresa
-emote	62	1
-emote	60	5
-msg	302644	I'm fine ...... but the Honkai beast is more powerful than before ...... and our chances of breaking through are going down at this rate .......	我没事…崩坏兽的力量比起之前更加强大了…这样下去我们突围的几率只会越来越渺茫……	あたくしは大丈夫……でも、崩壊獣の力がさっきよりも増しているわ……このままじゃ突破できる可能性も下がる一方よ……。	NONE
-msg	302645	[color=#F4A460]Stop your pointless resistance already. [/color]	[color=#F4A460]不要再做无谓的抵抗了。[/color]	[color=#F4A460]もう、無意味な抵抗は止めなさい。[/color]	NONE
-speaker	Bronya
+/Theresa	302642	Ah!	呃！	あッ！	NONE
+/Bronya	302643	Theresa!	德丽莎！	テレサ！	NONE
+/Theresa	302644	I'm fine ...... but the Honkai beast is more powerful than before ...... and our chances of breaking through are going down at this rate .......	我没事…崩坏兽的力量比起之前更加强大了…这样下去我们突围的几率只会越来越渺茫……	あたくしは大丈夫……でも、崩壊獣の力がさっきよりも増しているわ……このままじゃ突破できる可能性も下がる一方よ……。	NONE
+/???	302645	[color=#F4A460]Stop your pointless resistance already. [/color]	[color=#F4A460]不要再做无谓的抵抗了。[/color]	[color=#F4A460]もう、無意味な抵抗は止めなさい。[/color]	NONE
+
 emote	62	1
 emote	60	3
-msg	302646	That voice is....?	这个声音是？	この声は……？	NONE
-speaker	Theresa
-emote	62	1
-emote	60	3
-msg	302647	Kiana......	琪亚娜……	キアナ……。	NONE
-msg	302648	[color=#F4A460]This tower is the graveyard of all mankind. What roams here are countless dead souls. [/color]	[color=#F4A460]这座塔是全人类的坟墓，这里徘徊着无数死去的亡魂。[/color]	[color=#F4A460]この塔は全人類の墓場。ここを徘徊しているものは、無数の死んだ魂なの。[/color]	NONE
+/Bronya	302646	That voice is....?	这个声音是？	この声は……？	NONE
+/Theresa	302647	Kiana......	琪亚娜……	キアナ……。	NONE
+/Kiana	302648	[color=#F4A460]This tower is the graveyard of all mankind. What roams here are countless dead souls. [/color]	[color=#F4A460]这座塔是全人类的坟墓，这里徘徊着无数死去的亡魂。[/color]	[color=#F4A460]この塔は全人類の墓場。ここを徘徊しているものは、無数の死んだ魂なの。[/color]	NONE
 msg	303135	[color=#F4A460]And you, too, will perish here with them. [/color]	[color=#F4A460]而你们，也将在这里与它们一同消亡。[/color]	[color=#F4A460]そしてあなたたちも、それらと一緒にここで消える。[/color]	NONE
-speaker	Bronya
-emote	62	1
-emote	60	3
-msg	302649	Herrscher! Stop sneaking around and come out! If you want to kill us, show yourself!	律者！不要躲躲藏藏的了！既然想要杀死我们就直接现身！	律者！コソコソしていないで出てくるのです！ブローニャたちを殺したいのなら姿を現すべきです！	NONE
-emote	62	1
-emote	60	3
-msg	302650	[color=#F4A460]Your deaths are as meaningless as the end of this world. [/color]	[color=#F4A460]你们的死和这个世界的结局一样毫无意义。[/color]	[color=#F4A460]あなたたちの死は、この世界の結末のように無意味なものなの。[/color]	NONE
+/Bronya	302649	Herrscher! Stop sneaking around and come out! If you want to kill us, show yourself!	律者！不要躲躲藏藏的了！既然想要杀死我们就直接现身！	律者！コソコソしていないで出てくるのです！ブローニャたちを殺したいのなら姿を現すべきです！	NONE
+/Kiana	302650	[color=#F4A460]Your deaths are as meaningless as the end of this world. [/color]	[color=#F4A460]你们的死和这个世界的结局一样毫无意义。[/color]	[color=#F4A460]あなたたちの死は、この世界の結末のように無意味なものなの。[/color]	NONE
 msg	303136	[color=#F4A460]The apocalypse will soon arrive, and the entire world will return to nothingness.[/color]	[color=#F4A460]终结的时刻即将到来，整个世界都将回归虚无。[/color]	[color=#F4A460]間もなく訪れる終末の時。世界全体が虚無へと戻る。[/color]	NONE
 msg	302651	[color=#F4A460]So ...... it was decided from the beginning ...... there's nothing worth leaving undone. [/color]	[color=#F4A460]没错…从一开始就已经注定的事情…没有丝毫值得留恋的地方。[/color]	[color=#F4A460]そう……最初から決まっていたこと……未練を残すに値するものは何もないわ。[/color]	NONE
-emote	62	1
-emote	60	3
-msg	302652	Herrscher, nothing you say is going to stop me now! If you won't come out and kill me, then I'll reach the top of the tower and kill you myself!	律者，现在说什么都已经没用了！如果你不想亲自动手那就在塔顶等着！我们一定会达到那里阻止你的！	律者、今は何を言っても無駄です！あなたが自ら手を下そうとしないのでしたら、塔の頂上で待っているのです！\n必ずそこに辿り着いて、あなたを止めてみせます！	NONE
-emote	62	1
-emote	60	3
-msg	302653	[color=#F4A460]Is that so... But I'm afraid you won't have a chance. Your journey ends here.[/color]	[color=#F4A460]是么…不过恐怕没有这样的机会了，你们的道路将会在这里终结。[/color]	[color=#F4A460]そう……でも、そんなチャンスはないと思うわよ。あなたたちの道は、ここで終わりなのだから。[/color]	NONE
-portraits	60
+/Bronya	302652	Herrscher, nothing you say is going to stop me now! If you won't come out and kill me, then I'll reach the top of the tower and kill you myself!	律者，现在说什么都已经没用了！如果你不想亲自动手那就在塔顶等着！我们一定会达到那里阻止你的！	律者、今は何を言っても無駄です！あなたが自ら手を下そうとしないのでしたら、塔の頂上で待っているのです！\n必ずそこに辿り着いて、あなたを止めてみせます！	NONE
+/Kiana	302653	[color=#F4A460]Is that so... But I'm afraid you won't have a chance. Your journey ends here.[/color]	[color=#F4A460]是么…不过恐怕没有这样的机会了，你们的道路将会在这里终结。[/color]	[color=#F4A460]そう……でも、そんなチャンスはないと思うわよ。あなたたちの道は、ここで終わりなのだから。[/color]	NONE
 emote	60	3
 se	DLC_CH00_EV13_MosterRoar
-msg	302654	Guuooooooooo--!	吼吼吼！！	グゥオオオォォォ——ッ！！	NONE
-speaker	Bronya
+/	302654	Guuooooooooo--!	吼吼吼！！	グゥオオオォォォ——ッ！！	NONE
 emote	60	3
-msg	302655	--! A new Honkai creature has appeared again!	可恶！又有新的崩坏生物诞生了！	——ッ！新手の崩壊生物がまた現れました！	NONE
+/Bronya	302655	--! A new Honkai creature has appeared again!	可恶！又有新的崩坏生物诞生了！	——ッ！新手の崩壊生物がまた現れました！	NONE
 msg	302656	Theresa! Get outta here! This place will be surrounded by Honkai creatures soon!	德丽莎！快走！这里马上就会被崩坏生物包围了！	テレサ！早く！ここにいては、すぐに崩壊生物に囲まれてしまいます！	NONE
 speaker	Theresa
 portraits	62	60
@@ -99,29 +74,30 @@ msg	302663	Dooooooooooooooooooooo ----!	轰隆————！！！	ドオオォ
 speaker	Bronya
 emote	60	5
 msg	302664	Theresa! What are you doing?	德丽莎！你做什么！	テレサ！何をするつもりですかッ！	NONE
+
 speaker	Theresa
+portraits
 bg	CG10189
 msg	302665	We are running out of time to find a new path ......	我们已经没时间寻找新的道路了……	あたくしたちに新しい道を探している時間は、もう残されてないわ……。	NONE
 msg	302666	If we can't find one, then I'll have to create one!	既然没有道路的话…就用自己的身躯创造出来！	道がないのなら……自らの力で作り出すまでよ！	NONE
-msg	302667	You destroyed the ground to delay the Honkai Beasts.... A futile effort.	砸断了地面来阻挡崩坏生物么…只是浪费时间罢了。	地面を破壊して崩壊生物を食い止めるのね……けど、そんなのただの時間の無駄よ。	NONE
+/Kiana	302667	You destroyed the ground to delay the Honkai Beasts.... A futile effort.	砸断了地面来阻挡崩坏生物么…只是浪费时间罢了。	地面を破壊して崩壊生物を食い止めるのね……けど、そんなのただの時間の無駄よ。	NONE
 speaker	Theresa
 msg	302668	Kiana, why did you show up here if you don't deserve to have anything left undone!	琪亚娜，既然没有什么值得留恋，那你为何要出现在这里！	キアナ、何も未練を残すに値しないのなら、あなたはどうしてここに現れたの！	NONE
 msg	302669	Don't fool yourself anymore. If you had nothing on your mind that you cared about, you wouldn't care if we lived or died!	不要再欺骗自己了，如果内心没有牵挂，就不会在乎我们的生死！	もう自分を欺かないで。\n心に気にかけていることがないのなら、私たちの生死なんて気にしないはずでしょ！	NONE
-msg	302670	……	……	……。	NONE
-speaker	Theresa
-msg	302671	Kiana, I know what you are like! Ever since you were a little girl, you never believed in the existence of despair. You always faced every challenge with hope in your heart!	琪亚娜，我知道你的性格！从小你就不相信绝望的存在，每次都怀抱着希望迎接一切的困难！	キアナ、あなたの性格は分かっているわ！幼い時から絶望の存在を信じていなかったわよね。\nいつも希望を胸に、あらゆる困難に立ち向かっていた！	NONE
+/Kiana	302670	……	……	……。	NONE
+/Theresa	302671	Kiana, I know what you are like! Ever since you were a little girl, you never believed in the existence of despair. You always faced every challenge with hope in your heart!	琪亚娜，我知道你的性格！从小你就不相信绝望的存在，每次都怀抱着希望迎接一切的困难！	キアナ、あなたの性格は分かっているわ！幼い時から絶望の存在を信じていなかったわよね。\nいつも希望を胸に、あらゆる困難に立ち向かっていた！	NONE
 msg	303137	I know the pain in your heart. ...... I am sure you must be very sad.	我明白你内心的痛苦…我知道你一定十分的悲伤。	あなたの心の中の苦しみが分かるわ……きっと、とても悲しいのでしょうね。	NONE
 msg	303138	If you don't try to touch them, you'll stay in your shell because you think they won't hurt you anymore ...... dreaming that everything will be beautiful in the beginning.	想着只要不去触碰就不会再受伤，所以将自己禁闭在自己的象牙塔中…幻想着一切还都是最初那种美好的样子。	触れようとしなければ、もう傷つくことはないと思っているから、\n自分の殻に閉じこもっているのでしょう……全てが最初の美しい姿であることを夢見ながら。	NONE
 msg	303139	But you know, Kiana ...... that doesn't change anything. We have to move on, even if we're covered in scars.	但是琪亚娜…这样什么也改变不了，即便遍体鳞伤，我们也必须前进。	でもね、キアナ……それでは何も変えられないのよ。\n傷だらけになったとしても、前に進まなくちゃならないの。	NONE
 msg	303140	If we're afraid to change because we're afraid to see how it ends, we'll get nothing. We've got to make a bigger sacrifice, a very big sacrifice, and we have to win. ...... This is who we are now.	如果害怕看见结局而不去改变的话那就什么也无法得到，即便付出再大的牺牲也要去争取……这就是现在的我们。	結末を見るのが怖くて変化を恐れていたら、何も手に入れられないわ。\nもっと大きな犠牲を払うことになったとても、勝ち取らなくてはならないの……。\nこれが今のあたくしたちなのよ。	NONE
 msg	302672	We will never give up! Kiana! If you have forgotten who you used to be now, ...... let me remind you!	我们是绝对不会放弃的！琪亚娜！如果你现在忘记了曾经的自己的话…就让我来帮你回忆起来吧！	あたくしたちは絶対にあきらめない！\nキアナ！今のあなたが昔の自分を忘れてしまったのなら……あたくしが思い出させてあげる！	NONE
-speaker	Bronya
-msg	302673	Theresa......。	德丽莎……	テレサ……。	NONE
-speaker	Theresa
-msg	302674	Bronya, Kyuushou! I'll take care of this! I need you guys to get to the top of the tower! And tell Kiana! You and I can work miracles, no matter how hopeless we are!	布洛妮娅，九霄！这里交给我吧！你们一定要到达塔顶！告诉琪亚娜！我们是如何在绝望中创造奇迹的！	ブローニャ、九霄！ここはあたくしに任せて！あなたたちは何としても塔の頂上に辿り着いてちょうだい！\nそして、キアナに教えてあげて！あたくしたちなら、どれだけ絶望していても奇跡を起こせるって！	NONE
+/Bronya	302673	Theresa......。	德丽莎……	テレサ……。	NONE
+/Theresa	302674	Bronya, Kyuushou! I'll take care of this! I need you guys to get to the top of the tower! And tell Kiana! You and I can work miracles, no matter how hopeless we are!	布洛妮娅，九霄！这里交给我吧！你们一定要到达塔顶！告诉琪亚娜！我们是如何在绝望中创造奇迹的！	ブローニャ、九霄！ここはあたくしに任せて！あなたたちは何としても塔の頂上に辿り着いてちょうだい！\nそして、キアナに教えてあげて！あたくしたちなら、どれだけ絶望していても奇跡を起こせるって！	NONE
 speaker	Bronya
 msg	302675	Theresa ....... Yes, endure it at all costs!	嗯…你一定要坚持住！	テレサ……。\nはい、何としても耐えきってください！	NONE
+
 bg	011/016_1280x720
-msg	302676	The flame chasing moths... Whether you chase hope or blind destruction, it no longer matters.	飞蛾扑火…究竟是追逐希望还是盲目的毁灭…一切都已经不重要了。	飛んで火にいる夏の虫とはこのことね……。\n果たして希望を追っているのか、盲目的な自滅なのか……。まあ、そんなのは全てどうでもいいことよね。	NONE
+portraits	62	60
+/Kiana	302676	The flame chasing moths... Whether you chase hope or blind destruction, it no longer matters.	飞蛾扑火…究竟是追逐希望还是盲目的毁灭…一切都已经不重要了。	飛んで火にいる夏の虫とはこのことね……。\n果たして希望を追っているのか、盲目的な自滅なのか……。まあ、そんなのは全てどうでもいいことよね。	NONE
 msg	302677	I will be waiting for you at the top of the tower. But the flames of the apocalypse will soon consume the entire world.	我会在塔顶等你们，不过末日的火焰即将烧却整个世界。	私は塔の頂上であなたたちを待っているわ。\nでも、終末の炎が間もなく世界の全てを焼き尽くすでしょうね。	NONE
 msg	302678	[color=#F4A460]I hope you live to see that moment......[/color]	[color=#F4A460]希望你们能够活到那一刻……[/color]	[color=#F4A460]あなたたちがその時まで生きていられるといいけど……。[/color]	NONE

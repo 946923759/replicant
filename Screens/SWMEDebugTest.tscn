@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://FM RepliCant Logo.png" type="Texture" id=3]
 [ext_resource path="res://Shaders/MotionBlur.tres" type="Material" id=4]
+[ext_resource path="res://Portraits/kiana/112_002.png" type="Texture" id=5]
+[ext_resource path="res://Portraits/kiana/112.png" type="Texture" id=6]
+[ext_resource path="res://Cutscene/VNPortraitHandler.gd" type="Script" id=7]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://Screens/ScreenWithMenuElements.gd\"
@@ -16,6 +19,9 @@ func _on_Button_pressed():
 func _on_Button2_pressed():
 	AddNewScreenOnTop(\"ScreenWebWarning\")
 
+func _ready():
+	$VNPortrait.set_texture_wrapper(\"112\")
+	$VNPortrait.cur_expression = \"2\"
 
 var tw:SceneTreeTween
 func _input(event):
@@ -43,7 +49,7 @@ func _input(event):
 [node name="ScreenWithMenuElements" instance=ExtResource( 1 )]
 script = SubResource( 1 )
 
-[node name="BackButton" parent="." index="0"]
+[node name="BackButton" parent="." index="1"]
 visible = false
 
 [node name="Button" type="Button" parent="." index="3"]
@@ -126,6 +132,22 @@ text = "Press 1 to move this cube with a tween"
 material = ExtResource( 4 )
 position = Vector2( 1308, 323 )
 texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="." index="11"]
+position = Vector2( 95, 444 )
+texture = ExtResource( 6 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sprite2" index="0"]
+position = Vector2( 495, 120.96 )
+texture = ExtResource( 5 )
+
+[node name="VNPortrait" type="Node2D" parent="." index="12"]
+position = Vector2( 236, 461 )
+script = ExtResource( 7 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

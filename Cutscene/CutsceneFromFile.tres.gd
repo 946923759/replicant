@@ -162,6 +162,8 @@ func _input(event):
 			
 	
 	#s.hide()
+
+#What is this even doing here?
 func set_rect_size():
 	for child in $BackgroundHolder.get_children():
 		child.set_rect_size()

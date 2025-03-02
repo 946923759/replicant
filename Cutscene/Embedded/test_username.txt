@@ -5,4 +5,4 @@ var	anything	0
 var	anything	&3
 label	start
 msg	The username env var is %player%. This is always set.
-
+msg	If you try to display a variable that doesn't exist, like %invalid%... It will ignore it and stop attempting to parse variables.

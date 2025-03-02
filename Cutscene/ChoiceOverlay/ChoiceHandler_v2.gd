@@ -53,7 +53,7 @@ func OnCommand():
 	self.visible=true
 	if seq and seq.is_valid():
 		seq.kill()
-	seq = get_tree().create_tween()
+	seq = create_tween()
 	$Dim.modulate.a=0
 	seq.tween_property($Dim,"modulate:a",1,.5)
 	
@@ -71,7 +71,7 @@ func OnCommand():
 func OffCommand():
 	if seq.is_valid():
 		seq.kill()
-	seq = get_tree().create_tween()
+	seq = create_tween()
 	seq.tween_property($Dim,"modulate:a",0,.3)
 	
 	for i in range(currentChoiceSize):

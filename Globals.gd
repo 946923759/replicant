@@ -99,7 +99,7 @@ enum RE_RR_STATUS {
 	REBORN_AVAILABLE = 2,   # RE
 	RE_RR_AVAILABLE = 3,
 	ERA_ZERO_AVAILABLE = 4, # EZ
-	RR_EZ_AVAILABLE = 5,   # RR & EZ
+	RR_EZ_AVAILABLE = 5,    # RR & EZ
 	RE_EZ_AVAILABLE = 6,
 	RE_RR_EZ_AVAILABLE = 7,
 	LEGACY_AVAILABLE = 8
@@ -189,7 +189,8 @@ var playerData={
 	"completedChapters":[0,0,0,0,0,0,0,0,0,0,0],
 	"completedRetro":[0],
 	"completedReborn":[0],
-	'state':false
+	'state':false,
+	"vars":{}
 }
 
 static func get_episode_index(chDB:Dictionary, curEpisode:Episode)->PoolIntArray:
@@ -311,6 +312,8 @@ func load_system_data()->bool:
 				playerData['completedRetro'] = [0]
 			if not ('completedReborn' in playerData):
 				playerData['completedReborn'] = [0]
+			if not ('vars' in playerData):
+				playerData['vars'] = {}
 		save_game.close()
 		print("[SAVEDATA] System save data loaded.")
 		return true
@@ -435,6 +438,11 @@ func _ready():
 		printerr("[Init] Failed to open portrait database")
 	else:
 		database=parse_json(f.get_as_text())
+		for k in database:
+			if database[k].size() > 2:
+				var v2 = database[k][2]
+				if typeof(v2) == TYPE_ARRAY:
+					database[k][2] = Vector2(v2[0],v2[1])
 		print("[Init] Loaded database. "+String(database.size())+" entries.")
 	f.close()
 	

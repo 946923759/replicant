@@ -1,4 +1,5 @@
 extends Control
+signal cutscene_finished()
 signal song_changed(song_file_name)
 
 """
@@ -72,6 +73,25 @@ onready var fsText:RichTextLabel = $FSMode_ActorFrame/TextActor
 onready var tw:Tween = $TextboxTween
 onready var txtTw:SceneTreeTween
 
+
+var manualTriggerForward=false
+
+enum Overlay {
+	NONE = 0,
+	OPTIONS,
+	HISTORY,
+	CHOICE,
+	VAR_DEBUGGER, 
+	OPCODE_DEBUGGER,
+	UI_HIDDEN,
+	WAITING_FOR_TWEEN, #Not used
+	WAITING_FOR_BROADCAST #Ignore inputs until end_await()
+}
+var otherScreenIsHandlingInput:int = Overlay.NONE
+
+var tracebackPos:int = -1
+#limit skip speed
+var frameLimiter:float=0.0
 
 func push_back_from_idx_one(arr,arr2): #Arrays are passed by reference so there's no need to return them, but whatever
 	for i in range(1,arr2.size()):
@@ -202,8 +222,12 @@ func preparse_string_array(arr,delimiter:String="|")->bool:
 				#Skip adding the original command.
 				#continue
 				#print(splitString
+
 			"condjmp_c":
-				splitString=["condjmp",splitString[1],"__choice__",splitString[2]]
+				if len(splitString)<3:
+					printerr("Invalid condjmp_c statement at line ",ii,". Syntax is condjmp_c, dest_label, selected choice value")
+				else:
+					splitString=["condjmp",splitString[1],"__choice__",splitString[2]]
 			"if":
 				splitString=["condjmp_neg","__fi__",splitString[1],splitString[2].rstrip(":")]
 			"else","else:":
@@ -484,7 +508,8 @@ func advance_text()->bool:
 	var tmp_tn = ""
 
 	#If we don't remove, the previous text tween can start overwriting the current one
-	txtTw = get_tree().create_tween()
+	txtTw = create_tween()
+	get_node("%BlinkingArrow").hide()
 	
 	#This is a 2D array for custom text pauses, ex. Hello {w=1}World
 	#delay before executing, tween towards num chars
@@ -608,7 +633,7 @@ func advance_text()->bool:
 							pass
 						else:
 							printerr("Variable "+varName+" used in script, but not declared yet. Ignoring.")
-				
+							break
 				
 				#OH BOY HERE WE GO
 				#So first we have to find where there is a pause
@@ -1071,6 +1096,9 @@ func advance_text()->bool:
 		txtTw.parallel().tween_property(popupText,"visible_characters",popupText.text.length(),
 			1/TEXT_SPEED*(popupText.text.length()-popupText.visible_characters)
 		)
+	
+	if $CenterContainer/textBackground_Reborn.visible:
+		txtTw.tween_callback(get_node("%BlinkingArrow"),"show")
 	#print("Tweening... waitForAnim is "+String(waitForAnim))
 	tw.start()
 	waitForAnim=0
@@ -1231,7 +1259,7 @@ func _ready():
 	#set_rect_size()
 	#tw.interpolate_property($FadeToBlack,"modulate:a",null,0,.5)
 	#tw.start()
-	var seq := get_tree().create_tween()
+	var seq := create_tween()
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 	seq.tween_property($FadeToBlack,"color:a",0,.5)
 	
@@ -1284,7 +1312,7 @@ func end_cutscene():
 		if p.is_active:
 			p.stop()
 	
-	var seq := get_tree().create_tween()
+	var seq := create_tween()
 	seq.set_pause_mode(SceneTreeTween.TWEEN_PAUSE_PROCESS)
 # warning-ignore:return_value_discarded
 	seq.tween_property(textboxSpr,'rect_scale:y',0.0, .5).set_trans(Tween.TRANS_QUAD)
@@ -1302,7 +1330,6 @@ func end_cutscene():
 	
 
 # Called immediately after end_cutscene (look above)
-signal cutscene_finished()
 func end_cutscene_2():
 	Globals.wasUsingAutoMode = automatically_advance_text
 	
@@ -1312,27 +1339,6 @@ func end_cutscene_2():
 		print("No parent node...")
 	emit_signal("cutscene_finished")
 	queue_free()
-
-
-# Honestly, this is a mess. When it was in lua the input handling and the VN processing
-# wasn't coupled together, instead vntext:advance() would be called and if it returned
-# false it meant there was no more text.
-var manualTriggerForward=false
-
-enum Overlay {
-	NONE = 0,
-	OPTIONS,
-	HISTORY,
-	CHOICE,
-	VAR_DEBUGGER, 
-	OPCODE_DEBUGGER,
-	UI_HIDDEN
-}
-var otherScreenIsHandlingInput:int = Overlay.NONE
-
-var tracebackPos:int = -1
-#limit skip speed
-var frameLimiter:float=0.0
 
 func toggleAutoMode(b:bool=false):
 	automatically_advance_text=b
@@ -1453,6 +1459,8 @@ func _process(delta):
 			else:
 				closeTextbox(txtTw,0)
 			text.visible_characters = text.text.length()
+			if $CenterContainer/textBackground_Reborn.visible:
+				get_node("%BlinkingArrow").show()
 
 			if messageBoxMode==MSGBOX_DISP_MODE.FULLSCREEN:
 				fsText.visible_characters=fsText.text.length()
@@ -1619,7 +1627,12 @@ func _on_TextureButtonLog_pressed():
 			tween_in_history()
 			get_tree().set_input_as_handled()
 			otherScreenIsHandlingInput = Overlay.HISTORY
-	
+
+func end_await():
+	set_process(true)
+	otherScreenIsHandlingInput=0
+	advance_text()
+
 
 func _on_TextureButtonAuto_toggled(button_pressed):
 	toggleAutoMode(button_pressed)

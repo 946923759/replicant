@@ -10,14 +10,15 @@ var offset: int
 var numPortraits:int = 0
 var idx: int = -1
 var is_active:bool = false
-var is_masked:bool=false
+export var is_masked:bool=false
 
 #TODO: zoomx/zoomy will break the zoom level, which should be a multiple of this.
 #Tweens need to take into account this value.
 var zoom_level:float = 1.0
 
 var portrait_textures:Dictionary={}
-#var imageTex:Array=[]
+var expressions_are_overlays = false
+var overlay_offset:Vector2
 var cur_expression:String="0" setget set_cur_expression
 var mask1 = preload("res://Cutscene/maskBox.png")
 var mask2 = preload("res://Cutscene/maskBox2.png")
@@ -46,13 +47,34 @@ func _draw():
 		return
 	if is_masked:
 		draw_texture(mask1,Vector2(-196,14))
-		draw_texture_rect_region(portrait_textures[cur_expression],
-			Rect2(-319/2,26,319,457),
-			Rect2(IMAGE_CENTER_X-319/2,0,319,457)
-		)
+		if expressions_are_overlays and cur_expression != "0":
+			draw_texture_rect_region(portrait_textures["0"],
+				Rect2(-319/2,26,319,457), #Destination
+				Rect2(IMAGE_CENTER_X-319/2,0,319,457) #Source
+			)
+			draw_texture_rect_region(
+				portrait_textures[cur_expression],
+				Rect2(
+					IMAGE_CENTER_X-319/2+overlay_offset.x,
+					26+overlay_offset.y,
+					256,
+					256
+				),
+				Rect2(0,0,256,256)
+			)
+			#draw_texture(portrait_textures[cur_expression],Vector2(-IMAGE_CENTER_X,0)+overlay_offset)
+
+		else:
+			draw_texture_rect_region(portrait_textures[cur_expression],
+				Rect2(-319/2,26,319,457),
+				Rect2(IMAGE_CENTER_X-319/2,0,319,457)
+			)
 		#I'm pretty sure this isn't a normal overlay because it's not that blue in gfl.
 		#There's also the whole distortion thing but I don't know how that's done (Is it a shader?).
 		draw_texture(mask2,Vector2(-319/2,25),Color(1,1,1,.8))
+	elif expressions_are_overlays and cur_expression != "0":
+		draw_texture(portrait_textures["0"],Vector2(-IMAGE_CENTER_X,0))
+		draw_texture(portrait_textures[cur_expression],Vector2(-IMAGE_CENTER_X,0)+overlay_offset)
 	else:
 		draw_texture(portrait_textures[cur_expression],Vector2(-IMAGE_CENTER_X,0))
 		
@@ -313,7 +335,7 @@ func replicant_set_textures(toLoad:Dictionary):
 		else:
 			printerr("Portrait "+sprName+" not embedded in pck and no external file!!")
 			
-	#print(portrait_textures)
+	expressions_are_overlays = false
 	update()
 
 func set_texture_wrapper(sprName):
@@ -321,11 +343,29 @@ func set_texture_wrapper(sprName):
 	cur_expression="0"
 	if sprName in Globals.database:
 		var toLoad:Array = Globals.database[sprName]
-		print("Got textures to load... "+String(toLoad))
-		var newDict = {}
-		for i in range(len(toLoad)):
-			newDict[String(i)]=toLoad[i]
-		replicant_set_textures(newDict)
+		if toLoad.size() >= 4 or toLoad.size() == 1:
+			print("Got textures to load... "+String(toLoad))
+			var newDict = {
+				"0":toLoad[0]
+			}
+			if toLoad.size() >= 4:
+				# Additional portraits instead of expressions
+				for i in range(len(toLoad[3])):
+					newDict[String(i+1)]=toLoad[3][i]
+			replicant_set_textures(newDict)
+			expressions_are_overlays = false
+		else:
+			print("Got textures to load (overlay)... "+String(toLoad))
+			var newDict = {
+				"0":toLoad[0]
+			}
+			for i in range(1,toLoad[1]+1):
+				newDict[String(i)]=toLoad[0]+"_"+String(i).pad_zeros(3)
+			replicant_set_textures(newDict)
+			overlay_offset = toLoad[2]
+			expressions_are_overlays = true
+			
 	else:
 		print(sprName+" not in portrait database! Falling back...")
 		gestalt_set_textures(sprName)
+		expressions_are_overlays = false

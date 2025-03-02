@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/TextFont_Large.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Screens/OverlayTextEntry/OverlayTextEntry.gd" type="Script" id=3]
+
+[node name="OverlayTextEntry" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+HandlePhysicalBButton = false
+allow_empty_text = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="0"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -510.0
+margin_top = -132.5
+margin_right = 510.0
+margin_bottom = 132.5
+custom_constants/separation = 10
+
+[node name="LabelPromptText" type="Label" parent="VBoxContainer" index="0"]
+margin_right = 1020.0
+margin_bottom = 75.0
+custom_fonts/font = ExtResource( 1 )
+text = "Please enter your first name."
+align = 1
+
+[node name="TextEdit" type="LineEdit" parent="VBoxContainer" index="1"]
+margin_top = 85.0
+margin_right = 1020.0
+margin_bottom = 170.0
+custom_fonts/font = ExtResource( 1 )
+max_length = 12
+clear_button_enabled = true
+placeholder_text = "John Persona"
+caret_blink = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" index="2"]
+margin_top = 180.0
+margin_right = 1020.0
+margin_bottom = 261.0
+custom_constants/separation = 10
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer" index="0"]
+margin_right = 547.0
+margin_bottom = 81.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Pick one for me"
+
+[node name="ButtonOK" type="Button" parent="VBoxContainer/HBoxContainer" index="1"]
+margin_left = 557.0
+margin_right = 1020.0
+margin_bottom = 81.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "OK"
+
+[node name="BackButton" parent="." index="2"]
+visible = false
+
+[connection signal="text_changed" from="VBoxContainer/TextEdit" to="." method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/ButtonOK" to="." method="_on_ButtonOK_pressed"]

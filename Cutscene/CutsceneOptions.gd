@@ -395,6 +395,8 @@ func init():
 	systemOptionsSubmenu.name="systemOptionsSubmenu"
 	systemOptionsSubmenu.rect_position=Vector2(-999,150)
 	systemOptionsSubmenu.modulate.a=0
+	
+	#TODO: This is a mess, it would be better to have flags for showing the option
 	var systemOptions:Dictionary={}
 	for opt in ["AudioVolume","SFXVolume","language","vibration"]:
 		systemOptions[opt]=Globals.OPTIONS[opt]

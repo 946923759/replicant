@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://Cutscene/textbox.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
@@ -26,7 +26,7 @@
 [ext_resource path="res://Graphics/music_tex.png" type="Texture" id=24]
 [ext_resource path="res://Cutscene/SongDisplay.tres.gd" type="Script" id=25]
 [ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=26]
-[ext_resource path="res://Ext/textbox.png" type="Texture" id=27]
+[ext_resource path="res://Ext/textbox_Reborn.png" type="Texture" id=27]
 [ext_resource path="res://Ext/historyBtn_Reborn_txt.png" type="Texture" id=28]
 [ext_resource path="res://Ext/historyBtn_Reborn_BG.png" type="Texture" id=29]
 [ext_resource path="res://Ext/skipBtn_Reborn_txt.png" type="Texture" id=30]
@@ -34,6 +34,8 @@
 [ext_resource path="res://Ext/autoBtn_Reborn_txt.png" type="Texture" id=32]
 [ext_resource path="res://Ext/skipBtn_Reborn_BG_hl.png" type="Texture" id=33]
 [ext_resource path="res://Cutscene/VNPortraitHandler.gd" type="Script" id=34]
+[ext_resource path="res://Ext/textbox_arrow_Reborn.png" type="Texture" id=35]
+[ext_resource path="res://addons/godot-next/gui/debug_label.gd" type="Script" id=36]
 
 [sub_resource type="Shader" id=7]
 code = "shader_type canvas_item;
@@ -80,6 +82,33 @@ void fragment(){
 [sub_resource type="ShaderMaterial" id=10]
 shader = SubResource( 9 )
 shader_param/fadeTopAt = 250.0
+
+[sub_resource type="GDScript" id=13]
+script/source = "extends TextureRect
+
+#onready var startY = self.rect_position.y
+#func _ready():
+#	print(rect_position.y)
+#	set_process(true)
+
+var progress:float = 0.0;
+func _process(delta):
+	#return
+	self.rect_position.y = sin(progress)*10
+	progress+=delta
+	if progress > 2*PI:
+		progress-= 2*PI;
+
+func show():
+	set_process(true)
+	visible = true
+
+func hide():
+	set_process(false)
+	visible = false
+	progress = 0.0
+	self.rect_position.y = 0.0
+"
 
 [sub_resource type="DynamicFont" id=12]
 size = 60
@@ -363,7 +392,6 @@ mouse_filter = 2
 color = Color( 0.0392157, 0.0784314, 0.141176, 1 )
 
 [node name="textBackground_Reborn" type="Control" parent="CenterContainer"]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -381,6 +409,41 @@ anchor_bottom = 1.0
 mouse_filter = 2
 texture = ExtResource( 27 )
 stretch_mode = 6
+
+[node name="Control" type="Control" parent="CenterContainer/textBackground_Reborn"]
+margin_left = 1724.0
+margin_top = 244.0
+margin_right = 1788.0
+margin_bottom = 308.0
+
+[node name="BlinkingArrow" type="TextureRect" parent="CenterContainer/textBackground_Reborn/Control"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 35 )
+stretch_mode = 6
+script = SubResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DebugLabel" type="Label" parent="CenterContainer/textBackground_Reborn/Control/BlinkingArrow"]
+visible = false
+margin_left = -130.0
+margin_top = -45.0
+margin_right = 98.0
+margin_bottom = -14.0
+text = "rect_position = Vector2( 0, 0 )
+"
+script = ExtResource( 36 )
+target_path = NodePath("..")
+properties = PoolStringArray( "rect_position" )
 
 [node name="SpeakerActor" type="Label" parent="CenterContainer"]
 anchor_left = 0.5
@@ -744,6 +807,10 @@ margin_top = 3.93091
 margin_right = -87.6589
 margin_bottom = 43.9309
 script = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="TextureRect" type="TextureRect" parent="AutoModeIndicator"]
 margin_right = 128.0

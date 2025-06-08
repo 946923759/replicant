@@ -47,7 +47,7 @@ destinationScreenOrSubmenu = "RE-ScreenTitleMenu"
 
 [node name="Node2D2" parent="ActorScroller" index="3" instance=ExtResource( 4 )]
 text = "Fire Moth"
-destinationScreenOrSubmenu = "ScreenTitleMenu"
+destinationScreenOrSubmenu = "Branch.FireMothOpeningOrTitle"
 
 [node name="Node2D4" parent="ActorScroller" index="4" instance=ExtResource( 4 )]
 text = "Era:ZERO"

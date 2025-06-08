@@ -56,6 +56,7 @@ SFXVolume	SFX Volume	Volúmen de los Efectos	Volume do efeito sonoro
 isFullscreen	Fullscreen	Pantalla Completa	Tela cheia
 language	Current Language	idioma	Idioma atual
 vibration	Vibration
+showFMOpening	Play Opening Movie
 
 bgOpacity	Textbox Opacity
 textboxStyle	Textbox Appearance
@@ -80,6 +81,7 @@ isFullscreen	Switch between fullscreen and windowed. You can also press F11 on t
 language	Choose the novel's language. This change will not take effect until the next cutscene.
 vibration	Vibrate the controller or phone during certain parts.
 showDisclaimer	Show the 5 second startup disclaimer and controller hint. Aren't you glad there's an option to skip this?
+showFMOpening	Play the opening movie when the game starts up.
 
 # Text options
 EnglishLocalized=Removes honorifics, changes most instances of Seele calling Bronya "onii-chan" to her calling Bronya by name, and removes Bronya's habit of referring to herself in third person. No other changes.

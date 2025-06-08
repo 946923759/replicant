@@ -79,6 +79,10 @@ var OPTIONS = {
 	"showDisclaimer":{
 		"type":"bool",
 		"default":true
+	},
+	"showFMOpening":{
+		"type":"bool",
+		"default":true
 	}
 	#No need to save this
 	#"autoRead":{
@@ -676,7 +680,6 @@ static func get_cutscene_path()->String:
 ######################
 # SCREENMAN HERE
 ######################
-
 
 var SCREENS:Dictionary = {
 	#"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",

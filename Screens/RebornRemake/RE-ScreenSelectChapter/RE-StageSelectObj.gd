@@ -1,6 +1,8 @@
 tool
 extends Control
 
+#Remember, the name of the object controls what part it loads! Not the label!
+
 export(Texture) var icon setget set_icon
 export(String) var label setget set_label
 export(bool) var completed=false setget set_complete

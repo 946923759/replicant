@@ -278,6 +278,7 @@ config/quit_on_go_back=false
 [autoload]
 
 Globals="*res://Globals.gd"
+Branch="*res://Branch.gd"
 INITrans="*res://Translation.gd"
 ExternalAudio="*res://stepmania-compat/GDScriptAudioImport.gd"
 

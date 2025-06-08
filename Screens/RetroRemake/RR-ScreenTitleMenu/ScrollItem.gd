@@ -30,6 +30,11 @@ func _ready():
 	self.connect("mouse_entered",self,"GainFocus")
 	self.connect("mouse_exited",self,"LoseFocus")
 	
+	if destinationScreenOrSubmenu.begins_with("Branch."):
+		var f = destinationScreenOrSubmenu.split(".")[1]
+		destinationScreenOrSubmenu = Branch.call(f)
+		#print(Branch.call(f))
+	
 func set_text(s):
 	text=s
 	var n = get_node_or_null("Label")

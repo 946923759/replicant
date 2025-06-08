@@ -59,7 +59,7 @@ func next_screen(_a,_b):
 	elif (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:
 		Globals.change_screen(get_tree(),\"ScreenFirstRun\")
 	else:
-		Globals.change_screen(get_tree(),\"ScreenOpening\")
+		Globals.change_screen(get_tree(),Branch.FireMothOpeningOrTitle())
 		#Globals.change_screen(get_tree(),\"ScreenTitleMenu\")
 
 
@@ -77,7 +77,6 @@ func _on_Timer_timeout():
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = SubResource( 1 )
-debugBootTo = 4
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0

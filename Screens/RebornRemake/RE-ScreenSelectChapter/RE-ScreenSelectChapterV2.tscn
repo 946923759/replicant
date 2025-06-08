@@ -611,7 +611,7 @@ margin_bottom = 640.0
 texture = ExtResource( 40 )
 stretch_mode = 1
 
-[node name="RE3-1" parent="ActorFrame_PartSelect/1>Chapter R3-1" index="1" instance=ExtResource( 33 )]
+[node name="RE3-1-1" parent="ActorFrame_PartSelect/1>Chapter R3-1" index="1" instance=ExtResource( 33 )]
 margin_left = 266.0
 margin_top = 446.0
 margin_right = 384.0
@@ -635,7 +635,7 @@ margin_bottom = 799.0
 icon = ExtResource( 49 )
 label = "R3-2"
 
-[node name="RE3-3" parent="ActorFrame_PartSelect/1>Chapter R3-1" index="4" instance=ExtResource( 33 )]
+[node name="RE3-3-1" parent="ActorFrame_PartSelect/1>Chapter R3-1" index="4" instance=ExtResource( 33 )]
 margin_left = 1213.0
 margin_top = 160.0
 margin_right = 1331.0

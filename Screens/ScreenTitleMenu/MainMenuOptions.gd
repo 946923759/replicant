@@ -3,6 +3,7 @@ func init():
 	print("Execute override init!")
 	#Globals.currentEpisodeData=null
 	options = {
+		"showFMOpening":Globals.OPTIONS["showFMOpening"],
 		"textSpeed":Globals.OPTIONS['textSpeed'],
 		"skipMode":Globals.OPTIONS['skipMode'],
 		#"testOption":Globals.OPTIONS['testOption'],

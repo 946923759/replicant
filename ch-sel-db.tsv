@@ -17,6 +17,7 @@ Background Color test		test_blackbg,test_bgcolor
 Modulate Test	Tests the color rect which covers the screen, and tests modulating portraits.	test_foreground,test_modulate
 Video Test		final_round_test
 Vibrate Test		test_vibrate
+NoCopyrights		test_open
 
 --Chapter 0
 Settle Down	Check out the base.	kyusyo0-1-1,kyusyo0-1-2

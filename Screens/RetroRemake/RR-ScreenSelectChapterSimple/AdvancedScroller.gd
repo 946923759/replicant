@@ -1,0 +1,192 @@
+extends ScrollContainer
+
+var selected:int = 0
+var tw:Tween
+
+onready var chapter_actor_frame = $MarginContainer/HBoxContainer
+
+func _ready():
+	tw = Tween.new()
+	add_child(tw)
+	
+	chapter_actor_frame.get_child(selected).GainFocusNoTween()
+	#print(get_h_scrollbar().max_value)
+	call_deferred("reposition_actors")
+	#reposition_actors()
+	#print(get_h_scrollbar().max_value)
+	
+
+#//Stolen from RageUtil
+#/**
+# * @brief Scales x so that l1 corresponds to l2 and h1 corresponds to h2.
+# *
+# * This does not modify x, so it MUST assign the result to something!
+# * Do the multiply before the divide to that integer scales have more precision.
+# *
+# * One such example: SCALE(x, 0, 1, L, H); interpolate between L and H.
+# */
+static func SCALE(x:float, l1:float, h1:float, l2:float, h2:float)->float:
+	return (((x) - (l1)) * ((h2) - (l2)) / ((h1) - (l1)) + (l2))
+
+#func reposition_actors():
+#
+#	var current_actor = get_child(selected)
+#	tw.stop_all()
+#
+#	if current_actor.is_expanded:
+#		# Who fucking designs this shit seriously
+#		# the Control has a size so top left is 0x0 which means center is actually size/2
+#		# But child actors aren't centered either because fuck you I guess
+#		# This engine is so stupid at positioning I swear to god. Just make every object centered like StepMania. PLEASE.
+#		tw.interpolate_property(
+#			current_actor, 
+#			"rect_position:x",
+#			null,
+#			rect_size.x/2.0-current_actor.rect_dest_size.x/2.0,
+#			.3,
+#			Tween.TRANS_QUAD,
+#			Tween.EASE_OUT
+#		)
+#	else:
+#		for actor in get_children():
+#			if !(actor is Control):
+#				continue
+#
+#	tw.start()
+
+#func get_x_position_on_screen():
+#	var x_position_on_screen:float = 0.0
+
+func get_scroller_viewport_rect() -> Rect2:
+	var actor_frame_width = $MarginContainer.rect_size.x
+	var scrollbar_x_position_in_actor_frame = SCALE(scroll_horizontal, 0, get_h_scrollbar().max_value, 0, actor_frame_width)
+	var viewport_rect:Rect2 = Rect2(Vector2(scrollbar_x_position_in_actor_frame,0),rect_size)
+	#print(get_h_scrollbar().max_value)
+	return viewport_rect
+	
+func get_actor_rect_in_frame(actor_number:int) -> Rect2:
+	#We have a margin so starting x position inside the frame is >0
+	var obj_x_position_in_actor_frame:float = $MarginContainer.get("custom_constants/margin_left")
+	var actor_frame_width = $MarginContainer.rect_size.x
+	for i in range(actor_number):
+		#print(i," ",chapter_actor_frame.get_child(i).rect_dest_size.x)
+		obj_x_position_in_actor_frame += chapter_actor_frame.get_child(i).rect_dest_size.x + chapter_actor_frame.get("custom_constants/separation")
+		#obj_x_position_in_actor_frame += chapter_actor_frame.get("custom_constants/separation")
+	var object_rect:Rect2 = Rect2(
+		Vector2(obj_x_position_in_actor_frame, 0), 
+		chapter_actor_frame.get_child(actor_number).rect_dest_size + Vector2(chapter_actor_frame.get("custom_constants/separation"),0)
+	)
+	return object_rect
+
+
+func reposition_actors(center_selected:bool = true, overwrite_scroller_value:int=0):
+	#print(selected)
+	#var current_actor = chapter_actor_frame.get_child(selected)
+	#tw.stop_all()
+	
+	
+	# This is the worst designed shit ever
+	# Anyways. We want the object to be centered, so
+	# map the x position in the actor to the x position on the scroll bar.
+	var intended_x_position_on_screen:float = 0.0
+	
+	var actor_frame_width = $MarginContainer.rect_size.x
+	var object_rect:Rect2 = get_actor_rect_in_frame(selected)
+	var scroller_rect:Rect2 = get_scroller_viewport_rect()
+	
+	#if !center_selected:
+	if false:
+	
+		var is_object_within_rect = object_rect.intersects(scroller_rect)
+		#print("is object within rect? ",is_object_within_rect)
+		#print(viewport_rect)
+		#print("frame pos: ",scrollbar_x_position_in_actor_frame,"| obj x pos: ",obj_x_position_in_actor_frame)
+	
+		if !is_object_within_rect:
+			intended_x_position_on_screen = object_rect.position.x
+			#if object_rect.position.x > viewport_rect.position.x + viewport_rect.size.x:
+			#	intended_x_position_on_screen = viewport_rect.position.x+viewport_rect.size.x - object_rect.size.x - 100
+			#else:
+			#	intended_x_position_on_screen = viewport_rect.position.x + 100
+	
+	else:
+		print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected))
+		# we want the viewport x position to start drawing LEFT of the object.
+		# and we want the object to be centered. so first, center this object.
+		intended_x_position_on_screen = object_rect.position.x + (object_rect.size.x - chapter_actor_frame.get("custom_constants/separation"))/2.0
+		# now make this object centered on screen
+		intended_x_position_on_screen -= scroller_rect.size.x/2
+		#print(intended_x_position_on_screen)
+		
+	
+	#print(obj_x_position_in_actor_frame)
+	#print(obj_x_position_in_actor_frame/actor_frame_width)
+	var scroll_pos = SCALE(intended_x_position_on_screen, 0, actor_frame_width, 0, get_h_scrollbar().max_value)
+	#print(scroll_pos)
+	tw.stop_all()
+	tw.interpolate_property(
+		self, 
+		"scroll_horizontal",
+		null,
+		scroll_pos,
+		.3,
+		Tween.TRANS_QUAD,
+		Tween.EASE_OUT
+	)
+	tw.start()
+	#scroll_horizontal = scroll_pos
+
+#	if current_actor.is_expanded:
+#		# This is the worst designed shit ever
+#		# Anyways. We want 
+#		var intended_x_position_on_screen:float = 0.0
+#		var obj_x_position_in_actor_frame:float = 0.0
+#		for i in range(selected):
+#
+#		#var intended_x_position_on_screen:float = rect_size.x/2.0-current_actor.rect_dest_size.x/2.0
+#
+#
+#		# Who fucking designs this shit seriously
+#		# the Control has a size so top left is 0x0 which means center is actually size/2
+#		# But child actors aren't centered either because fuck you I guess
+#		# This engine is so stupid at positioning I swear to god. Just make every object centered like StepMania. PLEASE.
+#		tw.interpolate_property(
+#			current_actor, 
+#			"rect_position:x",
+#			null,
+#			rect_size.x/2.0-current_actor.rect_dest_size.x/2.0,
+#			.3,
+#			Tween.TRANS_QUAD,
+#			Tween.EASE_OUT
+#		)
+#	else:
+#		for actor in get_children():
+#			if !(actor is Control):
+#				continue
+
+	#tw.start()
+	
+
+func _input(event):
+	var current_actor = chapter_actor_frame.get_child(selected)
+	if Input.is_action_just_pressed("ui_select"):
+		for i in range(chapter_actor_frame.get_child_count()):
+			if i != selected:
+				chapter_actor_frame.get_child(i).LoseFocus()
+		current_actor.GainFocus()
+		reposition_actors()
+	elif Input.is_action_just_pressed("ui_cancel"):
+		for c in chapter_actor_frame.get_children():
+			c.LoseFocus()
+		#current_actor.LoseFocus()
+		reposition_actors()
+	elif Input.is_action_just_pressed("ui_right"):
+		if selected < chapter_actor_frame.get_child_count()-1:
+			selected += 1
+		reposition_actors()
+	elif Input.is_action_just_pressed("ui_left") and selected > 0:
+		selected -= 1
+		reposition_actors()
+	if Input.is_action_just_pressed("ui_up"):
+		print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected), " | scroller: ",get_h_scrollbar().max_value)
+		#reposition_actors()

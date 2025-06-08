@@ -16,12 +16,16 @@ func _init():
 func _ready():
 	t.interpolate_property(self,"modulate:a",1,0,timeToTweenIn)
 	t.start()
+	pass
 	
 func OffCommand(next_screen:String, prev_screen:String=""):
 	if t.is_active():
-		return
+		print("Tween is already active, ignoring...")
+		return false
 	t.interpolate_property(self,'visible',null, true, 0.0)
 	t.interpolate_property(self,"modulate:a",0,1,timeToTweenOut)
+	t.connect("tween_all_completed",Globals,"change_screen",[get_tree(), next_screen, prev_screen])
 	t.start()
-	yield(t,"tween_all_completed")
-	Globals.change_screen(get_tree(), next_screen, prev_screen)
+	#yield(t,"tween_all_completed")
+	#Globals.change_screen(get_tree(), next_screen, prev_screen)
+	return true

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScrollItem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://stepmania-compat/smScreenInOut.gd" type="Script" id=2]
-[ext_resource path="res://Ext/RetroRemake/d3afec2656ed77de171c8fe11f3870b4.jpg" type="Texture" id=3]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/d3afec2656ed77de171c8fe11f3870b4.jpg" type="Texture" id=3]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ItemScroller.gd" type="Script" id=4]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.gd" type="Script" id=7]
 
@@ -27,26 +27,18 @@ script = ExtResource( 4 )
 
 [node name="ScrollItem" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -462.455, -491.639 )
-text = "Read Story"
-submenu = true
-destinationScreenOrSubmenu = "ItemScroller_Story"
 
 [node name="ScrollItem2" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -460.21, -307.555 )
-text = "Gallery"
 
 [node name="ScrollItem3" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -454.42, -75.7965 )
-text = "Music"
 
 [node name="ScrollItem4" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -456.053, 171.414 )
-text = "Options"
 
 [node name="ScrollItem5" parent="ItemScroller_MainMenu" instance=ExtResource( 1 )]
 position = Vector2( -455.302, 379.292 )
-text = "Back"
-destinationScreenOrSubmenu = "ScreenSelectEra"
 
 [node name="ItemScroller_Story" type="Node2D" parent="."]
 position = Vector2( 3840, 540 )
@@ -57,19 +49,12 @@ previous_submenu = "ItemScroller_MainMenu"
 
 [node name="ScrollItem" parent="ItemScroller_Story" instance=ExtResource( 1 )]
 position = Vector2( -457.965, -475.924 )
-text = "Main Story"
-destinationScreenOrSubmenu = "RR-ScreenSelectChapter"
 
 [node name="ScrollItem2" parent="ItemScroller_Story" instance=ExtResource( 1 )]
 position = Vector2( -457.965, -332.249 )
-text = "World Boss"
-locked = true
 
 [node name="ScrollItem3" parent="ItemScroller_Story" instance=ExtResource( 1 )]
 position = Vector2( -465.965, -148.249 )
-text = "Back Button"
-submenu = true
-destinationScreenOrSubmenu = "ItemScroller_MainMenu"
 
 [node name="smScreenInOut" type="ColorRect" parent="."]
 visible = false

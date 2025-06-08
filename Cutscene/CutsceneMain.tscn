@@ -892,6 +892,7 @@ script = SubResource( 11 )
 [connection signal="gui_input" from="FSMode_ActorFrame" to="." method="_on_dim_gui_input"]
 [connection signal="selected_choice" from="Choices" to="." method="_on_Choices_selected_choice"]
 [connection signal="pressed" from="UI_Top_FireMoth/SkipButton" to="." method="_on_SkipButton_pressed"]
+[connection signal="pressed" from="UI_Top_Honkai/HBoxContainer/TextureButtonLog" to="." method="_on_TextureButtonLog_pressed"]
 [connection signal="pressed" from="UI_Top_Honkai/HBoxContainer/TextureButtonSkip" to="." method="end_cutscene"]
 [connection signal="pressed" from="UI_Top_Frontline/HBoxContainer/TextureButtonLog" to="." method="_on_TextureButtonLog_pressed"]
 [connection signal="toggled" from="UI_Top_Frontline/HBoxContainer/TextureButtonAuto" to="." method="_on_TextureButtonAuto_toggled"]

@@ -7,7 +7,7 @@
 [ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=5]
 [ext_resource path="res://FM RepliCant Logo.png" type="Texture" id=6]
 [ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Ext/CG054.png" type="Texture" id=8]
+[ext_resource path="res://Ext/RequiredBG/CG054.png" type="Texture" id=8]
 [ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=9]
 [ext_resource path="res://MenuSounds/Assets_Sounds_Click.wav" type="AudioStream" id=10]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=11]

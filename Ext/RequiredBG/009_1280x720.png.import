@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/17xh-Networld.png-52cbe0d8b354184693e67096ae70460d.stex"
+path="res://.import/009_1280x720.png-c7d08058e86cea1ba5b841281456a19e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/17xh-Networld.png"
-dest_files=[ "res://.import/17xh-Networld.png-52cbe0d8b354184693e67096ae70460d.stex" ]
+source_file="res://Ext/RequiredBG/009_1280x720.png"
+dest_files=[ "res://.import/009_1280x720.png-c7d08058e86cea1ba5b841281456a19e.stex" ]
 
 [params]
 

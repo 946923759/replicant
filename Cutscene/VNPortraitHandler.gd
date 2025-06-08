@@ -274,9 +274,9 @@ func apply_sm_tween(tweenString) -> float:
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO
 
 func gestalt_set_textures(sprName):
-	var matching = Globals.get_closest_file("res://Portraits",sprName)
+	var matching = Globals.get_matching_files("res://Portraits/",sprName)
 	if not matching:
-		printerr("No texture exists named "+sprName)
+		printerr("[PORTRAITMAN] No texture exists named "+sprName)
 		return false
 	
 	portrait_textures = Dictionary()
@@ -297,6 +297,8 @@ func gestalt_set_textures(sprName):
 				#Index in default slot '0'
 				portrait_textures['0']=load(path)
 				foundDefaultYet = true
+	#print(portrait_textures)
+	assert(len(portrait_textures)>0)
 
 
 func replicant_set_textures(toLoad:Dictionary):
@@ -366,6 +368,6 @@ func set_texture_wrapper(sprName):
 			expressions_are_overlays = true
 			
 	else:
-		print(sprName+" not in portrait database! Falling back...")
+		print(sprName+" not in portrait database! Falling back and searching the closest file...")
 		gestalt_set_textures(sprName)
 		expressions_are_overlays = false

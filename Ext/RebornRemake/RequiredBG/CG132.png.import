@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CG054.png-085f0958dc522101448ea892ac12bbf5.stex"
+path="res://.import/CG132.png-de14f3fe837dd64c2a3ddab7ad25dff0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/CG054.png"
-dest_files=[ "res://.import/CG054.png-085f0958dc522101448ea892ac12bbf5.stex" ]
+source_file="res://Ext/RebornRemake/RequiredBG/CG132.png"
+dest_files=[ "res://.import/CG132.png-de14f3fe837dd64c2a3ddab7ad25dff0.stex" ]
 
 [params]
 

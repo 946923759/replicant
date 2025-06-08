@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Fonts/NotoSerifJP-Bold.otf" type="DynamicFontData" id=1]
-[ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=2]
+[ext_resource path="res://Ext/RequiredBG/17xh-Networld.png" type="Texture" id=2]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=3]
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=4]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=5]

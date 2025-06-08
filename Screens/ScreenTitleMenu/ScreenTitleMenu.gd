@@ -80,14 +80,14 @@ func _ready():
 	else:
 		$smSound.load_song("Significance");
 	update_background_parallax(get_viewport().get_mouse_position())
-	#set_process(true)
-	#fakeMousePos=Globals.gameResolution/2
 
 
 var fakeMousePos:Vector2 = Globals.gameResolution/2
 
 var logo_timeout:float = 3.0
-func _process(_delta):
+var noinputs:float = 0.0
+
+func _process(delta):
 	var s = get_viewport().get_visible_rect().size
 	$ActorFrame.position=Vector2(s.x,s.y/2)
 	$CPUParticles2D.position.y=s.y+20
@@ -134,9 +134,17 @@ func _process(_delta):
 #			rand_x_v = 0.0
 #		$Logo.get_material().set_shader_param("dir",Vector2(rand_x_v,0))
 			
+	noinputs+=delta
+	if noinputs > 30.0:
+		noinputs = -INF
+		set_process_input(false)
+		$ColorRect.OffCommand("ScreenOpening")
+		#get_tree().change_scene("res://Screens/ScreenOpening/ScreenOpening2.tscn")
+		#set_process(false)
 
 func update_keyboard_selections():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	noinputs = 0.0
 	#$DebugLabel.text=String(keyboard_selection)
 	
 	var f:Node2D = $ActorFrame
@@ -161,8 +169,10 @@ func update_background_parallax(mousePos:Vector2):
 		#$smSprite.rect_position = SCREEN_SIZE*1.1 - SCREEN_SIZE/2+mousePosOffsetFromCenter
 		
 
+
 func _input(event):
 	if event is InputEventMouseMotion:
+		noinputs = 0.0
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		#var SCREEN_SIZE = Globals.gameResolution
 		#var mouseZoom = Globals.gameResolution*1.2
@@ -195,6 +205,7 @@ func _notification(what):
 		$ColorRect.OffCommand("Quit")
 
 func handle_clicked(sender:int):
+	noinputs = 0.0
 	var info = mainMenu_runtime[sender]
 	#t.interpolate_property($ColorRect,"modulate:a",0,1,.5)
 	if 'screen' in info:

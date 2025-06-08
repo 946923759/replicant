@@ -9,14 +9,14 @@ export (bool) var ThisScreenIsAnOverlay=false
 #export (bool) var ShowBackButton=true
 
 onready var fadeOut = $smScreenInOut
-onready var backButton = $BackButton
+onready var backButton = get_node_or_null("BackButton")
 onready var debugOverlay = $CanvasLayer/smQuad/VBoxContainer
 
 func _ready():
 	$CanvasLayer/smQuad.visible=false
 	#$CanvasLayer/Watermark.visible = OS.is_debug_build() and $CanvasLayer/Watermark.visible
 	$smScreenInOut.visible=(!ThisScreenIsAnOverlay)
-	if !backButton.visible:
+	if backButton and !backButton.visible:
 		backButton.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	debugOverlay.get_node("LabelReload").text = "KEY 2: Reload - "+self.name
 	
@@ -91,8 +91,8 @@ func OffCommandNextScreen(ns:String=NextScreen)->bool:
 		OffCommandOverlay()
 	elif ns != "":
 		print("Tweening out, dest is "+ns)
-		fadeOut.OffCommand(ns, self.name)
-		return true
+		return fadeOut.OffCommand(ns, self.name)
+		#return true
 	
 	else:
 		ReportScriptError("NextScreen for "+self.name+" is not defined.")

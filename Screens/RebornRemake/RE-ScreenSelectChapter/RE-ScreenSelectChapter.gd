@@ -219,7 +219,7 @@ func _ready():
 	
 	#if OS.is_debug_build():
 	if Globals.chapterDatabase_RE.empty():
-		Globals.chapterDatabase_RE=Globals.load_database("res://Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
+		Globals.chapterDatabase_RE=Globals.load_database("Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
 	elif Globals.currentEpisodeData:
 		print("[RE-ScreenSelectChapter] Player had previously read an episode")
 		print(Globals.currentEpisodeData._to_string())
@@ -321,7 +321,7 @@ func _input(event):
 		if OS.get_name() == "X11":
 			OS.execute("xdg-open",['Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv'], false)
 	elif Input.is_action_just_pressed("DebugButton5"):
-		Globals.chapterDatabase_RE=Globals.load_database("res://Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
+		Globals.chapterDatabase_RE=Globals.load_database("Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
 		get_tree().reload_current_scene()
 	
 	if current_page==PAGE.AREA:

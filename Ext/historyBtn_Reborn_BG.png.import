@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/003_1280x720.png-83cbb9e075b35319d1a83de73202bf11.stex"
+path="res://.import/historyBtn_Reborn_BG.png-3bd039247005a52f1947b96e85d87900.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ext/003_1280x720.png"
-dest_files=[ "res://.import/003_1280x720.png-83cbb9e075b35319d1a83de73202bf11.stex" ]
+source_file="res://Ext/historyBtn_Reborn_BG.png"
+dest_files=[ "res://.import/historyBtn_Reborn_BG.png-3bd039247005a52f1947b96e85d87900.stex" ]
 
 [params]
 

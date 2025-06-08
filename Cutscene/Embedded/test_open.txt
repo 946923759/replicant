@@ -1,0 +1,4 @@
+bg	opensource/outside
+portraits	opensource/blue_girl	opensource/red_girl
+msg	This is a demonstration of the Replicant Visual Novel Engine in its base form. You can add whatever you want! Check out the GameData folder.
+msg	The images used in this file are public domain. Have fun!

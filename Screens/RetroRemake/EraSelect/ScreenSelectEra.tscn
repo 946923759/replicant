@@ -39,7 +39,6 @@ item_position = 0
 
 [node name="Node2D" parent="ActorScroller" index="1" instance=ExtResource( 4 )]
 text = "Retrospective"
-locked = true
 destinationScreenOrSubmenu = "RR-ScreenTitleMenu"
 
 [node name="Node2D3" parent="ActorScroller" index="2" instance=ExtResource( 4 )]

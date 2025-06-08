@@ -10,7 +10,7 @@
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=9]
 [ext_resource path="res://MenuSounds/Assets_Sounds_Click.wav" type="AudioStream" id=10]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=69]
-[ext_resource path="res://Ext/17xh-Networld.png" type="Texture" id=70]
+[ext_resource path="res://Ext/RequiredBG/17xh-Networld.png" type="Texture" id=70]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60

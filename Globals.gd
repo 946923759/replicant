@@ -274,7 +274,14 @@ static func get_next_cutscene(chDB:Dictionary, curEpisode:Episode,curPart:String
 					print("[Globals] Hit the end of all the episodes, returning to main menu.")
 					return ["",null]
 	return ["",null]
-		
+
+
+static func is_pc_filesystem() -> bool:
+	match OS.get_name():
+		"Windows","X11","macOS":
+			return OS.has_feature("standalone")
+	return false
+
 #SAVE DATA
 func get_save_directory(fName:String)->String:
 	match OS.get_name():
@@ -338,58 +345,72 @@ func save_system_data()->bool:
 static func load_database(path:String)->Dictionary:
 	var tmp_database:Dictionary = {}
 	
+	var paths = [
+		"res://"+path
+	]
+	if is_pc_filesystem():
+		paths.push_front(OS.get_executable_path().get_base_dir()+"/GameData/"+path)
+		
 	var f = File.new()
-	var ok = f.open(path,File.READ)
+	var ok = 1
+	for p in paths:
+		ok = f.open(p,File.READ)
+		if ok == OK:
+			print("Loaded chapter database from "+p)
+			break
 	if ok != OK:
 		printerr("failed to open chapter database! And now everything will break...")
-	else:
-		var lastChapter = "No Grouping!!"
-		var tmp_startChapter:String = ""
-		#var i = 0
-		while !f.eof_reached():
-			var line:String = f.get_line().strip_edges()
-			if line.begins_with("--"):
-				lastChapter=line.substr(2,line.length())
-				tmp_database[lastChapter]=[]
-			elif line.begins_with("#"):
-				continue
-			elif line.begins_with("//VN_START"):
-				var l = line.substr(len("//VN_START")+1,line.length())
-				if len(l)>0:
-					tmp_startChapter=l
-			elif line.begins_with("//VN_STOP"):
-				continue
-			elif !line.empty():
-				var keys = line.split("\t",true)
-				var episode = Episode.new()
-				episode.title=keys[0]
-				if keys.size() > 1:
-					episode.desc=keys[1]
-				else:
-					episode.desc=""
-				if keys.size() > 2:
-					episode.parts=keys[2].split(",",true)
-				else:
-					episode.parts=[]
-				
-				if keys.size() > 3:
-					episode.isSub=keys[3].to_lower()=='true'
-				episode.parentChapter=lastChapter
-				tmp_database[lastChapter].append(episode)
-				
-		if tmp_startChapter != "":
-			#print(tmp_startChapter)
-			var keys = tmp_startChapter.split("/",true)
-			#print(keys)
-			
-			if tmp_database.has(keys[0]):
-				#Hopefully this doesn't cause any refcount issues
-				#Maybe this should just be a string considering it's just key,idx
-				tmp_database['__starting_episode__']=[
-					tmp_database[keys[0]][int(keys[1])]
-				]
+		printerr(paths)
+		return tmp_database
+
+
+	var lastChapter = "No Grouping!!"
+	var tmp_startChapter:String = ""
+	#var i = 0
+	while !f.eof_reached():
+		var line:String = f.get_line().strip_edges()
+		if line.begins_with("--"):
+			lastChapter=line.substr(2,line.length())
+			tmp_database[lastChapter]=[]
+		elif line.begins_with("#"):
+			continue
+		elif line.begins_with("//VN_START"):
+			var l = line.substr(len("//VN_START")+1,line.length())
+			if len(l)>0:
+				tmp_startChapter=l
+		elif line.begins_with("//VN_STOP"):
+			continue
+		elif !line.empty():
+			var keys = line.split("\t",true)
+			var episode = Episode.new()
+			episode.title=keys[0]
+			if keys.size() > 1:
+				episode.desc=keys[1]
 			else:
-				printerr("invalid start "+tmp_startChapter+" defined in ch_db "+path)
+				episode.desc=""
+			if keys.size() > 2:
+				episode.parts=keys[2].split(",",true)
+			else:
+				episode.parts=[]
+			
+			if keys.size() > 3:
+				episode.isSub=keys[3].to_lower()=='true'
+			episode.parentChapter=lastChapter
+			tmp_database[lastChapter].append(episode)
+			
+	if tmp_startChapter != "":
+		#print(tmp_startChapter)
+		var keys = tmp_startChapter.split("/",true)
+		#print(keys)
+		
+		if tmp_database.has(keys[0]):
+			#Hopefully this doesn't cause any refcount issues
+			#Maybe this should just be a string considering it's just key,idx
+			tmp_database['__starting_episode__']=[
+				tmp_database[keys[0]][int(keys[1])]
+			]
+		else:
+			printerr("invalid start "+tmp_startChapter+" defined in ch_db "+path)
 	return tmp_database
 	
 func _ready():
@@ -399,7 +420,7 @@ func _ready():
 	var success = ProjectSettings.load_resource_pack("res://Reborn.pck",false)
 	if success:
 		Globals.RE_RR_MODE_AVAILABLE |= Globals.RE_RR_STATUS.REBORN_AVAILABLE
-		print("Loaded Reborn.pck!")
+		print("[DLC] Loaded Reborn.pck!")
 
 	
 	gameResolution = get_viewport().get_visible_rect().size
@@ -443,10 +464,10 @@ func _ready():
 				var v2 = database[k][2]
 				if typeof(v2) == TYPE_ARRAY:
 					database[k][2] = Vector2(v2[0],v2[1])
-		print("[Init] Loaded database. "+String(database.size())+" entries.")
+		print("[Init] Loaded portrait database. "+String(database.size())+" entries.")
 	f.close()
 	
-	chapterDatabase=load_database("res://ch-sel-db.tsv")
+	chapterDatabase=load_database("ch-sel-db.tsv")
 	if chapterDatabase.has('__starting_episode__'):
 		currentEpisodeData=chapterDatabase['__starting_episode__'][0]
 		nextCutscene=currentEpisodeData.parts[0]+".txt"
@@ -585,13 +606,13 @@ static func get_closest_file(path,fname) -> String:
 		for i in range(0,len(d)-1):
 			path+=d[i]+"/"
 		fname=d[-1]
-		print("dir in path, rebuilt path as dir: "+path+", fname: "+fname)
+		print("[Globals] dir in path, rebuilt path as dir: "+path+", fname: "+fname)
 	
 	var dir = Directory.new()
 	print("Opening "+path)
 	var ok = dir.open(path)
 	if ok != OK:
-		printerr("Warning: could not open directory: ERROR ", ok)
+		printerr("[Globals] Warning: could not open directory: ERROR ", ok)
 		return ""
 	#print(dir.get_current_dir())
 	dir.list_dir_begin(false,true)
@@ -608,6 +629,39 @@ static func get_closest_file(path,fname) -> String:
 			dir.list_dir_end()
 			return path+file
 	return ""
+
+static func get_matching_files(path,fname) -> Array:
+	
+	if "/" in fname:
+		var d = fname.split("/")
+		for i in range(0,len(d)-1):
+			path+=d[i]+"/"
+		fname=d[-1]
+		print("[Globals] dir in path, rebuilt path as dir: "+path+", fname: "+fname)
+	
+	
+	#var files = []
+	var dir = Directory.new()
+	print("Opening "+path)
+	var ok = dir.open(path)
+	if ok != OK:
+		printerr("Warning: could not open directory: ERROR ", ok)
+		return []
+	#print(dir.get_current_dir())
+	dir.list_dir_begin(false,true)
+
+	var files = []
+	while true:
+		var file = dir.get_next()
+		#print(file)
+		if file == "":
+			break
+		elif file.begins_with(fname):
+			print("Found file:"+file)
+			#print("Return "+path+file)
+			files.append(path+file)
+	dir.list_dir_end()
+	return files
 
 static func get_cutscene_path()->String:
 	if not OS.has_feature("console"):
@@ -626,6 +680,7 @@ static func get_cutscene_path()->String:
 
 var SCREENS:Dictionary = {
 	#"ScreenDisclaimer":"res://Screens/BetaDisclaimer.tscn",
+	"ScreenOpening":"res://Screens/ScreenOpening/ScreenOpening2.tscn",
 	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
 	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery_v2.tscn",
 	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTestV2.tscn",

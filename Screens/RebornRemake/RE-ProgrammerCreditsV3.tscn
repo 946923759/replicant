@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/logo_invert.png" type="Texture" id=1]
 [ext_resource path="res://Screens/ProgrammerCreditsV3.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Ext/CG132.png" type="Texture" id=3]
+[ext_resource path="res://Ext/RebornRemake/RequiredBG/CG132.png" type="Texture" id=3]
 
 [node name="RE-ProgrammerCreditsV3" instance=ExtResource( 2 )]
 PrevScreen = "RE-ScreenTitleMenu"

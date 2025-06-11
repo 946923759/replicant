@@ -14,11 +14,11 @@ func _ready():
 		buttons.get_child(i).connect("pressed",self,"buttonTrigger",[i])
 #	setNumParts2(["Test 1","Test 2","Test 3","test1.txt","test2.txt","test3.txt"])
 
-func setEpisode(episode:Globals.Episode,playerReadAlready:bool=false):
+func setEpisode(episode:Globals.Episode, playerReadAlready:bool=false):
 	thisEpisode=episode
-	if INITrans.HasString("ChapterParts",episode.title):
-		title.text = INITrans.GetString("ChapterParts",episode.title,false)
-		desc.text  = INITrans.GetString("ChapterDescriptions",episode.title,false)
+	if INITrans.HasString("ChapterParts", episode.title):
+		title.text = INITrans.GetString("ChapterParts", episode.title,false)
+		desc.text  = INITrans.GetString("ChapterDescriptions", episode.title,false)
 	else:
 		title.text=episode.title
 		desc.text=episode.desc

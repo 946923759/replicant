@@ -8,11 +8,18 @@ func _ready():
 	# navigate to the wrong chapter
 	Globals.currentEpisodeData = null
 	
-	match Globals.previous_screen:
-		"RE-ScreenTitleMenu":
-			$ActorScroller.set_selection(1,false)
-		"ScreenTitleMenu":
-			$ActorScroller.set_selection(2,false)
+#	match Globals.previous_screen:
+#		"RE-ScreenTitleMenu":
+#			$ActorScroller.set_selection(1,false)
+#		"ScreenTitleMenu":
+#			$ActorScroller.set_selection(2,false)
+	if Globals.previous_screen.begins_with("RR"):
+		$ActorScroller.set_selection(0,false)
+	elif Globals.previous_screen.begins_with("RE"):
+		$ActorScroller.set_selection(1,false)
+	elif Globals.previous_screen == "ScreenTitleMenu":
+		$ActorScroller.set_selection(2,false)
+	
 
 func _input(event):
 	scroller.input(event)

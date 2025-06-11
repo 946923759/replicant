@@ -1,15 +1,24 @@
 extends ScrollContainer
 
+export(bool) var show_scrollbar = false
+
 var selected:int = 0
 var tw:Tween
 
 onready var chapter_actor_frame = $MarginContainer/HBoxContainer
 
 func _ready():
+	#get_h_scrollbar().visible = show_scrollbar
+	get_h_scrollbar().rect_scale.y = 0.0
+	
 	tw = Tween.new()
 	add_child(tw)
 	
 	chapter_actor_frame.get_child(selected).GainFocusNoTween()
+	#for c in chapter_actor_frame.get_children():
+	for i in range(chapter_actor_frame.get_child_count()):
+		var c:Control = chapter_actor_frame.get_child(i)
+		c.connect("gui_input",self,"set_selection_from_mouse",[i])
 	#print(get_h_scrollbar().max_value)
 	call_deferred("reposition_actors")
 	#reposition_actors()
@@ -165,7 +174,17 @@ func reposition_actors(center_selected:bool = true, overwrite_scroller_value:int
 #				continue
 
 	#tw.start()
-	
+
+func set_selection_from_mouse(event:InputEvent, idx:int):
+	if (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
+		selected = idx
+		for i in range(chapter_actor_frame.get_child_count()):
+			if i != selected:
+				chapter_actor_frame.get_child(i).LoseFocus()
+			else:
+				chapter_actor_frame.get_child(i).GainFocus()
+		reposition_actors()
+		$Confirm.play()
 
 func _input(event):
 	var current_actor = chapter_actor_frame.get_child(selected)
@@ -175,17 +194,25 @@ func _input(event):
 				chapter_actor_frame.get_child(i).LoseFocus()
 		current_actor.GainFocus()
 		reposition_actors()
-	elif Input.is_action_just_pressed("ui_cancel"):
-		for c in chapter_actor_frame.get_children():
-			c.LoseFocus()
-		#current_actor.LoseFocus()
-		reposition_actors()
+		$Confirm.play()
+#	elif Input.is_action_just_pressed("ui_cancel"):
+#		for c in chapter_actor_frame.get_children():
+#			c.LoseFocus()
+#		#current_actor.LoseFocus()
+#		reposition_actors()
 	elif Input.is_action_just_pressed("ui_right"):
 		if selected < chapter_actor_frame.get_child_count()-1:
 			selected += 1
+		else:
+			selected = 0
+		$Cursor.play()
 		reposition_actors()
-	elif Input.is_action_just_pressed("ui_left") and selected > 0:
-		selected -= 1
+	elif Input.is_action_just_pressed("ui_left"):
+		if selected > 0:
+			selected -= 1
+		else:
+			selected = chapter_actor_frame.get_child_count() - 1
+		$Cursor.play()
 		reposition_actors()
 	if Input.is_action_just_pressed("ui_up"):
 		print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected), " | scroller: ",get_h_scrollbar().max_value)

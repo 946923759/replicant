@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/ChapterActor.tscn" type="PackedScene" id=2]
@@ -9,24 +9,26 @@
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/52ce1de70144881f0f0f2ee72891bdcd81af412076ef07a4549ef5684d4ec50a.jpg" type="Texture" id=7]
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10003.png" type="Texture" id=8]
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/here.webp" type="Texture" id=9]
+[ext_resource path="res://MenuSounds/re/system_me_casor.win32.wav" type="AudioStream" id=10]
+[ext_resource path="res://MenuSounds/re/system_me_kette.win32.wav" type="AudioStream" id=11]
+[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/RR-ScreenSelectChapterSimple.gd" type="Script" id=12]
+[ext_resource path="res://Ext/RequiredBG/002.png" type="Texture" id=13]
 
 [node name="RR-ScreenSelectChapterSimple" instance=ExtResource( 1 )]
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_lock_": true
 }
-HandlePhysicalBButton = false
+PrevScreen = "ScreenSelectEra"
 
-[node name="AdvancedScroller" type="Control" parent="." index="4"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -960.0
-margin_top = -540.0
-margin_right = 960.0
-margin_bottom = 540.0
+[node name="TextureRect" type="TextureRect" parent="." index="1"]
+self_modulate = Color( 0.309804, 0.309804, 0.309804, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 13 )
+stretch_mode = 7
 
-[node name="ScrollContainer" type="ScrollContainer" parent="." index="5"]
+[node name="ScrollContainer" type="ScrollContainer" parent="." index="2"]
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
@@ -47,7 +49,7 @@ margin_right = 5110.0
 margin_bottom = 950.0
 custom_constants/separation = 50
 
-[node name="ChapterActor" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0" instance=ExtResource( 2 )]
+[node name="Chapter 1" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_top = 0.0
@@ -55,7 +57,7 @@ margin_bottom = 950.0
 chapter_background = ExtResource( 3 )
 collapsed_x_offset = -950.0
 
-[node name="ChapterActor2" parent="ScrollContainer/MarginContainer/HBoxContainer" index="1" instance=ExtResource( 2 )]
+[node name="Chapter 2" parent="ScrollContainer/MarginContainer/HBoxContainer" index="1" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 350.0
@@ -65,7 +67,7 @@ margin_bottom = 950.0
 chapter_name = "Chapter 2"
 chapter_background = ExtResource( 5 )
 
-[node name="ChapterActor3" parent="ScrollContainer/MarginContainer/HBoxContainer" index="2" instance=ExtResource( 2 )]
+[node name="Chapter 3" parent="ScrollContainer/MarginContainer/HBoxContainer" index="2" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 700.0
@@ -162,3 +164,25 @@ margin_bottom = 950.0
 chapter_name = "Chapter 12"
 chapter_full_name = "Ragnarök "
 chapter_background = ExtResource( 8 )
+
+[node name="Cursor" type="AudioStreamPlayer" parent="ScrollContainer" index="1"]
+stream = ExtResource( 10 )
+bus = "SFX"
+
+[node name="Confirm" type="AudioStreamPlayer" parent="ScrollContainer" index="2"]
+stream = ExtResource( 11 )
+bus = "SFX"
+
+[node name="BackButton" parent="." index="3"]
+visible = false
+
+[node name="AdvancedScroller" type="Control" parent="." index="6"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 540.0

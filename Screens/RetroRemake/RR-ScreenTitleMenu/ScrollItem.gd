@@ -1,6 +1,6 @@
 extends Control
 signal clicked()
-tool
+#tool
 """
 A ScrollItem is guarenteed to have three properties:
 	String  text

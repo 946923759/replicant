@@ -129,7 +129,7 @@ func update_portrait_positions_wip(relation:Dictionary,numPortraits_:int=-1):
 			#print(lastUsed.lastLoaded)
 			#print(pStruct)
 			lastUsed.position_portrait(pStruct[0],pStruct[1],pStruct[2],numPortraits)
-			print("[PORTRAITMAN] Set portrait "+name+", move to idx "+String(pStruct[0]))
+			print("[PORTRAITMAN] Set portrait ID:"+name+", move to idx "+String(pStruct[0]))
 			if pStruct.size() > 3:
 				lastUsed.cur_expression = pStruct[3]
 			#Fix idx not displaying properly in debug

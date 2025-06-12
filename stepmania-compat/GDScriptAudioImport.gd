@@ -43,9 +43,9 @@ func report_errors(err, filepath):
 		ERR_FILE_EOF: "File: End of file (EOF) error."
 	}
 	if err in result_hash:
-		print("Error: ", result_hash[err], " ", filepath)
+		printerr("Error: ", result_hash[err], " ", filepath)
 	else:
-		print("Unknown error with file ", filepath, " error code: ", err)
+		printerr("Unknown error with file ", filepath, " error code: ", err)
 
 func loadfile(filepath,loop=true):
 	var file = File.new()
@@ -152,7 +152,7 @@ func loadfile(filepath,loop=true):
 		return newstream
 
 	else:
-		print ("ERROR: Wrong filetype or format")
+		printerr("ERROR: Wrong filetype or format")
 	file.close()
 
 

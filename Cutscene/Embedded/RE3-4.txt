@@ -1,39 +1,46 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	121	19	201
+match_names	Kiana	Kyuushou	Dr. Yiserin
 speaker	Kiana
-portraits	101
+music	re/2-19 - Parallel Worlds - Aggressive Mix -
+bg	lab_interior
+
+portraits	101	121
 emote	101	0
 msg	252139	The guards are leaving... Kyuushou, let's be careful!	也不知道老爹用了什么手段居然真的能将那些守卫引开……九霄，我们小心一点……	守衛が離れていく……九霄、気をつけて行きましょう！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	2
 msg	252140	This is the realm of God that I have dreamed of... the door that leads to the truth of all things!! W-what is this machine?! Amazing!!	哇！这里！这里才是九霄大人梦寐以求的神域，是连接万物真理的门扉！这些设备真是—太！棒！了！	ここが夢にまで見た神の領域……万物の真理につながる扉！！こ、この機械は何！？すっごーい！！	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252141	Good grief... You're not listening at all. You're being too loud! There's someone over there... Mei-senpai!!!!	哎…根本没在听，我说你小声点！你没看到那里还有人……芽衣学姐！	やれやれ……まったく聞いてないんだから。声が大きいわよ！あそこに人がいるの見えないの……って、芽衣先輩！！！！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	1
 msg	252142	Hey, Kiana, you're being too loud.	喂琪亚娜，这回是你的声音太大了！	ちょっとキアナ、声大きい。	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	3
 msg	252143	Who cares how loud I am?! We have to help Mei-senpai first!	管她什么声音不声音的！先把芽衣救下来再说！	声が大きいのが何よ！まずは芽衣先輩を助けないと！	NONE
 emote	101	0
 msg	252144	For now, I'll deal with that researcher, so you go get Mei-senpai off the research bench!	等会我会牵制住那个研究员，你就去把芽衣从研究台上救下来！	とりあえず、私があの研究員をどうにかするから、あなたは芽衣先輩を研究台から下ろして！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	3
 msg	252145	Fu-fun, so it's finally time for the savior to step in! Leave it to me!	哼哼~终于要依赖救世主大人了么~好吧！我知道了~	フフン、ようやく救世主様の出番ってわけね！任せるがいい！	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252146	Freeze!	不许动！	動くな！	NONE
-speaker	Dr. Yiserin
-portraits	101	19
+
+portraits	101,false,-1	121,false,-1	19,false,2
 emote	101	0
 emote	19	0
+speaker	Dr. Yiserin
 msg	252147	Huh?! W-who are you guys?!	呃！你…你们是什么人！？	え！？あ、あなたたち、何者！？	NONE
+
 speaker	Kiana
 emote	101	0
 emote	19	0
@@ -68,34 +75,36 @@ emote	101	3
 emote	19	0
 msg	252156	Hmph! Young Valkyrie... you seem to know nothing about the power of science and technology!	哼哼！年轻的女武神啊……看来你对于科技的力量一无所知呢！	フフン！若い戦乙女……あなたは科学技術の力について何も知らないようね！	NONE
 msg	252157	I-I'll show you! The energy contained in science can be stronger than the "Honkai" itself!	不过你马上就会明白了，科学所蕴含的能量可不比所谓的“崩坏”要弱！	お、思い知らせてあげる！科学に含まれるエネルギーは「崩壊」よりも強いのよ！	NONE
-speaker	Houraiji Kyuushou
-portraits	121	19
+speaker	Kyuushou
 emote	121	4
 emote	19	0
 msg	252158	Kiana! Mei-senpai is tied up. We have to untie her!	琪亚娜！芽衣被束缚带困住了，要怎么解开啊！	キアナ！芽衣先輩、縛られてる。解かないと！	NONE
+
 speaker	Dr. Yiserin
 emote	121	4
 emote	19	0
 msg	252159	Ugh! If the Herrscher is taken away, Cocolia will kill me! ...No! Don't take the Herrscher away from me!	咕！如果律者被这些人抢走就真的要被可可利亚杀掉了！不行！休想从我手中夺走律者！	うぅ！もし律者が奪われたら、カカリアに殺される！……ダメ！私から律者を奪わないで！	NONE
-speaker	Houraiji Kyuushou
+
+speaker	Kyuushou
 emote	121	4
 emote	19	0
 msg	252160	Ki-Kiana! She's started flying!! Could it be the power of the wings on her back?!	琪！琪亚娜！那个人飞起来了诶！！难道是因为后面那个翅膀的缘故吗……	キ、キアナ！あいつ飛び始めたよ！！まさか後ろにある翼の能力！？	NONE
+
 speaker	Dr. Yiserin
 emote	121	4
 emote	19	0
 msg	252161	I just used the flow of air currents. But the power of science is not limited to this! You're "Subject X", right? Are you interested in this?	只是简单的气流的流动，一种借力的方法而已，你应该就是“对象X”吧？你对这些东西很感兴趣吗？	気流の流動を利用しただけ。科学の力はこんなもんじゃないんだから！あなた「対象X」でしょう？これに興味あるの？	NONE
-speaker	Houraiji Kyuushou
+speaker	Kyuushou
 emote	121	2
 emote	19	0
 msg	252162	Yep! Super interested!!	对啊！我超感兴趣的！	うん！すっごく！！	NONE
 speaker	Kiana
-portraits	101	19
+nop	101	19
 emote	101	0
 emote	19	0
 msg	252163	Kyuushou! I told you to go and wake up Mei-senpai! What are you going to do by just watching us fight?!	九霄你！我不是让你去唤醒芽衣了么！我们的战斗就这么好看么！	九霄！芽衣先輩を起こしに行ってって言ったでしょ！私たちの戦いを見てどうすんのよ！	NONE
-speaker	Houraiji Kyuushou
-portraits	121	19
+speaker	Kyuushou
+nop	121	19
 emote	121	1
 emote	19	0
 msg	252164	I-I'm on my way!	呃！我这就去！	い、今から行くって！	NONE
@@ -103,16 +112,16 @@ speaker	Dr. Yiserin
 emote	121	1
 emote	19	0
 msg	252165	You're an interesting kid... We might have gotten along if things hadn't been like this. But for now, I need you out of my lab. My research is almost complete, and I can't let you get in the way!	真是个有个性的人呢……如果不是现在这种情况的话我们应该能够好好地交谈，但是现在还是请你们离开我的实验室，我的研究还差最后一步，不能被你们中断。	面白い人ね……こんな状況じゃなかったら仲良くできたかもしれないのに。でも、今は私の実験室から出て行ってもらうわ。私の研究はあと一歩なの。あなたたちに邪魔されるわけにはいかないの！	NONE
-portraits	19
+nop	19
 emote	19	0
 msg	252166	Bzzzt... Bzzzt...	滋啦滋啦……滋啦滋啦……	ガーガー……ガーガー……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121	19
+speaker	Kyuushou
+nop	121	19
 emote	121	3
 emote	19	0
 msg	252167	Hey! Kiana! Mei is waking up!	嘿！琪亚娜。芽衣学姐醒过来啦！	キアナ！芽衣先輩が目を覚ました！	NONE
 speaker	Kiana
-portraits	101	19
+nop	101	19
 emote	101	0
 emote	19	0
 msg	252168	Really?! That's great!	真的么！太好了！	本当！？よかった！	NONE
@@ -122,23 +131,27 @@ emote	19	0
 msg	252169	What's going on? Why is the power unstable? Damn, the Third Herrscher must have woken up. Come to think of it, that Herrscher had the ability to control electricity...	怎！怎么回事，为什么电力突然不稳定了…糟了，这个人刚才说第三律者醒过来了，那个律者我记得有着掌控雷电的能力……	ど、どういうこと。どうして電力が不安定に……しまった、第三律者が目を覚ましたのね。そういえば、あの律者は雷電を操る能力を持ってたはず……。	NONE
 msg	252170	The equipment I'm wearing won't protect me from a Herrscher's attacks... Putting my life at risk...	虽然我不清楚我身上的装备能不能抵御律者的攻击，但是这个生命危险可不值得我去冒……	私が身に着けている装備では律者の攻撃は防げない……この命を危険にさらすのは……。	NONE
 msg	252171	That's right! There must be a secret passage in this laboratory! Erm... found it! Now to escape while they're distracted by the Herrscher!	我记得这个实验室好像有一个隐秘的逃生通道……找到了……趁她们现在还在关心律者，我得赶紧先走一步！	そ、そうだ！この実験室には隠し通路があったはず！えーと……見つけた！あいつらが律者に気を取られているうちに逃げよう！	NONE
-speaker	Mei
-portraits	201	19
+
+
+match_names	Kyuushou	Kiana	Mei
+portraits	121	101	201
 emote	201	0
 emote	19	0
-msg	252172	Ugh...	唔……	う……。	NONE
+/Mei	252172	Ugh...	唔……	う……。	NONE
+
 speaker	Kiana
-portraits	101	19
+nop	101	19
 emote	101	0
 emote	19	0
 msg	252173	Mei-senpai? You're awake! Thank goodness, are you okay? Are you hurt anywhere? Do you have a headache? Does your chest hurt? Shall I give you a massage...? ACK!	芽衣，你醒过来了！太好了，你没事吧？有没有哪里受伤？头疼吗？胸疼不疼，要不要我来帮你揉揉……哎哟！	芽衣先輩？目が覚めたのね！よかった、大丈夫？どこかケガしてない？頭痛い？胸痛い？私が揉んであげようか……きゃあ！	NONE
 speaker	Mei
-portraits	201	19
+nop	201	19
 emote	201	2
 emote	19	0
 msg	252174	It's Ki-Kiana-chan... I'm sorry, you just suddenly touched my breast and... um, where am I?	是…琪亚娜么……抱歉，下意识就……我这是在哪？	キ、キアナちゃんなの……ごめんなさい、いきなり胸を触るからつい……えっと、ここは？	NONE
+
 speaker	Kiana
-portraits	101	19
+nop	101	19
 emote	101	0
 emote	19	0
 msg	252175	This is the laboratory inside ME Corp. I don't know the specifics of the situation, so I'll ask Dad to explain it later. For now, we need to do something about that researcher. How dare she experiment on Mei-senpai...	你现在是在ME社的某个实验室里，具体的情况我也不清楚啦，到时候我让我老爹给你解释一下就好了。总之我们先一起处理一下那个研究员吧，居然敢对芽衣做实验，看来她是……	ここはME社内の実験室だよ。具体的な状況は私も分からないから、あとでパパに説明してもらえばいいわ。とりあえず、あの研究員をどうにかしなきゃ。芽衣先輩に実験をするなんて、彼女もきっと……。	NONE

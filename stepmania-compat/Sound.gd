@@ -12,7 +12,7 @@ func load_song(custom_music_name:String,autoplay=true):
 	#return
 	var music = get_custom_music(custom_music_name) if custom_music_name != "" else null
 	if music != null:
-		print("Attempting to load "+music)
+		print("[smSound] Attempting to load "+music)
 		if music.ends_with(".import"):
 			self.stream = load(music.replace('.import', ''))
 		else:

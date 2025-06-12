@@ -1,57 +1,49 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Dr. Yiserin
-portraits	19
+preload_portraits	19	621
+match_names	Dr. Yiserin	Cocolia
+music	Open Source/Synth_1
+bg	lab_interior
+
+portraits	19	boss/807bw
 emote	19	0
-msg	252036	Ah... so sleepy. I'll make some coffee.	哎…好困，泡一杯咖啡吧。	あぁ……眠い。コーヒーでも淹れよう。	NONE
+/Dr. Yiserin	252036	Ah... so sleepy. I'll make some coffee.	哎…好困，泡一杯咖啡吧。	あぁ……眠い。コーヒーでも淹れよう。	NONE
 msg	252037	Using data found in the ruins on the isolated island, we were able to reconstruct the ancient robot's appearance, but... how much energy does it take to move such a large robot?	虽然根据孤岛遗迹内的数据能大致还原出古代机器的外形…不过要驱动这么大型的机器究竟要用什么作能源呢。	孤島の遺跡内にあったデータで古代ロボットの外観は大体復元できるけど……こんな大きなロボット、動かすのにどんだけのエネルギーが必要なんだか。	NONE
 msg	252038	I hope that Cocolia's drill-head daughter will let me study her Armored Bunny, I'm sure there are bigger secrets hidden in that robot.	如果可可利亚家那个电钻头女孩能把她的小兔子借给我研究几天就好了，那个机器人里面一定还藏着更大秘密。	カカリアんとこのドリル頭が重装ウサギの研究をさせてくれればいいんだけど。あのロボットには、きっともっと大きな秘密が隠されているはず。	NONE
-emote	19	0
-msg	252039	Beep beep... beep beep...	滴滴滴…滴滴滴…	ピピピ……ピピピ……。	NONE
-speaker	Dr. Yiserin
-emote	19	0
-msg	252040	Oh, it's Cocolia again. This time is no good. Hmm, I guess I'll just pretend I didn't notice...	咕，又是可可利亚这个女人，这个时间点总没好事，还是当做没看见吧……	おっと、またカカリアね。この時間ってことはロクなことじゃないわね。う～ん、気づかなかったことにしようかな……。	NONE
-speaker	Cocolia
-portraits	621
+/	252039	Beep beep... beep beep...	滴滴滴…滴滴滴…	ピピピ……ピピピ……。	NONE
+/Dr. Yiserin	252040	Oh, it's Cocolia again. This time is no good. Hmm, I guess I'll just pretend I didn't notice...	咕，又是可可利亚这个女人，这个时间点总没好事，还是当做没看见吧……	おっと、またカカリアね。この時間ってことはロクなことじゃないわね。う～ん、気づかなかったことにしようかな……。	NONE
+
+portraits	19	621,true
 emote	621	0
-msg	252041	What are you pretending not to notice?	你说什么当做没看见？	何を気づかなかったことにする気？	NONE
+/Cocolia	252041	What are you pretending not to notice?	你说什么当做没看见？	何を気づかなかったことにする気？	NONE
 speaker	Dr. Yiserin
-portraits	19
 emote	19	0
 msg	252042	Ahh! It connected automatically... N-nothing, there were just rats in the lab, but it's too much hassle so I just pretended to not notice...	呃！居然自动接入了…没，我是说实验室有老鼠，但是懒得动所以假装没看见……	わっ！自動でつながるなんて……い、いや、実験室にネズミが出たけど、面倒だから気づかなかったことにしようかなって……。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252043	Is your lab moldy? Well, alright. Let's get down to business. I've got the Third Herrscher. I want you to come and check it out.	你该不会是在实验室发霉了吧？算了，说正事。第三律者已经被我们捕获，需要你来检查一下。	あなたの実験室カビが生えているんじゃないの？まあ、いいわ。真面目な話よ。第三律者を捕まえたわ。調べに来てほしいの。	NONE
 speaker	Dr. Yiserin
-portraits	19
 emote	19	0
 msg	252044	Hold on! I'm just about to check out this big thing. I've left the simple tasks like performance testing to your subordinates, but the energy problem hasn't been solved.	现在正是这台大家伙节骨眼上，虽然性能调试那种没有创造力的机械劳动我也已经交给你的手下去做了，但是能源问题还没有解决。	ちょっと待って！今、ちょうどこの大きなヤツを調べるところなのよ。性能テストみたいな単純労働はあなたの部下に任せたけど、エネルギー問題は解決できてないの。	NONE
 msg	252045	So let me focus on my research. I'm serious this time. I won't leave the lab even if I get killed.	所以我希望能专心地进行研究。这次我是认真的，就算你打死我我也不会离开实验室。	だから研究に専念させて。今回はマジ。殺されたって実験室から離れないわよ。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252046	Well then, in that case I'll send someone over there. I'll force you out. You don't mind a little pain, do you?	好啊，那我就找人来“请”你走。	そう、だったらそこに人をよこすわ。力づくで出させてあげる。少しくらい痛い目を見ても構わないわよね？	NONE
 speaker	Dr. Yiserin
-portraits	19
 emote	19	0
 msg	252047	A-alright. It was just a joke... but it's still a Herrscher. Can you really guarantee my safety? I don't want to die yet.	好啦，刚才是冷笑话啦…不过对方可是律者，真的有安全保障么，我可不想英年早逝。	わ、分かったよ。今のはジョーク……でも相手は律者なんでしょ。本当に安全は保障できるの？私まだ死にたくないわよ。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252048	"Subject A" is still in a coma, and her transformation into a Herrscher is on hold, so her threat level is low. Plus, you have your self-defense system to boast about.	“对象A”现在还处于昏迷状态中，而且她的律者化也已经被中断了，威胁程度已经变低。再说了，你不是有引以为傲的自卫系统么？	「対象A」は今も昏睡状態よ。しかも、彼女の律者化は中断されているから脅威レベルは低いわ。それにあなたには自慢の自衛システムがあるじゃない。	NONE
 msg	252049	There hasn't been any actual testing yet, but it should work fine, right?	好吧，虽然没有经过实际的测验，不过我觉得用这些机器和律者对战应该是没戏的……	実質的なテストはまだだけど、十分稼働はするんでしょ？	NONE
 msg	252050	In any case, the Herrscher's research is the top priority. If "Subject A" poses the slightest threat to you, rest assured that I will shoot her on the spot.	少废话，律者的研究是最优先事项！要是“对象A”有什么对你产生了威胁的话我会直接将她击毙的。	何にしても律者の研究が最優先事項よ。もし「対象A」が少しでもあなたに脅威を与えたら、私がその場で銃殺するから安心なさい。	NONE
 speaker	Dr. Yiserin
-portraits	19
 emote	19	0
 msg	252051	If possible, please don't do that... I don't really like seeing blood.	如果可以的话我还请你不要这么做……我不希望看到我的实验室中溅满鲜血。	できればそれはやめてちょうだい……血はあまり見たくないんだけど。	NONE
 msg	252052	Sigh... oh well. I'll just get some fresh air. I had just finished arranging the research... But the air in ME Corp's lab is stuffy. It's so hot, I think I'm going to burn my thighs.	好吧，就当出去透透气。虽然刚刚布置好这里，不过ME社的实验室里也太闷的，这里的空调真是热，总感觉腿上都快被烫伤了。	はぁ……いいわ。外の空気を吸うついでってことで。やっと研究の手配が完了したばっかりだったのに……。それにしてもME社の実験室って空気がこもるわね。暑すぎて、太ももを火傷してしまいそうよ。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252053	Isn't that the coffee you just spilled?	那是你把咖啡倒在了腿上吧？	あなた、大丈夫？コーヒーこぼしてるわよ。	NONE
 speaker	Dr. Yiserin
-portraits	19
 emote	19	0
 msg	252054	WHA—?!	嗯！？	えっ！？	NONE
 msg	252055	Uwahh!! If you noticed, you should have told me faster!!	呜哇！！你看到了怎么不早说！！	うわっ！！気づいてたんなら早く言ってよ！！	NONE

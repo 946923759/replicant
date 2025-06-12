@@ -32,6 +32,7 @@ var blendAdd:Light2D
 #onready var tween = Tween.new()
 
 func set_cur_expression(e:String):
+	e = e.to_lower() #Enforce case-insensitive expressions
 	if !portrait_textures.has(e):
 		if e!="0":
 			printerr("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(e)+"!! "+String(portrait_textures.keys()))
@@ -283,22 +284,24 @@ func gestalt_set_textures(sprName):
 	
 	var foundDefaultYet:bool=false
 	for path in matching:
-		if !path.ends_with(".png"):
+		if !path.to_lower().ends_with(".png"):
 			continue
 		var emotes = path.split(" ",1) 
 		
 		if emotes.size() >= 2: #Kyuushou normal.png, Kyuushou happy.png, etc
 			#Index this portrait like ['normal'] = TEXTURE
-			portrait_textures[emotes[1].trim_suffix(".png")] = load(path)
+			portrait_textures[emotes[1].to_lower().trim_suffix(".png")] = load(path)
 		else: #Kyuushou.png
 			if foundDefaultYet:
-				printerr("Found image "+path+" without an expression, but there was already another loaded...")
+				printerr("[PORTRAITMAN] Found image "+path+" without an expression, but there was already another loaded...")
 			else:
 				#Index in default slot '0'
 				portrait_textures['0']=load(path)
 				foundDefaultYet = true
 	#print(portrait_textures)
-	assert(len(portrait_textures)>0)
+	if len(portrait_textures)==0:
+		print(matching)
+		assert(len(portrait_textures)>0,"[PORTRAITMAN] Failed to find any default expression matching "+sprName+" despite finding matching files? Giving up!")
 
 
 func replicant_set_textures(toLoad:Dictionary):

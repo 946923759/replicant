@@ -1,39 +1,48 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Kiana
-portraits	101
+preload_portraits	101	121
+match_names	Kiana	Kyuushou
+music	re/2-15 - Oracle Drive
+bg	lab_interior
+
+portraits	101	121
 emote	101	0
-msg	252088	The lights are going on and off which is a plus. Great for sneaking...	还好有这忽明忽暗的灯光帮忙，我们寻找掩体也变得方便多了……	照明が光ったり消えたりするから助かるわ。スニーキングには最適ね。	NONE
+/Kiana	252088	The lights are going on and off which is a plus. Great for sneaking...	还好有这忽明忽暗的灯光帮忙，我们寻找掩体也变得方便多了……	照明が光ったり消えたりするから助かるわ。スニーキングには最適ね。	NONE
 msg	252089	The passage leading to the upper levels is... over there! Kyuushou, let's hurry... Kyuushou?	前往上层的通道是在……那边，九霄，快跟上……九霄？	上層に通じる通路は……あそこね！九霄、急いで……って九霄？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
+nop	121
 emote	121	1
 msg	252090	Kiana... this factory!	琪亚娜，你看这个车间。	キアナ……この工場！	NONE
+
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252091	What is it? We have to hurry...	别东张西望了！快走！	何よ？急いでるんだけど……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
+nop	121
 emote	121	1
 msg	252092	Something's wrong with this factory! The lights around it are jammed, but this indicator light is still on. This must be the only place with an independent energy source!	不，琪亚娜，这个车间大有问题！周围的灯光都已经受到了干扰，但是这个车间上的指示灯却还是亮着的，说明这个车间有着独立的能源供应。	この工場おかしい！だって、周囲の灯りは妨害を受けてるのに、ここの指示灯だけちゃんと点いてる。きっと、ここだけ独立したエネルギー源があるんだよ！	NONE
+
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252093	Come to think of it, that's true...	所以呢？	そういえばそうね……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
+nop	121
 emote	121	1
 msg	252094	I think there must be some important data or equipment here. If we could get hold of it, we might understand why ME Corp has the world's best technology.	所以这里面肯定有着什么重要的文件和设备，如果我们拿到了的话说不定就能破解ME社为什么能够站在世界科技之巅了！	ここには何か重要なデータか機械があるんだと思う。もし、それを入手できれば、ME社がどうして世界トップレベルの技術を持っているかわかるかも。	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252095	What a stupid thing to say. If it were that easy to copy Anti-Entropy's techniques, then "Schicksal" wouldn't be such a headache!	说些什么白痴话，要是逆熵的机甲是那么容易就能研究出来制作方法的话我们“天命”就不会那么头疼了！	何バカなこと言ってるの。ネゲントロピーの技術をそんな簡単にマネできたら、「天命」がここまで頭を悩ませないわよ！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	1
 msg	252096	Kiana, you're about to be expelled from the Valkyries, right? This might be your chance to redeem yourself! Plus, Mei-senpai might be there too!	琪亚娜！我这可是为了你好！你想你都快被女武神除名了！这可是立功的好机会！而且说不定芽衣也在那里呢！	キアナ、戦乙女から除名されそうなんでしょ？これは汚名返上のチャンスかもしれない！それに芽衣先輩もあそこにいるかも！	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	1
 msg	252097	Ugh! I guess you're right... F-fine, I guess we could go and have a look for a bit.	咕！我居然觉得你说的有道理……好吧，那我们去看下吧。	うっ！その通りに思えてきた……そ、そうね、少しくらい見に行ってもいいわよね。	NONE
 msg	252098	……	……	……。	NONE
@@ -41,19 +50,19 @@ speaker	Kiana
 emote	101	0
 msg	252099	This place is…	这里是……	ここは……。	NONE
 msg	252100	So many mechas... So ME Corp is a production base for mechas! To think there's a factory in the basement of such a big building... I guess the grass is always greener on the other side. But how do they move these mechas to other places?	没想ME社的本部居然就是逆熵机甲的生产基地，而且工厂就建在这栋大楼的地下，这就是所谓的灯下黑么……就是不知道他们是运用什么方式将这些机甲运向别的地方的……	機甲がたくさん……ME社が機甲の生産拠点だったのね！こんな大きなビルの地下に工場があったなんて……これこそ灯台下暗しね。でも、どうやってこの機甲を他の場所に移しているのかしら？	NONE
-msg	252101	Rattle——	喀啦喀啦——	ガラガラ——	NONE
+/	252101	Rattle——	喀啦喀啦——	ガラガラ——	NONE
 speaker	Kiana
 emote	101	0
 msg	252102	Oh no! The mechas are coming this way! Our weapons have been taken by Anti-Entropy, so we have no chance of winning in our current state. Let's retreat for now!	有机甲向这边来了！我的武器已经被逆熵收缴，现在的战斗力下滑了很多，这里我们先暂且退避！	まずい！機甲がこっちに来る！武器はネゲントロピーに持っていかれちゃってるし、今の状態じゃ勝ち目ないわね。ここはとりあえず撤退しましょう！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	3
 msg	252103	Heheheheh, don't worry! The Savior, Kyuushou-sama, will defeat them with her bare hands, rivaling even the demon gods! I'll take them on!	不担心！救世主空手拆高达可是标配！看那！东方在燃……	フフフフッ、心配無用！！この救世主たる九霄様が魔神にも比肩する徒手空拳で成敗してくれる！受けてみよっ！	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252104	Come on, let's go! You can't win!	快走！人家把你拆了还差不多！	ほら、行くわよ！勝てっこないんだから！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+speaker	Kyuushou
+nop	121
 emote	121	4
 msg	252105	W-waah!! Ow ow ow! My hair is gonna fall out!! Don't pull it!!	呃！疼疼疼！！头发真的要掉了啦！！	わ、わっ！！イタタタタ！髪の毛抜けるー！！引っ張るなー！	NONE

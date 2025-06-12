@@ -1,8 +1,8 @@
 extends ScrollContainer
 
+export(int) var selected:int = 1
 export(bool) var show_scrollbar = false
 
-var selected:int = 0
 var tw:Tween
 
 onready var chapter_actor_frame = $MarginContainer/HBoxContainer
@@ -14,13 +14,14 @@ func _ready():
 	tw = Tween.new()
 	add_child(tw)
 	
-	chapter_actor_frame.get_child(selected).GainFocusNoTween()
+	#chapter_actor_frame.get_child(selected).GainFocusNoTween()
 	#for c in chapter_actor_frame.get_children():
 	for i in range(chapter_actor_frame.get_child_count()):
 		var c:Control = chapter_actor_frame.get_child(i)
 		c.connect("gui_input",self,"set_selection_from_mouse",[i])
+		c.connect("button_pressed",self,"handle_btn_press")
 	#print(get_h_scrollbar().max_value)
-	call_deferred("reposition_actors")
+	#call_deferred("reposition_actors")
 	#reposition_actors()
 	#print(get_h_scrollbar().max_value)
 	
@@ -87,8 +88,8 @@ func get_actor_rect_in_frame(actor_number:int) -> Rect2:
 	)
 	return object_rect
 
-
-func reposition_actors(center_selected:bool = true, overwrite_scroller_value:int=0):
+#Call this with call_deferred if you're doing it on _ready because idk godot is stupid
+func reposition_actors(center_selected:bool = true, animate:bool = true):
 	#print(selected)
 	#var current_actor = chapter_actor_frame.get_child(selected)
 	#tw.stop_all()
@@ -119,7 +120,7 @@ func reposition_actors(center_selected:bool = true, overwrite_scroller_value:int
 			#	intended_x_position_on_screen = viewport_rect.position.x + 100
 	
 	else:
-		print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected))
+		#print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected))
 		# we want the viewport x position to start drawing LEFT of the object.
 		# and we want the object to be centered. so first, center this object.
 		intended_x_position_on_screen = object_rect.position.x + (object_rect.size.x - chapter_actor_frame.get("custom_constants/separation"))/2.0
@@ -132,18 +133,20 @@ func reposition_actors(center_selected:bool = true, overwrite_scroller_value:int
 	#print(obj_x_position_in_actor_frame/actor_frame_width)
 	var scroll_pos = SCALE(intended_x_position_on_screen, 0, actor_frame_width, 0, get_h_scrollbar().max_value)
 	#print(scroll_pos)
-	tw.stop_all()
-	tw.interpolate_property(
-		self, 
-		"scroll_horizontal",
-		null,
-		scroll_pos,
-		.3,
-		Tween.TRANS_QUAD,
-		Tween.EASE_OUT
-	)
-	tw.start()
-	#scroll_horizontal = scroll_pos
+	if animate:
+		tw.remove_all()
+		tw.interpolate_property(
+			self, 
+			"scroll_horizontal",
+			null,
+			scroll_pos,
+			.3,
+			Tween.TRANS_QUAD,
+			Tween.EASE_OUT
+		)
+		tw.start()
+	else:
+		scroll_horizontal = scroll_pos
 
 #	if current_actor.is_expanded:
 #		# This is the worst designed shit ever
@@ -182,38 +185,74 @@ func set_selection_from_mouse(event:InputEvent, idx:int):
 			if i != selected:
 				chapter_actor_frame.get_child(i).LoseFocus()
 			else:
-				chapter_actor_frame.get_child(i).GainFocus()
+				chapter_actor_frame.get_child(i).GainFocus().set_selection(-1)
 		reposition_actors()
 		$Confirm.play()
+
+func set_selection(idx:int, animate:bool = true):
+	
+	if idx > chapter_actor_frame.get_child_count() or idx < 0:
+		print("Hey idiot, you can't set scroller selection of ",idx)
+		return
+	
+	selected = idx
+	print("set selection ",selected)
+	
+	for i in range(chapter_actor_frame.get_child_count()):
+		if i != selected:
+			chapter_actor_frame.get_child(i).LoseFocus()
+		else:
+			if animate:
+				chapter_actor_frame.get_child(selected).GainFocus().set_selection(0)
+			else:
+				chapter_actor_frame.get_child(selected).GainFocusNoTween().set_selection(0)
+	#print("Reposition")
+	#reposition_actors()
+	#reposition_actors()
+	#reposition_actors()
+	reposition_actors(true, animate)
+	#var tw = create_tween()
+	#tw.tween_callback(self,"reposition_actors").set_delay(.3)
 
 func _input(event):
 	var current_actor = chapter_actor_frame.get_child(selected)
 	if Input.is_action_just_pressed("ui_select"):
-		for i in range(chapter_actor_frame.get_child_count()):
-			if i != selected:
-				chapter_actor_frame.get_child(i).LoseFocus()
-		current_actor.GainFocus()
-		reposition_actors()
+		if current_actor.is_expanded:
+			current_actor.input(event)
+			return
+		
+		
+		set_selection(selected,true)
 		$Confirm.play()
 #	elif Input.is_action_just_pressed("ui_cancel"):
 #		for c in chapter_actor_frame.get_children():
 #			c.LoseFocus()
 #		#current_actor.LoseFocus()
 #		reposition_actors()
-	elif Input.is_action_just_pressed("ui_right"):
+	elif Input.is_action_just_pressed("ui_right") or Input.is_action_just_pressed("ui_page_down"):
 		if selected < chapter_actor_frame.get_child_count()-1:
 			selected += 1
 		else:
 			selected = 0
 		$Cursor.play()
 		reposition_actors()
-	elif Input.is_action_just_pressed("ui_left"):
+	elif Input.is_action_just_pressed("ui_left") or Input.is_action_just_pressed("ui_page_up"):
 		if selected > 0:
 			selected -= 1
 		else:
 			selected = chapter_actor_frame.get_child_count() - 1
 		$Cursor.play()
 		reposition_actors()
-	if Input.is_action_just_pressed("ui_up"):
-		print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected), " | scroller: ",get_h_scrollbar().max_value)
+	if Input.is_action_just_pressed("ui_up") or Input.is_action_just_pressed("ui_down"):
+		if current_actor.is_expanded:
+			$Cursor.play()
+			current_actor.input(event)
+		#print("scroll rect: ",get_scroller_viewport_rect(), " | actor ",selected," rect: ",get_actor_rect_in_frame(selected), " | scroller: ",get_h_scrollbar().max_value)
 		#reposition_actors()
+
+func handle_btn_press(vnPlayerDest:String, episodeDest:Globals.Episode):
+	print("Handling destination...")
+	$Confirm.play()
+	Globals.nextCutscene=vnPlayerDest+".txt"
+	Globals.currentEpisodeData=episodeDest
+	get_parent().OffCommandNextScreen("RE-CutsceneFromFile")

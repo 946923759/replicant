@@ -347,7 +347,9 @@ func save_system_data()->bool:
 	return true
 
 static func load_database(path:String)->Dictionary:
-	var tmp_database:Dictionary = {}
+	var tmp_database:Dictionary = {
+		#"!!No Grouping!!":[]
+	}
 	
 	var paths = [
 		"res://"+path
@@ -472,6 +474,7 @@ func _ready():
 	f.close()
 	
 	chapterDatabase=load_database("ch-sel-db.tsv")
+	#This should not be here!!!!!
 	if chapterDatabase.has('__starting_episode__'):
 		currentEpisodeData=chapterDatabase['__starting_episode__'][0]
 		nextCutscene=currentEpisodeData.parts[0]+".txt"
@@ -703,6 +706,7 @@ var SCREENS:Dictionary = {
 	
 	"RE-ScreenTitleMenu":"res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.tscn",
 	"RE-ScreenSelectChapter":"res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-ScreenSelectChapterV2.tscn",
+	"RE-ScreenSelectChapterSimple":"res://Screens/RebornRemake/RE-ScreenSelectChapterSimple/RE-ScreenSelectChapterSimple.tscn",
 	"RE-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-re.tscn",
 	"RE-ScreenProgrammerCredits":"res://Screens/RebornRemake/RE-ProgrammerCreditsV3.tscn"
 }

@@ -1,4 +1,5 @@
 extends Control
+signal button_pressed(destination,episode)
 
 const MAXIMUM_WIDTH = 1500
 
@@ -12,11 +13,13 @@ onready var _rect_min_size = rect_min_size
 var rect_dest_size:Vector2 = Vector2.ZERO setget , get_rect_size
 
 var is_expanded:bool = false
-var chapter_episodes:Array
+var chapter_episodes:Array #This episode
+var selection:int = 0
 #var partDestinations:Array
 
 onready var tw:Tween = $Tween
-var scroller:VBoxContainer
+var scroller:GridContainer
+var STARTING_POSITIONS:PoolIntArray
 
 func _ready():
 	$Label.text = chapter_name
@@ -26,9 +29,25 @@ func _ready():
 	$TextureRect.rect_position.x = collapsed_x_offset
 	
 	for c in get_children():
-		if c is VBoxContainer:
+		if c is GridContainer:
 			scroller = c
+			for i in range(scroller.get_child_count()):
+				scroller.get_child(i).connect("mouse_entered",self,"set_selection",[i])
+				scroller.get_child(i).connect("clicked",self,"button_trigger",[i])
 			c.visible = false
+			STARTING_POSITIONS = PoolIntArray([scroller.get_child(0).rect_position.x,scroller.get_child(1).rect_position.x])
+			#print(STARTING_POSITIONS)
+			break
+
+func input(event):
+	if !is_expanded:
+		return
+		
+	if Input.is_action_just_pressed("ui_up"):
+		#prints(name, "I have focus!")
+		move_selection(-1)
+	elif Input.is_action_just_pressed("ui_down"):
+		move_selection(1)
 
 func get_rect_size():
 	if is_expanded:
@@ -56,10 +75,10 @@ func set_chapter(chapter_name:String, chapter_data:Array):
 			c.visible = false
 
 
-func GainFocus():
+func GainFocus() -> Control:
 	#print("???")
 	#rect_size.x = MAXIMUM_WIDTH
-	tw.stop_all()
+	tw.remove_all()
 	tw.interpolate_property(self,"rect_min_size:x",null,MAXIMUM_WIDTH,.3,Tween.TRANS_QUAD,Tween.EASE_OUT)
 	#$Label.text = "fuck you"
 	#tw.interpolate_callback(self,0.1, "print2",["???"])
@@ -73,17 +92,22 @@ func GainFocus():
 		for i in range(scroller.get_child_count()):
 			var c = scroller.get_child(i)
 			c.modulate.a = 0.0
-			c.rect_position.x = -300
-			tw.interpolate_property(c,"rect_position:x", null, 0.0, 0.3,Tween.TRANS_QUAD,Tween.EASE_OUT, .1+i*.1)
-			tw.interpolate_property(c,"modulate:a", null, 1.0, .3, Tween.TRANS_LINEAR, Tween.EASE_IN, .1+i*.1)
+			
+#			if i&1: # Odd (1)
+#				c.rect_position.x = STARTING_POSITIONS[1] + 300
+#			else:   # Even (0)
+#				c.rect_position.x = STARTING_POSITIONS[0] - 300
+			#c.rect_position.x = 300 * (-1 * i&1)
+			#tw.interpolate_property(c,"rect_position:x", null, STARTING_POSITIONS[i&1], 0.3,Tween.TRANS_QUAD,Tween.EASE_OUT, .1+i*.05)
+			tw.interpolate_property(c,"modulate:a", null, 1.0, .3, Tween.TRANS_LINEAR, Tween.EASE_IN, .05+i*.03)
 	#tw.interpolate_property($PartScroller)
 	#tw.interpolate_property($Label,"text",null,chapter_name+": "+chapter_full_name, .3)
 	#tw.interpolate_property($TextureRect,"rect_position:x",null,0, .3, Tween.TRANS_QUAD,Tween.EASE_OUT)
 	tw.start()
 	is_expanded = true
-	pass
+	return self
 
-func GainFocusNoTween():
+func GainFocusNoTween() -> Control:
 	rect_min_size.x = MAXIMUM_WIDTH
 	is_expanded = true
 	if scroller:
@@ -91,10 +115,11 @@ func GainFocusNoTween():
 		for i in range(scroller.get_child_count()):
 			var c = scroller.get_child(i)
 			c.modulate.a = 1.0
+	return self
 	
-func LoseFocus():
+func LoseFocus() -> Control:
 	#rect_size.x = rect_min_size.x
-	tw.stop_all()
+	tw.remove_all()
 	tw.interpolate_property(self,"rect_min_size:x",null,_rect_min_size.x,.3,Tween.TRANS_QUAD,Tween.EASE_OUT)
 	tw.interpolate_callback($Label,.1,"set_text",chapter_name)
 	if scroller:
@@ -107,4 +132,31 @@ func LoseFocus():
 	#tw.interpolate_property($TextureRect,"rect_position:x",null,collapsed_x_offset, .3)
 	tw.start()
 	is_expanded = false
-	pass
+	return self
+
+func move_selection(dir:int=1):
+	while true:
+		selection += dir
+		if selection < 0:
+			selection = scroller.get_child_count() - 1
+		elif selection >= scroller.get_child_count():
+			selection = 0
+		if scroller.get_child(selection).visible:
+			break
+	set_selection(selection)
+
+func set_selection(s:int):
+	selection = s
+	for i in range(scroller.get_child_count()):
+		if i==selection:
+			scroller.get_child(i).GainFocus()
+		else:
+			scroller.get_child(i).LoseFocus()
+
+func button_trigger(b:int):
+	#click.play()
+	#if b > partDestinations.size()-1 or b < 0:
+	#	printerr("Pressed a button that shouldn't be pressable")
+	#	return
+	print(String(b)+" was pressed! Destination is "+chapter_episodes[b].parts[0])
+	emit_signal("button_pressed",chapter_episodes[b].parts[0], chapter_episodes[b])

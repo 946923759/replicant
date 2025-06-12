@@ -1,0 +1,32 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	252222	Just a little further and we'll reach the first floor lobby of ME Corp. We just need to get through there, so let's pick up the pace!	再往上层就是ME社的一层大厅了，只要通过了那里就行了！	もう少し上ればME社の1階ホールよ。あとはそこを抜けるだけだから、ペース上げてきましょ！	NONE
+speaker	Houraiji Kyuushou
+portraits	121
+emote	121	3
+msg	252223	Hehehe, we have finally made it out of the underground labyrinth and can greet the dawn of the future.	库库库，终于要穿过地底的迷障，迎来未来的曙光了么。	クックック、やっと地底の迷宮を抜けて未来の暁光を迎えられる。	NONE
+speaker	Mei
+portraits	201
+emote	201	1
+msg	252224	Kyuushou-chan's back to normal already...	九霄的状态还是一如既往地恢复得很快呢~	九霄ちゃんが元に戻ってる……。	NONE
+msg	252225	BOOM... BOOM——	轰隆隆…轰隆隆……	ゴオォン……ゴオォン——	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	252226	Hmm? Could this be the sound of a battleship? What's more, it must be the sound of battleships firing at each other!	咦，这个声音是战舰的声音！而且还是战舰在互相攻击的炮火轰鸣声！	うん？この音は、もしかして戦艦？しかも戦艦同士が砲撃し合ってる音だわ！	NONE
+msg	252227	Maybe "Hyperion" has come to the rescue!	莫非是“休伯利安”号来支援我们了？	もしかしたら「ハイペリオン」が助けに来てくれたのかも！	NONE
+speaker	Houraiji Kyuushou
+portraits	121
+emote	121	1
+msg	252228	Kiana, Kiana! What's "Hyperion"? It sounds like the name of a satellite!	琪亚娜，你说的“休伯利安号”是什么东西啊？听着像是一颗卫星的名字……	キアナキアナ！その「ハイペリオン」って何！？衛星の名前みたいだけど！	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	252229	What's with you, you're breathing heavily... You've been praising the Anti-Entropy battleships all this time. We'll soon be able to see a battleship of Schicksal!	哼，之前你不是一直在夸赞逆熵的战舰么，等会你就能够见识到我们天命的战舰了！	何よ、鼻息荒くして……。あんたずっとネゲントロピーの戦艦を褒めていたじゃない。もう少しで私たち天命の戦艦を見られるわよ！	NONE
+msg	252230	Battleships are a symbol of honor for Valkyries. They are the strategic weapons that every Valkyrie dreams of owning! I'm sure one day I'll have my own battleship!	那可是女武神的荣誉象征，是每个女武神都梦寐以求配备的武装！而我琪亚娜，将来也一定会有一座属于自己的战舰的！	戦艦は戦乙女の名誉の象徴なの。どんな戦乙女も夢に見る戦略兵器！いつか私だって、絶対に自分の戦艦を手に入れてやるんだから！	NONE
+speaker	Houraiji Kyuushou
+portraits	121
+emote	121	1
+msg	252231	Is it really that amazing?! Oooh, come on, let's hurry up!!	真的么！那我们赶紧走吧！	そんなすごいものなの！？くぅ～、ほらほら急ごう！！	NONE

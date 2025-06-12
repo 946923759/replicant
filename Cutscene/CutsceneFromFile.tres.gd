@@ -196,6 +196,7 @@ func end_cutscene_2():
 		currentDatabase=Globals.chapterDatabase_RR
 	elif saveCategory==3:
 		currentDatabase=Globals.chapterDatabase_RE
+	assert(len(currentDatabase)>0,"No database loaded for mode "+String(saveCategory))
 	
 	if saveCategory > 0 and Globals.currentEpisodeData:
 		var save_idx = Globals.get_episode_index(currentDatabase, Globals.currentEpisodeData)

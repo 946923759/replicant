@@ -1,0 +1,92 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	252232	...Huh? Why did those sounds stop? There was a thunderous roar just now that seemed to pierce the heavens...	诶？这里怎么空荡荡的连半点声音也没有了？刚才不还是炮火连天的声音么……	……あれ？どうして音がなくなったのかしら？さっきは天をも突くような轟音だったのに……。	NONE
+speaker	Mei
+portraits	201
+emote	201	0
+msg	252233	Kiana-chan, perhaps we have fallen into the enemies' trap...	琪亚娜，我们可能中了敌人设下的圈套了……	キアナちゃん、もしかしたら私たち敵の罠に嵌ったんじゃ……。	NONE
+msg	252234	Clap clap clap—!	啪啪啪！	パパパッ——！	NONE
+speaker	Cocolia
+portraits	621
+emote	621	0
+msg	252235	You're amazing, Doctor. Reproducing the sound of a battleship firing through a speaker! They fell into our trap like mice.	不愧是博士，居然能够通过这个音响模拟出战舰对轰的声音，让这些小家伙们自投罗网，我对你刮目相看了。	さすがは博士。スピーカーで戦艦の砲撃音を再現するなんて！あっさりと網に掛かってくれたわ。	NONE
+speaker	Dr. Yiserin
+portraits	19
+emote	19	0
+msg	252236	I heard about their plans when I increased the security level, so it was a rather simple way to lure them in.	还好在提升安全等级的时候锁定到了黑客的线路听到了她们的计划，才能用这么简单的方法引诱她们。	セキュリティレベルを上げる時に彼女たちの計画を聞けたからね。こんな簡単な方法でおびき寄せられたわ。	NONE
+speaker	Cocolia
+portraits	621
+emote	621	0
+msg	252237	Now all we have to do is win. They can't run away now even if they try.	只要这些能够让我们获得胜利就足够了，现在她们可是插翅难飞。	あとは私たちが勝つだけ。彼女たちはもう逃げようにも逃げられないわ。	NONE
+msg	252238	Well, children, the game of hide-and-seek is over. Go quietly back to your cells.	所以，孩子们，你们的躲猫猫游戏时间已经结束了，还是乖乖回到自己的牢房吧。	さてと、子どもたち、かくれんぼはおしまいよ。おとなしく自分の牢屋に戻りなさい。	NONE
+speaker	Kiana
+portraits	101	621
+emote	101	0
+emote	621	0
+msg	252239	Why would we want to go back?!	我们是不会放弃的！	誰が戻るもんですか！！	NONE
+speaker	Mei
+portraits	201	621
+emote	201	0
+emote	621	0
+msg	252240	You're right. And we're not in a bind yet. You could still lose!	说的没错，况且现在的我们还没有到山穷水尽的地步，只要还有一丝希望，我们就还能战斗下去！	その通りよ。それにまだ追い込まれていないわ。あなたが負ける可能性だってあるんだから！	NONE
+speaker	Cocolia
+emote	201	0
+emote	621	0
+msg	252241	Your father would surely be upset if he heard that. Oh, did you know? Raiden Ryoma said he wanted to meet you.	想必你的父亲听到你的这句话一定会为你而感到自豪的。对了，你知道吗，雷电龙马可是跟我说过，他很想再见你一面呢。	あなたのお父さんが、その言葉を聞いたらきっと鼻を高くするでしょうね。そうだ、知ってる？雷電龍馬があなたに会いたいって言ってたわよ。	NONE
+speaker	Mei
+emote	201	0
+emote	621	0
+msg	252242	Father... You know my father?	父亲大人……你认识父亲大人么？	お父様……お父様を知っているの？	NONE
+speaker	Cocolia
+emote	201	0
+emote	621	0
+msg	252243	Of course. We were colleagues and cooperated for a while. We were great partners. Unfortunately, I had no choice but to imprison him for disagreeing with the Commander's ideas. I think... to the public, he was thought to have been involved in an economic scandal.	当然，我们可是共事了一段时间的同事，可是很好的合作伙伴呢。可惜那个人居然有了反抗“司令”的心思，我就只能先把他关押起来了。不过对外的话还是宣称你的父亲卷入了一场经济案而入狱了呢。	もちろん。私たちは一時期協力し合ってた同僚だもの。とてもいいパートナーよ。残念ながら「司令」の考えに異を唱えて監禁するしかなかったけれど。たしか……世間的には経済事件に巻き込まれたことになっていたわね。	NONE
+speaker	Mei
+emote	201	0
+emote	621	0
+msg	252244	What...?!	什么……！	何ですって……！	NONE
+speaker	Cocolia
+emote	201	0
+emote	621	0
+msg	252245	And I'll tell you one more thing. Your father is in this building. Do you want to see him again?	另外再透露给你一个小的消息吧。你的父亲就在这栋大楼里面哦，你想不想与你的父亲重逢呢？	それから、もう一つ教えてあげるわ。あなたのお父さんはこのビルの中にいるわよ。お父さんともう一度会いたくない？	NONE
+speaker	Kiana
+portraits	101	621
+emote	101	0
+emote	621	0
+msg	252246	Senpai, don't believe her! Anti-Entropy's words are nothing but lies!	学姐，别信她！逆熵的话没一句是真的！	先輩、信じちゃダメ！ネゲントロピーの言葉は嘘ばっかりなんだから！	NONE
+speaker	Cocolia
+emote	101	0
+emote	621	0
+msg	252247	Anti-Entropy doesn't deceive people like Schicksal. Raiden Ryoma is in this building on the fourth basement floor. If you want to check, I can take you there.	逆熵才不会像你们天命一样欺瞒世人，雷电龙马现在就在地下四层的一个车间内，如果你想要验证的话我带你去就是了。	ネゲントロピーはあなたたち天命みたいに人を欺いたりしないわ。雷電龍馬はここの地下4階にいる。確かめたければ連れて行ってあげるわよ？	NONE
+speaker	Kiana
+emote	101	0
+emote	621	0
+msg	252248	4th basement floor... Do you mean [i]that[/i] room?!	地下四层……难道是那个房间！？	地下4階……まさかあの部屋！？	NONE
+speaker	Cocolia
+emote	101	0
+emote	621	0
+msg	252249	It seems you found it on your way out. I have no need to deceive you. Anti-Entropy's powers far exceed your imagination, and only Anti-Entropy can save the future from the Honkai.	看来你逃出来的时候也发现了吧。我根本就没有欺骗你们的必要，逆熵的实力是你们无法想象的，也只有逆熵能够带领你们走出被崩坏囚禁的未来。	逃げてくる時に見つけたみたいね。私には、あなたたちを騙す必要がないわ。ネゲントロピーの実力はあなたたちの想像を遥かに凌駕しているし、ネゲントロピーだけが崩壊に囚われた未来を救えるのよ。	NONE
+speaker	Houraiji Kyuushou
+portraits	121	621
+emote	121	3
+emote	621	0
+msg	252250	Kukuku... Hahahaha! For an ordinary mortal like you to falsely claim to be of the same status as a god is so outrageous that it makes my stomach churn!	哈哈哈……凡人也敢僭越神的地位说出这种不自量力的话么，真是太可笑了。	クククッ、ハーハハハッ！貴様のような凡人が神と同等の地位を僭称するとは、身の程知らず過ぎてお腹が痛い！	NONE
+msg	252251	Just look at the book of Revelation. You have no future to save. You are not God, nor are you above God. You are only delusional in your attempts to carry out God's will!	翻开启示录所看到的，并没有被你们所拯救的未来，你们不是神，更无法超越神，妄想执行神的意志，只会让自己的腰弯地更低。	黙示録を見れば分かる。お前たちに救われる未来なんてないってね。お前たちは、神でもなければ神を超えるものでもない。神の意志を遂行しようと妄想してるだけ！	NONE
+msg	252252	The only one who can save everyone is the one who was chosen by God from birth. The savior who can see through all lies, that is, me — Kyuushou-sama! There is no one other than me!	能拯救一切的只有天生就被神选中的人，是能够看破所有虚幻的救世主，也就是我——蓬莱寺九霄！除了我之外没有别人了！	全てを救えるのは、生まれながらにして神に選ばれた人だけ。全ての偽りを見抜く救世主、つまり私——九霄様！私以外にいない！	NONE
+speaker	Kiana
+portraits	101	621
+emote	101	0
+emote	621	0
+msg	252253	Kyuushou... I knew you were a bit weird, but I never knew you had the guts to say something like this! We've been together for a long time, but this is the first time I've really seen you in a new light!	嘿呀！和你待在一起这么久了，我才发现你还能说出这么有气势的话！九霄，我有点对你刮目相看了！	九霄……少しずれてるけど、あんたにこんなこと言える度胸があったなんて知らなかった！長いこと一緒にいたけど、初めて見直したわ！	NONE
+speaker	Cocolia
+emote	101	0
+emote	621	0
+msg	252254	"Subject X", I don't know why you're so confident, but it doesn't matter. Now, Doctor, do your thing. Get these kids to the battleship. Then prepare to abandon this place. A Schicksal battleship is arriving soon.	虽然不知道“对象X”你为什么会有这等自信，不过没关系，今后我们会有更深入的交谈的。博士，动手吧，将这些人带回战舰上，然后我们该做好放弃这个据点的准备了，天命的战舰马上就要到了。	「対象X」あなたがどうしてそれほどの自信を持っているのか知らないけれど、関係ないわ。さ、博士やってちょうだい。この子たちを戦艦に連れて行って。それから、ここを放棄する準備を。天命の戦艦がじきに来るわ。	NONE
+speaker	Dr. Yiserin
+portraits	101	19
+emote	101	0
+emote	19	0
+msg	252255	Huh? I'm doing it again? Can't someone else...?	诶？又要我动手么？能不能换个人……	え？また私がやるの？他の人に……。	NONE
+msg	252256	D-Don't glare at me! I get it, I get it... I'll do my best to stop them from getting hurt.	好吧…那我会尽量不让你们受伤的。	に、睨まないでよ！分かった、分かったって……できるだけ、あなたたちがケガをしないようにするわ。	NONE

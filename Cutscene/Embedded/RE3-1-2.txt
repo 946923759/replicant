@@ -1,102 +1,104 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Kiana
-portraits	101
+preload_portraits	101	121
+match_names	Kiana	Kyuushou
+music	Open Source/synth_lab
+bg	lab_interior
+
+portraits	101	121
 emote	101	0
-msg	252056	Ugh, I have a headache... It feels like I've been hit by something...	唔…头好疼…好像被什么东西敲过一样……	うぅ頭痛い……何かに叩かれたみたい……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+/Kiana	252056	Ugh, I have a headache... It feels like I've been hit by something...	唔…头好疼…好像被什么东西敲过一样……	うぅ頭痛い……何かに叩かれたみたい……。	NONE
 emote	121	3
-msg	252057	Kukukuku, my familiar, Kiana, have you finally woken up from the void between fantasy and reality?	库库库，我的使魔琪亚娜，你终于从虚幻与现实的夹缝中苏醒过来了么。	クックック、我が従魔キアナよ、ようやく夢幻と現実の狭間から目覚めたか。	NONE
-speaker	Kiana
-portraits	101
+/Kyuushou	252057	Kukukuku, my familiar, Kiana, have you finally woken up from the void between fantasy and reality?	库库库，我的使魔琪亚娜，你终于从虚幻与现实的夹缝中苏醒过来了么。	クックック、我が従魔キアナよ、ようやく夢幻と現実の狭間から目覚めたか。	NONE
 emote	101	3
-msg	252058	What? Is it your fault? Shall I let you sleep instead?	九霄么……作为苏醒的代价我现在就让你沉睡！	何？九霄のせいなの？代わりに眠らせてあげよっか？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+/Kiana	252058	What? Is it your fault? Shall I let you sleep instead?	九霄么……作为苏醒的代价我现在就让你沉睡！	何？九霄のせいなの？代わりに眠らせてあげよっか？	NONE
 emote	121	4
-msg	252059	Eh? Huh?! No, wait! I'm against violence!!	诶！等等等等！不要这么暴力嘛！	え？えっ！違う、待って！暴力はんたいっ！！	NONE
-speaker	Kiana
-portraits	101
+/Kyuushou	252059	Eh? Huh?! No, wait! I'm against violence!!	诶！等等等等！不要这么暴力嘛！	え？えっ！違う、待って！暴力はんたいっ！！	NONE
 emote	101	0
-msg	252060	Oh well... Hey! Mei-senpai?! Where's Mei-senpai?	啧！算了…呃！芽衣学姐呢！芽衣学姐在哪？	ま、いいわ……あれ！芽衣先輩は！？芽衣先輩はどこ？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+/Kiana	252060	Oh well... Hey! Mei-senpai?! Where's Mei-senpai?	啧！算了…呃！芽衣学姐呢！芽衣学姐在哪？	ま、いいわ……あれ！芽衣先輩は！？芽衣先輩はどこ？	NONE
+
+speaker	Kyuushou
 emote	121	1
 msg	252061	I think she's probably being investigated by "Anti-Entropy." Seriously, they didn't investigate me, the Savior, first... They must be blind!	别慌张，琪亚娜。芽衣学姐估计是被那群“逆熵”的人带去审问了吧。真是的，居然不先来审问身为救世主的我，这将是他们最大的失误！	たぶん「ネゲントロピー」の取り調べを受けているんだと思う。まったく、救世主である我を真っ先に調べないとは……奴らの目も節穴だな！	NONE
-speaker	Kiana
-portraits	101
 emote	101	3
-msg	252062	What did you say?! Mei-senpai... What should I do?	什么！？你说芽衣学姐被带去审问了！？	何ですって！？芽衣先輩……どうしよう。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+/Kiana	252062	What did you say?! Mei-senpai... What should I do?	什么！？你说芽衣学姐被带去审问了！？	何ですって！？芽衣先輩……どうしよう。	NONE
+
+speaker	Kyuushou
 emote	121	1
 msg	252063	Don't panic, don't panic. Senpai is a chosen human just like us, a rare being who can fix the world's mistakes. The law of causality won't leave her alone.	放心~芽衣学姐可是和我们一样的被选中之人，都是能够改变世界的奇点，命运肯定不会就这样让她沉寂的！	慌てない、慌てない。先輩は我々と同じように選ばれた人間で、世界の過ちを修正できる稀有な存在。そんな先輩のこと、因果律がきっと放っておかないから。	NONE
-speaker	Kiana
-portraits	101
+
 emote	101	0
-msg	252064	You can't say that because you don't know what kind of organization Anti-Entropy is! Anti-Entropy is NOT a gentle organization. They are ruthless people who only prioritize profits!	你估计是不知道逆熵究竟是一个怎么样的组织才会这样说的吧！逆熵可不是什么慈善组织，对他们来说有意义的只有利益而已。	あんたはネゲントロピーがどんな組織か知らないから、そんなこと言えるのよ！ネゲントロピーはそんな生優しい組織じゃないんだから。利益だけを優先する非道なヤツラなのよ！	NONE
+/Kiana	252064	You can't say that because you don't know what kind of organization Anti-Entropy is! Anti-Entropy is NOT a gentle organization. They are ruthless people who only prioritize profits!	你估计是不知道逆熵究竟是一个怎么样的组织才会这样说的吧！逆熵可不是什么慈善组织，对他们来说有意义的只有利益而已。	あんたはネゲントロピーがどんな組織か知らないから、そんなこと言えるのよ！ネゲントロピーはそんな生優しい組織じゃないんだから。利益だけを優先する非道なヤツラなのよ！	NONE
 msg	252065	There's no way to predict the timing of Honkai outbreaks. They must've been preparing to capture Mei-senpai for a long time! There must be something big going on behind the scenes here...!	这一次崩坏出现的时机这么突然，但她们却像是早有准备一样直接前来回收芽衣学姐……这其中一定还有着一个巨大的阴谋！	崩壊が発生するタイミングなんて計れるものじゃない。あいつらずっと前から芽衣先輩を回収する準備をしてたんだわ！これには何か大きな裏があるはず……！	NONE
 emote	101	3
 msg	252066	Yes, there IS a secret! I should have realized it sooner! Ah, this time I not only failed the mission, but I've also been captured by the enemy. I might be kicked out of the Valkyries' team when I get back...	可恶！我应该早点想到的！这下好了，任务也没完成，还被敌军俘虏，怕不是回去之后就要被女武神小队除名了……	そう、何か秘密があるんだわ！もっと早く気付くべきだった！あ～、今回は任務失敗した上に敵の捕虜にもなっちゃうし。帰ったら戦乙女のチームから外されちゃうかも……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
 emote	121	3
 msg	252067	It'll be okay even if you're no longer a Valkyrie. I'll let you be the right hand man of the Savior, Kyuushou-sama! Hehehe, you must be grateful, this shows Kyuushou-sama's trust in her comrades...	就算琪亚娜不当女武神也没关系，本救世主的右护法之位永远为你而留~感谢我吧！这是九霄大人对同伴的信任和……	キアナが戦乙女じゃなくなっても大丈夫。この救世主たる九霄様の右腕として置いてあげる！ふひひ感謝して、これは九霄様の仲間に対する信頼と……。	NONE
-speaker	Kiana
-portraits	101
+
 emote	101	3
-msg	252068	What are you talking so high and mighty about?! If you want to comfort me, you should say something different! Ah, I'm pissed! I'm going to rip out that stupid two-toned wig of yours!	看我不把你这根挑染的假毛扯下来！早就看它不爽了！！	何、偉そうに言ってるのよ。慰めるなら、もっと別の言葉掛けなさいよね！あー、むしゃくしゃしてきた！その中途半端に染めたカツラ、全部引っこ抜いてやる！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+/Kiana	252068	What are you talking so high and mighty about?! If you want to comfort me, you should say something different! Ah, I'm pissed! I'm going to rip out that stupid two-toned wig of yours!	看我不把你这根挑染的假毛扯下来！早就看它不爽了！！	何、偉そうに言ってるのよ。慰めるなら、もっと別の言葉掛けなさいよね！あー、むしゃくしゃしてきた！その中途半端に染めたカツラ、全部引っこ抜いてやる！	NONE
+
+speaker	Kyuushou
 emote	121	4
 msg	252069	Ow ow ow!! Kiana, that's my real hair! It's real!!!	疼疼疼！！琪亚娜那是真头发！是真的啦！！！	イタタタ！！キアナ、それ地毛だって！本物だってば！！！	NONE
-speaker	Kiana
-portraits	101
+
 emote	101	0
-msg	252070	Ah, never mind... There's no point getting angry at you. We're comrades, so let's work together. You woke up before me, so you must have done some research, right?	算了…对你撒气也没用。你说的对，我们现在是同伴，应该互相合作。既然比我先醒来，有调查过这个地方么？	はぁもういいわ……あなたに怒っても仕方ないものね。仲間なんだし協力し合いましょ。私より先に目覚めたんだから、何かしら調べてはあるんでしょ？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+/Kiana	252070	Ah, never mind... There's no point getting angry at you. We're comrades, so let's work together. You woke up before me, so you must have done some research, right?	算了…对你撒气也没用。你说的对，我们现在是同伴，应该互相合作。既然比我先醒来，有调查过这个地方么？	はぁもういいわ……あなたに怒っても仕方ないものね。仲間なんだし協力し合いましょ。私より先に目覚めたんだから、何かしら調べてはあるんでしょ？	NONE
+
+speaker	Kyuushou
 emote	121	1
 msg	252071	I've had a look around, but... it looks like there are no treasure chests here!	我已经看过一遍了，这里没有宝箱你放心吧~	一通り見てみたけど……ここに宝箱はないみたいね！	NONE
-speaker	Kiana
-portraits	101
+
 emote	101	0
-msg	252072	...I was wrong to expect anything from a moron like you. I'll look into it myself.	哎…果然不能指望你这个蠢蛋，还我自己调查好了。	……あなたみたいなバカに期待した私が間違いだったわ。自分で調べる。	NONE
+/Kiana	252072	...I was wrong to expect anything from a moron like you. I'll look into it myself.	哎…果然不能指望你这个蠢蛋，还我自己调查好了。	……あなたみたいなバカに期待した私が間違いだったわ。自分で調べる。	NONE
 msg	252073	It looks like some kind of production line outside. Are we still inside the Anti-Entropy battleship? Hmm, this doesn't look like a very sturdy cell. Maybe if I kick it we can get out easily!	外面看上去像是车间的样子，难道我们还在逆熵的战舰上么？不过这个牢笼看起来不太牢固的样子，让我踹一脚试试看！	外は何かの生産ラインのようね。私たち、まだネゲントロピーの戦艦内にいるのかしら？う～ん見た感じ、あまり頑丈そうな牢屋じゃないわね。蹴っ飛ばせば、あっさり出られるかも！	NONE
+
 speaker	???
 emote	101	0
 msg	252074	No, there's an alarm here. Anti-Entropy would find out right away if you did that.	别动，这里有警报装置，不要惊动逆熵。	ダメだ、ここには警報装置がある。そんなことしたらネゲントロピーにすぐ気づかれるぞ。	NONE
+
 speaker	Kiana
 emote	101	2
 msg	252075	Huh? Dad?! Why is my dad's voice coming from the speaker in the room?	老爹？！但是老爹的声音怎么会从这个房间的通讯器传出来？	えっ？パパ！？何でパパの声が部屋のスピーカーから聞こえてくるの？	NONE
+
 speaker	???
 emote	101	2
 msg	252076	Be quiet. The guards outside will notice you. I hacked into the ME Corp security system. It's easy to tamper with the speakers.	小声点，别把外面的守卫引过来了。我黑入了ME社的安全系统，所以才能和你们对话。	静かに。外の守衛に気づかれるだろう。ME社のセキュリティシステムをハッキングしたんだ。スピーカーに細工するのも簡単さ。	NONE
+
 speaker	Kiana
 emote	101	2
 msg	252077	Is this ME Corp? Is ME Corp's security system really that vulnerable?	这里是ME社？难道ME社的安全系统这么差么？	ここME社なの？ME社のセキュリティシステムってそんなに脆弱なの？	NONE
+
 speaker	???
 emote	101	2
 msg	252078	No, the security system here just suddenly went down, so I took advantage of that gap.	不，只不过刚才这里的安全系统突然下降了一个等级，所以才被我钻了空子。	いや、今しがたここのセキュリティシステムのレベルが突然下がったんだ。その隙を突いただけだ。	NONE
 msg	252079	I'll make this quick. I'll open the cell door first. I'll disrupt the power system right after, so you can use that opportunity to escape. Then, just head outside and the Schicksal forces should come to pick you up. Don't fail this time!	长话短说。我会先打开牢门，之后会扰乱这间会社的电力系统，让你们有机会逃脱。你们只要逃向外面就行了，会有天命部队接应你们，这一次可别再耽搁了！	手短に話そう。俺がまず牢屋の扉を開ける。直後に電力システムをかく乱させるから、お前たちはその隙に脱出しろ。あとは外に向かって逃げればいい。天命部隊が迎えに来てくれるはずだ。今回は失敗するなよ！	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252080	But what about Mei-senpai? She's the Third Herrscher!	但是芽衣学姐怎么办？那可是第三律者啊！	でも、芽衣先輩はどうするの？第三律者なんだよ！	NONE
+
 speaker	???
 emote	101	0
 msg	252081	You stay out of the way! Schicksal is going to retrieve her!	这个你不用管！会有天命部队来回收她的！	お前は関わるな！天命部隊が彼女を回収に行く！	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252082	But!	可是！	でも！	NONE
+
 speaker	???
 emote	101	0
 msg	252083	Don't disobey orders! Hurry!	不准抗命！赶紧行动！	命令に逆らうな！急ぐんだ！	NONE
-msg	252084	Click!	喀嚓！	ガチャ！	NONE
+/	252084	Click!	喀嚓！	ガチャ！	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252085	Damn! Kyuushou, let's go...!	啧！九霄我们走！	くっ！九霄、行こう……！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
+nop	121
 emote	121	4
 msg	252086	Ow ow ow! H-hey! Don't pull me by my hair!!	喂！别拉我的头发啦！！	イタタタ！ちょ、ちょっと！髪の毛、引っ張らないで！！	NONE
-msg	252087	Alert! Alert! Power systems are under attack by unknown forces——	警报！警报！电力系统遭到不明来源攻击……滋啦滋啦……	警報！警報！電力システムが正体不明の攻撃を受けています——	NONE
+/	252087	Alert! Alert! Power systems are under attack by unknown forces——	警报！警报！电力系统遭到不明来源攻击……滋啦滋啦……	警報！警報！電力システムが正体不明の攻撃を受けています——	NONE

@@ -121,8 +121,15 @@ void fragment(){
 	
 	if (blur_type == 0) 
 	{
-		vec4 xorgaussian = texture_xorgaussian(SCREEN_TEXTURE, uv, SCREEN_PIXEL_SIZE, float(blur_amount), 16, 4);
-		COLOR =  xorgaussian;
+		if (texture(TEXTURE, UV).a > 0.0)
+		{
+			vec4 xorgaussian = texture_xorgaussian(SCREEN_TEXTURE, uv, SCREEN_PIXEL_SIZE, float(blur_amount), 16, 4);
+			COLOR =  xorgaussian;
+		}
+		else
+		{
+			COLOR = texture(TEXTURE, UV);
+		}
 	} 
 	else if (blur_type == 1) 
 	{
@@ -148,6 +155,6 @@ void fragment(){
 [resource]
 shader = SubResource( 1 )
 shader_param/blur_type = 0
-shader_param/blur_amount = 0
+shader_param/blur_amount = 20
 shader_param/blur_radius = 1.0
 shader_param/blur_direction = Vector2( 1, 1 )

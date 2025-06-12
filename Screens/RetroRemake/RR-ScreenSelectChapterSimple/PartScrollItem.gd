@@ -30,5 +30,9 @@ func LoseFocus():
 
 func _on_gui_input(event):
 	if (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
-		#print("A")
+		#print("Clicked "+text)
 		emit_signal("clicked")
+
+
+func _on_TextureRect2_mouse_entered():
+	emit_signal("mouse_entered")

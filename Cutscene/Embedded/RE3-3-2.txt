@@ -1,12 +1,16 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Dr. Yiserin
-portraits	19
+match_names	Dr. Yiserin	Cocolia
+music	Open Source/Synth_1
+bg	lab_interior
+
+portraits	19	621,true
 emote	19	0
+speaker	Dr. Yiserin
 msg	252127	Phew... That completes the basic investigation. Show me the data results.	呼……这下基本的检查就已经结束了，让我看看数据结果。	ふぅ……これで基本的な調査は終了ね。データ結果を見せてちょうだい。	NONE
 msg	252128	All normal... It seems my guess was correct. Let's wake her up and ask her some more questions.	一切正常么…看来我的推断没有错，接下来只需要唤醒这个女孩亲自向她询问就好了。	全て正常……どうやら私の推測は正しかったようね。続きはこの子を起こして、色々と聞きましょう。	NONE
 msg	252129	Cacalia, wake up the Herrscher. I have some questions.	可可利亚，把这个律者唤醒吧，我有些事情要问她……	カカリア、この律者を起こしてちょうだい。いくつか聞きたいことがあるの。	NONE
 speaker	Cocolia
-portraits	621
+nop	621
 emote	621	0
 msg	252130	No, she's a Herrscher. We can't wake her up.	不行，她是律者，我们必须保持警惕。	ダメよ、彼女は律者なのよ。起こすことはできない。	NONE
 emote	621	0
@@ -15,20 +19,20 @@ speaker	Cocolia
 emote	621	0
 msg	252132	B416 Factory? Isn't that the factory where that Valkyrie of "Schicksal" and "Subject X" are being held captive? I wonder how they got through...	B416车间？那不是关押那个“天命”的女武神和“对象X”的车间么？她们是怎么突破的……	B416工場？あの「天命」の戦乙女と「対象X」を監禁している工場じゃない。どうやって突破したのかしら……。	NONE
 speaker	Dr. Yiserin
-portraits	19
+nop	19
 emote	19	0
 msg	252133	It's okay. I'll check the surveillance system. Huh... the surveillance system is down? No way!	没关系，让我用监控系统看一下吧。呃…监控什么时候被关闭了？难道说！	大丈夫。監視システムで見てみる。あれ……監視システムが落とされてる？まさか！	NONE
 msg	252134	I've been fooled! I was just trying to lower the security level and prepare the conditions for the laboratory, but... it seems someone took advantage of that opportunity.	这可真是失策，本来只是想降低安全等级来布置实验室的…看来是在等级下降的时候被人钻了空子了。	やられたわ！セキュリティレベルを下げて実験室の条件を整えようとしただけなのに……その隙を誰かに突かれたみたい。	NONE
 speaker	Cocolia
-portraits	621
+nop	621
 emote	621	0
 msg	252135	Even you made such a silly mistake... I will report this mistake to the "Commander".	这么低级的错误你也会犯……看来我有必要向“司令”报告一下你的不称职行为了。	あなたでも、そんなくだらないミスを犯すのね……今回のミスは「司令」に報告しておくわ。	NONE
 speaker	Dr. Yiserin
-portraits	19
+nop	19
 emote	19	0
 msg	252136	Damn... When you're immersed in research and immersed in the sea of ​​knowledge, you tend to neglect everything else. I'm sure the Commander will understand, but... Cocolia, we need to catch the ones who got away first!	我错了…沉浸在知识的海洋中总会忘记现有的常识，希望你能理解…不过似乎你现在的任务并不是纠正我的错误而是去抓捕那些逃脱的人才对吧。	くっ……研究に没頭して知識の海に浸ってると、他が疎かになってしまうのよね。司令も分かってくれるとは思うけど……。カカリア、それよりも逃げた人を捕まえないと！	NONE
 speaker	Cocolia
-portraits	621
+nop	621
 emote	621	0
 msg	252137	Hmph, I know that without you telling me! All platoons, listen up. Close off all elevators and stairwells. Second Platoon, I'm going with you to the factory on the fourth basement floor to check out the situation!	哼，不用你说我也知道！所有小队，听我命令，封锁所有的升降口和楼梯口，第二小队，跟我去地下四层工厂去看看状况！	フンッ、言われなくたって分かっているわ！全小隊、聞きなさい。全てのエレベーターホールと階段ホールを閉鎖、第2小隊、私と地下4階の工場に状況を見に行くわよ！	NONE
 emote	621	0

@@ -34,6 +34,8 @@ text = "English Translation:
 Amaryllis & Anonymous"
 
 [node name="Thanks" parent="Pages/Page1" index="2"]
-visible = false
 margin_top = -120.0
 margin_bottom = 333.0
+text = "Script Editing:
+Amaryllis
+Trashfairy"

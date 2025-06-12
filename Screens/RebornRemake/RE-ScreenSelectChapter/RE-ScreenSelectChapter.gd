@@ -219,7 +219,7 @@ func _ready():
 	
 	#if OS.is_debug_build():
 	if Globals.chapterDatabase_RE.empty():
-		Globals.chapterDatabase_RE=Globals.load_database("Screens/RebornRemake/RE-ScreenSelectChapter/re_db.tsv")
+		Globals.chapterDatabase_RE=Globals.load_database("Screens/RebornRemake/re_db.tsv")
 	elif Globals.currentEpisodeData:
 		print("[RE-ScreenSelectChapter] Player had previously read an episode")
 		print(Globals.currentEpisodeData._to_string())
@@ -279,18 +279,18 @@ func _ready():
 				obj.connect("gui_input",self,"handle_RE_stage_click",[obj, obj.name])
 		tmp_PageIdx+=1
 	
-	var debugRoom = get_node("ActorFrame_PartSelect/0>Debug Room")
-	tmp_PageIdx=0
-	for ep in Globals.chapterDatabase_RE['Debug Room']:
-		var sso_inst = sso.instance()
-		sso_inst.name = ep.parts[0]
-		sso_inst.label = ep.title
-		sso_inst.mouse_default_cursor_shape = CURSOR_POINTING_HAND
-		sso_inst.connect("gui_input",self,"handle_RE_stage_click",[sso_inst, sso_inst.name])
-
-		debugRoom.add_child(sso_inst)
-		sso_inst.rect_position = Vector2(100,100)+Vector2(100*tmp_PageIdx,0)
-		tmp_PageIdx+=1
+#	var debugRoom = get_node("ActorFrame_PartSelect/0>Debug Room")
+#	tmp_PageIdx=0
+#	for ep in Globals.chapterDatabase_RE['Debug Room']:
+#		var sso_inst = sso.instance()
+#		sso_inst.name = ep.parts[0]
+#		sso_inst.label = ep.title
+#		sso_inst.mouse_default_cursor_shape = CURSOR_POINTING_HAND
+#		sso_inst.connect("gui_input",self,"handle_RE_stage_click",[sso_inst, sso_inst.name])
+#
+#		debugRoom.add_child(sso_inst)
+#		sso_inst.rect_position = Vector2(100,100)+Vector2(100*tmp_PageIdx,0)
+#		tmp_PageIdx+=1
 var time_between_mousewheel = 0
 func _input(event):
 	if event is InputEventMouseMotion or event is InputEventMouseButton:

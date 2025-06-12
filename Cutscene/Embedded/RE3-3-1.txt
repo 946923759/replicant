@@ -1,65 +1,85 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Kiana
-portraits	101
+music	re/2-19 - Parallel Worlds - Aggressive Mix -
+bg	lab_interior
+portraits	101	121
 emote	101	0
-msg	252106	Phew, that was close. Let's not investigate this place any further. Whenever I listen to Kyuushou, I always end up in danger...	呼——还算是有惊无险，九霄你看，你要是一开始就听我的话，不给我拖后腿我们说不定就不会被抓了。	ふぅ、危なかったわ。もうこれ以上、ここを調べるのはやめましょ。九霄の言うことを聞くと、いっつも危ない目に遭うわね……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+/Kiana	252106	Phew, that was close. Let's not investigate this place any further. Whenever I listen to Kyuushou, I always end up in danger...	呼——还算是有惊无险，九霄你看，你要是一开始就听我的话，不给我拖后腿我们说不定就不会被抓了。	ふぅ、危なかったわ。もうこれ以上、ここを調べるのはやめましょ。九霄の言うことを聞くと、いっつも危ない目に遭うわね……。	NONE
+
+speaker	Kyuushou
+nop	121
 emote	121	3
 msg	252107	Hahaha, that may be true, but... It is also the duty of a savior to help friends out of difficult situations. Kiana, you don't want to be fired as a Valkyrie, do you?	哈呼—哈呼——那…那可是当然，但是琪亚娜你要知道，救世主可不是只顾着自己的自私者，更不会是无视团队的鲁莽者。	ハァハァ、それはそうかもだけど……。救世主は仲間の窮地を手助けするのも役目。キアナ、戦乙女をクビになるの嫌なんでしょ？	NONE
+
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252108	Kyuushou, you... No, it's mostly your selfish behavior that's to blame.	你说的很对，但是团队合作这一点和你真是没有半毛钱关系！	九霄、あんた……。いや、でも大体あんたの身勝手な行動のせいなんだけど。	NONE
+
 speaker	???
 emote	101	0
 msg	252109	Kiana, what are you waiting for? Why are you still in the security hall? I told you to hurry up and get out.	琪亚娜，你在磨蹭什么，为什么会在这个守备厅停下脚步，不是让你尽最快的速度逃离吗？	キアナ、何をグズグズしている？どうして警備ホールに留まっているんだ？急いで逃げろと言っただろう？	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252110	Dad, remember what you once told me? Kaslanas put themselves in danger to protect the weak. That's what you said.	老爹，记得之前你有对我说过，卡斯兰娜家族的人从来不会对置身于危险之中的弱者不顾吗？	パパ、以前私に言ったこと覚えている？カスラナ一族は危険に身を置いてでも弱者を守る。こう言ってたよね。	NONE
+
 speaker	???
 emote	101	0
 msg	252111	Ah, I did say that before. But the situation is different! We're in the enemy's main territory.	对，我是有说过，但是现在的情况不一样！这里可是敌人的大本营，你难道要至于自身的安危而不顾吗！	ああ、話したことがあるな。だが、今は状況が違う！ここは敵の本陣だぞ。	NONE
+
 speaker	Kiana
 emote	101	3
 msg	252112	I don't care! I'm going to save Mei-senpai! This is what I think is the reason for a Valkyrie's existence! I will never give up hope. I will always stick to my beliefs!	我不管！我就是要救芽衣！女武神的意义也就是如此吧！绝对不会放弃希望，一定会将守护的信条执行到底！	構わない！私は芽衣先輩を助ける！これが私の思う、戦乙女の存在意義なんだから！絶対に希望を諦めない。私は、私の信念を必ず貫き通すわ！	NONE
+
 speaker	???
 emote	101	3
 msg	252113	Sigh... Okay, I get it. You must get your stubbornness from your mother.	……好了好了，我知道了。你这个犟脾气和你妈一样。	はぁ……よし、分かった。まったく、お前の頑固さは母親ゆずりだな。	NONE
 msg	252114	Hm? This is...	咦？这是……	ん？これは……。	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252115	What's up, Dad, did you find something?	怎么了老爹，发现了什么吗？	どうしたのパパ、何か見つけたの？	NONE
+
 speaker	???
 emote	101	0
 msg	252116	There's a place nearby where multiple layers of mechas are deployed, and we managed to get hold of footage from inside... Kiana, we've found Raiden Mei.	在你们附近有一个被机甲重重包围了的车间，我正在获取里面的影像信息……琪亚娜，你说的雷电芽衣我已经找到了。	近くに機甲が何重にも配備された箇所があるんだが、その中の映像が手に入ったんだ……。キアナ、雷電芽衣が見つかったぞ。	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252117	Huh? Dad! Is Mei-senpai okay?	芽衣学姐怎么样了？	えっ？パパ！芽衣先輩は大丈夫！？	NONE
+
 speaker	???
 emote	101	0
 msg	252118	There doesn't seem to be any visible trauma or symptoms. She's just unconscious.	那个女孩并没有明显的外伤或是痛苦的症状，只是陷入了昏迷。	目立った外傷やこれといった症状はなさそうだな。ただ気絶している。	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252119	Then let's hurry up and save her!	那我们赶紧去救她！	急いで助けに行かなきゃ！	NONE
+
 speaker	???
 emote	101	0
 msg	252120	Wait! There are two others besides Raiden Mei. Cocolia and the researcher here. To begin with, you guys don't even have any equipment, so you won't even be able to defeat the mechas stationed outside!	等下！除了芽衣还有两个人，可可利亚和一个研究员。可可利亚先不谈，对于没有任何装备的你们来说，就连外面那些守卫的包围圈你们都难以通过。	待て！雷電芽衣以外にも2人いる。カカリアとここの研究員だな。そもそも装備のないお前たちでは、外にいる機甲すら突破できないぞ！	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252121	I have this  machine gun I stole from a guard earlier! I'm not unarmed so I'll be fine!	明明我们还有刚才从守卫那里抢夺过来的枪械呢！才不是手无寸铁。	さっき守衛から奪った機関銃があるわ！丸腰じゃないんだから大丈夫！	NONE
+
 speaker	???
 emote	101	0
 msg	252122	But even if you get in, you guys won't be able to defeat the ex-soldier Cocolia. We have to eliminate her somehow... Okay.	但是就算你们能干掉那些守卫，你们也是无法战胜可可利亚这个前军人的。所以得像个办法将那个人调开……	だが、中に入れたとしてもお前たちじゃ元軍人のカカリアには勝てない。どうにかして、あいつらを排除しないと……よし。	NONE
 msg	252123	Kiana, listen to me. I'll tweak the alarm system in a little while to lure the guards there and Cocolia out. Head to the lab before they realize the security system has been hacked. Got it?	琪亚娜，听好了，等会我会伪装成系统警报将那里的守卫疏散，并尽量将可可利亚引到别处去。但是这样她们已经就会发现自己的安全系统被入侵了，所以你们一定要争取时间，以最快的速度冲向那个实验室，明白了吗？	キアナ、聞いてくれ。しばらくしたら警報システムをいじって、そこの守衛とカカリアを移動させる。セキュリティシステムがハックされたと気づかれる前にあの実験室に向かえ。いいな？	NONE
+
 speaker	Kiana
 emote	101	0
 msg	252124	I'm fine... but I'm a bit worried.	我当然没问题，我只是在担心我这个不靠谱的队友而已。	私は大丈夫よ。……ただ、こっちは心配だけど。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
+nop	121
 emote	121	3
 msg	252125	There's nothing to worry about, Kiana. I've created a psychic link between both of us! Now we can receive each other's thoughts. This is truly perfect harmony!	别怕，琪亚娜，在你不知道的时候我已经和你缔结了心灵链接，从现在开始你的信念会传递到我这边，这样我们的行动就会充满默契了！	別に心配することないぞ、キアナ。キアナとの間に心のリンクを結んだからな！これでお互いの思念を受け取れる。まさにこれこそ阿吽の呼吸！	NONE
+
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252126	Sigh, another burst of chuunibyou... Just shut up now.	Shut Up！	はぁ、また中二病を爆発させて……。あんたはもう黙ってなさい。	NONE

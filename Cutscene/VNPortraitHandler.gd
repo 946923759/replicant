@@ -274,7 +274,11 @@ func apply_sm_tween(tweenString) -> float:
 	var tw = get_tree().create_tween()
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO
 
-func gestalt_set_textures(sprName):
+func gestalt_set_textures(sprName:String):
+	if sprName.strip_edges().empty():
+		printerr("DO NOT PUT AN EMPTY SPACE IN PORTRAIT COMMANDS!!!!!!!!!!!")
+		return false
+		
 	var matching = Globals.get_matching_files("res://Portraits/",sprName)
 	if not matching:
 		printerr("[PORTRAITMAN] No texture exists named "+sprName)

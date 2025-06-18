@@ -1,40 +1,53 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Kiana
-portraits	101
-emote	101	0
-msg	252257	Damn, it might be too late... Why hasn't the rescue that Dad spoke of come yet? Don't tell me Himeko's lost in the sky!	终于要撑不住了么…老爹说的救援怎么还没有到啊！该不是姬子那家伙把飞船开迷路了吧！	くっ、もうダメかも……パパの言ってた救援はどうして来ないのよ！まさか姫子のやつ、空の上で迷子になってるんじゃないでしょうね！	NONE
+preload_portraits	101	19	621	304	boss/808bw
+bg	helipad
+music	Open Source/descentmix
+
+match_names	Mei	Kyuushou	Kiana
+portraits	201	121	101
+emote	101	4
+/Kiana	252257	Damn, it might be too late... Why hasn't the rescue that Dad spoke of come yet? Don't tell me Himeko's lost in the sky!	终于要撑不住了么…老爹说的救援怎么还没有到啊！该不是姬子那家伙把飞船开迷路了吧！	くっ、もうダメかも……パパの言ってた救援はどうして来ないのよ！まさか姫子のやつ、空の上で迷子になってるんじゃないでしょうね！	NONE
+emote	101	6
 msg	252258	Dad, it looks like your daughter's really in trouble this time...	老爹啊老爹，这一次你女儿可真的栽了哦……	パパ、今回ばかりはダメみたい……。	NONE
-msg	252259	Bang! Rumble!	咚！轰隆隆隆！	ドン！ゴオォォン！	NONE
-speaker	Dr. Yiserin
-portraits	19
+
+portraits
+se	DLC_CH01_EV17_ExplosionTwoShots
+/	252259	Bang! Rumble!	咚！轰隆隆隆！	ドン！ゴオォォン！	NONE
+
+match_names	"Doctor"	Cocolia
+portraits	19	621
+speaker	"Doctor"
 emote	19	0
 msg	252260	Wh... what's that sound?	什…什么声音？	な……何の音？	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252261	Huh?! The defense line has been breached?! But Schicksal only sent that old battleship. There's no other way... Doctor! Prepare to unlock that lock. Today, I will finally settle things with Schicksal here!	啧！还是让她们攻破了防线么…不过天命居然只派了那艘老掉牙的战舰过来，是瞧不起我们么！博士，准备将那个秘密武器的锁定程序解除吧，今天我们就在这里和天命做个了断！	なっ！防衛ラインが破られた！？でも、天命はあのオンボロ戦艦しか派遣して来てないはず。仕方ない……博士！例のロックを解除する準備を。今日こそ、ここで天命と決着をつけるわ！	NONE
-speaker	Dr. Yiserin
-portraits	19
+speaker	"Doctor"
 emote	19	0
 msg	252262	No! That giant thing hasn't been officially adopted yet. If we were to use it hastily, we'd be dead along with it! Think carefully!	别啊！那个大块头还没有正式投入使用，贸然投放的话我们会和它一起爆炸的！你好好想想！	ダメだよ！あのデカブツ、まだ正式には採用されてないんだから。軽々しく投入しようものなら、私たちもアレと一緒にオダブツだよ！よく考えて！	NONE
 msg	252263	Besides, I've already gotten enough experimental data this time! Plus, I got some interesting stuff...	而且这一次我获得的实验数据已经足够多了，更何况我还得到了一个很有趣的东西呢……	それに今回私が得た実験データはもう十分！しかも、面白い物も手に入ったしね……。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252264	Are you talking about that USB memory stick you picked up earlier? It's... nice you're so interested. Fine then, we can beat Schicksal without using that robot.	你是说你刚才捡到的U盘么，居然能让你产生兴趣…算了，不用那个机器我们也能战胜天命。	あなたが言っているのって、さっき拾ったUSBメモリのこと？そんなに興味を持つなんて……いいわ。あのロボットを使わなくたって天命には勝てるわ。	NONE
+
+match_names	"Doctor"	Cocolia	Bronya
+portraits	19,false,-2	621,false,-2	304,true,2
+se	DLC_CH01_EV12_RadioReceive
 speaker	Bronya
-portraits	304
 emote	304	0
 msg	252265	Matsuhka, please respond if you can hear me. We are under attack by a Schicksal Valkyrie on the front lines. Shigure Kira, an S-rank Valkyrie, as mentioned in the information.	妈妈，听到请回复。前线遭遇天命女武神进攻，是情报中的S级女武神时雨绮罗。	お母様、聞こえたら応答してください。前線では天命の戦乙女から攻撃を受けています。情報にあったS級戦乙女の時雨綺羅です。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252266	An S-rank Valkyrie... This is bad! Sending such a monster out!	S级女武神…啧！居然连这种怪物都派过来了么！	S級戦乙女……マズい！そんな怪物を派遣して来るなんて！	NONE
 emote	621	0
-msg	252267	Beep beep!	滴滴滴！	ピピピ！	NONE
+se	beep beep
+/	252267	Beep beep!	滴滴滴！	ピピピ！	NONE
 speaker	Cocolia
 emote	621	0
 msg	252268	Damn, what kind of communication is it at a time like this?!	唔！这个通讯是！？	くっ、こんな時に何の通信だ！？	NONE
+
+match_names	"Doctor"	Cocolia	???
+portraits	19,false,-2	621,false,-2	boss/808bw,true,2
 speaker	???
 msg	252269	Cocolia, retreat now. Your plan has failed. Don't bring any more shame on me.	可可利亚，立刻撤退。你的计划失败了，不要再给我丢脸了。	カカリア、今すぐ撤退だ。お前の計画は失敗だ。これ以上、私の顔に泥を塗ってくれるな。	NONE
 speaker	Cocolia
@@ -45,79 +58,83 @@ msg	252271	A follow-up force from Schicksal is on the way. Do you want to die wi
 speaker	Cocolia
 emote	621	0
 msg	252272	Damn it!	可恶！	チキショウ！	NONE
-speaker	Dr. Yiserin
-portraits	19
+
+match_names	"Doctor"	Cocolia
+portraits	19	621
+speaker	"Doctor"
 emote	19	0
 msg	252273	Hey hey... Cocolia, the Commander said so, so we should retreat!	喂喂…可可利亚，老大都这么说了，我们还是撤退吧！	ねえねえ……カカリア、司令もこう言っているんだし、私たち、やっぱり撤退しましょう！	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252274	Okay... I'll retrieve Bronya! Moonlight Throne, activate! Retreat!	啧！给我等着！布洛妮娅！启动月光王座！我们撤退！	わかったわ……ブローニャを回収する！月光王座、始動！撤退よ！	NONE
-speaker	Houraiji Kyuushou
-portraits	121	621
+
+match_names	Mei	Kyuushou	Kiana
+portraits	201	121	101
+speaker	Kyuushou
 emote	121	4
 emote	621	0
 msg	252275	Ah! Wait! Give me back my magic guides! Give me back my holy relics!	啊！等等！我的魔导器！将我的圣物还给我！	あ！待って！私の魔導器！私の聖遺物を返して！	NONE
 speaker	Kiana
-portraits	101	621
 emote	101	0
-emote	621	0
-msg	252276	All this fuss over a single USB memory stick! You really are a clueless girl—— Mei-senpai! Watch out!!!	搞半天你惦记着的只是一个U盘么！真是搞不懂……咳咳……	これだけ騒いでUSBメモリ1つを気にしているなんて！本当分からない子ね——芽衣先輩！危ない！！	NONE
+emote	121	0
+msg	252276	All this fuss over a single USB memory stick! You really are a clueless girl——	搞半天你惦记着的只是一个U盘么！真是搞不懂……咳咳……	これだけ騒いでUSBメモリ1つを気にしているなんて！本当分からない子ね——	NONE
+
+portraits	201	101	121
+se	DLC_CH01_EV19_ExplosionOneShot
+msg	252276	Mei-senpai! Watch out!!!	芽衣先輩！危ない！！	NONE
+
+match_names	Mei	Kiana	Kyuushou
 speaker	Mei
-portraits	201	621
-emote	201	2
-emote	621	0
+emote	201	0
 msg	252277	Kiana-chan!! Are you okay? ...I'm always the one being helped... I'm sorry.	琪亚娜！你没事吧！对不起，都怪我，不但没帮上你的忙，反而成了你的负担！	キアナちゃん！！大丈夫！？……私、助けて貰ってばっかりね……ごめんなさい。	NONE
-speaker	Kiana
-portraits	101	621
-emote	101	0
-emote	621	0
-msg	252278	No, it's okay. But anyway, Mei-senpai. There's something I need to tell you... What she said is probably true. Your father is in this building. The place she was talking about is...	没关系的啦，而且我也有事要对芽衣说，那个人可能说的是真的，你的父亲还在这栋大楼里，就在她所说的地方……	ううん、大丈夫。それよりね、芽衣先輩。言わないといけないことがあって……。あの人が言っていたこと、多分本当なの。あなたのお父さんはこのビルの中にいる。彼女の言っていた場所は……。	NONE
-speaker	Mei
-portraits	201	621
+
 emote	201	0
-emote	621	0
+emote	101	0
+/Kiana	252278	No, it's okay. But anyway, Mei-senpai. There's something I need to tell you... What she said is probably true. Your father is in this building. The place she was talking about is...	没关系的啦，而且我也有事要对芽衣说，那个人可能说的是真的，你的父亲还在这栋大楼里，就在她所说的地方……	ううん、大丈夫。それよりね、芽衣先輩。言わないといけないことがあって……。あの人が言っていたこと、多分本当なの。あなたのお父さんはこのビルの中にいる。彼女の言っていた場所は……。	NONE
+speaker	Mei
+emote	201	2
+emote	101	0
 msg	252279	Yeah... but it's okay. Thank you.	嗯！我知道！太好了……	うん……でも大丈夫。ありがとう。	NONE
-speaker	Kiana
-portraits	101	621
-emote	101	0
-emote	621	0
-msg	252280	I couldn't protect you this time, Mei-senpai. Next time I'll definitely protect you... okay...?	这一次没能保护好芽衣，如果有下一次的话我一定会保护好你……的……	今回は芽衣先輩を守れなかったわ。次こそは必ず守るから……ね……。	NONE
+
+emote	201	2
+emote	101	2
+nop	tween	during	101	decelerate,.3;addy,100
+/Kiana	252280	I couldn't protect you this time, Mei-senpai. Next time I'll definitely protect you... okay...?	这一次没能保护好芽衣，如果有下一次的话我一定会保护好你……的……	今回は芽衣先輩を守れなかったわ。次こそは必ず守るから……ね……。	NONE
 speaker	Mei
-portraits	201	621
-emote	201	0
-emote	621	0
+emote	201	2
+emote	101	2
 msg	252281	Kiana-chan! Kiana-chan!!	琪亚娜！琪亚娜你还不能休息啊！再坚持一下就好！	キアナちゃん！キアナちゃん！！	NONE
+
+match_names	Mei	Kiana	Kyuushou	Himeko
+portraits	201	101	121	401
 speaker	Himeko
-portraits	401	621
 emote	401	0
-emote	621	0
+emote	201	0
+emote	101	0
 msg	252282	Sorry I'm late! I was interrupted by an elite team of Anti-Entropy members.	抱歉来晚了！路上被逆熵的精英小队阻击了。	遅くなってごめんね！途中でネゲントロピーの精鋭チームに邪魔されちゃって。	NONE
 speaker	Kiana
-portraits	101	621
 emote	101	0
-emote	621	0
-msg	252283	...Haha, Himeko, you've finally come. Looks like I can finally get some rest. I can get some good sleep when I get back to school——	呼——原来是姬子队长么，看来终于可以休息了啊，回到学园我可一定要好好的睡上一……	……ははっ、姫子やっと来てくれた。どうやらようやく休めるみたいね。学園に戻ったらゆっくり寝て——	NONE
-portraits	621
-emote	621	0
-msg	252284	Bang!	咚！	バタン！	NONE
-speaker	Mei
-portraits	201	621
-emote	201	0
-emote	621	0
-msg	252285	Kiana-chan!	琪亚娜！	キアナちゃん！	NONE
-speaker	Himeko
-portraits	401	621
 emote	401	0
-emote	621	0
-msg	252286	Kiana?! ...She'll be fine. I guess the old and new wounds have taken a toll on her body, in addition to the excessive fatigue. She's just unconscious.	唔，她没事的，只是由于劳累过度，加上体内的新伤旧伤对身体的负担很大，所以进入了沉睡而已。	キアナ！？……これなら大丈夫。過度の疲労に加えて、新しい傷と古い傷が体に負担を掛けたんだろう。気を失ってるだけだ。	NONE
+msg	252283	...Haha, Himeko, you've finally come. Looks like I can finally get some rest. I can get some good sleep when I get back to school——	呼——原来是姬子队长么，看来终于可以休息了啊，回到学园我可一定要好好的睡上一……	……ははっ、姫子やっと来てくれた。どうやらようやく休めるみたいね。学園に戻ったらゆっくり寝て——	NONE
+
+
+match_names	Mei	Kyuushou	Himeko
+portraits	201	121	401
+se	DLC_CH01_EV22_BumpSave
+/	252284	Bang!	咚！	バタン！	NONE
+
+emote	201	0
+emote	101	6
+/Mei	252285	Kiana-chan!	琪亚娜！	キアナちゃん！	NONE
+emote	401	0
+emote	201	0
+/Himeko	252286	Kiana?! ...She'll be fine. I guess the old and new wounds have taken a toll on her body, in addition to the excessive fatigue. She's just unconscious.	唔，她没事的，只是由于劳累过度，加上体内的新伤旧伤对身体的负担很大，所以进入了沉睡而已。	キアナ！？……これなら大丈夫。過度の疲労に加えて、新しい傷と古い傷が体に負担を掛けたんだろう。気を失ってるだけだ。	NONE
+
 speaker	Mei
-portraits	201	621
-emote	201	2
-emote	621	0
+emote	201	3
+emote	401	0
 msg	252287	Who… are you?	你是……谁？	あなたは……誰？	NONE
 speaker	Himeko
-portraits	401	621
+emote	201	0
 emote	401	0
-emote	621	0
 msg	252288	Murata Himeko, an A-rank Valkyrie belonging to the Schicksal Far East Branch at St. Freya Academy. From today onwards, you will be protected by "Schicksal". Please board our battleship. I will take you to St. Freya Academy.	我是隶属于天命极东支部圣芙蕾雅学园A级女武神无量塔姬子，从现在起，你们的一切将由“天命”守护！请登上我们的战舰吧，我将带你们前往圣芙蕾雅学园。	私は、天命極東支部聖フレイヤ学園に所属するA級戦乙女の無量塔姫子よ。今日からあなたたちのことは「天命」が守るわ。私たちの戦艦に乗ってちょうだい。聖フレイヤ学園に連れて行ってあげる。	NONE

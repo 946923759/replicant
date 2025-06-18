@@ -138,12 +138,12 @@ msg	252026	Hehehe, I guess I'll just chop off their legs...	库库库~那就把�
 speaker	Seele
 msg	252027	Hmph, for once you say something good. Alright, let's do that——	哼，没想到你也能说出有用的意见呢，那就这么办吧~	フン、たまにはいいこと言うじゃない。じゃあ、そうしま——	NONE
 speaker	Bronya
-msg	252028	——Matushka mother needs them. Don't hurt them.	她们是妈妈需要的，不能伤害她们。	——お母様が彼女たちを必要としています。傷つけてはいけません。	NONE
+msg	252028	——Matushka needs them. Don't hurt them.	她们是妈妈需要的，不能伤害她们。	——お母様が彼女たちを必要としています。傷つけてはいけません。	NONE
 speaker	Sin
 msg	252029	Tch, boring.	切，真可惜~	ちぇ、つまんない。	NONE
 msg	252030	Well, I guess I'll wait until Matushka's done with them. Then I'll make them my toys...	那就等妈妈使用完了再跟她们玩好啦！	じゃあ、ママが使い終わってからでいいや。そしたら、おもちゃにしてやる……。	NONE
 bg	black
-msg	252031	Boom boom boom...	轰隆隆隆……	ゴゴゴゴゴ……。	NONE
+/	252031	Boom boom boom...	轰隆隆隆……	ゴゴゴゴゴ……。	NONE
 speaker	Kyuushou
 nop	121
 emote	121	0

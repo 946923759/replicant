@@ -1,9 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Ext/RebornRemake/RequiredBG/CG10008.jpg" type="Texture" id=1]
 [ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/RR-ScreenSelectChapterSimple.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Ext/RebornRemake/RequiredBG/CG10009.png" type="Texture" id=3]
 [ext_resource path="res://Ext/RebornRemake/RequiredBG/fb0a1281f816d7a1aa0b2ca8befc042542d039528cdaacb4f1e616040d019b6a.webp" type="Texture" id=4]
+[ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=5]
+[ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends TextureButton
+
+export(String) var screen_to_go = \"RE-ScreenProgrammerCredits\"
+
+func _ready():
+	self.connect(\"pressed\",Globals,\"change_screen\",[get_tree(), screen_to_go, get_parent().name])
+"
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0.0823529, 0.623529, 1 )
+use_filter = true
+extra_spacing_top = 8
+font_data = ExtResource( 7 )
 
 [node name="RE-ScreenSelectChapterSimple" instance=ExtResource( 2 )]
 HandleRightClickAsB = true
@@ -47,5 +67,30 @@ chapter_full_name = ""
 [node name="ChapterActor12" parent="ScrollContainer/MarginContainer/HBoxContainer" index="11"]
 chapter_full_name = ""
 
-[node name="CanvasLayer" parent="." index="5"]
+[node name="OKButton" type="TextureButton" parent="." index="3"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -91.5
+margin_top = -64.0
+margin_right = 91.5
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
+script = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="OKButton" index="0"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "Credits"
+align = 1
+
+[node name="CanvasLayer" parent="." index="6"]
 visible = false

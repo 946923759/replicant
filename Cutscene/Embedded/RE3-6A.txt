@@ -1,49 +1,51 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Mei
-portraits	201
+preload_portraits	201	101	121
+match_names	Mei	Kiana	Kyuushou
+music	Open Source/through space
+bg	lab_interior2
+
+portraits	201	101
 emote	201	2
-msg	252210	Hey, Kyuushou-chan has been looking a bit down for a while now, I wonder what's wrong?	话说从刚才开始九霄就一直没有什么活力了，这可不像平时的九霄啊……	ねぇ、さっきから九霄ちゃんの元気がないみたいだけど、どうしたのかしら？	NONE
+/Mei	252210	Hey, Kyuushou-chan has been looking a bit down for a while now, I wonder what's wrong?	话说从刚才开始九霄就一直没有什么活力了，这可不像平时的九霄啊……	ねぇ、さっきから九霄ちゃんの元気がないみたいだけど、どうしたのかしら？	NONE
 speaker	Kiana
-portraits	101
 emote	101	0
 msg	252211	It would be nice if she was always like this. I'd be impressed if she stayed like this.	我倒是挺喜欢她这样的，如果关键时候也能不给我添麻烦我就更喜欢她了。	いつもこうだったら助かるんだけどな。一応、顔は整ってるわけだし、このままなら好感は持てるのに。	NONE
 speaker	Mei
-portraits	201
-emote	201	2
+emote	201	3
 msg	252212	So, Kyuushou-chan, what happened? Can you tell me?	所以九霄是怎么了呢？能告诉我么？	それで九霄ちゃんどうしたの？私に話してくれない？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+portraits	201	101	121
 emote	121	1
-msg	252213	The magical device that holds the soul of the abyss and the memories of scorching heat has been lost...	承载着我深邃灵魂与灼热情感的魔导器遗失了……	深淵の魂と灼熱の記憶を織り交ぜた魔導器をなくしてしまった……。	NONE
+/Kyuushou	252213	The magical device that holds the soul of the abyss and the memories of scorching heat has been lost...	承载着我深邃灵魂与灼热情感的魔导器遗失了……	深淵の魂と灼熱の記憶を織り交ぜた魔導器をなくしてしまった……。	NONE
+
 speaker	Kiana
-portraits	101
 emote	101	0
 msg	252214	...Hah?	哈？	……はぁ？	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
 emote	121	1
 msg	252215	That was a vessel I had poured all my heart and soul into creating... an important tool for the resonation between the apocalypse and the present world...	那可是倾尽了我所有的心血凝聚出来的器皿，是启示录与现世达成共鸣的重要道具啊……	あれは、我の心血を全て注いで作り出した器……黙示録と現世が共鳴するための大事な道具だったのに……。	NONE
+
 speaker	Mei
-portraits	201
-emote	201	1
+emote	201	3
 msg	252216	Umm... Kyuushou-chan, could you please explain it to me in words I can understand...?	呃……九霄，你能用我们能听懂的话解释一下么……	えっと……九霄ちゃん、私にも分かる言葉で説明してもらえるかな……。	NONE
-speaker	Houraiji Kyuushou
-portraits	121
-emote	121	1
+
+speaker	Kyuushou
+emote	121	4
 msg	252217	*sobbing*...	呜……	しくしく……。	NONE
+
 speaker	Mei
-portraits	201
 emote	201	2
 msg	252218	Ah... I-I'm sorry. Don't cry.	呃…好啦好啦，你不要伤心了……	あ……ご、ごめんなさい。泣かないで。	NONE
+
 speaker	Kiana
-portraits	101
 emote	101	0
 msg	252219	I'm sure it's not that important. Even when we were trying to escape from Senba Academy, all she cared about was her dumb game!	估计又是什么无关紧要的东西吧，毕竟我带她逃出千羽学园的时候她还惦记着自己的游戏呢！	きっと、それほど大事な物じゃないわよ。千羽学園から逃げようとした時だって、自分のゲームを気にしてたくらいなんだし！	NONE
-speaker	Houraiji Kyuushou
-portraits	121
+
+speaker	Kyuushou
 emote	121	1
 msg	252220	It's a very important guide for the soul! It's a vital tool for summoning resonance in this world! It can't be compared to a game!	那可是很重要的魂引！是向世间呼唤共鸣的重要道具！才不是简简单单的游戏！	な、あれはとっても重要な魂の手引きなの！この世に共鳴を呼び出すための大事な道具！ゲームとは比べ物にならないんだから！	NONE
 speaker	Kiana
-portraits	101
+nop	101
 emote	101	0
 msg	252221	Yeah, yeah, sure~ Anyway, can't you just walk a little faster?	是是是~你说得对~所以你能不能快点走了？	はい、はい、そうね～。そんなことより、もう少し速く歩けないの？	NONE

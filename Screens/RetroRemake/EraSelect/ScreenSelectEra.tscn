@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/ItemScrollerV2.gd" type="Script" id=1]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
@@ -15,6 +15,27 @@
 [ext_resource path="res://Screens/RetroRemake/EraSelect/EraReborn.jpg" type="Texture" id=13]
 [ext_resource path="res://Fonts/CondensedFont.tres" type="DynamicFont" id=14]
 [ext_resource path="res://Screens/RetroRemake/EraSelect/EraLegacy.jpg" type="Texture" id=15]
+[ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=16]
+[ext_resource path="res://Ext/buttonBlue_2.png" type="Texture" id=17]
+[ext_resource path="res://Fonts/NotoSerif-Bold.ttf" type="DynamicFontData" id=18]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends TextureButton
+
+export(String) var screen_to_go = \"RE-ScreenProgrammerCredits\"
+
+func _ready():
+	self.connect(\"pressed\",Globals,\"change_screen\",[get_tree(), screen_to_go])
+	#self.connect(\"pressed\",get_node(\"/root/RE-ScreenTitleMenu\"),\"ItemScrollerNewScreen\",[-1,screen_to_go])
+"
+
+[sub_resource type="DynamicFont" id=2]
+size = 29
+outline_size = 1
+outline_color = Color( 0, 0.0823529, 0.623529, 1 )
+use_filter = true
+extra_spacing_top = 8
+font_data = ExtResource( 18 )
 
 [node name="ScreenSelectEra" instance=ExtResource( 2 )]
 script = ExtResource( 11 )
@@ -109,7 +130,33 @@ autowrap = true
 stream = ExtResource( 5 )
 volume_db = -10.0
 
-[node name="BackButton" parent="." index="5"]
+[node name="OKButton" type="TextureButton" parent="." index="5"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -91.5
+margin_top = -64.0
+margin_right = 91.5
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
+texture_hover = ExtResource( 17 )
+script = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="OKButton" index="0"]
+margin_right = 184.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "RE Credits"
+align = 1
+
+[node name="BackButton" parent="." index="6"]
 visible = false
 
 [connection signal="input_accepted" from="ActorScroller" to="." method="_on_ActorScroller_input_accepted"]

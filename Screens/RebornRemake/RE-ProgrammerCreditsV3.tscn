@@ -5,8 +5,8 @@
 [ext_resource path="res://Ext/RebornRemake/RequiredBG/CG132.png" type="Texture" id=3]
 
 [node name="RE-ProgrammerCreditsV3" instance=ExtResource( 2 )]
-PrevScreen = "RE-ScreenTitleMenu"
-NextScreen = "RE-ScreenTitleMenu"
+PrevScreen = "RE-ScreenSelectChapterSimple"
+NextScreen = "RE-ScreenSelectChapterSimple"
 
 [node name="TextureRect" parent="." index="0"]
 anchor_top = 0.0

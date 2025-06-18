@@ -2,7 +2,7 @@
 preload_portraits	101	121
 match_names	Kiana	Kyuushou
 music	re/2-15 - Oracle Drive
-bg	lab_interior
+bg	lab_interior2
 
 portraits	101	121
 emote	101	0
@@ -43,16 +43,16 @@ emote	121	1
 msg	252096	Kiana, you're about to be expelled from the Valkyries, right? This might be your chance to redeem yourself! Plus, Mei-senpai might be there too!	琪亚娜！我这可是为了你好！你想你都快被女武神除名了！这可是立功的好机会！而且说不定芽衣也在那里呢！	キアナ、戦乙女から除名されそうなんでしょ？これは汚名返上のチャンスかもしれない！それに芽衣先輩もあそこにいるかも！	NONE
 speaker	Kiana
 nop	101
-emote	101	1
+emote	101	2
 msg	252097	Ugh! I guess you're right... F-fine, I guess we could go and have a look for a bit.	咕！我居然觉得你说的有道理……好吧，那我们去看下吧。	うっ！その通りに思えてきた……そ、そうね、少しくらい見に行ってもいいわよね。	NONE
 msg	252098	……	……	……。	NONE
 speaker	Kiana
-emote	101	0
+emote	101	4
 msg	252099	This place is…	这里是……	ここは……。	NONE
 msg	252100	So many mechas... So ME Corp is a production base for mechas! To think there's a factory in the basement of such a big building... I guess the grass is always greener on the other side. But how do they move these mechas to other places?	没想ME社的本部居然就是逆熵机甲的生产基地，而且工厂就建在这栋大楼的地下，这就是所谓的灯下黑么……就是不知道他们是运用什么方式将这些机甲运向别的地方的……	機甲がたくさん……ME社が機甲の生産拠点だったのね！こんな大きなビルの地下に工場があったなんて……これこそ灯台下暗しね。でも、どうやってこの機甲を他の場所に移しているのかしら？	NONE
 /	252101	Rattle——	喀啦喀啦——	ガラガラ——	NONE
 speaker	Kiana
-emote	101	0
+emote	101	4
 msg	252102	Oh no! The mechas are coming this way! Our weapons have been taken by Anti-Entropy, so we have no chance of winning in our current state. Let's retreat for now!	有机甲向这边来了！我的武器已经被逆熵收缴，现在的战斗力下滑了很多，这里我们先暂且退避！	まずい！機甲がこっちに来る！武器はネゲントロピーに持っていかれちゃってるし、今の状態じゃ勝ち目ないわね。ここはとりあえず撤退しましょう！	NONE
 speaker	Kyuushou
 nop	121
@@ -60,9 +60,10 @@ emote	121	3
 msg	252103	Heheheheh, don't worry! The Savior, Kyuushou-sama, will defeat them with her bare hands, rivaling even the demon gods! I'll take them on!	不担心！救世主空手拆高达可是标配！看那！东方在燃……	フフフフッ、心配無用！！この救世主たる九霄様が魔神にも比肩する徒手空拳で成敗してくれる！受けてみよっ！	NONE
 speaker	Kiana
 nop	101
-emote	101	0
+emote	101	4
 msg	252104	Come on, let's go! You can't win!	快走！人家把你拆了还差不多！	ほら、行くわよ！勝てっこないんだから！	NONE
 speaker	Kyuushou
 nop	121
 emote	121	4
+emote	101	0
 msg	252105	W-waah!! Ow ow ow! My hair is gonna fall out!! Don't pull it!!	呃！疼疼疼！！头发真的要掉了啦！！	わ、わっ！！イタタタタ！髪の毛抜けるー！！引っ張るなー！	NONE

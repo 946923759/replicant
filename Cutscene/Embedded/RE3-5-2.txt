@@ -1,56 +1,49 @@
-speaker	Houraiji Kyuushou
-portraits	121
+#LANGUAGES	KEY	EN	ZH	JA	PT
+match_names	Kyuushou	Kiana	Mei	Siegfried
+music	Open Source/a_flawless_getaway_loop
+bg	lab_interior
+
+portraits	121	101	201
 emote	121	1
-emote	621	0
-msg	252191	Look Kiana, I found an ID card.	琪亚娜你看，我捡到了一张身份卡。	キアナ見て。IDカード拾っちゃった。	NONE
-speaker	Kiana
-portraits	101
 emote	101	0
-emote	621	0
-msg	252192	An ID card? Could it be that the researcher dropped it? Let's see... Codename: Doctor, position... Executor?!	身份卡？难道是刚才那个研究员落下的？我看看……代号：博士，职位……执行者！？	IDカード？まさかあの研究員が落としたの？どれどれ……コードネーム：博士、役職……執行者！？	NONE
-speaker	???
-portraits	101
-emote	101	0
-msg	252193	Kiana, what are you saying?	琪亚娜，你说什么？	キアナ、何を言っているんだ？	NONE
-speaker	Kiana
-emote	101	0
-msg	252194	Dad! That researcher from earlier is one of Anti-Entropy's Executors. Her code name is "Doctor."	老爹，我们都看走眼了，刚才那个研究员居然也是逆熵的执行者之一，代号是“博士”……	パパ！さっきのあの研究員、ネゲントロピーの執行者の1人だったんだよ。コードネームは「博士」。	NONE
-speaker	???
-emote	101	0
-msg	252195	"Doctor?" I've never heard that name before. She's probably not part of the Anti-Entropy fighting force. If she was, I'd know about her.	“博士”？没有听说过的名字呢，我猜测她大概不属于逆熵的战斗编制中吧。所以她的名声才一直不显。	「博士」？聞いたことのない名前だな。おそらくネゲントロピーの戦闘部隊には属していないんだろう。手練れなら俺の耳にも入っているはずだ。	NONE
+emote	201	0
+/Kyuushou	252191	Look Kiana, I found an ID card.	琪亚娜你看，我捡到了一张身份卡。	キアナ見て。IDカード拾っちゃった。	NONE
+/Kiana	252192	An ID card? Could it be that the researcher dropped it? Let's see... Codename: [color=#00cc66]Doctor[/color], position... Executor?!	身份卡？难道是刚才那个研究员落下的？我看看……代号：博士，职位……执行者！？	IDカード？まさかあの研究員が落としたの？どれどれ……コードネーム：博士、役職……執行者！？	NONE
+
+portraits	121,false,-2	101,false,-2	201,false,-2	boss/807bw,true,2
+/Siegfried	252193	Kiana, what are you saying?	琪亚娜，你说什么？	キアナ、何を言っているんだ？	NONE
+
+/Kiana	252194	Dad! That researcher from earlier is one of Anti-Entropy's Executors. Her code name is "Doctor."	老爹，我们都看走眼了，刚才那个研究员居然也是逆熵的执行者之一，代号是“博士”……	パパ！さっきのあの研究員、ネゲントロピーの執行者の1人だったんだよ。コードネームは「博士」。	NONE
+/Siegfried	252195	"Doctor?" I've never heard that name before. She's probably not part of the Anti-Entropy fighting force. If she was, I'd know about her.	“博士”？没有听说过的名字呢，我猜测她大概不属于逆熵的战斗编制中吧。所以她的名声才一直不显。	「博士」？聞いたことのない名前だな。おそらくネゲントロピーの戦闘部隊には属していないんだろう。手練れなら俺の耳にも入っているはずだ。	NONE
 msg	252196	However, judging from her name, she must be someone who excels in the field of science. From what I researched before, it seems like there are a lot of people like that in Anti-Entropy. That's why their technology and weapons are superior to Schicksal.	不过从很久以前我们就已经得出结论，一定有一位在科学领域十分出色的人在帮助逆熵进行研究，这才使得她们的科技武装力量要比我们更强。	ただ、名前からして科学分野に優れた人間なんだろう。以前調べた結果、ネゲントロピーにはそういった人材が多いみたいなんだ。だから、天命の武器よりも技術を上回ってて強い。	NONE
-speaker	Mei
-portraits	201
-emote	201	2
-msg	252197	Kiana... I remember you saying something about this. You said my father is part of Anti-Entropy. Could it be that he's one of those "Executors"?	琪亚娜……我记得你说过，我的父亲也是逆熵的高层，难道他也是所谓的“执行者”么？	キアナちゃん……たしか言ってたわよね。私のお父様もネゲントロピーの幹部だって。まさか、その「執行者」っていうやつなの？	NONE
-speaker	???
-emote	201	2
-msg	252198	You're talking about Raiden Ryoma, the former president of ME Corp? I don't know if he's one of the "Executors," but his relationship with Anti-Entropy is closer than you might think. This can also be seen in the mecha production factory that's in the basement of this building.	你是说ME社的前社长雷电龙马吧，虽然不确定他就是“执行者”之一，但是他与逆熵的关系看来比我们想象的要更加密切。就比如在这座大楼地下的生产机甲的流水线，就属于我们之前也没有预料到的。	ME社前社長の雷電龍馬のことだな。「執行者」の1人かどうかは分からないが、彼とネゲントロピーの関係は思っている以上に密接だ。このビルの地下にあった機甲生産工場からも見て取れる。	NONE
-speaker	Mei
-emote	201	2
-msg	252199	I can't believe my father was doing something so dangerous...	父亲他原来一直在做这么危险的事么……	お父様がそんな危険なことをしていたなんて……。	NONE
+
+emote	201	3
+/Mei	252197	Kiana... I remember you saying something about this. You said my father is part of Anti-Entropy. Could it be that he's one of those "Executors"?	琪亚娜……我记得你说过，我的父亲也是逆熵的高层，难道他也是所谓的“执行者”么？	キアナちゃん……たしか言ってたわよね。私のお父様もネゲントロピーの幹部だって。まさか、その「執行者」っていうやつなの？	NONE
+/Siegfried	252198	You're talking about Raiden Ryoma, the former president of ME Corp? I don't know if he's one of the "Executors," but his relationship with Anti-Entropy is closer than you might think. This can also be seen in the mecha production factory that's in the basement of this building.	你是说ME社的前社长雷电龙马吧，虽然不确定他就是“执行者”之一，但是他与逆熵的关系看来比我们想象的要更加密切。就比如在这座大楼地下的生产机甲的流水线，就属于我们之前也没有预料到的。	ME社前社長の雷電龍馬のことだな。「執行者」の1人かどうかは分からないが、彼とネゲントロピーの関係は思っている以上に密接だ。このビルの地下にあった機甲生産工場からも見て取れる。	NONE
+
+emote	201	1
+/Mei	252199	I can't believe my father was doing something so dangerous...	父亲他原来一直在做这么危险的事么……	お父様がそんな危険なことをしていたなんて……。	NONE
+emote	101	2
+/Kiana	252200	Hey, hey, Dad! Why did you tell Mei-senpai? That's so mean!	老爹你真是的，干嘛要跟芽衣学姐说这些啦~	ちょっと、ちょっとパパ！どうして芽衣先輩に話しちゃうの、ひどいじゃない！	NONE
+emote	101	0
+/Siegfried	252201	Why do you care so much...? No, I see, you've grown up. To think you'd found someone you're interested in so soon.	我说这些又怎么了…果然是这女儿大了，胳膊肘子也开始向外拐了。	それがどうした……いや、そっか成長したんだな。気になる人ができてしまうとは。	NONE
+emote	101	4
+/Kiana	252202	Of course! I'll definitely protect Mei-senpai!	那是当然！我肯定要护着芽衣学姐啦！	当たり前でしょ！私は必ず芽衣先輩を守るわ！	NONE
+
+emote	101	0
+/Siegfried	252203	Okay. Enough with the chatter. You're all set. Now hurry to the hall on the first floor. From there, exit through the front gate.	好了，和你们扯了这么久你们也应该整备完毕了，之后你们就尽快赶向一层的大厅吧，从那边正门出去。	分かった。っと、おしゃべりはここまでだ。お前たちも準備できただろう。これから1階のホールに急いで向かえ。そこから正面ゲートを出るんだ。	NONE
+
 speaker	Kiana
-portraits	101
-emote	101	0
-msg	252200	Hey, hey, Dad! Why did you tell Mei-senpai? That's so mean!	老爹你真是的，干嘛要跟芽衣学姐说这些啦~	ちょっと、ちょっとパパ！どうして芽衣先輩に話しちゃうの、ひどいじゃない！	NONE
-speaker	???
-emote	101	0
-msg	252201	Why do you care so much...? No, I see, you've grown up. To think you'd found someone you're interested in so soon.	我说这些又怎么了…果然是这女儿大了，胳膊肘子也开始向外拐了。	それがどうした……いや、そっか成長したんだな。気になる人ができてしまうとは。	NONE
-speaker	Kiana
-emote	101	0
-msg	252202	Of course! I'll definitely protect Mei-senpai!	那是当然！我肯定要护着芽衣学姐啦！	当たり前でしょ！私は必ず芽衣先輩を守るわ！	NONE
-speaker	???
-emote	101	0
-msg	252203	Okay. Enough with the chatter. You're all set. Now hurry to the hall on the first floor. From there, exit through the front gate.	好了，和你们扯了这么久你们也应该整备完毕了，之后你们就尽快赶向一层的大厅吧，从那边正门出去。	分かった。っと、おしゃべりはここまでだ。お前たちも準備できただろう。これから1階のホールに急いで向かえ。そこから正面ゲートを出るんだ。	NONE
-speaker	Kiana
-emote	101	0
+emote	101	3
 msg	252204	Why not the roof?	为什么不走顶楼呢。	どうして屋上に行かないの？	NONE
-speaker	???
+
 emote	101	0
-msg	252205	The Moonlight Throne is on the roof. Once you leave the building, head to Homu Paradise on the eastern outskirts. A Schicksal battleship is nearby, so it should be easier to meet up with them.	月光王座停靠在楼顶，你们在第一时间冲出大楼之后直接向东部郊区的吼姆乐园前进，我方的战舰也会不断向这里靠拢的，届时也就方便汇合了。	月光王座が屋上にいるんだ。お前たちはビルから出たら、そのまま東側郊外にあるホム楽園に向かって進め。天命の戦艦が近くまで来ているから合流しやすくなるはずだ。	NONE
-msg	252206	And then... bzzt... careful... bzzztt... Beep beep...	还有……滋啦……小心……滋啦滋啦……咔嚓……	それから……ザザ……気をつけ……ガガガ……ツーツー……。	NONE
-speaker	Kiana
-emote	101	0
-msg	252207	Huh? Why did the call get cut off? Maybe someone interrupted it... Seriously! I missed the most important part!	咦？怎么通话终止了？难道是被干扰了么……可恶！关键的话语都没听到！	あれ？どうして通話が切れちゃったの？まさか妨害されたのかしら……まったく！大事な話が聞けなかったじゃない！	NONE
+/Siegfried	252205	The Moonlight Throne is on the roof. Once you leave the building, head to Homu Paradise on the eastern outskirts. A Schicksal battleship is nearby, so it should be easier to meet up with them.	月光王座停靠在楼顶，你们在第一时间冲出大楼之后直接向东部郊区的吼姆乐园前进，我方的战舰也会不断向这里靠拢的，届时也就方便汇合了。	月光王座が屋上にいるんだ。お前たちはビルから出たら、そのまま東側郊外にあるホム楽園に向かって進め。天命の戦艦が近くまで来ているから合流しやすくなるはずだ。	NONE
+se	DLC_CH01_EV24_RadioSignals
+msg	252206	And then... [color=#00ccff]bzzt...[/color] careful... [color=#00ccff]bzzztt... Beep beep...[/color]	还有……滋啦……小心……滋啦滋啦……咔嚓……	それから……ザザ……気をつけ……ガガガ……ツーツー……。	NONE
+
+portraits	121	101	201
+emote	101	4
+/Kiana	252207	Huh? Why did the call get cut off? Maybe someone interrupted it... Seriously! I missed the most important part!	咦？怎么通话终止了？难道是被干扰了么……可恶！关键的话语都没听到！	あれ？どうして通話が切れちゃったの？まさか妨害されたのかしら……まったく！大事な話が聞けなかったじゃない！	NONE
 msg	252208	Oh well. It's just the old folks' advice. Watch out for that, beware of ambushes, etc. Valkyries aren't weak enough to be taken out by stuff like that.	算了，估计还是那些老生常谈的话，什么小心行事，注意埋伏什么的。同样的招式对于女武神来说可不会成功第二次的！	まあいいわ。どうせ年寄りがよくする話でしょ。あれに気をつけろ、待ち伏せに注意しろとか。同じやり方でやられるほど戦乙女は弱くないんだから。	NONE
 msg	252209	Mei-senpai, Kyuushou, let's go. We have to escape from this labyrinthine building!	芽衣，九霄，我们出发吧，这一次我们一鼓作气，冲出这栋大楼，从这迷宫一般的螺旋中解脱出去！	芽衣先輩、九霄、行きましょう。この迷宮みたいなビルから脱出しなきゃ！	NONE

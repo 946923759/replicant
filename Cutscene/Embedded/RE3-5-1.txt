@@ -1,51 +1,49 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Dr. Yiserin
+match_names	???	Cocolia
+music	Open Source/Footprint
+bg	ME_corp_interior
+
+speaker	???
 portraits	19
-emote	19	0
+emote	19	5
 msg	252177	Phew... It was a good idea to escape early.	呼……还好我跑得快。	ふぅ……早めに逃げて正解ね。	NONE
 msg	252178	Cocolia said she'd protect me, but in the end they broke through and invaded. I wonder if they're planning to kill me.	可可利亚这个家伙，说好的保护我，结果却还让别人给突破进来了，真是想害死我么。	カカリアのヤツ、私を守るって言ったのに、結局突破されて侵入されているじゃない。私を殺す気かしら。	NONE
 speaker	Cocolia
-portraits	621
+portraits	19	621
 emote	621	0
 msg	252179	What are you saying?	你说什么？	何ですって？	NONE
-speaker	Dr. Yiserin
-portraits	19
-emote	19	0
+
+speaker	???
+emote	19	3
 msg	252180	W-what... Cocolia's here?! Umm, I was just wondering what happened to the Valkyrie.	呃…那个，我是说你找到女武神了么？	う、え……カカリアいたの！？えーと、戦乙女はどうなったのかなーって。	NONE
+
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252181	Hmph, you know what happened. That alarm was a diversionary tactic by the enemy. Since you came out through the emergency passage, it seems you fell right into their trap. Are you going to take responsibility for the security breach?	哼，你不是早就知道了么，那个警报只是敌人的声东击西的计谋，你既然也已经从紧急逃生通道来到了这里，看来他们的计谋成功了呢。你说安全系统被人侵入的责任是不是该由你来承担？	フンッ、分かってるでしょ。あの警報は敵の陽動作戦よ。あなたが緊急通路から出て来たってことは、まんまと彼らの作戦に嵌ってしまったようね。セキュリティが破られた責任、あなたが取ってくれるのかしら？	NONE
-speaker	Dr. Yiserin
-portraits	19
+
+speaker	???
 emote	19	0
 msg	252182	Look, I'm just a scientist, not a programmer!	那个，我只是个科学家而不是程序员！	あのね、私はただの科学者でプログラマーじゃないのよ！	NONE
+
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252183	……	……	……。	NONE
-speaker	Dr. Yiserin
-portraits	19
+speaker	???
 emote	19	0
 msg	252184	Ah... don't be mad. I'm sorry, I got a bit upset... Calm down, okay?	呃…别生气，我就是想放松一下心情，刚才太惊心动魄了……	あ……怒らないで。ごめんなさい、ちょっと動揺しちゃって……。落ち着いて、ね？	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252185	So… what were the results of the study?	所以呢，研究有结果了么？	それで……研究の結果は？	NONE
-speaker	Dr. Yiserin
-portraits	19
+speaker	???
 emote	19	0
 msg	252186	The results are incomplete. I wanted you to wake up the Herrscher and ask it a few questions, but that Valkyrie showed up... so the experiment is incomplete. I guess that's all for now.	研究被中断了，本来想让你唤醒那个律者由我来询问她一些问题的，却发生了意外事故，看来实验要到此为止了。	結果は中途半端ね。あなたにあの律者を起こしてもらって色々と質問したかったんだけれど、戦乙女が来ちゃったから……実験は不十分。ここまでかな。	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252187	That's it? Do you really think I'm not strong enough to catch them?	到此为止？你难道是不相信我的实力能够把她们追回来么？	ここまで？あなた、まさか私の実力ではあの子たちを捕まえられないと思っているの？	NONE
-speaker	Dr. Yiserin
-portraits	19
+speaker	???
 emote	19	0
 msg	252188	It's not that I don't believe you, just... considering the general route they were taking and normal movement speeds, wouldn't they have already fled the building?	也不是我不相信你…按照一般的路线和正常的移动速度，她们应该都已经逃出大楼了吧？	信じていないわけじゃないけど……一般的なルートと正常な移動スピードを考えれば、彼女たちはもうビルから逃げ出しちゃっているんじゃない？	NONE
 speaker	Cocolia
-portraits	621
 emote	621	0
 msg	252189	There's still no sign of a breach at the main gate. And the Moonlight Throne is parked on the top floor of this building. It'll save us a lot of trouble if you try to escape from there.	正门还没有被突破的迹象，况且这栋楼的顶层就停靠着月光王座，她们要是敢从那里走倒也能省下我的一番心思。	正門に突破された痕跡はまだないわ。それにこのビルの最上階には月光王座が停まっているのよ。そこから逃げようとしてくれるなら手間が省けるわ。	NONE
 msg	252190	So please restore the security level now while you still have time. I know it was your mistake, but I don't want to lose this important research material!	所以趁着现在还有一点时间，你赶紧把你调低的安全系数还原，这一次我可不想再因为你的失误而失去这些重要的猎物了！	だから、時間があるうちにセキュリティレベルを今すぐ元に戻して。あなたのミスではあるけど、この大事な研究材料は失いたくないの！	NONE

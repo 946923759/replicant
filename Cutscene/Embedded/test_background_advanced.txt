@@ -1,5 +1,5 @@
 preload_portraits	58	59
-music	Vague Hope Cold Rain No Vocals
+nop	music	Vague Hope Cold Rain No Vocals
 bg	011/034_1280x720	immediate
 portraits	58
 msg	This is an advanced background example. It uses tweens to fake panning and zooming the camera.

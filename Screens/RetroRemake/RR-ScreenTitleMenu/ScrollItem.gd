@@ -15,6 +15,7 @@ A ScrollItem is guarenteed to have three properties:
 
 export (String) var text = "OptionItem" setget set_text,get_text
 export (bool) var locked = false
+export (bool) var downloadable = false
 export (bool) var submenu = false
 export (String) var destinationScreenOrSubmenu
 #export (Vector2) var size = Vector2(425,112)

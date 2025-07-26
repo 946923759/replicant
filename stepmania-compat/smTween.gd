@@ -6,6 +6,13 @@ enum TWEEN_TYPE {
 	ACCELERATE,
 	SLEEP
 }
+
+enum TWEEN_STATUS {
+	NO_TWEEN,
+	TWEEN_RUNNING,
+	TWEEN_FINISHED
+}
+
 var time:float=0.0
 var tween:SceneTreeTween
 
@@ -45,6 +52,8 @@ If two elements are tweened, VN engine can do max() on tween times.
 static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> float:
 	
 	tw.set_parallel(true)
+	tw.tween_callback(objectToTween,"set_meta",['tweening_state',TWEEN_STATUS.TWEEN_RUNNING])
+	tw.connect("finished",objectToTween,"set_meta",['tweening_state',TWEEN_STATUS.TWEEN_FINISHED])
 	var cmnds = tweenString.split(";",false)
 	
 	var tweenBatch = 0
@@ -105,7 +114,17 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				tweenLength = 0.0
 				timeToDelay += float(splitCmd[1])
 			"x":
-				tw.tween_property(objectToTween,rectPrefix+"position:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
+				var ret:float = 0.0
+				if 'SCREEN_CENTER_X' in objectToTween:
+					var expression = Expression.new()
+					expression.parse(splitCmd[1],["SCREEN_CENTER_X"])
+					ret = expression.execute([objectToTween.SCREEN_CENTER_X])
+					print("ret: ",ret)
+				else:
+					ret = float(splitCmd[1])
+
+				tw.tween_property(objectToTween,rectPrefix+"position:x",ret,tweenLength).from(lastKnownPosition.x).set_delay(timeToDelay)
+				lastKnownPosition.x = ret
 			"y":
 				tw.tween_property(objectToTween,rectPrefix+"position:y",float(splitCmd[1]),tweenLength).set_delay(timeToDelay)
 			"xy":
@@ -126,12 +145,18 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 					v2.y=v2.x
 				else:
 					v2 = Vector2(float(splitCmd[1]),float(splitCmd[2]))
+				if "zoom_level" in objectToTween:
+					v2*=objectToTween.zoom_level
 				tw.tween_property(objectToTween,rectPrefix+"scale",v2,tweenLength).set_delay(timeToDelay).from(lastKnownZoom)
 				lastKnownZoom=v2
 			"zoomx":
 				#print("ZOOMX: "+splitCmd[1]+", time "+String(timeToDelay))
-				tw.tween_property(objectToTween,rectPrefix+"scale:x",float(splitCmd[1]),tweenLength).set_delay(timeToDelay).from(lastKnownZoom.x)
-				lastKnownZoom.x=float(splitCmd[1])
+				var sc_x = float(splitCmd[1])
+				if "zoom_level" in objectToTween:
+					sc_x*=objectToTween.zoom_level
+				
+				tw.tween_property(objectToTween,rectPrefix+"scale:x",sc_x,tweenLength).set_delay(timeToDelay).from(lastKnownZoom.x)
+				lastKnownZoom.x=sc_x
 			"diffuse","modulate":
 				"""
 				Usage examples:

@@ -70,31 +70,31 @@ func loadVNBG(sprName:String):
 	printerr("background not embedded in pck and no external file found!!")
 	return false
 	
-func loadVNPortrait(sprName:String):
-	var f = File.new()
-	if OS.has_feature("standalone") and !f.file_exists("res://Cutscene/Portraits/"+sprName+".png.import"):
-		var path = OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Portraits/"+sprName+".png"
-		#print("Checking path "+path)
-		if f.file_exists(path):
-			print_debug("Found external image file at "+path)
-			var image = Image.new()
-			f.open(path, File.READ)
-			var buffer = f.get_buffer(f.get_len())
-			match path.get_extension():
-				"png":
-					image.load_png_from_buffer(buffer)
-				"jpg":
-					image.load_jpg_from_buffer(buffer)
-
-			f.close()
-			image.lock()
-			var newTexture = ImageTexture.new()
-			newTexture.create_from_image(image)
-			texture=newTexture
-		else:
-			printerr("Portrait not embedded in pck and no external file!!")
-	else:
-		texture=load("res://Cutscene/Portraits/"+sprName+".png")
+#func loadVNPortrait(sprName:String):
+#	var f = File.new()
+#	if OS.has_feature("standalone") and !f.file_exists("res://Cutscene/Portraits/"+sprName+".png.import"):
+#		var path = OS.get_executable_path().get_base_dir()+"/GameData/Cutscene/Portraits/"+sprName+".png"
+#		#print("Checking path "+path)
+#		if f.file_exists(path):
+#			print_debug("Found external image file at "+path)
+#			var image = Image.new()
+#			f.open(path, File.READ)
+#			var buffer = f.get_buffer(f.get_len())
+#			match path.get_extension():
+#				"png":
+#					image.load_png_from_buffer(buffer)
+#				"jpg":
+#					image.load_jpg_from_buffer(buffer)
+#
+#			f.close()
+#			image.lock()
+#			var newTexture = ImageTexture.new()
+#			newTexture.create_from_image(image)
+#			texture=newTexture
+#		else:
+#			printerr("Portrait not embedded in pck and no external file!!")
+#	else:
+#		texture=load("res://Cutscene/Portraits/"+sprName+".png")
 
 func hideActor(s:float,delay:float=0.0):
 	var seq := get_tree().create_tween()
@@ -118,7 +118,15 @@ func hideShow(s:float,delay:float=0.0):
 		p.set_delay(delay)
 	seq.tween_property(self,'modulate:a',1,s/2)
 
+enum TWEEN_STATUS {
+	NO_TWEEN,
+	TWEEN_RUNNING,
+	TWEEN_FINISHED
+}
+
+func is_tweening()->bool:
+	return get_meta("tweening_state",0) == TWEEN_STATUS.TWEEN_RUNNING
 
 func apply_sm_tween(tweenString) -> float:
-	var tw = get_tree().create_tween()
+	var tw = create_tween()
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO

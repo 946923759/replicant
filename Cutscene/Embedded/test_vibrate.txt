@@ -1,3 +1,13 @@
+bg	009/022_1280x720	immediate
 msg	Vibrate controller for 1 second.
 vibrate	1
 msg	...........
+msg	Shake background at 3.0 (also vibrates)
+shake_camera
+msg	shake!
+msg	Shake background at decay 2.0
+shake_camera	3.0	2.0
+msg	shake!
+msg	Shake background at decay 10.0
+shake_camera	3.0	10.0
+msg	shake!

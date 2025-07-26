@@ -1,4 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	62	60
 bg	011/016_1280x720
 se	DLC_CH00_EV11_MosterRoar
 music	Copied City

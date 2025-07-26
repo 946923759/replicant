@@ -239,9 +239,11 @@ Stops music. Defaults to immediate.
 Argument 1 (optional): how long to fade out music.
 
 # shake_camera
-Shakes the camera. This effect is somewhat buggy due to being tied to your computer's processing speed.
+Shakes the camera.
 
 Argument 1 (optional): How much to shake the camera. Defaults to 3.0 if not present.
+
+Argument 2 (optional): The decay rate. Defaults to 1.0 if not present.
 
 # Setting Variables
 
@@ -249,9 +251,9 @@ The `var` opcode will set a variable. A variable can either be a boolean, a stri
 
 Examples: `var testvar 7`, `var testvar "Hello!"`, `var testvar &0`, `var testvar false`
 
-Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __. Prefix variables with `G_` to make them global.
+Argument 1: Variable name to set. `____` and `__choice__` are reserved variables and setting them will fail. Generally you should not prefix and suffix your variables with __. Prefix variables with `__G.` to make them global.
 
-Variables are saved per-slot like any other VN, but if you want a variable to be accessible from all slots, prefix it with S_ (Short for SYSTEM, as in the systemwide save data).
+Variables are saved per-slot like any other VN, but if you want a variable to be accessible from all slots, prefix it with `__S.` (Short for SYSTEM, as in the systemwide save data).
 
 Argument 2: operand.
 
@@ -282,12 +284,12 @@ dchoice	1	You're a Herrscher, right?
 msg	What should I ask...
 ```
 
-It can be written with an if statement like this:
+It can be continued with an if statement like this:
 ```
-if	choice	0:
+if	__choice__	0:
   /Kyuushou	My name is Kyuushou Houraiji, the savior of the world!
   var	kyuu	&0
-if	choice	1:
+if	__choice__	1:
   /Kyuushou	I'm the Herrscher of the Void.
   var	kyuu	&1
 ```
@@ -338,7 +340,26 @@ Argument 1: label
 
 Argument 2: choice result, aka what choice was picked.
 
-`condjmp_c	c2dest	2`
+```
+msg	Are you a boy or a girl?
+choice	I'm a guy!
+choice	I'm a girl!
+# Internally this is equivalent to `condjmp	c2dest	__choice__	2`.
+condjmp_c	c2dest	2
+
+label	c1dest
+msg	You're a guy, I see?
+var	gender	0
+jmp	end_choices
+
+label	c2dest
+msg	You're a girl, I see?
+var	gender	1
+label	end_choices
+
+```
+
+
 
 ## condjmp & condjmp_neg
 
@@ -398,6 +419,7 @@ msg	This is a background. Woah!
 tween	current	009/022_1280x720
 
 ```
+
 # vibrate
 Vibrates the controller or a mobile phone.
 
@@ -407,11 +429,16 @@ Argument 1: duration. If not specified, defaults to 0.5.
 
 ~~Argument 3: strong magnitude (vibrates the strong motor in the controller)~~
 
-
-
-# IMPLEMENT SOON
 ## screen
-Next screen to go to. Screens are defined in Globals.SCREENS. Short list of screens:
+Next screen to go to. Screens are defined in Globals.SCREENS.
+
+Argument 1: The screen to go to.
+
+~~+args (That means any number of arguments past 1): Arguments to supply to the screen, if they take any. Note that no screen in Replicant takes arguments, this feature is left to the editor to implement.~~
+
+**The VN player will save your spot, so you can head to a new screen in the middle and return if you want.**
+
+Short list of screens:
 
 | screen | description |
 | ------ | ----------- |
@@ -424,6 +451,14 @@ Next screen to go to. Screens are defined in Globals.SCREENS. Short list of scre
 | **CutsceneFromFile** | This is the main cutscene player. By default, the cutscene player will loop at this screen so you don't need to set it. |
 | ScreenProgrammerCredits | Programmer credits. |
 | ScreenSelectEra (Unused) | Set Retro, Reborn, or Fire Moth modes. Only Fire Moth is implemented... |
+
+## add_screen
+Identical to `screen` but adds a screen on top of the player. Used for text entry, usually.
+
+The player will freeze until the screen on top is exited. You wouldn't want doubled inputs, now would you?
+
+# IMPLEMENT SOON
+
 
 
 ## next

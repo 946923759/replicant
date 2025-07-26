@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Portraits/theresa/415.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://Portraits/hakase/019.png" type="Texture" id=22]
 [ext_resource path="res://MenuSounds/re/system_me_kette.win32.wav" type="AudioStream" id=23]
 [ext_resource path="res://Ext/buttonBlue_1.png" type="Texture" id=24]
+[ext_resource path="res://Screens/RebornRemake/__VERSIONINFO.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ShaderMaterial" id=9]
 shader = ExtResource( 10 )
@@ -100,29 +101,31 @@ font_data = ExtResource( 6 )
 
 [sub_resource type="GDScript" id=14]
 script/source = "extends Label
-tool
-
-export(String) var versionDate = \"YYYYMMDDXX\" setget set_text_inner
-
-func set_text_inner(versionDate_):
-	
-	var verString:String = \"RRE:\"
-	
-	# Returns the name of the host OS. 
-	# Possible values are: 
-	# \"Android\", \"iOS\", \"HTML5\", \"OSX\", \"Server\", \"Windows\", \"UWP\", \"X11\".
-	verString+=OS.get_name().left(1).to_upper()+\":\"
-	if OS.is_debug_build():
-		verString+=\"B:\"
-	else:
-		verString+=\"R:\"
-
-	self.text=verString+versionDate_
-	versionDate=versionDate_
-
+#tool
+#
+#export(String) var versionDate = \"YYYYMMDDXX\" setget set_text_inner
+#
+#func set_text_inner(versionDate_):
+#
+#	var verString:String = \"RRE:\"
+#
+#	# Returns the name of the host OS. 
+#	# Possible values are: 
+#	# \"Android\", \"iOS\", \"HTML5\", \"OSX\", \"Server\", \"Windows\", \"UWP\", \"X11\".
+#	verString+=OS.get_name().left(1).to_upper()+\":\"
+#	if OS.is_debug_build():
+#		verString+=\"B:\"
+#	else:
+#		verString+=\"R:\"
+#
+#	self.text=verString+versionDate_
+#	versionDate=versionDate_
+#
+#func _ready():
+#	set_text_inner(versionDate)
+#	pass
 func _ready():
-	set_text_inner(versionDate)
-	pass
+	self.text = $VERSION_INFO.version
 "
 
 [node name="RE-ScreenTitleMenu" instance=ExtResource( 1 )]
@@ -430,7 +433,8 @@ REL = R for release, B for beta
 Replicant REborn = RRE
 "
 }
-versionDate = "2024082200"
+
+[node name="VERSION_INFO" parent="VBoxContainer/Label" index="0" instance=ExtResource( 25 )]
 
 [connection signal="gui_input" from="WhiteBackground" to="." method="_on_WhiteBackground_gui_input"]
 [connection signal="gui_input" from="Logo" to="." method="_on_Logo_gui_input"]

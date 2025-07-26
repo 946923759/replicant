@@ -84,7 +84,7 @@ enum Overlay {
 	VAR_DEBUGGER, 
 	OPCODE_DEBUGGER,
 	UI_HIDDEN,
-	WAITING_FOR_TWEEN, #Not used
+	WAITING_FOR_TWEEN,
 	WAITING_FOR_BROADCAST #Ignore inputs until end_await()
 }
 var otherScreenIsHandlingInput:int = Overlay.NONE
@@ -528,6 +528,15 @@ func advance_text()->bool:
 			'tn':
 				if msgColumn < curMessage.size():
 					tmp_tn=curMessage[msgColumn]
+			'wait_tween','await_tween':
+				txtTw.kill()
+				otherScreenIsHandlingInput = Overlay.WAITING_FOR_TWEEN
+				return true
+			'await':
+				#txtTw.kill()
+				otherScreenIsHandlingInput = Overlay.WAITING_FOR_BROADCAST
+				set_process(false)
+				return true
 			'dim':
 				PORTRAITMAN.dim_idx(int(curMessage[1]))
 			'msg':
@@ -972,11 +981,13 @@ func advance_text()->bool:
 								printerr("(Hint: you might want to assign to this variable first)")
 							else: #Not sure what this is, attempt complex expression parsing
 								var expression:Expression = Expression.new()
+								# Bind the name of the variable as an input.
+								# For example: 'var testvar 7+testvar'
+								# The expression 7+testvar is evaluated
 								expression.parse(varExpression,[varName])
-								#Execute the expression, so Vector2(1,2) would return Vector2(1,2), etc
 								var result = expression.execute([cutsceneVars[varName]])
 								if expression.has_execute_failed():
-									printerr("Failed to deduce type for variable "+varExpression+" and failed to parse this as an expression. "+expression.get_error_text())
+									printerr("Failed to deduce type for variable assignment "+varExpression+" and failed to parse it as an expression. "+expression.get_error_text())
 								else:
 									cutsceneVars[varName]=result
 #			'jmp_short':
@@ -1011,7 +1022,8 @@ func advance_text()->bool:
 						lastMusic.stop_music()
 			"shake_camera":
 				var magnitude:float = float(curMessage[1]) if len(curMessage) > 1 else 3.0
-				backgrounds.shakeCamera(magnitude)
+				var decay:float = float(curMessage[2]) if len(curMessage) > 2 else 1.0
+				backgrounds.shake_camera(magnitude, decay)
 				if Input.get_connected_joypads().size() > 0:
 					Input.start_joy_vibration(0,magnitude/5.0,magnitude/5.0,.4)
 				#Pointless on mobile since you can't control the magnitude
@@ -1366,6 +1378,16 @@ func _process(delta):
 	if otherScreenIsHandlingInput==Overlay.HISTORY:
 		historyActor.process(delta)
 		return
+	elif otherScreenIsHandlingInput==Overlay.WAITING_FOR_TWEEN:
+		for p in PORTRAITMAN.get_children():
+			if p.is_tweening():
+				return
+		#for b in backgrounds.get_children():
+		#	if b.is_tweening():
+		#		return
+		otherScreenIsHandlingInput=Overlay.NONE
+		advance_text()
+		
 	elif automatically_advance_text and $Choices.visible and Globals['OPTIONS']['skipChoicesToo']['value']:
 		frameLimiter+=delta
 		if frameLimiter>3:

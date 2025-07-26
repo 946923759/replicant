@@ -268,10 +268,11 @@ func undim():
 	tween.start();
 
 func is_tweening()->bool:
-	return tween.is_active()
+	return tween.is_active() or get_meta("tweening_state",0) == 1
 	
 func apply_sm_tween(tweenString) -> float:
-	var tw = get_tree().create_tween()
+	var tw = create_tween()
+	#This will affect metavar 'tweening_state'
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO
 
 func gestalt_set_textures(sprName:String):

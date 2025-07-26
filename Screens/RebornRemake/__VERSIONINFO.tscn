@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Screens/RebornRemake/__VERSIONINFO.tres.gd" type="Script" id=1]
+
+[node name="VERSION_INFO" type="Node"]
+script = ExtResource( 1 )

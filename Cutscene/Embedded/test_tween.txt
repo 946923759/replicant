@@ -24,3 +24,14 @@ tween	current	59	decelerate,.5;addx,-100
 msg	With tweens you can create advanced animations like shaking, zooming, and more.
 portraits	58,false,4	59
 msg	However, the default positioning system still allows you to shift characters around.
+portraits	59	67
+msg	Finally, you can make the reader wait until a tween is finished. This is useful for advanced camera animations. Like this one that will play next.
+tween	current	59	linear,5;zoom,1.5
+tween	current	67	linear,5;zoom,1.5
+msgbox_close
+msg	...
+await_tween
+msgbox_open
+tween	current	59	decelerate,.3;zoom,1
+tween	current	67	decelerate,.3;zoom,1
+msg	You awaited the tween! Note that the interpreter will advance to the next line when the tween finishes.

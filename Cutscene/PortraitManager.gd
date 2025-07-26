@@ -7,7 +7,7 @@ var SCREEN_CENTER: Vector2
 export(int,200,600,50) var spacing = 400
 export(float,1.0,3.0,.1) var zoom_level = 1.0 setget set_zoom_level_realtime
 
-var tween: Tween
+#var tween: Tween
 #TODO: Shouldn't be necessary when cache is implemented, cache.size() will return
 #the size of active portraits
 var numPortraits:int=0
@@ -74,21 +74,6 @@ func set_portrait(name: String, y_offset: float = 0, radioMask: bool = false)->N
 			print("[PORTRAITMAN] "+name)
 			p.set_texture_wrapper(name)
 			break
-#	# update positions
-#	update_positions()
-#	tween.interpolate_property(lastUsed,
-#		'modulate',
-#		null,
-#		Color(1,1,1,1),
-#		.3
-#	);
-#	tween.interpolate_property(lastUsed,
-#		'position:x',
-#		null,
-#		lastUsed.position.x + 60,
-#		.5, Tween.TRANS_QUAD, Tween.EASE_OUT
-#	);
-#	tween.start();
 	return lastUsed
 
 
@@ -172,26 +157,6 @@ func update_positions():
 #
 #
 
-#Not really possible since focus_speaker depends on the portrait idx
-#and not the portrait name..
-#func focus_speaker(speaker: String):
-#	pass
-	
-	
-#Brought to you by terrible stepmania naming conventions
-#Because everyone knows what diffuse means right
-func diffuse(p: Sprite, color: Color = Color(Color(.5,.5,.5,1))):
-	tween.interpolate_property(p,
-		'modulate',
-		null,
-		color,
-		.3
-	);
-	tween.start();
-	
-func undim(p: Sprite):
-	diffuse(p, Color(1,1,1,1))
-
 
 func hl_idx(idx:int):
 	for p in portraits:
@@ -222,8 +187,8 @@ func _ready():
 		portraits.append(c)
 	connect("resized",self,"update_positions")
 	set_zoom_level_realtime(zoom_level)
-	tween = Tween.new()
-	add_child(tween)
+	#tween = Tween.new()
+	#add_child(tween)
 
 func set_zoom_level_realtime(z:float):
 	#print("[PORTRAITMAN] set zoom called")

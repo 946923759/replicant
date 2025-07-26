@@ -1,4 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	58	54
 bg	011/034_1280x720
 se	DLC_CH00_EV11_MosterRoar
 msg	302435	Guwooooooo!!	吼吼吼！！	グゥォオオオオッ！！	NONE
@@ -114,12 +115,12 @@ speaker	Teammate
 portraits	56	54
 emote	56	0
 emote	54	2
-msg	302466	Estherine, this is not a broken ...... radar. ...... This is impossible .......	伊瑟琳，难道是雷达坏掉了么……这怎么可能……	イザーリン、これ……レーダーが壊れたわけじゃないよね……。\nこんなのありえない……。	NONE
+msg	302466	Yiserin, this is not a broken ...... radar. ...... This is impossible .......	伊瑟琳，难道是雷达坏掉了么……这怎么可能……	イザーリン、これ……レーダーが壊れたわけじゃないよね……。\nこんなのありえない……。	NONE
 speaker	Bronya
 portraits	56	60
 emote	56	0
 emote	60	5
-msg	302467	Estherine! What in the world happened?	伊瑟琳！到底发生了什么！	イザーリン！一体、何が起こったのですか！	NONE
+msg	302467	Yiserin! What in the world happened?	伊瑟琳！到底发生了什么！	イザーリン！一体、何が起こったのですか！	NONE
 speaker	Yiserin
 portraits	56	54
 emote	56	0
@@ -175,7 +176,7 @@ speaker	Bronya
 portraits	60	54
 emote	60	3
 emote	54	6
-msg	302482	Estherine...... what are you going to do?	伊瑟琳…你的意思是？	イザーリン……何をするつもりですか？	NONE
+msg	302482	Yiserin...... what are you going to do?	伊瑟琳…你的意思是？	イザーリン……何をするつもりですか？	NONE
 speaker	Yiserin
 emote	60	3
 emote	54	6

@@ -7,12 +7,13 @@
 #//VN_STOP	Chapter 3
 
 --Debug Tests
-Music Test	What Is going on	test_music,test_tween,test_portraitMask
+Music Test	What Is going on	test_music,test_portraitMask
 Choice Test	AASBBBDFD	test_choice,test_choice_design
 Variable Test	Tests variables	test_var,test_username
 Font Test	Tests fonts, colors, pauses.	test_font,test_textPause,test_very_long_text
 BBCode FS Test	Tests BBCode when using fullscreen text	test_text_bbcode
-Background Test		test_background,test_background_custom,test_background_advanced
+Background Test		test_background,test_background_custom
+Tweening Tests		test_background_advanced,test_tween
 Background Color test		test_blackbg,test_bgcolor
 Modulate Test	Tests the color rect which covers the screen, and tests modulating portraits.	test_foreground,test_modulate
 Video Test		final_round_test

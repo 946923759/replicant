@@ -112,22 +112,16 @@ se	DLC_CH00_EV11_MosterRoar
 emote	62	1
 /Theresa	302624	This voice is ...... Bronya! Watch out!	这个声音是…布洛妮娅！小心！！	この声は……ブローニャ！危ない！！	NONE
 
-emote	62	1
 se	DLC_CH00_EV04_ExplosionClose
-msg	302625	Doooooong. ----!	轰隆————！	ドォォオオン————！	NONE
+/	302625	Doooooong. ----!	轰隆————！	ドォォオオン————！	NONE
 se	DLC_CH00_EV13_MosterRoar
 msg	302626	Vooooooooooooo!	吼吼吼！！	ヴォオオオッ！！！	NONE
-speaker	Bronya
 emote	60	5
-msg	302627	Kuh! Honkai creatures entered from outside the tower!	呃！崩坏生物居然从墙壁里面钻了出来！？	くっ！崩壊生物が塔の外から入ってきたのですか！？	NONE
-speaker	Theresa
-emote	62	1
-msg	302628	Everyone, stay away from the walls! I knew there was something wrong here!	大家远离那些墙壁！果然这个地方不太对劲！	全員、壁から離れて！やっぱりここ、何だか様子が変だわ！	NONE
-emote	62	1
+/Bronya	302627	Kuh! Honkai creatures entered from outside the tower!	呃！崩坏生物居然从墙壁里面钻了出来！？	くっ！崩壊生物が塔の外から入ってきたのですか！？	NONE
+/Theresa	302628	Everyone, stay away from the walls! I knew there was something wrong here!	大家远离那些墙壁！果然这个地方不太对劲！	全員、壁から離れて！やっぱりここ、何だか様子が変だわ！	NONE
 se	DLC_CH00_EV13_MosterRoar
-msg	302629	Grrrrrrrrrrrrrrrrrrrrrrrrrrrr!	吼吼吼！！	グゥルルルルッ！！	NONE
+/	302629	Grrrrrrrrrrrrrrrrrrrrrrrrrrrr!	吼吼吼！！	グゥルルルルッ！！	NONE
 speaker	Theresa
-emote	62	1
 msg	302630	Get out of the way!	给我滚开！！	どきなさいッ！！	NONE
 speaker	Kyuushou
 emote	58	3

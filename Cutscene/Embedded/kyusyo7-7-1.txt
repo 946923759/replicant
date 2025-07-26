@@ -76,6 +76,7 @@ msg	302566	(touching)	（触碰）	スッ——	NONE
 speaker	Kyuushou
 emote	58	3
 emote	60	1
+shake_camera	3.0	10.0
 msg	302567	Ugh ......!	呜……	うっ……！	NONE
 emote	60	1
 

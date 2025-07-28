@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cutscene/HistoryOverlay/CutsceneHistory.gd" type="Script" id=3]
+[ext_resource path="res://Shaders/FadeTopShader.tres" type="Material" id=5]
+[ext_resource path="res://Cutscene/HistoryOverlay/HistoryScrollObject.tscn" type="PackedScene" id=6]
+
+[node name="CutsceneHistory" type="Control"]
+material = ExtResource( 5 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+history_scroll_object = ExtResource( 6 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -900.0
+margin_top = -465.0
+margin_right = 900.0
+margin_bottom = 465.0
+mouse_filter = 1
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+material = ExtResource( 5 )
+margin_right = 1800.0
+margin_bottom = 188.0
+custom_constants/separation = 5
+
+[node name="HBoxContainer" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 6 )]
+margin_right = 1800.0
+margin_bottom = 57.0
+speaker_text = "This is the first speaker."
+dialogue_text = "This is the history text."
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/VBoxContainer"]
+use_parent_material = true
+margin_top = 62.0
+margin_right = 1800.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 2 )
+
+[node name="HBoxContainer2" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 6 )]
+margin_top = 69.0
+margin_right = 1800.0
+margin_bottom = 126.0
+speaker_text = "This is the speaker."
+dialogue_text = "This is the history text."
+
+[node name="HBoxContainer3" parent="ScrollContainer/VBoxContainer" instance=ExtResource( 6 )]
+margin_top = 131.0
+margin_right = 1800.0
+margin_bottom = 188.0
+speaker_text = " "
+dialogue_text = " "

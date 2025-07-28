@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Cutscene/HistoryOverlay/HistoryScrollObject.gd" type="Script" id=2]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+use_parent_material = true
+margin_right = 994.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 1800, 0 )
+size_flags_vertical = 4
+script = ExtResource( 2 )
+
+[node name="Speaker" type="Label" parent="."]
+use_parent_material = true
+margin_right = 450.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 450, 0 )
+size_flags_horizontal = 9
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+text = "This is the speaker."
+autowrap = true
+
+[node name="Message" type="RichTextLabel" parent="."]
+use_parent_material = true
+margin_left = 454.0
+margin_right = 1776.0
+margin_bottom = 57.0
+size_flags_horizontal = 3
+custom_constants/line_separation = 9
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[color=#BBBB00]This is the history text."
+text = "This is the history text."
+fit_content_height = true
+scroll_active = false
+
+[node name="Margin" type="Control" parent="."]
+margin_left = 1780.0
+margin_right = 1800.0
+margin_bottom = 57.0
+rect_min_size = Vector2( 20, 0 )

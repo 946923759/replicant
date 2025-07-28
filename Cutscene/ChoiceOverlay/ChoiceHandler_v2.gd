@@ -99,7 +99,7 @@ func input_down():
 
 func input_accept():
 	if selection!=-1:
-		print("Player picked choice "+String(selection))
+		#print("[ChoiceOverlay] Player picked choice "+String(selection))
 		emit_signal("selected_choice",selection)
 		OffCommand()
 
@@ -111,7 +111,7 @@ func _input(_event):
 	elif Input.is_action_just_pressed("ui_down"):
 		input_down()
 	elif Input.is_action_just_pressed("ui_select"):
-		print("[ChoiceHandler] ui_select!")
+		#print("[ChoiceOverlay] ui_select!")
 		input_accept()
 		get_tree().set_input_as_handled()
 	elif Input.is_action_just_pressed("DebugButton2"):
@@ -123,6 +123,6 @@ func handle_mouse(selection_:int):
 
 func onClickWrapper(event:InputEvent,selection_:int=-1):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
-		print("choice clicked, setting selection to "+String(selection))
+		#print("[ChoiceOverlay] choice clicked, setting selection to "+String(selection))
 		selection=selection_
 		input_accept()

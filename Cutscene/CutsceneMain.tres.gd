@@ -448,7 +448,7 @@ without executing ahead until it finds another message.
 Because otherwise you could have something like a jump that
 jumps to a table of choices OR another message.
 """
-func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1):
+func runahead_process_choices(tmp_msgs:Array, cur_pos:int=1) -> Array:
 	#print("Running ahead from pos "+String(cur_pos))
 	choiceResult = -1
 	#var starting_pos = cur_pos
@@ -1080,7 +1080,7 @@ func advance_text()->bool:
 		var startingLength = fsText.text.length()-numNewLines #WHY????
 		var newFSText = fsText.bbcode_text+"\n"+text.bbcode_text
 		
-		print(rect_size, fsText.rect_size)
+		#print(rect_size, fsText.rect_size)
 		
 		#height minus margin_top and margin_bottom
 		if fsText.rect_size.y > rect_size.y-200:
@@ -1176,7 +1176,6 @@ func openTextbox(t:SceneTreeTween,animTime:float=.3)->float:
 #onready var screenWidth=Globals.gameResolution.x
 func tween_in_history():
 	otherScreenIsHandlingInput=Overlay.HISTORY
-	historyActor.isHandlingInput=true
 	historyActor.set_history(textHistory)
 	
 	uiActorFrame.get_node("HBoxContainer/TextureButtonAuto").visible=false
@@ -1624,12 +1623,16 @@ func _on_dim_gui_input(event):
 
 func _on_Choices_selected_choice(selection):
 	choiceResult=$Choices.selection+1
-	print("Choice result obtained, result was "+String(choiceResult))
+	textHistory.push_back([
+		"",
+		"[color=#98F5F9]"+ChoiceTable[$Choices.selection]+"[/color]"
+	])
+	print("[CutsceneMain] Choice result obtained, result was "+String(choiceResult)+": "+ChoiceTable[$Choices.selection])
 	$Choices.OffCommand()
 	ChoiceTable=[]
 	advance_text()
 	if otherScreenIsHandlingInput != Overlay.CHOICE:
-		printerr("Somehow input was handed to this screen from the choice one, but choice screen shouldn't have input")
+		printerr("[CutsceneMain] Somehow input was handed to this screen from the choice one, but choice screen shouldn't have input")
 	otherScreenIsHandlingInput = Overlay.NONE
 
 

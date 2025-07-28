@@ -52,8 +52,8 @@ emote	55	1
 portraits	
 bg	007/006_1280x720
 stopmusic	1
-msg	300181	Wake up. Hey...	喂…醒醒……	起きろ……。
-msg	300182	Hey...	喂……	目を覚ましてくれ……。
+/Emesa	300181	Wake up. Hey...	喂…醒醒……	起きろ……。
+/Emesa	300182	Hey...	喂……	目を覚ましてくれ……。
 
 msgbox_transition
 bg	009/011_1280x720

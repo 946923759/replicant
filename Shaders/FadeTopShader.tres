@@ -13,18 +13,23 @@ uniform float fadeTopAt;
 void fragment(){
 	//COLOR = vec4(1,0,0,1);
 	
+	float SCREEN_HEIGHT = 1.0/SCREEN_PIXEL_SIZE.y;
+	float RATIO = SCREEN_HEIGHT/1080.0;
+	
+	float fadeTopAt_Real=RATIO*fadeTopAt;
+	
 	vec4 pixel_color = texture(TEXTURE,UV);
-	if (FRAGCOORD.y > fadeTopAt-20.0)
+	if (FRAGCOORD.y > fadeTopAt_Real-20.0)
 	{
-		float clr = smoothstep(FRAGCOORD.y-20.0,FRAGCOORD.y+20.0,fadeTopAt);
-    	COLOR = vec4(pixel_color.rgb, min(clr,pixel_color.a)); //min(clr,pixel_color.a)
+		float clr = smoothstep(FRAGCOORD.y-20.0,FRAGCOORD.y+20.0,fadeTopAt_Real);
+    	COLOR = vec4(pixel_color.rgb, min(clr, pixel_color.a)); //min(clr,pixel_color.a)
 	}
 	else
-		COLOR = pixel_color;
+		COLOR.a = pixel_color.a;
 		//COLOR=vec4(1,0,0,1);
 }"
 
 [resource]
 shader = SubResource( 1 )
 shader_param/inputColor = Color( 1, 0, 0, 1 )
-shader_param/fadeTopAt = 600.0
+shader_param/fadeTopAt = 920.0

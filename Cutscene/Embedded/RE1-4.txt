@@ -99,7 +99,7 @@ emote	214	0
 portraits	121,false,-1	101,false,-1	214
 match_names	Kyuushou	Kiana	Mei?
 /Kiana	251628	Kyuushou, watch out!	九霄小心！	九霄！	NONE
-shake_camera	1
+shake_camera	3.0	10.0
 /	251627	Bang!!!	轰隆隆！	ドーン！	NONE
 emote	214	0
 /Kiana	251629	The power to manipulate Honkai Energy... You're a Herrscher!	这种操控崩坏能的力量……你是律者！	崩壊エネルギーを操る力……あなた、律者ね！	NONE

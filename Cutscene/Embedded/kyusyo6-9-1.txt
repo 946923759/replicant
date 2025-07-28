@@ -92,6 +92,5 @@ speaker	Sin
 msg	308532	Ha! I don't believe in that!	哼！本大爷才不相信什么因果！！	ハッ！そんなのボクは、信じないぞ！！	NONE
 speaker	Yiserin
 msg	308533	Sin!	杏！	シン！	NONE
-speaker	Sirin
-msg	308534	Really? It seems like I can't convince you all.	是么…看来你们还是无法说服你们呢。	そう？どうやら、あなたたちに理解させるのは難しいようね。	NONE
+/Sirin	308534	Really? It seems like I can't convince you all.	是么…看来你们还是无法说服你们呢。	そう？どうやら、あなたたちに理解させるのは難しいようね。	NONE
 msg	308535	In that case.... I'll show you the truth of this world.....	既然这样…只能让你们看清这个世界的真相了。	それなら……この世界の真実を見せてあげるわ。	NONE

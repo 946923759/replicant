@@ -1,5 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-preload_portraits	101	201
+preload_portraits	101	201	55	61	54
 match_names	Kiana	Mei	_DIM_ALL_WHEN_EMPTY
 speaker	
 bg	007/006_1280x720
@@ -22,7 +22,7 @@ msg	308224	Shut up ...... you guys go to the training room first. I'll be there 
 speaker	Mei
 msg	308225	Okay. We'll see you there, Ms. Himeko.	嗯，姬子老师我们一会见~	はい、姫子先生。	NONE
 speaker	
-portraits	
+portraits
 msg	308226	……	……	……。	NONE
 msg	308227	I can't believe I'm still dreaming about that scene even after all this time.	没想到隔了这么久还会梦到这样情景。	こんなに経ってるっていうのに、まだあの光景を夢に見るなんてね。	NONE
 msg	308228	Seems like I'm getting old...	看来我真的老了呢……	私も、歳を取っちゃったわね……。	NONE
@@ -43,6 +43,8 @@ msg	307001	「Attention, attention, everyone come to the trestle.」	「全舰�
 speaker	Yiserin
 emote	54	1
 msg	307002	Looks like Himeko has woken up. She really is a restless woman. But ...... I hope this buys her a little more time.	看样子是姬子醒了，真是个不消停的女人。也好…至少这样还能再拖延一点时间。	どうやら、姫子の目が覚めたようね。本当に気の休まらない女なんだから。でも……これでもう少し時間が稼げるかしら。	NONE
+
+match_names	Emesa	Himeko	Yiserin
 speaker	Emesa
 bg	009/060_1280x720
 portraits	55	61

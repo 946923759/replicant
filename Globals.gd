@@ -690,6 +690,7 @@ var SCREENS:Dictionary = {
 	"ScreenTitleMenu":"res://Screens/ScreenTitleMenu/ScreenTitleMenu.tscn",
 	"ScreenGallery":"res://Screens/ScreenGallery/ScreenGallery_v2.tscn",
 	"ScreenSoundTest":"res://Screens/ScreenSoundTest/ScreenSoundTestV2.tscn",
+	"ScreenControllerTest":"res://Screens/ScreenControllerTest/ScreenControllerTest.tscn",
 
 	"ScreenFirstRun":"res://Screens/ScreenFirstRun.tscn",
 	"ScreenWebWarning":"res://Screens/ScreenWebWarning/ScreenWebWarning.tscn",
@@ -698,7 +699,7 @@ var SCREENS:Dictionary = {
 	"CutsceneFromFile":"res://Cutscene/CutsceneFromFile.tscn",
 	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV3.tscn",
 
-	"ScreenSelectEra":"res://Screens/RetroRemake/EraSelect/ScreenSelectEra.tscn",
+	"ScreenSelectEra":"res://Screens/ScreenSelectEra/ScreenSelectEra.tscn",
 
 	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
 	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",

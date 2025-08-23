@@ -1,13 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Screens/ScreenControllerTest/shadedLight05.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Screens/ScreenControllerTest/shadedLight01.png" type="Texture" id=3]
 [ext_resource path="res://Screens/ScreenControllerTest/640px-Dualshock_4_Layout.svg.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/TextFont_Large.tres" type="DynamicFont" id=5]
 
 [sub_resource type="GDScript" id=1]
-script/source = "extends Node2D
+script/source = "extends Control
 
 onready var actionMappings = {
 	\"ui_left\":$Sprite/DPad/L,
@@ -21,12 +20,33 @@ onready var actionMappings = {
 	\"ui_pause\":$Sprite/OptionButton
 }
 
+#onready var labelControllerName = $VBoxContainer/ControllerName
+#onready var labelNumControllers = $VBoxContainer/NumberOfControllers
 onready var stickL = $Sprite/StickL
 onready var stickR = $Sprite/StickR
 
+var startAHoldTime = 0.0
+
 func _process(delta):
-	$Control.text = Input.get_joy_name(0);
+	#if len(Input.get_connected_joypads()) > 0:
+	#	labelControllerName.text = Input.get_joy_name(0);
+	#else:
+	#	labelControllerName.text = \"No controllers detected\"
+	#labelNumControllers
+	var joypads = Input.get_connected_joypads()
+	var st = \"Connected joypads: \"+str(joypads.size())
+	for j in joypads:
+		st+= \"\\n\"+Input.get_joy_name(j)
+	$ControllerName.text = st
 	
+	if Input.is_action_pressed(\"ui_select\") and Input.is_action_pressed(\"ui_pause\"):
+		startAHoldTime += delta
+		if startAHoldTime > 3.0:
+			set_process(false)
+			get_tree().change_scene(\"res://Screens/ScreenInit.tscn\")
+			return
+	else:
+		startAHoldTime = 0.0
 	
 	for a in actionMappings:
 		var node = actionMappings[a]
@@ -42,6 +62,20 @@ func _process(delta):
 	stickR.offset.x=(Input.get_action_strength(\"right_analog_left\")*-1+Input.get_action_strength(\"right_analog_right\"))*100
 	$Label2.text = tr
 
+func _input(event):
+	for action in actionMappings:
+		if event.is_action_pressed(action):
+			var new = $VBoxContainer/Label.duplicate()
+			new.text = action
+			$VBoxContainer.add_child(new)
+			var t = create_tween()
+			t.tween_property(new,\"modulate:a\",0.0,5.0)
+			t.tween_callback(new,\"queue_free\")
+
+
+func _on_ExitScreen_gui_input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
+		get_tree().change_scene(\"res://Screens/ScreenInit.tscn\")
 
 
 \"\"\"
@@ -74,7 +108,9 @@ For more information, please refer to <http://unlicense.org/>
 \"\"\"
 "
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -171,6 +207,8 @@ position = Vector2( 361.714, 136.671 )
 scale = Vector2( 0.3, 0.5 )
 texture = ExtResource( 3 )
 
+[node name="L1" type="Sprite" parent="Sprite"]
+
 [node name="Label" type="Label" parent="."]
 margin_left = 709.84
 margin_top = 699.246
@@ -189,8 +227,41 @@ custom_fonts/font = ExtResource( 2 )
 text = "X Axis:
 Y Axis:"
 
-[node name="Control" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-custom_fonts/font = ExtResource( 5 )
+[node name="ControllerName" type="Label" parent="."]
+margin_right = 588.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 2 )
 text = "Current plugged controller:"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -421.0
+margin_top = -24.0
+margin_bottom = 24.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 2 )
+text = "This is input history"
+
+[node name="ExitScreen" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -622.0
+margin_top = -48.0
+margin_right = 622.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 2 )
+text = "Tap here to exit this screen or hold START+A for 3 seconds"
+
+[connection signal="gui_input" from="ExitScreen" to="." method="_on_ExitScreen_gui_input"]

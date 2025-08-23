@@ -2,19 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sel.png-57c0c92f93fc085871ce12f588c8efef.stex"
+path="res://.import/EraZERO.jpg-b720c670a68957a41a921563a6eb129c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/RetroRemake/EraSelect/sel.png"
-dest_files=[ "res://.import/sel.png-57c0c92f93fc085871ce12f588c8efef.stex" ]
+source_file="res://Screens/ScreenSelectEra/EraZERO.jpg"
+dest_files=[ "res://.import/EraZERO.jpg-b720c670a68957a41a921563a6eb129c.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

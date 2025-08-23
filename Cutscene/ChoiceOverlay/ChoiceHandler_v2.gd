@@ -121,7 +121,7 @@ func handle_mouse(selection_:int):
 	selection=selection_
 	update_selections()
 
-func onClickWrapper(event:InputEvent,selection_:int=-1):
+func onClickWrapper(event:InputEvent, selection_:int=-1):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
 		#print("[ChoiceOverlay] choice clicked, setting selection to "+String(selection))
 		selection=selection_

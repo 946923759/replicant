@@ -75,7 +75,7 @@ func OnCommand():
 	var SCREEN_SIZE = get_viewport().get_visible_rect().size
 	
 	var count = get_child_count()-1
-	var center = floor(count/2)
+	#var center = floor(count/2)
 	for i in range(count):
 		var c = get_child(i+1)
 		
@@ -135,19 +135,22 @@ func input_cancel():
 		emit_signal("switch_submenus",previous_submenu)
 
 #input() is called by base screen
-func input(event):
+func input(event: InputEvent):
 	if event is InputEventMouseMotion or event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
-	if Input.is_action_just_pressed("ui_down"):
+	if !event.is_pressed():
+		return
+	
+	if event.is_action("ui_down"):
 		set_selection(keyboard_selection+1)
-	elif Input.is_action_just_pressed("ui_up"):
+	elif event.is_action("ui_up"):
 		set_selection(keyboard_selection-1)
 		#update_keyboard_selections()
-	elif Input.is_action_just_pressed("ui_select"):
+	elif event.is_action("ui_select"):
 		#update_keyboard_selections()
 		input_accept(keyboard_selection)
-	elif Input.is_action_just_pressed("ui_cancel"):
+	elif event.is_action("ui_cancel"):
 		input_cancel()

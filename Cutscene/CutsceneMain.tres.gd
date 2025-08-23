@@ -1630,10 +1630,12 @@ func _on_Choices_selected_choice(selection):
 	print("[CutsceneMain] Choice result obtained, result was "+String(choiceResult)+": "+ChoiceTable[$Choices.selection])
 	$Choices.OffCommand()
 	ChoiceTable=[]
-	advance_text()
+	
 	if otherScreenIsHandlingInput != Overlay.CHOICE:
 		printerr("[CutsceneMain] Somehow input was handed to this screen from the choice one, but choice screen shouldn't have input")
 	otherScreenIsHandlingInput = Overlay.NONE
+	#This can affect otherScreenIsHandlingInput so it has to be last
+	advance_text()
 
 
 func _on_OptionsScreen_options_closed():

@@ -18,30 +18,30 @@ func _on_OKButton_gui_input(event):
 		OffCommandPrevScreen()
 		
 var time_between_mousewheel = 0
-func _input(_event):
+func _input(event):
 #	if Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("ui_cancel"):
 #		OffCommandPrevScreen()
-	if Input.is_action_just_pressed("ui_right"):
+	if event.is_action_pressed("ui_right"):
 		set_page(curPage+1)
-	elif Input.is_action_just_pressed("ui_left"):
+	elif event.is_action_pressed("ui_left"):
 		set_page(curPage-1)
 #	elif Input.is_action_just_released("mousewheel_down") and curPage < NUM_PAGES-1:
 #		set_page(curPage+1)
-	elif Input.is_action_just_pressed("ui_pause"):
+	elif event.is_action_pressed("ui_pause"):
 		if curPage==1:
 			_on_FoxgirlButton_pressed()
 		elif curPage==2:
 			_on_FoxgirlButton_pressed()
 	
-	if _event is InputEventMouseMotion:
+	if event is InputEventMouseMotion:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		
-	elif _event is InputEventMouseButton:
-		if _event.button_index == BUTTON_WHEEL_DOWN:
+	elif event is InputEventMouseButton:
+		if event.button_index == BUTTON_WHEEL_DOWN:
 			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
 				time_between_mousewheel = Time.get_ticks_usec()
 				set_page(curPage+1)
-		elif _event.button_index == BUTTON_WHEEL_UP:
+		elif event.button_index == BUTTON_WHEEL_UP:
 			
 			if abs(time_between_mousewheel - Time.get_ticks_usec()) > 250000:
 				time_between_mousewheel = Time.get_ticks_usec()

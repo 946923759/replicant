@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EraRetro.jpg-b949595fb9caea6cd2195fb6ce87432e.stex"
+path="res://.import/EraFM.jpg-db2d217990c97c277a4c3abd57d564e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/RetroRemake/EraSelect/EraRetro.jpg"
-dest_files=[ "res://.import/EraRetro.jpg-b949595fb9caea6cd2195fb6ce87432e.stex" ]
+source_file="res://Screens/ScreenSelectEra/EraFM.jpg"
+dest_files=[ "res://.import/EraFM.jpg-db2d217990c97c277a4c3abd57d564e0.stex" ]
 
 [params]
 

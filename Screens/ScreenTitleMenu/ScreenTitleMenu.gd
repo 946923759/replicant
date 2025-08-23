@@ -170,7 +170,7 @@ func update_background_parallax(mousePos:Vector2):
 		
 
 
-func _input(event):
+func _input(event:InputEvent):
 	if event is InputEventMouseMotion:
 		noinputs = 0.0
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
@@ -179,24 +179,26 @@ func _input(event):
 		if !OS.has_feature("mobile"):
 			update_background_parallax(event.position)
 	#elif event is InputEventJoypadMotion:
-		
-	if Input.is_action_just_pressed("ui_down"):
+	#if !event.is_pressed():
+	#	return
+	
+	if event.is_action_pressed("ui_down", true):
 		if keyboard_selection<$ActorFrame.get_child_count()-1:
 			keyboard_selection+=1
 		else:
 			keyboard_selection=0
 		update_keyboard_selections()
-	elif Input.is_action_just_pressed("ui_up"):
+	elif event.is_action_pressed("ui_up",true):
 		if keyboard_selection<=0:
 			keyboard_selection=$ActorFrame.get_child_count()-1
 		else:
 			keyboard_selection-=1
 		update_keyboard_selections()
-	elif Input.is_action_just_pressed("ui_shift") or Input.is_action_just_pressed("ui_pause"):
+	elif event.is_action_pressed("ui_shift") or event.is_action_pressed("ui_pause"):
 		_on_OKButton_pressed()
-	elif Input.is_action_just_pressed("ui_select"):
+	elif event.is_action_pressed("ui_select"):
 		handle_clicked(keyboard_selection)
-	elif Input.is_action_just_pressed("ui_cancel"):
+	elif event.is_action_pressed("ui_cancel"):
 		handle_clicked(4)
 
 #If Android back button pressed
@@ -241,4 +243,5 @@ func _on_Logo_gui_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == 1:
 		timesClicked+=1
 		if timesClicked>7:
-			$ColorRect.OffCommand("RR-ScreenTitleMenu")
+			#$ColorRect.OffCommand("RR-ScreenTitleMenu")
+			$DebugPanel.visible = true

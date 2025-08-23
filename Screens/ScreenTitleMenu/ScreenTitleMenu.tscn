@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Ext/RequiredBG/003_1280x720.png" type="Texture" id=1]
 [ext_resource path="res://stepmania-compat/smSprite.gd" type="Script" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://MenuSounds/fm/deck_ui_navigation.wav" type="AudioStream" id=18]
 [ext_resource path="res://MenuSounds/fm/deck_ui_side_menu_fly_in.wav" type="AudioStream" id=19]
 [ext_resource path="res://MenuSounds/fm/deck_ui_show_modal.wav" type="AudioStream" id=20]
+[ext_resource path="res://Screens/DebugPanel/DebugPanel.tscn" type="PackedScene" id=21]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.321569, 0.92549, 1, 1, 1, 1, 1, 0 )
@@ -168,9 +169,9 @@ align = 1
 
 [node name="Version" type="Label" parent="GridContainer"]
 margin_left = 187.0
-margin_top = 7.0
-margin_right = 281.0
-margin_bottom = 57.0
+margin_top = 8.0
+margin_right = 276.0
+margin_bottom = 56.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -301,6 +302,16 @@ margin_top = -50.0
 margin_right = 498.0
 custom_fonts/font = ExtResource( 16 )
 text = "FRAMES PER SECOND"
+
+[node name="DebugPanel" parent="." instance=ExtResource( 21 )]
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+margin_left = 0.0
+margin_top = -273.0
+margin_right = 759.0
+margin_bottom = 273.0
 
 [connection signal="gui_input" from="Logo" to="." method="_on_Logo_gui_input"]
 [connection signal="pressed" from="GridContainer/OKButton" to="." method="_on_OKButton_pressed"]

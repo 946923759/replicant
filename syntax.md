@@ -279,17 +279,17 @@ You may choose to put ":" at the end of the conditional (ex. `if hasItem true:`)
 Starting with this statement:
 ```
 label	choice_loop
-dchoice	0	What's your full name?
-dchoice	1	You're a Herrscher, right?
+dchoice	1	What's your full name?
+dchoice	2	You're a Herrscher, right?
 msg	What should I ask...
 ```
 
 It can be continued with an if statement like this:
 ```
-if	__choice__	0:
+if	__choice__	1:
   /Kyuushou	My name is Kyuushou Houraiji, the savior of the world!
   var	kyuu	&0
-if	__choice__	1:
+if	__choice__	2:
   /Kyuushou	I'm the Herrscher of the Void.
   var	kyuu	&1
 ```

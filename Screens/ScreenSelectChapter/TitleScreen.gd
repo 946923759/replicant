@@ -99,20 +99,20 @@ func _input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	
 	var tmpChNum = curChapterNum
-	if Input.is_action_just_pressed("ui_page_down"):
+	if event.is_action_pressed("ui_page_down"):
 		if tmpChNum < chapterActorFrame.get_child_count()-2:
 			tmpChNum+=1
-	elif Input.is_action_just_pressed("ui_page_up"):
+	elif event.is_action_pressed("ui_page_up"):
 		if tmpChNum > 1:
 			tmpChNum-=1
-	elif Input.is_action_just_pressed("ui_down") or Input.is_action_just_pressed("ui_up"):
+	elif event.is_action_pressed("ui_down",true) or event.is_action_pressed("ui_up",true):
 		var chapterName = chapterActorFrame.get_child(tmpChNum).text
 		var chapter:Array = database[chapterName]
 		var chLength = chapter.size()
 		#var newPos = curMissionNumForGamepad
 		
 		var prevmSelObj = missionSelObjs.get_child(curMissionNumForGamepad)
-		if Input.is_action_just_pressed("ui_down"):
+		if event.is_action_pressed("ui_down",true):
 			if curMissionNumForGamepad<chLength-1:
 				curMissionNumForGamepad+=1
 				#set_all_button_highlights_for_gamepad(curMissionNumForGamepad,0)
@@ -166,7 +166,7 @@ func _input(event):
 			pass
 			#newPos-=1
 		#if newPos < 
-	elif Input.is_action_just_pressed("ui_left"):
+	elif event.is_action_pressed("ui_left",true):
 		if curMissionPartNumForGamepad>0:
 			curMissionPartNumForGamepad-=1
 			$Navigation.play()
@@ -174,18 +174,18 @@ func _input(event):
 			
 		#
 		#if 
-	elif Input.is_action_just_pressed("ui_right"):
+	elif event.is_action_pressed("ui_right"):
 		var mSelObj = missionSelObjs.get_child(curMissionNumForGamepad)
 		if curMissionPartNumForGamepad<mSelObj.getNumParts()-1:
 			curMissionPartNumForGamepad+=1
 			$Navigation.play()
 			set_all_button_highlights_for_gamepad(curMissionNumForGamepad,curMissionPartNumForGamepad)
-	elif Input.is_action_just_pressed("ui_select") or Input.is_action_just_pressed("ui_pause"):
+	elif event.is_action_pressed("ui_select") or event.is_action_pressed("ui_pause"):
 		missionSelObjs.get_child(curMissionNumForGamepad).buttonTrigger(curMissionPartNumForGamepad)
 		return
-	elif Input.is_action_just_pressed("ui_cancel"):
+	elif event.is_action_pressed("ui_cancel"):
 		$FadeOut.OffCommand("ScreenTitleMenu")
-	elif OS.is_debug_build() and Input.is_action_just_pressed("DebugButton1"):
+	elif OS.is_debug_build() and event.is_action_pressed("DebugButton1"):
 		var p = "ch-sel-db.tsv"
 		if OS.get_name() == "X11":
 			OS.execute("xdg-open",["ch-sel-db.tsv"], false)

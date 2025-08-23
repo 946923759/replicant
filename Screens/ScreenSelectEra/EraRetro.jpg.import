@@ -2,19 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sel_outline_focus.png-8de8f7946ddeb6dfe6ced5703b32531f.stex"
+path="res://.import/EraRetro.jpg-e82f22b5f273e7b028e211a6f5040bd8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/RetroRemake/EraSelect/sel_outline_focus.png"
-dest_files=[ "res://.import/sel_outline_focus.png-8de8f7946ddeb6dfe6ced5703b32531f.stex" ]
+source_file="res://Screens/ScreenSelectEra/EraRetro.jpg"
+dest_files=[ "res://.import/EraRetro.jpg-e82f22b5f273e7b028e211a6f5040bd8.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

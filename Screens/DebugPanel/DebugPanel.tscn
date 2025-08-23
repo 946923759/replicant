@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Screens/DebugPanel/DebugPanel.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=2]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 2 )
+/fonts/default = ExtResource( 2 )
+
+[node name="DebugPanel" type="Panel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -759.0
+margin_bottom = 546.0
+theme = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 66.0
+margin_right = -4.0
+margin_bottom = -4.0
+scroll_horizontal_enabled = false
+
+[node name="AllScreens" type="VBoxContainer" parent="TabContainer/ScrollContainer"]
+margin_right = 751.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="TabContainer/ScrollContainer/AllScreens"]
+margin_right = 751.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+text = "[Close Debug Panel]"
+
+[connection signal="pressed" from="TabContainer/ScrollContainer/AllScreens/Button" to="." method="_on_Button_pressed"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sel_white.png-9cc888c6fc4fe2b238d9c980c1b79ed5.stex"
+path="res://.import/frame.png-b93f09de2a51be72f5d4c021bc00ff4d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/RetroRemake/EraSelect/sel_white.png"
-dest_files=[ "res://.import/sel_white.png-9cc888c6fc4fe2b238d9c980c1b79ed5.stex" ]
+source_file="res://Screens/ScreenSelectEra/frame.png"
+dest_files=[ "res://.import/frame.png-b93f09de2a51be72f5d4c021bc00ff4d.stex" ]
 
 [params]
 

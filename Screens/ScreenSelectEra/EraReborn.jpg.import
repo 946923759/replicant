@@ -2,19 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mpv-shot0004.jpg-7cc3a40ac237c0736160375cbf08c385.stex"
+path="res://.import/EraReborn.jpg-e8a9348bf4a3a0d4cbb07a3850f25e70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screens/RetroRemake/EraSelect/mpv-shot0004.jpg"
-dest_files=[ "res://.import/mpv-shot0004.jpg-7cc3a40ac237c0736160375cbf08c385.stex" ]
+source_file="res://Screens/ScreenSelectEra/EraReborn.jpg"
+dest_files=[ "res://.import/EraReborn.jpg-e8a9348bf4a3a0d4cbb07a3850f25e70.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

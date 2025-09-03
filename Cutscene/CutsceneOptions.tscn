@@ -359,9 +359,9 @@ flip_h = true
 
 [node name="Label" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 25.0
-margin_right = 821.0
-margin_bottom = 75.0
+margin_top = 26.0
+margin_right = 787.0
+margin_bottom = 74.0
 custom_fonts/font = ExtResource( 4 )
 text = "Options"
 
@@ -388,9 +388,9 @@ stretch_mode = 3
 
 [node name="Label2" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 129.0
-margin_right = 821.0
-margin_bottom = 179.0
+margin_top = 130.0
+margin_right = 787.0
+margin_bottom = 178.0
 custom_fonts/font = ExtResource( 4 )
 text = "Auto"
 
@@ -423,9 +423,9 @@ stretch_mode = 3
 
 [node name="Label3" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 233.0
-margin_right = 821.0
-margin_bottom = 283.0
+margin_top = 234.0
+margin_right = 787.0
+margin_bottom = 282.0
 custom_fonts/font = ExtResource( 4 )
 text = "Advance"
 
@@ -452,9 +452,9 @@ stretch_mode = 3
 
 [node name="Label4" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 337.0
-margin_right = 821.0
-margin_bottom = 387.0
+margin_top = 338.0
+margin_right = 787.0
+margin_bottom = 386.0
 custom_fonts/font = ExtResource( 4 )
 text = "Note (When 'TN' is visible)"
 
@@ -481,9 +481,9 @@ stretch_mode = 3
 
 [node name="Label5" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 441.0
-margin_right = 821.0
-margin_bottom = 491.0
+margin_top = 442.0
+margin_right = 787.0
+margin_bottom = 490.0
 custom_fonts/font = ExtResource( 4 )
 text = "Traceback"
 
@@ -510,9 +510,9 @@ stretch_mode = 3
 
 [node name="Label6" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 545.0
-margin_right = 821.0
-margin_bottom = 595.0
+margin_top = 546.0
+margin_right = 787.0
+margin_bottom = 594.0
 custom_fonts/font = ExtResource( 4 )
 text = "History"
 
@@ -539,8 +539,8 @@ stretch_mode = 3
 
 [node name="Label7" type="Label" parent="GridContainer"]
 margin_left = 224.0
-margin_top = 649.0
-margin_right = 821.0
-margin_bottom = 699.0
+margin_top = 650.0
+margin_right = 787.0
+margin_bottom = 698.0
 custom_fonts/font = ExtResource( 4 )
 text = "Skip Text"

@@ -254,7 +254,7 @@ script = ExtResource( 34 )
 
 [node name="SoundEffects" type="Node" parent="."]
 
-[node name="whiteFlash" type="ColorRect" parent="."]
+[node name="FGLayer" type="ColorRect" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0

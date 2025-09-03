@@ -22,12 +22,12 @@ bg	CG10009
 
 nop	Was this REALLY necessary
 portraits	121	101	201
-tween	during	foreground	visible,true;horizalign,left;zoomx,0;diffuse,0,0,0,1;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
-tween	during	CG10009	sleep,.3;diffusealpha,0
-tween	during	re/ch2	sleep,.3;diffusealpha,1
-tween	during	121	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
-tween	during	101	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
-tween	during	201	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+tween	foreground	visible,true;horizalign,left;zoomx,0;diffuse,0,0,0,1;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
+tween	CG10009	sleep,.3;diffusealpha,0
+tween	re/ch2	sleep,.3;diffusealpha,1
+tween	121	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+tween	101	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
+tween	201	stoptweening;diffusealpha,0;sleep,.3;diffusealpha,1
 
 music	re/March of the Dreadnoughts
 emote	121	0

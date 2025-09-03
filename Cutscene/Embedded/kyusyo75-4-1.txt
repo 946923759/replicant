@@ -20,8 +20,8 @@ msg	302875	This is who you really are!	这才是真正的你！	これこそが�
 /Kyuushou	302876	The real..... Me.....	真正的…我……	本当の……私……。	NONE
 
 bg	007/020_1280x720	fade
-tween	current	007/020_1280x720	linear,.5;diffuse,1,.7,.5,1
-nop	tween	current	foreground	visible,true;linear,.5;diffuse,1,.7,.5,.4
+tween	007/020_1280x720	linear,.5;diffuse,1,.7,.5,1
+nop	tween	foreground	visible,true;linear,.5;diffuse,1,.7,.5,.4
 /Kyuushou	302878	Ugh...	呜……	うっ……。	NONE
 /Familiar voice	302879	Remember!  You wouldn't have thought of giving up at that time!	回忆起来！九霄！那个时候的你从来就没有想过放弃！	思い出して！あの時のあんたは諦めるなんて考えもしなかったでしょう！	NONE
 msg	302880	You saved me! You've given me a new life!	是你拯救了我！是你给了我新生！	あんたが私を救ってくれたのよ！あんたが私を生まれ変わらせてくれたのよ！	NONE
@@ -32,7 +32,7 @@ msg	302884	Many people still believe in you!  Many people are still waiting for 
 msg	302885	Open your eyes!  Kyuushou!  This is the world you should save!	睁开眼睛！九霄！这才是你要拯救的世界！	目を開けて！九霄ちゃん！これこそがあなたが救うべき世界なのよ！	NONE
 /Kyuushou	302886	I'm.... Trying.... To.... Save... The world.....	我所要…拯救的…世界……	私……いや、我が……救うべき……世界……。	NONE
 bg	011/022_1280x720
-nop	tween	current	foreground	linear,.5;diffusealpha,0
+nop	tween	foreground	linear,.5;diffusealpha,0
 
 speaker	Teammate
 msg	303098	Yiserin!  The energy of all ships has gone down!  #n Collapsed creatures have broken through the last line of defense and are approaching the bridge!	伊瑟琳！全舰的能源都已经瘫痪了！崩坏生物已经突破最后的防线朝舰桥逼近了！	イザーリン！全艦のエネルギーがダウンしました！#n崩壊生物は最後の防衛線を突破して艦橋に迫っています！	NONE

@@ -45,9 +45,9 @@ msg	308443	Oh, whatever! As long as we can get there, right?	哎呀你管它呢�
 
 emote	54	3
 emote	67	4
-tween	during	54	decelerate,.5;addx,-300;addy,50;zoom,2
-tween	during	67	decelerate,.5;addx,-350;addy,50;zoom,2
-tween	during	011/007_1280x720	decelerate,.5;addx,-200;zoom,1.2
+tween	54	decelerate,.5;addx,-300;addy,50;zoom,2
+tween	67	decelerate,.5;addx,-350;addy,50;zoom,2
+tween	011/007_1280x720	decelerate,.5;addx,-200;zoom,1.2
 msg	308444	Wow, the Moonlight Throne is in terrible shape. If my mom saw this, she'd have a stroke. What in the world could have done this to it?	话说从近处看还真是惨呢~到底是什么样的东西把月光王座弄成这副样子的，要是妈妈看见了一定会心疼死。	近くで見ると本当に悲惨だなぁ！一体、何が月光王座をこんな姿にしたんだ？ママに見られたら卒倒もんだぞ、こりゃ。	NONE
 speaker	Yiserin
 

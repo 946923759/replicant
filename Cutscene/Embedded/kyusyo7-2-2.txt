@@ -78,7 +78,7 @@ speaker	Kyuushou
 emote	58	8
 emote	60	3
 msg	302384	I'm fine.... I think... For the Savior, this is no big deal...	没事…对救世主来说这都是小场…	だ、大丈夫……救世主にとって、これしきのこと大したことで——	NONE
-tween	current	58	linear,.5;addy,1024
+tween	58	linear,.5;addy,1024
 msg	302385	Upp.....!!!! (Vomit sounds)	呕！！！！	うぷ……ッ！！！！\n——オ˝ロ˝ロ˝ロ˝ロ˝ッ！！！	NONE
 speaker	Bronya
 emote	58	8

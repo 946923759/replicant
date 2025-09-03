@@ -196,7 +196,7 @@ func set_selection(idx:int, animate:bool = true):
 		return
 	
 	selected = idx
-	print("set selection ",selected)
+	#print("set selection ",selected)
 	
 	for i in range(chapter_actor_frame.get_child_count()):
 		if i != selected:
@@ -216,7 +216,7 @@ func set_selection(idx:int, animate:bool = true):
 
 func _input(event):
 	var current_actor = chapter_actor_frame.get_child(selected)
-	if Input.is_action_just_pressed("ui_select"):
+	if event.is_action_pressed("ui_select"):
 		if current_actor.is_expanded:
 			current_actor.input(event)
 			return
@@ -224,26 +224,26 @@ func _input(event):
 		
 		set_selection(selected,true)
 		$Confirm.play()
-#	elif Input.is_action_just_pressed("ui_cancel"):
+#	elif event.is_action_pressed("ui_cancel"):
 #		for c in chapter_actor_frame.get_children():
 #			c.LoseFocus()
 #		#current_actor.LoseFocus()
 #		reposition_actors()
-	elif Input.is_action_just_pressed("ui_right") or Input.is_action_just_pressed("ui_page_down"):
+	elif event.is_action_pressed("ui_right") or event.is_action_pressed("ui_page_down"):
 		if selected < chapter_actor_frame.get_child_count()-1:
 			selected += 1
 		else:
 			selected = 0
 		$Cursor.play()
 		reposition_actors()
-	elif Input.is_action_just_pressed("ui_left") or Input.is_action_just_pressed("ui_page_up"):
+	elif event.is_action_pressed("ui_left") or event.is_action_pressed("ui_page_up"):
 		if selected > 0:
 			selected -= 1
 		else:
 			selected = chapter_actor_frame.get_child_count() - 1
 		$Cursor.play()
 		reposition_actors()
-	if Input.is_action_just_pressed("ui_up") or Input.is_action_just_pressed("ui_down"):
+	if event.is_action_pressed("ui_up") or event.is_action_pressed("ui_down"):
 		if current_actor.is_expanded:
 			$Cursor.play()
 			current_actor.input(event)

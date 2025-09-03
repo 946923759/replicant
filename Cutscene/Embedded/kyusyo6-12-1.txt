@@ -28,7 +28,7 @@ speaker	Sin
 emote	67	3
 emote	54	3
 msg	308626	Let go of me... I can still—	放开我…我还能……	離せ……まだ——	NONE
-tween	during	67	decelerate,.3;addy,100
+tween	67	decelerate,.3;addy,100
 tn	0	coughing sound
 msg	308627	——Gaaagh!! 	咕啊！！！！！	——ぐはぁッ！！！！！	NONE
 speaker	Yiserin
@@ -40,7 +40,7 @@ speaker	Sin
 
 emote	67	3
 emote	54	3
-tween	during	67	decelerate,.3;y,0
+tween	67	decelerate,.3;y,0
 msg	308629	Let go of my hand——	给我松手……	手を離せ……。	NONE
 speaker	Yiserin
 

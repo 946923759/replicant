@@ -32,7 +32,7 @@ bg	rr/bg_prologue
 msgbox_open
 match_names	Kiana	_DIM_ALL_WHEN_EMPTY
 portraits	111,false,3
-tween	before	111	zoom,2;y,-150
+tween	111	zoom,2;y,-150
 emote	111	5
 /Kiana	呼！呼！	ハァ、ハァ……！	{i}Huh, huh...!{/i}	{i}Hm, hm…!{/i}
 /Kiana	那些怪物应该没有追来了吧……	あの怪物たち、もう追ってこないよね……	Those monsters aren't chasing me anymore, right...?	Esses monstros não estão mais me perseguindo...?

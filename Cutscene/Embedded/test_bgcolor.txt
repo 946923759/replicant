@@ -1,14 +1,14 @@
 bg	009/003_1280x720
 msg	This will test coloring the background. This can be done with the tween command and either modulate or diffuse (diffuse is an alias for modulate).
-tween	during	009/003_1280x720	linear,.5;diffuse,#FF0000
+tween	009/003_1280x720	linear,.5;diffuse,#FF0000
 msg	Colored red
-tween	during	009/003_1280x720	linear,.5;diffuse,#00FF00
+tween	009/003_1280x720	linear,.5;diffuse,#00FF00
 msg	Colored green
-tween	during	009/003_1280x720	linear,.5;diffuse,#0000FF
+tween	009/003_1280x720	linear,.5;diffuse,#0000FF
 msg	Colored blue
-tween	during	009/003_1280x720	linear,.5;diffuse,darkseagreen
+tween	009/003_1280x720	linear,.5;diffuse,darkseagreen
 msg	diffuse supports named colors as well as hex colors.
-tween	during	009/003_1280x720	linear,.5;diffuse,1.0,0.3,1.0
+tween	009/003_1280x720	linear,.5;diffuse,1.0,0.3,1.0
 msg	And floats separated by commas too.
-tween	during	009/003_1280x720	linear,.5;diffuse,white
+tween	009/003_1280x720	linear,.5;diffuse,white
 msg	To remove coloring, diffuse by white. (Because of how game graphics work, the default color is white and any coloring is added on top. diffusing black = the background is completely black)

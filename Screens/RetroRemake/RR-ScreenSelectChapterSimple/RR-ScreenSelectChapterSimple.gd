@@ -1,19 +1,26 @@
 extends "res://Screens/ScreenWithMenuElements.gd"
 
+export(Globals.DLC_PACK) var pack = Globals.DLC_PACK.RETRO_REMAKE
+
+func get_database_path(pack):
+	if pack == Globals.DLC_PACK.RETRO_REMAKE:
+		return "Screens/RetroRemake/rr_db.tsv"
+	else:
+		return "Screens/RebornRemake/re_db.tsv"
 
 func _ready():
-	var load_path:String
+	var load_path:String = get_database_path(pack)
 	var database_ref:Dictionary
 
-	if name.begins_with("RR"):
+	if pack==Globals.DLC_PACK.RETRO_REMAKE:
 		database_ref = Globals.chapterDatabase_RR
-		load_path = "Screens/RetroRemake/rr_db.tsv"
-	elif name.begins_with("RE"):
+	else:
 		database_ref = Globals.chapterDatabase_RE
-		load_path = "Screens/RebornRemake/re_db.tsv"
+	
+	
 			
 	if database_ref.empty():
-		database_ref=Globals.load_database(load_path)
+		database_ref = Globals.load_database(load_path)
 		if database_ref.has('__starting_episode__'):
 			Globals.currentEpisodeData=database_ref['__starting_episode__'][0]
 			Globals.nextCutscene=Globals.currentEpisodeData.parts[0]+".txt"
@@ -50,4 +57,9 @@ func _ready():
 	#	if len(chapter_name)==0:
 	#		continue
 		
+
+func _input(event):
+	if event.is_action_pressed("DebugButton1"):
+		if OS.get_name() == "X11":
+			OS.execute("xdg-open",[get_database_path(pack)], false)
 

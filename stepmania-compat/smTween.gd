@@ -52,7 +52,11 @@ If two elements are tweened, VN engine can do max() on tween times.
 static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> float:
 	
 	tw.set_parallel(true)
-	tw.tween_callback(objectToTween,"set_meta",['tweening_state',TWEEN_STATUS.TWEEN_RUNNING])
+	# We don't want to set this in the callback, 
+	# since the frame can step before the tween has a chance to start.
+	# And we have to poll if any tweens are running in vn main func
+	objectToTween.set_meta("tweening_state",TWEEN_STATUS.TWEEN_RUNNING)
+	#tw.tween_callback(objectToTween,"set_meta",['tweening_state',TWEEN_STATUS.TWEEN_RUNNING])
 	tw.connect("finished",objectToTween,"set_meta",['tweening_state',TWEEN_STATUS.TWEEN_FINISHED])
 	var cmnds = tweenString.split(";",false)
 	
@@ -208,6 +212,7 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 					tw.tween_property(objectToTween,"cur_expression",splitCmd[1],0.0).set_delay(timeToDelay)
 			_:
 				printerr("Unregistered command "+String(splitCmd))
+	objectToTween.set_meta("tween_time",timeToDelay+tweenLength)
 	return timeToDelay+tweenLength
 
 static func get_total_tween_time(tweenStr:String) -> float:

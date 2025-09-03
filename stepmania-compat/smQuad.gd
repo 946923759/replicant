@@ -19,6 +19,9 @@ func showActor(s:float):
 # warning-ignore:return_value_discarded
 	seq.tween_property(self,'modulate:a',0,s)
 
+func is_tweening() -> bool:
+	return get_meta("tweening_state",0) == 1
+
 func apply_sm_tween(tweenString) -> float:
-	var tw = get_tree().create_tween()
+	var tw = create_tween()
 	return smTween.cmd(tw,self,tweenString) #OH BOY HERE WE GO

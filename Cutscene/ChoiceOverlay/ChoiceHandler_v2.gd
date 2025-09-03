@@ -103,18 +103,18 @@ func input_accept():
 		emit_signal("selected_choice",selection)
 		OffCommand()
 
-func _input(_event):
+func _input(event):
 	if !visible:
 		return
-	if Input.is_action_just_pressed("ui_up"):
+	if event.is_action_pressed("ui_up"):
 		input_up()
-	elif Input.is_action_just_pressed("ui_down"):
+	elif event.is_action_pressed("ui_down"):
 		input_down()
-	elif Input.is_action_just_pressed("ui_select"):
+	elif event.is_action_pressed("ui_select"):
 		#print("[ChoiceOverlay] ui_select!")
 		input_accept()
 		get_tree().set_input_as_handled()
-	elif Input.is_action_just_pressed("DebugButton2"):
+	elif event.is_action_pressed("DebugButton2"):
 		OnCommand()
 
 func handle_mouse(selection_:int):

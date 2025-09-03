@@ -20,6 +20,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 PrevScreen = "ScreenSelectEra"
+HandleRightClickAsB = true
+pack = 1
 
 [node name="TextureRect" type="TextureRect" parent="." index="1"]
 self_modulate = Color( 0.309804, 0.309804, 0.309804, 1 )

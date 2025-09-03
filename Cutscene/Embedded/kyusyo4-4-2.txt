@@ -17,7 +17,7 @@ msg	301931	And third, if the first two rules are contradicting each other, then 
 msg	301932	If there is no objection, let's go...	如果没有异议的话就出发吧……	異議がなければ出発よ……。	NONE
 
 emote	61	2
-tween	during	61	decelerate,.3;addy,100
+tween	61	decelerate,.3;addy,100
 msg	301933	Ugh...!	呃……！	あっ……！	NONE
 
 portraits	61	66
@@ -25,7 +25,7 @@ portraits	61	66
 
 speaker	Himeko
 emote	61	1
-tween	during	61	decelerate,.5;addy,-100
+tween	61	decelerate,.5;addy,-100
 msg	301935	I'm okay, I just slipped... Everybody, cheer up, don't let the newcomer down!	我没事，只是脚底滑了一下…都打起精神，不要让新人看笑话！	大丈夫。足を滑らしただけよ……みんな、気合を入れてね。新人に笑われないように！ 	NONE
 
 /Greymoth Member	301936	Got it!	是！	はッ！	NONE

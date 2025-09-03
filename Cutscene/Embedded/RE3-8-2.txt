@@ -98,7 +98,7 @@ msg	252279	Yeah... but it's okay. Thank you.	嗯！我知道！太好了……	�
 
 emote	201	2
 emote	101	2
-nop	tween	during	101	decelerate,.3;addy,100
+nop	tween	101	decelerate,.3;addy,100
 /Kiana	252280	I couldn't protect you this time, Mei-senpai. Next time I'll definitely protect you... okay...?	这一次没能保护好芽衣，如果有下一次的话我一定会保护好你……的……	今回は芽衣先輩を守れなかったわ。次こそは必ず守るから……ね……。	NONE
 speaker	Mei
 emote	201	2

@@ -26,7 +26,7 @@ extra_spacing_top = 8
 font_data = ExtResource( 7 )
 
 [node name="RE-ScreenSelectChapterSimple" instance=ExtResource( 2 )]
-HandleRightClickAsB = true
+pack = 2
 
 [node name="Chapter 1" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0"]
 chapter_full_name = ""

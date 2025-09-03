@@ -47,6 +47,23 @@ var textOptionsSubmenu = {
 	"skipChoicesToo":Globals.OPTIONS['skipChoicesToo']
 }
 
+
+var font = preload("res://Fonts/OptionsFont.tres")
+#var displayedOptions:int=0
+#onready var desc = $DescrptionF/Description
+onready var selectSound = $AudioStreamPlayer
+
+#How not to program
+var mainMenuSelection:int = 0
+var subMenuSelection:PoolIntArray = []
+var isSubMenu:bool=false
+var optionsFrame:Control #created on _init()
+
+var anyOptionWasChanged:bool=false
+
+
+onready var arrowTween = $ArrowTween
+
 func action_reload():
 	get_tree().change_scene("res://Cutscene/CutsceneFromFile.tscn")
 
@@ -91,22 +108,7 @@ func action_skip():
 	else:
 		print("No cutscene player found... Assuming that this is debugging")
 	#get_parent().end_cutscene()
-
-var font = preload("res://Fonts/OptionsFont.tres")
-#var displayedOptions:int=0
-#onready var desc = $DescrptionF/Description
-onready var selectSound = $AudioStreamPlayer
-
-#How not to program
-var mainMenuSelection:int = 0
-var subMenuSelection:PoolIntArray = []
-var isSubMenu:bool=false
-var optionsFrame:Control #created on _init()
-
-var anyOptionWasChanged:bool=false
-
-
-onready var arrowTween = $ArrowTween
+	
 func highlightList(optFrame:Control,curSel:int):
 	arrowTween.stop_all()
 	if not OS.has_feature("mobile"):
@@ -618,7 +620,7 @@ func _input(event):
 	else:
 		menuSize=optionsFrame.get_child_count()
 	
-	if Input.is_action_pressed("ui_down"):
+	if event.is_action_pressed("ui_down",true):
 		if curSel < menuSize-1:
 			curSel+=1
 		else: #If at bottom, loop to top
@@ -627,7 +629,7 @@ func _input(event):
 		#if selection > 5:
 		#	moveListUp()
 		selectSound.play()
-	elif Input.is_action_pressed("ui_up"):
+	elif event.is_action_pressed("ui_up",true):
 		if curSel > 0:
 			curSel-=1
 		else: #if selection is -1 or at top, loop to bottom
@@ -636,19 +638,19 @@ func _input(event):
 		#if selection < 6:
 		#	moveListDown()
 		selectSound.play()
-	elif Input.is_action_pressed("ui_left"):
+	elif event.is_action_pressed("ui_left"):
 		if curSel==-1:
 			return
 		var option = curMenu.get_child(curSel)
 		handle_option(option,false)
 		get_tree().set_input_as_handled()
-	elif Input.is_action_pressed("ui_right"):
+	elif event.is_action_pressed("ui_right"):
 		if curSel==-1:
 			return
 		var option = curMenu.get_child(curSel)
 		handle_option(option)
 		get_tree().set_input_as_handled()
-	elif Input.is_action_pressed("ui_select") or (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
+	elif event.is_action_pressed("ui_select") or (event is InputEventMouseButton and event.button_index==1 and event.pressed) or (event is InputEventScreenTouch and event.index==1):
 		
 		if event is InputEventMouseButton or event is InputEventScreenTouch:
 			curSel=get_selection_from_mouse_pos(curMenu,event)
@@ -687,7 +689,7 @@ func _input(event):
 					isSubMenu=false
 				_:
 					print("Unhandled option!")
-	elif Input.is_action_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index==2 and event.pressed):
+	elif event.is_action_pressed("ui_cancel") or (event is InputEventMouseButton and event.button_index==2 and event.pressed):
 		handle_back_button()
 		return
 	elif event is InputEventMouseMotion:

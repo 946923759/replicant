@@ -3,7 +3,7 @@ msg	This scene is loading a background with custom parameters, using the bg_cust
 msg	It allows you to specify custom scaling and positioning. In addition, SCREEN_CENTER_X and SCREEN_CENTER_Y are available as constants for the parameters.
 nop	This tween is looking up the name field above, not the Texture. Texture specifies the file name, name specifies the object name.
 nop	When loading normally, the file name and object name are identical.
-tween	current	aliceroom1	linear,1;addy,540
+tween	aliceroom1	linear,1;addy,540
 msg	Tweening down!!
-tween	current	aliceroom1	linear,1;addy,-540
+tween	aliceroom1	linear,1;addy,-540
 msg	Tweening up!!

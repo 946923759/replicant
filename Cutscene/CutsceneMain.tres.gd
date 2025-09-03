@@ -874,7 +874,6 @@ func advance_text()->bool:
 			'flash':
 				$FadeToBlack.color=Color.white
 				$FadeToBlack.visible=true
-				#print("A")
 				tw.interpolate_property($FadeToBlack,"color:a",null,0,.02,Tween.TRANS_LINEAR,Tween.EASE_IN,.02)
 				tw.interpolate_property($FadeToBlack,"color",null,Color(0,0,0,0),.02,Tween.TRANS_BACK,Tween.EASE_IN,.04)
 			'portraits':
@@ -915,26 +914,18 @@ func advance_text()->bool:
 				else:
 					print("There is no active portrait named "+curMessage[1])
 			'tween':
-				var portraitOrBackground = PORTRAITMAN.get_portrait_from_sprite(curMessage[2])
-				if portraitOrBackground == null and curMessage[2] == "foreground":
-					portraitOrBackground = $whiteFlash
+				var portraitOrBackground = PORTRAITMAN.get_portrait_from_sprite(curMessage[1])
+				if portraitOrBackground == null and curMessage[1] == "foreground":
+					portraitOrBackground = $FGLayer
 				if portraitOrBackground == null:
-					portraitOrBackground = backgrounds.get_node_or_null(curMessage[2].replace("/","$"))
+					portraitOrBackground = backgrounds.get_node_or_null(curMessage[1].replace("/","$"))
 				if portraitOrBackground == null: #Attempt a second time using raw path in case this is a godot path and not a file path
-					portraitOrBackground = backgrounds.get_node_or_null(curMessage[2])
+					portraitOrBackground = backgrounds.get_node_or_null(curMessage[1])
 
 				if portraitOrBackground != null:
-					var tweenTime = portraitOrBackground.apply_sm_tween(curMessage[3])
-					match curMessage[1]:
-						"current","during":
-							pass
-						"before":
-							waitForAnim+=tweenTime
-						"after":
-							# not implemented yet.
-							pass
+					portraitOrBackground.apply_sm_tween(curMessage[2])
 				else:
-					printerr("[Cutscene] Tried to apply a tween on a portrait that doesn't exist: "+curMessage[2])
+					printerr("[Cutscene] Tried to apply a tween on a portrait that doesn't exist: "+curMessage[1])
 			#This is a NOP since the msg handler checks if there is a choice right after.
 			#"But what if I want a choice without any text?"
 			#I don't know, fuck you
@@ -1381,6 +1372,8 @@ func _process(delta):
 		for p in PORTRAITMAN.get_children():
 			if p.is_tweening():
 				return
+		if $FGLayer.is_tweening():
+			return
 		#for b in backgrounds.get_children():
 		#	if b.is_tweening():
 		#		return
@@ -1655,8 +1648,12 @@ func _on_TextureButtonLog_pressed():
 			get_tree().set_input_as_handled()
 			otherScreenIsHandlingInput = Overlay.HISTORY
 
-func end_await():
+func end_await(advance_text:bool=true):
 	set_process(true)
+	# This does not break the choice screen since
+	# _process will think that there's no choice screen
+	# and then run OnCommand() for it again and
+	# set the current screen to the choice screen
 	otherScreenIsHandlingInput=0
 	advance_text()
 

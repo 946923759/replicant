@@ -12,11 +12,11 @@ emote	67	2
 
 bg	black	instant
 portraits	665
-tween	during	54	stoptweening
-tween	during	67	stoptweening
-tween	during	68	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+tween	54	stoptweening
+tween	67	stoptweening
+tween	68	stoptweening
+tween	665	stoptweening
+tween	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
 se	DLC_CH01_EV12_RadioReceive
 / 	308537	Crack——!	呲拉——！	ザザ——ザ——ッ！！	NONE
 
@@ -35,10 +35,10 @@ msg	308540	....I'll kill you all!!!	……我要杀掉你们！！！	——お�
 speaker	 
 match_names	Sin	Sirin	_DIM_ALL_WHEN_EMPTY
 portraits	67	68
-tween	during	67	stoptweening
-tween	during	68	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+tween	67	stoptweening
+tween	68	stoptweening
+tween	665	stoptweening
+tween	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
 emote	67	2
 se	DLC_CH01_EV12_RadioReceive
 / 	308541	Crack——!!	呲拉——！！	ザ——ザザッ——！	NONE
@@ -111,10 +111,10 @@ msg	308574	Good bye...... Sin.	再见了…杏。	さようなら……シン。
 
 speaker	 
 vibrate	.75	1
-tween	during	foreground	linear,.5;diffuse,1,0,0,.5
+tween	foreground	linear,.5;diffuse,1,0,0,.5
 msg	308575	Ka!!	咔！！	ドォオオンッ！！	NONE
 
-tween	during	foreground	visible,false
+tween	foreground	visible,false
 bg	011/008_1280x720
 music	Emil Boss - No Vocals
 portraits	54,false,-1	67,false,-2	68

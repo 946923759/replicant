@@ -79,10 +79,10 @@ emote	67	4
 
 bg	black	instant
 portraits	665
-tween	during	67	stoptweening
-tween	during	54	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+tween	67	stoptweening
+tween	54	stoptweening
+tween	665	stoptweening
+tween	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
 se	DLC_CH01_EV12_RadioReceive
 vibrate	.2	1
 / 	308484	Crack——!	呲拉——！	ザザッ——！	NONE
@@ -92,10 +92,10 @@ se	DLC_CH02_EV07_WormFlyB
 
 bg	011/008_1280x720	instant
 portraits	54	67
-tween	during	67	stoptweening
-tween	during	54	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+tween	67	stoptweening
+tween	54	stoptweening
+tween	665	stoptweening
+tween	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 emote	54	3
 emote	67	3
 match_names	Yiserin	Sin
@@ -107,10 +107,10 @@ se	DLC_CH01_EV12_RadioReceive
 
 bg	black	instant
 portraits	665
-tween	during	67	stoptweening
-tween	during	54	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+tween	67	stoptweening
+tween	54	stoptweening
+tween	665	stoptweening
+tween	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 se	DLC_CH01_EV12_RadioReceive
 match_names	Sin
 vibrate	.2	1
@@ -120,10 +120,10 @@ se	DLC_CH02_EV07_WormFlyB
 
 bg	011/008_1280x720	instant
 portraits	54	67
-tween	during	67	stoptweening
-tween	during	54	stoptweening
-tween	during	665	stoptweening
-tween	during	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
+tween	67	stoptweening
+tween	54	stoptweening
+tween	665	stoptweening
+tween	foreground	diffuse,black;linear,.3;diffuse,0,0,0,0;
 se	DLC_CH01_EV12_RadioReceive
 emote	54	3
 emote	67	3

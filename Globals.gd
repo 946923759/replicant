@@ -95,22 +95,23 @@ var SCREEN_CENTER:Vector2
 var SCREEN_CENTER_X:int
 var SCREEN_CENTER_Y:int
 
+
 # This is no different than a bitwise enum,
 # you can do RE_RR_MODE_AVAILABLE & RETRO_AVAILABLE to check status
-enum RE_RR_STATUS {
+enum DLC_PACK {
 	NO_PCK = 0,
-	RETRO_AVAILABLE = 1,    # RR
-	REBORN_AVAILABLE = 2,   # RE
-	RE_RR_AVAILABLE = 3,
-	ERA_ZERO_AVAILABLE = 4, # EZ
-	RR_EZ_AVAILABLE = 5,    # RR & EZ
-	RE_EZ_AVAILABLE = 6,
-	RE_RR_EZ_AVAILABLE = 7,
-	LEGACY_AVAILABLE = 8
+	RETRO_REMAKE = 1,    # RR
+	REBORN_REMAKE = 2,   # RE
+	RE_RR = 3,
+	ERA_ZERO = 4, # EZ
+	RR_EZ = 5,    # RR & EZ
+	RE_EZ = 6, 
+	RE_RR_EZ = 7,
+	LEGACY = 8
 }
 # >0 if RetroRemake.pck or RebornRemake.pck
 # Quit button is replaced with back button in RE and RR title screens
-var RE_RR_MODE_AVAILABLE:int = 0
+var installedPacks:int = 0
 
 class Episode:
 	#There is no easy way to get the parent without iterating through the
@@ -703,6 +704,7 @@ var SCREENS:Dictionary = {
 
 	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
 	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",
+	"RR-ScreenSelectChapterSimple":"res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/RR-ScreenSelectChapterSimple.tscn",
 	"RR-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-rr.tscn",
 	
 	"RE-ScreenTitleMenu":"res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.tscn",

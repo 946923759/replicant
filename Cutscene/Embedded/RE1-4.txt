@@ -90,8 +90,8 @@ msg	251625	There is no Savior in this world. Even if there was...	这个世界�
 portraits	101	121	214
 emote	201	0
 emote	214	0
-tween	during	214	stoptweening
-tween	during	foreground	linear,0;visible,true;linear,.2;diffuse,1,1,1,0
+tween	214	stoptweening
+tween	foreground	linear,0;visible,true;linear,.2;diffuse,1,1,1,0
 /Mei	251626	I would kill them!	就让我来杀掉他！	私が殺してあげます！	NONE
 
 emote	101	3

@@ -408,7 +408,7 @@ Example of tweening a portrait:
 ```
 portraits	58
 msg	This is a tween test.
-tween	current	58	linear,.5;addx,-100
+tween	58	linear,.5;addx,-100
 msg	This tween moved me to the left!
 ```
 
@@ -416,7 +416,7 @@ Example of tweening a background:
 ```
 bg	009/022_1280x720	immediate
 msg	This is a background. Woah!
-tween	current	009/022_1280x720
+tween	009/022_1280x720
 
 ```
 

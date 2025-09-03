@@ -42,7 +42,7 @@ emote	101	4
 emote	19	0
 msg	252148	I'm Kiana, a B-rank Schicksal Valkyrie! What did you do to Mei-senpai?! Tell me! Did you do something strange to her?!	我是天命所属的B级女武神琪亚娜！快说，你把芽衣学姐怎么了！你对她都动了些什么手脚？	私は天命所属のB級戦乙女キアナよ！芽衣先輩に何をしたの！言いなさい！変なことしたんでしょう！？	NONE
 
-tween	during	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
+tween	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
 match_names	???
 portraits	19
 emote	19	7
@@ -52,7 +52,7 @@ match_names	Kiana	???
 portraits	101,false,-1	19,false,2
 emote	101	4
 emote	19	0
-tween	during	lab_interior	linear,.5;diffuse,white
+tween	lab_interior	linear,.5;diffuse,white
 /Kiana	252150	Hey! I'm talkng to you! What are you mumbling?! I'm gonna shoot you!	喂！我问你话呢！你在嘀嘀咕咕什么！？信不信我开枪了！	ちょっと！私が聞いてるのよ！何をブツブツ言っているの！？本当に撃つわよ！	NONE
 
 speaker	???
@@ -62,7 +62,7 @@ msg	0	No! Don't shoot!	别！别开枪！	だめ！撃たないで！
 
 portraits	19
 emote	19	7
-tween	during	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
+tween	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
 msg	0	That's right, for now I'll hide the fact that I'm a central character here and just play the part of a passing mob member...	对了这里一定要先隐藏我是核心人员的事实假装自己是路过的小喽啰……	そうだ、ここはひとまず私が中心人物だということは隠して、通りすがりのモブを演じましょう……。
 
 match_names	Kiana	???
@@ -70,7 +70,7 @@ portraits	101,false,-1	19,false,2
 speaker	Kiana
 emote	101	4
 emote	19	0
-tween	during	lab_interior	linear,.5;diffuse,white
+tween	lab_interior	linear,.5;diffuse,white
 msg	252152	If you're planning a strategy, you should speak quieter... There's no way I'd miss it!	你自己都说出来了我还会放过你么！	作戦を立てるならもっと小声にしなさいよ……見逃すわけないでしょ！	NONE
 
 speaker	???
@@ -80,7 +80,7 @@ msg	0	Ugh! Calm down...	咕！先冷静一下……	うぅ！落ち着きなさ�
 
 portraits	19
 emote	19	7
-tween	during	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
+tween	lab_interior	linear,.5;diffuse,0.5,0.5,0.5,1.0
 msg	0	The weapon she's carrying is the one issued to the guards here. It's loaded with ordinary bullets with no special features. She shouldn't be able to penetrate the alloy I'm wearing...	你手里这把武器是这里守卫配备的制式武器，里面填装的都是最基础的没有任何附加特性的弹药，是没有办法击穿我身上的合金的……	あの子が持ってる武器はここの守衛に支給されている武器。中に装填されているのは何の特徴もない普通の銃弾。私が身に着けている合金を貫くことはできないはず……。
 msg	252154	B-but what if, by some chance, it can't stop the bullet?! Will I lose my life here? Haha... Hahaha... N-no, I can't, I have to make sure the girl doesn't realize that I'm panicking...!	可是万一我没有挡住她射向我的那发子弹怎么办！那我岂不是要命丧这里，不行，不能让她看出我的慌乱……	で、でも万が一、銃弾を防げなかったらどうしよう！そしたら、私はここで命を落とすの？はわ、はわわ……ダ、ダメよ、あの子に慌ててると悟られないようにしないと……！	NONE
 
@@ -88,7 +88,7 @@ match_names	Kiana	???
 portraits	101,false,-1	19,false,2
 emote	101	4
 emote	19	0
-tween	during	lab_interior	linear,.5;diffuse,white
+tween	lab_interior	linear,.5;diffuse,white
 /Kiana	252155	What are you mumbling?! Release Mei-senpai immediately!	你在嘀咕些什么呢！快把芽衣学姐放开！	何をブツブツ言っているの！早く芽衣先輩を開放しなさい！	NONE
 
 emote	101	4

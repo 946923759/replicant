@@ -1,35 +1,42 @@
-preload_portraits	54	67	70	61
+preload_portraits	54	67	70	61	101
 bg	011/007_1280x720
 msg	The engine has one color rect which can be manipulated with tweens. It's also used to fade out a scene at the end.
 msg	It's not very useful at the moment, but you can use it to do some tricks like blanking out the screen and replacing the characters.
 portraits	54	67
 msg	Hello, it's Yiserin and Sin!
-tween	before	foreground	linear,0.0;visible,true;diffuse,black
+tween	foreground	linear,0.0;visible,true;diffuse,black
 
 bg	015/026_1280x720	instant
 portraits	70	61
 nop	Because this seems like an intelligent idea
-tween	during	54	stoptweening
-tween	during	67	stoptweening
-tween	before	foreground	linear,.3;diffuse,0,0,0,0
-tween	during	70	stoptweening
-tween	during	61	stoptweening
+tween	54	stoptweening
+tween	67	stoptweening
+tween	foreground	linear,.3;diffuse,0,0,0,0
+tween	70	stoptweening
+tween	61	stoptweening
 msg	And now it's Kyuushou and Himeko.
-tween	during	foreground	linear,.3;diffuse,black
+tween	foreground	linear,.3;diffuse,black
 msg	The foreground rectangle can also be used for interesting animations like this.
-tween	before	foreground	linear,.3;zoomx,0
+tween	foreground	linear,.3;zoomx,0
 msg	behold!
-tween	during	foreground	horizalign,left;linear,.3;zoomx,1
+tween	foreground	horizalign,left;linear,.3;zoomx,1
 msg	Or if you're not satisfied with the alignment... 
-tween	during	foreground	horizalign,right;linear,.3;zoomx,0
+tween	foreground	horizalign,right;linear,.3;zoomx,0
 extend	You can set the alignment of the rect within a tween.
 
 bg	re/ch2	instant
 bg	CG10009	instant
-portraits	
+portraits
 msg	And to transition without pauses... You can do something like this!
-nop	tween	during	CG10009	
-tween	during	foreground	visible,true;horizalign,left;zoomx,0;diffuse,0,0,0,1;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
-tween	during	CG10009	sleep,.3;diffusealpha,0
-tween	during	re/ch2	sleep,.3;diffusealpha,1
-msg	Test.
+tween	foreground	visible,true;horizalign,left;zoomx,0;diffuse,black;linear,.3;zoomx,1;linear,0.0;horizalign,right;linear,.3;zoomx,0
+tween	CG10009	sleep,.3;diffusealpha,0
+tween	re/ch2	sleep,.3;diffusealpha,1
+msg	Tween finished.
+portraits	101
+msg	Here is a foreground change using 'await_tween'. Instead of tweening multiple actors, the foreground will be tweened on to cover the actors. Then the actors are set with non-tween commands, and the foreground is tweened off.
+tween	foreground	diffuse,black;visible,true;horizalign,left;zoomx,0;linear,1;zoomx,1
+await_tween
+bg	CG10430	instant
+emote	101	2
+tween	foreground	horizalign,right;linear,1;zoomx,0
+msg	Finished.

@@ -1,11 +1,11 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-speaker	Kiana
-match_names	Kiana	Kyuushou
+preload_portraits	101	boss/807bw	122
+match_names	Kiana	???
 bg	CG10258
-portraits	101
+portraits	101	boss/807bw,true
 music	re/1-04 - Etro's Champion
 emote	101	0
-msg	251490	This is Kiana. I've just arrived at Senba Academy. Awaiting further instructions.	喂，是我，琪亚娜，已经到达千羽学园，请求指示。	こちらキアナ。今、千羽学園に到着したわ、指示をちょうだい。	Aqui é Kiana. Acabei de chegar na Academia Senba, por favor me \n dê mais instruções. TN:  CN  Eu sou Kiana. Acabei de chegar na Academia Senba, aguardo mais instruções.
+/Kiana	251490	This is Kiana. I've just arrived at Senba Academy. Awaiting further instructions.	喂，是我，琪亚娜，已经到达千羽学园，请求指示。	こちらキアナ。今、千羽学園に到着したわ、指示をちょうだい。	Aqui é Kiana. Acabei de chegar na Academia Senba, por favor me \n dê mais instruções. TN:  CN  Eu sou Kiana. Acabei de chegar na Academia Senba, aguardo mais instruções.
 speaker	???
 emote	101	0
 msg	251491	Your mission is to bring the person shown in your information back to St. Freya Academy. The target's location has been detected and is now being sent to your communicator.	你的任务是把资料所示的人物带回圣芙蕾雅学园，已探测到目标位置，现在发送到你的通讯器上。	任務内容自体は単純だ。資料に当たる人物を聖フレイヤ学園へ連れ戻すこと。ターゲットの位置は既に探知済みだ。詳細を通信機に送る。	A sua tarefa consiste em levar a pessoa descrita nos documentos de volta à Academia de St.Freya A localização do alvo já foi detectada, enviarei os detalhes ao vosso comunicador. TN: Na tradução japonesa,  diz que a missão é simples: `A tarefa em si é simples. Levem a pessoa relacionada com a documentação de volta à Academia St. Freya. A localização do alvo já foi detectada. Enviarei detalhes através do equipamento de comunicação´. Mas na frase seguinte vemos Kiana  dizer que a missão será difícil, não sei se a mudança foi intencional para fazer uma piada com Kiana.
@@ -23,10 +23,13 @@ speaker	???
 emote	101	0
 msg	251496	I won’t say anything more. If any emergency occurs, report to me immediately.	那我也就不多说了，如果有什么紧急情况发生的话，立即向我报告。	よし、行くんだ。もし何かあったら、すぐ連絡してくれ。	Então, não vou dizer mais nada. Se alguma situação de emergência ocorrer, informe-me imediatamente.  TN:  JP Certo, vou lá. Se acontecer alguma coisa, me avise imediatamente.
 msg	251497	Well... good luck!	那么…祝你好运！	……健闘を祈る。	Então ... boa sorte!  TN: JP .....Desejo-lhe boa sorte.
+
+se	beep beep
 msg	251498	Beep—	滴——	ピッ——	NONE
-speaker	Kiana
+
+portraits	101
 emote	101	1
-msg	251499	Sigh… a task to find someone… This is such a boring task for my first official mission. I am a B-rank Valkyrie now after all~	呼…寻人任务啊……第一次正式出击就是这么无聊的任务，本小姐好歹也是B级女武神好吧~	はぁ、まさか初めての任務が人探しなんて、ほんと退屈だわ！私だって、一応B級戦乙女なのに。	Uff... Uma missão de busca e salvamento... A primeira missão oficial é tão chata assim, eu pelo menos sou uma Valquíria rank B, certo?
+/Kiana	251499	Sigh… a task to find someone… This is such a boring task for my first official mission. I am a B-rank Valkyrie now after all~	呼…寻人任务啊……第一次正式出击就是这么无聊的任务，本小姐好歹也是B级女武神好吧~	はぁ、まさか初めての任務が人探しなんて、ほんと退屈だわ！私だって、一応B級戦乙女なのに。	Uff... Uma missão de busca e salvamento... A primeira missão oficial é tão chata assim, eu pelo menos sou uma Valquíria rank B, certo?
 emote	101	0
 msg	251500	Forget it, forget it. I’ll go back and complain to them after completing the mission.	算了算了，等完成了任务回去再去找那些家伙理论。	まぁ、いっか。帰ったらあいつらに文句を言えばいいだけだし。	Esqueça. Eu posso simplesmente reclamar com eles quando voltar.
 msg	251501	Guns check... in good condition! Ammunition check... complete! Ammunition loading... complete!	枪械检查……完好！弹药检查……完毕！弹药装填……完毕！	機械チェック……問題なし！弾薬チェック……問題なし！弾薬装填……完了！	Verificação de armas de fogo... Concluído! Verificação de munição... Concluído! Carregamento de munição... Concluído!
@@ -34,7 +37,12 @@ msg	251502	Target name: Houraiji Kyuushou, a first-year student at Senba Academy
 tn	0	The literal translation was "Kiana, Let's go". I know people don't use third person in English, but I think this is the best balance between literal and natural without removing too much of her catchphrase.
 msg	251503	Let's do this, Kiana! 	琪亚娜，出击！	キアナ、行きます！	Kiana, vá!
 
+tween	foreground	diffuse,black;visible,true;horizalign,left;zoomx,0;linear,.5;zoomx,1
+await_tween
+bg	CG10430	instant
 emote	101	2
+tween	foreground	horizalign,right;linear,.5;zoomx,0
+
 msg	251504	This school is really big. If I didn't have this GPS, I don't know how long it would take me to find it...	这学园还真大，要不是有这个GPS定位坐标，不知道我还要找多久……	——ふぅ、この学園って結構広いわよね。GPSがなかったら、どれだけ探索に時間が掛かったか分かったもんじゃないわ。	Essa academia é muito grande, se não fossem as coordenadas do GPS, não sei quanto tempo eu teria que procurar...
 emote	101	0
 msg	251505	Room 777, Building F, Women's Dormitory... This should be the place.	女子寮F栋777室……应该就是这个地方了。	えっと、女子寮F棟777室……ここかしら。	Quarto 777, Prédio F, Dormitório Feminino... dever ser este o lugar.
@@ -45,6 +53,7 @@ msg	251507	Excuse me…	请问…	あの……。	Desculpe....
 /???	251508	Aaah!!!!	呜哇！！！！	きゃあっ！！！！	NONE
 emote	101	0
 /Kiana	251509	Huh? What? Is the Eruption already starting?! ...We have to hurry!	呃！难道是崩坏爆发了！？管不了这么多了！	えっ、何っ？まさかもう崩壊が！？……急がないと！	Uh! Será que a erupção honkai começou! ? Não aguento mais isto!
+se	DLC_CH01_EV06_Bump
 /	251510	BANG!!!	砰！！！	バンッ！！！	NONE
 emote	101	0
 /Kiana	251511	Come on! Get over here! If you get bitten by a zombie, it's all over! I'll protect you——	喂！到我这里来！不要被死士咬到！我来保…	ほらっ！こっちに来て！ゾンビに噛まれたらお終いよ！私が守って——	Ei! Venha até mim! E Não seja mordido por um zumbi! Eu vou te proteger...
@@ -70,6 +79,7 @@ emote	101	0
 emote	122	0
 /Kiana	251517	Tsk, so you have chuunibyou? No wonder the information said it might be difficult to communicate with the target... Are you Houraiji Kyuushou?	啧，原来是个中二病么，难怪资料上有说可能很难和目标交流……你就是蓬莱寺九霄么？	なるほど……中二病ってやつね。道理で資料に「ターゲットとのコミュニケーションに難あり」と書かれていたわけね、納得。……あなたが蓬莱寺九霄？	Entendo. ...... É chamado de chuunibyo. Não é à toa que o material diz dificuldade de comunicação com o alvo, faz sentido. ...... Você é Houraiji Kyuushou.
 
+match_names	Kiana	Kyuushou
 emote	101	0
 emote	122	0
 /Kyuushou	251518	Oh, I didn't expect you to know my real name. Yes, I am the chosen one! The savior of the new world! Houraiji Kyuu——	呵，没想到居然知道我的真名，没错，我就是被选中之人！新世界的救世主！蓬莱寺九……	ほう、よもや我が真名を知るとは。そう、我こそが選ばれし者！新世界の救世主、蓬莱寺九——	Heh, eu nunca pensei que alguém saberia meu nome verdadeiro, sim, eu sou o escolhido! O salvador de um novo mundo! Houraiji k…

@@ -2,7 +2,7 @@
 msgbox_close	instant
 preload_portraits	58	60	62	54
 msg	302570	……	……	……。	NONE
-tween	during	foreground	linear,0.5;diffuse,0,0,0,0
+tween	foreground	linear,0.5;diffuse,0,0,0,0
 extend	302571	……	……	…………。	NONE
 
 music	Dispossession - Music Box Version

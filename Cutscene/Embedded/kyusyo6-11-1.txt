@@ -38,10 +38,10 @@ emote	68	2
 /Sirin	308595	So you still haven't realized it.....	是么…看来你还是没有明白呢……	そう……まだわかっていないのね……。	NONE
 
 portraits	54	69
-nop	tween	during	54	stoptweening
-nop	tween	during	68	stoptweening
-nop	tween	during	69	stoptweening
-nop	tween	during	foreground	visible,true;diffuse,black;linear,.5;diffuse,0,0,0,0
+nop	tween	54	stoptweening
+nop	tween	68	stoptweening
+nop	tween	69	stoptweening
+nop	tween	foreground	visible,true;diffuse,black;linear,.5;diffuse,0,0,0,0
 /Sirin	308596	Nothing here can be changed.	这里的一切都已经无法改变了。	ここのすべては、もう変えることができないの。	NONE
 
 speaker	Yiserin

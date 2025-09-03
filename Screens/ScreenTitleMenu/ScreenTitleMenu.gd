@@ -34,7 +34,7 @@ var next_screen:String = ""
 
 #onready var t:Tween = $Tween
 func _ready():
-	var isMultiStory = Globals.RE_RR_MODE_AVAILABLE & Globals.RE_RR_STATUS.RE_RR_AVAILABLE or Globals.previous_screen == "ScreenSelectEra"
+	var isMultiStory = Globals.installedPacks & Globals.DLC_PACK.RE_RR or Globals.previous_screen == "ScreenSelectEra"
 	
 	for i in range(len(MAINMENU_BASE)):
 		if 'demo' in MAINMENU_BASE[i] and OS.has_feature('demo'):

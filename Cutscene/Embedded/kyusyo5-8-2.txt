@@ -60,12 +60,12 @@ vibrate	.3
 
 bg	black	instant
 portraits	107
-tween	during	55	stoptweening
-tween	during	60	stoptweening
-tween	during	61	stoptweening
-tween	during	62	stoptweening
-tween	during	107	stoptweening
-tween	during	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
+tween	55	stoptweening
+tween	60	stoptweening
+tween	61	stoptweening
+tween	62	stoptweening
+tween	107	stoptweening
+tween	foreground	visible,true;diffuse,black;linear,.3;diffuse,0,0,0,0
 match_names	Kiana
 /Kiana	307500	You created this world.....	这个世界是由你所创造的……	この世界はあなたが創ったのよ……。	NONE
 se	DLC_CH01_EV24_RadioSignals
@@ -85,11 +85,11 @@ vibrate	.3
 bg	009/077_1280x720	fade
 portraits	55	60	61	62
 match_names	Emesa	Bronya	Himeko	Theresa
-tween	during	55	stoptweening
-tween	during	60	stoptweening
-tween	during	61	stoptweening
-tween	during	62	stoptweening
-tween	during	107	stoptweening
+tween	55	stoptweening
+tween	60	stoptweening
+tween	61	stoptweening
+tween	62	stoptweening
+tween	107	stoptweening
 vibrate	.7
 /	307507	Aaaaaaaahhhh!!	呃啊！！	あぁああああっ！！	NONE
 emote	55	4

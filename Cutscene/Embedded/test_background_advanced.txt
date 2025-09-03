@@ -3,36 +3,36 @@ nop	music	Vague Hope Cold Rain No Vocals
 bg	011/034_1280x720	immediate
 portraits	58
 msg	This is an advanced background example. It uses tweens to fake panning and zooming the camera.
-tween	current	58	decelerate,.5;zoom,1.3
-tween	current	011/034_1280x720	decelerate,.5;zoom,1.2
+tween	58	decelerate,.5;zoom,1.3
+tween	011/034_1280x720	decelerate,.5;zoom,1.2
 msg	Zooooooom
 bg	test
-tween	current	58	decelerate,.5;zoom,1
+tween	58	decelerate,.5;zoom,1
 msg	Here it is again but with a test background, so you can see the zooming and panning working.
-tween	current	58	decelerate,.5;zoom,1.3
-tween	current	test	decelerate,.5;zoom,1.2
+tween	58	decelerate,.5;zoom,1.3
+tween	test	decelerate,.5;zoom,1.2
 msg	Zooooooom
-tween	current	58	decelerate,.5;addx,120
-tween	current	test	decelerate,.5;addx,50
+tween	58	decelerate,.5;addx,120
+tween	test	decelerate,.5;addx,50
 msg	Pan the camera to the left...
-tween	current	58	decelerate,.5;addx,-300;zoom,1.4
-tween	current	test	decelerate,.5;addx,-150;zoom,1.3
+tween	58	decelerate,.5;addx,-300;zoom,1.4
+tween	test	decelerate,.5;addx,-150;zoom,1.3
 msg	Pan and zoom to the right...
-tween	current	58	decelerate,.5;zoom,1;
-tween	current	test	decelerate,.5;zoom,1;x,0
+tween	58	decelerate,.5;zoom,1;
+tween	test	decelerate,.5;zoom,1;x,0
 portraits	58	59
 msg	Reset position. To reset the x position with a portrait, chain 'portraits' and tween commands. To reset the x position of a background, use "x,0" in the tween.
-tween	current	58	decelerate,.5;zoom,1.5;addx,200;
-tween	current	59	decelerate,.5;zoom,1.5;addx,500;
-tween	current	test	decelerate,.5;zoom,1.5;addx,300
+tween	58	decelerate,.5;zoom,1.5;addx,200;
+tween	59	decelerate,.5;zoom,1.5;addx,500;
+tween	test	decelerate,.5;zoom,1.5;addx,300
 msg	Let's zoom in on Kyuushou.
-tween	current	58	decelerate,.5;addx,-600
-tween	current	59	decelerate,.5;addx,-600;
-tween	current	test	decelerate,.5;addx,-500
+tween	58	decelerate,.5;addx,-600
+tween	59	decelerate,.5;addx,-600;
+tween	test	decelerate,.5;addx,-500
 msg	And then pan over to Seele.
-tween	current	test	decelerate,.5;x,0;zoom,1
-tween	current	58	decelerate,.5;zoom,1
-tween	current	59	decelerate,.5;zoom,1
+tween	test	decelerate,.5;x,0;zoom,1
+tween	58	decelerate,.5;zoom,1
+tween	59	decelerate,.5;zoom,1
 portraits	58	59
 msg	Reset!
 msg	Placeholder.

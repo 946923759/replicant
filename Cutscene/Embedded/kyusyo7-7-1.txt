@@ -35,12 +35,12 @@ emote	58	6
 emote	60	1
 msg	302555	Ugh ...... what is this glowing ball ......?	呜…这些闪耀的光球到底是……	うっ……この光り輝く球は一体……？	NONE
 
-tween	during	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
+tween	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
 msgbox_close
 se	DLC_CH00_EV15_EarRing
 msg	302556	[center]Come quickly ...... because I'll be waiting for you here .......[/center]	快过来吧…我在这里等你……	早くおいでよ……ここであなたのことを待っているから……。	NONE
 msg	302557	[center]I'm not leaving ...... again from now on. ......[/center]	从此之后…再也不离不弃……	これから先……もう離れないからね……。	NONE
-tween	during	foreground	linear,0.5;diffuse,0,0,0,0
+tween	foreground	linear,0.5;diffuse,0,0,0,0
 msgbox_open
 msg	302558	What?	呃！？	えっ！？	NONE
 speaker	Bronya
@@ -61,11 +61,11 @@ emote	58	7
 emote	60	1
 msg	302563	Why, why ...... no way, is it another apocalyptic omen that only Kyuushou can hear?	怎么会…难道又是只有九霄大人才能听到的来自启示录的昭示么？	な、なんで……まさか、また九霄様にしか聞こえない黙示録のお告げなのか？	NONE
 
-tween	during	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
+tween	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
 msgbox_close
 se	DLC_CH00_EV15_EarRing
 msg	302564	[center]Forget all your sorrows...\nI'll protect you, give your heart to me .......[/center]	忘记一切的悲伤…把心交给我来保护……	全ての悲しみを忘れるの……守ってあげるから心を私に委ねて……。	NONE
-tween	during	foreground	linear,0.5;diffuse,0,0,0,0
+tween	foreground	linear,0.5;diffuse,0,0,0,0
 msgbox_open
 
 emote	58	6
@@ -80,7 +80,7 @@ shake_camera	3.0	10.0
 msg	302567	Ugh ......!	呜……	うっ……！	NONE
 emote	60	1
 
-tween	during	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
+tween	foreground	linear,0.0;visible,true;diffuse,0,0,0,0;decelerate,0.3;diffuse,0,0,0,.7
 msgbox_close
 msg	302568	[center]Don't be afraid to ...... hold my hand.......[/center]	不要害怕…请牵着我的手……	怖がらないで……私と手をつないで……。	NONE
 msg	302569	[center]We're here ...... to welcome you to a happy eternity.......[/center]	我们会在这里…迎来幸福的永恒……	私たちはここにいるわ……幸せな永遠を迎えるの……。	NONE

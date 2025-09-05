@@ -1,0 +1,30 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101
+msg	30001	"The night before the Honkai arrived, I couldn't sleep a wink..."	在崩坏降临的前一天晚上，我彻夜未眠…	崩壊が訪れる前夜、私は一睡もできなかった……。	Na noite anterior ao colapso, fiquei acordado a noite toda...
+
+msg	30002	Time - 14:07:47: Honkai Outbreak occuring at Senba Academy, Nagazora, Honshu, Japan. Estimated Chance of Survival: 0.000000001%	14:07:47，【崩坏】成功降临千羽学园。成功逃脱率 0.000000001%	時刻 14:07:47——千羽学園にて「崩壊」が発生。推定生存確率：0.000000001%。	Às 14:07:47, o surto de Honkai entrou em vigor na Academia Senba. As chances estimadas de sobrevivência são de 0,000000001%
+msg	250001	[i]Tuuu, tuuu, tuuu...[/i] The user you are dialing is busy. Please leave a message after the tone.	嘟嘟嘟……您所拨打的用户正忙，请在提示音后留言。	——留守番電話サービスにお繋ぎします。発信音の後にメッセージをどうぞ。	"Trrrim-trrrim ...O usuário que você ligou está ocupado, por favor deixe uma mensagem após o toque."
+msg	250002	[i]BEEP——[i]	哔——	ピーー	Trrrim--
+
+nop	Library stage bg used here
+bg	rr/library
+portraits	101
+music	re/1-04 - Etro's Champion
+/Kiana	250003	Hey. It's me, Kiana. The "Honkai" has struck Senba Academy, the school I go to. You're still after the "Honkai", right? If so, you'll be here too? Just know that I will find you this time, you'll see!	我是琪亚娜，目前位于极东地区长空市内的千羽学园，我知道你一定也在跟踪这起崩坏！我想告诉你，不管你走到哪里我都会找到你的！	私よ、分かるでしょ？キアナ。私の通ってる千羽学園で「崩壊」が発生したの。あんた、今も「崩壊」を追ってるんでしょ？なら、ここにも来るよね？今度こそ見つけてやるんだから、待ってなさいっ！	Ei. Sou eu, Kiana. Atualmente estou na Academia Senba em Nagazora, no Extremo Oriente. Eu sei que você deve estar indo atrás desse surto de Honkai. Apenas saiba que eu vou te encontrar, não importa onde você vá!
+
+se	beep beep
+/	250004	[i]Beep![i]	咔！	ピッ！	Bum!
+
+tn	0	Senba Academy is a huge campus, monikered the "Academy City" for its size.
+/Kiana	250005	...Here we go. Still, this Honkai Outbreak is so sudden. Seems like it'll remain small-scale, but... just to be safe, I'll estimate it to cover at least all of Senba Academy. 	呼…该说的已经说完了，没想到这次的崩坏居然这么突然就发生了，不过按预期来看应该属于小型崩坏，爆发范围就锁定在这所千羽学园里吧！	……これでよし。にしても、今回の崩壊は突然だよね。この感じだと小規模なまま終わりそうけど……念のため、爆破範囲を千羽学園全体にしておこうかな。	Esta tudo bem... De qualquer forma, eu não esperava que esse surto Acontecesse tão de repente. Deve ser um pequeno surto. Vamos supor que o alcance cobre todo-o-terreno da Academia Senba!
+msg	250006	All I have to do now is find the target before "Schicksal" arrives. I won't let you escape this time!	接下来只要在「天命」组织赶到前找到目标就行~这次绝对不会让你逃走了！	あとは「天命」より先にターゲットを確保するだけだね。今度こそ逃さないんだから！	Em seguida, eu só tenho que encontrar o alvo antes que 「Schicksal」 chegue - desta vez, não vou deixá-los escapar!
+speaker	Zombies
+
+msg	250007	[i]Gwooooahh... grrrrr!![/i]	吼吼吼！！	ウォオオオッ——グルルルッ！！	Rooaar-Grrrrrr!!
+
+speaker	Kiana
+msg	250008	...! Zombies have already appeared?! Good thing I brought my weapons with me.	被崩坏感染的死士已经诞生了么…还好早有准备，事先把武器都准备好了。	……っ！もうゾンビが生まれたの！？武器の準備をしてきてて良かった。	Zumbis já nasceram!? Estou feliz por preparar minhas armas.
+se	Reload
+/	250009	[i]Click-tchack![/i]	咔啦！	カチャ——ッ！	Whoosh!
+/Kiana	250010	Alright, I'm ready! ...Still, this weapon is getting pretty old. I hope it doesn't break on me all of a sudden.	武器检察完毕，弹药装配…真不知道手上这些老家伙还能撑多久。	よし、準備完了！……この武器もだいぶ古くなってきたな。いきなり壊れたりしなきゃいいけど。	Pronto, pronto! ...... Esta arma também está ficando velha. Espero que quebre de repente.
+msg	250011	Well, for now, why don't I focus on getting out of this library first?	嘛~总之先按照预定计划逃离这个图书馆吧。	さて、とりあえず、この図書館から出るとしますか！	Bem, suponha que você deixe esta biblioteca por enquanto!

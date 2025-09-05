@@ -1,25 +1,20 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/ChapterActor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/4d928d11314c27abeb770c648602d839ebd7fde415acb78b30ff133a51ae81f5.jpg" type="Texture" id=3]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/aaa38acb14f38b9a8cf1f92dcb0154aaaa642387a80983ed33bfccfbc2d66d3c.jpg" type="Texture" id=4]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10259.png" type="Texture" id=5]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/AdvancedScroller.gd" type="Script" id=6]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/52ce1de70144881f0f0f2ee72891bdcd81af412076ef07a4549ef5684d4ec50a.jpg" type="Texture" id=7]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10003.png" type="Texture" id=8]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/here.webp" type="Texture" id=9]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/ChapterActor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/AdvancedScroller.gd" type="Script" id=6]
 [ext_resource path="res://MenuSounds/re/system_me_casor.win32.wav" type="AudioStream" id=10]
 [ext_resource path="res://MenuSounds/re/system_me_kette.win32.wav" type="AudioStream" id=11]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/RR-ScreenSelectChapterSimple.gd" type="Script" id=12]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/ScreenSelectChapterSimple.gd" type="Script" id=12]
 [ext_resource path="res://Ext/RequiredBG/002.png" type="Texture" id=13]
 
-[node name="RR-ScreenSelectChapterSimple" instance=ExtResource( 1 )]
+[node name="ScreenSelectChapterSimple" instance=ExtResource( 1 )]
 script = ExtResource( 12 )
 __meta__ = {
 "_edit_lock_": true
 }
 PrevScreen = "ScreenSelectEra"
+NextScreen = "CutsceneFromFile"
 HandleRightClickAsB = true
 pack = 1
 
@@ -51,25 +46,22 @@ margin_right = 5110.0
 margin_bottom = 950.0
 custom_constants/separation = 50
 
-[node name="Chapter 1" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0" instance=ExtResource( 2 )]
+[node name="Debug Chapter" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_top = 0.0
 margin_bottom = 950.0
-chapter_background = ExtResource( 3 )
 collapsed_x_offset = -950.0
 
-[node name="Chapter 2" parent="ScrollContainer/MarginContainer/HBoxContainer" index="1" instance=ExtResource( 2 )]
+[node name="Chapter 1" parent="ScrollContainer/MarginContainer/HBoxContainer" index="1" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 350.0
 margin_top = 0.0
 margin_right = 650.0
 margin_bottom = 950.0
-chapter_name = "Chapter 2"
-chapter_background = ExtResource( 5 )
 
-[node name="Chapter 3" parent="ScrollContainer/MarginContainer/HBoxContainer" index="2" instance=ExtResource( 2 )]
+[node name="Chapter 2" parent="ScrollContainer/MarginContainer/HBoxContainer" index="2" instance=ExtResource( 2 )]
 anchor_top = 0.0
 anchor_bottom = 0.0
 margin_left = 700.0
@@ -96,7 +88,6 @@ margin_right = 1700.0
 margin_bottom = 950.0
 chapter_name = "Chapter 5"
 chapter_full_name = "Curiosity killed the cat"
-chapter_background = ExtResource( 4 )
 
 [node name="ChapterActor6" parent="ScrollContainer/MarginContainer/HBoxContainer" index="5" instance=ExtResource( 2 )]
 anchor_top = 0.0
@@ -107,7 +98,6 @@ margin_right = 2050.0
 margin_bottom = 950.0
 chapter_name = "Chapter 6"
 chapter_full_name = "Untouchable Honkai Source"
-chapter_background = ExtResource( 7 )
 
 [node name="ChapterActor7" parent="ScrollContainer/MarginContainer/HBoxContainer" index="6" instance=ExtResource( 2 )]
 anchor_top = 0.0
@@ -142,7 +132,6 @@ margin_right = 3450.0
 margin_bottom = 950.0
 chapter_name = "Chapter 12"
 chapter_full_name = "Ragnarök "
-chapter_background = ExtResource( 8 )
 
 [node name="ChapterActor11" parent="ScrollContainer/MarginContainer/HBoxContainer" index="10" instance=ExtResource( 2 )]
 anchor_top = 0.0
@@ -153,7 +142,6 @@ margin_right = 3800.0
 margin_bottom = 950.0
 chapter_name = "Chapter 11"
 chapter_full_name = "Siegfried"
-chapter_background = ExtResource( 9 )
 collapsed_x_offset = -600.0
 
 [node name="ChapterActor12" parent="ScrollContainer/MarginContainer/HBoxContainer" index="11" instance=ExtResource( 2 )]
@@ -165,7 +153,6 @@ margin_right = 4150.0
 margin_bottom = 950.0
 chapter_name = "Chapter 12"
 chapter_full_name = "Ragnarök "
-chapter_background = ExtResource( 8 )
 
 [node name="Cursor" type="AudioStreamPlayer" parent="ScrollContainer" index="1"]
 stream = ExtResource( 10 )

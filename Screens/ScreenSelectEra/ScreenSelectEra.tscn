@@ -51,6 +51,7 @@ expand = true
 stretch_mode = 7
 
 [node name="Music" type="AudioStreamPlayer" parent="." index="2"]
+bus = "Music"
 script = ExtResource( 3 )
 
 [node name="ActorScroller" type="Control" parent="." index="3"]
@@ -71,15 +72,14 @@ destinationScreenOrSubmenu = "RE-ScreenSelectChapterSimple"
 
 [node name="Fire Moth" parent="ActorScroller" index="3" instance=ExtResource( 4 )]
 text = "Fire Moth"
+unlocked = true
 destinationScreenOrSubmenu = "Branch.FireMothOpeningOrTitle"
 
 [node name="Era Zero" parent="ActorScroller" index="4" instance=ExtResource( 4 )]
 text = "Era:ZERO"
-locked = true
 
 [node name="Legacy" parent="ActorScroller" index="5" instance=ExtResource( 4 )]
 text = "Legacy"
-locked = true
 
 [node name="Not an ActorScroller" type="Node2D" parent="." index="4"]
 position = Vector2( 1250, 540 )

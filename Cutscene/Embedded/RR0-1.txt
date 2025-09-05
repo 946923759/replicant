@@ -1,0 +1,55 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	111
+msgbox_close	instant
+bg	rr/prologue_1	fade
+/ 	 
+bg	rr/prologue_2	fade
+/ 	 
+bg	rr/prologue_3	fade
+/ 	 
+bg	rr/prologue_4	fade
+/ 	 
+bg	rr/prologue_5	fade
+/ 	 
+bg	rr/prologue_6	fade
+/ 	 
+bg	rr/prologue_7	fade
+/ 	 
+bg	rr/prologue_8	fade
+/ 	 
+bg	rr/prologue_9	fade
+/ 	 
+bg	rr/prologue_10	fade
+/ 	 
+bg	rr/prologue_11	fade
+/ 	 
+bg	rr/prologue_12	fade
+/ 	
+
+msgbox_open
+bg	rr/bg_prologue
+music	re/A World Without Cocoon
+portraits	111
+emote	111	5
+/Kiana	94188	[i]Huff, huff...![/i]	呼！呼！	ハァ、ハァ……！	Uau!
+msg	94189	Those monsters aren't chasing me anymore, right...?	那些怪物应该没有追来了吧……	あの怪物たち、もう追ってこないよね……？	Hm, hm…! Esses monstros não estão mais me perseguindo...?
+msg	94190	Meteors falling from the sky, and people turning into monsters... Is this the Honkai Daddy was talking about?	从天而降的陨石，还有变成怪物的那些人……这就是爸爸所说的崩坏么？	空から降って来た隕石、それに怪物になったあの人たち……これがパパの言ってた崩壊なの？	Os meteoros que caíram do céu, e as pessoas se transformando em monstros… É este o 'Honkai' que papai estava falando?
+emote	111	3
+msg	94191	Daddy, where are you... why did you let go of Kiana's hand?! [i]Sniff...[/i]	爸爸你到底在哪里…为什么要松开琪亚娜的手！呜呜呜！	パパ、どこにいるの……どうしてキアナの手を放しちゃったの！ぐすっ……。	Papai, onde você está… por que você soltou a mão de Kiana?! Huu…
+emote	111	3
+/	94192	[i]Rumble![i]	轰隆隆！	ゴォォン！	*Estrondo*
+speaker	Kiana
+emote	111	2
+msg	94193	Stop! I shouldn't be crying right now!	不行！不能再这里哭鼻子！	いけないっ！こんなところで泣いている場合じゃなかった！	Pare! Eu não deveria estar chorando agora.
+msg	94194	Dad always told me. The Kaslana family has the power to beat the Honkai, and has a mission to save the world... It's Dad, so he's sure to head to the heart of the Honkai outbreak!	爸爸他总是告诉我，卡斯兰娜家族有着对抗崩坏的使命，背负着拯救世界的重任…如果是他的话，一定会在崩坏的最中心的地方战斗！	パパがいつも言ってた。カスラナ家には崩壊を打ち倒す力があって、世界を救う使命があるんだって……パパだったら、きっと崩壊の中心に向かうはず！	Papai sempre me disse. A família Kaslana tem o poder de derrotar o Honkai e tem a missão de salvar o mundo! É o papai, então ele certamente irá para o meio do Honkai.
+emote	111	0
+msg	94195	The place where it exploded earlier must be the center of the Honkai outbreak... If I go there, I might find Daddy!	那个爆炸的地方应该就是崩坏的中心了…只要去那里的话一定能找到爸爸！	さっき爆発した場所が崩壊の中心だよね……あそこに行けばパパが見つかるかも！	O lugar onde explodiu mais cedo é o centro do surto de Honkai… Se eu for até lá, talvez encontre o papai!
+emote	111	3
+msg	94196	B-but can I really find him by myself...?	可是我一个人真的能做到么……	で、でも私一人で本当に見つけられるかな——	Mas posso realmente encontrá-lo sozinho?
+emote	111	2
+msg	94197	——No, no! I need to be brave! I'm a Kaslana too. I can fight the Honkai just like Daddy!	不行！琪亚娜要勇敢！我也是卡斯兰娜家的成员，一定也能像爸爸一样与崩坏战斗！	——って、ダメダメッ！もっと勇気を出さなくちゃ！私もカスラナ家の一員なんだもん。パパみたいに崩壊と戦えるんだから！	Isso não é bom! Tenho que ser mais corajoso! Eu também sou um membro da família Kaslana. Eu Posso lutar contra o Honkai, como papai!
+emote	111	2
+/	94198	ROOOOAAAR!	吼吼吼！	ウォ～ン！	*WHOOM*
+speaker	Kiana
+emote	111	0
+msg	94199	*Sob!* You zombies... I'm not afraid of you!	呜呜！你们这些死士…我才不会怕你们！	うぅっ！このゾンビども……あんたたちなんか恐くないんだから！	Uau! Esses zumbis… eu não tenho medo de você!(TN: O quê?)

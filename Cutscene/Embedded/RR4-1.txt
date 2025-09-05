@@ -1,0 +1,25 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	CG10258
+nop	tween	CG10258	diffuse,0.5,0.5,0.5,1
+msg	250129	[i]Rumble... RUMBLE!!![/i]	轰隆隆！！！	ゴォロッ——ゴロォゴオォオオッ！！	NONE
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	250130	Stormy clouds are now gathered above the main school building... Raiden Mei was headed in that direction. These weather changes are also definitely her doing.	刚才的雷云聚集到了主教学楼的上空…雷电芽衣也是朝着那个方向离开的，果然这场天气的异变也和那个家伙有关么……	雷が教室棟の上に集中してる……雷電芽衣が逃げた方向とも一致するし、きっとあそこにいるはず——	Nuvens tempestuosas estão se reunindo acima do prédio principal da escola... Raiden Mei também saiu nessa direção. As mudanças climáticas são definitivamente obra dela também.
+emote	101	2
+msg	250131	Dad once told me there is a special kind of large scale Honkai outbreak, a cataclysm that can destroy the entire world... But the scariest part is not the outbreak itself, but the creature born from the outbreak...	之前那个人说过，有一种特殊的大型崩坏，它是足以破坏整个地球的灾难…但真正可怕的却并非崩坏本身，而是从崩坏中诞生的生命体……	——たしか、地球そのものを破滅に導く特殊な「崩壊」があって、そこから生まれる存在がいるって……あの人が失踪する前に言ってた。	Ele me disse uma vez que existe um tipo especial de surto Honkai em grande escala, um desastroso que pode destruir todo o planeta... Mas a parte mais assustadora não é o surto em si, mas a criatura nascida do surto....
+msg	250132	Possessing supernatural powers, able to control Honkai Energy despite being human... a mindless incarnation of destruction and ruin — the "Herrscher".	以人类之躯吸收崩坏之力，舍弃人类的心灵，变成只为破坏与毁灭而生的化身，是由崩坏创造出的最强生物——律者。	超常的な力を持ち、人の身でありながら崩壊エネルギーを操る……心を持たない破壊と破滅の化身——「律者」。	Um corpo humano saturado com energia Honkai, despojado de uma mente humana. Ele se torna uma entidade feita apenas para destruição e ruína. É o monstro mais forte criado pelo Honkai - O Herrscher.
+emote	101	0
+msg	250133	Given the current situation, it is very likely that this is the case here.	从现在的状况来看，这个结果的可能性很高呢。	今の状況からして、雷電芽衣が「律者」である可能性は高い。	Dadas as circunstâncias atuais, é muito provável que seja esse o caso aqui.
+msg	250134	I never expected this outbreak to turn into something this big. I might be in over my head.	没想到这次遇到的居然是这么棘手的崩坏事件，再深入下去恐怕真的已经不是我 能控制的范围了。	まさか、こんな厄介な崩壊だったとはね。もしかしたら、私じゃ手に負えないかも。	Eu nunca esperava que este surto se tornasse algo tão grande, e tenho medo de estar me metendo em algo que eu não consiga lidar.
+msg	250135	Forget it... It's pointless to dwell on it any longer. I just hope things don't take a turn for the worse.	算了…现在想再多也没用了，但愿事情不会朝着最坏的方向发展。	でも……やるしかないよね。ここで、うだうだ考えてても始まらないもん。それに最悪な状況だけは避けなきゃ。	Esqueça isso... Não tem sentido pensar mais nisso, só espero que as coisas não piorem.
+msg	250136	Since I had already decided to face the Honkai from the start, I won't let go of this opportunity! He should also be nearby and going after the same goal as me. And Raiden Mei, she must be at the center of this outbreak.	既然已经冲着这次崩坏来了那就一定不能放弃这次机会！我想那个人一定也在附近和我追寻着同样的目标，而雷电芽衣，她一定就是这场崩坏的中心。	むしろ、このチャンスを逃す手はないわ！律者が生まれるような崩壊なら、あの人だって来てる可能性が高いし！崩壊の中心である雷電芽衣のところに行けば会えるかも。	Uma vez que eu já me havia preparado para enfrentar o Honkai desde o começo, eu não vou deixar essa oportunidade escapar! Ele também deve estar por perto e seguindo o mesmo objetivo que eu. E Raiden Mei, ela deve estar no centro deste surto.
+emote	101	2
+msg	250137	To defeat this troublesome senpai, I'm afraid brute force alone won't do the trick. Those feelings that flowed to me through the Honkai energy earlier might be the key to waking her up...	要战胜这个头疼的学姐恐怕光靠蛮力是没有用的，刚才从崩坏能中传递出的思念或许可以成为唤醒她的关键……	あー、けど、力じゃ先輩に敵わなそうだよね。どうにかして、元の先輩に戻すことできないかな……さっきの崩壊エネルギーから溢れ出た記憶がカギになりそうだけど……。	Para derrotar esta senpai problemática, temo que força bruta sozinha não vai resolver. Aqueles sentimentos que fluíram até mim através da energia Honkai mais cedo, esses podem ser a chave para acordá-la.
+msg	250138	[i]Beep beep— Beep beep—[/i]	呲呲呲……	ピピッ——ピピッ——	NONE
+speaker	Kiana
+emote	101	0
+msg	250139	This crappy broken phone... It always gives me warnings at times like these, enough is enough!	这个破手机还是不能用么…每到关键时刻就出岔子，真是够了！	また通知？いっつもタイミング悪いんだから。	Agh, este telefone inútil... Ele fica apitando nos piores momentos, pare com isso!
+msg	250140	I don't need to look at a warning to know what's dangerous. There's a huge vortex of thunderstorm clouds above, and there's zombies everywhere... I can already tell this place is dangerous using common sense.	不过现在的状况也不用它来提示了。头顶是巨大的雷暴云旋涡，周围还有密密麻麻的死士…用脚想都知道是最危险的地方。	今さら崩壊警報なんか鳴らされても意味ないのに。頭上では雷がゴロゴロ鳴ってて、周りにはゾンビがびっしり……危険だってことが肌からヒシヒシと伝わってくるもん。	Não preciso de um alerta para me dizer que há um enorme vórtice de nuvens de tempestade à espreita, e há zumbis por toda parte... Eu posso facilmente dizer que este lugar é super má notícia.
+msg	250141	If I really end up dying here this time... No! Bad! I shouldn't be thinking so negatively! I, Kiana Kaslana, won't fall so easily!	要是这次真的死在这里的话……不对！不对！想什么不吉利的事情呢！我琪亚娜·卡斯兰娜可没这么容易倒下！	もしも、ここで死んじゃったら……いやいやいやっ！縁起でもないこと考えちゃダメ！！私は、キアナ・カスラナなんだから！こんなところで負けるわけないじゃんッ！！	Se eu realmente acabar morrendo aqui desta vez... Não! Mal! Eu não deveria estar pensando tão negativamente. Eu, Kiana Kaslana, não vou cair tão facilmente!
+msg	250142	Hmph! That's right! Until I find him, I'll never give up!	没错！在找到那个人之前！我是绝对不会放弃的！	ふんっ！そうよ、あの人を見つけるまで、死ぬに死ねないんだから！！待ってなさいよ！	Isso mesmo! Até encontrá-la, eu nunca poderei desistir!

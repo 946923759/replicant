@@ -1,0 +1,14 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+nop	Library stage bg used here
+bg	rr/library
+portraits	101
+music	re/1-04 - Etro's Champion
+
+/Kiana	250012	Sure enough, this place is filled with zombies...	果然逃离路线上都徘徊着死士的身影呢……	予想はしてたけど、やっぱりそこら中にゾンビが溢れてるわね……。	Eu esperava, mas afinal os zumbis estão por toda parte...
+msg	250013	All it takes is getting infected by the Honkai, and a person turns into a mindless, emotionless walking corpse... That’s just sad.	被崩坏感染而变异的人类…失去了感情和意识，如同行尸走肉一般，真是令人悲哀的存在。	人間が崩壊に感染しただけで、あんな自我も感情もない歩く屍になっちゃうなんて……可哀想に。	É uma pena que os seres humanos que se infectaram com o Honkai se tornem um cadáver ambulante sem ego e emoções.
+speaker	Zombies
+msg	250014	[i]...Grr... guoaaahhh![/i]	吼吼吼！！	……ィギ……グォオオオッ！	Blaa---ah--- Whoo---oorgh---
+speaker	Kiana
+msg	250015	But... I'm sorry. I can't go easy on you. And it must be painful for you, right? I'll let you rest now — at least in peace...	抱歉，即使是这样本小姐也不会手下留情的，作为最后的补偿至少让你们安心地长眠吧……	でも……ごめんね。手加減はしてあげられないの。それに辛いでしょ？今、眠らせてあげるから——せめて、安らかに。	Eu sinto muito. Eu não posso ir com calma com você. É doloroso, não é? Vou colocá-lo para dormir agora, em paz.
+se	AVG_Pistol
+msg	250016	[i] Click... BANG, BANG, BAANG![/i]	呯！呯！呯！	カチャ……パァン、パァン——パァンッ！	Click- BANG- BANG- BANG!---

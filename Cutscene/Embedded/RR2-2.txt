@@ -1,0 +1,18 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/1-05 - Eternal War
+bg	CG10258
+portraits	101
+
+/Kiana	250025	The Honkai energy source is 50 meters away now... Should be close enough for observation.	距离崩坏源反应还有50米……已经到了视距能观测的位置了。	崩壊源まで50m……そろそろ肉眼で確認できるかな。	A fonte de energia Honkai está a 50 metros agora... Deve estar perto o suficiente para observação.
+msg	250026	Dammit, zombies are gathering there. It might be a bit of a pain to deal with this many...	应该就是那边了，啧~~果然聚集了好多的死士，即使是本小姐要对付这么多家伙也有点吃力呢……	あちゃー、ゾンビが集まってきちゃってる。この数を相手にするのは、ちょっと骨が折れるかも……。	Ah, os zumbis estão se reunindo. Lidar com esse número pode ser um pouco assustador...
+msg	250027	I should play it smart and use their behavior against them. Zombies react to sound, so I should be able to get through if I lure them away.	不过多数心智简单的死士，会向着声源移动。利用这个弱点可以有效的避免一些问题~	ここは少し頭を使って、ヤツらの習性を利用しよっかな。ゾンビは音に反応する習性があるから、上手く誘導してやれば切り抜けられるはずだよね。	Penso que devo usar um pouco a cabeça e aproveitar os hábitos deles em nosso benefício. Os zumbis têm o hábito de reagir ao som, então, se você os guia-los bem, poderá sobreviver.
+msg	250028	After I make a sound to get their attention, I'll go behind the trees and——	看来只能迂回过去了，先在这边弄出点响动，吸引他们的注意，然后从左翼切入。	音で誘導した後は、あの木の裏から回り込んで——	Parece que a única maneira de contornar é fazer algum barulho aqui para atrair a atenção deles, e depois cortar pelo flanco esquerdo.
+
+vibrate	1
+se	DLC_CH03_EV05_ThunderBig
+/	250029	[i]BOOOOOOOOMM!![/i]	轰隆！！！	ドォオオオオオオオンッ！！	Bang!!
+/Kiana	250030	Eh?! Wha?! What was that sound? I haven't done anything yet! Uh... Thunder?! But it was sunny just now, why did it suddenly...	呜哇！这！这是什么声音？我还什么都没做呢！呜…是打雷么？明明刚才还是晴天，怎么忽然……	えっ、えっ！？何の音！？私、まだ何もしてないよ！！……って、空が真っ暗！ついさっきまで晴れてたのに！今のって……雷？	Ei, ei! ? O que é esse som!? Ainda não fiz nada! !! ...... O céu está escuro como breu! Estava ensolarado até pouco tempo atrás! O que é agora... um Trovão?
+/Zombies	250031	Grrrr... grraaah!!	吼吼吼！！	グルッ……ヴォオオオッ！！	NONE
+/Kiana	250032	Ugh! Damn it! I've been spotted!	呃！糟了！被发现了！	……そんなっ！？ゾンビにバレちゃった！	Uh! Ops! Fui descoberta!
+emote	101	3
+msg	250033	Ah, come on! In this case, I guess I'll have to force my way through!	算了，既然这样就只能强行突破了！	あー、もう！こうなったら強行突破してやる！	Esqueça! Já que esta é a única maneira de forçar a passagem!

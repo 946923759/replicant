@@ -1,7 +1,7 @@
 extends Control
 
 signal switch_submenus(new_menu)
-signal selection_changed(newSel,isLocked, playSound)
+signal selection_changed(newSel, unlocked, playSound)
 signal input_accepted(selectionNum,destinationName)
 
 enum LAYOUT {
@@ -115,14 +115,14 @@ func set_selection(sel:int, play_sound:bool=true):
 		else:
 			f.get_child(i).LoseFocus()
 	
-	emit_signal("selection_changed",sel,get_child(sel+1).locked, play_sound)
+	emit_signal("selection_changed",sel,get_child(sel+1).unlocked, play_sound)
 
 
 
 func input_accept(sel:int):
 	#print("aaa")
 	var n = get_child(sel+1)
-	if n.locked:
+	if not n.unlocked:
 		return
 	elif n.submenu:
 		emit_signal("switch_submenus",n.destinationScreenOrSubmenu)

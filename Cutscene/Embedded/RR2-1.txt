@@ -1,0 +1,22 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+nop	preload_portraits	101
+music	re/1-05 - Eternal War
+bg	CG10258
+portraits	101
+
+/Kiana	250017	Phew~ Finally made it out. So far so good, I guess? Now I just need to locate the target...	呼~终于离开图书馆了，目前情况还算顺利。根据下面的计划，只要尽快在崩坏区域内找到目标就行了~	ふぅ～、やっと抜けれた。今のところ順調かな？あとはターゲットが見つかればいいんだけど……。	Ufa~ Finalmente saí da biblioteca, e as coisas estão indo bem até agora. De acordo com o plano a seguir, contanto que você encontre o alvo na área de colapso o mais rápido possível~
+tn	0	In the Japanese version, it uses a more literal street name instead of describing the road's appearance like in Chinese. I felt this was better.
+msg	250018	I think I'll head to the center of Senba Academy campus for now. If I want to steer clear of zombie-heavy areas... Sakura Lane is probably the best route. Alright, that settles it! 	现在的位置是这里，尽量避开死士密集的地方前进，那么最有效的路径是沿着这条樱花道进入千羽学园的校区中心，就这么办吧！	ひとまず、千羽学園の中心に向かおうかな。ゾンビの多そうなところを避けるとなると……桜小路から行くのが一番良さそうだね。よし、決まりっ！	A localização atual é aqui, tente evitar o local onde os mortos estão concentrados, então o caminho mais eficaz é seguir esta estrada de flores de cerejeira até o centro do campus da Academia Senba, então vamos lá!
+
+emote	101	2
+msg	250019	Still, it feels weird how quiet the academy is now, when it used to be so full of life. It was a fancy girls' school, so not having to keep up appearances is kind of a relief, in a way.	不过话说回来…原来喧嚣的学园一下子这么安静还真是有些不习惯，从今以后也不用故作淑女陪大小姐们赏花了吧…嘛，姑且算是件值得开心的事情吧~	それにしても、あんなに賑やかだった学園が、こうも静かだと何だか変な感じ。お嬢様学校だったから、それに調子を合わせる必要がなくなったのは、楽っちゃ楽だけど。	Mas dito isso... Acontece que a escola barulhenta de repente está tão quieta, eu realmente não estou acostumada. De agora em diante, eu não tenho que fingir ser uma dama para acompanhar a mais velha senhoras para desfrutar de flores... Bem, digamos que é algo para ser feliz.
+
+emote	101	0
+msg	250020	Hmm, am I forgetting something important...? Ah, whatever.	呜！等下！为什么忽然有感而发了起来！明明还有重要的事情要做呢！	んー、何か重要なことを忘れてるような……？まっ、いっか。	Ah, espere!  Agora não há tempo para sentimentalismo! Há coisas mais importantes para fazer agora!
+
+se	beep beep
+/	250021	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡……	ピピッ——ピピッ——	Trrrim trrrim trrrim
+
+/Kiana	250022	Why is my phone ringing now of all times? Let’s see... Honkai reaction detected — 700 meters ahead, 2 o’clock?! R-Right! This phone can detect Honkai Energy! That means... the target might be nearby!	呜！手机的探测器有反应了，让我看看~2点钟方向有崩坏源反应，距离700米么……哼~那里就是这次崩坏爆发的中心区域了吧，目标一定也在那里！	こんな時にスマホが鳴るなんて、一体何よ。えっと……700m先、2時方向に崩壊反応あり！？そ、そうだった！このスマホ、崩壊エネルギーの探知機能があるんだった！ということは、近くにターゲットもいるかも！	Ah! O detector no meu telefone encontrou algo, deixe-me ver~ Está lendo uma fonte de energia Honkai às 2 horas, a 700 metros daqui... Humph- Esse deve ser o centro desse surto de Honkai! O alvo deve estar lá também!
+msg	250023	Though I can't get through to the person I need, this thing sure is full of sketchy features. I never thought I'd be using something he created himself to find him.	嘿嘿~你留给我的破玩意电话虽然打不通，但这种奇怪的附加功能倒还是挺灵敏的嘛~他一定不会想到我会利用他自己设计的这个功能找到他的~	肝心な相手に電話は繋がらないけど、怪しい機能は盛り沢山なのよね。まさか、あの人が作ったもので、その本人を探すことになるなんて。	Hehe-Embora eu não possa contatá-lo com esta porcaria de telefone que você me deixou, esta estranha função adicional  com certeza é eficaz. Ele provavelmente nunca esperou que eu usasse este recurso que ele mesmo projetou para encontrá-lo.
+msg	250024	All right, let's stick to the original plan!	那么，继续按照原定计划前进吧！	よし、目的地は2時方向700ｍ！待ってなさい！	NONE

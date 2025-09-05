@@ -2,9 +2,9 @@
 
 [ext_resource path="res://Fonts/TextFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Shaders/Gradient.gdshader" type="Shader" id=2]
-[ext_resource path="res://Ext/RetroRemake/RequiredBG/d3afec2656ed77de171c8fe11f3870b4.jpg" type="Texture" id=3]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/ChapterActor.gd" type="Script" id=4]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/PartScrollItem.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Ext/RequiredBG/CG054.png" type="Texture" id=3]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/ChapterActor.gd" type="Script" id=4]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/PartScrollItem.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )

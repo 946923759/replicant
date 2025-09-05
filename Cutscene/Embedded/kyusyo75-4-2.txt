@@ -98,7 +98,7 @@ bg	011/013_1280x720
 msgbox_open
 shake_camera	2
 /	302964	BOOM——————！！	轰隆隆隆——————！！	ドォォオオオオン——————！！	NONE
-music	The Sound of the End
+music	The Sound of the End - Full
 /Kiana	302965	The Final Impact has already begun. Open your eyes and see this world perish!	大崩坏已经开始了，你就眼睁睁地看着这个世界毁灭吧！	大崩壊が始まったわ。目を見開いてこの世界の滅びゆく様を見ていなさい！	NONE
 /Kyuushou	302966	Imaginary space…… Expansion!!!	虚数空间…展开！！	虚数空間……展開！！	NONE
 / 	302967	VSSSSH————！！！	嗡————！！！	ヴォン————！！！	NONE
@@ -113,7 +113,7 @@ msg	302969	Hah.... Hah....	呼…呼……	ふぅ、ふぅ……。	NONE
 /Kiana	302971	Hmph, you are pouring all your power into the imaginary space.\nThere will be no power of the Herrscher left in you anymore. It is impossible for you to defeat me.	哼，将全部力量倾泻在虚数空间上的你已经失去了律者的力量，根本没有机会战胜我。	フンッ、全ての力を虚数空間に注いでいるあなたに、#nもう律者の力なんて残っていないでしょう。私に勝つなど不可能だ。	NONE
 /Kyuushou	302972	Then I'll show you! My potential... Kyuushou Houraiji's potential as a human being!	那就让你见识一下吧！我蓬莱寺九霄身为人类的可能性！！	ならば、貴様に見せてやる！この蓬莱寺九霄が人類としての可能性をッ！！	NONE
 
-portraits	
+portraits
 bg_video	Final_Round_Dance
 /Kiana	302973	Possibility as a human being... What a joke.	人类的可能性…那种东西根本就是笑话。	人類としての可能性……そんなもの、笑いぐさでしかない。	NONE
 msg	302974	Mei-senpai ... Let's sing the last requiem together for the sad race of humanity.	芽衣…让我们一同为人类这个悲哀的种族唱响最后的丧歌吧。	芽衣先輩……私たちで一緒に、人類という悲しい種族のため最後のレクイエムを歌ってあげましょう。	NONE

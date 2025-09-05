@@ -1,0 +1,188 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	201	3
+bg	CG10272
+speaker	Kiana
+portraits	101	201
+music	re/1-06 - Divine Conflict
+msg	250172	Damn it, almost succeeded... This is so frustrating! That [i]thing[/i] from before seems like it has taken control over Mei's body.	可恶，差点就成功了…真是太让人讨厌了！刚才那东西，似乎已经侵占了芽衣的肉体。	もうっ、あと少しだったのに！何なのよ、さっきのヤツ！あれが芽衣先輩の身体を乗っ取ったのね。	NONE
+msg	250173	It's getting darker, and it will become more and more dangerous the longer this goes on... I've deviated a lot from the original plan, but I've chosen this path. I must finish this!	天就要黑了，再这样下去会越来越危险的……已经与原计划偏离甚远了，不过既然选择了这条道路，就一定要走完它！	あーあ、日が暮れてきちゃった……このまま進んだら危険かも。最初に想定していた計画からかなりズレてきちゃったけど、一度首を突っ込んだんだもん、最後まで面倒見なくちゃね！	NONE
+msg	250174	Only when the city lights went dim did I realise that the night sky is so mesmerising. If it weren't for the thunderclouds overhead, the view would be amazing~	当城市的灯光暗淡下来后，才发现夜晚的天空是这样让人陶醉，要是没有头顶这雷云的话应该是一片绝景吧~	暗いな……崩壊のせいで街灯が点かないんだ。でも、星空がすごく綺麗。	NONE
+tn	0	This is a play on words in Chinese and Japanese, since "Honkai" literally means something like "collapse" or "broken".
+msg	250175	...I can't tell whether it's the planet that's broken, or us humans... 	……真让人搞不懂，崩坏的是这个世界，还是我们自己。	……何だか崩壊しているのがこの星なのか、それとも私たち人間なのか……分からなくなっちゃう。	NONE
+speaker	Mei
+
+emote	201	0
+msg	250176	Please... stop chasing me! Run... run away! I can't hold it in any longer. If you keep going like this, I'll kill you!	求求你…千万不要过来，快离开我！我已经快要压制不住它了，我不能成为它的傀儡！	お願い……もう追いかけて来ないで！早く……早く逃げてっ！これ以上は、もう抑えきれないわ。このままじゃ、あなたを殺しちゃう！	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250177	Mei-senpai! Don't give up! Don't let the Honkai consume you!	芽衣学姐！不要放弃！不能被体内的崩坏吞噬！	芽衣先輩！諦めないで！体内の崩壊に呑み込まれちゃダメッ！！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250178	I'm... tired. I don't want to resist anymore. I just want to die and be free from this pain...	不……我已经活的太累了，已经没有力量再去抗争了，如果就这样死去，或许也是一种解脱也说不定。	もう……疲れたの。もう抗いたくない。このまま死んで、この苦痛から解放されたい……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250179	Senpai! What are you doing?!	学姐！你要干嘛！？	先輩ッ！何する気！？	NONE
+speaker	Mei
+
+
+msg	250180	Thank you... I'm glad I finally found someone like you. But, I think the best thing to do is jump off here.	谢谢你…能在最后遇见你真是太好了，从这里跳下去是我现在最好的选择了。	ありがとう……最後にあなたみたいな人に出会えて良かったわ。でもね、ここから飛び降りるのが、一番良い方法みたい。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250181	No! Stop!!	不要！！	いやッ！ダメッ！！	NONE
+speaker	Mei
+
+portraits	101
+/	250182	......	……	……。	NONE
+
+/Kiana	250183	She jumped...! And I couldn't save her! Even though I was so close...!	她跳下去了……到最后还是什么也没做到么！明明只差一点了！	そんな……ッ！助けられなかった！あと……あと少しだったのに！	NONE
+msg	250184	......	……	……。	NONE
+extend	250185	............	……	…………。	NONE
+
+speaker	Corrupted Mei
+portraits	101	3
+tween	3	addy,-200
+msg	250186	——Hehe, AHAHAHA!!	哈哈哈哈！	——くくッ、あっはははっ！！	NONE
+
+speaker	Kiana
+msg	250187	Wha—?!	！？	えっ！？	NONE
+speaker	Corrupted Mei
+msg	250188	What are you sad about? Did you think I'd give up the body I'd finally obtained so easily?	你在悲伤些什么啊？我怎么可能让自己好不容易获得的身体就这么简单地毁掉呢。	何を悲しんでいる？やっと手に入れた身体をそう簡単に手放すとでも思ったか？	NONE
+
+speaker	Kiana
+emote	101	3
+msg	250189	You again!	又是你！	あんたっ！！	NONE
+
+speaker	Corrupted Mei
+emote	101	3
+
+msg	250190	Heh, you don't have to worry anymore. Raiden Mei is not alone. I am here. And I will grant all of her wishes.	呵呵呵~你不用担心，雷电芽衣是不会孤单的，我将成为她最亲近的人~将她所有的愿望都实现。	ふっ、もう心配はいらんぞ。雷電芽衣は一人じゃない、この私がいる。彼女の願い、全て叶えてやろう。	NONE
+msg	250191	What should I start with...? Let's get rid of this annoying kouhai first!	首先！就是杀掉你这个讨人厌的学妹！	そうだな、手始めに……まずは目障りな後輩を片付けるとしようか！	NONE
+speaker	Kiana
+emote	101	3
+
+msg	250192	Go ahead and try it if you can!! I promise I'll get her back!!	休想！！我一定会把她带回来的！	やれるもんならやってみなさいよっ！！絶対、先輩を返してもらんだから！	NONE
+
+portraits
+bg	black
+/	(.......Some time later)
+
+music	re/1-07 - An Arrow Through Time
+bg	CG10272
+portraits	101	3
+tween	3	y,-200
+speaker	Corrupted Mei
+emote	101	3
+msg	250193	How embarrassing... to be defeated by a mere human...	不可能……我居然被这种人类给……	バカな……人間ごときに、やられるとは……。	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250194	Senpai! Mei-Senpai!! Wake up!!	学姐！学姐！醒醒啊！	先輩！芽衣先輩ッ！！目を覚まして！！	NONE
+portraits	101	201
+tween	201	y,0
+match_names	Kiana	Mei
+
+
+/Mei	250195	I'm... still... alive...?	我，还活着…	私……生きてる……の？	NONE
+msg	250196	Why? You should have just let someone like me die! I'm not worth putting yourself in danger to save!	像我这样的人，让我死掉不就好了么，为什么要冒着生命危险来救我？	どうして？私みたいな人、あのまま死なせておけばよかったのに！危ない目に遭ってまで助ける価値、私にはないでしょう！？	NONE
+speaker	Kiana
+emote	101	1
+
+msg	250197	Ehehe, I don't know, but when I saw what Senpai was thinking, I felt like there were some parts that I could relate to. So I helped you. Maybe it was just for my own sake.	嘿嘿~我也不知道，那时候你将自己的思念传递给我的时候，我在你的记忆中找到了自己的影子，或许这也是为了我自己吧~	えへへっ、分かんないけど、先輩の想いを見た時に自分と重なる部分があったんだよね。だから、助けちゃった。まぁ、結局は自分のためなのかも。	NONE
+speaker	Mei
+
+
+msg	250198	Can you tell me your name?	能告诉我你的名字么？	あなたの名前、教えてくれる？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250199	Kiana Kaslana. I'm just a kouhai who happened to pass by while I was chasing my own goals.	琪亚娜·卡斯兰娜，我只是一个为了自己的目标而在这里偶然路过的学妹啦~	キアナ・カスラナよ。崩壊を追ってる途中、偶然通りかかっただけの後輩。	NONE
+speaker	Mei
+
+
+msg	250200	What a strange person...	真是奇怪的人……	変わってるのね……。	NONE
+speaker	Kiana
+emote	101	1
+
+msg	250201	If you ask me, you're the weird one here, Senpai! You've managed to survive as a human in the midst of this Honkai Eruption. And——	再我看来学姐也是个奇怪的人啊！居然能够在这么剧烈的崩坏中活下来，而且还有着……	私に言わせたら、先輩も相当変わってるからね！崩壊の中で人間のまま生きてられるんだもん。それに——	NONE
+speaker	Mei
+emote	201	2
+
+msg	250202	And...?	有着什么？	それに……？	NONE
+speaker	Kiana
+emote	101	1
+
+msg	250203	No, it's nothing. Don't worry about it, Senpai!	不，没什么。不要在意啦学姐~一切都过去了。	ううん、何でもない。気にしないで先輩！	NONE
+speaker	Mei
+
+
+msg	250204	Just call me Mei. And this "Honkai" you just mentioned. Is that the name of this disaster?	叫我芽衣就行了。你刚才说的崩坏，就是这场灾难的名字么？	ところで、その……崩壊っていうのは、この災害のことなのかしら？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250205	Hmm, it's hard to explain, but to put it simply, it's a phenomenon that could lead to the destruction of the world and humanity.	嘛~要解释这个问题可就伤脑筋了，表面上看来，崩坏就是你所能看到的这些，导致世界毁灭，人类消亡的现象。	う～ん、説明が難しいんだけど、平たく言うと世界と人類を破滅に導く現象かな？	NONE
+speaker	Mei
+emote	201	2
+
+msg	250206	...Huh?	…？	……えっと？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250207	Whether you can believe it or not, the world periodically experiences a phenomenon with the umbrella term called the "Honkai." Its cause remains a mystery, and can only be described as an unpredictable disaster.	世界的崩坏，不论你现在能否接受，就是一种周期性会发生的现象。目前以人类的知识还无法解释它的缘由，只能说是一种不可臆测的灾难。	信じられないかもしれないけど、この世界では周期的に“崩壊”っていう現象が起こってるの。その原因は今もなお謎で、予測不能な災害としか言い表せないわ。	NONE
+msg	250208	The Honkai can come in many different forms, such as war, epidemics, natural disasters, meteorites, or even the sudden appearance of giant monsters. The Honkai exists to deal devastating damage to the species at the top of the food chain.	它的形式各种各样，战争，传染病，气候灾难，彗星撞击，甚至巨神兵降临都是有可能的。按照现有的资料的记载，崩坏一定会给主宰世界的物种带来巨大的毁灭。	しかも崩壊は様々な形で発生するの。例えば戦争や伝染病、自然災害、隕石とかね、巨神兵器が突如現れるなんてこともあり得るわ。崩壊は、世界でもっとも繁栄している種に壊滅的なダメージを与えるみたい。	NONE
+msg	250209	For example, the Black Death, which reduced Europe's population by one-third, is considered a major Honkai outbreak.	比如最近的一次大型崩坏，14世纪的黑死病，直接或间接造成了全球1/3人口的毁灭。	たとえば、ヨーロッパの人口を1/3も減らした黒死病も大型崩壊にあたるかな。	NONE
+speaker	Mei
+emote	201	2
+
+msg	250210	So what was that... thing that was possessing my body just now...?	那，刚才侵蚀我身体的是？	そんなものが……じゃあ、さっき私の身体に入ってきたのは……？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250211	That's Honkai energy. It's something that forms in the surroundings when Honkai outbreaks occur. It's energy that distorts all the laws of the world. It seems to be an element involved in the occurrence of Honkai-related phenomena, but it also comes in various forms.	那是崩坏源能量，会伴随崩坏现象出现，是一种可以扭曲世界规则的能量。推测是造就崩坏必不可少的要素，它的存在形式也难以揣测。	あれは崩壊エネルギー。崩壊とともに周囲に発生するものなの。世界のありとあらゆる法則を捻じ曲げるエネルギーよ。崩壊の発生に関わる要素みたいだけど、これにも様々な形があるの。	NONE
+msg	250212	But to think that something like that could cause a change in consciousness... There's no such information in the records. Even if there was, it would have been classified...	但是，它会具有显著的意识倾向这件事情，任何资料中都没有记载。或许有过唯一一次类似的事件，但是也被视作机密封存了。	でも、そのせいで意識に異変をきたすなんて……。少なくとも過去の資料にはそんな情報残ってなかった。残ってたとしても、機密扱いになってるか……。	NONE
+speaker	Mei
+emote	201	2
+
+msg	250213	Has it left me now?	现在，它已经离开我了吗？	今はもう、私の身体から出ていったのかしら？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250214	Honestly, I don't know. It's possible that it's just sleeping inside of you somewhere. But as long as you don't lose sight of yourself, I don't think it will come out again.	这个我也不能肯定。或许已经离开了，或许只是在芽衣学姐的心里长眠了…不过我想只要芽衣学姐保持自己的意志，坚持自己的本心，她就一定不会再出现了~	それは正直分からない。芽衣先輩の中で眠っているだけの可能性もあるから。でも、先輩が自分を見失わない限り、表に出てくることはないと思う。	NONE
+speaker	Mei
+
+
+msg	250215	Ah, thank you...	嗯，谢谢你……	そう、ありがとう……。	NONE
+speaker	Kiana
+emote	101	1
+
+msg	250216	Ehehe, I was just doing what a friend should do!	嘿嘿~不用客气！作为同伴，这是必须的嘛~	えへへ～っ、仲間として当然のことをしたまでだよ！	NONE
+speaker	Mei
+
+
+msg	250217	Friend? ...It's the first time someone has ever called me that.	同伴吗？还是第一次，有人把我当做同伴呢。	仲間？……そんな風に言われたの初めてだわ。	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250218	Mei-senpai? What's wrong?	芽衣，你这是怎么了？	芽衣先輩？どうしたの？	NONE
+speaker	Mei
+
+
+msg	250219	No, it's nothing. It was just a feeling I've never had before. But, is it really okay for someone like me to be your friend? I'm the one who killed all the students at this school. I'm the one who tried to curse this world. I'm the one——	没什么，心里有一种从来没有过的感觉。可是，我这样的人，也能够成为同伴吗？是我杀了她们啊，是我想要诅咒这个世界的啊。我…我…	ううん、何でもない。ただ初めての感覚だったから。でも、私なんかが一緒にいていいの？この学園の子たちを殺したのは私よ。この世界を呪おうとしたのも私。私は——	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250220	No, it's not your fault. It was the Honkai punishing the humans.	不，这一切都不是芽衣学姐的错，而是崩坏对人类的惩罚。	違うわ、芽衣先輩のせいじゃない。崩壊が人間を罰しただけ。	NONE
+tn	0	Another play on words in Chinese and Japanese, using the word "Honkai".
+msg	250221	I don't think there is such a thing as absolute good or evil in this world. There never has been, and I don't think there ever will be in this ruined world. 	在我看来，这世界上根本没有什么绝对的正邪善恶。此前的世界中就没有，更何况这个崩坏的世界。	この世界に絶対の正義や悪は存在しないと思うの。今までにだってなかったし、これからのこの崩壊した世界の中にもないと思う。	NONE
+msg	250222	You survived by your own will. Only weak people or those who have lost the will to live become zombies. There is no concept of good or evil there. The will to survive is all that matters.	因为你的意志，你活了下来，而那些软弱的，放弃生存信念的人，早已沦为了丧尸一般的存在了。不论秉持什么样的信念，活着就是最重要的意义。	先輩は自分の意志で生き延びたの。弱い人や生きる意志を失くした人がゾンビになっただけ。そこに善悪の概念なんかない。生き延びる覚悟、ただそれだけが大事なの。	NONE
+speaker	Mei
+
+
+msg	250223	Can... I really be your friend?	我，真的可以成为你的伙伴吗？	私、本当にあなたの仲間になってもいいのかしら？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250224	Of course. Please have my back, Senpai. Let's fight together!	那就请守候我的背后，与我一同战斗吧。	もちろん。私の背中をお願いね、先輩。一緒に戦いましょう！	NONE

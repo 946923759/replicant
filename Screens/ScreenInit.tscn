@@ -25,7 +25,7 @@ func _ready():
 			1:
 				sc = \"ScreenSelectChapter\"
 			2:
-				sc = \"RR-ScreenTitleMenu\"
+				sc = \"RR-ScreenSelectChapterSimple\"
 			3:
 				sc = \"RE-ScreenSelectChapterSimple\"
 			#_:
@@ -54,7 +54,7 @@ func _input(event):
 		_on_Timer_timeout()
 
 func next_screen(_a,_b):
-	if Globals.RE_RR_MODE_AVAILABLE>0:
+	if Globals.installedPacks>0:
 		Globals.change_screen(get_tree(),\"ScreenSelectEra\")
 	elif (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:
 		Globals.change_screen(get_tree(),\"ScreenFirstRun\")
@@ -77,6 +77,7 @@ func _on_Timer_timeout():
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = SubResource( 1 )
+debugBootTo = 2
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0

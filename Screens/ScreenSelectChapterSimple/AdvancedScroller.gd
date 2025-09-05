@@ -255,4 +255,4 @@ func handle_btn_press(vnPlayerDest:String, episodeDest:Globals.Episode):
 	$Confirm.play()
 	Globals.nextCutscene=vnPlayerDest+".txt"
 	Globals.currentEpisodeData=episodeDest
-	get_parent().OffCommandNextScreen("RE-CutsceneFromFile")
+	get_parent().OffCommandNextScreen()

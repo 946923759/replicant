@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Kyuushou
-music	The Sound of the End
+music	The Sound of the End - Full
 bg	011/035_1280x720
 
 portraits	58

@@ -22,6 +22,7 @@ func _ready():
 	if database_ref.empty():
 		database_ref = Globals.load_database(load_path)
 		if database_ref.has('__starting_episode__'):
+			print("Setting starting episode")
 			Globals.currentEpisodeData=database_ref['__starting_episode__'][0]
 			Globals.nextCutscene=Globals.currentEpisodeData.parts[0]+".txt"
 			database_ref.erase('__starting_episode__')

@@ -145,7 +145,8 @@ func _ready():
 	
 func _input(event):
 	if event.is_action("DebugButton1") and event.is_pressed():
-		if not cutsceneData['abs_path']:
+		if not cutsceneData.has('abs_path'):
+			print("No cutscene to open on disk (File does not exist)")
 			return
 			
 		var p = cutsceneData['abs_path']
@@ -196,7 +197,7 @@ func end_cutscene_2():
 		currentDatabase=Globals.chapterDatabase_RR
 	elif saveCategory==3:
 		currentDatabase=Globals.chapterDatabase_RE
-	assert(len(currentDatabase)>0,"No database loaded for mode "+String(saveCategory))
+	assert(len(currentDatabase)>0, "["+self.name+"] No database loaded for mode "+String(saveCategory)+". Are you in the right screen?")
 	
 	if saveCategory > 0 and Globals.currentEpisodeData:
 		var save_idx = Globals.get_episode_index(currentDatabase, Globals.currentEpisodeData)

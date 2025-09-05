@@ -141,6 +141,12 @@ class Episode:
 		}
 	"""
 
+
+class Chapter:
+	var episodes:Array
+	var title:String
+	var description:String
+
 """
 Typed dict support when?
 The structure of chapterDatabase is:
@@ -426,8 +432,12 @@ func _ready():
 	#false = Do not overwrite base pck data with files of the same name in additional pck
 	var success = ProjectSettings.load_resource_pack("res://Reborn.pck",false)
 	if success:
-		Globals.RE_RR_MODE_AVAILABLE |= Globals.RE_RR_STATUS.REBORN_AVAILABLE
+		Globals.installedPacks |= Globals.DLC_PACK.REBORN_REMAKE
 		print("[DLC] Loaded Reborn.pck!")
+	if ProjectSettings.load_resource_pack("res://Retrospective.pck",false):
+		Globals.installedPacks |= Globals.DLC_PACK.RETRO_REMAKE
+		print("[DLC] Loaded Retrospective.pck!")
+		
 
 	
 	gameResolution = get_viewport().get_visible_rect().size
@@ -448,7 +458,8 @@ func _ready():
 							gameResolution=Vector2(w,h)
 							OS.window_size = gameResolution
 							OS.center_window()
-			elif kv[1]=="--fullscreen":
+			elif kv[0]=="--fullscreen":
+				#print("fullscreen arg "+kv[1])
 				if kv[1].to_lower()=="true":
 					forcedFullscreen=2
 				else:
@@ -704,7 +715,7 @@ var SCREENS:Dictionary = {
 
 	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
 	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",
-	"RR-ScreenSelectChapterSimple":"res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/RR-ScreenSelectChapterSimple.tscn",
+	"RR-ScreenSelectChapterSimple":"res://Screens/RetroRemake/RR-ScreenSelectChapterSimple.tscn",
 	"RR-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-rr.tscn",
 	
 	"RE-ScreenTitleMenu":"res://Screens/RebornRemake/RE-ScreenTitleMenu/RE-ScreenTitleMenu.tscn",

@@ -43,10 +43,10 @@ func input(event):
 	if !is_expanded:
 		return
 		
-	if Input.is_action_just_pressed("ui_up"):
+	if event.is_action_pressed("ui_up"):
 		#prints(name, "I have focus!")
 		move_selection(-1)
-	elif Input.is_action_just_pressed("ui_down"):
+	elif event.is_action_pressed("ui_down"):
 		move_selection(1)
 
 func get_rect_size():
@@ -108,6 +108,9 @@ func GainFocus() -> Control:
 	return self
 
 func GainFocusNoTween() -> Control:
+	var full_text = chapter_name+": "+chapter_full_name
+	$Label.text = full_text
+	$Label.visible_characters = -1
 	rect_min_size.x = MAXIMUM_WIDTH
 	is_expanded = true
 	if scroller:

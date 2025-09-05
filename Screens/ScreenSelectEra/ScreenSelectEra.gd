@@ -3,6 +3,13 @@ extends "res://Screens/ScreenWithMenuElements.gd"
 onready var scroller = $ActorScroller
 
 func _ready():
+	$ActorScroller/Retro.unlocked = Globals.installedPacks & Globals.DLC_PACK.RETRO_REMAKE
+	$ActorScroller/Reborn.unlocked = Globals.installedPacks & Globals.DLC_PACK.REBORN_REMAKE
+	#If running from the editor
+	if OS.is_debug_build() and !OS.has_feature("standalone"):
+		$ActorScroller/Retro.unlocked = true
+		$ActorScroller/Reborn.unlocked = true
+
 	$Music.load_song("17 - Dearly Beloved ~reprise~")
 	# Wipe this data so the chapter select screens don't
 	# navigate to the wrong chapter
@@ -13,13 +20,14 @@ func _ready():
 #			$ActorScroller.set_selection(1,false)
 #		"ScreenTitleMenu":
 #			$ActorScroller.set_selection(2,false)
+	
+	
 	if Globals.previous_screen.begins_with("RR"):
 		$ActorScroller.set_selection(0,false)
 	elif Globals.previous_screen.begins_with("RE"):
 		$ActorScroller.set_selection(1,false)
-	elif Globals.previous_screen == "ScreenTitleMenu":
+	else: #Default to Fire Moth
 		$ActorScroller.set_selection(2,false)
-	
 
 func _input(event):
 	scroller.input(event)

@@ -1,0 +1,38 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	201
+bg	rr/sakura_lane
+music	re/1-05 - Eternal War
+
+portraits	101
+emote	101	3
+/Kiana	250034	Huff, huff... There's no end to them! It's like all the zombies are swarming to the Honkai Source! [i]Cough——[/i] If this keeps up, it'll be a bit of a problem.	呼~呼~真是没完没了！没想到周边的死士都被这里的崩坏源吸引过来了！再这样下去有点不妙呢。	ハァ、ハァ……キリがない！学園中のゾンビが、崩壊源に吸い寄せられてるみたい！ゴホッ——このままじゃ、ちょっとまずいかも。	Huh- huh-Não há fim para eles. Eu não esperava que os zumbis viessem aos montes  para a fonte de Honkai aqui. Será um pequeno problema se isto continuar.
+
+emote	101	0
+msg	250035	Almost out of ammo, almost out of time... I have to find the target, fast.	子弹已经快消耗完了，时间也不多了，必须立刻找到目标才行……	弾も切れちゃったし……あちこち痛む……早くターゲットを見つけないと……。	Quase sem munições, quase sem tempo... Tenho que encontrar o alvo, rápido.
+
+/	250036	[i] Rustle—[/i]	沙沙沙！	ガサッ——	NONE
+
+emote	101	3
+/Kiana	250037	Who's there?!	谁！？	誰……ッ！？	Que-?!
+
+emote	101	2
+msg	250038	That didn't look like a zombie... could it be?! I finally found you! Wait!	那个人影看起来不像是死士……难道是！？终于到了你了！给我站住！	今の……ゾンビじゃない！まさかっ！？やっと見つけた、待ちなさい！	Isso não parecia um zumbi... poderia ser?! Finalmente o encontrei! Espere!
+
+portraits	101	201
+match_names	Kiana	???
+/???	250039	……	……	……。	NONE
+emote	101	0
+/Kiana	250040	Eh?! This is... a student? I didn't think there were still people who hadn't been infected by the Honkai...	呃！？这是…学生么？没想到居然还有没被崩坏感染的人类…	って、学生？何だ、人違いか……もう紛らわしいな！でも、崩壊に感染してない人がまだ残ってるなんて……。	Eh?! Isto é... uma estudante? Não pensei que ainda houvesse pessoas que não tivessem sido infectadas pelo Honkai...
+msg	250041	That uniform — you're a year above me, right? What's your name?	看你的校服好像是高年级的学生，你叫什么名字？	その制服、ひとつ上の先輩だよね。名前は？	Seu uniforme, é o utilizado para os alunos do terceiro ano. Qual é seu nome?
+/???	250042	……	……	……。	NONE
+/Kiana	250043	Hey! Are you mute? Can't you give some sort of response?!	喂！你是哑巴么？给点反应好不好？	ねぇ！聞いてる？頭、溶けちゃってんの！？何か言ってよ。	Ei, você pode me ouvir? Você poderia talvez... responder?
+/???	250044	……	……	……。	NONE
+/Kiana	250045	Uhh... maybe she's so scared, she can't even speak? Well, that's understandable... Anyway, I don't have the capacity to protect you right now, so it'd be better if you hide somewhere until you can calm down.	哎~看样子一定是被吓坏了吧…不管了，我现在可是自身难保，你赶紧找个隐蔽的角落躲起来吧。	えっと～、もしかして恐怖で声も出ないとか？まっ、無理もないか……それより、私にあなたを守る余裕まではないからさ、落ち着くまでどっかに隠れてた方がいいよ。	Ah... Você deve estar muito assustado para falar. Tanto faz... Tenho minhas mãos ocupadas, então vá você mesmo procurar algum  lugar para se esconder.
+
+/Zombies	250046	[i]Graaaaah!![/i]	吼吼吼……	……グォオオオッ！	NONE
+/Kiana	250047	Shit! I need to get out of here, fast... You can hear, right? You better run too! Well then... see ya.	啧！这里已经不安全了…你如果自己放弃生存希望的话谁也救不了你，即使带上你也是拖后腿…再见，你可不要怪我哦。	くっ！早く離れないとまずそうだね……聞こえてるでしょ？あなたも逃げなさい！それじゃ……じゃあね。	Nossa, aqui não é mais seguro! Se você perdeu a vontade de sobreviver, então ninguém pode salvá-la. Mesmo se eu o levar comigo, você só me atrasará. Adeus, não me culpe.
+/???	250048	……	……	……。	NONE
+/Zombies	250049	[i]Grrrr... Ah, ahhhh...![/i]	吼吼吼……	ィギギギ……ア、アァア……ッ！	NONE
+
+emote	101	1
+/Kiana	250050	Ugh! Just my luck! Come with me!	哎！算我倒霉！跟我来吧！	あー、もうっ！！何で逃げようとしないのよ！ほらっ、こっち！	Ugh! Apenas a minha sorte. Venha comigo!

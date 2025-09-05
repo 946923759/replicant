@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/ScreenSelectChapterSimple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/4d928d11314c27abeb770c648602d839ebd7fde415acb78b30ff133a51ae81f5.jpg" type="Texture" id=2]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/024.png" type="Texture" id=3]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/bcfe10d10e6c058047e12d79bd27ddffa66301578c0cd90292f1bcbe598c63e5.jpg" type="Texture" id=4]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/aaa38acb14f38b9a8cf1f92dcb0154aaaa642387a80983ed33bfccfbc2d66d3c.jpg" type="Texture" id=5]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/ff54803075cbaf159fa615ac3617a8929a1a33425974d5f26d386b2ca4216f25.jpg" type="Texture" id=6]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10259.png" type="Texture" id=7]
+
+[node name="RR-ScreenSelectChapterSimple" instance=ExtResource( 1 )]
+NextScreen = "RR-CutsceneFromFile"
+
+[node name="MarginContainer" parent="ScrollContainer" index="0"]
+margin_right = 3970.0
+
+[node name="HBoxContainer" parent="ScrollContainer/MarginContainer" index="0"]
+margin_right = 3010.0
+
+[node name="Debug Chapter" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0"]
+chapter_full_name = ""
+chapter_description = ""
+chapter_background = ExtResource( 3 )
+collapsed_x_offset = -725.0
+
+[node name="Chapter 1" parent="ScrollContainer/MarginContainer/HBoxContainer" index="1"]
+chapter_full_name = "The Honkai Descends"
+chapter_description = "Even in this seemingly quiet library, there's no guarantee of safety."
+chapter_background = ExtResource( 2 )
+collapsed_x_offset = -950.0
+
+[node name="Chapter 2" parent="ScrollContainer/MarginContainer/HBoxContainer" index="2"]
+chapter_name = "Chapter 2"
+chapter_full_name = "Kiana Strikes Back"
+chapter_description = "An afternoon with cherry blossoms and blood scattering, the start of a gorgeous battle."
+chapter_background = ExtResource( 4 )
+
+[node name="ChapterActor4" parent="ScrollContainer/MarginContainer/HBoxContainer" index="3"]
+chapter_name = "Chapter 3"
+chapter_full_name = "Ominous Lightning"
+chapter_description = "The roar of the thunderstorm above the school pierces my heart."
+chapter_background = ExtResource( 6 )
+
+[node name="ChapterActor5" parent="ScrollContainer/MarginContainer/HBoxContainer" index="4"]
+chapter_name = "Extra 1"
+chapter_full_name = ""
+chapter_description = ""
+chapter_background = ExtResource( 7 )
+
+[node name="ChapterActor6" parent="ScrollContainer/MarginContainer/HBoxContainer" index="5"]
+chapter_name = "Chapter 4"
+chapter_full_name = "An Unscientific Railgun"
+chapter_description = "For the first time I've realized how wonderful the starry sky is."
+chapter_background = ExtResource( 5 )
+
+[node name="ChapterActor7" parent="ScrollContainer/MarginContainer/HBoxContainer" index="6"]
+visible = false
+
+[node name="ChapterActor8" parent="ScrollContainer/MarginContainer/HBoxContainer" index="7"]
+visible = false
+margin_left = 2100.0
+margin_right = 2400.0
+
+[node name="ChapterActor9" parent="ScrollContainer/MarginContainer/HBoxContainer" index="8"]
+visible = false
+margin_left = 2100.0
+margin_right = 2400.0
+
+[node name="ChapterActor10" parent="ScrollContainer/MarginContainer/HBoxContainer" index="9"]
+visible = false
+margin_left = 2100.0
+margin_right = 2400.0
+
+[node name="ChapterActor11" parent="ScrollContainer/MarginContainer/HBoxContainer" index="10"]
+visible = false
+margin_left = 2100.0
+margin_right = 2400.0
+
+[node name="ChapterActor12" parent="ScrollContainer/MarginContainer/HBoxContainer" index="11"]
+visible = false
+margin_left = 2100.0
+margin_right = 2400.0

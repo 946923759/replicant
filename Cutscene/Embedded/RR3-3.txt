@@ -1,0 +1,158 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	201	3
+bg	rr/sakura_lane
+music	re/1-05 - Eternal War
+portraits	101
+
+se	DLC_CH03_EV05_ThunderBig
+msg	250075	Psssshhhh... RUMBLE!!	轰隆隆！！	ピシャッ——ゴロゴォオオオオッ！！	Trommm!
+
+speaker	Kiana
+msg	250076	Damn it! Where on earth did that girl go?! Really... Why am I wasting so much time on this stranger?!	可恶！那个家伙到底跑哪里去了！真是的…我为什么要为了这个不相识的人浪费这么多时间！	もう！どこ行ったのよ！何で私が知らないヤツなんかのために苦労しなきゃいけないわけ！	Tão irritante! Para onde foi aquela garota? Realmente... Por que eu deveria perder tanto tempo com esta estranha!
+msg	250077	What's more, the number of zombies is also increasing. If this keeps up, won't things [i]really[/i] start getting dangerous...?	前面的死士越来越多了，再前进的话……	しかも、ゾンビどもも増えてきてるし。これ以上先に進んだら、本格的にヤバいんじゃない……？	Há tantos zumbis na frente, se continuarmos nesta direção...
+speaker	Zombies
+msg	250078	Aaaahhh... Gwaaaaaaahh!	吼吼吼……	アァアア……グォオオオオオッ！	NONE
+
+speaker	Mei
+portraits	101	201
+emote	201	0
+msg	250079	Heheh, ahahaha! Everyone is by my side. As long as I have Father and everyone else here, nothing else matters.	呵呵呵，大家都围绕在我的身边，只要有父亲大人和大家在，其他什么都不重要了~	くくっ、あはははっ！みんな私の傍にいる。お父様とみんながいれば、あとはもう何もいらないわ。	Hehehe, todos estão aqui comigo. Enquanto eu tiver meu pai, e todos vocês ao meu lado, então nada mais importa.
+speaker	Kiana
+msg	250080	There she is! Dammit! She's being surrounded by zombies!	在那里！糟糕！那个家伙被死士包围了！	いた！あのお嬢様ったら、ゾンビに囲まれてるじゃない！	Lá está ela! Oh não! A garota está rodeada de zumbis!
+
+se	AVG_Pistol
+/	250081	Click— Bang! Bang! Baaang!	砰！砰！砰！	カチャ！パァンパァン、パァン——ッ！	Bang! Bang! Bang!
+speaker	Kiana
+emote	101	3
+msg	250082	You dead bastards! Get the hell away from her!!	你们这些混蛋死士！从那个女孩身边滚开！！	変態ゾンビ！その子から、離れなさいッ！	Seus bastardos! Deixem essa garota em paz!!
+
+speaker	Mei
+emote	201	0
+msg	250083	Who are you...? Hmph, you must be here to destroy my happiness too!	你是谁……又是来破坏我的幸福的人么！	誰……？ふーん、あなたも私の幸せを壊しに来たのね。	"Quem é você? Você veio para arruinar minha felicidade novamente?
+
+speaker	Kiana
+emote	101	0
+msg	250084	What kind of nonsense is that?! I'm. Here. To. SAVE YOU!	你在胡言乱语些什么啊！我是来救你的！	何、言ってんのよ！私は、助・け・に・来・た・の！	Que tipo de bobagem é essa? Estou aqui para salvá-la!
+
+speaker	Mei
+emote	201	0
+msg	250085	Get lost! I don't need your pity!	给我消失！我不需要你的怜悯！	消えて！哀れみなんていらないッ！	Vá embora! Eu não preciso da sua piedade!
+
+speaker	Zombies
+msg	250086	Groooaaahhh!!!	吼吼吼！！！	オォオオオオオオオオオッ！	NONE
+
+speaker	Kiana
+emote	101	0
+
+msg	250087	Wait! Why did the zombies surround her all of a sudden...?	呃！周围的死士怎么忽然……	ちょ、どうしちゃったの、このゾンビども！？	Hum, o que está acontecendo com os zumbis que a cercam?
+
+speaker	Mei
+msg	250088	Everything should just DISAPPEAR!!	全都给我消失！	全部……全部、全部全部全部——消えろッ！！	Todos vocês! Apenas Desapareçam com tudo!
+
+portraits	101
+tn	0	Do you know what ojousama means? Well, you'd better!
+/Kiana	250089	Hey! Where are you going?! Dammit... when I'm done cleaning up these zombies, I'll have to teach that rebellious ojousama a lesson. \n	喂！你要去哪里！可恶……等我收拾完这些死士一定要好好给那个任性的大小姐上一课！	もう！また！？今度はどこ行くのよ！こいつらを片付けたら、あのお嬢様に絶対お説教してやるんだから！！	Ei! Onde você está indo?! Droga... quando eu terminar de limpar estes zumbis, terei que dar uma lição naquela patricinha mimada!
+
+tween	foreground	diffuse,black;visible,true;horizalign,left;zoomx,0;linear,.5;zoomx,1
+await_tween
+nop	bg	CG10272	instant
+music	re/1-06 - Divine Conflict
+tween	foreground	horizalign,right;linear,.5;zoomx,0
+
+portraits	101	201
+/Kiana	250090	F-finally, I caught up...!	终于让我追上你！	や、やっと追いついた……！	Finalmente, Te alcancei.
+speaker	Mei
+msg	250091	Just a little longer... Father, just a little longer and Mei will become the one you always wanted her to be!	再等一会…父亲大人，再等一会芽衣就能变成父亲大人希望的样子了！	もう少し……あと少しでお父様の望む姿に！	Pai, só mais um pouco… e Mei pode finalmente se tornar o que você queria que ela fosse.
+
+speaker	Kiana
+emote	101	2
+msg	250092	What's going on with her? It's like she's a completely different person...	她从刚才开始到底怎么了，简直像是变了一个人……	どうしちゃったのよ。まるで、人が変わったみたいに饒舌になっちゃって。ちょっと、気味悪いわよ……。	O que está acontecendo com ela? É como se ela fosse uma pessoa completamente diferente.
+msg	250093	The zombies are being weird too... Even though they're so close, they aren't attacking her. Instead, they're slowing down to follow her...	而且周围死士的反应也有点奇怪……明明已经离她这么靠近了，这些死士居然没有任何攻击的意图，反而放慢了脚步跟在了她的身后……	それに何だかゾンビの様子もおかしいし……どうして、あんな近くにいるのに彼女を攻撃しないわけ？まるで、彼女に忠誠を誓う騎士みたいにくっついちゃってさ……。	E a maneira como os zumbis estão agindo... Eles estão tão perto, mas ao invés de atacá-la, eles diminuíram a velocidade e começaram a segui-la...
+
+speaker	Corrupted Mei
+portraits	101	3
+tween	3	addy,-200
+emote	101	2
+msg	250094	Ahhh~ What a joyous feeling. The whole world is revolving around me... No one will ever abandon me anymore, so all shall enjoy eternal happiness by my side!	啊啊~真是舒服的感觉，整个世界都在围绕着我……再也不会有人抛弃我了，大家都会在我的身边得到永恒的幸福！	あぁ——最高の気分だ。世界が私を中心に回っている……もう誰からも捨てられることなどない。皆が私の傍で、永劫の幸せを享受する！	Ahhh~ Que sentimento de alegria. Todos, o mundo inteiro, está comigo... Ninguém mais me abandonará, todos gozarão da felicidade eterna ao meu lado!
+msg	250095	Hehehe~ Raiden Mei, let me help you achieve your dreams~	呵呵呵~雷电芽衣，就让我来帮你实现愿望吧~	くくくっ、雷電芽衣の願い……この私が叶えてやろう。	Hahaha~ Raiden Mei, permita-me tornar seus desejos uma realidade.
+
+speaker	Kiana
+emote	101	0
+msg	250096	Why do you look like that?! You're not Raiden Mei! Who are you?!	你的样子怎么会！？你不是雷电芽衣！你到底是谁！	急に様子が！？あんた誰よ！雷電芽衣はどうしたの！？	Por que você tem esse aspecto?! Você não é Raiden Mei! Quem é você?!
+
+speaker	Corrupted Mei
+emote	101	0
+msg	250097	Hehe~ Cute little kitten, it doesn't matter who I am~ Because soon, you will become a burnt corpse and join the rest of them!	呵呵~可爱的小猫咪，我是谁已经不重要了~因为你马上就会和这些家伙一样，变成一具焦黑的尸体了！	くくっ、あははっ！誰だろうと関係はないだろう？すぐに貴様も消し炭になるのだからっ！	Hahahaha~ Linda Gatinha, não importa quem eu sou~ Porque logo, você se tornará um cadáver queimado e se juntará aos outros.
+
+/	250098	BOOOM!!	轰隆！！！	ズドォオオォオオンッ！！	NONE
+
+/Kiana	250099	Woah! Where did that lightning strike come from?!	哇！怎么忽然落下了闪电！？	うわっ！落雷！？	Caramba! De onde veio aquele relâmpago?!
+
+/Corrupted Mei	250100	Ohoho~ You're quite skilled to be able to dodge that. It seems like you will be a good practice target for me. Let me torture you slowly~	嚯嚯~身手不错嘛，居然能躲过。看来是个舒展筋骨的好工具呢，就让我慢慢折磨你吧~	ふんっ、これを避けるか。虫けらにしては、なかなか骨がありそうだ。丁度いい……準備運動の相手になってもらおう。たっぷりと可愛がってやる！	Ohoho~ Parabéns por evitar isso. Parece que você me ajudará com o treinamento da minha mira. Deixe-me torturá-la lentamente~"
+/Kiana	250101	Who the hell are you?! Nobody outside of the Kaslana bloodline can survive in this kind of environment full of Honkai energy!	告诉我你到底是什么人！除了我们卡斯兰娜家之外根本没有人能够在这种崩坏环境下生存！	あんた一体、何者なの！？崩壊の中を生き延びられる人間なんて、カスラナ家以外にそうそういないはずよ！	Quem diabos é você?! Ninguém fora da linhagem de sangue Kaslana pode sobreviver neste tipo de ambiente cheio de energia Honkai!
+/Corrupted Mei	250102	Hmph... It no longer matters who I am. Raiden Mei no longer exists in this world, and I am here to take her place and bring destruction to this ugly and rotten world!	哼哼…我是谁已经不重要了，雷电芽衣已经从这个世界上消失了，而我的存在就是代替她把这个可憎的世界毁灭掉！	くくっ、そんな些末なことが気になるのか？そもそも、人間などと一緒にされては困る。雷電芽衣は、もうこの世界から消えた。代わりにこの私が世界を滅ぼす。醜く腐ったこの世界をな！	Hah. Não importa mais quem eu sou. Raiden Mei não existe mais, e eu estou aqui para levar este mundo miserável à sua destruição em seu lugar!
+
+se	DLC_CH03_EV04_ElectricSound
+/	250103	Crack... CRACKLE!!	轰隆隆！！	バリッ……バチバチッ！！	NONE
+/Kiana	250104	The lightning energy is filling her body... If this phenomenon is caused by the Honkai, is she absorbing the Honkai energy around her?!	闪电中的能量正在转移到她的身上……如果这个现象是崩坏造成的话，那么她现在是在吸收周围的崩坏能么！	何、あれ……？彼女の周りに電気が走ってる……これも崩壊の力のせい？もしかして、崩壊エネルギーを吸収しているんじゃ！？	A energia do relâmpago está passando por ela... Se este for um efeito do Honkai, ela poderia estar absorvendo a energia Honkai ao seu redor?
+msg	250105	So there are human beings in this world that can directly manipulate Honkai energy on their own. There is only one possible explanation from what I know...	这个世界上居然有不借助外力能够直接操纵崩坏能的人类，在所有的情报中只存在于一种可能……	自らの意志で崩壊エネルギーを操るなんて……そんなことただの人間じゃできない。まさか……。	Então há seres humanos neste mundo que podem manipular diretamente a energia Honkai por conta própria. Há apenas uma explicação possível que posso pensar...
+msg	250106	Ah, seems I'm involved in something really bad now... But it's too early to be all pessimistic! If I think about it from another angle, maybe I'll become the savior of the world!	哎，看来真是卷入了不得了的事件中了呢……不过现在悲观还太早了一些！换个角度考虑的话说不定我会成为世界的救世主呢！	あーあ……これ、かなり厄介な事に巻き込まれたのかも。でもね……こんなことで悲観するほど、私ってヤワじゃないの。むしろ、世界を救うヒーローになるチャンスじゃない！	Ah, eu acho que isto pode ser muito ruim... Mas é muito cedo para ser tudo uma desgraça e tristeza! Se você pensar nisso de outro ângulo, talvez eu acabe sendo o salvador do mundo!
+msg	250107	There must be a way to stop her!	一定要想办法阻止她！	あんたの野望、私が阻止してあげるっ！	Eu tenho que encontrar uma maneira de detê-la!
+/Corrupted Mei	250108	Hmph! At least you have good spirit, so go ahead and try!	哼哼！真是不错的精神，那就试试看吧！	ほう、この力を目の当たりにしても立ち向かってくるか。目障りな虫めが、驕るのも大概にしろッ！	Hah! Tal espírito! Vamos ver o que você pode fazer!
+
+/Zombies	250109	Grrr... Whooorrrrghh!!	吼吼吼！	グルル……ヴォォオオオオォオオッッ！！	NONE
+
+speaker	Kiana
+emote	101	3
+msg	250110	Out of my way!!	给我闪开！	どけっ！！	Saiam do meu caminho!
+
+speaker	Corrupted Mei
+msg	250111	Hmph! I was careless... I didn't expect to be tricked by a little girl like you. It seems I need to absorb more power!	哼！大意了…没想到会被你这种小丫头算计，看来得储备更多的力量才行！	くっ……！油断したか……この私が小娘なんぞに後れを取るとは。もっと……もっと力を溜めなければ……。	Hmph! Isso foi descuidado da minha parte. Pensar que eu seria enganado por uma garotinha como você. Parece que vou precisar absorver mais poder-
+
+speaker	Kiana
+msg	250112	I won't let you!	不会让你得逞的！	させないわよ！	Eu não vou deixar você fazer isso!
+
+speaker	Corrupted Mei
+msg	250113	Ugh! What are you doing?!	呃！你这家伙想要干嘛！？	……っ！？何をする気だ！	Eh?! O que você está tramando?!
+
+speaker	Kiana
+emote	101	0
+msg	250114	The House Kaslana bloodline has absolute resistance to the Honkai! If my body can resist the Honkai, then I can cut off the flow of Honkai energy!	卡斯兰娜家的血统，对于崩坏的绝对抗性！如果我的身体能够抵挡崩坏的话，就能截断崩坏能的输送！	カスラナ家の血筋はね、崩壊に対して絶対的な抗力を持つの！だから、私の身体であなたと崩壊を遮断しちゃえば……これで、崩壊エネルギーを吸収できないでしょ？	A linha de sangue da família Kaslana é completamente resistente ao Honkai! Se meu corpo puder resistir ao Honkai, posso cortar você da fonte de sua energia Honkai!
+
+speaker	Corrupted Mei
+msg	250115	Asshole! Let go! Don't touch me!	混蛋！放开我！不要碰我！	小賢しい虫め！離せ！触るなッ！！	Bastarda! Fique longe! Não me toque!
+
+emote	101	3
+/Kiana	250116	Ugh...! Wh-wha—? The Honkai energy... is entering me... *Cough*... IT HURTS!!	唔…！崩坏能的涌动直接冲击着身体……第一次体会到到这种能量的实感！好痛苦！！	うっ……くっ！な、何で？崩壊エネルギーが……私の中に、入ってくる……ゴホッ……くる……しい！	UUUrgh A energia Honkai... passando pelo meu corpo. Esta é a primeira vez que sinto isso - Dói!!
+/Mei's Voice	250117	Help me...	请救救我……	助けて……。	Ajuda... Por favor
+msg	250118	Father! Please... don't leave me behind!	父亲大人！请救救我……请不要离开芽衣。	お父様！お願いっ……芽衣を置いて行かないでください。	NONE
+
+speaker	Kiana
+emote	101	2
+msg	250119	This is... a fragment of consciousness transmitted through the Honkai energy...	这个是…从崩坏能中传递过来的意识碎片……	これって……崩壊エネルギーから溢れ出た、記憶の断片……？	Isto é... um pedaço da consciência passado através da energia Honkai?
+/Mei's Voice	250120	Father! Why did you abandon me...? Why does everyone hate me?! Why?! Why?! WHY?!!!	父亲大人！为什么要抛弃我…为什么大家都讨厌我！为什么！为什么！为什么！！！	お父様！どうして芽衣を見捨てるの……どうして、みんな私をあんな目で見るの？私は何も悪くないのに。どうして……ねぇ、どうしてッ！！！	Pai! Por que você me deixou?! Por que todos me odeiam?! Por que?! Por que?! Por que?!
+msg	250121	This world should just be destroyed!!!	这样的世界就让它毁灭掉算了！！！	こんな……こんな醜く汚れた世界……消えちゃえばいいのよ。そう、何もかも消えて……滅べばいいの！！	Este mundo pode ser amaldiçoado por tudo o que me importa!
+
+speaker	Corrupted Mei
+msg	250122	Stop prying into my heart!!	不要窥探我的内心！！	私の……私の心を覗くなッ！！	Pare de ler minha mente!
+
+speaker	Kiana
+emote	101	0
+msg	250123	Ack!	呃！	あ……ッ！	NONE
+
+speaker	Corrupted Mei
+emote	101	0
+msg	250124	Damn it... If only I had more power, no one would be able to hurt me anymore!	可恶……只要有更多的力量的话，就没有人能再伤害到我了！	ハァ、ハァ……もっと……もっと力が必要だ！そうすれば、もう傷つくことはない。二度とあんな思いをしなくて済む！	Maldição! Se ao menos eu tivesse mais poder, ninguém mais poderia me machucar!
+
+speaker	Kiana
+emote	101	0
+msg	250125	Wait, stop! You're being taken over by the Honkai! If you absorb any more Honkai energy, you will lose your mind! If that happens, it's too late!	快住手！你已经被崩坏入侵了，如果再吸收崩坏的话你会失去心智的！到时候就晚了！	ダメ、やめてッ！もう崩壊にかなり侵食されてる！それ以上、崩壊エネルギーを吸収したら、意識まで奪われちゃう！そうなったら、もう戻ってこれなくなる！！	Espere, pare! Você está sendo controlada pelo Honkai! Se você absorver mais alguma energia Honkai, você perderá a consciência! Se isso acontecer, será tarde demais!
+
+speaker	Corrupted Mei
+emote	101	0
+msg	250126	Hmph~ Don't tell me such ridiculous lies! I can see right through you, you're just like the rest of them! Only they were jealous of my status and family; you're jealous of my power!	哼~少拿那些莫名其妙的词汇来骗我！我早就看穿了，你与她们都一样，只不过她们嫉妒的是我的地位和家室，而你嫉妒的是我的能力罢了！	ほざけっ！デタラメを言うなっ！お前もあいつらと同じだ、あいつらが私の富と地位を妬んだように、今のお前もこの力を妬んでいるのだろう！	Humph~ Não me diga mentiras tão ridículas! Eu posso ver através de você, você é o mesmo que o resto deles! Eles tinham ciúmes do meu status e da minha família, e você tem ciúmes do meu poder!
+msg	250127	I will never forgive any of you... Just you wait!	我是绝对不会原谅你们的……你给我等着！	絶対に許さんぞ……もっと……もっとだ。力をよこせッ！	Eu nunca perdoarei nenhum de vocês... Apenas esperem!
+
+speaker	Kiana
+emote	101	0
+msg	250128	Hey! Don't run!	喂！别跑！	くっ、待て！逃がすか！	Ei, espere! Não corra!

@@ -1,0 +1,90 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	111	110	816
+music	re/A World Without Cocoon
+bg	rr/bg_prologue
+var	sieg	"???"
+var	end	"???"
+
+portraits	111
+emote	111	3
+/Kiana	94200	Is this the center of the outbreak..?	这里就是崩坏的中心么……	ここが崩壊の中心……？	Este é o centro do Honkai...?
+msg	94201	Daddy! Daddy!! Where are you!?	爸爸！爸爸！你在这里吗？	パパ！パパッ！！どこにいるの！？	Papai! Papai!!! Onde você está!??
+emote	111	3
+/	94202	[i]Rumble![/i]	轰隆隆！	ゴォォン！	*Estrondo*
+speaker	Kiana
+emote	111	3
+msg	94203	Waah!!	呜哇！！	わぁっ！！	Whoa!!!
+speaker	???
+portraits	111	110
+emote	110	0
+msg	94204	...	……	……。	……
+speaker	Kiana
+emote	111	2
+msg	94205	Huh, is that... a person? ...H-hey, have you seen my daddy?	咦…那个是……人？请问你有看见我的爸爸么？	えっ、あれは……人？……ね、ねぇ、私のパパを見なかった？	Espere, isso é uma pessoa? … Ei~ Você viu meu pai?\n
+speaker	???
+emote	110	0
+msg	94206	...	……	……。	.....
+speaker	Kiana
+emote	111	2
+msg	94207	Hellooo! Can you hear me?! My dad——	你好！能听到我说话么！请问……	ねぇってば！私の声、聞こえてる！？パパを——	Olá~ Você pode me ouvir? Com licença…
+
+tween	foreground	visible,true;diffuse,black;linear,.3;diffusealpha,0
+tween	110	linear,0;diffusealpha,0
+
+emote	111	3
+msg	94208	...H-huh? What was I asking? It's... Ugh! I feel dizzy...	咦…我是要问什么？我好像……唔！头好晕……	——あ、あれ？私、何を聞くんだっけ？確か……うっ！頭がクラクラする……。	Huh? O que eu estava perguntando? Ah, eu me sinto tonto…
+
+speaker	???
+portraits	111	816
+
+msg	94209	Kiana!	琪亚娜！	キアナッ！！	Kiana!
+speaker	Kiana
+emote	111	2
+msg	94210	D-daddy? I-is that you?	爸…爸？是爸爸么？	パ、パパ？よ、よかった……。	Papai, papai? É você?
+speaker	???
+
+msg	94211	Kiana, are you okay? Are you hurt?	琪亚娜，真是太好了，你没有受伤……	キアナ、大丈夫か。ケガはないか？	Kiana, é um alívio, você não está ferido...
+speaker	Kiana
+emote	111	3
+msg	94212	Daddy! I finally found you... [i]Hic...[/i]	爸爸！我终于找到你了……呜呜呜……	パパ！やっと見つけた……ひっく……。	Papai! Finalmente te encontrei… Wuuuu...
+speaker	???
+
+msg	94213	Kiana... listen carefully. You have to get out of here right now. No matter what happens, don't stop. Keep running!	琪亚娜…你听我说，现在你马上离开这里，不管发生什么都不要停下脚步，一定要安全的离开！	キアナ……よく聞くんだ。お前は今すぐここから逃げるんだ。何が起こっても足を止めるな。走り続けるんだ！	Kiana, ouça com atenção. Fuja daqui, agora mesmo. Não importa o que aconteça, não pare. Você deve encontrar segurança!
+speaker	Kiana
+emote	111	3
+msg	94214	Daddy? What about daddy?!	爸爸呢？那爸爸怎么办！	パパは？それじゃ、パパはどうするの！？	Papai? E o papai?!
+speaker	???
+
+msg	94215	Don't worry! Daddy is the head of the Kaslana family! This kind of small Honkai outbreak won't hurt me!	放心吧！爸爸可是卡斯兰娜家的家主！这种小崩坏根本不足挂齿！	安心しろ！パパはカスラナ家の当主だ！こんな崩壊ごときにやられはしないさ！	Não se preocupe. Papai é o chefe da família Kaslana. Esse tipo de pequeno surto de Honkai não vai me machucar!
+speaker	Kiana
+emote	111	3
+msg	94216	But…	但是……	でも……。	Mas...
+speaker	???
+
+msg	94217	Haha, it seems that Kiana is worried about me. But your Daddy is stronger than you think. Don't worry, Daddy will find you when he is done.	呵呵~看来琪亚娜在担心我呢~不过你也太小看你爸爸了吧？放心，一会爸爸搞定了就来找你	ははっ、キアナは心配性だな。でも、パパを見くびりすぎじゃないか？大丈夫、すぐパパが迎えに行くから。	Haha~ Parece que Kiana está preocupada comigo, mas você não acha que está pensando muito no seu pai?\nNão se preocupe. Papai vai encontrá-lo quando terminar.
+speaker	Kiana
+emote	111	4
+msg	94218	O-okay! It's a promise!	嗯！约定好了！	う、うん！約束だよ！	OK! É uma promessa!
+
+portraits	111	816	110
+/???	94219	Mm-hmm...	嗯……	ああ……。	Ah...
+
+emote	110	0
+msg	94220	Foolish, ignorant, arrogant, and insignificant humans...	愚昧无知，狂妄自大，而又渺若微尘的人类……	身の程知らずが……その驕りが招く結果もわからないのか……愚かな人間め……。	Seres humanos estúpidos, ignorantes, arrogantes e insignificantes...
+
+msg	94221	Go!	快走！	早く逃げろっ！	Se apresse! Vai!
+
+portraits	816	110
+emote	110	0
+msg	94222	Today, I will make the death bells toll for the human race.	今天，我会敲响人类这一种族的丧钟……	いと醜き人類という種に、今より滅びの福音を鳴らしてやろう……。	Hoje, farei os sinos da morte dobrarem para humanidade.
+
+msg	94223	Hmph! Let's see if you can live up to those words, Herrscher!	哼！那就要看你有没有这个本事了！律者！	ハッ！お前にそれだけの力があるのか？律者ッ！	Hum! Veremos s se você consegue cumprir essas palavras, Herrscher!
+speaker	Siegfried
+emote	817	0
+msg	94224	You made my daughter cry... For that, I, Siegfried Kaslana, will show you no mercy!!	弄哭我女儿的家伙…我齐格飞·卡斯兰娜绝不会饶过你！	娘を泣かすやつは……このジークフリート・カスラナが絶対に許さん！！	Você, que fez minha filha chorar… Eu, Siegfried Kaslana, não terei piedade de você! Hiyaaaaaah!!
+emote	817	0
+/	94225	[i]Boom!![/i]	轰隆隆！！	ゴォォン！！	NONE
+bg	010/001_1024x576
+nop	(Empty message)
+bg	010/002_1024x576
+nop	(Empty message)

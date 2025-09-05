@@ -1,0 +1,95 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Corrupted Mei
+portraits	101	3
+tween	3	addy,-200
+msg	250143	Fufu, what a stupid junior. Are you in such a hurry to die? I guess I'm moved by your stupidity. As a reward, I'll let you share your last words~	呵呵~可爱的学妹，你还真是锲而不舍想要送死啊，真是令人感动呢~作为给你的奖励，告诉我你还有什么遗言吧~	ふふっ、バカな後輩だ。そんなに死に急ぎたいのか？その間抜けさに感動すら覚える。褒美として、この私が遺言を聞いてやるぞ？	NONE
+speaker	Kiana
+portraits	101	3
+emote	101	0
+
+msg	250144	Last words...? Then let me tell you a story about a senpai of mine.	遗言么，那我就来讲一讲关于我的一个学姐的故事吧。	遺言ね……だったら、ある先輩の話を聞かせてあげる。	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250145	...Oh?	……？	……ほう？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250146	My senpai is the daughter of the president of a large company. She was a young lady that everyone envied. However, she lost her mother at a young age and had to endure a strict education on her own. Her father only saw her as a tool to become his successor.	我的那位学姐在别人的眼里，她是高不可攀的大企业的千金小姐，从小就接受了极其严格的家教，从小失去母亲的她没有感受到过母爱，而她的父亲，则像工具一样对待自己，把她当做企业的接班人培养。	その先輩はね、大企業の社長令嬢なの。誰もが羨むお嬢様だった。でも、幼い頃にママを亡くして、厳しい教育にひとり耐えることになるの。先輩のパパはね、その子のことを後継者となる道具としか見てなかったみたい。	NONE
+msg	250147	But even so, she tried her best to live up to those expectations. To maintain her image of being better than everyone else, to be recognized by her father. Wanting him to see her as a daughter, not just a tool, she continued to be hard on herself. In the end, she ended up pushing herself too hard.	为了，达到父亲的要求。学姐努力让自己变得比谁都优秀，她放弃了与其他同龄人一样活得快乐的机会，让自己陷入痛苦之中，把自己逼向绝路。就是为了成为最闪耀的人，让自己的父亲重视自己，把自己当做女儿一样看待。	それでもね、期待に応えようと先輩は頑張った。一番であり続けるために、そしてパパに認めてもらうために。道具じゃなく娘として見てほしくて、自分に厳しい試練を課し続けた。そして、自分を追い詰めちゃうの。	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250148	You...!! Shut the hell up!!!	你给我闭嘴！！	お前……っ！！それ以上口を開くなッ！！！	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250149	When she went to school, her excellent grades and good looks combined made her popular. But she still didn't gain her father's approval. As this situation continued, Senpai lost hope. She thought that she didn't care if she was just a tool, at least everyone at the school would recognize her.	上学之后，学姐以优异的成绩和可爱的外表深得老师和同学的喜爱与追捧。但是就算这样，她还是没有得到父亲的赞许。渐渐的，学姐放弃了希望，她觉得自己即使成为工具也无所谓，至少自己的同学和老师能够正视自己的存在。	学園に入ってからは、優秀な成績と容姿が相まって人気者になったわ。それでも褒められはしなかった。そんな状況が続いて先輩は希望を失っていくの。もう道具でもいい、少なくとも学園の皆は私を認めてくれるって。	NONE
+msg	250150	However, one month ago from now, something bad happened, and Senpai ended up losing everything...	然而一个月前的一个事件，将她憧憬的一切都打碎了……	でも、今から1ヶ月前に事件が起きたの。それで先輩は全てを失うことになった……。	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250151	Shut up!! Don't make me remember those things!!!	不要再说下去了！！不要让我想起这些事情！！	黙れッ！そんな記憶不要だ！！思い出させるんじゃない！！！	NONE
+portraits	3
+
+msg	250152	[i]Rumble—— RUMBLE!![/i]	轰隆隆隆！！	ゴォロッ——ゴォオオオオオォオオッ！	NONE
+speaker	Kiana
+portraits	101	3
+emote	101	0
+
+msg	250153	My senpai's dad got arrested for illegal business dealings at his company. Such a tragedy left her in deep sorrow. Still, she believed that everyone at school who admired her would comfort her. But reality was harsher than her dreams...	学姐的父亲因为经营公司的经济弊案而被捕，失去了原有的社会地位。原本以为周围的同学和老师会给她加油打气的学姐却受到了完全不同的对待……	会社の違法取引で先輩のパパが逮捕されちゃうの。そんな悲劇に見舞われた先輩は深い悲しみに陥るわ。それでも、慕ってくれている学園の皆なら慰めてくれると信じてた。けど、現実は違った……。	NONE
+msg	250154	What awaited her were insults, abuse, slander, and loneliness.... Senpai's mind and body were exhausted. She realized that the world was not kind after all. The real reason everyone was by her side was because they only feared her for her prestige.	孤立、欺凌、谩骂、诋毁…在肉体与精神上都满身疮痍的时候，学姐才从自己的梦中醒来。原来这个世界根本不像她想的那么友善，周围的人只是畏惧她身上的光环，才变得阿谀奉承。	待っていたのは侮辱、罵声、蔑み、孤独……先輩の精神と肉体は疲弊していったわ。そこで気づくの、この世界は優しくなんかない。みんなが私の傍にいたのは、外面だけを見ていたからだって。	NONE
+msg	250155	After losing all these things, she became nothing. She couldn't even be her father's tool anymore...	当自己失去这些的时候，就变得什么也不是，就连当做父亲工具的价值也没有了……	すべてを失って、何も残っていない。パパの道具であることもできなくなった……。	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250156	Don't act as if you know me so well!! It's true, I lost everything, everyone betrayed me! But I don't need them anymore!	不要装作很一副了解我的样子！！！没错，我是什么都没有了，所有的人都背叛了我！但是我现在不需要他们了！	私の何が分かるッ！！そうさ、お前の言うとおりだ！もう私には何も残っていない。皆が皆、私を裏切ったんだ！もう二度と人の縁など信用するものかッ！！	NONE
+tn	0	This is using a play on words where "ruined" means "Honkai"
+msg	250157	Even if I'm alone... I can survive in this ruined world! This power is the proof of my true value! 	就算是一个人…我也可以在这个崩坏的世界中生存下去！现在我所拥有的能力，就是我独特价值的证明！	一人になったとて……私は、この崩壊した世界で生きていける！この力こそ、私が私である存在の証明！	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250158	[i]The mind that was being suppressed by the Honkai finally seems to be resurfacing. If she can completely recover herself, that should be enough to save her.[/i]	…被崩坏能控制的精神终于恢复了一些神志，如果能让她完全找回自我的话应该还有救。	……少しは思い出してきたみたいね。この調子なら、崩壊の支配から逃れられるかもしれない。	NONE
+msg	250159	Hey, Mei-senpai! I understand your pain! Enduring so much pain by working hard, only to never be acknowledged in the end...	芽衣学姐！我知道你内心的痛苦！努力达成着原本就无法实现的梦想，但是最后却被所有人抛弃……	ねぇ、芽衣先輩！あなたが苦しむのも分かるよ！色んなことに耐え抜いて頑張って来たのに、認めてもらえないなんて辛いに決まってる……。	NONE
+msg	250160	But you still have to live! Not for the name "Raiden Mei", not for your family business, not for your father, and certainly not for the lies that surround you! You simply have to live for "yourself"!	但是你必须活下去！不是为了雷电芽衣这个名字和父亲的家业，也不是为了他人的怜悯与施舍换来的善意！而是为了你自己！	でもね。それでも生きないと！「雷電芽衣」という名のためでも、家やパパのためでも、ましてやあなたを取り囲んでいた偽りのためなんかでもなく！ただ「自分自身」のために生きないと！	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250161	For myself...	为了我自己……	自分自身の、ために……。	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250162	Here, Mei-senpai! Take my hand! I'll get rid of the Honkai energy in your body!!	芽衣学姐！来抓住我的手！我会帮你把身上的崩坏能驱逐出去的！	ほら、芽衣先輩！私の手を取って！崩壊エネルギーを身体から追い出してあげる！！	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250163	Can I really trust you?	我真的可以相信你么？	あなたを、信じていいの？	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250164	Yes! I swear! I won't ever deceive you!	嗯！我发誓！我是不会欺骗你的！	もちろんよっ！誓うわ！絶対に嘘はつかない！	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250165	You're the first person to ever reach out to me like this... Thank you.	像这样向我伸出手的人你是第一个呢…谢谢你。	本当の私を知って手を差し伸べてくれたのは、あなたが初めて……ありがとう。	NONE
+msg	250166	But... it's too late.	但是…已经太晚了。	でもね……もう手遅れなの。	NONE
+speaker	Kiana
+emote	101	0
+
+msg	250167	Mei-senpai?!	芽衣学姐！？	芽衣先輩っ！？	NONE
+speaker	Corrupted Mei
+emote	101	0
+
+msg	250168	Yes, it's too late now! She will become the Grim Reaper who will destroy this world!	这个女孩已经不可能在回头了！她将变成这个世界的死神！把一切都毁灭掉！	そう、もう何もかもが手遅れ！彼女は、この世界を破壊し尽くす死神になるんだから！	NONE
+speaker	Kiana
+emote	101	3
+
+msg	250169	It's you! You're the other personality created by the Honkai! Get out of Mei-senpai's head!	你这家伙！难道是由崩坏产生的另一个人格么！快从芽衣学姐身上滚出来！	あんた！崩壊が生み出した別人格ね！？先輩の身体から出ていきなさいッ！！	NONE
+speaker	Corrupted Mei
+emote	101	3
+
+msg	250170	Hehe... Once I have complete control over her mind, you won't stand chance!!	哼哼…等我完全占有了她的精神，你是不会有任何机会的！	くくっ、もうすぐ彼女の精神を全て掌握できる。そうすれば、お前に勝ち目などない！！	NONE
+speaker	Kiana
+emote	101	3
+
+msg	250171	You asshole! Get back here!	混蛋！给我回来！	待て！逃がすか！！	NONE

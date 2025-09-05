@@ -1,0 +1,18 @@
+msg	2 years later...
+msgbox_close
+bg	rr/prologue_13	fade
+/ 	 
+bg	rr/prologue_14	fade
+/ 	 
+bg	rr/prologue_15	fade
+/ 	 
+bg	rr/prologue_16	fade
+/ 	 
+bg	rr/prologue_17	fade
+/ 	 
+bg	rr/prologue_18	fade
+/ 	 
+bg	rr/prologue_19	fade
+/ 	 
+bg	rr/prologue_20	fade
+/ 	 

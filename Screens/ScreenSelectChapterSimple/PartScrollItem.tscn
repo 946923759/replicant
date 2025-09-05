@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Ext/RetroRemake/Item.png" type="Texture" id=2]
-[ext_resource path="res://Ext/RetroRemake/ItemGlowUnderlay.png" type="Texture" id=3]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenSelectChapterSimple/PartScrollItem.gd" type="Script" id=4]
+[ext_resource path="res://Ext/Item.png" type="Texture" id=2]
+[ext_resource path="res://Ext/ItemGlowUnderlay.png" type="Texture" id=3]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/PartScrollItem.gd" type="Script" id=4]
 [ext_resource path="res://Shaders/Gaussian Blur GLES2.tres" type="Material" id=5]
 
 [sub_resource type="DynamicFont" id=1]

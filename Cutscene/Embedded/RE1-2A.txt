@@ -50,6 +50,6 @@ speaker	Kyuushou
 msg	251785	Leave me alone! I'm going back to fix that error!!	别管我！我要把那个错误的分歧点纠正过来才行！！	ほっといて！我はあのエラーを直しに戻る！！	Me deixe em paz! Vou voltar para corrigir esse erro! !
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251786	You've come this far and you're going back?! Get back here!	没搞错吧？你难道又要回去么！给我回来！	ここまで来て戻る気なの！？	Você está falando sério? Você quer voltar de novo! Volte aqui!

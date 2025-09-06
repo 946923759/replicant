@@ -1,7 +1,7 @@
 extends Control
 
 signal switch_submenus(new_menu)
-signal selection_changed(newSel, unlocked, playSound)
+signal selection_changed(newSel, unlocked, downloadable, playSound)
 signal input_accepted(selectionNum,destinationName)
 
 enum LAYOUT {
@@ -115,7 +115,7 @@ func set_selection(sel:int, play_sound:bool=true):
 		else:
 			f.get_child(i).LoseFocus()
 	
-	emit_signal("selection_changed",sel,get_child(sel+1).unlocked, play_sound)
+	emit_signal("selection_changed", sel, get_child(sel+1).unlocked, get_child(sel+1).downloadable, play_sound)
 
 
 
@@ -123,6 +123,11 @@ func input_accept(sel:int):
 	#print("aaa")
 	var n = get_child(sel+1)
 	if not n.unlocked:
+		if n.downloadable:
+			Globals.setenv("fileToDownload",n.name+".pck")
+			get_parent().AddNewScreenOnTop("OverlayDownloadPck")
+			
+		
 		return
 	elif n.submenu:
 		emit_signal("switch_submenus",n.destinationScreenOrSubmenu)

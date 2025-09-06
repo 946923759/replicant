@@ -22,7 +22,7 @@ emote	101	0
 msg	251943	Uhh... what's up with Kyuushou? She's acting weird.	呃…九霄那家伙怎么了，怎么忽然这么恶心。	え……九霄のやつどうしたの？気味が悪いんだけど。	NONE
 speaker	Mei
 nop	201
-emote	201	1
+emote	201	2
 msg	251944	It's nothing, I just borrowed her bandages to help stop the bleeding.	她没事，只是借用了一下她身上的绷带，还好有了这些绷带才止住了你伤口的流血。	何でもないわ、ちょっと包帯を借りただけ。そのお陰で傷口の止血ができたのよ。	NONE
 speaker	Kiana
 nop	101
@@ -40,11 +40,11 @@ msg	251948	Sure, sure... You sure change your mood quickly...	是是是，你这
 /	251949	Beep…	滋啦滋啦	ジー……ジジ……。	NONE
 speaker	Mei
 nop	201
-emote	201	2
+emote	201	3
 msg	251950	Is the communicator still not working?	通讯器还是不能使用吗？	通信機はやっぱり使えない？	NONE
 speaker	Kiana
 nop	101
-emote	101	2
+emote	101	3
 msg	251951	Yeah, it feels like we're experiencing strong electromagnetic interference. Something similar happened when you turned into a Herrscher earlier.	嗯，总感觉是受到了强电磁的干扰，之前学姐你律者化的时候也出现过类似的情况。	うん、強い電磁妨害を受けている感じ。前に先輩が律者化したときも似たような状況になったわ。	NONE
 msg	251952	That kid from before will surely call for reinforcements. We need to hurry to downtown Changkong City before Anti-Entropy reinforcements arrive.	留给我们的时间应该不多了，那个家伙打不过我们的话一定会去找帮手的，要赶在逆熵的援军赶到大桥之前进入长空市。	さっきの子はきっと援軍を呼んでくるはず。ネゲントロピーの援軍が到着してしまう前に、急いで長空市まで行かないと。	NONE
 emote	101	0

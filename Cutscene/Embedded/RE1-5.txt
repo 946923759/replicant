@@ -14,11 +14,11 @@ emote	101	0
 emote	122	0
 msg	251657	As long as our hearts are connected, there's no problem! Humans rely too much on machines!	只要我们的心灵彼此相连就够了，就是因为太过依赖机器，所以现在的人类才会变得冷漠啊~	我らの心さえ繋がっていれば問題ない！人間は機械に頼りすぎなのだ！	NONE
 speaker	Kiana
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251658	I wonder if it's really okay. Now I'm starting to regret this a little...	哎…真是后悔刚才的决定了。	本当に大丈夫かな。今になってちょっと後悔してきた……。	NONE
 speaker	Houraiji Kyuushou
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251659	Do not worry! I swear that my power will lead us to a glorious victory!	不用担心，我会把你引导向充满荣光的胜利的！	心配無用だ！我が力をもって栄光たる勝利へと導くことを約束しよう！	NONE
 speaker	Kiana

@@ -3,7 +3,7 @@
 [ext_resource path="res://Fonts/NotoSans-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Ext/ItemGlowUnderlay.png" type="Texture" id=2]
 [ext_resource path="res://Ext/Item.png" type="Texture" id=3]
-[ext_resource path="res://Screens/RetroRemake/RR-ScreenTitleMenu/ScrollItem.gd" type="Script" id=4]
+[ext_resource path="res://Screens/ScreenSelectEra/ScrollItem.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40

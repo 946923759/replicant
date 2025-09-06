@@ -4,7 +4,7 @@ bg	rr/sakura_lane
 music	re/1-05 - Eternal War
 
 portraits	101
-emote	101	3
+emote	101	4
 /Kiana	250034	Huff, huff... There's no end to them! It's like all the zombies are swarming to the Honkai Source! [i]Cough——[/i] If this keeps up, it'll be a bit of a problem.	呼~呼~真是没完没了！没想到周边的死士都被这里的崩坏源吸引过来了！再这样下去有点不妙呢。	ハァ、ハァ……キリがない！学園中のゾンビが、崩壊源に吸い寄せられてるみたい！ゴホッ——このままじゃ、ちょっとまずいかも。	Huh- huh-Não há fim para eles. Eu não esperava que os zumbis viessem aos montes  para a fonte de Honkai aqui. Será um pequeno problema se isto continuar.
 
 emote	101	0
@@ -12,10 +12,10 @@ msg	250035	Almost out of ammo, almost out of time... I have to find the target, 
 
 /	250036	[i] Rustle—[/i]	沙沙沙！	ガサッ——	NONE
 
-emote	101	3
+emote	101	4
 /Kiana	250037	Who's there?!	谁！？	誰……ッ！？	Que-?!
 
-emote	101	2
+emote	101	3
 msg	250038	That didn't look like a zombie... could it be?! I finally found you! Wait!	那个人影看起来不像是死士……难道是！？终于到了你了！给我站住！	今の……ゾンビじゃない！まさかっ！？やっと見つけた、待ちなさい！	Isso não parecia um zumbi... poderia ser?! Finalmente o encontrei! Espere!
 
 portraits	101	201
@@ -34,5 +34,5 @@ msg	250041	That uniform — you're a year above me, right? What's your name?	看
 /???	250048	……	……	……。	NONE
 /Zombies	250049	[i]Grrrr... Ah, ahhhh...![/i]	吼吼吼……	ィギギギ……ア、アァア……ッ！	NONE
 
-emote	101	1
+emote	101	2
 /Kiana	250050	Ugh! Just my luck! Come with me!	哎！算我倒霉！跟我来吧！	あー、もうっ！！何で逃げようとしないのよ！ほらっ、こっち！	Ugh! Apenas a minha sorte. Venha comigo!

@@ -21,11 +21,11 @@ emote	101	0
 emote	122	0
 msg	251688	This boss battle atmosphere is amazing! It's getting my blood pumping!	这种BOSS战特有的氛围实在是太棒了~我的血液已经开始沸腾了！	このボス戦みたいな雰囲気！素晴らしいっ！我の血は滾ってきたぞ！	NONE
 speaker	Kiana
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251689	Hey, I'm the one fighting here! You've just been sitting on the sidelines and making strange poses the whole time....	少装腔作势了，一直过来战斗的人都只有我吧，你只是在一旁做着奇怪的姿势罢了……	戦っているのは私だけでしょ！九霄は、ただ変なポーズを取っているだけじゃない……。	NONE
 speaker	Kyuushou
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251690	Muahaha, didn't you feel it? While you were fighting, I was sending my spiritual energy to you. In fact, you should be thanking me!	哼哼哼，你没有感受到么？在你战斗的时候我通过意念传输给你的精神能量，你应该感激我才对！	ふっふっふっ、感じていなかったのか？お主が戦っている間、我が精神エネルギーをみょんみょんとお主に送っていたのを。むしろ、お主は我に感謝すべきなのだ！	NONE
 speaker	Kiana
@@ -38,27 +38,27 @@ emote	101	0
 emote	122	0
 msg	251693	Heheheh, don't worry. If danger approaches, I will protect you with my powers from my curse!	安心吧~如果有危险我会保护你的。	ふっふっふ、安心するがいい。もし危難が迫ろうとも、呪われし我が力で守ってやろう！	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251694	(I want to punch you so bad...) Calm down... Calm down... In my plan, you're very important, Kyuushou. Without you, I can't beat Raiden Mei.	好想揍她……冷静…冷静。听着，我的作战计划中你是非常重要的一环，没有你可能我们根本无法击败雷电芽衣。	（殴りたい……）落ち着け……落ち着け……。私の作戦では、九霄がすごく重要なの。君がいなきゃ、雷電芽衣には勝てないわ。	NONE
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251695	Oh? So you finally understand the true power of Kyuushou-sama. You have said many rude things up until now, but the generous Kyuushou-sama will forgive you.	哦？终于想到要借助九霄大人的力量了么，虽然你之前一直对我很不满的样子，但是大度的九霄大人是不会在意这些的。	ほお？やっと、この九霄様の力が分かったか。今まで散々失礼なことをお主は口走ってきたが、寛大な九霄様はそれらを許すとしよう。	NONE
 msg	251696	Now, speak, Kiana!	说出你的请求吧，琪亚娜！	さぁ、言ってみるが良い、キアナ！	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251697	God, why do you have to say it like that...? Listen carefully, here's my plan——	这个蹬鼻子上脸的家伙…你听着，我的计划是这样的……	ったく、なんでそんなに上から目線なのよ……。よく聞いて、私の作戦はこうよ——	NONE
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251698	——Hmm, it seems like a mission worthy of me. I have certainly received your request. Now all you have to do is sit back and gaze upon my splendor!	哼，果然是个很适合我的身份的任务呢。你的祈求我收到了，接下来就看我的表演吧！	——ふむ、どうやら我に相応しい任務のようだな。お主の願い、確かに受け取った。あとはただ指を咥えて、我の華麗なる姿を見ているがよい！	NONE
 speaker	Kiana
 emote	101	0
 emote	122	0
 msg	251699	Okay, looks like I managed to fool her somehow...	嗯，看来这个家伙还是蛮好糊弄的……	よし、なんとか誤魔化せたようね……。	NONE
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251700	Third Herrscher... Just wait, I'll save you.	第三律者么……这次就由我来消灭你好了。	第三律者……私が救ってみせるから待ってなさい。	NONE
 
@@ -146,11 +146,11 @@ msg	251719	Yeah... it was impressive in terms of mentally wearing her down.	没�
 
 
 portraits	121	214,false,2	101,false,0
-emote	101	3
+emote	101	4
 emote	214	0
 msg	251720	Come on, Mei-senpai! With the blood of the Kaslana family, which is immune to the Honkai, I will put an end to the Honkai within you!	来吧！芽衣学姐，让我用卡斯兰娜家族的血脉，对崩坏的绝对抗性来帮你抑制体内的崩坏吧！	さあ！芽衣先輩！崩壊に対して免疫を持つ我がカスラナ家の血で、先輩の崩壊を終わらせてあげる！	NONE
 speaker	Mei
-emote	101	3
+emote	101	4
 emote	214	0
 msg	251721	You! Let go of me! I'll kill you!	混蛋！给我放手！我要杀了你们！	この！放しなさいっ！殺すっ！	NONE
 msg	251722	To think that such a young girl could...	呃…居然被这种小丫头给！	まさか、こんな小娘に……。	NONE
@@ -175,11 +175,11 @@ emote	121	0
 emote	214	0
 msg	251729	Thank you... Now I can at least die as a human...	谢谢你们…让我在最后的时刻能够用自己的灵魂死去……	ありがとう……これで、私は自分の魂のまま死ぬことができます……。	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	214	0
 msg	251730	Ugh... D-don't tell me you're planning to jump off from here?!	等等！难道你想从这里跳下去自杀！？	うっ……ま、まさか、ここから飛び降りる気！？	NONE
 speaker	Mei
-emote	101	3
+emote	101	4
 emote	214	0
 msg	251731	Farewell...	再见了……	さようなら……。	NONE
 
@@ -285,10 +285,10 @@ speaker	???
 emote	101	0
 msg	251760	Kiana! What were you doing?! You were supposed to leave Senba Academy as soon as you found the target. Why are you fighting the Third Herrscher?!	琪亚娜！你在搞什么鬼，我不是说了让你找到目标之后马上离开千羽学园么，谁让你去和第三律者战斗的！	キアナ！何をやっていたんだ！ターゲットを見つけ次第、千羽学園から離脱するはずだったじゃないか。何故、第三律者と戦っているんだ！	NONE
 speaker	Kiana
-emote	101	1
+emote	101	2
 msg	251761	Ugh... Dad, there's a reason for this...	呃……老爹你听我解释，这是有原因的……	うっ……パパ、これには訳が……。	NONE
 speaker	???
-emote	101	1
+emote	101	2
 msg	251762	I'll listen to your excuses later. Take the target and leave Senba Academy quickly! Anti-Entropy has already reached Senba Academy!	解释什么的等会再说，立刻带着目标离开千羽学园！逆熵已经先我们一步抵达千羽学园了！	言い訳なら後で聞く。早くターゲットを連れて、千羽学園から離脱しろ！ネゲントロピーがもう千羽学園まで来ている！	NONE
 speaker	Kiana
 emote	101	0
@@ -298,6 +298,6 @@ speaker	Kyuushou
 emote	122	0
 msg	251765	Kiana!! Look over there! Incredible! I can't believe flying battleships actually exist!! Wow, those magnificent lines... S-so cool!	琪亚娜！！你看那边！哇！！！好厉害！这个世界上居然真的有浮空战舰！！太帅了！	キアナ！！あそこ見てっ！すごい！まさか飛行戦艦が本当に存在するなんて！！おぉ、あの見事なライン……か、かっこいい！	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251766	That's Anti-Entropy's flying battleship... the Moonlight Throne?!	那个是逆熵的战舰…月光王座！？	あれはネゲントロピーの飛行戦艦……月光王座！？	NONE

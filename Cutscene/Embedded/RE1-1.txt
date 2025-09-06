@@ -4,34 +4,25 @@ match_names	Kiana	???
 bg	CG10258
 portraits	101	boss/807bw,true
 music	re/1-04 - Etro's Champion
-emote	101	0
+
 /Kiana	251490	This is Kiana. I've just arrived at Senba Academy. Awaiting further instructions.	喂，是我，琪亚娜，已经到达千羽学园，请求指示。	こちらキアナ。今、千羽学園に到着したわ、指示をちょうだい。	Aqui é Kiana. Acabei de chegar na Academia Senba, por favor me \n dê mais instruções. TN:  CN  Eu sou Kiana. Acabei de chegar na Academia Senba, aguardo mais instruções.
-speaker	???
-emote	101	0
-msg	251491	Your mission is to bring the person shown in your information back to St. Freya Academy. The target's location has been detected and is now being sent to your communicator.	你的任务是把资料所示的人物带回圣芙蕾雅学园，已探测到目标位置，现在发送到你的通讯器上。	任務内容自体は単純だ。資料に当たる人物を聖フレイヤ学園へ連れ戻すこと。ターゲットの位置は既に探知済みだ。詳細を通信機に送る。	A sua tarefa consiste em levar a pessoa descrita nos documentos de volta à Academia de St.Freya A localização do alvo já foi detectada, enviarei os detalhes ao vosso comunicador. TN: Na tradução japonesa,  diz que a missão é simples: `A tarefa em si é simples. Levem a pessoa relacionada com a documentação de volta à Academia St. Freya. A localização do alvo já foi detectada. Enviarei detalhes através do equipamento de comunicação´. Mas na frase seguinte vemos Kiana  dizer que a missão será difícil, não sei se a mudança foi intencional para fazer uma piada com Kiana.
-speaker	Kiana
-emote	101	0
-msg	251492	Copy that~ This is a simple mission. I don't know why you guys made such a fuss at that time...	了解~这不是一个很简单的任务嘛，真不知道你们当时为什么那么大惊小怪的……	了解。簡単な任務じゃない。そこまでする意味が分からないわ。	Entendi. Não é uma tarefa fácil. Não entendo o propósito disso.
-speaker	???
-emote	101	0
-msg	251493	Don't get too careless! This mission is not as simple as you might think.	别太大意了！这一次的任务可不是你想象中的那么简单。	油断するな。今回の任務、単純ではあるが思っているほど甘くはない。	Não se descuide demais! Esta missão não é tão fácil como você poderia pensar. TN: Por alguma razão na tradução japonesa diz que a missão é simples novamente e a pessoa pede para Kiana ter cuidado.   `Fique atento. Esta missão, embora simples, não é tão fácil quanto você pensa.´
+/???	251491	Your mission is to bring the person shown in your information back to St. Freya Academy. The target's location has been detected and is now being sent to your communicator.	你的任务是把资料所示的人物带回圣芙蕾雅学园，已探测到目标位置，现在发送到你的通讯器上。	任務内容自体は単純だ。資料に当たる人物を聖フレイヤ学園へ連れ戻すこと。ターゲットの位置は既に探知済みだ。詳細を通信機に送る。	A sua tarefa consiste em levar a pessoa descrita nos documentos de volta à Academia de St.Freya A localização do alvo já foi detectada, enviarei os detalhes ao vosso comunicador. TN: Na tradução japonesa,  diz que a missão é simples: `A tarefa em si é simples. Levem a pessoa relacionada com a documentação de volta à Academia St. Freya. A localização do alvo já foi detectada. Enviarei detalhes através do equipamento de comunicação´. Mas na frase seguinte vemos Kiana  dizer que a missão será difícil, não sei se a mudança foi intencional para fazer uma piada com Kiana.
+/Kiana	251492	Copy that~ This is a simple mission. I don't know why you guys made such a fuss at that time...	了解~这不是一个很简单的任务嘛，真不知道你们当时为什么那么大惊小怪的……	了解。簡単な任務じゃない。そこまでする意味が分からないわ。	Entendi. Não é uma tarefa fácil. Não entendo o propósito disso.
+/???	251493	Don't get too careless! This mission is not as simple as you might think.	别太大意了！这一次的任务可不是你想象中的那么简单。	油断するな。今回の任務、単純ではあるが思っているほど甘くはない。	Não se descuide demais! Esta missão não é tão fácil como você poderia pensar. TN: Por alguma razão na tradução japonesa diz que a missão é simples novamente e a pessoa pede para Kiana ter cuidado.   `Fique atento. Esta missão, embora simples, não é tão fácil quanto você pensa.´
 msg	251494	The Third Eruption is expected to break out at Senba Academy soon. The target is just an ordinary person. You must ensure her safety!	第三次崩坏预计不久后会在千羽学园爆发，目标只是一个普通人，你一定要保证好她的安全！	予測によると、第三次崩壊はまもなく千羽学園で発生する。ターゲットは、ただの一般人だ。彼女を必ず守ってくれ。	A terceira Erupção Honkai é esperada para acontecer em breve na Academia Senba, o alvo é apenas uma pessoa comum, você deve garantir a segurança dela!.  TN:  JP De acordo com a previsão, a terceira erupção Honkai ocorrerá em breve na Academia Senba. O alvo é apenas uma pessoa comum. Você deve garantir a segurança dela."
-speaker	Kiana
-emote	101	0
-msg	251495	I know, I know! You've said this so many times that my ears are sore.	我知道了啦，这些话你都说过多少遍了，我耳朵都听出茧子来啦~	はいはい、分かったわよ！その話はもう聞き飽きたって。	NONE
-speaker	???
-emote	101	0
-msg	251496	I won’t say anything more. If any emergency occurs, report to me immediately.	那我也就不多说了，如果有什么紧急情况发生的话，立即向我报告。	よし、行くんだ。もし何かあったら、すぐ連絡してくれ。	Então, não vou dizer mais nada. Se alguma situação de emergência ocorrer, informe-me imediatamente.  TN:  JP Certo, vou lá. Se acontecer alguma coisa, me avise imediatamente.
+/Kiana	251495	I know, I know! You've said this so many times that my ears are sore.	我知道了啦，这些话你都说过多少遍了，我耳朵都听出茧子来啦~	はいはい、分かったわよ！その話はもう聞き飽きたって。	NONE
+/???	251496	I won’t say anything more. If any emergency occurs, report to me immediately.	那我也就不多说了，如果有什么紧急情况发生的话，立即向我报告。	よし、行くんだ。もし何かあったら、すぐ連絡してくれ。	Então, não vou dizer mais nada. Se alguma situação de emergência ocorrer, informe-me imediatamente.  TN:  JP Certo, vou lá. Se acontecer alguma coisa, me avise imediatamente.
 msg	251497	Well... good luck!	那么…祝你好运！	……健闘を祈る。	Então ... boa sorte!  TN: JP .....Desejo-lhe boa sorte.
 
 se	beep beep
-msg	251498	Beep—	滴——	ピッ——	NONE
+/	251498	Beep—	滴——	ピッ——	NONE
 
 portraits	101
-emote	101	1
+emote	101	2
 /Kiana	251499	Sigh… a task to find someone… This is such a boring task for my first official mission. I am a B-rank Valkyrie now after all~	呼…寻人任务啊……第一次正式出击就是这么无聊的任务，本小姐好歹也是B级女武神好吧~	はぁ、まさか初めての任務が人探しなんて、ほんと退屈だわ！私だって、一応B級戦乙女なのに。	Uff... Uma missão de busca e salvamento... A primeira missão oficial é tão chata assim, eu pelo menos sou uma Valquíria rank B, certo?
 emote	101	0
 msg	251500	Forget it, forget it. I’ll go back and complain to them after completing the mission.	算了算了，等完成了任务回去再去找那些家伙理论。	まぁ、いっか。帰ったらあいつらに文句を言えばいいだけだし。	Esqueça. Eu posso simplesmente reclamar com eles quando voltar.
+se	Reload
 msg	251501	Guns check... in good condition! Ammunition check... complete! Ammunition loading... complete!	枪械检查……完好！弹药检查……完毕！弹药装填……完毕！	機械チェック……問題なし！弾薬チェック……問題なし！弾薬装填……完了！	Verificação de armas de fogo... Concluído! Verificação de munição... Concluído! Carregamento de munição... Concluído!
 msg	251502	Target name: Houraiji Kyuushou, a first-year student at Senba Academy's High School division... Information confirmed!	目标姓名：蓬莱寺九霄，千羽学园高等部一年级生……信息确认无误！	ターゲットの名前は……蓬莱寺九霄(ほうらいじ きゅうしょう)、千羽学園高等部の一年ね。確認完了！	O nome do alvo é ...... Houraiji Kyuushou,, aluna do primeiro ano do Ensino Médio da Academia Senba. Confirmação completa!
 tn	0	The literal translation was "Kiana, Let's go". I know people don't use third person in English, but I think this is the best balance between literal and natural without removing too much of her catchphrase.
@@ -40,7 +31,7 @@ msg	251503	Let's do this, Kiana! 	琪亚娜，出击！	キアナ、行きます
 tween	foreground	diffuse,black;visible,true;horizalign,left;zoomx,0;linear,.5;zoomx,1
 await_tween
 bg	CG10430	instant
-emote	101	2
+emote	101	3
 tween	foreground	horizalign,right;linear,.5;zoomx,0
 
 msg	251504	This school is really big. If I didn't have this GPS, I don't know how long it would take me to find it...	这学园还真大，要不是有这个GPS定位坐标，不知道我还要找多久……	——ふぅ、この学園って結構広いわよね。GPSがなかったら、どれだけ探索に時間が掛かったか分かったもんじゃないわ。	Essa academia é muito grande, se não fossem as coordenadas do GPS, não sei quanto tempo eu teria que procurar...
@@ -69,10 +60,10 @@ emote	122	0
 emote	101	0
 emote	122	0
 /???	251514	Calm down! Now is not the time to lose your cool. There must be something I've overlooked. Come! Cursed singularity! Reveal yourself!	冷静，现在不是慌乱的时候，一定是某处有着遗漏的缺陷等待着我去补完，来吧！被诅咒的特异点！显现出你的身姿吧！	落ち着け！今は取り乱してる場合ではない。どこか見落としている点があるはずだ。いでよっ！呪われし特異点！我の前にその姿を現すがよいっ！	Calma, este não é o momento de entrar em pânico, deve haver uma falha em algum lugar esperando para ser preenchida, vamos lá! O maldita singularidade! Mostre-se!
-emote	101	2
+emote	101	3
 emote	122	0
 /Kiana	251515	This girl... She's the target?	这个人……就是目标么？	この子が……ターゲットなの？	Esta pessoa é o alvo ......?
-emote	101	2
+emote	101	3
 emote	122	0
 /???	251516	Hmm? You... you actually broke through the dimensional barrier I created. You seem to be no ordinary person.	嗯？你是…哼，居然能突破我设置的次元隔断结界，看来不是普通人呢。	ん？お主は……我の次元結界を破るとは、只者ではないようだな。	Hmm? Você é... hmmm, você realmente conseguiu romper o limite da barreira dimensional que eu estabeleci, então você não parece ser uma pessoa comum.
 emote	101	0
@@ -88,7 +79,7 @@ emote	101	3
 emote	122	0
 /Kiana	251519	Stop talking nonsense! Follow me!	少废话！跟我走！	そういうのいいから！私について来て！	Para com essa bobagem!  Venha comigo!
 
-emote	101	3
+emote	101	4
 emote	122	0
 /Kyuushou	251520	Hey! Don't touch me with your dirty hands, I'm— Ow, It hurts! Be gentle! Who the hell are you?!	喂！不要用你那肮脏的手碰我，我可是…疼疼疼！轻点啊！你这家伙到底是谁啦！	おい！その汚い手で触るな、我は……いたたたた！やめっ、やめてよぉ！お、お主何者だ！？	Ei! Não me toque com suas mãos imundas, eu sou... isto dói! Seja gentil! Quem diabos é você!
 
@@ -145,13 +136,13 @@ emote	122	0
 msg	251535	Pip pip pip~	滴滴滴。	ピピピピ……。	NONE
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251536	Tsk! Communication again, so annoying...	啧！又是通讯么，烦死了…	もうっ！今度は何！？	Uff! De novo esse comunicador, é irritante...
 msg	251537	...What the heck?! There's not much time left before the Honkai Eruption?! Ha, I guess I'd better prepare myself to be surrounded by zombies...	什么！？距崩坏降临还有……糟糕，时间已经来不及了，看来还得想办法突破死士的包围圈……	……そんな！崩壊までもう時間がないじゃない！はぁ、ゾンビに囲まれることは覚悟しといたほうが良さそうね……。	O que!? Ainda falta tempo antes que comece a erupção Honkai... isso é ruim, já não temos tempo, parece que precisamos encontrar uma maneira de romper o cerco aos mortos-vivos...
 
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251538	Honkai? Zombies? What are you talking about...?	崩坏？死士？那是……	崩壊？ゾンビ？何の話を……。	Honkai？Zumbis? Isto é……
 

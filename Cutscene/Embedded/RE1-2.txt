@@ -65,13 +65,13 @@ speaker	Kiana
 emote	101	0
 emote	122	0
 msg	251562	This girl... Having stupid delusions again at a time like this...	这家伙…这么危险的时候还在想这种蠢事……	こいつ……こんな時にまたバカな妄想をして……。	Esta pessoa...... tem outra fantasia estúpida em um momento como este .......
-emote	101	2
+emote	101	3
 emote	122	0
 msg	251563	But the fact that she hasn't turned into a zombie means she hasn't been affected by the Honkai. Maybe she's compatible too?	不…等下。她在崩坏的环境下也没有变成死士，这么说她也是适格者么？	いや、でもゾンビになってないってことは、崩壊の影響を受けてないってことよね。もしかして、こいつも適合者なの？	Não, mas o fato de ela não ter se transformado em um zumbi significa que não foi afetada pelo, o Honkai. Talvez ela também seja qualificada?
 msg	251564	The organization places a lot of importance on this girl... Could she really have some power?	既然组织这么重视这家伙，那她一定有着重要的价值…难道她说她真的有着某些能力么……	組織はやたらとこいつのことを重要視してるし……まさか、本当に何か力を持っている可能性も……。	O que aconteceu? Você ficou curiosa para ver meu verdadeiro poder?
 
 speaker	Kyuushou
-emote	101	2
+emote	101	3
 emote	122	0
 msg	251565	How about it? Do you want me to show you a real miracle?	怎么样~让你见识一下真正的神迹吧！	どうした？我が真の力を見てみたくなったのか？	O que se passa?  Você quer ver meu verdadeiro poder?
 
@@ -86,14 +86,14 @@ emote	122	0
 msg	251567	Alright, go ahead. I need to chant to release my power, so go and buy some time!	哼哼~去吧，我的神迹也需要一段时间的吟唱，这段时间就交给你来守护了！	よし、行くがよい。我が力を解放するにも詠唱が必要だからな、ついでに時間稼ぎもしてくるのだ！	Tudo bem, vamos lá. É necessário um encantamento para liberar o  meu poder, e enquanto estiver nisso, vá e ganhe algum tempo para min!
 
 speaker	Kiana
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251568	Yeah, yeah! Got it!	啧！知道了！知道了！	はいはい！分かったわよ！	Sim! Eu Entendi!
 
 portraits	122
 match_names	Kyuushou
 speaker	Kyuushou
-emote	101	1
+emote	101	2
 emote	122	0
 msg	251569	O jet-black soul that dwells within me! Take me as your dependent, and answer my summons.	沉眠于吾之体内的深暗魂魄！现吾将以自身之血肉召唤于汝！	我が身に宿りし漆黒の魂よ！我を依代とし召喚に応えよ。	Ó alma negra que habita em meu corpo!  Responda à minha convocação e aceite-me como a sua serva.
 
@@ -111,27 +111,27 @@ msg	251572	My will be with thee! Through perdition, I roam the abyss of samsara 
 portraits	101	122
 match_names	Kiana	Kyuushou
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251573	Hey! I've gathered all the zombies! Where's your soul or whatever yet?!	喂！死士都已经引过来了！你的咒语念完了没啊！！	ゾンビを集めたわよ！ソーなんとかとやらはまだ！？	Olá! Os zumbis já estão aqui! Você terminou seu feitiço? !
 
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251574	Fufufu... Respond to my voice and manifest! Here now, the song of salvation pours forth!	哼哼哼……来吧！与吾一起将神迹显现于世吧！奏响救世的前奏！	ふっふっふっ……我が声に応え顕現せよ！今ここに救世の歌が降り注がん！	Fufufufu... Responda à minha voz e manifeste-se! A canção da salvação está sendo derramada aqui e agora!
 msg	251575	Soul•Explosion!!!	燃魂聚爆！！！	ソール・エクスプロージョンっ！！！	Soul Explosion!!!!
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251576	!!!	呜！	っ！！	Uau!
 
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251577	Soul Explosion! Explosion!! Explosion!!! Ah, huh? Am I not feeling well today?!	爆！爆！爆！呃…嗯…嗯？哎嘿~好像失败了呢！	ソール・エクスプロージョン！エクスプロージョン！！エクスプロージョンッ！！！あ、あれ？きょ、今日は調子が悪いのかな！？	Soul Explosion! Explosion!! Explosion!!! Ah, o que foi isso? Parece que hoje não estou me sentindo bem!
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251578	...I can't believe I was dumb enough to believe you!!!	果然不能相信你这蠢货！！！	分かってたけど……信じた私がバカだったわね……。	Eu sabia, mas fui estúpida por acreditar nisso...

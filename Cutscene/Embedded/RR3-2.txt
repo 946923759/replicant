@@ -17,7 +17,7 @@ msg	250054	You just stay here. This is the old school building. The zombies won'
 /Kiana	250058	Huh? What are you talking about? How could anyone even say that about themselves?!	哈？你在说什么啊，哪有人会这么说自己的！	はぁ？何、言ってんのよ！生まれたのが間違いなんて、そんな人間いるわけないじゃない！自分をそんな風に言っちゃダメだよ！	Hum? Sobre o que você está falando? Como alguém poderia dizer isso sobre si mesmo?
 /???	250059	Just leave me be... You can stop pretending to care. You only approached me because of the name 'Raiden Mei'...	不要再管我了…把你的虚情假意收起来吧，反正你也是为了雷电芽衣这个名字才假惺惺地靠近我的吧……	もう、放っといて。見せかけの優しさなんていらないの。どうせあなたも、私が雷電芽衣だから近寄って来たのでしょう？	Deixe-me em paz. Você pode parar de fingir que se importa. Você acabou de se aproximar de mim por causa do nome Raiden Mei.
 
-emote	101	2
+emote	101	3
 /Kiana	250060	'Raiden Mei'? I think I've heard that name before... Isn't she a celebrity who attends Senba Academy? The daughter of the president of M.E. Corp.! Is that you?	雷电芽衣？好像听说过这个名字…据说是千羽学园里的名人呢，那个什么ME社的千金，难道就是你么？	雷電、芽衣？どっかで聞いたことあるような……確か千羽学園の有名人だよね？あのME社だか何だかの社長令嬢だとか……えっ、あなたがその雷電芽衣なの？	Raiden Mei? Penso que já ouvi esse nome antes… Ela não é uma celebridade na Academia Senba? A filha do presidente da Empresa ME! É você?
 /???	250061	……	……	……。	NONE
 /Kiana	250062	Hoho~ Rumor has it that she once rejected 12 boys in one day. That earned her the nickname "Queen of Thunder". And now she's all down in the dumps like this. How rare~	嚯嚯~传言曾经在一天之内拒绝了12名男生，绰号“雷电女王”的大小姐现在居然这么一副灰头土脸的样子，还真是难得呢~	へぇ～、そっかそっか～。1日に12人の相手から告白されて、その全てを断ったっていう伝説を持つ「雷電女王様」でしたか。それがこんな姿になるなんてね、ふ～ん。	Oh... A mesma garota rica que me disseram ter rejeitado 12 garotos  em um dia e ganhou o apelido de 'Rainha do Trovão'. No entanto, você está olhando tão abatida e derrotada. Que visão rara.
@@ -26,7 +26,7 @@ match_names	Kiana	Mei
 /Mei	250063	Are you just going to mock me too...? Of course, since everyone's rotten on the inside.	你也是来嘲笑我的么…果然每个人都是这种丑恶的嘴脸。	あなたも私を嘲笑うのね……どうして、人は皆そんなに醜いのかしら。	Você vai zombar de mim também? Você é como todo mundo, uma escória absoluta.
 /Kiana	250064	Don't get me wrong, I'm not here to laugh at you. I just want to tell you that instead of blaming others or the heavens, you should find ways to change yourself.	不要误会了，我可不是来嘲笑你的。我只是想告诉你，与其在这里怨人怨天还不如自己想办法改变。	ううん、笑ってなんかないわよ。そんな風に愚痴をこぼしてるより、現状を変える方法を考えた方がいいって言おうとしたの、私は。	Não se engane, eu não estou aqui para rir de você. Só quero dizer que ao invés de reclamar de outras pessoas, por que não mudar as coisas você mesmo?
 /Mei	250065	Change? That's right... It's not me who's wrong, it's this sickening world! This hypocritical world should be destroyed!	改变么？没错…错的不是我，而是这个可恶的世界！这种虚伪的世界就应该被毁灭！	変える……？そう……そうよ、悪いのは私じゃないわ。悪いのは、この世界ッ！偽りに満ちたこの世界が変わるべき……滅びるべきなのよ！	Mudar? Isso mesmo… Eu não sou o problema, é este maldito mundo! Este mundo está cheio de mentiras e deve ser destruído!
-emote	101	2
+emote	101	3
 /Kiana	250066	Hmm, something doesn't feel right. Hey! What's going on with you?!	唔，感觉不对劲，喂！你到底怎么了！？	あれっ……急にどうしちゃったの！？	Uh, Isso não parece certo… Ei?! O que aconteceu com você?!
 
 se	DLC_CH03_EV05_ThunderBig
@@ -35,10 +35,9 @@ emote	101	0
 /Kiana	250068	Huh?! What's going on with this weather? Is this an anomaly caused by the Honkai...?	呃！这个天气到底是怎么回事？难道是崩坏引起的异变么……	えっ、何っ！？空が！ひどい雷……これも崩壊の影響！？	Hum? O que está acontecendo com o clima? Pode ser algum tipo de anomalia causada pelo surto de Honkai?
 /	250069	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡…	ピピッ——ピピッ——	NONE
 
-emote	101	2
+emote	101	3
 /Kiana	250070	Tch, even my phone is... Wha—?! High Honkai energy alert... Distance 0 meters?	啧，连手机也在这种时候…唔！探测到崩坏能警报…距离0？	もうっ、今度は何の通知よ！……また崩壊エネルギー警報！？距離は——0m！？	Nossa, que hora é essa para o telefone reagir...O que-! alerta grande energia Honkai... Distância 0 metros?
 /	250071	[i] Zzzzzt [/i]	滋滋滋！	バチ——ッ！	Trrrim trrrim trrrim~
-
 emote	101	2
 /Kiana	250072	Huh? The signal cut off? Why does this crappy phone always break down in these critical moments! Isn't 0 meters away right next to me? There's nobody here except for a depressed rich girl!	咦？信号怎么中断了？这破手机每当关键时刻就出问题！距离0不就是在我身边嘛！这里除了一个死气沉沉的千金大小姐就没有别人了啊！	あ、あれ？信号が途切れた！？何でこんな大事な時に限って壊れるの、このスマホは！距離0mって何さ！傍にいるのは、このヘコんでるお嬢様だけなんだけどっ！？	Hum? Sinal cortado? Porque este telefone de merda sempre se desliga nestes momentos críticos! Não está a 0 metros de distância bem ao meu lado? Não há ninguém aqui, exceto uma garota rica e deprimida!
 

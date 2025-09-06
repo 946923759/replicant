@@ -8,7 +8,7 @@ portraits	101
 tn	0	In the Japanese version, it uses a more literal street name instead of describing the road's appearance like in Chinese. I felt this was better.
 msg	250018	I think I'll head to the center of Senba Academy campus for now. If I want to steer clear of zombie-heavy areas... Sakura Lane is probably the best route. Alright, that settles it! 	现在的位置是这里，尽量避开死士密集的地方前进，那么最有效的路径是沿着这条樱花道进入千羽学园的校区中心，就这么办吧！	ひとまず、千羽学園の中心に向かおうかな。ゾンビの多そうなところを避けるとなると……桜小路から行くのが一番良さそうだね。よし、決まりっ！	A localização atual é aqui, tente evitar o local onde os mortos estão concentrados, então o caminho mais eficaz é seguir esta estrada de flores de cerejeira até o centro do campus da Academia Senba, então vamos lá!
 
-emote	101	2
+emote	101	3
 msg	250019	Still, it feels weird how quiet the academy is now, when it used to be so full of life. It was a fancy girls' school, so not having to keep up appearances is kind of a relief, in a way.	不过话说回来…原来喧嚣的学园一下子这么安静还真是有些不习惯，从今以后也不用故作淑女陪大小姐们赏花了吧…嘛，姑且算是件值得开心的事情吧~	それにしても、あんなに賑やかだった学園が、こうも静かだと何だか変な感じ。お嬢様学校だったから、それに調子を合わせる必要がなくなったのは、楽っちゃ楽だけど。	Mas dito isso... Acontece que a escola barulhenta de repente está tão quieta, eu realmente não estou acostumada. De agora em diante, eu não tenho que fingir ser uma dama para acompanhar a mais velha senhoras para desfrutar de flores... Bem, digamos que é algo para ser feliz.
 
 emote	101	0

@@ -1,0 +1,21 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/ex1
+music	re/3-08 - Plains of Eternity - Aggressive Mix
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	251063	There's thunderclouds up ahead.... This should be the right way.	前方有雷云，应该是往这边走没错啊……	雷雲がある方に向かえば、きっとあのお嬢様にも追いつけるよね。	Há uma tempestade com raios à frente, esta deve ser a direção certa....
+emote	101	3
+msg	251064	But where am I now?  It's a place I've never seen, but... Was there really a place like this at the school?	不过，这里是哪儿，我这是追到什么地方来了？	でも、ここどこだろう？見たことない場所だけど……こんな所、学園にあったかな？	Mas onde estou exatamente? Aonde ela me levou?"
+emote	101	0
+msg	251065	And this is an abandoned building, isn't it? It doesn't seem right for such a run-down building to be in such a modern academy...\n	这好像是一座废弃了的建筑物……总感觉不像是一个这座现代学园应该出现的东西……	それにこれって廃墟だよね？最先端の学園都市に、何でこんなボロボロの建物があるんだろう……。	Este parece ser um prédio abandonado... Parece algo fora de lugar para uma academia tão moderna.
+se	AVG_engine_speedup
+/	251066	[i]Vrooom~vrom vrom vrom vrom vrom~[/i]	嘟啦啦啦啦~	ブロロロッ！ブンッ、ブゥウウンッ！！	NONE
+speaker	Kiana
+emote	101	3
+msg	251067	Hmm? That sound is... a motorcycle?	嗯？这个声音是……机车的声音？	ん？この音は……車？いや、バイクかな？	Hmm? este som. É... o som de uma motocicleta?
+emote	101	0
+msg	251068	Could it be that someone's still alive around here?	难道说这个地方还有着活人？	ってことは、まだ生きている人間がいるってこと？	Poderia ser que alguém ainda está vivo por aqui?
+msg	251069	No, the only person that should have been able to survive is Mei, and she was a special case. Could it be that this sound is.....	不对，这个地方的活人应该就只有刚才我遇到的那个学姐了……莫非这个声音是……	ううん、そんなはずない。雷電芽衣が異様なだけであって、私みたいな人間以外、生き残れるわけがないもん……。いや——そっか、まさか！	Não, a única pessoa viva ao redor deveria ser a Senpai que acabei de conhecer mais cedo... Poderia este som ser...?
+tn	0	Weird that Kiana is calling it the Third Eruption, when she thinks this is simply a large Honkai Outbreak
+msg	251070	Ha! You really are going after this Third Eruption in secret! Now that I found out that you're here, you're not getting away! 	哼，你果然在暗中观察着这第三次崩坏！既然被我发现了，你可就别想跑了！	私の読み通り、あの人が第三次崩壊を調査しに来てるんだ！そうと分かれば追いかけないと！絶対、逃がさないんだからっ！	Ha! Você realmente está indo atrás desta Terceira Erupção em segredo! Agora que eu descobri que você está aqui, você não vai escapar!

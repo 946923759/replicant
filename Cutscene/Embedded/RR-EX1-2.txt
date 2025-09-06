@@ -1,0 +1,28 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/ex1
+music	re/3-08 - Plains of Eternity - Aggressive Mix
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	251071	To think that there's still such a deserted place in this huge academy.	没想到在这座偌大的学园还有这样荒废的地方。	スミのスミまで綺麗な学園なんだと思ってたけど、こんな風に汚れた場所もあったんだ。	Pensar que ainda existe um lugar tão deserto nesta enorme academia.
+msg	251072	And what's this smell... Yeesh, it's awful...  No way, is this where the academy dumps all the sewage and waste?	这里真是太臭了……这座学园该不会把所有的废水之类的都排到这里了吧？	それに何だろう、このニオイ……うぇえ、クサい……。まさか、学園の実験廃水や汚染水なんかを全てここに流してるんじゃ……？	Está muito malcheiroso aqui... Espere, é aqui que a academia despeja todo o esgoto e o lixo?
+msg	251073	……	……	……。	NONE
+msg	251074	The world famous 'Academy City' is doing something illegal like this... It's got a gorgeous appearance, but it's polluting the city behind that façade.	外表光鲜，是世界闻名的学园都市，没想到背后却在不断地污染这座城市。	世界的にも有名な学園都市が、こんな違法なことに手を染めてたなんてね……立派な外見とは裏腹に街を汚染してたってわけだ。	Esta Cidade Academia mundialmente famosa tem uma aparência tão glamorosa, mas sob esse véu, está poluindo a cidade por trás dela.
+msg	251075	There's even a warning sign to prevent people from entering. I wouldn't have seen this for the rest of my life if I didn't try following those engine sounds.	外面还用了警示牌不让人进来，若不是追踪那个机车的声音，我恐怕也是不会随便过来看的吧。	しかも、ご丁寧に人が入らないよう警告板まで出してるし。私だってエンジン音を追って来なきゃ、一生ここには来なかったろうな。	Eles colocaram uma placa de advertência para impedir a entrada de pessoas. Se eu não estivesse seguindo o som de uma motocicleta, nunca teria vindo aqui por conta própria.
+tn	0	CN/JP changed the sentence, CN used "If it wasn't for me finding this..."
+msg	251076	If it wasn't for the Honkai, this might have been hidden forever.\n	要不是今天我见到了这幅画面，怕是这个景象永远都不会有人看到也说不定。	崩壊が起こらなきゃ、この悪事が永遠に闇の中だった可能性もあるんだ。	Se eu não tivesse visto isto hoje com meus próprios olhos, temo que ninguém jamais teria notado.
+emote	101	3
+msg	251077	Pretty on the outside, but rotten on the inside... Is that what human nature is like? Is that what our world is like?	外表光鲜，其内其实腐烂无比，这就是人类吗？还是说世间的所有都是这样的呢？	見た目だけ取り繕って、中身が腐ってるなんて……これが人間の本性なの？この世界って、これが真実なの？	Bonita por fora, mas podre por dentro. É assim que é a natureza humana? É assim que é nosso mundo?
+emote	101	0
+msg	251078	This is so confusing.	真是让人搞不懂。	もう、わけ分かんない。	Simplesmente não entendo.
+se	AVG_engine_speedup
+/	251079	[i]Vroooom- Vrom vroooom-[/i]	突突突突突！	ドゥルルルッ——ブゥウウンッ！	NONE
+/Kiana	251080	...Ah! That sound is right around the corner! I won't let you escape this time!	果然就在这里附近，这次不会再让你跑掉了！	……っ！この音、すぐ近くだ！逃がすか！	Com certeza, está por aqui em algum lugar. Não vou deixar você fugir desta vez!
+msg	251081	Ugh, what is this place?! It stinks, the roads are unpaved and hard to walk on, and on top of that, there are zombies swarming around due to being attracted by that engine noise! I'm just a girl, okay?!	这里真是讨厌，又臭又难走，还有这么多被声音吸引过来的死士，她们倒是不在意，但是本小姐至少还是个女孩子好不好！	あー、もうっ！ここ何なの！？クサいし、道は舗装されてなくて歩きにくいし、おまけにエンジン音に引き寄せられたゾンビがうじゃうじゃいるし！もっと女の子を労わってよ！	Este lugar é realmente desconfortável. É malcheiroso e difícil de andar, além de que há tantos zumbis atraídos pelo som.  Elas não parecem incomodadas com tudo isso. Bem, eu sou apenas uma garota delicada, e tenho necessidades femininas, ok?
+msg	251082	If it's really [i]him[/i] on that bike, I won't let him get away with this! I'm gonna SMASH HIS HEAD OPEN!	等找到了那个开机车的家伙，如果真的是那个把我丢下的家伙的话，看我不把他揍得脑袋开花！	もし、このエンジン音の正体がバイクに乗ったあの人だったら、ただじゃおかないんだから！ぜっーーーたいッ、頭カチ割ってやる！	Quando eu encontrar o cara com a motocicleta... Se foi realmente o cara que me deixou aqui... eu vou dar uma surra nele!!
+emote	101	3
+msg	251083	Huh... What's this up ahead...	咦……前面这是……	ん……？あれは——	Hum... O que é isso aí na frente....
+msg	251084	This motorcycle... It can't be the motorcycle I just heard, right?	这个机车……该不会就是刚才的那个一直在开动的机车吧？	——バイクが倒れてる……さっき走ってたやつかな？	Esta motocicleta... não pode ser a motocicleta que acabei de ouvir, certo?
+emote	101	0
+msg	251085	It's flipped over. And there are bloodstains everywhere. Judging by how bloody it is, it seems like quite a while has passed since this accident happened... It seems like it's a different bike from the one making that engine sound.	这里还有血迹……机车也倒在了这里…莫非是翻车了？看来不会是他了。他好歹也是一个卡斯兰娜家的战士，怎么可能犯这种低级错误……	ここで横転したんだ。それに血痕がここから点々と続いてる。この血の渇き具合からして結構時間が経ってそう……さっきのエンジン音とは別のバイクみたい。	Há manchas de sangue aqui... Será que a bicicleta caiu? Bem, não pode ser ele. Ele ainda é um guerreiro da família Kaslana, ele não cometeria um erro  de tão baixo nível.
+msg	251086	Okay, I'll follow the blood trail! I can't imagine that someone from House Kaslana would get flipped over in a place like this, but it might be worth investigating.	顺着血液去看看吧。虽然还是没有那个家伙的线索，还是有点失望的。	よし、血痕を辿ってみよう！カスラナ一族のあの人が、こんなとこで横転するなんて考えられないけど、調べてみる価値はありそう。	Vamos seguir o rastro de sangue e investigar. Pena que ainda não há pistas sobre onde ele está. É decepcionante.

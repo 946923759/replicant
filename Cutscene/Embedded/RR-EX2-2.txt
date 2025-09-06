@@ -1,0 +1,54 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/ex2
+music	re/3-08 - Plains of Eternity - Aggressive Mix
+speaker	Kiana
+portraits	101
+emote	101	3
+msg	251118	A bunch of cars just drove past... Most of them were sports cars...	刚才有好多辆车都开过去了……大部分都是跑车的样子……	うーん……さっきから改造車ばっか通るわね。	Um monte de carros acabara de passar... Maioria deles eram carros esportivos…
+msg	251119	Is this a road race? Is this the track?	这难道就是传说中的公路赛道么，专门用来赛车的地方？	もしかして、公道レースってやつ？ちょうど、ここがコースになってるのかな？	Isso é uma pista de corrida? É esse o caminho?
+msg	251120	It seems that the scope of the Honkai Outbreak is not particularly large. At least this place hasn't been affected for the time being...	看来崩坏扩散的范围还不是特别大，至少这个地方还暂时没有受到……	今回の崩壊はやっぱり範囲が狭いみたいだね。ここはまだ大丈夫そうだし……。	Parece que a extensão e o alcance do surto não é tão grande, pelo menos esse lugar parece não estar afetado.
+/	251121	[i]Craaash![/i]	轰隆隆！	ドゴォオオオォンッ！！	NONE
+speaker	Kiana
+emote	101	0
+msg	251122	What happened? What exploded?!	怎么回事？哪里爆炸了？！	えっ！？何、爆発ッ！？	O que aconteceu?! Onde foi essa explosão?!
+msg	251123	I can see black smoke up ahead... Could it be a car accident?	前方开始冒黑烟了……莫非是车祸？	煙が上がってる……もしかして、さっきの改造車が事故ったのかな？	Eu consigo ver fumaça preta à frente... Poderia ser um acidente de carro?
+msg	251124	Hey, hey, hey! Even if this place is pretty deserted, you still have to abide by basic traffic rules!	喂喂喂，虽然这地方平时是没什么人经过啦，但你们也要好歹也要遵守基本的交通规则吧喂！	もうっ！人通りが少ないからって危険な運転してくれちゃって！最低限の交通ルールは守んなさいよ！	Ei, ei, ei! Mesmo se esse lugar estiver deserto, você ainda tem que respeitar as leis de trânsito básicas!
+msg	251125	...No, I can guess what happened. Those people must have become zombies while racing, so this accident happened...	我大概知道是怎么回事了，肯定是那些人在赛车的时候都变成了死士，所以也就发生了这个交通事故……	……いや、違う。もしかしたら、レース中にゾンビになっちゃったのかも。それで意識が保てなくなって事故を……。	Ah! Posso imaginar o que aconteceu. Eles provavelmente viraram zumbis enquanto eles estavam, e então eles bateram.
+/	251126	[i]Durrrrrr—— Vrrrrrrr!![/i]	嘟啦啦啦啦……	ドゥルルルッ——ブゥオォオオオォンッ！！	NONE
+speaker	Kiana
+emote	101	3
+msg	251127	There is no road ahead... Why does it sound like she's still accelerating?!!	这前面已经没有路了……为什么听那个声音她还在加速？！！	またバイク！？……というか、この先は崖よ！何でアクセル全開にしてんのよ！？	Não há estrada à frente! Por que parece que ela ainda está acelerando?!
+emote	101	0
+msg	251128	She... drove off the cliff...	她…朝着悬崖开下去了……	……えッ！そ、そんな崖から落ちるなんて……。	Ela... caiu do penhasco…
+msg	251129	What happened...?	是发生了什么……	どうして自ら……？	O que aconteceu…
+emote	101	3
+msg	251130	Huh? What's with this book? Is this a diary? Did that girl leave this behind? Let me take a look...	咦？这个本子？好像是个日记本？难道是那个女孩留下的东西吗？让我来看看……	あれ、何か落ちてる。これは……日記？さっきのバイクが落としたのかな？……読んでもいいよね？	Hã, esse livro? Ele parece um diário. Aquela garota deixou isso para trás? Vamos dar uma olhada.
+portraits
+msgbox_close
+set_fs	true
+msg	251131	[color=#ffd7b3]01/05: My motorcycle is finally here! I am going to name her Inazuma, because she will be as fast as lightning![/color]	1月5日，我的机车终于到了，我准备给她取名为霹雳，因为她的速度肯定就像闪电一样快！	1月5日 ついにバイクが届いた！さっそく名前をつけたの。その名もイナズマ！絶対イナズマみたいに速いはずだからっ！	01/05: Minha motocicleta está finalmente aqui! Nomearei ela de Raio, porque ela será tão rápida quanto um relâmpago!
+msg	251132	[color=#ffd7b3]01/06: I joined the motorcycle club at school! I didn't think Senba Academy would have such a club! Senpai told me I am the most talented person she's ever met, and she said she likes me a lot... She's the first person who didn't judge me because of my looks...[/color]	1月6日，我加入了我学校中的机车部，没想到千羽学园居然真的有这种社团！第一次跟着学姐们去兜风，开机车真是太棒了！学姐说我是她遇到过的最有天赋的人，她说她很喜欢我……这是第一个没有因为我的相貌而看不起我的人……	1月6日 千羽学園のバイク部に入部した。バイク部があるなんて驚き！今日、先輩たちとツーリングに行ったけど最高だった！先輩は才能があるって言ってくれたし、不細工な私のことを可愛いと言ってくれた……。	01/06: Eu me juntei ao clube de moto da escola! Eu não pensava que a Academia Senba teria tal clube! A Senpai me disse que sou a pessoa mais talentosa, que ela já conheceu, e ela disse que gosta muito de mim... Ela foi a primeira pessoa que não me julgou pela minha aparência.
+msg	251133	[color=#ffd7b3]01/13: Our motorcycle club has accepted a challenge from the racing club. A battle between motorcycles and sports cars. We met on the empty mountain road behind the ruins. It is said that nobody has come here for five years, and that there used to be some urban legend of the God of Racing. They laughed at my looks, but my speed shut them up.[/color]	1月13日，我们社团接受了飙速部的挑战，这是机车与跑车的战斗。我们相约在废墟后面的无人山道上比赛，据说这里已经有五年没有人来了，曾经这里还有“车神”的传说。她们嘲讽我的面容，但是我的速度让她们闭上了嘴巴。	1月13日 レーシング部と勝負することになった。コースは人気のない裏山。神速のカズハとかいう凄腕のドライバーが出る都市伝説もあるみたい。連中は私の外見を笑ったけど、誰も私の速度にはついてこれなかった。	01/13: Nosso clube de moto aceitou um desafio do clube de corrida. Uma batalha entre motocicletas e carros esportivos.   Nós nos encontramos na estrada vazia da montanha atrás das ruínas. Diz-se que ninguém veio aqui por cinco anos e que costumava haver alguma lenda urbana sobre o Deus das Corridas. Eles riram da minha aparência, mas minha velocidade calou eles.
+clear_fs
+msg	251134	[color=#ffd7b3]02/02: Our club has won a lot of matches. Senpai said that I was born for biking. I'm so happy.[/color]	2月2日，我们的机车部又赢下了很多比赛，学姐说我仿佛就是为了机车而生的人一样。真高兴。	2月2日 今日もバイク部はレースに勝った。先輩は私のことを「まるでバイクのために生まれてきたような人だ」と言った……心の底から嬉しかった。	02/02: Nosso clube ganhou muitas partidas. Senpai me disse que nasci para dirigir motos. Estou tão feliz.
+msg	251135	[color=#ffd7b3]03/13: Tomorrow, there will be another match. I made a deal with Senpai. If I win, she will consider studying to attend a local school. It's really hard to enter a school in Nagazora. But if I win, she will try really hard for me.[/color]	3月13日，明天又有一场比赛，这是我跟学姐约好了的，如果我赢了，她就考虑攻读本地的学校，不过长空市的学校很难进，但是学姐说如果我赢了的话，她就会为我而努力的。	3月13日 明日もレースがある——先輩との大事なレース。先輩は難関校ばかりの長空市を出て、別の街の学校へ進学するらしい。けど、もし私がレースに勝てたら、ここに残って受験を頑張ると約束してくれた。	03/13: Amanhã, haverá outra partida. Eu fiz um trato com a Senpai. Se eu ganhar, ela vai considerar estudar para frequentar uma escola local. É realmente difícil de entrar em uma escola em Nagazora. Mas se eu vencer, ela vai tentar muito por mim.
+
+set_fs	false
+msgbox_open
+portraits	101
+speaker	Kiana
+emote	101	0
+msg	251136	This poor girl... If it weren't for the Honkai, she would be having a match for her Senpai right now...	真是一个可怜的孩子……如果不是这场崩坏的话，她现在已经在和她的学姐比赛了吧……	可哀想な子……崩壊さえ起らなければ、先輩とレースできてたんだろうな……きっと、幸せな未来が待ってたはずなのに。	Esta pobre garota... Se não fosse pelo Honkai, ela estaria tendo uma partida com seu Senpai agora mesmo.
+msg	251137	At the end, when she was being torn apart and corrupted by the Honkai, did she hang on because of her attachment to her Senpai? That's why there was that 'Help me' note...	她到了最后快要被崩坏侵蚀完毕的时候，也一直凭着自己对于那位学姐的执着而坚持着吗？所以才会有那个“救救我”么……	崩壊に浸蝕される最後の最後まで、先輩への想いを胸に頑張ったんだ……だから、力を振り絞って「助けて」ってメモを残したのね……。	No fim, quando ela estava sendo partida em pedaços e corrompida pelo Honkai, ela aguentou por causa da ligação dela com sua Senpai? É por isso que havia aquela nota com `Me ajude’...
+msg	251138	I don't know what this girl looks like, but I think she's way more beautiful than most people.	虽然不知道她究竟是一个长相如何的女孩，但是，至少她比太多太多人要美丽。	どんな子だったのかは知らないけど、見た目とは裏腹に彼女の心が純粋で綺麗だったのは間違いない。	Eu não sei como essa garota se parece, mas eu acho ela linda. Diferente de muitas pessoas.
+msg	251139	In this world, there are people who look ugly, but who have a pure heart. I take back my negative comments earlier about everyone in the world...	这个世界上，有的人虽然长相可怖，但是她们有着纯粹的内心，我收回之前对于这世上所有人的那个差评吧……	外見ばかりを取り繕って、裏で違法なことをしていたこの学園とは正反対……。	Nesse mundo, onde tem pessoas que parecem feias, mas que tem um coração puro. Eu retiro meus comentários negativos anteriores sobre todos no mundo......
+se	DLC_CH03_EV06_ThunderSmall
+/	251140	[i]Rumble, rumble...![/i]	轰隆隆隆……	ゴロ、ゴォゴロオォオッ！	NONE
+speaker	Kiana
+emote	101	0
+msg	251141	This thunder...	这个雷声……	この雷は……！	Esse trovão...
+emote	101	4
+msg	251142	Damn, almost forgot I was still in this outbreak. I should be tracking down Raiden Mei right now...	糟了，差点就忘记自己还处在这个崩坏中。现在应该是追踪雷电芽衣的时候才对……	そうだ、感傷に浸ってる場合じゃなかった！今は崩壊の真っ只中なんだよね。雷電芽衣を追わなくちゃ！	Droga, eu quase esqueci que ainda estava nesse surto. Eu deveria estar rastreando a Raiden Mei agora mesmo.
+emote	101	0
+msg	251143	Let this girl rest. At least she died with her Senpai close to her heart.	就让那个女孩在这里沉眠吧，至少她在死去的时候，仍然念想着自己的学姐。	この子のことは残念だけど、どうか安らかに眠って……せめて先輩の傍にいけるよう祈ってるわ。	Deixe essa garota descansar. Pelo menos ela morreu com sua Senpai próxima em seu coração.
+msg	251144	Unfortunately, [i]my[/i] senpai is quite a handful~ I still have to find her, and fast!	可惜，我的学姐却不是一个那么让人放心的人呐~还是得赶紧把她找到才行！	さて、残念なことに、こっちの先輩は手がかかるんだよね～。早く見つけ出さないと！	Infelizmente, Minha Senpai é um pouco trabalhosa~ Eu ainda tenho que encontrar ela, e rápido!

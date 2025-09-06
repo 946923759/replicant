@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Screens/ScreenSelectEra/OverlayDownloadPck.tscn" type="PackedScene" id=1]
+
+[node name="RR-OverlayDownloadPck" instance=ExtResource( 1 )]
+fileToDownload = "Retrospective.pck"

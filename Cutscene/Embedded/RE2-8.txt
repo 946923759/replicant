@@ -14,7 +14,7 @@ emote	121	0
 msg	251989	Aaahh, I-I didn't mean to say that!	呜哇哇我随便说说的！	うわあぁ、な、何気なく言っただけじゃないか！	NONE
 speaker	Kiana
 nop	101
-emote	101	3
+emote	101	4
 msg	251990	So she was lying in wait here after all.	果然，你一直在这里埋伏着。	やっぱりここで待ち伏せしてたのね。	NONE
 
 
@@ -23,7 +23,7 @@ portraits	121,false,-3	101,false,-3	201,false,-3	304,false,3
 
 speaker	Bronya
 nop	101	304
-emote	101	3
+emote	101	4
 emote	304	0
 msg	251991	Bronya was just following orders.	布洛妮娅只是在遵守命令而已。	ブローニャは命令に従ったまでです。	NONE
 speaker	Kyuushou
@@ -56,11 +56,11 @@ emote	121	0
 emote	304	0
 msg	251998	Ki... Kiana, what should I do? This child doesn't seem to be one of those guided by God. She doesn't understand what I'm saying.	琪…琪亚娜怎么办，这个人好像并不是我的队友，我的箴言居然无法感化她！	キ……キアナ、どうしよう。この子、神に導かれし仲間じゃないみたい。私の言葉が通じないよぉ。	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	251999	That's why I said she's an enemy! Where do you get the confidence to make her your ally?!	早就跟你说过了她是敌人！真不知道你从哪里来的自信认为她是队友。	だから、あの子は敵だって言ってるでしょ！仲間に出来るなんて自信、どっから湧いてくるのよ！	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Bronya	252000	Subject X... Matushka said she needed you too. However, she didn't mention anything about your safety.	对象X，虽然你也是妈妈需要的，但是妈妈并没有说需要保证你的安全……	対象X……お母様はあなたのことも必要と言っていました。ただ、身の安全についてまでは言っていませんでした。	NONE
 
@@ -68,16 +68,16 @@ emote	121	0
 emote	304	0
 /Kyuushou	252001	...What do you mean?	她是什么意思？	……どういう意味？	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	252002	It means she doesn't care if you're alive or dead! ...Damn, when did reinforcements arrive?! She must've stalled us for time.	就是说她不会管你的死活！糟糕，我感觉她在拖延时间。	あんたの生死なんてどうでもいいってことよ！……くっ、いつの間に増援が！？見事に時間稼ぎをされたってわけね。	NONE
 msg	252003	Tch! We have no choice but to fight here!	啧！只能硬上了！	ちっ！ここは戦うしかないわね！	NONE
 speaker	Bronya
-emote	101	3
+emote	101	4
 emote	304	0
 msg	252004	You are weaker than before, and in your current state you will not be able to get them out of here.	你比之前更加虚弱了，这样的你是无法带着她们通过这里的。	あなたは以前より弱くなっています。その状態では、彼女達を連れてここを抜けることはできないでしょう。	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	304	0
 msg	252005	You shouldn't decide for yourself whether we can do it or not!	行不行，可不是你说了算！	出来るかどうかを、そっちが勝手に決めないでよね！	NONE
 emote	101	0

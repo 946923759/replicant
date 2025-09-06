@@ -25,7 +25,7 @@ emote	201	0
 emote	304	0
 /Mei	251894	Kiana-chan! KIANA-CHAN! Are you okay?!	琪亚娜！琪亚娜！你没事吧！	キアナちゃん！キアナちゃんっ！大丈夫！？	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	251895	Damn... It's okay. ...How dare you snipe Lady Kiana while hiding... Ugh...	呃，没事。没想到我琪亚娜堂堂正正，居然中了黑枪……	くっ……大丈夫よ。……このキアナ様を隠れて狙撃するなんて……。うっ……。	NONE
 
@@ -41,7 +41,7 @@ emote	121	0
 emote	304	0
 /Kyuushou	251898	Mmmmf! Mphhmhhh!	唔唔唔！唔唔唔唔！	うぐぐ！むぐぐぐ！	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	251899	Shh! Kyuushou, be quiet!	嘶——九霄你别乱动！	しーっ！九霄、大人しくしてて！	NONE
 
@@ -49,7 +49,7 @@ emote	121	0
 emote	304	0
 /Kyuushou	251900	Nnnngh!	唔唔唔唔唔！	んぐぐぐぐ！	NONE
 
-emote	201	2
+emote	201	3
 emote	304	0
 /Mei	251901	Kiana, maybe we should untie the rope after all...	琪亚娜，我觉得还是把九霄身上的绳索解开吧……	キアナちゃん、やっぱり縄は解いたほうがいいんじゃないかしら……。	NONE
 
@@ -82,7 +82,7 @@ emote	121	0
 emote	304	0
 /Kyuushou	251908	Talking to her! ——What's this, Kiana? Are you trying to get in the way? So you're trying to prevent me from finding my companions... I guess you were sent by the will of the world after all.	琪亚娜，你为什么要阻碍我和那个人的沟通？难道你是世界意志专程派来阻碍我寻找我的伙伴的吗？	あの子と話す！——なんだキアナ、邪魔をする気か？さては、私の仲間探しを妨害しようと……やはり世界の意思から使わされた者だったか。	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	251909	I don't have time to deal with your chuunibyou. Take a good look at what she's carrying.	没时间听你说傻话了，你自己好好看看人家背后背的是什么！	あんたの中二病に付き合ってる暇はないの。よく見てみなさいよ、あいつが背負ってるもの。	NONE
 
@@ -90,19 +90,19 @@ emote	201	0
 emote	304	0
 /Mei	251910	Is that... a sniper rifle? Kiana-chan, then...	那是……狙击枪？！琪亚娜，你是说……	あれは……狙撃銃！？キアナちゃん、それじゃあ……。	NONE
 
-emote	101	3
+emote	101	4
 emote	304	0
 /Kiana	251911	Looks like she's the one who shot me.	看来报仇的时候到了！	どうやら、私を撃った犯人はあいつのようね。	NONE
 
 match_names	Mei	Kiana	Kyuushou	Bronya
 portraits	201,false,-3	101,false,-3	121,false,-3	304,false,3
 speaker	Bronya
-emote	101	3
+emote	101	4
 emote	304	0
 msg	251912	Confirmation of recovery targets. "Subject X" Houraiji Kyuushou, "Subject A" Raiden Mei, and 1 Schicksal Valkyrie.	确认回收对象，“对象X”蓬莱寺九霄，“对象A”雷电芽衣，天命女武神一名。	回収対象確認。「対象X」蓬莱寺九霄、「対象A」雷電芽衣、天命のヴァルキリー1名。	NONE
 speaker	Mei
 nop	201	304
-emote	201	2
+emote	201	3
 emote	304	0
 msg	251913	Recovery?	回收？	回収？	NONE
 speaker	Kiana

@@ -66,20 +66,20 @@ speaker	???
 emote	101	0
 msg	251825	We'll talk about that another time. First, take care of your business. And... don't cause any more trouble.	这些你就先别管了，先办好你自己的事吧，别再多惹事端了。	その話はまた今度だ。まずは自分の仕事を片付けろ。それと……これ以上面倒事は起こすなよ。	NONE
 speaker	Kiana
-emote	101	2
+emote	101	3
 msg	251826	It's not my fault—!	那明明是——	別に私のせいじゃ——！	NONE
 speaker	???
-emote	101	2
+emote	101	3
 msg	251827	And one more thing, watch out for Anti-Entropy's—...... wolf—......	哦对了，还有一件事，你要小心逆熵……的……狼——	あとそれから一つ、ヤツには気をつけろ。ネゲントロピー……の……狼——	NONE
 msg	251828	Bzzzzt... bzzt...	滋啦滋啦……	ザザ……ザー……。	NONE
 speaker	Kiana
 emote	101	0
 msg	251829	Wh-wha—?! The battery's dead again! I wonder if this communicator is even okay...	喂！？喂喂？怎么又没信号了？这手机行不行啊……	ちょ、ちょっと！？また電池切れ！？この通信機大丈夫かしら……。	NONE
-emote	101	3
+emote	101	4
 msg	251830	So, Dad told me to be careful of... a wolf? Hmm, well, never mind. Whether it's a wolf or not, I, Lady Kiana, will KO them with one hit!	好像刚才老爹是让我小心什么狼来着……算了…管他来的是狼还是人，我琪亚娜都会把他一枪撂倒。	さっきパパ、何かに気をつけろって言ってたけど……狼？うーん、まぁいいわ。狼だろうとなんだろうと、このキアナ様が一発KOしてやるんだから！	NONE
 speaker	Mei
 nop	201
-emote	201	3
+emote	201	4
 msg	251831	Kiana-chan... who are you? You're not just a student, are you?	琪亚娜……你似乎并不像是一个普通的学生，你究竟是什么人？	キアナちゃん……あなた一体何者なの？ただの学生、じゃないわよね。	NONE
 speaker	Kiana
 nop	101
@@ -103,7 +103,7 @@ emote	101	0
 msg	251836	Really? Well then, let's go!	那我们出发咯~！	そう？じゃあ、しゅっぱーつ！	NONE
 speaker	Mei
 nop	201
-emote	201	3
+emote	201	4
 msg	251837	Wait, not yet...	等一下，不是还有……	待って、まだ……。	NONE
 speaker	Kyuushou
 nop	121

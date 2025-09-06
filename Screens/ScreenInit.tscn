@@ -54,6 +54,9 @@ func _input(event):
 		_on_Timer_timeout()
 
 func next_screen(_a,_b):
+	Globals.change_screen(get_tree(),\"ScreenSelectEra\")
+	return
+	
 	if Globals.installedPacks>0:
 		Globals.change_screen(get_tree(),\"ScreenSelectEra\")
 	elif (testInitScreen and OS.is_debug_build()) or Globals.playerHadSystemData==false:

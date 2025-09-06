@@ -291,9 +291,10 @@ text = "This is special popup textttttttttttttttsgsdg sg sfg sfgsfg sfg sfg fs s
 scroll_active = false
 
 [node name="CenterContainer" type="Control" parent="." groups=["UI_Elements"]]
+anchor_top = 1.0
 anchor_right = 1.0125
 anchor_bottom = 1.0
-margin_top = 460.0
+margin_top = -620.0
 margin_right = -24.0001
 margin_bottom = -53.0
 rect_min_size = Vector2( 876, 207 )

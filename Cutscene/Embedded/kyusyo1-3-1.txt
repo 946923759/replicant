@@ -17,8 +17,6 @@ choice	300462	How's Seele?	希儿现在怎么样？	ゼーレは今どんな感�
 condjmp_c	c2dest	2
 label	c1dest
 speaker	Bronya
-bg	009/002_1280x720
-portraits	60
 emote	60	2
 msg	300463	Seele was so overjoyed when talking about you that she accidentally let it slip. But as you know, those who disobey orders must be punished.	希儿谈到你的时候很兴奋哦，所以一不小心说漏嘴了，不过既然是抗命了那就要接受惩罚。	ゼーレはあなたのことになると興奮して、ついうっかり漏らしてしまったみたいです。ですが、命令に背いた以上は罰を受けなければなりません。	NONE
 msg	300464	Don't give me that look. Even though we lost a family member on this mission, you two did the right thing afterwards. Without you, the damage would have been much worse.	不要露出这种表情，这次任务中虽然损失了一位家人，但是你们的后续应对很正确，如果没有你的话损失或许会更大。	そんな顔をしないでください。今回の任務では家族を1人失ったとはいえ、あなたたちの後処理はとても正確でした。あなたがいなければ被害はもっと大きかったでしょう。	NONE
@@ -27,8 +25,6 @@ jmp	end_choices
 
 label	c2dest
 speaker	Bronya
-bg	009/002_1280x720
-portraits	60
 emote	60	2
 msg	300467	Seele?  She's the same. She wants me to tell you not to blame yourself. It's true that we lost a family member, but what you did afterwards was right and necessary.	希儿？她还是老样子，她让我转告你，不要太过自责。这次任务中虽然损失了一位家人，但是你们的后续应对很正确。	ゼーレですか？いつも通りです。自分を責め過ぎないようにと、あなたに伝えるように言われました。今回、家族を1人失ったとはいえ、あなたたちの後処理はとても正確でした。	NONE
 msg	300468	If it wasn't for you, we would have lost so much more. Seele told me to thank you.	如果没有你的话损失或许会更大，希儿也让我好好赞赏你一番。	あなたがいなければ被害はもっと大きかったでしょう。ゼーレも私にあなたのことを褒めるように言っていましたよ。	NONE
@@ -39,8 +35,6 @@ label	end_choices
 msg	300466	Let's go. We won't be able to make it if we don't hurry.	出发吧，如果不快点的话可是赶不上的。	出発しましょう。急がないと間に合わなくなります。	NONE
 
 speaker	Bronya
-bg	009/007_1280x720
-portraits	60
 emote	60	1
 msg	300472	Humans are at their weakest at night. All the internal fear starts crawling out in the darkness.	对于人类来说，最脆弱的时候就是黑夜，看不到光的时候会把内心的恐惧暴露出来，内心也会充满不安。	人間にとって、最も脆弱な時は闇夜です。光が見えないと内心の恐怖が露わになり、心に不安が満ち溢れてきます。	NONE
 msg	300473	That's why humans look forward to the dawn, which is nowhere to be found. Due to the Houkai explosion 5 years ago, the sky is covered with the deadly plague.	所以人类才向往着黎明的到来，但是现在连黎明也成了奢侈的妄想。五年前爆发的大崩坏所留下的伤痕，那道悬挂于天空的死斑已经遮挡了阳光。	だから、人間は黎明の到来を望むのです。しかし、今では黎明も華やかな妄想になってしまいました。5年前に起こった大崩壊の痕跡が、空にかかる死斑が太陽の光を遮っています。	NONE

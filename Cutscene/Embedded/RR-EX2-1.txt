@@ -1,0 +1,42 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/ex2
+music	re/3-08 - Plains of Eternity - Aggressive Mix
+speaker	Kiana
+portraits	101
+emote	101	0
+msg	251097	Phew... Finally, somewhere normal. If I had stayed there any longer, I would have suffocated.	唔！终于走到正常的地方了！再在那种地方待下去的话我大概会闷死在那的吧……	ふぅ～、やっと新鮮な空気が吸えるところに出た！あんなところにずっといたら、クサくて窒息死しちゃうよ……。	Ufa... Finalmente, alguém normal. Se eu tivesse que ficar lá por mais tempo, eu ficaria sufocada.”\n
+msg	251098	Where am I? It looks like a winding road.	这个地方，好像是个盘山公路？	ここどこだろう？妙に曲がりくねった道だけど。	Essa parece ser uma estrada sinuosa.
+emote	101	3
+msg	251099	Where have I ended up this time...?	我怎么会走到这儿来了……	まさか……迷子になっちゃったなんてことないよね……？	Onde acabei dessa vez…
+se	AVG_engine_speedup
+/	251100	[i]Durrrrrr—— Brrrrrrr!![/i]	突突突突突……	ドゥルルルッ——ブゥオォオオオォンッ！！	Vrooom~vrom vrom vrom vrom vrom~
+speaker	Kiana
+emote	101	0
+msg	251101	This... is it the motorcycle I heard before?	这……又是机车的声音？	……っ！バイクの音！？	Essa.. é a motocicleta que eu ouvi antes?
+msg	251102	It's getting closer!	越来越近了！	こっちに近づいて来てる！	Está chegando perto!
+se	AVG_engine_speedup
+/	251103	[i]Vrrrrrrroon—![/i]	嘟啦啦啦啦……	ブゥオオオォオン——ッ！	NONE
+speaker	Kiana
+emote	101	0
+msg	251104	That's the motorcycle?! And the person on it...	那辆机车？！还有上面的那个人……	来たっ！あのバイクに乗ってる人……まさか！	Essa é a motocicleta? A pessoa que está dirigindo-
+msg	251105	Hmph, there's a dead end up there. You're not getting away now!	哼，上面可是死路，这下你跑不了了！	へへっ！逃がさないんだから！	Hum, é um beco sem saída lá em cima, você não irá fugir!
+msg	251106	Hey, what's with this note? It wasn't here before...	咦，这里怎么有个纸条？明明刚才还没有的……	ん？これ何かしら……メモ？あのバイクが落としたのかな。	Ei, o que há com essa nota? Não estava aqui antes…
+msg	251107	This handwriting is really sloppy...	这字迹可真是潦草……	どれどれ……うわ、ヘッタクソな字ね……。	Essa caligrafia é bem desleixada.
+emote	101	3
+msg	251108	Hmm, does it say "Help me"?	救救我？	うーん、「助けて」って書いてあるのかな？	Me ajude?
+emote	101	0
+msg	251109	So the person on the motorcycle definitely isn't him... Kaslanas are never corrupted by the Honkai.	这么说那辆机车上的人不是他了……卡斯兰娜家的人可是不会感染上崩坏的。	それにさっきのバイクはあの人と関係なさそうね……カスラナ家の人間が崩壊に感染するわけないし。	Então a pessoa na motocicleta definitivamente não é ele... Kaslanas nunca são corrompidos pelo Honkai.
+msg	251110	Ah, but it's no time to be thinking about that guy. Right now I should be saving someone!	现在可不是说那个家伙的事的时候，现在得去救人了！	とりあえず、あの人のことは一旦置いておきましょう。今は、バイクの方が気になる！	Ah!? mas não é hora de ficar pensando sobre aquele cara. Agora mesmo eu deveria estar salvando alguém!
+msg	251111	Let me see... Around here... Ah, that's...	让我看看……这周围……啊，那个人是……	こっちの方に走ってったと思うんだけど……あっ！	Deixe-me ver... por aqui... Ah! isso é…
+emote	101	3
+msg	251112	...a girl? And that's the motorcycle?	一个女孩？周围还有一辆机车？	バイク発見っ！！それと……乗ってるのは女の子？	...uma garota? E essa é a motocicleta?
+emote	101	0
+msg	251113	So it really wasn't him. I had hoped to find at least a sign of him.	果然不是他啊，我还以为能够找到他的半点踪迹。	はぁ、あの人とはやっぱり関係なさそうだね。手掛かりくらいはあったら良かったんだけど。	Então realmente? Não era ele. Eu tinha esperança de encontrar ao menos um sinal dele.
+msg	251114	But, why isn't she moving? Hey, are you okay over there?!	不过，她怎么在那里不动了？喂！你还好么！	んー、この子、微動だにしないけど……ゾンビなのよね？ねぇ、大丈夫？	Mas, por que ela não está se movendo? Ei, você está bem?!
+se	AVG_engine_speedup
+/	251115	[i]Vrrrrrrrooooooo—![/i]	嘟啦啦啦啦……	ブロォロロロォオ——ッ！	NONE
+speaker	Kiana
+emote	101	0
+msg	251116	Damn... She doesn't give me the vibe that she's still human.	糟了……她的身上好像已经感受不到人类的气息了……	わっ、ビックリした！…………えーと、何かヤバめな雰囲気？	Droga... Ela não me passa a sensação de que ainda é humana.
+emote	101	3
+msg	251117	Oh? She's not driving towards me? Does she still have some consciousness left?	咦？她竟然没有向我这边开？莫非她还留有一点意识么？	——ッ！！って、あれ？こっちに向かってこない。もしかして、まだ人間の頃の意識が残ってるのかな？	Hã? Ela não está dirigindo em minha direção? Ela ainda tem alguma consciência sobrando?

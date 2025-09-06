@@ -23,7 +23,7 @@ msg	250080	There she is! Dammit! She's being surrounded by zombies!	在那里！
 se	AVG_Pistol
 /	250081	Click— Bang! Bang! Baaang!	砰！砰！砰！	カチャ！パァンパァン、パァン——ッ！	Bang! Bang! Bang!
 speaker	Kiana
-emote	101	3
+emote	101	4
 msg	250082	You dead bastards! Get the hell away from her!!	你们这些混蛋死士！从那个女孩身边滚开！！	変態ゾンビ！その子から、離れなさいッ！	Seus bastardos! Deixem essa garota em paz!!
 
 speaker	Mei
@@ -65,14 +65,14 @@ speaker	Mei
 msg	250091	Just a little longer... Father, just a little longer and Mei will become the one you always wanted her to be!	再等一会…父亲大人，再等一会芽衣就能变成父亲大人希望的样子了！	もう少し……あと少しでお父様の望む姿に！	Pai, só mais um pouco… e Mei pode finalmente se tornar o que você queria que ela fosse.
 
 speaker	Kiana
-emote	101	2
+emote	101	3
 msg	250092	What's going on with her? It's like she's a completely different person...	她从刚才开始到底怎么了，简直像是变了一个人……	どうしちゃったのよ。まるで、人が変わったみたいに饒舌になっちゃって。ちょっと、気味悪いわよ……。	O que está acontecendo com ela? É como se ela fosse uma pessoa completamente diferente.
 msg	250093	The zombies are being weird too... Even though they're so close, they aren't attacking her. Instead, they're slowing down to follow her...	而且周围死士的反应也有点奇怪……明明已经离她这么靠近了，这些死士居然没有任何攻击的意图，反而放慢了脚步跟在了她的身后……	それに何だかゾンビの様子もおかしいし……どうして、あんな近くにいるのに彼女を攻撃しないわけ？まるで、彼女に忠誠を誓う騎士みたいにくっついちゃってさ……。	E a maneira como os zumbis estão agindo... Eles estão tão perto, mas ao invés de atacá-la, eles diminuíram a velocidade e começaram a segui-la...
 
 speaker	Corrupted Mei
 portraits	101	3
 tween	3	addy,-200
-emote	101	2
+emote	101	3
 msg	250094	Ahhh~ What a joyous feeling. The whole world is revolving around me... No one will ever abandon me anymore, so all shall enjoy eternal happiness by my side!	啊啊~真是舒服的感觉，整个世界都在围绕着我……再也不会有人抛弃我了，大家都会在我的身边得到永恒的幸福！	あぁ——最高の気分だ。世界が私を中心に回っている……もう誰からも捨てられることなどない。皆が私の傍で、永劫の幸せを享受する！	Ahhh~ Que sentimento de alegria. Todos, o mundo inteiro, está comigo... Ninguém mais me abandonará, todos gozarão da felicidade eterna ao meu lado!
 msg	250095	Hehehe~ Raiden Mei, let me help you achieve your dreams~	呵呵呵~雷电芽衣，就让我来帮你实现愿望吧~	くくくっ、雷電芽衣の願い……この私が叶えてやろう。	Hahaha~ Raiden Mei, permita-me tornar seus desejos uma realidade.
 
@@ -103,7 +103,7 @@ msg	250107	There must be a way to stop her!	一定要想办法阻止她！	あ�
 /Zombies	250109	Grrr... Whooorrrrghh!!	吼吼吼！	グルル……ヴォォオオオオォオオッッ！！	NONE
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 msg	250110	Out of my way!!	给我闪开！	どけっ！！	Saiam do meu caminho!
 
 speaker	Corrupted Mei
@@ -122,13 +122,13 @@ msg	250114	The House Kaslana bloodline has absolute resistance to the Honkai! If
 speaker	Corrupted Mei
 msg	250115	Asshole! Let go! Don't touch me!	混蛋！放开我！不要碰我！	小賢しい虫め！離せ！触るなッ！！	Bastarda! Fique longe! Não me toque!
 
-emote	101	3
+emote	101	4
 /Kiana	250116	Ugh...! Wh-wha—? The Honkai energy... is entering me... *Cough*... IT HURTS!!	唔…！崩坏能的涌动直接冲击着身体……第一次体会到到这种能量的实感！好痛苦！！	うっ……くっ！な、何で？崩壊エネルギーが……私の中に、入ってくる……ゴホッ……くる……しい！	UUUrgh A energia Honkai... passando pelo meu corpo. Esta é a primeira vez que sinto isso - Dói!!
 /Mei's Voice	250117	Help me...	请救救我……	助けて……。	Ajuda... Por favor
 msg	250118	Father! Please... don't leave me behind!	父亲大人！请救救我……请不要离开芽衣。	お父様！お願いっ……芽衣を置いて行かないでください。	NONE
 
 speaker	Kiana
-emote	101	2
+emote	101	3
 msg	250119	This is... a fragment of consciousness transmitted through the Honkai energy...	这个是…从崩坏能中传递过来的意识碎片……	これって……崩壊エネルギーから溢れ出た、記憶の断片……？	Isto é... um pedaço da consciência passado através da energia Honkai?
 /Mei's Voice	250120	Father! Why did you abandon me...? Why does everyone hate me?! Why?! Why?! WHY?!!!	父亲大人！为什么要抛弃我…为什么大家都讨厌我！为什么！为什么！为什么！！！	お父様！どうして芽衣を見捨てるの……どうして、みんな私をあんな目で見るの？私は何も悪くないのに。どうして……ねぇ、どうしてッ！！！	Pai! Por que você me deixou?! Por que todos me odeiam?! Por que?! Por que?! Por que?!
 msg	250121	This world should just be destroyed!!!	这样的世界就让它毁灭掉算了！！！	こんな……こんな醜く汚れた世界……消えちゃえばいいのよ。そう、何もかも消えて……滅べばいいの！！	Este mundo pode ser amaldiçoado por tudo o que me importa!

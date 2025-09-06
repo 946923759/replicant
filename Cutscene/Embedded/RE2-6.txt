@@ -5,20 +5,20 @@ music	re/No Way to Live
 bg	re/ch2
 portraits	121	101	201
 
-emote	101	2
+emote	101	3
 /Kiana	251957	Oh, that's right, I remember now...	啊，我想起来了……	あ、そうだ思い出した……。	NONE
 
-emote	201	2
+emote	201	3
 /Mei	251958	Remember what?	你想到了什么吗？琪亚娜？	思い出したって、何を？	NONE
 
 speaker	Kiana
 nop	101
-emote	101	2
+emote	101	3
 msg	251959	Dad told me to watch out for a wolf... Could he be talking about that sniper girl from earlier?	刚才老爸让我们注意什么狼的，难道就是刚才那个小鬼狙击手！？	パパに狼に気をつけろって言われたんだけど……もしかして、さっきの狙撃手の子のことかな。	NONE
 msg	251960	I think I saw her when I was reading the documents about Anti-Entropy. I think her name was Bronya Zaychik and her nickname was "Silver Wolf of the Urals." She's infamous for being expert sniper.	我记得有一份逆熵的资料上有记载，她的全名好像是布洛妮娅·扎伊切克，号称“乌拉尔银狼”。是逆熵十分有名的狙击手。	ネゲントロピーに関する資料を読んだ時に見た気がするの。たしか名前はブローニャ・ザイチク、通り名は「ウラルの銀狼」だったかな？優秀な狙撃手として有名みたい。	NONE
 speaker	Mei
 nop	201
-emote	201	2
+emote	201	3
 msg	251961	"Silver Wolf of the Urals"...what a beautiful name.	“乌拉尔银狼”……好美的名字。	「ウラルの銀狼」……美しい名ね。	NONE
 speaker	Kyuushou
 nop	121
@@ -26,13 +26,13 @@ emote	121	0
 msg	251962	"Silver Wolf of the Urals"? What a lonely-sounding name.	“乌拉尔银狼”？真是一个孤独的名字，	「ウラルの銀狼」？寂しそうな名前。	NONE
 speaker	Kiana
 nop	101
-emote	101	2
+emote	101	3
 msg	251963	Although her name is stained with blood, it seems she was a mercenary before. She's an expert sniper... and just like Dad said, she seems like a formidable opponent.	但是这个名字却是用鲜血写下来的，那个孩子以前就是雇佣兵，并且精通狙击……看来老爹说的没错，果然是个狠角色呢……	血塗られた名だけどね、あの子以前は傭兵だったらしいの。狙撃の名手で……パパの言う通り厄介な敵みたい。	NONE
 emote	101	0
 msg	251964	Oh well, it's okay. We'll be across the bridge soon. Then we should arrive at Changkong City.	嘛~不过没关系，前方就是桥尾，马上就要到长空市了！	まぁ、でも大丈夫。もうすぐ橋も渡りきるわ。長空市に着くはずよ。	NONE
 speaker	Mei
 nop	201
-emote	201	2
+emote	201	3
 msg	251965	I hope we can get out safely...	如果能够平安出去就好了……	無事に出られればいいけど……。	NONE
 speaker	Kyuushou
 nop	121
@@ -40,7 +40,7 @@ emote	121	0
 msg	251966	Don't worry, Senpai! As long as I, your Savior who is of the godly race, am with you, you will definitely be able to escape with my protection!	放心吧，学姐！你们还有我这样的神眷之人，在救世主的庇护下，我们会很顺利的逃脱的！	心配するな、先輩！我という救世主かつ神族が一緒にいる限り、その庇護の力で必ず脱出できる！	NONE
 speaker	Mei
 nop	201
-emote	201	1
+emote	201	2
 msg	251967	Hehe, I guess I should be grateful then. I have a feeling we might be able to escape after all.	是吗？那可就多谢你了呢~我也觉得这一次我们一定能顺利逃脱的。	ふふっ、じゃあ感謝しないとね。私もうまく脱出できそうな気がしてきたわ。	NONE
 speaker	Kiana
 nop	101

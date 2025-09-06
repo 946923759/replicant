@@ -1,9 +1,9 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://Screens/RebornRemake/RE-ScreenTitleMenu/ItemScrollerV2.gd" type="Script" id=1]
+[ext_resource path="res://Screens/ScreenSelectEra/ItemScrollerV2.gd" type="Script" id=1]
 [ext_resource path="res://Screens/ScreenWithMenuElements.tscn" type="PackedScene" id=2]
 [ext_resource path="res://stepmania-compat/Sound.gd" type="Script" id=3]
-[ext_resource path="res://Screens/ScreenSelectEra/ScrollObj.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Screens/ScreenSelectEra/ScrollItem.tscn" type="PackedScene" id=4]
 [ext_resource path="res://MenuSounds/_change.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Screens/ScreenSelectEra/EraRetro.jpg" type="Texture" id=6]
 [ext_resource path="res://Screens/ScreenSelectEra/frame.png" type="Texture" id=7]
@@ -62,12 +62,14 @@ item_position = 0
 
 [node name="Tween" type="Tween" parent="ActorScroller" index="0"]
 
-[node name="Retro" parent="ActorScroller" index="1" instance=ExtResource( 4 )]
+[node name="Retrospective" parent="ActorScroller" index="1" instance=ExtResource( 4 )]
 text = "Retrospective"
+downloadable = true
 destinationScreenOrSubmenu = "RR-ScreenSelectChapterSimple"
 
 [node name="Reborn" parent="ActorScroller" index="2" instance=ExtResource( 4 )]
 text = "Reborn"
+downloadable = true
 destinationScreenOrSubmenu = "RE-ScreenSelectChapterSimple"
 
 [node name="Fire Moth" parent="ActorScroller" index="3" instance=ExtResource( 4 )]
@@ -143,7 +145,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 19 )
-text = "Ver. 20250212"
+text = "Ver. 20250905"
 align = 2
 valign = 1
 

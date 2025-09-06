@@ -90,11 +90,6 @@ var OPTIONS = {
 	#	"default":false
 	#}
 }
-var gameResolution:Vector2
-var SCREEN_CENTER:Vector2
-var SCREEN_CENTER_X:int
-var SCREEN_CENTER_Y:int
-
 
 # This is no different than a bitwise enum,
 # you can do RE_RR_MODE_AVAILABLE & RETRO_AVAILABLE to check status
@@ -183,6 +178,7 @@ var nextCutscene:String="kyusyo0-1-1.txt"
 #will display the current chapter and description.
 var currentEpisodeData:Episode
 # Is there anywhere better to put this?
+# Yes, the env vars...
 var wasUsingAutoMode:bool=false
 
 #####################################
@@ -203,6 +199,41 @@ var playerData={
 	'state':false,
 	"vars":{}
 }
+
+#TODO: Remove this
+var gameResolution:Vector2
+var SCREEN_CENTER:Vector2
+var SCREEN_CENTER_X:int
+var SCREEN_CENTER_Y:int
+
+var env_vars:Dictionary = {}
+
+######
+# FUNCTIONS
+######
+
+func setenv(k:String,v):
+	if v==null:
+		env_vars.erase(k)
+	else:
+		env_vars[k] = v
+
+func getenv(k:String, default_if_not_exist=null):
+	if k in env_vars:
+		return env_vars[k]
+	return default_if_not_exist
+	
+func has_env(k:String):
+	return k in env_vars
+	
+func dump_env():
+	for k in env_vars:
+		print(k, ": ",env_vars[k])
+	
+func reset():
+	env_vars = {}
+	var initScreen = ProjectSettings.get_setting("application/run/main_scene")
+	get_tree().change_scene_to_file(initScreen)
 
 static func get_episode_index(chDB:Dictionary, curEpisode:Episode)->PoolIntArray:
 	var chapter_idx:int = -1
@@ -425,20 +456,32 @@ static func load_database(path:String)->Dictionary:
 		else:
 			printerr("invalid start "+tmp_startChapter+" defined in ch_db "+path)
 	return tmp_database
-	
-func _ready():
-	
+
+func load_dlc():
+	if !OS.has_feature("standalone"):
+		print("[DLC] Ignoring DLC check, this appears to be the godot editor.")
+		return
+
+	print('[DLC] Checking if DLC is installed...')
 	#TODO: Android does not support DLC. Make an all in one apk? Try .obb support?
 	#false = Do not overwrite base pck data with files of the same name in additional pck
-	var success = ProjectSettings.load_resource_pack("res://Reborn.pck",false)
+	var success = (
+		ProjectSettings.load_resource_pack("res://Reborn.pck",false) or 
+		ProjectSettings.load_resource_pack("user://Reborn.pck",false)
+	)
 	if success:
 		Globals.installedPacks |= Globals.DLC_PACK.REBORN_REMAKE
 		print("[DLC] Loaded Reborn.pck!")
-	if ProjectSettings.load_resource_pack("res://Retrospective.pck",false):
+	if (
+		ProjectSettings.load_resource_pack("res://Retrospective.pck",false) or
+		ProjectSettings.load_resource_pack("user://Retrospective.pck",false)
+	):
 		Globals.installedPacks |= Globals.DLC_PACK.RETRO_REMAKE
 		print("[DLC] Loaded Retrospective.pck!")
-		
 
+func _ready():
+	
+	load_dlc()
 	
 	gameResolution = get_viewport().get_visible_rect().size
 	
@@ -712,6 +755,7 @@ var SCREENS:Dictionary = {
 	"ScreenProgrammerCredits":"res://Screens/ProgrammerCreditsV3.tscn",
 
 	"ScreenSelectEra":"res://Screens/ScreenSelectEra/ScreenSelectEra.tscn",
+	"OverlayDownloadPck":"res://Screens/ScreenSelectEra/OverlayDownloadPck.tscn",
 
 	"RR-ScreenTitleMenu":"res://Screens/RetroRemake/RR-ScreenTitleMenu/RR-ScreenTitleMenu.tscn",
 	"RR-ScreenSelectChapter":"res://Screens/RetroRemake/RR-ScreenSelectChapter.tscn",

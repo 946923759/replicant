@@ -1,0 +1,24 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/ex1
+music	re/3-08 - Plains of Eternity - Aggressive Mix
+speaker	Kiana
+portraits	101
+emote	101	3
+msg	251087	This person... should be the owner of the flipped bike from earlier, right?	这个人……应该就是刚才的那辆机车的主人了吧？	この人……さっきの横転したバイクに乗ってた人かな？	Esta pessoa... deveria ser a dona da bicicleta de antes, certo?
+emote	101	0
+msg	251088	What a terrible injury... Their face is so distorted, they must be in a lot of pain. Even after turning into a zombie, they still have the ability to feel pain...	伤的还真是重……就算变成死士之前也在承受着这种痛苦么？	ひどい怪我……こんなに顔を歪めて、きっと苦しいのね。ゾンビになっても痛覚は残ってるんだ……。	Você está muito ferido... Você ainda está sofrendo essa dor, mesmo depois de se tornar um zumbi?
+msg	251089	You don't have to bear it anymore. Rest in peace!	不过你已经可以不用再承受了，安息吧！	辛いよね。でも、いま楽にしてあげるから、安心して。	Você não precisa mais suportar isso, descanse em paz!
+se	AVG_Pistol
+/	251090	[i]BANG![/i]	砰！	——パァンッ！	NONE
+speaker	Kiana
+emote	101	0
+msg	251091	Once, you were a living, breathing human too. But you no longer are...	虽然你们曾经都是活生生的人，但是现在你们已经不是了……	ここにいるゾンビ全員、元は人間なんだよね。自分の身体が化け物になっちゃうなんて……悔しいよね、怖いよね。	Uma vez, você também foi um humano. Mas você não é mais...
+emote	101	4
+msg	251092	You weak-willed fellows succumb to the end so easily.	你们这些意志软弱的家伙，如此轻易地就向末日屈服。	世界の終焉に屈服するしかないなんて残酷すぎる。	Você é fraco. Você sucumbiu até o fim com demasiada facilidade.
+msg	251093	But I, Kiana Kaslana, will never bow down to the Honkai!	但是我，琪亚娜·卡斯兰娜肯定不会向崩坏屈服的！	私は……このキアナ・カスラナは、絶対に崩壊に負けるもんですか！	Mas eu, Kiana Kaslana, nunca me curvarei diante do Honkai!
+se	AVG_engine_speedup
+/	251094	[i]Vroooom! Brrrrrrrrrr!![/i]	嘟啦啦啦啦……	ブォン——ッ！ブロォロオオォオッ！！	NONE
+speaker	Kiana
+emote	101	0
+msg	251095	This sound! It's the same sound from before!	这个声音，是最开始听到的那个声音！	バイクの音！？今度こそ最初に聞いた方かな？	Este som! É o mesmo som de antes!
+msg	251096	You can hide as much as you like, I will find you!	你还真是会躲啊，我看你能躲到哪去！	こそこそと逃げ回ってくれちゃって！いつまでも逃げきれると思わないでよね！	Você pode se esconder tão bem quanto quiser, mas eu vou encontrá-lo!

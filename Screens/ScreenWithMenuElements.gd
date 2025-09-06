@@ -71,11 +71,11 @@ func _input(_event):
 				OffCommandNextScreen()
 
 func OverlayScreenExited():
-	#thisScreenIsCurrentlyHandlingInput=true
 	set_process_input(true)
 	print("[SCREENMAN] ["+name+"] The screen on top of this one exited, handling input again.")
+	
 
-func AddNewScreenOnTop(scr:String):
+func AddNewScreenOnTop(scr:String) -> Node:
 	var packedScene = load(Globals.SCREENS[scr])
 	var inst = packedScene.instance()
 	inst.ThisScreenIsAnOverlay=true
@@ -85,6 +85,7 @@ func AddNewScreenOnTop(scr:String):
 	set_process_input(false)
 	inst.connect("tree_exited",self,"OverlayScreenExited")
 	print("[SCREENMAN] ["+name+"] Pushed screen "+scr+" on top.")
+	return inst
 
 func OffCommandNextScreen(ns:String=NextScreen)->bool:
 	if ThisScreenIsAnOverlay:

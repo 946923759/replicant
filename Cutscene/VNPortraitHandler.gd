@@ -35,16 +35,19 @@ func set_cur_expression(e:String):
 	e = e.to_lower() #Enforce case-insensitive expressions
 	if !portrait_textures.has(e):
 		if e!="0":
-			printerr("Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(e)+"!! "+String(portrait_textures.keys()))
+			printerr("[VNPortrait] Portrait "+String(lastLoaded)+" doesn't have an expression at "+String(e)+"!! "+String(portrait_textures.keys()))
 	else:
 		cur_expression=e
 		update()
 
 func _draw():
 	if !portrait_textures.has(cur_expression):
+		#if OS.is_debug_build():
+		#	printerr("There is no emote named "+cur_expression)
 		return
 	elif portrait_textures.size()==0 or !is_instance_valid(portrait_textures[cur_expression]):
-		#print("No texture present at idx "+String(cur_expression)+".")
+		if OS.is_debug_build():
+			printerr("No texture in memory at idx "+String(cur_expression)+".")
 		return
 	if is_masked:
 		draw_texture(mask1,Vector2(-196,14))
@@ -130,7 +133,7 @@ func update_portrait_positions(SCREEN_WIDTH:float):
 #
 func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	#return false
-	print("curPortrait is "+lastLoaded)
+	print("[VNPortrait] curPortrait is "+lastLoaded)
 	if _offset==null:
 		offset=0
 	else:
@@ -143,7 +146,7 @@ func position_portrait(idx_:int,isMasked:bool,_offset:int,numPortraits_:int):
 	assert(numPortraits>0,"Attempting to position portraits when none are displayed")
 	
 	
-	print("idx: "+String(idx)+" numPortraits: "+String(numPortraits)+ " offset: "+String(_offset))
+	print("[VNPortrait] idx: "+String(idx)+" numPortraits: "+String(numPortraits)+ " offset: "+String(_offset))
 	if is_active:
 		#Trace(portraitPositions[numPortraits][idx])
 		#Trace(portraitPositions[numPortraits][idx]+self.offset)
@@ -256,8 +259,8 @@ func dim():
 
 func undim():
 	if !is_active:
-		print("Portrait was asked to highlight, but it's not active?")
-		print("idx: "+String(idx)+" offset: "+String(offset))
+		print("[VNPortrait] Portrait was asked to highlight, but it's not active?")
+		print("[VNPortrait] idx: "+String(idx)+" offset: "+String(offset))
 		return
 	tween.interpolate_property(self,
 		'modulate',
@@ -277,37 +280,73 @@ func apply_sm_tween(tweenString) -> float:
 
 func gestalt_set_textures(sprName:String):
 	if sprName.strip_edges().empty():
-		printerr("DO NOT PUT AN EMPTY SPACE IN PORTRAIT COMMANDS!!!!!!!!!!!")
+		printerr("[VNPortrait] DO NOT PUT AN EMPTY SPACE IN PORTRAIT COMMANDS!!!!!!!!!!!")
 		return false
-		
-	var matching = Globals.get_matching_files("res://Portraits/",sprName)
+	
+	var matching = []
+	var is_external_filesystem = false
+	if Globals.is_pc_filesystem():
+		matching = Globals.get_matching_files(OS.get_executable_path().get_base_dir()+"/GameData/Portraits/",sprName)
+		if matching:
+			is_external_filesystem = true
+
 	if not matching:
-		printerr("[PORTRAITMAN] No texture exists named "+sprName)
+		matching = Globals.get_matching_files("res://Portraits/",sprName)
+	if not matching:
+		printerr("[VNPortrait] No texture exists named "+sprName)
 		return false
 	
 	portrait_textures = Dictionary()
 	
 	var foundDefaultYet:bool=false
+	var f = File.new()
 	for path in matching:
 		if !path.to_lower().ends_with(".png"):
 			continue
-		var emotes = path.split(" ",1) 
+		var name_and_emote = path.rsplit("/",false,1)[-1].rsplit(" ",false,1)
+		var emote_name := '0'
+		var texture:Texture
 		
-		if emotes.size() >= 2: #Kyuushou normal.png, Kyuushou happy.png, etc
+		
+		if name_and_emote.size() >= 2: #Kyuushou normal.png, Kyuushou happy.png, etc
+			#print(name_and_emote)
 			#Index this portrait like ['normal'] = TEXTURE
-			portrait_textures[emotes[1].to_lower().trim_suffix(".png")] = load(path)
+			emote_name = name_and_emote[1].to_lower().trim_suffix(".png")
 		else: #Kyuushou.png
 			if foundDefaultYet:
-				printerr("[PORTRAITMAN] Found image "+path+" without an expression, but there was already another loaded...")
+				printerr("[VNPortrait] Found image "+path+" without an expression, but there was already another loaded...")
+				continue
 			else:
 				#Index in default slot '0'
-				portrait_textures['0']=load(path)
 				foundDefaultYet = true
+		
+		if is_external_filesystem:
+			print("[VNPortrait] Found external image file at "+path)
+			var image = Image.new()
+			f.open(path, File.READ)
+			var buffer = f.get_buffer(f.get_len())
+			match path.get_extension():
+				"png":
+					image.load_png_from_buffer(buffer)
+				"jpg":
+					image.load_jpg_from_buffer(buffer)
+
+			f.close()
+			image.lock()
+
+			texture=ImageTexture.new()
+			texture.create_from_image(image);
+		else:
+			texture = load(path)
+		
+		portrait_textures[emote_name] = texture
+		
 	#print(portrait_textures)
 	if len(portrait_textures)==0:
 		print(matching)
-		assert(len(portrait_textures)>0,"[PORTRAITMAN] Failed to find any default expression matching "+sprName+" despite finding matching files? Giving up!")
-
+		assert(len(portrait_textures)>0,"[VNPortrait] Failed to find any default expression matching "+sprName+" despite finding matching files? Giving up!")
+	elif OS.is_debug_build():
+		print("Loaded portraits! "+String(portrait_textures))
 
 func replicant_set_textures(toLoad:Dictionary):
 	portrait_textures = Dictionary()
@@ -324,7 +363,7 @@ func replicant_set_textures(toLoad:Dictionary):
 			var path = OS.get_executable_path().get_base_dir()+"/GameData/Portraits/"+sprName+".png"
 			#print("Checking path "+path)
 			if f.file_exists(path):
-				print("Found external image file at "+path)
+				print("[VNPortrait] Found external image file at "+path)
 				var image = Image.new()
 				f.open(path, File.READ)
 				var buffer = f.get_buffer(f.get_len())
@@ -341,9 +380,9 @@ func replicant_set_textures(toLoad:Dictionary):
 				portrait_textures[emoteName].create_from_image(image);
 				#print(portrait_textures[i])
 			else:
-				printerr("Portrait "+sprName+" not embedded in pck and no external file!! Tried path "+path)
+				printerr("[VNPortrait] Portrait "+sprName+" not embedded in pck and no external file!! Tried path "+path)
 		else:
-			printerr("Portrait "+sprName+" not embedded in pck and no external file!!")
+			printerr("[VNPortrait] Portrait "+sprName+" not embedded in pck and no external file!!")
 			
 	expressions_are_overlays = false
 	update()
@@ -354,7 +393,7 @@ func set_texture_wrapper(sprName):
 	if sprName in Globals.database:
 		var toLoad:Array = Globals.database[sprName]
 		if toLoad.size() >= 4 or toLoad.size() == 1:
-			print("Got textures to load... "+String(toLoad))
+			print("[VNPortrait] Got textures to load... "+String(toLoad))
 			var newDict = {
 				"0":toLoad[0]
 			}
@@ -365,7 +404,7 @@ func set_texture_wrapper(sprName):
 			replicant_set_textures(newDict)
 			expressions_are_overlays = false
 		else:
-			print("Got textures to load (overlay)... "+String(toLoad))
+			print("[VNPortrait] Got textures to load (overlay)... "+String(toLoad))
 			var newDict = {
 				"0":toLoad[0]
 			}
@@ -376,6 +415,6 @@ func set_texture_wrapper(sprName):
 			expressions_are_overlays = true
 			
 	else:
-		print(sprName+" not in portrait database! Falling back and searching the closest file...")
+		print("[VNPortrait] "+sprName+" not in portrait database! Falling back and searching the closest file...")
 		gestalt_set_textures(sprName)
 		expressions_are_overlays = false

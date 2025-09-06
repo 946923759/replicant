@@ -1,20 +1,20 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 speaker	Kiana
 portraits	101
-emote	101	2
+emote	101	3
 msg	251787	By the way, are you acquainted with Raiden Mei? You seem to know a lot about her, but... it doesn't seem like you have any connection.	话说你和那个雷电芽衣感觉好像认识呢，你们之间有什么交集么？	そういえば、九霄って雷電芽衣と知り合いなの？妙に詳しいけど……接点なんてなさそうよね。	NONE
 speaker	Houraiji Kyuushou
 portraits	101	122
-emote	101	2
+emote	101	3
 emote	122	0
 msg	251788	Raiden Mei is a singularity in this world... I realized that the first time I laid my eyes on her.	没错，她是这个世界的奇异点，从刚见到她的时候我就已经确信了。	雷電芽衣はこの世界の特異点……初めて彼女を見た時、我はそれに気がついたのだ。	NONE
 msg	251789	However, even when I tried to convey this to her, the laws of causality in the world did not allow it. Every time I approached her, an invisible wall blocked my words, and they never reached her.	但是与雷电芽衣的接触受到了世界因果律的阻挠，每次会面都会被不可视之墙强行隔断，就连我的话语都无法传递到她的身边。	しかし、我がそれを伝えようとしても世界の因果律がそれを許さなかった。彼女に会うたび、見えない壁に遮断され、我の言葉がついに届くことはなかったのだ。	NONE
 speaker	Kiana
-emote	101	2
+emote	101	3
 emote	122	0
 msg	251790	Uhh, right...	呃…这么玄乎？	えっと、そうなのね……。	NONE
 speaker	Houraiji Kyuushou
-emote	101	2
+emote	101	3
 emote	122	0
 msg	251791	You don't believe me? But this is the truth. I will follow the prophecy's guidance and rescue her from the darkness. If I don't, the world will be plunged into eternal darkness!	没错，但是我会遵从预言书的指引，将她从黑暗中解救出来的，不然世界会陷入无尽的黑暗之中。	信じてないな？だが、これは真実だ。我は預言書の導きに従い、彼女を闇から救い出す。そうしなければ、世界は無限の闇に包まれてしまう！	NONE
 speaker	Kiana

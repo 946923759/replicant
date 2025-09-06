@@ -299,7 +299,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/godot-next/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/file_downloader/plugin.cfg", "res://addons/godot-next/plugin.cfg" )
 
 [input]
 

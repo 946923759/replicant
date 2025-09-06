@@ -4,7 +4,7 @@ music	re/1-05 - Eternal War
 bg	CG10258
 match_names	Kiana	Kyuushou
 portraits	101
-emote	101	3
+emote	101	4
 /Kiana	251600	Damn it! I've already exceeded the time to complete the mission! I'm going to be scolded again... And where the hell did Kyuushou go?	可恶！已经超出预定脱离时间了，又要被骂了…九霄那个混蛋究竟跑哪里去了！	もうっ！任務遂行予定時間をオーバーしちゃったじゃない！また怒られる……。	Droga! Já passou da hora marcada para a partida, e vou levar uma bronca de novo... Para onde foi aquela maldita Kyuushou !
 msg	251601	The thunderclouds are getting closer and closer. That Kyuushou girl is always talking about miracles and all that crap, but I never imagined she would have gone towards the thunderclouds. ...Ah, there she is.	离雷暴云越来越近了，那个家伙总是说着神迹什么的鬼话，真一定是朝着这个方向……啊，找到了！	雷雲がどんどん近づいてきてる。九霄のやつ、自分の力だと思ってたし、まさか雷雲の方に行ったんじゃ。…………はぁ、やっぱりいた。	Estou  cada vez mais perto da nuvem da tempestade, aquela pessoa sempre falando em milagres e outras bobagens, deve estar indo nessa direção... Ah, achei!
 
@@ -14,13 +14,13 @@ portraits	101	121
 emote	121	0
 msg	251602	It must be around here...	应该就是在这附近了……	この辺りのはず……。	Deve ser por aqui...
 speaker	Kiana
-emote	101	3
+emote	101	4
 msg	251603	Kyuushou! I finally found you!	你这家伙！终于让我逮到你了！	九霄！やっと見つけたわよ！	Kyuushou! Eu finalmente te encontrei!
 speaker	Kyuushou
 emote	121	0
 msg	251604	Whoa! Ki-Kiana! Calm down! Don't point a gun at me, even as a joke!	呜哇！琪亚娜！你冷静点！不要用枪对着我啦！	うわっ！キ、キアナ！落ち着け！冗談でも銃口をこっちに向けるな！	Ei! Kiana, acalma-te! Não me apontes essa arma, mesmo que estejas a brincando!
 speaker	Kiana
-emote	101	3
+emote	101	4
 msg	251605	If you run away from me one more time, I'm going to break your legs!	你要是再乱跑我就把你的腿也打断！	もし、また勝手な行動をしたら、本当に動けなくなるまで殴るからね！	Se você correr de novo, vou quebrar suas pernas também!
 speaker	Kyuushou
 emote	121	0
@@ -50,13 +50,13 @@ speaker	Kyuushou
 emote	121	0
 msg	251613	Ah! There!	啊！在那里！	あっ！あそこ！	Ah! Aí está!
 speaker	Kiana
-emote	101	2
+emote	101	3
 msg	251614	That girl... She's not a zombie?	那个人……不是死士？	あの人……ゾンビじゃない？	Esse cara ...... não é um zumbi?
 speaker	Kyuushou
 emote	121	0
 msg	251615	It's definitely her! Hmm? Something's wrong with her...	果然是她！但是她的状态好像有些奇怪……	やはり彼女だ！ん？何か様子がおかしいな……。	É ela! Mas sua condição parece um pouco estranha...
 speaker	Kiana
-emote	101	2
+emote	101	3
 msg	251616	Who is she? Do you know her, Kyuushou?	这个人是谁？九霄你认识么？	誰？九霄の知り合い？	NONE
 speaker	Kyuushou
 emote	121	0
@@ -94,7 +94,7 @@ tween	214	stoptweening
 tween	foreground	linear,0;visible,true;linear,.2;diffuse,1,1,1,0
 /Mei	251626	I would kill them!	就让我来杀掉他！	私が殺してあげます！	NONE
 
-emote	101	3
+emote	101	4
 emote	214	0
 portraits	121,false,-1	101,false,-1	214
 match_names	Kyuushou	Kiana	Mei?
@@ -104,7 +104,7 @@ shake_camera	3.0	10.0
 emote	214	0
 /Kiana	251629	The power to manipulate Honkai Energy... You're a Herrscher!	这种操控崩坏能的力量……你是律者！	崩壊エネルギーを操る力……あなた、律者ね！	NONE
 
-emote	101	3
+emote	101	4
 emote	214	0
 /Mei?	251630	It seems that you are not just some ordinary mortals. But it doesn't matter who you are. I will destroy everything in this world!	看来你们也不是一般人呢，但是不管你们是谁，这个世界都将毁灭在我的手中！	どうやら、お前達もただの一般人ではないようね。でも、何者でも関係ない。私はこの世の全てを滅ぼすのだから！	NONE
 msg	251631	No one can stop me now!	而你们无法阻止！	もう誰も私を止めることはできない！	NONE
@@ -122,7 +122,7 @@ speaker	Kyuushou
 msg	251635	There is no need to worry. I am the blessed one chosen by God! You should worry about yourself.	不用担心~我可是被神所眷顾的人，你还是担心你自己的吧~	心配無用だ。我は神に選ばれた恵まれし者だからな！	NONE
 
 speaker	Kiana
-emote	101	1
+emote	101	2
 msg	251636	In that case, maybe I shouldn't have pushed you out of the way. It would have been nice if you'd been struck by lightning...	看来我刚才就不该把你推开，让你被雷劈一下多好……	なら、放っておいても大丈夫だったのね。いっそ雷にでも打たれてたら面白かったのに……。	NONE
 emote	101	0
 msg	251637	Let's go now. There's no point in lingering here. We have to escape before we run into that Herrscher again.	走了走了，这里已经不适合多呆了……竟然好巧不巧撞到律者，真是倒霉透了。	もう行くわよ。ここに長居する理由もないわ。律者にまた遭遇する前に脱出しましょ。	NONE

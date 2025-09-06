@@ -13,22 +13,22 @@ emote	122	0
 msg	251580	Kiana, to think you could defeat so many monsters all by yourself... You truly are a messenger of justice.	琪亚娜，没想到你能一个人打败这么多怪物，我相信你是正义的使者了。	キアナ、たった一人でこの数の化け物を倒すとは……。お主、正真正銘の正義の使者であったか。	Kiana, como você poderia derrotar esse número de monstros sozinha? ...... Você foi um verdadeiro enviado da justiça, não foi?
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251581	Shut up…	你给我闭嘴……	君はもう黙ってて……。	Cale-se ......
 
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251582	Okay, okay. But what happened earlier was just an accident. It's just been so long since I released the power that resides within me that I just accidentally failed——	好啦~好啦~刚才只是意外而已，沉眠于体内的力量已经很久没有使用了，偶尔失败也是正常的啦~	分かった、分かった。ただ、さっきのはただの事故。この身に宿りし力を解放するのが久しぶりすぎて、たまたま失敗しただけ——	Ok ~ ok ~ Foi apenas um acidente agora, o poder adormecido no corpo não é usado há muito tempo e é normal falhar ocasionalmente ~
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251583	That's enough! Any more of your ridiculous nonsense and I'm going to fix that mouth of yours with my fists!	你要是再说一句话我就把你的嘴打烂！	いい加減にして！また変なことを口走ったら、本気で君を殴るわよ！	vamos! Se você disser algo estranho de novo, eu vou bater em você!
 
 speaker	Kyuushou
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251584	O-okay. G-got it...	知…知道了……	ふ、ふぇ。わ、分かったよぉ……。	Sabe...Entendi...
 
@@ -43,7 +43,7 @@ emote	101	0
 emote	122	0
 msg	251587	O dormant power of condemnation! Manifest in my true name! Reveal thy power!	沉眠的断罪之力！在以吾之名重生！显现汝之神迹吧！	眠りし断罪の力よ！我が真名の元に顕現せよ！汝の力を示せ！	NONE
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251588	Did you hear me?! Listen to me!!	你到底有没有在听啊喂！！！	もう懲りないわね！ちゃんと話を聞いて！！	Você não vai aprender esta lição novamente! Ouça-me!
 emote	122	0
@@ -72,7 +72,7 @@ portraits	101
 /	251595	Pip pip pip~	嗡嗡嗡……	ピピピ……。	NONE
 
 speaker	Kiana
-emote	101	3
+emote	101	4
 emote	122	0
 msg	251596	This is... a Honkai energy reaction!	这是……崩坏能反应！	これは……崩壊エネルギー反応！	Isso é... uma manifestação da energia  Honkai!
 msg	251597	To think that such a strong reaction would occur... Could it be a reality distortion field?!	而且这种高强度的反应…难道是现实扭曲力场！？	こんなに強い反応が現れるなんて……まさか現実歪曲フィールド！？	Esta reação de alta intensidade... poderia ser um campo de força que distorce a realidade! ?

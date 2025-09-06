@@ -26,7 +26,7 @@ emote	101	0
 msg	251873	Thank you, Mei-senpai, for taking care of this kid. But... even though she's tied up, she doesn't stay quiet at all.	芽衣学姐才是，照顾这个家伙辛苦了吧~虽然被绑起来了，看起来也一点都没有消停呢。	芽衣先輩こそ、この子の面倒を見てくれてありがとう。それにしても……縛られてるっていうのに全然大人しくならないわね。	NONE
 speaker	Mei
 nop	201
-emote	201	1
+emote	201	2
 msg	251874	T-that's right... Anyway, I'm glad you're safe, Kiana-chan. ...By the way, it seems like you've been on your guard against Anti-Entropy for a while now, are you enemies?	啊哈哈，没有啦…你没事就好……话说回来，琪亚娜，你似乎一直在防备着那些逆熵的人，你们是敌对关系吧？	そ、そうね……。とりあえず、キアナちゃんが無事で良かったわ。……ところで、ずっとネゲントロピーのことを警戒しているようだけど、敵同士なの？	NONE
 speaker	Kiana
 nop	101
@@ -37,7 +37,7 @@ msg	251877	In recent years, the anti-Honkai activities of Schicksal have been di
 msg	251878	However, the inner workings of that organization are mostly shrouded in mystery. According to information, it seems that the organization has a deep connection with Anti-Entropy. Incidentally, that organization is also related to you, Mei-senpai.	这个组织藏得很深，但我们还是掌握了一些信息，逆熵和一个势力有着莫切的联系，而这个势力跟芽衣学姐还有些关系呢。	ただ、その組織の内情はほぼ謎に包まれているの。情報によると、その組織とネゲントロピーには深い関係があるみたい。ちなみに、その組織というのは芽衣先輩とも関係があるのよ。	NONE
 speaker	Mei
 nop	201
-emote	201	2
+emote	201	3
 msg	251879	Something to do with me... maybe my father?!	跟我有关，难道是父亲！？	私と関係があるって、もしかしてお父様！？	NONE
 speaker	Kiana
 nop	101
@@ -45,7 +45,7 @@ emote	101	0
 msg	251880	The president of ME Corp., Raiden Ryoma. Numerous sources confirm that he's an Anti-Entropy Executor.	没错。雷电龙马，ME社的社长，有多条情报证明他是逆熵的高层之一。	そうME社の社長、雷電龍馬。数多くの情報が彼をネゲントロピーの幹部だと裏付けているわ。	NONE
 speaker	Mei
 nop	201
-emote	201	2
+emote	201	3
 msg	251881	I see... I also sometimes felt that Father's work was strange... But he never told me anything about it.	居然会是这样…我也察觉到一些父亲工作的异样，但是父亲从来不告诉我关于他的事情。	そうだったの……私もお父様の仕事を異様に感じることはあったの……。でも、お父様は何も教えてくれなくて。	NONE
 speaker	Kiana
 nop	101
@@ -53,7 +53,7 @@ emote	101	0
 msg	251882	According to Kyuushou, Mr. Raiden was suddenly arrested by the police a month ago. The key clues are in the prison cell... There are still many mysteries surrounding this.	不过听九霄说就在一个月前雷电龙马居然被警方逮捕了，看来这其中还有很多谜团呢，倒是我们又断了一条线索……	九霄の話では、雷電氏は1ヶ月前に突然警察に捕まったそうよ。肝心な手がかりは牢獄の中……。まだまだ謎は多そうね。	NONE
 speaker	Mei
 nop	201
-emote	201	1
+emote	201	2
 msg	251883	Thank you, Kiana-chan. You've given me a lot of information.	谢谢你，琪亚娜，让我知道了这么多事情。	ありがとう、キアナちゃん。いろいろ教えてくれて。	NONE
 speaker	Kiana
 nop	101

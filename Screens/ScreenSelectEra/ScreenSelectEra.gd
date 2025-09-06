@@ -3,11 +3,11 @@ extends "res://Screens/ScreenWithMenuElements.gd"
 onready var scroller = $ActorScroller
 
 func _ready():
-	$ActorScroller/Retro.unlocked = Globals.installedPacks & Globals.DLC_PACK.RETRO_REMAKE
+	$ActorScroller/Retrospective.unlocked = Globals.installedPacks & Globals.DLC_PACK.RETRO_REMAKE
 	$ActorScroller/Reborn.unlocked = Globals.installedPacks & Globals.DLC_PACK.REBORN_REMAKE
 	#If running from the editor
 	if OS.is_debug_build() and !OS.has_feature("standalone"):
-		$ActorScroller/Retro.unlocked = true
+		$ActorScroller/Retrospective.unlocked = true
 		$ActorScroller/Reborn.unlocked = true
 
 	$Music.load_song("17 - Dearly Beloved ~reprise~")
@@ -40,3 +40,7 @@ func _process(delta):
 func _on_ActorScroller_input_accepted(selection,destName):
 	if destName!="":
 		OffCommandNextScreen(destName)
+
+func OverlayScreenExited():
+	OffCommandNextScreen(self.name)
+	#.OverlayScreenExited()

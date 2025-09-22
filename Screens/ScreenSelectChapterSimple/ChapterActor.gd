@@ -45,15 +45,41 @@ func input(event):
 		
 	if event.is_action_pressed("ui_up"):
 		#prints(name, "I have focus!")
-		move_selection(-1)
+		move_selection(-2)
 	elif event.is_action_pressed("ui_down"):
+		move_selection(2)
+	elif event.is_action_pressed("ui_right"):
 		move_selection(1)
+	elif event.is_action_pressed("ui_left"):
+		move_selection(-1)
+	elif event.is_action_pressed("ui_select"):
+		button_trigger(selection)
 
 func get_rect_size():
 	if is_expanded:
 		return Vector2(MAXIMUM_WIDTH, rect_size.y)
 	else:
 		return _rect_min_size
+
+func get_child_row_major(index: int) -> Node:
+	var total = scroller.get_child_count()
+	if total == 0:
+		return null
+	
+	var cols = scroller.columns
+	var rows = total / cols
+	
+	if index < 0 or index >= total:
+		push_error("Index %d out of range (0..%d)" % [index, total - 1])
+		return null
+	
+	# Convert row-major index -> column-major index
+	var row = index / cols
+	var col = index % cols
+	var translated_index = col * rows + row
+	
+	return scroller.get_child(translated_index)
+
 
 func set_chapter(chapter_name:String, chapter_data:Array):
 	chapter_episodes=chapter_data
@@ -67,6 +93,7 @@ func set_chapter(chapter_name:String, chapter_data:Array):
 	var num_episodes = len(chapter_data)
 	for i in range(scroller.get_child_count()):
 		var c = scroller.get_child(i)
+		#var c = get_child_row_major(i)
 		if i < num_episodes:
 			var ep:Globals.Episode = chapter_data[i]
 			c.visible = true
@@ -110,7 +137,8 @@ func GainFocus() -> Control:
 func GainFocusNoTween() -> Control:
 	var full_text = chapter_name+": "+chapter_full_name
 	$Label.text = full_text
-	$Label.visible_characters = -1
+	#Weird behavior... Setting this to -1 causes percent_visible to be 0
+	$Label.visible_characters = 1000
 	rect_min_size.x = MAXIMUM_WIDTH
 	is_expanded = true
 	if scroller:
@@ -121,28 +149,38 @@ func GainFocusNoTween() -> Control:
 	return self
 	
 func LoseFocus() -> Control:
+	
+	if is_expanded == false:
+		return self
+	is_expanded = false
 	#rect_size.x = rect_min_size.x
 	tw.remove_all()
 	tw.interpolate_property(self,"rect_min_size:x",null,_rect_min_size.x,.3,Tween.TRANS_QUAD,Tween.EASE_OUT)
-	tw.interpolate_callback($Label,.1,"set_text",chapter_name)
+	tw.interpolate_callback($Label,0.001,"set_text",chapter_name)
+	
 	if scroller:
 		for i in range(scroller.get_child_count()):
 			var c = scroller.get_child(i)
 			tw.interpolate_property(c,"modulate:a", null, 0.0, .3, Tween.TRANS_LINEAR, Tween.EASE_IN)
 		tw.interpolate_callback(scroller,.3,"set_visible",false)
 
-	#tw.interpolate_property($Label,"text",null,chapter_name, .3)
 	#tw.interpolate_property($TextureRect,"rect_position:x",null,collapsed_x_offset, .3)
 	tw.start()
-	is_expanded = false
 	return self
 
 func move_selection(dir:int=1):
-	while true:
+	var child_count = scroller.get_child_count()
+	var any_visible_children = false
+	for i in range(child_count):
+		if scroller.get_child(selection).visible:
+			any_visible_children = true
+			break
+	
+	while any_visible_children: #Don't execute this loop if no children
 		selection += dir
 		if selection < 0:
-			selection = scroller.get_child_count() - 1
-		elif selection >= scroller.get_child_count():
+			selection = child_count - 1
+		elif selection >= child_count:
 			selection = 0
 		if scroller.get_child(selection).visible:
 			break

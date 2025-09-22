@@ -161,6 +161,14 @@ static func cmd(tw:SceneTreeTween, objectToTween:Node, tweenString:String) -> fl
 				
 				tw.tween_property(objectToTween,rectPrefix+"scale:x",sc_x,tweenLength).set_delay(timeToDelay).from(lastKnownZoom.x)
 				lastKnownZoom.x=sc_x
+			"zoomy":
+				#print("ZOOMX: "+splitCmd[1]+", time "+String(timeToDelay))
+				var sc_y = float(splitCmd[1])
+				if "zoom_level" in objectToTween:
+					sc_y*=objectToTween.zoom_level
+				
+				tw.tween_property(objectToTween,rectPrefix+"scale:y",sc_y,tweenLength).set_delay(timeToDelay).from(lastKnownZoom.y)
+				lastKnownZoom.y=sc_y
 			"diffuse","modulate":
 				"""
 				Usage examples:

@@ -1,0 +1,41 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Mei
+portraits	101	201
+match_names	Kiana	Mei
+music	re/2-15 - Oracle Drive
+bg	rr/ex3
+
+/Mei	251166	K-Kiana-chan, didn't you say there would be less zombies here? Why are we being surrounded by them?!	琪亚娜，你不是说这个地方不会有死士出现的吗？为什么会变成这种情况？	キ、キアナちゃん、ここにはゾンビが少ないんじゃなかったの？何で私たち、ゾンビに囲まれてるのかしら！？	Kiana, você não disse que este lugar não deveria ter muitos zumbis? Então, por que estamos nesta situação agora?
+speaker	Kiana
+
+emote	101	3
+msg	251167	Maybe that person is attracting them...	如果我没有猜错的话，这些死士应该是被那个家伙吸引过来的。	たぶん、アイツがゾンビを引き寄せてるんだと思う……。	Acho que ela está atraindo os zumbis.
+speaker	Mei
+
+emote	201	0
+msg	251168	You mean... the girl with the tail?	那个家伙…你是说那个长着尾巴的“女孩”么？	アイツって……あの尻尾がある子のこと？	Ela... Você quer dizer a garota com as caudas?
+speaker	Kiana
+
+emote	101	0
+msg	251169	That's right! That girl had a Honkai Source reaction. A Honkai Source not only attracts Honkai Energy, but also attracts zombies. Moreover, it absorbs the attracted Honkai Energy, so it gets stronger as time goes by.	对！那个家伙身上有崩坏源反应，而崩坏源有着聚集崩坏能的特性，那些死士也是因为感应到了才会聚集过来。而时间越长，崩坏源吸收的崩坏能就会更多，变得更加强大。	そう！アイツには崩壊源反応が出てるからね。崩壊源は崩壊エネルギーを集めるだけじゃなく、ゾンビたちも一緒に集めちゃうんだよ。しかも、崩壊エネルギーをどんどん吸収するから、時間が経つほど力も強くなる。	Sim! Essa garota teve uma forte reação da Fonte Honkai, e a Fonte Honkai tem a propriedade de coletar Energia Honkai. Esses zumbis estão se aproximando porque eles sentiram isso. Quanto mais o tempo passa, mais energia Honkai a Fonte Honkai absorve e mais poderosa ela se torna.
+speaker	Mei
+
+emote	201	0
+msg	251170	The more time passes, the stronger it becomes, huh... So if we keep running away, wouldn't it just become an even bigger problem...?	那我们这样继续逃下去岂不是非常不妙？	時間が経つほど、強くなる……。じゃあ、このまま逃げ回ってたら、いずれ手に負えなくなるんじゃ……？	Quanto mais o tempo passa, mais forte ele se torna, hein... Então, se continuarmos fugindo, isso não se tornará um problema ainda maior...?
+speaker	Kiana
+
+emote	101	0
+msg	251171	Yep, that's right. It would have been great if we could just ignore it and escape the Academy City, but it seems like there's no turning back now... Let's settle this here and now before we lose all hope of winning!	之前我还想着先离开这所学园都市再做打算…不过既然我们又回到了这里，也就不能再对那个家伙坐视不管了！	うん、そういうこと。あんなの無視して学園から脱出できれば一番良かったんだけど、もう後には引けなそうだし……勝ち目がなくなる前に、ここらで決着をつけよう！	Eu queria deixar a Cidade Academia antes de pensar em fazer planos... Mas agora que estamos de volta aqui, acho que não podemos mais ignorá-la!
+msg	251172	However, I don't want to hurt anyone unnecessarily. Fighting is the last resort, let's resolve this through discussion! Besides, I'm also quite curious about what happened to her and that girl, and if we ask her, she might tell us something!	我们要主动出击，找对方谈谈才行！而且我也对那个家伙身上发生的事有点兴趣呢~	ただ、無闇に傷つけるってことだけはしたくないの。戦うのは最終手段、話し合いで何とか解決しましょ！それに、アイツに何があったのかは私も気になってたし、聞けば何か事情を話してくれるかも！	Eu só não quero machucar as pessoas sem saber. Lutar é o último recurso, vamos conversar e resolver isso! Além disso, tenho me perguntado o que aconteceu com ela, e se perguntarmos a ela, talvez ela nos diga o que está acontecendo!
+speaker	Mei
+
+emote	201	2
+msg	251173	Kiana-chan... You're just like a knight in shining armor!	琪亚娜现在就像一名骑士一样呢~	キアナちゃん……何だか頼れるナイト様みたい！	Kiana... Você é como um cavaleiro de armadura brilhante!
+speaker	Kiana
+
+emote	101	0
+msg	251174	Haha, of course I am! (...But the truth is, I just don't want to fight because we're running low on ammo...)	而且更重要的一点是——我们的弹药消耗已经超出预期了。恐怕无法支撑更久。	ふふ～ん、そうでしょ！……本音は、弾薬が少ないから戦いたくないってだけなんだけど……(ぼそっ)。	Claro que sou! Para ser honesto, eu só não quero lutar porque estou ficando sem munição...
+speaker	Mei
+
+emote	201	3
+msg	251175	Ahem... I take back my previous statement...	咳…我收回我之前的看法……	はぁ……前言撤回、ちょっとかっこ悪い。	Aff… retiro minha declaração anterior.

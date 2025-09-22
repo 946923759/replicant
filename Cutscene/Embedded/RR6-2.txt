@@ -1,0 +1,77 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/XIII-1 The Sunleth Waterscape
+match_names	Kiana	Mei
+bg	009/043_1280x720
+portraits	101	201
+speaker	Mei
+emote	201	3
+msg	250925	Come to think of it, Kiana, don't you think it's strange?	说起来，琪亚娜你不觉得很奇怪么？	ねぇ、キアナちゃん、おかしいと思わない？	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250926	What's wrong, Mei?	怎么了，芽衣学姐~	どうかした、芽衣先輩？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250927	Why is there a tram in operation and on the tracks when a Honkai Outbreak has obviously affected this area?	明明崩坏已经发生了，为什么铁轨上还会有运作中的列车呢？	崩壊が起こったっていうのに、どうして電車が動いているのかしら？	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250928	Well, maybe no one was driving so it got out of control?	唔~或许是没人驾驶所以失控了吧？	う～ん、壊れて誤作動をしてるとか？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250929	It would be fine if that was the case, but Kiana, have you noticed that every time we fight these battlemechs, there is always an operating tram going by nearby?	如果是这样的话也就算了，但是琪亚娜，你有没有发现，每次我们和这些机甲兵器交手的时候，总会有一辆运作中的列车在附近驶过。	もし、そうならいいけど……でも気づいてる？機甲兵器が襲ってくる時、いつも電車が近くを走っているの。	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250930	Ah... Mei-senpai, do you think that the mecha girls have something to do with the trams?	唔……芽衣学姐，你的意思是这些机甲娘和列车有关系么？	つまり……襲ってくる機甲と電車に何か関係があるってこと？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250931	Though I can't be completely certain, I think there must be some sort of connection there. For example, perhaps those battlemechs are protecting the tram?	虽然不能肯定，但是我觉得其中一定有什么关联，比如说这些机甲兵器是在保护列车？	確証はないけど、そんな気がするの。推測でしかないけど、あの機甲は電車を守ってるんじゃないかしら？	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250932	Protecting the tram.... But what's on there that's worth protecting....	保护列车么…但是有什么东西值得它们保护呢……	電車を守って……だとしたら、あの電車に何か積んであるのかな……？	NONE
+se	beep beep
+/	250933	Pip pip pip~	嗡嗡嗡~	ピピッ——ピピッ——	NONE
+speaker	Kiana
+emote	101	0
+msg	250934	Ah! My phone is buzzing again... Wait, a Honkai Source is approaching us at high speeds! How can it be so fast?!	唔！手机又响了…又是崩坏源反应高速接近中，哪有这么快的嘛！	崩壊エネルギーの検知？はぁ！？崩壊エネルギーが高速で近づいてきてる！どういうこと！？まさか、このスマホ壊れたんじゃないでしょうね！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250935	Kiana! Look, there's another tram coming this way!	琪亚娜！快看那边又有列车驶过来了！	キアナちゃん、見て！また電車が動いてる！	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250936	Mei-senpai, if your theory is correct, then mecha girls will appear here soon too! Let's hide and watch them first. We can speculate after~	如果按芽衣学姐的说法，那么这附近一定有机甲娘，我们先找个隐蔽的地方观察一下再说~	芽衣先輩の言う通りなら、この近くに機甲がいるはずだよね。隠れて様子を見てみよう！	NONE
+speaker	Mei
+
+
+msg	250937	Got it!	嗯！	ええ！	NONE
+se	Train
+/	250938	[i]kacha kachaka cha——[/i]	咔嚓咔嚓咔嚓——	ガタン、ゴトォン——ガタン、ゴトォン——	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250939	It drove past... but I didn't see any mecha girls follow~	驶过去了…倒是也没看见什么机甲娘跟着啦~	電車、行ったみたいだね……機甲の姿は、見当たらないかな。	NONE
+speaker	Mei
+
+emote	201	0
+msg	250940	Kiana, wait! Don't go out!	琪亚娜，等下！不要出去！	……っ！キアナちゃん、待って！！	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250941	Relax~ Relax~ It's already sa-	安啦~安啦~已经安……	え～？ほら、全然大丈——	NONE
+se	DLC_CH00_EV04_ExplosionClose
+shake_camera
+/	250942	[i]Boooom!!!![/i]	轰隆！！	——ドォオオンッ！！	NONE
+speaker	Kiana
+emote	101	0
+msg	250943	WOAH!?	呜哇！	きゃっ！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250944	I was right, they're coming after us again! Kiana! Let's go!	果然又跟上来了！琪亚娜！我们快走！	やっぱり機甲がいた！キアナちゃん、準備はいい？	NONE

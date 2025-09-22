@@ -537,6 +537,21 @@ func advance_text()->bool:
 				otherScreenIsHandlingInput = Overlay.WAITING_FOR_BROADCAST
 				set_process(false)
 				return true
+			'add_screen':
+				txtTw.kill()
+				if curMessage[1] in Globals.SCREENS:
+					var n:PackedScene = load(Globals.SCREENS[curMessage[1]])
+					otherScreenIsHandlingInput = Overlay.WAITING_FOR_BROADCAST
+					
+					var inst = n.instance()
+					add_child(inst)
+					print("[CutsceneMain] add new screen on top ",inst.name)
+					inst.ThisScreenIsAnOverlay = true
+					inst.connect("tree_exited",self,"end_await")
+					return true
+				else:
+					printerr("Screen ",curMessage[1]," not in Globals.SCREENS!!")
+				pass
 			'dim':
 				PORTRAITMAN.dim_idx(int(curMessage[1]))
 			'msg':
@@ -1493,11 +1508,7 @@ func _process(delta):
 func _unhandled_input(event):
 	#print("Unhandled")
 	
-	if otherScreenIsHandlingInput == Overlay.UI_HIDDEN and Input.is_action_just_pressed("vn_hide"):
-		toggleShowUI(true)
-		get_tree().set_input_as_handled()
-		return
-	elif Input.is_action_just_pressed("DebugButton2"):
+	if event.is_action_pressed("DebugButton2"):
 		if otherScreenIsHandlingInput == 0:
 			$CutsceneDebug.visible = true
 			otherScreenIsHandlingInput = Overlay.OPCODE_DEBUGGER
@@ -1508,23 +1519,30 @@ func _unhandled_input(event):
 		#print(otherScreenIsHandlingInput)
 		get_tree().set_input_as_handled()
 		return
+	elif event.is_action_pressed("vn_hide"):
+		#print("ui_hidden")
+		if otherScreenIsHandlingInput == Overlay.UI_HIDDEN:
+			toggleShowUI(true)
+		elif otherScreenIsHandlingInput == 0:
+			toggleShowUI(false)
 	elif otherScreenIsHandlingInput > 0:
 		return
 			
 	#if event is InputEventKey and event.is_pressed() and event.scancode == KEY_1:
-	if Input.is_action_just_pressed("ui_select"):
+	if event.is_action_pressed("ui_select"):
 		if automatically_advance_text:
 			toggleAutoMode(false)
 		else:
 			manualTriggerForward=true
 		get_tree().set_input_as_handled()
-	elif Input.is_action_just_pressed("vn_history"):
+	elif event.is_action_pressed("vn_history"):
 		toggleAutoMode(false)
 		if messageBoxMode!=MSGBOX_DISP_MODE.FULLSCREEN: #NO HISTORY IN FULL SCREEN IT BREAKS THE GAME!!!!!
 			print("Displaying history!!!")
 			tween_in_history()
-	elif Input.is_action_just_pressed("vn_hide"):
-		toggleShowUI(false)
+			
+	
+		#get_tree().set_input_as_handled()
 			#historyActor.set_history(textHistory)
 		#isHistoryBeingShown=!isHistoryBeingShown
 
@@ -1605,6 +1623,7 @@ func _on_dim_gui_input(event):
 		
 		if otherScreenIsHandlingInput == Overlay.UI_HIDDEN:
 			toggleShowUI(true)
+			return
 		elif otherScreenIsHandlingInput > 0:
 			return
 		

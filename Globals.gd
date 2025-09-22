@@ -766,7 +766,8 @@ var SCREENS:Dictionary = {
 	"RE-ScreenSelectChapter":"res://Screens/RebornRemake/RE-ScreenSelectChapter/RE-ScreenSelectChapterV2.tscn",
 	"RE-ScreenSelectChapterSimple":"res://Screens/RebornRemake/RE-ScreenSelectChapterSimple/RE-ScreenSelectChapterSimple.tscn",
 	"RE-CutsceneFromFile":"res://Cutscene/CutsceneFromFile-re.tscn",
-	"RE-ScreenProgrammerCredits":"res://Screens/RebornRemake/RE-ProgrammerCreditsV3.tscn"
+	"RE-ScreenProgrammerCredits":"res://Screens/RebornRemake/RE-ProgrammerCreditsV3.tscn",
+	"RE-OverlayPrologue":"res://Screens/RebornRemake/RE-ScreenOpening/RE-OverlayPrologue.tscn"
 }
 
 var previous_screen = ""

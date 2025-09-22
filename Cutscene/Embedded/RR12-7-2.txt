@@ -1,0 +1,69 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	The Sound of the End - Full
+preload_portraits	413	201	301	401	107
+bg	rr/chapter12-StFreyaDamaged
+
+speaker	Mei
+portraits	201	107
+/Mei	251457	Why... Kiana-chan, why did you do this...?	为什么……琪亚娜，为什么会变成这样……	どうして……キアナちゃん、どうしてこんなことに……。	NONE
+portraits
+bg	rr/CG10002
+msg	251458	Ms. Himeko... Principal Theresa... Seele... Bronya-chan...	姬子老师…德丽莎园长…希儿…布洛妮娅……	姫子先生……テレサ学園長……ゼーレ……ブローニャちゃん……。	NONE
+msg	251459	Why did you kill them all...?	为什么要杀死她们……	どうして、みんなを殺そうとするの……。	NONE
+
+bg	rr/CG10003
+/Mei	251460	KIANA!!!!	琪亚娜！！！！	キアナちゃん！！！！	NONE
+/The Herrscher of the End	251461	Anyone who gets in my way... will be killed.	阻拦我的人……杀掉！	邪魔する者は……殺す。	Aqueles que tentarem me impedir... Serão mortos!
+/Mei	251462	Kiana!! You said you wanted to protect this world, didn't you?!!!	琪亚娜！你不是要保护这个世界么！！！	キアナちゃん！この世界を守るんでしょ！！！	Kiana!! Você disse que queria proteger este mundo, não disse?!!!
+msg	251463	I'll stop you no matter what it takes!!!	我一定会阻止你的！！！	絶対、あなたを止めてみせるわ！！！	Vou te parar custe o que custar!!!
+/The Herrscher of the End	251464	It's useless... You cannot stop me.	没用的……你，无法，阻止。	無駄だ……阻止など、できない。	É inútil... Você não pode me impedir.
+msg	251465	I... obey the will. I will... destroy humanity...	我会，遵循，意志。毁灭…人类……	私は、意志に、従う。人類を……滅ぼす……。	Eu... Obedeço à vontade. Eu irei... Destruir a humanidade...
+
+nop	tween	foreground	visible,true;modulate,0,0,0,0;linear,.5;modulate,1,1,1,1
+stopmusic
+se	DLC_CH03_EV05_ThunderBig
+bg	white	fade
+nop	You figure that there would be a bbcode for setting the text outline right??? Apparently not!
+nop	set_outline	false
+vibrate	1
+/	251466	BOOOOOM...!!	轰！！！！	ドォゴォオオオン……ッ！！！	NONE
+/	......
+
+music	Faltering Prayer - Dawn Breeze
+bg	rr/CG10004	fade
+/Mei	251467	Cough...	咳……	ゴホ……ッ。	NONE
+/The Herrscher of the End	251468	The march of the end can no longer be stopped...	终焉的脚步已经无法停止……	終焉の歩みは、もはや止められない……。	O processo não pode mais ser interrompido...
+msg	251469	Death is the beginning of a new life. The souls of humanity will return to their origins, and the world will once again be at peace...	死是新生的开始，将人类的魂魄归于原初，世界将重回安宁……	死は新たな生命の始まり。人類の魂は原初に還り、世界はまた凪を迎える……。	A morte é o começo de uma nova vida. A alma da humanidade voltará ao princípio, e o mundo voltará à paz...
+msg	251470	As messengers of the same God, let us complete the ritual of the end together.	同为神使的我们，一起完成这最后的仪式吧。	同じ神の使者とし、共に終焉の儀式を遂げよう。	Vamos nos unir e completar a Cerimônia Final.
+/Mei	251471	Kiana... chan...	琪亚娜……	キアナ、ちゃん……。	Kiana...
+speaker	The Herrscher of the End
+msg	251472	...Why am I crying?	……为什么你要哭呢。	……どうして泣く？	...Porque voce esta chorando?
+msg	251473	Why... does my heart hurt so much...?	为什么……内心会如此悲伤呢……	なぜ……こんなにも心が痛む……。	Por que... Dói tanto...
+bg	rr/CG10005
+msg	251474	Mei...	芽衣……	芽衣——	Mei...
+msg	251475	I'm sorry....	对不起……	ごめん……。	Eu sinto Muito....
+msg	251476	At the very least, in the end... let's go home together.	至少在最后，让我们一起回去吧。	せめて、最後は……一緒に還りましょう。	Pelo menos no final... Vamos voltar juntos.
+msg	251477	Back to everyone...	回到大家的身边……	皆のもとへ……。	De volta a todos...
+msg	251478	Goodbye...	再见了。	さよなら……。	Adeus.
+
+msgbox_close
+set_fs	true
+bg	007/005_1280x720
+/	251479	The Final Eruption occurred and all life was reduced to nothing.	崩坏发生，生命迹象归零，	崩壊が発生し、全生命体は無に帰しました。	O Impacto Honkai ocorreu e todas as formas de vida foram reduzidas a nada.
+msg	251480	[Confirmation received. The condition has been met. Preparing the rebirth module——]	确认触发条件达成，开始模块重启……	触発条件の達成確認、モジュールの再起動開始——	[Confirmação recebida. A condição foi atendida. Preparando o módulo de renascimento——]
+/	251481	[DNA reading started ——Restart cycle setting completed]	基因写入开始，重启周期设定完毕	DNA読み込み開始——再起動の周期設定完了	[Leitura de DNA iniciada ——Configuração do ciclo de reinício concluída]
+/	251482	[Program execution countdown initiated]	秩序执行倒计时开始	プログラム実行カウントダウン開始	[Iniciada contagem regressiva da execução do programa].
+/	251483	[Program execution started ——Number of recording cycles: 2]	秩序执行开始,记录周期数：2	プログラム実行開始——記録周期数：2	[Execução do programa iniciada —— Número de ciclos de gravação: 2]
+bg	black	fade
+/	251484	If…	如果……	もし——	NONE
+/	251485	If there is a god in this world...	这个世界存在着神明的话。	この世界に神が存在するのなら……	NONE
+/	251486	Will they hear my prayers?	他能听到我的祈求么？	私の祈りを聞いてくれるだろうか？	NONE
+/	251487	If reincarnation really does exist...	如果真的存在名为轮回的宿命……	もし、本当に輪廻というものがあるのなら……	NONE
+/	251488	Please let me meet her again.	请让我和那个人再次相遇。	どうか、またあの人と巡り会えますように。	NONE
+set_fs	false
+nop	msgbox_close
+
+msgbox_open
+stopmusic
+bg	rr/CG10008
+/	251489	——See you in the next world．	——See you in the next world」	——See you in the next world．	NONE

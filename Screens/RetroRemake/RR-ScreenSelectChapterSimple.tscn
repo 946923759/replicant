@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Screens/ScreenSelectChapterSimple/ScreenSelectChapterSimple.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/4d928d11314c27abeb770c648602d839ebd7fde415acb78b30ff133a51ae81f5.jpg" type="Texture" id=2]
@@ -7,15 +7,22 @@
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/aaa38acb14f38b9a8cf1f92dcb0154aaaa642387a80983ed33bfccfbc2d66d3c.jpg" type="Texture" id=5]
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/ff54803075cbaf159fa615ac3617a8929a1a33425974d5f26d386b2ca4216f25.jpg" type="Texture" id=6]
 [ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10259.png" type="Texture" id=7]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/58e4927c3aabfdc83960be9e36c00f5a1df5a6bcaf200b2340060c642011cab1.jpg" type="Texture" id=8]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/dfe5b3c0c369349bede94fc027edcb3a76235a6b4e504f0e5ce6dba641f57cc2.jpg" type="Texture" id=9]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/52ce1de70144881f0f0f2ee72891bdcd81af412076ef07a4549ef5684d4ec50a.jpg" type="Texture" id=10]
+[ext_resource path="res://Screens/ScreenSelectChapterSimple/ChapterActor.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/here.webp" type="Texture" id=12]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/CG10003.png" type="Texture" id=13]
+[ext_resource path="res://Ext/RetroRemake/RequiredBG/043_1280x720.png" type="Texture" id=14]
 
 [node name="RR-ScreenSelectChapterSimple" instance=ExtResource( 1 )]
 NextScreen = "RR-CutsceneFromFile"
 
 [node name="MarginContainer" parent="ScrollContainer" index="0"]
-margin_right = 3970.0
+margin_right = 5020.0
 
 [node name="HBoxContainer" parent="ScrollContainer/MarginContainer" index="0"]
-margin_right = 3010.0
+margin_right = 4060.0
 
 [node name="Debug Chapter" parent="ScrollContainer/MarginContainer/HBoxContainer" index="0"]
 chapter_full_name = ""
@@ -51,32 +58,85 @@ chapter_background = ExtResource( 7 )
 chapter_name = "Chapter 4"
 chapter_full_name = "An Unscientific Railgun"
 chapter_description = "For the first time I've realized how wonderful the starry sky is."
-chapter_background = ExtResource( 5 )
+chapter_background = ExtResource( 8 )
 
 [node name="ChapterActor7" parent="ScrollContainer/MarginContainer/HBoxContainer" index="6"]
-visible = false
+chapter_name = "Chapter 5"
+chapter_full_name = "Curiosity killed the cat"
+chapter_background = ExtResource( 5 )
 
 [node name="ChapterActor8" parent="ScrollContainer/MarginContainer/HBoxContainer" index="7"]
-visible = false
-margin_left = 2100.0
-margin_right = 2400.0
+chapter_name = "Extra 2"
+chapter_full_name = "Byakko-san & Sakura"
+chapter_background = ExtResource( 9 )
 
 [node name="ChapterActor9" parent="ScrollContainer/MarginContainer/HBoxContainer" index="8"]
-visible = false
-margin_left = 2100.0
-margin_right = 2400.0
+chapter_name = "Chapter 6"
+chapter_full_name = "Untouchable Honkai Source "
+chapter_background = ExtResource( 14 )
 
 [node name="ChapterActor10" parent="ScrollContainer/MarginContainer/HBoxContainer" index="9"]
 visible = false
-margin_left = 2100.0
-margin_right = 2400.0
+chapter_name = "Chapter 7"
+chapter_full_name = "Top-secret Report"
+chapter_background = ExtResource( 10 )
 
 [node name="ChapterActor11" parent="ScrollContainer/MarginContainer/HBoxContainer" index="10"]
 visible = false
-margin_left = 2100.0
-margin_right = 2400.0
+margin_left = 3150.0
+margin_right = 3450.0
+chapter_name = "Chapter 8"
+chapter_full_name = "To Be or Not to Be"
 
 [node name="ChapterActor12" parent="ScrollContainer/MarginContainer/HBoxContainer" index="11"]
 visible = false
-margin_left = 2100.0
-margin_right = 2400.0
+margin_left = 3150.0
+margin_right = 3450.0
+chapter_name = "Extra 4"
+chapter_full_name = "HOMU Paradise"
+
+[node name="Chapter 9" parent="ScrollContainer/MarginContainer/HBoxContainer" index="12" instance=ExtResource( 11 )]
+visible = false
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_left = 3150.0
+margin_top = 0.0
+margin_right = 3450.0
+margin_bottom = 950.0
+chapter_name = "Chapter 9"
+chapter_full_name = "Rhinegold"
+
+[node name="Chapter 10" parent="ScrollContainer/MarginContainer/HBoxContainer" index="13" instance=ExtResource( 11 )]
+visible = false
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_left = 3150.0
+margin_top = 0.0
+margin_right = 3450.0
+margin_bottom = 950.0
+chapter_name = "Chapter 9"
+chapter_full_name = "Valkyrie Ride "
+
+[node name="Chapter 11" parent="ScrollContainer/MarginContainer/HBoxContainer" index="14" instance=ExtResource( 11 )]
+visible = false
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_left = 3150.0
+margin_top = 0.0
+margin_right = 3450.0
+margin_bottom = 950.0
+chapter_name = "Chapter 9"
+chapter_full_name = "Siegfried "
+chapter_background = ExtResource( 12 )
+
+[node name="Chapter 12" parent="ScrollContainer/MarginContainer/HBoxContainer" index="15" instance=ExtResource( 11 )]
+visible = false
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_left = 3150.0
+margin_top = 0.0
+margin_right = 3450.0
+margin_bottom = 950.0
+chapter_name = "Chapter 9"
+chapter_full_name = "Ragnarök"
+chapter_background = ExtResource( 13 )

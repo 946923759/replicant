@@ -1,0 +1,132 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/3-18 - Academia
+portraits	101,false,-2	201,false,-2	4,false,2
+match_names	Kiana	Mei	Byakko-san
+bg	rr/ex4
+
+speaker	Byakko-san
+
+emote	4	0
+msg	251273	You're finally here? I was getting tired of waiting.	你们终于来了？我已经在这等了你们很久了！	やっと来たか？待ちくたびれたぞ。	Vocês finalmente estão aqui? Há muito tempo que espero por vocês aqui!
+msg	251274	The ignorant human race foolishly rebels against heaven. The end is inevitable, so why do you resist? Wouldn't it be more beneficial to repent of the sins you have committed, rather than struggling with what little time you have left?	把你的崩坏源和你自己都一并交给我吧~愚昧的人类，不要再妄图做这种逆天的事情啦~这次的崩坏，就将是你们的终结，用这最后的时间忏悔你们所有的罪孽吧。	愚かにも天に逆らう無知な人類。終焉はもう避けられぬというのに、何故抗う。残された時間の中を足掻くより、己の犯した罪を悔い改めた方が有益だと思うが？	Submetam-se a energia honkai humanos tolos que tentam desafiar os céus.  Este surto de Honkai acabará com vocês. Use este tempo que resta para arrepender-se de seus pecados!
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251275	Mei-senpai, you ready?	芽衣学姐，你准备好了吗？	芽衣先輩、準備はいい？	Mei-senpai, você está pronta?
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251276	...Mm-hmm!	……嗯！	……ええ！	......Sim!
+msg	251277	Byakko-san! I don't know if you can hear me, but... there's something I need to say to you!	白狐小姐！虽然我不知道你能不能听见，但是我还是有些话想要对你说！	白狐さん！私の声が届くかどうか分からないけど……あなたに伝えたいことがあるの！	Senhorita Palefox! Embora eu não saiba se você pode me ouvir, ainda tenho algo que quero dizer a você!
+speaker	Byakko-san
+emote	201	0
+emote	4	0
+msg	251278	It's no use. I've taken full control of her. She can't hear anything anymore.	没用的，她的意识已经完全被我压制了，她是听不见你在说什么的！	無駄だ。あれの意識は完全に掌握した。もう何も聞こえはしない。	Não adianta, sua consciência foi completamente suprimida por mim, ela não consegue ouvir uma palavra do que você diz!
+speaker	Mei
+emote	201	0
+emote	4	0
+msg	251279	Byakko-san , no matter how this world ends, and no matter how that girl ended up, please never forget the feelings and dreams you harbored in your heart in the past!	白狐小姐，无论这个世界变成什么样了，无论那个陪伴你的人变成什么样了，请你一定不要忘记自己本来的执念！	白狐さん、この世界がどんな結末を迎えようとも、そしてあの女の子が無惨な姿に変わり果てようとも、あなたが過去に胸に抱いた気持ちや執念だけは忘れないでください！	Senhorita Palefox, não importa o que o mundo se tornou, não importa o que a pessoa que a acompanhou se tornou, por favor, certifique-se de não esquecer seu desejo original!
+speaker	Byakko-san
+emote	201	0
+emote	4	0
+msg	251280	Stop bothering me! I've told you it's pointless! I won't give up this body to anyone, so just accept this reality.	都说了没用的，不要再做这些无用功了！乖乖地当做我的宿体吧！	くどいっ！無駄だと言っているだろう！この身体は誰にも渡さん、大人しくこの現実を受け入れるがいい。	Eu disse que não adianta! Pare de fazer todo esse esforço inútil! Seja uma boa garotinha e torne-se minha hospedeira!
+speaker	Mei
+emote	201	0
+emote	4	0
+msg	251281	Is it really okay to leave that girl alone in that dark, cold, zombie-infested school?! I thought you were supposed to protect her!	在那个乱象横行的学园里，你真的愿意就这样让那个小女孩只身一人呆在那种冰冷的地方吗？！你不是想要去守护她吗！	あの女の子をあんな暗くて寒い、ゾンビの徘徊する学園に1人置いといていいの！？あなたが、あの子を守るんじゃなかったの！	Nesta academia caótica, você realmente quer deixar aquela garotinha sozinha em um lugar frio como esse? Você não queria protegê-la?
+speaker	Byakko-san
+emote	201	0
+emote	4	0
+msg	251282	Kuku, how could such childish words help—— Agh, damn... how stupid!	哈哈哈，这种幼稚的话……呃！	くくっ、そのような稚拙な言葉でどうにかな——あが、くっ……バカな！	Haha, palavras tão infantis- UGH!
+speaker	Mei
+emote	201	0
+emote	4	0
+msg	251283	Kiana-chan, now!	琪亚娜，就是现在！	キアナちゃん、今よっ！	Kiana! Agora é a hora certa!
+
+match_names	Mei	Kiana
+portraits	201,false,-2	101	4,false,2
+emote	101	0
+emote	4	0
+/Kiana	251284	I'm on it!	交给我吧！	任せて！	Deixe comigo!
+
+speaker	Byakko-san
+emote	101	0
+emote	4	0
+tn	0	"Collapse" here is a play on words of "Houkai".
+msg	251285	It's useless... This world is destined to collapse. You can't stop it... 	没用的……这个世界终将迎来崩坏，你们无法…阻止……	無駄だ……この世界は崩壊する運命。お前たちに止められはしない……。	É inútil... Este mundo acabará por desmoronar... e você não pode... pará-lo...
+
+tween	4	linear,.5;diffusealpha,0
+speaker	Kiana
+emote	101	4
+emote	4	0
+msg	251286	...Hmph, that's not up to you to decide!	……哼，能不能阻止可不是你能够说了算的！	……ふんっ、それはあんたが決めることじゃないわよ！	Isso não cabe a você decidir!
+
+portraits	201	101
+speaker	Byakko-san
+emote	101	4
+emote	4	0
+msg	251287	......	……	……。	NONE
+speaker	Mei
+
+emote	201	3
+emote	4	0
+msg	251288	Looks like she's back to normal.	她好像…变回白狐的形态了。	元の姿に戻ったみたいね。	Ela parece estar... de volta à forma de uma raposa branca agora.
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251289	Yep, she was freed from the control of the Honkai, so she can no longer maintain her human form.	因为她现在已经不再受崩坏能的控制了，自然也就无法再维持人类的身姿了。	うん、崩壊の支配から解き放たれて、人の姿を維持できなくなっちゃったんだ。	Porque ela agora não está mais sob o controle da Energia Honkai, ela naturalmente não pode mais manter sua forma humana.
+
+emote	4	0
+/Byakko-san	251290	[i]Yip~ Yip~[/i]	呜~咕~	クゥーン。	NONE
+speaker	Mei
+
+emote	201	3
+emote	4	0
+msg	251291	Byakko-san, what is it?	白狐小姐？	白狐さん、どうしたの？	Senhorita Palefox?
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251292	Mei-senpai, she's back to her normal form, so I don't think she can understand what you're saying anymore.	芽衣学姐，她都已经变回白狐地形态，应该听不懂你在说什么了。	芽衣先輩、もう元の姿に戻っちゃったから、人の言葉は分からないんじゃないかな？	Mei-senpai, ela já virou uma raposa branca, ela não deveria entender o que você está dizendo.
+
+emote	4	0
+/Byakko-san	251293	[i]Yip~ Yip~[/i]	咕~叽~	クゥーン……。	NONE
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251294	Okay, got it. You should hurry.	嗯，我知道了，那你快去吧~	ええ、分かったわ。早く行ってあげて。	Entendo, então vá rápido~
+speaker	Kiana
+
+emote	101	3
+emote	4	0
+msg	251295	Huh?! Senpai, you can understand fox language?!	诶！？学姐你能听懂她在说什么吗？	ええっ！先輩、狐の言葉が分かるの！？	Que?! Você pode entendê-la?!"
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251296	Yeah, she said she'd protect that girl. She won't let any zombies take one step towards the girl — until the very end of her life.	嗯，她说她要去守护那位少女，不让死士靠近那里一步，直到她生命的最后一刻。	うん、あの女の子を守るって。ゾンビには一歩も近づかせない、自分の命が尽きるその時まで——そう言ってたわ。	Mmmh, ela disse que vai proteger a garota, e manter os zumbis longe de lá até o último momento de sua vida.
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251297	Even though animals have feelings, why are people so cold towards them...? Aren't animals much more compassionate than humans?	动物尚且有情，却不知道为什么人类却那么无情……	動物にも情があるのに、どうして人はこんなにも冷たいのかな……。人間よりも動物の方がよっぽど情に厚いんじゃない？	Os animais são tão amorosos, não entendo porque os humanos são tão indiferentes...
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251298	I'm sure that's only [i]some[/i] of the population. I think there are a lot of people who still have kindness in their hearts.	只是“有些”人类而已，我相信，在绝大多数人的心中，依然保存着自己的那一份真情。	きっと“一部”の人間だけよ。心の中に優しさを残している人間は、たくさんいると思うわ。	Apenas ``alguns´´ seres humanos. Acredito que a maioria das pessoas ainda tem bondade em seus corações.
+speaker	Kiana
+
+emote	101	3
+emote	4	0
+msg	251299	I see... But, Senpai, since when did you understand the language of animals?	也许吧……不过话说回来，芽衣你是什么时候拥有的听懂动物说话的能力的？	そっか……でも、先輩いつから動物の言葉が分かるようになったの？	Talvez... Mas espere, quando você conseguiu entender os animais, Mei-Senpai?
+speaker	Mei
+
+emote	201	2
+emote	4	0
+msg	251300	Hehe, I don't have that kind of ability.	才不是那种特异功能啦~	ふふっ、そんな能力ないわよ。	Não é esse tipo de habilidade especial~
+msg	251301	It's just that I've been more lonely than others most of my life, so I've grown sensitive to the subtleties of people's emotions... That's why I understood how she felt.	只不过我曾经比任何人都要孤独，所以我才有了一颗比任何人更为细腻敏感的心……	ただ他の人より孤独な時期が私にもあったから、心の機微に敏感なだけ……だから、あの子の気持ちがわかったの。	É que eu costumava ser mais solitária do que qualquer outra pessoa, então tenho um coração mais delicado e sensível do que os outros......

@@ -1,0 +1,63 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Fox
+portraits	12
+emote	12	0
+msg	50023	Grrrrr! Nay one can separateth me and mine belov'd princess!	可恶！！！！！！没有人可以分开咱和咱的公主！	させん！！！！！誰も妾と姫様を引き離せん！	NONE
+speaker	Mei
+portraits	201	12
+emote	201	2
+emote	12	0
+msg	50024	Kitsune-san, you are powerless to stop us now.	不过狐狸小姐你现在已经没有能力阻止我们救出她了。	狐さん、あなたにはもう私たち阻止できる力がないんだ。	NONE
+speaker	Kiana
+portraits	101	12
+emote	101	0
+emote	12	0
+msg	50025	That's right! Now my harem has grown a little bi—— Oops, I almost let the truth slip out...	是啊！这下我的后宫又壮大了一点！哎呀，怎么把心里话说出来了～	そうだね！これで私のハーレムは…おっと、本音を言ってしまった…	NONE
+msg	50026	Alright, let's put a stop to this bakekitsune together...!	好了，让我们给这只狐狸怪物最后一击吧！	一緒にこの化け狐に止めを…	NONE
+speaker	Sakura
+portraits	101	10
+emote	101	0
+emote	10	0
+msg	50027	Please stop!	请住手！	…やめて！	NONE
+speaker	Mei
+portraits	201	10
+emote	201	0
+emote	10	0
+msg	50028	Why, miss? This monster just tried to swallow you!	小姐，为什么呢？这只怪物刚刚想要吞下你啊！	お嬢さん、なぜなの？この化け物はつい先あなたを飲み込もうとしたのよ！	NONE
+speaker	Sakura
+emote	201	0
+emote	10	0
+msg	50029	It... it's okay... I've actually died 500 years ago...	不...没关系的...因为我早在500年前就死去了....	だ…大丈夫です…私は500年前にすでに死んでました…	NONE
+msg	50030	My last memory is that I was on my way to defeat the bakekitsune, Higyokumaru. And all the warriors who came with me were killed...	我最后的记忆，是在去讨伐妖狐绯狱的路上，然后...所有和我一起去的武士都被它击败了...	私の最後の記憶は、化け狐緋獄を討伐に行く途中だった。そして、一緒に行った仲間たちは皆殺された…	NONE
+speaker	Fox
+portraits	201	12
+emote	201	0
+emote	12	0
+msg	50031	Ye are special. I fell in loveth with thou the moment i saweth thou.	只有汝是不同的，在看到汝的第一眼，咱就爱上了汝！	汝のみ違うと思った、この目で汝を見た瞬間、汝に恋をした！	NONE
+msg	50032	The only choice I hast left is to swallow thou and fall into an endless dreameth.	咱唯一的选择，就吞下了汝,一起做一个永远不会醒来的梦...	妾にできる唯一の事は、汝を飲み込んで共に覚めない永久の夢を…	NONE
+msg	50033	In the dreameth, I will be thy loyal knight. Thou will be mine princess. We shall be togeth'r forever and ever.	在梦里，咱是汝忠诚的武士，汝是咱尊贵的公主，永远不会醒来...	夢の中では妾は汝に忠誠を誓った侍となり、汝は妾のお姫様、永遠に目覚める事はない。	NONE
+msg	50034	Ye are free to goeth. I am leaving this ordinary. Goeth with the two girls.	现在汝自由了...咱也要离开这个世界了，和那两个女孩一起离开吧。	汝はもう自由だ…妾は、もうじきこの世を去る。あの娘たちと共に行くが良い。	NONE
+speaker	Sakura
+portraits	201	10
+emote	201	0
+emote	10	0
+msg	50035	…	......	…	NONE
+msg	50036	No... Do you really think that after 500 years together I still have no feelings for you?	不...500年了，你真的认为我对你一点感情都没有吗	いいえ…500年を共にして、尚もあんたに何の感情もないと、本当にそう思っているの？	NONE
+msg	50037	500 years... Everything I hold dear, everyone and everything in this world, is gone. I would rather go with you than live in this strange world.	500年了...在这个世界上，我所珍惜的人和事物都消失了，与其留在这个陌生的世界上，我还是选择和你一起离开。	500年…この世で、妾が大切に思う人やもの、すべてなくなった。この見知らぬ世界で生きるより汝と一緒に行きたい。	NONE
+msg	50038	If there is an afterlife... I hope to meet you in a different way...	如果有来世....希望能和你换一种形式相遇....	もしも、来世があれば…別のかたちで、汝に出逢いを願わん…	NONE
+speaker	Fox
+portraits	201	12
+emote	201	0
+emote	12	0
+msg	50039	Really... What a hopeless idiot.	你...真是个傻瓜	本当に…どうしようもないおバカですね。	NONE
+speaker	Kiana
+portraits	101	12
+emote	101	3
+emote	12	0
+tn	0	Kiana refers to both of them with feminine pronouns here, so Higyokumaru must be female in this too
+msg	50040	Are they dead? 	她们死了吗？	彼女たちは死んだの？	NONE
+speaker	Mei
+portraits	201	12
+emote	201	0
+emote	12	0
+msg	50041	Yes, they are gone. I hope that when they are born again, there will be no more conflict in this world...	嗯...她们离开了，希望在她们重生时，这个世界上已经没有争斗了...	うん、彼女たちは逝ってしまった。今度彼女たちが生まれて来る時は、もうこの世界に争いがないことを…	NONE

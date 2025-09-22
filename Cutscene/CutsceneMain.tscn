@@ -214,9 +214,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Backgrounds" type="Control" parent="."]
 anchor_right = 1.0
@@ -453,8 +450,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -835.0
 margin_top = -138.5
-margin_right = 40.9999
-margin_bottom = 41.5003
+margin_right = 833.0
+margin_bottom = 41.5
 rect_pivot_offset = Vector2( 0, 90 )
 custom_fonts/font = ExtResource( 3 )
 text = "Dandelion"

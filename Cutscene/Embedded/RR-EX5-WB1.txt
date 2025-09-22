@@ -1,0 +1,38 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Fox
+portraits	101,false,-2	201,false,-2	11
+emote	11	0
+msg	50000	....	....	…	NONE
+speaker	Kiana
+
+emote	101	4
+emote	11	0
+msg	50001	Woah! That fox is huge! I didn't see any zombies on the way here, so I thought we left the area of the Honkai Outbreak but I guess we aren't so lucky...	哇！好大的狐狸啊！可恶，刚刚一路上都没见到死士，还以为已经逃离崩坏区域了呢，果然没有这么好的事...	キャー！！デカイきつねだ！畜生、先まで死徒１匹も見かけなかったから、もう崩壊区域から脱出できたと思ったのに。やはり、そんないいことないよね。	NONE
+speaker	Fox
+emote	101	4
+emote	11	0
+msg	50002	...	....	…	NONE
+msg	50003	Humans who have awoken me from mine slumber, I hast nay desire to engage with thou. leaveth.	人类，咱刚刚从漫长的睡眠中醒来，不希望和汝产生争斗，离开这里吧。	人間よ、妾はまだ長い眠りから目を覚めたばかり、汝らと争いたくない故、早うここを去れ！	NONE
+speaker	Mei
+
+emote	201	2
+emote	11	0
+msg	50004	Kitsune...san? We don't mean to get in your way. But all other ways out of the town are blocked, so please! Let us pass.	狐狸....小姐？我们也不想打扰你，但是其他离开城市的道路都倒塌了，可不可以让我们从这里通过呢？	きつね…さん？私たちはあなたを邪魔するつもりがないの。しかし、ここ以外町を脱出できる道はすべて塞がれたから、お願い！私たちを通らせてください。	NONE
+speaker	Fox
+emote	201	2
+emote	11	0
+msg	50005	Nay, thou shall not. This placeth belongs to me and mine princess. Nay one else is allow'd to seteth foot on it!	不行，这里是咱和咱的公主居住的地方，没有人可以通过！	くどい！ここは妾と姫様が住まう場所、誰もここを通さん！	NONE
+speaker	Kiana
+
+emote	101	0
+emote	11	0
+msg	50006	(Whispering) Mei-senpai, there's no point in trying to reason with a bakekitsune. Let's just kill it! I'm sure we could launch a surprise attack now.	（小声）芽衣学姐，和狐狸怪物说道理是没用的，还是直接干掉它吧！趁它现在不注意我觉得可以偷袭它。	（小声）芽衣先輩、化け狐に理屈を話しても無駄だよ。ここは、やはりやるしかない！今なら、不意打ちができると思う。	NONE
+speaker	Mei
+
+emote	201	0
+emote	11	0
+msg	50007	Kiana-chan, don't fool around... Kitsune-san, may I have a word with the princess on your back?	琪亚娜你别闹..狐狸小姐，那么能不能让我和你背上的公主说两句话呢...	キアナちゃん、冗談を言わないで…きつねさん、少し姫様にお話をさせてもよろしいですか？…	NONE
+speaker	Fox
+emote	201	0
+emote	11	0
+msg	50008	Nay! Nay one is allow'd to disturb mine princess. Geteth out!	不！没有人可以惊扰我的公主！人类，赶快滚出这里！	人間風情に、姫様の邪魔はさせん！人間よ！早う、ここから去れ！	NONE

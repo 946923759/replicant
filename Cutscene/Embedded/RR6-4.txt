@@ -1,0 +1,198 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	201	5
+bg	009/043_1280x720
+music	re/XIII-1 The Sunleth Waterscape
+match_names	Kiana	Mei
+portraits	101	201
+
+speaker	Kiana
+
+emote	101	0
+msg	250255	Phew~ That was a close call.	呼呼~终于捡回一条命了。	ふぅ～、助かったー！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250256	I know I've seen that logo somewhere before...	果然刚才的那个标志很眼熟呢……	やっぱり、あのロゴどこかで見たような気がする……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250257	Mei-senpai, what's on your mind? Are you really that interested in that logo?	芽衣学姐，从刚才起就一直在想什么呢，那个标志有那么特别么？	芽衣先輩、さっきからどうしたの？そんなに、あのロゴが気になる？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250258	I remember there was a similar logo in the school's laboratory building. If it's the same, there might be some connection between these mechas and ME Corp...	之前在学校的实验室中不是也看到过这样的标志么？既然在这些机甲兵器身上也出现了，难道这也和ME社有关系么……	学園の実験棟にも同じロゴがあった気がするの。もし同じものなら、機甲とME社に何か関係があるのかも……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250259	Isn't ME Corp an electronics company? They even make robots like that?!	芽衣学姐，你们家的大企业不是电子制造商么？这些机器人已经超出了你们的营业范围了吧！？	ME社って電子関係の会社じゃなかったっけ？あんなロボットまで作ってるの！？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250260	It's strange. The experiments in that laboratory and those mechas... What on earth has Father been up to...?	实在是太奇怪了，那个实验室也是，这些机甲兵器也是…父亲大人到底在做什么呢。	おかしいわ。実験棟での研究もあの機甲も……お父様は一体何を……。	NONE
+msg	250261	Pip pip pip~	嗡嗡嗡……	ピピッ——ピピッ——	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250262	Hmm? Honkai energy detected again? Let's see...	唔？手机响了…这个破东西不是坏掉了么，怎么忽然又响了起来，让我看看……	うん？また崩壊エネルギーの検知？どれどれ……。	NONE
+msg	250263	Honkai Source Distance: 1000... 800... 600... What the hell? It's approaching at an incredible speed. There's no way a Honkai Source can move that fast. I guess my phone is broken after all.	检测到崩坏源反应，距离1000…800…600…唔，果然是坏了，哪有崩坏源跑那么快的。	崩壊源との距離1000……800……600……何これ、すごい勢いで近づいてるんだけど。崩壊源がこんなスピードで移動するわけ無いじゃん。やっぱ、このスマホ壊れちゃったんだ。	NONE
+msg	250264	Mei-senpai, let's go! We have to get out of this Honkai Outbreak. Let's think about the relationship between those logos and ME Corp later!	芽衣学姐，我们走吧，不管怎么样先逃出崩坏区域再说，那些标志和ME社什么的回头再说吧~	芽衣先輩、行こっ！とにかく、この崩壊区域から出なきゃ。ロゴとME社の関係はあとで考えましょう！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250265	Kiana, look over there...!	琪亚娜，你看那边……	キアナちゃん、あれ……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250266	Mei-senpai? If it's one of those logos just——	芽衣学姐你又怎么了？如果是标志的话就……	芽衣先輩？ロゴの話だったら後で——	NONE
+msg	250267	BOOM!	轰隆！！！！	——ゴォオオオッ！！	NONE
+speaker	Kiana
+emote	101	0
+msg	250268	Eh?! What just flew past us?!	呃！！刚才飞过去的是什么东西！？	えぇ！？今飛んでったの、何あれ！？	NONE
+speaker	Mei
+
+emote	201	0
+msg	250269	A white... mecha? It was much bigger than the mechas from before. And is that a person on top of it?	白色的…机器人么？比起我们之前遇到的机甲兵器大了好多，而且我没看错的话那个机器人上面还有个人影。	白い……機甲？さっき見た機甲兵器よりもずっと大きい。それに機甲の上に人が乗ってた？	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250270	Ahh, it's coming back! Let's get out of here for now! That thing is definitely not on our side!	等等！不要管那么多了！那个机甲好像又飞回来了！不管怎么样还是先撤吧！怎么看都不像是来喝下午茶的样子！	わっ、こっち戻ってきた！ひとまず逃げましょう！どう見たって味方じゃないもん！	NONE
+speaker	Bronya
+portraits	101	201	5
+emote	101	0
+emote	5	0
+msg	250271	Number of vital signs: 2. Commencing scan for signs of Honkai.	检测到生体反映，数量2，崩坏体征扫描开始。	生体反応数——2。崩壊兆候スキャン開始。	NONE
+speaker	Kiana
+emote	101	0
+emote	5	0
+msg	250272	Damnit! They caught up...!	可恶……居然被追上了！	げっ！追いつかれた……！	NONE
+speaker	Mei
+emote	201	0
+emote	5	0
+msg	250273	Why would such a small child be with that robot?	这么小的孩子为什么会和那个机器人在一起……	こんな小さい子が、どうして機甲なんかと一緒に……。	NONE
+speaker	Bronya
+emote	201	0
+emote	5	0
+msg	250274	Scan complete — signs of Honkai confirmed it is recovery target "Subject A". Executing response plan... Commencing recovery.	检测完毕，发现崩坏体征，确认为回收目标“对象A”，执行对策方案，开始回收作业开始。	スキャン完了——崩壊兆候を確認しました。回収ターゲット「対象A」。対応プランの実行……回収を開始します。	NONE
+speaker	Mei
+emote	201	2
+emote	5	0
+msg	250275	Um, who are you...? What do you have to do with these mechas?	那个，请问小姑娘你到底是谁？你和那些机甲兵器有什么关系么？	あの、あなたは一体……？機甲兵器とどんな関係が？	NONE
+speaker	Bronya
+emote	201	2
+emote	5	0
+msg	250276	I am Bronya, the user of the General-Purpose Maiden Battle Weapon, Armored Bunny 19C.	我是嵌入式泛用少女决战兵器，重装小兔适格载体布洛妮娅。	私はドープ型少女決戦兵器、重装ウサギ19cの適応者ブローニャです。	NONE
+speaker	Mei
+emote	201	0
+emote	5	0
+msg	250277	Maiden...? Weapon?	少女兵器？	少女、兵器？	NONE
+speaker	Kiana
+
+emote	101	0
+emote	5	0
+msg	250278	...! Mei-senpai! Watch out!!	芽衣学姐！小心！	……っ！芽衣先輩ッ！危ないッ！！	NONE
+
+emote	5	0
+msg	250279	Bang!	砰！！	ドォンッ——！！	NONE
+speaker	Kiana
+
+emote	101	4
+emote	5	0
+msg	250280	Why, you—! Fine then! Just because you're a child, I won't go easy on you!	你这家伙，既然先出手了那我也不客气了！	こいつッ！やる気？子供だからって、手加減はしないわよ！	NONE
+speaker	Bronya
+emote	101	4
+emote	5	0
+msg	250281	Resistance detected. Request to remove armament limit — permission confirmed. Armored Bunny 19C, switch to combat mode.	目标展开抵抗，请求解除武装限制…通过，重装小兔进入战斗模式。	抵抗行為を検知しました。武装リミットの解除要請——許可を確認。重装ウサギ19c、戦闘モードへ移行します。	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250282	Kiana-chan! Careful not to hurt the girl!	琪亚娜，小心不要伤害到那个女孩！	キアナちゃん！その子に怪我させないで！	NONE
+speaker	Kiana
+
+emote	101	0
+emote	5	0
+msg	250283	That's up to her!	那就得看对方的意思了！	それは、こいつ次第だね！	NONE
+
+
+
+msg	250284	Has that Bunny Whatever-the-hell-it's-called mecha finally stopped?	终于停下来了么！？	あの何たらウサギっていう機甲、やっと止まった？	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250285	Our attacks worked. Let's take this opportunity to get her away from the robot!	看来刚才的攻击奏效了呢，趁着空隙把那个女孩救出来吧！	攻撃が効いたのね。この隙にあの子を機甲の傍から離しましょう！	NONE
+speaker	Bronya
+emote	201	0
+emote	5	0
+msg	250286	Combat power analysis complete. Odds of successful capture down 24.36% than expected. Change of plan: Retreat.	战力检测结束，捕获几率24.36%小于预估值，方案改变，开始撤离。	戦闘力の計測が完了しました。捕獲率24.36%ダウン。プラン変更——撤退を開始します。	NONE
+
+portraits	101	201
+speaker	Kiana
+emote	101	0
+msg	250287	Wha—?! Stop, don't run away!	呃！不要跑！	えっ！？待て、逃げるなっ！	NONE
+msg	250288	Seriously... what's wrong with that brat?! Just when I thought she was gonna fight, she quickly ran away! Don't run away, you COWARD!	可恶……那个丫头到底怎么回事嘛！莫名其妙地出现，然而打完就跑！实在是太卑鄙了！	もうっ……何なのよ、あのガキ！勝手に襲ってきたと思ったら、今度はそそくさと逃げて！逃げるな卑怯者ーーッ！	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250289	Kiana-chan! The other mechas are retreating. I knew they had something to do with that girl!	琪亚娜！其他的机甲也随着她一起撤走了，果然这里有问题！	キアナちゃん！他の機甲も撤退していく。やっぱり、あの子と関係があるんだわ！	NONE
+speaker	Kiana
+
+emote	101	0
+emote	5	0
+msg	250290	Hey, Mei-senpai! Where are you going?!	芽衣学姐！你要去哪啊！？	ちょっと、芽衣先輩！どこ行く気！？	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250291	Going after her, of course!	当然是追上去啦！	追いかけるに決まってるでしょ！	NONE
+speaker	Kiana
+
+emote	101	0
+emote	5	0
+msg	250292	They're flying in the sky! There's no way we can catch up! Besides, our priority right now is to get out of this Honkai Outbreak! We don't have time to make detours!	对面是飞的我们怎么可能追的上嘛~而且我们的目的不是逃离崩坏区域么，这种节外生枝的事情还是少掺和啦~	向こうは空を飛んでるんだよ！追いつけるわけないって！それに今はこの崩壊区域から離れることを優先しないと！寄り道してるヒマなんてないんだからっ！	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250293	...I... suppose you're right.	好吧……	……そう、よね。	NONE
+speaker	Kiana
+
+emote	101	0
+emote	5	0
+msg	250294	Well then, let's hurry and get out of here.	嗯，那我们继续按照原计划撤离吧~	それじゃ、さっさとこんなところ離れましょ。	NONE
+speaker	Mei
+
+emote	201	2
+emote	5	0
+msg	250295	I'm sorry, Kiana-chan... Can you go ahead? I'm really worried about that girl. Kiana-chan, I'll never forget how you helped me... Thank you.	琪亚娜，你一个人走吧，没必要和我一起冒险…感谢你救了我。	ごめんなさい、キアナちゃん……先に行ってくれる？私、あの子がどうしても気になるの。キアナちゃん、私を助けてくれたこと一生忘れないわ……ありがとう。	NONE
+speaker	Kiana
+
+emote	101	2
+emote	5	0
+msg	250296	Ahh, fine! Okay, okay, I'll come with you! Besides, maybe that girl has some clues I need.	呃！啊啊~好啦好啦！我知道了，我跟你一起去啦。反正现在离开也是一无所获，说不定追踪这个事件也能找到我自己想要的线索……	あー、もうっ！わかったよ、一緒に行ってあげる！私の知りたい情報を持ってる可能性だって、あるかもしれないしね。	NONE
+speaker	Mei
+
+emote	201	0
+emote	5	0
+msg	250297	Really? You sure?	真的么？	本当？いいの？	NONE
+speaker	Kiana
+
+emote	101	2
+emote	5	0
+msg	250298	Yeah... but don't look at me with such expectant eyes. If it gets dangerous, we'll retreat immediately! You've managed to survive, so we need to cherish it!	是是…不要一幅期待的表情看着我啦~如果有什么危险我们可一定要赶紧撤离，好不容易获救的性命可得好好珍惜才行！	うん……って、そんな期待した目で見ないでよ。危なくなったら、すぐに撤退するからね！せっかく生きながらえた命なんだから、大切にしないと！	NONE
+speaker	Mei
+
+emote	201	2
+emote	5	0
+msg	250299	Yes... Thank you, Kiana-chan.	嗯，谢谢你……琪亚娜。	ええ……ありがとう、キアナちゃん。	NONE
+speaker	Kiana
+
+emote	101	2
+emote	5	0
+msg	250300	Yeah, yeah, you're welcome! ...Hmm? Ah, Senpai, look at that! That train over there might be usable. Let's take a look!	嘿嘿~不用客气啦！芽衣学姐你看，那边停着的那辆列车好像损坏不是很严重，我们去瞧瞧还能不能用~	はいはい、どういたしましてっ！……ん？あっ、先輩あれ見て！あの電車、もしかしたら使えるかも。ちょっと見てみましょう！	NONE
+speaker	Mei
+
+emote	201	2
+emote	5	0
+msg	250301	Okay.	嗯。	ええ。	NONE

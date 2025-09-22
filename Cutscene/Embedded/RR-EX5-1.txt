@@ -1,0 +1,43 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/3-18 - Academia
+portraits	101	201
+match_names	Kiana	Mei	Byakko-san
+bg	rr/ex4
+
+speaker	Mei
+
+emote	201	3
+msg	251263	Kiana-chan, what happened to Byakko-san back there?	琪亚娜，白狐小姐她怎么了……	キアナちゃん、白狐さん一体どうしちゃったの？	Kiana... A senhorita Palefox, o que aconteceu com ela?
+speaker	Kiana
+
+emote	101	0
+msg	251264	Mei-senpai, do you remember the Will of Honkai that tried to take over your body before?	芽衣学姐，你还记得想要控制你的身体的崩坏源意识么？	芽衣先輩、前に先輩の身体を乗っ取ろうとした崩壊の意志を覚えてる？	Mei, você se lembra da Vontade do Honkai que tentou controlar seu corpo?
+speaker	Mei
+
+emote	201	0
+msg	251265	...Yes. Surely it couldn't be that Byakko-san's consciousness is taken over by the Honkai?!	莫非那个东西现在正在侵蚀白狐小姐的意识？	……ええ。まさか、白狐さんの意識が崩壊に！？	Será que essa coisa agora está tentando corroer sua mente também?
+speaker	Kiana
+
+emote	101	0
+msg	251266	Yeah, that seems to be the case here. I think the moment Byakko relaxed her consciousness, since she was fulfilled, was when it took advantage of her.	嗯，应该是在白狐释然的瞬间，崩坏源能量便侵占了她的意识。	うん、そのまさかみたい。白狐が満足したことで意識を緩ませた瞬間、そこを付け込まれたんだと思う。	Mmmh, é provável que no exato momento em que Palefox aceitou a situação, a Vontade do Honkai invadiu sua consciência.
+speaker	Mei
+
+emote	201	0
+msg	251267	So the reason why she was behaving strangely then was because she was almost completely consumed by the Will of Honkai...	难怪在白狐小姐要回忆起之前的事情的时候会变得那么奇怪，那个时候估计她正在和崩坏源意识进行抗争吧……	途中、おかしな言動があったのは、崩壊の意志に飲み込まれかけてたからなのね……。	Não é à toa que a senhorita Palefox ficou tão estranha quando quis lembrar o que aconteceu antes. Parece que naquela época, ela estava lutando contra a Vontade do Honkai......
+speaker	Kiana
+
+emote	101	0
+msg	251268	This outbreak is at a critical point. I think she's probably even stronger than you were, Senpai.	现在就有些难办了，那股力量比起当初在你体内的时候变得更强大了……	ここからが正念場だよ。たぶん先輩の時より力が強いと思う。	Agora é um pouco mais difícil de lidar. O Honkai dentro dela ficou mais forte do que quando estava dentro de você.
+msg	251269	But it's okay. There's no need to worry. I might need some of your help though, Senpai.	不过还好，这并不是什么大麻烦，不过可能需要芽衣学姐帮忙了。	でも、大丈夫。心配する必要ないよ。先輩の助けを借りることにはなるかもだけど。	Felizmente, não deve ser um grande problema. Mas posso precisar da ajuda de Mei-senpai.
+speaker	Mei
+
+emote	201	3
+msg	251270	Me?	我？	私の？	Minha?
+speaker	Kiana
+
+emote	101	0
+msg	251271	Yep. Just like when I helped you, take advantage of her confusion and bring her mind back in control!	嗯，就像我唤醒你的意识时的那样，然后抓住那个家伙一瞬间动摇的机会，将它击败！	うん。私が先輩の意識を呼び起こした時と同じ様に、動揺した隙を狙って意識を奪い返すの！	Bem, assim como eu fiz quando despertei sua consciência, então vamos pegá-la desprevenida e derrotá-la!
+speaker	Mei
+
+emote	201	0
+msg	251272	I don't know if I can be of any help, but I'll try!	虽然不知道我能不能行，但是我会争取做到的！	私で役に立てるかどうかわからないけど、頑張ってみるわ！	Não sei se consigo, mas vou tentar!

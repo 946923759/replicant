@@ -1,0 +1,44 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+speaker	Sakura
+portraits	10
+emote	10	0
+msg	50013	Mine head…hurts so bad…What art these memories…	我的头...好痛...这些记忆是...	頭が…痛い…この記憶は一体…	NONE
+speaker	Kiana
+portraits	101	10
+emote	101	3
+emote	10	0
+tn	0	For some reason Kiana calls Mei "Mei-onee-sama" here. I think it's an error.
+msg	50014	Mei, that youkai girl seems a little strange. 	芽衣学姐，那个女妖怪的样子好像很奇怪。	芽衣姉様、あの女妖怪の様子が変です。	NONE
+speaker	Sakura
+emote	101	3
+emote	10	0
+msg	50015	Youkai... that's right, I was on my way to defeat the bakekitsune that's been plaguing us... And what's in my hand... Is this my sacred katana?	妖怪...是的，我正在要去退治狐妖的路上...我手里的这把...是我的刀吗?	妖怪…そうだった、私は化け狐を退治に行く途中…この手にあるのは…私の刀？	NONE
+speaker	Mei
+portraits	201	10
+emote	201	0
+emote	10	0
+msg	50016	Kiana-chan, it looks like she's being controlled by the kitsune... Maybe we can save her.	琪亚娜，她似乎是被狐狸操纵了的样子…也许我们可以救她。	キアナちゃん、どうやら彼女はあの狐に操られているみたい…もしかして、私たちで救えるかもしれない。	NONE
+speaker	Kiana
+portraits	101	10
+emote	101	0
+emote	10	0
+msg	50017	You really are such a nice person, Mei-senpai...	芽衣学姐你还真是滥好人啊...	芽衣先輩は本当に、人が良すぎる…	NONE
+speaker	Sakura
+emote	101	0
+emote	10	0
+msg	50018	Why is the sacred katana that has been passed down through my family for generations... in this state...?	我家传的灵刀...为什么会变成这样....	私の家から代々受け継がれる霊刀が…なぜこんな姿に…	NONE
+speaker	Fox
+portraits	101	12
+emote	101	0
+emote	12	0
+msg	50019	Ahhhhhh…Milady, I won't leteth thou out of mine sight. Thou belongeth with me!	啊啊啊啊啊啊！公主大人，我不会让你想起来的，你只要永远陪在咱的身边就行了！	あああああああ！姫様よ！！二度と思いは出させぬぞ！！姫様は、ずっと妾の側居れば良い！	NONE
+msg	50020	Come! Return unto my body!	来吧，快回到咱的身体中来吧！	戻れよ！妾の体の中に！！	NONE
+speaker	Kiana
+emote	101	4
+emote	12	0
+msg	50021	The bakekitsune just swallowed the youkai girl whole!! Scary!!	那只狐狸竟然把女妖怪吞下去了，好可怕！	なんと、あの化け狐は、女妖怪を飲み込んだ！！怖い！！	NONE
+speaker	Mei
+portraits	201	12
+emote	201	0
+emote	12	0
+msg	50022	It's too early to give up! There's still time to save her!	不要放弃，现在把她救出来也许还来得及！	諦めるのがまだ早い！今ならまだ間に合う！彼女を救え出せば！	NONE

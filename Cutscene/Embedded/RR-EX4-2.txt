@@ -1,0 +1,51 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/3-18 - Academia
+portraits	101	201
+match_names	Kiana	Mei
+bg	rr/ex4
+
+speaker	Mei
+emote	201	0
+msg	251213	There should be a shrine a little further down this path. I wonder if that's the shrine that Byakko-san mentioned in her story.	沿着这条参拜道往前走不远，应该有间神社，那里该不会就是白狐小姐所提到的那个神社吧？	この参道を少し進んだ先に神社があったはずよ。白狐さんの話に出てきた神社って、たぶんそこのことなんじゃないかしら。	Deve haver um santuário não muito longe deste caminho. Esse é o santuário mencionado pela senhorita Palefox?
+speaker	Kiana
+
+emote	101	3
+msg	251214	Huh? Mei-senpai, are you familiar with this place?	咦？芽衣学姐你对这个地方很熟悉吗？	あれ？先輩、この辺のこと詳しいの？	Huh? Mei-senpai, você está familiarizado com este lugar?
+speaker	Mei
+
+emote	201	3
+msg	251215	Yes, actually I have been here before... When I was little, my father used to take me here.	嗯，我以前来过这里呢…好像是我很小的时候，和父亲一起来的……	ええ、実は昔、来たことがあるの……小さい頃、お父様に連れられてね。	Bem, eu já estive aqui antes... acho que vim aqui com meu pai quando eu era muito jovem......
+speaker	Kiana
+
+emote	101	3
+msg	251216	I see... Hey, Senpai, what kind of person is your dad? Although I did see your memories, it was still only just fragments and I couldn't understand much...	这样啊……学姐的父亲究竟是一个怎样的人呢？虽然有在学姐的记忆片段中看到过，但是那也只是写片段而已……	そっか……ねぇ、先輩のパパってどんな人？前に先輩の記憶が私に流れてきた時、内容が断片的でよく分からなかったんだよね……。	Eu vejo....... Ei, Senpai, que tipo de pessoa é seu pai? Embora eu tenha visto as memórias da Senpai, ainda eram apenas fragmentos.......
+speaker	Mei
+
+emote	201	0
+msg	251217	Father was... a very strict man, both to me and to himself.	父亲大人…他是一个很严格的人，无论对我还是对他自己。	お父様は……とても厳しい人だったわ。人に対しても、自分に対してもね。	Pai... Era uma pessoa rigorosa, tanto comigo quanto consigo mesmo.
+speaker	Kiana
+
+emote	101	3
+tn	0	Wait until Kiana hears about parents trying to keep up appearances....
+msg	251218	Hmm... But the fact that he went places with you means that he must have had some feelings for you. He was probably just bad at expressing his feelings. 	不过就算是那样一个严肃的人，也会带着芽衣学姐来这个地方呢，这么想，其实伯父大人还是爱着学姐的吧，可能只是不擅于表达自己的感情而已。	へぇ……でも、一緒にお出かけしてくれてたってことは、少なからず先輩のことを想ってくれてたんじゃないかな。ただ、胸の内を表現するのが下手だっただけで。	No entanto, mesmo uma pessoa super séria como ele trouxe Mei-senpai para este lugar. Então eu acho que ele ainda ama a Senpai. Certo, talvez ele seja ruim em expressar seus sentimentos.
+speaker	Mei
+
+emote	201	3
+msg	251219	What about you, Kiana-chan? What kind of person is your father? That smartphone with that detector was actually made by your father, right?	那琪亚娜呢？你的父亲又是一个怎样的人呢？如果我没猜错的话，这个手机就是他制造出来的吧。	キアナちゃんは？キアナちゃんのお父様はどんな人なの？探知機の付いたそのスマホ、実はキアナちゃんのお父様が作ってくれたものなんでしょ？	E quanto à Kiana? Que tipo de pessoa é seu pai? Se estou correto, esse telefone foi feito por ele, certo?
+speaker	Kiana
+
+emote	101	0
+msg	251220	...So you noticed. But I don't know much about my dad. Other than the fact that he took me away from Schicksal and taught me how to fight, I don't know anything about him. One day, he suddenly disappeared, leaving only this smartphone behind.	嗯……说起我的父亲，其实我对他的了解真的少的可怜，我只知道他把我带离了“天命”，然后亲自教导我关于崩坏的知识，和一些卡斯兰娜家族的武技。可是他现在不知道去了什么地方，只留下了这个破手机……	……気付いてたんだ。でも私、パパのことあんまり知らないんだ。パパが私を天命から連れ出してくれたことや戦うすべを教えてくれたこと以外、何も知らないの。ある日突然、このスマホだけ残していなくなっちゃった。	Bem ...... sobre meu pai, eu mal sei nada sobre ele realmente. Só sei que ele me tirou da 'Schicksal', e depois me ensinou pessoalmente sobre o Honkai, e algumas artes marciais da família Kaslana.  Mas agora, não sei para onde ele foi, ele só deixou este telefone quebrado...
+speaker	Mei
+
+emote	201	3
+msg	251221	"Schicksal"...?	“天命”？那是什么地方？	“天命”……？	'Schicksal?' Onde fica isso?
+speaker	Kiana
+
+emote	101	0
+msg	251222	Ah... maybe I said too much...	啊…不小心说多了……	あっ……ちょっと喋りすぎちゃったかな……。	Ah, eu  falei demais...
+msg	251223	It's nothing, so don't worry about it, Senpai! There might be a clue that leads to Byakko at the shrine up ahead, right? C'mon!	没什么。学姐你不用在意啦~你刚才说前面有个神社，我们去那边探索看看吧，说不定会有一些收获呢~	何でもないから、先輩は気にしないで！この先の神社に白狐に繋がる手掛かりがあるかもしれないんでしょ？行ってみましょう！	Não é nada, Senpai, você não deveria se importar com isso~ Você disse que há um santuário aqui, certo? Vamos até lá e explorá-lo, talvez encontremos algumas pistas!
+speaker	Mei
+
+emote	201	3
+msg	251224	Y-Yeah... Alright.	哦…哦……	え、ええ……そうね。	Oh… Certo.

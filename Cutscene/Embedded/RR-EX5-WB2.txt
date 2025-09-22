@@ -1,0 +1,16 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+preload_portraits	101	201	11	10
+portraits	101,false,-2	201,false,-2	11
+speaker	Kiana
+msg	50009	What, that's it?! Guess it's a piece of cake this time too!	嘿嘿，也不过如此嘛，看上去这次可以轻轻松松胜利了~	何だ、その程度か？！今回も楽勝だね!	NONE
+speaker	Mei
+msg	50010	Don't look away during a fight. This kitsune seems a bit strange.	战斗中不要分心，看狐狸的样子似乎很奇怪。	戦闘中、余所を見ちゃダメだよ。狐の様子が変だわ。	NONE
+speaker	Fox
+emote	201	0
+emote	11	0
+msg	50011	Insolence. Milady, pleaseth fighteth alongside me.	可恶的人类，公主大人啊，请和咱一起并肩战斗吧！	おのれ、人間め！姫様よ、妾と一緒に彼奴らを成敗せん！	NONE
+speaker	Sakura
+portraits	101,false,-2	201,false,-2	10
+emote	201	0
+emote	10	0
+msg	50012	...	...	…	NONE

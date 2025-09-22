@@ -1,0 +1,57 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	lab_interior2
+music	re/2-14 - Temporal Rift
+speaker	Mei
+portraits	101	201
+match_names	Kiana	Mei
+emote	201	3
+
+/Mei	251145	……	……	……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	251146	Mei-senpai...?	芽衣学姐…？	芽衣先輩……？	Mei-senpai...?
+speaker	Mei
+
+emote	201	3
+msg	251147	Kiana, I have a bad feeling about this. I think that we might've gotten caught up in something earlier...	琪亚娜，我刚刚仔细想了想之前那件事。我觉得我们可能被卷入了什么事件中了……	キアナちゃん、嫌な予感がするの。私たち、あの子と出会ってしまった時点で、もう何かに巻き込まれてしまっているような気がして……。	Kiana, acabei de pensar muito sobre o incidente anterior. Acho que podemos ter nos envolvido em alguma coisa.....
+speaker	Kiana
+
+emote	101	0
+msg	251148	W-Well, we still can't go back!	就算这样我们也不能回去！	そ、それでも戻んないからね！	Mesmo assim, não podemos voltar!
+speaker	Mei
+
+emote	201	0
+msg	251149	Why? Don't you want to know what happened to that girl, Kiana-chan?	为什么？难道琪亚娜就不想知道那个女孩的身上到底发生了什么吗？	キアナちゃんは、あの子の身に何が起こったのか気にならないの？	Porque? Você não quer saber o que aconteceu com aquela garota?
+speaker	Kiana
+
+emote	101	0
+msg	251150	I [i]am[/i] curious... but we don't know what kind of power the Honkai Energy in her has. If, on the off chance that something were to happen——	不是这样啦……只是，崩坏源的危险程度不是你我可以度量的，万一……	気にはなるけど……でも、崩壊エネルギーがどんな力を持っているかは未知数なの。もし、万が一のことがあったら——	Não é como se eu não... É só que não podemos avaliar o quão perigosa essa Honkai manifestação pode ser. Se...
+
+se	beep beep
+/	251151	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡……	ピピッ——ピピッ——	NONE
+
+speaker	Kiana
+msg	251152	......	……	……。	NONE
+speaker	Mei
+
+emote	201	3
+msg	251153	What's wrong, Kiana-chan?	怎么了，琪亚娜？	どうしたの、キアナちゃん？	O que há de errado, Kiana?
+speaker	Kiana
+
+emote	101	0
+msg	251154	There's a Houkai Energy reaction detected ahead. Judging from this reaction, it looks like it's that "person" from before. Ahh, looks like you're right, Senpai, we seem to be involved in some sort of incident after all.	前方有崩坏源反应，看这种反应强度，应该是刚才的那个“人”。看来芽衣你说得没错，我们确实被卷入了某起事件中了呢。	前報に崩壊エネルギー反応。この反応からして、さっきの“人”みたい。あ～あ、先輩の言う通り、もう何かに巻き込まれちゃってるのかも。	Há uma manifestação de Honkai à frente. A julgar pela força dessa manifestação deve vim daquela "pessoa" de agora. Mei, parece que, você estava certa, estávamos realmente envolvidos em um certo incidente.
+speaker	Mei
+
+emote	201	3
+msg	251155	Could it be that girl realized our destination was the side gate and got there first?	难道是那个人知道我们要离开，所以率先在侧门那里等着我们了么？	もしかして、私たちの目的地が通用門だってバレて、先回りされたのかしら？	Será que aquela garota sabia que estávamos tentando sair e estava esperando por nós na entrada lateral?
+speaker	Kiana
+
+emote	101	0
+msg	251156	Well, I don't know what that girl's plans are, but it seems better to give up on escaping the academy for the time being...	不管对方是不是这么想的，总之我们逃离学园的计划必须要滞后一会儿了呢。	う～ん、向こうが何を考えているのか分かんないけど、ひとまず学園からの脱出は諦めた方が良さそうだね……。	Bem, não sei o que o outro lado está pensando, mas parece melhor desistir de fugir da escola por enquanto. . .
+se	beep beep
+/	251157	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡……	ピピッ——ピピッ——	NONE
+
+speaker	Kiana
+emote	101	0
+msg	251158	...Not good! We've been spotted! She's approaching us! W-We have to get out of here!	不好！我们被发现了!她正在向我们靠近！我们得赶紧离开这儿！	……まずいっ！反応がこっちに近づいてきてる！！と、とりあえず、一旦ここから離れて様子を見よう！	Não é bom! Fomos vistos! Ela está se aproximando de nós! Temos que sair daqui!

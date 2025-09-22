@@ -1,0 +1,64 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/XIII-1 The Sunleth Waterscape
+match_names	Kiana	Mei
+bg	009/043_1280x720
+portraits	101	201
+emote	201	3
+speaker	Mei
+msg	250229	It's strange. Even though we've left the Academy City, we're still in the range of the Honkai Outbreak...	真是奇怪呢，明明已经离开了学园都市了，怎么还没有离开崩坏的影响范围呢……	おかしいわね。学園都市から出たのに、まだ崩壊の影響範囲内にいるみたい……。	NONE
+emote	201	0
+msg	250230	Kiana, can I ask you something?	琪亚娜，我有一句话不知道当讲不当讲。	キアナちゃん、ひとつ聞いてもいいかしら？	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250231	Hmm~? What, Mei-senpai?	怎么了？芽衣学姐~	ん～？何、芽衣先輩？	NONE
+speaker	Mei
+
+emote	201	2
+msg	250232	We're not lost... are we...?	我们该不会是迷路了吧……	迷子になったわけじゃ、ないのよね……？	NONE
+speaker	Kiana
+
+emote	101	2
+msg	250233	No way, we're on the right track! I've got everything under control!	不用担心啦~一切都在我的掌控之中！	そんなことないって、大丈夫大丈夫っ！予定通りだから、心配しないで！	NONE
+speaker	Mei
+
+emote	201	3
+msg	250234	Then... why are we walking on the Light Rail tracks right now?!	那为什么我们现在走在轻轨的轨道上呢！？	じゃあ、私たち、何で高架上を歩いてるのかしら？	NONE
+speaker	Kiana
+
+emote	101	2
+msg	250235	This was the shortest route out of Academy City. Besides, there are fewer zombies here, so it's safer~!	安啦~这是逃离学园都市最快的捷径哦，而且也能有效避免与死士遭遇。	ここが学園都市から出るのに最短ルートだったんだもん。それに、ここならゾンビも少なくて安全だしね～！	NONE
+speaker	Mei
+
+emote	201	2
+msg	250236	I understand the reasoning, but... it's so hard to walk on these tracks.	道理我都懂，可是…这铁轨实在是太难走了……	言ってることは理解できるけど……さすがにこの道は歩きにくいわね……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250237	Alright, then let's take a break! You can see all of the Academy City from here, it's a really nice view. Perfect for a break, huh?	好吧，学姐我们休息一下吧，从这里可以眺望学园都市，风景还是蛮不错的~	だったら、この辺で休憩しよっか！学園都市も見えるし、景色が良くて休憩するにはピッタシでしょ？	NONE
+speaker	Mei
+
+emote	201	2
+msg	250238	Ah, it's not that I'm dissatisfied! Since I decided to go with you, Kiana-chan, I'm prepared for anything!	不，我也不是抱怨的意思，既然决定和你一起走了，就已经做好觉悟了！	あっ、別に不満があるわけじゃないの！キアナちゃんと一緒に行くと決めたからには、覚悟は出来ているもの！	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250239	I know that~! But I'm a little tired too, so let's take a break, okay?	好啦好啦~其实我也有点累了，就稍作休整吧~	分かってるって～！でも、私も少し疲れたから休憩しよう、ね？	NONE
+speaker	Mei
+
+emote	201	2
+msg	250240	Thank you... But you don't have to treat me like a princess. I want to be of some help to you too, Kiana-chan.	好吧……但是请不要把我当成大小姐对待！我是不会给你拖后腿的！	ありがとう……でも、お嬢様扱いはしなくて大丈夫だからね。少しでもキアナちゃんの役に立ちたいの。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250241	I wasn't treating you like a princess! And I was surprised to learn that you have a background in swordsmanship! You've been a big help!!	我可一点都不认为芽衣学姐在拖后腿哦~更令我意外的是芽衣学姐居然还会剑道呢~真是帮大忙了！	お嬢様扱いなんてしないよ！それに芽衣先輩に剣術の心得があるなんて驚いたもん！もう大助かりだよ！！	NONE
+speaker	Mei
+
+emote	201	2
+msg	250242	...This is the school of swordsmanship called "Hokushin Ittou-ryuu" that has been passed down in the Raiden family. I never thought I would actually end up using it. I even had no intention of ever holding a sword again...	……这是雷电家家传的武术“北辰一刀流”，没想到居然还会有用到它的机会，明明已经打算忘记的……	……これは雷電家に伝わる“北辰一刀流”という流派なの。まさか、実際に使うことになるなんて思わなかったわ。刀を握るつもりはもうなかったのに……。	NONE
+emote	201	0
+msg	250243	Let's go! There's still a long way to go, right?	不说这个了，我们出发吧！要走的路还有很长对吧？	行きましょう！先はまだまだ長いんでしょう？	NONE
+speaker	Kiana
+
+emote	101	2
+msg	250244	Mei-senpai, wait! Let me rest a bit longerrrr!	等等啦！芽衣学姐！让我再休息一下啦！	芽衣先輩、待って！もうちょっと休ませてよー！	NONE

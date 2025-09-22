@@ -1,0 +1,59 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	lab_interior2
+music	re/2-14 - Temporal Rift
+speaker	Kiana
+portraits	101	201
+emote	201	3
+match_names	Kiana	Mei
+
+/Kiana	251412	[i]Ah... achoo![/i] Th-The temperature is dropping rapidly. It feels like we're entering a freezer...	气温也越来越低，感觉像是进入了冰室一样……	ふぇ……っくしょん！き、気温がどんどん下がってきてる。まるで、冷凍庫の中に入ったみたい……。	A temperatura também está cada vez mais baixa, parece que estou entrando em um freezer...
+speaker	Mei
+
+msg	251413	Something seems strange... The experiments here seem a little different from the ones Father used to do...	这里的实验，好像有些奇怪……好像以前跟以前父亲所做的实验有点不同……	様子が変だわ……ここで行われていた実験、何だかお父様がやっていたものと少し違うみたい……。	Os experimentos aqui parecem um pouco estranhos, parecem um pouco diferentes dos que meu pai fazia.
+speaker	Kiana
+
+emote	101	3
+msg	251414	Experiments? Looks pretty standard to me... Specimens, biochemical symbols, stuff like that. In my opinion, this place gives off serious laboratory vibes~	实验？我觉得很正常啊…标本什么的，生化符号什么的，倒不如说这样才有实验室的氛围~	実験？ん～、標本とかよくわかんない記号とか、普通の実験室っぽい感じがするけど？	Experimentos? Parece bastante normal para mim... Espécimes, símbolos bioquímicos, coisas assim. Mais como, este lugar emite vibrações sérias de laboratório ~
+speaker	Mei
+
+emote	201	3
+msg	251415	There also seems to be a logo above all the lab doors we just passed... It's bugging me...	而且，刚才经过的那些实验室上面好像都有一个标志…总觉得……	違和感は他にもあるの。どの実験室にも同じロゴがあって、それがすごく引っかかるのよ……。	Além disso, parece haver um logotipo acima de todas as portas do laboratório que acabamos de passar... Isso está me incomodando...
+speaker	Kiana
+
+emote	101	3
+msg	251416	Logos? What logos?	标志？什么标志？	ロゴ？どんなロゴ？	Logotipos? Que logótipos?
+speaker	Mei
+
+emote	201	0
+msg	251417	That one.	就是这个。	これよ。	Aquele.
+speaker	Kiana
+
+emote	101	0
+msg	251418	Hmm, maybe it's a logo from your company? You don't need to worry about it, Senpai~	说不定是你家公司内部的什么标记啦，学姐你不用在意的~	んー、先輩んとこの会社のロゴじゃないかな？気にする必要ないと思うけど。	Talvez seja um logotipo da sua empresa? Não se preocupe com isso, senpai~
+speaker	Mei
+
+emote	201	3
+msg	251419	...You're right, I'm probably just imagining things.	嗯，说的也是。	……そうよね、きっと私の思い過ごしよね。	Bem, isso é verdade.
+msg	251420	If we go through the warehouse up ahead, we should be able to escape through the side gate.	我记得穿过前面的仓库，就可以从侧门逃出去了。	この先の倉庫を抜ければ、通用門から脱出できるはずよ。	Lembro-me de passar pelo armazém da frente para sair pela porta lateral.
+speaker	Kiana
+
+emote	101	0
+msg	251421	Shhh!	嘘~	しっ……！	NONE
+msg	251422	Senpai, did you hear anything?	学姐，你有没有听见什么声音？	先輩、何か聞こえない？	Senpai, você ouviu alguma coisa?
+/	251423	[i]Shuffle... shuffle——[/i]	簌簌…簌簌…	ガサッ……ササ——	NONE
+speaker	Mei
+
+emote	201	3
+msg	251424	This is... Are the zombies coming after us?	这……莫非是那些死士追过来了？	まさか……ゾンビが追ってきたのかしら？	Este som- Os zumbis podem estar vindo atrás de nós?
+speaker	Kiana
+
+emote	101	0
+msg	251425	No, that's not what zombies sound like. It was more like the sound of an animal moving, and it came from the direction of the warehouse.	不，那不是死士的声音，倒像是某种动物在行动的声音，就是从仓库那边传来的。	ううん、ゾンビが出すような音じゃない。動物の足音のような……あっちの方から聞こえる。	Não, não é assim que os zumbis soam. Era mais como o som de um animal se movendo e vinha da direção do armazém.
+speaker	Mei
+
+emote	201	0
+msg	251426	How can there be animals in a place like this... How about we go and have a look?	这个地方怎么会有动物…要不我们过去看看？	どうして、こんな所に動物が……キアナちゃん、どうするの？	Como pode haver animais em um lugar como este... Que tal irmos dar uma olhada?
+speaker	Kiana
+
+emote	101	0
+msg	251427	Well, I have a feeling that if we turn back now we'll just be faced with more zombies so... let's go check the warehouse out!	现在折返回去只怕会遭遇更多的死士…那就去仓库那边看看吧。	ここで引き返してもゾンビに囲まれるだけだし……音の方に行ってみましょう。	Bem, tenho a sensação de que, se voltarmos agora, enfrentaremos mais zumbis, então... vamos verificar o armazém!

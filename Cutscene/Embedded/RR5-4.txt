@@ -1,0 +1,99 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	lab_interior2
+music	re/2-14 - Temporal Rift
+speaker	Kiana
+portraits	101	201
+emote	201	3
+match_names	Kiana	Mei
+
+/Kiana	250898	Mei-senpai! Did you see that?	芽衣学姐，你有没有看到那个东西！	芽衣先輩、見た？	Mei-senpai! Você viu aquilo?
+/Mei	250899	Um... What is that?	唔…那是什么？	え、ええ……あれ、何かしら？	Hum... O que é isso?
+/Kiana	250900	Not sure... It slipped away. Let's follow it and find out!	不知道…它已经溜了，我们跟过去看看吧？	分かんないけど……逃げていくよ、追ってみよう！	Não tenho certeza ... Ele escapou. Vamos acompanhar e descobrir!
+speaker	Mei
+
+emote	201	0
+msg	250901	Hold on! We don't want to get hurt if we rush after them. Let's act calmly and make a plan.	喂~不要冲动，总该先计划好如何应对突发情况吧。	待って！焦って追いかけて怪我でもしたら大変よ。ここは落ち着いて、慎重に行動しましょう。	Aguentar! Não queremos nos machucar se corrermos atrás deles. Vamos agir com calma e fazer um plano.
+speaker	Kiana
+
+emote	101	3
+msg	250902	...H-huh?	咦？	……あ、あれ？	Huh?
+speaker	Mei
+
+emote	201	0
+msg	250903	Isn't that... a person? Kiana, didn't you say that that was the sound of an animal?	那里怎么会有一个人，琪亚娜你不是说是动物的声音么？	人……よね？動物を追ってたはずだけど、どういうことかしら？	Como poderia haver uma pessoa lá? Kiana, você não disse que era o som de um animal?
+speaker	Kiana
+
+emote	101	3
+msg	250904	I… I don't know…	这…我也不知道啦……	わ、私にも分かんない……。	Isto...eu também não sei...
+speaker	Mei
+
+emote	201	3
+msg	250905	I hear a voice... Is she whispering to someone?	她是在对着谁窃窃私语吗？	声が聞こえる……誰かとお話しているのかしら？	Eu ouço vozes: ...... Será que ela está falando com alguém?
+speaker	Kiana
+
+emote	101	3
+msg	250906	There isn't anyone else here, just zombies... Could she be talking to herself?	这里除了死士，应该不会有其他人吧，莫非在自言自语着什么？	ここにはゾンビ以外、もう誰もいないはずだけど……まさか独り言とか？	Não há mais ninguém aqui, apenas zumbis, então ela está falando sozinha?
+speaker	Mei
+
+emote	201	0
+msg	250907	No, look in front of her, there's a girl lying there. Is that who she's talking to?	不是，她面前，躺着一个女生。	見て、彼女の前に誰か倒れてる。女の子だわ。あの子に話しかけてる？	Não, olhe na frente dela, tem uma garota deitada ali.
+se	beep beep
+/	250908	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡……	ピピッ——ピピッ——	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250909	Dammit, why is it buzzing now of all times?!	糟了，偏偏这个时候来提醒。	ヤバッ、こんな時に限って崩壊エネルギー反応ッ！？	Droga, por que está apitando logo em um momento como este!?
+msg	250910	...Wha?! Powerful Honkai Energy has been detected 20 meters ahead?! Isn't that...	什么！？前方20米处有强烈崩坏源反应…那不就是……	……えっ！？前方20ｍ先に強力な崩壊エネルギー！？それってまさか……。	...... O que? Há uma forte presença de Energia Honkai 20 metros à frente!? Isso não pode estar certo. ......
+speaker	Mei
+
+emote	201	0
+msg	250911	Kiana-chan, I think she saw us. She's coming our way! ...Eh? Her face is completely white and——	琪亚娜，她好像发现我们了。她正在向这边看，好白的脸颊…还有……	キアナちゃん、気付かれたみたい。こっちに向かってくる！……えっ？そんな、顔が真っ白、それに——	Kiana, acho que ela nos viu! Ela está olhando em nossa direção. Seu rosto está tão pálido... E...
+speaker	Kiana
+
+emote	101	0
+msg	250912	Senpai, what did you see? Why are you trembling...?!	学姐你发现什么了？怎么你的身体在发抖……	先輩、どうしたの？何を見たの！？	Senpai, o que você viu? Por que você está tremendo?
+speaker	Mei
+
+emote	201	0
+msg	250913	She has tails...	她还有尾巴……	尻尾があった……。	Ela tem caudas...
+speaker	Kiana
+
+emote	101	0
+msg	250914	Tails? That's not good... Looking at her, she's probably also able to control Honkai Energy. We need to get out of here, fast!	尾巴？这可不妙…看她这样子，应该也有着控制崩坏源的能力。我们得赶紧撤离这里！	尻尾？……何だか嫌な予感。崩壊エネルギーも操れるみたいだし、ひとまずここから離れましょう！	Caudas? Isso não é bom... Olhando para ela, ela provavelmente também é capaz de controlar a energia Honkai. Precisamos sair daqui, rápido!
+
+tween	foreground	visible,true;horizalign,left;diffuse,black;zoomx,0;linear,.5;zoomx,1;
+await_tween
+tween	foreground	horizalign,right;linear,.5;zoomx,0
+
+msg	250915	Phew~ It should be safe here...	呼~逃到这里应该安全了吧……	ふぅ～、ここまで来れば安心だよね……。	Ufa~ Deve ser seguro aqui.
+speaker	Mei
+
+emote	201	0
+msg	250916	Yeah... We're just a few steps away from the gate. But was it really okay to just run away like that?	嗯…这里也离这所学园的侧门不远了，但是……	ええ……通用門まであと少しよ。でも、あのまま放っておいて良かったのかしら？	Mmmh, não estamos longe da entrada lateral da academia...
+speaker	Kiana
+
+emote	101	0
+msg	250917	Calm down, Senpai... Are you telling me you're curious about that girl we just saw?	安啦，学姐你还在在意刚才的事情么？	まさか、先輩……さっきの子が気になるの？	Calma, Senpai. Você está preocupado com o que acabamos de ver?
+speaker	Mei
+
+emote	201	3
+msg	250918	Yes, I feel like she's hiding some kind of secret... and that girl who was lying on the ground... I wonder if there's anything we can do to help her.	嗯，总觉得她身上隐藏着些什么…还有躺在那里的那个女生……	うん、何か彼女には秘密が隠されてるような気がするの……それにあの倒れていた女の子……助けられないかしら。	Bem, continuo sentindo que há algo mais nela... E aquela garota deitada ali.
+msg	250919	Hey, Kiana-chan. Why don't we go back and investigate?	琪亚娜，要不我们回去看看吧？	ねぇ、キアナちゃん。一度戻ってみない？	Kiana, por que não voltamos e investigamos?
+speaker	Kiana
+
+emote	101	4
+msg	250920	No way! It's too dangerous!!	不行！这个地方太危险了！	ダメだよッ！絶対に危ないもん！！	Não! Este lugar é muito perigoso!
+speaker	Mei
+
+emote	201	3
+msg	250921	......	……	……。	NONE
+speaker	Kiana
+
+emote	101	3
+msg	250922	Besides——!	而且……	それに——！	E...
+speaker	Mei
+
+emote	201	2
+msg	250923	A-Alright. Maybe you're right, Kiana-chan... Sorry for being too reckless.	好啦~我知道啦~或许琪亚娜真的是对的呢…是我太任性了。	そ、そうよね。キアナちゃんの言うとおりだわ……変なこと言ってごめんなさい。	Ok~ eu entendo~ Talvez Kiana esteja realmente certa... Estou sendo muito imprudente.
+emote	201	0
+msg	250924	I'll just forget about it. Let's get out of here...	走吧，我带你离开这所学院都市……	さっきのことは忘れてちょうだい。ここから脱出しましょう……。	Vamos, vou tirar você da Cidade Academia...

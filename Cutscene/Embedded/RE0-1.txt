@@ -1,0 +1,3 @@
+msgbox_close	instant
+add_screen	RE-OverlayPrologue
+msg	[center]Click/press A to continue[/center]

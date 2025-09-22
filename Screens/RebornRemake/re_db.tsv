@@ -17,6 +17,7 @@ Foreground Test	Tests the color rect which covers the screen.	test_foreground
 
 
 --Chapter R1
+Prologue		RE0-1
 R1-1	It seems like a normal quest...	RE1-1
 R1-2		RE1-2
 R1-2A		RE1-2A	true

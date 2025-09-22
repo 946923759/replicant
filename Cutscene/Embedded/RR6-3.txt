@@ -1,0 +1,43 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/XIII-1 The Sunleth Waterscape
+match_names	Kiana	Mei
+bg	009/043_1280x720
+portraits	101	201
+
+speaker	Mei
+
+emote	201	0
+msg	250245	Kiana! How's it going on your end?	琪亚娜！你那边情况怎么样！	キアナちゃん！大丈夫っ！？	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250246	Damn! What is with these metal hunks of junk that keep coming out one after another?! I'm already satisfied with just zombies!	可恶！这些没完没了的铁疙瘩是怎么回事嘛！为什么除了死士还有这种奇怪的敌人出现！	くっ！何なの、次から次へと湧いてくるこの鉄クズは！？敵はゾンビだけで十分なんだけど！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250247	It seems that the route you chose is not very safe either, huh?	看来你选择的这条线路也不是很安全呢？	この道、安全なんじゃなかったの？	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250248	Mei-senpai! Stop being mean! Let's find a place to hide, quick!	好啦~芽衣学姐，有时间吐槽的话还是赶紧找个安全的地方隐蔽起来吧！	もう芽衣先輩っ！いじわる言わないで！早く隠れられる場所を探そう！	NONE
+msg	250249	Ah, look over there! There's a derailed train! Let's hide behind it! It'd be bad if we fought out in the open on the rail tracks!	那边有一辆脱轨的轻轨电车可以作为掩体，我们先到那里去吧！在轻轨上毫无遮挡地作战实在是太不利了！	あっ、見てあそこ！脱線してる車両がある！あれに隠れよう！さすがにここじゃ、遮蔽物がなさ過ぎて不利だもん！	NONE
+speaker	Mei
+
+emote	201	0
+msg	250250	......	……	……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250251	Mei-senpai? ...What's wrong?	芽衣学姐你怎么了？	芽衣先輩？……どうしたの？	NONE
+speaker	Mei
+
+emote	201	3
+msg	250252	The logo on the pieces of these mechs, it's...	这个机甲的碎片上的标志是……	これ……機甲から剥がれた装甲に描かれてるロゴ……。	NONE
+speaker	Kiana
+
+emote	101	0
+msg	250253	A logo? Forget about that for now, let's get away! We'll be beaten to a pulp!!	标志？别管这些啦！再不走可是要被打成筛子了哦！	ロゴ？そんなの今はいいから逃げないと！蜂の巣になっちゃうよ！！	NONE
+speaker	Mei
+
+emote	201	2
+msg	250254	O-okay...	嗯……	そ、そうね……。	NONE

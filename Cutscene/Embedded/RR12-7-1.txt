@@ -1,0 +1,82 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	The Sound of the End - Full
+preload_portraits	413	201	301	401	107
+bg	rr/chapter12-StFreyaDamaged
+speaker	Theresa
+portraits	413	201	301	401
+emote	413	0
+msg	250842	The rampage of Honkai energy... stopped?	崩坏能的暴走……停止了？	崩壊エネルギーの暴走が……止まった？	NONE
+speaker	Mei
+emote	201	0
+msg	250843	What... happened to Kiana?	琪亚娜……在哪？	キアナちゃんは……どうなったの？	NONE
+speaker	Bronya
+emote	301	0
+msg	250844	An extremely powerful Honkai source has appeared ahead... Its level has already exceeded the peak of the Third Eruption...	前方发现极强崩坏源…这个级别，已经超越了第三次崩坏的峰值……	前方に極めて強大な崩壊源が出現……すでに第三次崩壊のピーク値を超えるレベルです……。	NONE
+speaker	Himeko
+emote	401	0
+msg	250845	That figure, it can't be...	那个身影难道是……	あの姿は、まさか……。	NONE
+speaker	Mei
+emote	201	0
+msg	250846	Kiana...?	琪亚娜……？	キアナちゃん……？	NONE
+speaker	Kiana?
+portraits	413	201	301	401	107
+emote	201	0
+
+msg	250847	……	……	……。	NONE
+speaker	Cocolia
+portraits	201	621
+emote	201	0
+emote	621	0
+msg	250848	Ahh... SUCCESS!! The door to the realm of the gods has finally been opened! Come here, my daughter! May the gods grant this child eternal life and power!	啊啊！！成功了！！通往神之领域的大门终于开启了！来吧！我的女儿！请诸神赐予你永生与力量！	ああっ……成功よ！！神の領域へと通じる扉が、ついに開かれたわ！こっちにおいで、私の娘！神々よ、この子に永遠の命と力を賜りたまえ！	NONE
+speaker	Theresa
+portraits	413	621
+emote	413	0
+emote	621	0
+msg	250849	Cocolia! Get out of there! A human would be infected in the blink of an eye by this intense Honkai energy!	可可利亚！快离开那里！这样剧烈的崩坏能中人类会被立刻感染的！	カカリアッ！早くそこから逃げなさい！こんな強烈な崩壊エネルギー、人間なら瞬く間に感染してしまうわ！	NONE
+speaker	Cocolia
+emote	413	0
+emote	621	0
+msg	250850	Fufufu... Theresa, look! This is my daughter... Oh, how beautiful! What great power! No one can take my child away from me now!	呵呵……德丽莎！你看到了么！这就是我的女儿……多么美丽！多么强大！没有人能够再夺走她了！	フフフ……テレサ、ご覧なさい！これが私の娘よ……あぁ、美しい！素晴らしい力だわ！もう、誰もこの子を奪うことはできない！	NONE
+portraits	621
+emote	621	0
+msg	250851	Mom... are you there?	妈妈…你在这里么？	ママ……そこにいるの？	NONE
+speaker	Cocolia
+emote	621	0
+msg	250852	Yes, Mom is here! Come give me a hug!	对！妈妈就在这里！快回到妈妈的怀抱中！	ええ、ママはここよ！抱きしめてあげる、おいで！	NONE
+emote	621	0
+msg	250853	Mom...	妈妈……	ママ——	NONE
+speaker	Cocolia
+emote	621	0
+msg	250854	Hehe, ahahahahaha! Hahahaha... HAHAHA... aaah——!	哈哈哈！哈哈哈！！！	ククッ、アッハハハハッ——！ハッハハハハ……ハハッ…………ァ——	NONE
+speaker	Theresa
+portraits	413	201	301	401
+emote	413	0
+emote	621	0
+msg	250855	Cocolia... was swallowed by the reactor's Honkai energy...	可可利亚…被熔炉中的崩坏能吞没了……	カカリアが……動力炉の崩壊エネルギーに呑み込まれた……。	Cocolia... Foi engolida pela energia Honkai dentro da fundidora.
+
+speaker	Kiana?
+portraits	413	201	301	401	107
+emote	413	0
+
+msg	250856	……	……	……。	NONE
+speaker	Theresa
+emote	413	0
+
+msg	250857	Everyone, protect Mei! We can still prevent the Final Eruption from happening!	快保护芽衣！现在还有办法阻止大崩坏的发生！	全員、芽衣を守って！今ならまだ、大崩壊の発生を阻止できる！	NONE
+speaker	Mei
+emote	201	0
+
+msg	250858	Kiana... This isn't real! Wake up, please!	琪亚娜……这不是真的…你快醒醒！	キアナちゃん……嘘でしょ……目を覚まして！！	Kiana... Isso não é real! Acorde, por favor!
+speaker	Theresa
+emote	413	0
+
+msg	250859	That's no longer Kiana... She is only a puppet controlled by the Second Herrscher. We must get Kiana back at all costs!	她现在已经不是琪亚娜了…而是第二律者操纵下的傀儡，我们必须把琪亚娜带回来！	あれはもうキアナじゃない……第二律者に操られた人形よ。何としてでも、キアナを取り戻さないと！	NONE
+speaker	Kiana?
+emote	413	0
+
+msg	250860	……	……	…………。	NONE
+speaker	Theresa
+emote	413	0
+
+msg	250861	Prepare for battle!!	准备迎击！	迎撃用意ッ！！	NONE
+

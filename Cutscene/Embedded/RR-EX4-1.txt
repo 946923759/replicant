@@ -1,0 +1,37 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+music	re/3-18 - Academia
+portraits	101	201
+match_names	Kiana	Mei
+bg	rr/ex4
+/Mei	251201	Kiana-chan...	琪亚娜……	キアナちゃん……。	Kiana ......
+/Kiana	251202	What is it, Mei-senpai?	怎么了，芽衣学姐？	どうしたの？芽衣先輩。	O que há de errado, Mei-senpai?
+/Mei	251203	It feels like we're just going around in circles... Are we really getting closer to where Byakko-san is?	没什么，我就是想问问，我们真的能找到那位白狐小姐么，我们已经在这儿绕了很久了……	何だか同じところをグルグルと回っているような気がするけど……白狐さんの居場所に近づけているのよね？	Não é nada, eu só queria saber se podemos encontrar a senhorita Palefox, estamos procurando por aqui há muito tempo...
+/Kiana	251204	Don't worry, Senpai! This phone may be useless sometimes, but it does come in handy in an emergency!	放心啦~虽然这个手机时灵时不灵，但还是挺管用的~	安心して先輩！このスマホ、たまに使い物にならないけど、いざって時には役に立つんだから！	Não se preocupe~ Mesmo que este telefone nem sempre funcione, ainda pode ser bastante útil.
+
+se	beep beep
+/	251205	[i]Beep beep—— Beep beep——[/i]	嗡嗡嗡……	ピピッ——ピピッ——	NONE
+
+speaker	Kiana
+emote	101	0
+msg	251206	See? What did I tell you?	你看，我说什么来着？	ほら、反応があったでしょ？	Ver? O que eu disse a você?
+speaker	Mei
+
+emote	201	3
+msg	251207	What a strange machine. The person who made it must be truly amazing.	真是一个奇妙的机器呢，发明这个的人一定是一个很厉害的人吧……	不思議な機械。これを作った方って、とてもすごい方なのでしょうね。	Esta máquina é cheia de surpresas, a pessoa que a fez deve ter sido uma pessoa muito inteligente e habilidosa.
+speaker	Kiana
+
+emote	101	0
+msg	251208	Hmm, amazing... Probably? He's one of those guys who goes missing all the time.	厉不厉害我不知道，不过他肯定是一个喜欢到处乱跑的就是了。	んー、すごい……のかな？行方不明にしょっちゅうなるヤツだよ。	Eu não sei se ele é tudo isso, mas ele definitivamente é o tipo de pessoa que anda por aí.
+speaker	Mei
+
+emote	201	3
+msg	251209	Oh? Kiana-chan, do you know him well?	哦？琪亚娜你跟他很熟吗？	キアナちゃん、その人と知り合いなの？	Oh? Kiana, você é próxima dele?
+speaker	Kiana
+
+emote	101	0
+msg	251210	I'm not sure if I should say we're acquaintance, but... Sorry, I'd rather not talk about that for now. We need to focus on searching for Byakko instead.	也不是特别熟，虽然他是我的…算了，不想提起那个家伙…我们还是先找到那只狐狸把她身上的崩坏源清理掉再说吧。	知り合いというか、私の……ごめん、この話、今はやめましょう。それよりも白狐の捜索に専念しなくちゃ。	Eu também não sou muito chegado a ele, embora ele seja meu... Agh! Esqueça, não quero falar sobre ele. Vamos encontrar essa raposa e nos livrar da fonte Honkai.
+speaker	Mei
+
+emote	201	0
+msg	251211	Oh... Okay, if you don't want to talk, I won't make you, Kiana-chan.	嗯，琪亚娜你不想说就算了。	え……ええ、キアナちゃんが話したくないなら、無理に聞かないわ。	Ok Kiana. Se você não quer falar sobre isso, então não importa.
+msg	251212	Let's go, Kiana-chan.	我们走吧，琪亚娜。	行きましょう、キアナちゃん。	Vamos, Kiana-chan!

@@ -1,6 +1,6 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
 preload_portraits	101	201	3
-bg	CG10272
+bg	rr/chapter4
 speaker	Kiana
 portraits	101	201
 music	re/1-06 - Divine Conflict
@@ -71,7 +71,7 @@ bg	black
 /	(.......Some time later)
 
 music	re/1-07 - An Arrow Through Time
-bg	CG10272
+bg	rr/chapter4
 portraits	101	3
 tween	3	y,-200
 speaker	Corrupted Mei

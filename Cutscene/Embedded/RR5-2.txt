@@ -1,0 +1,59 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	lab_interior2
+music	re/2-14 - Temporal Rift
+speaker	Kiana
+portraits	101	201
+match_names	Kiana	Mei
+
+/Kiana	251396	Mei-senpai?	芽衣学姐？	芽衣先輩？	Mei Senpai?
+speaker	Mei
+
+emote	201	0
+msg	251397	Huh? Wh-what, Kiana?	诶！？怎么了吗，琪亚娜？	えっ？な、何？キアナちゃん？	Hum? Qual é o problema, Kiana?
+speaker	Kiana
+
+emote	101	3
+msg	251398	Nothing really, I was just wondering what was wrong because you looked gloomy.	不是啦~就是看到学姐你一直愁眉苦脸的，想问问你怎么了。	べつに～、ただ先輩がずっと暗そうにしてるから、どうしたのかなーと思って。	Ah não é nada, é só que você parecia triste então eu queria te perguntar o que há de errado.
+speaker	Mei
+
+emote	201	0
+msg	251399	It's nothing... I'm just... thinking of my father.	没什么…只是想起了我的父亲……	ごめんなさい……ちょっと、お父様のことを思い出してたの……。	Não é nada... Só estou... Pensando no meu pai.
+msg	251400	I remember when I was still a kid, my father would always be doing experiments, as if experiments were all he ever had...	我记得在我小的时候，父亲就一直在做实验，仿佛实验就是他的全部一样……	私が小さかった頃、お父様っていつも実験室にこもっていたの。お父様にとって、実験は何よりも大切だったみたい……。	Eu me lembro quando eu ainda era criança, meu pai sempre fazia experimentos, como se experimentos fossem tudo o que ele tinha......
+msg	251401	I was tutored by the private teachers that my father hired, and I've never had any friends. The only person that I could talk to was my Kendo teacher.	我受到的教育也都是父亲请来的专门的老师，我没有一个朋友，只有一个教我剑道的老师能和我说上话……	勉強はお父様の雇った専門の先生から教わったわ。だから、私に友達なんて一人もいなかった。唯一、お喋りしてくれたのが剣術の先生だけ……。	Fui ensinado pelos professores particulares que meu pai contratou e nunca tive amigos. A única pessoa com quem eu podia falar era meu professor de Kendo.
+msg	251402	When I got older, I wanted to question my father about that, but he vanished.	当我长大了，想要询问父亲为什么的时候，他却不见了……	大きくなったら、お父様に理由を尋ねようと思っていたのに……それがいなくなっちゃうなんて、想像もしてなかった……。	Quando fiquei mais velho, quis questionar meu pai sobre isso, mas ele sumiu.
+speaker	Kiana
+
+emote	101	3
+msg	251403	Vanished... You mean...?	不见了…是指……？	いなくなった……？	Desapareceu... Você quer dizer...?
+speaker	Mei
+
+emote	201	0
+msg	251404	Missing, whereabouts unknown.	失踪了，下落不明。	ええ、失踪したの。今も行方不明よ。	Desaparecido, localização desconhecida.
+speaker	Kiana
+
+emote	101	3
+msg	251405	Just like mine…	和我一样呢……	私と同じだ……。	Assim como... meu
+speaker	Mei
+
+emote	201	3
+msg	251406	Kiana?	琪亚娜？	キアナちゃん？	Kiana?
+speaker	Kiana
+
+emote	101	0
+msg	251407	My dad also vanished. That's why I came to Senba Academy, to look for him.	我的父亲也失踪了，我到千羽学园来，就是为了找他。	私のパパも失踪したの。千羽学園に来たのもパパを探すため。	Meu pai também desapareceu, por isso vim para a Academia Chiba , para procurá-lo.
+speaker	Mei
+
+emote	201	2
+msg	251408	Looks like we're in the same boat then.	这么说，我们也算是同病相怜呢~	そうだったの……ふふっ、それじゃあ、私たち似た者同士なのね。	Parece que estamos no mesmo barco então.
+speaker	Kiana
+
+emote	101	0
+msg	251409	Yeah, should we call this alliance the "Girls' Alliance of Looking for Our Missing Dads"?	对呀，我们这样是不是就是“寻找失联父亲少女同盟”呢？	そうだね！さしずめ、私たち「父をたずねて三千里同盟」ってとこかしら！	Sim, devemos chamar esta aliança de "Aliança das Meninas que  procuram seus Pais Desaparecidos”?
+speaker	Mei
+
+emote	201	2
+msg	251410	What kind of name is that?	那都是什么怪名字啦~	もう、何その変な同盟～。	Que tipo de nome é esse?
+speaker	Kiana
+
+emote	101	0
+msg	251411	Ehehe~	诶嘿嘿~	えっへへ～。	NONE

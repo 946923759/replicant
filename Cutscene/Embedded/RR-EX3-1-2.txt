@@ -1,0 +1,33 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+portraits	101	201
+match_names	Kiana	Mei
+music	re/2-15 - Oracle Drive
+bg	rr/ex3
+
+emote	101	3
+msg	251159	H-Huh? Where are we?	我们这是到什么地方了？	あ、あれ？ここ、どこだろう？	Onde estamos agora?
+speaker	Mei
+
+emote	201	3
+msg	251160	Umm... I think this is one of the academy's forbidden areas. It's a school building that hasn't been used for a very long time, and rumors say that ghosts appear here.	这里…如果我没记错的话，好像也是学园的禁地之一，一座已经废弃了很久的校舍。据说还会闹鬼哦~	えっと……たしか、ここも学園の立ち入り禁止区域のひとつよ。ずっと使われてない校舎で、噂だとお化けなんかが出るらしいわ。	Este lugar... Se bem me lembro, parece ser um dos locais fora dos limites da academia. Um edifício na academia que está abandonado há muito tempo. Diz-se que é assombrado.
+speaker	Kiana
+
+emote	101	0
+msg	251161	Hah, I don't believe that! Ghosts don't exist in this world. But if it's a forbidden area, there might be less zombies... Maybe it's safer?	哼，这世上那有什么神啊鬼啊的。不过既然这里也是禁地的话就说明这个地方应该也没有多少死士，这里应该是安全的。	まっさか～！お化けなんているはずないよ。けど、立ち入り禁止区域だったんなら、ゾンビは少ないかも……多少は安全かな。	Ha, eu não acredito nisso! Não deveria haver nenhum fantasma aqui. Mas se for uma área proibida, pode haver menos zumbis... Talvez seja mais seguro?
+speaker	Mei
+
+emote	201	3
+msg	251162	Are there fewer zombies in a forbidden area?	你认为这里常年无人进入，所以也就不会有死士存在？	立ち入り禁止区域だと、ゾンビが少ないの？	Há menos zumbis em uma área proibida?
+speaker	Kiana
+
+emote	101	0
+tn	0	Fused the Chinese and Japanese translations together
+msg	251163	Yeah, that's how it works, right? Zombies were originally humans too. If it's a forbidden area, there's a good chance that there were no people there before the Honkai outbreak occurred, right? That's why there are so few zombies. 	对呀，难道不是吗？	そうだよ。ゾンビも元は人間だからね。立ち入り禁止区域ってことは、崩壊発生時に人がいなかった可能性も高いでしょ？だから、ゾンビも少ないってわけ。	Sim, isso não está correto?
+speaker	Mei
+
+emote	201	3
+msg	251164	Let's just say that you're right... But this whole time, I've felt as if someone was following us...	就当是这样好了…可是我总觉得有什么东西一直跟在我们的身后。	そうなのね……。でも、何だかさっきから後をつけられているような気がするんだけど……。	Vamos apenas dizer que você está certo... Mas todo esse tempo, eu senti como se alguém estivesse nos seguindo.
+speaker	Kiana
+
+emote	101	0
+msg	251165	Ah, that must mean... Damn it! It's that person from earlier!	糟了，是那东西！	えっ、それって……やばっ！さっきのヤツに見つかったんだ！	Droga! É aquela coisa!

@@ -1,5 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
-bg	CG10258
+bg	CG10269
 nop	tween	CG10258	diffuse,0.5,0.5,0.5,1
 msg	250129	[i]Rumble... RUMBLE!!![/i]	轰隆隆！！！	ゴォロッ——ゴロォゴオォオオッ！！	NONE
 speaker	Kiana

@@ -60,6 +60,11 @@ func _ready():
 		
 
 func _input(event):
+	if event is InputEventMouseMotion or event is InputEventMouseButton:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	
 	if event.is_action_pressed("DebugButton1"):
 		if OS.get_name() == "X11":
 			OS.execute("xdg-open",[get_database_path(pack)], false)

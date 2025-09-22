@@ -1,0 +1,101 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+portraits	101,false,-2	201,false,-2	4,false,2
+match_names	Kiana	Mei	Mysterious Girl
+music	re/2-15 - Oracle Drive
+bg	rr/ex3
+
+speaker	Mysterious Girl
+msg	251176	Were you the ones who harmed her?	是不是你们害了她？	あの子を殺めたのは、お主らか？	Foram vocês que a assassinaram?
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251177	We just beat you, and you're still throwing accusations at us?	区区手下败将，反倒先来发难了？	負けたくせに、どうも上から目線ね？	Embora acabamos de bater em você, você ainda vai nos lançar acusações?
+speaker	Mei
+
+emote	201	3
+emote	4	0
+msg	251178	By "her", are you talking about that girl who was lying in front of you inside the lab building?	你说的她，是指在实验楼中，躺在你身前的女孩吗？	ねぇ、あなたの言う“あの子”って、実験棟で倒れていた女の子のこと？	Por ela, você se refere à garota que estava deitada na sua frente no prédio do laboratório?
+speaker	Mysterious Girl
+emote	201	3
+emote	4	0
+msg	251179	So you two know her? Then, do you know what happened to her?	如此说来，你们认识她？	汝は、あの娘と知り合いか？何があったのか、知っておるのか？	Então, vocês a conhecem?
+speaker	Mei
+emote	201	3
+emote	4	0
+msg	251180	...No.	…	……いいえ。	NONE
+speaker	Mysterious Girl
+emote	201	3
+emote	4	0
+msg	251181	If you don't know, there's no need to say any more. I don't want to trouble matters further.	不知道的话，我们也没什么好谈的了，我可不想多生事端。	知らぬなら、これ以上話すことはない。厄介事は面倒じゃからな。	se não, não temos nada para falar e não quero causar mais problemas.
+speaker	Kiana
+
+emote	101	4
+emote	4	0
+msg	251182	Hey, stupid fox! Not so fast. Tell us why you came after us! And are you a human? Or a youkai? You're the one who attracted all the zombies around here, right?!	臭狐狸，别想这么轻易就溜走，你快说，你为什么要追赶我们？你到底是人是妖？还有，这些死士是不是你引来的？	ちょっと、バカ狐ッ！逃がさないわよ。何で私たちの後を追って来たのか、白状しなさい！それにあんたは人間なの？それとも妖怪？ここら辺のゾンビは、あんたが引き寄せたのよね！？	Raposa imunda, não tente fugir tão facilmente. Diga-nos, por que você estava nos perseguindo? Você é um humano ou um demônio? Além disso, você atraiu esses zumbis para cá intencionalmente ou-?
+speaker	Mysterious Girl
+emote	101	4
+emote	4	0
+msg	251183	Human or youkai? Who I am, even I do not know. You may consider me to be whatever you like.	是人是妖？这个问题连我自己都搞不清楚，你自己觉得是什么就是什么吧。	妾が何者なのか、それは妾にも分からぬ。好きなように捉えてくれてよい。	Demônio, ou humano? Humm, eu não sei quem sou eu. Acho que eu sou o que você me considera ser.
+msg	251184	I have no intention of harming you. You were the only surviving people I have met here, and you were spying on me in secret. Of course I had to catch up to you and ask questions.	我并无意害你们，你们是我遇见的少数几个活人，而且，还在暗地里偷窥我，我当然要追上你们问个清楚了。	お主らに危害を加えるつもりは毛頭ない。ここを生き残った人間が珍しくての、それが妾のことを見ておったから、その訳を聞きに来ただけじゃ。	Não tenho a intenção de prejudicá-las. Vocês foram as únicas pessoas sobreviventes que conheci aqui e me espionaram em segredo, é claro que eu tive que alcançá-las e fazer perguntas.
+speaker	Mei
+
+emote	201	3
+emote	4	0
+msg	251185	I see... I'm sorry. The way you looked at her before was peculiar, so I was just wondering. It seems you have deep obsession with that dead girl...	你似乎对那个死去的女孩，有着很深的执念？	そう、だったのね……ごめんなさい。あの倒れた女の子を見る目が普通じゃなかったから、あなたが気になってしまったの。何だか執念めいたものを感じて……。	Você tem uma forte apego com a garota que morreu?
+speaker	Mysterious Girl
+emote	201	3
+emote	4	0
+msg	251186	Obsession? Maybe so... After all, she and I slept together.	执念？或许是吧，毕竟我和她怎么说也是睡在一块的关系。	執念？そうやもしれぬな……同じ寝床を共にした仲じゃからのう。	Apego? Talvez sim, afinal de contas, como posso dizer que ela e eu estávamos dormindo juntos?
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251187	Uh...? H-Huh?! Wait wait wait, shouldn't this be a serious battle scene? How did it turn into a yuri drama...? S-So is that the kind of relationship you two have?	等…等一下，现在不应该是一个严肃的战斗场景么，为什么会演变成百合情感剧场了？	は……？えっ、え？待って待って、シリアスな展開だったのが、急に百合展開になったけど……そ、そういうお関係なの？	Espere...espere um minuto. Não deveríamos estar em uma cena de batalha séria agora? Por que isto se transformou em um Yuri Drama?
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251188	Seriously, Kiana-chan, let her finish talking first. Let's hear what she has to say. Please continue.	琪亚娜，我们还是听她把故事说完吧，我想，这位小姐应该也是一个有故事的人呢~	もうキアナちゃん、話の腰を折らないで。今は彼女の話を聞きましょう。良かったらあなたたちのこと、教えてくれないかしら？	Kiana! Vamos ouvi-la primeiro. Assim como você esta senhora também é uma pessoa com uma história.
+speaker	Mysterious Girl
+emote	201	0
+emote	4	0
+msg	251189	Ahh... I first met that girl on a stormy night. Rain had suddenly started to fall, and she had come to the shrine where I live to take shelter. At that time, I was not my current appearance, but just a white fox.	那是一个突然降临的雷雨之夜。她来到我住的神社，没有带伞，那时的我只是一只白狐，避雨的少女就把我抱在怀里，我们依偎在一起，互相取暖，就这样过了一夜。	ああ——あの娘との出会いは、雷雨の夜のことじゃった。突然降り出した雨から逃げるよう、妾の住む神社へとあの子が雨宿りをしに来たのじゃ。その時の妾は今のような姿ではなく、ただの白い狐じゃった。	Era uma noite de tempestades repentinas. Ela veio ao santuário onde eu morava sem guarda-chuva. Naquela época, eu era apenas uma raposa branca, e a garota que estava se protegendo da chuva me abraçou nos braços. Nós nos aconchegamos e mantemos um ao outro aquecido. Passamos o noite assim.
+msg	251190	When she found me, she held me close to her bosom and spent the night with me, trying to keep me warm. And then we became close friends. But then——	也正是如此，我和她才逐渐开始亲近…但是！	彼女は妾を見つけると懐に抱きかかえ、暖を取るようにして一夜を過ごしたのじゃ。それから彼女とは親しくなっての。それが——	Por isso aos poucos fui me aproximando dela...mas!
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251191	——I think I can guess. The power of Honkai Energy caused you to transform from a fox into a human.	看来，它是借由崩坏源能量获得的人形。	——大体察しが付いたわ。崩壊エネルギーの力で、狐から人間の姿になっちゃったのね。	Parece que você desenvolveu um corpo humano usando a Energia Honkai.
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251192	I wonder if her strong feelings for the girl who died had drawn the Honkai Energy to her, just like it did with me. It seems that right now she's suppressing the Honkai with her determination, able to control her body as she wishes.	因为对死去少女强烈的思念，它与我一样，吸入了崩坏源能量，并且靠着这股执念，压抑住了崩坏源，使其暂时屈从于自己的意识。	亡くなった女の子への強い想いが、私と同じように崩壊エネルギーを吸い寄せちゃったのかしら。今は執念で崩壊を抑え込み、身体を思い通りに動かせているみたいだけど。	Por causa de suas fortes emoções sobre a garota morta, ela absorveu a energia de origem honkai como eu fiz, e devido ao seu apego, a fonte honkai foi suprimida e a fez sucumbir temporariamente à sua própria consciência.
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251193	Yeah, Mei-senpai's right. She's experienced the horror of the Honkai firsthand. The Honkai gradually takes over the host's consciousness, causing them to lose their sense of self and go berserk. It may be fine now, but it's definitely dangerous later.	没错。可是崩坏源的威胁你是前身经历过的，它会逐渐侵蚀宿主的意识，直至暴走失控。	うん、芽衣先輩の言う通り。先輩は崩壊の恐ろしさを身をもって体験してるもんね。崩壊は徐々に宿主の意識を乗っ取って、自我を失わせ暴走させる。今は良くても、後々危ないと思う。	Isso mesmo. Mas Mei-senpai, você experimentou da fonte de Honkai antes. Isso vai corroer sua mente ao longo do tempo e, eventualmente, ela perderá o controle e entrará em fúria.
+speaker	Mei
+
+emote	201	0
+emote	4	0
+msg	251194	Ah, I don't know how to address you. How about we call you Byakko-san for now. Byakko-san, maybe you don't fully understand what we mean. We just want to say that the abilities you have now are extremely dangerous.	啊，虽然不知道该怎么称呼你，姑且先称呼你为白狐小姐吧。白狐小姐，可能你并不完全了解我们的意思。我只想说，你现在拥有的这种能力，是极其危险的。	えっと、白狐さん、今あなたが持っている力はとても危険なの。私たちが言っていること、簡単には理解出来ないかもしれないけど、信じてくれないかしら。	Ah, não sei como chamá-la, vamos chamá-la de senhorita Palefox por enquanto... De qualquer forma, senhorita Palefox, talvez você não tenha entendido completamente o que queremos dizer com isso agora. Só queríamos dizer que essa habilidade que você tem agora é extremamente perigosa.
+speaker	Kiana
+
+emote	101	0
+emote	4	0
+msg	251195	You don't have to endure the pain brought on by the Honkai anymore. I'll just get rid of the Honkai Energy that's tormenting you. Then you can go back to your old life!	但是你并不需要去承受这些崩坏源能量所带来的痛苦，请把造成你扭曲的崩坏源能量交给我吧。然后，你就可以继续回到从前的生活了……	もう崩壊に耐えなくていいの。あなたを苦しめている崩壊エネルギーは私が消してあげる。そうすれば昔の生活に戻れるから！	Mas você não precisa sofrer a dor causada pela energia honkai, por favor me dê a energia honkai que causou esta mutação. Então, você pode voltar para sua antiga vida.
+speaker	Byakko-san
+emote	101	0
+emote	4	0
+msg	251196	Go back to my old life...? Impossible! My life has changed since the day I met her...	不可能！我的生活早已经改变了，自从我遇见她的那一天起……	戻れるじゃと……？無駄じゃ！あの娘と出会ったあの日から、妾の運命は大きく変わっておる……。	De jeito nenhum! Minha vida mudou desde o dia em que a conheci ......
+msg	251197	You should understand, right? When I found her, she was not dead, but lying there peacefully, without a single scratch on her body. She had already left this world before everything fell apart.	你们应该明白的吧，当我发现她的时候，她并没有变成死士，只是平静的躺在那里，身上没有一点伤痕。就在崩坏降临之前，她已经离开了这个世界。	お主らも気付いておるじゃろう？彼女だけ周囲の者らと違って死体だったことに。ただ静かに横たわり、身体には傷もなかった。あの娘は世界が滅びる前から、この世を去っていたのじゃ。	Você deve entender que quando a encontrei, ela não se transformou em um zumbi, mas apenas ficou ali calmamente sem um arranhão em seu corpo. Pouco antes do Honkai, ela já havia deixado este mundo.
+msg	251198	I will find out why that girl left this world. Until then, I will continue using this power.	在我查明原因之前，我是不会服从你们的！	あの娘が何故この世を去ってしもうたのか、妾はそれを突き止める。それまではこの力、利用させてもらおうぞ。	Até eu descobrir o porquê, não vou me submeter a você!
+tween	4	linear,.5;diffusealpha,0
+/Kiana	251199	Wait! Listen to us! That power is...!	请听我解释…喂~等等……	待って！話を聞いて！その力は……っ！	Por favor, deixe-me explicar... Ei~ espere......
+
+nop	name highlighting overrides the diffuse so set visible false here
+tween	4	diffusealpha,0;visible,false
+/Mei	251200	She... vanished?	她…消失了？	そんな……消えた？	Ela... Desapareceu?

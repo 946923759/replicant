@@ -1,0 +1,70 @@
+#LANGUAGES	KEY	EN	ZH	JA	PT
+bg	lab_interior2
+music	re/2-14 - Temporal Rift
+speaker	Kiana
+portraits	101	201
+emote	101	0
+emote	201	3
+match_names	Kiana	Mei
+/Kiana	250862	It looks like it's just the two of us left in the entire academy. This is just like in a movie...	现在看来，整个学园似乎只剩下我们两个了呢~还真是如同电影一般的桥段啊~	やっぱり、この学園で生き延びたのって私たち2人だけみたい。何だが、まるで映画みたいなシチュエーションだね。	Parece que somos apenas nós dois em toda a academia. Isso é como em um filme...
+/Mei	250863	Surely enough, it's all because of me. Ah! Kiana, why did you pinch my face?	果然…会变成这样都是因为我的原因……呀！琪亚娜你捏我的脸干什么？	そんな、私のせいで……きゃっ！キアナさん、どうしていきなり頬っぺをつねるの！？	Com certeza, é tudo por minha causa.. Ah! Kiana, por que você beliscou meu rosto?
+speaker	Kiana
+
+msg	250864	That's punishment for a certain Senpai who can't stop blaming herself for everything. I've already told you that the people who didn't survive didn't do so because they lost their will. In my opinion, it doesn't make a difference whether they are alive or not.	这是对某个还在自责的学姐的惩罚哦~不是已经说过了嘛，那些没有能够活下来的人，都是早已失去了信念的人。在我看来，她们活着或是死去都没有任何区别。	これは未だにクヨクヨしてる先輩への罰だよっ！言ったでしょ？生き残ることができなかったのは、意志を失った人たちだって。あと「さん」はいらないからね！	Isso é punição para uma certa Senpai que não consegue parar de se culpar por tudo. Já lhe disse que as pessoas que não sobreviveram não o fizeram porque perderam a vontade. Na minha opinião, não faz diferença se eles estão vivos ou não.
+speaker	Mei
+
+emote	201	3
+msg	250865	Still though, I can't just accept that...	但是…我还是有些无法接受……	えっと、じゃあキアナ……ちゃん。それでも私、簡単に受け入れられそうには……。	Ainda assim, não posso simplesmente aceitar isso...
+speaker	Kiana
+
+emote	101	0
+msg	250866	Mei-senpai! This is no longer the peaceful world you're used to! This entire place has been swallowed by the Honkai. If you can't change your mentality, you will be swallowed by the Will of the Honkai too!	芽衣学姐！这已经不是原来你所处的那个和平世界了！至少这个地方已经完全“崩坏”了。如果芽衣你还无法改变自己的心态的话，还是会再度被崩坏意志吞噬的！	芽衣先輩！この世界はもう平和じゃないの。少なくとも、ここは完全に「崩壊」しちゃった。ずっと悲しんでたら、また崩壊に飲み込まれちゃうよ！？	Mei-senpai! Este não é mais o mundo pacífico ao qual você está acostumado! Todo este lugar foi engolido pelo Honkai. Se você não pode mudar sua mentalidade, você também será engolido pela Vontade do Honkai!
+speaker	Mei
+
+emote	201	3
+msg	250867	But... It's far too sudden. I need time to adjust.	但是…这一切对于我来说太突然了……我可能还需要一点时间适应……	でも……何もかも急で……もう少し整理する時間がほしいの。	Mas... É muito repentino. Preciso de tempo para me ajustar.
+speaker	Kiana
+
+emote	101	0
+msg	250868	Okay... then you can get used to the Honkai little by little. Besides... dejected Senpai is cute too~!	没关系啦~适应崩坏什么的，慢慢来就好啦~而且…学姐你这样其实还挺可爱的~	そう……じゃあ、ちょっとずつ崩壊に慣れてこう。それに……しょげてる先輩も可愛いよ～！	Tudo bem ~ Tudo bem se acostumar com Honkai e outras coisas. Você pode levar o seu tempo. E... Senpai, você é realmente muito fofa assim~
+speaker	Mei
+
+emote	201	2
+msg	251394	Kiana, you're quite good at making people happy~	琪亚娜还挺会讨人欢心的呢~	キアナちゃんったら、ご機嫌を取るのがうまいんだから。	Kiana é muito boa em fazer as pessoas sorrirem.
+speaker	Kiana
+
+emote	101	0
+msg	251395	Ehehe~	诶嘿嘿~	えへへ～。	NONE
+speaker	Mei
+
+emote	201	3
+msg	250869	...Alrght, I'll work towards it slowly! But right now... our primary goal is escaping this academy, right?	……嗯，我会慢慢尝试的！不过…现在我们的主要目的是逃出学园吧？	……少しずつやってみるわ！でも今は……この学園から脱出しないとよね？	Tudo bem, vou trabalhar para isso devagar! Mas agora, nosso objetivo principal é escapar desta academia, certo?
+speaker	Kiana
+
+emote	101	0
+msg	250870	Yeah, but the school is full of zombies, so it might be difficult to get through the main gate... We have to find another way.	嗯，但是在这种学园中都是死士的情况下，走正门是最糟糕的选择了……得想个别的办法带路才行。	うん、でも学園中ゾンビだらけだから、正門から突破するのは難しそうかな……他に道があるといいんだけど。	Bem, agora a academia está cheia de zumbis, então sair pela porta da frente é a pior opção. Temos que pensar em outra maneira de sair.
+speaker	Mei
+
+emote	201	0
+msg	250871	Kiana, why don't you let me take the lead? I'm quite familiar with this lab building. There's a passage inside leading to the side entrance of the academy.	琪亚娜，不如让我走在前面带路吧。我对这栋实验楼还是蛮熟悉的，这里有一条通道通往学园侧门。	キアナちゃん、それなら私に任せて。この辺の実験棟には、ちょっとだけ詳しいの。この先に通用門があるから、そこから出られるはずよ。	Kiana, por que você não me deixa assumir a liderança? Estou bastante familiarizado com este prédio de laboratório, há uma passagem que leva à entrada lateral da academia.
+speaker	Kiana
+
+emote	101	0
+msg	250872	Huh? Isn't this the restricted area of the academy? Even if you're a third-year, you wouldn't have had any opportunity to come here, would you?	哦？这里不是学园的禁区吗？就算学姐你是三年生也应该不会有机会来到这里的吧？	あれ？ここって立ち入り禁止区域じゃなかった？学生じゃ入れないはずだよね？	Ah! Essa não é a área restrita da academia? Mesmo se você for um terceiro ano, você não teria nenhuma oportunidade de vir aqui, não é?
+speaker	Mei
+
+emote	201	0
+msg	250873	Well, it's true that this is one of the forbidden areas of the school, but that's only for students in general. For me, it's not as restrictive.	嗯，这里的确是属于学园的禁区之一，但那只是针对于一般学生的，对于我的约束力可能没那么大。	ええ、キアナちゃんの言う通り、ここは立ち入り禁止区域のひとつよ。けど、それは一般の学生のみで、私は例外なの。	Bem, é verdade que esta é uma das áreas proibidas da escola, mas é apenas para alunos em geral. Para mim, não é tão restritivo.
+msg	250874	Actually, this laboratory building... or rather, this school itself was built with funding from our company. In other words, my father, Raiden Ryoma, was the one who founded Senba Academy.	其实…这座实验室，甚至这所学园都是由我家的家族企业资助建设的。而我的父亲雷电龙马则是推动千羽学园成立的主导人。	実はこの実験棟……というより、この学園自体がうちの会社の出資で建てられたの。つまり、私のお父様——雷電龍馬が千羽学園を作った人なのよ。	Na verdade... este laboratório, e até mesmo esta academia, foi financiado e construído pelo negócio da minha família. E meu pai, Raiden Ryoma, foi o maior contribuinte para promover o estabelecimento da Academia Senba.
+speaker	Kiana
+
+emote	101	0
+msg	250875	How fitting for ME Corp, to be able to build a whole Academy City.	果然不愧是ME社，居然能够建立起一个学园都市。	ええっ！！さ、さすがはME社。学校を丸々ひとつ作っちゃうなんて、恐ろしい会社。	Como é apropriado para a ME Corp ser capaz de construir toda uma Cidade Acadêmica.
+speaker	Mei
+
+emote	201	0
+msg	250876	It's just a smart electronics company, it's not a big deal. Anyway, we have to escape the academy, right?	不过是一个智能电子企业，没什么大不了的。现在我们的首要目的是逃出这座学园不是么？	ただの電子企業で、大したことないのよ。それよりも、今はここから脱出しましょう。ね？	É apenas uma  Smart Electronic empresa , não é grande coisa. De qualquer forma, nosso objetivo principal agora é escapar da academia, certo?
+speaker	Kiana
+
+emote	101	0
+msg	250877	Okay~ Okay~ Then I should ask Miss Raiden to swiftly take me away from this hellhole.	好~好~那就有劳大小姐带我快快逃离这鬼地方吧。	は～い、お嬢様！よろしくお願いしますっ！	Certo~ Certo~ Então eu deveria pedir à Miss Raiden para me levar rapidamente para longe deste buraco infernal.

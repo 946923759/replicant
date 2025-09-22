@@ -214,7 +214,24 @@ func set_selection(idx:int, animate:bool = true):
 	#var tw = create_tween()
 	#tw.tween_callback(self,"reposition_actors").set_delay(.3)
 
-func _input(event):
+func move_page(dir:int=1):
+
+	#This doesn't seem right...
+	while true:
+		selected += dir
+		
+		if selected < 0:
+			selected = chapter_actor_frame.get_child_count() - 1
+		elif selected >= chapter_actor_frame.get_child_count():
+			selected = 0
+
+		if selected >= 0 and chapter_actor_frame.get_child(selected).visible:
+			break
+#	$Cursor.play()
+	reposition_actors()
+
+func _input(event:InputEvent):
+	
 	var current_actor = chapter_actor_frame.get_child(selected)
 	if event.is_action_pressed("ui_select"):
 		if current_actor.is_expanded:
@@ -229,20 +246,25 @@ func _input(event):
 #			c.LoseFocus()
 #		#current_actor.LoseFocus()
 #		reposition_actors()
-	elif event.is_action_pressed("ui_right") or event.is_action_pressed("ui_page_down"):
-		if selected < chapter_actor_frame.get_child_count()-1:
-			selected += 1
-		else:
-			selected = 0
+
+	elif event.is_action_pressed("ui_page_up"):
+		move_page(-1)
+	elif event.is_action_pressed("ui_page_down"):
+		move_page(1)
+
+	elif event.is_action_pressed("ui_right"):
 		$Cursor.play()
-		reposition_actors()
-	elif event.is_action_pressed("ui_left") or event.is_action_pressed("ui_page_up"):
-		if selected > 0:
-			selected -= 1
+		if current_actor.is_expanded and  current_actor.selection & 1 == 0: #If even number, it's on the left
+			#print("input to this frame because selection is ",current_actor.selection, " (an even number)")
+			current_actor.input(event)
 		else:
-			selected = chapter_actor_frame.get_child_count() - 1
+			move_page(1)
+	elif event.is_action_pressed("ui_left"):
 		$Cursor.play()
-		reposition_actors()
+		if current_actor.is_expanded and current_actor.selection & 1 != 0: #If not even number
+			current_actor.input(event)
+		else:
+			move_page(-1)
 	if event.is_action_pressed("ui_up") or event.is_action_pressed("ui_down"):
 		if current_actor.is_expanded:
 			$Cursor.play()

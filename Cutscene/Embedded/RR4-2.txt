@@ -1,4 +1,5 @@
 #LANGUAGES	KEY	EN	ZH	JA	PT
+bg	rr/chapter4
 speaker	Corrupted Mei
 portraits	101	3
 tween	3	addy,-200
